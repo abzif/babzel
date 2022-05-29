@@ -34,7 +34,7 @@ If a token expansion dictionary is available for a particular language then Luce
 
 ## Usage
 
-Download appropriate fat jar from [Packages](../packages?repo_name=babzel) (simple or lucene)
+Download appropriate fat jar from [Packages](https://github.com/users/abzif/packages?repo_name=babzel) (babzel-tools-simple-<version>.jar or babzel-tools-lucene-<version>.jar)
 
 Training and evaluation:
 ```
