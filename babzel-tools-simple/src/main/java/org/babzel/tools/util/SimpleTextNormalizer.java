@@ -19,12 +19,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class SimpleTextNormalizer implements TextNormalizer {
     @Override
-    public String normalizeBeforeTokenizer(String text, String language) {
-        return text.toLowerCase(Locale.ENGLISH);
-    }
-
-    @Override
-    public String normalizeAfterTokenizer(String text, String language) {
+    public String normalizeText(String text, String language) {
         return text.toLowerCase(Locale.ENGLISH);
     }
 }

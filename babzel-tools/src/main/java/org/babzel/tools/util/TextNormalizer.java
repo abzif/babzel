@@ -14,7 +14,5 @@
 package org.babzel.tools.util;
 
 public interface TextNormalizer {
-    public String normalizeBeforeTokenizer(String text, String language);
-
-    public String normalizeAfterTokenizer(String text, String language);
+    public String normalizeText(String text, String language);
 }

@@ -14,6 +14,7 @@
 package org.babzel.tools.opennlp.conllu.parser;
 
 import io.vavr.collection.Seq;
+import io.vavr.collection.Vector;
 import lombok.NonNull;
 import lombok.Value;
 
@@ -23,4 +24,24 @@ public class ConlluSentence {
     private final String text;
     @NonNull
     private final Seq<ConlluWordLine> words;
+
+    public ConlluSentence flattenWords() {
+        return new ConlluSentence(text, flattenWords(words));
+    }
+
+    private Seq<ConlluWordLine> flattenWords(Seq<ConlluWordLine> words) {
+        return words.flatMap(this::flattenWord);
+    }
+
+    private Seq<ConlluWordLine> flattenWord(ConlluWordLine word) {
+        return word.isCompound() && formEqualsJoinedSubForms(word)
+                ? word.getSubWords()
+                : Vector.of(word);
+    }
+
+    private boolean formEqualsJoinedSubForms(ConlluWordLine word) {
+        var form = word.getForm();
+        var joinedSubForms = word.getSubWords().map(ConlluWordLine::getForm).mkString();
+        return form.equals(joinedSubForms);
+    }
 }

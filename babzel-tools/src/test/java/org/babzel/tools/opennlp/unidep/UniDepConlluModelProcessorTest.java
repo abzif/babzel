@@ -18,7 +18,6 @@ import io.vavr.collection.Vector;
 import org.babzel.tools.opennlp.conllu.ConlluLemmatizerModelProcessor;
 import org.babzel.tools.opennlp.conllu.ConlluPOSModelProcessor;
 import org.babzel.tools.opennlp.conllu.ConlluSentenceModelProcessor;
-import org.babzel.tools.opennlp.conllu.ConlluTokenExpanderModelProcessor;
 import org.babzel.tools.opennlp.conllu.ConlluTokenizerModelProcessor;
 import org.babzel.tools.opennlp.model.ModelAlgorithm;
 import org.babzel.tools.opennlp.unidep.util.UniDepConlluModelFileSupplier;
@@ -43,8 +42,6 @@ public class UniDepConlluModelProcessorTest {
     @Mock
     private ConlluTokenizerModelProcessor tokenizerModelProcessor;
     @Mock
-    private ConlluTokenExpanderModelProcessor tokenExpanderModelProcessor;
-    @Mock
     private ConlluPOSModelProcessor posModelProcessor;
     @Mock
     private ConlluLemmatizerModelProcessor lemmatizerModelProcessor;
@@ -66,10 +63,6 @@ public class UniDepConlluModelProcessorTest {
         given(fileSupplier.getTokenizerModelFile(any())).willReturn(tokenizerModelPath);
         var tokenizerReportPath = rootPath.resolve("lx-t.txt");
         given(fileSupplier.getTokenizerReportFile(any())).willReturn(tokenizerReportPath);
-        var tokenExpanderModelPath = rootPath.resolve("lx-te.onlpm");
-        given(fileSupplier.getTokenExpanderModelFile(any())).willReturn(tokenExpanderModelPath);
-        var tokenExpanderReportPath = rootPath.resolve("lx-te.txt");
-        given(fileSupplier.getTokenExpanderReportFile(any())).willReturn(tokenExpanderReportPath);
         var posModelPath = rootPath.resolve("lx-p.onlpm");
         given(fileSupplier.getPOSModelFile(any())).willReturn(posModelPath);
         var posReportPath = rootPath.resolve("lx-p.txt");
@@ -90,8 +83,6 @@ public class UniDepConlluModelProcessorTest {
         verify(fileSupplier).getSentenceReportFile("lx");
         verify(fileSupplier).getTokenizerModelFile("lx");
         verify(fileSupplier).getTokenizerReportFile("lx");
-        verify(fileSupplier).getTokenExpanderModelFile("lx");
-        verify(fileSupplier).getTokenExpanderReportFile("lx");
         verify(fileSupplier).getPOSModelFile("lx");
         verify(fileSupplier).getPOSReportFile("lx");
         verify(fileSupplier).getLemmatizerModelFile("lx");
@@ -99,7 +90,6 @@ public class UniDepConlluModelProcessorTest {
         verify(conlluTrainFileProcessor).processUniDepConlluFile(treebankPath, "lx", conlluPath);
         verify(sentenceModelProcessor).processConlluModel(conlluPath, tokenizerAlgorithms, "lx", sentenceModelPath, sentenceReportPath);
         verify(tokenizerModelProcessor).processConlluModel(conlluPath, tokenizerAlgorithms, "lx", tokenizerModelPath, tokenizerReportPath);
-        verify(tokenExpanderModelProcessor).processConlluModel(conlluPath, lemmatizerAlgorithms, "lx", tokenExpanderModelPath, tokenExpanderReportPath);
         verify(posModelProcessor).processConlluModel(conlluPath, posAlgorithms, "lx", posModelPath, posReportPath);
         verify(lemmatizerModelProcessor).processConlluModel(conlluPath, lemmatizerAlgorithms, "lx", lemmatizerModelPath, lemmatizerReportPath);
         verifyNoMoreInteractions(fileSupplier, conlluTrainFileProcessor, sentenceModelProcessor, tokenizerModelProcessor, posModelProcessor, lemmatizerModelProcessor);

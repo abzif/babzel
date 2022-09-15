@@ -48,4 +48,16 @@ public class ConlluWordLine {
     public boolean isCompound() {
         return startId != endId;
     }
+
+    public String joinSubForms() {
+        return subWords.map(ConlluWordLine::getForm).mkString(" ");
+    }
+
+    public String joinLemmas() {
+        return subWords.map(ConlluWordLine::getLemma).mkString(" ");
+    }
+
+    public String joinPosTags() {
+        return subWords.map(ConlluWordLine::getPosTag).mkString(" ");
+    }
 }

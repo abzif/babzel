@@ -20,10 +20,10 @@ import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.apachecommons.CommonsLog;
 import opennlp.tools.util.model.BaseModel;
+import org.babzel.tools.opennlp.conllu.convert.ConlluSamplesConverter;
 import org.babzel.tools.opennlp.conllu.parser.ConlluSentencesFactory;
 import org.babzel.tools.opennlp.model.ModelProcessor;
 import org.babzel.tools.util.FileUpToDateChecker;
-import org.babzel.tools.opennlp.conllu.convert.ConlluSamplesConverter;
 
 @RequiredArgsConstructor
 @CommonsLog
@@ -44,7 +44,7 @@ public class ConlluModelProcessor<M extends BaseModel, S extends Serializable> {
             @NonNull Path modelPath,
             @NonNull Path reportPath) {
         if (!checker.isUpToDate(modelPath, conlluPath) || !checker.isUpToDate(reportPath, conlluPath)) {
-            log.info(String.format("Processing model, language: '%s', conllu file: '%s'", language, conlluPath.toAbsolutePath()));
+            log.info(String.format("Processing model, language: '%s', conllu file: '%s'", language, conlluPath));
             var sentences = sentencesFactory.createSentences(conlluPath, language);
             var totalSentenceCount = sentences.size();
             var samples = converter.convert(sentences, language);
@@ -52,9 +52,9 @@ public class ConlluModelProcessor<M extends BaseModel, S extends Serializable> {
             log.info(String.format("Sentences total: %d, correct: %d, correct percent: %.02f%%", totalSentenceCount, correctSentenceCount, 100.0 * correctSentenceCount / totalSentenceCount));
             modelProcessor.processModel(samples, algorithms, language, modelPath, reportPath);
         } else {
-            log.info(String.format("Skip processing model, language: '%s', conllu file: '%s'", language, conlluPath.toAbsolutePath()));
-            log.info(String.format("Model file: '%s' is up to date", modelPath.toAbsolutePath()));
-            log.info(String.format("Evaluation report file: '%s' is up to date", reportPath.toAbsolutePath()));
+            log.info(String.format("Skip processing model, language: '%s', conllu file: '%s'", language, conlluPath));
+            log.info(String.format("Model file: '%s' is up to date", modelPath));
+            log.info(String.format("Evaluation report file: '%s' is up to date", reportPath));
         }
     }
 }

@@ -34,7 +34,7 @@ public class ConlluSentenceSamplesConverter implements ConlluSamplesConverter<Se
 
     @Override
     public Seq<SentenceSample> convert(@NonNull Seq<ConlluSentence> sentences, @NonNull String language) {
-        var normalizedSentences = sentences.map(sentence -> normalizer.normalizeBeforeTokenization(sentence, language));
+        var normalizedSentences = sentences.map(sentence -> normalizer.normalizeSentence(sentence, language));
         var validatedSentences = normalizedSentences.filter(validator::isValidForTokenization);
         var groupedSentences = Vector.ofAll(validatedSentences.sliding(10, 10));
         return groupedSentences.map(this::convert);

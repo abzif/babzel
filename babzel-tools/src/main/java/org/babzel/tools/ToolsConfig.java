@@ -24,6 +24,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan(basePackageClasses = ToolsConfig.class)
 public class ToolsConfig {
+    public static final String WORK_DIRECTORY_PROPERTY = "work.directory";
+
     @Bean
     public WebClientFactory webClientFactory() {
         return () -> createSimpleWebClient();
@@ -31,7 +33,13 @@ public class ToolsConfig {
 
     @Bean
     public RootDirectorySupplier rootDirectorySupplier() {
-        return () -> Path.of(System.getProperty("user.home")).resolve(".cache").resolve("babzel");
+        return () -> {
+            var workDirectoryName = System.getProperty(WORK_DIRECTORY_PROPERTY, "");
+            var rootDirectory = !workDirectoryName.isEmpty()
+                    ? Path.of(workDirectoryName)
+                    : Path.of(System.getProperty("user.home")).resolve(".cache").resolve("babzel");
+            return rootDirectory.toAbsolutePath().normalize();
+        };
     }
 
     public static WebClient createSimpleWebClient() {

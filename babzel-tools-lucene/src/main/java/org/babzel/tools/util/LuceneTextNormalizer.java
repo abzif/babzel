@@ -24,23 +24,13 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class LuceneTextNormalizer implements TextNormalizer {
-    private final Analyzer analyzerBeforeTokenizer = createAnalyzerBeforeTokenizer();
-    private final Analyzer analyzerAfterTokenizer = createAnalyzerAfterTokenizer();
+    private final Analyzer analyzer = createAnalyzer();
 
     @SneakyThrows
-    private Analyzer createAnalyzerBeforeTokenizer() {
+    private Analyzer createAnalyzer() {
         var builder = CustomAnalyzer.builder();
         builder = appendCharFilters(builder);
         builder = appendTokenizer(builder);
-        return builder.build();
-    }
-
-    @SneakyThrows
-    private Analyzer createAnalyzerAfterTokenizer() {
-        var builder = CustomAnalyzer.builder();
-        builder = appendCharFilters(builder);
-        builder = appendTokenizer(builder);
-        builder = appendTokenFilters(builder);
         return builder.build();
     }
 
@@ -62,18 +52,8 @@ public class LuceneTextNormalizer implements TextNormalizer {
         return builder.withTokenizer(StandardTokenizerFactory.class);
     }
 
-    @SneakyThrows
-    private CustomAnalyzer.Builder appendTokenFilters(CustomAnalyzer.Builder builder) {
-        return builder;
-    }
-
     @Override
-    public String normalizeBeforeTokenizer(String text, String language) {
-        return analyzerBeforeTokenizer.normalize("", text).utf8ToString();
-    }
-
-    @Override
-    public String normalizeAfterTokenizer(String text, String language) {
-        return analyzerAfterTokenizer.normalize("", text).utf8ToString();
+    public String normalizeText(String text, String language) {
+        return analyzer.normalize("", text).utf8ToString();
     }
 }

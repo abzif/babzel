@@ -57,13 +57,13 @@ public class ConlluSentenceSamplesConverterTest {
                 new ConlluSentence("11", Vector.empty()),
                 new ConlluSentence("12", Vector.empty()),
                 new ConlluSentence("13", Vector.empty()));
-        given(normalizer.normalizeBeforeTokenization(any(), any()))
+        given(normalizer.normalizeSentence(any(), any()))
                 .willAnswer(answer -> new ConlluSentence("n" + answer.getArgument(0, ConlluSentence.class).getText(), Vector.empty()));
         given(validator.isValidForTokenization(any())).willReturn(true);
 
         var sample = converter.convert(sentences, "lx");
 
-        verify(normalizer, times(13)).normalizeBeforeTokenization(any(), eq("lx"));
+        verify(normalizer, times(13)).normalizeSentence(any(), eq("lx"));
         verify(validator, times(13)).isValidForTokenization(any());
         verifyNoMoreInteractions(normalizer, validator);
         assertThat(sample).isEqualTo(Vector.of(
@@ -80,13 +80,13 @@ public class ConlluSentenceSamplesConverterTest {
         var normSentence1 = new ConlluSentence("n1", Vector.empty());
         var sentence2 = new ConlluSentence("2", Vector.empty());
         var normSentence2 = new ConlluSentence("n2", Vector.empty());
-        given(normalizer.normalizeBeforeTokenization(any(), any())).willReturn(normSentence1, normSentence2);
+        given(normalizer.normalizeSentence(any(), any())).willReturn(normSentence1, normSentence2);
         given(validator.isValidForTokenization(any())).willReturn(false);
 
         var samples = converter.convert(Vector.of(sentence1, sentence2), "lx");
 
-        verify(normalizer).normalizeBeforeTokenization(sentence1, "lx");
-        verify(normalizer).normalizeBeforeTokenization(sentence2, "lx");
+        verify(normalizer).normalizeSentence(sentence1, "lx");
+        verify(normalizer).normalizeSentence(sentence2, "lx");
         verify(validator).isValidForTokenization(normSentence1);
         verify(validator).isValidForTokenization(normSentence2);
         verifyNoMoreInteractions(normalizer, validator);

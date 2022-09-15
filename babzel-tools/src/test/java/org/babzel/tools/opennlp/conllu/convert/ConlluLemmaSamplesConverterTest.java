@@ -57,17 +57,16 @@ public class ConlluLemmaSamplesConverterTest {
                 new ConlluWordLine(7, "ten", "l7", "NOUN"),
                 new ConlluWordLine(8, "example", "l8", "VERB"),
                 new ConlluWordLine(9, ".", "l9", "PUNCT")));
-        given(normalizer.normalizeAfterTokenization(any(), any())).willReturn(normSentence);
+        given(normalizer.normalizeSentence(any(), any())).willReturn(normSentence);
         given(validator.isValidForLemmatization(any())).willReturn(true);
 
         var samples = converter.convert(Vector.of(sentence), "lx");
 
-        verify(normalizer).normalizeAfterTokenization(sentence, "lx");
+        verify(normalizer).normalizeSentence(sentence, "lx");
         verify(validator).isValidForLemmatization(normSentence);
         verifyNoMoreInteractions(normalizer, validator);
         assertThat(samples).isEqualTo(Vector.of(createSample(Vector.of(
-                Tuple.of("Somt", "ADJ", "l1"),
-                Tuple.of("mex", "ADV", "l2"),
+                Tuple.of("Somt mex", "ADJ ADV", "l1 l2"),
                 Tuple.of("example", "VERB", "l3"),
                 Tuple.of("sen", "NOUN", "l4"),
                 Tuple.of("ten", "PROPN", "l5"),
@@ -83,13 +82,13 @@ public class ConlluLemmaSamplesConverterTest {
         var normSentence1 = new ConlluSentence("n1", Vector.empty());
         var sentence2 = new ConlluSentence("2", Vector.empty());
         var normSentence2 = new ConlluSentence("n2", Vector.empty());
-        given(normalizer.normalizeAfterTokenization(any(), any())).willReturn(normSentence1, normSentence2);
+        given(normalizer.normalizeSentence(any(), any())).willReturn(normSentence1, normSentence2);
         given(validator.isValidForLemmatization(any())).willReturn(false);
 
         var samples = converter.convert(Vector.of(sentence1, sentence2), "lx");
 
-        verify(normalizer).normalizeAfterTokenization(sentence1, "lx");
-        verify(normalizer).normalizeAfterTokenization(sentence2, "lx");
+        verify(normalizer).normalizeSentence(sentence1, "lx");
+        verify(normalizer).normalizeSentence(sentence2, "lx");
         verify(validator).isValidForLemmatization(normSentence1);
         verify(validator).isValidForLemmatization(normSentence2);
         verifyNoMoreInteractions(normalizer, validator);

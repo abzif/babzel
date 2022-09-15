@@ -47,8 +47,6 @@ public class UniDepConlluModelFileSupplierTest {
         assertThat(supplier.getSentenceReportFile("lx")).isEqualTo(resPath.resolve("lx-sentence-detector.txt"));
         assertThat(supplier.getTokenizerModelFile("lx")).isEqualTo(resPath.resolve("lx-tokenizer.onlpm"));
         assertThat(supplier.getTokenizerReportFile("lx")).isEqualTo(resPath.resolve("lx-tokenizer.txt"));
-        assertThat(supplier.getTokenExpanderModelFile("lx")).isEqualTo(resPath.resolve("lx-token-expander.onlpm"));
-        assertThat(supplier.getTokenExpanderReportFile("lx")).isEqualTo(resPath.resolve("lx-token-expander.txt"));
         assertThat(supplier.getPOSModelFile("lx")).isEqualTo(resPath.resolve("lx-pos-tagger.onlpm"));
         assertThat(supplier.getPOSReportFile("lx")).isEqualTo(resPath.resolve("lx-pos-tagger.txt"));
         assertThat(supplier.getLemmatizerModelFile("lx")).isEqualTo(resPath.resolve("lx-lemmatizer.onlpm"));

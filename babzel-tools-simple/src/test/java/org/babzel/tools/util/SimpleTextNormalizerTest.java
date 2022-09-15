@@ -20,12 +20,7 @@ public class SimpleTextNormalizerTest {
     private SimpleTextNormalizer normalizer = new SimpleTextNormalizer();
 
     @Test
-    public void normalizeBeforeTokenizer() {
-        assertThat(normalizer.normalizeBeforeTokenizer("x-Æ-Ꜵ-ąęŁł-ÄØÖ", "lx")).isEqualTo("x-æ-ꜵ-ąęłł-äøö");
-    }
-
-    @Test
-    public void normalizeAfterTokenizer() {
-        assertThat(normalizer.normalizeAfterTokenizer("x-Æ-Ꜵ-ąęŁł-ÄØÖ", "lx")).isEqualTo("x-æ-ꜵ-ąęłł-äøö");
+    public void normalizeText() {
+        assertThat(normalizer.normalizeText("x-Æ-Ꜵ-ąęŁł-ÄØÖ", "lx")).isEqualTo("x-æ-ꜵ-ąęłł-äøö");
     }
 }

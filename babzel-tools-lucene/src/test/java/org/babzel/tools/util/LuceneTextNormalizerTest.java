@@ -20,12 +20,7 @@ public class LuceneTextNormalizerTest {
     private LuceneTextNormalizer normalizer = new LuceneTextNormalizer();
 
     @Test
-    public void normalizeBeforeTokenizer() {
-        assertThat(normalizer.normalizeBeforeTokenizer("x-Æ-Ꜵ-ąęŁł-ÄØÖ", "lx")).isEqualTo("x-ae-ao-aell-aoo");
-    }
-
-    @Test
-    public void normalizeAfterTokenizer() {
-        assertThat(normalizer.normalizeAfterTokenizer("x-Æ-Ꜵ-ąęŁł-ÄØÖ", "lx")).isEqualTo("x-ae-ao-aell-aoo");
+    public void normalizeText() {
+        assertThat(normalizer.normalizeText("x-Æ-Ꜵ-ąęŁł-ÄØÖ", "lx")).isEqualTo("x-ae-ao-aell-aoo");
     }
 }

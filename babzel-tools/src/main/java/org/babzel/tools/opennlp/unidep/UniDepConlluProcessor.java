@@ -13,13 +13,13 @@
  */
 package org.babzel.tools.opennlp.unidep;
 
-import org.babzel.tools.opennlp.unidep.util.UniDepURLSupplier;
-import org.babzel.tools.opennlp.unidep.util.UniDepConlluUncompressor;
 import java.net.URL;
 import java.nio.file.Path;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.apachecommons.CommonsLog;
+import org.babzel.tools.opennlp.unidep.util.UniDepConlluUncompressor;
+import org.babzel.tools.opennlp.unidep.util.UniDepURLSupplier;
 import org.babzel.tools.util.FileDownloader;
 import org.babzel.tools.util.FileUpToDateChecker;
 import org.springframework.stereotype.Component;
@@ -41,16 +41,16 @@ public class UniDepConlluProcessor {
         log.info("Get Universal Dependencies treebank URL");
         URL treebankURL = uniDepURLSupplier.supplyTreebankURL();
         if (!fileUpToDateChecker.isUpToDate(uniDepTreebankPath, treebankURL)) {
-            log.info(String.format("Downloading treebank from: '%s' to file: '%s'", treebankURL, uniDepTreebankPath.toAbsolutePath()));
+            log.info(String.format("Downloading treebank from: '%s' to file: '%s'", treebankURL, uniDepTreebankPath));
             fileDownloader.downloadFile(treebankURL, uniDepTreebankPath);
         } else {
-            log.info(String.format("Skip downloading treebank from: '%s', treebank file: '%s' is up to date", treebankURL, uniDepTreebankPath.toAbsolutePath()));
+            log.info(String.format("Skip downloading treebank from: '%s', treebank file: '%s' is up to date", treebankURL, uniDepTreebankPath));
         }
         if (!fileUpToDateChecker.isUpToDate(conlluPath, uniDepTreebankPath)) {
-            log.info(String.format("Uncompressing treebank for language: '%s' to conllu file: '%s'", language, conlluPath.toAbsolutePath()));
+            log.info(String.format("Uncompressing treebank for language: '%s' to conllu file: '%s'", language, conlluPath));
             uniDepConlluUncompressor.uncompressConlluFile(uniDepTreebankPath, language, conlluPath);
         } else {
-            log.info(String.format("Skip uncompressing treebank for language: '%s', conllu file: '%s' is up to date", language, conlluPath.toAbsolutePath()));
+            log.info(String.format("Skip uncompressing treebank for language: '%s', conllu file: '%s' is up to date", language, conlluPath));
         }
     }
 }

@@ -14,7 +14,6 @@
 package org.babzel.tools.opennlp.conllu.convert;
 
 import io.vavr.collection.Seq;
-import io.vavr.collection.Vector;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import opennlp.tools.tokenize.TokenSample;
@@ -36,8 +35,9 @@ public class ConlluTokenSamplesConverter implements ConlluSamplesConverter<Token
     @Override
     public Seq<TokenSample> convert(@NonNull Seq<ConlluSentence> sentences, @NonNull String language) {
         return sentences
-                .map(sentence -> normalizer.normalizeBeforeTokenization(sentence, language))
+                .map(sentence -> normalizer.normalizeSentence(sentence, language))
                 .filter(validator::isValidForTokenization)
+                .map(ConlluSentence::flattenWords)
                 .map(this::convert);
     }
 
@@ -50,17 +50,7 @@ public class ConlluTokenSamplesConverter implements ConlluSamplesConverter<Token
     }
 
     private Seq<String> getForms(Seq<ConlluWordLine> words) {
-        return words.flatMap(this::getForms);
-    }
-
-    private Seq<String> getForms(ConlluWordLine word) {
-        return word.isCompound() && word.getForm().equals(joinSubForms(word))
-                ? word.getSubWords().map(ConlluWordLine::getForm)
-                : Vector.of(word.getForm());
-    }
-
-    private String joinSubForms(ConlluWordLine word) {
-        return word.getSubWords().map(ConlluWordLine::getForm).mkString("");
+        return words.map(ConlluWordLine::getForm);
     }
 
     private Seq<Span> createSpans(String text, Seq<String> forms) {

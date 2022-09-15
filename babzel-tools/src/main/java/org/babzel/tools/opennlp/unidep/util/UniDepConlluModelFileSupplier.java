@@ -52,14 +52,6 @@ public class UniDepConlluModelFileSupplier {
         return getResourceDir(language).resolve(String.format("%s-tokenizer.txt", language));
     }
 
-    public Path getTokenExpanderModelFile(@NonNull String language) {
-        return getResourceDir(language).resolve(String.format("%s-token-expander.onlpm", language));
-    }
-
-    public Path getTokenExpanderReportFile(@NonNull String language) {
-        return getResourceDir(language).resolve(String.format("%s-token-expander.txt", language));
-    }
-
     public Path getPOSModelFile(@NonNull String language) {
         return getResourceDir(language).resolve(String.format("%s-pos-tagger.onlpm", language));
     }

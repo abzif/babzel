@@ -16,7 +16,6 @@ package org.babzel.tools.opennlp.conllu.convert;
 import io.vavr.Tuple;
 import io.vavr.Tuple2;
 import io.vavr.collection.Seq;
-import io.vavr.collection.Vector;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import opennlp.tools.postag.POSSample;
@@ -37,25 +36,26 @@ public class ConlluPOSSamplesConverter implements ConlluSamplesConverter<POSSamp
     @Override
     public Seq<POSSample> convert(@NonNull Seq<ConlluSentence> sentences, @NonNull String language) {
         return sentences
-                .map(sentence -> normalizer.normalizeAfterTokenization(sentence, language))
+                .map(sentence -> normalizer.normalizeSentence(sentence, language))
                 .filter(validator::isValidForLemmatization)
+                .map(ConlluSentence::flattenWords)
                 .map(this::convert);
     }
 
     private POSSample convert(ConlluSentence sentence) {
-        var posTags = getPOSTags(sentence.getWords());
+        var posTags = getPosTags(sentence.getWords());
         return new POSSample(
                 posTags.map(Tuple2::_1).toJavaList(),
                 posTags.map(Tuple2::_2).toJavaList());
     }
 
-    private Seq<Tuple2<String, String>> getPOSTags(Seq<ConlluWordLine> words) {
-        return words.flatMap(this::getPOSTags);
+    private Seq<Tuple2<String, String>> getPosTags(Seq<ConlluWordLine> words) {
+        return words.map(this::getPosTag);
     }
 
-    private Seq<Tuple2<String, String>> getPOSTags(ConlluWordLine word) {
+    private Tuple2<String, String> getPosTag(ConlluWordLine word) {
         return word.isCompound()
-                ? word.getSubWords().map(subWord -> Tuple.of(subWord.getForm(), subWord.getPosTag()))
-                : Vector.of(Tuple.of(word.getForm(), word.getPosTag()));
+                ? Tuple.of(word.joinSubForms(), word.joinPosTags())
+                : Tuple.of(word.getForm(), word.getPosTag());
     }
 }

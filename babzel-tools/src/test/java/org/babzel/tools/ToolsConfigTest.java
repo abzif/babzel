@@ -69,12 +69,7 @@ public class ToolsConfigTest {
         public TextNormalizer textNormalizer() {
             return new TextNormalizer() {
                 @Override
-                public String normalizeBeforeTokenizer(String language, String text) {
-                    return text;
-                }
-
-                @Override
-                public String normalizeAfterTokenizer(String language, String text) {
+                public String normalizeText(String language, String text) {
                     return text;
                 }
             };

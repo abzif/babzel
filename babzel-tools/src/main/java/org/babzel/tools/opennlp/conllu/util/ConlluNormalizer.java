@@ -28,12 +28,8 @@ public class ConlluNormalizer {
     @NonNull
     private final TextNormalizer textNormalizer;
 
-    public ConlluSentence normalizeBeforeTokenization(@NonNull ConlluSentence sentence, @NonNull String language) {
-        return normalize(sentence, text -> textNormalizer.normalizeBeforeTokenizer(text, language));
-    }
-
-    public ConlluSentence normalizeAfterTokenization(@NonNull ConlluSentence sentence, @NonNull String language) {
-        return normalize(sentence, text -> textNormalizer.normalizeAfterTokenizer(text, language));
+    public ConlluSentence normalizeSentence(@NonNull ConlluSentence sentence, @NonNull String language) {
+        return normalize(sentence, text -> textNormalizer.normalizeText(text, language));
     }
 
     private ConlluSentence normalize(ConlluSentence sentence, Function<String, String> textConverter) {

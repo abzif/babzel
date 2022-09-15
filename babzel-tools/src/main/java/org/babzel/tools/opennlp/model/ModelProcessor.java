@@ -71,7 +71,7 @@ public class ModelProcessor<M extends BaseModel, S extends Serializable> {
         for (var algorithm : algorithms) {
             var modelOpt = trainModel(algorithm, language, trainSamples);
             if (modelOpt.isDefined()) {
-                var evaluationInfo = evaluateModel(modelOpt.get(), evalSamples);
+                var evaluationInfo = evaluateModel(algorithm, language, modelOpt.get(), evalSamples);
                 var evaluationScore = evaluationInfo._1;
                 var misclassifiedDetails = evaluationInfo._2;
                 if (bestModelInfoOpt.isEmpty() || evaluationScore > bestModelInfoOpt.get()._3) {
@@ -83,22 +83,24 @@ public class ModelProcessor<M extends BaseModel, S extends Serializable> {
     }
 
     private Option<M> trainModel(String algorithm, String language, Seq<S> trainSamples) {
-        log.info(String.format("Training model, language: '%s'", language));
+        log.info(String.format("Training model, language: '%s', trainer: '%s', algorithm: '%s'", language, trainer.getClass().getSimpleName(), algorithm));
         return trainer.trainModel(algorithm, language, trainSamples);
     }
 
-    private Tuple2<Double, String> evaluateModel(M model, Seq<S> evalSamples) {
-        log.info(String.format("Evaluating model"));
-        return evaluator.evaluateModel(model, evalSamples);
+    private Tuple2<Double, String> evaluateModel(String algorithm, String language, M model, Seq<S> evalSamples) {
+        log.info(String.format("Evaluating model, language: '%s', evaluator: '%s', algorithm: '%s'", language, evaluator.getClass().getSimpleName(), algorithm));
+        var evaluationInfo = evaluator.evaluateModel(model, evalSamples);
+        log.info(String.format("Evaluation score: %s", evaluationInfo._1));
+        return evaluationInfo;
     }
 
     private void writeModel(M model, Path modelPath) {
-        log.info(String.format("Writing model to file: '%s'", modelPath.toAbsolutePath()));
+        log.info(String.format("Writing model to file: '%s'", modelPath));
         modelPersister.writeModel(model, modelPath);
     }
 
     private void writeEvalReportPath(double evaluationScore, int trainSamplesSize, int evalSamplesSize, String algorithm, M model, String misclassifiedDetails, Path reportPath) {
-        log.info(String.format("Writing evaluation report to file: '%s'", reportPath.toAbsolutePath()));
+        log.info(String.format("Writing evaluation report to file: '%s'", reportPath));
         evalReportPersister.writeEvaluationReport(evaluationScore, trainSamplesSize, evalSamplesSize, algorithm, model, misclassifiedDetails, reportPath);
     }
 }

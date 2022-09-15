@@ -54,12 +54,12 @@ public class ConlluTokenSamplesConverterTest {
                 new ConlluWordLine(7, "ten", "l7", "NOUN"),
                 new ConlluWordLine(8, "example", "l8", "VERB"),
                 new ConlluWordLine(9, ".", "l9", "PUNCT")));
-        given(normalizer.normalizeBeforeTokenization(any(), any())).willReturn(normSentence);
+        given(normalizer.normalizeSentence(any(), any())).willReturn(normSentence);
         given(validator.isValidForTokenization(any())).willReturn(true);
 
         var samples = converter.convert(Vector.of(sentence), "lx");
 
-        verify(normalizer).normalizeBeforeTokenization(sentence, "lx");
+        verify(normalizer).normalizeSentence(sentence, "lx");
         verify(validator).isValidForTokenization(normSentence);
         verifyNoMoreInteractions(normalizer, validator);
         assertThat(samples).isEqualTo(Vector.of(TokenSample.parse("Some example sen|ten|ce ten example|.", "|")));
@@ -71,13 +71,13 @@ public class ConlluTokenSamplesConverterTest {
         var normSentence1 = new ConlluSentence("n1", Vector.empty());
         var sentence2 = new ConlluSentence("2", Vector.empty());
         var normSentence2 = new ConlluSentence("n2", Vector.empty());
-        given(normalizer.normalizeBeforeTokenization(any(), any())).willReturn(normSentence1, normSentence2);
+        given(normalizer.normalizeSentence(any(), any())).willReturn(normSentence1, normSentence2);
         given(validator.isValidForTokenization(any())).willReturn(false);
 
         var samples = converter.convert(Vector.of(sentence1, sentence2), "lx");
 
-        verify(normalizer).normalizeBeforeTokenization(sentence1, "lx");
-        verify(normalizer).normalizeBeforeTokenization(sentence2, "lx");
+        verify(normalizer).normalizeSentence(sentence1, "lx");
+        verify(normalizer).normalizeSentence(sentence2, "lx");
         verify(validator).isValidForTokenization(normSentence1);
         verify(validator).isValidForTokenization(normSentence2);
         verifyNoMoreInteractions(normalizer, validator);

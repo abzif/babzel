@@ -16,7 +16,6 @@ package org.babzel.tools.opennlp.conllu.convert;
 import io.vavr.Tuple;
 import io.vavr.Tuple3;
 import io.vavr.collection.Seq;
-import io.vavr.collection.Vector;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import opennlp.tools.lemmatizer.LemmaSample;
@@ -37,8 +36,9 @@ public class ConlluLemmaSamplesConverter implements ConlluSamplesConverter<Lemma
     @Override
     public Seq<LemmaSample> convert(@NonNull Seq<ConlluSentence> sentences, @NonNull String language) {
         return sentences
-                .map(sentence -> normalizer.normalizeAfterTokenization(sentence, language))
+                .map(sentence -> normalizer.normalizeSentence(sentence, language))
                 .filter(validator::isValidForLemmatization)
+                .map(ConlluSentence::flattenWords)
                 .map(this::convert);
     }
 
@@ -51,12 +51,12 @@ public class ConlluLemmaSamplesConverter implements ConlluSamplesConverter<Lemma
     }
 
     private Seq<Tuple3<String, String, String>> getLemmas(Seq<ConlluWordLine> words) {
-        return words.flatMap(this::getLemmas);
+        return words.map(this::getLemma);
     }
 
-    private Seq<Tuple3<String, String, String>> getLemmas(ConlluWordLine word) {
+    private Tuple3<String, String, String> getLemma(ConlluWordLine word) {
         return word.isCompound()
-                ? word.getSubWords().map(subWord -> Tuple.of(subWord.getForm(), subWord.getPosTag(), subWord.getLemma()))
-                : Vector.of(Tuple.of(word.getForm(), word.getPosTag(), word.getLemma()));
+                ? Tuple.of(word.joinSubForms(), word.joinPosTags(), word.joinLemmas())
+                : Tuple.of(word.getForm(), word.getPosTag(), word.getLemma());
     }
 }

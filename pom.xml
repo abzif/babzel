@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.babzel</groupId>
     <artifactId>babzel</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <packaging>pom</packaging>
 
     <distributionManagement>
@@ -39,7 +39,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-resources-plugin</artifactId>
-                    <version>3.2.0</version>
+                    <version>3.3.0</version>
                     <configuration>
                         <encoding>${project.build.sourceEncoding}</encoding>
                     </configuration>
@@ -169,7 +169,7 @@
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
-                <version>1.18.22</version>
+                <version>1.18.24</version>
             </dependency>
             <!-- vavr collections library -->
             <dependency>
@@ -181,7 +181,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-parent</artifactId>
-                <version>2.6.3</version>
+                <version>2.7.3</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -189,7 +189,7 @@
             <dependency>
                 <groupId>org.apache.lucene</groupId>
                 <artifactId>lucene-solr-grandparent</artifactId>
-                <version>8.11.1</version>
+                <version>8.11.2</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -197,7 +197,7 @@
             <dependency>
                 <groupId>net.sourceforge.htmlunit</groupId>
                 <artifactId>htmlunit</artifactId>
-                <version>2.58.0</version>
+                <version>2.64.0</version>
             </dependency>
             <!-- common compress -->
             <dependency>

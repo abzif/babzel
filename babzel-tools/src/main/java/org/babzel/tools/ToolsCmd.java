@@ -13,7 +13,6 @@
  */
 package org.babzel.tools;
 
-import io.vavr.collection.Vector;
 import io.vavr.control.Option;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -42,12 +41,14 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class ToolsCmd {
     public static void main(String[] args) {
         try ( var ctx = new AnnotationConfigApplicationContext(ToolsConfig.class)) {
-            if (args.length == 2) {
+            if (args.length == 2 || args.length == 3) {
                 var cmd = args[0];
                 var language = args[1];
-                if ("-train".equals(cmd)) {
+                var workDir = args.length == 3 ? args[2] : "";
+                System.setProperty(ToolsConfig.WORK_DIRECTORY_PROPERTY, workDir);
+                if ("train".equals(cmd)) {
                     trainModels(ctx, language);
-                } else if ("-verify".equals(cmd)) {
+                } else if ("verify".equals(cmd)) {
                     verifyModels(ctx, language);
                 } else {
                     printHelp(ctx);
@@ -60,11 +61,13 @@ public class ToolsCmd {
 
     private static void printHelp(ApplicationContext ctx) {
         var rootDir = ctx.getBean(RootDirectorySupplier.class).getRootDirectory();
-        System.out.println("Usage:");
-        System.out.println(" -train <two-letter-language-code>");
-        System.out.println("   Trains language models in directory: " + rootDir.toAbsolutePath());
-        System.out.println(" -verify <two-letter-language-code>");
-        System.out.println("   Interactive verification of trained models");
+        System.out.println("Usage: <command> <two-letter-language-code> [<work-directory>]");
+        System.out.println("  <command> can be one of:");
+        System.out.println("    train - train language models");
+        System.out.println("    verify - interactive verification of trained models");
+        System.out.println("  <two-letter-language-code> - in example 'en', 'es', 'zh' etc");
+        System.out.println("  <work-directory> - root of directory where models will be generated");
+        System.out.println("    default value: " + rootDir);
     }
 
     private static void trainModels(ApplicationContext ctx, String language) {
@@ -85,9 +88,6 @@ public class ToolsCmd {
         }
         var sentenceDetector = new SentenceDetectorME(modelPersister.readModel(fileSupplier.getSentenceModelFile(language), SentenceModel.class));
         var tokenizer = new TokenizerME(modelPersister.readModel(fileSupplier.getTokenizerModelFile(language), TokenizerModel.class));
-        var tokenExpander = Files.isRegularFile(fileSupplier.getTokenExpanderModelFile(language))
-                ? Option.<Lemmatizer>some(new LemmatizerME(modelPersister.readModel(fileSupplier.getTokenExpanderModelFile(language), LemmatizerModel.class)))
-                : Option.<Lemmatizer>none();
         var posTagger = new POSTaggerME(modelPersister.readModel(fileSupplier.getPOSModelFile(language), POSModel.class));
         var lemmatizer = Files.isRegularFile(fileSupplier.getLemmatizerModelFile(language))
                 ? Option.<Lemmatizer>some(new LemmatizerME(modelPersister.readModel(fileSupplier.getLemmatizerModelFile(language), LemmatizerModel.class)))
@@ -99,7 +99,7 @@ public class ToolsCmd {
             if ("q".equalsIgnoreCase(line)) {
                 break;
             } else {
-                verifyModels(line, language, textNormalizer, sentenceDetector, tokenizer, tokenExpander, posTagger, lemmatizer);
+                verifyModels(line, language, textNormalizer, sentenceDetector, tokenizer, posTagger, lemmatizer);
             }
         }
     }
@@ -110,19 +110,13 @@ public class ToolsCmd {
             TextNormalizer textNormalizer,
             SentenceDetector sentenceDetector,
             Tokenizer tokenizer,
-            Option<Lemmatizer> tokenExpander,
             POSTagger posTagger,
             Option<Lemmatizer> lemmatizer) {
-        text = textNormalizer.normalizeBeforeTokenizer(text, language);
+        text = textNormalizer.normalizeText(text, language);
         var sentences = sentenceDetector.sentDetect(text);
         for (var sentence : sentences) {
             System.out.println(sentence);
             var tokens = tokenizer.tokenize(sentence);
-            tokens = Vector.of(tokens).map(token -> textNormalizer.normalizeAfterTokenizer(token, language)).toJavaArray(length -> new String[length]);
-            if (tokenExpander.isDefined()) {
-                var expandedTokens = tokenExpander.get().lemmatize(tokens, Vector.fill(tokens.length, "X").toJavaArray(length -> new String[length]));
-                tokens = Vector.of(expandedTokens).flatMap(t -> Vector.of(t.split(" "))).toJavaArray(length -> new String[length]);
-            }
             var posTags = posTagger.tag(tokens);
             var lemmas = lemmatizer.isDefined()
                     ? lemmatizer.get().lemmatize(tokens, posTags)
