@@ -1,0 +1,43 @@
+=== EVALUATION INFO ===
+Evaluation-Score=0.9992842942345924
+Training-Sample-Size=2268
+Evaluation-Sample-Size=251
+Training-Algorithm=MAXENT_QN
+
+=== MODEL PROPERTIES ===
+Component-Name=TokenizerME
+Language=el
+Manifest-Version=1.0
+OpenNLP-Version=1.9.4
+Timestamp=1662558508839
+TrainerType=Event
+Training-Eventhash=bbd82cc0f62ca93cb7b5f0bc12beb34e
+alphaNumericPattern=^[A-Za-z0-9]+$
+factory=opennlp.tools.tokenize.TokenizerFactory
+useAlphaNumericOptimization=false
+
+=== MISCLASSIFIED DETAILS ===
+Expected: {
+παρολα αυτα το προβλημα συνεχισε να απασχολει τη β' διεθνη και αργοτερα και την γ' διεθνη<SPLIT>, με σκοπο την δημιουργια ανεξαρτητου κρατουσ<SPLIT>, θεση η οποια το 1924 υιοθετηθηκε επισημα και απο το κκε.}
+Predicted: {
+παρολα αυτα το προβλημα συνεχισε να απασχολει τη β' διεθνη και αργοτερα και την γ' διεθνη<SPLIT>, με σκοπο την δημιουργια ανεξαρτητου κρατουσ<SPLIT>, θεση η οποια το 1924 υιοθετηθηκε επισημα και απο το κκε<SPLIT>.}
+False positives: {
+κκε
+.
+} False negatives: {
+κκε.
+}
+
+Expected: {
+3. η εκκενωση των τουρκικων θυλακων απο την ειρηνευτικη δυναμη του οηε.}
+Predicted: {
+3<SPLIT>. η εκκενωση των τουρκικων θυλακων απο την ειρηνευτικη δυναμη του οηε<SPLIT>.}
+False positives: {
+3
+.
+οηε
+.
+} False negatives: {
+3.
+οηε.
+}

@@ -1,0 +1,435 @@
+=== EVALUATION INFO ===
+Evaluation-Score=0.9996901986601092
+Training-Sample-Size=9401
+Evaluation-Sample-Size=1044
+Training-Algorithm=MAXENT
+
+=== MODEL PROPERTIES ===
+BeamSize=3
+Component-Name=StatisticalLemmatizer
+Language=zh
+Manifest-Version=1.0
+OpenNLP-Version=1.9.4
+Timestamp=1663335453557
+TrainerType=Event
+Training-Eventhash=48a99449c2ef29d534c9e27f184db2b2
+factory=opennlp.tools.lemmatizer.LemmatizerFactory
+
+=== MISCLASSIFIED DETAILS ===
+Expected: {
+所以	ADV	所以
+我	PRON	我
+建议	VERB	建议
+大家	PRON	大家
+偶尔	ADV	偶尔
+不	ADV	不
+停	VERB	听
+别人	PRON	别人
+说	VERB	说
+什么	PRON	什么
+，	PUNCT	，
+你	PRON	你
+要	AUX	要
+硬	VERB	硬
+着	AUX	着
+头皮	NOUN	头皮
+干	VERB	干
+下去	VERB	下去
+。	PUNCT	。
+}
+Predicted: {
+所以	ADV	所以
+我	PRON	我
+建议	VERB	建议
+大家	PRON	大家
+偶尔	ADV	偶尔
+不	ADV	不
+停	VERB	停
+别人	PRON	别人
+说	VERB	说
+什么	PRON	什么
+，	PUNCT	，
+你	PRON	你
+要	AUX	要
+硬	VERB	硬
+着	AUX	着
+头皮	NOUN	头皮
+干	VERB	干
+下去	VERB	下去
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+停: 听 | 停
+}
+
+Expected: {
+我	PRON	我
+对	ADP	对
+他们	PRON	他们
+很	ADV	很
+感动	VERB	感动
+了	AUX	了
+。	PUNCT	。
+}
+Predicted: {
+我	PRON	我
+对	ADP	对
+他们	PRON	他
+很	ADV	很
+感动	VERB	感动
+了	AUX	了
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+他们: 他们 | 他
+}
+
+Expected: {
+但	CCONJ	但
+在	ADP	在
+去	VERB	去
+的	PART	的
+路上	NOUN	路上
+我	PRON	我
+错	ADJ	错
+做	VERB	坐
+了	AUX	了
+反	ADJ	反
+方向	NOUN	方向
+的	PART	的
+地铁	NOUN	地铁
+，	PUNCT	，
+所以	ADV	所以
+到	VERB	到
+那	PRON	那
+的	PART	的
+时候	NOUN	时候
+已经	ADV	已经
+是	AUX	是
+傍晚	NOUN	傍晚
+了	PART	了
+。	PUNCT	。
+}
+Predicted: {
+但	CCONJ	但
+在	ADP	在
+去	VERB	去
+的	PART	的
+路上	NOUN	路上
+我	PRON	我
+错	ADJ	错
+做	VERB	做
+了	AUX	了
+反	ADJ	反
+方向	NOUN	方向
+的	PART	的
+地铁	NOUN	地铁
+，	PUNCT	，
+所以	ADV	所以
+到	VERB	到
+那	PRON	那
+的	PART	的
+时候	NOUN	时候
+已经	ADV	已经
+是	AUX	是
+傍晚	NOUN	傍晚
+了	PART	了
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+做: 坐 | 做
+}
+
+Expected: {
+是	AUX	是
+他们	PROPN	他们
+。	PUNCT	。
+}
+Predicted: {
+是	AUX	是
+他们	PROPN	他
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+他们: 他们 | 他
+}
+
+Expected: {
+在	ADP	在
+这	PRON	这
+之后	ADP	之后
+，	PUNCT	，
+他	PRON	他
+接拍	VERB	接拍
+了	AUX	了
+一	NUM	一
+部	NOUN	部
+名	NOUN	名
+为	AUX	为
+《	PUNCT	《
+我们	PRON	我
+是	AUX	是
+马歇尔	PROPN	马歇尔
+》	PUNCT	》
+的	PART	的
+电影	NOUN	电影
+，	PUNCT	，
+这	DET	这
+部	NOUN	部
+电影	NOUN	电影
+讲述	VERB	讲述
+的	PART	的
+是	AUX	是
+大学	NOUN	大学
+橄榄	NOUN	橄榄
+球	PART	球
+队	PART	队
+中	ADP	中
+发生	VERB	发生
+的	PART	的
+故事	NOUN	故事
+，	PUNCT	，
+不过	ADV	不过
+并	ADV	并
+没有	VERB	没有
+获得	VERB	获得
+霹雳	NOUN	霹雳
+娇娃	NOUN	娇娃
+那样	PRON	那样
+的	PART	的
+成功	NOUN	成功
+。	PUNCT	。
+}
+Predicted: {
+在	ADP	在
+这	PRON	这
+之后	ADP	之后
+，	PUNCT	，
+他	PRON	他
+接拍	VERB	接拍
+了	AUX	了
+一	NUM	一
+部	NOUN	部
+名	NOUN	名
+为	AUX	为
+《	PUNCT	《
+我们	PRON	我们
+是	AUX	是
+马歇尔	PROPN	马歇尔
+》	PUNCT	》
+的	PART	的
+电影	NOUN	电影
+，	PUNCT	，
+这	DET	这
+部	NOUN	部
+电影	NOUN	电影
+讲述	VERB	讲述
+的	PART	的
+是	AUX	是
+大学	NOUN	大学
+橄榄	NOUN	橄榄
+球	PART	球
+队	PART	队
+中	ADP	中
+发生	VERB	发生
+的	PART	的
+故事	NOUN	故事
+，	PUNCT	，
+不过	ADV	不过
+并	ADV	并
+没有	VERB	没有
+获得	VERB	获得
+霹雳	NOUN	霹雳
+娇娃	NOUN	娇娃
+那样	PRON	那样
+的	PART	的
+成功	NOUN	成功
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+我们: 我 | 我们
+}
+
+Expected: {
+几	NUM	几
+个	NOUN	个
+月	NOUN	月
+后	ADP	后
+的	PART	的
+一	NUM	一
+次	NOUN	次
+采访	NOUN	采访
+，	PUNCT	，
+艾米	PROPN	艾米
+说到	VERB	说到
+：	PUNCT	：
+“	PUNCT	“
+如果	ADP	如果
+我们	PRON	我
+没有	VERB	没有
+变化	NOUN	变化
+的话	PART	的话
+，	PUNCT	，
+是	VERB	是
+没法	VERB	没法
+做出	VERB	做出
+第二	NUM	第二
+张	NOUN	张
+专辑	NOUN	专辑
+的	PART	的
+。	PUNCT	。
+”	PUNCT	”
+}
+Predicted: {
+几	NUM	几
+个	NOUN	个
+月	NOUN	月
+后	ADP	后
+的	PART	的
+一	NUM	一
+次	NOUN	次
+采访	NOUN	采访
+，	PUNCT	，
+艾米	PROPN	艾米
+说到	VERB	说到
+：	PUNCT	：
+“	PUNCT	“
+如果	ADP	如果
+我们	PRON	我们
+没有	VERB	没有
+变化	NOUN	变化
+的话	PART	的话
+，	PUNCT	，
+是	VERB	是
+没法	VERB	没法
+做出	VERB	做出
+第二	NUM	第二
+张	NOUN	张
+专辑	NOUN	专辑
+的	PART	的
+。	PUNCT	。
+”	PUNCT	”
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+我们: 我 | 我们
+}
+
+Expected: {
+电视	NOUN	电视
+台	PART	台
+把	ADP	把
+一	NUM	一
+个	NOUN	个
+跋扈	ADJ	跋扈
+专横	ADJ	专横
+、	PUNCT	、
+乱伦	VERB	乱伦
+篡国	VERB	篡国
+的	PART	的
+武	PROPN	武
+则天	PROPN	则天
+演成	VERB	演成
+柔弱	ADJ	柔弱
+堪怜	ADJ	堪怜
+的	PART	的
+女子	NOUN	女子
+，	PUNCT	，
+这	PRON	这
+是	VERB	是
+我们	PRON	我
+所	ADV	所
+不能	AUX	不能
+容忍	VERB	容忍
+的	PART	的
+。	PUNCT	。
+}
+Predicted: {
+电视	NOUN	电视
+台	PART	台
+把	ADP	把
+一	NUM	一
+个	NOUN	个
+跋扈	ADJ	跋扈
+专横	ADJ	专横
+、	PUNCT	、
+乱伦	VERB	乱伦
+篡国	VERB	篡国
+的	PART	的
+武	PROPN	武
+则天	PROPN	则天
+演成	VERB	演成
+柔弱	ADJ	柔弱
+堪怜	ADJ	堪怜
+的	PART	的
+女子	NOUN	女子
+，	PUNCT	，
+这	PRON	这
+是	VERB	是
+我们	PRON	我们
+所	ADV	所
+不能	AUX	不能
+容忍	VERB	容忍
+的	PART	的
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+我们: 我 | 我们
+}
+
+Expected: {
+尽管	ADP	尽管
+如此	VERB	如此
+，	PUNCT	，
+我们	PRON	我
+还是	ADV	还是
+可以	AUX	可以
+通过	ADP	通过
+纸币	NOUN	纸币
+序列	NOUN	序列
+号	PART	号
+来	ADV	来
+辨别	VERB	辨别
+纸币	NOUN	纸币
+的	PART	的
+发行	VERB	发行
+国	PART	国
+。	PUNCT	。
+}
+Predicted: {
+尽管	ADP	尽管
+如此	VERB	如此
+，	PUNCT	，
+我们	PRON	我们
+还是	ADV	还是
+可以	AUX	可以
+通过	ADP	通过
+纸币	NOUN	纸币
+序列	NOUN	序列
+号	PART	号
+来	ADV	来
+辨别	VERB	辨别
+纸币	NOUN	纸币
+的	PART	的
+发行	VERB	发行
+国	PART	国
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+我们: 我 | 我们
+}

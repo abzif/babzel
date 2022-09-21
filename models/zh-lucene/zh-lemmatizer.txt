@@ -1,0 +1,285 @@
+=== EVALUATION INFO ===
+Evaluation-Score=0.9998021995411029
+Training-Sample-Size=9399
+Evaluation-Sample-Size=1044
+Training-Algorithm=MAXENT
+
+=== MODEL PROPERTIES ===
+BeamSize=3
+Component-Name=StatisticalLemmatizer
+Language=zh
+Manifest-Version=1.0
+OpenNLP-Version=1.9.4
+Timestamp=1662533735384
+TrainerType=Event
+Training-Eventhash=3191f505f9793861eca2ae9608ae8880
+factory=opennlp.tools.lemmatizer.LemmatizerFactory
+
+=== MISCLASSIFIED DETAILS ===
+Expected: {
+所以	ADV	所以
+我	PRON	我
+建议	VERB	建议
+大家	PRON	大家
+偶尔	ADV	偶尔
+不	ADV	不
+停	VERB	听
+别人	PRON	别人
+说	VERB	说
+什么	PRON	什么
+,	PUNCT	,
+你	PRON	你
+要	AUX	要
+硬	VERB	硬
+着	AUX	着
+头皮	NOUN	头皮
+干	VERB	干
+下去	VERB	下去
+.	PUNCT	.
+}
+Predicted: {
+所以	ADV	所以
+我	PRON	我
+建议	VERB	建议
+大家	PRON	大家
+偶尔	ADV	偶尔
+不	ADV	不
+停	VERB	停
+别人	PRON	别人
+说	VERB	说
+什么	PRON	什么
+,	PUNCT	,
+你	PRON	你
+要	AUX	要
+硬	VERB	硬
+着	AUX	着
+头皮	NOUN	头皮
+干	VERB	干
+下去	VERB	下去
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+停: 听 | 停
+}
+
+Expected: {
+我	PRON	我
+对	ADP	对
+他们	PRON	他们
+很	ADV	很
+感动	VERB	感动
+了	AUX	了
+.	PUNCT	.
+}
+Predicted: {
+我	PRON	我
+对	ADP	对
+他们	PRON	他
+很	ADV	很
+感动	VERB	感动
+了	AUX	了
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+他们: 他们 | 他
+}
+
+Expected: {
+但	CCONJ	但
+在	ADP	在
+去	VERB	去
+的	PART	的
+路上	NOUN	路上
+我	PRON	我
+错	ADJ	错
+做	VERB	坐
+了	AUX	了
+反	ADJ	反
+方向	NOUN	方向
+的	PART	的
+地铁	NOUN	地铁
+,	PUNCT	,
+所以	ADV	所以
+到	VERB	到
+那	PRON	那
+的	PART	的
+时候	NOUN	时候
+已经	ADV	已经
+是	AUX	是
+傍晚	NOUN	傍晚
+了	PART	了
+.	PUNCT	.
+}
+Predicted: {
+但	CCONJ	但
+在	ADP	在
+去	VERB	去
+的	PART	的
+路上	NOUN	路上
+我	PRON	我
+错	ADJ	错
+做	VERB	做
+了	AUX	了
+反	ADJ	反
+方向	NOUN	方向
+的	PART	的
+地铁	NOUN	地铁
+,	PUNCT	,
+所以	ADV	所以
+到	VERB	到
+那	PRON	那
+的	PART	的
+时候	NOUN	时候
+已经	ADV	已经
+是	AUX	是
+傍晚	NOUN	傍晚
+了	PART	了
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+做: 坐 | 做
+}
+
+Expected: {
+是	AUX	是
+他们	PROPN	他们
+.	PUNCT	.
+}
+Predicted: {
+是	AUX	是
+他们	PROPN	他
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+他们: 他们 | 他
+}
+
+Expected: {
+而	ADV	而
+旅居	VERB	旅居
+美国	PROPN	美国
+的	PART	的
+罗马尼亚	PROPN	罗马尼亚
+知名	ADJ	知名
+作家	NOUN	作家
+诺尔曼	PROPN	诺尔曼
+·	PUNCT	·
+马内阿	PROPN	马内阿
+(	PUNCT	(
+norman	X	norman
+manea	X	manea
+)	PUNCT	)
+,	PUNCT	,
+曾	ADV	曾
+如此	VERB	如此
+描述	VERB	描述
+他	PRON	他
+:	PUNCT	:
+"	PUNCT	"
+他	PRON	他
+是	AUX	是
+一	NUM	一
+位	NOUN	位
+杰出	ADJ	杰出
+的	PART	的
+反叛	VERB	反叛
+者	PART	者
+,	PUNCT	,
+也是	AUX	也是
+一	NUM	一
+位	NOUN	位
+独具	VERB	独具
+怀疑	NOUN	怀疑
+精神	NOUN	精神
+的	PART	的
+厌世	VERB	厌世
+者	PART	者
+,	PUNCT	,
+一而再	ADJ	一而再
+、	PUNCT	、
+再而三	ADJ	再而三
+地	PART	地
+让	VERB	让
+我们	PRON	我
+在	ADP	在
+人类	NOUN	人类
+存在	VERB	存在
+的	PART	的
+虚无	NOUN	虚无
+当中	NOUN	当中
+惊醒	VERB	惊醒
+过来	VERB	过来
+.	PUNCT	.
+"	PUNCT	"
+}
+Predicted: {
+而	ADV	而
+旅居	VERB	旅居
+美国	PROPN	美国
+的	PART	的
+罗马尼亚	PROPN	罗马尼亚
+知名	ADJ	知名
+作家	NOUN	作家
+诺尔曼	PROPN	诺尔曼
+·	PUNCT	·
+马内阿	PROPN	马内阿
+(	PUNCT	(
+norman	X	norman
+manea	X	manea
+)	PUNCT	)
+,	PUNCT	,
+曾	ADV	曾
+如此	VERB	如此
+描述	VERB	描述
+他	PRON	他
+:	PUNCT	:
+"	PUNCT	"
+他	PRON	他
+是	AUX	是
+一	NUM	一
+位	NOUN	位
+杰出	ADJ	杰出
+的	PART	的
+反叛	VERB	反叛
+者	PART	者
+,	PUNCT	,
+也是	AUX	也是
+一	NUM	一
+位	NOUN	位
+独具	VERB	独具
+怀疑	NOUN	怀疑
+精神	NOUN	精神
+的	PART	的
+厌世	VERB	厌世
+者	PART	者
+,	PUNCT	,
+一而再	ADJ	一而再
+、	PUNCT	、
+再而三	ADJ	再而三
+地	PART	地
+让	VERB	让
+我们	PRON	我们
+在	ADP	在
+人类	NOUN	人类
+存在	VERB	存在
+的	PART	的
+虚无	NOUN	虚无
+当中	NOUN	当中
+惊醒	VERB	惊醒
+过来	VERB	过来
+.	PUNCT	.
+"	PUNCT	"
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+我们: 我 | 我们
+}

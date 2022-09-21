@@ -1,0 +1,583 @@
+=== EVALUATION INFO ===
+Evaluation-Score=0.9981422280061486
+Training-Sample-Size=20135
+Evaluation-Sample-Size=2237
+Training-Algorithm=MAXENT_QN
+
+=== MODEL PROPERTIES ===
+Component-Name=TokenizerME
+Language=pt
+Manifest-Version=1.0
+OpenNLP-Version=1.9.4
+Timestamp=1662535425282
+TrainerType=Event
+Training-Eventhash=5ea5ca84e0e376a79e059d6e48f933db
+alphaNumericPattern=^[0-9a-záãâàéêíóõôúüçA-ZÁÃÂÀÉÊÍÓÕÔÚÜÇ]+$
+factory=opennlp.tools.tokenize.TokenizerFactory
+useAlphaNumericOptimization=false
+
+=== MISCLASSIFIED DETAILS ===
+Expected: {
+ao contrario<SPLIT>, nesta situacao economica de extrema gravidade<SPLIT>, todos gostariam de ajudar o pais<SPLIT>.}
+Predicted: {
+a<SPLIT>o contrario<SPLIT>, nesta situacao economica de extrema gravidade<SPLIT>, todos gostariam de ajudar o pais<SPLIT>.}
+False positives: {
+a
+o
+} False negatives: {
+ao
+}
+
+Expected: {
+mr. frost<SPLIT>, deadly mr. frost}
+Predicted: {
+mr<SPLIT>. frost<SPLIT>, deadly mr<SPLIT>. frost}
+False positives: {
+mr
+.
+mr
+.
+} False negatives: {
+mr.
+mr.
+}
+
+Expected: {
+e foi assim que ontem -- precisamente por causa do portugal<SPLIT>-<SPLIT>turquia -- a televisao guineense reabriu ... a hora necessaria para transmitir o portugal<SPLIT>-<SPLIT>turquia<SPLIT>, o que motivou grandes ajuntamentos em locais publicos que dispunham de televisores<SPLIT>, tanto em bissau como no interior do pais<SPLIT>.}
+Predicted: {
+e foi assim que ontem -- precisamente por causa do portugal-turquia -- a televisao guineense reabriu ... a hora necessaria para transmitir o portugal-turquia<SPLIT>, o que motivou grandes ajuntamentos em locais publicos que dispunham de televisores<SPLIT>, tanto em bissau como no interior do pais<SPLIT>.}
+False positives: {
+portugal-turquia
+portugal-turquia
+} False negatives: {
+portugal
+-
+turquia
+portugal
+-
+turquia
+}
+
+Expected: {
+uma pela dupla bfe<SPLIT>/<SPLIT>salomon brothers e outra pelo bpi em associacao com a ubs (<SPLIT>union des banques suisses<SPLIT>)<SPLIT>.}
+Predicted: {
+uma pela dupla bfe/salomon brothers e outra pelo bpi em associacao com a ubs (<SPLIT>union des banques suisses<SPLIT>)<SPLIT>.}
+False positives: {
+bfe/salomon
+} False negatives: {
+bfe
+/
+salomon
+}
+
+Expected: {
+a seca que atingiu as areas produtoras de graos nao deve causar grandes estragos na safra 1994<SPLIT>/<SPLIT>95<SPLIT>.}
+Predicted: {
+a seca que atingiu as areas produtoras de graos nao deve causar grandes estragos na safra 1994/95<SPLIT>.}
+False positives: {
+1994/95
+} False negatives: {
+1994
+/
+95
+}
+
+Expected: {
+informacoes pelo (011) 263-4700<SPLIT>.}
+Predicted: {
+informacoes pelo (<SPLIT>011<SPLIT>) 263-4700<SPLIT>.}
+False positives: {
+(
+011
+)
+} False negatives: {
+(011)
+}
+
+Expected: {
+paulo cesar<SPLIT>, cobrando falta na cabeca da area<SPLIT>, fechou o marcador a<SPLIT>os 43<SPLIT>min<SPLIT>, sem chances de defesa para o goleiro silvio<SPLIT>, do santo andre<SPLIT>.}
+Predicted: {
+paulo cesar<SPLIT>, cobrando falta na cabeca da area<SPLIT>, fechou o marcador a<SPLIT>os 43min<SPLIT>, sem chances de defesa para o goleiro silvio<SPLIT>, do santo andre<SPLIT>.}
+False positives: {
+43min
+} False negatives: {
+43
+min
+}
+
+Expected: {
+a advogada diz que o mais! adulterou a obra "<SPLIT>para satisfazer a vontade de neonazistas brasileiros<SPLIT>"<SPLIT>.}
+Predicted: {
+a advogada diz que o mais<SPLIT>! adulterou a obra "<SPLIT>para satisfazer a vontade de neonazistas brasileiros<SPLIT>"<SPLIT>.}
+False positives: {
+mais
+!
+} False negatives: {
+mais!
+}
+
+Expected: {
+a venda em bancas de jornal ou pelo telefone (0800) 11-5353<SPLIT>.}
+Predicted: {
+a venda em bancas de jornal ou pelo telefone (<SPLIT>0800<SPLIT>) 11-5353<SPLIT>.}
+False positives: {
+(
+0800
+)
+} False negatives: {
+(0800)
+}
+
+Expected: {
+media e de 4 passageiros<SPLIT>/<SPLIT>viagem}
+Predicted: {
+media e de 4 passageiros/viagem}
+False positives: {
+passageiros/viagem
+} False negatives: {
+passageiros
+/
+viagem
+}
+
+Expected: {
+no periodo mais seco<SPLIT>, quando as chuvas nao passam de dez milimetros<SPLIT>/<SPLIT>mes<SPLIT>, os produtores plantam soja<SPLIT>, que exige menos agua<SPLIT>.}
+Predicted: {
+no periodo mais seco<SPLIT>, quando as chuvas nao passam de dez milimetros/mes<SPLIT>, os produtores plantam soja<SPLIT>, que exige menos agua<SPLIT>.}
+False positives: {
+milimetros/mes
+} False negatives: {
+milimetros
+/
+mes
+}
+
+Expected: {
+a maior parte da producao (<SPLIT>250 t<SPLIT>) ja esta comprometida com uma industria de processamento da polpa<SPLIT>.}
+Predicted: {
+a maior parte da producao (<SPLIT>250 t) ja esta comprometida com uma industria de processamento da polpa<SPLIT>.}
+False positives: {
+t)
+} False negatives: {
+t
+)
+}
+
+Expected: {
+wilson baldini jr.}
+Predicted: {
+wilson baldini jr<SPLIT>.}
+False positives: {
+jr
+.
+} False negatives: {
+jr.
+}
+
+Expected: {
+"<SPLIT>este homem mete medo<SPLIT>...<SPLIT>"}
+Predicted: {
+"<SPLIT>este homem mete medo...<SPLIT>"}
+False positives: {
+medo...
+} False negatives: {
+medo
+...
+}
+
+Expected: {
+nos ultimos meses ainda conseguiu escapar-se e ver "<SPLIT>eu, feuerbach<SPLIT>"<SPLIT>, pelo cendrev<SPLIT>, em evora<SPLIT>, e "<SPLIT>a opera do malandro<SPLIT>"<SPLIT>, pelo seiva troupe<SPLIT>, no porto<SPLIT>.}
+Predicted: {
+nos ultimos meses ainda conseguiu escapar-se e ver "<SPLIT>eu<SPLIT>, feuerbach<SPLIT>"<SPLIT>, pelo cendrev<SPLIT>, em evora<SPLIT>, e "<SPLIT>a opera do malandro<SPLIT>"<SPLIT>, pelo seiva troupe<SPLIT>, no porto<SPLIT>.}
+False positives: {
+eu
+,
+} False negatives: {
+eu,
+}
+
+Expected: {
+alem disso<SPLIT>, a nova lei organica do lniv veio atribuir-lhe mais responsabilidades (<SPLIT>ver "<SPLIT>controlo da saude animal ganha terreno<SPLIT>"<SPLIT>, publico de 9-6-97<SPLIT>) no ambito das provas laboratoriais necessarias a<SPLIT>o controlo sanitario dos animais e seus produtos -- a par das normais competencias no ambito da investigacao e desenvolvimento (<SPLIT>i & d<SPLIT>) e das que decorrem do seu estatuto de autoridade nacional de referencia para todas as questoes referentes a saude animal<SPLIT>.}
+Predicted: {
+alem disso<SPLIT>, a nova lei organica do lniv veio atribuir-lhe mais responsabilidades (<SPLIT>ver "<SPLIT>controlo da saude animal ganha terreno<SPLIT>"<SPLIT>, publico de 9-6-97<SPLIT>) no ambito das provas laboratoriais necessarias a<SPLIT>o controlo sanitario dos animais e seus produtos -- a par das normais competencias no ambito da investigacao e desenvolvimento (<SPLIT>i & d) e das que decorrem do seu estatuto de autoridade nacional de referencia para todas as questoes referentes a saude animal<SPLIT>.}
+False positives: {
+d)
+} False negatives: {
+d
+)
+}
+
+Expected: {
+a acabar confirmou a sua regularidade com 61,87<SPLIT>m<SPLIT>, 62,84<SPLIT>m e 63,09<SPLIT>m<SPLIT>.}
+Predicted: {
+a acabar confirmou a sua regularidade com 61,87m<SPLIT>, 62,84m e 63,09m<SPLIT>.}
+False positives: {
+61,87m
+62,84m
+63,09m
+} False negatives: {
+61,87
+m
+62,84
+m
+63,09
+m
+}
+
+Expected: {
+e.g.<SPLIT>: a a.b.p.<SPLIT>ganhou bastante e acrescento que nunca houve em delegacao nenhuma<SPLIT>,<SPLIT>uma tao grande afluencia de socios para a votacao<SPLIT>,<SPLIT>como se verificou nestas eleicoes<SPLIT>.}
+Predicted: {
+e.g.<SPLIT>: a a.b.p.ganhou bastante e acrescento que nunca houve em delegacao nenhuma<SPLIT>,<SPLIT>uma tao grande afluencia de socios para a votacao<SPLIT>,<SPLIT>como se verificou nestas eleicoes<SPLIT>.}
+False positives: {
+a.b.p.ganhou
+} False negatives: {
+a.b.p.
+ganhou
+}
+
+Expected: {
+as 17 horas<SPLIT>,<SPLIT>pode ser visto "<SPLIT>adamubies<SPLIT>" (<SPLIT>titulo de um poema de guimaraes rosa<SPLIT>)<SPLIT>,<SPLIT>projecto de musica cenica onde textos de miguel torga<SPLIT>,<SPLIT>clarice lispector<SPLIT>,<SPLIT>joao guimaraes rosa e agustina bessa-luis surgirao "<SPLIT>vestidos<SPLIT>" com musicas reinventadas a partir de matrizes populares do brasil<SPLIT>,<SPLIT>africa e portugal<SPLIT>.}
+Predicted: {
+as 17 horas<SPLIT>,<SPLIT>pode ser visto "<SPLIT>adamubies<SPLIT>" (<SPLIT>titulo de um poema de guimaraes rosa<SPLIT>)<SPLIT>,<SPLIT>projecto de musica cenica onde textos de miguel torga<SPLIT>,<SPLIT>clarice lispector,<SPLIT>joao guimaraes rosa e agustina bessa-luis surgirao "<SPLIT>vestidos<SPLIT>" com musicas reinventadas a partir de matrizes populares do brasil<SPLIT>,africa e portugal<SPLIT>.}
+False positives: {
+lispector,
+,africa
+} False negatives: {
+lispector
+,
+,
+africa
+}
+
+Expected: {
+portugal alinha com sandra turpin (<SPLIT>benfica<SPLIT>- 5218 pontos<SPLIT>)<SPLIT>, sonia machado (<SPLIT>individual<SPLIT>- 5061 p<SPLIT>)<SPLIT>, monica sousa (<SPLIT>gd cavadas<SPLIT>- 5122 pontos<SPLIT>) e catarina rafael (<SPLIT>bairro anjos<SPLIT>- 4602 pontos<SPLIT>)<SPLIT>.}
+Predicted: {
+portugal alinha com sandra turpin (<SPLIT>benfica- 5218 pontos<SPLIT>)<SPLIT>, sonia machado (<SPLIT>individual- 5061 p<SPLIT>)<SPLIT>, monica sousa (<SPLIT>gd cavadas- 5122 pontos<SPLIT>) e catarina rafael (<SPLIT>bairro anjos- 4602 pontos<SPLIT>)<SPLIT>.}
+False positives: {
+benfica-
+individual-
+cavadas-
+anjos-
+} False negatives: {
+benfica
+-
+individual
+-
+cavadas
+-
+anjos
+-
+}
+
+Expected: {
+sporting<SPLIT>-<SPLIT>vitoria de setubal e maritimo ou ovarense<SPLIT>-<SPLIT>fc porto<SPLIT>.}
+Predicted: {
+sporting-vitoria de setubal e maritimo ou ovarense-fc porto<SPLIT>.}
+False positives: {
+sporting-vitoria
+ovarense-fc
+} False negatives: {
+sporting
+-
+vitoria
+ovarense
+-
+fc
+}
+
+Expected: {
+na formula ford<SPLIT>, carlos azevedo (<SPLIT>swift<SPLIT>) regressou as vitorias<SPLIT>, terminando com uma vantagem de 2,328'' sobre rui aguas (<SPLIT>van diemen<SPLIT>) e 3,040'' sobre frederico viegas<SPLIT>.}
+Predicted: {
+na formula ford<SPLIT>, carlos azevedo (<SPLIT>swift<SPLIT>) regressou as vitorias<SPLIT>, terminando com uma vantagem de 2,328'' sobre rui aguas (<SPLIT>van diemen<SPLIT>) e 3,040<SPLIT>'' sobre frederico viegas<SPLIT>.}
+False positives: {
+3,040
+''
+} False negatives: {
+3,040''
+}
+
+Expected: {
+ontem a noite<SPLIT>, num clube desportivo de darwin<SPLIT>, muitos australianos sentaram-se a<SPLIT>o lado dos estudantes e levantaram-se para gritar "<SPLIT>viva a missao de paz!<SPLIT>"<SPLIT>, "<SPLIT>viva timor-leste<SPLIT>"<SPLIT>, "<SPLIT>viva xanana<SPLIT>"<SPLIT>, quando esta proxima a chegada do lusitania<SPLIT>.}
+Predicted: {
+ontem a noite<SPLIT>, num clube desportivo de darwin<SPLIT>, muitos australianos sentaram-se a<SPLIT>o lado dos estudantes e levantaram-se para gritar "<SPLIT>viva a missao de paz<SPLIT>!<SPLIT>"<SPLIT>, "<SPLIT>viva timor-leste<SPLIT>"<SPLIT>, "<SPLIT>viva xanana<SPLIT>"<SPLIT>, quando esta proxima a chegada do lusitania<SPLIT>.}
+False positives: {
+paz
+!
+} False negatives: {
+paz!
+}
+
+Expected: {
+pedia-se 62,50<SPLIT>m<SPLIT>, que quase ninguem fez<SPLIT>, mas ai nao residiu o problema<SPLIT>:}
+Predicted: {
+pedia-se 62,50m<SPLIT>, que quase ninguem fez<SPLIT>, mas ai nao residiu o problema<SPLIT>:}
+False positives: {
+62,50m
+} False negatives: {
+62,50
+m
+}
+
+Expected: {
+o holanda<SPLIT>-<SPLIT>jugoslavia e o argentina<SPLIT>-<SPLIT>inglaterra dos oitavos-de-final<SPLIT>?}
+Predicted: {
+o holanda-jugoslavia e o argentina-inglaterra dos oitavos-de-final<SPLIT>?}
+False positives: {
+holanda-jugoslavia
+argentina-inglaterra
+} False negatives: {
+holanda
+-
+jugoslavia
+argentina
+-
+inglaterra
+}
+
+Expected: {
+ao longo da semana o banco de portugal cedeu liquidez num montante superior a<SPLIT>o da semana anterior<SPLIT>, tendo mantido as taxas<SPLIT>.}
+Predicted: {
+a<SPLIT>o longo da semana o banco de portugal cedeu liquidez num montante superior a<SPLIT>o da semana anterior<SPLIT>, tendo mantido as taxas<SPLIT>.}
+False positives: {
+a
+o
+} False negatives: {
+ao
+}
+
+Expected: {
+os contactos -- de natureza informal<SPLIT>, nem sequer oficiosos -- tem sido com o sr. subsecretario de estado<SPLIT>-<SPLIT>adjunto da ministra<SPLIT>.}
+Predicted: {
+os contactos -- de natureza informal<SPLIT>, nem sequer oficiosos -- tem sido com o sr. subsecretario de estado-adjunto da ministra<SPLIT>.}
+False positives: {
+estado-adjunto
+} False negatives: {
+estado
+-
+adjunto
+}
+
+Expected: {
+o republica da irlanda<SPLIT>- espanha de hoje ja ajudara a definir posicoes<SPLIT>, mas devera ser o espanha<SPLIT>- dinamarca de 17 de novembro que tudo esclarecera<SPLIT>.}
+Predicted: {
+o republica da irlanda- espanha de hoje ja ajudara a definir posicoes<SPLIT>, mas devera ser o espanha- dinamarca de 17 de novembro que tudo esclarecera<SPLIT>.}
+False positives: {
+irlanda-
+espanha-
+} False negatives: {
+irlanda
+-
+espanha
+-
+}
+
+Expected: {
+para os ingleses<SPLIT>, o empate diante da franca por 1<SPLIT>x<SPLIT>1 pode ser considerado um bom resultado e agora eles esperam a vitoria em cima dos adversarios teoricamente mais fracos do grupo para se classificarem<SPLIT>.}
+Predicted: {
+para os ingleses<SPLIT>, o empate diante da franca por 1x1 pode ser considerado um bom resultado e agora eles esperam a vitoria em cima dos adversarios teoricamente mais fracos do grupo para se classificarem<SPLIT>.}
+False positives: {
+1x1
+} False negatives: {
+1
+x
+1
+}
+
+Expected: {
+o pai de josephine<SPLIT>, segundo a biografia oficial<SPLIT>, era o ator eddie carson http://www.cmgww.com/stars/baker/about/biography.html<SPLIT>.}
+Predicted: {
+o pai de josephine<SPLIT>, segundo a biografia oficial<SPLIT>, era o ator eddie carson http:/<SPLIT>/www.cmgww.com/stars/baker/about/biography.html<SPLIT>.}
+False positives: {
+http:/
+/www.cmgww.com/stars/baker/about/biography.html
+} False negatives: {
+http://www.cmgww.com/stars/baker/about/biography.html
+}
+
+Expected: {
+em poucas palavras<SPLIT>, d'<SPLIT>alessandro rebateu as vaias<SPLIT>, mas nao se escondeu do momento critico<SPLIT>.}
+Predicted: {
+em poucas palavras<SPLIT>, d'alessandro rebateu as vaias<SPLIT>, mas nao se escondeu do momento critico<SPLIT>.}
+False positives: {
+d'alessandro
+} False negatives: {
+d'
+alessandro
+}
+
+Expected: {
+o sistema brasileiro de televisao digital terrestre (<SPLIT>sbtvd - t<SPLIT>) foi implantado em 2006<SPLIT>.}
+Predicted: {
+o sistema brasileiro de televisao digital terrestre (<SPLIT>sbtvd - t) foi implantado em 2006<SPLIT>.}
+False positives: {
+t)
+} False negatives: {
+t
+)
+}
+
+Expected: {
+dois dos homicidios foram cometidos no bairro de sao mateus<SPLIT>, zona leste<SPLIT>, por um policial que estava de folga e atirou contra duas pessoas que ele acreditava estar planejando assalta<SPLIT>-<SPLIT>lo ou mata<SPLIT>-<SPLIT>lo<SPLIT>.}
+Predicted: {
+dois dos homicidios foram cometidos no bairro de sao mateus<SPLIT>, zona leste<SPLIT>, por um policial que estava de folga e atirou contra duas pessoas que ele acreditava estar planejando assalta-lo ou mata-lo<SPLIT>.}
+False positives: {
+assalta-lo
+mata-lo
+} False negatives: {
+assalta
+-
+lo
+mata
+-
+lo
+}
+
+Expected: {
+e ao que parece esta circulando pela internet um suposto boato de que estao trabalhando na producao dum quarto jogo<SPLIT>, o qual (<SPLIT>embora ainda em versoes beta<SPLIT>) podera ter o nome oficial myth iv<SPLIT>: the wind age<SPLIT>, que possivelmente se passara antes da era do lobo (<SPLIT>myth iii<SPLIT>)<SPLIT>, na chamada era do vento quando moagim ainda era tireces o imortal<SPLIT>, que derrotou o nivelador desta era<SPLIT>, o ser diabolico que atende pela alcunha de "<SPLIT>sorangath the flayed (<SPLIT>sorangath o desolado<SPLIT>)<SPLIT>"<SPLIT>.}
+Predicted: {
+e a<SPLIT>o que parece esta circulando pela internet um suposto boato de que estao trabalhando na producao dum quarto jogo<SPLIT>, o qual (<SPLIT>embora ainda em versoes beta<SPLIT>) podera ter o nome oficial myth iv<SPLIT>: the wind age<SPLIT>, que possivelmente se passara antes da era do lobo (<SPLIT>myth iii<SPLIT>)<SPLIT>, na chamada era do vento quando moagim ainda era tireces o imortal<SPLIT>, que derrotou o nivelador desta era<SPLIT>, o ser diabolico que atende pela alcunha de "<SPLIT>sorangath the flayed (<SPLIT>sorangath o desolado<SPLIT>)<SPLIT>"<SPLIT>.}
+False positives: {
+a
+o
+} False negatives: {
+ao
+}
+
+Expected: {
+ressalvou<SPLIT>, entretanto<SPLIT>, as minas ja utilizadas industrialmente na data da entrada em vigor da constituicao (<SPLIT>art. 119<SPLIT>, § 6 o<SPLIT>)<SPLIT>.}
+Predicted: {
+ressalvou<SPLIT>, entretanto<SPLIT>, as minas ja utilizadas industrialmente na data da entrada em vigor da constituicao (<SPLIT>art<SPLIT>. 119<SPLIT>, § 6 o<SPLIT>)<SPLIT>.}
+False positives: {
+art
+.
+} False negatives: {
+art.
+}
+
+Expected: {
+porem<SPLIT>o duelo em fortaleza comecou a todo o vapor<SPLIT>.}
+Predicted: {
+poremo duelo em fortaleza comecou a todo o vapor<SPLIT>.}
+False positives: {
+poremo
+} False negatives: {
+porem
+o
+}
+
+Expected: {
+possui uma declinacao de +07 ° 20 '<SPLIT>20 "<SPLIT>e uma ascensao recta de 4 horas<SPLIT>, 40 minutos e 09,8 segundos<SPLIT>.}
+Predicted: {
+possui uma declinacao de +07 ° 20 '20 "<SPLIT>e uma ascensao recta de 4 horas<SPLIT>, 40 minutos e 09,8 segundos<SPLIT>.}
+False positives: {
+'20
+} False negatives: {
+'
+20
+}
+
+Expected: {
+faz fronteira com aiello del friuli<SPLIT>, campolongo al torre<SPLIT>, chiopris - viscone<SPLIT>, medea (<SPLIT>go<SPLIT>)<SPLIT>, palmanova<SPLIT>, romans d'<SPLIT>isonzo (<SPLIT>go<SPLIT>)<SPLIT>, tapogliano<SPLIT>, trivignano udinese<SPLIT>, visco<SPLIT>.}
+Predicted: {
+faz fronteira com aiello del friuli<SPLIT>, campolongo al torre<SPLIT>, chiopris - viscone<SPLIT>, medea (<SPLIT>go<SPLIT>)<SPLIT>, palmanova<SPLIT>, romans d'isonzo (<SPLIT>go<SPLIT>)<SPLIT>, tapogliano<SPLIT>, trivignano udinese<SPLIT>, visco<SPLIT>.}
+False positives: {
+d'isonzo
+} False negatives: {
+d'
+isonzo
+}
+
+Expected: {
+fortes ventos causaram interrupcoes do fornecimento de energia para 500 pessoas nos condados de walton<SPLIT>, washington e bay.}
+Predicted: {
+fortes ventos causaram interrupcoes do fornecimento de energia para 500 pessoas nos condados de walton<SPLIT>, washington e bay<SPLIT>.}
+False positives: {
+bay
+.
+} False negatives: {
+bay.
+}
+
+Expected: {
+fernanda lima -- a frente do '<SPLIT>fica comigo<SPLIT>'<SPLIT>, especie de '<SPLIT>namoro na tv<SPLIT>' moderninho<SPLIT>, fernanda lima se tornou um rosto conhecido nacionalmente<SPLIT>.}
+Predicted: {
+fernanda lima -- a frente do '<SPLIT>fica comigo<SPLIT>'<SPLIT>, especie de '<SPLIT>namoro na tv' moderninho<SPLIT>, fernanda lima se tornou um rosto conhecido nacionalmente<SPLIT>.}
+False positives: {
+tv'
+} False negatives: {
+tv
+'
+}
+
+Expected: {
+como afirmei na semana passada<SPLIT>, comecei o programa de recuperacao '<SPLIT>road to recovery<SPLIT>' e estamos ansiosos para utilizar esses recursos e sua conclusao para voltar a competir num futuro proximo -- disse o piloto<SPLIT>.}
+Predicted: {
+como afirmei na semana passada<SPLIT>, comecei o programa de recuperacao '<SPLIT>road to recovery' e estamos ansiosos para utilizar esses recursos e sua conclusao para voltar a competir num futuro proximo -- disse o piloto<SPLIT>.}
+False positives: {
+recovery'
+} False negatives: {
+recovery
+'
+}
+
+Expected: {
+um estudo da un sobre planos nacionais para reduzir o carbono diz que estes estao bem abaixo dos niveis necessarios para manter o aumento de temperatura global abaixo dos 2<SPLIT>°<SPLIT>c<SPLIT>.}
+Predicted: {
+um estudo da un sobre planos nacionais para reduzir o carbono diz que estes estao bem abaixo dos niveis necessarios para manter o aumento de temperatura global abaixo dos 2°c<SPLIT>.}
+False positives: {
+2°c
+} False negatives: {
+2
+°
+c
+}
+
+Expected: {
+a taxa fixa da eon custa £<SPLIT>760 e os clientes da avro energy pagariam cerca de £<SPLIT>760 pela sua tarifa simple and select<SPLIT>.}
+Predicted: {
+a taxa fixa da eon custa £760 e os clientes da avro energy pagariam cerca de £760 pela sua tarifa simple and select<SPLIT>.}
+False positives: {
+£760
+£760
+} False negatives: {
+£
+760
+£
+760
+}
+
+Expected: {
+mas tendo permitido que glenda mandasse tao bem<SPLIT>, quem poderia culpa<SPLIT>-<SPLIT>lo<SPLIT>?}
+Predicted: {
+mas tendo permitido que glenda mandasse tao bem<SPLIT>, quem poderia culpa-lo<SPLIT>?}
+False positives: {
+culpa-lo
+} False negatives: {
+culpa
+-
+lo
+}
+
+Expected: {
+uma porta-voz da harley<SPLIT>-<SPLIT>davidson disse que os cronogramas que tem sobrevoado os meios de comunicacao - 2017 ou 2020 - nao sao precisos<SPLIT>.}
+Predicted: {
+uma porta-voz da harley-davidson disse que os cronogramas que tem sobrevoado os meios de comunicacao - 2017 ou 2020 - nao sao precisos<SPLIT>.}
+False positives: {
+harley-davidson
+} False negatives: {
+harley
+-
+davidson
+}
+
+Expected: {
+foi tao bem sucedido que os militares continuaram a usa<SPLIT>-<SPLIT>lo durante muitos anos apos a guerra e ainda estava em uso em alguns paises na decada de 1980<SPLIT>.}
+Predicted: {
+foi tao bem sucedido que os militares continuaram a usa-lo durante muitos anos apos a guerra e ainda estava em uso em alguns paises na decada de 1980<SPLIT>.}
+False positives: {
+usa-lo
+} False negatives: {
+usa
+-
+lo
+}

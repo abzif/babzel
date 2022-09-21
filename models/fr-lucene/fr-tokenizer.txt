@@ -1,0 +1,632 @@
+=== EVALUATION INFO ===
+Evaluation-Score=0.9982855335652578
+Training-Sample-Size=25677
+Evaluation-Sample-Size=2853
+Training-Algorithm=MAXENT_QN
+
+=== MODEL PROPERTIES ===
+Component-Name=TokenizerME
+Language=fr
+Manifest-Version=1.0
+OpenNLP-Version=1.9.4
+Timestamp=1662544423145
+TrainerType=Event
+Training-Eventhash=d067f2d51d058e14473d8a43d6e8d2b0
+alphaNumericPattern=^[A-Za-z0-9]+$
+factory=opennlp.tools.tokenize.TokenizerFactory
+useAlphaNumericOptimization=false
+
+=== MISCLASSIFIED DETAILS ===
+Expected: {
+quel est le veritable nom de "<SPLIT>dr. death<SPLIT>" ?}
+Predicted: {
+quel est le veritable nom de "<SPLIT>dr<SPLIT>. death<SPLIT>" ?}
+False positives: {
+dr
+.
+} False negatives: {
+dr.
+}
+
+Expected: {
+comment nomme<SPLIT>-t-on quelqu'<SPLIT>un dont la vue est courte ?}
+Predicted: {
+comment nomme<SPLIT>-t-on quelqu'un dont la vue est courte ?}
+False positives: {
+quelqu'un
+} False negatives: {
+quelqu'
+un
+}
+
+Expected: {
+douarnenez accueillera le spectacle de cloture<SPLIT>, pour trois representations vendredi 28 et samedi 29<SPLIT>, a 20<SPLIT>h<SPLIT>30 ;}
+Predicted: {
+douarnenez accueillera le spectacle de cloture<SPLIT>, pour trois representations vendredi 28 et samedi 29<SPLIT>, a 20h<SPLIT>30 ;}
+False positives: {
+20h
+} False negatives: {
+20
+h
+}
+
+Expected: {
+elle a existe en 2 et 5 places<SPLIT>, et une variante pick up a ete fournie par l'<SPLIT>entreprise de carrossiers independants (<SPLIT>gruau par ex<SPLIT>.<SPLIT>)}
+Predicted: {
+elle a existe en 2 et 5 places<SPLIT>, et une variante pick up a ete fournie par l'<SPLIT>entreprise de carrossiers independants (<SPLIT>gruau par ex.<SPLIT>)}
+False positives: {
+ex.
+} False negatives: {
+ex
+.
+}
+
+Expected: {
+en effet<SPLIT>, en frequences basses<SPLIT>, les sources de parasites sont generalement des sources de champ electrique (<SPLIT>l'<SPLIT>onde electromagnetique ne presentant un rapport e<SPLIT>/<SPLIT>h constant qu'<SPLIT>a une distance de la source egale environ a un quart de la longueur d'<SPLIT>onde<SPLIT>)<SPLIT>.}
+Predicted: {
+en effet<SPLIT>, en frequences basses<SPLIT>, les sources de parasites sont generalement des sources de champ electrique (<SPLIT>l'onde electromagnetique ne presentant un rapport e/<SPLIT>h constant qu'<SPLIT>a une distance de la source egale environ a un quart de la longueur d'<SPLIT>onde<SPLIT>)<SPLIT>.}
+False positives: {
+l'onde
+e/
+} False negatives: {
+l'
+onde
+e
+/
+}
+
+Expected: {
+vedel fut consulte a de nombreuses reprises par des gouvernements francais (<SPLIT>de la iv et de la v<SPLIT>) de toute obedience ainsi que par un certain nombre de gouvernements etrangers<SPLIT>.}
+Predicted: {
+vedel fut consulte a de nombreuses reprises par des gouvernements francais (<SPLIT>de la iv et de la v) de toute obedience ainsi que par un certain nombre de gouvernements etrangers<SPLIT>.}
+False positives: {
+v)
+} False negatives: {
+v
+)
+}
+
+Expected: {
+(<SPLIT>source : commentcamarche.net http://www.commentcamarche.net/elec/connecteur-prise-db25.php3<SPLIT>)}
+Predicted: {
+(<SPLIT>source : commentcamarche.net http://www.commentcamarche.net<SPLIT>/<SPLIT>elec/<SPLIT>connecteur-prise-db25.php3<SPLIT>)}
+False positives: {
+http://www.commentcamarche.net
+/
+elec/
+connecteur-prise-db25.php3
+} False negatives: {
+http://www.commentcamarche.net/elec/connecteur-prise-db25.php3
+}
+
+Expected: {
+elle apparait dans la campagne louis vuitton de la fin de la saison hiver 2010<SPLIT>/<SPLIT>11 avec natalia vodianova et christy turlington<SPLIT>, ainsi que dans la campagne de printemps 2011 de trussardi 1911<SPLIT>.}
+Predicted: {
+elle apparait dans la campagne louis vuitton de la fin de la saison hiver 2010/<SPLIT>11 avec natalia vodianova et christy turlington<SPLIT>, ainsi que dans la campagne de printemps 2011 de trussardi 1911<SPLIT>.}
+False positives: {
+2010/
+} False negatives: {
+2010
+/
+}
+
+Expected: {
+dans sa jeunesse rex stewart est tres influence par le style de musiciens comme louis armstrong<SPLIT>, bubber miley<SPLIT>, mais aussi<SPLIT>, bix beiderbecke (<SPLIT>dont il reprendra le solo sur " singin<SPLIT>'<SPLIT>the blues " lors de son passage chez fletcher henderson<SPLIT>)<SPLIT>.}
+Predicted: {
+dans sa jeunesse rex stewart est tres influence par le style de musiciens comme louis armstrong<SPLIT>, bubber miley<SPLIT>, mais aussi<SPLIT>, bix beiderbecke (<SPLIT>dont il reprendra le solo sur " singin'<SPLIT>the blues " lors de son passage chez fletcher henderson<SPLIT>)<SPLIT>.}
+False positives: {
+singin'
+} False negatives: {
+singin
+'
+}
+
+Expected: {
+apres ses methodes ont ete utilisees dans beaucoup de sujets comme la geometrie algebrique<SPLIT>, l'<SPLIT>algebre<SPLIT>, theorie des nombres<SPLIT>, theorie des operateurs<SPLIT>, etc.}
+Predicted: {
+apres ses methodes ont ete utilisees dans beaucoup de sujets comme la geometrie algebrique<SPLIT>, l'<SPLIT>algebre<SPLIT>, theorie des nombres<SPLIT>, theorie des operateurs<SPLIT>, etc<SPLIT>.}
+False positives: {
+etc
+.
+} False negatives: {
+etc.
+}
+
+Expected: {
+bref<SPLIT>, c'<SPLIT>est devenu un de nos endroits favoris pour nous amuser entre amis sans trop se ruiner (<SPLIT>les prix sont vraiment raisonnable<SPLIT>)<SPLIT>, on y retournera c'<SPLIT>est sur :-)}
+Predicted: {
+bref<SPLIT>, c'<SPLIT>est devenu un de nos endroits favoris pour nous amuser entre amis sans trop se ruiner (<SPLIT>les prix sont vraiment raisonnable<SPLIT>)<SPLIT>, on y retournera c'<SPLIT>est sur :-<SPLIT>)}
+False positives: {
+:-
+)
+} False negatives: {
+:-)
+}
+
+Expected: {
+c'<SPLIT>est un animal gregaire et se mele souvent a d'<SPLIT>autres especes de bruants ou de pinsons (<SPLIT>fringilla spp<SPLIT>.<SPLIT>)}
+Predicted: {
+c'<SPLIT>est un animal gregaire et se mele souvent a d'<SPLIT>autres especes de bruants ou de pinsons (<SPLIT>fringilla spp.<SPLIT>)}
+False positives: {
+spp.
+} False negatives: {
+spp
+.
+}
+
+Expected: {
+tandis que le kpd (<SPLIT>parti communiste<SPLIT>) et l'<SPLIT>uspd (<SPLIT>parti social<SPLIT>-<SPLIT>democrate independant<SPLIT>) saluent cette proposition<SPLIT>, le ministere des affaires etrangeres<SPLIT>, le spd et des medias bourgeois conservateurs reprochent a eisner de trahir les interets allemands par sa naivete politique et de donner aux allies une raison de poursuivre leur politique de revanche<SPLIT>.}
+Predicted: {
+tandis que le kpd (<SPLIT>parti communiste<SPLIT>) et l'<SPLIT>uspd (<SPLIT>parti social-democrate independant<SPLIT>) saluent cette proposition<SPLIT>, le ministere des affaires etrangeres<SPLIT>, le spd et des medias bourgeois conservateurs reprochent a eisner de trahir les interets allemands par sa naivete politique et de donner aux allies une raison de poursuivre leur politique de revanche<SPLIT>.}
+False positives: {
+social-democrate
+} False negatives: {
+social
+-
+democrate
+}
+
+Expected: {
+le diplome acquis a l'<SPLIT>issue de cette formation peut<SPLIT>-<SPLIT>etre admis dans de nombreux pays etrangers comme equivalence d'<SPLIT>une annee d'<SPLIT>etude du cycle d'<SPLIT>une universite francaise<SPLIT>.}
+Predicted: {
+le diplome acquis a l'<SPLIT>issue de cette formation peut-etre admis dans de nombreux pays etrangers comme equivalence d'<SPLIT>une annee d'<SPLIT>etude du cycle d'<SPLIT>une universite francaise<SPLIT>.}
+False positives: {
+peut-etre
+} False negatives: {
+peut
+-
+etre
+}
+
+Expected: {
+une seconde eglise fut batie par les moines de l'<SPLIT>ile-d'aix<SPLIT>.}
+Predicted: {
+une seconde eglise fut batie par les moines de l'<SPLIT>ile-d'<SPLIT>aix<SPLIT>.}
+False positives: {
+ile-d'
+aix
+} False negatives: {
+ile-d'aix
+}
+
+Expected: {
+mais voila : la pluie de dollars sur l'<SPLIT>egypte et israel n'<SPLIT>a pas empeche le pire d'<SPLIT>arriver :<SPLIT>'<SPLIT>une secousse d'<SPLIT>en bas<SPLIT>'<SPLIT>, dans la societe civile du peuple egyptien<SPLIT>, encouragee par l'<SPLIT>exemple tunisien !}
+Predicted: {
+mais voila : la pluie de dollars sur l'<SPLIT>egypte et israel n'<SPLIT>a pas empeche le pire d'<SPLIT>arriver :'<SPLIT>une secousse d'<SPLIT>en bas'<SPLIT>, dans la societe civile du peuple egyptien<SPLIT>, encouragee par l'<SPLIT>exemple tunisien !}
+False positives: {
+:'
+bas'
+} False negatives: {
+:
+'
+bas
+'
+}
+
+Expected: {
+vers 6<SPLIT>h<SPLIT>30<SPLIT>, le roi christian x<SPLIT>, apres s'<SPLIT>etre entretenu avec le premier ministre thorvald stauning<SPLIT>, decida de capituler<SPLIT>, convaincu que toute resistance prolongee ne resulterait qu'<SPLIT>en la perte inutile de nouvelles vies danoises<SPLIT>.}
+Predicted: {
+vers 6h30<SPLIT>, le roi christian x<SPLIT>, apres s'<SPLIT>etre entretenu avec le premier ministre thorvald stauning<SPLIT>, decida de capituler<SPLIT>, convaincu que toute resistance prolongee ne resulterait qu'<SPLIT>en la perte inutile de nouvelles vies danoises<SPLIT>.}
+False positives: {
+6h30
+} False negatives: {
+6
+h
+30
+}
+
+Expected: {
+les hivers sont tres froids<SPLIT>, avec des temperatures tombant a −25 °<SPLIT>c<SPLIT>, et les etes sont temperes<SPLIT>, avec des temperatures qui ne depassent guere 35 °<SPLIT>c<SPLIT>.}
+Predicted: {
+les hivers sont tres froids<SPLIT>, avec des temperatures tombant a −25 °c<SPLIT>, et les etes sont temperes<SPLIT>, avec des temperatures qui ne depassent guere 35 °c<SPLIT>.}
+False positives: {
+°c
+°c
+} False negatives: {
+°
+c
+°
+c
+}
+
+Expected: {
+ses activites sont coordonnees par le secretariat international base a la haye (<SPLIT>pays-bas<SPLIT>) et dirige par la secretaire generale sneska quaedvlieg-mihailovic (<SPLIT>pays-bas/serbie<SPLIT>)<SPLIT>.}
+Predicted: {
+ses activites sont coordonnees par le secretariat international base a la haye (<SPLIT>pays-bas<SPLIT>) et dirige par la secretaire generale sneska quaedvlieg-mihailovic (<SPLIT>pays-bas<SPLIT>/<SPLIT>serbie<SPLIT>)<SPLIT>.}
+False positives: {
+pays-bas
+/
+serbie
+} False negatives: {
+pays-bas/serbie
+}
+
+Expected: {
+quand il faut representer [<SPLIT>gj<SPLIT>] et [<SPLIT>nj<SPLIT>]<SPLIT>, on remplace le j par i<SPLIT>, afin d'<SPLIT>eviter l'<SPLIT>ambiguite : [<SPLIT>gja<SPLIT>] s'<SPLIT>ecrit donc gia<SPLIT>, gja notant deja [<SPLIT>ja<SPLIT>]<SPLIT>.}
+Predicted: {
+quand il faut representer [<SPLIT>gj<SPLIT>] et [<SPLIT>nj<SPLIT>]<SPLIT>, on remplace le j par i<SPLIT>, afin d'<SPLIT>eviter l'<SPLIT>ambiguite : [<SPLIT>gja<SPLIT>] s'<SPLIT>ecrit donc gia<SPLIT>, gja notant deja [<SPLIT>ja]<SPLIT>.}
+False positives: {
+ja]
+} False negatives: {
+ja
+]
+}
+
+Expected: {
+la figure c<SPLIT>) illustre une evolution similaire pour les prix et le volume des vente des logements neufs en ile-de-france<SPLIT>.}
+Predicted: {
+la figure c) illustre une evolution similaire pour les prix et le volume des vente des logements neufs en ile-de-france<SPLIT>.}
+False positives: {
+c)
+} False negatives: {
+c
+)
+}
+
+Expected: {
+avec en plus facturation de 3h de main d'<SPLIT>oeuvre pour une revision qui au bas mot prend 1h30<SPLIT>/<SPLIT>2h maximum<SPLIT>.}
+Predicted: {
+avec en plus facturation de 3h de main d'<SPLIT>oeuvre pour une revision qui au bas mot prend 1h<SPLIT>30<SPLIT>/<SPLIT>2h maximum<SPLIT>.}
+False positives: {
+1h
+30
+} False negatives: {
+1h30
+}
+
+Expected: {
+concernant le transport aerien<SPLIT>, aeroport agen<SPLIT>-<SPLIT>la garenne ou aeroport toulouse-blagnac<SPLIT>.}
+Predicted: {
+concernant le transport aerien<SPLIT>, aeroport agen<SPLIT>-la garenne ou aeroport toulouse-blagnac<SPLIT>.}
+False positives: {
+-la
+} False negatives: {
+-
+la
+}
+
+Expected: {
+time investit au coeur de la revolution numerique en financant en fonds propres le developpement d'<SPLIT>entreprises europeennes innovantes et en croissance rapide du secteur des telecoms<SPLIT>/<SPLIT>internet<SPLIT>/<SPLIT>media<SPLIT>/<SPLIT>e-business<SPLIT>.}
+Predicted: {
+time investit au coeur de la revolution numerique en financant en fonds propres le developpement d'<SPLIT>entreprises europeennes innovantes et en croissance rapide du secteur des telecoms/internet<SPLIT>/<SPLIT>media<SPLIT>/e-business<SPLIT>.}
+False positives: {
+telecoms/internet
+/e-business
+} False negatives: {
+telecoms
+/
+internet
+/
+e-business
+}
+
+Expected: {
+ces suicides<SPLIT>, suivis d'<SPLIT>autres cas chez psa peugeot<SPLIT>-<SPLIT>citroen en 2007<SPLIT>, avaient souleve au plan national la question de la souffrance au travail<SPLIT>.}
+Predicted: {
+ces suicides<SPLIT>, suivis d'<SPLIT>autres cas chez psa peugeot-citroen en 2007<SPLIT>, avaient souleve au plan national la question de la souffrance au travail<SPLIT>.}
+False positives: {
+peugeot-citroen
+} False negatives: {
+peugeot
+-
+citroen
+}
+
+Expected: {
+par exemple<SPLIT>, le 10 fevrier 1956 on relevait −21,4 °<SPLIT>c alors que la temperature minimum moyenne est de l'<SPLIT>ordre de −1 °<SPLIT>c<SPLIT>.}
+Predicted: {
+par exemple<SPLIT>, le 10 fevrier 1956 on relevait −21,4 °c alors que la temperature minimum moyenne est de l'<SPLIT>ordre de −1 °c<SPLIT>.}
+False positives: {
+°c
+°c
+} False negatives: {
+°
+c
+°
+c
+}
+
+Expected: {
+traduite en presque trente langues<SPLIT>, la saga d'<SPLIT>angelique<SPLIT>, parue en librairie et en feuilleton dans la presse<SPLIT>, aborde des 1956 des themes alors tabous comme les sorcieres guerisseuses<SPLIT>, l'<SPLIT>amour physique<SPLIT>, l'<SPLIT>ostracisme de l'<SPLIT>eglise<SPLIT>, la persecution des protestants<SPLIT>, le viol<SPLIT>, l'<SPLIT>esclavage des chretiens<SPLIT>, la foi des amerindien etc.<SPLIT>..}
+Predicted: {
+traduite en presque trente langues<SPLIT>, la saga d'<SPLIT>angelique<SPLIT>, parue en librairie et en feuilleton dans la presse<SPLIT>, aborde des 1956 des themes alors tabous comme les sorcieres guerisseuses<SPLIT>, l'<SPLIT>amour physique<SPLIT>, l'<SPLIT>ostracisme de l'<SPLIT>eglise<SPLIT>, la persecution des protestants<SPLIT>, le viol<SPLIT>, l'<SPLIT>esclavage des chretiens<SPLIT>, la foi des amerindien etc<SPLIT>...}
+False positives: {
+etc
+...
+} False negatives: {
+etc.
+..
+}
+
+Expected: {
+l'<SPLIT>axe paris<SPLIT>-<SPLIT>tel-aviv<SPLIT>-<SPLIT>cnt fonctionnait alors a plein regime<SPLIT>.}
+Predicted: {
+l'<SPLIT>axe paris-tel-aviv-cnt fonctionnait alors a plein regime<SPLIT>.}
+False positives: {
+paris-tel-aviv-cnt
+} False negatives: {
+paris
+-
+tel-aviv
+-
+cnt
+}
+
+Expected: {
+le second single<SPLIT>, let's work<SPLIT>, s'<SPLIT>est positionne a la 9e place au hot r&b/hip-hop songs en 1982<SPLIT>.}
+Predicted: {
+le second single<SPLIT>, let's work<SPLIT>, s'<SPLIT>est positionne a la 9e place au hot r&b<SPLIT>/<SPLIT>hip-hop songs en 1982<SPLIT>.}
+False positives: {
+r&b
+/
+hip-hop
+} False negatives: {
+r&b/hip-hop
+}
+
+Expected: {
+ce pays<SPLIT>, qui n'<SPLIT>a pas de matiere premiere<SPLIT>, vit de l'<SPLIT>argent d'<SPLIT>autrui [<SPLIT>...<SPLIT>]<SPLIT>.}
+Predicted: {
+ce pays<SPLIT>, qui n'<SPLIT>a pas de matiere premiere<SPLIT>, vit de l'<SPLIT>argent d'<SPLIT>autrui [<SPLIT>...]<SPLIT>.}
+False positives: {
+...]
+} False negatives: {
+...
+]
+}
+
+Expected: {
+sur france 2<SPLIT>, l'<SPLIT>emission speciale commencera<SPLIT>, quant a elle<SPLIT>, a 15<SPLIT>h<SPLIT>45<SPLIT>.}
+Predicted: {
+sur france 2<SPLIT>, l'<SPLIT>emission speciale commencera<SPLIT>, quant a elle<SPLIT>, a 15<SPLIT>h45<SPLIT>.}
+False positives: {
+h45
+} False negatives: {
+h
+45
+}
+
+Expected: {
+en effet<SPLIT>, en janvier 2008 il signe au oakleigh cannons.}
+Predicted: {
+en effet<SPLIT>, en janvier 2008 il signe au oakleigh cannons<SPLIT>.}
+False positives: {
+cannons
+.
+} False negatives: {
+cannons.
+}
+
+Expected: {
+gornja brvenica (<SPLIT>en serbe cyrillique :<SPLIT>горња брвеница<SPLIT>) est un village du nord du montenegro<SPLIT>, dans la municipalite de pljevlja<SPLIT>.}
+Predicted: {
+gornja brvenica (<SPLIT>en serbe cyrillique :горња брвеница<SPLIT>) est un village du nord du montenegro<SPLIT>, dans la municipalite de pljevlja<SPLIT>.}
+False positives: {
+:горња
+} False negatives: {
+:
+горња
+}
+
+Expected: {
+un ticket t+ permet un trajet simple quelle que soit la distance avec une ou plusieurs correspondances possibles avec les lignes de bus et de tramway pendant une duree maximale de 1<SPLIT>h<SPLIT>30 entre la premiere et derniere validation<SPLIT>, mais pas avec le metro ni le rer<SPLIT>.}
+Predicted: {
+un ticket t+ permet un trajet simple quelle que soit la distance avec une ou plusieurs correspondances possibles avec les lignes de bus et de tramway pendant une duree maximale de 1h<SPLIT>30 entre la premiere et derniere validation<SPLIT>, mais pas avec le metro ni le rer<SPLIT>.}
+False positives: {
+1h
+} False negatives: {
+1
+h
+}
+
+Expected: {
+irrite<SPLIT>, je verifie en versant mon verre dans deux verres normaux de 16<SPLIT>cl et m'<SPLIT>apercois que j'<SPLIT>en rempli un et l'<SPLIT>autre a un quart<SPLIT>.}
+Predicted: {
+irrite<SPLIT>, je verifie en versant mon verre dans deux verres normaux de 16cl et m'<SPLIT>apercois que j'<SPLIT>en rempli un et l'<SPLIT>autre a un quart<SPLIT>.}
+False positives: {
+16cl
+} False negatives: {
+16
+cl
+}
+
+Expected: {
+le reste de la riviere entre ces deux points revient a benjamin a. scott<SPLIT>, un entrepreneur de chicoutimi qui gere une scierie a roberval<SPLIT>.}
+Predicted: {
+le reste de la riviere entre ces deux points revient a benjamin a<SPLIT>. scott<SPLIT>, un entrepreneur de chicoutimi qui gere une scierie a roberval<SPLIT>.}
+False positives: {
+a
+.
+} False negatives: {
+a.
+}
+
+Expected: {
+leur tout premier raid est connu sous le nom de " great habbo raid of<SPLIT>'06 " et a<SPLIT>, par la suite<SPLIT>, ete suivi du " great habbo raid of<SPLIT>'07 "<SPLIT>.}
+Predicted: {
+leur tout premier raid est connu sous le nom de " great habbo raid of'06 " et a<SPLIT>, par la suite<SPLIT>, ete suivi du " great habbo raid of'<SPLIT>07 "<SPLIT>.}
+False positives: {
+of'06
+of'
+07
+} False negatives: {
+of
+'06
+of
+'07
+}
+
+Expected: {
+aizenay est situe a 16 km au nord-ouest de la roche-sur-yon<SPLIT>, de saint-gilles-croix-de-vie et de challans et des sables-d'olonne (<SPLIT>sur la cote vendeenne<SPLIT>)}
+Predicted: {
+aizenay est situe a 16 km au nord-ouest de la roche-sur-yon<SPLIT>, de saint-gilles-croix-de-vie et de challans et des sables-d'<SPLIT>olonne (<SPLIT>sur la cote vendeenne<SPLIT>)}
+False positives: {
+sables-d'
+olonne
+} False negatives: {
+sables-d'olonne
+}
+
+Expected: {
+pour 30<SPLIT>/<SPLIT>40 € vous pourrez imprimer votre poster en a0 en mat ou brillant a condition qu'<SPLIT>ils aient le papier en stock !}
+Predicted: {
+pour 30<SPLIT>/40 € vous pourrez imprimer votre poster en a0 en mat ou brillant a condition qu'<SPLIT>ils aient le papier en stock !}
+False positives: {
+/40
+} False negatives: {
+/
+40
+}
+
+Expected: {
+il y a aussi un monument a la memoire de martin luther king jr<SPLIT>.}
+Predicted: {
+il y a aussi un monument a la memoire de martin luther king jr.}
+False positives: {
+jr.
+} False negatives: {
+jr
+.
+}
+
+Expected: {
+je voudrais demander a la vice<SPLIT>-<SPLIT>presidente si elle peut nous dire ou en sont les efforts d'<SPLIT>harmonisation deployes par ces deux organisations et si l'<SPLIT>ue a la possibilite d'<SPLIT>accelerer ces efforts en appliquant des principes aussi simples que possibles<SPLIT>.}
+Predicted: {
+je voudrais demander a la vice-presidente si elle peut nous dire ou en sont les efforts d'<SPLIT>harmonisation deployes par ces deux organisations et si l'<SPLIT>ue a la possibilite d'<SPLIT>accelerer ces efforts en appliquant des principes aussi simples que possibles<SPLIT>.}
+False positives: {
+vice-presidente
+} False negatives: {
+vice
+-
+presidente
+}
+
+Expected: {
+si une telle decision est prise a l'<SPLIT>egard d'<SPLIT>un seul des etats adherents<SPLIT>, le present traite entre en<SPLIT>vigueur pour ledit etat le 1 janvier 2008<SPLIT>.}
+Predicted: {
+si une telle decision est prise a l'<SPLIT>egard d'<SPLIT>un seul des etats adherents<SPLIT>, le present traite entre envigueur pour ledit etat le 1 janvier 2008<SPLIT>.}
+False positives: {
+envigueur
+} False negatives: {
+en
+vigueur
+}
+
+Expected: {
+nous allons voter sur la demande du groupe ppe<SPLIT>-<SPLIT>de visant a retirer la question orale concernant l'<SPLIT>impot sur le capital de l'<SPLIT>ordre du jour<SPLIT>.}
+Predicted: {
+nous allons voter sur la demande du groupe ppe-de visant a retirer la question orale concernant l'<SPLIT>impot sur le capital de l'<SPLIT>ordre du jour<SPLIT>.}
+False positives: {
+ppe-de
+} False negatives: {
+ppe
+-
+de
+}
+
+Expected: {
+l'<SPLIT>ordre du jour appelle le rapport (<SPLIT>a5-0104<SPLIT>/<SPLIT>1999<SPLIT>) de m. koch<SPLIT>, au nom de la commission de la politique regionale<SPLIT>, des transports et du tourisme<SPLIT>, sur la proposition de directive du parlement europeen et du conseil modifiant la directive 94<SPLIT>/<SPLIT>55<SPLIT>/<SPLIT>ce relative au rapprochement des legislations des etats membres concernant le transport de marchandises dangereuses par route (<SPLIT>com (<SPLIT>1999<SPLIT>) 158<SPLIT>-<SPLIT>c5-0004<SPLIT>/<SPLIT>1999<SPLIT>-<SPLIT>1999<SPLIT>/<SPLIT>0083 (<SPLIT>cod<SPLIT>)<SPLIT>)<SPLIT>.}
+Predicted: {
+l'<SPLIT>ordre du jour appelle le rapport (<SPLIT>a5-0104/1999<SPLIT>) de m. koch<SPLIT>, au nom de la commission de la politique regionale<SPLIT>, des transports et du tourisme<SPLIT>, sur la proposition de directive du parlement europeen et du conseil modifiant la directive 94<SPLIT>/<SPLIT>55<SPLIT>/<SPLIT>ce relative au rapprochement des legislations des etats membres concernant le transport de marchandises dangereuses par route (<SPLIT>com (<SPLIT>1999<SPLIT>) 158-c5-0004/1999-1999/0083 (<SPLIT>cod<SPLIT>)<SPLIT>)<SPLIT>.}
+False positives: {
+a5-0104/1999
+158-c5-0004/1999-1999/0083
+} False negatives: {
+a5-0104
+/
+1999
+158
+-
+c5-0004
+/
+1999
+-
+1999
+/
+0083
+}
+
+Expected: {
+et du coup j'<SPLIT>ai pense de ne pas passer par euh cette rue-la<SPLIT>, mais plutot faire un bout de detour<SPLIT>, parce que il y a une autre rue plus grande vers chez moi<SPLIT>.}
+Predicted: {
+et du coup j'<SPLIT>ai pense de ne pas passer par euh cette rue<SPLIT>-la<SPLIT>, mais plutot faire un bout de detour<SPLIT>, parce que il y a une autre rue plus grande vers chez moi<SPLIT>.}
+False positives: {
+rue
+-la
+} False negatives: {
+rue-la
+}
+
+Expected: {
+et les pieds<SPLIT>, crois<SPLIT>-tu<SPLIT>, crois<SPLIT>-tu que c'<SPLIT>est<SPLIT>... ?}
+Predicted: {
+et les pieds<SPLIT>, crois-tu<SPLIT>, crois-tu que c'<SPLIT>est<SPLIT>... ?}
+False positives: {
+crois-tu
+crois-tu
+} False negatives: {
+crois
+-tu
+crois
+-tu
+}
+
+Expected: {
+le programme<SPLIT>, monsieur le premier ministre<SPLIT>, comporte un certain nombre de projets<SPLIT>, d'autant plus interessants a nos yeux que nous les proposons depuis longtemps<SPLIT>: relevement du smic<SPLIT>, amnistie pour les commercants et les artisans<SPLIT>, aide aux chomeurs partiels<SPLIT>, egalisation des salaires feminins et masculins<SPLIT>, participation accrue des cadres aux conseils d'<SPLIT>administration des societes<SPLIT>, reforme du droit de licenciement<SPLIT>, nomination d'<SPLIT>un mediateur entre l'<SPLIT>administration et le public<SPLIT>, controle des depenses electorales<SPLIT>, toutes mesures qui dormaient dans vos cartons<SPLIT>, que vos predecesseurs avaient energiquement refusees<SPLIT>, et que l'on retrouve dans le programme commun de la gauche<SPLIT>.}
+Predicted: {
+le programme<SPLIT>, monsieur le premier ministre<SPLIT>, comporte un certain nombre de projets<SPLIT>, d'<SPLIT>autant plus interessants a nos yeux que nous les proposons depuis longtemps<SPLIT>: relevement du smic<SPLIT>, amnistie pour les commercants et les artisans<SPLIT>, aide aux chomeurs partiels<SPLIT>, egalisation des salaires feminins et masculins<SPLIT>, participation accrue des cadres aux conseils d'<SPLIT>administration des societes<SPLIT>, reforme du droit de licenciement<SPLIT>, nomination d'<SPLIT>un mediateur entre l'<SPLIT>administration et le public<SPLIT>, controle des depenses electorales<SPLIT>, toutes mesures qui dormaient dans vos cartons<SPLIT>, que vos predecesseurs avaient energiquement refusees<SPLIT>, et que l'on retrouve dans le programme commun de la gauche<SPLIT>.}
+False positives: {
+d'
+autant
+} False negatives: {
+d'autant
+}
+
+Expected: {
+le vehicule a ete enleve un peu apres 20<SPLIT>h<SPLIT>.}
+Predicted: {
+le vehicule a ete enleve un peu apres 20h<SPLIT>.}
+False positives: {
+20h
+} False negatives: {
+20
+h
+}
+
+Expected: {
+a 12 mois<SPLIT>, les taux de<SPLIT>-ctx ont ete reduits significativement de 61<SPLIT>% par rapport aux valeurs initiales et a 36 mois cette reduction s'<SPLIT>est maintenue a 55<SPLIT>% en-dessous des valeurs initiales<SPLIT>.}
+Predicted: {
+a 12 mois<SPLIT>, les taux de-ctx ont ete reduits significativement de 61<SPLIT>% par rapport aux valeurs initiales et a 36 mois cette reduction s'<SPLIT>est maintenue a 55<SPLIT>% en-dessous des valeurs initiales<SPLIT>.}
+False positives: {
+de-ctx
+} False negatives: {
+de
+-ctx
+}
+
+Expected: {
+de plus<SPLIT>, je suis tres satisfait de la reponse de m. lamy -<SPLIT>il ne pouvait en etre autrement etant donne que m. lamy connait bien ces sujets<SPLIT>- de decentraliser la campagne d'<SPLIT>information<SPLIT>.}
+Predicted: {
+de plus<SPLIT>, je suis tres satisfait de la reponse de m. lamy -il ne pouvait en etre autrement etant donne que m. lamy connait bien ces sujets<SPLIT>- de decentraliser la campagne d'<SPLIT>information<SPLIT>.}
+False positives: {
+-il
+} False negatives: {
+-
+il
+}
+
+Expected: {
+- hlm de paris : les seuls patrons du batiment a la barre -<SPLIT>liberation<SPLIT>- 23/12/2006}
+Predicted: {
+- hlm de paris : les seuls patrons du batiment a la barre -liberation<SPLIT>- 23/<SPLIT>12<SPLIT>/<SPLIT>2006}
+False positives: {
+-liberation
+23/
+12
+/
+2006
+} False negatives: {
+-
+liberation
+23/12/2006
+}
