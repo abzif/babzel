@@ -5,13 +5,23 @@
     <artifactId>babzel</artifactId>
     <version>0.0.3</version>
     <packaging>pom</packaging>
+    <url>https://abzif.github.io/babzel</url>
+
+    <scm>
+        <url>https://github.com/abzif/babzel</url>
+        <connection>scm:git:https://github.com/abzif/babzel.git</connection>
+        <developerConnection>scm:git:git@github.com:abzif/babzel.git</developerConnection>
+    </scm>
 
     <distributionManagement>
         <repository>
             <id>github</id>
-            <name>GitHub abzif Apache Maven Packages</name>
             <url>https://maven.pkg.github.com/abzif/babzel</url>
         </repository>
+        <site>
+            <id>github</id>
+            <url>${project.url}</url>
+        </site>
     </distributionManagement>
 
     <properties>
@@ -153,8 +163,84 @@
                         <createDependencyReducedPom>false</createDependencyReducedPom>
                     </configuration>
                 </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>3.12.1</version>
+                    <configuration>
+                        <skip>true</skip>
+                        <skipDeploy>true</skipDeploy>
+                        <generateProjectInfo>false</generateProjectInfo>
+                        <generateReports>false</generateReports>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>exec-maven-plugin</artifactId>
+                    <version>3.1.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.github.github</groupId>
+                    <artifactId>site-maven-plugin</artifactId>
+                    <version>0.12</version>
+                    <configuration>
+                        <server>github</server>
+                        <message>Site publish</message>
+                        <noJekyll>true</noJekyll>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <phase>site-deploy</phase>
+                            <goals>
+                                <goal>site</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
             </plugins>
         </pluginManagement>
+
+        <plugins>
+            <plugin>
+                <inherited>false</inherited>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <configuration>
+                    <executable>jshell</executable>
+                    <arguments>
+                        <argument>--execution</argument>
+                        <argument>local</argument>
+                        <argument>-J-Djava.opts=-Xmx6g</argument>
+                        <argument>-J-Dtools.simple.jar=${project.basedir}/babzel-tools-simple/target/babzel-tools-simple-${project.version}.jar</argument>
+                        <argument>-J-Dtools.lucene.jar=${project.basedir}/babzel-tools-lucene/target/babzel-tools-lucene-${project.version}.jar</argument>
+                        <argument>-J-Dwork.dir=${project.basedir}/cache</argument>
+                        <argument>-J-Dsite.dir=${project.basedir}/target/generated-site</argument>
+                        <argument>${project.basedir}/src/site/generate-models.jsh</argument>
+                    </arguments>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>pre-site</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <inherited>false</inherited>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <configuration>
+                    <skip>false</skip>
+                </configuration>
+            </plugin>
+            <plugin>
+                <inherited>false</inherited>
+                <groupId>com.github.github</groupId>
+                <artifactId>site-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
     </build>
 
     <modules>

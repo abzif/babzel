@@ -1,4 +1,4 @@
-# Babzel
+# Babzel - OpenNLP models generator
 
 Babzel is a library which allows computing models for [Apache OpenNLP](https://opennlp.apache.org) from [Universal Dependencies](https://universaldependencies.org) annotated language files.
 OpenNLP supports natural language processing with tools like: sentence detector, tokenizer, part of speech tagger, lemmatizer etc.

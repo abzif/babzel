@@ -41,7 +41,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class ToolsCmd {
     public static void main(String[] args) {
         try ( var ctx = new AnnotationConfigApplicationContext(ToolsConfig.class)) {
-            if (args.length == 2 || args.length == 3) {
+            if (args != null && (args.length == 2 || args.length == 3)) {
                 var cmd = args[0];
                 var language = args[1];
                 var workDir = args.length == 3 ? args[2] : "";
