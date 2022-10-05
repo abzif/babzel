@@ -11,22 +11,23 @@ jobs:
           java-version: '11'
           cache: 'maven'
           server-id: github
-      - run: mvn clean deploy
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
+      - run: mvn clean install
       - uses: actions/delete-package-versions@v3
         with:
           package-name: 'org.babzel.babzel'
-          min-versions-to-keep: 1
+          min-versions-to-keep: 0
       - uses: actions/delete-package-versions@v3
         with:
           package-name: 'org.babzel.babzel-tools'
-          min-versions-to-keep: 1
+          min-versions-to-keep: 0
       - uses: actions/delete-package-versions@v3
         with:
           package-name: 'org.babzel.babzel-tools-simple'
-          min-versions-to-keep: 1
+          min-versions-to-keep: 0
       - uses: actions/delete-package-versions@v3
         with:
           package-name: 'org.babzel.babzel-tools-lucene'
-          min-versions-to-keep: 1
+          min-versions-to-keep: 0
+      - run: mvn deploy
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
