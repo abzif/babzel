@@ -12,3 +12,5 @@ jobs:
           cache: 'maven'
           server-id: github
       - run: mvn clean deploy
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
