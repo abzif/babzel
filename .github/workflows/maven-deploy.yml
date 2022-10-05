@@ -14,9 +14,19 @@ jobs:
       - run: mvn clean deploy
         env:
           GITHUB_TOKEN: ${{ github.token }}
-      - uses: epitomeglobal/remove-package-versions@master
+      - uses: actions/delete-package-versions@v3
         with:
-          keep-versions: 1
-          keep-prerelease-versions: 1
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
+          package-name: 'babzel'
+          min-versions-to-keep: 1
+      - uses: actions/delete-package-versions@v3
+        with:
+          package-name: 'babzel-tools'
+          min-versions-to-keep: 1
+      - uses: actions/delete-package-versions@v3
+        with:
+          package-name: 'babzel-tools-simple'
+          min-versions-to-keep: 1
+      - uses: actions/delete-package-versions@v3
+        with:
+          package-name: 'babzel-tools-lucene'
+          min-versions-to-keep: 1
