@@ -6,6 +6,10 @@ However models for various languages are not easily available.
 This project adresses these shortcomings and allows to train and evaluate models for any language supported by Universal Dependencies treebank.
 Models can also be interactively verified.
 
+## Pre-trained models
+
+Pre-trained models for various languages are automatically computed and available [here](https://abzif.github.io/babzel/models.html)
+
 ## Training and evaluation process
 
 All files (input or generated models) are processed in the root directory (or subdirectories) which is **$HOME/.cache/babzel**
@@ -28,7 +32,7 @@ The process of training and evaluation of models roughly consists of the followi
 
 ## Usage
 
-Download appropriate fat jar from [Packages](https://github.com/users/abzif/packages?repo_name=babzel) (babzel-tools-simple-<version>.jar or babzel-tools-lucene-<version>.jar)
+Download appropriate fat jar from [Babzel tools simple](https://github.com/abzif/babzel/packages/1659842) or [Babzel tools lucene](https://github.com/abzif/babzel/packages/1659839)
 
 Training and evaluation:
 ```
