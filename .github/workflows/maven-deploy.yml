@@ -14,3 +14,9 @@ jobs:
       - run: mvn clean deploy
         env:
           GITHUB_TOKEN: ${{ github.token }}
+      - uses: epitomeglobal/remove-package-versions@master
+        with:
+          keep-versions: 1
+          keep-prerelease-versions: 1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
