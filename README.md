@@ -32,7 +32,7 @@ The process of training and evaluation of models roughly consists of the followi
 
 ## Usage
 
-Download appropriate fat jar from [Babzel tools simple](https://github.com/abzif/babzel/packages/1659842) or [Babzel tools lucene](https://github.com/abzif/babzel/packages/1659839)
+Download appropriate fat jar from [Packages](https://github.com/abzif?tab=packages&repo_name=babzel) (babzel-tools-simple or babzel-tools-lucene)
 
 Training and evaluation:
 ```
