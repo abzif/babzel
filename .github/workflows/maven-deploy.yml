@@ -16,17 +16,17 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
       - uses: actions/delete-package-versions@v3
         with:
-          package-name: 'babzel'
+          package-name: 'org.babzel.babzel'
           min-versions-to-keep: 1
       - uses: actions/delete-package-versions@v3
         with:
-          package-name: 'babzel-tools'
+          package-name: 'org.babzel.babzel-tools'
           min-versions-to-keep: 1
       - uses: actions/delete-package-versions@v3
         with:
-          package-name: 'babzel-tools-simple'
+          package-name: 'org.babzel.babzel-tools-simple'
           min-versions-to-keep: 1
       - uses: actions/delete-package-versions@v3
         with:
-          package-name: 'babzel-tools-lucene'
+          package-name: 'org.babzel.babzel-tools-lucene'
           min-versions-to-keep: 1
