@@ -152,9 +152,9 @@ if (toolsSimpleJar.length() > 0 && toolsLuceneJar.length() > 0) {
     Files.createDirectories(logFile.getParent());
     for (String languageCode : languageCodes) {
         try {
-            System.out.println(String.format("Training %s-simple", languageCode));
+            System.out.println(String.format("Training %s-simple %s", languageCode, java.time.LocalDateTime.now()));
             trainModel(workDirectory, languageCode, javaOpts, toolsSimpleJar, logFile);
-            System.out.println(String.format("Training %s-lucene", languageCode));
+            System.out.println(String.format("Training %s-lucene %s", languageCode, java.time.LocalDateTime.now()));
             trainModel(workDirectory, languageCode, javaOpts, toolsLuceneJar, logFile);
             copyModelFiles(workDirectory, languageCode, siteDirectory);
             appendModelMarkdown(workDirectory, languageCode, modelMarkdownLines);
