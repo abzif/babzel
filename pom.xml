@@ -215,7 +215,7 @@
                         <argument>-J-Djava.opts=-Xmx6g</argument>
                         <argument>-J-Dtools.simple.jar=${project.basedir}/babzel-tools-simple/target/babzel-tools-simple-${project.version}.jar</argument>
                         <argument>-J-Dtools.lucene.jar=${project.basedir}/babzel-tools-lucene/target/babzel-tools-lucene-${project.version}.jar</argument>
-                        <argument>-J-Dwork.dir=${project.basedir}/cache</argument>
+                        <argument>-J-Dwork.dir=${user.home}/.cache/babzel</argument>
                         <argument>-J-Dsite.dir=${project.basedir}/target/generated-site</argument>
                         <argument>${project.basedir}/src/site/generate-models.jsh</argument>
                     </arguments>
