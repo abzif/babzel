@@ -24,6 +24,7 @@ String toolsSimpleJar = System.getProperty("tools.simple.jar", "");
 String toolsLuceneJar = System.getProperty("tools.lucene.jar", "");
 Path workDirectory = Path.of(System.getProperty("work.dir", "."));
 Path siteDirectory = Path.of(System.getProperty("site.dir", "."));
+Integer maxExecHours = Integer.parseInt(System.getProperty("max.exec.hours", "-1"));
 
 
 
@@ -137,9 +138,9 @@ void copyModelFiles(Path workDir, String languageCode, Path siteDirectory) throw
     copyModelDir(workDir, languageCode, "lucene", siteDirectory);
 }
 
-void trainModel(Path workDir, String languageCode, String javaOpts, String jarFileName, Path logFile) throws Exception {
+void trainModel(Path workDir, String languageCode, String javaOpts, String jarFileName) throws Exception {
     ProcessBuilder builder = new ProcessBuilder("java", javaOpts, "-jar", jarFileName, "train", languageCode, workDir.toAbsolutePath().toString());
-    builder.redirectErrorStream(true).redirectOutput(ProcessBuilder.Redirect.appendTo(logFile.toFile()));
+    builder.redirectErrorStream(true).redirectOutput(ProcessBuilder.Redirect.INHERIT);
     Process process = builder.start();
     int exitCode = process.waitFor();
     if (exitCode != 0) {
@@ -147,15 +148,22 @@ void trainModel(Path workDir, String languageCode, String javaOpts, String jarFi
     }
 }
 
+void abortProcessingIfTooLong(java.time.LocalDateTime startTime) {
+    var currentTime = java.time.LocalDateTime.now();
+    if (maxExecHours > 0 && currentTime.minusHours(maxExecHours).compareTo(startTime) > 0) {
+        System.out.println(String.format("### Processing lasts longer than %d hours, aborting ###", maxExecHours));
+        System.exit(1);
+    }
+}
+
 if (toolsSimpleJar.length() > 0 && toolsLuceneJar.length() > 0) {
-    Path logFile = siteDirectory.resolve("resources").resolve("models").resolve("log.txt");
-    Files.createDirectories(logFile.getParent());
+    var startTime = java.time.LocalDateTime.now();
     for (String languageCode : languageCodes) {
         try {
-            System.out.println(String.format("Training %s-simple %s", languageCode, java.time.LocalDateTime.now()));
-            trainModel(workDirectory, languageCode, javaOpts, toolsSimpleJar, logFile);
-            System.out.println(String.format("Training %s-lucene %s", languageCode, java.time.LocalDateTime.now()));
-            trainModel(workDirectory, languageCode, javaOpts, toolsLuceneJar, logFile);
+            abortProcessingIfTooLong(startTime);
+            trainModel(workDirectory, languageCode, javaOpts, toolsSimpleJar);
+            abortProcessingIfTooLong(startTime);
+            trainModel(workDirectory, languageCode, javaOpts, toolsLuceneJar);
             copyModelFiles(workDirectory, languageCode, siteDirectory);
             appendModelMarkdown(workDirectory, languageCode, modelMarkdownLines);
         } catch (Exception e) {

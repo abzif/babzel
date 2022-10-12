@@ -217,6 +217,7 @@
                         <argument>-J-Dtools.lucene.jar=${project.basedir}/babzel-tools-lucene/target/babzel-tools-lucene-${project.version}.jar</argument>
                         <argument>-J-Dwork.dir=${user.home}/.cache/babzel</argument>
                         <argument>-J-Dsite.dir=${project.basedir}/target/generated-site</argument>
+                        <argument>-J-Dmax.exec.hours=4</argument>
                         <argument>${project.basedir}/src/site/generate-models.jsh</argument>
                     </arguments>
                 </configuration>
