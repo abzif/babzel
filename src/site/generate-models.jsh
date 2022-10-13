@@ -24,7 +24,7 @@ String toolsSimpleJar = System.getProperty("tools.simple.jar", "");
 String toolsLuceneJar = System.getProperty("tools.lucene.jar", "");
 Path workDirectory = Path.of(System.getProperty("work.dir", "."));
 Path siteDirectory = Path.of(System.getProperty("site.dir", "."));
-Integer maxExecHours = Integer.parseInt(System.getProperty("max.exec.hours", "-1"));
+Integer maxExecHours = Integer.parseInt(System.getProperty("max.exec.hours", "0"));
 
 
 
@@ -152,7 +152,7 @@ void abortProcessingIfTooLong(java.time.LocalDateTime startTime) {
     var currentTime = java.time.LocalDateTime.now();
     if (maxExecHours > 0 && currentTime.minusHours(maxExecHours).compareTo(startTime) > 0) {
         System.out.println(String.format("### Processing lasts longer than %d hours, aborting ###", maxExecHours));
-        System.exit(1);
+        System.exit(0);
     }
 }
 
