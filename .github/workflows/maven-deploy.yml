@@ -9,8 +9,12 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '11'
-          cache: 'maven'
           server-id: github
+      - uses: actions/cache@v3
+        with:
+          path: ~/.m2/repository
+          key: maven-repo-${{ hashFiles('**/pom.xml') }}-deploy
+          restore-keys: maven-repo
       - run: mvn clean install
       - uses: actions/delete-package-versions@v3
         with:

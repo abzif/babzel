@@ -1,7 +1,7 @@
 name: maven-pre-site
 on:
   schedule:
-    - cron: '11 0 14,15,16,17 * *'
+    - cron: '11 0 17,18,19 * *'
 jobs:
   maven-pre-site:
     runs-on: ubuntu-latest
@@ -11,11 +11,16 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '11'
-          cache: 'maven'
           server-id: github
       - uses: actions/cache@v3
         with:
+          path: ~/.m2/repository
+          key: maven-repo-${{ hashFiles('**/pom.xml') }}-pre-site
+          restore-keys: maven-repo
+      - uses: actions/cache@v3
+        with:
           path: ~/.cache/babzel
-          key: opennlp-model-cache
+          key: opennlp-model-cache-${{ github.run_id }}
+          restore-keys: opennlp-model-cache
       - run: mvn clean install
       - run: mvn -Dmax.exec.hours=4 pre-site

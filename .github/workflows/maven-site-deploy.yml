@@ -1,7 +1,7 @@
 name: maven-site-deploy
 on:
   schedule:
-    - cron: '11 0 18 * *'
+    - cron: '11 0 27 * *'
 jobs:
   maven-site-deploy:
     runs-on: ubuntu-latest
@@ -11,12 +11,17 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '11'
-          cache: 'maven'
           server-id: github
       - uses: actions/cache@v3
         with:
+          path: ~/.m2/repository
+          key: maven-repo-${{ hashFiles('**/pom.xml') }}-site-deploy
+          restore-keys: maven-repo
+      - uses: actions/cache@v3
+        with:
           path: ~/.cache/babzel
-          key: opennlp-model-cache
+          key: opennlp-model-cache-${{ github.run_id }}
+          restore-keys: opennlp-model-cache
       - run: mvn clean install
       - run: mvn site-deploy
         env:
