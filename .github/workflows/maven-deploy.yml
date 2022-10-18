@@ -14,7 +14,7 @@ jobs:
         with:
           path: ~/.m2/repository
           key: maven-repo-${{ hashFiles('**/pom.xml') }}-deploy
-          restore-keys: maven-repo
+          restore-keys: maven-repo-
       - run: mvn clean install
       - uses: actions/delete-package-versions@v3
         with:
