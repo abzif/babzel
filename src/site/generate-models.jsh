@@ -1,19 +1,26 @@
+import java.time.*;
+import java.util.concurrent.*;
+
 List<String> languageCodes = List.of(
-    "cs",
-    "de",
-    "el",
-    "en",
-    "es",
-    "fr",
-    "he",
-    "it",
-    "ja",
-    "ko",
-    "pl",
-    "pt",
-    "ru",
-    "uk",
-    "zh");
+    "cs", // czech
+    "da", // danish
+    "de", // german
+    "el", // greek
+    "en", // english
+    "es", // spanish
+    "fi", // finnish
+    "fr", // french
+    "he", // hebrew
+    "it", // italian
+    "ja", // japanese
+    "ko", // korean
+    "no", // norwegian
+    "pl", // polish
+    "pt", // portugal
+    "ru", // russian
+    "sv", // swedish
+    "uk", // ukrainian
+    "zh"); // chinese
 
 List<String> modelMarkdownLines = new ArrayList<>();
 modelMarkdownLines.add("# Pre-trained models");
@@ -24,7 +31,7 @@ String toolsSimpleJar = System.getProperty("tools.simple.jar", "");
 String toolsLuceneJar = System.getProperty("tools.lucene.jar", "");
 Path workDirectory = Path.of(System.getProperty("work.dir", "."));
 Path siteDirectory = Path.of(System.getProperty("site.dir", "."));
-Integer maxExecHours = Integer.parseInt(System.getProperty("max.exec.hours", "0"));
+Integer maxExecMinutes = Integer.parseInt(System.getProperty("max.exec.minutes", "0"));
 
 
 
@@ -138,40 +145,55 @@ void copyModelFiles(Path workDir, String languageCode, Path siteDirectory) throw
     copyModelDir(workDir, languageCode, "lucene", siteDirectory);
 }
 
-void trainModel(Path workDir, String languageCode, String javaOpts, String jarFileName) throws Exception {
+Process startModelTrainProcess(Path workDir, String languageCode, String javaOpts, String jarFileName) throws Exception {
     ProcessBuilder builder = new ProcessBuilder("java", javaOpts, "-jar", jarFileName, "train", languageCode, workDir.toAbsolutePath().toString());
     builder.redirectErrorStream(true).redirectOutput(ProcessBuilder.Redirect.INHERIT);
-    Process process = builder.start();
-    int exitCode = process.waitFor();
-    if (exitCode != 0) {
-        throw new IllegalStateException("failed");
-    }
+    return builder.start();
 }
 
-void abortProcessingIfTooLong(java.time.LocalDateTime startTime) {
-    var currentTime = java.time.LocalDateTime.now();
-    if (maxExecHours > 0 && currentTime.minusHours(maxExecHours).compareTo(startTime) > 0) {
-        System.out.println(String.format("### Processing lasts longer than %d hours, aborting ###", maxExecHours));
-        System.exit(0);
+void trainModel(Path workDir, String languageCode, String javaOpts, String jarFileName, LocalDateTime startTime) throws Exception {
+    if (maxExecMinutes > 0) {
+        var currentTime = LocalDateTime.now();
+        var endTime = startTime.plusMinutes(maxExecMinutes);
+        var timeoutMinutes = Duration.between(currentTime, endTime).toMinutes();
+        var process = startModelTrainProcess(workDir, languageCode, javaOpts, jarFileName);
+        if (process.waitFor(timeoutMinutes, TimeUnit.MINUTES)) {
+            var exitCode = process.exitValue();
+            if (exitCode != 0) {
+                throw new IllegalStateException("model training failed");
+            }
+        } else {
+            process.destroyForcibly();
+            throw new InterruptedException("model training timeout");
+        }
+    } else {
+        var process = startModelTrainProcess(workDir, languageCode, javaOpts, jarFileName);
+        var exitCode = process.waitFor();
+        if (exitCode != 0) {
+            throw new IllegalStateException("model training failed");
+        }
     }
 }
 
 if (toolsSimpleJar.length() > 0 && toolsLuceneJar.length() > 0) {
-    var startTime = java.time.LocalDateTime.now();
-    for (String languageCode : languageCodes) {
-        try {
-            abortProcessingIfTooLong(startTime);
-            trainModel(workDirectory, languageCode, javaOpts, toolsSimpleJar);
-            abortProcessingIfTooLong(startTime);
-            trainModel(workDirectory, languageCode, javaOpts, toolsLuceneJar);
-            copyModelFiles(workDirectory, languageCode, siteDirectory);
-            appendModelMarkdown(workDirectory, languageCode, modelMarkdownLines);
-        } catch (Exception e) {
+    try {
+        var startTime = LocalDateTime.now();
+        for (String languageCode : languageCodes) {
+            try {
+                trainModel(workDirectory, languageCode, javaOpts, toolsSimpleJar, startTime);
+                trainModel(workDirectory, languageCode, javaOpts, toolsLuceneJar, startTime);
+                copyModelFiles(workDirectory, languageCode, siteDirectory);
+                appendModelMarkdown(workDirectory, languageCode, modelMarkdownLines);
+            } catch (IllegalStateException e) {
+                System.out.println(String.format("### Processing failed for language: '%s', ignoring ###", languageCode));
+            }
         }
+        Path modelMarkdownFile = siteDirectory.resolve("markdown").resolve("models.md");
+        Files.createDirectories(modelMarkdownFile.getParent());
+        Files.write(modelMarkdownFile, modelMarkdownLines);
+    } catch (InterruptedException e) {
+        System.out.println("### Processing lasted too long, aborting ###");
     }
-    Path modelMarkdownFile = siteDirectory.resolve("markdown").resolve("models.md");
-    Files.createDirectories(modelMarkdownFile.getParent());
-    Files.write(modelMarkdownFile, modelMarkdownLines);
 }
 
 /exit

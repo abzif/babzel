@@ -31,7 +31,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <argLine></argLine>
-        <max.exec.hours>0</max.exec.hours>
+        <max.exec.minutes>0</max.exec.minutes>
     </properties>
 
     <build>
@@ -188,6 +188,8 @@
                     <version>0.12</version>
                     <configuration>
                         <server>github</server>
+                        <repositoryOwner>abzif</repositoryOwner>
+                        <repositoryName>babzel</repositoryName>
                         <message>Site publish</message>
                         <noJekyll>true</noJekyll>
                     </configuration>
@@ -218,7 +220,7 @@
                         <argument>-J-Dtools.lucene.jar=${project.basedir}/babzel-tools-lucene/target/babzel-tools-lucene-${project.version}.jar</argument>
                         <argument>-J-Dwork.dir=${user.home}/.cache/babzel</argument>
                         <argument>-J-Dsite.dir=${project.basedir}/target/generated-site</argument>
-                        <argument>-J-Dmax.exec.hours=${max.exec.hours}</argument>
+                        <argument>-J-Dmax.exec.minutes=${max.exec.minutes}</argument>
                         <argument>${project.basedir}/src/site/generate-models.jsh</argument>
                     </arguments>
                 </configuration>
