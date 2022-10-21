@@ -3,22 +3,22 @@ import java.util.concurrent.*;
 
 List<String> languageCodes = List.of(
     "cs", // czech
-    "da", // danish
+    //"da", // danish
     "de", // german
     "el", // greek
     "en", // english
     "es", // spanish
-    "fi", // finnish
+    //"fi", // finnish
     "fr", // french
     "he", // hebrew
     "it", // italian
     "ja", // japanese
     "ko", // korean
-    "no", // norwegian
+    //"no", // norwegian
     "pl", // polish
     "pt", // portugal
     "ru", // russian
-    "sv", // swedish
+    //"sv", // swedish
     "uk", // ukrainian
     "zh"); // chinese
 
