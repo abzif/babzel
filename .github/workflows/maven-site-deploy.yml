@@ -4,6 +4,7 @@ on:
     - cron: '11 0-20 21 * *'
 jobs:
   maven-site-deploy:
+    permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
