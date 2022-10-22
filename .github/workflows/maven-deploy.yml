@@ -1,5 +1,8 @@
 name: maven-deploy
-on: [push]
+on:
+  push:
+    branches:
+      - master
 jobs:
   maven-deploy:
     runs-on: ubuntu-latest
