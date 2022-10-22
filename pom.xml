@@ -22,7 +22,7 @@
         </repository>
         <site>
             <id>github</id>
-            <url>${project.url}</url>
+            <url>scm:git:https://github.com/abzif/babzel.git</url>
         </site>
     </distributionManagement>
 
@@ -183,19 +183,21 @@
                     <version>3.1.0</version>
                 </plugin>
                 <plugin>
-                    <groupId>com.github.github</groupId>
-                    <artifactId>site-maven-plugin</artifactId>
-                    <version>0.12</version>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-scm-publish-plugin</artifactId>
+                    <version>3.1.0</version>
                     <configuration>
-                        <server>github</server>
-                        <message>Site publish</message>
-                        <noJekyll>true</noJekyll>
+                        <content>${project.build.directory}/site</content>
+                        <siteOutputEncoding>${project.build.sourceEncoding}</siteOutputEncoding>
+                        <serverId>github</serverId>
+                        <scmBranch>gh-pages</scmBranch>
+                        <checkinComment>Site publish</checkinComment>
                     </configuration>
                     <executions>
                         <execution>
                             <phase>site-deploy</phase>
                             <goals>
-                                <goal>site</goal>
+                                <goal>publish-scm</goal>
                             </goals>
                         </execution>
                     </executions>
@@ -241,8 +243,8 @@
             </plugin>
             <plugin>
                 <inherited>false</inherited>
-                <groupId>com.github.github</groupId>
-                <artifactId>site-maven-plugin</artifactId>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-scm-publish-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
