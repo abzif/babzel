@@ -1,0 +1,541 @@
+=== EVALUATION INFO ===
+Evaluation-Score=0.9988986371571353
+Training-Sample-Size=38579
+Evaluation-Sample-Size=4286
+Training-Algorithm=MAXENT_QN
+
+=== MODEL PROPERTIES ===
+Component-Name=TokenizerME
+Language=no
+Manifest-Version=1.0
+OpenNLP-Version=1.9.4
+Timestamp=1666507014759
+TrainerType=Event
+Training-Eventhash=ddff29ef92123cb8cdbb91b93e5d4af8
+alphaNumericPattern=^[A-Za-z0-9]+$
+factory=opennlp.tools.tokenize.TokenizerFactory
+useAlphaNumericOptimization=false
+
+=== MISCLASSIFIED DETAILS ===
+Expected: {
+ferskvannsfiske dvs royefisket i nordlaguna er forbudt i tiden 26 juli<SPLIT>-<SPLIT>10 august<SPLIT>, og det er naermere regler om fiskemetoder mv (<SPLIT>§§ 9<SPLIT>-<SPLIT>10<SPLIT>)<SPLIT>.}
+Predicted: {
+ferskvannsfiske dvs royefisket i nordlaguna er forbudt i tiden 26 juli<SPLIT>-10 august<SPLIT>, og det er naermere regler om fiskemetoder mv (<SPLIT>§§ 9-10<SPLIT>)<SPLIT>.}
+False positives: {
+-10
+9-10
+} False negatives: {
+-
+10
+9
+-
+10
+}
+
+Expected: {
+han er daglig leder i firmaet 1-2-3 advokaten<SPLIT>, som til sammen har hatt fem-seks saker med bertelsen som dommer<SPLIT>.}
+Predicted: {
+han er daglig leder i firmaet 1-2<SPLIT>-3 advokaten<SPLIT>, som til sammen har hatt fem-seks saker med bertelsen som dommer<SPLIT>.}
+False positives: {
+1-2
+-3
+} False negatives: {
+1-2-3
+}
+
+Expected: {
+"<SPLIT>kjaere alle 3<SPLIT>.}
+Predicted: {
+"<SPLIT>kjaere alle 3.}
+False positives: {
+3.
+} False negatives: {
+3
+.
+}
+
+Expected: {
+vi gidder ikke a utnytte at vi har norges varmeste vann i fjordene vare og dermed kunne fa ut opptil seks -<SPLIT>6<SPLIT>- ganger mer av energien hvis vi brukte varmepumpeteknologi<SPLIT>.}
+Predicted: {
+vi gidder ikke a utnytte at vi har norges varmeste vann i fjordene vare og dermed kunne fa ut opptil seks -6<SPLIT>- ganger mer av energien hvis vi brukte varmepumpeteknologi<SPLIT>.}
+False positives: {
+-6
+} False negatives: {
+-
+6
+}
+
+Expected: {
+ap. far ogsa lederverv i forsvarskomiteen og naeringskomiteen<SPLIT>.}
+Predicted: {
+ap<SPLIT>. far ogsa lederverv i forsvarskomiteen og naeringskomiteen<SPLIT>.}
+False positives: {
+ap
+.
+} False negatives: {
+ap.
+}
+
+Expected: {
+de ma ogsa beholde et rimelig godt forhold til fr.p.<SPLIT>for a bli sittende en viss tid - helst hele stortingsperioden<SPLIT>.}
+Predicted: {
+de ma ogsa beholde et rimelig godt forhold til fr.p.for a bli sittende en viss tid - helst hele stortingsperioden<SPLIT>.}
+False positives: {
+fr.p.for
+} False negatives: {
+fr.p.
+for
+}
+
+Expected: {
+-<SPLIT>fa se fredstegnet<SPLIT>!}
+Predicted: {
+-fa se fredstegnet<SPLIT>!}
+False positives: {
+-fa
+} False negatives: {
+-
+fa
+}
+
+Expected: {
+til august e. h. (<SPLIT>6.10<SPLIT>.<SPLIT>)}
+Predicted: {
+til august e. h. (<SPLIT>6.10.<SPLIT>)}
+False positives: {
+6.10.
+} False negatives: {
+6.10
+.
+}
+
+Expected: {
+stadig flere snakker om at det ikke er g-20 eller g-8 som vil styre verden<SPLIT>, men g-2<SPLIT>: usa og kina<SPLIT>.}
+Predicted: {
+stadig flere snakker om at det ikke er g-<SPLIT>20 eller g-8 som vil styre verden<SPLIT>, men g-2<SPLIT>: usa og kina<SPLIT>.}
+False positives: {
+g-
+20
+} False negatives: {
+g-20
+}
+
+Expected: {
+helge krog skrev sitt teaterstykke allerede i 1917<SPLIT>.}
+Predicted: {
+helge krog skrev sitt teaterstykke allerede i 1917.}
+False positives: {
+1917.
+} False negatives: {
+1917
+.
+}
+
+Expected: {
+det skjedde senest etter press fra stortinget da det s.k. kystfiskeutvalget under ledelse av dr. juris. carsten smith ble oppnevnt i 2006<SPLIT>.}
+Predicted: {
+det skjedde senest etter press fra stortinget da det s.k. kystfiskeutvalget under ledelse av dr. juris<SPLIT>. carsten smith ble oppnevnt i 2006<SPLIT>.}
+False positives: {
+juris
+.
+} False negatives: {
+juris.
+}
+
+Expected: {
+for a endre denne situasjonen lanserte apple sin egen karttjeneste i ios6 og iphone 5<SPLIT>.}
+Predicted: {
+for a endre denne situasjonen lanserte apple sin egen karttjeneste i ios6 og iphone 5.}
+False positives: {
+5.
+} False negatives: {
+5
+.
+}
+
+Expected: {
+- pakistan er en del av trusselbildet man er opptatt av i pst<SPLIT>.}
+Predicted: {
+- pakistan er en del av trusselbildet man er opptatt av i pst.}
+False positives: {
+pst.
+} False negatives: {
+pst
+.
+}
+
+Expected: {
+pa pressekonferansen er det senators' superstjerne og tomalsscorer dany heatley som er mannen i fokus<SPLIT>.}
+Predicted: {
+pa pressekonferansen er det senators<SPLIT>' superstjerne og tomalsscorer dany heatley som er mannen i fokus<SPLIT>.}
+False positives: {
+senators
+'
+} False negatives: {
+senators'
+}
+
+Expected: {
+det ble klart etter en overbevisende seier 9<SPLIT>-<SPLIT>4 mot irland tirsdag<SPLIT>.}
+Predicted: {
+det ble klart etter en overbevisende seier 9-4 mot irland tirsdag<SPLIT>.}
+False positives: {
+9-4
+} False negatives: {
+9
+-
+4
+}
+
+Expected: {
+allikevel er jeg fortsatt ung<SPLIT>, sier koss til tv 2<SPLIT>.}
+Predicted: {
+allikevel er jeg fortsatt ung<SPLIT>, sier koss til tv 2.}
+False positives: {
+2.
+} False negatives: {
+2
+.
+}
+
+Expected: {
+den endelige beslutningen<SPLIT>, eller overveiingen og a bega drap<SPLIT>, ble tatt av domfelte om ettermiddagen og kvelden pa drapsdagen 31. oktober 1996 da domfelte ladet vapenet<SPLIT>, satte det i et skulderhylster og dro til skaregata 2<SPLIT>.}
+Predicted: {
+den endelige beslutningen<SPLIT>, eller overveiingen og a bega drap<SPLIT>, ble tatt av domfelte om ettermiddagen og kvelden pa drapsdagen 31. oktober 1996 da domfelte ladet vapenet<SPLIT>, satte det i et skulderhylster og dro til skaregata 2.}
+False positives: {
+2.
+} False negatives: {
+2
+.
+}
+
+Expected: {
+na ma de igjen vise seg fra sin aller beste side pa bortebane<SPLIT>, mot et lag som fortsatt har en teoretisk sjanse til a bli nummer 3<SPLIT>.}
+Predicted: {
+na ma de igjen vise seg fra sin aller beste side pa bortebane<SPLIT>, mot et lag som fortsatt har en teoretisk sjanse til a bli nummer 3.}
+False positives: {
+3.
+} False negatives: {
+3
+.
+}
+
+Expected: {
+det synes jeg at regjering og storing skal ta seg tid til a se om lar seg gjore<SPLIT>, og selvsagt uten a skulle doble prisene pa kraft til husholdningene<SPLIT>, som carl i. hagen antydet<SPLIT>.}
+Predicted: {
+det synes jeg at regjering og storing skal ta seg tid til a se om lar seg gjore<SPLIT>, og selvsagt uten a skulle doble prisene pa kraft til husholdningene<SPLIT>, som carl i<SPLIT>. hagen antydet<SPLIT>.}
+False positives: {
+i
+.
+} False negatives: {
+i.
+}
+
+Expected: {
+men vi kjenner til at hydro jobber med et prosjekt<SPLIT>, aker maritime gjor det<SPLIT>, etter hva jeg na forstar<SPLIT>, i samarbeid med et seriost internasjonalt oljeselskap<SPLIT>, og vi har det som carl i. hagen viste til fra dagsavisen i dag<SPLIT>.}
+Predicted: {
+men vi kjenner til at hydro jobber med et prosjekt<SPLIT>, aker maritime gjor det<SPLIT>, etter hva jeg na forstar<SPLIT>, i samarbeid med et seriost internasjonalt oljeselskap<SPLIT>, og vi har det som carl i<SPLIT>. hagen viste til fra dagsavisen i dag<SPLIT>.}
+False positives: {
+i
+.
+} False negatives: {
+i.
+}
+
+Expected: {
+carl i. hagen (<SPLIT>frp<SPLIT>)<SPLIT>:}
+Predicted: {
+carl i<SPLIT>. hagen (<SPLIT>frp<SPLIT>)<SPLIT>:}
+False positives: {
+i
+.
+} False negatives: {
+i.
+}
+
+Expected: {
+hans eldste datter har forklart at hun kom hjem fra skolen rett for klokken 16<SPLIT>.}
+Predicted: {
+hans eldste datter har forklart at hun kom hjem fra skolen rett for klokken 16.}
+False positives: {
+16.
+} False negatives: {
+16
+.
+}
+
+Expected: {
+raude kross-laget har 4<SPLIT>-<SPLIT>5 vakter til stades pa hytta heile paska<SPLIT>.}
+Predicted: {
+raude kross-laget har 4-<SPLIT>5 vakter til stades pa hytta heile paska<SPLIT>.}
+False positives: {
+4-
+} False negatives: {
+4
+-
+}
+
+Expected: {
+med carl i. hagen er enda ei statsmakt samla i den same salen - men det er knapt lenger stortingsalen det er nokon vits a samlast i<SPLIT>.}
+Predicted: {
+med carl i<SPLIT>. hagen er enda ei statsmakt samla i den same salen - men det er knapt lenger stortingsalen det er nokon vits a samlast i<SPLIT>.}
+False positives: {
+i
+.
+} False negatives: {
+i.
+}
+
+Expected: {
+carl i. hagen kan ikkje forstaast utan fjernsynet<SPLIT>.}
+Predicted: {
+carl i<SPLIT>. hagen kan ikkje forstaast utan fjernsynet<SPLIT>.}
+False positives: {
+i
+.
+} False negatives: {
+i.
+}
+
+Expected: {
+veljarane til carl i. hagen er den fyrste generasjonen i landet vart som har hatt pengar og fritid til a gjera det dei vil<SPLIT>.}
+Predicted: {
+veljarane til carl i<SPLIT>. hagen er den fyrste generasjonen i landet vart som har hatt pengar og fritid til a gjera det dei vil<SPLIT>.}
+False positives: {
+i
+.
+} False negatives: {
+i.
+}
+
+Expected: {
+romarbrevet tek opp konkret<SPLIT>, historisk problematikk ang. jodar og heidningar<SPLIT>, i roma<SPLIT>, pa 50-talet - pa basis av det jodisk-kristne livssynets ressursar<SPLIT>.}
+Predicted: {
+romarbrevet tek opp konkret<SPLIT>, historisk problematikk ang<SPLIT>. jodar og heidningar<SPLIT>, i roma<SPLIT>, pa 50-talet - pa basis av det jodisk-kristne livssynets ressursar<SPLIT>.}
+False positives: {
+ang
+.
+} False negatives: {
+ang.
+}
+
+Expected: {
+skriv "<SPLIT>m. king hubbert<SPLIT>" i sokjefeltet pa google<SPLIT>, og du vert sitjande og lesa i dagevis<SPLIT>.}
+Predicted: {
+skriv "<SPLIT>m<SPLIT>. king hubbert<SPLIT>" i sokjefeltet pa google<SPLIT>, og du vert sitjande og lesa i dagevis<SPLIT>.}
+False positives: {
+m
+.
+} False negatives: {
+m.
+}
+
+Expected: {
+desse unge er fundamentalt desorganiserte - og kan difor under visse omstende formast til mobbar<SPLIT>, med kaid'ar<SPLIT>, gjengleiarar<SPLIT>, som tyranniske forarar<SPLIT>.}
+Predicted: {
+desse unge er fundamentalt desorganiserte - og kan difor under visse omstende formast til mobbar<SPLIT>, med kaid<SPLIT>'ar<SPLIT>, gjengleiarar<SPLIT>, som tyranniske forarar<SPLIT>.}
+False positives: {
+kaid
+'ar
+} False negatives: {
+kaid'ar
+}
+
+Expected: {
+31<SPLIT>. uttydingi forfattarane gjev av ordlaget "<SPLIT>a ga i baret<SPLIT>"<SPLIT>, at det skal tyda "<SPLIT>a vase seg bort<SPLIT>" i "<SPLIT>kvist<SPLIT>, greiner og rask<SPLIT>" (<SPLIT>s. 65<SPLIT>/<SPLIT>120<SPLIT>)<SPLIT>, er ikkje yvertydande<SPLIT>.}
+Predicted: {
+31. uttydingi forfattarane gjev av ordlaget "<SPLIT>a ga i baret<SPLIT>"<SPLIT>, at det skal tyda "<SPLIT>a vase seg bort<SPLIT>" i "<SPLIT>kvist<SPLIT>, greiner og rask<SPLIT>" (<SPLIT>s. 65<SPLIT>/<SPLIT>120<SPLIT>)<SPLIT>, er ikkje yvertydande<SPLIT>.}
+False positives: {
+31.
+} False negatives: {
+31
+.
+}
+
+Expected: {
+riksantikvaren har loyvd 1 million kroner og vestenfjeldske bykreditt i bergen 200 000 kroner til d/s "<SPLIT>stavenes<SPLIT>" for 2010<SPLIT>.}
+Predicted: {
+riksantikvaren har loyvd 1 million kroner og vestenfjeldske bykreditt i bergen 200 000 kroner til d/<SPLIT>s "<SPLIT>stavenes<SPLIT>" for 2010<SPLIT>.}
+False positives: {
+d/
+s
+} False negatives: {
+d/s
+}
+
+Expected: {
+dersom alt gar etter planen<SPLIT>, vil vegen opne tysdag 20.<SPLIT>april klokka 06.00<SPLIT>, opplyser statens vegvesen i ei pressemelding<SPLIT>.}
+Predicted: {
+dersom alt gar etter planen<SPLIT>, vil vegen opne tysdag 20.april klokka 06.00<SPLIT>, opplyser statens vegvesen i ei pressemelding<SPLIT>.}
+False positives: {
+20.april
+} False negatives: {
+20.
+april
+}
+
+Expected: {
+1<SPLIT>. norvall noringset<SPLIT>, forde}
+Predicted: {
+1. norvall noringset<SPLIT>, forde}
+False positives: {
+1.
+} False negatives: {
+1
+.
+}
+
+Expected: {
+11<SPLIT>. isak berle<SPLIT>, bremanger}
+Predicted: {
+11. isak berle<SPLIT>, bremanger}
+False positives: {
+11.
+} False negatives: {
+11
+.
+}
+
+Expected: {
+2<SPLIT>. fotballflora cup<SPLIT>!}
+Predicted: {
+2. fotballflora cup<SPLIT>!}
+False positives: {
+2.
+} False negatives: {
+2
+.
+}
+
+Expected: {
+4<SPLIT>. nm i fotballquiz lordag 9 juli - dei vil samarbeide med tv2s quizguruar aune og schau<SPLIT>.}
+Predicted: {
+4. nm i fotballquiz lordag 9 juli - dei vil samarbeide med tv2s quizguruar aune og schau<SPLIT>.}
+False positives: {
+4.
+} False negatives: {
+4
+.
+}
+
+Expected: {
+bjornen skal no hentast i helikopter<SPLIT>, og er venta a lande i fjaerland mellom klokka 15 og 16<SPLIT>.}
+Predicted: {
+bjornen skal no hentast i helikopter<SPLIT>, og er venta a lande i fjaerland mellom klokka 15 og 16.}
+False positives: {
+16.
+} False negatives: {
+16
+.
+}
+
+Expected: {
+hoyang-trenaren innrommer at han gjekk for langt<SPLIT>, men forklarer at han var veldig frustrert etter 0-2-tapet mot sandane<SPLIT>.}
+Predicted: {
+hoyang-trenaren innrommer at han gjekk for langt<SPLIT>, men forklarer at han var veldig frustrert etter 0<SPLIT>-2-tapet mot sandane<SPLIT>.}
+False positives: {
+0
+-2-tapet
+} False negatives: {
+0-2-tapet
+}
+
+Expected: {
+situasjonen for nynorsk spesielt er behandla i kap. 9<SPLIT>, urfolks- og minoritetssprak i kap. 10 og den nordiske sprakfellesskapen i kap. 11<SPLIT>.}
+Predicted: {
+situasjonen for nynorsk spesielt er behandla i kap. 9<SPLIT>, urfolks- og minoritetssprak i kap. 10 og den nordiske sprakfellesskapen i kap. 11.}
+False positives: {
+11.
+} False negatives: {
+11
+.
+}
+
+Expected: {
+kapitlet blir avslutta med ei samla opplisting av prioriterte tiltak<SPLIT>, jf. kap. 7.7<SPLIT>.}
+Predicted: {
+kapitlet blir avslutta med ei samla opplisting av prioriterte tiltak<SPLIT>, jf. kap. 7.7.}
+False positives: {
+7.7.
+} False negatives: {
+7.7
+.
+}
+
+Expected: {
+dei tre rettane rapporten her siktar til<SPLIT>, er retten til nasjonalsprak<SPLIT>, retten til morsmal og retten til framandsprak<SPLIT>, jf. naerare omtale i kap. 6<SPLIT>.}
+Predicted: {
+dei tre rettane rapporten her siktar til<SPLIT>, er retten til nasjonalsprak<SPLIT>, retten til morsmal og retten til framandsprak<SPLIT>, jf. naerare omtale i kap. 6.}
+False positives: {
+6.
+} False negatives: {
+6
+.
+}
+
+Expected: {
+dette betyr at det ikkje i seg sjolv bor ha noko a seia for avgrensing av innsynsretten om ei verksemd er organisert som ein del av forvaltninga eller som eit sjolvstendig rettssubjekt<SPLIT>, jf. ot.prp. nr. 102 (<SPLIT>2004<SPLIT>-<SPLIT>2005<SPLIT>) kap. 4.4.2<SPLIT>.}
+Predicted: {
+dette betyr at det ikkje i seg sjolv bor ha noko a seia for avgrensing av innsynsretten om ei verksemd er organisert som ein del av forvaltninga eller som eit sjolvstendig rettssubjekt<SPLIT>, jf. ot.prp<SPLIT>. nr. 102 (<SPLIT>2004<SPLIT>-<SPLIT>2005<SPLIT>) kap. 4.4.2<SPLIT>.}
+False positives: {
+ot.prp
+.
+} False negatives: {
+ot.prp.
+}
+
+Expected: {
+det fekk ny frist til 10. desember og har altsa no foreslege a lage ein kunstig vasspegel<SPLIT>, men forst etter ha teke ut stein i fem ar til<SPLIT>.}
+Predicted: {
+det fekk ny frist til 10<SPLIT>. desember og har altsa no foreslege a lage ein kunstig vasspegel<SPLIT>, men forst etter ha teke ut stein i fem ar til<SPLIT>.}
+False positives: {
+10
+.
+} False negatives: {
+10.
+}
+
+Expected: {
+i eit brev til daverande leiar av sogelandet<SPLIT>, nicolai riise<SPLIT>, skriv fylkeskommunen 25. februar i ar at dei framleis ser det som ei oppgave a vere med og finansiere nye tiltak og utviklingsprosjekt som kan fylle sogelandet med attraktive arrangement<SPLIT>.}
+Predicted: {
+i eit brev til daverande leiar av sogelandet<SPLIT>, nicolai riise<SPLIT>, skriv fylkeskommunen 25<SPLIT>. februar i ar at dei framleis ser det som ei oppgave a vere med og finansiere nye tiltak og utviklingsprosjekt som kan fylle sogelandet med attraktive arrangement<SPLIT>.}
+False positives: {
+25
+.
+} False negatives: {
+25.
+}
+
+Expected: {
+(ja det er vel lerke det .}
+Predicted: {
+(<SPLIT>ja det er vel lerke det .}
+False positives: {
+(
+ja
+} False negatives: {
+(ja
+}
+
+Expected: {
+han lo vel alltid veldig godt at det herre vi sa "olehansaberetmarja" .}
+Predicted: {
+han lo vel alltid veldig godt at det herre vi sa "<SPLIT>olehansaberetmarja<SPLIT>" .}
+False positives: {
+"
+olehansaberetmarja
+"
+} False negatives: {
+"olehansaberetmarja"
+}
+
+Expected: {
+og sa blei det (og tok det opp det at han matte fa steinen e tilbake # pa sin rette plass og .}
+Predicted: {
+og sa blei det (<SPLIT>og tok det opp det at han matte fa steinen e tilbake # pa sin rette plass og .}
+False positives: {
+(
+og
+} False negatives: {
+(og
+}

@@ -1,0 +1,154 @@
+=== EVALUATION INFO ===
+Evaluation-Score=0.9990025932575304
+Training-Sample-Size=10909
+Evaluation-Sample-Size=1212
+Training-Algorithm=MAXENT_QN
+
+=== MODEL PROPERTIES ===
+Component-Name=TokenizerME
+Language=sv
+Manifest-Version=1.0
+OpenNLP-Version=1.9.4
+Timestamp=1666508050551
+TrainerType=Event
+Training-Eventhash=dfa47b1649b10879422cc0aec1669cf7
+alphaNumericPattern=^[A-Za-z0-9]+$
+factory=opennlp.tools.tokenize.TokenizerFactory
+useAlphaNumericOptimization=false
+
+=== MISCLASSIFIED DETAILS ===
+Expected: {
+vivien bayleys livliga<SPLIT>, ivriga ansikte blandade sig i konversationen i forbifarten<SPLIT>:<SPLIT>... det dar var hjalmar wentz' dotter<SPLIT>... som du satt bredvid<SPLIT>.}
+Predicted: {
+vivien bayleys livliga<SPLIT>, ivriga ansikte blandade sig i konversationen i forbifarten<SPLIT>:<SPLIT>... det dar var hjalmar wentz<SPLIT>' dotter<SPLIT>... som du satt bredvid<SPLIT>.}
+False positives: {
+wentz
+'
+} False negatives: {
+wentz'
+}
+
+Expected: {
+lagg ocksa marke till entiteten &apos;<SPLIT>, som kommer att omvandlas till en apostrof nar informationen importeras av mottagarprogrammet<SPLIT>.}
+Predicted: {
+lagg ocksa marke till entiteten &apos<SPLIT>;<SPLIT>, som kommer att omvandlas till en apostrof nar informationen importeras av mottagarprogrammet<SPLIT>.}
+False positives: {
+&apos
+;
+} False negatives: {
+&apos;
+}
+
+Expected: {
+en fn-rapport over nationella planer for att minska kolet sager att de ar langt under de nivaer som behovs for att halla okningen av den globala temperaturen under 2 °<SPLIT>c<SPLIT>.}
+Predicted: {
+en fn-rapport over nationella planer for att minska kolet sager att de ar langt under de nivaer som behovs for att halla okningen av den globala temperaturen under 2 °c<SPLIT>.}
+False positives: {
+°c
+} False negatives: {
+°
+c
+}
+
+Expected: {
+senare<SPLIT>, nar augustus grundade det romerska imperiet hanvisade romarna till medelhavet som mare nostrum (<SPLIT>"<SPLIT>vart hav<SPLIT>"<SPLIT>)<SPLIT>.}
+Predicted: {
+senare<SPLIT>, nar augustus grundade det romerska imperiet hanvisade romarna till medelhavet som mare nostrum (<SPLIT>"vart hav<SPLIT>"<SPLIT>)<SPLIT>.}
+False positives: {
+"vart
+} False negatives: {
+"
+vart
+}
+
+Expected: {
+rafferty spelade in en ny version av sin humblebums-lat "<SPLIT>her father did<SPLIT>n't like me anyway<SPLIT>" pa albumet over my head (<SPLIT>1994<SPLIT>)<SPLIT>.}
+Predicted: {
+rafferty spelade in en ny version av sin humblebums-lat "<SPLIT>her father didn<SPLIT>'t like me anyway<SPLIT>" pa albumet over my head (<SPLIT>1994<SPLIT>)<SPLIT>.}
+False positives: {
+didn
+'t
+} False negatives: {
+did
+n't
+}
+
+Expected: {
+fackforbundet force ouvriere beklagar att dess anmarkningar pa guidens innehall inte inkluderades<SPLIT>: "<SPLIT>det var egentligen inte nagon overlaggning<SPLIT>,<SPLIT>" sade ms. gillard<SPLIT>.}
+Predicted: {
+fackforbundet force ouvriere beklagar att dess anmarkningar pa guidens innehall inte inkluderades<SPLIT>: "<SPLIT>det var egentligen inte nagon overlaggning<SPLIT>,<SPLIT>" sade ms<SPLIT>. gillard<SPLIT>.}
+False positives: {
+ms
+.
+} False negatives: {
+ms.
+}
+
+Expected: {
+8. ur a. i. rabin<SPLIT>: kibbutzchildren - researchfindings to date<SPLIT>.}
+Predicted: {
+8<SPLIT>. ur a. i<SPLIT>. rabin<SPLIT>: kibbutzchildren - researchfindings to date<SPLIT>.}
+False positives: {
+8
+.
+i
+.
+} False negatives: {
+8.
+i.
+}
+
+Expected: {
+motsvarande siffra i industrilanderna ar 15-20 procent<SPLIT>.}
+Predicted: {
+motsvarande siffra i industrilanderna ar 15-<SPLIT>20 procent<SPLIT>.}
+False positives: {
+15-
+20
+} False negatives: {
+15-20
+}
+
+Expected: {
+del 2<SPLIT>:}
+Predicted: {
+del 2:}
+False positives: {
+2:
+} False negatives: {
+2
+:
+}
+
+Expected: {
+ansokan beraknas lamnas till kungl. maj:t i juni 1970<SPLIT>.}
+Predicted: {
+ansokan beraknas lamnas till kungl<SPLIT>. maj:t i juni 1970<SPLIT>.}
+False positives: {
+kungl
+.
+} False negatives: {
+kungl.
+}
+
+Expected: {
+socialt beteende kan aven resultera i samverkan i storre grupper<SPLIT>, ofta utan samband med fortplantningen (<SPLIT>fig. 20<SPLIT>)<SPLIT>.}
+Predicted: {
+socialt beteende kan aven resultera i samverkan i storre grupper<SPLIT>, ofta utan samband med fortplantningen (<SPLIT>fig<SPLIT>. 20<SPLIT>)<SPLIT>.}
+False positives: {
+fig
+.
+} False negatives: {
+fig.
+}
+
+Expected: {
+bjorn och visent stamplar sina revir med urin (<SPLIT>fig. 22<SPLIT>)<SPLIT>.}
+Predicted: {
+bjorn och visent stamplar sina revir med urin (<SPLIT>fig<SPLIT>. 22<SPLIT>)<SPLIT>.}
+False positives: {
+fig
+.
+} False negatives: {
+fig.
+}
