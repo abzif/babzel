@@ -23,8 +23,8 @@ jobs:
           key: opennlp-model-cache-${{ github.run_id }}
           restore-keys: opennlp-model-cache-
       - run: mvn clean install
-      - run: git config user.name "abzif"
-      - run: git config user.email "abzif@users.noreply.github.com"
+      - run: git config --global user.name "abzif"
+      - run: git config --global user.email "abzif@users.noreply.github.com"
       - run: mvn site-deploy
         env:
           GITHUB_TOKEN: ${{ github.token }}
