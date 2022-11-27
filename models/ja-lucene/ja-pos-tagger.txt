@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9675619373558515
+Evaluation-Score=0.9673635394191901
 Training-Sample-Size=16975
 Evaluation-Sample-Size=1886
 Training-Algorithm=PERCEPTRON
@@ -10,9 +10,9 @@ Component-Name=POSTaggerME
 Language=ja
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1666073292245
+Timestamp=1669011969454
 TrainerType=Event
-Training-Eventhash=248eaa9185e148f73b9fe611c5d93c39
+Training-Eventhash=5d8c22f417aeb00803fa41f6dd3d188c
 factory=opennlp.tools.postag.POSTaggerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -79,33 +79,21 @@ Tok: Ref | Pred
 Expected: {
 マイク_NOUN スタンド_NOUN は_ADP 彼_PRON の_ADP 背後_NOUN から_ADP 伸び_VERB 、_PUNCT 頭上_NOUN を_ADP 通っ_VERB て_SCONJ 眼前_NOUN に_ADP 降ろす_VERB 可動_NOUN 式_NOUN の_ADP もの_NOUN を_ADP 使用_NOUN 、_PUNCT 必要_NOUN に_ADP 応じ_VERB て_SCONJ 都度_ADV 、_PUNCT ドラム_NOUN ・_SYM テク_NOUN が_ADP マイク_NOUN スタンド_NOUN を_ADP 操作_VERB し_AUX て_SCONJ いる_VERB ._PUNCT}
 Predicted: {
-マイク_NOUN スタンド_NOUN は_ADP 彼_PRON の_ADP 背後_NOUN から_ADP 伸び_VERB 、_PUNCT 頭上_NOUN を_ADP 通っ_VERB て_SCONJ 眼前_NOUN に_ADP 降ろす_VERB 可動_NOUN 式_NOUN の_ADP もの_NOUN を_ADP 使用_NOUN 、_PUNCT 必要_NOUN に_ADP 応じ_VERB て_SCONJ 都度_ADV 、_PUNCT ドラム_NOUN ・_SYM テク_PROPN が_ADP マイク_PROPN スタンド_NOUN を_ADP 操作_VERB し_AUX て_SCONJ いる_VERB ._PUNCT}
+マイク_NOUN スタンド_NOUN は_ADP 彼_PRON の_ADP 背後_NOUN から_ADP 伸び_VERB 、_PUNCT 頭上_NOUN を_ADP 通っ_VERB て_SCONJ 眼前_NOUN に_ADP 降ろす_VERB 可動_NOUN 式_NOUN の_ADP もの_NOUN を_ADP 使用_NOUN 、_PUNCT 必要_NOUN に_ADP 応じ_VERB て_SCONJ 都度_ADV 、_PUNCT ドラム_NOUN ・_SYM テク_PROPN が_ADP マイク_NOUN スタンド_NOUN を_ADP 操作_VERB し_AUX て_SCONJ いる_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 テク: NOUN | PROPN
-マイク: NOUN | PROPN
-}
-
-Expected: {
-セキュリティ_NOUN の_ADP 点_NOUN で_ADP も_ADP 、_PUNCT 安心_VERB し_AUX て_SCONJ 住める_VERB よう_AUX 、_PUNCT オート_NOUN ロック_NOUN システム_NOUN を_ADP はじめ_VERB 、_PUNCT 防犯_NOUN カメラ_NOUN 、_PUNCT ディンプル_NOUN キー_NOUN ・_SYM 鎌_NOUN デッド_NOUN 錠_NOUN 、_PUNCT エレベータ_NOUN に_ADP は_ADP 防犯_NOUN モニタ_NOUN が_ADP 設置_VERB さ_AUX れ_AUX て_SCONJ い_VERB ます_AUX ._PUNCT}
-Predicted: {
-セキュリティ_NOUN の_ADP 点_NOUN で_ADP も_ADP 、_PUNCT 安心_VERB し_AUX て_SCONJ 住める_VERB よう_AUX 、_PUNCT オート_VERB ロック_NOUN システム_NOUN を_ADP はじめ_VERB 、_PUNCT 防犯_NOUN カメラ_NOUN 、_PUNCT ディンプル_NOUN キー_NOUN ・_SYM 鎌_NOUN デッド_NOUN 錠_NOUN 、_PUNCT エレベータ_NOUN に_ADP は_ADP 防犯_NOUN モニタ_NOUN が_ADP 設置_VERB さ_AUX れ_AUX て_SCONJ い_VERB ます_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-オート: NOUN | VERB
 }
 
 Expected: {
 5_NUM 人_NOUN 以上_NOUN だ_AUX と_SCONJ きつい_ADJ か_ADP も_ADP しれ_VERB ない_AUX けど_SCONJ 、_PUNCT 少_NOUN 人数_NOUN の_ADP 時_NOUN に_ADP は_ADP また_ADV 使い_VERB たい_AUX です_AUX ._PUNCT}
 Predicted: {
-5_NUM 人_NOUN 以上_NOUN だ_AUX と_ADP きつい_ADJ か_ADP も_ADP しれ_VERB ない_AUX けど_SCONJ 、_PUNCT 少_ADV 人数_NOUN の_ADP 時_NOUN に_ADP は_ADP また_ADV 使い_VERB たい_AUX です_AUX ._PUNCT}
+5_NUM 人_NOUN 以上_NOUN だ_AUX と_ADP きつい_ADJ か_ADP も_ADP しれ_VERB ない_AUX けど_SCONJ 、_PUNCT 少_NOUN 人数_NOUN の_ADP 時_NOUN に_ADP は_ADP また_ADV 使い_VERB たい_AUX です_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 と: SCONJ | ADP
-少: NOUN | ADV
 }
 
 Expected: {
@@ -181,13 +169,13 @@ hell: NOUN | PROPN
 }
 
 Expected: {
-ハムスター_NOUN の_ADP 診察_NOUN を_ADP し_VERB て_SCONJ くれる_VERB 病院_NOUN は_ADP 少なく_ADJ とても_ADV 助かり_VERB まし_AUX た_AUX ._PUNCT}
+千月_PROPN 学園_NOUN に_ADP 通い_VERB つつ_SCONJ 弥勒院_PROPN を_ADP サポート_VERB する_AUX 有能_ADJ な_AUX 助手_NOUN で_AUX は_ADP ある_VERB が_SCONJ 、_PUNCT 謎_NOUN も_ADP 多い_ADJ 不思議_ADJ な_AUX 少女_NOUN ._PUNCT}
 Predicted: {
-ハムスター_PROPN の_ADP 診察_NOUN を_ADP し_VERB て_SCONJ くれる_VERB 病院_NOUN は_ADP 少なく_ADJ とても_ADV 助かり_VERB まし_AUX た_AUX ._PUNCT}
+千月_ADV 学園_NOUN に_ADP 通い_VERB つつ_SCONJ 弥勒院_PROPN を_ADP サポート_VERB する_AUX 有能_ADJ な_AUX 助手_NOUN で_AUX は_ADP ある_VERB が_SCONJ 、_PUNCT 謎_NOUN も_ADP 多い_ADJ 不思議_ADJ な_AUX 少女_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-ハムスター: NOUN | PROPN
+千月: PROPN | ADV
 }
 
 Expected: {
@@ -208,6 +196,16 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 誠実: NOUN | ADJ
+}
+
+Expected: {
+キリスト_PROPN 教_NOUN 世界_NOUN で_ADP も_ADP ,_PUNCT たとえば_ADV アメリカ_PROPN で_ADP は_ADP 大統領_NOUN は_ADP 宣誓_NOUN 式_NOUN で_ADP 聖書_NOUN に_ADP 手_NOUN を_ADP 置く_VERB し_SCONJ ,_PUNCT 共和_NOUN 党_NOUN の_ADP 選挙_NOUN 運動_NOUN で_ADP は_ADP キリスト_PROPN 教会_NOUN が_ADP 力_NOUN を_ADP 持っ_VERB て_SCONJ いる_VERB ._PUNCT}
+Predicted: {
+キリスト_PROPN 教_NOUN 世界_NOUN で_ADP も_ADP ,_PUNCT たとえば_ADV アメリカ_PROPN で_ADP は_ADP 大統領_NOUN は_ADP 宣誓_VERB 式_NOUN で_ADP 聖書_NOUN に_ADP 手_NOUN を_ADP 置く_VERB し_SCONJ ,_PUNCT 共和_NOUN 党_NOUN の_ADP 選挙_NOUN 運動_NOUN で_ADP は_ADP キリスト_PROPN 教会_NOUN が_ADP 力_NOUN を_ADP 持っ_VERB て_SCONJ いる_VERB ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+宣誓: NOUN | VERB
 }
 
 Expected: {
@@ -251,16 +249,6 @@ Tok: Ref | Pred
 }
 
 Expected: {
-やがて_ADV 、_PUNCT 書きため_VERB た_AUX 曲_NOUN を_ADP 携え_VERB 、_PUNCT 「_PUNCT ウクレレ_NOUN わらべうた_NOUN 」_PUNCT と_ADP し_AUX て_SCONJ 児童_NOUN 館_NOUN など_ADP で_ADP ライブ_NOUN を_ADP 始め_VERB 、_PUNCT そこ_PRON で_ADP 出会っ_VERB た_AUX 絵本_NOUN の_ADP 読み聞かせ_NOUN を_ADP する_VERB 父親_NOUN たち_NOUN の_ADP グループ_NOUN 「_PUNCT パパ's_NOUN 絵本_NOUN プロジェクト_NOUN 」_PUNCT の_ADP 活動_NOUN に_ADP 合流_NOUN ._PUNCT}
-Predicted: {
-やがて_ADV 、_PUNCT 書きため_VERB た_AUX 曲_NOUN を_ADP 携え_VERB 、_PUNCT 「_PUNCT ウクレレ_NOUN わらべうた_NOUN 」_PUNCT と_ADP し_VERB て_SCONJ 児童_NOUN 館_NOUN など_ADP で_ADP ライブ_NOUN を_ADP 始め_VERB 、_PUNCT そこ_PRON で_ADP 出会っ_VERB た_AUX 絵本_NOUN の_ADP 読み聞かせ_NOUN を_ADP する_VERB 父親_NOUN たち_NOUN の_ADP グループ_NOUN 「_PUNCT パパ's_NOUN 絵本_NOUN プロジェクト_NOUN 」_PUNCT の_ADP 活動_NOUN に_ADP 合流_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-し: AUX | VERB
-}
-
-Expected: {
 治療_NOUN や_ADP ケア_NOUN の_ADP 方_NOUN も_ADP 素晴らしく_ADJ 、_PUNCT 待合_NOUN 室_NOUN も_ADP ここ_PRON が_ADP 歯_NOUN 医者_NOUN だ_AUX と_ADP 忘れ_VERB て_SCONJ しまう_VERB くらい_PART 立派_ADJ です_AUX ._PUNCT}
 Predicted: {
 治療_NOUN や_ADP ケア_NOUN の_ADP 方_NOUN も_ADP 素晴らしく_ADJ 、_PUNCT 待合_NOUN 室_NOUN も_ADP ここ_PRON が_ADP 歯_NOUN 医者_NOUN だ_AUX と_ADP 忘れ_VERB て_SCONJ しまう_VERB くらい_ADP 立派_ADJ です_AUX ._PUNCT}
@@ -273,32 +261,11 @@ Tok: Ref | Pred
 Expected: {
 子供_NOUN お_NOUN 祝い返し_NOUN に_ADP 買っ_VERB た_AUX ロール_NOUN ケーキ_NOUN が_ADP カビ_VERB て_SCONJ い_VERB た_AUX の_SCONJ で_AUX 、_PUNCT 本当_NOUN に_ADP 怒り_NOUN しんとう_NOUN でし_AUX た_AUX}
 Predicted: {
-子供_NOUN お_NOUN 祝い返し_NOUN に_ADP 買っ_VERB た_AUX ロール_NOUN ケーキ_NOUN が_ADP カビ_VERB て_SCONJ い_VERB た_AUX の_SCONJ で_AUX 、_PUNCT 本当_NOUN に_ADP 怒り_VERB しんとう_AUX でし_AUX た_AUX}
+子供_NOUN お_NOUN 祝い返し_NOUN に_ADP 買っ_VERB た_AUX ロール_NOUN ケーキ_NOUN が_ADP カビ_VERB て_SCONJ い_VERB た_AUX の_SCONJ で_AUX 、_PUNCT 本当_NOUN に_ADP 怒り_NOUN しんとう_AUX でし_AUX た_AUX}
 Errors: {
 Tok: Ref | Pred
 ---------------
-怒り: NOUN | VERB
 しんとう: NOUN | AUX
-}
-
-Expected: {
-食べ_VERB きれ_VERB ない_AUX くらい_PART 出_VERB て_SCONJ き_VERB まし_AUX た_AUX ._PUNCT}
-Predicted: {
-食べ_VERB きれ_VERB ない_AUX くらい_ADP 出_VERB て_SCONJ き_VERB まし_AUX た_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-くらい: PART | ADP
-}
-
-Expected: {
-従業_NOUN 員_NOUN の_ADP 方々_NOUN も_ADP いつ_PRON も_ADP 暖かく_ADJ 送り出し_VERB て_SCONJ くれる_VERB の_SCONJ で_AUX 、_PUNCT 私_PRON が_ADP 千葉_PROPN で_ADP 宿泊_VERB する_AUX ホテル_NOUN は_ADP ここ_PRON で_ADP きまり_NOUN です_AUX ._PUNCT}
-Predicted: {
-従業_NOUN 員_NOUN の_ADP 方々_NOUN も_ADP いつ_PRON も_ADP 暖かく_VERB 送り出し_VERB て_SCONJ くれる_VERB の_SCONJ で_AUX 、_PUNCT 私_PRON が_ADP 千葉_PROPN で_ADP 宿泊_VERB する_AUX ホテル_NOUN は_ADP ここ_PRON で_ADP きまり_NOUN です_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-暖かく: ADJ | VERB
 }
 
 Expected: {
@@ -311,6 +278,27 @@ Tok: Ref | Pred
 もの: SCONJ | NOUN
 の: SCONJ | ADP
 直結: NOUN | ADJ
+}
+
+Expected: {
+おいしい_ADJ と_ADP 聞い_VERB て_AUX た_AUX だけ_PART に_ADP 姉_NOUN に_ADP は_ADP 申し訳_NOUN なく_ADJ て_SCONJ ホント_NOUN に_ADP 最悪_ADJ です_AUX}
+Predicted: {
+おいしい_ADJ と_ADP 聞い_VERB て_AUX た_AUX だけ_PART に_ADP 姉_NOUN に_ADP は_ADP 申し訳_NOUN なく_AUX て_SCONJ ホント_PROPN に_ADP 最悪_ADJ です_AUX}
+Errors: {
+Tok: Ref | Pred
+---------------
+なく: ADJ | AUX
+ホント: NOUN | PROPN
+}
+
+Expected: {
+通常_ADV この_DET 協議_NOUN は_ADP 1_NUM 〜_SYM 4_NUM 年_NOUN かかる_VERB と_ADP さ_VERB れ_AUX て_SCONJ いる_VERB ._PUNCT}
+Predicted: {
+通常_ADV この_DET 協議_NOUN は_ADP 1_NUM 〜_PROPN 4_NUM 年_NOUN かかる_VERB と_ADP さ_VERB れ_AUX て_SCONJ いる_VERB ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+〜: SYM | PROPN
 }
 
 Expected: {
@@ -348,11 +336,11 @@ Tok: Ref | Pred
 Expected: {
 安徽_PROPN 省_NOUN 安慶_PROPN 出身_NOUN ._PUNCT}
 Predicted: {
-安徽_INTJ 省_NOUN 安慶_NOUN 出身_NOUN ._PUNCT}
+安徽_NOUN 省_NOUN 安慶_NOUN 出身_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-安徽: PROPN | INTJ
+安徽: PROPN | NOUN
 安慶: PROPN | NOUN
 }
 
@@ -420,22 +408,13 @@ Tok: Ref | Pred
 }
 
 Expected: {
-近年_NOUN で_ADP は_ADP 『_PUNCT うたばん_NOUN 』_PUNCT の_ADP よう_NOUN に_AUX 、_PUNCT それ_PRON を_ADP 逆手_NOUN に_ADP 取り_VERB 笑い_NOUN の_ADP ネタ_NOUN と_ADP し_AUX て_SCONJ 積極_NOUN 的_PART に_AUX 活用_VERB する_AUX 番組_NOUN も_ADP 現れ_VERB て_SCONJ いる_VERB ._PUNCT}
-Predicted: {
-近年_NOUN で_ADP は_ADP 『_PUNCT うたばん_NOUN 』_PUNCT の_ADP よう_NOUN に_AUX 、_PUNCT それ_PRON を_ADP 逆手_NOUN に_ADP 取り_VERB 笑い_NOUN の_ADP ネタ_NOUN と_ADP し_VERB て_SCONJ 積極_NOUN 的_PART に_AUX 活用_VERB する_AUX 番組_NOUN も_ADP 現れ_VERB て_SCONJ いる_VERB ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-し: AUX | VERB
-}
-
-Expected: {
 経堂_PROPN の_ADP 美容_NOUN 室_NOUN ビヨンド_NOUN アール_NOUN に_ADP 行っ_VERB て_SCONJ き_VERB まし_AUX た_AUX ._PUNCT}
 Predicted: {
-経堂_PROPN の_ADP 美容_NOUN 室_NOUN ビヨンド_PROPN アール_PROPN に_ADP 行っ_VERB て_SCONJ き_VERB まし_AUX た_AUX ._PUNCT}
+経堂_NOUN の_ADP 美容_NOUN 室_NOUN ビヨンド_PROPN アール_PROPN に_ADP 行っ_VERB て_SCONJ き_VERB まし_AUX た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+経堂: PROPN | NOUN
 ビヨンド: NOUN | PROPN
 アール: NOUN | PROPN
 }
@@ -453,12 +432,22 @@ Tok: Ref | Pred
 Expected: {
 ダム_NOUN 検証_NOUN に_ADP つい_VERB て_SCONJ も_ADP 工程_NOUN が_ADP 示さ_VERB れ_AUX て_SCONJ い_VERB ない_AUX と_ADP し_AUX て_SCONJ 、_PUNCT 本_NOUN 年度_NOUN 分_NOUN の_ADP 負担_NOUN 金_NOUN の_ADP 支払い_NOUN を_ADP 留保_VERB する_AUX など_PART 国_NOUN と_ADP の_ADP 対立_NOUN を_ADP 深め_VERB て_SCONJ い_VERB た_AUX ._PUNCT}
 Predicted: {
-ダム_NOUN 検証_NOUN に_ADP つい_VERB て_SCONJ も_ADP 工程_NOUN が_ADP 示さ_VERB れ_AUX て_SCONJ い_VERB ない_AUX と_ADP し_SCONJ て_SCONJ 、_PUNCT 本_NOUN 年度_NOUN 分_NOUN の_ADP 負担_NOUN 金_NOUN の_ADP 支払い_NOUN を_ADP 留保_VERB する_AUX など_ADP 国_NOUN と_ADP の_ADP 対立_NOUN を_ADP 深め_VERB て_SCONJ い_VERB た_AUX ._PUNCT}
+ダム_NOUN 検証_NOUN に_ADP つい_VERB て_SCONJ も_ADP 工程_NOUN が_ADP 示さ_VERB れ_AUX て_SCONJ い_VERB ない_AUX と_ADP し_SCONJ て_SCONJ 、_PUNCT 本_NOUN 年度_NOUN 分_NOUN の_ADP 負担_NOUN 金_NOUN の_ADP 支払い_NOUN を_ADP 留保_VERB する_AUX など_PART 国_NOUN と_ADP の_ADP 対立_NOUN を_ADP 深め_VERB て_SCONJ い_VERB た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 し: AUX | SCONJ
-など: PART | ADP
+}
+
+Expected: {
+学生_NOUN 時代_NOUN から_ADP 行き_VERB つけ_NOUN の_ADP 店_NOUN です_AUX ._PUNCT}
+Predicted: {
+学生_NOUN 時代_NOUN から_ADP 行き_VERB つけ_SCONJ の_SCONJ 店_NOUN です_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+つけ: NOUN | SCONJ
+の: ADP | SCONJ
 }
 
 Expected: {
@@ -501,6 +490,16 @@ Tok: Ref | Pred
 ---------------
 走り: VERB | NOUN
 幅跳び: NOUN | VERB
+}
+
+Expected: {
+標準_NOUN 軌_NOUN へ_ADP の_ADP 改築_NOUN に_ADP つい_VERB て_SCONJ は_ADP 、_PUNCT 1938_NUM 年_NOUN 7_NUM 月_NOUN 1_NUM 日_NOUN に_ADP 完成_VERB し_AUX て_SCONJ いる_VERB が_SCONJ 、_PUNCT 慶州_PROPN -_SYM 永川_PROPN 間_NOUN は_ADP 、_PUNCT 762_NUM mm_NOUN 軌間_NOUN の_ADP まま_NOUN 残さ_VERB れ_AUX た_AUX ._PUNCT}
+Predicted: {
+標準_NOUN 軌_NOUN へ_ADP の_ADP 改築_NOUN に_ADP つい_VERB て_SCONJ は_ADP 、_PUNCT 1938_NUM 年_NOUN 7_NUM 月_NOUN 1_NUM 日_NOUN に_ADP 完成_VERB し_AUX て_SCONJ いる_VERB が_SCONJ 、_PUNCT 慶州_PROPN -_SYM 永川_NOUN 間_NOUN は_ADP 、_PUNCT 762_NUM mm_NOUN 軌間_NOUN の_ADP まま_NOUN 残さ_VERB れ_AUX た_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+永川: PROPN | NOUN
 }
 
 Expected: {
@@ -581,7 +580,7 @@ Tok: Ref | Pred
 Expected: {
 「_PUNCT ヒマラヤ_PROPN の_ADP ケーキ_NOUN 」_PUNCT と_ADP し_AUX て_SCONJ 、_PUNCT また_CCONJ 「_PUNCT 本丸_NOUN シュー_NOUN クリーム_NOUN 」_PUNCT ・_SYM 生_NOUN チョコレート_NOUN 「_PUNCT 美術_NOUN 館_NOUN の_ADP 石畳_NOUN 」_PUNCT ・_SYM チョコレート_NOUN 菓子_NOUN 「_PUNCT コーチン_NOUN エッグ_NOUN 」_PUNCT ・_SYM 「_PUNCT ナゴヤ_PROPN プリン_NOUN 」_PUNCT ・_SYM 赤_NOUN 味噌_NOUN を_ADP 用い_VERB た_AUX 「_PUNCT みそ_NOUN サブレ_NOUN 」_PUNCT など_ADP の_ADP 特色_NOUN ある_VERB 商品_NOUN で_ADP も_ADP 知ら_VERB れ_AUX た_AUX ._PUNCT}
 Predicted: {
-「_PUNCT ヒマラヤ_PROPN の_ADP ケーキ_NOUN 」_PUNCT と_ADP し_VERB て_SCONJ 、_PUNCT また_CCONJ 「_PUNCT 本丸_PROPN シュー_PROPN クリーム_NOUN 」_PUNCT ・_SYM 生_NOUN チョコレート_NOUN 「_PUNCT 美術_NOUN 館_NOUN の_ADP 石畳_NOUN 」_PUNCT ・_SYM チョコレート_NOUN 菓子_NOUN 「_PUNCT コーチン_NOUN エッグ_PROPN 」_PUNCT ・_SYM 「_PUNCT ナゴヤ_PROPN プリン_NOUN 」_PUNCT ・_SYM 赤_NOUN 味噌_NOUN を_ADP 用い_VERB た_AUX 「_PUNCT みそ_NOUN サブレ_PROPN 」_PUNCT など_ADP の_ADP 特色_NOUN ある_VERB 商品_NOUN で_ADP も_ADP 知ら_VERB れ_AUX た_AUX ._PUNCT}
+「_PUNCT ヒマラヤ_PROPN の_ADP ケーキ_NOUN 」_PUNCT と_ADP し_VERB て_SCONJ 、_PUNCT また_CCONJ 「_PUNCT 本丸_PROPN シュー_PROPN クリーム_NOUN 」_PUNCT ・_SYM 生_NOUN チョコレート_NOUN 「_PUNCT 美術_NOUN 館_NOUN の_ADP 石畳_NOUN 」_PUNCT ・_SYM チョコレート_NOUN 菓子_NOUN 「_PUNCT コーチン_NOUN エッグ_PROPN 」_PUNCT ・_SYM 「_PUNCT ナゴヤ_PROPN プリン_NOUN 」_PUNCT ・_SYM 赤_NOUN 味噌_NOUN を_ADP 用い_VERB た_AUX 「_PUNCT みそ_NOUN サブレ_NOUN 」_PUNCT など_ADP の_ADP 特色_NOUN ある_VERB 商品_NOUN で_ADP も_ADP 知ら_VERB れ_AUX た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -589,19 +588,18 @@ Tok: Ref | Pred
 本丸: NOUN | PROPN
 シュー: NOUN | PROPN
 エッグ: NOUN | PROPN
-サブレ: NOUN | PROPN
 }
 
 Expected: {
 雪入_PROPN ふれあい_NOUN の_ADP 里_NOUN 公園_NOUN を_ADP 起点_NOUN と_ADP する_VERB 登山_NOUN 道_NOUN の_ADP 他_NOUN 、_PUNCT 朝日_PROPN 峠_NOUN から_ADP 、_PUNCT 雪入_PROPN 山_NOUN 、_PUNCT 青木葉_PROPN 峠_NOUN 、_PUNCT 青木葉_PROPN 山_NOUN 、_PUNCT 元_NOUN 青木葉_PROPN 峠_NOUN 、_PUNCT 浅間_PROPN 山_NOUN 、_PUNCT 閑居_NOUN 山_NOUN 、_PUNCT 権現_NOUN 山_NOUN の_ADP 順_NOUN に_ADP 筑波_PROPN 連山_NOUN の_ADP 稜線_NOUN を_ADP 縦走_VERB する_AUX 登山_NOUN 者_NOUN も_ADP 多い_ADJ ._PUNCT}
 Predicted: {
-雪入_NOUN ふれあい_NOUN の_ADP 里_PROPN 公園_NOUN を_ADP 起点_NOUN と_ADP する_VERB 登山_NOUN 道_NOUN の_ADP 他_NOUN 、_PUNCT 朝日_NOUN 峠_NOUN から_ADP 、_PUNCT 雪入_PROPN 山_NOUN 、_PUNCT 青木葉_PROPN 峠_NOUN 、_PUNCT 青木葉_PROPN 山_NOUN 、_PUNCT 元_NOUN 青木葉_PROPN 峠_NOUN 、_PUNCT 浅間_PROPN 山_NOUN 、_PUNCT 閑居_PROPN 山_NOUN 、_PUNCT 権現_PROPN 山_NOUN の_ADP 順_NOUN に_ADP 筑波_NOUN 連山_NOUN の_ADP 稜線_NOUN を_ADP 縦走_VERB する_AUX 登山_NOUN 者_NOUN も_ADP 多い_ADJ ._PUNCT}
+雪入_NOUN ふれあい_NOUN の_ADP 里_NOUN 公園_NOUN を_ADP 起点_NOUN と_ADP する_VERB 登山_NOUN 道_NOUN の_ADP 他_NOUN 、_PUNCT 朝日_NOUN 峠_NOUN から_ADP 、_PUNCT 雪入_PROPN 山_NOUN 、_PUNCT 青木葉_NOUN 峠_NOUN 、_PUNCT 青木葉_PROPN 山_NOUN 、_PUNCT 元_NOUN 青木葉_PROPN 峠_NOUN 、_PUNCT 浅間_PROPN 山_NOUN 、_PUNCT 閑居_PROPN 山_NOUN 、_PUNCT 権現_PROPN 山_NOUN の_ADP 順_NOUN に_ADP 筑波_NOUN 連山_NOUN の_ADP 稜線_NOUN を_ADP 縦走_VERB する_AUX 登山_NOUN 者_NOUN も_ADP 多い_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 雪入: PROPN | NOUN
-里: NOUN | PROPN
 朝日: PROPN | NOUN
+青木葉: PROPN | NOUN
 閑居: NOUN | PROPN
 権現: NOUN | PROPN
 筑波: PROPN | NOUN
@@ -610,12 +608,13 @@ Tok: Ref | Pred
 Expected: {
 その_DET 日_NOUN 入っ_VERB て_SCONJ いる_VERB 品揃え_NOUN の_ADP お_NOUN 任せ_NOUN で_ADP 飲ん_VERB で_SCONJ も_ADP 面白い_ADJ ._PUNCT}
 Predicted: {
-その_DET 日_NOUN 入っ_VERB て_SCONJ いる_VERB 品揃え_SCONJ の_SCONJ お_NOUN 任せ_NOUN で_ADP 飲ん_VERB で_SCONJ も_ADP 面白い_ADJ ._PUNCT}
+その_DET 日_NOUN 入っ_VERB て_SCONJ いる_VERB 品揃え_SCONJ の_SCONJ お_NOUN 任せ_NOUN で_AUX 飲ん_VERB で_SCONJ も_ADP 面白い_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 品揃え: NOUN | SCONJ
 の: ADP | SCONJ
+で: ADP | AUX
 }
 
 Expected: {
@@ -671,21 +670,21 @@ Tok: Ref | Pred
 Expected: {
 首相_NOUN 補佐_NOUN 官_NOUN に_ADP なっ_VERB た_AUX 国民_NOUN 新党_NOUN の_ADP 亀井_PROPN 代表_NOUN は_ADP 、_PUNCT 自民_PROPN 党_NOUN から_ADP 「_PUNCT 一_NUM 本_NOUN 釣り_NOUN 」_PUNCT し_VERB た_AUX 浜田_PROPN 総務_NOUN 政務_NOUN 官_NOUN を_ADP 従え_VERB て_SCONJ 宮城_PROPN 県_NOUN 石巻_PROPN 市_NOUN を_ADP 視察_VERB し_AUX た_AUX ._PUNCT}
 Predicted: {
-首相_NOUN 補佐_NOUN 官_NOUN に_ADP なっ_VERB た_AUX 国民_NOUN 新党_NOUN の_ADP 亀井_PROPN 代表_NOUN は_ADP 、_PUNCT 自民_PROPN 党_NOUN から_ADP 「_PUNCT 一_NUM 本_NOUN 釣り_NOUN 」_PUNCT し_AUX た_AUX 浜田_PROPN 総務_NOUN 政務_NOUN 官_NOUN を_ADP 従え_VERB て_SCONJ 宮城_PROPN 県_NOUN 石巻_PROPN 市_NOUN を_ADP 視察_VERB し_AUX た_AUX ._PUNCT}
+首相_NOUN 補佐_NOUN 官_NOUN に_ADP なっ_VERB た_AUX 国民_NOUN 新党_NOUN の_ADP 亀井_PROPN 代表_NOUN は_ADP 、_PUNCT 自民_PROPN 党_NOUN から_ADP 「_PUNCT 一_NUM 本_NOUN 釣り_NOUN 」_PUNCT し_AUX た_AUX 浜田_NOUN 総務_NOUN 政務_NOUN 官_NOUN を_ADP 従え_VERB て_SCONJ 宮城_PROPN 県_NOUN 石巻_PROPN 市_NOUN を_ADP 視察_VERB し_AUX た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 し: VERB | AUX
+浜田: PROPN | NOUN
 }
 
 Expected: {
 スティーヴン_PROPN ・_SYM タイラー_PROPN が_ADP 歌う_VERB 映画_NOUN 「_PUNCT space_NOUN battle_NOUN ship_NOUN ヤマト_PROPN 」_PUNCT の_ADP 主題_NOUN 歌_NOUN 「_PUNCT love_NOUN lives_NOUN 」_PUNCT を_ADP 木村_PROPN が_ADP 初めて_ADV 歌う_VERB ._PUNCT}
 Predicted: {
-スティーヴン_PROPN ・_SYM タイラー_PROPN が_ADP 歌う_VERB 映画_NOUN 「_PUNCT space_NOUN battle_ADJ ship_NOUN ヤマト_NOUN 」_PUNCT の_ADP 主題_NOUN 歌_NOUN 「_PUNCT love_NOUN lives_NOUN 」_PUNCT を_ADP 木村_PROPN が_ADP 初めて_ADV 歌う_VERB ._PUNCT}
+スティーヴン_PROPN ・_SYM タイラー_PROPN が_ADP 歌う_VERB 映画_NOUN 「_PUNCT space_NOUN battle_NOUN ship_NOUN ヤマト_NOUN 」_PUNCT の_ADP 主題_NOUN 歌_NOUN 「_PUNCT love_NOUN lives_NOUN 」_PUNCT を_ADP 木村_PROPN が_ADP 初めて_ADV 歌う_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-battle: NOUN | ADJ
 ヤマト: PROPN | NOUN
 }
 
@@ -702,10 +701,12 @@ Tok: Ref | Pred
 Expected: {
 他_NOUN に_ADP は_ADP 伝記_NOUN 作家_NOUN リットン_PROPN ・_SYM ストレイチー_PROPN 、_PUNCT 画家_NOUN の_ADP ロジャー_PROPN ・_SYM フライ_PROPN 、_PUNCT 作家_NOUN の_ADP デイヴィッド_PROPN ・_SYM ガーネット_PROPN 、_PUNCT e_NOUN ・_SYM m_NOUN ・_SYM フォースター_PROPN が_ADP いる_VERB ._PUNCT}
 Predicted: {
-他_NOUN に_ADP は_ADP 伝記_NOUN 作家_NOUN リットン_PROPN ・_SYM ストレイチー_PROPN 、_PUNCT 画家_NOUN の_ADP ロジャー_PROPN ・_SYM フライ_PROPN 、_PUNCT 作家_NOUN の_ADP デイヴィッド_PROPN ・_SYM ガーネット_PROPN 、_PUNCT e_PROPN ・_SYM m_NOUN ・_SYM フォースター_NOUN が_ADP いる_VERB ._PUNCT}
+他_NOUN に_ADP は_ADP 伝記_NOUN 作家_NOUN リットン_PROPN ・_SYM ストレイチー_PROPN 、_PUNCT 画家_NOUN の_ADP ロジャー_NOUN ・_SYM フライ_NOUN 、_PUNCT 作家_NOUN の_ADP デイヴィッド_PROPN ・_SYM ガーネット_PROPN 、_PUNCT e_PROPN ・_SYM m_NOUN ・_SYM フォースター_NOUN が_ADP いる_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+ロジャー: PROPN | NOUN
+フライ: PROPN | NOUN
 e: NOUN | PROPN
 フォースター: PROPN | NOUN
 }
@@ -821,21 +822,21 @@ Tok: Ref | Pred
 Expected: {
 絵_NOUN の_ADP 左下_NOUN に_ADP は_ADP 「_PUNCT 明兆_PROPN 筆_NOUN 」_PUNCT の_ADP 署名_NOUN が_ADP ある_VERB ._PUNCT}
 Predicted: {
-絵_NOUN の_ADP 左下_NOUN に_ADP は_ADP 「_PUNCT 明兆_ADJ 筆_NOUN 」_PUNCT の_ADP 署名_NOUN が_ADP ある_VERB ._PUNCT}
+絵_NOUN の_ADP 左下_NOUN に_ADP は_ADP 「_PUNCT 明兆_NOUN 筆_NOUN 」_PUNCT の_ADP 署名_NOUN が_ADP ある_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-明兆: PROPN | ADJ
+明兆: PROPN | NOUN
 }
 
 Expected: {
 プロジェクト_NOUN に_ADP 在籍_VERB する_AUX メンバー_NOUN が_ADP 新垣_PROPN 里沙_PROPN だけ_ADP に_ADP なっ_VERB た_AUX ._PUNCT}
 Predicted: {
-プロジェクト_NOUN に_ADP 在籍_VERB する_AUX メンバー_NOUN が_ADP 新垣_ADJ 里沙_NOUN だけ_ADP に_ADP なっ_VERB た_AUX ._PUNCT}
+プロジェクト_NOUN に_ADP 在籍_VERB する_AUX メンバー_NOUN が_ADP 新垣_NOUN 里沙_NOUN だけ_ADP に_ADP なっ_VERB た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-新垣: PROPN | ADJ
+新垣: PROPN | NOUN
 里沙: PROPN | NOUN
 }
 
@@ -915,12 +916,12 @@ Tok: Ref | Pred
 Expected: {
 時折_ADV 、_PUNCT 手書き_NOUN の_ADP 絵_NOUN の_ADP フリップ_NOUN に_ADP 、_PUNCT 鳩_NOUN 時計_NOUN と_ADP サウンド_NOUN ロゴ_NOUN が_ADP つい_VERB た_AUX 時刻_NOUN 表示_NOUN が_ADP 挿入_VERB さ_AUX れ_AUX て_SCONJ い_VERB た_AUX ._PUNCT}
 Predicted: {
-時折_ADV 、_PUNCT 手書き_ADJ の_ADP 絵_NOUN の_ADP フリップ_NOUN に_ADP 、_PUNCT 鳩_PROPN 時計_NOUN と_ADP サウンド_NOUN ロゴ_NOUN が_ADP つい_VERB た_AUX 時刻_NOUN 表示_NOUN が_ADP 挿入_VERB さ_AUX れ_AUX て_SCONJ い_VERB た_AUX ._PUNCT}
+時折_ADV 、_PUNCT 手書き_NOUN の_ADP 絵_NOUN の_ADP フリップ_NOUN に_ADP 、_PUNCT 鳩_PROPN 時計_PROPN と_ADP サウンド_NOUN ロゴ_NOUN が_ADP つい_VERB た_AUX 時刻_NOUN 表示_NOUN が_ADP 挿入_VERB さ_AUX れ_AUX て_SCONJ い_VERB た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-手書き: NOUN | ADJ
 鳩: NOUN | PROPN
+時計: NOUN | PROPN
 }
 
 Expected: {
@@ -931,6 +932,16 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 スローガン: NOUN | PROPN
+}
+
+Expected: {
+その_DET 頃_NOUN から_ADP "_PUNCT オルター_NOUN カレッジ_NOUN "_PUNCT と_ADP いう_VERB 名称_NOUN は_ADP 使わ_VERB れ_AUX なく_AUX なり_VERB まし_AUX た_AUX が_SCONJ ,_PUNCT 現在_ADV も_ADP 装い_NOUN を_ADP 変え_VERB て_SCONJ 活動_VERB し_AUX て_SCONJ いる_VERB よう_AUX です_AUX ._PUNCT}
+Predicted: {
+その_DET 頃_NOUN から_ADP "_PUNCT オルター_NOUN カレッジ_NOUN "_PUNCT と_ADP いう_VERB 名称_NOUN は_ADP 使わ_VERB れ_AUX なく_AUX なり_VERB まし_AUX た_AUX が_SCONJ ,_PUNCT 現在_ADV も_ADP 装い_VERB を_ADP 変え_VERB て_SCONJ 活動_VERB し_AUX て_SCONJ いる_VERB よう_AUX です_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+装い: NOUN | VERB
 }
 
 Expected: {
@@ -1094,6 +1105,16 @@ Tok: Ref | Pred
 }
 
 Expected: {
+店主_NOUN の_ADP 人柄_NOUN も_ADP よく_ADJ 、_PUNCT 最近_NOUN は_ADP よく_ADV 食べ_VERB に_ADP 行っ_VERB て_SCONJ い_VERB ます_AUX ._PUNCT}
+Predicted: {
+店主_NOUN の_ADP 人柄_NOUN も_ADP よく_ADJ 、_PUNCT 最近_NOUN は_ADP よく_ADJ 食べ_VERB に_ADP 行っ_VERB て_SCONJ い_VERB ます_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+よく: ADV | ADJ
+}
+
+Expected: {
 リハビリテーション_NOUN 体育_NOUN 士_NOUN 伊藤_PROPN 秀一_PROPN が_ADP 2009_NUM 年_NOUN 4_NUM 月_NOUN 1_NUM 日_NOUN に_ADP 作成_VERB し_AUX た_AUX 造語_NOUN ._PUNCT}
 Predicted: {
 リハビリテーション_PROPN 体育_NOUN 士_NOUN 伊藤_PROPN 秀一_PROPN が_ADP 2009_NUM 年_NOUN 4_NUM 月_NOUN 1_NUM 日_NOUN に_ADP 作成_VERB し_AUX た_AUX 造語_NOUN ._PUNCT}
@@ -1242,26 +1263,6 @@ Tok: Ref | Pred
 }
 
 Expected: {
-仙台_PROPN 市_NOUN 内_NOUN の_ADP 学区_NOUN の_ADP 存廃_NOUN は_ADP 、_PUNCT お_NOUN 互い_NOUN ライバル_NOUN で_AUX あり_VERB 仙台_PROPN 一_NUM 高_NOUN と_ADP 仙台_PROPN 二_NUM 高_NOUN の_ADP 利害_NOUN に_ADP よる_VERB 所_NOUN が_ADP 大きい_ADJ ._PUNCT}
-Predicted: {
-仙台_PROPN 市_NOUN 内_NOUN の_ADP 学区_NOUN の_ADP 存廃_NOUN は_ADP 、_PUNCT お_NOUN 互い_NOUN ライバル_NOUN で_AUX あり_VERB 仙台_PROPN 一_NUM 高_NOUN と_ADP 仙台_PROPN 二_NUM 高_PROPN の_ADP 利害_NOUN に_ADP よる_VERB 所_NOUN が_ADP 大きい_ADJ ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-高: NOUN | PROPN
-}
-
-Expected: {
-1910_NUM 年_NOUN 代_NOUN 後半_NOUN 頃_NOUN から_ADP 、_PUNCT まず_ADV 都市_NOUN の_ADP 中心_NOUN 業務_NOUN 地区_NOUN から_ADP 、_PUNCT 後_NOUN に_ADP は_ADP 都市_NOUN の_ADP 他_NOUN の_ADP 地域_NOUN で_ADP も_ADP 、_PUNCT 自動_NOUN 車_NOUN の_ADP 渋滞_NOUN は_ADP 専用_NOUN の_ADP 交通_NOUN 路_NOUN を_ADP 持た_VERB ない_AUX 交通_NOUN 事業_NOUN 者_NOUN に_ADP とっ_VERB て_SCONJ 著しく_ADJ 妨害_NOUN と_ADP なる_VERB ほど_PART 酷く_ADJ なっ_VERB て_SCONJ き_VERB た_AUX ._PUNCT}
-Predicted: {
-1910_NUM 年_NOUN 代_NOUN 後半_NOUN 頃_NOUN から_ADP 、_PUNCT まず_ADV 都市_NOUN の_ADP 中心_NOUN 業務_NOUN 地区_NOUN から_ADP 、_PUNCT 後_NOUN に_ADP は_ADP 都市_NOUN の_ADP 他_NOUN の_ADP 地域_NOUN で_ADP も_ADP 、_PUNCT 自動_NOUN 車_NOUN の_ADP 渋滞_PROPN は_ADP 専用_NOUN の_ADP 交通_NOUN 路_NOUN を_ADP 持た_VERB ない_AUX 交通_NOUN 事業_NOUN 者_NOUN に_ADP とっ_VERB て_SCONJ 著しく_ADJ 妨害_NOUN と_ADP なる_VERB ほど_PART 酷く_ADJ なっ_VERB て_SCONJ き_VERB た_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-渋滞: NOUN | PROPN
-}
-
-Expected: {
 さらに_CCONJ 『_PUNCT ガープス_PROPN ・_SYM ユエル_NOUN 』_PUNCT の_ADP 「_PUNCT 追加_NOUN 呪文_NOUN 」_PUNCT も_ADP 『_PUNCT ガープス_PROPN ・_SYM 魔法_NOUN 大全_NOUN 』_PUNCT に_ADP 掲載_VERB さ_AUX れ_AUX て_SCONJ いる_VERB ._PUNCT}
 Predicted: {
 さらに_CCONJ 『_PUNCT ガープス_NOUN ・_SYM ユエル_PROPN 』_PUNCT の_ADP 「_PUNCT 追加_NOUN 呪文_NOUN 」_PUNCT も_ADP 『_PUNCT ガープス_NOUN ・_SYM 魔法_NOUN 大全_NOUN 』_PUNCT に_ADP 掲載_VERB さ_AUX れ_AUX て_SCONJ いる_VERB ._PUNCT}
@@ -1333,6 +1334,16 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 文: PROPN | NOUN
+}
+
+Expected: {
+あっさり_ADV し_AUX て_SCONJ いる_VERB の_SCONJ に_SCONJ ちゃんと_ADV 旨み_NOUN が_ADP あり_VERB ます_AUX !_PUNCT}
+Predicted: {
+あっさり_ADV し_VERB て_SCONJ いる_VERB の_SCONJ に_SCONJ ちゃんと_ADV 旨み_NOUN が_ADP あり_VERB ます_AUX !_PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+し: AUX | VERB
 }
 
 Expected: {
@@ -1408,11 +1419,12 @@ Tok: Ref | Pred
 Expected: {
 天_NOUN ざる_NOUN で_ADP は_ADP ちょっと_ADV 多い_ADJ か_PART な_PART ?_PUNCT}
 Predicted: {
-天_NOUN ざる_AUX で_ADP は_ADP ちょっと_ADV 多い_ADJ か_PART な_PART ?_PUNCT}
+天_NOUN ざる_AUX で_AUX は_ADP ちょっと_ADV 多い_ADJ か_PART な_PART ?_PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 ざる: NOUN | AUX
+で: ADP | AUX
 }
 
 Expected: {
@@ -1428,10 +1440,12 @@ Tok: Ref | Pred
 Expected: {
 相手_NOUN の_ADP 電話_NOUN や_ADP 手紙_NOUN を_ADP チェック_VERB し_AUX たり_PART 、_PUNCT 外出_NOUN を_ADP 制限_VERB する_AUX こと_NOUN で_ADP 交友_NOUN 関係_NOUN を_ADP 断た_VERB せ_AUX 、_PUNCT 相手_NOUN を_ADP 孤立_VERB さ_AUX せよう_AUX と_ADP する_VERB など_PART ._PUNCT}
 Predicted: {
-相手_NOUN の_ADP 電話_NOUN や_ADP 手紙_NOUN を_ADP チェック_VERB し_AUX たり_PART 、_PUNCT 外出_NOUN を_ADP 制限_VERB する_AUX こと_NOUN で_ADP 交友_NOUN 関係_NOUN を_ADP 断た_VERB せ_AUX 、_PUNCT 相手_NOUN を_ADP 孤立_VERB さ_PART せよう_AUX と_ADP する_VERB など_PART ._PUNCT}
+相手_NOUN の_ADP 電話_NOUN や_ADP 手紙_NOUN を_ADP チェック_VERB し_AUX たり_PART 、_PUNCT 外出_NOUN を_ADP 制限_VERB する_AUX こと_NOUN で_ADP 交友_NOUN 関係_NOUN を_ADP 断た_ADV せ_VERB 、_PUNCT 相手_NOUN を_ADP 孤立_VERB さ_PART せよう_AUX と_ADP する_VERB など_PART ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+断た: VERB | ADV
+せ: AUX | VERB
 さ: AUX | PART
 }
 
@@ -1478,12 +1492,11 @@ Tok: Ref | Pred
 Expected: {
 ほんと_NOUN 、_PUNCT 並_NOUN の_ADP 居酒屋_NOUN さん_NOUN で_AUX は_ADP ない_AUX です_AUX ね_PART ._PUNCT}
 Predicted: {
-ほんと_ADV 、_PUNCT 並_NOUN の_ADP 居酒屋_NOUN さん_NOUN で_AUX は_ADP ない_ADJ です_AUX ね_PART ._PUNCT}
+ほんと_ADV 、_PUNCT 並_NOUN の_ADP 居酒屋_NOUN さん_NOUN で_AUX は_ADP ない_AUX です_AUX ね_PART ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 ほんと: NOUN | ADV
-ない: AUX | ADJ
 }
 
 Expected: {
@@ -1527,6 +1540,16 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 ジェルヴェ: NOUN | PROPN
+}
+
+Expected: {
+これ_PRON は_ADP 設備_NOUN の_ADP 購入_NOUN 負担_NOUN 金_NOUN を_ADP 必要_NOUN と_ADP する_VERB 一方_NOUN で_ADP 、_PUNCT どの_DET エリア_NOUN から_ADP どれ_PRON だけ_ADP 購入_NOUN 、_PUNCT 消費_VERB さ_AUX れ_AUX た_AUX か_PART を_ADP 計る_VERB 目安_NOUN に_ADP も_ADP なる_VERB ._PUNCT}
+Predicted: {
+これ_PRON は_ADP 設備_NOUN の_ADP 購入_NOUN 負担_NOUN 金_NOUN を_ADP 必要_ADJ と_ADP する_VERB 一方_NOUN で_ADP 、_PUNCT どの_DET エリア_NOUN から_ADP どれ_PRON だけ_ADP 購入_NOUN 、_PUNCT 消費_VERB さ_AUX れ_AUX た_AUX か_PART を_ADP 計る_VERB 目安_NOUN に_ADP も_ADP なる_VERB ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+必要: NOUN | ADJ
 }
 
 Expected: {
@@ -1614,6 +1637,16 @@ Tok: Ref | Pred
 }
 
 Expected: {
+関内_PROPN の_ADP 立地_NOUN で_ADP この_DET 値段_NOUN なら_AUX お_NOUN 得_NOUN でしょう_AUX ._PUNCT}
+Predicted: {
+関内_PROPN の_ADP 立地_NOUN で_ADP この_DET 値段_NOUN なら_AUX お_NOUN 得_VERB でしょう_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+得: NOUN | VERB
+}
+
+Expected: {
 北欧_PROPN 神話_NOUN が_ADP 所属_VERB する_AUX インド_PROPN ・_SYM ヨーロッパ_PROPN 語族_NOUN の_ADP 伝承_NOUN に_ADP つい_VERB て_SCONJ は_ADP 、_PUNCT ジョルジュ_PROPN ・_SYM デュメジル_PROPN が_ADP 彼_PRON の_ADP 三_NUM 機能_NOUN 仮説_NOUN に_ADP おけ_VERB る_AUX 第_NOUN 一_NUM 機能_NOUN と_ADP の_ADP 関連_NOUN を_ADP 主張_VERB し_AUX た_AUX ._PUNCT}
 Predicted: {
 北欧_NOUN 神話_NOUN が_ADP 所属_VERB する_AUX インド_PROPN ・_SYM ヨーロッパ_PROPN 語族_NOUN の_ADP 伝承_NOUN に_ADP つい_VERB て_SCONJ は_ADP 、_PUNCT ジョルジュ_PROPN ・_SYM デュメジル_PROPN が_ADP 彼_PRON の_ADP 三_NUM 機能_NOUN 仮説_NOUN に_ADP おけ_VERB る_AUX 第_NOUN 一_NUM 機能_NOUN と_ADP の_ADP 関連_NOUN を_ADP 主張_VERB し_AUX た_AUX ._PUNCT}
@@ -1634,17 +1667,6 @@ Tok: Ref | Pred
 }
 
 Expected: {
-摂理_PROPN に_ADP 詳しい_ADJ 人々_NOUN の_ADP 間_NOUN で_ADP は_ADP ,_PUNCT 同社_NOUN が_ADP 教祖_NOUN を_ADP 支援_VERB する_AUX ため_NOUN の_ADP 会社_NOUN だっ_AUX た_AUX の_SCONJ で_AUX は_ADP ない_AUX か_PART ,_PUNCT あるいは_CCONJ 摂理_PROPN に_ADP 献金_VERB する_AUX ため_SCONJ に_SCONJ 始め_VERB た_AUX ビジネス_NOUN な_AUX の_SCONJ で_AUX は_ADP ない_AUX か_PART ,_PUNCT と_ADP いぶかる_VERB 声_NOUN も_ADP あり_VERB ます_AUX ._PUNCT}
-Predicted: {
-摂理_PROPN に_ADP 詳しい_ADJ 人々_NOUN の_ADP 間_NOUN で_ADP は_ADP ,_PUNCT 同社_NOUN が_ADP 教祖_NOUN を_ADP 支援_VERB する_AUX ため_NOUN の_ADP 会社_NOUN だっ_AUX た_AUX の_SCONJ で_AUX は_ADP ない_ADJ か_PART ,_PUNCT あるいは_CCONJ 摂理_PROPN に_ADP 献金_VERB する_AUX ため_SCONJ に_SCONJ 始め_VERB た_AUX ビジネス_NOUN な_AUX の_SCONJ で_AUX は_ADP ない_ADJ か_PART ,_PUNCT と_ADP いぶかる_VERB 声_NOUN も_ADP あり_VERB ます_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-ない: AUX | ADJ
-ない: AUX | ADJ
-}
-
-Expected: {
 テック_NOUN スペック_NOUN で_ADP は_ADP デストロン_PROPN に_ADP 故郷_NOUN を_ADP 滅ぼさ_VERB れ_AUX た_AUX と_ADP いう_VERB 過去_NOUN が_ADP あり_VERB 、_PUNCT その_DET 心_NOUN の_ADP 傷_NOUN を_ADP 隠す_VERB ため_SCONJ に_SCONJ 、_PUNCT よく_ADV 喋る_VERB よう_AUX に_AUX なっ_VERB た_AUX と_ADP さ_VERB れる_AUX ._PUNCT}
 Predicted: {
 テック_PROPN スペック_NOUN で_ADP は_ADP デストロン_PROPN に_ADP 故郷_NOUN を_ADP 滅ぼさ_VERB れ_AUX た_AUX と_ADP いう_VERB 過去_NOUN が_ADP あり_VERB 、_PUNCT その_DET 心_NOUN の_ADP 傷_NOUN を_ADP 隠す_VERB ため_SCONJ に_SCONJ 、_PUNCT よく_ADV 喋る_VERB よう_AUX に_AUX なっ_VERB た_AUX と_ADP さ_VERB れる_AUX ._PUNCT}
@@ -1657,12 +1679,12 @@ Tok: Ref | Pred
 Expected: {
 ただ_CCONJ ,_PUNCT 被災_NOUN 地_NOUN から_ADP 離れ_VERB た_AUX 場所_NOUN で_ADP の_ADP 教会_NOUN 開放_NOUN くらい_ADP の_ADP 話_NOUN なら_AUX ,_PUNCT いちいち_ADV 本部_NOUN が_ADP 指示_VERB し_AUX たり_PART は_ADP し_VERB ない_AUX ._PUNCT}
 Predicted: {
-ただ_CCONJ ,_PUNCT 被災_NOUN 地_NOUN から_ADP 離れ_VERB た_AUX 場所_NOUN で_ADP の_ADP 教会_NOUN 開放_NOUN くらい_ADP の_ADP 話_NOUN なら_AUX ,_PUNCT いちいち_ADV 本部_NOUN が_ADP 指示_NOUN し_AUX たり_AUX は_ADP し_VERB ない_AUX ._PUNCT}
+ただ_CCONJ ,_PUNCT 被災_NOUN 地_NOUN から_ADP 離れ_VERB た_AUX 場所_NOUN で_ADP の_ADP 教会_NOUN 開放_NOUN くらい_ADP の_ADP 話_NOUN なら_AUX ,_PUNCT いちいち_ADV 本部_NOUN が_ADP 指示_NOUN し_AUX たり_ADP は_ADP し_VERB ない_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 指示: VERB | NOUN
-たり: PART | AUX
+たり: PART | ADP
 }
 
 Expected: {
@@ -1676,16 +1698,6 @@ Tok: Ref | Pred
 で: AUX | SCONJ
 もの: SCONJ | NOUN
 の: SCONJ | ADP
-}
-
-Expected: {
-こう_ADV いっ_VERB た_AUX 場合_NOUN は_ADP 本体_NOUN に_ADP つい_VERB て_SCONJ いる_VERB ワイパー_NOUN ボタン_NOUN 、_PUNCT ライト_NOUN ボタン_NOUN を_ADP 状況_NOUN に_ADP 応じ_VERB て_SCONJ 使用_VERB する_AUX 必要_NOUN が_ADP ある_VERB ._PUNCT}
-Predicted: {
-こう_ADV いっ_VERB た_AUX 場合_NOUN は_ADP 本体_NOUN に_ADP つい_VERB て_SCONJ いる_VERB ワイパー_NOUN ボタン_NOUN 、_PUNCT ライト_NOUN ボタン_PROPN を_ADP 状況_NOUN に_ADP 応じ_VERB て_SCONJ 使用_VERB する_AUX 必要_NOUN が_ADP ある_VERB ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-ボタン: NOUN | PROPN
 }
 
 Expected: {
@@ -1707,6 +1719,16 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 占い: NOUN | ADJ
+}
+
+Expected: {
+しかし_CCONJ 当初_ADV 、_PUNCT 報道_NOUN は_ADP 保守_NOUN メディア_NOUN が_ADP 主_ADJ で_AUX 、_PUNCT 本格_NOUN 的_PART に_AUX 世間_NOUN に_ADP 認知_VERB さ_AUX れ_AUX た_AUX の_SCONJ は_ADP 次_NOUN の_ADP 出来事_NOUN が_ADP 起こっ_VERB て_SCONJ から_ADP で_AUX あっ_VERB た_AUX ._PUNCT}
+Predicted: {
+しかし_CCONJ 当初_ADV 、_PUNCT 報道_NOUN は_ADP 保守_NOUN メディア_NOUN が_ADP 主_NOUN で_AUX 、_PUNCT 本格_NOUN 的_PART に_AUX 世間_NOUN に_ADP 認知_VERB さ_AUX れ_AUX た_AUX の_SCONJ は_ADP 次_NOUN の_ADP 出来事_NOUN が_ADP 起こっ_VERB て_SCONJ から_ADP で_AUX あっ_VERB た_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+主: ADJ | NOUN
 }
 
 Expected: {
@@ -1738,6 +1760,16 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 吉住: PROPN | NOUN
+}
+
+Expected: {
+メ〜テレ_PROPN ほか_NOUN 名古屋_PROPN の_ADP 民放_NOUN テレビ_NOUN 局_NOUN 5_NUM 局_NOUN が_ADP 共同_VERB 製作_VERB し_AUX た_AUX 地上_NOUN デジタル_NOUN 放送_NOUN 推進_NOUN 特番_NOUN 『_PUNCT 民放_NOUN 5_NUM 局_NOUN 史上_NOUN 最大_NOUN の_ADP コラボレーション_NOUN !_PUNCT}
+Predicted: {
+メ〜テレ_PROPN ほか_NOUN 名古屋_PROPN の_ADP 民放_NOUN テレビ_NOUN 局_NOUN 5_NUM 局_NOUN が_ADP 共同_NOUN 製作_VERB し_AUX た_AUX 地上_NOUN デジタル_NOUN 放送_NOUN 推進_NOUN 特番_NOUN 『_PUNCT 民放_NOUN 5_NUM 局_NOUN 史上_NOUN 最大_NOUN の_ADP コラボレーション_NOUN !_PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+共同: VERB | NOUN
 }
 
 Expected: {
@@ -1804,43 +1836,33 @@ Tok: Ref | Pred
 }
 
 Expected: {
-"_PUNCT 仰木_PROPN の_ADP 里_NOUN まちづくり_NOUN 連合_NOUN 協議_NOUN 会_NOUN "_PUNCT は_ADP ,_PUNCT これ_PRON と_ADP は_ADP 別_ADJ に_AUX 予定_NOUN 地_NOUN 周辺_NOUN の_ADP 10_NUM 自治_NOUN 会_NOUN の_ADP 代表_NOUN 者_NOUN など_ADP が_ADP 中心_NOUN と_ADP なっ_VERB て_SCONJ 結成_VERB し_AUX た_AUX もの_NOUN で_AUX ,_PUNCT "_PUNCT ネットワーク_NOUN "_PUNCT の_ADP 協力_NOUN を_ADP 受け_VERB て_SCONJ 活動_VERB し_AUX て_SCONJ い_VERB ます_AUX ._PUNCT}
+統幕_NOUN に_ADP よる_VERB と_SCONJ 、_PUNCT 近接_NOUN 飛行_NOUN が_ADP あっ_VERB た_AUX の_SCONJ は_ADP 、_PUNCT 沖縄_PROPN 本島_NOUN 北西_NOUN 約_NOUN 450_NUM キロ_NOUN の_ADP 日中_NOUN 中間_NOUN 線_NOUN の_ADP 西側_NOUN ._PUNCT}
 Predicted: {
-"_PUNCT 仰木_PROPN の_ADP 里_NOUN まちづくり_ADV 連合_NOUN 協議_NOUN 会_NOUN "_PUNCT は_ADP ,_PUNCT これ_PRON と_ADP は_ADP 別_ADJ に_AUX 予定_NOUN 地_NOUN 周辺_NOUN の_ADP 10_NUM 自治_NOUN 会_NOUN の_ADP 代表_NOUN 者_NOUN など_ADP が_ADP 中心_NOUN と_ADP なっ_VERB て_SCONJ 結成_VERB し_AUX た_AUX もの_NOUN で_AUX ,_PUNCT "_PUNCT ネットワーク_NOUN "_PUNCT の_ADP 協力_NOUN を_ADP 受け_VERB て_SCONJ 活動_VERB し_AUX て_SCONJ い_VERB ます_AUX ._PUNCT}
+統幕_NOUN に_ADP よる_VERB と_SCONJ 、_PUNCT 近接_ADJ 飛行_NOUN が_ADP あっ_VERB た_AUX の_SCONJ は_ADP 、_PUNCT 沖縄_PROPN 本島_NOUN 北西_NOUN 約_NOUN 450_NUM キロ_NOUN の_ADP 日中_NOUN 中間_NOUN 線_NOUN の_ADP 西側_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-まちづくり: NOUN | ADV
-}
-
-Expected: {
-ただし_CCONJ 、_PUNCT 「_PUNCT 隣_NOUN 」_PUNCT 字_NOUN の_ADP 意符_NOUN は_ADP 「_PUNCT 邑_NOUN 」_PUNCT で_AUX ある_VERB が_SCONJ 、_PUNCT 左_NOUN 偏_NOUN に_ADP ある_VERB と_ADP いう_VERB こと_NOUN で_AUX 、_PUNCT この_DET 部_NOUN に_ADP 入れ_VERB られ_AUX て_SCONJ いる_VERB ._PUNCT}
-Predicted: {
-ただし_CCONJ 、_PUNCT 「_PUNCT 隣_NOUN 」_PUNCT 字_NOUN の_ADP 意符_PROPN は_ADP 「_PUNCT 邑_NOUN 」_PUNCT で_AUX ある_VERB が_SCONJ 、_PUNCT 左_NOUN 偏_NOUN に_ADP ある_VERB と_ADP いう_VERB こと_NOUN で_AUX 、_PUNCT この_DET 部_NOUN に_ADP 入れ_VERB られ_AUX て_SCONJ いる_VERB ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-意符: NOUN | PROPN
+近接: NOUN | ADJ
 }
 
 Expected: {
 和桐_PROPN 製作_NOUN 所_NOUN で_ADP 働く_VERB おば_NOUN さん_NOUN ._PUNCT}
 Predicted: {
-和桐_NOUN 製作_NOUN 所_NOUN で_ADP 働く_VERB おば_NOUN さん_NOUN ._PUNCT}
+和桐_NOUN 製作_NOUN 所_NOUN で_AUX 働く_VERB おば_NOUN さん_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 和桐: PROPN | NOUN
+で: ADP | AUX
 }
 
 Expected: {
 6_NUM 月_NOUN 10_NUM 日_NOUN 夜_NOUN ,_PUNCT 長谷川_PROPN 区議_NOUN の_ADP 代理_NOUN 人_NOUN 弁護_NOUN 士_NOUN から_ADP 催告_NOUN 書_NOUN が_ADP fax_VERB さ_AUX れ_AUX て_SCONJ き_VERB た_AUX ._PUNCT}
 Predicted: {
-6_NUM 月_NOUN 10_NUM 日_NOUN 夜_ADV ,_PUNCT 長谷川_PROPN 区議_NOUN の_ADP 代理_NOUN 人_NOUN 弁護_NOUN 士_NOUN から_ADP 催告_NOUN 書_NOUN が_ADP fax_ADJ さ_VERB れ_AUX て_SCONJ き_VERB た_AUX ._PUNCT}
+6_NUM 月_NOUN 10_NUM 日_NOUN 夜_NOUN ,_PUNCT 長谷川_PROPN 区議_NOUN の_ADP 代理_NOUN 人_NOUN 弁護_NOUN 士_NOUN から_ADP 催告_NOUN 書_NOUN が_ADP fax_ADJ さ_VERB れ_AUX て_SCONJ き_VERB た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-夜: NOUN | ADV
 fax: VERB | ADJ
 さ: AUX | VERB
 }
@@ -1878,7 +1900,7 @@ Tok: Ref | Pred
 Expected: {
 三_NUM 国_NOUN 時代_NOUN の_ADP 蜀_PROPN の_ADP 丞相_NOUN ・_SYM 諸葛_PROPN 亮_PROPN の_ADP 隠遁_NOUN の_ADP 地_NOUN と_ADP さ_VERB れる_AUX 臥龍崗_PROPN に_ADP 所在_VERB し_AUX 、_PUNCT 諸葛_PROPN 亮_PROPN と_ADP その_DET 主君_NOUN 劉備_PROPN など_ADP を_ADP 祀る_VERB ._PUNCT}
 Predicted: {
-三_NUM 国_NOUN 時代_NOUN の_ADP 蜀_NOUN の_ADP 丞相_NOUN ・_SYM 諸葛_NOUN 亮_NOUN の_ADP 隠遁_NOUN の_ADP 地_NOUN と_ADP さ_VERB れる_AUX 臥龍崗_NOUN に_ADP 所在_VERB し_AUX 、_PUNCT 諸葛_NOUN 亮_NOUN と_ADP その_DET 主君_NOUN 劉備_NOUN など_ADP を_ADP 祀る_VERB ._PUNCT}
+三_NUM 国_NOUN 時代_NOUN の_ADP 蜀_NOUN の_ADP 丞相_NOUN ・_SYM 諸葛_NOUN 亮_NOUN の_ADP 隠遁_NOUN の_ADP 地_NOUN と_ADP さ_VERB れる_AUX 臥龍崗_NOUN に_ADP 所在_VERB し_AUX 、_PUNCT 諸葛_NOUN 亮_NOUN と_ADP その_DET 主君_NOUN 劉備_PROPN など_ADP を_ADP 祀る_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -1888,7 +1910,6 @@ Tok: Ref | Pred
 臥龍崗: PROPN | NOUN
 諸葛: PROPN | NOUN
 亮: PROPN | NOUN
-劉備: PROPN | NOUN
 }
 
 Expected: {
@@ -1914,23 +1935,11 @@ Tok: Ref | Pred
 Expected: {
 実際_NOUN に_ADP 動い_VERB て_SCONJ 販売_VERB し_AUX て_SCONJ いる_VERB もの_NOUN も_ADP ある_VERB が_SCONJ 、_PUNCT 車輪_NOUN が_ADP 固定_VERB さ_AUX れ_AUX て_SCONJ い_VERB て_SCONJ 、_PUNCT 通常_NOUN は_ADP 動か_VERB せ_AUX ない_AUX もの_NOUN も_ADP 含む_VERB ._PUNCT}
 Predicted: {
-実際_NOUN に_ADP 動い_VERB て_SCONJ 販売_NOUN し_VERB て_SCONJ いる_VERB もの_NOUN も_ADP ある_VERB が_SCONJ 、_PUNCT 車輪_NOUN が_ADP 固定_ADJ さ_VERB れ_AUX て_SCONJ い_VERB て_SCONJ 、_PUNCT 通常_NOUN は_ADP 動か_VERB せ_AUX ない_AUX もの_NOUN も_ADP 含む_VERB ._PUNCT}
+実際_NOUN に_ADP 動い_VERB て_SCONJ 販売_NOUN し_VERB て_SCONJ いる_VERB もの_NOUN も_ADP ある_VERB が_SCONJ 、_PUNCT 車輪_NOUN が_ADP 固定_VERB さ_AUX れ_AUX て_SCONJ い_VERB て_SCONJ 、_PUNCT 通常_NOUN は_ADP 動か_VERB せ_AUX ない_AUX もの_NOUN も_ADP 含む_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 販売: VERB | NOUN
-し: AUX | VERB
-固定: VERB | ADJ
-さ: AUX | VERB
-}
-
-Expected: {
-生き_VERB た_AUX 医療_NOUN 人類_NOUN 学_NOUN と_ADP し_AUX て_SCONJ 医学_NOUN 部_NOUN や_ADP 薬学_NOUN 部_NOUN の_ADP カリキュラム_NOUN の_ADP 中_NOUN に_ADP 取り入れ_VERB て_SCONJ いき_VERB たい_AUX の_SCONJ です_AUX ._PUNCT}
-Predicted: {
-生き_VERB た_AUX 医療_NOUN 人類_NOUN 学_NOUN と_ADP し_VERB て_SCONJ 医学_NOUN 部_NOUN や_ADP 薬学_NOUN 部_NOUN の_ADP カリキュラム_NOUN の_ADP 中_NOUN に_ADP 取り入れ_VERB て_SCONJ いき_VERB たい_AUX の_SCONJ です_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
 し: AUX | VERB
 }
 
@@ -2018,11 +2027,10 @@ Tok: Ref | Pred
 Expected: {
 突_NOUN 拍子_NOUN も_ADP ない_ADJ 彼_PRON ら_NOUN の_ADP 存在_NOUN に_ADP 角松_PROPN 敏生_PROPN は_ADP 度肝_NOUN を_ADP 抜か_VERB れ_AUX た_AUX が_SCONJ 、_PUNCT これ_PRON に_ADP 応え_VERB て_SCONJ ジャドーズ_PROPN の_ADP プロデュース_NOUN を_ADP 請け負い_VERB 、_PUNCT 1986_NUM 年_NOUN 11_NUM 月_NOUN 、_PUNCT シングル_NOUN 「_PUNCT friday_NOUN night_NOUN 」_PUNCT と_ADP アルバム_NOUN 『_PUNCT it's_NOUN friday_NOUN 』_PUNCT で_ADP 晴れ_VERB て_SCONJ 音楽_NOUN バンド_NOUN と_ADP し_AUX て_SCONJ デビュー_NOUN を_ADP 果たす_VERB ._PUNCT}
 Predicted: {
-突_NOUN 拍子_NOUN も_ADP ない_ADJ 彼_PRON ら_NOUN の_ADP 存在_NOUN に_ADP 角松_PROPN 敏生_PROPN は_ADP 度肝_NOUN を_ADP 抜か_VERB れ_AUX た_AUX が_SCONJ 、_PUNCT これ_PRON に_ADP 応え_VERB て_SCONJ ジャドーズ_PROPN の_ADP プロデュース_NOUN を_ADP 請け負い_VERB 、_PUNCT 1986_NUM 年_NOUN 11_NUM 月_NOUN 、_PUNCT シングル_NOUN 「_PUNCT friday_PROPN night_NOUN 」_PUNCT と_ADP アルバム_NOUN 『_PUNCT it's_NOUN friday_NOUN 』_PUNCT で_ADP 晴れ_VERB て_SCONJ 音楽_NOUN バンド_NOUN と_ADP し_VERB て_SCONJ デビュー_NOUN を_ADP 果たす_VERB ._PUNCT}
+突_NOUN 拍子_NOUN も_ADP ない_ADJ 彼_PRON ら_NOUN の_ADP 存在_NOUN に_ADP 角松_PROPN 敏生_PROPN は_ADP 度肝_NOUN を_ADP 抜か_VERB れ_AUX た_AUX が_SCONJ 、_PUNCT これ_PRON に_ADP 応え_VERB て_SCONJ ジャドーズ_PROPN の_ADP プロデュース_NOUN を_ADP 請け負い_VERB 、_PUNCT 1986_NUM 年_NOUN 11_NUM 月_NOUN 、_PUNCT シングル_NOUN 「_PUNCT friday_NOUN night_NOUN 」_PUNCT と_ADP アルバム_NOUN 『_PUNCT it's_NOUN friday_NOUN 』_PUNCT で_ADP 晴れ_VERB て_SCONJ 音楽_NOUN バンド_NOUN と_ADP し_VERB て_SCONJ デビュー_NOUN を_ADP 果たす_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-friday: NOUN | PROPN
 し: AUX | VERB
 }
 
@@ -2060,10 +2068,11 @@ Tok: Ref | Pred
 Expected: {
 1912_NUM 年_NOUN 、_PUNCT 辛亥_NOUN 革命_NOUN の_ADP 翌年_NOUN に_ADP 帰国_NOUN 、_PUNCT かつて_ADV 戊戌_NOUN 変法_NOUN を_ADP 裏切っ_VERB た_AUX 袁_PROPN 世凱_PROPN の_ADP もと_NOUN で_ADP 進歩_NOUN 党_NOUN を_ADP 組織_VERB し_AUX て_SCONJ 、_PUNCT 熊_PROPN 希齢_PROPN 内閣_NOUN の_ADP 司法_NOUN 総長_NOUN と_ADP なっ_VERB た_AUX ._PUNCT}
 Predicted: {
-1912_NUM 年_NOUN 、_PUNCT 辛亥_NOUN 革命_NOUN の_ADP 翌年_NOUN に_ADP 帰国_NOUN 、_PUNCT かつて_ADV 戊戌_NOUN 変法_NOUN を_ADP 裏切っ_VERB た_AUX 袁_PROPN 世凱_NOUN の_ADP もと_NOUN で_ADP 進歩_NOUN 党_NOUN を_ADP 組織_VERB し_AUX て_SCONJ 、_PUNCT 熊_NOUN 希齢_PROPN 内閣_NOUN の_ADP 司法_NOUN 総長_NOUN と_ADP なっ_VERB た_AUX ._PUNCT}
+1912_NUM 年_NOUN 、_PUNCT 辛亥_NOUN 革命_NOUN の_ADP 翌年_NOUN に_ADP 帰国_VERB 、_PUNCT かつて_ADV 戊戌_NOUN 変法_NOUN を_ADP 裏切っ_VERB た_AUX 袁_PROPN 世凱_NOUN の_ADP もと_NOUN で_ADP 進歩_NOUN 党_NOUN を_ADP 組織_VERB し_AUX て_SCONJ 、_PUNCT 熊_NOUN 希齢_PROPN 内閣_NOUN の_ADP 司法_NOUN 総長_NOUN と_ADP なっ_VERB た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+帰国: NOUN | VERB
 世凱: PROPN | NOUN
 熊: PROPN | NOUN
 }
@@ -2092,11 +2101,10 @@ Tok: Ref | Pred
 Expected: {
 1970_NUM 年_NOUN 代_NOUN の_ADP 末_NOUN に_ADP 開発_VERB さ_AUX れ_AUX た_AUX 本_NOUN 形式_NOUN は_ADP 、_PUNCT 国産_NOUN の_ADP 高_NOUN 品質_NOUN な_AUX 軽快_NOUN 車_NOUN に_ADP 広く_ADJ 採用_VERB さ_AUX れ_AUX た_AUX が_SCONJ 、_PUNCT 近年_NOUN の_ADP 自転_NOUN 車_NOUN の_ADP 低_NOUN 価格_NOUN 化_NOUN 圧力_NOUN と_ADP 、_PUNCT 大手_NOUN 自転_NOUN 車_NOUN 部品_NOUN メーカー_NOUN 、_PUNCT シマノ_PROPN 社_NOUN の_ADP 開発_VERB し_AUX た_AUX 後発_NOUN 製品_NOUN で_AUX ある_VERB ローラー_NOUN ブレーキ_NOUN の_ADP 普及_NOUN に_ADP よる_VERB 挟撃_NOUN を_ADP 受ける_VERB 形_NOUN と_ADP なり_VERB 、_PUNCT 安売り_NOUN さ_AUX れ_AUX て_SCONJ いる_VERB 自転_NOUN 車_NOUN は_ADP バンド_NOUN ブレーキ_NOUN 、_PUNCT 他_NOUN の_ADP 多く_NOUN の_ADP 軽快_NOUN 車_NOUN で_ADP は_ADP ローラー_NOUN ブレーキ_NOUN に_ADP 市場_NOUN を_ADP 奪わ_VERB れ_AUX 、_PUNCT 新車_NOUN で_ADP サーボ_NOUN ブレーキ_NOUN が_ADP 付く_VERB 自転_NOUN 車_NOUN は_ADP 減少_NOUN 傾向_NOUN で_AUX ある_VERB ._PUNCT}
 Predicted: {
-1970_NUM 年_NOUN 代_NOUN の_ADP 末_NOUN に_ADP 開発_VERB さ_AUX れ_AUX た_AUX 本_NOUN 形式_NOUN は_ADP 、_PUNCT 国産_NOUN の_ADP 高_NOUN 品質_ADJ な_AUX 軽快_NOUN 車_NOUN に_ADP 広く_ADJ 採用_VERB さ_AUX れ_AUX た_AUX が_SCONJ 、_PUNCT 近年_NOUN の_ADP 自転_NOUN 車_NOUN の_ADP 低_NOUN 価格_NOUN 化_NOUN 圧力_NOUN と_ADP 、_PUNCT 大手_PROPN 自転_NOUN 車_NOUN 部品_NOUN メーカー_NOUN 、_PUNCT シマノ_PROPN 社_NOUN の_ADP 開発_VERB し_AUX た_AUX 後発_NOUN 製品_NOUN で_AUX ある_VERB ローラー_NOUN ブレーキ_NOUN の_ADP 普及_NOUN に_ADP よる_VERB 挟撃_NOUN を_ADP 受ける_VERB 形_NOUN と_ADP なり_VERB 、_PUNCT 安売り_VERB さ_AUX れ_AUX て_SCONJ いる_VERB 自転_NOUN 車_NOUN は_ADP バンド_NOUN ブレーキ_NOUN 、_PUNCT 他_NOUN の_ADP 多く_NOUN の_ADP 軽快_NOUN 車_NOUN で_ADP は_ADP ローラー_NOUN ブレーキ_NOUN に_ADP 市場_NOUN を_ADP 奪わ_VERB れ_AUX 、_PUNCT 新車_NOUN で_ADP サーボ_NOUN ブレーキ_NOUN が_ADP 付く_VERB 自転_NOUN 車_NOUN は_ADP 減少_NOUN 傾向_NOUN で_AUX ある_VERB ._PUNCT}
+1970_NUM 年_NOUN 代_NOUN の_ADP 末_NOUN に_ADP 開発_VERB さ_AUX れ_AUX た_AUX 本_NOUN 形式_NOUN は_ADP 、_PUNCT 国産_NOUN の_ADP 高_NOUN 品質_NOUN な_AUX 軽快_NOUN 車_NOUN に_ADP 広く_ADJ 採用_VERB さ_AUX れ_AUX た_AUX が_SCONJ 、_PUNCT 近年_NOUN の_ADP 自転_NOUN 車_NOUN の_ADP 低_NOUN 価格_NOUN 化_NOUN 圧力_NOUN と_ADP 、_PUNCT 大手_PROPN 自転_NOUN 車_NOUN 部品_NOUN メーカー_NOUN 、_PUNCT シマノ_PROPN 社_NOUN の_ADP 開発_VERB し_AUX た_AUX 後発_NOUN 製品_NOUN で_AUX ある_VERB ローラー_NOUN ブレーキ_NOUN の_ADP 普及_NOUN に_ADP よる_VERB 挟撃_NOUN を_ADP 受ける_VERB 形_NOUN と_ADP なり_VERB 、_PUNCT 安売り_VERB さ_AUX れ_AUX て_SCONJ いる_VERB 自転_NOUN 車_NOUN は_ADP バンド_NOUN ブレーキ_NOUN 、_PUNCT 他_NOUN の_ADP 多く_NOUN の_ADP 軽快_NOUN 車_NOUN で_ADP は_ADP ローラー_NOUN ブレーキ_NOUN に_ADP 市場_NOUN を_ADP 奪わ_VERB れ_AUX 、_PUNCT 新車_NOUN で_ADP サーボ_NOUN ブレーキ_NOUN が_ADP 付く_VERB 自転_NOUN 車_NOUN は_ADP 減少_NOUN 傾向_NOUN で_AUX ある_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-品質: NOUN | ADJ
 大手: NOUN | PROPN
 安売り: NOUN | VERB
 }
@@ -2211,17 +2219,6 @@ Tok: Ref | Pred
 }
 
 Expected: {
-新宿_PROPN 駅_NOUN から_ADP 歩い_VERB て_SCONJ たった_ADV の_ADP 3_NUM 分_NOUN と_ADP いう_VERB の_SCONJ が_ADP 嬉しい_ADJ 場所_NOUN です_AUX ._PUNCT}
-Predicted: {
-新宿_PROPN 駅_NOUN から_ADP 歩い_VERB て_SCONJ たった_ADJ の_SCONJ 3_NUM 分_NOUN と_ADP いう_VERB の_SCONJ が_ADP 嬉しい_ADJ 場所_NOUN です_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-たった: ADV | ADJ
-の: ADP | SCONJ
-}
-
-Expected: {
 2011_NUM 年_NOUN から_ADP 大宮_PROPN に_ADP 完全_ADJ 移籍_VERB する_AUX こと_NOUN に_ADP なっ_VERB た_AUX ._PUNCT}
 Predicted: {
 2011_NUM 年_NOUN から_ADP 大宮_NOUN に_ADP 完全_ADJ 移籍_VERB する_AUX こと_NOUN に_ADP なっ_VERB た_AUX ._PUNCT}
@@ -2252,6 +2249,16 @@ Tok: Ref | Pred
 }
 
 Expected: {
+また_CCONJ 、_PUNCT 事故_NOUN の_ADP 加害_NOUN 者_NOUN 側_NOUN の_ADP 加入_VERB し_AUX て_SCONJ いる_VERB 保険_NOUN から_ADP も_ADP ブラッド_NOUN パッチ_NOUN に_ADP 関わる_VERB 治療_NOUN の_ADP 補償_NOUN 費用_NOUN 支払い_NOUN を_ADP 拒否_VERB さ_AUX れ_AUX て_SCONJ き_VERB た_AUX ._PUNCT}
+Predicted: {
+また_CCONJ 、_PUNCT 事故_NOUN の_ADP 加害_NOUN 者_NOUN 側_NOUN の_ADP 加入_NOUN し_AUX て_SCONJ いる_VERB 保険_NOUN から_ADP も_ADP ブラッド_NOUN パッチ_NOUN に_ADP 関わる_VERB 治療_NOUN の_ADP 補償_NOUN 費用_NOUN 支払い_NOUN を_ADP 拒否_VERB さ_AUX れ_AUX て_SCONJ き_VERB た_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+加入: VERB | NOUN
+}
+
+Expected: {
 ミゼット_NOUN は_ADP 昭和_PROPN 40_NUM 年_NOUN 代_NOUN 製_NOUN で_AUX 、_PUNCT 「_PUNCT 気仙沼_PROPN クラシック_NOUN カー_NOUN クラブ_NOUN 」_PUNCT 会員_NOUN の_ADP 知人_NOUN が_ADP 所有_VERB し_AUX て_SCONJ いる_VERB ._PUNCT}
 Predicted: {
 ミゼット_NOUN は_ADP 昭和_PROPN 40_NUM 年_NOUN 代_NOUN 製_NOUN で_ADP 、_PUNCT 「_PUNCT 気仙沼_NOUN クラシック_NOUN カー_NOUN クラブ_NOUN 」_PUNCT 会員_NOUN の_ADP 知人_NOUN が_ADP 所有_VERB し_AUX て_SCONJ いる_VERB ._PUNCT}
@@ -2263,14 +2270,24 @@ Tok: Ref | Pred
 }
 
 Expected: {
+転校_NOUN 生_NOUN や_ADP 時_NOUN を_ADP かける_VERB 少女_NOUN の_ADP 頃_NOUN は_ADP まだ_ADV 尾道_PROPN 三_NUM 部_NOUN 作_NOUN と_ADP 呼ば_VERB れ_AUX て_SCONJ おら_VERB ず_AUX 、_PUNCT 続く_VERB さびしんぼう_NOUN が_ADP 撮ら_VERB れ_AUX た_AUX こと_NOUN で_AUX 、_PUNCT これ_PRON ら_NOUN の_ADP 3_NUM 本_NOUN が_ADP 尾道_PROPN 三_NUM 部_NOUN 作_NOUN と_ADP 言わ_VERB れる_AUX よう_AUX に_AUX なっ_VERB た_AUX ._PUNCT}
+Predicted: {
+転校_NOUN 生_NOUN や_ADP 時_NOUN を_ADP かける_VERB 少女_NOUN の_ADP 頃_NOUN は_ADP まだ_ADV 尾道_NOUN 三_NUM 部_NOUN 作_NOUN と_ADP 呼ば_VERB れ_AUX て_SCONJ おら_VERB ず_AUX 、_PUNCT 続く_VERB さびしんぼう_NOUN が_ADP 撮ら_VERB れ_AUX た_AUX こと_NOUN で_AUX 、_PUNCT これ_PRON ら_NOUN の_ADP 3_NUM 本_NOUN が_ADP 尾道_NOUN 三_NUM 部_NOUN 作_NOUN と_ADP 言わ_VERB れる_AUX よう_AUX に_AUX なっ_VERB た_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+尾道: PROPN | NOUN
+尾道: PROPN | NOUN
+}
+
+Expected: {
 特徴_NOUN と_ADP し_AUX て_SCONJ は_ADP 、_PUNCT で_AUX ある_VERB ._PUNCT}
 Predicted: {
-特徴_NOUN と_ADP し_VERB て_SCONJ は_ADP 、_PUNCT で_CCONJ ある_VERB ._PUNCT}
+特徴_NOUN と_ADP し_VERB て_SCONJ は_ADP 、_PUNCT で_AUX ある_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 し: AUX | VERB
-で: AUX | CCONJ
 }
 
 Expected: {
@@ -2339,10 +2356,12 @@ Tok: Ref | Pred
 Expected: {
 多く_NOUN の_ADP 被害_NOUN 者_NOUN を_ADP 出し_VERB て_SCONJ 社会_NOUN を_ADP 騒が_VERB せ_AUX ,_PUNCT 逮捕_NOUN 者_NOUN まで_ADP 出_VERB て_SCONJ いる_VERB の_SCONJ に_SCONJ ,_PUNCT なお_ADV も_ADP 人_NOUN の_ADP 健康_ADJ 不安_ADJ に_AUX つけこん_VERB だ_AUX 活動_NOUN を_ADP し_VERB て_SCONJ いる_VERB 様子_NOUN が_ADP うかがえ_VERB ます_AUX ._PUNCT}
 Predicted: {
-多く_NOUN の_ADP 被害_NOUN 者_NOUN を_ADP 出し_VERB て_SCONJ 社会_NOUN を_ADP 騒が_VERB せ_AUX ,_PUNCT 逮捕_NOUN 者_NOUN まで_ADP 出_VERB て_SCONJ いる_VERB の_SCONJ に_SCONJ ,_PUNCT なお_ADV も_ADP 人_NOUN の_ADP 健康_NOUN 不安_NOUN に_ADP つけこん_VERB だ_AUX 活動_NOUN を_ADP し_VERB て_SCONJ いる_VERB 様子_NOUN が_ADP うかがえ_VERB ます_AUX ._PUNCT}
+多く_NOUN の_ADP 被害_NOUN 者_NOUN を_ADP 出し_VERB て_SCONJ 社会_NOUN を_ADP 騒が_VERB せ_AUX ,_PUNCT 逮捕_NOUN 者_NOUN まで_ADP 出_VERB て_SCONJ いる_VERB の_SCONJ に_ADP ,_PUNCT なお_CCONJ も_ADP 人_NOUN の_ADP 健康_NOUN 不安_NOUN に_ADP つけこん_VERB だ_AUX 活動_NOUN を_ADP し_VERB て_SCONJ いる_VERB 様子_NOUN が_ADP うかがえ_VERB ます_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+に: SCONJ | ADP
+なお: ADV | CCONJ
 健康: ADJ | NOUN
 不安: ADJ | NOUN
 に: AUX | ADP
@@ -2386,26 +2405,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 臼杵: PROPN | NOUN
-}
-
-Expected: {
-あまり_ADV 大きな_ADJ 店_NOUN で_AUX は_ADP ない_AUX の_SCONJ です_AUX が_SCONJ 、_PUNCT マニアック_ADJ な_AUX もの_NOUN や_ADP お洒落_ADJ な_AUX もの_NOUN が_ADP あり_VERB 楽しかっ_ADJ た_AUX ._PUNCT}
-Predicted: {
-あまり_ADV 大きな_ADJ 店_NOUN で_AUX は_ADP ない_ADJ の_SCONJ です_AUX が_SCONJ 、_PUNCT マニアック_ADJ な_AUX もの_NOUN や_ADP お洒落_ADJ な_AUX もの_NOUN が_ADP あり_VERB 楽しかっ_ADJ た_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-ない: AUX | ADJ
-}
-
-Expected: {
-あなた_PRON の_ADP 記事_NOUN は_ADP ,_PUNCT 真実_NOUN で_AUX は_ADP なく_AUX ,_PUNCT ただ_ADV 私_PRON を_ADP 陥れる_VERB ため_NOUN です_AUX ._PUNCT}
-Predicted: {
-あなた_PRON の_ADP 記事_NOUN は_ADP ,_PUNCT 真実_NOUN で_AUX は_ADP なく_ADJ ,_PUNCT ただ_ADV 私_PRON を_ADP 陥れる_VERB ため_NOUN です_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-なく: AUX | ADJ
 }
 
 Expected: {
@@ -2477,33 +2476,32 @@ Tok: Ref | Pred
 Expected: {
 8_NUM 月_NOUN 16_NUM 日_NOUN の_ADP シーズン_NOUN 開幕_NOUN 戦_NOUN マンチェスター_PROPN ・_SYM ユナイテッド_NOUN fc_NOUN 戦_NOUN で_ADP 74_NUM 分_NOUN に_ADP リー_PROPN ・_SYM カーズリー_PROPN と_ADP の_ADP 交代_NOUN で_ADP 途中_NOUN 出場_VERB し_AUX 、_PUNCT デビュー_NOUN を_ADP 飾っ_VERB た_AUX ._PUNCT}
 Predicted: {
-8_NUM 月_NOUN 16_NUM 日_NOUN の_ADP シーズン_NOUN 開幕_NOUN 戦_NOUN マンチェスター_PROPN ・_SYM ユナイテッド_PROPN fc_NOUN 戦_NOUN で_ADP 74_NUM 分_NOUN に_ADP リー_PROPN ・_SYM カーズリー_PROPN と_ADP の_ADP 交代_NOUN で_ADP 途中_ADV 出場_VERB し_AUX 、_PUNCT デビュー_NOUN を_ADP 飾っ_VERB た_AUX ._PUNCT}
+8_NUM 月_NOUN 16_NUM 日_NOUN の_ADP シーズン_NOUN 開幕_NOUN 戦_NOUN マンチェスター_PROPN ・_SYM ユナイテッド_NOUN fc_NOUN 戦_NOUN で_ADP 74_NUM 分_NOUN に_ADP リー_PROPN ・_SYM カーズリー_PROPN と_ADP の_ADP 交代_NOUN で_ADP 途中_NOUN 出場_NOUN し_AUX 、_PUNCT デビュー_NOUN を_ADP 飾っ_VERB た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-ユナイテッド: NOUN | PROPN
-途中: NOUN | ADV
-}
-
-Expected: {
-前回_NOUN と_ADP 同じ_ADJ 12_NUM 人_NOUN が_ADP 立_NOUN 候補_NOUN を_ADP 予定_NOUN 、_PUNCT 現職_NOUN 9_NUM 人_NOUN 全員_NOUN と_ADP 3_NUM 新人_NOUN が_ADP 争う_VERB ._PUNCT}
-Predicted: {
-前回_NOUN と_ADP 同じ_ADJ 12_NUM 人_NOUN が_ADP 立_NOUN 候補_NOUN を_ADP 予定_ADV 、_PUNCT 現職_NOUN 9_NUM 人_NOUN 全員_NOUN と_ADP 3_NUM 新人_NOUN が_ADP 争う_VERB ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-予定: NOUN | ADV
+出場: VERB | NOUN
 }
 
 Expected: {
 北朝鮮_PROPN の_ADP 金_PROPN 正日_PROPN 総_NOUN 書記_NOUN の_ADP 死去_NOUN で_ADP 大きく_ADJ 揺れ_VERB た_AUX 韓国_PROPN の_ADP 株式_NOUN 市場_NOUN の_ADP 今後_NOUN の_ADP ポイント_NOUN を_ADP 探り_VERB ます_AUX ._PUNCT}
 Predicted: {
-北朝鮮_PROPN の_ADP 金_NOUN 正日_NOUN 総_NOUN 書記_NOUN の_ADP 死去_NOUN で_ADP 大きく_ADJ 揺れ_VERB た_AUX 韓国_PROPN の_ADP 株式_NOUN 市場_NOUN の_ADP 今後_NOUN の_ADP ポイント_NOUN を_ADP 探り_VERB ます_AUX ._PUNCT}
+北朝鮮_PROPN の_ADP 金_NOUN 正日_NUM 総_NOUN 書記_NOUN の_ADP 死去_NOUN で_ADP 大きく_ADJ 揺れ_VERB た_AUX 韓国_PROPN の_ADP 株式_NOUN 市場_NOUN の_ADP 今後_NOUN の_ADP ポイント_NOUN を_ADP 探り_VERB ます_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 金: PROPN | NOUN
-正日: PROPN | NOUN
+正日: PROPN | NUM
+}
+
+Expected: {
+インセスト_NOUN に_ADP つい_VERB て_SCONJ の_ADP 話_NOUN で_ADP は_ADP 、_PUNCT カール_PROPN ・_SYM グスタフ_PROPN ・_SYM ユング_PROPN は_ADP 兄_NOUN に_ADP 犯さ_VERB れ_AUX た_AUX 事_NOUN が_ADP ある_VERB 女性_NOUN を_ADP 診断_VERB し_AUX て_SCONJ いる_VERB の_SCONJ だ_AUX が_SCONJ 、_PUNCT その_DET 女性_NOUN から_ADP 聞き出し_VERB た_AUX 話_NOUN は_ADP 幻想_NOUN 的_PART な_AUX 話_NOUN だっ_AUX た_AUX と_ADP さ_VERB れる_AUX ._PUNCT}
+Predicted: {
+インセスト_NOUN に_ADP つい_VERB て_SCONJ の_ADP 話_NOUN で_ADP は_ADP 、_PUNCT カール_PROPN ・_SYM グスタフ_PROPN ・_SYM ユング_PROPN は_ADP 兄_NOUN に_ADP 犯さ_VERB れ_AUX た_AUX 事_NOUN が_ADP ある_VERB 女性_NOUN を_ADP 診断_VERB し_AUX て_SCONJ いる_VERB の_SCONJ だ_AUX が_SCONJ 、_PUNCT その_DET 女性_NOUN から_ADP 聞き出し_VERB た_AUX 話_NOUN は_ADP 幻想_ADJ 的_PART な_AUX 話_NOUN だっ_AUX た_AUX と_ADP さ_VERB れる_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+幻想: NOUN | ADJ
 }
 
 Expected: {
@@ -2535,21 +2533,22 @@ Tok: Ref | Pred
 Expected: {
 2006_NUM 年_NOUN は_ADP 、_PUNCT シングス_NOUN ランク_NOUN が_ADP 7_NUM 月_NOUN に_ADP 2_NUM 週間_NOUN 「_PUNCT 99_NUM 位_NOUN 」_PUNCT を_ADP 記録_VERB し_AUX 初めて_ADV トップ_NOUN 100_NUM に_ADP 入る_VERB と_SCONJ 、_PUNCT 全米_NOUN オープン_NOUN で_ADP グランド_NOUN スラム_NOUN 大会_NOUN シングルス_NOUN 初_NOUN 出場_NOUN ._PUNCT}
 Predicted: {
-2006_NUM 年_NOUN は_ADP 、_PUNCT シングス_PROPN ランク_NOUN が_ADP 7_NUM 月_NOUN に_ADP 2_NUM 週間_NOUN 「_PUNCT 99_NUM 位_NOUN 」_PUNCT を_ADP 記録_VERB し_AUX 初めて_ADV トップ_NOUN 100_NUM に_ADP 入る_VERB と_SCONJ 、_PUNCT 全米_NOUN オープン_NOUN で_ADP グランド_NOUN スラム_NOUN 大会_NOUN シングルス_NOUN 初_NOUN 出場_NOUN ._PUNCT}
+2006_NUM 年_NOUN は_ADP 、_PUNCT シングス_PROPN ランク_PROPN が_ADP 7_NUM 月_NOUN に_ADP 2_NUM 週間_NOUN 「_PUNCT 99_NUM 位_NOUN 」_PUNCT を_ADP 記録_VERB し_AUX 初めて_ADV トップ_NOUN 100_NUM に_ADP 入る_VERB と_SCONJ 、_PUNCT 全米_NOUN オープン_NOUN で_ADP グランド_NOUN スラム_NOUN 大会_NOUN シングルス_NOUN 初_NOUN 出場_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 シングス: NOUN | PROPN
+ランク: NOUN | PROPN
 }
 
 Expected: {
 あと_ADV 、_PUNCT 自分_NOUN は_ADP フケ_NOUN 症_NOUN な_AUX の_SCONJ で_AUX 頭皮_NOUN クリーニング_NOUN も_ADP お_NOUN 願い_VERB し_AUX て_SCONJ い_VERB ます_AUX が_SCONJ 、_PUNCT 皮膚_NOUN 科_NOUN で_ADP も_ADP 直ら_VERB なかっ_AUX た_AUX 炎症_NOUN も_ADP 治し_VERB て_SCONJ もらい_VERB 髪_NOUN が_ADP 増え_VERB まし_AUX た_AUX ._PUNCT}
 Predicted: {
-あと_ADV 、_PUNCT 自分_NOUN は_ADP フケ_PROPN 症_NOUN な_AUX の_SCONJ で_SCONJ 頭皮_NOUN クリーニング_PROPN も_ADP お_NOUN 願い_VERB し_AUX て_SCONJ い_VERB ます_AUX が_SCONJ 、_PUNCT 皮膚_NOUN 科_NOUN で_ADP も_ADP 直ら_VERB なかっ_AUX た_AUX 炎症_NOUN も_ADP 治し_VERB て_SCONJ もらい_VERB 髪_NOUN が_ADP 増え_VERB まし_AUX た_AUX ._PUNCT}
+あと_ADV 、_PUNCT 自分_NOUN は_ADP フケ_ADV 症_NOUN な_AUX の_SCONJ で_SCONJ 頭皮_NOUN クリーニング_PROPN も_ADP お_NOUN 願い_VERB し_AUX て_SCONJ い_VERB ます_AUX が_SCONJ 、_PUNCT 皮膚_NOUN 科_NOUN で_ADP も_ADP 直ら_VERB なかっ_AUX た_AUX 炎症_NOUN も_ADP 治し_VERB て_SCONJ もらい_VERB 髪_NOUN が_ADP 増え_VERB まし_AUX た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-フケ: NOUN | PROPN
+フケ: NOUN | ADV
 で: AUX | SCONJ
 クリーニング: NOUN | PROPN
 }
@@ -2557,10 +2556,11 @@ Tok: Ref | Pred
 Expected: {
 以後_ADV 1980_NUM 年_NOUN 代_NOUN に_ADP cm_NOUN ソング_NOUN を_ADP 中心_NOUN に_ADP ヒット_NOUN を_ADP 飛ばす_VERB ._PUNCT}
 Predicted: {
-以後_ADV 1980_NUM 年_NOUN 代_NOUN に_ADP cm_PROPN ソング_NOUN を_ADP 中心_NOUN に_ADP ヒット_NOUN を_ADP 飛ばす_VERB ._PUNCT}
+以後_NOUN 1980_NUM 年_NOUN 代_NOUN に_ADP cm_PROPN ソング_NOUN を_ADP 中心_NOUN に_ADP ヒット_NOUN を_ADP 飛ばす_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+以後: ADV | NOUN
 cm: NOUN | PROPN
 }
 
@@ -2577,12 +2577,11 @@ Tok: Ref | Pred
 Expected: {
 しかし_CCONJ 、_PUNCT 田_NOUN の_ADP 中_NOUN に_ADP 梅_NOUN と_ADP 松_NOUN の_ADP 木_NOUN が_ADP ある_VERB のみ_PART で_AUX 、_PUNCT いまだ_ADV 碑石_NOUN も_ADP 建て_VERB られ_AUX て_SCONJ い_VERB ない_AUX 荒れ_VERB た_AUX 状態_NOUN に_ADP 驚嘆_VERB し_AUX て_SCONJ いる_VERB ._PUNCT}
 Predicted: {
-しかし_CCONJ 、_PUNCT 田_NOUN の_ADP 中_NOUN に_ADP 梅_NOUN と_ADP 松_NOUN の_ADP 木_NOUN が_ADP ある_VERB のみ_ADP で_SCONJ 、_PUNCT いまだ_ADV 碑石_NOUN も_ADP 建て_VERB られ_AUX て_SCONJ い_VERB ない_AUX 荒れ_VERB た_AUX 状態_NOUN に_ADP 驚嘆_VERB し_AUX て_SCONJ いる_VERB ._PUNCT}
+しかし_CCONJ 、_PUNCT 田_NOUN の_ADP 中_NOUN に_ADP 梅_NOUN と_ADP 松_NOUN の_ADP 木_NOUN が_ADP ある_VERB のみ_ADP で_AUX 、_PUNCT いまだ_ADV 碑石_NOUN も_ADP 建て_VERB られ_AUX て_SCONJ い_VERB ない_AUX 荒れ_VERB た_AUX 状態_NOUN に_ADP 驚嘆_VERB し_AUX て_SCONJ いる_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 のみ: PART | ADP
-で: AUX | SCONJ
 }
 
 Expected: {
@@ -2608,23 +2607,14 @@ Tok: Ref | Pred
 }
 
 Expected: {
-店長_NOUN の_ADP 安永_PROPN さん_NOUN の_ADP 気配り_NOUN と_ADP 明る_ADJ さ_PART が_ADP 疲れ_VERB 切っ_VERB た_AUX 僕_PRON に_ADP は_ADP ここちよい_ADJ です_AUX ._PUNCT}
-Predicted: {
-店長_NOUN の_ADP 安永_PROPN さん_NOUN の_ADP 気配り_NOUN と_ADP 明る_VERB さ_PART が_ADP 疲れ_VERB 切っ_VERB た_AUX 僕_PRON に_ADP は_ADP ここちよい_ADJ です_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-明る: ADJ | VERB
-}
-
-Expected: {
 仕事_NOUN が_ADP 結構_ADV ハード_ADJ な_AUX の_SCONJ で_AUX 、_PUNCT 休み_NOUN 時間_NOUN に_ADP ちょこちょこ_ADV 利用_VERB さ_AUX せ_AUX て_SCONJ 頂い_AUX て_SCONJ い_VERB ます_AUX が_SCONJ 、_PUNCT マッサージ_NOUN も_ADP 酸素_NOUN カプセル_NOUN も_ADP お_NOUN ススメ_NOUN です_AUX ._PUNCT}
 Predicted: {
-仕事_NOUN が_ADP 結構_ADV ハード_ADJ な_AUX の_SCONJ で_SCONJ 、_PUNCT 休み_NOUN 時間_NOUN に_ADP ちょこちょこ_ADV 利用_VERB さ_AUX せ_AUX て_SCONJ 頂い_AUX て_SCONJ い_VERB ます_AUX が_SCONJ 、_PUNCT マッサージ_NOUN も_ADP 酸素_NOUN カプセル_NOUN も_ADP お_NOUN ススメ_NOUN です_AUX ._PUNCT}
+仕事_NOUN が_ADP 結構_ADV ハード_ADJ な_AUX の_SCONJ で_SCONJ 、_PUNCT 休み_NOUN 時間_NOUN に_ADP ちょこちょこ_ADV 利用_VERB さ_AUX せ_AUX て_SCONJ 頂い_VERB て_SCONJ い_VERB ます_AUX が_SCONJ 、_PUNCT マッサージ_NOUN も_ADP 酸素_NOUN カプセル_NOUN も_ADP お_NOUN ススメ_NOUN です_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 で: AUX | SCONJ
+頂い: AUX | VERB
 }
 
 Expected: {
@@ -2638,14 +2628,13 @@ Tok: Ref | Pred
 }
 
 Expected: {
-以下_NOUN 現_NOUN 指針_NOUN と_ADP 表記_VERB する_AUX ._PUNCT}
+続い_VERB て_SCONJ 山田_PROPN が_ADP 「_PUNCT 悲しい_ADJ とき_NOUN 」_PUNCT に_ADP 該当_VERB する_AUX シチュエーション_NOUN を_ADP 「_PUNCT ○_SYM ○_SYM とき_NOUN 〜_SYM 」_PUNCT と_ADP 叫び_VERB 、_PUNCT 菊地_PROPN は_ADP これ_PRON を_ADP 復唱_VERB し_AUX ながら_SCONJ スケッチブック_NOUN を_ADP めくり_VERB イラスト_NOUN を_ADP 見せる_VERB ._PUNCT}
 Predicted: {
-以下_NOUN 現_NOUN 指針_NOUN と_ADP 表記_NOUN する_VERB ._PUNCT}
+続い_VERB て_SCONJ 山田_PROPN が_ADP 「_PUNCT 悲しい_ADJ とき_NOUN 」_PUNCT に_ADP 該当_VERB する_AUX シチュエーション_NOUN を_ADP 「_PUNCT ○_SYM ○_SYM とき_NOUN 〜_PART 」_PUNCT と_ADP 叫び_VERB 、_PUNCT 菊地_PROPN は_ADP これ_PRON を_ADP 復唱_VERB し_AUX ながら_SCONJ スケッチブック_NOUN を_ADP めくり_VERB イラスト_NOUN を_ADP 見せる_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-表記: VERB | NOUN
-する: AUX | VERB
+〜: SYM | PART
 }
 
 Expected: {
@@ -2759,13 +2748,13 @@ Tok: Ref | Pred
 Expected: {
 firefox_NOUN は_ADP サンド_NOUN ボックス_NOUN に_ADP よる_VERB セキュリティ_NOUN モデル_NOUN を_ADP 使用_VERB し_AUX て_SCONJ おり_VERB 、_PUNCT 他_NOUN の_ADP ウェブサイト_NOUN から_ADP 読み込ま_VERB れ_AUX た_AUX データ_NOUN や_ADP スクリプト_NOUN に_ADP つい_VERB て_SCONJ 同一_ADJ 生成_NOUN 元_NOUN ポリシー_NOUN に_ADP 基づく_VERB 制限_NOUN を_ADP 設け_VERB て_SCONJ いる_VERB ._PUNCT}
 Predicted: {
-firefox_PROPN は_ADP サンド_PROPN ボックス_NOUN に_ADP よる_VERB セキュリティ_NOUN モデル_NOUN を_ADP 使用_VERB し_AUX て_SCONJ おり_VERB 、_PUNCT 他_NOUN の_ADP ウェブサイト_NOUN から_ADP 読み込ま_VERB れ_AUX た_AUX データ_NOUN や_ADP スクリプト_NOUN に_ADP つい_VERB て_SCONJ 同一_NOUN 生成_NOUN 元_NOUN ポリシー_PROPN に_ADP 基づく_VERB 制限_NOUN を_ADP 設け_VERB て_SCONJ いる_VERB ._PUNCT}
+firefox_PROPN は_ADP サンド_PROPN ボックス_NOUN に_ADP よる_VERB セキュリティ_NOUN モデル_NOUN を_ADP 使用_VERB し_AUX て_SCONJ おり_VERB 、_PUNCT 他_NOUN の_ADP ウェブサイト_NOUN から_ADP 読み込ま_VERB れ_AUX た_AUX データ_NOUN や_ADP スクリプト_NOUN に_ADP つい_VERB て_SCONJ 同一_ADJ 生成_VERB 元_NOUN ポリシー_PROPN に_ADP 基づく_VERB 制限_NOUN を_ADP 設け_VERB て_SCONJ いる_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 firefox: NOUN | PROPN
 サンド: NOUN | PROPN
-同一: ADJ | NOUN
+生成: NOUN | VERB
 ポリシー: NOUN | PROPN
 }
 
@@ -2802,23 +2791,13 @@ Tok: Ref | Pred
 }
 
 Expected: {
-大阪_PROPN 方面_NOUN のみ_ADP 出口_NOUN 、_PUNCT 神戸_PROPN 方面_NOUN のみ_ADP 入口_NOUN の_ADP ある_VERB ハーフ_NOUN ic_NOUN で_AUX ある_VERB ._PUNCT}
+高校_NOUN 時代_NOUN に_ADP 二人_NOUN とも_NOUN だまさ_VERB れ_AUX て_SCONJ 無線_NOUN 部_NOUN に_ADP 入る_VERB ._PUNCT}
 Predicted: {
-大阪_PROPN 方面_NOUN のみ_ADP 出口_NOUN 、_PUNCT 神戸_PROPN 方面_NOUN のみ_ADP 入口_NOUN の_ADP ある_VERB ハーフ_PROPN ic_NOUN で_AUX ある_VERB ._PUNCT}
+高校_NOUN 時代_NOUN に_ADP 二人_NOUN とも_NOUN だまさ_AUX れ_AUX て_SCONJ 無線_NOUN 部_NOUN に_ADP 入る_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-ハーフ: NOUN | PROPN
-}
-
-Expected: {
-彼_PRON が_ADP 誠実_ADJ で_AUX あれ_VERB 不_NOUN 誠実_ADJ で_AUX あれ_VERB ,_PUNCT 摂理_PROPN を_ADP 出_VERB た_AUX 以上_NOUN ,_PUNCT 摂理_PROPN と_ADP からめる_VERB 必要_NOUN が_ADP ある_VERB の_SCONJ でしょう_AUX か_PART ?_PUNCT}
-Predicted: {
-彼_PRON が_ADP 誠実_ADJ で_AUX あれ_VERB 不_NOUN 誠実_NOUN で_AUX あれ_VERB ,_PUNCT 摂理_PROPN を_ADP 出_VERB た_AUX 以上_NOUN ,_PUNCT 摂理_PROPN と_ADP からめる_VERB 必要_NOUN が_ADP ある_VERB の_SCONJ でしょう_AUX か_PART ?_PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-誠実: ADJ | NOUN
+だまさ: VERB | AUX
 }
 
 Expected: {
@@ -2890,14 +2869,13 @@ Tok: Ref | Pred
 Expected: {
 丹波_PROPN 柏原_PROPN 藩_NOUN 士_NOUN ・_SYM 田辺_PROPN 興_PROPN の_ADP 長男_NOUN と_ADP し_AUX て_SCONJ 生まれる_VERB ._PUNCT}
 Predicted: {
-丹波_NOUN 柏原_PROPN 藩_NOUN 士_NOUN ・_SYM 田辺_NOUN 興_NOUN の_ADP 長男_NOUN と_ADP し_VERB て_SCONJ 生まれる_VERB ._PUNCT}
+丹波_NOUN 柏原_PROPN 藩_NOUN 士_NOUN ・_SYM 田辺_NOUN 興_NOUN の_ADP 長男_NOUN と_ADP し_AUX て_SCONJ 生まれる_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 丹波: PROPN | NOUN
 田辺: PROPN | NOUN
 興: PROPN | NOUN
-し: AUX | VERB
 }
 
 Expected: {
@@ -2910,16 +2888,6 @@ Tok: Ref | Pred
 で: AUX | ADP
 トロッコ: NOUN | PROPN
 必要: NOUN | ADJ
-}
-
-Expected: {
-商店_NOUN 街_NOUN の_ADP 一隅_NOUN に_ADP ある_VERB 理髪_NOUN 店_NOUN を_ADP 経営_VERB する_AUX 両親_NOUN が_ADP 倹約_VERB し_AUX て_SCONJ 医大_NOUN に_ADP 進む_VERB こと_NOUN が_ADP でき_AUX た_AUX ._PUNCT}
-Predicted: {
-商店_NOUN 街_NOUN の_ADP 一隅_NOUN に_ADP ある_VERB 理髪_NOUN 店_NOUN を_ADP 経営_VERB する_AUX 両親_NOUN が_ADP 倹約_VERB し_AUX て_SCONJ 医大_NOUN に_ADP 進む_VERB こと_NOUN が_ADP でき_VERB た_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-でき: AUX | VERB
 }
 
 Expected: {
@@ -2942,16 +2910,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 abf: NOUN | PROPN
-}
-
-Expected: {
-室内_NOUN の_ADP 化粧_NOUN 板_NOUN も_ADP 暖地_NOUN 向け_NOUN 近郊_NOUN 形_NOUN の_ADP よう_NOUN な_AUX 淡緑_NOUN で_AUX は_ADP なく_AUX 、_PUNCT 新_NOUN 幹線_NOUN 0_NUM 系_NOUN や_ADP 特急_NOUN ・_SYM 急行_NOUN 用_NOUN 車両_NOUN など_ADP と_ADP 同じ_ADJ 薄_ADJ 茶色_NOUN 4_NUM 号_NOUN で_AUX ある_VERB ._PUNCT}
-Predicted: {
-室内_NOUN の_ADP 化粧_NOUN 板_NOUN も_ADP 暖地_NOUN 向け_VERB 近郊_NOUN 形_NOUN の_ADP よう_NOUN な_AUX 淡緑_NOUN で_AUX は_ADP なく_AUX 、_PUNCT 新_NOUN 幹線_NOUN 0_NUM 系_NOUN や_ADP 特急_NOUN ・_SYM 急行_NOUN 用_NOUN 車両_NOUN など_ADP と_ADP 同じ_ADJ 薄_ADJ 茶色_NOUN 4_NUM 号_NOUN で_AUX ある_VERB ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-向け: NOUN | VERB
 }
 
 Expected: {
@@ -2991,16 +2949,6 @@ Tok: Ref | Pred
 }
 
 Expected: {
-議会_NOUN で_ADP の_ADP 質問_NOUN を_ADP 潰し_VERB た_AUX と_ADP なる_VERB と_SCONJ ,_PUNCT それ_PRON は_ADP もはや_ADV 左翼_NOUN と_ADP の_ADP 戦い_NOUN で_AUX は_ADP なく_AUX ,_PUNCT 宗教_NOUN に_ADP よる_VERB 民主_NOUN 制度_NOUN の_ADP 否定_NOUN です_AUX ._PUNCT}
-Predicted: {
-議会_NOUN で_ADP の_ADP 質問_NOUN を_ADP 潰し_VERB た_AUX と_ADP なる_VERB と_SCONJ ,_PUNCT それ_PRON は_ADP もはや_ADV 左翼_NOUN と_ADP の_ADP 戦い_NOUN で_AUX は_ADP なく_ADJ ,_PUNCT 宗教_NOUN に_ADP よる_VERB 民主_NOUN 制度_NOUN の_ADP 否定_NOUN です_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-なく: AUX | ADJ
-}
-
-Expected: {
 歌唱_NOUN 曲_NOUN の_ADP 発表_NOUN 後_NOUN に_ADP 変更_NOUN を_ADP 要請_VERB し_AUX た_AUX こと_NOUN から_ADP 、_PUNCT nhk_PROPN が_ADP 認め_VERB ず_AUX 、_PUNCT もめ_VERB た_AUX 末_NOUN に_ADP hound_NOUN dog_NOUN は_ADP 出場_NOUN を_ADP 辞退_VERB し_AUX 、_PUNCT 代わり_NOUN に_ADP バブル_NOUN ガム_NOUN ・_SYM ブラザーズ_NOUN が_ADP 初_NOUN 出場_NOUN を_ADP 決め_VERB た_AUX ._PUNCT}
 Predicted: {
 歌唱_NOUN 曲_NOUN の_ADP 発表_NOUN 後_NOUN に_ADP 変更_NOUN を_ADP 要請_VERB し_AUX た_AUX こと_NOUN から_ADP 、_PUNCT nhk_PROPN が_ADP 認め_VERB ず_AUX 、_PUNCT もめ_VERB た_AUX 末_NOUN に_ADP hound_NOUN dog_NOUN は_ADP 出場_NOUN を_ADP 辞退_VERB し_AUX 、_PUNCT 代わり_NOUN に_ADP バブル_NOUN ガム_PROPN ・_SYM ブラザーズ_PROPN が_ADP 初_NOUN 出場_NOUN を_ADP 決め_VERB た_AUX ._PUNCT}
@@ -3014,11 +2962,13 @@ Tok: Ref | Pred
 Expected: {
 全日_NOUN 農_NOUN や_ADP 北海道_PROPN 農民_NOUN 連盟_NOUN 、_PUNCT 開拓_NOUN 者_NOUN 連盟_NOUN など_ADP で_ADP つくる_VERB 全国_NOUN 農民_NOUN 組織_NOUN 連絡_NOUN 会議_NOUN は_ADP 11_NUM 月_NOUN 1_NUM 日_NOUN 、_PUNCT 東京_PROPN ・_SYM 永田町_PROPN の_ADP 衆議_NOUN 院_NOUN 議員_NOUN 第_NOUN 二_NUM 議員_NOUN 会館_NOUN 前_NOUN で_ADP 、_PUNCT tpp_PROPN 交渉_NOUN 参加_NOUN に_ADP 反対_VERB する_AUX 座り込み_NOUN など_ADP を_ADP 行う_VERB ._PUNCT}
 Predicted: {
-全日_NOUN 農_NOUN や_ADP 北海道_PROPN 農民_NOUN 連盟_NOUN 、_PUNCT 開拓_NOUN 者_NOUN 連盟_NOUN など_ADP で_ADP つくる_VERB 全国_NOUN 農民_NOUN 組織_NOUN 連絡_NOUN 会議_NOUN は_ADP 11_NUM 月_NOUN 1_NUM 日_NOUN 、_PUNCT 東京_PROPN ・_SYM 永田町_NOUN の_ADP 衆議_NOUN 院_NOUN 議員_NOUN 第_NOUN 二_NUM 議員_NOUN 会館_NOUN 前_NOUN で_ADP 、_PUNCT tpp_PROPN 交渉_NOUN 参加_NOUN に_ADP 反対_VERB する_AUX 座り込み_NOUN など_ADP を_ADP 行う_VERB ._PUNCT}
+全日_NOUN 農_NOUN や_ADP 北海道_PROPN 農民_NOUN 連盟_NOUN 、_PUNCT 開拓_NOUN 者_NOUN 連盟_NOUN など_ADP で_ADP つくる_VERB 全国_NOUN 農民_NOUN 組織_NOUN 連絡_NOUN 会議_NOUN は_ADP 11_NUM 月_NOUN 1_NUM 日_NOUN 、_PUNCT 東京_PROPN ・_SYM 永田町_NOUN の_ADP 衆議_NOUN 院_NOUN 議員_NOUN 第_NOUN 二_NUM 議員_NOUN 会館_NOUN 前_NOUN で_AUX 、_PUNCT tpp_NOUN 交渉_NOUN 参加_NOUN に_ADP 反対_VERB する_AUX 座り込み_NOUN など_ADP を_ADP 行う_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 永田町: PROPN | NOUN
+で: ADP | AUX
+tpp: PROPN | NOUN
 }
 
 Expected: {
@@ -3072,6 +3022,16 @@ Tok: Ref | Pred
 }
 
 Expected: {
+リード_NOUN ボーカル_NOUN は_ADP ジョン_PROPN ._PUNCT}
+Predicted: {
+リード_NOUN ボーカル_PROPN は_ADP ジョン_PROPN ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+ボーカル: NOUN | PROPN
+}
+
+Expected: {
 そこ_PRON に_ADP は_ADP 選抜_VERB さ_AUX れ_AUX た_AUX 優秀_ADJ な_AUX 「_PUNCT 落第_NOUN 生_NOUN 」_PUNCT が_ADP 集め_VERB られ_AUX て_SCONJ い_VERB た_AUX ._PUNCT}
 Predicted: {
 そこ_PRON に_ADP は_ADP 選抜_VERB さ_AUX れ_AUX た_AUX 優秀_ADJ な_AUX 「_PUNCT 落第_NOUN 生_PART 」_PUNCT が_ADP 集め_VERB られ_AUX て_SCONJ い_VERB た_AUX ._PUNCT}
@@ -3079,16 +3039,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 生: NOUN | PART
-}
-
-Expected: {
-1988_NUM 年_NOUN 資生_NOUN 堂_NOUN 秋_NOUN の_ADP キャンペーン_NOUN ソング_NOUN に_ADP なっ_VERB た_AUX 4_NUM 枚_NOUN 目_NOUN の_ADP シングル_NOUN 『_PUNCT 彼女_PRON と_ADP tip_NOUN on_NOUN duo_NOUN 』_PUNCT の_ADP ヒット_NOUN で_ADP ブレイク_NOUN ._PUNCT}
-Predicted: {
-1988_NUM 年_NOUN 資生_NOUN 堂_NOUN 秋_NOUN の_ADP キャンペーン_NOUN ソング_NOUN に_ADP なっ_VERB た_AUX 4_NUM 枚_NOUN 目_NOUN の_ADP シングル_NOUN 『_PUNCT 彼女_PRON と_ADP tip_NOUN on_NOUN duo_PROPN 』_PUNCT の_ADP ヒット_NOUN で_ADP ブレイク_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-duo: NOUN | PROPN
 }
 
 Expected: {
@@ -3152,6 +3102,16 @@ Tok: Ref | Pred
 不老: NOUN | ADJ
 ため: SCONJ | NOUN
 に: SCONJ | ADP
+}
+
+Expected: {
+1860_NUM 年_NOUN に_ADP は_ADP 、_PUNCT この_DET 通り_NOUN の_ADP 商人_NOUN が_ADP 団結_VERB し_AUX シャンゼリゼ_PROPN 保護_NOUN 運動_NOUN 団体_NOUN を_ADP 結成_VERB し_AUX 、_PUNCT 1916_NUM 年_NOUN に_ADP は_ADP ルイ_PROPN ・_SYM ヴィトン_PROPN が_ADP 会長_NOUN で_AUX ある_VERB 協会_NOUN と_ADP なり_VERB 、_PUNCT 通り_NOUN の_ADP プロモーション_NOUN を_ADP 行っ_VERB て_SCONJ き_VERB た_AUX ._PUNCT}
+Predicted: {
+1860_NUM 年_NOUN に_ADP は_ADP 、_PUNCT この_DET 通り_NOUN の_ADP 商人_NOUN が_ADP 団結_VERB し_AUX シャンゼリゼ_VERB 保護_NOUN 運動_NOUN 団体_NOUN を_ADP 結成_VERB し_AUX 、_PUNCT 1916_NUM 年_NOUN に_ADP は_ADP ルイ_PROPN ・_SYM ヴィトン_PROPN が_ADP 会長_NOUN で_AUX ある_VERB 協会_NOUN と_ADP なり_VERB 、_PUNCT 通り_NOUN の_ADP プロモーション_NOUN を_ADP 行っ_VERB て_SCONJ き_VERB た_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+シャンゼリゼ: PROPN | VERB
 }
 
 Expected: {
@@ -3237,11 +3197,12 @@ Tok: Ref | Pred
 Expected: {
 ボディ_NOUN リセット_NOUN 6_NOUN の_ADP マッサージ_NOUN は_ADP 武蔵野_PROPN 市_NOUN ・_SYM 三鷹_PROPN 市_NOUN で_ADP は_ADP 一番_ADV 気持ち_NOUN いい_ADJ です_AUX ._PUNCT}
 Predicted: {
-ボディ_NOUN リセット_NOUN 6_NUM の_ADP マッサージ_NOUN は_ADP 武蔵野_PROPN 市_NOUN ・_SYM 三鷹_PROPN 市_NOUN で_ADP は_ADP 一番_ADV 気持ち_NOUN いい_ADJ です_AUX ._PUNCT}
+ボディ_NOUN リセット_NOUN 6_NUM の_ADP マッサージ_NOUN は_ADP 武蔵野_PROPN 市_NOUN ・_SYM 三鷹_NUM 市_NOUN で_ADP は_ADP 一番_ADV 気持ち_NOUN いい_ADJ です_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 6: NOUN | NUM
+三鷹: PROPN | NUM
 }
 
 Expected: {
@@ -3277,12 +3238,11 @@ Tok: Ref | Pred
 Expected: {
 リヤ_NOUN ウィング_NOUN は_ADP 多く_NOUN の_ADP レース_NOUN で_ADP 3_NUM 段_NOUN 式_NOUN を_ADP 使用_VERB し_AUX た_AUX ._PUNCT}
 Predicted: {
-リヤ_PROPN ウィング_PROPN は_ADP 多く_NOUN の_ADP レース_NOUN で_ADP 3_NUM 段_NOUN 式_NOUN を_ADP 使用_VERB し_AUX た_AUX ._PUNCT}
+リヤ_PROPN ウィング_NOUN は_ADP 多く_NOUN の_ADP レース_NOUN で_ADP 3_NUM 段_NOUN 式_NOUN を_ADP 使用_VERB し_AUX た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 リヤ: NOUN | PROPN
-ウィング: NOUN | PROPN
 }
 
 Expected: {
@@ -3298,12 +3258,13 @@ socket: NOUN | PROPN
 Expected: {
 退官_NOUN 後_NOUN は_ADP 、_PUNCT ほとんど_ADV 一人_NOUN で_AUX 留守_VERB 番_NOUN し_AUX て_SCONJ いる_VERB エンリカ_PROPN の_ADP 面倒_NOUN を_ADP ジャン_PROPN から_ADP 頼ま_VERB れ_AUX 、_PUNCT 同居_VERB する_AUX よう_AUX に_AUX なる_VERB ._PUNCT}
 Predicted: {
-退官_NOUN 後_NOUN は_ADP 、_PUNCT ほとんど_ADV 一人_NOUN で_ADP 留守_NOUN 番_NOUN し_AUX て_SCONJ いる_VERB エンリカ_PROPN の_ADP 面倒_NOUN を_ADP ジャン_PROPN から_ADP 頼ま_VERB れ_AUX 、_PUNCT 同居_VERB する_AUX よう_AUX に_AUX なる_VERB ._PUNCT}
+退官_NOUN 後_NOUN は_ADP 、_PUNCT ほとんど_ADV 一人_NOUN で_ADP 留守_NOUN 番_NOUN し_AUX て_SCONJ いる_VERB エンリカ_PROPN の_ADP 面倒_NOUN を_ADP ジャン_NOUN から_ADP 頼ま_VERB れ_AUX 、_PUNCT 同居_VERB する_AUX よう_AUX に_AUX なる_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 で: AUX | ADP
 留守: VERB | NOUN
+ジャン: PROPN | NOUN
 }
 
 Expected: {
@@ -3330,11 +3291,10 @@ Tok: Ref | Pred
 Expected: {
 パリティ_NOUN ビット_NOUN も_ADP 含め_VERB て_SCONJ 奇数_NOUN 個_NOUN の_ADP ビット_NOUN が_ADP 転送_NOUN 中_NOUN に_ADP 変化_VERB し_AUX た_AUX 場合_NOUN 、_PUNCT パリティ_NOUN ビット_NOUN は_ADP 正しく_ADJ ない_ADJ こと_NOUN に_ADP なり_VERB 、_PUNCT 転送_NOUN 中_NOUN に_ADP 誤り_NOUN が_ADP 発生_VERB し_AUX た_AUX こと_NOUN を_ADP 示す_VERB ._PUNCT}
 Predicted: {
-パリティ_NOUN ビット_NOUN も_ADP 含め_VERB て_SCONJ 奇数_ADJ 個_NOUN の_ADP ビット_NOUN が_ADP 転送_NOUN 中_NOUN に_ADP 変化_VERB し_AUX た_AUX 場合_NOUN 、_PUNCT パリティ_NOUN ビット_NOUN は_ADP 正しく_ADJ ない_AUX こと_NOUN に_ADP なり_VERB 、_PUNCT 転送_NOUN 中_NOUN に_ADP 誤り_NOUN が_ADP 発生_VERB し_AUX た_AUX こと_NOUN を_ADP 示す_VERB ._PUNCT}
+パリティ_NOUN ビット_NOUN も_ADP 含め_VERB て_SCONJ 奇数_NOUN 個_NOUN の_ADP ビット_NOUN が_ADP 転送_NOUN 中_NOUN に_ADP 変化_VERB し_AUX た_AUX 場合_NOUN 、_PUNCT パリティ_NOUN ビット_NOUN は_ADP 正しく_ADJ ない_AUX こと_NOUN に_ADP なり_VERB 、_PUNCT 転送_NOUN 中_NOUN に_ADP 誤り_NOUN が_ADP 発生_VERB し_AUX た_AUX こと_NOUN を_ADP 示す_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-奇数: NOUN | ADJ
 ない: ADJ | AUX
 }
 
@@ -3351,11 +3311,10 @@ Tok: Ref | Pred
 Expected: {
 サウンド_NOUN の_ADP 変更_NOUN や_ADP フォント_NOUN の_ADP 変更_NOUN も_ADP 可能_ADJ で_AUX あり_VERB 、_PUNCT 後者_NOUN に_ADP つい_VERB て_SCONJ は_ADP 、_PUNCT 欧文_NOUN フォント_NOUN が_ADP 指定_VERB さ_AUX れ_AUX て_SCONJ いる_VERB が_SCONJ 故_NOUN に_ADP 日本_PROPN 語_NOUN 環境_NOUN で_ADP は_ADP 文字_NOUN 化け_NOUN する_AUX 部分_NOUN を_ADP 日本_PROPN 語_NOUN フォント_NOUN に_ADP 指定_VERB する_AUX など_PART し_VERB て_SCONJ 、_PUNCT ソフト_NOUN の_ADP 使用_NOUN の_ADP 際_NOUN の_ADP 利便_NOUN を_ADP 図る_VERB など_PART の_ADP 使わ_VERB れ_AUX 方_NOUN を_ADP し_VERB た_AUX ._PUNCT}
 Predicted: {
-サウンド_NOUN の_ADP 変更_NOUN や_ADP フォント_PROPN の_ADP 変更_NOUN も_ADP 可能_ADJ で_AUX あり_VERB 、_PUNCT 後者_NOUN に_ADP つい_VERB て_SCONJ は_ADP 、_PUNCT 欧文_NOUN フォント_PROPN が_ADP 指定_VERB さ_AUX れ_AUX て_SCONJ いる_VERB が_SCONJ 故_NOUN に_ADP 日本_PROPN 語_NOUN 環境_NOUN で_ADP は_ADP 文字_NOUN 化け_VERB する_AUX 部分_NOUN を_ADP 日本_PROPN 語_NOUN フォント_NOUN に_ADP 指定_VERB する_AUX など_PART し_VERB て_SCONJ 、_PUNCT ソフト_NOUN の_ADP 使用_NOUN の_ADP 際_NOUN の_ADP 利便_NOUN を_ADP 図る_VERB など_PART の_ADP 使わ_VERB れ_AUX 方_NOUN を_ADP し_VERB た_AUX ._PUNCT}
+サウンド_NOUN の_ADP 変更_NOUN や_ADP フォント_PROPN の_ADP 変更_NOUN も_ADP 可能_ADJ で_AUX あり_VERB 、_PUNCT 後者_NOUN に_ADP つい_VERB て_SCONJ は_ADP 、_PUNCT 欧文_NOUN フォント_NOUN が_ADP 指定_VERB さ_AUX れ_AUX て_SCONJ いる_VERB が_SCONJ 故_NOUN に_ADP 日本_PROPN 語_NOUN 環境_NOUN で_ADP は_ADP 文字_NOUN 化け_VERB する_AUX 部分_NOUN を_ADP 日本_PROPN 語_NOUN フォント_NOUN に_ADP 指定_VERB する_AUX など_PART し_VERB て_SCONJ 、_PUNCT ソフト_NOUN の_ADP 使用_NOUN の_ADP 際_NOUN の_ADP 利便_NOUN を_ADP 図る_VERB など_PART の_ADP 使わ_VERB れ_AUX 方_NOUN を_ADP し_VERB た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-フォント: NOUN | PROPN
 フォント: NOUN | PROPN
 化け: NOUN | VERB
 }
@@ -3483,11 +3442,11 @@ Tok: Ref | Pred
 Expected: {
 次いで_ADV スタニスワフ_PROPN ・_SYM ニェゴシェフスキ_PROPN の_ADP 1584_NUM 年_NOUN の_ADP 作品_NOUN 「_PUNCT ピョトル_PROPN ・_SYM ミスコフスキ_PROPN の_ADP ため_NOUN に_ADP ~_SYM ヤン_PROPN ・_SYM コハノフスキ_PROPN の_ADP エピグラム_NOUN ~_SYM 」_PUNCT で_ADP は_ADP コハノフスキ_PROPN が_ADP 42_NUM 歳_NOUN で_ADP 没し_VERB た_AUX と_ADP 公表_VERB し_AUX て_SCONJ いる_VERB ._PUNCT}
 Predicted: {
-次いで_ADV スタニスワフ_PROPN ・_SYM ニェゴシェフスキ_PROPN の_ADP 1584_NUM 年_NOUN の_ADP 作品_NOUN 「_PUNCT ピョトル_PROPN ・_SYM ミスコフスキ_NOUN の_ADP ため_NOUN に_ADP ~_SYM ヤン_PROPN ・_SYM コハノフスキ_PROPN の_ADP エピグラム_NOUN ~_SYM 」_PUNCT で_ADP は_ADP コハノフスキ_PROPN が_ADP 42_NUM 歳_NOUN で_ADP 没し_VERB た_AUX と_ADP 公表_VERB し_AUX て_SCONJ いる_VERB ._PUNCT}
+次いで_ADV スタニスワフ_PROPN ・_SYM ニェゴシェフスキ_PROPN の_ADP 1584_NUM 年_NOUN の_ADP 作品_NOUN 「_PUNCT ピョトル_PROPN ・_SYM ミスコフスキ_PROPN の_ADP ため_NOUN に_ADP ~_SYM ヤン_PROPN ・_SYM コハノフスキ_PROPN の_ADP エピグラム_NOUN ~_SYM 」_PUNCT で_AUX は_ADP コハノフスキ_PROPN が_ADP 42_NUM 歳_NOUN で_ADP 没し_VERB た_AUX と_ADP 公表_VERB し_AUX て_SCONJ いる_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-ミスコフスキ: PROPN | NOUN
+で: ADP | AUX
 }
 
 Expected: {
@@ -3627,6 +3586,16 @@ rice: NOUN | PROPN
 }
 
 Expected: {
+ビンゴ_NOUN ゲーム_NOUN の_ADP サービス_NOUN が_ADP 子連れ_NOUN に_ADP は_ADP 最高_ADJ でし_AUX た_AUX ._PUNCT}
+Predicted: {
+ビンゴ_PROPN ゲーム_NOUN の_ADP サービス_NOUN が_ADP 子連れ_NOUN に_ADP は_ADP 最高_ADJ でし_AUX た_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+ビンゴ: NOUN | PROPN
+}
+
+Expected: {
 ブース_NOUN は_ADP ,_PUNCT この_DET ほか_NOUN に_ADP "_PUNCT 総合_NOUN 進路_NOUN 相談_NOUN "_PUNCT "_PUNCT キャリア_NOUN カウンセリング_NOUN "_PUNCT "_PUNCT 大学_NOUN 生活_NOUN 全般_NOUN "_PUNCT など_ADP 多彩_ADJ です_AUX ._PUNCT}
 Predicted: {
 ブース_PROPN は_ADP ,_PUNCT この_DET ほか_NOUN に_ADP "_PUNCT 総合_NOUN 進路_NOUN 相談_NOUN "_PUNCT "_PUNCT キャリア_NOUN カウンセリング_NOUN "_PUNCT "_PUNCT 大学_NOUN 生活_NOUN 全般_NOUN "_PUNCT など_ADP 多彩_ADJ です_AUX ._PUNCT}
@@ -3639,11 +3608,12 @@ Tok: Ref | Pred
 Expected: {
 その_DET ため_NOUN 、_PUNCT 函館_PROPN 本線_NOUN の_ADP 旭川_PROPN -_SYM 深川_PROPN 間_NOUN で_ADP も_ADP 留萌_PROPN 本線_NOUN へ_ADP の_ADP 送り込み_NOUN 列車_NOUN と_ADP し_AUX て_SCONJ 運転_VERB さ_AUX れ_AUX た_AUX ._PUNCT}
 Predicted: {
-その_DET ため_NOUN 、_PUNCT 函館_NOUN 本線_NOUN の_ADP 旭川_PROPN -_SYM 深川_PROPN 間_NOUN で_ADP も_ADP 留萌_PROPN 本線_NOUN へ_ADP の_ADP 送り込み_VERB 列車_NOUN と_ADP し_VERB て_SCONJ 運転_VERB さ_AUX れ_AUX た_AUX ._PUNCT}
+その_DET ため_NOUN 、_PUNCT 函館_NOUN 本線_NOUN の_ADP 旭川_PROPN -_SYM 深川_PROPN 間_NOUN で_ADP も_ADP 留萌_VERB 本線_NOUN へ_ADP の_ADP 送り込み_VERB 列車_NOUN と_ADP し_VERB て_SCONJ 運転_VERB さ_AUX れ_AUX た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 函館: PROPN | NOUN
+留萌: PROPN | VERB
 送り込み: NOUN | VERB
 し: AUX | VERB
 }
@@ -3651,10 +3621,12 @@ Tok: Ref | Pred
 Expected: {
 ジャイロサイブレータ_PROPN に_ADP 因る_VERB 、_PUNCT 過去_NOUN 世界_NOUN 再現_NOUN を_ADP 行う_VERB ため_NOUN の_ADP データ_NOUN 再現_NOUN 率_NOUN が_ADP 高かっ_ADJ た_AUX ため_SCONJ に_SCONJ 、_PUNCT その_DET 人物_NOUN の_ADP 精神_NOUN の_ADP 波長_NOUN が_ADP 因子_NOUN と_ADP し_AUX て_SCONJ 独立_VERB し_AUX た_AUX 形_NOUN で_ADP 復活_VERB し_AUX た_AUX ._PUNCT}
 Predicted: {
-ジャイロサイブレータ_PROPN に_ADP 因る_VERB 、_PUNCT 過去_NOUN 世界_NOUN 再現_NOUN を_ADP 行う_VERB ため_NOUN の_ADP データ_NOUN 再現_NOUN 率_NOUN が_ADP 高かっ_ADJ た_AUX ため_SCONJ に_SCONJ 、_PUNCT その_DET 人物_NOUN の_ADP 精神_NOUN の_ADP 波長_NOUN が_ADP 因子_NOUN と_ADP し_VERB て_SCONJ 独立_VERB し_AUX た_AUX 形_NOUN で_ADP 復活_VERB し_AUX た_AUX ._PUNCT}
+ジャイロサイブレータ_PROPN に_ADP 因る_VERB 、_PUNCT 過去_NOUN 世界_NOUN 再現_NOUN を_ADP 行う_VERB ため_NOUN の_ADP データ_NOUN 再現_NOUN 率_NOUN が_ADP 高かっ_ADJ た_AUX ため_NOUN に_ADP 、_PUNCT その_DET 人物_NOUN の_ADP 精神_NOUN の_ADP 波長_NOUN が_ADP 因子_NOUN と_ADP し_VERB て_SCONJ 独立_VERB し_AUX た_AUX 形_NOUN で_ADP 復活_VERB し_AUX た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+ため: SCONJ | NOUN
+に: SCONJ | ADP
 し: AUX | VERB
 }
 
@@ -3702,6 +3674,16 @@ Tok: Ref | Pred
 ものすごく: ADJ | ADV
 かさん: VERB | PROPN
 で: SCONJ | ADP
+}
+
+Expected: {
+これ_PRON に_ADP 対し_VERB 、_PUNCT オーシア_PROPN の_ADP ハワード_PROPN 外相_NOUN は_ADP 同日_ADV 出演_VERB し_AUX た_AUX ニュース_NOUN 番組_NOUN 内_NOUN で_ADP ベルカ_PROPN の_ADP 旧_NOUN 権益_NOUN を_ADP 手_NOUN に_ADP する_VERB チャンス_NOUN を_ADP 窺い_VERB 始め_VERB て_SCONJ いる_VERB と_ADP 発言_VERB し_AUX 、_PUNCT ユークトバニア_PROPN を_ADP 批判_VERB し_AUX た_AUX ._PUNCT}
+Predicted: {
+これ_PRON に_ADP 対し_VERB 、_PUNCT オーシア_PROPN の_ADP ハワード_NOUN 外相_NOUN は_ADP 同日_ADV 出演_VERB し_AUX た_AUX ニュース_NOUN 番組_NOUN 内_NOUN で_ADP ベルカ_PROPN の_ADP 旧_NOUN 権益_NOUN を_ADP 手_NOUN に_ADP する_VERB チャンス_NOUN を_ADP 窺い_VERB 始め_VERB て_SCONJ いる_VERB と_ADP 発言_VERB し_AUX 、_PUNCT ユークトバニア_PROPN を_ADP 批判_VERB し_AUX た_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+ハワード: PROPN | NOUN
 }
 
 Expected: {
@@ -3836,13 +3818,14 @@ Tok: Ref | Pred
 Expected: {
 gps_NOUN 機能_NOUN で_ADP 現在_NOUN 地_NOUN 近く_NOUN の_ADP ローソン_PROPN の_ADP 店舗_NOUN 所在_NOUN 地_NOUN に_ADP ドラえもん_PROPN の_ADP アイコン_NOUN 表示_NOUN が_ADP あり_VERB ます_AUX の_SCONJ で_AUX 、_PUNCT その_DET アイコン_NOUN を_ADP 目指し_VERB 店舗_NOUN に_ADP 近付く_VERB と_SCONJ 、_PUNCT ドラえもん_PROPN 絵合わせ_NOUN パーツ_NOUN が_ADP 入手_VERB でき_AUX ます_AUX ._PUNCT}
 Predicted: {
-gps_NOUN 機能_NOUN で_AUX 現在_ADV 地_NOUN 近く_NOUN の_ADP ローソン_PROPN の_ADP 店舗_NOUN 所在_NOUN 地_NOUN に_ADP ドラえもん_PROPN の_ADP アイコン_PROPN 表示_NOUN が_ADP あり_VERB ます_AUX の_SCONJ で_AUX 、_PUNCT その_DET アイコン_NOUN を_ADP 目指し_VERB 店舗_NOUN に_ADP 近付く_VERB と_SCONJ 、_PUNCT ドラえもん_PROPN 絵合わせ_NOUN パーツ_NOUN が_ADP 入手_VERB でき_AUX ます_AUX ._PUNCT}
+gps_NOUN 機能_NOUN で_AUX 現在_ADV 地_NOUN 近く_NOUN の_ADP ローソン_PROPN の_ADP 店舗_NOUN 所在_NOUN 地_NOUN に_ADP ドラえもん_VERB の_SCONJ アイコン_NOUN 表示_NOUN が_ADP あり_VERB ます_AUX の_SCONJ で_AUX 、_PUNCT その_DET アイコン_NOUN を_ADP 目指し_VERB 店舗_NOUN に_ADP 近付く_VERB と_SCONJ 、_PUNCT ドラえもん_PROPN 絵合わせ_NOUN パーツ_NOUN が_ADP 入手_VERB でき_AUX ます_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 で: ADP | AUX
 現在: NOUN | ADV
-アイコン: NOUN | PROPN
+ドラえもん: PROPN | VERB
+の: ADP | SCONJ
 }
 
 Expected: {
@@ -3867,13 +3850,24 @@ u: NOUN | PROPN
 }
 
 Expected: {
+大好き_ADJ な_AUX 味_NOUN の_ADP 肉_NOUN 中華_PROPN です_AUX ._PUNCT}
+Predicted: {
+大好き_ADJ な_AUX 味_NOUN の_ADP 肉_NOUN 中華_ADJ です_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+中華: PROPN | ADJ
+}
+
+Expected: {
 ただ_CCONJ 利上げ_NOUN 時期_NOUN は_ADP 早く_ADJ て_SCONJ も_ADP 10_NUM 月_NOUN 以降_NOUN と_ADP の_ADP 指摘_NOUN が_ADP あり_VERB 、_PUNCT この_DET まま_NOUN 上昇_VERB する_AUX か_PART は_ADP 懐疑_NOUN 的_PART な_AUX 見_VERB 方_NOUN が_ADP 多い_ADJ ._PUNCT}
 Predicted: {
-ただ_CCONJ 利上げ_VERB 時期_NOUN は_ADP 早く_ADJ て_SCONJ も_ADP 10_NUM 月_NOUN 以降_NOUN と_ADP の_ADP 指摘_NOUN が_ADP あり_VERB 、_PUNCT この_DET まま_NOUN 上昇_VERB する_AUX か_PART は_ADP 懐疑_NOUN 的_PART な_AUX 見_VERB 方_NOUN が_ADP 多い_ADJ ._PUNCT}
+ただ_CCONJ 利上げ_VERB 時期_NOUN は_ADP 早く_ADJ て_SCONJ も_ADP 10_NUM 月_NOUN 以降_NOUN と_ADP の_ADP 指摘_NOUN が_ADP あり_VERB 、_PUNCT この_DET まま_NOUN 上昇_VERB する_AUX か_PART は_ADP 懐疑_ADJ 的_PART な_AUX 見_VERB 方_NOUN が_ADP 多い_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 利上げ: NOUN | VERB
+懐疑: NOUN | ADJ
 }
 
 Expected: {
@@ -3886,6 +3880,16 @@ Tok: Ref | Pred
 annex: NOUN | PROPN
 <: PUNCT | NOUN
 >: PUNCT | NOUN
+}
+
+Expected: {
+この_DET リモコン_NOUN は_ADP コンパクト_ADJ だ_AUX が_SCONJ 、_PUNCT 必要_ADJ 十分_ADJ な_AUX 機能_NOUN が_ADP 用意_VERB さ_AUX れ_AUX て_SCONJ いる_VERB ._PUNCT}
+Predicted: {
+この_DET リモコン_PROPN は_ADP コンパクト_ADJ だ_AUX が_SCONJ 、_PUNCT 必要_ADJ 十分_ADJ な_AUX 機能_NOUN が_ADP 用意_VERB さ_AUX れ_AUX て_SCONJ いる_VERB ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+リモコン: NOUN | PROPN
 }
 
 Expected: {
@@ -3912,12 +3916,13 @@ Tok: Ref | Pred
 Expected: {
 その_DET 中_NOUN で_ADP 【_PUNCT 3_NUM ._PUNCT 事業_NOUN 場内_NOUN ・_SYM 産業_NOUN 保健_NOUN スタッフ_NOUN に_ADP よる_VERB ケア_NOUN 】_PUNCT は_ADP 、_PUNCT 産業_NOUN 医_NOUN 、_PUNCT 衛生_NOUN 管理_NOUN 者_NOUN 、_PUNCT 保健_NOUN 師_NOUN など_ADP も_ADP 担い手_NOUN の_ADP 例_NOUN と_ADP さ_VERB れ_AUX て_SCONJ いる_VERB が_SCONJ 、_PUNCT 産業_NOUN 医_NOUN の_ADP 中_NOUN で_ADP 精神_NOUN 科_NOUN ・_SYM 心療_NOUN 内科_NOUN の_ADP 専門_NOUN 医_NOUN で_AUX ある_VERB 者_NOUN は_ADP 、_PUNCT 全体_NOUN の_ADP 約_NOUN 15_NUM %_NOUN しか_ADP おら_VERB ず_AUX 、_PUNCT 衛生_NOUN 管理_NOUN 者_NOUN や_ADP 保健_NOUN 師_NOUN も_ADP 、_PUNCT ケガ_NOUN や_ADP 感染_NOUN 症_NOUN 予防_NOUN など_ADP の_ADP 安全_NOUN 衛生_NOUN 相談_NOUN が_ADP 中心_NOUN と_ADP なる_VERB ため_NOUN 、_PUNCT メンタル_ADJ ヘルスケア_NOUN のみ_ADP の_ADP 専門_NOUN 職_NOUN と_ADP いう_VERB 位置_NOUN づけ_NOUN に_ADP は_ADP さ_VERB れ_AUX て_SCONJ い_VERB ない_AUX ._PUNCT}
 Predicted: {
-その_DET 中_NOUN で_ADP 【_PUNCT 3_NUM ._PUNCT 事業_NOUN 場内_NOUN ・_SYM 産業_NOUN 保健_NOUN スタッフ_NOUN に_ADP よる_VERB ケア_PROPN 】_ADP は_ADP 、_PUNCT 産業_NOUN 医_NOUN 、_PUNCT 衛生_NOUN 管理_NOUN 者_NOUN 、_PUNCT 保健_NOUN 師_NOUN など_ADP も_ADP 担い手_NOUN の_ADP 例_NOUN と_ADP さ_VERB れ_AUX て_SCONJ いる_VERB が_SCONJ 、_PUNCT 産業_NOUN 医_NOUN の_ADP 中_NOUN で_ADP 精神_NOUN 科_NOUN ・_SYM 心療_NOUN 内科_NOUN の_ADP 専門_NOUN 医_NOUN で_AUX ある_VERB 者_NOUN は_ADP 、_PUNCT 全体_NOUN の_ADP 約_NOUN 15_NUM %_NOUN しか_ADP おら_VERB ず_AUX 、_PUNCT 衛生_NOUN 管理_NOUN 者_NOUN や_ADP 保健_NOUN 師_NOUN も_ADP 、_PUNCT ケガ_NOUN や_ADP 感染_NOUN 症_NOUN 予防_NOUN など_ADP の_ADP 安全_ADJ 衛生_NOUN 相談_NOUN が_ADP 中心_NOUN と_ADP なる_VERB ため_NOUN 、_PUNCT メンタル_NOUN ヘルスケア_PROPN のみ_ADP の_ADP 専門_NOUN 職_NOUN と_ADP いう_VERB 位置_NOUN づけ_NOUN に_ADP は_ADP さ_VERB れ_AUX て_SCONJ い_VERB ない_AUX ._PUNCT}
+その_DET 中_NOUN で_ADP 【_PUNCT 3_NUM ._PUNCT 事業_NOUN 場内_NOUN ・_SYM 産業_NOUN 保健_NOUN スタッフ_NOUN に_ADP よる_VERB ケア_PROPN 】_PROPN は_ADP 、_PUNCT 産業_NOUN 医_NOUN 、_PUNCT 衛生_ADP 管理_NOUN 者_NOUN 、_PUNCT 保健_NOUN 師_NOUN など_ADP も_ADP 担い手_NOUN の_ADP 例_NOUN と_ADP さ_VERB れ_AUX て_SCONJ いる_VERB が_SCONJ 、_PUNCT 産業_NOUN 医_NOUN の_ADP 中_NOUN で_ADP 精神_NOUN 科_NOUN ・_SYM 心療_NOUN 内科_NOUN の_ADP 専門_NOUN 医_NOUN で_AUX ある_VERB 者_NOUN は_ADP 、_PUNCT 全体_NOUN の_ADP 約_NOUN 15_NUM %_NOUN しか_ADP おら_VERB ず_AUX 、_PUNCT 衛生_NOUN 管理_NOUN 者_NOUN や_ADP 保健_NOUN 師_NOUN も_ADP 、_PUNCT ケガ_NOUN や_ADP 感染_NOUN 症_NOUN 予防_NOUN など_ADP の_ADP 安全_ADJ 衛生_NOUN 相談_NOUN が_ADP 中心_NOUN と_ADP なる_VERB ため_NOUN 、_PUNCT メンタル_NOUN ヘルスケア_PROPN のみ_ADP の_ADP 専門_NOUN 職_NOUN と_ADP いう_VERB 位置_NOUN づけ_NOUN に_ADP は_ADP さ_VERB れ_AUX て_SCONJ い_VERB ない_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 ケア: NOUN | PROPN
-】: PUNCT | ADP
+】: PUNCT | PROPN
+衛生: NOUN | ADP
 安全: NOUN | ADJ
 メンタル: ADJ | NOUN
 ヘルスケア: NOUN | PROPN
@@ -3957,13 +3962,13 @@ Tok: Ref | Pred
 Expected: {
 みつば_NOUN カイロプラクティック_NOUN 院長_NOUN の_ADP 伊藤_PROPN が_ADP 推薦_VERB いたし_AUX ます_AUX ._PUNCT}
 Predicted: {
-みつば_ADV カイロプラクティック_PROPN 院長_NOUN の_ADP 伊藤_PROPN が_ADP 推薦_NOUN いたし_AUX ます_AUX ._PUNCT}
+みつば_ADV カイロプラクティック_PROPN 院長_NOUN の_ADP 伊藤_PROPN が_ADP 推薦_ADV いたし_AUX ます_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 みつば: NOUN | ADV
 カイロプラクティック: NOUN | PROPN
-推薦: VERB | NOUN
+推薦: VERB | ADV
 }
 
 Expected: {
@@ -4080,6 +4085,16 @@ Tok: Ref | Pred
 }
 
 Expected: {
+十六日_NUM の_ADP 卒業式_NOUN が_ADP 中止_NOUN に_ADP なっ_VERB た_AUX 文教大学_PROPN 越谷校舎_NOUN の_ADP 四年生ら学生有志_NOUN 約二百人_NOUN が_ADP 越谷市内_NOUN の_ADP 駅_NOUN や_ADP スーパー_NOUN の_ADP 前_NOUN など_ADP に_ADP 立ち_VERB 、_PUNCT 被災者救援_NOUN の_ADP ため_NOUN に_ADP 募金_NOUN を_ADP 呼び掛け_VERB た_AUX ._PUNCT}
+Predicted: {
+十六日_NOUN の_ADP 卒業式_NOUN が_ADP 中止_NOUN に_ADP なっ_VERB た_AUX 文教大学_PROPN 越谷校舎_NOUN の_ADP 四年生ら学生有志_NOUN 約二百人_NOUN が_ADP 越谷市内_NOUN の_ADP 駅_NOUN や_ADP スーパー_NOUN の_ADP 前_NOUN など_ADP に_ADP 立ち_VERB 、_PUNCT 被災者救援_NOUN の_ADP ため_NOUN に_ADP 募金_NOUN を_ADP 呼び掛け_VERB た_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+十六日: NUM | NOUN
+}
+
+Expected: {
 作中_NOUN で_ADP は_ADP 、_PUNCT 皇一心_PROPN や_ADP 率いる_VERB 集団_NOUN の_ADP 社会階級_NOUN の_ADP 明確_ADJ な_AUX 描写_NOUN は_ADP さ_VERB れ_AUX てい_AUX ない_AUX ._PUNCT}
 Predicted: {
 作中_NOUN で_ADP は_ADP 、_PUNCT 皇一心_NOUN や_ADP 率いる_VERB 集団_NOUN の_ADP 社会階級_NOUN の_ADP 明確_ADJ な_AUX 描写_NOUN は_ADP さ_VERB れ_AUX てい_AUX ない_AUX ._PUNCT}
@@ -4174,11 +4189,11 @@ Tok: Ref | Pred
 Expected: {
 とりあえず_ADV 生ビール_NOUN から_ADP 始め_VERB 、_PUNCT 華のれんさん_NOUN の_ADP サイト_NOUN で_ADP 気_NOUN に_ADP なっ_VERB て_AUX た_AUX 「_PUNCT ばくだん_NOUN 」_PUNCT という_ADP 名物料理_NOUN で_ADP まず_ADV は_ADP 一杯_NOUN ._PUNCT}
 Predicted: {
-とりあえず_CCONJ 生ビール_NOUN から_ADP 始め_VERB 、_PUNCT 華のれんさん_NOUN の_ADP サイト_NOUN で_ADP 気_NOUN に_ADP なっ_VERB て_AUX た_AUX 「_PUNCT ばくだん_NOUN 」_PUNCT という_ADP 名物料理_NOUN で_ADP まず_ADV は_ADP 一杯_NOUN ._PUNCT}
+とりあえず_ADV 生ビール_NOUN から_ADP 始め_VERB 、_PUNCT 華のれんさん_NOUN の_ADP サイト_NOUN で_ADP 気_NOUN に_ADP なっ_VERB て_AUX た_AUX 「_PUNCT ばくだん_NOUN 」_PUNCT という_ADP 名物料理_NOUN で_ADP まず_ADV は_ADP 一杯_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-とりあえず: ADV | CCONJ
+一杯: NOUN | ADJ
 }
 
 Expected: {
@@ -4225,11 +4240,10 @@ Tok: Ref | Pred
 Expected: {
 事件_NOUN の_ADP 原因_NOUN が_ADP 新健康協会_PROPN の_ADP 教義_NOUN に_ADP あっ_VERB た_AUX こと_NOUN は_ADP 判決_NOUN が_ADP 認定し_VERB ている_AUX よう_AUX です_AUX し_SCONJ ,_PUNCT 裁判員_NOUN の_ADP 言葉_NOUN の_ADP 通り_NOUN 両親_NOUN が_ADP 子ども_NOUN に対して_ADP "_PUNCT 一生懸命_ADV 愛情_NOUN を_ADP 持っ_VERB て_SCONJ 接し_VERB てい_AUX た_AUX "_PUNCT のであれ_AUX ば_SCONJ ,_PUNCT その_DET 愛情_NOUN を_ADP 間違っ_VERB た_AUX 方向_NOUN に_ADP 走ら_VERB せ_AUX てしまっ_AUX た_AUX 新健康協会_PROPN は_ADP ,_PUNCT なお_ADV の_ADP こと_NOUN 危険_ADJ な_AUX 団体_NOUN である_AUX という_ADP ことになり_AUX ます_AUX ._PUNCT}
 Predicted: {
-事件_NOUN の_ADP 原因_NOUN が_ADP 新健康協会_PROPN の_ADP 教義_NOUN に_ADP あっ_VERB た_AUX こと_NOUN は_ADP 判決_NOUN が_ADP 認定し_VERB ている_AUX よう_AUX です_AUX し_SCONJ ,_PUNCT 裁判員_NOUN の_ADP 言葉_NOUN の_ADP 通り_NOUN 両親_NOUN が_ADP 子ども_NOUN に対して_ADP "_PUNCT 一生懸命_NOUN 愛情_NOUN を_ADP 持っ_VERB て_SCONJ 接し_VERB てい_AUX た_AUX "_PUNCT のであれ_AUX ば_SCONJ ,_PUNCT その_DET 愛情_NOUN を_ADP 間違っ_VERB た_AUX 方向_NOUN に_ADP 走ら_VERB せ_AUX てしまっ_AUX た_AUX 新健康協会_NOUN は_ADP ,_PUNCT なお_ADV の_ADP こと_NOUN 危険_ADJ な_AUX 団体_NOUN である_AUX という_ADP ことになり_AUX ます_AUX ._PUNCT}
+事件_NOUN の_ADP 原因_NOUN が_ADP 新健康協会_PROPN の_ADP 教義_NOUN に_ADP あっ_VERB た_AUX こと_NOUN は_ADP 判決_NOUN が_ADP 認定し_VERB ている_AUX よう_AUX です_AUX し_SCONJ ,_PUNCT 裁判員_NOUN の_ADP 言葉_NOUN の_ADP 通り_NOUN 両親_NOUN が_ADP 子ども_NOUN に対して_ADP "_PUNCT 一生懸命_ADV 愛情_NOUN を_ADP 持っ_VERB て_SCONJ 接し_VERB てい_AUX た_AUX "_PUNCT のであれ_AUX ば_SCONJ ,_PUNCT その_DET 愛情_NOUN を_ADP 間違っ_VERB た_AUX 方向_NOUN に_ADP 走ら_VERB せ_AUX てしまっ_AUX た_AUX 新健康協会_NOUN は_ADP ,_PUNCT なお_ADV の_ADP こと_NOUN 危険_ADJ な_AUX 団体_NOUN である_AUX という_ADP ことになり_AUX ます_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-一生懸命: ADV | NOUN
 新健康協会: PROPN | NOUN
 }
 
@@ -4244,6 +4258,16 @@ Tok: Ref | Pred
 }
 
 Expected: {
+北沢氏_PROPN は_ADP 防衛省_PROPN と_ADP 自衛隊_NOUN の_ADP 内部_NOUN の_ADP 検討_NOUN だ_AUX と_ADP し_VERB た_AUX 上で_SCONJ 、_PUNCT 派遣_NOUN の_ADP 根拠_NOUN と_ADP なる_VERB 法令_NOUN に関して_ADP 防衛省設置法_NOUN を_ADP 念頭_NOUN に_ADP 「_PUNCT 派遣_NOUN が_ADP 可能_ADJ か_ADP 検討し_VERB ている_AUX 」_PUNCT と_ADP 述べ_VERB た_AUX ._PUNCT}
+Predicted: {
+北沢氏_PROPN は_ADP 防衛省_NOUN と_ADP 自衛隊_NOUN の_ADP 内部_NOUN の_ADP 検討_NOUN だ_AUX と_ADP し_VERB た_AUX 上で_SCONJ 、_PUNCT 派遣_NOUN の_ADP 根拠_NOUN と_ADP なる_VERB 法令_NOUN に関して_ADP 防衛省設置法_NOUN を_ADP 念頭_NOUN に_ADP 「_PUNCT 派遣_NOUN が_ADP 可能_ADJ か_ADP 検討し_VERB ている_AUX 」_PUNCT と_ADP 述べ_VERB た_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+防衛省: PROPN | NOUN
+}
+
+Expected: {
 相手gk_NOUN と_ADP 1対1_NOUN に_ADP なっ_VERB たり_PART だ_AUX と_ADP か_PART 、_PUNCT 完全_ADJ に_AUX フリー_ADJ で_AUX シュート_NOUN を_ADP 打つ_VERB という_ADP の_SCONJ も_ADP なかっ_ADJ た_AUX ._PUNCT}
 Predicted: {
 相手gk_NOUN と_ADP 1対1_NUM に_ADP なっ_VERB たり_PART だ_AUX と_ADP か_PART 、_PUNCT 完全_ADJ に_AUX フリー_ADJ で_AUX シュート_NOUN を_ADP 打つ_VERB という_ADP の_SCONJ も_ADP なかっ_ADJ た_AUX ._PUNCT}
@@ -4251,16 +4275,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 1対1: NOUN | NUM
-}
-
-Expected: {
-アッシリア王名表_NOUN で_ADP は_ADP 彼_PRON の_ADP 記述_NOUN の_ADP 後_NOUN に_ADP 「_PUNCT 食べつくさ_VERB れる_AUX 」_PUNCT という_ADP 注釈_NOUN が_ADP つい_VERB ている_AUX ._PUNCT}
-Predicted: {
-アッシリア王名表_PROPN で_ADP は_ADP 彼_PRON の_ADP 記述_NOUN の_ADP 後_NOUN に_ADP 「_PUNCT 食べつくさ_VERB れる_AUX 」_PUNCT という_ADP 注釈_NOUN が_ADP つい_VERB ている_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-アッシリア王名表: NOUN | PROPN
 }
 
 Expected: {
@@ -4338,10 +4352,11 @@ Tok: Ref | Pred
 Expected: {
 また_CCONJ 、_PUNCT 顕彰当時_ADV 現役_NOUN の_ADP 選手_NOUN も_ADP 存在し_VERB た_AUX が_SCONJ 、_PUNCT いずれ_PRON も_ADP 既に_ADV 全女_PROPN を_ADP 退団し_VERB てい_AUX た_AUX ._PUNCT}
 Predicted: {
-また_CCONJ 、_PUNCT 顕彰当時_ADV 現役_NOUN の_ADP 選手_NOUN も_ADP 存在し_VERB た_AUX が_SCONJ 、_PUNCT いずれ_PRON も_ADP 既に_ADV 全女_NOUN を_ADP 退団し_VERB てい_AUX た_AUX ._PUNCT}
+また_CCONJ 、_PUNCT 顕彰当時_NOUN 現役_NOUN の_ADP 選手_NOUN も_ADP 存在し_VERB た_AUX が_SCONJ 、_PUNCT いずれ_PRON も_ADP 既に_ADV 全女_NOUN を_ADP 退団し_VERB てい_AUX た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+顕彰当時: ADV | NOUN
 全女: PROPN | NOUN
 }
 
@@ -4380,11 +4395,21 @@ Tok: Ref | Pred
 Expected: {
 現在_NOUN は_ADP フリー_ADJ の_ADP 野球解説者_NOUN 、_PUNCT および_CCONJ 中日スポーツ_PROPN 、_PUNCT 東京中日スポーツ_PROPN の_ADP 野球評論家_NOUN ._PUNCT}
 Predicted: {
-現在_NOUN は_ADP フリー_NOUN の_ADP 野球解説者_NOUN 、_PUNCT および_CCONJ 中日スポーツ_PROPN 、_PUNCT 東京中日スポーツ_PROPN の_ADP 野球評論家_NOUN ._PUNCT}
+現在_NOUN は_ADP フリー_ADJ の_ADP 野球解説者_NOUN 、_PUNCT および_CCONJ 中日スポーツ_PROPN 、_PUNCT 東京中日スポーツ_NOUN の_ADP 野球評論家_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-フリー: ADJ | NOUN
+東京中日スポーツ: PROPN | NOUN
+}
+
+Expected: {
+アクセス解析_NOUN も_ADP 同じ_ADJ だ_AUX と_ADP 思う_VERB が_SCONJ ,_PUNCT 原則論_NOUN と_ADP 活用パターン_NOUN ,_PUNCT 今後_NOUN の_ADP 発展形_NOUN という_ADP ところ_NOUN が_ADP 大事_ADJ で_AUX ,_PUNCT それら_PRON を_ADP コンパクト_ADJ に_AUX まとめ_VERB て_SCONJ 書か_VERB れ_AUX ている_AUX 良書_NOUN だろう_AUX ._PUNCT}
+Predicted: {
+アクセス解析_NOUN も_ADP 同じ_ADJ だ_AUX と_ADP 思う_VERB が_SCONJ ,_PUNCT 原則論_NOUN と_ADP 活用パターン_VERB ,_PUNCT 今後_NOUN の_ADP 発展形_NOUN という_ADP ところ_NOUN が_ADP 大事_ADJ で_AUX ,_PUNCT それら_PRON を_ADP コンパクト_ADJ に_AUX まとめ_VERB て_SCONJ 書か_VERB れ_AUX ている_AUX 良書_NOUN だろう_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+活用パターン: NOUN | VERB
 }
 
 Expected: {
@@ -4462,12 +4487,10 @@ Tok: Ref | Pred
 Expected: {
 その_DET 後_NOUN は_ADP 重賞戦線_NOUN を_ADP 走り_VERB 、_PUNCT ダービー卿チャレンジトロフィー_NOUN で_ADP 4着_NUM 、_PUNCT 新潟大賞典_NOUN は_ADP 1番_ADV 人気_NOUN で_ADP 2着_NUM 、_PUNCT 兄弟制覇_NOUN が_ADP 期待さ_VERB れ_AUX た_AUX エプソムカップ_NOUN で_ADP は_ADP 1番_ADV 人気_NOUN で_ADP 3着_NUM と_ADP なる_VERB など_PART 安定し_VERB た_AUX 走り_NOUN を_ADP 見せ_VERB た_AUX が_SCONJ 勝利_NOUN は_ADP 挙げ_VERB られ_AUX ず_AUX に_ADP 降級_NOUN と_ADP なっ_VERB た_AUX ._PUNCT}
 Predicted: {
-その_DET 後_NOUN は_ADP 重賞戦線_NOUN を_ADP 走り_VERB 、_PUNCT ダービー卿チャレンジトロフィー_NOUN で_ADP 4着_NUM 、_PUNCT 新潟大賞典_PROPN は_ADP 1番_NUM 人気_NOUN で_ADP 2着_NUM 、_PUNCT 兄弟制覇_NOUN が_ADP 期待さ_VERB れ_AUX た_AUX エプソムカップ_NOUN で_ADP は_ADP 1番_NUM 人気_NOUN で_ADP 3着_NUM と_ADP なる_VERB など_PART 安定し_VERB た_AUX 走り_NOUN を_ADP 見せ_VERB た_AUX が_SCONJ 勝利_NOUN は_ADP 挙げ_VERB られ_AUX ず_AUX に_ADP 降級_NOUN と_ADP なっ_VERB た_AUX ._PUNCT}
+その_DET 後_NOUN は_ADP 重賞戦線_NOUN を_ADP 走り_VERB 、_PUNCT ダービー卿チャレンジトロフィー_NOUN で_ADP 4着_NUM 、_PUNCT 新潟大賞典_NOUN は_ADP 1番_NUM 人気_NOUN で_ADP 2着_NUM 、_PUNCT 兄弟制覇_NOUN が_ADP 期待さ_VERB れ_AUX た_AUX エプソムカップ_NOUN で_ADP は_ADP 1番_ADV 人気_NOUN で_ADP 3着_NUM と_ADP なる_VERB など_PART 安定し_VERB た_AUX 走り_NOUN を_ADP 見せ_VERB た_AUX が_SCONJ 勝利_NOUN は_ADP 挙げ_VERB られ_AUX ず_AUX に_ADP 降級_NOUN と_ADP なっ_VERB た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-新潟大賞典: NOUN | PROPN
-1番: ADV | NUM
 1番: ADV | NUM
 }
 
@@ -4484,34 +4507,22 @@ Tok: Ref | Pred
 Expected: {
 この_DET よう_NOUN な_AUX 関係_NOUN を_ADP イラスト集_NOUN にて_ADP サクラ_PROPN と_ADP いの_PROPN の_ADP 関係_NOUN は_ADP ナルト_PROPN と_ADP サスケ_PROPN と_ADP 対比さ_VERB せ_AUX ている_AUX と_ADP 作者_NOUN が_ADP コメントし_VERB ている_AUX ._PUNCT}
 Predicted: {
-この_DET よう_NOUN な_AUX 関係_NOUN を_ADP イラスト集_NOUN にて_ADP サクラ_NOUN と_ADP いの_ADJ の_ADP 関係_NOUN は_ADP ナルト_PROPN と_ADP サスケ_PROPN と_ADP 対比さ_VERB せ_AUX ている_AUX と_ADP 作者_NOUN が_ADP コメントし_VERB ている_AUX ._PUNCT}
+この_DET よう_NOUN な_AUX 関係_NOUN を_ADP イラスト集_NOUN にて_ADP サクラ_NOUN と_ADP いの_PROPN の_ADP 関係_NOUN は_ADP ナルト_PROPN と_ADP サスケ_PROPN と_ADP 対比さ_VERB せ_AUX ている_AUX と_ADP 作者_NOUN が_ADP コメントし_VERB ている_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 サクラ: PROPN | NOUN
-いの: PROPN | ADJ
 }
 
 Expected: {
 この_DET 事件_NOUN の_ADP 責任_NOUN を_ADP 取っ_VERB て_SCONJ 渡邉恒雄_PROPN が_ADP ジャイアンツ_NOUN の_ADP オーナー職_NOUN を_ADP 辞任_NOUN 、_PUNCT 一場_PROPN も_ADP 明治大学野球部_NOUN を_ADP 退部し_VERB 、_PUNCT 当面_ADV 謹慎_NOUN を_ADP 余儀なく_ADJ さ_VERB れ_AUX た_AUX ._PUNCT}
 Predicted: {
-この_DET 事件_NOUN の_ADP 責任_NOUN を_ADP 取っ_VERB て_SCONJ 渡邉恒雄_PROPN が_ADP ジャイアンツ_PROPN の_ADP オーナー職_NOUN を_ADP 辞任_VERB 、_PUNCT 一場_NOUN も_ADP 明治大学野球部_NOUN を_ADP 退部し_VERB 、_PUNCT 当面_ADV 謹慎_NOUN を_ADP 余儀なく_ADJ さ_VERB れ_AUX た_AUX ._PUNCT}
+この_DET 事件_NOUN の_ADP 責任_NOUN を_ADP 取っ_VERB て_SCONJ 渡邉恒雄_PROPN が_ADP ジャイアンツ_PROPN の_ADP オーナー職_NOUN を_ADP 辞任_NOUN 、_PUNCT 一場_NOUN も_ADP 明治大学野球部_NOUN を_ADP 退部し_VERB 、_PUNCT 当面_ADV 謹慎_NOUN を_ADP 余儀なく_ADJ さ_VERB れ_AUX た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 ジャイアンツ: NOUN | PROPN
-辞任: NOUN | VERB
 一場: PROPN | NOUN
-}
-
-Expected: {
-ほか_NOUN の_ADP 宗教団体_NOUN を_ADP 弾圧し_VERB ない_AUX という_ADP の_SCONJ が_ADP ,_PUNCT 私たち_PRON の_ADP 立場_NOUN です_AUX ._PUNCT}
-Predicted: {
-ほか_NOUN の_ADP 宗教団体_NOUN を_ADP 弾圧し_VERB ない_AUX という_ADP の_SCONJ が_SCONJ ,_PUNCT 私たち_PRON の_ADP 立場_NOUN です_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-が: ADP | SCONJ
 }
 
 Expected: {
@@ -4532,16 +4543,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 意味不明: ADJ | NOUN
-}
-
-Expected: {
-なお_CCONJ 、_PUNCT 「_PUNCT お兄さん_NOUN 」_PUNCT 「_PUNCT お姉さん_NOUN 」_PUNCT 「_PUNCT おじさん_NOUN 」_PUNCT 「_PUNCT おばさん_NOUN 」_PUNCT の_ADP 表現_NOUN の_ADP 場合_NOUN は_ADP 家族関係_NOUN でなく_AUX て_SCONJ も_ADP 大人_NOUN が_ADP 子供_NOUN に_ADP 使う_VERB 表現_NOUN である_AUX ._PUNCT}
-Predicted: {
-なお_CCONJ 、_PUNCT 「_PUNCT お兄さん_NOUN 」_PUNCT 「_PUNCT お姉さん_NOUN 」_PUNCT 「_PUNCT おじさん_NOUN 」_PUNCT 「_PUNCT おばさん_NOUN 」_PUNCT の_ADP 表現_NOUN の_ADP 場合_NOUN は_ADP 家族関係_ADV でなく_AUX て_SCONJ も_ADP 大人_NOUN が_ADP 子供_NOUN に_ADP 使う_VERB 表現_NOUN である_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-家族関係: NOUN | ADV
 }
 
 Expected: {
@@ -4632,6 +4633,16 @@ Tok: Ref | Pred
 }
 
 Expected: {
+記者_NOUN が_ADP 知る_VERB 中_NOUN で_ADP 脱会_NOUN を_ADP 考える_VERB 信者_NOUN が_ADP 家族_NOUN と_ADP 話し合い_NOUN を_ADP する_VERB ために_SCONJ 統一教会_PROPN と_ADP 連絡_NOUN を_ADP 絶っ_VERB た_AUX ケース_NOUN が_ADP あっ_VERB た_AUX が_SCONJ ,_PUNCT その_DET 際_NOUN に_ADP 信者_NOUN が_ADP 所属し_VERB てい_AUX た_AUX ある_DET 地区教会_NOUN の_ADP 幹部_NOUN は_ADP 信者_NOUN の_ADP 親族_NOUN に_ADP 成り済まし_VERB 所轄警察署_NOUN に_ADP 捜索願い_NOUN を_ADP 出し_VERB た_AUX こと_NOUN が_ADP 判っ_VERB ている_AUX ._PUNCT}
+Predicted: {
+記者_NOUN が_ADP 知る_VERB 中_NOUN で_ADP 脱会_NOUN を_ADP 考える_VERB 信者_NOUN が_ADP 家族_NOUN と_ADP 話し合い_NOUN を_ADP する_VERB ために_SCONJ 統一教会_PROPN と_ADP 連絡_NOUN を_ADP 絶っ_VERB た_AUX ケース_NOUN が_ADP あっ_VERB た_AUX が_SCONJ ,_PUNCT その_DET 際_NOUN に_ADP 信者_NOUN が_ADP 所属し_VERB てい_AUX た_AUX ある_DET 地区教会_NOUN の_ADP 幹部_NOUN は_ADP 信者_NOUN の_ADP 親族_NOUN に_ADP 成り済まし_VERB 所轄警察署_NOUN に_ADP 捜索願い_VERB を_ADP 出し_VERB た_AUX こと_NOUN が_ADP 判っ_VERB ている_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+捜索願い: NOUN | VERB
+}
+
+Expected: {
 1978年_NUM 、_PUNCT ポール・ヴァリオ配下_NOUN の_ADP ジミー・バーク_PROPN 、_PUNCT トーマス・デシモーネ_PROPN など_ADP が_ADP ルフトハンザ航空強奪事件_NOUN を_ADP 引き起こす_VERB ._PUNCT}
 Predicted: {
 1978年_NUM 、_PUNCT ポール・ヴァリオ配下_PROPN の_ADP ジミー・バーク_PROPN 、_PUNCT トーマス・デシモーネ_PROPN など_ADP が_ADP ルフトハンザ航空強奪事件_NOUN を_ADP 引き起こす_VERB ._PUNCT}
@@ -4706,11 +4717,11 @@ Tok: Ref | Pred
 Expected: {
 2004年_NUM 3月末_NOUN に_ADP 行わ_VERB れ_AUX た_AUX 桂雀々_PROPN の_ADP 落語会_NOUN 「_PUNCT 落語_NOUN の_ADP ひろば_NOUN 30回記念公演_NOUN 」_PUNCT で_ADP 、_PUNCT 顔_NOUN を_ADP あわせ_VERB た_AUX 3人_NOUN の_ADP 話_NOUN が_ADP まとまり_VERB 、_PUNCT 師匠_NOUN も_ADP 所属する_VERB 芸能事務所_NOUN も_ADP 異なる_VERB 笑福亭鶴瓶_PROPN 、_PUNCT 桂南光_PROPN 、_PUNCT 桂文珍_PROPN の_ADP 3人_NOUN が_ADP 、_PUNCT 2004年_NUM 11月_NUM より_ADP 年_NOUN に_ADP 1回_NUM の_ADP ペース_NOUN で_ADP 開い_VERB ている_AUX ._PUNCT}
 Predicted: {
-2004年_NUM 3月末_NOUN に_ADP 行わ_VERB れ_AUX た_AUX 桂雀々_ADJ の_ADP 落語会_NOUN 「_PUNCT 落語_NOUN の_ADP ひろば_NOUN 30回記念公演_NOUN 」_PUNCT で_ADP 、_PUNCT 顔_NOUN を_ADP あわせ_VERB た_AUX 3人_NOUN の_ADP 話_NOUN が_ADP まとまり_VERB 、_PUNCT 師匠_PROPN も_ADP 所属する_VERB 芸能事務所_PROPN も_ADP 異なる_VERB 笑福亭鶴瓶_NOUN 、_PUNCT 桂南光_PROPN 、_PUNCT 桂文珍_PROPN の_ADP 3人_NOUN が_ADP 、_PUNCT 2004年_NUM 11月_NUM より_ADP 年_NOUN に_ADP 1回_NUM の_ADP ペース_NOUN で_ADP 開い_VERB ている_AUX ._PUNCT}
+2004年_NUM 3月末_NOUN に_ADP 行わ_VERB れ_AUX た_AUX 桂雀々_NOUN の_ADP 落語会_NOUN 「_PUNCT 落語_NOUN の_ADP ひろば_NOUN 30回記念公演_NOUN 」_PUNCT で_ADP 、_PUNCT 顔_NOUN を_ADP あわせ_VERB た_AUX 3人_NOUN の_ADP 話_NOUN が_ADP まとまり_VERB 、_PUNCT 師匠_PROPN も_ADP 所属する_VERB 芸能事務所_PROPN も_ADP 異なる_VERB 笑福亭鶴瓶_NOUN 、_PUNCT 桂南光_PROPN 、_PUNCT 桂文珍_PROPN の_ADP 3人_NOUN が_ADP 、_PUNCT 2004年_NUM 11月_NUM より_ADP 年_NOUN に_ADP 1回_NUM の_ADP ペース_NOUN で_ADP 開い_VERB ている_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-桂雀々: PROPN | ADJ
+桂雀々: PROPN | NOUN
 師匠: NOUN | PROPN
 芸能事務所: NOUN | PROPN
 笑福亭鶴瓶: PROPN | NOUN
@@ -4738,6 +4749,16 @@ Tok: Ref | Pred
 }
 
 Expected: {
+その_DET 座_NOUN を_ADP 狙う_VERB 井上_PROPN に_ADP 騙まし討ち_NOUN に_ADP さ_VERB れる_AUX ._PUNCT}
+Predicted: {
+その_DET 座_NOUN を_ADP 狙う_VERB 井上_PRON に_ADP 騙まし討ち_NOUN に_ADP さ_VERB れる_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+井上: PROPN | PRON
+}
+
+Expected: {
 復活興行_NOUN は_ADP 入場料_NOUN を_ADP 「_PUNCT 客_NOUN の_ADP 言い値_NOUN で_ADP 1円以上_NOUN 」_PUNCT と_ADP 売り上げ_NOUN の_ADP 一部_NOUN を_ADP 「_PUNCT いじめ撲滅運動団体_NOUN 」_PUNCT に_ADP 寄付_NOUN 、_PUNCT ニコニコ動画・ustream_NOUN で_ADP の_ADP ライブ配信_NOUN 、_PUNCT 井上プロデュース_NOUN の_ADP アイドルレスラーオーディション_NOUN 「_PUNCT volumeii_NOUN 」_PUNCT など_ADP 新機軸_NOUN を_ADP 取り入れ_VERB ている_AUX ._PUNCT}
 Predicted: {
 復活興行_NOUN は_ADP 入場料_NOUN を_ADP 「_PUNCT 客_NOUN の_ADP 言い値_NOUN で_ADP 1円以上_NOUN 」_PUNCT と_ADP 売り上げ_NOUN の_ADP 一部_NOUN を_ADP 「_PUNCT いじめ撲滅運動団体_NOUN 」_PUNCT に_ADP 寄付_NOUN 、_PUNCT ニコニコ動画・ustream_ADP で_SCONJ の_ADP ライブ配信_NOUN 、_PUNCT 井上プロデュース_PROPN の_ADP アイドルレスラーオーディション_NOUN 「_PUNCT volumeii_NOUN 」_PUNCT など_ADP 新機軸_NOUN を_ADP 取り入れ_VERB ている_AUX ._PUNCT}
@@ -4757,6 +4778,16 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 か: ADP | PART
+}
+
+Expected: {
+一方_NOUN が_ADP 失格_NOUN に_ADP なっ_VERB た_AUX 時点_NOUN で_ADP もう_ADV 一方_NOUN も_ADP 失格_NOUN ._PUNCT}
+Predicted: {
+一方_CCONJ が_ADP 失格_NOUN に_ADP なっ_VERB た_AUX 時点_NOUN で_ADP もう_ADV 一方_NOUN も_ADP 失格_NOUN ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+一方: NOUN | CCONJ
 }
 
 Expected: {
@@ -4843,13 +4874,13 @@ Tok: Ref | Pred
 }
 
 Expected: {
-1995-96シーズン_NOUN 、_PUNCT スポルティング・ヒホン_NOUN から_ADP デビューし_VERB 、_PUNCT その_DET デビュー戦_NOUN で_ADP 初得点_NOUN も_ADP 記録し_VERB た_AUX ._PUNCT}
+店主_NOUN の_ADP 人柄_NOUN も_ADP よく_ADJ 、_PUNCT 最近_NOUN は_ADP よく_ADV 食べ_VERB に_ADP 行っ_VERB てい_AUX ます_AUX ._PUNCT}
 Predicted: {
-1995-96シーズン_NOUN 、_PUNCT スポルティング・ヒホン_PROPN から_ADP デビューし_VERB 、_PUNCT その_DET デビュー戦_NOUN で_ADP 初得点_NOUN も_ADP 記録し_VERB た_AUX ._PUNCT}
+店主_NOUN の_ADP 人柄_NOUN も_ADP よく_ADJ 、_PUNCT 最近_NOUN は_ADP よく_ADJ 食べ_VERB に_ADP 行っ_VERB てい_AUX ます_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-スポルティング・ヒホン: NOUN | PROPN
+よく: ADV | ADJ
 }
 
 Expected: {
@@ -4870,16 +4901,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 ジャックピアス: NOUN | PROPN
-}
-
-Expected: {
-1999-00シーズン_NOUN 、_PUNCT isuグランプリシリーズ_NOUN の_ADP スケートカナダ_NOUN と_ADP ボフロスト杯_NOUN に_ADP 出場_NOUN ._PUNCT}
-Predicted: {
-1999-00シーズン_NOUN 、_PUNCT isuグランプリシリーズ_NOUN の_ADP スケートカナダ_NOUN と_ADP ボフロスト杯_PRON に_ADP 出場_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-ボフロスト杯: NOUN | PRON
 }
 
 Expected: {
@@ -4905,11 +4926,10 @@ Tok: Ref | Pred
 Expected: {
 5.0秒_NUM で_ADP 時速_NOUN 97km_NUM に_ADP 達し_VERB 、_PUNCT 最高速度_NOUN は_ADP 時速_NOUN 296km_NUM に_ADP 達し_VERB た_AUX ._PUNCT}
 Predicted: {
-5.0秒_NUM で_ADP 時速_ADV 97km_NUM に_ADP 達し_VERB 、_PUNCT 最高速度_NOUN は_ADP 時速_ADV 296km_NUM に_ADP 達し_VERB た_AUX ._PUNCT}
+5.0秒_NUM で_ADP 時速_ADV 97km_NUM に_ADP 達し_VERB 、_PUNCT 最高速度_NOUN は_ADP 時速_NOUN 296km_NUM に_ADP 達し_VERB た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-時速: NOUN | ADV
 時速: NOUN | ADV
 }
 
@@ -4956,6 +4976,26 @@ Tok: Ref | Pred
 }
 
 Expected: {
+近年_ADV 白内障手術_NOUN や_ADP 腹腔鏡下胆嚢摘出術_NOUN など_ADP 比較的_ADV 侵襲_NOUN の_ADP 小さい_ADJ 手術_NOUN において_ADP は_ADP 日帰り手術_NOUN が_ADP 行わ_VERB れ_AUX ている_AUX が_SCONJ 、_PUNCT 原則的_ADJ に_AUX は_ADP 手術以前_NOUN に_ADP 入院_NOUN の_ADP うえ_NOUN 、_PUNCT 全身状態_NOUN の_ADP 管理_NOUN を_ADP 行う_VERB ._PUNCT}
+Predicted: {
+近年_NOUN 白内障手術_NOUN や_ADP 腹腔鏡下胆嚢摘出術_NOUN など_ADP 比較的_ADV 侵襲_NOUN の_ADP 小さい_ADJ 手術_NOUN において_ADP は_ADP 日帰り手術_NOUN が_ADP 行わ_VERB れ_AUX ている_AUX が_SCONJ 、_PUNCT 原則的_ADJ に_AUX は_ADP 手術以前_NOUN に_ADP 入院_NOUN の_ADP うえ_NOUN 、_PUNCT 全身状態_NOUN の_ADP 管理_NOUN を_ADP 行う_VERB ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+近年: ADV | NOUN
+}
+
+Expected: {
+ともかく_ADV ,_PUNCT 参院選_NOUN を_ADP 待た_VERB ず_AUX し_VERB て_SCONJ ,_PUNCT 国会議員_NOUN を_ADP 擁する_VERB ことになっ_AUX た_AUX わけ_NOUN です_AUX が_SCONJ ,_PUNCT これ_PRON から_ADP も_ADP 幸福実現党_PROPN から_ADP 目_NOUN が_ADP 離せ_VERB ませ_AUX ん_AUX ._PUNCT}
+Predicted: {
+ともかく_ADV ,_PUNCT 参院選_NOUN を_ADP 待た_VERB ず_AUX し_VERB て_SCONJ ,_PUNCT 国会議員_NOUN を_ADP 擁する_VERB ことになっ_AUX た_AUX わけ_NOUN です_AUX が_SCONJ ,_PUNCT これ_PRON から_ADP も_ADP 幸福実現党_NOUN から_ADP 目_NOUN が_ADP 離せ_VERB ませ_AUX ん_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+幸福実現党: PROPN | NOUN
+}
+
+Expected: {
 また_CCONJ 、_PUNCT イギリス連邦_PROPN の_ADP インド_PROPN と_ADP スリランカ_PROPN も_ADP 参加し_VERB た_AUX ._PUNCT}
 Predicted: {
 また_CCONJ 、_PUNCT イギリス連邦_NOUN の_ADP インド_PROPN と_ADP スリランカ_PROPN も_ADP 参加し_VERB た_AUX ._PUNCT}
@@ -4989,10 +5029,11 @@ Tok: Ref | Pred
 Expected: {
 星野勇二_PROPN が_ADP 代表_NOUN の_ADP 和術慧舟會gods_PROPN に_ADP 入門_NOUN ._PUNCT}
 Predicted: {
-星野勇二_PROPN が_ADP 代表_NOUN の_ADP 和術慧舟會gods_NOUN に_ADP 入門_NOUN ._PUNCT}
+星野勇二_NOUN が_ADP 代表_NOUN の_ADP 和術慧舟會gods_NOUN に_ADP 入門_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+星野勇二: PROPN | NOUN
 和術慧舟會gods: PROPN | NOUN
 }
 
@@ -5010,11 +5051,11 @@ Tok: Ref | Pred
 Expected: {
 2人とも_ADV 負けず嫌い_NOUN で_AUX 性格_NOUN も_ADP 似_VERB ている_AUX と_ADP いう_VERB ._PUNCT}
 Predicted: {
-2人とも_ADV 負けず嫌い_ADJ で_AUX 性格_NOUN も_ADP 似_VERB ている_AUX と_ADP いう_VERB ._PUNCT}
+2人とも_ADV 負けず嫌い_NOUN で_ADP 性格_NOUN も_ADP 似_VERB ている_AUX と_ADP いう_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-負けず嫌い: NOUN | ADJ
+で: AUX | ADP
 }
 
 Expected: {
@@ -5041,10 +5082,11 @@ Tok: Ref | Pred
 Expected: {
 2年時_NOUN に_ADP 第73回選手権_NOUN で_ADP 準優勝_NOUN 、_PUNCT 3年時_NOUN に_ADP 高円宮杯_NOUN 第6回大会_NOUN で_ADP ベスト4_NOUN に_ADP 入る_VERB 活躍_NOUN を_ADP 見せ_VERB た_AUX ._PUNCT}
 Predicted: {
-2年時_NOUN に_ADP 第73回選手権_NOUN で_ADP 準優勝_VERB 、_PUNCT 3年時_NUM に_ADP 高円宮杯_ADJ 第6回大会_NOUN で_ADP ベスト4_NOUN に_ADP 入る_VERB 活躍_NOUN を_ADP 見せ_VERB た_AUX ._PUNCT}
+2年時_NUM に_ADP 第73回選手権_NOUN で_ADP 準優勝_VERB 、_PUNCT 3年時_NUM に_ADP 高円宮杯_ADJ 第6回大会_NOUN で_ADP ベスト4_NOUN に_ADP 入る_VERB 活躍_NOUN を_ADP 見せ_VERB た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+2年時: NOUN | NUM
 準優勝: NOUN | VERB
 3年時: NOUN | NUM
 高円宮杯: NOUN | ADJ
@@ -5145,11 +5187,10 @@ Tok: Ref | Pred
 Expected: {
 レストラン_NOUN で_ADP 短パン_NOUN 、_PUNCT ノーネクタイ_NOUN を_ADP 禁止する_VERB の_SCONJ も_ADP ドレスコード_NOUN の_ADP 一種_NOUN ._PUNCT}
 Predicted: {
-レストラン_NOUN で_ADP 短パン_ADV 、_PUNCT ノーネクタイ_PROPN を_ADP 禁止する_VERB の_SCONJ も_ADP ドレスコード_NOUN の_ADP 一種_NOUN ._PUNCT}
+レストラン_NOUN で_ADP 短パン_NOUN 、_PUNCT ノーネクタイ_PROPN を_ADP 禁止する_VERB の_SCONJ も_ADP ドレスコード_NOUN の_ADP 一種_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-短パン: NOUN | ADV
 ノーネクタイ: NOUN | PROPN
 }
 
@@ -5299,6 +5340,17 @@ Tok: Ref | Pred
 }
 
 Expected: {
+一連_NOUN の_ADP ホメオパシー騒動_NOUN の_ADP 最中_NOUN ,_PUNCT 産経新聞_PROPN で_ADP ホメオパシー_NOUN の_ADP 実践者_NOUN として_ADP 紹介さ_VERB れ_AUX た_AUX 人物_NOUN に_ADP ,_PUNCT 荻野哲也氏_PROPN という_ADP 人_NOUN が_ADP い_VERB ます_AUX ._PUNCT}
+Predicted: {
+一連_NOUN の_ADP ホメオパシー騒動_NOUN の_ADP 最中_NOUN ,_PUNCT 産経新聞_ADJ で_AUX ホメオパシー_NOUN の_ADP 実践者_NOUN として_ADP 紹介さ_VERB れ_AUX た_AUX 人物_NOUN に_ADP ,_PUNCT 荻野哲也氏_PROPN という_ADP 人_NOUN が_ADP い_VERB ます_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+産経新聞: PROPN | ADJ
+で: ADP | AUX
+}
+
+Expected: {
 言い忘れ_VERB た_AUX けど_SCONJ ,_PUNCT 新宿駅_PROPN だ_AUX から_SCONJ な_PART !_PUNCT}
 Predicted: {
 言い忘れ_VERB た_AUX けど_SCONJ ,_PUNCT 新宿駅_ADJ だ_AUX から_SCONJ な_PART !_PUNCT}
@@ -5339,6 +5391,16 @@ Tok: Ref | Pred
 }
 
 Expected: {
+日本脱カルト協会_PROPN が_ADP 記者会見_NOUN で_ADP "_PUNCT a3_NOUN "_PUNCT へ_ADP の_ADP 抗議声明_NOUN を_ADP 発表し_VERB た_AUX と_ADP 知っ_VERB た_AUX とき_NOUN に_ADP は_ADP ,_PUNCT 実_NOUN の_ADP ところ_NOUN 少し_ADV ばかり_ADP わくわくし_VERB た_AUX ._PUNCT}
+Predicted: {
+日本脱カルト協会_NOUN が_ADP 記者会見_NOUN で_ADP "_PUNCT a3_NOUN "_PUNCT へ_ADP の_ADP 抗議声明_NOUN を_ADP 発表し_VERB た_AUX と_ADP 知っ_VERB た_AUX とき_NOUN に_ADP は_ADP ,_PUNCT 実_NOUN の_ADP ところ_NOUN 少し_ADV ばかり_ADP わくわくし_VERB た_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+日本脱カルト協会: PROPN | NOUN
+}
+
+Expected: {
 マリアママ_NOUN から_ADP の_ADP メッセージ_NOUN で_ADP 言わ_VERB れ_AUX まし_AUX た_AUX ._PUNCT}
 Predicted: {
 マリアママ_PROPN から_ADP の_ADP メッセージ_NOUN で_ADP 言わ_VERB れ_AUX まし_AUX た_AUX ._PUNCT}
@@ -5369,16 +5431,6 @@ Tok: Ref | Pred
 }
 
 Expected: {
-この_DET モデル_NOUN は_ADP 幾度_NUM も_ADP 改良_NOUN が_ADP 続き_VERB ながら_SCONJ 1965年_NUM まで_ADP 生産さ_VERB れ_AUX ている_AUX ._PUNCT}
-Predicted: {
-この_DET モデル_NOUN は_ADP 幾度_NOUN も_ADP 改良_NOUN が_ADP 続き_VERB ながら_SCONJ 1965年_NUM まで_ADP 生産さ_VERB れ_AUX ている_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-幾度: NUM | NOUN
-}
-
-Expected: {
 弱点武器_NOUN で_ADP 攻撃する_VERB と_SCONJ 尻尾_NOUN が_ADP 破壊さ_VERB れ_AUX 、_PUNCT 尻尾_NOUN を_ADP 使っ_VERB た_AUX 攻撃_NOUN が_ADP でき_VERB なく_AUX なる_VERB ._PUNCT}
 Predicted: {
 弱点武器_NOUN で_ADP 攻撃する_VERB と_ADP 尻尾_NOUN が_ADP 破壊さ_VERB れ_AUX 、_PUNCT 尻尾_NOUN を_ADP 使っ_VERB た_AUX 攻撃_NOUN が_ADP でき_VERB なく_AUX なる_VERB ._PUNCT}
@@ -5391,12 +5443,12 @@ Tok: Ref | Pred
 Expected: {
 阿波_PROPN から_ADP 讃岐_PROPN へ_ADP 越える_VERB 道_NOUN は_ADP 讃岐山脈中_NOUN に_ADP 数多く_ADV ある_VERB が_SCONJ 、_PUNCT 東_NOUN で_ADP は_ADP この_DET 大坂峠_PROPN 、_PUNCT そして_CCONJ 西_NOUN で_ADP は_ADP ほぼ_ADV 中央_NOUN に_ADP 清水越_NOUN が_ADP あっ_VERB た_AUX ._PUNCT}
 Predicted: {
-阿波_NOUN から_ADP 讃岐_PROPN へ_ADP 越える_VERB 道_NOUN は_ADP 讃岐山脈中_NOUN に_ADP 数多く_ADV ある_VERB が_SCONJ 、_PUNCT 東_NOUN で_ADP は_ADP この_DET 大坂峠_ADJ 、_PUNCT そして_CCONJ 西_NOUN で_ADP は_ADP ほぼ_ADV 中央_NOUN に_ADP 清水越_PROPN が_ADP あっ_VERB た_AUX ._PUNCT}
+阿波_NOUN から_ADP 讃岐_PROPN へ_ADP 越える_VERB 道_NOUN は_ADP 讃岐山脈中_NOUN に_ADP 数多く_ADV ある_VERB が_SCONJ 、_PUNCT 東_NOUN で_ADP は_ADP この_DET 大坂峠_NOUN 、_PUNCT そして_CCONJ 西_NOUN で_ADP は_ADP ほぼ_ADV 中央_NOUN に_ADP 清水越_PROPN が_ADP あっ_VERB た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 阿波: PROPN | NOUN
-大坂峠: PROPN | ADJ
+大坂峠: PROPN | NOUN
 清水越: NOUN | PROPN
 }
 
@@ -5411,22 +5463,13 @@ Tok: Ref | Pred
 }
 
 Expected: {
-今川良真_PROPN を_ADP 名乗っ_VERB た_AUX と_ADP する_VERB 説_NOUN も_ADP ある_VERB ._PUNCT}
-Predicted: {
-今川良真_NOUN を_ADP 名乗っ_VERB た_AUX と_ADP する_VERB 説_NOUN も_ADP ある_VERB ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-今川良真: PROPN | NOUN
-}
-
-Expected: {
 2004年秋改編_NOUN で_ADP 三雲_PROPN が_ADP 「_PUNCT 帯番組_NOUN の_ADP 『ジャスト』_NOUN に_ADP 専念し_VERB たい_AUX 」_PUNCT という_ADP 理由_NOUN で_ADP 降板し_VERB 、_PUNCT この_DET 年_NOUN 3月_NUM に_ADP nhk_PROPN を_ADP 退職し_VERB た_AUX 久保純子_PROPN に_ADP 司会_NOUN を_ADP 交代_NOUN ._PUNCT}
 Predicted: {
-2004年秋改編_NOUN で_ADP 三雲_NOUN が_ADP 「_PUNCT 帯番組_NOUN の_ADP 『ジャスト』_NOUN に_ADP 専念し_VERB たい_AUX 」_PUNCT という_ADP 理由_NOUN で_ADP 降板し_VERB 、_PUNCT この_DET 年_NOUN 3月_NUM に_ADP nhk_PROPN を_ADP 退職し_VERB た_AUX 久保純子_PROPN に_ADP 司会_NOUN を_ADP 交代_NOUN ._PUNCT}
+2004年秋改編_NUM で_ADP 三雲_NOUN が_ADP 「_PUNCT 帯番組_NOUN の_ADP 『ジャスト』_NOUN に_ADP 専念し_VERB たい_AUX 」_PUNCT という_ADP 理由_NOUN で_ADP 降板し_VERB 、_PUNCT この_DET 年_NOUN 3月_NUM に_ADP nhk_PROPN を_ADP 退職し_VERB た_AUX 久保純子_PROPN に_ADP 司会_NOUN を_ADP 交代_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+2004年秋改編: NOUN | NUM
 三雲: PROPN | NOUN
 }
 
@@ -5599,12 +5642,11 @@ Tok: Ref | Pred
 Expected: {
 長らく_ADV 2本_NOUN だっ_AUX た_AUX が_SCONJ 、_PUNCT 現在_NOUN は_ADP 東北縦貫線工事_NOUN の_ADP 最中_NOUN であり_AUX 、_PUNCT 1本_NUM のみ_ADP と_ADP なっ_VERB ている_AUX ._PUNCT}
 Predicted: {
-長らく_ADV 2本_NUM だっ_AUX た_AUX が_SCONJ 、_PUNCT 現在_NOUN は_ADP 東北縦貫線工事_PROPN の_ADP 最中_NOUN であり_AUX 、_PUNCT 1本_NUM のみ_ADP と_ADP なっ_VERB ている_AUX ._PUNCT}
+長らく_ADV 2本_NUM だっ_AUX た_AUX が_SCONJ 、_PUNCT 現在_NOUN は_ADP 東北縦貫線工事_NOUN の_ADP 最中_NOUN であり_AUX 、_PUNCT 1本_NUM のみ_ADP と_ADP なっ_VERB ている_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 2本: NOUN | NUM
-東北縦貫線工事: NOUN | PROPN
 }
 
 Expected: {
@@ -5661,13 +5703,11 @@ Tok: Ref | Pred
 Expected: {
 子供らしく_ADJ 明るく_ADJ 無邪気_ADJ な_AUX 性格_NOUN だ_AUX が_SCONJ 、_PUNCT それゆえ_NOUN に_ADP 人殺し_NOUN に_ADP 罪悪感_NOUN を_ADP もた_VERB ない_AUX ._PUNCT}
 Predicted: {
-子供らしく_ADJ 明るく_ADJ 無邪気_ADJ な_AUX 性格_NOUN だ_AUX が_SCONJ 、_PUNCT それゆえ_PRON に_ADP 人殺し_ADJ に_AUX 罪悪感_NOUN を_ADP もた_VERB ない_AUX ._PUNCT}
+子供らしく_ADJ 明るく_ADJ 無邪気_ADJ な_AUX 性格_NOUN だ_AUX が_SCONJ 、_PUNCT それゆえ_PRON に_ADP 人殺し_NOUN に_ADP 罪悪感_NOUN を_ADP もた_VERB ない_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 それゆえ: NOUN | PRON
-人殺し: NOUN | ADJ
-に: ADP | AUX
 }
 
 Expected: {
@@ -5692,6 +5732,16 @@ Tok: Ref | Pred
 }
 
 Expected: {
+自分達_NOUN だけ_ADP が_ADP 贅沢_NOUN を_ADP する_VERB の_SCONJ は_ADP 罪悪感_NOUN を_ADP 感じる_VERB ._PUNCT}
+Predicted: {
+自分達_NOUN だけ_ADP が_ADP 贅沢_ADJ を_ADP する_VERB の_SCONJ は_ADP 罪悪感_NOUN を_ADP 感じる_VERB ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+贅沢: NOUN | ADJ
+}
+
+Expected: {
 これ_PRON は_ADP もはや_ADV 感性_NOUN ではなく_AUX ,_PUNCT 色気違い_NOUN である_AUX ._PUNCT}
 Predicted: {
 これ_PRON は_ADP もはや_ADV 感性_NOUN ではなく_AUX ,_PUNCT 色気違い_ADJ である_AUX ._PUNCT}
@@ -5704,21 +5754,23 @@ Tok: Ref | Pred
 Expected: {
 グラクソ・スミスクライン株式会社_PROPN から_ADP 、_PUNCT 入れ歯_NOUN を_ADP 清潔_ADJ に_AUX 保つ_VERB 義歯洗浄剤_NOUN 「_PUNCT 酵素入りポリデント_NOUN 」_PUNCT と_ADP 「_PUNCT 部分入れ歯用ポリデント_NOUN 」_PUNCT を_ADP それぞれ_ADV 5名様_NOUN に_ADP プレゼントし_VERB ます_AUX ._PUNCT}
 Predicted: {
-グラクソ・スミスクライン株式会社_NOUN から_ADP 、_PUNCT 入れ歯_NOUN を_ADP 清潔_ADJ に_AUX 保つ_VERB 義歯洗浄剤_NOUN 「_PUNCT 酵素入りポリデント_NOUN 」_PUNCT と_ADP 「_PUNCT 部分入れ歯用ポリデント_NOUN 」_PUNCT を_ADP それぞれ_ADV 5名様_PRON に_ADP プレゼントし_VERB ます_AUX ._PUNCT}
+グラクソ・スミスクライン株式会社_NOUN から_ADP 、_PUNCT 入れ歯_NOUN を_ADP 清潔_ADJ に_AUX 保つ_VERB 義歯洗浄剤_NOUN 「_PUNCT 酵素入りポリデント_NOUN 」_PUNCT と_ADP 「_PUNCT 部分入れ歯用ポリデント_NOUN 」_PUNCT を_ADP それぞれ_ADV 5名様_NUM に_ADP プレゼントし_VERB ます_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 グラクソ・スミスクライン株式会社: PROPN | NOUN
-5名様: NOUN | PRON
+5名様: NOUN | NUM
 }
 
 Expected: {
 晴明_PROPN に_ADP 及ば_VERB なかっ_AUX た_AUX 榎岦斎_PROPN も_ADP 、_PUNCT この_DET 術_NOUN だけ_ADP は_ADP 得意_ADJ であっ_AUX た_AUX と_ADP いう_VERB ._PUNCT}
 Predicted: {
-晴明_PROPN に_ADP 及ば_VERB なかっ_AUX た_AUX 榎岦斎_NOUN も_ADP 、_PUNCT この_DET 術_NOUN だけ_ADP は_ADP 得意_ADJ であっ_AUX た_AUX と_ADP いう_VERB ._PUNCT}
+晴明_ADJ に_AUX 及ば_VERB なかっ_AUX た_AUX 榎岦斎_NOUN も_ADP 、_PUNCT この_DET 術_NOUN だけ_ADP は_ADP 得意_ADJ であっ_AUX た_AUX と_ADP いう_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+晴明: PROPN | ADJ
+に: ADP | AUX
 榎岦斎: PROPN | NOUN
 }
 
@@ -5803,16 +5855,6 @@ Tok: Ref | Pred
 }
 
 Expected: {
-前回_NOUN と_ADP 同じ_ADJ 12人_NOUN が_ADP 立候補_NOUN を_ADP 予定_NOUN 、_PUNCT 現職_NOUN 9人全員_NOUN と_ADP 3新人_NOUN が_ADP 争う_VERB ._PUNCT}
-Predicted: {
-前回_NOUN と_ADP 同じ_ADJ 12人_NOUN が_ADP 立候補_NOUN を_ADP 予定_ADV 、_PUNCT 現職_NOUN 9人全員_NOUN と_ADP 3新人_NOUN が_ADP 争う_VERB ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-予定: NOUN | ADV
-}
-
-Expected: {
 ジャパン女子プロレス_NOUN で_ADP の_ADP 太平洋岸タッグ王座_NOUN に_ADP 当たる_VERB 1992年_NUM 8月_NUM に_ADP 初代王座_NOUN が_ADP 決定_NOUN ._PUNCT}
 Predicted: {
 ジャパン女子プロレス_PROPN で_ADP の_ADP 太平洋岸タッグ王座_PROPN に_ADP 当たる_VERB 1992年_NUM 8月_NUM に_ADP 初代王座_NOUN が_ADP 決定_NOUN ._PUNCT}
@@ -5846,10 +5888,11 @@ Tok: Ref | Pred
 Expected: {
 荒川静香_PROPN が_ADP 2004年世界選手権_NOUN で_ADP 優勝し_VERB た_AUX 演技_NOUN を_ADP テレビ_NOUN で_ADP 観_VERB た_AUX こと_NOUN が_ADP 契機_NOUN と_ADP なり_VERB 、_PUNCT 荒川_PROPN の_ADP 仙台時代_NOUN の_ADP 指導者_NOUN である_AUX 長久保裕_PROPN の_ADP 師事_NOUN を_ADP 仰ぐ_VERB べく_AUX 東北福祉大学_PROPN へ_ADP 進学_NOUN ._PUNCT}
 Predicted: {
-荒川静香_PROPN が_ADP 2004年世界選手権_NOUN で_ADP 優勝し_VERB た_AUX 演技_NOUN を_ADP テレビ_NOUN で_ADP 観_VERB た_AUX こと_NOUN が_ADP 契機_NOUN と_ADP なり_VERB 、_PUNCT 荒川_PROPN の_ADP 仙台時代_NOUN の_ADP 指導者_NOUN である_AUX 長久保裕_PROPN の_ADP 師事_NOUN を_ADP 仰ぐ_VERB べく_AUX 東北福祉大学_NOUN へ_ADP 進学_NOUN ._PUNCT}
+荒川静香_PROPN が_ADP 2004年世界選手権_NOUN で_ADP 優勝し_VERB た_AUX 演技_NOUN を_ADP テレビ_NOUN で_ADP 観_VERB た_AUX こと_NOUN が_ADP 契機_NOUN と_ADP なり_VERB 、_PUNCT 荒川_PROPN の_ADP 仙台時代_NOUN の_ADP 指導者_NOUN である_AUX 長久保裕_NOUN の_ADP 師事_NOUN を_ADP 仰ぐ_VERB べく_AUX 東北福祉大学_NOUN へ_ADP 進学_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+長久保裕: PROPN | NOUN
 東北福祉大学: PROPN | NOUN
 }
 
@@ -5882,26 +5925,6 @@ Tok: Ref | Pred
 ---------------
 たら: ADP | AUX
 で: ADP | SCONJ
-}
-
-Expected: {
-バス_NOUN で_ADP 新駅_NOUN に_ADP 着く_VERB と_SCONJ 、_PUNCT 10-15分程度_NOUN で_ADP 博多方面_NOUN へ_ADP の_ADP 新幹線_NOUN に_ADP 乗車可能_ADJ で_AUX 、_PUNCT 熊本方面_NOUN は_ADP 4-30分程度_NOUN で_ADP 乗車できる_VERB ._PUNCT}
-Predicted: {
-バス_PROPN で_ADP 新駅_NOUN に_ADP 着く_VERB と_SCONJ 、_PUNCT 10-15分程度_NOUN で_ADP 博多方面_NOUN へ_ADP の_ADP 新幹線_NOUN に_ADP 乗車可能_ADJ で_AUX 、_PUNCT 熊本方面_NOUN は_ADP 4-30分程度_NOUN で_ADP 乗車できる_VERB ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-バス: NOUN | PROPN
-}
-
-Expected: {
-近所_NOUN の_ADP 人_NOUN の_ADP 普段使い用_NOUN って_AUX 感じ_NOUN です_AUX ._PUNCT}
-Predicted: {
-近所_NOUN の_ADP 人_NOUN の_ADP 普段使い用_NOUN って_ADP 感じ_NOUN です_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-って: AUX | ADP
 }
 
 Expected: {
@@ -5942,16 +5965,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 ショック: NOUN | PROPN
-}
-
-Expected: {
-実_NOUN に_ADP 4度目_NUM の_ADP 本塁打記録更新_NOUN であっ_AUX た_AUX ._PUNCT}
-Predicted: {
-実_ADV に_ADP 4度目_NUM の_ADP 本塁打記録更新_NOUN であっ_AUX た_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-実: NOUN | ADV
 }
 
 Expected: {
@@ -6042,12 +6055,13 @@ Tok: Ref | Pred
 Expected: {
 2001年_NUM 1月_NUM 6日_NUM 、_PUNCT 中央省庁再編_NOUN の_ADP 実施_NOUN に_ADP 伴い_VERB 、_PUNCT 沖縄開発庁_PROPN は_ADP 経済企画庁_PROPN など_ADP と_ADP 共_NOUN に_ADP 内閣府_PROPN に_ADP 統合_NOUN 、_PUNCT 内閣府_PROPN の_ADP 内部部局_NOUN として_ADP 沖縄振興局_NOUN が_ADP 設置さ_VERB れ_AUX 、_PUNCT 沖縄総合事務局_NOUN は_ADP 内閣府_PROPN の_ADP 地方支分部局_NOUN と_ADP なっ_VERB た_AUX ._PUNCT}
 Predicted: {
-2001年_NUM 1月_NUM 6日_NUM 、_PUNCT 中央省庁再編_NOUN の_ADP 実施_NOUN に_ADP 伴い_VERB 、_PUNCT 沖縄開発庁_PROPN は_ADP 経済企画庁_PROPN など_ADP と_ADP 共_NOUN に_ADP 内閣府_NOUN に_ADP 統合_VERB 、_PUNCT 内閣府_NOUN の_ADP 内部部局_NOUN として_ADP 沖縄振興局_NOUN が_ADP 設置さ_VERB れ_AUX 、_PUNCT 沖縄総合事務局_NOUN は_ADP 内閣府_NOUN の_ADP 地方支分部局_NOUN と_ADP なっ_VERB た_AUX ._PUNCT}
+2001年_NUM 1月_NUM 6日_NUM 、_PUNCT 中央省庁再編_NOUN の_ADP 実施_NOUN に_ADP 伴い_VERB 、_PUNCT 沖縄開発庁_PROPN は_ADP 経済企画庁_VERB など_PART と_ADP 共_NOUN に_ADP 内閣府_NOUN に_ADP 統合_NOUN 、_PUNCT 内閣府_NOUN の_ADP 内部部局_NOUN として_ADP 沖縄振興局_NOUN が_ADP 設置さ_VERB れ_AUX 、_PUNCT 沖縄総合事務局_NOUN は_ADP 内閣府_NOUN の_ADP 地方支分部局_NOUN と_ADP なっ_VERB た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+経済企画庁: PROPN | VERB
+など: ADP | PART
 内閣府: PROPN | NOUN
-統合: NOUN | VERB
 内閣府: PROPN | NOUN
 内閣府: PROPN | NOUN
 }
@@ -6157,21 +6171,22 @@ dcブランド: NOUN | PROPN
 Expected: {
 人_NOUN を_ADP 選ぶ_VERB 辛さ_NOUN な_AUX ので_AUX 、_PUNCT 辛い_ADJ もの_NOUN が_ADP 嫌い_ADJ な_AUX 人_NOUN は_ADP 連れ_VERB て_SCONJ 行っ_VERB てはいけない_AUX と_ADP 思い_VERB ます_AUX ._PUNCT}
 Predicted: {
-人_NOUN を_ADP 選ぶ_VERB 辛さ_PART な_AUX ので_AUX 、_PUNCT 辛い_ADJ もの_NOUN が_ADP 嫌い_ADJ な_AUX 人_NOUN は_ADP 連れ_VERB て_SCONJ 行っ_VERB てはいけない_AUX と_ADP 思い_VERB ます_AUX ._PUNCT}
+人_NOUN を_ADP 選ぶ_VERB 辛さ_ADJ な_AUX ので_AUX 、_PUNCT 辛い_ADJ もの_NOUN が_ADP 嫌い_ADJ な_AUX 人_NOUN は_ADP 連れ_VERB て_SCONJ 行っ_VERB てはいけない_AUX と_ADP 思い_VERB ます_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-辛さ: NOUN | PART
+辛さ: NOUN | ADJ
 }
 
 Expected: {
 全従業員_NOUN に_ADP この_DET ルール_NOUN を_ADP 周知さ_VERB せ_AUX 、_PUNCT 自ら_ADV 進ん_VERB で_SCONJ 守ら_VERB せる_AUX よう_AUX 徹底し_VERB なければならない_AUX ._PUNCT}
 Predicted: {
-全従業員_NOUN に_ADP この_DET ルール_NOUN を_ADP 周知さ_VERB せ_AUX 、_PUNCT 自ら_ADV 進ん_VERB で_SCONJ 守ら_VERB せる_AUX よう_AUX 徹底し_AUX なければならない_AUX ._PUNCT}
+全従業員_NOUN に_ADP この_DET ルール_NOUN を_ADP 周知さ_VERB せ_AUX 、_PUNCT 自ら_ADV 進ん_VERB で_SCONJ 守ら_VERB せる_AUX よう_AUX 徹底し_AUX なければならない_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 徹底し: VERB | AUX
+なければならない: AUX | ADJ
 }
 
 Expected: {
@@ -6192,6 +6207,16 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 7連勝: NOUN | NUM
+}
+
+Expected: {
+リードボーカル_NOUN は_ADP ジョン_PROPN ._PUNCT}
+Predicted: {
+リードボーカル_PROPN は_ADP ジョン_PROPN ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+リードボーカル: NOUN | PROPN
 }
 
 Expected: {
@@ -6227,11 +6252,11 @@ Tok: Ref | Pred
 Expected: {
 野田佳彦首相_PROPN が_ADP 一川保夫防衛相_PROPN 、_PUNCT 玄葉光一郎外相ら関係閣僚_NOUN と_ADP 近く_ADV 最終協議し_VERB 、_PUNCT 派遣_NOUN を_ADP 確認_NOUN ._PUNCT}
 Predicted: {
-野田佳彦首相_PROPN が_ADP 一川保夫防衛相_ADV 、_PUNCT 玄葉光一郎外相ら関係閣僚_NOUN と_ADP 近く_NOUN 最終協議し_VERB 、_PUNCT 派遣_NOUN を_ADP 確認_NOUN ._PUNCT}
+野田佳彦首相_PROPN が_ADP 一川保夫防衛相_NOUN 、_PUNCT 玄葉光一郎外相ら関係閣僚_NOUN と_ADP 近く_NOUN 最終協議し_VERB 、_PUNCT 派遣_NOUN を_ADP 確認_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-一川保夫防衛相: PROPN | ADV
+一川保夫防衛相: PROPN | NOUN
 近く: ADV | NOUN
 }
 
@@ -6253,16 +6278,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 プラス: NOUN | PROPN
-}
-
-Expected: {
-一人_NOUN で_AUX も_ADP 開始できる_VERB ._PUNCT}
-Predicted: {
-一人_NOUN で_ADP も_ADP 開始できる_VERB ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-で: AUX | ADP
 }
 
 Expected: {
@@ -6300,11 +6315,12 @@ Tok: Ref | Pred
 Expected: {
 しかし_CCONJ 、_PUNCT 同一サイズ_NOUN の_ADP 空芯コイル_NOUN と_ADP 比べる_VERB と_SCONJ 、_PUNCT バーアンテナ_NOUN の_ADP コイル_NOUN に_ADP は_ADP 透磁率倍_NOUN の_ADP 電流_NOUN が_ADP 誘起さ_VERB れる_AUX ため_NOUN 、_PUNCT 磁場エネルギー_NOUN を_ADP 非常_ADJ に_AUX 効率_NOUN よく_ADJ 集める_VERB ことができる_AUX ._PUNCT}
 Predicted: {
-しかし_CCONJ 、_PUNCT 同一サイズ_NOUN の_ADP 空芯コイル_NOUN と_ADP 比べる_VERB と_SCONJ 、_PUNCT バーアンテナ_PROPN の_ADP コイル_NOUN に_ADP は_ADP 透磁率倍_ADJ の_SCONJ 電流_NOUN が_ADP 誘起さ_VERB れる_AUX ため_NOUN 、_PUNCT 磁場エネルギー_NOUN を_ADP 非常_ADJ に_AUX 効率_NOUN よく_ADJ 集める_VERB ことができる_AUX ._PUNCT}
+しかし_CCONJ 、_PUNCT 同一サイズ_NOUN の_ADP 空芯コイル_NOUN と_ADP 比べる_VERB と_SCONJ 、_PUNCT バーアンテナ_PROPN の_ADP コイル_PROPN に_ADP は_ADP 透磁率倍_ADJ の_SCONJ 電流_NOUN が_ADP 誘起さ_VERB れる_AUX ため_NOUN 、_PUNCT 磁場エネルギー_NOUN を_ADP 非常_ADJ に_AUX 効率_NOUN よく_ADJ 集める_VERB ことができる_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 バーアンテナ: NOUN | PROPN
+コイル: NOUN | PROPN
 透磁率倍: NOUN | ADJ
 の: ADP | SCONJ
 }
@@ -6333,11 +6349,11 @@ Tok: Ref | Pred
 Expected: {
 退官後_NOUN は_ADP 、_PUNCT ほとんど_ADV 一人_NOUN で_AUX 留守番し_VERB ている_AUX エンリカ_PROPN の_ADP 面倒_NOUN を_ADP ジャン_PROPN から_ADP 頼ま_VERB れ_AUX 、_PUNCT 同居する_VERB よう_AUX に_AUX なる_VERB ._PUNCT}
 Predicted: {
-退官後_NOUN は_ADP 、_PUNCT ほとんど_ADV 一人_NOUN で_ADP 留守番し_VERB ている_AUX エンリカ_PROPN の_ADP 面倒_NOUN を_ADP ジャン_PROPN から_ADP 頼ま_VERB れ_AUX 、_PUNCT 同居する_VERB よう_AUX に_AUX なる_VERB ._PUNCT}
+退官後_NOUN は_ADP 、_PUNCT ほとんど_ADV 一人_NOUN で_AUX 留守番し_VERB ている_AUX エンリカ_PROPN の_ADP 面倒_NOUN を_ADP ジャン_NOUN から_ADP 頼ま_VERB れ_AUX 、_PUNCT 同居する_VERB よう_AUX に_AUX なる_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-で: AUX | ADP
+ジャン: PROPN | NOUN
 }
 
 Expected: {
@@ -6354,12 +6370,13 @@ Tok: Ref | Pred
 Expected: {
 パリティビット_NOUN も_ADP 含め_VERB て_SCONJ 奇数個_NOUN の_ADP ビット_NOUN が_ADP 転送中_NOUN に_ADP 変化し_VERB た_AUX 場合_NOUN 、_PUNCT パリティビット_NOUN は_ADP 正しく_ADJ ない_ADJ ことになり_AUX 、_PUNCT 転送中_NOUN に_ADP 誤り_NOUN が_ADP 発生し_VERB た_AUX こと_NOUN を_ADP 示す_VERB ._PUNCT}
 Predicted: {
-パリティビット_NOUN も_ADP 含め_VERB て_SCONJ 奇数個_ADJ の_SCONJ ビット_NOUN が_ADP 転送中_NOUN に_ADP 変化し_VERB た_AUX 場合_NOUN 、_PUNCT パリティビット_NOUN は_ADP 正しく_ADJ ない_ADJ ことになり_AUX 、_PUNCT 転送中_NOUN に_ADP 誤り_NOUN が_ADP 発生し_VERB た_AUX こと_NOUN を_ADP 示す_VERB ._PUNCT}
+パリティビット_NOUN も_ADP 含め_VERB て_SCONJ 奇数個_ADJ の_SCONJ ビット_NOUN が_ADP 転送中_NOUN に_ADP 変化し_VERB た_AUX 場合_NOUN 、_PUNCT パリティビット_NOUN は_ADP 正しく_ADJ ない_AUX ことになり_AUX 、_PUNCT 転送中_NOUN に_ADP 誤り_NOUN が_ADP 発生し_VERB た_AUX こと_NOUN を_ADP 示す_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 奇数個: NOUN | ADJ
 の: ADP | SCONJ
+ない: ADJ | AUX
 }
 
 Expected: {
@@ -6393,6 +6410,16 @@ Tok: Ref | Pred
 }
 
 Expected: {
+主戦騎手_NOUN は_ADP 橋本広喜_PROPN ._PUNCT}
+Predicted: {
+主戦騎手_NOUN は_ADP 橋本広喜_NOUN ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+橋本広喜: PROPN | NOUN
+}
+
+Expected: {
 鷹栖村_PROPN に_ADP 属し_VERB てい_AUX た_AUX 比布原野_NOUN は_ADP 独立_ADJ の_ADP 動き_NOUN が_ADP 生じ_VERB 、_PUNCT 1906年_NUM 4月_NUM 、_PUNCT 二級町村制_NOUN に_ADP 基づく_VERB 比布村_PROPN が_ADP 誕生し_VERB た_AUX ._PUNCT}
 Predicted: {
 鷹栖村_NOUN に_ADP 属し_VERB てい_AUX た_AUX 比布原野_NOUN は_ADP 独立_ADJ の_ADP 動き_NOUN が_ADP 生じ_VERB 、_PUNCT 1906年_NUM 4月_NUM 、_PUNCT 二級町村制_NOUN に_ADP 基づく_VERB 比布村_PROPN が_ADP 誕生し_VERB た_AUX ._PUNCT}
@@ -6410,6 +6437,16 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 自由: ADJ | NOUN
+}
+
+Expected: {
+新鮮_ADJ な_AUX 壱岐_PROPN の_ADP 食材_NOUN を_ADP 使っ_VERB た_AUX にぎり_NOUN は_ADP 絶品_NOUN です_AUX ._PUNCT}
+Predicted: {
+新鮮_ADJ な_AUX 壱岐_NOUN の_ADP 食材_NOUN を_ADP 使っ_VERB た_AUX にぎり_NOUN は_ADP 絶品_NOUN です_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+壱岐: PROPN | NOUN
 }
 
 Expected: {
@@ -6433,6 +6470,16 @@ Tok: Ref | Pred
 }
 
 Expected: {
+50名_NUM を_ADP 越す_VERB 研究員_NOUN が_ADP 雇わ_VERB れ_AUX 、_PUNCT 生命_NOUN に対する_ADP 多角的_ADJ な_AUX 研究_NOUN に_ADP 従事し_VERB ている_AUX ._PUNCT}
+Predicted: {
+50名_NOUN を_ADP 越す_VERB 研究員_NOUN が_ADP 雇わ_VERB れ_AUX 、_PUNCT 生命_NOUN に対する_ADP 多角的_ADJ な_AUX 研究_NOUN に_ADP 従事し_VERB ている_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+50名: NUM | NOUN
+}
+
+Expected: {
 これ_PRON が_ADP 司令部大隊_NOUN と_ADP なり_VERB 、_PUNCT コノリー_PROPN と_ADP とも_NOUN に_ADP トム・クラーク_PROPN 、_PUNCT ショーン・マクディアマダ_PROPN 、_PUNCT ジョゼフ・プランケット_PROPN そして_CCONJ 臨時大統領・最高司令官_NOUN の_ADP パトリック・ピアース_PROPN の_ADP 4人_NOUN の_ADP 軍事評議会_NOUN の_ADP メンバー_NOUN が_ADP ここ_PRON に_ADP 集まっ_VERB た_AUX ._PUNCT}
 Predicted: {
 これ_PRON が_ADP 司令部大隊_NOUN と_ADP なり_VERB 、_PUNCT コノリー_PROPN と_ADP とも_NOUN に_ADP トム・クラーク_PROPN 、_PUNCT ショーン・マクディアマダ_PROPN 、_PUNCT ジョゼフ・プランケット_PROPN そして_CCONJ 臨時大統領・最高司令官_NOUN の_ADP パトリック・ピアース_NOUN の_ADP 4人_NOUN の_ADP 軍事評議会_NOUN の_ADP メンバー_NOUN が_ADP ここ_PRON に_ADP 集まっ_VERB た_AUX ._PUNCT}
@@ -6450,6 +6497,16 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 とくだん: NOUN | ADV
+}
+
+Expected: {
+1999年末_ADV 、_PUNCT 病院_NOUN を_ADP 訪問し_VERB た_AUX スロバキア人医師_NOUN が_ADP 偶然_ADV トマ_PROPN と_ADP 面会し_VERB 、_PUNCT トマ_PROPN が_ADP 発する_VERB 言葉_NOUN が_ADP ハンガリー語_NOUN である_AUX と_ADP 判明し_VERB た_AUX ._PUNCT}
+Predicted: {
+1999年末_NOUN 、_PUNCT 病院_NOUN を_ADP 訪問し_VERB た_AUX スロバキア人医師_NOUN が_ADP 偶然_ADV トマ_PROPN と_ADP 面会し_VERB 、_PUNCT トマ_PROPN が_ADP 発する_VERB 言葉_NOUN が_ADP ハンガリー語_NOUN である_AUX と_ADP 判明し_VERB た_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+1999年末: ADV | NOUN
 }
 
 Expected: {
@@ -6496,11 +6553,10 @@ Tok: Ref | Pred
 Expected: {
 戸越銀座_NOUN の_ADP 模型店_NOUN 、_PUNCT という_ADP 事_NOUN で_ADP 行っ_VERB てみ_AUX た_AUX のです_AUX が_SCONJ 、_PUNCT もう_ADV ほとんど_ADV 商品_NOUN を_ADP 置い_VERB て_AUX なく_AUX 開店休業_NOUN に_ADP 近い_ADJ 状態_NOUN でし_AUX た_AUX ._PUNCT}
 Predicted: {
-戸越銀座_PROPN の_ADP 模型店_NOUN 、_PUNCT という_ADP 事_NOUN で_ADP 行っ_VERB てみ_AUX た_AUX のです_AUX が_SCONJ 、_PUNCT もう_ADV ほとんど_ADV 商品_NOUN を_ADP 置い_VERB て_SCONJ なく_ADJ 開店休業_NOUN に_ADP 近い_ADJ 状態_NOUN でし_AUX た_AUX ._PUNCT}
+戸越銀座_NOUN の_ADP 模型店_NOUN 、_PUNCT という_ADP 事_NOUN で_ADP 行っ_VERB てみ_AUX た_AUX のです_AUX が_SCONJ 、_PUNCT もう_ADV ほとんど_ADV 商品_NOUN を_ADP 置い_VERB て_SCONJ なく_ADJ 開店休業_NOUN に_ADP 近い_ADJ 状態_NOUN でし_AUX た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-戸越銀座: NOUN | PROPN
 て: AUX | SCONJ
 なく: AUX | ADJ
 }
@@ -6565,12 +6621,11 @@ Tok: Ref | Pred
 Expected: {
 そう_ADV 影山氏_PROPN は_ADP 、_PUNCT よく_ADV ライブ_NOUN を_ADP 聴き_VERB に_ADP 行く_VERB という_ADP ジャズハウス_NOUN 「_PUNCT お茶の水ナル_NOUN 」_PUNCT にて_ADP 、_PUNCT 当時_NOUN を_ADP 懐かしむ_VERB よう_AUX に_AUX 語っ_VERB た_AUX ._PUNCT}
 Predicted: {
-そう_ADV 影山氏_PROPN は_ADP 、_PUNCT よく_ADV ライブ_NOUN を_ADP 聴き_VERB に_SCONJ 行く_VERB という_ADP ジャズハウス_ADJ 「_PUNCT お茶の水ナル_NOUN 」_PUNCT にて_ADP 、_PUNCT 当時_NOUN を_ADP 懐かしむ_VERB よう_AUX に_AUX 語っ_VERB た_AUX ._PUNCT}
+そう_ADV 影山氏_PROPN は_ADP 、_PUNCT よく_ADV ライブ_NOUN を_ADP 聴き_VERB に_SCONJ 行く_VERB という_ADP ジャズハウス_NOUN 「_PUNCT お茶の水ナル_NOUN 」_PUNCT にて_ADP 、_PUNCT 当時_NOUN を_ADP 懐かしむ_VERB よう_AUX に_AUX 語っ_VERB た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 に: ADP | SCONJ
-ジャズハウス: NOUN | ADJ
 }
 
 Expected: {
@@ -6596,33 +6651,23 @@ Tok: Ref | Pred
 Expected: {
 前_NOUN は_ADP 犬_NOUN の_ADP ため_NOUN に_ADP 毎回_ADV 、_PUNCT 飛行機_NOUN を_ADP チャーターし_VERB なきゃ_AUX なら_VERB なく_AUX て_SCONJ 、_PUNCT ものすごく_ADJ 費用_NOUN が_ADP かさん_VERB でき_AUX た_AUX ._PUNCT}
 Predicted: {
-前_NOUN は_ADP 犬_NOUN の_ADP ため_NOUN に_ADP 毎回_ADV 、_PUNCT 飛行機_NOUN を_ADP チャーターし_VERB なきゃ_AUX なら_AUX なく_AUX て_SCONJ 、_PUNCT ものすごく_ADV 費用_NOUN が_ADP かさん_VERB でき_AUX た_AUX ._PUNCT}
+前_NOUN は_ADP 犬_NOUN の_ADP ため_NOUN に_ADP 毎回_ADV 、_PUNCT 飛行機_NOUN を_ADP チャーターし_VERB なきゃ_ADJ なら_AUX なく_AUX て_SCONJ 、_PUNCT ものすごく_ADV 費用_NOUN が_ADP かさん_VERB でき_AUX た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+なきゃ: AUX | ADJ
 なら: VERB | AUX
 ものすごく: ADJ | ADV
 }
 
 Expected: {
-確か_ADJ に_AUX 、_PUNCT グルメ店_NOUN と云う_ADP よう_NOUN な_AUX もの_NOUN であっ_AUX た_AUX ._PUNCT}
+確か_ADJ に_AUX 、_PUNCT グルメ店_NOUN と云う_ADP よう_AUX な_AUX もの_NOUN であっ_AUX た_AUX ._PUNCT}
 Predicted: {
-確か_ADJ に_AUX 、_PUNCT グルメ店_NOUN と云う_ADJ よう_AUX な_AUX もの_NOUN であっ_AUX た_AUX ._PUNCT}
+確か_ADJ に_AUX 、_PUNCT グルメ店_NOUN と云う_VERB よう_AUX な_AUX もの_NOUN であっ_AUX た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-と云う: ADP | ADJ
-よう: NOUN | AUX
-}
-
-Expected: {
-なぜ_ADV 上級魔族_NOUN である_AUX はず_NOUN の_ADP インフェルノス_NOUN が_ADP 守護聖獣_NOUN として_ADP ウルスラ_PROPN に_ADP 使役さ_VERB れ_AUX ている_AUX の_SCONJ か_PART は_ADP 不明_NOUN ._PUNCT}
-Predicted: {
-なぜ_ADV 上級魔族_NOUN である_AUX はず_NOUN の_ADP インフェルノス_PROPN が_ADP 守護聖獣_NOUN として_ADP ウルスラ_PROPN に_ADP 使役さ_VERB れ_AUX ている_AUX の_SCONJ か_PART は_ADP 不明_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-インフェルノス: NOUN | PROPN
+と云う: ADP | VERB
 }
 
 Expected: {
@@ -6671,10 +6716,11 @@ Tok: Ref | Pred
 Expected: {
 3日早朝_ADV 、_PUNCT 栃木県_PROPN 大田原市_PROPN の_ADP ヒラノ大田原農場_PROPN で_ADP 「_PUNCT 豚舎_NOUN が_ADP 燃え_VERB ている_AUX 」_PUNCT と_ADP 従業員_NOUN が_ADP 119番し_VERB た_AUX ._PUNCT}
 Predicted: {
-3日早朝_ADV 、_PUNCT 栃木県_PROPN 大田原市_PROPN の_ADP ヒラノ大田原農場_NOUN で_ADP 「_PUNCT 豚舎_NOUN が_ADP 燃え_VERB ている_AUX 」_PUNCT と_ADP 従業員_NOUN が_ADP 119番し_VERB た_AUX ._PUNCT}
+3日早朝_NOUN 、_PUNCT 栃木県_PROPN 大田原市_PROPN の_ADP ヒラノ大田原農場_NOUN で_ADP 「_PUNCT 豚舎_NOUN が_ADP 燃え_VERB ている_AUX 」_PUNCT と_ADP 従業員_NOUN が_ADP 119番し_VERB た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+3日早朝: ADV | NOUN
 ヒラノ大田原農場: PROPN | NOUN
 }
 
@@ -6751,16 +6797,6 @@ Tok: Ref | Pred
 }
 
 Expected: {
-アルコール_NOUN の_ADP 種類_NOUN も_ADP 豊富_ADJ で_AUX ボトルキープ_NOUN も_ADP 出来_VERB ます_AUX ._PUNCT}
-Predicted: {
-アルコール_NOUN の_ADP 種類_NOUN も_ADP 豊富_ADJ で_AUX ボトルキープ_PROPN も_ADP 出来_VERB ます_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-ボトルキープ: NOUN | PROPN
-}
-
-Expected: {
 根本_PROPN は_ADP 祖父_NOUN から_ADP 「_PUNCT いずれ_ADV 根本家_NOUN を_ADP 支える_VERB 人物_NOUN 」_PUNCT として_ADP 目_NOUN を_ADP かけ_VERB られ_AUX 正教_NOUN の_ADP 幼児洗礼_NOUN を_ADP 受け_VERB た_AUX ._PUNCT}
 Predicted: {
 根本_PROPN は_ADP 祖父_NOUN から_ADP 「_PUNCT いずれ_PRON 根本家_NOUN を_ADP 支える_VERB 人物_NOUN 」_PUNCT として_ADP 目_NOUN を_ADP かけ_VERB られ_AUX 正教_NOUN の_ADP 幼児洗礼_NOUN を_ADP 受け_VERB た_AUX ._PUNCT}
@@ -6826,11 +6862,12 @@ Tok: Ref | Pred
 Expected: {
 手_NOUN 倦み_VERB 力_NOUN 竭き_VERB 己_PRON 亦_ADV 從_VERB て_SCONJ 倒れ_VERB ん_AUX と_ADP す_VERB}
 Predicted: {
-手_NOUN 倦み_NOUN 力_NOUN 竭き_VERB 己_PRON 亦_ADV 從_VERB て_SCONJ 倒れ_VERB ん_AUX と_ADP す_VERB}
+手_NOUN 倦み_NOUN 力_NOUN 竭き_NOUN 己_PRON 亦_ADV 從_VERB て_SCONJ 倒れ_VERB ん_AUX と_ADP す_VERB}
 Errors: {
 Tok: Ref | Pred
 ---------------
 倦み: VERB | NOUN
+竭き: VERB | NOUN
 }
 
 Expected: {
@@ -6859,12 +6896,11 @@ Tok: Ref | Pred
 Expected: {
 其_PRON 他_NOUN 異論_NOUN あり_VERB と_ADP 雖_CCONJ 是_PRON 近日_NOUN の_ADP 翹楚_NOUN なり_AUX}
 Predicted: {
-其_PRON 他_NOUN 異論_NOUN あり_NOUN と_ADP 雖_CCONJ 是_PRON 近日_ADJ の_ADP 翹楚_NOUN なり_AUX}
+其_PRON 他_NOUN 異論_NOUN あり_NOUN と_ADP 雖_CCONJ 是_PRON 近日_NOUN の_ADP 翹楚_NOUN なり_AUX}
 Errors: {
 Tok: Ref | Pred
 ---------------
 あり: VERB | NOUN
-近日: NOUN | ADJ
 }
 
 Expected: {
@@ -6880,12 +6916,13 @@ Tok: Ref | Pred
 Expected: {
 夫れ_CCONJ 方今_NOUN の_ADP 勢_NOUN 歐洲_PROPN の_ADP 習俗_NOUN 我_PRON に_ADP 入る_VERB 頗_ADV 其_PRON 多き_ADJ に_AUX 居る_VERB}
 Predicted: {
-夫れ_CCONJ 方今_NOUN の_ADP 勢_NOUN 歐洲_PROPN の_ADP 習俗_NOUN 我_ADJ に_AUX 入る_VERB 頗_ADV 其_PRON 多き_NOUN に_ADP 居る_VERB}
+夫れ_CCONJ 方今_NOUN の_ADP 勢_NOUN 歐洲_PROPN の_ADP 習俗_NOUN 我_ADJ に_AUX 入る_VERB 頗_NOUN 其_PRON 多き_NOUN に_ADP 居る_VERB}
 Errors: {
 Tok: Ref | Pred
 ---------------
 我: PRON | ADJ
 に: ADP | AUX
+頗: ADV | NOUN
 多き: ADJ | NOUN
 に: AUX | ADP
 }
@@ -6893,11 +6930,11 @@ Tok: Ref | Pred
 Expected: {
 其_PRON 勢_NOUN 既に_ADV 駸々_ADJ 其_PRON 七_NUM を_ADP 取_VERB て_SCONJ 其_PRON 三_NUM を_ADP 遺す_VERB 能は_VERB ざれ_AUX ば_CCONJ 僕_PRON 謂ふ_VERB}
 Predicted: {
-其_PRON 勢_NOUN 既に_ADV 駸々_NOUN 其_PRON 七_NUM を_ADP 取_VERB て_SCONJ 其_PRON 三_NUM を_ADP 遺す_VERB 能は_VERB ざれ_AUX ば_CCONJ 僕_PRON 謂ふ_VERB}
+其_PRON 勢_NOUN 既に_ADV 駸々_ADV 其_PRON 七_NUM を_ADP 取_VERB て_SCONJ 其_PRON 三_NUM を_ADP 遺す_VERB 能は_VERB ざれ_AUX ば_CCONJ 僕_PRON 謂ふ_VERB}
 Errors: {
 Tok: Ref | Pred
 ---------------
-駸々: ADJ | NOUN
+駸々: ADJ | ADV
 }
 
 Expected: {
@@ -6952,22 +6989,22 @@ Tok: Ref | Pred
 Expected: {
 アベセ_NOUN 二十_NUM 六_NUM 字_NOUN を_ADP 知り_VERB 苟も_ADV 綴字_NOUN の_ADP 法_NOUN と_ADP 呼法_NOUN と_ADP を_ADP 學べ_VERB ば_CCONJ 兒女_NOUN も_ADP 亦_ADV 男子_NOUN の_ADP 書_NOUN を_ADP 讀み_VERB 鄙夫_NOUN も_ADP 君子_NOUN の_ADP 書_NOUN を_ADP 讀み_VERB 且_CCONJ 自ら_NOUN 其_PRON 意見_NOUN を_ADP 書く_VERB を_ADP 得_VERB べし_AUX}
 Predicted: {
-アベセ_NOUN 二十_NUM 六_NUM 字_NOUN を_ADP 知り_VERB 苟も_ADV 綴字_NOUN の_ADP 法_NOUN と_ADP 呼法_NOUN と_ADP を_ADP 學べ_VERB ば_SCONJ 兒女_NOUN も_ADP 亦_ADV 男子_NOUN の_ADP 書_NOUN を_ADP 讀み_VERB 鄙夫_PRON も_ADP 君子_NOUN の_ADP 書_NOUN を_ADP 讀み_VERB 且_CCONJ 自ら_NOUN 其_PRON 意見_NOUN を_ADP 書く_VERB を_ADP 得_VERB べし_AUX}
+アベセ_NOUN 二十_NUM 六_NUM 字_NOUN を_ADP 知り_VERB 苟も_ADV 綴字_NOUN の_ADP 法_NOUN と_ADP 呼法_NOUN と_ADP を_ADP 學べ_VERB ば_SCONJ 兒女_NOUN も_ADP 亦_ADV 男子_NOUN の_ADP 書_NOUN を_ADP 讀み_VERB 鄙夫_NOUN も_ADP 君子_NOUN の_ADP 書_NOUN を_ADP 讀み_VERB 且_CCONJ 自ら_NOUN 其_PRON 意見_NOUN を_ADP 書く_VERB を_ADP 得_VERB べし_AUX}
 Errors: {
 Tok: Ref | Pred
 ---------------
 ば: CCONJ | SCONJ
-鄙夫: NOUN | PRON
 }
 
 Expected: {
 然る_VERB に_CCONJ 所謂_ADJ 筆墨_NOUN 肆_NOUN は_ADP 三都_NOUN 其_PRON 他_NOUN 僅々_ADV の_ADP 數_NOUN のみ_ADP}
 Predicted: {
-然る_VERB に_CCONJ 所謂_ADJ 筆墨_NOUN 肆_NOUN は_ADP 三都_NOUN 其_PRON 他_NOUN 僅々_ADJ の_ADP 數_NOUN のみ_ADP}
+然る_VERB に_CCONJ 所謂_ADJ 筆墨_NOUN 肆_NOUN は_ADP 三都_NOUN 其_PRON 他_NOUN 僅々_ADJ の_ADP 數_NUM のみ_ADP}
 Errors: {
 Tok: Ref | Pred
 ---------------
 僅々: ADV | ADJ
+數: NOUN | NUM
 }
 
 Expected: {
@@ -7015,21 +7052,20 @@ Tok: Ref | Pred
 Expected: {
 尤_CCONJ 世間_NOUN へ_ADP 出す_VERB 著述_NOUN 書_PART 飜譯_NOUN 書_PART 等_ADP は_ADP 此_PRON 例_NOUN に_AUX あら_VERB ず_AUX}
 Predicted: {
-尤_NOUN 世間_NOUN へ_ADP 出す_VERB 著述_NOUN 書_NOUN 飜譯_NOUN 書_NOUN 等_PART は_ADP 此_PRON 例_NOUN に_ADP あら_VERB ず_AUX}
+尤_NOUN 世間_NOUN へ_ADP 出す_VERB 著述_NOUN 書_NOUN 飜譯_NOUN 書_NOUN 等_ADP は_ADP 此_PRON 例_NOUN に_ADP あら_VERB ず_AUX}
 Errors: {
 Tok: Ref | Pred
 ---------------
 尤: CCONJ | NOUN
 書: PART | NOUN
 書: PART | NOUN
-等: ADP | PART
 に: AUX | ADP
 }
 
 Expected: {
 然ら_VERB ば_CCONJ 所謂_ADJ 英雄_NOUN の_ADP 心_NOUN を_ADP 攬る_VERB の_ADP 謂れ_NOUN にて_ADP 天下_NOUN の_ADP 人材_NOUN を_ADP 一_NUM 社_NOUN の_ADP 中_NOUN に_ADP 網羅_NOUN する_VERB コト_NOUN なれ_AUX ば_CCONJ 方法_NOUN だに_ADP 宜しき_ADJ を_ADP 得_VERB ば_CCONJ サイエンス_NOUN なり_ADP アーツ_NOUN なり_ADP リテラチユア_NOUN なり_ADP モラル_NOUN なり_ADP 大畧_NOUN 一致_NOUN せ_VERB ざる_AUX コト_NOUN なう_AUX し_VERB て_SCONJ 彼の_DET 愚暗_ADJ の_ADP 頑軍_NOUN 爰_PRON に_ADP 於_VERB て_SCONJ や_ADP 始て_ADV 殲滅_NOUN 遺類_NOUN なき_AUX を_ADP 得_VERB て_SCONJ 我_ADJ 文明_NOUN の_ADP 凱歌_NOUN を_ADP 奏する_VERB に_ADP 至ら_VERB ん_AUX}
 Predicted: {
-然ら_VERB ば_SCONJ 所謂_ADJ 英雄_NOUN の_ADP 心_NOUN を_ADP 攬る_VERB の_SCONJ 謂れ_NOUN にて_ADP 天下_NOUN の_ADP 人材_NOUN を_ADP 一_NUM 社_NOUN の_ADP 中_NOUN に_ADP 網羅_VERB する_AUX コト_NOUN なれ_AUX ば_SCONJ 方法_NOUN だに_ADV 宜しき_NOUN を_ADP 得_VERB ば_SCONJ サイエンス_PROPN なり_ADP アーツ_PROPN なり_ADP リテラチユア_PROPN なり_ADP モラル_NOUN なり_VERB 大畧_NOUN 一致_NOUN せ_VERB ざる_AUX コト_NOUN なう_AUX し_AUX て_SCONJ 彼の_DET 愚暗_NOUN の_ADP 頑軍_NOUN 爰_PRON に_ADP 於_VERB て_SCONJ や_ADP 始て_ADV 殲滅_NOUN 遺類_NOUN なき_AUX を_ADP 得_VERB て_SCONJ 我_ADJ 文明_NOUN の_ADP 凱歌_NOUN を_ADP 奏する_VERB に_ADP 至ら_VERB ん_AUX}
+然ら_VERB ば_SCONJ 所謂_ADJ 英雄_NOUN の_ADP 心_NOUN を_ADP 攬る_VERB の_SCONJ 謂れ_NOUN にて_ADP 天下_NOUN の_ADP 人材_NOUN を_ADP 一_NUM 社_NOUN の_ADP 中_NOUN に_ADP 網羅_VERB する_AUX コト_NOUN なれ_AUX ば_SCONJ 方法_NOUN だに_ADV 宜しき_AUX を_ADP 得_VERB ば_SCONJ サイエンス_PROPN なり_ADP アーツ_PROPN なり_ADP リテラチユア_PROPN なり_ADP モラル_NOUN なり_VERB 大畧_NOUN 一致_NOUN せ_VERB ざる_AUX コト_NOUN なう_AUX し_AUX て_SCONJ 彼の_DET 愚暗_NOUN の_ADP 頑軍_NOUN 爰_PRON に_ADP 於_VERB て_SCONJ や_ADP 始て_ADV 殲滅_NOUN 遺類_NOUN なき_AUX を_ADP 得_VERB て_SCONJ 我_ADJ 文明_NOUN の_ADP 凱歌_NOUN を_ADP 奏する_VERB に_ADP 至ら_VERB ん_AUX}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -7039,7 +7075,7 @@ Tok: Ref | Pred
 する: VERB | AUX
 ば: CCONJ | SCONJ
 だに: ADP | ADV
-宜しき: ADJ | NOUN
+宜しき: ADJ | AUX
 ば: CCONJ | SCONJ
 サイエンス: NOUN | PROPN
 アーツ: NOUN | PROPN
@@ -7080,12 +7116,14 @@ Tok: Ref | Pred
 Expected: {
 津田_PROPN 君_PART は_ADP 宇内_NOUN 最良_NOUN の_ADP 一_NUM 宗_PART を_ADP 擇び_VERB 移し_VERB て_SCONJ 之_PRON を_ADP 我_ADJ 邦_NOUN の_ADP 公教_NOUN と_ADP 爲す_VERB を_ADP 上策_NOUN と_ADP し_VERB 西_PROPN 君_PART は_ADP 教政_NOUN 各別_ADJ の_ADP 理_NOUN に_ADP 據り_VERB 宗教_NOUN 政府_NOUN 兩斷_NOUN し_VERB 永く_ADJ 宗教_NOUN 自由_NOUN の_ADP 權理_NOUN を_ADP 定る_VERB を_ADP 以_VERB て_SCONJ 良謨_NOUN と_ADP す_VERB}
 Predicted: {
-津田_PROPN 君_NOUN は_ADP 宇内_NOUN 最良_NOUN の_ADP 一_NUM 宗_NOUN を_ADP 擇び_VERB 移し_VERB て_SCONJ 之_PRON を_ADP 我_ADJ 邦_NOUN の_ADP 公教_NOUN と_ADP 爲す_VERB を_ADP 上策_NOUN と_ADP し_VERB 西_NOUN 君_PRON は_ADP 教政_NOUN 各別_NOUN の_ADP 理_NOUN に_ADP 據り_VERB 宗教_NOUN 政府_NOUN 兩斷_NOUN し_AUX 永く_VERB 宗教_NOUN 自由_NOUN の_ADP 權理_NOUN を_ADP 定る_VERB を_ADP 以_VERB て_SCONJ 良謨_NOUN と_ADP す_VERB}
+津田_PROPN 君_NOUN は_ADP 宇内_NOUN 最良_NOUN の_ADP 一_NUM 宗_NOUN を_ADP 擇び_VERB 移し_AUX て_SCONJ 之_PRON を_ADP 我_ADJ 邦_NOUN の_ADP 公教_NOUN と_ADP 爲す_VERB を_ADP 上策_NOUN と_ADP し_AUX 西_NOUN 君_PRON は_ADP 教政_NOUN 各別_NOUN の_ADP 理_NOUN に_ADP 據り_VERB 宗教_NOUN 政府_NOUN 兩斷_NOUN し_AUX 永く_VERB 宗教_NOUN 自由_NOUN の_ADP 權理_NOUN を_ADP 定る_VERB を_ADP 以_VERB て_SCONJ 良謨_NOUN と_ADP す_VERB}
 Errors: {
 Tok: Ref | Pred
 ---------------
 君: PART | NOUN
 宗: PART | NOUN
+移し: VERB | AUX
+し: VERB | AUX
 西: PROPN | NOUN
 君: PART | PRON
 各別: ADJ | NOUN
@@ -7096,11 +7134,11 @@ Tok: Ref | Pred
 Expected: {
 (_SYM 以上_NOUN 五十_NUM 六_NUM 葉_NOUN )_SYM}
 Predicted: {
-(_PUNCT 以上_NOUN 五十_NUM 六_NUM 葉_NOUN )_SYM}
+(_SYM 以上_NOUN 五十_NUM 六_NUM 葉_NOUN )_PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-(: SYM | PUNCT
+): SYM | PUNCT
 }
 
 Expected: {
@@ -7116,12 +7154,12 @@ Tok: Ref | Pred
 Expected: {
 ○_SYM 宗教_NOUN の_ADP 相_NOUN 異_NOUN なる_AUX を_ADP 以_VERB て_SCONJ 生ずる_VERB 處_NOUN の_ADP 騷亂_NOUN を_ADP 防ぐ_VERB に_ADP 最良_NOUN の_ADP 術_NOUN は_ADP 倫理_NOUN を_ADP 害せ_VERB ざる_AUX 且_CCONJ 邦政_NOUN に_ADP 妨_NOUN なき_AUX 宗教_NOUN を_ADP 悉く_ADV 放許_NOUN し_VERB 任意_NOUN に_ADP 之_PRON を_ADP 行は_VERB しむる_AUX に_ADP 在り_VERB}
 Predicted: {
-○_SYM 宗教_NOUN の_ADP 相_NOUN 異_NOUN なる_AUX を_ADP 以_VERB て_SCONJ 生ずる_VERB 處_NOUN の_ADP 騷亂_NOUN を_ADP 防ぐ_VERB に_SCONJ 最良_NOUN の_ADP 術_NOUN は_ADP 倫理_NOUN を_ADP 害せ_VERB ざる_AUX 且_X 邦政_NOUN に_ADP 妨_VERB なき_AUX 宗教_NOUN を_ADP 悉く_ADV 放許_VERB し_AUX 任意_NOUN に_ADP 之_PRON を_ADP 行は_VERB しむる_AUX に_ADP 在り_VERB}
+○_SYM 宗教_NOUN の_ADP 相_NOUN 異_NOUN なる_AUX を_ADP 以_VERB て_SCONJ 生ずる_VERB 處_NOUN の_ADP 騷亂_NOUN を_ADP 防ぐ_VERB に_SCONJ 最良_NOUN の_ADP 術_NOUN は_ADP 倫理_NOUN を_ADP 害せ_VERB ざる_AUX 且_NOUN 邦政_NOUN に_ADP 妨_VERB なき_AUX 宗教_NOUN を_ADP 悉く_ADV 放許_VERB し_AUX 任意_NOUN に_ADP 之_PRON を_ADP 行は_VERB しむる_AUX に_ADP 在り_VERB}
 Errors: {
 Tok: Ref | Pred
 ---------------
 に: ADP | SCONJ
-且: CCONJ | X
+且: CCONJ | NOUN
 妨: NOUN | VERB
 放許: NOUN | VERB
 し: VERB | AUX
@@ -7130,11 +7168,11 @@ Tok: Ref | Pred
 Expected: {
 (_SYM 以上_NOUN 六十_NUM 六_NUM 葉_NOUN )_SYM}
 Predicted: {
-(_PUNCT 以上_NOUN 六十_NUM 六_NUM 葉_NOUN )_SYM}
+(_SYM 以上_NOUN 六十_NUM 六_NUM 葉_NOUN )_PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-(: SYM | PUNCT
+): SYM | PUNCT
 }
 
 Expected: {
@@ -7201,22 +7239,21 @@ Tok: Ref | Pred
 Expected: {
 加ふる_VERB に_ADP 代言_NOUN 人_PART 之_PRON を_ADP 脩飾_NOUN す_VERB}
 Predicted: {
-加ふる_VERB に_SCONJ 代言_NOUN 人_NOUN 之_PRON を_ADP 脩飾_NOUN す_VERB}
+加ふる_VERB に_AUX 代言_NOUN 人_NOUN 之_PRON を_ADP 脩飾_NOUN す_VERB}
 Errors: {
 Tok: Ref | Pred
 ---------------
-に: ADP | SCONJ
+に: ADP | AUX
 人: PART | NOUN
 }
 
 Expected: {
 是_PRON 司法_NOUN 官吏_NOUN 万一_NOUN の_ADP 過誤_NOUN を_ADP 豫防_NOUN する_VERB 所以_NOUN に_AUX し_VERB て_SCONJ 縱令_ADV 証左_NOUN 誤まる_VERB コト_NOUN ある_VERB も_ADP 覆審_NOUN に_ADP 因_VERB て_SCONJ 明白_ADJ に_AUX する_VERB コト_NOUN を_ADP 得_VERB べし_AUX}
 Predicted: {
-是_PRON 司法_NOUN 官吏_NOUN 万一_ADJ の_ADP 過誤_NOUN を_ADP 豫防_VERB する_AUX 所以_NOUN に_ADP し_VERB て_SCONJ 縱令_ADV 証左_NOUN 誤まる_VERB コト_NOUN ある_VERB も_ADP 覆審_NOUN に_ADP 因_VERB て_SCONJ 明白_ADJ に_AUX する_VERB コト_NOUN を_ADP 得_VERB べし_AUX}
+是_PRON 司法_NOUN 官吏_NOUN 万一_NOUN の_ADP 過誤_NOUN を_ADP 豫防_VERB する_AUX 所以_NOUN に_ADP し_VERB て_SCONJ 縱令_ADV 証左_NOUN 誤まる_VERB コト_NOUN ある_VERB も_ADP 覆審_NOUN に_ADP 因_VERB て_SCONJ 明白_ADJ に_AUX する_VERB コト_NOUN を_ADP 得_VERB べし_AUX}
 Errors: {
 Tok: Ref | Pred
 ---------------
-万一: NOUN | ADJ
 豫防: NOUN | VERB
 する: VERB | AUX
 に: AUX | ADP
@@ -7266,24 +7303,13 @@ Tok: Ref | Pred
 }
 
 Expected: {
-何_PRON ぞ_ADP や_ADP}
-Predicted: {
-何_PRON ぞ_ADV や_ADP}
-Errors: {
-Tok: Ref | Pred
----------------
-ぞ: ADP | ADV
-}
-
-Expected: {
 欺か_VERB ば_CCONJ 則_CCONJ 不敬_NOUN 甚し_ADJ}
 Predicted: {
-欺か_VERB ば_SCONJ 則_CCONJ 不敬_ADJ 甚し_ADJ}
+欺か_ADJ ば_CCONJ 則_CCONJ 不敬_NOUN 甚し_ADJ}
 Errors: {
 Tok: Ref | Pred
 ---------------
-ば: CCONJ | SCONJ
-不敬: NOUN | ADJ
+欺か: VERB | ADJ
 }
 
 Expected: {
@@ -7395,7 +7421,7 @@ Tok: Ref | Pred
 Expected: {
 然ら_VERB ば_CCONJ 則ち_CCONJ 貿易_NOUN の_ADP コト_NOUN 如何_ADV せ_VERB ば_CCONJ 可_NOUN なら_AUX ん_AUX}
 Predicted: {
-然ら_VERB ば_SCONJ 則ち_ADV 貿易_NOUN の_ADP コト_NOUN 如何_AUX せ_AUX ば_SCONJ 可_NOUN なら_AUX ん_SCONJ}
+然ら_VERB ば_SCONJ 則ち_ADV 貿易_NOUN の_ADP コト_NOUN 如何_AUX せ_AUX ば_SCONJ 可_NOUN なら_AUX ん_AUX}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -7404,7 +7430,6 @@ Tok: Ref | Pred
 如何: ADV | AUX
 せ: VERB | AUX
 ば: CCONJ | SCONJ
-ん: AUX | SCONJ
 }
 
 Expected: {
@@ -7420,14 +7445,16 @@ Tok: Ref | Pred
 Expected: {
 輸入_NOUN 物品_NOUN 中_PART に_ADP 於_VERB て_SCONJ 其_PRON 最_ADV 多く_ADJ 消費_NOUN し_VERB 且_CCONJ 我_ADJ 國産_NOUN を_ADP 妨碍_NOUN する_VERB 者_NOUN 一二_NUM 品_PART を_ADP 擇び_VERB 或は_CCONJ 之_PRON を_ADP 禁じ_VERB 或は_CCONJ 之_PRON に_ADP 重税_NOUN を_ADP 賦し_VERB 以_VERB て_SCONJ 我_ADJ 國_NOUN の_ADP 業力_NOUN を_ADP 振起_NOUN せ_VERB しむる_AUX なり_AUX}
 Predicted: {
-輸入_NOUN 物品_NOUN 中_NOUN に_ADP 於_VERB て_SCONJ 其_PRON 最_NOUN 多く_NOUN 消費_NOUN し_AUX 且_CCONJ 我_ADJ 國産_NOUN を_ADP 妨碍_VERB する_AUX 者_NOUN 一二_NUM 品_NOUN を_ADP 擇び_VERB 或は_CCONJ 之_PRON を_ADP 禁じ_VERB 或は_CCONJ 之_PRON に_ADP 重税_NOUN を_ADP 賦し_VERB 以_VERB て_SCONJ 我_ADJ 國_NOUN の_ADP 業力_NOUN を_ADP 振起_NOUN せ_VERB しむる_AUX なり_AUX}
+輸入_NOUN 物品_NOUN 中_NOUN に_ADP 於_VERB て_SCONJ 其_PRON 最_NOUN 多く_NOUN 消費_VERB し_AUX 且_NOUN 我_ADJ 國産_NOUN を_ADP 妨碍_VERB する_AUX 者_NOUN 一二_NUM 品_NOUN を_ADP 擇び_VERB 或は_CCONJ 之_PRON を_ADP 禁じ_VERB 或は_CCONJ 之_PRON に_ADP 重税_NOUN を_ADP 賦し_VERB 以_VERB て_SCONJ 我_ADJ 國_NOUN の_ADP 業力_NOUN を_ADP 振起_NOUN せ_VERB しむる_AUX なり_AUX}
 Errors: {
 Tok: Ref | Pred
 ---------------
 中: PART | NOUN
 最: ADV | NOUN
 多く: ADJ | NOUN
+消費: NOUN | VERB
 し: VERB | AUX
+且: CCONJ | NOUN
 妨碍: NOUN | VERB
 する: VERB | AUX
 品: PART | NOUN
@@ -7436,22 +7463,24 @@ Tok: Ref | Pred
 Expected: {
 然れ_VERB ば_CCONJ 則ち_CCONJ 之_PRON を_ADP 内國_NOUN 人_PART 自ら_NOUN 税_NOUN を_ADP 其_PRON 身_NOUN に_ADP 納む_VERB と_ADP 謂ふ_VERB 可し_AUX}
 Predicted: {
-然れ_VERB ば_SCONJ 則ち_CCONJ 之_PRON を_ADP 内國_NOUN 人_NOUN 自ら_NOUN 税_NOUN を_ADP 其_PRON 身_NOUN に_ADP 納む_VERB と_ADP 謂ふ_VERB 可し_AUX}
+然れ_VERB ば_SCONJ 則ち_CCONJ 之_PRON を_ADP 内國_NOUN 人_NOUN 自ら_NOUN 税_NOUN を_ADP 其_PRON 身_NOUN に_ADP 納む_VERB と_SCONJ 謂ふ_VERB 可し_AUX}
 Errors: {
 Tok: Ref | Pred
 ---------------
 ば: CCONJ | SCONJ
 人: PART | NOUN
+と: ADP | SCONJ
 }
 
 Expected: {
 只_CCONJ 其_PRON 利_NOUN の_ADP 大_NOUN なる_AUX 者_NOUN を_ADP 見_VERB たる_AUX なら_AUX ん_AUX}
 Predicted: {
-只_ADV 其_PRON 利_NOUN の_ADP 大_NOUN なる_AUX 者_NOUN を_ADP 見_VERB たる_AUX なら_AUX ん_AUX}
+只_ADV 其_PRON 利_NOUN の_ADP 大_NOUN なる_AUX 者_NOUN を_ADP 見_VERB たる_AUX なら_AUX ん_SCONJ}
 Errors: {
 Tok: Ref | Pred
 ---------------
 只: CCONJ | ADV
+ん: AUX | SCONJ
 }
 
 Expected: {
@@ -7482,7 +7511,7 @@ Tok: Ref | Pred
 Expected: {
 若し_ADV 又_ADV 從前_NOUN の_ADP 如く_AUX 唯_ADV 外國_NOUN の_ADP 輸入_NOUN を_ADP 仰ぎ_VERB 我_ADJ 買ふ_VERB 所_NOUN を_ADP 節せ_VERB ず_AUX 更に_ADV 出入_NOUN を_ADP 問は_VERB ざる_AUX もの_NOUN の_ADP 如く_AUX し_VERB 之_PRON を_ADP 自由_NOUN 交易_NOUN と_ADP 認め_VERB 内外_NOUN の_ADP 形勢_NOUN を_ADP 察せ_VERB ず_AUX 泰然_ADJ と_AUX し_VERB て_SCONJ 之_PRON に_ADP 安んぜ_VERB ば_CCONJ 恰も_ADV 其_PRON 身_NOUN を_ADP 火山_NOUN の_ADP 巓_NOUN に_ADP 置く_VERB が_ADP 如し_AUX}
 Predicted: {
-若し_ADV 又_ADV 從前_NOUN の_ADP 如く_AUX 唯_ADV 外國_NOUN の_ADP 輸入_NOUN を_ADP 仰ぎ_VERB 我_PRON 買ふ_VERB 所_NOUN を_ADP 節せ_VERB ず_AUX 更に_ADV 出入_NOUN を_ADP 問は_VERB ざる_AUX もの_NOUN の_ADP 如く_AUX し_AUX 之_PRON を_ADP 自由_NOUN 交易_NOUN と_ADP 認め_VERB 内外_NOUN の_ADP 形勢_NOUN を_ADP 察せ_VERB ず_AUX 泰然_ADJ と_ADP し_VERB て_SCONJ 之_PRON に_ADP 安んぜ_VERB ば_SCONJ 恰も_ADV 其_PRON 身_NOUN を_ADP 火山_NOUN の_ADP 巓_PRON に_ADP 置く_VERB が_SCONJ 如し_AUX}
+若し_ADV 又_ADV 從前_NOUN の_ADP 如く_AUX 唯_ADV 外國_NOUN の_ADP 輸入_NOUN を_ADP 仰ぎ_VERB 我_PRON 買ふ_VERB 所_NOUN を_ADP 節せ_VERB ず_AUX 更に_ADV 出入_NOUN を_ADP 問は_VERB ざる_AUX もの_NOUN の_ADP 如く_AUX し_AUX 之_PRON を_ADP 自由_NOUN 交易_NOUN と_ADP 認め_VERB 内外_NOUN の_ADP 形勢_NOUN を_ADP 察せ_VERB ず_AUX 泰然_ADJ と_ADP し_VERB て_SCONJ 之_PRON に_ADP 安んぜ_VERB ば_SCONJ 恰も_ADV 其_PRON 身_NOUN を_ADP 火山_NOUN の_ADP 巓_ADJ に_AUX 置く_VERB が_SCONJ 如し_AUX}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -7490,7 +7519,8 @@ Tok: Ref | Pred
 し: VERB | AUX
 と: AUX | ADP
 ば: CCONJ | SCONJ
-巓: NOUN | PRON
+巓: NOUN | ADJ
+に: ADP | AUX
 が: ADP | SCONJ
 }
 
@@ -7594,11 +7624,10 @@ Tok: Ref | Pred
 Expected: {
 そして_CCONJ 2007_NUM 年_NOUN まで_ADP に_ADP は_ADP 、_PUNCT その_DET 人気_NOUN 度_NOUN の_ADP 高_ADJ さ_PART (_PUNCT と_ADP ナイトレイ_PROPN の_ADP 人気_NOUN )_PUNCT で_ADP は_ADP 、_PUNCT キエラ_PROPN と_ADP いう_VERB 名前_NOUN より_ADP も_ADP 3_NUM 倍_NOUN の_ADP 多_ADJ さ_PART で_ADP ケイラ_PROPN と_ADP 名付け_VERB られ_AUX た_AUX 赤ちゃん_NOUN を_ADP 併せ_VERB 、_PUNCT 上位_NOUN 50_NUM の_ADP 名前_NOUN で_AUX あっ_VERB た_AUX ._PUNCT}
 Predicted: {
-そして_CCONJ 2007_NUM 年_NOUN まで_ADP に_ADP は_ADP 、_PUNCT その_DET 人気_NOUN 度_NOUN の_ADP 高_NOUN さ_PART (_PUNCT と_ADP ナイトレイ_PROPN の_ADP 人気_NOUN )_PUNCT で_ADP は_ADP 、_PUNCT キエラ_PROPN と_ADP いう_VERB 名前_NOUN より_ADP も_ADP 3_NUM 倍_NOUN の_ADP 多_ADJ さ_PART で_AUX ケイラ_PROPN と_ADP 名付け_VERB られ_AUX た_AUX 赤ちゃん_NOUN を_ADP 併せ_VERB 、_PUNCT 上位_NOUN 50_NUM の_ADP 名前_NOUN で_AUX あっ_VERB た_AUX ._PUNCT}
+そして_CCONJ 2007_NUM 年_NOUN まで_ADP に_ADP は_ADP 、_PUNCT その_DET 人気_NOUN 度_NOUN の_ADP 高_ADJ さ_PART (_PUNCT と_ADP ナイトレイ_PROPN の_ADP 人気_NOUN )_PUNCT で_ADP は_ADP 、_PUNCT キエラ_PROPN と_ADP いう_VERB 名前_NOUN より_ADP も_ADP 3_NUM 倍_NOUN の_ADP 多_ADJ さ_PART で_AUX ケイラ_PROPN と_ADP 名付け_VERB られ_AUX た_AUX 赤ちゃん_NOUN を_ADP 併せ_VERB 、_PUNCT 上位_NOUN 50_NUM の_ADP 名前_NOUN で_AUX あっ_VERB た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-高: ADJ | NOUN
 で: ADP | AUX
 }
 
@@ -7644,16 +7673,6 @@ Tok: Ref | Pred
 }
 
 Expected: {
-彼_PRON は_ADP 、_PUNCT 燃え上がる_VERB 対立_NOUN や_ADP 古い_ADJ アイデア_NOUN に_ADP 対する_VERB 新しい_ADJ アイデア_NOUN の_ADP 興味_NOUN 深い_ADJ 交差_NOUN に_ADP 、_PUNCT 彼_PRON の_ADP 周り_NOUN の_ADP 選挙_NOUN の_ADP 影響_NOUN を_ADP 感じる_VERB こと_NOUN が_ADP でき_AUX た_AUX ._PUNCT}
-Predicted: {
-彼_PRON は_ADP 、_PUNCT 燃え上がる_VERB 対立_NOUN や_ADP 古い_ADJ アイデア_NOUN に_ADP 対する_VERB 新しい_ADJ アイデア_NOUN の_ADP 興味_NOUN 深い_ADJ 交差_NOUN に_ADP 、_PUNCT 彼_PRON の_ADP 周り_NOUN の_ADP 選挙_NOUN の_ADP 影響_NOUN を_ADP 感じる_VERB こと_NOUN が_ADP でき_VERB た_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-でき: AUX | VERB
-}
-
-Expected: {
 それ_CCONJ から_ADP 、_PUNCT 真_NOUN の_ADP 話_NOUN と_ADP 呼ば_VERB れる_AUX もの_NOUN が_ADP 投稿_VERB さ_AUX れ_AUX て_SCONJ いる_VERB が_SCONJ 、_PUNCT これ_PRON は_ADP 、_PUNCT 一連_NOUN の_ADP 意味_NOUN の_ADP ある_VERB 写真_NOUN の_ADP 下_NOUN に_ADP 、_PUNCT テキスト_NOUN が_ADP 表示_VERB さ_AUX れ_AUX て_SCONJ いる_VERB ._PUNCT}
 Predicted: {
 それ_PRON から_ADP 、_PUNCT 真_NOUN の_ADP 話_NOUN と_ADP 呼ば_VERB れる_AUX もの_NOUN が_ADP 投稿_VERB さ_AUX れ_AUX て_SCONJ いる_VERB が_SCONJ 、_PUNCT これ_PRON は_ADP 、_PUNCT 一連_NOUN の_ADP 意味_NOUN の_ADP ある_VERB 写真_NOUN の_ADP 下_NOUN に_ADP 、_PUNCT テキスト_NOUN が_ADP 表示_VERB さ_AUX れ_AUX て_SCONJ いる_VERB ._PUNCT}
@@ -7681,17 +7700,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 さ: AUX | PART
-}
-
-Expected: {
-私_PRON 以外_NOUN の_ADP すべて_NOUN の_ADP 医療_NOUN チーム_NOUN が_ADP 武装_VERB し_AUX て_SCONJ い_VERB た_AUX ._PUNCT}
-Predicted: {
-私_PRON 以外_NOUN の_ADP すべて_NOUN の_ADP 医療_NOUN チーム_NOUN が_ADP 武装_NOUN し_VERB て_SCONJ い_VERB た_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-武装: VERB | NOUN
-し: AUX | VERB
 }
 
 Expected: {
@@ -7743,16 +7751,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 ザーホリエ: PROPN | NOUN
-}
-
-Expected: {
-雨_NOUN が_ADP 降っ_VERB て_SCONJ いる_VERB 際_NOUN 、_PUNCT 水滴_NOUN は_ADP 、_PUNCT 周囲_NOUN の_ADP 空気_NOUN から_ADP 二_NUM 酸化_NOUN 炭素_NOUN を_ADP 吸収_VERB し_AUX 、_PUNCT 溶かし_VERB ます_AUX ._PUNCT}
-Predicted: {
-雨_NOUN が_ADP 降っ_VERB て_SCONJ いる_VERB 際_NOUN 、_PUNCT 水滴_PROPN は_ADP 、_PUNCT 周囲_NOUN の_ADP 空気_NOUN から_ADP 二_NUM 酸化_NOUN 炭素_NOUN を_ADP 吸収_VERB し_AUX 、_PUNCT 溶かし_VERB ます_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-水滴: NOUN | PROPN
 }
 
 Expected: {
@@ -7850,24 +7848,14 @@ Tok: Ref | Pred
 }
 
 Expected: {
-彼女_PRON は_ADP フィクション_NOUN へ_ADP の_ADP 移行_NOUN は_ADP 容易_ADJ で_AUX ある_VERB と_ADP 知り_VERB 、_PUNCT 「_PUNCT 全て_NOUN の_ADP 本_NOUN は_ADP 学習_NOUN 曲線_NOUN で_AUX あり_VERB 、_PUNCT オープン_NOUN マインド_NOUN を_ADP 保つ_VERB 必要_NOUN が_ADP ある_VERB 」_PUNCT と_ADP 説明_VERB し_AUX た_AUX ._PUNCT}
-Predicted: {
-彼女_PRON は_ADP フィクション_NOUN へ_ADP の_ADP 移行_NOUN は_ADP 容易_ADJ で_AUX ある_VERB と_ADP 知り_VERB 、_PUNCT 「_PUNCT 全て_NOUN の_ADP 本_NOUN は_ADP 学習_NOUN 曲線_NOUN で_AUX あり_VERB 、_PUNCT オープン_NOUN マインド_PROPN を_ADP 保つ_VERB 必要_NOUN が_ADP ある_VERB 」_PUNCT と_ADP 説明_VERB し_AUX た_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-マインド: NOUN | PROPN
-}
-
-Expected: {
 ジョージ_PROPN は_ADP 非常_ADJ に_AUX 敬けん_ADJ で_AUX 祈り_NOUN に_ADP 何_NUM 時間_NOUN も_ADP かけ_VERB た_AUX が_SCONJ 、_PUNCT 彼_PRON の_ADP 弟_NOUN は_ADP 信心_NOUN 深く_ADJ なかっ_ADJ た_AUX ._PUNCT}
 Predicted: {
-ジョージ_PROPN は_ADP 非常_ADJ に_AUX 敬けん_NOUN で_ADP 祈り_NOUN に_ADP 何_NUM 時間_NOUN も_ADP かけ_VERB た_AUX が_SCONJ 、_PUNCT 彼_PRON の_ADP 弟_NOUN は_ADP 信心_VERB 深く_ADJ なかっ_AUX た_AUX ._PUNCT}
+ジョージ_PROPN は_ADP 非常_ADJ に_AUX 敬けん_VERB で_SCONJ 祈り_NOUN に_ADP 何_NUM 時間_NOUN も_ADP かけ_VERB た_AUX が_SCONJ 、_PUNCT 彼_PRON の_ADP 弟_NOUN は_ADP 信心_VERB 深く_ADJ なかっ_AUX た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-敬けん: ADJ | NOUN
-で: AUX | ADP
+敬けん: ADJ | VERB
+で: AUX | SCONJ
 信心: NOUN | VERB
 なかっ: ADJ | AUX
 }
@@ -7887,11 +7875,12 @@ Tok: Ref | Pred
 Expected: {
 ジョセフ_PROPN ・_SYM シェンク_PROPN は_ADP 、_PUNCT 『_PUNCT ロミオ_PROPN と_ADP ジュリエット_PROPN 』_PUNCT の_ADP 一作_NOUN で_ADP 、_PUNCT 彼_PRON の_ADP 妻_NOUN で_AUX ある_VERB ノーマ_PROPN ・_SYM タルマッジ_PROPN を_ADP 出演_VERB さ_AUX せ_AUX 、_PUNCT ヴァレンティ_PROPN を_ADP その_DET 相手_NOUN 役_NOUN に_ADP 配役_VERB する_AUX こと_NOUN を_ADP 検討_VERB し_AUX て_SCONJ い_VERB た_AUX ._PUNCT}
 Predicted: {
-ジョセフ_PROPN ・_SYM シェンク_PROPN は_ADP 、_PUNCT 『_PUNCT ロミオ_PROPN と_ADP ジュリエット_PROPN 』_PUNCT の_ADP 一作_NOUN で_AUX 、_PUNCT 彼_PRON の_ADP 妻_NOUN で_AUX ある_VERB ノーマ_PROPN ・_SYM タルマッジ_PROPN を_ADP 出演_VERB さ_AUX せ_AUX 、_PUNCT ヴァレンティ_PROPN を_ADP その_DET 相手_NOUN 役_NOUN に_ADP 配役_VERB する_AUX こと_NOUN を_ADP 検討_VERB し_AUX て_SCONJ い_VERB た_AUX ._PUNCT}
+ジョセフ_PROPN ・_SYM シェンク_PROPN は_ADP 、_PUNCT 『_PUNCT ロミオ_PROPN と_ADP ジュリエット_PROPN 』_PUNCT の_ADP 一作_NOUN で_AUX 、_PUNCT 彼_PRON の_ADP 妻_NOUN で_AUX ある_VERB ノーマ_PROPN ・_SYM タルマッジ_PROPN を_ADP 出演_VERB さ_AUX せ_AUX 、_PUNCT ヴァレンティ_PROPN を_ADP その_DET 相手_NOUN 役_NOUN に_ADP 配役_NOUN する_AUX こと_NOUN を_ADP 検討_VERB し_AUX て_SCONJ い_VERB た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 で: ADP | AUX
+配役: VERB | NOUN
 }
 
 Expected: {
@@ -7946,16 +7935,6 @@ Tok: Ref | Pred
 ---------------
 名誉: ADJ | NOUN
 に: AUX | ADP
-}
-
-Expected: {
-急進_NOUN 的_PART 革命_NOUN 家_NOUN と_ADP し_AUX て_SCONJ の_ADP 彼_PRON の_ADP キャリア_NOUN に_ADP おい_VERB て_SCONJ 、_PUNCT この_DET 事件_NOUN を_ADP その_DET 出発_NOUN 点_NOUN と_ADP し_AUX て_SCONJ 見なす_VERB こと_NOUN が_ADP できる_AUX ._PUNCT}
-Predicted: {
-急進_NOUN 的_PART 革命_NOUN 家_NOUN と_ADP し_AUX て_SCONJ の_ADP 彼_PRON の_ADP キャリア_NOUN に_ADP おい_VERB て_SCONJ 、_PUNCT この_DET 事件_NOUN を_ADP その_DET 出発_NOUN 点_NOUN と_ADP し_VERB て_SCONJ 見なす_VERB こと_NOUN が_ADP できる_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-し: AUX | VERB
 }
 
 Expected: {
@@ -8053,11 +8032,12 @@ Tok: Ref | Pred
 Expected: {
 その_DET 後_NOUN 、_PUNCT 6時_NUM 30分_NUM から_ADP 10時_NUM まで_ADP 朝市_NOUN で_ADP 、_PUNCT 米_NOUN の_ADP ポン菓子_NOUN 、_PUNCT 蜂_NOUN の_ADP 繭_NOUN (_PUNCT 蛹_NOUN が_ADP 珍味_NOUN と_ADP さ_VERB れる_AUX )_PUNCT 、_PUNCT バッファロー_NOUN の_ADP 肺_NOUN 、_PUNCT キンマナット_NOUN の_ADP 樹皮_NOUN や_ADP 葉_NOUN 、_PUNCT 生き_VERB た_AUX ヒキガエル_NOUN 、_PUNCT ナマズ_NOUN を_ADP 見_VERB て_SCONJ まわっ_VERB た_AUX ._PUNCT}
 Predicted: {
-その_DET 後_NOUN 、_PUNCT 6時_NUM 30分_NUM から_ADP 10時_NUM まで_ADP 朝市_PROPN で_ADP 、_PUNCT 米_NOUN の_ADP ポン菓子_NOUN 、_PUNCT 蜂_NOUN の_ADP 繭_NOUN (_PUNCT 蛹_NOUN が_ADP 珍味_NOUN と_ADP さ_AUX れる_AUX )_PUNCT 、_PUNCT バッファロー_PROPN の_ADP 肺_NOUN 、_PUNCT キンマナット_NOUN の_ADP 樹皮_NOUN や_ADP 葉_NOUN 、_PUNCT 生き_VERB た_AUX ヒキガエル_PROPN 、_PUNCT ナマズ_PROPN を_ADP 見_VERB て_SCONJ まわっ_VERB た_AUX ._PUNCT}
+その_DET 後_NOUN 、_PUNCT 6時_NUM 30分_NUM から_ADP 10時_NUM まで_ADP 朝市_PROPN で_ADP 、_PUNCT 米_NOUN の_ADP ポン菓子_ADV 、_PUNCT 蜂_NOUN の_ADP 繭_NOUN (_PUNCT 蛹_NOUN が_ADP 珍味_NOUN と_ADP さ_AUX れる_AUX )_PUNCT 、_PUNCT バッファロー_PROPN の_ADP 肺_NOUN 、_PUNCT キンマナット_NOUN の_ADP 樹皮_NOUN や_ADP 葉_NOUN 、_PUNCT 生き_VERB た_AUX ヒキガエル_PROPN 、_PUNCT ナマズ_PROPN を_ADP 見_VERB て_SCONJ まわっ_VERB た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 朝市: NOUN | PROPN
+ポン菓子: NOUN | ADV
 さ: VERB | AUX
 バッファロー: NOUN | PROPN
 ヒキガエル: NOUN | PROPN
@@ -8189,12 +8169,12 @@ Tok: Ref | Pred
 Expected: {
 ジョージ_PROPN は_ADP 非常_ADJ に_AUX 敬けん_ADJ で_AUX 祈り_NOUN に_ADP 何時間_NUM も_ADP かけ_VERB た_AUX が_SCONJ 、_PUNCT 彼_PRON の_ADP 弟_NOUN は_ADP 信心深く_ADJ なかっ_ADJ た_AUX ._PUNCT}
 Predicted: {
-ジョージ_PROPN は_ADP 非常_ADJ に_AUX 敬けん_NOUN で_ADP 祈り_NOUN に_ADP 何時間_NUM も_ADP かけ_VERB た_AUX が_SCONJ 、_PUNCT 彼_PRON の_ADP 弟_NOUN は_ADP 信心深く_VERB なかっ_AUX た_AUX ._PUNCT}
+ジョージ_PROPN は_ADP 非常_ADJ に_AUX 敬けん_VERB で_SCONJ 祈り_NOUN に_ADP 何時間_NUM も_ADP かけ_VERB た_AUX が_SCONJ 、_PUNCT 彼_PRON の_ADP 弟_NOUN は_ADP 信心深く_VERB なかっ_AUX た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-敬けん: ADJ | NOUN
-で: AUX | ADP
+敬けん: ADJ | VERB
+で: AUX | SCONJ
 信心深く: ADJ | VERB
 なかっ: ADJ | AUX
 }
@@ -8202,10 +8182,11 @@ Tok: Ref | Pred
 Expected: {
 この_DET アルバム_NOUN に_ADP は_ADP 、_PUNCT ラファティ_PROPN の_ADP 兄弟ジム_PROPN と_ADP 共同_NOUN で_ADP 作詞し_VERB た_AUX トラック_NOUN が_ADP 3曲_NOUN 含ま_VERB れる_AUX が_SCONJ 、_PUNCT ジム_PROPN も_ADP また_ADV シンガーソングライター_NOUN で_AUX 、_PUNCT 1970年代_NOUN に_ADP デッカ・レコード_NOUN と_ADP 契約し_VERB てい_AUX た_AUX ._PUNCT}
 Predicted: {
-この_DET アルバム_NOUN に_ADP は_ADP 、_PUNCT ラファティ_PROPN の_ADP 兄弟ジム_PROPN と_ADP 共同_NOUN で_ADP 作詞し_VERB た_AUX トラック_NOUN が_ADP 3曲_NUM 含ま_VERB れる_AUX が_SCONJ 、_PUNCT ジム_PROPN も_ADP また_ADV シンガーソングライター_NOUN で_ADP 、_PUNCT 1970年代_NOUN に_ADP デッカ・レコード_NOUN と_ADP 契約し_VERB てい_AUX た_AUX ._PUNCT}
+この_DET アルバム_NOUN に_ADP は_ADP 、_PUNCT ラファティ_PROPN の_ADP 兄弟ジム_NOUN と_ADP 共同_NOUN で_ADP 作詞し_VERB た_AUX トラック_NOUN が_ADP 3曲_NUM 含ま_VERB れる_AUX が_SCONJ 、_PUNCT ジム_PROPN も_ADP また_ADV シンガーソングライター_NOUN で_ADP 、_PUNCT 1970年代_NOUN に_ADP デッカ・レコード_NOUN と_ADP 契約し_VERB てい_AUX た_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+兄弟ジム: PROPN | NOUN
 3曲: NOUN | NUM
 で: AUX | ADP
 }
@@ -8231,16 +8212,6 @@ Tok: Ref | Pred
 }
 
 Expected: {
-この_DET 手引書_NOUN に_ADP は_ADP 問題_NOUN が_ADP あり_VERB 、_PUNCT 第一_NUM に_ADP は_ADP 緊急事態_NOUN の_ADP 状況_NOUN において_ADP 作成さ_VERB れ_AUX ている_AUX ため_NOUN である_AUX ._PUNCT}
-Predicted: {
-この_DET 手引書_NOUN に_ADP は_ADP 問題_NOUN が_ADP あり_VERB 、_PUNCT 第一_NOUN に_ADP は_ADP 緊急事態_NOUN の_ADP 状況_NOUN において_ADP 作成さ_VERB れ_AUX ている_AUX ため_NOUN である_AUX ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-第一: NUM | NOUN
-}
-
-Expected: {
 強調_NOUN 、_PUNCT 皮肉_NOUN 、_PUNCT 率直すぎる_VERB 暗示_NOUN 、_PUNCT 常用さ_VERB れ_AUX ている_AUX 口語表現_NOUN は_ADP 議会_NOUN の_ADP 応酬_NOUN の_ADP 場_NOUN に_ADP 合っ_VERB ている_AUX が_SCONJ 、_PUNCT 互い_NOUN の_ADP 爪弾き_NOUN や_ADP ドタバタ喜劇_NOUN は_ADP 議会_NOUN に_ADP ふさわしく_ADJ ない_ADJ ._PUNCT}
 Predicted: {
 強調_NOUN 、_PUNCT 皮肉_NOUN 、_PUNCT 率直すぎる_VERB 暗示_NOUN 、_PUNCT 常用さ_VERB れ_AUX ている_AUX 口語表現_NOUN は_ADP 議会_NOUN の_ADP 応酬_NOUN の_ADP 場_NOUN に_ADP 合っ_VERB ている_AUX が_SCONJ 、_PUNCT 互い_NOUN の_ADP 爪弾き_NOUN や_ADP ドタバタ喜劇_PROPN は_ADP 議会_NOUN に_ADP ふさわしく_ADJ ない_ADJ ._PUNCT}
@@ -8248,6 +8219,16 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 ドタバタ喜劇: NOUN | PROPN
+}
+
+Expected: {
+サンフランシスコ地域_PROPN の_ADP 人々_NOUN の_ADP 憩い_NOUN と_ADP リラクセーション_NOUN の_ADP 場_NOUN と_ADP なっ_VERB ている_AUX ._PUNCT}
+Predicted: {
+サンフランシスコ地域_NOUN の_ADP 人々_NOUN の_ADP 憩い_NOUN と_ADP リラクセーション_NOUN の_ADP 場_NOUN と_ADP なっ_VERB ている_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+サンフランシスコ地域: PROPN | NOUN
 }
 
 Expected: {

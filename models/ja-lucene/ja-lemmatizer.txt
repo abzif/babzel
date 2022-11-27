@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9777794310939166
+Evaluation-Score=0.9778042308359993
 Training-Sample-Size=16975
 Evaluation-Sample-Size=1886
 Training-Algorithm=MAXENT
@@ -10,9 +10,9 @@ Component-Name=StatisticalLemmatizer
 Language=ja
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1666074075276
+Timestamp=1669012603012
 TrainerType=Event
-Training-Eventhash=6a0f62e71512974f129b13c37a269e5c
+Training-Eventhash=33fd97a7865b8da76e8af1951df6eb40
 factory=opennlp.tools.lemmatizer.LemmatizerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -18628,36 +18628,6 @@ Tok: Ref | Pred
 }
 
 Expected: {
-親切	ADJ	親切
-に	AUX	だ
-下見	NOUN	下見
-を	ADP	を
-し	VERB	する
-ていただき	AUX	ていただく
-まし	AUX	ます
-た	AUX	た
-よ	PART	よ
-!	PUNCT	!
-}
-Predicted: {
-親切	ADJ	親切
-に	AUX	だ
-下見	NOUN	下見
-を	ADP	を
-し	VERB	為る
-ていただき	AUX	ていただく
-まし	AUX	ます
-た	AUX	た
-よ	PART	よ
-!	PUNCT	!
-}
-Errors: {
-Tok: Ref | Pred
----------------
-し: する | 為る
-}
-
-Expected: {
 1942年	NUM	1942年
 6月	NUM	6月
 6日	NUM	6日
@@ -30063,7 +30033,7 @@ Expected: {
 、	PUNCT	、
 グルメ店	NOUN	グルメ店
 と云う	ADP	という
-よう	NOUN	様
+よう	AUX	様
 な	AUX	だ
 もの	NOUN	物
 であっ	AUX	である
@@ -30076,7 +30046,7 @@ Predicted: {
 、	PUNCT	、
 グルメ店	NOUN	グルメ店
 と云う	ADP	と云う
-よう	NOUN	様
+よう	AUX	様
 な	AUX	だ
 もの	NOUN	物
 であっ	AUX	である

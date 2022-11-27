@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9982855335652578
-Training-Sample-Size=25677
-Evaluation-Sample-Size=2853
+Evaluation-Score=0.9981232431014843
+Training-Sample-Size=26613
+Evaluation-Sample-Size=2956
 Training-Algorithm=MAXENT_QN
 
 === MODEL PROPERTIES ===
@@ -9,9 +9,9 @@ Component-Name=TokenizerME
 Language=fr
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1666067996637
+Timestamp=1669007131139
 TrainerType=Event
-Training-Eventhash=d067f2d51d058e14473d8a43d6e8d2b0
+Training-Eventhash=28906221121180624e2492827e3c907d
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
@@ -40,17 +40,6 @@ un
 }
 
 Expected: {
-douarnenez accueillera le spectacle de cloture<SPLIT>, pour trois representations vendredi 28 et samedi 29<SPLIT>, a 20<SPLIT>h<SPLIT>30 ;}
-Predicted: {
-douarnenez accueillera le spectacle de cloture<SPLIT>, pour trois representations vendredi 28 et samedi 29<SPLIT>, a 20h<SPLIT>30 ;}
-False positives: {
-20h
-} False negatives: {
-20
-h
-}
-
-Expected: {
 elle a existe en 2 et 5 places<SPLIT>, et une variante pick up a ete fournie par l'<SPLIT>entreprise de carrossiers independants (<SPLIT>gruau par ex<SPLIT>.<SPLIT>)}
 Predicted: {
 elle a existe en 2 et 5 places<SPLIT>, et une variante pick up a ete fournie par l'<SPLIT>entreprise de carrossiers independants (<SPLIT>gruau par ex.<SPLIT>)}
@@ -62,15 +51,23 @@ ex
 }
 
 Expected: {
+il ne s'<SPLIT>agit pas d'<SPLIT>un camping mais d'<SPLIT>une chambre d'<SPLIT>hotes !<SPLIT>......}
+Predicted: {
+il ne s'<SPLIT>agit pas d'<SPLIT>un camping mais d'<SPLIT>une chambre d'<SPLIT>hotes !......}
+False positives: {
+!......
+} False negatives: {
+!
+......
+}
+
+Expected: {
 en effet<SPLIT>, en frequences basses<SPLIT>, les sources de parasites sont generalement des sources de champ electrique (<SPLIT>l'<SPLIT>onde electromagnetique ne presentant un rapport e<SPLIT>/<SPLIT>h constant qu'<SPLIT>a une distance de la source egale environ a un quart de la longueur d'<SPLIT>onde<SPLIT>)<SPLIT>.}
 Predicted: {
-en effet<SPLIT>, en frequences basses<SPLIT>, les sources de parasites sont generalement des sources de champ electrique (<SPLIT>l'onde electromagnetique ne presentant un rapport e/<SPLIT>h constant qu'<SPLIT>a une distance de la source egale environ a un quart de la longueur d'<SPLIT>onde<SPLIT>)<SPLIT>.}
+en effet<SPLIT>, en frequences basses<SPLIT>, les sources de parasites sont generalement des sources de champ electrique (<SPLIT>l'<SPLIT>onde electromagnetique ne presentant un rapport e/<SPLIT>h constant qu'<SPLIT>a une distance de la source egale environ a un quart de la longueur d'<SPLIT>onde<SPLIT>)<SPLIT>.}
 False positives: {
-l'onde
 e/
 } False negatives: {
-l'
-onde
 e
 /
 }
@@ -89,25 +86,18 @@ v
 Expected: {
 (<SPLIT>source : commentcamarche.net http://www.commentcamarche.net/elec/connecteur-prise-db25.php3<SPLIT>)}
 Predicted: {
-(<SPLIT>source : commentcamarche.net http://www.commentcamarche.net<SPLIT>/<SPLIT>elec/<SPLIT>connecteur-prise-db25.php3<SPLIT>)}
+(<SPLIT>source : commentcamarche<SPLIT>.net http://www.commentcamarche<SPLIT>.net<SPLIT>/elec<SPLIT>/<SPLIT>connecteur-prise-db25.php3<SPLIT>)}
 False positives: {
-http://www.commentcamarche.net
+commentcamarche
+.net
+http://www.commentcamarche
+.net
+/elec
 /
-elec/
 connecteur-prise-db25.php3
 } False negatives: {
+commentcamarche.net
 http://www.commentcamarche.net/elec/connecteur-prise-db25.php3
-}
-
-Expected: {
-elle apparait dans la campagne louis vuitton de la fin de la saison hiver 2010<SPLIT>/<SPLIT>11 avec natalia vodianova et christy turlington<SPLIT>, ainsi que dans la campagne de printemps 2011 de trussardi 1911<SPLIT>.}
-Predicted: {
-elle apparait dans la campagne louis vuitton de la fin de la saison hiver 2010/<SPLIT>11 avec natalia vodianova et christy turlington<SPLIT>, ainsi que dans la campagne de printemps 2011 de trussardi 1911<SPLIT>.}
-False positives: {
-2010/
-} False negatives: {
-2010
-/
 }
 
 Expected: {
@@ -190,16 +180,24 @@ ile-d'aix
 }
 
 Expected: {
+le terrain est tres bien situe pres de voies majeures de transport<SPLIT>, une gare de trains de banlieue de l'<SPLIT>amt (<SPLIT>bois-franc<SPLIT>) vers le centre-ville de montreal et du metro cote-vertu<SPLIT>.}
+Predicted: {
+le terrain est tres bien situe pres de voies majeures de transport<SPLIT>, une gare de trains de banlieue de l'<SPLIT>amt (<SPLIT>bois-franc<SPLIT>) vers le centre-ville de montreal et du metro cote<SPLIT>-vertu<SPLIT>.}
+False positives: {
+cote
+-vertu
+} False negatives: {
+cote-vertu
+}
+
+Expected: {
 mais voila : la pluie de dollars sur l'<SPLIT>egypte et israel n'<SPLIT>a pas empeche le pire d'<SPLIT>arriver :<SPLIT>'<SPLIT>une secousse d'<SPLIT>en bas<SPLIT>'<SPLIT>, dans la societe civile du peuple egyptien<SPLIT>, encouragee par l'<SPLIT>exemple tunisien !}
 Predicted: {
-mais voila : la pluie de dollars sur l'<SPLIT>egypte et israel n'<SPLIT>a pas empeche le pire d'<SPLIT>arriver :'<SPLIT>une secousse d'<SPLIT>en bas'<SPLIT>, dans la societe civile du peuple egyptien<SPLIT>, encouragee par l'<SPLIT>exemple tunisien !}
+mais voila : la pluie de dollars sur l'<SPLIT>egypte et israel n'<SPLIT>a pas empeche le pire d'<SPLIT>arriver :'<SPLIT>une secousse d'<SPLIT>en bas<SPLIT>'<SPLIT>, dans la societe civile du peuple egyptien<SPLIT>, encouragee par l'<SPLIT>exemple tunisien !}
 False positives: {
 :'
-bas'
 } False negatives: {
 :
-'
-bas
 '
 }
 
@@ -213,6 +211,17 @@ False positives: {
 6
 h
 30
+}
+
+Expected: {
+le dosage gravimetrique consiste a premierement solubiliser les ions ni2 +<SPLIT>.}
+Predicted: {
+le dosage gravimetrique consiste a premierement solubiliser les ions ni2 +.}
+False positives: {
++.
+} False negatives: {
++
+.
 }
 
 Expected: {
@@ -230,6 +239,17 @@ c
 }
 
 Expected: {
+a la fin des annees 50<SPLIT>, caycedo sort de l'<SPLIT>universite de madrid diplome en neuropsychiatrie docteur en medecine et chirurgie<SPLIT>, specialiste en neurologie et psychiatre exercant a l'<SPLIT>hopital clinique de barcelone et professeur agrege de psychiatrie de la faculte de medecine de barcelone.profondement marque par les methodes de traitement brutales (<SPLIT>electrochocs<SPLIT>, comas insuliniques<SPLIT>, etc.<SPLIT>) parfois employees sans en mesurer toutes les consequences<SPLIT>.}
+Predicted: {
+a la fin des annees 50<SPLIT>, caycedo sort de l'<SPLIT>universite de madrid diplome en neuropsychiatrie docteur en medecine et chirurgie<SPLIT>, specialiste en neurologie et psychiatre exercant a l'<SPLIT>hopital clinique de barcelone et professeur agrege de psychiatrie de la faculte de medecine de barcelone<SPLIT>.profondement marque par les methodes de traitement brutales (<SPLIT>electrochocs<SPLIT>, comas insuliniques<SPLIT>, etc.<SPLIT>) parfois employees sans en mesurer toutes les consequences<SPLIT>.}
+False positives: {
+barcelone
+.profondement
+} False negatives: {
+barcelone.profondement
+}
+
+Expected: {
 ses activites sont coordonnees par le secretariat international base a la haye (<SPLIT>pays-bas<SPLIT>) et dirige par la secretaire generale sneska quaedvlieg-mihailovic (<SPLIT>pays-bas/serbie<SPLIT>)<SPLIT>.}
 Predicted: {
 ses activites sont coordonnees par le secretariat international base a la haye (<SPLIT>pays-bas<SPLIT>) et dirige par la secretaire generale sneska quaedvlieg-mihailovic (<SPLIT>pays-bas<SPLIT>/<SPLIT>serbie<SPLIT>)<SPLIT>.}
@@ -244,12 +264,18 @@ pays-bas/serbie
 Expected: {
 quand il faut representer [<SPLIT>gj<SPLIT>] et [<SPLIT>nj<SPLIT>]<SPLIT>, on remplace le j par i<SPLIT>, afin d'<SPLIT>eviter l'<SPLIT>ambiguite : [<SPLIT>gja<SPLIT>] s'<SPLIT>ecrit donc gia<SPLIT>, gja notant deja [<SPLIT>ja<SPLIT>]<SPLIT>.}
 Predicted: {
-quand il faut representer [<SPLIT>gj<SPLIT>] et [<SPLIT>nj<SPLIT>]<SPLIT>, on remplace le j par i<SPLIT>, afin d'<SPLIT>eviter l'<SPLIT>ambiguite : [<SPLIT>gja<SPLIT>] s'<SPLIT>ecrit donc gia<SPLIT>, gja notant deja [<SPLIT>ja]<SPLIT>.}
+quand il faut representer [gj<SPLIT>] et [nj<SPLIT>]<SPLIT>, on remplace le j par i<SPLIT>, afin d'<SPLIT>eviter l'<SPLIT>ambiguite : [gja<SPLIT>] s'<SPLIT>ecrit donc gia<SPLIT>, gja notant deja [<SPLIT>ja<SPLIT>]<SPLIT>.}
 False positives: {
-ja]
+[gj
+[nj
+[gja
 } False negatives: {
-ja
-]
+[
+gj
+[
+nj
+[
+gja
 }
 
 Expected: {
@@ -301,78 +327,94 @@ e-business
 }
 
 Expected: {
-ces suicides<SPLIT>, suivis d'<SPLIT>autres cas chez psa peugeot<SPLIT>-<SPLIT>citroen en 2007<SPLIT>, avaient souleve au plan national la question de la souffrance au travail<SPLIT>.}
+ana dispose de l'<SPLIT>un des services les plus puissants du circuit<SPLIT>, qui peut souvent depasser les 180 km/h<SPLIT>.}
 Predicted: {
-ces suicides<SPLIT>, suivis d'<SPLIT>autres cas chez psa peugeot-citroen en 2007<SPLIT>, avaient souleve au plan national la question de la souffrance au travail<SPLIT>.}
+ana dispose de l'<SPLIT>un des services les plus puissants du circuit<SPLIT>, qui peut souvent depasser les 180 km<SPLIT>/h<SPLIT>.}
 False positives: {
-peugeot-citroen
+km
+/h
 } False negatives: {
-peugeot
--
-citroen
+km/h
 }
 
 Expected: {
-par exemple<SPLIT>, le 10 fevrier 1956 on relevait −21,4 °<SPLIT>c alors que la temperature minimum moyenne est de l'<SPLIT>ordre de −1 °<SPLIT>c<SPLIT>.}
+mais c'<SPLIT>est la montreal street railway co. (<SPLIT>ou montreal tramway co.<SPLIT>)<SPLIT>, la principale compagnie privee de transport de la ville<SPLIT>, qui recoit l'<SPLIT>assentiment du gouvernement provincial<SPLIT>.}
 Predicted: {
-par exemple<SPLIT>, le 10 fevrier 1956 on relevait −21,4 °c alors que la temperature minimum moyenne est de l'<SPLIT>ordre de −1 °c<SPLIT>.}
+mais c'<SPLIT>est la montreal street railway co<SPLIT>. (<SPLIT>ou montreal tramway co.<SPLIT>)<SPLIT>, la principale compagnie privee de transport de la ville<SPLIT>, qui recoit l'<SPLIT>assentiment du gouvernement provincial<SPLIT>.}
 False positives: {
-°c
-°c
+co
+.
 } False negatives: {
-°
-c
-°
-c
+co.
 }
 
 Expected: {
-traduite en presque trente langues<SPLIT>, la saga d'<SPLIT>angelique<SPLIT>, parue en librairie et en feuilleton dans la presse<SPLIT>, aborde des 1956 des themes alors tabous comme les sorcieres guerisseuses<SPLIT>, l'<SPLIT>amour physique<SPLIT>, l'<SPLIT>ostracisme de l'<SPLIT>eglise<SPLIT>, la persecution des protestants<SPLIT>, le viol<SPLIT>, l'<SPLIT>esclavage des chretiens<SPLIT>, la foi des amerindien etc.<SPLIT>..}
+le chrono le plus rapide des qualifications a ete etabli par kenny brack avec une serie de 4 tours a la moyenne de 227,598 mph (<SPLIT>366,283 km/h<SPLIT>) lors du deuxieme week-end de qualifications<SPLIT>.}
 Predicted: {
-traduite en presque trente langues<SPLIT>, la saga d'<SPLIT>angelique<SPLIT>, parue en librairie et en feuilleton dans la presse<SPLIT>, aborde des 1956 des themes alors tabous comme les sorcieres guerisseuses<SPLIT>, l'<SPLIT>amour physique<SPLIT>, l'<SPLIT>ostracisme de l'<SPLIT>eglise<SPLIT>, la persecution des protestants<SPLIT>, le viol<SPLIT>, l'<SPLIT>esclavage des chretiens<SPLIT>, la foi des amerindien etc<SPLIT>...}
+le chrono le plus rapide des qualifications a ete etabli par kenny brack avec une serie de 4 tours a la moyenne de 227,598 mph (<SPLIT>366,283 km<SPLIT>/h<SPLIT>) lors du deuxieme week-end de qualifications<SPLIT>.}
 False positives: {
-etc
-...
+km
+/h
 } False negatives: {
-etc.
-..
+km/h
 }
 
 Expected: {
-l'<SPLIT>axe paris<SPLIT>-<SPLIT>tel-aviv<SPLIT>-<SPLIT>cnt fonctionnait alors a plein regime<SPLIT>.}
+ces dispositions<SPLIT>-ci ne sont pas affectees par le choix du regime matrimonial (<SPLIT>art. 226<SPLIT>)<SPLIT>.}
 Predicted: {
-l'<SPLIT>axe paris-tel-aviv-cnt fonctionnait alors a plein regime<SPLIT>.}
+ces dispositions-ci ne sont pas affectees par le choix du regime matrimonial (<SPLIT>art<SPLIT>. 226<SPLIT>)<SPLIT>.}
 False positives: {
-paris-tel-aviv-cnt
+dispositions-ci
+art
+.
 } False negatives: {
-paris
--
-tel-aviv
--
-cnt
+dispositions
+-ci
+art.
 }
 
 Expected: {
-le second single<SPLIT>, let's work<SPLIT>, s'<SPLIT>est positionne a la 9e place au hot r&b/hip-hop songs en 1982<SPLIT>.}
+l'<SPLIT>homme de ma vie<SPLIT>, c'<SPLIT>est moi qui l'<SPLIT>appelle ainsi<SPLIT>, me portait sur ses epaules pour que sa petite louve crie encore plus fort que tous les loups<SPLIT>... je hurlais " liberte pourquoi m'<SPLIT>as<SPLIT>-tu abandonnee ?}
 Predicted: {
-le second single<SPLIT>, let's work<SPLIT>, s'<SPLIT>est positionne a la 9e place au hot r&b<SPLIT>/<SPLIT>hip-hop songs en 1982<SPLIT>.}
+l'<SPLIT>homme de ma vie<SPLIT>, c'<SPLIT>est moi qui l'<SPLIT>appelle ainsi<SPLIT>, me portait sur ses epaules pour que sa petite louve crie encore plus fort que tous les loups<SPLIT>... je hurlais " liberte pourquoi m'<SPLIT>as-tu abandonnee ?}
 False positives: {
-r&b
-/
-hip-hop
+as-tu
 } False negatives: {
-r&b/hip-hop
+as
+-tu
 }
 
 Expected: {
-ce pays<SPLIT>, qui n'<SPLIT>a pas de matiere premiere<SPLIT>, vit de l'<SPLIT>argent d'<SPLIT>autrui [<SPLIT>...<SPLIT>]<SPLIT>.}
+ses premiers films en seront marques<SPLIT>, empruntant le chemin de l'<SPLIT>agitation politique<SPLIT>, voire de la propagande (<SPLIT>agit-prop<SPLIT>)<SPLIT>.}
 Predicted: {
-ce pays<SPLIT>, qui n'<SPLIT>a pas de matiere premiere<SPLIT>, vit de l'<SPLIT>argent d'<SPLIT>autrui [<SPLIT>...]<SPLIT>.}
+ses premiers films en seront marques<SPLIT>, empruntant le chemin de l'<SPLIT>agitation politique<SPLIT>, voire de la propagande (<SPLIT>agit<SPLIT>-prop<SPLIT>)<SPLIT>.}
 False positives: {
-...]
+agit
+-prop
 } False negatives: {
-...
-]
+agit-prop
+}
+
+Expected: {
+leur vitesse est plutot moderee<SPLIT>, de 1,5 a 4,5 m/s<SPLIT>, minimale en octobre et maximale durant les mois de mars et d'<SPLIT>avril<SPLIT>.}
+Predicted: {
+leur vitesse est plutot moderee<SPLIT>, de 1,5 a 4,5 m/<SPLIT>s<SPLIT>, minimale en octobre et maximale durant les mois de mars et d'<SPLIT>avril<SPLIT>.}
+False positives: {
+m/
+s
+} False negatives: {
+m/s
+}
+
+Expected: {
+paul luce prit donc possession de la propriete industrielle de l'<SPLIT>entreprise<SPLIT>, qu'<SPLIT>il transfera a boulder<SPLIT>, colorado<SPLIT>, en 1973 sous la designation interceptor co.}
+Predicted: {
+paul luce prit donc possession de la propriete industrielle de l'<SPLIT>entreprise<SPLIT>, qu'<SPLIT>il transfera a boulder<SPLIT>, colorado<SPLIT>, en 1973 sous la designation interceptor co<SPLIT>.}
+False positives: {
+co
+.
+} False negatives: {
+co.
 }
 
 Expected: {
@@ -457,28 +499,6 @@ of
 }
 
 Expected: {
-aizenay est situe a 16 km au nord-ouest de la roche-sur-yon<SPLIT>, de saint-gilles-croix-de-vie et de challans et des sables-d'olonne (<SPLIT>sur la cote vendeenne<SPLIT>)}
-Predicted: {
-aizenay est situe a 16 km au nord-ouest de la roche-sur-yon<SPLIT>, de saint-gilles-croix-de-vie et de challans et des sables-d'<SPLIT>olonne (<SPLIT>sur la cote vendeenne<SPLIT>)}
-False positives: {
-sables-d'
-olonne
-} False negatives: {
-sables-d'olonne
-}
-
-Expected: {
-pour 30<SPLIT>/<SPLIT>40 € vous pourrez imprimer votre poster en a0 en mat ou brillant a condition qu'<SPLIT>ils aient le papier en stock !}
-Predicted: {
-pour 30<SPLIT>/40 € vous pourrez imprimer votre poster en a0 en mat ou brillant a condition qu'<SPLIT>ils aient le papier en stock !}
-False positives: {
-/40
-} False negatives: {
-/
-40
-}
-
-Expected: {
 il y a aussi un monument a la memoire de martin luther king jr<SPLIT>.}
 Predicted: {
 il y a aussi un monument a la memoire de martin luther king jr.}
@@ -527,14 +547,14 @@ de
 Expected: {
 l'<SPLIT>ordre du jour appelle le rapport (<SPLIT>a5-0104<SPLIT>/<SPLIT>1999<SPLIT>) de m. koch<SPLIT>, au nom de la commission de la politique regionale<SPLIT>, des transports et du tourisme<SPLIT>, sur la proposition de directive du parlement europeen et du conseil modifiant la directive 94<SPLIT>/<SPLIT>55<SPLIT>/<SPLIT>ce relative au rapprochement des legislations des etats membres concernant le transport de marchandises dangereuses par route (<SPLIT>com (<SPLIT>1999<SPLIT>) 158<SPLIT>-<SPLIT>c5-0004<SPLIT>/<SPLIT>1999<SPLIT>-<SPLIT>1999<SPLIT>/<SPLIT>0083 (<SPLIT>cod<SPLIT>)<SPLIT>)<SPLIT>.}
 Predicted: {
-l'<SPLIT>ordre du jour appelle le rapport (<SPLIT>a5-0104/1999<SPLIT>) de m. koch<SPLIT>, au nom de la commission de la politique regionale<SPLIT>, des transports et du tourisme<SPLIT>, sur la proposition de directive du parlement europeen et du conseil modifiant la directive 94<SPLIT>/<SPLIT>55<SPLIT>/<SPLIT>ce relative au rapprochement des legislations des etats membres concernant le transport de marchandises dangereuses par route (<SPLIT>com (<SPLIT>1999<SPLIT>) 158-c5-0004/1999-1999/0083 (<SPLIT>cod<SPLIT>)<SPLIT>)<SPLIT>.}
+l'<SPLIT>ordre du jour appelle le rapport (<SPLIT>a5-0104/<SPLIT>1999<SPLIT>) de m. koch<SPLIT>, au nom de la commission de la politique regionale<SPLIT>, des transports et du tourisme<SPLIT>, sur la proposition de directive du parlement europeen et du conseil modifiant la directive 94<SPLIT>/<SPLIT>55<SPLIT>/<SPLIT>ce relative au rapprochement des legislations des etats membres concernant le transport de marchandises dangereuses par route (<SPLIT>com (<SPLIT>1999<SPLIT>) 158-c5-0004/<SPLIT>1999-1999/0083 (<SPLIT>cod<SPLIT>)<SPLIT>)<SPLIT>.}
 False positives: {
-a5-0104/1999
-158-c5-0004/1999-1999/0083
+a5-0104/
+158-c5-0004/
+1999-1999/0083
 } False negatives: {
 a5-0104
 /
-1999
 158
 -
 c5-0004
@@ -547,86 +567,153 @@ c5-0004
 }
 
 Expected: {
-et du coup j'<SPLIT>ai pense de ne pas passer par euh cette rue-la<SPLIT>, mais plutot faire un bout de detour<SPLIT>, parce que il y a une autre rue plus grande vers chez moi<SPLIT>.}
+[avenante<SPLIT>, euh<SPLIT>.]}
 Predicted: {
-et du coup j'<SPLIT>ai pense de ne pas passer par euh cette rue<SPLIT>-la<SPLIT>, mais plutot faire un bout de detour<SPLIT>, parce que il y a une autre rue plus grande vers chez moi<SPLIT>.}
+[<SPLIT>avenante<SPLIT>, euh<SPLIT>.]}
 False positives: {
-rue
--la
+[
+avenante
 } False negatives: {
-rue-la
+[avenante
 }
 
 Expected: {
-et les pieds<SPLIT>, crois<SPLIT>-tu<SPLIT>, crois<SPLIT>-tu que c'<SPLIT>est<SPLIT>... ?}
+et du coup<SPLIT>, en premiere annee de licence<SPLIT>, il y avait pas mal de<SPLIT>, de travail<SPLIT>, pas mal de cours<SPLIT>, surtout que je venais d'<SPLIT>un bac s<SPLIT>.}
 Predicted: {
-et les pieds<SPLIT>, crois-tu<SPLIT>, crois-tu que c'<SPLIT>est<SPLIT>... ?}
+et du coup<SPLIT>, en premiere annee de licence<SPLIT>, il y avait pas mal de<SPLIT>, de travail<SPLIT>, pas mal de cours<SPLIT>, surtout que je venais d'<SPLIT>un bac s.}
 False positives: {
-crois-tu
-crois-tu
+s.
 } False negatives: {
-crois
--tu
-crois
--tu
+s
+.
 }
 
 Expected: {
-le programme<SPLIT>, monsieur le premier ministre<SPLIT>, comporte un certain nombre de projets<SPLIT>, d'autant plus interessants a nos yeux que nous les proposons depuis longtemps<SPLIT>: relevement du smic<SPLIT>, amnistie pour les commercants et les artisans<SPLIT>, aide aux chomeurs partiels<SPLIT>, egalisation des salaires feminins et masculins<SPLIT>, participation accrue des cadres aux conseils d'<SPLIT>administration des societes<SPLIT>, reforme du droit de licenciement<SPLIT>, nomination d'<SPLIT>un mediateur entre l'<SPLIT>administration et le public<SPLIT>, controle des depenses electorales<SPLIT>, toutes mesures qui dormaient dans vos cartons<SPLIT>, que vos predecesseurs avaient energiquement refusees<SPLIT>, et que l'on retrouve dans le programme commun de la gauche<SPLIT>.}
+en mille neuf cent cinquante<SPLIT>, quand vous avez fait paraitre ce<SPLIT>, ce chef<SPLIT>-d'<SPLIT>oeuvre<SPLIT>, pour moi<SPLIT>, c'<SPLIT>est un chef<SPLIT>-d'<SPLIT>oeuvre<SPLIT>, qui s'<SPLIT>appelle un barrage contre le pacifique<SPLIT>, vous l'<SPLIT>avez rate de peu<SPLIT>.}
 Predicted: {
-le programme<SPLIT>, monsieur le premier ministre<SPLIT>, comporte un certain nombre de projets<SPLIT>, d'<SPLIT>autant plus interessants a nos yeux que nous les proposons depuis longtemps<SPLIT>: relevement du smic<SPLIT>, amnistie pour les commercants et les artisans<SPLIT>, aide aux chomeurs partiels<SPLIT>, egalisation des salaires feminins et masculins<SPLIT>, participation accrue des cadres aux conseils d'<SPLIT>administration des societes<SPLIT>, reforme du droit de licenciement<SPLIT>, nomination d'<SPLIT>un mediateur entre l'<SPLIT>administration et le public<SPLIT>, controle des depenses electorales<SPLIT>, toutes mesures qui dormaient dans vos cartons<SPLIT>, que vos predecesseurs avaient energiquement refusees<SPLIT>, et que l'on retrouve dans le programme commun de la gauche<SPLIT>.}
+en mille neuf cent cinquante<SPLIT>, quand vous avez fait paraitre ce<SPLIT>, ce chef-d'oeuvre<SPLIT>, pour moi<SPLIT>, c'<SPLIT>est un chef-d'oeuvre<SPLIT>, qui s'<SPLIT>appelle un barrage contre le pacifique<SPLIT>, vous l'<SPLIT>avez rate de peu<SPLIT>.}
+False positives: {
+chef-d'oeuvre
+chef-d'oeuvre
+} False negatives: {
+chef
+-d'
+oeuvre
+chef
+-d'
+oeuvre
+}
+
+Expected: {
+alors que nous sommes a trois minutes de la mi-temps<SPLIT>.}
+Predicted: {
+alors que nous sommes a trois minutes de la mi<SPLIT>-temps<SPLIT>.}
+False positives: {
+mi
+-temps
+} False negatives: {
+mi-temps
+}
+
+Expected: {
+et puis apres<SPLIT>, j'<SPLIT>etais au lycee arago<SPLIT>, donc<SPLIT>, voyez<SPLIT>, qui est<SPLIT>, hein<SPLIT>, qui avait une annexe d'ailleurs<SPLIT>, euh<SPLIT>, une annexe qui est a reuilly-diderot<SPLIT>.}
+Predicted: {
+et puis apres<SPLIT>, j'<SPLIT>etais au lycee arago<SPLIT>, donc<SPLIT>, voyez<SPLIT>, qui est<SPLIT>, hein<SPLIT>, qui avait une annexe d'<SPLIT>ailleurs<SPLIT>, euh<SPLIT>, une annexe qui est a reuilly-diderot<SPLIT>.}
 False positives: {
 d'
-autant
+ailleurs
 } False negatives: {
-d'autant
+d'ailleurs
 }
 
 Expected: {
-le vehicule a ete enleve un peu apres 20<SPLIT>h<SPLIT>.}
+ou j'<SPLIT>en ai au sens de philosophes qui peuvent intervenir y compris sur ce champ<SPLIT>-la<SPLIT>, quoi<SPLIT>.}
 Predicted: {
-le vehicule a ete enleve un peu apres 20h<SPLIT>.}
+ou j'<SPLIT>en ai au sens de philosophes qui peuvent intervenir y compris sur ce champ-la<SPLIT>, quoi<SPLIT>.}
 False positives: {
-20h
+champ-la
 } False negatives: {
-20
-h
+champ
+-la
 }
 
 Expected: {
-a 12 mois<SPLIT>, les taux de<SPLIT>-ctx ont ete reduits significativement de 61<SPLIT>% par rapport aux valeurs initiales et a 36 mois cette reduction s'<SPLIT>est maintenue a 55<SPLIT>% en-dessous des valeurs initiales<SPLIT>.}
+mais comme precisement son oeuvre meme se definit comme une destruction du semblant litteraire<SPLIT>, de la pose litteraire<SPLIT>, euh<SPLIT>, par la<SPLIT>-meme<SPLIT>, euh<SPLIT>, il<SPLIT>, il contribue<SPLIT>, il a contribue puissamment a la destruction du mythe litteraire<SPLIT>.}
 Predicted: {
-a 12 mois<SPLIT>, les taux de-ctx ont ete reduits significativement de 61<SPLIT>% par rapport aux valeurs initiales et a 36 mois cette reduction s'<SPLIT>est maintenue a 55<SPLIT>% en-dessous des valeurs initiales<SPLIT>.}
+mais comme precisement son oeuvre meme se definit comme une destruction du semblant litteraire<SPLIT>, de la pose litteraire<SPLIT>, euh<SPLIT>, par la-meme<SPLIT>, euh<SPLIT>, il<SPLIT>, il contribue<SPLIT>, il a contribue puissamment a la destruction du mythe litteraire<SPLIT>.}
 False positives: {
-de-ctx
+la-meme
 } False negatives: {
-de
--ctx
+la
+-meme
 }
 
 Expected: {
-de plus<SPLIT>, je suis tres satisfait de la reponse de m. lamy -<SPLIT>il ne pouvait en etre autrement etant donne que m. lamy connait bien ces sujets<SPLIT>- de decentraliser la campagne d'<SPLIT>information<SPLIT>.}
+la temperature affichant -6<SPLIT>°c<SPLIT>, il emmenait les gamins se rechauffer dans les camions des pompiers<SPLIT>.}
 Predicted: {
-de plus<SPLIT>, je suis tres satisfait de la reponse de m. lamy -il ne pouvait en etre autrement etant donne que m. lamy connait bien ces sujets<SPLIT>- de decentraliser la campagne d'<SPLIT>information<SPLIT>.}
+la temperature affichant -6<SPLIT>°<SPLIT>c<SPLIT>, il emmenait les gamins se rechauffer dans les camions des pompiers<SPLIT>.}
 False positives: {
--il
+°
+c
 } False negatives: {
+°c
+}
+
+Expected: {
+- audition de m. joel bucher<SPLIT>, ancien directeur general adjoint de la societe generale a taiwan<SPLIT>, par la mission parlementaire sur les obstacles au controle et a la repression de la delinquance financiere et du blanchiment des capitaux en europe<SPLIT>, le 22 mars 2001 (<SPLIT>volume 5<SPLIT>- le grand duche du luxembourg<SPLIT>)<SPLIT>.}
+Predicted: {
+- audition de m. joel bucher<SPLIT>, ancien directeur general adjoint de la societe generale a taiwan<SPLIT>, par la mission parlementaire sur les obstacles au controle et a la repression de la delinquance financiere et du blanchiment des capitaux en europe<SPLIT>, le 22 mars 2001 (<SPLIT>volume 5- le grand duche du luxembourg<SPLIT>)<SPLIT>.}
+False positives: {
+5-
+} False negatives: {
+5
 -
-il
 }
 
 Expected: {
-- hlm de paris : les seuls patrons du batiment a la barre -<SPLIT>liberation<SPLIT>- 23/12/2006}
+si les reformes envisagees par le gouvernement pour les europeennes et les regionales sont adoptees telles qu'<SPLIT>envisagees<SPLIT>, la parite hommes<SPLIT>-<SPLIT>femmes en politique risque de regresser<SPLIT>.}
 Predicted: {
-- hlm de paris : les seuls patrons du batiment a la barre -liberation<SPLIT>- 23/<SPLIT>12<SPLIT>/<SPLIT>2006}
+si les reformes envisagees par le gouvernement pour les europeennes et les regionales sont adoptees telles qu'<SPLIT>envisagees<SPLIT>, la parite hommes-femmes en politique risque de regresser<SPLIT>.}
 False positives: {
--liberation
-23/
-12
-/
-2006
+hommes-femmes
 } False negatives: {
+hommes
 -
-liberation
-23/12/2006
+femmes
+}
+
+Expected: {
+eu / 1/04/289/001}
+Predicted: {
+eu / 1/04<SPLIT>/289/001}
+False positives: {
+1/04
+/289/001
+} False negatives: {
+1/04/289/001
+}
+
+Expected: {
+il s'<SPLIT>agit d'<SPLIT>un tournant dans l'<SPLIT>instruction<SPLIT>, qui s'<SPLIT>etait jusque-la cantonnee aux investigations sur les entreprises prestataires de services<SPLIT>.}
+Predicted: {
+il s'<SPLIT>agit d'<SPLIT>un tournant dans l'<SPLIT>instruction<SPLIT>, qui s'<SPLIT>etait jusque<SPLIT>-la cantonnee aux investigations sur les entreprises prestataires de services<SPLIT>.}
+False positives: {
+jusque
+-la
+} False negatives: {
+jusque-la
+}
+
+Expected: {
+- thanh h. vuong<SPLIT>, theorie des contextes et relations internationales : depart de la premiere guerre d'<SPLIT>indochine<SPLIT>, dans etudes internationales<SPLIT>, vol. xvii<SPLIT>, no. 3<SPLIT>, pp. 571-597<SPLIT>, septembre 1986}
+Predicted: {
+- thanh h. vuong<SPLIT>, theorie des contextes et relations internationales : depart de la premiere guerre d'<SPLIT>indochine<SPLIT>, dans etudes internationales<SPLIT>, vol<SPLIT>. xvii<SPLIT>, no<SPLIT>. 3<SPLIT>, pp. 571-597<SPLIT>, septembre 1986}
+False positives: {
+vol
+.
+no
+.
+} False negatives: {
+vol.
+no.
 }

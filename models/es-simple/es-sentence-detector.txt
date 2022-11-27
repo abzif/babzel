@@ -1,17 +1,17 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9659074423328015
+Evaluation-Score=0.9657375145180024
 Training-Sample-Size=3121
 Evaluation-Sample-Size=346
-Training-Algorithm=PERCEPTRON
+Training-Algorithm=MAXENT_QN
 
 === MODEL PROPERTIES ===
 Component-Name=SentenceDetectorME
 Language=es
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1666064995400
+Timestamp=1668928736793
 TrainerType=Event
-Training-Eventhash=4a6c6e444318b0f8071eb8b2c31db78e
+Training-Eventhash=f61c1c1d2594d474c72f23f88577d72d
 eosCharacters=.!?
 factory=opennlp.tools.sentdetect.SentenceDetectorFactory
 useTokenEnd=true
@@ -38,15 +38,13 @@ arteaga cree que el descanso copero va a ir muy bien para el equipo, "pues va a 
 más gráfico que sus compañeros fue el defensa toni soldevilla, quien ya sueña con una final entre los dos equipos de la ciudad condal.
 "sería bonito jugar la final contra el barcelona.
 ¿un derbi y además en la final de la copa del rey?
-¡sería de puta madre!
-", exclamó el defensa canterano.
+¡sería de puta madre! ", exclamó el defensa canterano.
 menos tajantes que el resto fueron los delanteros raúl tamudo y martín posse, quienes consideran que la importancia del rival es relativa.
 a tamudo le gustaría enfrentarse al mérida si elimina al real madrid esta noche y prefiere al barcelona o al real madrid en la final.
 }
 False positives: {
 ¿un derbi y además en la final de la copa del rey?
-¡sería de puta madre!
-", exclamó el defensa canterano.
+¡sería de puta madre! ", exclamó el defensa canterano.
 } False negatives: {
 ¿un derbi y además en la final de la copa del rey? ¡sería de puta madre! ", exclamó el defensa canterano.
 }
@@ -135,8 +133,7 @@ e incluso a los inquisidores, para que disfruten sufriendo.
 ¿por valenciano?.
 ¡con el gobierno que tenemos!.
 bueno, hay una alcaldesa lesbiana, pero es más dura que una monja de léfèbvre... - - ¡hombre!
-¡así no conseguirá una sola subvención!
-- -.
+¡así no conseguirá una sola subvención! - -.
 yo me conformaría con que la generalitat comprara el cuento, como cualquier otro libro, para que fuera a las bibliotecas públicas.
 - - usted es profesor universitario.
 ¿se puede saber qué enseña?.
@@ -145,8 +142,7 @@ False positives: {
 - - ¿es iconoclasta por valenciano?
 - -.
 bueno, hay una alcaldesa lesbiana, pero es más dura que una monja de léfèbvre... - - ¡hombre!
-¡así no conseguirá una sola subvención!
-- -.
+¡así no conseguirá una sola subvención! - -.
 } False negatives: {
 - - ¿es iconoclasta por valenciano? - -.
 bueno, hay una alcaldesa lesbiana, pero es más dura que una monja de léfèbvre...
@@ -196,7 +192,8 @@ algo que poco tiene que ver con la literatura trascendente de estos pagos.
 a veces me viene a las mientes la historia de "le roi bambance", de marinetti; monarca que no pasa de ser un tipejo cómico, trágico y burlesco, según nos lo han caracterizado.
 }
 Predicted: {
-el narrador hace que las situaciones no sean otra cosa que ridículas consideraciones o trivialidades convertidas en ideas trascendentes... sin trascendencia porque estamos ante el espejo que la vida es: vulgar, ridículo, grotesco, inhumano.
+el narrador hace que las situaciones no sean otra cosa que ridículas consideraciones o trivialidades convertidas en ideas trascendentes...
+sin trascendencia porque estamos ante el espejo que la vida es: vulgar, ridículo, grotesco, inhumano.
 cualquier apariencia se vacía de decoro y nos queda un monarca degradado a gañán o una reina sin más consideraciones que la pobre ama de casa incapaz de otra cosa que tejer con las agujas de hacer calceta o de escribir al emperador una carta de marmota.
 medardo fraile no entra en el juego, se sitúa fuera del escenario y contempla.
 sus criaturas representan unos papeles que les vienen grandes; cualquier monarca ha cobrado impuestos, pero aquí se pagan con quesos; la guerra no es hermosa, como cantaron los poetas, sino triste y sórdida, carece de grandeza, pues aquí está dentro de una vulgaridad doméstica; los soldados nunca han sido paradigmas de espiritualidad, pero aquí están levantando pesas en camiseta o haciendo ejercicios respiratorios; el heroísmo se ha vaciado de grandeza ("druso ordenó a la tropa que plantara en la cima una bandera.
@@ -209,40 +206,75 @@ algo que poco tiene que ver con la literatura trascendente de estos pagos.
 a veces me viene a las mientes la historia de "le roi bambance", de marinetti; monarca que no pasa de ser un tipejo cómico, trágico y burlesco, según nos lo han caracterizado.
 }
 False positives: {
+el narrador hace que las situaciones no sean otra cosa que ridículas consideraciones o trivialidades convertidas en ideas trascendentes...
+sin trascendencia porque estamos ante el espejo que la vida es: vulgar, ridículo, grotesco, inhumano.
 sus criaturas representan unos papeles que les vienen grandes; cualquier monarca ha cobrado impuestos, pero aquí se pagan con quesos; la guerra no es hermosa, como cantaron los poetas, sino triste y sórdida, carece de grandeza, pues aquí está dentro de una vulgaridad doméstica; los soldados nunca han sido paradigmas de espiritualidad, pero aquí están levantando pesas en camiseta o haciendo ejercicios respiratorios; el heroísmo se ha vaciado de grandeza ("druso ordenó a la tropa que plantara en la cima una bandera.
 la operación costó la vida a uno de los soldados, que aplastó una liebre al caer").
 } False negatives: {
+el narrador hace que las situaciones no sean otra cosa que ridículas consideraciones o trivialidades convertidas en ideas trascendentes... sin trascendencia porque estamos ante el espejo que la vida es: vulgar, ridículo, grotesco, inhumano.
 sus criaturas representan unos papeles que les vienen grandes; cualquier monarca ha cobrado impuestos, pero aquí se pagan con quesos; la guerra no es hermosa, como cantaron los poetas, sino triste y sórdida, carece de grandeza, pues aquí está dentro de una vulgaridad doméstica; los soldados nunca han sido paradigmas de espiritualidad, pero aquí están levantando pesas en camiseta o haciendo ejercicios respiratorios; el heroísmo se ha vaciado de grandeza ("druso ordenó a la tropa que plantara en la cima una bandera. la operación costó la vida a uno de los soldados, que aplastó una liebre al caer").
 }
 
 Expected: {
-la etapa tuvo cincuenta metros de más o melchor mauri escapó cincuenta metros antes de tiempo.
-el triunfo español va siendo una cuestión de honor nacional.
-su persecución es uno de esos atractivos marginales que aún le quedan a la vuelta y que mantienen un interés más cercano a la curiosidad que a la emoción.
-los demás ya son conocidos: la composición del resto del podio, la probabilidad de que tony rominger se apunte también la montaña y la regularidad...
-una vez que laurent jalabert, ratificando su superioridad sobre los demás sprinters, ha obtenido su quinta victoria parcial, un nuevo atractivo se une a los viejos: saber quién ganará más etapas, si él o rominger.
-habrá que apostar un franco (suizo, no francés) por el líder del mapei-clas, puesto que las ocasiones del velocista de la once se van agotando.
-cinco triunfos y el posible sexto en madrid, en el último acto de la vuelta, parecen pocos, insuficientes, ante los cuatro de rominger y todas las etapas montañosas que restan, además de la contrarreloj.
-mientras tanto, a varios miles de kilómetros al norte, allí donde casi nadie mira ahora, miguel indurain sigue perdiendo terreno en la vuelta a romandía.
-rominger nunca había estado tan bien a estas alturas de la temporada.
-indurain, tan mal.
+para el comentarista de antena 3 tv es un drama lo que para mí sería un suspiro de alivio, si de verdad lo creyera: que los eeuu no quieren dirigir el mundo.
+la teoría de carrascal me parece peligrosa desde el principio: todo nuevo orden, según él, implica la existencia de un - ordenador -.
+y no.
+lo que ocurre es que todos los - nuevos órdenes - que en el mundo han sido se han impuesto por la fuerza de una sola voluntad y han terminado siempre como el rosario de la aurora.
+no me hace ninguna ilusión que los eeuu asuman el papel al que nunca han renunciado de - sheriff - del planeta; el problema es que se trata, como en algunas películas, de un - sheriff - corrupto que sólo se preocupa de poner orden en los pleitos que afectan a sus intereses.
+este año recién concluido no ha sido ni el año del gato, ni el año del conejo, ni... el año del buitre.
+emilio butragueño perdió la titularidad en el real madrid y en el equipo nacional.
+toda una doble conmoción.
+mientras sus compañeros de - quinta -, también inservibles para la causa de clemente, resistían sin mayores agobios en su club, él empezaba a ser una estrella intermitente.
+una estrella que ayer recobró en parte un brillo semiolvidado.
 }
 Predicted: {
-la etapa tuvo cincuenta metros de más o melchor mauri escapó cincuenta metros antes de tiempo.
-el triunfo español va siendo una cuestión de honor nacional.
-su persecución es uno de esos atractivos marginales que aún le quedan a la vuelta y que mantienen un interés más cercano a la curiosidad que a la emoción.
-los demás ya son conocidos: la composición del resto del podio, la probabilidad de que tony rominger se apunte también la montaña y la regularidad... una vez que laurent jalabert, ratificando su superioridad sobre los demás sprinters, ha obtenido su quinta victoria parcial, un nuevo atractivo se une a los viejos: saber quién ganará más etapas, si él o rominger.
-habrá que apostar un franco (suizo, no francés) por el líder del mapei-clas, puesto que las ocasiones del velocista de la once se van agotando.
-cinco triunfos y el posible sexto en madrid, en el último acto de la vuelta, parecen pocos, insuficientes, ante los cuatro de rominger y todas las etapas montañosas que restan, además de la contrarreloj.
-mientras tanto, a varios miles de kilómetros al norte, allí donde casi nadie mira ahora, miguel indurain sigue perdiendo terreno en la vuelta a romandía.
-rominger nunca había estado tan bien a estas alturas de la temporada.
-indurain, tan mal.
+para el comentarista de antena 3 tv es un drama lo que para mí sería un suspiro de alivio, si de verdad lo creyera: que los eeuu no quieren dirigir el mundo.
+la teoría de carrascal me parece peligrosa desde el principio: todo nuevo orden, según él, implica la existencia de un - ordenador -.
+y no.
+lo que ocurre es que todos los - nuevos órdenes - que en el mundo han sido se han impuesto por la fuerza de una sola voluntad y han terminado siempre como el rosario de la aurora.
+no me hace ninguna ilusión que los eeuu asuman el papel al que nunca han renunciado de - sheriff - del planeta; el problema es que se trata, como en algunas películas, de un - sheriff - corrupto que sólo se preocupa de poner orden en los pleitos que afectan a sus intereses.
+este año recién concluido no ha sido ni el año del gato, ni el año del conejo, ni...
+el año del buitre.
+emilio butragueño perdió la titularidad en el real madrid y en el equipo nacional.
+toda una doble conmoción.
+mientras sus compañeros de - quinta -, también inservibles para la causa de clemente, resistían sin mayores agobios en su club, él empezaba a ser una estrella intermitente.
+una estrella que ayer recobró en parte un brillo semiolvidado.
 }
 False positives: {
-los demás ya son conocidos: la composición del resto del podio, la probabilidad de que tony rominger se apunte también la montaña y la regularidad... una vez que laurent jalabert, ratificando su superioridad sobre los demás sprinters, ha obtenido su quinta victoria parcial, un nuevo atractivo se une a los viejos: saber quién ganará más etapas, si él o rominger.
+este año recién concluido no ha sido ni el año del gato, ni el año del conejo, ni...
+el año del buitre.
 } False negatives: {
-los demás ya son conocidos: la composición del resto del podio, la probabilidad de que tony rominger se apunte también la montaña y la regularidad...
-una vez que laurent jalabert, ratificando su superioridad sobre los demás sprinters, ha obtenido su quinta victoria parcial, un nuevo atractivo se une a los viejos: saber quién ganará más etapas, si él o rominger.
+este año recién concluido no ha sido ni el año del gato, ni el año del conejo, ni... el año del buitre.
+}
+
+Expected: {
+cubino pudo tirar.
+ese hubiera sido el fin de las ilusiones de victoria para camargo.
+cuando, desde la madrugada de ayer las radios divulgaron la noticia del secuestro del padre de romario, para miles de catalanes y no catalanes pero "culés", crisis políticas, encarcelamientos de altas personalidades y otras zarandajas, pasaron a un lugar muy secundario.
+los teléfonos comenzaron a sonar y voces lacrimosas recordaron el "caso quini" o se desgarraron vestiduras dándolo todo por perdido.
+la gran cuestión era: se tendrá romario que ir a río?
+¿no va a estar el misterioso, enigmático, extraño y genial delantero en el bernabéu y en atenas?
+cuando se tuvo la certeza del secuestro y se anunció una rueda de prensa de joan gaspar y de bakero, felipe gonzález retrasó en una hora su comparecencia ante la prensa, a sabiendas de que si hablaba al mismo tiempo que el vicepresidente del barça y el jugador, la cataluña de pujol no le haría el menor caso.
+y romario, tan sorprendente en la vida como en el área adversaria (la vida es un rea adversaria), hizo saber que se quedaba, entrenaba, se concentraba y quería ganar al madrid.
+a su lado, el apoyo de un amigo, compadre, compañero leal y alter ego: stoichkov.
+en ese día aciago, hristo no dejó de estar al lado de romario, de defenderle ante el acoso un tanto desconsiderado de algún fotógrafo.
+}
+Predicted: {
+cubino pudo tirar.
+ese hubiera sido el fin de las ilusiones de victoria para camargo.
+cuando, desde la madrugada de ayer las radios divulgaron la noticia del secuestro del padre de romario, para miles de catalanes y no catalanes pero "culés", crisis políticas, encarcelamientos de altas personalidades y otras zarandajas, pasaron a un lugar muy secundario.
+los teléfonos comenzaron a sonar y voces lacrimosas recordaron el "caso quini" o se desgarraron vestiduras dándolo todo por perdido.
+la gran cuestión era: se tendrá romario que ir a río? ¿no va a estar el misterioso, enigmático, extraño y genial delantero en el bernabéu y en atenas?
+cuando se tuvo la certeza del secuestro y se anunció una rueda de prensa de joan gaspar y de bakero, felipe gonzález retrasó en una hora su comparecencia ante la prensa, a sabiendas de que si hablaba al mismo tiempo que el vicepresidente del barça y el jugador, la cataluña de pujol no le haría el menor caso.
+y romario, tan sorprendente en la vida como en el área adversaria (la vida es un rea adversaria), hizo saber que se quedaba, entrenaba, se concentraba y quería ganar al madrid.
+a su lado, el apoyo de un amigo, compadre, compañero leal y alter ego: stoichkov.
+en ese día aciago, hristo no dejó de estar al lado de romario, de defenderle ante el acoso un tanto desconsiderado de algún fotógrafo.
+}
+False positives: {
+la gran cuestión era: se tendrá romario que ir a río? ¿no va a estar el misterioso, enigmático, extraño y genial delantero en el bernabéu y en atenas?
+} False negatives: {
+la gran cuestión era: se tendrá romario que ir a río?
+¿no va a estar el misterioso, enigmático, extraño y genial delantero en el bernabéu y en atenas?
 }
 
 Expected: {
@@ -273,6 +305,36 @@ al fin y al cabo, como el duelo no es más que el ejercicio privado de la justic
 } False negatives: {
 al fin y al cabo, como el duelo no es más que el ejercicio privado de la justicia en el que los duelistas se la toman por su mano, el abuso de los lances fue perseguido con la vieja obsesión humana de inventar artefactos que aliviaran su trabajo
 se enfocó desde muy antiguo hacia el transporte de vivos y bienes, del que tenía ejemplo en las naves que movía el viento por aguas y mares con estimable eficiencia.
+}
+
+Expected: {
+- - en chaguaramas bay también está cubierto y al otro lado de la isla sopla el viento y llueve.
+manzanilla bay es muy bonito, pero viento y lluvia.
+cabeceaba el taxista molesto por la información que se veía obligado a darle uno y otro día.
+ponía cara de científico japonés comunicando al chico de la película que el diplodocus gigante sólo podría ser destruido mediante una explosión nuclear.
+ginés volvió la cabeza hacia la recepción del hotel donde la mulata se besaba a sí misma en un eficaz intento de repartirse el rouge de los labios, en aquella penumbra de naturaleza oscurecida que no conseguía paliar ni una entristecida luz eléctrica mañanera.
+volver a la habitación, naufragar en una soledad gris a la espera del milagro del sol, deambular por una ciudad demasiado vista, sin otro objetivo que contemplar los resultados del cruce de negra e hindú, hindú y holandés, holandés y negra, español e hindú, mulata e hindú, holandesa y mulato, todas las combinaciones raciales que según los prospectos turísticos convertían a trinidad en un escaparate de la confusión de las razas tan espléndido como la playa de copacabana.
+- - en maracas bay - habrá sol?
+- - si sale el sol, seguro que saldrá por maracas bay.
+- - pues maracas bay.
+y se arrojó al interior del taxi dispuesto a tumbarse en el asiento trasero y no ver nada de aquella ciudad condenada a la eterna penumbra.
+}
+Predicted: {
+- - en chaguaramas bay también está cubierto y al otro lado de la isla sopla el viento y llueve.
+manzanilla bay es muy bonito, pero viento y lluvia.
+cabeceaba el taxista molesto por la información que se veía obligado a darle uno y otro día.
+ponía cara de científico japonés comunicando al chico de la película que el diplodocus gigante sólo podría ser destruido mediante una explosión nuclear.
+ginés volvió la cabeza hacia la recepción del hotel donde la mulata se besaba a sí misma en un eficaz intento de repartirse el rouge de los labios, en aquella penumbra de naturaleza oscurecida que no conseguía paliar ni una entristecida luz eléctrica mañanera.
+volver a la habitación, naufragar en una soledad gris a la espera del milagro del sol, deambular por una ciudad demasiado vista, sin otro objetivo que contemplar los resultados del cruce de negra e hindú, hindú y holandés, holandés y negra, español e hindú, mulata e hindú, holandesa y mulato, todas las combinaciones raciales que según los prospectos turísticos convertían a trinidad en un escaparate de la confusión de las razas tan espléndido como la playa de copacabana.
+- - en maracas bay - habrá sol? - - si sale el sol, seguro que saldrá por maracas bay.
+- - pues maracas bay.
+y se arrojó al interior del taxi dispuesto a tumbarse en el asiento trasero y no ver nada de aquella ciudad condenada a la eterna penumbra.
+}
+False positives: {
+- - en maracas bay - habrá sol? - - si sale el sol, seguro que saldrá por maracas bay.
+} False negatives: {
+- - en maracas bay - habrá sol?
+- - si sale el sol, seguro que saldrá por maracas bay.
 }
 
 Expected: {
@@ -416,8 +478,7 @@ je, je.
 la guerra civil fue, desgraciadamente, de todos los españoles.
 la guerra civil fue un suicidio colectivo, y en ella yo no hice de periodista.
 simplemente me cayó encima, nos cayó encima a todos.
-¿de qué te ríes?
-- -.
+¿de qué te ríes? - -.
 de lo que usted intuye.
 ta de mí es injusto.
 por supuesto que no todo lo he hecho bien, pero si algunos siempre se remiten al mismo artículo que publiqué a los pocos días de acabada la guerra civil, eso quiere decir que no han encontrado ninguno más.
@@ -426,43 +487,10 @@ ese artículo comenzaron a divulgarlo durante las elecciones de 1977.
 - -.
 }
 False positives: {
-¿de qué te ríes?
-- -.
 - - ¿qué decía ese artículo?
 - -.
 } False negatives: {
-¿de qué te ríes? - -.
 - - ¿qué decía ese artículo? - -.
-}
-
-Expected: {
-mientras que el artículo 515 prescribe que son punibles las asociaciones ilícitas y, entre otras, el código atribuye esta condición a las siguientes: las que "después de constituidas promuevan la comisión de un delito"; "las bandas armadas"; "las que, aun teniendo por objeto un fin lícito, empleen medios violentos..."; "las que promuevan el odio o la violencia contra las personas, grupos o asociaciones por razón de su ideología, religión, creencias, la pertenencia de sus miembros o de algunos de ellos a una etnia, raza, o nación, su sexo, orientación sexual...", etcétera.
-pues bien, con el cambio en la imputación delictiva, el tribunal está asumiendo que el acto de violencia objeto de enjuiciamiento ha sido cometido por personas que actuaban bajo una estructura asociativa con finalidad ilegal.
-una naturaleza asociativa que, naturalmente, habrá que probar en juicio, pero que ya desde ahora supone una valoración jurídica más beligerante contra las acciones violentas cometidas no sólo por los - - permisivamente denominados - - grupos de aficionados radicales en el fútbol, sino también por los grupos de skins que atacan a emigrantes extranjeros, a homosexuales...
-de esta forma, el estado puede responder de forma más contundente contra la acción de grupos que no se constituyen de forma episódica u ocasional, sino que se organizan con una cierta voluntad de permanencia para ejercer, entre otras actividades, una sobre la que el estado no puede transigir: el culto a la violencia.
-faltan pocos meses para que se conmemoren los 25 años de la fundació miró o, para decirlo de modo, quizá más preciso, pero menos popular, el centre d'estudis d'art contemporani.
-el edificio se inauguró en 1975, de acuerdo con la iniciativa que miró había tenido cuatro años antes.
-tanto el edificio, de josep lluís sert, como el contenido artístico que se puede contemplar en él se convirtieron muy pronto en un punto de visita destacado en la montaña de montjuïc.
-el éxito ha ido creciendo.
-van allí los interesados por la obra de miró, los que quieren ver las diversas exposiciones y actos que se realizan allí, los que valoran la arquitectura de sert, los que deciden subir a montjuïc y se lo encuentran sin preverlo.
-no he hablado con rosa maria malet, que es su excelente directora, para pedirle datos de visitantes y otros detalles.
-}
-Predicted: {
-mientras que el artículo 515 prescribe que son punibles las asociaciones ilícitas y, entre otras, el código atribuye esta condición a las siguientes: las que "después de constituidas promuevan la comisión de un delito"; "las bandas armadas"; "las que, aun teniendo por objeto un fin lícito, empleen medios violentos..."; "las que promuevan el odio o la violencia contra las personas, grupos o asociaciones por razón de su ideología, religión, creencias, la pertenencia de sus miembros o de algunos de ellos a una etnia, raza, o nación, su sexo, orientación sexual...", etcétera.
-pues bien, con el cambio en la imputación delictiva, el tribunal está asumiendo que el acto de violencia objeto de enjuiciamiento ha sido cometido por personas que actuaban bajo una estructura asociativa con finalidad ilegal.
-una naturaleza asociativa que, naturalmente, habrá que probar en juicio, pero que ya desde ahora supone una valoración jurídica más beligerante contra las acciones violentas cometidas no sólo por los - - permisivamente denominados - - grupos de aficionados radicales en el fútbol, sino también por los grupos de skins que atacan a emigrantes extranjeros, a homosexuales... de esta forma, el estado puede responder de forma más contundente contra la acción de grupos que no se constituyen de forma episódica u ocasional, sino que se organizan con una cierta voluntad de permanencia para ejercer, entre otras actividades, una sobre la que el estado no puede transigir: el culto a la violencia.
-faltan pocos meses para que se conmemoren los 25 años de la fundació miró o, para decirlo de modo, quizá más preciso, pero menos popular, el centre d'estudis d'art contemporani.
-el edificio se inauguró en 1975, de acuerdo con la iniciativa que miró había tenido cuatro años antes.
-tanto el edificio, de josep lluís sert, como el contenido artístico que se puede contemplar en él se convirtieron muy pronto en un punto de visita destacado en la montaña de montjuïc.
-el éxito ha ido creciendo.
-van allí los interesados por la obra de miró, los que quieren ver las diversas exposiciones y actos que se realizan allí, los que valoran la arquitectura de sert, los que deciden subir a montjuïc y se lo encuentran sin preverlo.
-no he hablado con rosa maria malet, que es su excelente directora, para pedirle datos de visitantes y otros detalles.
-}
-False positives: {
-una naturaleza asociativa que, naturalmente, habrá que probar en juicio, pero que ya desde ahora supone una valoración jurídica más beligerante contra las acciones violentas cometidas no sólo por los - - permisivamente denominados - - grupos de aficionados radicales en el fútbol, sino también por los grupos de skins que atacan a emigrantes extranjeros, a homosexuales... de esta forma, el estado puede responder de forma más contundente contra la acción de grupos que no se constituyen de forma episódica u ocasional, sino que se organizan con una cierta voluntad de permanencia para ejercer, entre otras actividades, una sobre la que el estado no puede transigir: el culto a la violencia.
-} False negatives: {
-una naturaleza asociativa que, naturalmente, habrá que probar en juicio, pero que ya desde ahora supone una valoración jurídica más beligerante contra las acciones violentas cometidas no sólo por los - - permisivamente denominados - - grupos de aficionados radicales en el fútbol, sino también por los grupos de skins que atacan a emigrantes extranjeros, a homosexuales...
-de esta forma, el estado puede responder de forma más contundente contra la acción de grupos que no se constituyen de forma episódica u ocasional, sino que se organizan con una cierta voluntad de permanencia para ejercer, entre otras actividades, una sobre la que el estado no puede transigir: el culto a la violencia.
 }
 
 Expected: {
@@ -713,14 +741,14 @@ tiene hojas dentadas que pueden crecer hasta 1 dm.
 ¿es ese el teléfono de asistencia para coches en carretera?
 colaboró con el grupo danés junior senior con el sencillo can i get get get, se marchó de gira con peaches y creó grupos de música alternativa como the new england roses o men, además de ejercer como disc jockey en determinados eventos.
 "va a volver a ser una mujer normal, creando un precedente para millones de mujeres pobres y maltratadas en pakistan", remarcó el doctor syed.
-el eje buco - oral es rectilíneo, y la cavidad faríngea y cloacal ocupa casi toda la parte axial del cuerpo; el nombre hitita del rey difunto es "niphururiya", que es una vocalización hitita del nombre de nesut - bity del faraón muerto. ¿él construyó ésto?
+el eje buco - oral es rectilíneo, y la cavidad faríngea y cloacal ocupa casi toda la parte axial del cuerpo; el nombre hitita del rey difunto es "niphururiya", que es una vocalización hitita del nombre de nesut - bity del faraón muerto.
+¿él construyó ésto?
 }
 False positives: {
-el eje buco - oral es rectilíneo, y la cavidad faríngea y cloacal ocupa casi toda la parte axial del cuerpo; el nombre hitita del rey difunto es "niphururiya", que es una vocalización hitita del nombre de nesut - bity del faraón muerto. ¿él construyó ésto?
+el eje buco - oral es rectilíneo, y la cavidad faríngea y cloacal ocupa casi toda la parte axial del cuerpo; el nombre hitita del rey difunto es "niphururiya", que es una vocalización hitita del nombre de nesut - bity del faraón muerto.
 } False negatives: {
 el eje buco - oral es rectilíneo, y la cavidad faríngea y cloacal ocupa casi toda la parte axial del cuerpo;
 el nombre hitita del rey difunto es "niphururiya", que es una vocalización hitita del nombre de nesut - bity del faraón muerto.
-¿él construyó ésto?
 }
 
 Expected: {
@@ -769,18 +797,18 @@ Predicted: {
 las unidades periféricas limítrofes son fócida en el oeste, ftiótide en el norte y noroeste, eubea al oeste (separada por una bahía y un golfo) y la periferia de ática al sur.
 mientras, gastón asume el rol de quelentaro, y sigue haciendo presentaciones.
 casi con firmeza, se puede afirmar que el ayuntamiento de fuenterrebollo no ha usado nunca de armas distintivas ni banderas propias.
-posee una capacidad agrícola que la convierte en una de las provincias más productivas del departamento; ¿cómo es posible que cuando te examinas y apruebas tardan en darte el carnet un mes aproximado y en la renovación tardan hasta tres meses?
-pronto la banda grabó su primer demo en el estudio en el palacio de la juventud, al tiempo se unió al grupo un nuevo integrante dan gutsenko (shuvalov).
+posee una capacidad agrícola que la convierte en una de las provincias más productivas del departamento; ¿cómo es posible que cuando te examinas y apruebas tardan en darte el carnet un mes aproximado y en la renovación tardan hasta tres meses? pronto la banda grabó su primer demo en el estudio en el palacio de la juventud, al tiempo se unió al grupo un nuevo integrante dan gutsenko (shuvalov).
 los jugadores pueden tener un modelo de criatura idéntico, pero diferentes en skin (por ejemplo, un oso polar como tyke, y un oso pardo como la criatura).
 no me parece adecuado denunciar un delito cometiendo otro, si tan molesto te es acude a cualquier oficina de trabajo cita previa con inspector y denuncias el caso.
 de este modo, reitera que la reducción de la deuda, en forma de quitas o por otros modos "más complejos", llevaría a una rebaja de la calidad de la deuda que "entorpecería la financiación del estado".
 también odian a eminem, con quien los miembros de icp tuvieron un enfrentamiento a mediados de los 90.
 }
 False positives: {
-posee una capacidad agrícola que la convierte en una de las provincias más productivas del departamento; ¿cómo es posible que cuando te examinas y apruebas tardan en darte el carnet un mes aproximado y en la renovación tardan hasta tres meses?
+posee una capacidad agrícola que la convierte en una de las provincias más productivas del departamento; ¿cómo es posible que cuando te examinas y apruebas tardan en darte el carnet un mes aproximado y en la renovación tardan hasta tres meses? pronto la banda grabó su primer demo en el estudio en el palacio de la juventud, al tiempo se unió al grupo un nuevo integrante dan gutsenko (shuvalov).
 } False negatives: {
 posee una capacidad agrícola que la convierte en una de las provincias más productivas del departamento;
 ¿cómo es posible que cuando te examinas y apruebas tardan en darte el carnet un mes aproximado y en la renovación tardan hasta tres meses?
+pronto la banda grabó su primer demo en el estudio en el palacio de la juventud, al tiempo se unió al grupo un nuevo integrante dan gutsenko (shuvalov).
 }
 
 Expected: {
@@ -904,6 +932,38 @@ en 2000 ouyahia fue elegido líder de su partido, el national rally for democrac
 }
 
 Expected: {
+su punto más alto y característico lo encontramos en el monte kapydzhik, que llega a los 2.415 m.
+en el año 2007 sacan su segundo disco en vivo el cual obtiene mucho éxito, incluso un disco doble platino tras vender 2.000.000 copias en estados unidos.
+algunas investigaciones "sostienen" que las edades extraordinarias de los patriarcas bíblicos son resultado de errores en la traducción: los ciclos lunares se confundieron con los solares, y las edades reales son 13,5 veces menores.
+luronium es un género monotípico con una única especie de planta acuática: luronium natans, comunmente conocida como llanten de agua flotante.
+como se ve si una de las dos fuerzas fallase los acontecimientos se sucederían muy repentinamente hasta volver a recuperar el equilibrio.
+este doblaje es usado y distribuido en todos los países de habla hispana.
+este samsung continuum será distribuido en ee.uu. por verizon aunque nos encantaría verlo por otros territorios.
+durante años, una de las principales demandas vecinales fue la creación de una zona verde en un solar de 22.000m² en el corazón del barrio.
+además, una alianza con el metro de samara para construir diversos tramos ha dejado a kazmetrostroy, la empresa que dirige la construcción, en números rojos.
+era un trabajo que requería experiencia y un conocimiento íntimo de las corrientes y mareas del río tamésis.
+}
+Predicted: {
+su punto más alto y característico lo encontramos en el monte kapydzhik, que llega a los 2.415 m.
+en el año 2007 sacan su segundo disco en vivo el cual obtiene mucho éxito, incluso un disco doble platino tras vender 2.000.000 copias en estados unidos.
+algunas investigaciones "sostienen" que las edades extraordinarias de los patriarcas bíblicos son resultado de errores en la traducción: los ciclos lunares se confundieron con los solares, y las edades reales son 13,5 veces menores.
+luronium es un género monotípico con una única especie de planta acuática: luronium natans, comunmente conocida como llanten de agua flotante.
+como se ve si una de las dos fuerzas fallase los acontecimientos se sucederían muy repentinamente hasta volver a recuperar el equilibrio.
+este doblaje es usado y distribuido en todos los países de habla hispana.
+este samsung continuum será distribuido en ee.uu.
+por verizon aunque nos encantaría verlo por otros territorios.
+durante años, una de las principales demandas vecinales fue la creación de una zona verde en un solar de 22.000m² en el corazón del barrio.
+además, una alianza con el metro de samara para construir diversos tramos ha dejado a kazmetrostroy, la empresa que dirige la construcción, en números rojos.
+era un trabajo que requería experiencia y un conocimiento íntimo de las corrientes y mareas del río tamésis.
+}
+False positives: {
+este samsung continuum será distribuido en ee.uu.
+por verizon aunque nos encantaría verlo por otros territorios.
+} False negatives: {
+este samsung continuum será distribuido en ee.uu. por verizon aunque nos encantaría verlo por otros territorios.
+}
+
+Expected: {
 al cementerio donde fue velado e incinerado el cuerpo del empresario, quien murió a los 67 años víctima de un infarto, tras permanecer varios días en un hospital de la ciudad de méxico, asistieron la cantante, su hermano enrique y su madre, susana dosamantes.
 la sede del consistorio, recientemente restaurada, está compuesta de tres cuerpos, construida en sillarejo y con vanos recercados en piedra.
 presenta pelaje gris;
@@ -961,6 +1021,36 @@ precisamente el 7 de noviembre de 1843, siendo supremo director del perú manuel
 } False negatives: {
 precisamente el 7 de noviembre de 1843, siendo supremo director del perú manuel ignacio de vivanco, elías fue nombrado prefecto de lima;
 según la oficina del censo en 2000 los ingresos medios por hogar en la localidad eran de $ 36,827 y los ingresos medios por familia eran $ 46,250.
+}
+
+Expected: {
+otros países donde se prohíbe su uso industrial son los estados unidos, argentina e italia, mientras que se autoriza según estipula cada reglamentación nacional, en francia y alemania.
+a los tres meses vimos que tenia un bulto en la zona y volvimos, nos dijeron que no estaba capado, que les habíamos llevado otro animal y que les estabamos engañando, mostramos toda la documentación pero se negó a mirar el chip del gato.
+ahora, por primera vez, la audiencia ve cara de lugosi.
+skopín - shuiski tomó parte activa en el exitoso asedio de tula a cargo del ejército moscovita, hasta que se puso fin a la revuelta de bolótnikov.
+es originario del áfrica tropical.
+este proceso de soldadura ofrece enormes ventajas ya sea en cuanto a los materiales a unir (puede unir varios tipos de metales), en su alta fiabilidad, en su bajo coste, en su relación resistencia / fiabilidad, incluso puede unir materiales de fundición distintos.
+al norte de banha se encuentra una de las antiguas ciudades llamada atribis, la capital del décimo nomo (provincia) del bajo egipto desde cerca de 1500 a.
+de formación casi por completo autodidacta (sólo fue al colegio durante cinco años), devoraba toda clase de libros, escribía poesía, pintaba cuadros abstractos, trabajaba en el teatro vanguardista y empezó a estudiar por su cuenta varios idiomas.
+agradezco que hayan logrado que me devuelvan $ 2700 de un teléfono que no funcionó jamás y dieran de baja la línea.
+akentrobuthus es un género de escorpiones de la familia buthidae descrito por lamoral en 1976.
+}
+Predicted: {
+otros países donde se prohíbe su uso industrial son los estados unidos, argentina e italia, mientras que se autoriza según estipula cada reglamentación nacional, en francia y alemania.
+a los tres meses vimos que tenia un bulto en la zona y volvimos, nos dijeron que no estaba capado, que les habíamos llevado otro animal y que les estabamos engañando, mostramos toda la documentación pero se negó a mirar el chip del gato.
+ahora, por primera vez, la audiencia ve cara de lugosi.
+skopín - shuiski tomó parte activa en el exitoso asedio de tula a cargo del ejército moscovita, hasta que se puso fin a la revuelta de bolótnikov.
+es originario del áfrica tropical.
+este proceso de soldadura ofrece enormes ventajas ya sea en cuanto a los materiales a unir (puede unir varios tipos de metales), en su alta fiabilidad, en su bajo coste, en su relación resistencia / fiabilidad, incluso puede unir materiales de fundición distintos.
+al norte de banha se encuentra una de las antiguas ciudades llamada atribis, la capital del décimo nomo (provincia) del bajo egipto desde cerca de 1500 a. de formación casi por completo autodidacta (sólo fue al colegio durante cinco años), devoraba toda clase de libros, escribía poesía, pintaba cuadros abstractos, trabajaba en el teatro vanguardista y empezó a estudiar por su cuenta varios idiomas.
+agradezco que hayan logrado que me devuelvan $ 2700 de un teléfono que no funcionó jamás y dieran de baja la línea.
+akentrobuthus es un género de escorpiones de la familia buthidae descrito por lamoral en 1976.
+}
+False positives: {
+al norte de banha se encuentra una de las antiguas ciudades llamada atribis, la capital del décimo nomo (provincia) del bajo egipto desde cerca de 1500 a. de formación casi por completo autodidacta (sólo fue al colegio durante cinco años), devoraba toda clase de libros, escribía poesía, pintaba cuadros abstractos, trabajaba en el teatro vanguardista y empezó a estudiar por su cuenta varios idiomas.
+} False negatives: {
+al norte de banha se encuentra una de las antiguas ciudades llamada atribis, la capital del décimo nomo (provincia) del bajo egipto desde cerca de 1500 a.
+de formación casi por completo autodidacta (sólo fue al colegio durante cinco años), devoraba toda clase de libros, escribía poesía, pintaba cuadros abstractos, trabajaba en el teatro vanguardista y empezó a estudiar por su cuenta varios idiomas.
 }
 
 Expected: {
@@ -1302,68 +1392,6 @@ en su interior, el hotel respira un aire de serenidad que puede disfrutarse en l
 }
 
 Expected: {
-la localización nos permitió recorrer todo el pirineo en varios días, la zona es preciosa.
-a dios gracias, todo salió bien.
-en esta esquina vive mi hermana m. amparo de mendoza.
-desde el paradigma psicológico del procesamiento de la información estas dificultades se explican porque las personas sin dislexia automatizan procesos que las personas con el trastorno tienen dificultades para automatizar.
-su mascota favorita es un gato negro que ruge como león.
-tras su muerte, se cumplió la profecía, pero el espíritu del séptimo quedó libre, reencarnandose en gerde, quien heredo algunas caracteristicas psicologicas y físicas de el (la mirada profunda y terrorifica que tienen todas las encarnaciones) y algunos de sus recuerdos.
-el bosnio tiene claro que si existe oferta puede presionar al wolfsburgo alemán.
-su equipo se proclamó campeón de liga, revalidando el título por tercer año consecutivo.
-samantha reed smith (29 de junio de 1972 -- 25 de agosto de 1985) fue una niña estadounidense que alcanzó fama mundial después de escribir una carta en plena guerra fría al entonces secretario general del partido comunista de la unión soviética, yuri andrópov, y que éste le respondiera invitándola además a visitar la unión soviética, lo que smith aceptó.
-por su parte, chaz fue liberado en julio de 2001.
-}
-Predicted: {
-la localización nos permitió recorrer todo el pirineo en varios días, la zona es preciosa.
-a dios gracias, todo salió bien.
-en esta esquina vive mi hermana m.
-amparo de mendoza.
-desde el paradigma psicológico del procesamiento de la información estas dificultades se explican porque las personas sin dislexia automatizan procesos que las personas con el trastorno tienen dificultades para automatizar.
-su mascota favorita es un gato negro que ruge como león.
-tras su muerte, se cumplió la profecía, pero el espíritu del séptimo quedó libre, reencarnandose en gerde, quien heredo algunas caracteristicas psicologicas y físicas de el (la mirada profunda y terrorifica que tienen todas las encarnaciones) y algunos de sus recuerdos.
-el bosnio tiene claro que si existe oferta puede presionar al wolfsburgo alemán.
-su equipo se proclamó campeón de liga, revalidando el título por tercer año consecutivo.
-samantha reed smith (29 de junio de 1972 -- 25 de agosto de 1985) fue una niña estadounidense que alcanzó fama mundial después de escribir una carta en plena guerra fría al entonces secretario general del partido comunista de la unión soviética, yuri andrópov, y que éste le respondiera invitándola además a visitar la unión soviética, lo que smith aceptó.
-por su parte, chaz fue liberado en julio de 2001.
-}
-False positives: {
-en esta esquina vive mi hermana m.
-amparo de mendoza.
-} False negatives: {
-en esta esquina vive mi hermana m. amparo de mendoza.
-}
-
-Expected: {
-es la modalidad dominante en los estados unidos, dónde supone casi el 90 % de la carne que se comercializa en el país.
-en la teoría se ha de distinguir pero en realidad el yo es creado para ver a dios y queda determinado por ello.
-posteriormente parece que el pueblo fue fundado por orden de un abad del monasterio de san martín de castañeda, el cual era procedente de la limia gallega.
-su fortaleza, (kongsborgen), fue quemada hasta los cimientos durante el siglo vii.
-el turbofán garrett tfe - 731 - 2 de alta relación de derivación (2,82:1) se beneficia de una estudiada construcción modular que facilita su mantenimiento, pesa 327 kg y desarrolla un empuje máximo de 1.587 kg a nivel del mar.
-me pusieron las cortinas del comedor y habitaciones, además de un toldo en el patio y estamos muy contentos como han quedado.
-la sala vi de la cámara de apelaciones en lo criminal y correccional confirmó los procesamientos de los hermanos hernán y matías botbol, responsables de www.taringa.net, al acusarlos de haber violado en 29 oportunidades el artículo 72 inciso "a" de la ley n º 11.723 que protege la propiedad intelectual, según puede leerse en el fallo que fue difundido ayer por la tarde.
-por esa victoria fue ascendido al grado de coronel.
-mentat a servicio de la casa atreides por tres generaciones, llegando a servir a paulus atreides y a leto atreides.
-esta adaptación al frío permitía reducir la pérdida de temperatura gracias a la menor superficie expuesta al ambiente.
-}
-Predicted: {
-es la modalidad dominante en los estados unidos, dónde supone casi el 90 % de la carne que se comercializa en el país.
-en la teoría se ha de distinguir pero en realidad el yo es creado para ver a dios y queda determinado por ello.
-posteriormente parece que el pueblo fue fundado por orden de un abad del monasterio de san martín de castañeda, el cual era procedente de la limia gallega.
-su fortaleza, (kongsborgen), fue quemada hasta los cimientos durante el siglo vii.
-el turbofán garrett tfe - 731 - 2 de alta relación de derivación (2,82:1) se beneficia de una estudiada construcción modular que facilita su mantenimiento, pesa 327 kg y desarrolla un empuje máximo de 1.587 kg a nivel del mar. me pusieron las cortinas del comedor y habitaciones, además de un toldo en el patio y estamos muy contentos como han quedado.
-la sala vi de la cámara de apelaciones en lo criminal y correccional confirmó los procesamientos de los hermanos hernán y matías botbol, responsables de www.taringa.net, al acusarlos de haber violado en 29 oportunidades el artículo 72 inciso "a" de la ley n º 11.723 que protege la propiedad intelectual, según puede leerse en el fallo que fue difundido ayer por la tarde.
-por esa victoria fue ascendido al grado de coronel.
-mentat a servicio de la casa atreides por tres generaciones, llegando a servir a paulus atreides y a leto atreides.
-esta adaptación al frío permitía reducir la pérdida de temperatura gracias a la menor superficie expuesta al ambiente.
-}
-False positives: {
-el turbofán garrett tfe - 731 - 2 de alta relación de derivación (2,82:1) se beneficia de una estudiada construcción modular que facilita su mantenimiento, pesa 327 kg y desarrolla un empuje máximo de 1.587 kg a nivel del mar. me pusieron las cortinas del comedor y habitaciones, además de un toldo en el patio y estamos muy contentos como han quedado.
-} False negatives: {
-el turbofán garrett tfe - 731 - 2 de alta relación de derivación (2,82:1) se beneficia de una estudiada construcción modular que facilita su mantenimiento, pesa 327 kg y desarrolla un empuje máximo de 1.587 kg a nivel del mar.
-me pusieron las cortinas del comedor y habitaciones, además de un toldo en el patio y estamos muy contentos como han quedado.
-}
-
-Expected: {
 algunos años más tarde, cuando obregón era ministro de guerra (1916 -- 1917), sáenz se convirtió en su secretario particular y después en jefe de estado mayor.
 además, aparece en la amplia serie de novelas, juegos y comics del universo expandido.
 tan sólo una semana después se disputaría la revancha, en la que volvió a ganar el equipo paranaense, esta vez como local, por 1 a 0.
@@ -1549,6 +1577,36 @@ la síntesis de quinolinas de gould - jacobs es un método de síntesis orgánic
 } False negatives: {
 la síntesis de quinolinas de gould - jacobs es un método de síntesis orgánica para la preparación de quinolinas
 en esta reacción, una anilina reacciona con el etoximetilenmalonato de dietilo (derivado del ácido malónico), proseguida de la sustitución del grupo etoxi - por el átomo de nitr'' ogeno de la anilina.
+}
+
+Expected: {
+es el primer símbolo de serpientes gemelas del que se tiene conocimiento.
+más precisamente, se encuentra en el estrecho de kalmar, entre las provincias de småland y öland.
+los intentos de 1819 y 1826 de dictar una constitución unitaria, que centralizase en buenos aires el poder administrativo directo sobre todo el territorio nacional, extremó la situación, y las medidas políticas tomadas por las provincias en los años sucesivos - como el pacto federal - estuvieron orientadas a garantizar que una situación así no pudiera producirse.
+¡parece exactamente como uno de nosotros!"
+hotaru no haka es el título original de esta película de animación de isao takahata, uno de los socios de studio ghibli y también uno de los fundadores del estudio junto con hayao miyazaki, creadores de obras como la princesa mononoke, el viaje de chihiro o el castillo ambulante.
+fernández vara dijo que él nunca se pondrá de "medio lado" y "dejará solo al torero, sin cuadrilla", en referencia a las palabras del presidente de castilla la mancha, josé maría barreda, quien instó al gobierno a "cambiar de rumbo" para evitar la "catástrofe electoral".
+todavía hay 90.000 "guardias de las aldeas" equipados con ak-47/74 y rpk / pkm / rpd lmg 's.
+patricipó y ganó miss italia en argentina.
+pero lo más importante es que haya leche y azúcar para tener algo que servirles ", agrega.
+además, la lesión se ha complicado con una "meniscitis post - traumática", provocada por el golpe que sufrió el jugador al caer en el parqué del polideportivo huerta del rey tras un resbalón fortuito, durante el partido que enfrentó ayer a su equipo con el barcelona.
+}
+Predicted: {
+es el primer símbolo de serpientes gemelas del que se tiene conocimiento.
+más precisamente, se encuentra en el estrecho de kalmar, entre las provincias de småland y öland.
+los intentos de 1819 y 1826 de dictar una constitución unitaria, que centralizase en buenos aires el poder administrativo directo sobre todo el territorio nacional, extremó la situación, y las medidas políticas tomadas por las provincias en los años sucesivos - como el pacto federal - estuvieron orientadas a garantizar que una situación así no pudiera producirse.
+¡parece exactamente como uno de nosotros!" hotaru no haka es el título original de esta película de animación de isao takahata, uno de los socios de studio ghibli y también uno de los fundadores del estudio junto con hayao miyazaki, creadores de obras como la princesa mononoke, el viaje de chihiro o el castillo ambulante.
+fernández vara dijo que él nunca se pondrá de "medio lado" y "dejará solo al torero, sin cuadrilla", en referencia a las palabras del presidente de castilla la mancha, josé maría barreda, quien instó al gobierno a "cambiar de rumbo" para evitar la "catástrofe electoral".
+todavía hay 90.000 "guardias de las aldeas" equipados con ak-47/74 y rpk / pkm / rpd lmg 's.
+patricipó y ganó miss italia en argentina.
+pero lo más importante es que haya leche y azúcar para tener algo que servirles ", agrega.
+además, la lesión se ha complicado con una "meniscitis post - traumática", provocada por el golpe que sufrió el jugador al caer en el parqué del polideportivo huerta del rey tras un resbalón fortuito, durante el partido que enfrentó ayer a su equipo con el barcelona.
+}
+False positives: {
+¡parece exactamente como uno de nosotros!" hotaru no haka es el título original de esta película de animación de isao takahata, uno de los socios de studio ghibli y también uno de los fundadores del estudio junto con hayao miyazaki, creadores de obras como la princesa mononoke, el viaje de chihiro o el castillo ambulante.
+} False negatives: {
+¡parece exactamente como uno de nosotros!"
+hotaru no haka es el título original de esta película de animación de isao takahata, uno de los socios de studio ghibli y también uno de los fundadores del estudio junto con hayao miyazaki, creadores de obras como la princesa mononoke, el viaje de chihiro o el castillo ambulante.
 }
 
 Expected: {
@@ -1766,35 +1824,33 @@ se hizo conocido entre los sectores clandestinos de izquierdas por sus brutales 
 }
 
 Expected: {
-en la exposición que tuvo lugar en bruselas (1996), gumiel participó con una pieza excepcional: una virgen románica sedente del siglo xii.
-según versiones oficiales, mayweather jr. golpeó el 15 de noviembre en la cara a un agente privado, que anteriormente puso varias multas de aparcamiento a las personas que llegaban a su residencia.
-luego del cierre de la fábrica zanon, los trabajadores tomaron el control de la fábrica y un intento desesperado de conservar su trabajo.
-"das magazin" es una revista disponible para visitantes y pasajeros que viajan a través del aeropuerto.
-mindanao, con 94.630 km², es la segunda isla más grande del país y la octava mayor en cuanto a población del mundo.
-un subtipo de altavoz activo analógico de vía única diseñado para reproducir, aproximadamente, las dos primeras octavas (las más graves, normalmente entre 20 y 80 hz) del total de 10 que forma el espectro de audiofrecuencias y que, típicamente, integra un filtro paso bajo activo, protecciones de sobrecarga y un amplificador dedicado.
-combatió al orozquismo en la compañia de zarpadores, participando en la batalla de rellano.
-durante ese tiempo visitó costa rica, nicaragua, méxico, el salvador, honduras y panamá por motivos de trabajo y también para ver a algunos amigos exiliados.
-el arquero puede ir o al málaga o incluso al atlético de madrid que se quedó sin segundo.
-arnoldo janssen en el número de mayo del "mensajero del corazón de jesús" describe las ideas dominantes en la casa misionera: "tal vez más de uno consideraría óptimo que, cuanto antes, aumente el número de los adeptos a la obra y que ésta se extienda hacia fuera.
+tuvieron un hijo que sería el futuro rey de cirene, bato iii.
+si hace unos días conocíamos la canción, hoy han estrenado el vídeo correspondiente al single.
+¿ella conoce de verdad los que están de su lado?
+una erupción pliniana es un tipo de erupción volcánica caracterizada por su similitud con la acontecida en el monte vesubio en el año 79 d.
+los barcos de la dinastía xxv tenían 25 metros de longitud y un sólo mástil.
+juan pablo se niega pues no está dispuesto a venderse, pero ver día tras día a su madre atada a aquella silla de ruedas, le hace terminar aceptando aquella oferta.
+los escultores encontraron en los restos artísticos y en los descubrimientos de yacimientos de esa época pasada la inspiración perfecta para sus obras.
+la batalla de gavinana se libró el 3 de agosto de 1530, dentro del "sitio de florencia (1529-1530) entre 3.500 mercenarios a sueldo de los florentinos comandados por francesco ferruccio y las fuerzas imperiales de carlos v del sacro imperio romano germánico, con más de 9.000 soldados bajo el mando de diferentes condottieros como fabrizio maramaldo, alessandro vitelli y niccolò bracciolini todos ellos bajo las órdenes de filiberto de chalon, príncipe de orange.
+así, mientras los cristianos cumplían el pacto, aprovecharon para explorar en busca de nuevos refugiados, llegando un destacamento bajo el mando de pedro maza a encontrar una cueva donde se había escondido una multitud de musulmanes que terminaron por rendirse.
+terminó como subcampeón en la votación del rookie del año de 1985 tras michael jordan.
 }
 Predicted: {
-en la exposición que tuvo lugar en bruselas (1996), gumiel participó con una pieza excepcional: una virgen románica sedente del siglo xii.
-según versiones oficiales, mayweather jr.
-golpeó el 15 de noviembre en la cara a un agente privado, que anteriormente puso varias multas de aparcamiento a las personas que llegaban a su residencia.
-luego del cierre de la fábrica zanon, los trabajadores tomaron el control de la fábrica y un intento desesperado de conservar su trabajo.
-"das magazin" es una revista disponible para visitantes y pasajeros que viajan a través del aeropuerto.
-mindanao, con 94.630 km², es la segunda isla más grande del país y la octava mayor en cuanto a población del mundo.
-un subtipo de altavoz activo analógico de vía única diseñado para reproducir, aproximadamente, las dos primeras octavas (las más graves, normalmente entre 20 y 80 hz) del total de 10 que forma el espectro de audiofrecuencias y que, típicamente, integra un filtro paso bajo activo, protecciones de sobrecarga y un amplificador dedicado.
-combatió al orozquismo en la compañia de zarpadores, participando en la batalla de rellano.
-durante ese tiempo visitó costa rica, nicaragua, méxico, el salvador, honduras y panamá por motivos de trabajo y también para ver a algunos amigos exiliados.
-el arquero puede ir o al málaga o incluso al atlético de madrid que se quedó sin segundo.
-arnoldo janssen en el número de mayo del "mensajero del corazón de jesús" describe las ideas dominantes en la casa misionera: "tal vez más de uno consideraría óptimo que, cuanto antes, aumente el número de los adeptos a la obra y que ésta se extienda hacia fuera.
+tuvieron un hijo que sería el futuro rey de cirene, bato iii.
+si hace unos días conocíamos la canción, hoy han estrenado el vídeo correspondiente al single.
+¿ella conoce de verdad los que están de su lado?
+una erupción pliniana es un tipo de erupción volcánica caracterizada por su similitud con la acontecida en el monte vesubio en el año 79 d. los barcos de la dinastía xxv tenían 25 metros de longitud y un sólo mástil.
+juan pablo se niega pues no está dispuesto a venderse, pero ver día tras día a su madre atada a aquella silla de ruedas, le hace terminar aceptando aquella oferta.
+los escultores encontraron en los restos artísticos y en los descubrimientos de yacimientos de esa época pasada la inspiración perfecta para sus obras.
+la batalla de gavinana se libró el 3 de agosto de 1530, dentro del "sitio de florencia (1529-1530) entre 3.500 mercenarios a sueldo de los florentinos comandados por francesco ferruccio y las fuerzas imperiales de carlos v del sacro imperio romano germánico, con más de 9.000 soldados bajo el mando de diferentes condottieros como fabrizio maramaldo, alessandro vitelli y niccolò bracciolini todos ellos bajo las órdenes de filiberto de chalon, príncipe de orange.
+así, mientras los cristianos cumplían el pacto, aprovecharon para explorar en busca de nuevos refugiados, llegando un destacamento bajo el mando de pedro maza a encontrar una cueva donde se había escondido una multitud de musulmanes que terminaron por rendirse.
+terminó como subcampeón en la votación del rookie del año de 1985 tras michael jordan.
 }
 False positives: {
-según versiones oficiales, mayweather jr.
-golpeó el 15 de noviembre en la cara a un agente privado, que anteriormente puso varias multas de aparcamiento a las personas que llegaban a su residencia.
+una erupción pliniana es un tipo de erupción volcánica caracterizada por su similitud con la acontecida en el monte vesubio en el año 79 d. los barcos de la dinastía xxv tenían 25 metros de longitud y un sólo mástil.
 } False negatives: {
-según versiones oficiales, mayweather jr. golpeó el 15 de noviembre en la cara a un agente privado, que anteriormente puso varias multas de aparcamiento a las personas que llegaban a su residencia.
+una erupción pliniana es un tipo de erupción volcánica caracterizada por su similitud con la acontecida en el monte vesubio en el año 79 d.
+los barcos de la dinastía xxv tenían 25 metros de longitud y un sólo mástil.
 }
 
 Expected: {
@@ -1941,18 +1997,14 @@ la redactora de efe rocío antoñanzas de toledo y el portavoz socialista en la 
 representa un 9 % del total de casos nuevos de leucemia.
 además, la ubicación del polo sur magnético pudo ser calculada con una precisión razonable.
 "nunca te mandan lo que vendés", comentaron.
-en medio de la serie, rick wheeler descubre la "leyenda de falcon" gracias al dr.
-stewart.
+en medio de la serie, rick wheeler descubre la "leyenda de falcon" gracias al dr. stewart.
 }
 False positives: {
 como homenaje, dos astrónomos japoneses (k.
 endate y k.
 watanabe) dieron su nombre al asteroide 5372 que descubrieron el 1 de septiembre de 1993.
-en medio de la serie, rick wheeler descubre la "leyenda de falcon" gracias al dr.
-stewart.
 } False negatives: {
 como homenaje, dos astrónomos japoneses (k. endate y k. watanabe) dieron su nombre al asteroide 5372 que descubrieron el 1 de septiembre de 1993.
-en medio de la serie, rick wheeler descubre la "leyenda de falcon" gracias al dr. stewart.
 }
 
 Expected: {

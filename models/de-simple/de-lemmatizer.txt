@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9665307854059837
+Evaluation-Score=0.9665492308259859
 Training-Sample-Size=65673
 Evaluation-Sample-Size=7297
 Training-Algorithm=MAXENT
@@ -10,9 +10,9 @@ Component-Name=StatisticalLemmatizer
 Language=de
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1665732502972
+Timestamp=1668925852905
 TrainerType=Event
-Training-Eventhash=47f0c8ba0149fc9a1c796674c92862b6
+Training-Eventhash=8d6a5a050c80b47d8664a725ea2cffb4
 factory=opennlp.tools.lemmatizer.LemmatizerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -7064,7 +7064,7 @@ fahning	PROPN	fahning
 muß	AUX	müssen
 in	ADP	in
 den	DET	der
-nächsten	ADJ	nächster
+nächsten	ADJ	nah
 jahren	NOUN	jahr
 allerhöchste	ADJ	allerhöchster
 priorität	NOUN	priorität
@@ -7126,7 +7126,6 @@ soll	AUX	sollen
 Errors: {
 Tok: Ref | Pred
 ---------------
-nächsten: nächster | nah
 allerhöchste: allerhöchster | alll
 einer: ein | einer
 }
@@ -8650,7 +8649,7 @@ wollen	AUX	wollen
 wir	PRON	wir
 bis	ADP	bis
 ende	NOUN	ende
-nächsten	ADJ	nächster
+nächsten	ADJ	nah
 jahres	NOUN	jahr
 schon	ADV	schon
 noch	ADV	noch
@@ -8683,7 +8682,7 @@ haben	VERB	haben
 Errors: {
 Tok: Ref | Pred
 ---------------
-nächsten: nächster | null
+nächsten: nah | null
 }
 
 Expected: {
@@ -17310,7 +17309,7 @@ mathematik	NOUN	mathematik
 ,	PUNCT	,
 ein	NUM	ein
 jahr	NOUN	jahr
-später	ADV	spät
+später	ADV	später
 wurde	AUX	werden
 er	PRON	er
 bei	ADP	bei
@@ -17341,6 +17340,7 @@ habilitiert	VERB	habilitieren
 Errors: {
 Tok: Ref | Pred
 ---------------
+später: spät | später
 methoden: methode | methoden
 eigenwertproblemen: eigenwertproblemen | eigenwertproblem
 elliptischen: elliptisch | elliptischen
@@ -22551,7 +22551,7 @@ der	DET	der
 ersten	ADJ	erst
 staffel	NOUN	staffel
 nicht	PART	nicht
-weiter	ADJ	weiter
+weiter	ADJ	weit
 verlängert	VERB	verlängern
 .	PUNCT	.
 }
@@ -22570,7 +22570,7 @@ der	DET	der
 ersten	ADJ	null
 staffel	NOUN	staffel
 nicht	PART	nicht
-weiter	ADJ	weiter
+weiter	ADJ	weit
 verlängert	VERB	verlängern
 .	PUNCT	.
 }
@@ -22618,6 +22618,70 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 einen: ein | einen
+}
+
+Expected: {
+neben	ADP	neben
+der	DET	der
+ursprünglich	ADJ	ursprünglich
+romanischen	ADJ	romanisch
+martinskirche	PROPN	martinskirche
+mit	ADP	mit
+gotischen	ADJ	gotisch
+figuren	NOUN	figur
+ist	AUX	sein
+an	ADP	an
+alten	ADJ	alt
+bauwerken	NOUN	bauwerk
+in	ADP	in
+ramsdorf	PROPN	ramsdorf
+noch	ADV	noch
+der	DET	der
+ehemalige	ADJ	ehemalig
+herrschaftssitz	NOUN	herrschaftssitz
+der	DET	der
+ramsdorfer	NOUN	ramsdorfer
+,	PUNCT	,
+später	ADV	spät
+der	DET	der
+goder	PROPN	goder
+zu	PART	zu
+erwähnen	VERB	erwähnen
+.	PUNCT	.
+}
+Predicted: {
+neben	ADP	neben
+der	DET	der
+ursprünglich	ADJ	ursprünglich
+romanischen	ADJ	romanisch
+martinskirche	PROPN	martinskirche
+mit	ADP	mit
+gotischen	ADJ	gotisch
+figuren	NOUN	figur
+ist	AUX	sein
+an	ADP	an
+alten	ADJ	alt
+bauwerken	NOUN	bauwerk
+in	ADP	in
+ramsdorf	PROPN	ramsdorf
+noch	ADV	noch
+der	DET	der
+ehemalige	ADJ	ehemalig
+herrschaftssitz	NOUN	herrschaftssitz
+der	DET	der
+ramsdorfer	NOUN	ramsdorfer
+,	PUNCT	,
+später	ADV	später
+der	DET	der
+goder	PROPN	goder
+zu	PART	zu
+erwähnen	VERB	erwähnen
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+später: spät | später
 }
 
 Expected: {
@@ -29712,7 +29776,7 @@ peptidbindungen: peptidbindungen | peptidbindung
 Expected: {
 gegenüber	ADP	gegenüber
 der	DET	der
-weiter	ADJ	weiter
+weiter	ADJ	weit
 verbreiteten	ADJ	verbreitet
 spitzzange	NOUN	spitzzange
 kann	AUX	können
@@ -29733,8 +29797,8 @@ werden	AUX	werden
 Predicted: {
 gegenüber	ADP	gegenüber
 der	DET	der
-weiter	ADJ	weiter
-verbreiteten	ADJ	verbreiten
+weiter	ADJ	weit
+verbreiteten	ADJ	verbreitet
 spitzzange	NOUN	spitzzange
 kann	AUX	können
 mit	ADP	mit
@@ -29754,7 +29818,6 @@ werden	AUX	werden
 Errors: {
 Tok: Ref | Pred
 ---------------
-verbreiteten: verbreitet | verbreiten
 einer: ein | einer
 eine: ein | eine
 }
@@ -51865,34 +51928,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 eine: eine | ein
-}
-
-Expected: {
-ruetz	PROPN	ruetz
-steht	VERB	stehen
-damit	ADV	damit
-nicht	PART	nicht
-allein	ADV	allein
-auf	ADP	auf
-weiter	ADJ	weit
-flur	NOUN	flur
-.	PUNCT	.
-}
-Predicted: {
-ruetz	PROPN	ruetz
-steht	VERB	stehen
-damit	ADV	damit
-nicht	PART	nicht
-allein	ADV	allein
-auf	ADP	auf
-weiter	ADJ	weiter
-flur	NOUN	flur
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-weiter: weit | weiter
 }
 
 Expected: {
@@ -84918,7 +84953,7 @@ wolle	AUX	wollen
 Predicted: {
 er	PRON	er
 betonte	VERB	betonen
-erneut	ADJ	erneut
+erneut	ADJ	erneuen
 ,	PUNCT	,
 dass	SCONJ	dass
 napster	PROPN	napster
@@ -84938,7 +84973,6 @@ wolle	AUX	wollen
 Errors: {
 Tok: Ref | Pred
 ---------------
-erneut: erneuen | erneut
 basierenden: basieren | basierenden
 }
 

@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9991014667035988
+Evaluation-Score=0.9991666911314708
 Training-Sample-Size=114744
 Evaluation-Sample-Size=12749
 Training-Algorithm=MAXENT_QN
@@ -9,9 +9,9 @@ Component-Name=TokenizerME
 Language=cs
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1665725540915
+Timestamp=1668918795148
 TrainerType=Event
-Training-Eventhash=fe2c7dd571b3f396a801ef87906a1a34
+Training-Eventhash=a94cd45bf50cf1595c9bd0888684e595
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
@@ -56,9 +56,10 @@ hranicim
 Expected: {
 je to uz par let<SPLIT>, co mi dedecek venoval atlas zemi koruny ceske<SPLIT>, rakousko<SPLIT>-<SPLIT>uherskeho<SPLIT>mocnarstvi a ostatniho sveta<SPLIT>.}
 Predicted: {
-je to uz par let<SPLIT>, co mi dedecek venoval atlas zemi koruny ceske<SPLIT>, rakousko<SPLIT>-<SPLIT>uherskehomocnarstvi a ostatniho sveta<SPLIT>.}
+je to uz par let<SPLIT>, co mi dedecek venoval atlas zemi koruny ceske<SPLIT>, rakousko<SPLIT>-<SPLIT>uherske<SPLIT>homocnarstvi a ostatniho sveta<SPLIT>.}
 False positives: {
-uherskehomocnarstvi
+uherske
+homocnarstvi
 } False negatives: {
 uherskeho
 mocnarstvi
@@ -153,270 +154,237 @@ souradnicich
 }
 
 Expected: {
-(1) pokud tento zakon nestanovi jinak<SPLIT>, radnou nebo mimoradnou ucetni zaverku jsou povinny mit overenu auditorem tyto ucetni jednotky a) akciove spolecnosti<SPLIT>, pokud ke konci rozvahoveho dne ucetniho obdobi<SPLIT>, za nejz se ucetni zaverka (<SPLIT>§_18_odst._3<SPLIT>) overuje<SPLIT>, a ucetniho obdobi bezprostredne predchazejiciho<SPLIT>, prekrocily nebo jiz dosahly alespon jedno ze tri uvedenych kriterii<SPLIT>: 1<SPLIT>. aktiva celkem vice nez 40000000 kc<SPLIT>; aktivy celkem se pro ucely tohoto zakona rozumi uhrn zjisteny z rozvahy v oceneni neupravenem o polozky podle §_26_odst._3<SPLIT>, 2<SPLIT>. rocni uhrn cisteho obratu vice nez 80000000 kc<SPLIT>; rocnim uhrnem cisteho obratu se pro ucely tohoto zakona rozumi vyse vynosu snizena o prodejni slevy a delena poctem zapocatych mesicu<SPLIT>, po ktere trvalo ucetni obdobi<SPLIT>, a vynasobena dvanacti<SPLIT>, 3<SPLIT>. prumerny prepocteny stav zamestnancu v prubehu ucetniho obdobi vice nez 50<SPLIT>, zjisteny zpusobem stanovenym na zaklade zvlastniho pravniho predpisu<SPLIT>, b) ostatni obchodni spolecnosti a druzstva<SPLIT>, pokud ke konci rozvahoveho dne ucetniho obdobi<SPLIT>, za nejz se ucetni zaverka (<SPLIT>§_18_odst._3<SPLIT>) overuje<SPLIT>, a ucetniho obdobi bezprotredne predchazejiciho<SPLIT>, prekrocily nebo jiz dosahly alespon dvou ze tri kriterii uvedenych v pismenu a) bodech 1 az 3<SPLIT>; v pripade druzstva se zamestnancem podle pismene a)_bodu_3 rozumi i pracovni vztah clena k druzstvu<SPLIT>, c) ucetni jednotky podle §_1_odst._2_pism._b)<SPLIT>, ktere jsou podnikateli<SPLIT>, a to za podminek podle pismene b)<SPLIT>, d) ucetni jednotky podle §_1_odst._2_pism._d)_az_h) za podminek podle pismene b)<SPLIT>, e) ucetni jednotky<SPLIT>, kterym tuto povinnost stanovi zvlastni pravni predpis<SPLIT>.}
+(4) kursove rozdily z aktiv a zavazku v cizi mene<SPLIT>, ktere ucetni jednotka vykazuje v rozvaze a kterymi se rozhodla zajistit proti menovemu riziku jiz vznikle nebo ocekavane smluvni vztahy<SPLIT>, jejichz plneni je v cizi mene a o nichz neni dosud uctovano<SPLIT>, se uctuji<SPLIT>, nejde-li o derivaty<SPLIT>, na rozvahovych uctech uctove skupiny 41<SPLIT>.}
 Predicted: {
-(1) pokud tento zakon nestanovi jinak<SPLIT>, radnou nebo mimoradnou ucetni zaverku jsou povinny mit overenu auditorem tyto ucetni jednotky a) akciove spolecnosti<SPLIT>, pokud ke konci rozvahoveho dne ucetniho obdobi<SPLIT>, za nejz se ucetni zaverka (<SPLIT>§_18_odst._3) overuje<SPLIT>, a ucetniho obdobi bezprostredne predchazejiciho<SPLIT>, prekrocily nebo jiz dosahly alespon jedno ze tri uvedenych kriterii<SPLIT>: 1<SPLIT>. aktiva celkem vice nez 40000000 kc<SPLIT>; aktivy celkem se pro ucely tohoto zakona rozumi uhrn zjisteny z rozvahy v oceneni neupravenem o polozky podle §_26_odst._3<SPLIT>, 2<SPLIT>. rocni uhrn cisteho obratu vice nez 80000000 kc<SPLIT>; rocnim uhrnem cisteho obratu se pro ucely tohoto zakona rozumi vyse vynosu snizena o prodejni slevy a delena poctem zapocatych mesicu<SPLIT>, po ktere trvalo ucetni obdobi<SPLIT>, a vynasobena dvanacti<SPLIT>, 3<SPLIT>. prumerny prepocteny stav zamestnancu v prubehu ucetniho obdobi vice nez 50<SPLIT>, zjisteny zpusobem stanovenym na zaklade zvlastniho pravniho predpisu<SPLIT>, b) ostatni obchodni spolecnosti a druzstva<SPLIT>, pokud ke konci rozvahoveho dne ucetniho obdobi<SPLIT>, za nejz se ucetni zaverka (<SPLIT>§_18_odst._3) overuje<SPLIT>, a ucetniho obdobi bezprotredne predchazejiciho<SPLIT>, prekrocily nebo jiz dosahly alespon dvou ze tri kriterii uvedenych v pismenu a) bodech 1 az 3<SPLIT>; v pripade druzstva se zamestnancem podle pismene a)_bodu_3 rozumi i pracovni vztah clena k druzstvu<SPLIT>, c) ucetni jednotky podle §_1_odst._2_pism._b)<SPLIT>, ktere jsou podnikateli<SPLIT>, a to za podminek podle pismene b<SPLIT>)<SPLIT>, d) ucetni jednotky podle §_1_odst._2_pism._d)_az_h) za podminek podle pismene b<SPLIT>)<SPLIT>, e) ucetni jednotky<SPLIT>, kterym tuto povinnost stanovi zvlastni pravni predpis<SPLIT>.}
+(4) kursove rozdily z aktiv a zavazku v cizi mene<SPLIT>, ktere ucetni jednotka vykazuje v rozvaze a kterymi se rozhodla zajistit proti menovemu riziku jiz vznikle nebo ocekavane smluvni vztahy<SPLIT>, jejichz plneni je v cizi mene a o nichz neni dosud uctovano<SPLIT>, se uctuji<SPLIT>, nejde<SPLIT>-<SPLIT>li o derivaty<SPLIT>, na rozvahovych uctech uctove skupiny 41<SPLIT>.}
 False positives: {
-§_18_odst._3)
-§_18_odst._3)
-b
-)
-b
-)
+nejde
+-
+li
 } False negatives: {
-§_18_odst._3
-)
-§_18_odst._3
-)
-b)
-b)
+nejde-li
 }
 
 Expected: {
-(1) z jednotlivych slozek majetku a zavazku k okamziku oceneni podle §_24_odst._2_pism._b) se realnou hodnotou ocenuji a) cenne papiry<SPLIT>, s vyjimkou cennych papiru drzenych do splatnosti<SPLIT>, dluhopisu porizenych v primarnich emisich neurcenych ucetni jednotkou k obchodovani<SPLIT>, cennych papiru predstavujicich ucast v ovladane osobe nebo v osobe pod podstatnym vlivem a cennych papiru emitovanych ucetni jednotkou<SPLIT>, b) derivaty<SPLIT>, c) financni umisteni<SPLIT>, s vyjimkou dluhopisu drzenych do splatnosti<SPLIT>, jejichz emitentem je clensky stat organizace pro ekonomickou spolupraci a rozvoj a jejichz hodnoceni bylo alespon dvema mezinarodne uznavanymi ratingovymi agenturami stanoveno na urovni ceske republiky nebo vyssi<SPLIT>, nejedna-li se o financni umisteni vztahujici se k zavazkum ze zivotniho pojisteni<SPLIT>, je<SPLIT>-<SPLIT>li nositelem investicniho rizika pojistnik<SPLIT>, a technicke rezervy u ucetnich jednotek<SPLIT>, ktere provozuji cinnost pojisteni nebo zajisteni podle zvlastnich pravnich predpisu<SPLIT>, krome verejneho zdravotniho pojisteni<SPLIT>, d) majetek a zavazky v pripadech<SPLIT>, kdy oceneni realnou hodnotou uklada zvlastni pravni predpis<SPLIT>, to neplati v pripadech uvedenych v odstavci 3<SPLIT>, e) cast majetku a zavazku zajistena derivaty<SPLIT>, f) pohledavky<SPLIT>, ktere ucetni jednotka nabyla a urcila k obchodovani<SPLIT>, g) zavazky vratit cenne papiry<SPLIT>, ktere ucetni jednotka zcizila a do okamziku oceneni je neziskala zpet<SPLIT>, h) u vybranych ucetnich jednotek majetek urceny k prodeji s vyjimkou zasob<SPLIT>.}
+(6) do konsolidacniho celku nemusi byt zahrnuty konsolidovane ucetni jednotky<SPLIT>, a) u nichz neni podil na konsolidacnim celku vyznamny z hlediska podani verneho a poctiveho obrazu predmetu ucetnictvi a financni situace konsolidacniho celku<SPLIT>; pokud je u dvou a vice takovych konsolidovanych ucetnich jednotek jejich souhrnny podil vyznamny<SPLIT>, jsou tyto ucetni jednotky zahrnuty do konsolidacniho celku<SPLIT>, nebo b) u nichz dlouhodoba omezeni vyznamne brani konsolidujici ucetni jednotce ve vykonu jejich prav ohledne nakladani s majetkem nebo rizeni uvedenych konsolidovanych ucetnich jednotek<SPLIT>, nebo vyjimecne nelze-li bez prokazatelne nutnych neprimerenych nakladu nebo bez prokazatelne nutneho zbytecneho zdrzeni ziskat informace nezbytne pro sestaveni konsolidovane ucetni zaverky podle teto vyhlasky<SPLIT>, nebo c) jsou<SPLIT>-<SPLIT>li akcie nebo podily konsolidovanych ucetnich jednotek drzeny vyhradne za ucelem jejich prodeje<SPLIT>. : a) plna konsolidace<SPLIT>, ktera se pouzije pri zahrnuti konsolidovane ucetni jednotky do konsolidovane ucetni zaverky<SPLIT>, c) konsolidace ekvivalenci (<SPLIT>protihodnotou<SPLIT>)<SPLIT>, ktera se pouzije pri zahrnuti ucetni jednotky pridruzene do konsolidovane ucetni zaverky}
 Predicted: {
-(1) z jednotlivych slozek majetku a zavazku k okamziku oceneni podle §_24_odst._2_pism._b) se realnou hodnotou ocenuji a) cenne papiry<SPLIT>, s vyjimkou cennych papiru drzenych do splatnosti<SPLIT>, dluhopisu porizenych v primarnich emisich neurcenych ucetni jednotkou k obchodovani<SPLIT>, cennych papiru predstavujicich ucast v ovladane osobe nebo v osobe pod podstatnym vlivem a cennych papiru emitovanych ucetni jednotkou<SPLIT>, b) derivaty<SPLIT>, c) financni umisteni<SPLIT>, s vyjimkou dluhopisu drzenych do splatnosti<SPLIT>, jejichz emitentem je clensky stat organizace pro ekonomickou spolupraci a rozvoj a jejichz hodnoceni bylo alespon dvema mezinarodne uznavanymi ratingovymi agenturami stanoveno na urovni ceske republiky nebo vyssi<SPLIT>, nejedna<SPLIT>-<SPLIT>li se o financni umisteni vztahujici se k zavazkum ze zivotniho pojisteni<SPLIT>, je<SPLIT>-<SPLIT>li nositelem investicniho rizika pojistnik<SPLIT>, a technicke rezervy u ucetnich jednotek<SPLIT>, ktere provozuji cinnost pojisteni nebo zajisteni podle zvlastnich pravnich predpisu<SPLIT>, krome verejneho zdravotniho pojisteni<SPLIT>, d) majetek a zavazky v pripadech<SPLIT>, kdy oceneni realnou hodnotou uklada zvlastni pravni predpis<SPLIT>, to neplati v pripadech uvedenych v odstavci 3<SPLIT>, e) cast majetku a zavazku zajistena derivaty<SPLIT>, f) pohledavky<SPLIT>, ktere ucetni jednotka nabyla a urcila k obchodovani<SPLIT>, g) zavazky vratit cenne papiry<SPLIT>, ktere ucetni jednotka zcizila a do okamziku oceneni je neziskala zpet<SPLIT>, h<SPLIT>) u vybranych ucetnich jednotek majetek urceny k prodeji s vyjimkou zasob<SPLIT>.}
+(6) do konsolidacniho celku nemusi byt zahrnuty konsolidovane ucetni jednotky<SPLIT>, a) u nichz neni podil na konsolidacnim celku vyznamny z hlediska podani verneho a poctiveho obrazu predmetu ucetnictvi a financni situace konsolidacniho celku<SPLIT>; pokud je u dvou a vice takovych konsolidovanych ucetnich jednotek jejich souhrnny podil vyznamny<SPLIT>, jsou tyto ucetni jednotky zahrnuty do konsolidacniho celku<SPLIT>, nebo b) u nichz dlouhodoba omezeni vyznamne brani konsolidujici ucetni jednotce ve vykonu jejich prav ohledne nakladani s majetkem nebo rizeni uvedenych konsolidovanych ucetnich jednotek<SPLIT>, nebo vyjimecne nelze<SPLIT>-<SPLIT>li bez prokazatelne nutnych neprimerenych nakladu nebo bez prokazatelne nutneho zbytecneho zdrzeni ziskat informace nezbytne pro sestaveni konsolidovane ucetni zaverky podle teto vyhlasky<SPLIT>, nebo c) jsou<SPLIT>-<SPLIT>li akcie nebo podily konsolidovanych ucetnich jednotek drzeny vyhradne za ucelem jejich prodeje<SPLIT>. : a) plna konsolidace<SPLIT>, ktera se pouzije pri zahrnuti konsolidovane ucetni jednotky do konsolidovane ucetni zaverky<SPLIT>, c) konsolidace ekvivalenci (<SPLIT>protihodnotou<SPLIT>)<SPLIT>, ktera se pouzije pri zahrnuti ucetni jednotky pridruzene do konsolidovane ucetni zaverky}
 False positives: {
-nejedna
+nelze
 -
+li
+} False negatives: {
+nelze-li
+}
+
+Expected: {
+(2) ustanoveni teto vyhlasky nemusi uplatnit ucetni jednotky v likvidaci<SPLIT>, jejichz likvidace byla zahajena pred 1<SPLIT>. lednem 1993<SPLIT>, a statni podniky hospodarici v rezimu zakona_c._111/1990_sb.<SPLIT>, o statnim podniku<SPLIT>, ve zneni pozdejsich predpisu<SPLIT>, do doby jejich zaniku<SPLIT>.}
+Predicted: {
+(2) ustanoveni teto vyhlasky nemusi uplatnit ucetni jednotky v likvidaci<SPLIT>, jejichz likvidace byla zahajena pred 1<SPLIT>. lednem 1993<SPLIT>, a statni podniky hospodarici v rezimu zakona_c._111<SPLIT>/<SPLIT>1990_sb.<SPLIT>, o statnim podniku<SPLIT>, ve zneni pozdejsich predpisu<SPLIT>, do doby jejich zaniku<SPLIT>.}
+False positives: {
+zakona_c._111
+/
+1990_sb.
+} False negatives: {
+zakona_c._111/1990_sb.
+}
+
+Expected: {
+2<SPLIT>. v prvnim dni ucetniho obdobi zapocateho 1.ledna 2004 a pozdeji se opravne polozky u pohledavek<SPLIT>, ktere ucetni jednotka nabyla v ucetnich obdobich zapocatych pred 1<SPLIT>. lednem 2004 a urcila k obchodovani<SPLIT>, zrusi ve prospech nakladu<SPLIT>; ke stejnemu okamziku se zauctuje snizeni hodnoty pohledavek prostrednictvim uctu v uctove skupine 58<SPLIT>.}
+Predicted: {
+2<SPLIT>. v prvnim dni ucetniho obdobi zapocateho 1<SPLIT>.<SPLIT>ledna 2004 a pozdeji se opravne polozky u pohledavek<SPLIT>, ktere ucetni jednotka nabyla v ucetnich obdobich zapocatych pred 1<SPLIT>. lednem 2004 a urcila k obchodovani<SPLIT>, zrusi ve prospech nakladu<SPLIT>; ke stejnemu okamziku se zauctuje snizeni hodnoty pohledavek prostrednictvim uctu v uctove skupine 58<SPLIT>.}
+False positives: {
+1
+.
+ledna
+} False negatives: {
+1.ledna
+}
+
+Expected: {
+prechodna ustanoveni zavedena vyhlaskou c._419/2010_sb._cl._ii}
+Predicted: {
+prechodna ustanoveni zavedena vyhlaskou c._419<SPLIT>/2010_sb._cl._ii}
+False positives: {
+c._419
+/2010_sb._cl._ii
+} False negatives: {
+c._419/2010_sb._cl._ii
+}
+
+Expected: {
+(3) ucetni jednotky uvedene v §_1_odst._2_pism._e) jsou povinny vest ucetnictvi od prvniho dne ucetniho obdobi nasledujiciho po kalendarnim roce<SPLIT>, ve kterem se staly ucetni jednotkou<SPLIT>, az do posledniho dne ucetniho obdobi<SPLIT>, ve kterem prestaly byt ucetni jednotkou<SPLIT>, nevznikla-li jim povinnost vest ucetnictvi podle §_1_odst._2_pism._d),_g) nebo h)<SPLIT>.}
+Predicted: {
+(3) ucetni jednotky uvedene v §_1_odst._2_pism._e) jsou povinny vest ucetnictvi od prvniho dne ucetniho obdobi nasledujiciho po kalendarnim roce<SPLIT>, ve kterem se staly ucetni jednotkou<SPLIT>, az do posledniho dne ucetniho obdobi<SPLIT>, ve kterem prestaly byt ucetni jednotkou<SPLIT>, nevznikla-<SPLIT>li jim povinnost vest ucetnictvi podle §_1_odst._2_pism._d),_g) nebo h<SPLIT>)<SPLIT>.}
+False positives: {
+nevznikla-
 li
 h
 )
 } False negatives: {
-nejedna-li
+nevznikla-li
 h)
 }
 
 Expected: {
-(12) ustanoveni tykajici se inventarizace majetku a zavazku se pouziji i pro inventarizaci jinych aktiv a jinych pasiv<SPLIT>, vcetne skutecnosti uctovanych v knize podrozvahovych uctu<SPLIT>.}
+(1) z ucetnich jednotek podle §_1_odst._2 jsou povinny ucetni zaverku i vyrocni zpravu<SPLIT>, vyzaduje-li jeji vyhotoveni tento zakon nebo zvlastni pravni predpis<SPLIT>, zverejnit ty<SPLIT>, ktere se zapisuji do obchodniho rejstriku<SPLIT>, nebo ty<SPLIT>, kterym tuto povinnost stanovi zvlastni pravni predpis<SPLIT>.}
 Predicted: {
-(<SPLIT>12<SPLIT>) ustanoveni tykajici se inventarizace majetku a zavazku se pouziji i pro inventarizaci jinych aktiv a jinych pasiv<SPLIT>, vcetne skutecnosti uctovanych v knize podrozvahovych uctu<SPLIT>.}
+(1) z ucetnich jednotek podle §_1_odst._2 jsou povinny ucetni zaverku i vyrocni zpravu<SPLIT>, vyzaduje<SPLIT>-<SPLIT>li jeji vyhotoveni tento zakon nebo zvlastni pravni predpis<SPLIT>, zverejnit ty<SPLIT>, ktere se zapisuji do obchodniho rejstriku<SPLIT>, nebo ty<SPLIT>, kterym tuto povinnost stanovi zvlastni pravni predpis<SPLIT>.}
 False positives: {
-(
-12
-)
-} False negatives: {
-(12)
-}
-
-Expected: {
-(1) pouziji-li ucetni jednotky ucetni zaznamy i pro jiny ucel nez uvedeny v §_31_odst._1<SPLIT>, a to zejmena pro ucely trestniho rizeni<SPLIT>, opatreni proti legalizaci vynosu z trestne cinnosti<SPLIT>, spravniho rizeni<SPLIT>, obcanskeho soudniho rizeni<SPLIT>, danoveho rizeni<SPLIT>, vyberu archivalii ve skartacnim rizeni nebo mimo nej<SPLIT>, nebo pro ucely socialniho zabezpeceni<SPLIT>, verejneho zdravotniho pojisteni anebo pro ucely ochrany autorskych prav<SPLIT>, postupuji po uplynuti dob uschovy uvedenych v §_31_odst._2 dale tak<SPLIT>, aby byly zajisteny pozadavky vyplyvajici z jejich pouziti pro uvedene ucely<SPLIT>; v pripade<SPLIT>, kdy ucetni jednotky pouziji ucetni zaznamy k temto ucelum<SPLIT>, plati vsechna ustanoveni tohoto zakona tykajici se ucetnich zaznamu obdobne<SPLIT>.}
-Predicted: {
-(1) pouziji<SPLIT>-<SPLIT>li ucetni jednotky ucetni zaznamy i pro jiny ucel nez uvedeny v §_31_odst._1<SPLIT>, a to zejmena pro ucely trestniho rizeni<SPLIT>, opatreni proti legalizaci vynosu z trestne cinnosti<SPLIT>, spravniho rizeni<SPLIT>, obcanskeho soudniho rizeni<SPLIT>, danoveho rizeni<SPLIT>, vyberu archivalii ve skartacnim rizeni nebo mimo nej<SPLIT>, nebo pro ucely socialniho zabezpeceni<SPLIT>, verejneho zdravotniho pojisteni anebo pro ucely ochrany autorskych prav<SPLIT>, postupuji po uplynuti dob uschovy uvedenych v §_31_odst._2 dale tak<SPLIT>, aby byly zajisteny pozadavky vyplyvajici z jejich pouziti pro uvedene ucely<SPLIT>; v pripade<SPLIT>, kdy ucetni jednotky pouziji ucetni zaznamy k temto ucelum<SPLIT>, plati vsechna ustanoveni tohoto zakona tykajici se ucetnich zaznamu obdobne<SPLIT>.}
-False positives: {
-pouziji
+vyzaduje
 -
 li
 } False negatives: {
-pouziji-li
+vyzaduje-li
 }
 
 Expected: {
-(1) ucetni jednotka neuvedena v §_37 se dopusti spravniho deliktu tim<SPLIT>, ze a) nevede ucetnictvi podle §_4_odst._1<SPLIT>, b) nesestavi ucetni zaverku podle §_6_odst._4<SPLIT>, nebo nesestavi ucetni zaverku ke dni stanovenemu v §_19_odst._1<SPLIT>, nebo nevyhotovi vyrocni zpravu podle §_21_odst._1_az_5<SPLIT>, c) vede ucetnictvi v rozporu s §_7_odst._1_a_2<SPLIT>, d) vede ucetnictvi v rozporu s §_8_odst._2<SPLIT>, e) ji sestavena ucetni zaverka neobsahuje vsechny povinne soucasti uvedene v §_18_odst._1 nebo 2<SPLIT>, f) v rozporu s §_19a_odst._1 nepouzije pro uctovani a sestaveni ucetni zaverky mezinarodni ucetni standardy<SPLIT>, g) v rozporu s §_20_odst._1 nema ucetni zaverku overenou auditorem nebo v rozporu s §_21_odst._6 nema vyrocni zpravu overenou auditorem<SPLIT>, h) nezverejni ucetni zaverku nebo vyrocni zpravu podle §_21a<SPLIT>, i) nesestavi ucetni vykazy za dilci konsolidacni celek statu nebo ucetni vykazy za ceskou republiku<SPLIT>, ac je k tomu povinna podle §_23b<SPLIT>, j) v rozporu s §_31 neuschova ucetni zaznamy<SPLIT>, nebo k) nezajisti podminky pro predavani ucetnich zaznamu do centralniho systemu ucetnich informaci statu zpusobem stanovenym provadecim pravnim predpisem vydanym na zaklade §_4_odst._8_a_§_23b_odst._534<SPLIT>) nebo nepreda ucetni zaznam do centralniho systemu ucetnich informaci statu<SPLIT>, ac ji tuto povinnost stanovi zakon nebo jiny pravni predpis<SPLIT>.}
+(4) pro ucely tohoto zakona se jako realna hodnota pouzije a) trzni hodnota<SPLIT>, b) oceneni kvalifikovanym odhadem nebo posudkem znalce<SPLIT>, neni<SPLIT>-<SPLIT>li trzni hodnota k dispozici nebo tato nedostatecne predstavuje realnou hodnotu<SPLIT>; metody oceneni pouzite pri kvalifikovanem odhadu nebo posudku znalce musi zajistit primerene priblizeni se k trzni hodnote<SPLIT>, c) oceneni stanovene podle zvlastnich pravnich predpisu<SPLIT>, nelze-li postupovat podle pismen a)_a_b)<SPLIT>.}
 Predicted: {
-(1) ucetni jednotka neuvedena v §_37 se dopusti spravniho deliktu tim<SPLIT>, ze a) nevede ucetnictvi podle §_4_odst._1<SPLIT>, b) nesestavi ucetni zaverku podle §_6_odst._4<SPLIT>, nebo nesestavi ucetni zaverku ke dni stanovenemu v §_19_odst._1<SPLIT>, nebo nevyhotovi vyrocni zpravu podle §_21_odst._1_az_5<SPLIT>, c) vede ucetnictvi v rozporu s §_7_odst._1_a_2<SPLIT>, d) vede ucetnictvi v rozporu s §_8_odst._2<SPLIT>, e) ji sestavena ucetni zaverka neobsahuje vsechny povinne soucasti uvedene v §_18_odst._1 nebo 2<SPLIT>, f) v rozporu s §_19a_odst._1 nepouzije pro uctovani a sestaveni ucetni zaverky mezinarodni ucetni standardy<SPLIT>, g) v rozporu s §_20_odst._1 nema ucetni zaverku overenou auditorem nebo v rozporu s §_21_odst._6 nema vyrocni zpravu overenou auditorem<SPLIT>, h<SPLIT>) nezverejni ucetni zaverku nebo vyrocni zpravu podle §_21a<SPLIT>, i<SPLIT>) nesestavi ucetni vykazy za dilci konsolidacni celek statu nebo ucetni vykazy za ceskou republiku<SPLIT>, ac je k tomu povinna podle §_23b<SPLIT>, j) v rozporu s §_31 neuschova ucetni zaznamy<SPLIT>, nebo k<SPLIT>) nezajisti podminky pro predavani ucetnich zaznamu do centralniho systemu ucetnich informaci statu zpusobem stanovenym provadecim pravnim predpisem vydanym na zaklade §_4_odst._8_a_§_23b_odst._534<SPLIT>) nebo nepreda ucetni zaznam do centralniho systemu ucetnich informaci statu<SPLIT>, ac ji tuto povinnost stanovi zakon nebo jiny pravni predpis<SPLIT>.}
+(4) pro ucely tohoto zakona se jako realna hodnota pouzije a) trzni hodnota<SPLIT>, b) oceneni kvalifikovanym odhadem nebo posudkem znalce<SPLIT>, neni<SPLIT>-<SPLIT>li trzni hodnota k dispozici nebo tato nedostatecne predstavuje realnou hodnotu<SPLIT>; metody oceneni pouzite pri kvalifikovanem odhadu nebo posudku znalce musi zajistit primerene priblizeni se k trzni hodnote<SPLIT>, c) oceneni stanovene podle zvlastnich pravnich predpisu<SPLIT>, nelze<SPLIT>-<SPLIT>li postupovat podle pismen a)_a_b)<SPLIT>.}
 False positives: {
-h
+nelze
+-
+li
+} False negatives: {
+nelze-li
+}
+
+Expected: {
+podil<SPLIT>, ktery predstavuje ucast v ovladane osobe nebo v osobe pod podstatnym vlivem<SPLIT>, muze byt ocenen ekvivalenci (<SPLIT>protihodnotou<SPLIT>)<SPLIT>; pouzije-li ucetni jednotka uvedeny zpusob oceneni<SPLIT>, je povinna jej pouzit pro oceneni vsech takovych podilu<SPLIT>.}
+Predicted: {
+podil<SPLIT>, ktery predstavuje ucast v ovladane osobe nebo v osobe pod podstatnym vlivem<SPLIT>, muze byt ocenen ekvivalenci (<SPLIT>protihodnotou<SPLIT>)<SPLIT>; pouzije<SPLIT>-<SPLIT>li ucetni jednotka uvedeny zpusob oceneni<SPLIT>, je povinna jej pouzit pro oceneni vsech takovych podilu<SPLIT>.}
+False positives: {
+pouzije
+-
+li
+} False negatives: {
+pouzije-li
+}
+
+Expected: {
+(6) ucetni jednotky pri inventarizaci periodicke a) mohou zahajit , inventuru nejdrive b) ctyri ukonci mesice inventuru pred nejpozdeji rozvahovym dva dnem<SPLIT>mesice po rozvahovem dni<SPLIT>.}
+Predicted: {
+(6) ucetni jednotky pri inventarizaci periodicke a) mohou zahajit , inventuru nejdrive b) ctyri ukonci mesice inventuru pred nejpozdeji rozvahovym dva dnemmesice po rozvahovem dni<SPLIT>.}
+False positives: {
+dnemmesice
+} False negatives: {
+dnem
+mesice
+}
+
+Expected: {
+tuto dokumentaci uschovavaji ucetni jednotky po dobu stanovenou v §_31_odst._2 podle toho<SPLIT>, jakou funkci plni pri vedeni ucetnictvi<SPLIT>, nejde-li o pripad podle odstavce 1<SPLIT>.}
+Predicted: {
+tuto dokumentaci uschovavaji ucetni jednotky po dobu stanovenou v §_31_odst._2 podle toho<SPLIT>, jakou funkci plni pri vedeni ucetnictvi<SPLIT>, nejde<SPLIT>-<SPLIT>li o pripad podle odstavce 1<SPLIT>.}
+False positives: {
+nejde
+-
+li
+} False negatives: {
+nejde-li
+}
+
+Expected: {
+pro ucely tohoto zakona se povazuje za a) listinnou formu ucetni zaznam provedeny na analogovy nosic rukopisem<SPLIT>, psacim strojem<SPLIT>, tiskarskymi nebo reprografickymi technikami anebo tiskovym vystupnim zarizenim vypocetni techniky<SPLIT>, jehoz obsah je pro fyzickou osobu citelny<SPLIT>, b) technickou formu ucetni zaznam provedeny elektronickym<SPLIT>, optickym nebo jinym zpusobem nespadajicim pod pismeno a)<SPLIT>, ktery umoznuje jeho prevedeni do formy<SPLIT>, v niz je jeho obsah pro fyzickou osobu citelny<SPLIT>, c) smisenou formu ucetni zaznam v listinne forme obsahujici tez informace v technicke forme pro fyzickou osobu necitelne<SPLIT>, ktery umoznuje jeho prevedeni do formy<SPLIT>, v niz je jeho obsah pro fyzickou osobu citelny<SPLIT>.}
+Predicted: {
+pro ucely tohoto zakona se povazuje za a) listinnou formu ucetni zaznam provedeny na analogovy nosic rukopisem<SPLIT>, psacim strojem<SPLIT>, tiskarskymi nebo reprografickymi technikami anebo tiskovym vystupnim zarizenim vypocetni techniky<SPLIT>, jehoz obsah je pro fyzickou osobu citelny<SPLIT>, b) technickou formu ucetni zaznam provedeny elektronickym<SPLIT>, optickym nebo jinym zpusobem nespadajicim pod pismeno a<SPLIT>)<SPLIT>, ktery umoznuje jeho prevedeni do formy<SPLIT>, v niz je jeho obsah pro fyzickou osobu citelny<SPLIT>, c) smisenou formu ucetni zaznam v listinne forme obsahujici tez informace v technicke forme pro fyzickou osobu necitelne<SPLIT>, ktery umoznuje jeho prevedeni do formy<SPLIT>, v niz je jeho obsah pro fyzickou osobu citelny<SPLIT>.}
+False positives: {
+a
 )
-i
+} False negatives: {
+a)
+}
+
+Expected: {
+(2) ode dne ucinnosti tohoto zakona nepostupuje federalni ministerstvo financi podle ustanoveni §_4_odst._2,_§_14_a_§_35_odst._3_zakona_c._21/1971_sb.<SPLIT>, o jednotne soustave socialne ekonomickych informaci<SPLIT>, ve zneni zakona_c._128/1989_sb.}
+Predicted: {
+(2) ode dne ucinnosti tohoto zakona nepostupuje federalni ministerstvo financi podle ustanoveni §_4_odst._2,_§_14_a_§_35_odst._3_zakona_c._21<SPLIT>/<SPLIT>1971_sb.<SPLIT>, o jednotne soustave socialne ekonomickych informaci<SPLIT>, ve zneni zakona_c._128<SPLIT>/<SPLIT>1989_sb.}
+False positives: {
+§_4_odst._2,_§_14_a_§_35_odst._3_zakona_c._21
+/
+1971_sb.
+zakona_c._128
+/
+1989_sb.
+} False negatives: {
+§_4_odst._2,_§_14_a_§_35_odst._3_zakona_c._21/1971_sb.
+zakona_c._128/1989_sb.
+}
+
+Expected: {
+(6) polozka "<SPLIT>c.ii.5. dlouhodobe poskytnute zalohy<SPLIT>" obsahuje u vsech ucetnich jednotek poskytnute dlouhodobe zalohy<SPLIT>, s vyjimkou zaloh vykazanych v polozkach "<SPLIT>b.i.8. poskytnute zalohy na dlouhodoby nehmotny majetek<SPLIT>"<SPLIT>, "<SPLIT>b.ii.8. poskytnute zalohy na dlouhodoby hmotny majetek<SPLIT>"<SPLIT>, "<SPLIT>b.iii.7. poskytnute zalohy na dlouhodoby financni majetek<SPLIT>"<SPLIT>, "<SPLIT>c.i.6. poskytnute zalohy na zasoby<SPLIT>" a "<SPLIT>c.iii.7. kratkodobe poskytnute zalohy<SPLIT>"<SPLIT>.}
+Predicted: {
+(6) polozka "<SPLIT>c.ii.5<SPLIT>. dlouhodobe poskytnute zalohy<SPLIT>" obsahuje u vsech ucetnich jednotek poskytnute dlouhodobe zalohy<SPLIT>, s vyjimkou zaloh vykazanych v polozkach "<SPLIT>b.i.8<SPLIT>. poskytnute zalohy na dlouhodoby nehmotny majetek<SPLIT>"<SPLIT>, "<SPLIT>b.ii.8<SPLIT>. poskytnute zalohy na dlouhodoby hmotny majetek<SPLIT>"<SPLIT>, "<SPLIT>b.iii.7<SPLIT>. poskytnute zalohy na dlouhodoby financni majetek<SPLIT>"<SPLIT>, "<SPLIT>c.i.6. poskytnute zalohy na zasoby<SPLIT>" a "<SPLIT>c.iii.7<SPLIT>. kratkodobe poskytnute zalohy<SPLIT>"<SPLIT>.}
+False positives: {
+c.ii.5
+.
+b.i.8
+.
+b.ii.8
+.
+b.iii.7
+.
+c.iii.7
+.
+} False negatives: {
+c.ii.5.
+b.i.8.
+b.ii.8.
+b.iii.7.
+c.iii.7.
+}
+
+Expected: {
+polozka "<SPLIT>ii. vykony<SPLIT>" obsahuje a) trzby za prodej vlastnich vyrobku a sluzeb<SPLIT>, b) zmenu stavu zasob vlastni vyroby<SPLIT>, to je nedokoncene vyroby<SPLIT>, polotovaru<SPLIT>, vyrobku a mladych a ostatnich zvirat a jejich skupin<SPLIT>; tato polozka muze mit i zapornou hodnotu<SPLIT>, c) aktivaci<SPLIT>, v teto polozce je hodnota aktivovanych nakladu zejmena na zasoby a dlouhodoby nehmotny a hmotny majetek vytvoreny vlastni cinnosti<SPLIT>.}
+Predicted: {
+polozka "<SPLIT>ii<SPLIT>. vykony<SPLIT>" obsahuje a) trzby za prodej vlastnich vyrobku a sluzeb<SPLIT>, b) zmenu stavu zasob vlastni vyroby<SPLIT>, to je nedokoncene vyroby<SPLIT>, polotovaru<SPLIT>, vyrobku a mladych a ostatnich zvirat a jejich skupin<SPLIT>; tato polozka muze mit i zapornou hodnotu<SPLIT>, c) aktivaci<SPLIT>, v teto polozce je hodnota aktivovanych nakladu zejmena na zasoby a dlouhodoby nehmotny a hmotny majetek vytvoreny vlastni cinnosti<SPLIT>.}
+False positives: {
+ii
+.
+} False negatives: {
+ii.
+}
+
+Expected: {
+(3) polozka "<SPLIT>** vysledek hospodareni za beznou cinnost<SPLIT>" a) ve vykazu zisku a ztraty - druhove cleneni je souctem polozek "<SPLIT>* provozni vysledek hospodareni<SPLIT>" a "<SPLIT>* financni vysledek hospodareni<SPLIT>" snizenym o polozku "<SPLIT>q. dan z prijmu za beznou cinnost<SPLIT>"<SPLIT>, b) ve vykazu zisku a ztraty - ucelove cleneni je souctem polozek "<SPLIT>* provozni vysledek hospodareni<SPLIT>" a "<SPLIT>* financni vysledek hospodareni<SPLIT>" snizenym o polozku "<SPLIT>l. dan z prijmu za beznou cinnost<SPLIT>"<SPLIT>.}
+Predicted: {
+(3) polozka "<SPLIT>** vysledek hospodareni za beznou cinnost<SPLIT>" a) ve vykazu zisku a ztraty - druhove cleneni je souctem polozek "<SPLIT>* provozni vysledek hospodareni<SPLIT>" a "<SPLIT>* financni vysledek hospodareni<SPLIT>" snizenym o polozku "<SPLIT>q. dan z prijmu za beznou cinnost<SPLIT>"<SPLIT>, b) ve vykazu zisku a ztraty - ucelove cleneni je souctem polozek "<SPLIT>* provozni vysledek hospodareni<SPLIT>" a "<SPLIT>* financni vysledek hospodareni<SPLIT>" snizenym o polozku "<SPLIT>l<SPLIT>. dan z prijmu za beznou cinnost<SPLIT>"<SPLIT>.}
+False positives: {
+l
+.
+} False negatives: {
+l.
+}
+
+Expected: {
+a) (9) celkovou v vysi dalsi zavazku<SPLIT>casti , prilohy je<SPLIT>-<SPLIT>li uvede tato ucetni informace jednotka vyznamna informace<SPLIT>k , posouzeni ktere financni nejsou situace vykazany ucetni v jednotky<SPLIT>rozvaze , (<SPLIT>bilanci<SPLIT>b) )<SPLIT>s : ohledem na . princip vyznamnosti drobny nehmotny a hmotny majetek<SPLIT>, c) charakter a obchodni ucel operaci ucetni jednotky<SPLIT>, ktera je pravnickou osobou<SPLIT>, jsou<SPLIT>-<SPLIT>li rizika nebo uzitky z techto operaci vyznamne a pokud je zverejneni techto rizik nebo uzitku nezbytne k posouzeni financni situace ucetni jednotky}
+Predicted: {
+a) (9) celkovou v vysi dalsi zavazkucasti , prilohy je<SPLIT>-<SPLIT>li uvede tato ucetni informace jednotka vyznamna informacek , posouzeni ktere financni nejsou situace vykazany ucetni v jednotkyrozvaze , (<SPLIT>bilancib<SPLIT>) )<SPLIT>s : ohledem na . princip vyznamnosti drobny nehmotny a hmotny majetek<SPLIT>, c) charakter a obchodni ucel operaci ucetni jednotky<SPLIT>, ktera je pravnickou osobou<SPLIT>, jsou<SPLIT>-<SPLIT>li rizika nebo uzitky z techto operaci vyznamne a pokud je zverejneni techto rizik nebo uzitku nezbytne k posouzeni financni situace ucetni jednotky}
+False positives: {
+zavazkucasti
+informacek
+jednotkyrozvaze
+bilancib
 )
+} False negatives: {
+zavazku
+casti
+informace
 k
-)
-} False negatives: {
-h)
-i)
-k)
-}
-
-Expected: {
-polozka "<SPLIT>***vysledek hospodareni za ucetni obdobi<SPLIT>" uvedena ve vykazu zisku a ztraty se musi rovnat polozce "<SPLIT>a. v. vysledek hospodareni bezneho ucetniho obdobi<SPLIT>" uvedene v rozvaze (<SPLIT>bilanci<SPLIT>)<SPLIT>.}
-Predicted: {
-polozka "<SPLIT>**<SPLIT>*vysledek hospodareni za ucetni obdobi<SPLIT>" uvedena ve vykazu zisku a ztraty se musi rovnat polozce "<SPLIT>a. v<SPLIT>. vysledek hospodareni bezneho ucetniho obdobi<SPLIT>" uvedene v rozvaze (<SPLIT>bilanci<SPLIT>)<SPLIT>.}
-False positives: {
-**
-*vysledek
-v
-.
-} False negatives: {
-***vysledek
-v.
-}
-
-Expected: {
-(9) polozka "<SPLIT>b.ii.8. poskytnute zalohy na dlouhodoby hmotny majetek<SPLIT>" obsahuje kratkodobe a dlouhodobe zalohy poskytnute na porizeni dlouhodobeho hmotneho majetku<SPLIT>.}
-Predicted: {
-(9) polozka "<SPLIT>b.ii.8<SPLIT>. poskytnute zalohy na dlouhodoby hmotny majetek<SPLIT>" obsahuje kratkodobe a dlouhodobe zalohy poskytnute na porizeni dlouhodobeho hmotneho majetku<SPLIT>.}
-False positives: {
-b.ii.8
-.
-} False negatives: {
-b.ii.8.
-}
-
-Expected: {
-(8) polozka "<SPLIT>c.ii.7. jine pohledavky<SPLIT>" obsahuje u vsech ucetnich jednotek zejmena dlouhodobe pohledavky za zamestnanci<SPLIT>, pohledavky z prodeje podniku nebo jeho casti<SPLIT>, pohledavky z pronajmu podniku nebo jeho casti<SPLIT>, nakoupene opce<SPLIT>, pohledavky z titulu nahrady mank a skod a dlouhodobe pohledavky z vydanych dluhopisu<SPLIT>.}
-Predicted: {
-(8) polozka "<SPLIT>c.ii.7<SPLIT>. jine pohledavky<SPLIT>" obsahuje u vsech ucetnich jednotek zejmena dlouhodobe pohledavky za zamestnanci<SPLIT>, pohledavky z prodeje podniku nebo jeho casti<SPLIT>, pohledavky z pronajmu podniku nebo jeho casti<SPLIT>, nakoupene opce<SPLIT>, pohledavky z titulu nahrady mank a skod a dlouhodobe pohledavky z vydanych dluhopisu<SPLIT>.}
-False positives: {
-c.ii.7
-.
-} False negatives: {
-c.ii.7.
-}
-
-Expected: {
-polozka "<SPLIT>a.iii. rezervni fondy, nedelitelny fond a ostatni fondy ze zisku<SPLIT>" obsahuje fondy vytvarene podle obchodniho zakoniku<SPLIT>, popripade stanov<SPLIT>, spolecenske smlouvy<SPLIT>, zakladatelske smlouvy<SPLIT>, zakladatelske listiny nebo podle zakona o statnim podniku<SPLIT>.}
-Predicted: {
-polozka "<SPLIT>a.iii<SPLIT>. rezervni fondy<SPLIT>, nedelitelny fond a ostatni fondy ze zisku<SPLIT>" obsahuje fondy vytvarene podle obchodniho zakoniku<SPLIT>, popripade stanov<SPLIT>, spolecenske smlouvy<SPLIT>, zakladatelske smlouvy<SPLIT>, zakladatelske listiny nebo podle zakona o statnim podniku<SPLIT>.}
-False positives: {
-a.iii
-.
-fondy
-,
-} False negatives: {
-a.iii.
-fondy,
-}
-
-Expected: {
-(2) obsahove vymezeni polozek kratkodobych zavazku "<SPLIT>b.iii.1. zavazky z obchodnich vztahu<SPLIT>" az "<SPLIT>b.iii.3. zavazky - podstatny vliv<SPLIT>"<SPLIT>, "<SPLIT>b.iii.9. vydane dluhopisy<SPLIT>" a "<SPLIT>b.iii.10. dohadne ucty pasivni<SPLIT>" je obdobne obsahovemu vymezeni polozek dlouhodobych zavazku "<SPLIT>b.ii.1. zavazky z obchodnich vztahu<SPLIT>" az "<SPLIT>b.ii.3. zavazky - podstatny vliv<SPLIT>"<SPLIT>, "<SPLIT>b.ii.6. vydane dluhopisy<SPLIT>" a "<SPLIT>b.ii.8. dohadne ucty pasivni<SPLIT>"<SPLIT>.}
-Predicted: {
-(2) obsahove vymezeni polozek kratkodobych zavazku "<SPLIT>b.iii.1. zavazky z obchodnich vztahu<SPLIT>" az "<SPLIT>b.iii.3. zavazky - podstatny vliv<SPLIT>"<SPLIT>, "<SPLIT>b.iii.9<SPLIT>. vydane dluhopisy<SPLIT>" a "<SPLIT>b.iii.10<SPLIT>. dohadne ucty pasivni<SPLIT>" je obdobne obsahovemu vymezeni polozek dlouhodobych zavazku "<SPLIT>b.ii.1. zavazky z obchodnich vztahu<SPLIT>" az "<SPLIT>b.ii.3. zavazky - podstatny vliv<SPLIT>"<SPLIT>, "<SPLIT>b.ii.6. vydane dluhopisy<SPLIT>" a "<SPLIT>b.ii.8<SPLIT>. dohadne ucty pasivni<SPLIT>"<SPLIT>.}
-False positives: {
-b.iii.9
-.
-b.iii.10
-.
-b.ii.8
-.
-} False negatives: {
-b.iii.9.
-b.iii.10.
-b.ii.8.
-}
-
-Expected: {
-(5) polozka "<SPLIT>*** vysledek hospodareni za ucetni obdobi<SPLIT>" a) ve vykazu zisku a ztraty - druhove cleneni je souctem polozek "<SPLIT>** vysledek hospodareni za beznou cinnost<SPLIT>" a "<SPLIT>* mimoradny vysledek hospodareni<SPLIT>" snizenym o polozku "<SPLIT>t. prevod podilu na vysledku hospodareni spolecnikum<SPLIT>"<SPLIT>, b) ve vykazu zisku a ztraty - ucelove cleneni je souctem polozek "<SPLIT>** vysledek hospodareni za beznou cinnost<SPLIT>" a "<SPLIT>* mimoradny vysledek hospodareni<SPLIT>" snizenym o polozku "<SPLIT>o. prevod podilu na vysledku hospodareni spolecnikum<SPLIT>"<SPLIT>.}
-Predicted: {
-(5) polozka "<SPLIT>**<SPLIT>* vysledek hospodareni za ucetni obdobi<SPLIT>" a) ve vykazu zisku a ztraty - druhove cleneni je souctem polozek "<SPLIT>** vysledek hospodareni za beznou cinnost<SPLIT>" a "<SPLIT>* mimoradny vysledek hospodareni<SPLIT>" snizenym o polozku "<SPLIT>t. prevod podilu na vysledku hospodareni spolecnikum<SPLIT>"<SPLIT>, b) ve vykazu zisku a ztraty - ucelove cleneni je souctem polozek "<SPLIT>** vysledek hospodareni za beznou cinnost<SPLIT>" a "<SPLIT>* mimoradny vysledek hospodareni<SPLIT>" snizenym o polozku "<SPLIT>o. prevod podilu na vysledku hospodareni spolecnikum<SPLIT>"<SPLIT>.}
-False positives: {
-**
-*
-} False negatives: {
-***
-}
-
-Expected: {
-(13) ucetni jednotka<SPLIT>, ktera je pravnickou osobou a prekrocila ke konci rozvahoveho dne<SPLIT>, za ktery se ucetni zaverka sestavuje<SPLIT>, alespon dve ze tri kriterii uvedenych v odstavci 9 pism._c)<SPLIT>, dale v priloze uvede a) informaci o rozcleneni trzeb z prodeje zbozi<SPLIT>, vyrobku a sluzeb podle kategorii cinnosti a podle zemepisnych trhu<SPLIT>, pokud se tyto kategorie a trhy mezi sebou podstatne lisi z hlediska zpusobu<SPLIT>, kterym je organizovan prodej zbozi a vyrobku a poskytovani sluzeb spadajicich do bezne cinnosti ucetni jednotky<SPLIT>, b) vysvetleni castky vykazane v polozce "<SPLIT>b.i.1. zrizovaci vydaje<SPLIT>"<SPLIT>.}
-Predicted: {
-(<SPLIT>13<SPLIT>) ucetni jednotka<SPLIT>, ktera je pravnickou osobou a prekrocila ke konci rozvahoveho dne<SPLIT>, za ktery se ucetni zaverka sestavuje<SPLIT>, alespon dve ze tri kriterii uvedenych v odstavci 9 pism._c)<SPLIT>, dale v priloze uvede a) informaci o rozcleneni trzeb z prodeje zbozi<SPLIT>, vyrobku a sluzeb podle kategorii cinnosti a podle zemepisnych trhu<SPLIT>, pokud se tyto kategorie a trhy mezi sebou podstatne lisi z hlediska zpusobu<SPLIT>, kterym je organizovan prodej zbozi a vyrobku a poskytovani sluzeb spadajicich do bezne cinnosti ucetni jednotky<SPLIT>, b) vysvetleni castky vykazane v polozce "<SPLIT>b.i.1. zrizovaci vydaje<SPLIT>"<SPLIT>.}
-False positives: {
-(
-13
-)
-} False negatives: {
-(13)
-}
-
-Expected: {
-(2) rozvaha se podle pouzite metody konsolidace doplni o polozky a) kladny konsolidacni rozdil<SPLIT>, b) zaporny konsolidacni rozdil<SPLIT>, c) mensinovy vlastni kapital<SPLIT>, d) mensinovy zakladni kapital<SPLIT>, e) mensinove kapitalove fondy<SPLIT>, f) mensinove fondy ze zisku vcetne nerozdeleneho zisku a neuhrazene ztraty minulych let<SPLIT>, g) mensinovy vysledek hospodareni bezneho ucetniho obdobi<SPLIT>, h) cenne papiry a podily v ekvivalenci<SPLIT>, i) konsolidacni rezervni fond<SPLIT>, j) podil na vysledku hospodareni v ekvivalenci<SPLIT>.}
-Predicted: {
-(2) rozvaha se podle pouzite metody konsolidace doplni o polozky a) kladny konsolidacni rozdil<SPLIT>, b) zaporny konsolidacni rozdil<SPLIT>, c) mensinovy vlastni kapital<SPLIT>, d) mensinovy zakladni kapital<SPLIT>, e) mensinove kapitalove fondy<SPLIT>, f) mensinove fondy ze zisku vcetne nerozdeleneho zisku a neuhrazene ztraty minulych let<SPLIT>, g) mensinovy vysledek hospodareni bezneho ucetniho obdobi<SPLIT>, h<SPLIT>) cenne papiry a podily v ekvivalenci<SPLIT>, i<SPLIT>) konsolidacni rezervni fond<SPLIT>, j) podil na vysledku hospodareni v ekvivalenci<SPLIT>.}
-False positives: {
-h
-)
-i
-)
-} False negatives: {
-h)
-i)
-}
-
-Expected: {
-2<SPLIT>. v pripadech<SPLIT>, kdy byl projekt premeny vypracovan podle zakona_c._125/2008_sb.<SPLIT>, o premenach obchodnich spolecnosti a druzstev<SPLIT>, ve zneni ucinnem do 31<SPLIT>. prosince 2011<SPLIT>, postupuje se pri uctovani o premene spolecnosti podle vyhlasky_c._500/2002_sb.<SPLIT>, ve zneni ucinnem do dne nabyti ucinnosti teto vyhlasky<SPLIT>.}
-Predicted: {
-2<SPLIT>. v pripadech<SPLIT>, kdy byl projekt premeny vypracovan podle zakona_c._125<SPLIT>/<SPLIT>2008_sb.<SPLIT>, o premenach obchodnich spolecnosti a druzstev<SPLIT>, ve zneni ucinnem do 31<SPLIT>. prosince 2011<SPLIT>, postupuje se pri uctovani o premene spolecnosti podle vyhlasky_c._500/2002_sb.<SPLIT>, ve zneni ucinnem do dne nabyti ucinnosti teto vyhlasky<SPLIT>.}
-False positives: {
-zakona_c._125
-/
-2008_sb.
-} False negatives: {
-zakona_c._125/2008_sb.
-}
-
-Expected: {
-(14) za informacni system podle zvlastniho pravniho predpisu lze ucetnictvi povazovat pouze jako celek<SPLIT>.}
-Predicted: {
-(<SPLIT>14<SPLIT>) za informacni system podle zvlastniho pravniho predpisu lze ucetnictvi povazovat pouze jako celek<SPLIT>.}
-False positives: {
-(
-14
-)
-} False negatives: {
-(14)
-}
-
-Expected: {
-(2) hlavni kniha zahrnuje synteticke ucty podle uctoveho rozvrhu<SPLIT>, ktere obsahuji minimalne tyto informace<SPLIT>: a) zustatky uctu ke dni<SPLIT>, k nemuz se otevira hlavni kniha<SPLIT>, b) souhrnne obraty strany ma dati a dal uctu<SPLIT>, alespon za kalendarni mesic<SPLIT>; vybrane ucetni jednotky uvadeji souhrnne obraty denne<SPLIT>, nenaplni-li tuto povinnost vybrana ucetni jednotka v jine ucetni knize<SPLIT>, c) zustatky uctu ke dni<SPLIT>, ke kteremu se sestavuje ucetni zaverka<SPLIT>.}
-Predicted: {
-(2) hlavni kniha zahrnuje synteticke ucty podle uctoveho rozvrhu<SPLIT>, ktere obsahuji minimalne tyto informace<SPLIT>: a) zustatky uctu ke dni<SPLIT>, k nemuz se otevira hlavni kniha<SPLIT>, b) souhrnne obraty strany ma dati a dal uctu<SPLIT>, alespon za kalendarni mesic<SPLIT>; vybrane ucetni jednotky uvadeji souhrnne obraty denne<SPLIT>, nenaplni<SPLIT>-<SPLIT>li tuto povinnost vybrana ucetni jednotka v jine ucetni knize<SPLIT>, c) zustatky uctu ke dni<SPLIT>, ke kteremu se sestavuje ucetni zaverka<SPLIT>.}
-False positives: {
-nenaplni
--
-li
-} False negatives: {
-nenaplni-li
-}
-
-Expected: {
-(1) neni<SPLIT>-<SPLIT>li dale stanoveno jinak<SPLIT>, ucetni jednotky oteviraji ucetni knihy a) ke dni vzniku povinnosti vest ucetnictvi<SPLIT>, b) k prvnimu dni ucetniho obdobi<SPLIT>, c) ke dni vstupu do likvidace<SPLIT>, d) ke dni nasledujicimu po dni zpracovani navrhu na rozdeleni likvidacniho zustatku nebo ke dni nasledujicimu po dni zpracovani zpravy o nalozeni s majetkem podle zvlastnich pravnich predpisu<SPLIT>, e) ke dni<SPLIT>, kterym nastanou ucinky rozhodnuti o upadku nebo ke kteremu nastanou ucinky rozhodnuti soudu o premene reorganizace v konkurs<SPLIT>, f) ke dni nasledujicimu po dni<SPLIT>, kterym nastanou ucinky zruseni konkursu<SPLIT>, g) ke dni<SPLIT>, kterym nastanou ucinky schvaleni reorganizacniho planu<SPLIT>, h) ke dni nasledujicimu po dni<SPLIT>, kterym nastanou ucinky splneni reorganizacniho planu<SPLIT>, i) ke dni nasledujicimu po dni<SPLIT>, kterym nastanou ucinky splneni planu oddluzeni<SPLIT>, nebo j) ke dni<SPLIT>, ktery pro sestaveni zahajovaci rozvahy stanovi zvlastni pravni predpis<SPLIT>.}
-Predicted: {
-(1) neni<SPLIT>-<SPLIT>li dale stanoveno jinak<SPLIT>, ucetni jednotky oteviraji ucetni knihy a) ke dni vzniku povinnosti vest ucetnictvi<SPLIT>, b) k prvnimu dni ucetniho obdobi<SPLIT>, c) ke dni vstupu do likvidace<SPLIT>, d) ke dni nasledujicimu po dni zpracovani navrhu na rozdeleni likvidacniho zustatku nebo ke dni nasledujicimu po dni zpracovani zpravy o nalozeni s majetkem podle zvlastnich pravnich predpisu<SPLIT>, e) ke dni<SPLIT>, kterym nastanou ucinky rozhodnuti o upadku nebo ke kteremu nastanou ucinky rozhodnuti soudu o premene reorganizace v konkurs<SPLIT>, f) ke dni nasledujicimu po dni<SPLIT>, kterym nastanou ucinky zruseni konkursu<SPLIT>, g) ke dni<SPLIT>, kterym nastanou ucinky schvaleni reorganizacniho planu<SPLIT>, h<SPLIT>) ke dni nasledujicimu po dni<SPLIT>, kterym nastanou ucinky splneni reorganizacniho planu<SPLIT>, i<SPLIT>) ke dni nasledujicimu po dni<SPLIT>, kterym nastanou ucinky splneni planu oddluzeni<SPLIT>, nebo j) ke dni<SPLIT>, ktery pro sestaveni zahajovaci rozvahy stanovi zvlastni pravni predpis<SPLIT>.}
-False positives: {
-h
-)
-i
-)
-} False negatives: {
-h)
-i)
-}
-
-Expected: {
-obcanska sdruzeni<SPLIT>, jejich organizacni jednotky<SPLIT>, ktere maji pravni subjektivitu<SPLIT>, cirkve a nabozenske spolecnosti nebo cirkevni instituce<SPLIT>, ktere jsou cirkevni pravnickou osobou<SPLIT>, a honebni spolecenstva mohou vest ucetnictvi podle zakona_c._563/1991_sb.<SPLIT>, o ucetnictvi<SPLIT>, ve zneni zakona_c._117/1994_sb.,_zakona_c._227/1997_sb.,_zakona_c._492/2000_sb.,_zakona_c._353/2001_sb._a_zakona_c._437/2003_sb.<SPLIT>, pokud jejich celkove prijmy za posledni uzavrene ucetni obdobi nepresahnou 3000000 kc<SPLIT>; pritom se na ne vztahuji ustanoveni zakona_c._563/1991_sb.<SPLIT>, o ucetnictvi<SPLIT>, a jeho provadecich pravnich predpisu<SPLIT>, ktera upravuji uctovani v soustave jednoducheho ucetnictvi<SPLIT>, ve zneni ucinnem k 31<SPLIT>. prosinci 2003<SPLIT>.}
-Predicted: {
-obcanska sdruzeni<SPLIT>, jejich organizacni jednotky<SPLIT>, ktere maji pravni subjektivitu<SPLIT>, cirkve a nabozenske spolecnosti nebo cirkevni instituce<SPLIT>, ktere jsou cirkevni pravnickou osobou<SPLIT>, a honebni spolecenstva mohou vest ucetnictvi podle zakona_c._563<SPLIT>/<SPLIT>1991_sb.<SPLIT>, o ucetnictvi<SPLIT>, ve zneni zakona_c._117<SPLIT>/<SPLIT>1994_sb.,_zakona_c._227<SPLIT>/<SPLIT>1997_sb.,_zakona_c._492<SPLIT>/<SPLIT>2000_sb.,_zakona_c._353<SPLIT>/2001_sb._a_zakona_c._437<SPLIT>/<SPLIT>2003_sb.<SPLIT>, pokud jejich celkove prijmy za posledni uzavrene ucetni obdobi nepresahnou 3000000 kc<SPLIT>; pritom se na ne vztahuji ustanoveni zakona_c._563<SPLIT>/<SPLIT>1991_sb.<SPLIT>, o ucetnictvi<SPLIT>, a jeho provadecich pravnich predpisu<SPLIT>, ktera upravuji uctovani v soustave jednoducheho ucetnictvi<SPLIT>, ve zneni ucinnem k 31<SPLIT>. prosinci 2003<SPLIT>.}
-False positives: {
-zakona_c._563
-/
-1991_sb.
-zakona_c._117
-/
-1994_sb.,_zakona_c._227
-/
-1997_sb.,_zakona_c._492
-/
-2000_sb.,_zakona_c._353
-/2001_sb._a_zakona_c._437
-/
-2003_sb.
-zakona_c._563
-/
-1991_sb.
-} False negatives: {
-zakona_c._563/1991_sb.
-zakona_c._117/1994_sb.,_zakona_c._227/1997_sb.,_zakona_c._492/2000_sb.,_zakona_c._353/2001_sb._a_zakona_c._437/2003_sb.
-zakona_c._563/1991_sb.
+jednotky
+rozvaze
+bilanci
+b)
 }
 
 Expected: {
 ha-vel pr-cha<SPLIT>!}
 Predicted: {
-ha<SPLIT>-<SPLIT>vel pr-<SPLIT>cha<SPLIT>!}
+ha<SPLIT>-vel pr-<SPLIT>cha<SPLIT>!}
 False positives: {
 ha
--
-vel
+-vel
 pr-
 cha
 } False negatives: {
@@ -482,6 +450,17 @@ False positives: {
 }
 
 Expected: {
+z cerneho pozadi vazby vystupuje sugestivni tvar slovenskeho spisovatele dominika tatarky (<SPLIT>1913<SPLIT>- -1989<SPLIT>)<SPLIT>, jeho slova<SPLIT>, jez dala knize nazev este s vami pobudnut<SPLIT>, i jmena pratel a blizkych lidi<SPLIT>, kteri na nej v teto publikaci vzpominaji<SPLIT>.}
+Predicted: {
+z cerneho pozadi vazby vystupuje sugestivni tvar slovenskeho spisovatele dominika tatarky (<SPLIT>1913<SPLIT>- -<SPLIT>1989<SPLIT>)<SPLIT>, jeho slova<SPLIT>, jez dala knize nazev este s vami pobudnut<SPLIT>, i jmena pratel a blizkych lidi<SPLIT>, kteri na nej v teto publikaci vzpominaji<SPLIT>.}
+False positives: {
+-
+1989
+} False negatives: {
+-1989
+}
+
+Expected: {
 dusanbe -<SPLIT>tadzicka opozice zacala vcera dopoledne v dusanbe jednat s republikovymi ciniteli<SPLIT>.}
 Predicted: {
 dusanbe -tadzicka opozice zacala vcera dopoledne v dusanbe jednat s republikovymi ciniteli<SPLIT>.}
@@ -490,17 +469,6 @@ False positives: {
 } False negatives: {
 -
 tadzicka
-}
-
-Expected: {
-hrad hukvaldy<SPLIT>: 26<SPLIT>. -<SPLIT>27<SPLIT>.}
-Predicted: {
-hrad hukvaldy<SPLIT>: 26<SPLIT>. -27<SPLIT>.}
-False positives: {
--27
-} False negatives: {
--
-27
 }
 
 Expected: {
@@ -565,11 +533,10 @@ mesicni
 Expected: {
 mode<SPLIT>-<SPLIT>woche<SPLIT>-<SPLIT>munchen (<SPLIT>jaro<SPLIT>) - mezinarodni odborny veletrh mody<SPLIT>: 20<SPLIT>. - 22<SPLIT>.<SPLIT>2<SPLIT>.}
 Predicted: {
-mode<SPLIT>-<SPLIT>woche<SPLIT>-<SPLIT>munchen (<SPLIT>jaro<SPLIT>) - mezinarodni odborny veletrh mody<SPLIT>: 20<SPLIT>. - 22.2.}
+mode<SPLIT>-<SPLIT>woche<SPLIT>-<SPLIT>munchen (<SPLIT>jaro<SPLIT>) - mezinarodni odborny veletrh mody<SPLIT>: 20<SPLIT>. - 22<SPLIT>.2.}
 False positives: {
-22.2.
+.2.
 } False negatives: {
-22
 .
 2
 .
@@ -639,17 +606,6 @@ b)
 } False negatives: {
 b
 )
-}
-
-Expected: {
-(<SPLIT>profit radce c<SPLIT>.<SPLIT>4<SPLIT>/<SPLIT>1994<SPLIT>)}
-Predicted: {
-(<SPLIT>profit radce c<SPLIT>.<SPLIT>4/<SPLIT>1994<SPLIT>)}
-False positives: {
-4/
-} False negatives: {
-4
-/
 }
 
 Expected: {
@@ -727,16 +683,13 @@ b
 Expected: {
 nocni teploty -3 az -7 st<SPLIT>. c<SPLIT>, v horskych dolinach -8 az -12 st<SPLIT>. c<SPLIT>, nejvyssi denni -4 az 0 st<SPLIT>. c<SPLIT>.}
 Predicted: {
-nocni teploty -3 az -<SPLIT>7 st<SPLIT>. c<SPLIT>, v horskych dolinach -<SPLIT>8 az -12 st<SPLIT>. c<SPLIT>, nejvyssi denni -<SPLIT>4 az 0 st<SPLIT>. c<SPLIT>.}
+nocni teploty -3 az -7 st<SPLIT>. c<SPLIT>, v horskych dolinach -<SPLIT>8 az -12 st<SPLIT>. c<SPLIT>, nejvyssi denni -<SPLIT>4 az 0 st<SPLIT>. c<SPLIT>.}
 False positives: {
--
-7
 -
 8
 -
 4
 } False negatives: {
--7
 -8
 -4
 }
@@ -751,6 +704,17 @@ False positives: {
 31
 .
 12
+}
+
+Expected: {
+ze 145 kompaktnich disku posuzovanych v uplynulem obdobi recenzenty harmonie ziskalo nejvyssi hodnoceni (<SPLIT>ctyri h<SPLIT>) 53<SPLIT>.}
+Predicted: {
+ze 145 kompaktnich disku posuzovanych v uplynulem obdobi recenzenty harmonie ziskalo nejvyssi hodnoceni (<SPLIT>ctyri h) 53<SPLIT>.}
+False positives: {
+h)
+} False negatives: {
+h
+)
 }
 
 Expected: {
@@ -787,6 +751,17 @@ epa
 }
 
 Expected: {
+v ceske republice jsou v podstate jen dve organizace<SPLIT>, ktere se snazi prosadit vysokorychlostni zeleznicni dopravu - asociace vysokorychlostni zeleznicni dopravy (<SPLIT>avzd<SPLIT>) zalozena v roce 1991 v plzni a akciova spolecnost vysokorychlostni a modernizovana zeleznice (<SPLIT>vramz<SPLIT>) zalozena v praze v roce 1993<SPLIT>.}
+Predicted: {
+v ceske republice jsou v podstate jen dve organizace<SPLIT>, ktere se snazi prosadit vysokorychlostni zeleznicni dopravu - asociace vysokorychlostni zeleznicni dopravy (<SPLIT>avzd) zalozena v roce 1991 v plzni a akciova spolecnost vysokorychlostni a modernizovana zeleznice (<SPLIT>vramz<SPLIT>) zalozena v praze v roce 1993<SPLIT>.}
+False positives: {
+avzd)
+} False negatives: {
+avzd
+)
+}
+
+Expected: {
 notebook decpc 450<SPLIT>slc<SPLIT>/<SPLIT>e je sice od olivetti<SPLIT>, ale vypada nadmiru slusne<SPLIT>.}
 Predicted: {
 notebook decpc 450slc<SPLIT>/<SPLIT>e je sice od olivetti<SPLIT>, ale vypada nadmiru slusne<SPLIT>.}
@@ -811,6 +786,17 @@ i
 }
 
 Expected: {
+stanovi<SPLIT>-<SPLIT>li to zastavni smlouva<SPLIT>, muze zastavni veritel prodat zastavu i jinym vhodnym zpusobem<SPLIT>.}
+Predicted: {
+stanovi-<SPLIT>li to zastavni smlouva<SPLIT>, muze zastavni veritel prodat zastavu i jinym vhodnym zpusobem<SPLIT>.}
+False positives: {
+stanovi-
+} False negatives: {
+stanovi
+-
+}
+
+Expected: {
 pozemek ( 60000 m<SPLIT>2<SPLIT>) koupila za 92 milionu marek<SPLIT>.}
 Predicted: {
 pozemek ( 60000 m2<SPLIT>) koupila za 92 milionu marek<SPLIT>.}
@@ -824,15 +810,14 @@ m
 Expected: {
 po 1<SPLIT>.<SPLIT>f<SPLIT>4 nebo 1<SPLIT>.<SPLIT>d<SPLIT>4 by vyhral cerny a to si ukazeme dale<SPLIT>.}
 Predicted: {
-po 1<SPLIT>.f4 nebo 1<SPLIT>.d4 by vyhral cerny a to si ukazeme dale<SPLIT>.}
+po 1<SPLIT>.f4 nebo 1<SPLIT>.<SPLIT>d4 by vyhral cerny a to si ukazeme dale<SPLIT>.}
 False positives: {
 .f4
-.d4
+d4
 } False negatives: {
 .
 f
 4
-.
 d
 4
 }
@@ -881,24 +866,12 @@ b
 }
 
 Expected: {
-uzsi nominaci trener uhrin oznami po 16<SPLIT>.<SPLIT>ligovem kole<SPLIT>.}
-Predicted: {
-uzsi nominaci trener uhrin oznami po 16<SPLIT>.ligovem kole<SPLIT>.}
-False positives: {
-.ligovem
-} False negatives: {
-.
-ligovem
-}
-
-Expected: {
 ceska televize v pondeli informovala<SPLIT>, ze organy cinne v trestnim rizeni vysetruji pripad smenky na 48 milionu korun<SPLIT>, ktere by mela vyplatit ceska banka prazske spolecnosti s rucenim omezenym t<SPLIT>.<SPLIT>i<SPLIT>.<SPLIT>c<SPLIT>.}
 Predicted: {
-ceska televize v pondeli informovala<SPLIT>, ze organy cinne v trestnim rizeni vysetruji pripad smenky na 48 milionu korun<SPLIT>, ktere by mela vyplatit ceska banka prazske spolecnosti s rucenim omezenym t<SPLIT>.i.<SPLIT>c<SPLIT>.}
+ceska televize v pondeli informovala<SPLIT>, ze organy cinne v trestnim rizeni vysetruji pripad smenky na 48 milionu korun<SPLIT>, ktere by mela vyplatit ceska banka prazske spolecnosti s rucenim omezenym t<SPLIT>.<SPLIT>i.<SPLIT>c<SPLIT>.}
 False positives: {
-.i.
+i.
 } False negatives: {
-.
 i
 .
 }
@@ -1101,17 +1074,6 @@ False positives: {
 } False negatives: {
 68
 letemu
-}
-
-Expected: {
-nove casy na rusi prokazuje i prikaz kalininskeho obvodniho lidoveho soudu z 2<SPLIT>.<SPLIT>listopadu propustit z vysetrovaci vazby vilja mirzajanova<SPLIT>, pracovnika ustavu organicke chemie a technologie ruske akademie ved<SPLIT>.}
-Predicted: {
-nove casy na rusi prokazuje i prikaz kalininskeho obvodniho lidoveho soudu z 2<SPLIT>.listopadu propustit z vysetrovaci vazby vilja mirzajanova<SPLIT>, pracovnika ustavu organicke chemie a technologie ruske akademie ved<SPLIT>.}
-False positives: {
-.listopadu
-} False negatives: {
-.
-listopadu
 }
 
 Expected: {

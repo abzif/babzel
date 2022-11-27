@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9735550291381065
+Evaluation-Score=0.9736125474752858
 Training-Sample-Size=114744
 Evaluation-Sample-Size=12749
 Training-Algorithm=MAXENT
@@ -10,9 +10,9 @@ Component-Name=POSTaggerME
 Language=cs
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1665726165079
+Timestamp=1668919362660
 TrainerType=Event
-Training-Eventhash=85f673a66feab7c7eb468c0d13655183
+Training-Eventhash=56b3fa6e010e91527769b491773bceec
 factory=opennlp.tools.postag.POSTaggerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -916,10 +916,11 @@ co: ADV | PRON
 Expected: {
 rozsirovani_NOUN nebo_CCONJ pripadne_ADJ prohlubovani_NOUN agendy_NOUN neni_AUX v_ADP soucasne_ADJ dobe_NOUN mozne_ADJ ,_PUNCT nebot_CCONJ od_ADP #_NUM budou_AUX vsichni_PRON programovani_NOUN znali_ADJ pracovnici_NOUN na_ADP md_NOUN ._PUNCT}
 Predicted: {
-rozsirovani_NOUN nebo_CCONJ pripadne_ADJ prohlubovani_NOUN agendy_NOUN neni_AUX v_ADP soucasne_ADJ dobe_NOUN mozne_ADJ ,_PUNCT nebot_CCONJ od_ADP #_NUM budou_AUX vsichni_DET programovani_NOUN znali_VERB pracovnici_NOUN na_ADP md_NOUN ._PUNCT}
+rozsirovani_NOUN nebo_CCONJ pripadne_ADV prohlubovani_NOUN agendy_NOUN neni_AUX v_ADP soucasne_ADJ dobe_NOUN mozne_ADJ ,_PUNCT nebot_CCONJ od_ADP #_NUM budou_AUX vsichni_DET programovani_NOUN znali_VERB pracovnici_NOUN na_ADP md_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+pripadne: ADJ | ADV
 vsichni: PRON | DET
 znali: ADJ | VERB
 }
@@ -1400,6 +1401,16 @@ vychladlem: ADJ | NOUN
 }
 
 Expected: {
+opravy_NOUN v_ADP zaruce_NOUN budou_AUX provedeny_ADJ bezplatne_ADV pouze_ADV tehdy_ADV ,_PUNCT bude_AUX -_PUNCT li_PART pozadavek_NOUN dolozen_ADJ radne_ADV vyplnenym_ADJ a_CCONJ potvrzenym_ADJ zarucnim_ADJ listem_NOUN ._PUNCT}
+Predicted: {
+opravy_NOUN v_ADP zaruce_NOUN budou_AUX provedeny_ADJ bezplatne_ADJ pouze_ADV tehdy_ADV ,_PUNCT bude_AUX -_PUNCT li_PART pozadavek_NOUN dolozen_ADJ radne_ADV vyplnenym_ADJ a_CCONJ potvrzenym_ADJ zarucnim_ADJ listem_NOUN ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+bezplatne: ADV | ADJ
+}
+
+Expected: {
 kornateni_NOUN tepen_NOUN ,_PUNCT arterioskleroza_NOUN ,_PUNCT je_AUX onemocneni_NOUN ,_PUNCT ktere_DET muze_VERB postihnout_VERB nejruznejsi_ADJ oblasti_NOUN tepenneho_ADJ reciste_NOUN ._PUNCT}
 Predicted: {
 kornateni_NOUN tepen_ADJ ,_PUNCT arterioskleroza_NOUN ,_PUNCT je_AUX onemocneni_NOUN ,_PUNCT ktere_DET muze_VERB postihnout_VERB nejruznejsi_ADJ oblasti_NOUN tepenneho_ADJ reciste_NOUN ._PUNCT}
@@ -1877,10 +1888,11 @@ prodejna: NOUN | ADJ
 Expected: {
 socialisticke_ADJ ceskoslovensko_PROPN ,_PUNCT soudoby_ADJ stupen_NOUN socialniho_ADJ a_CCONJ narodniho_ADJ zivota_NOUN pracujicich_ADJ ,_PUNCT moderni_ADJ pokrokova_ADJ tvar_NOUN slovenska_PROPN ukazuji_VERB ,_PUNCT jak_ADV skvele_ADJ dilo_NOUN jsme_AUX plnice_VERB tyto_DET idealy_NOUN vytvorili_VERB ._PUNCT}
 Predicted: {
-socialisticke_ADJ ceskoslovensko_PROPN ,_PUNCT soudoby_ADJ stupen_NOUN socialniho_ADJ a_CCONJ narodniho_ADJ zivota_NOUN pracujicich_ADJ ,_PUNCT moderni_ADJ pokrokova_ADJ tvar_NOUN slovenska_PROPN ukazuji_VERB ,_PUNCT jak_ADV skvele_ADJ dilo_NOUN jsme_AUX plnice_ADV tyto_DET idealy_NOUN vytvorili_VERB ._PUNCT}
+socialisticke_ADJ ceskoslovensko_PROPN ,_PUNCT soudoby_NOUN stupen_NOUN socialniho_ADJ a_CCONJ narodniho_ADJ zivota_NOUN pracujicich_ADJ ,_PUNCT moderni_ADJ pokrokova_ADJ tvar_NOUN slovenska_PROPN ukazuji_VERB ,_PUNCT jak_ADV skvele_ADJ dilo_NOUN jsme_AUX plnice_ADV tyto_DET idealy_NOUN vytvorili_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+soudoby: ADJ | NOUN
 plnice: VERB | ADV
 }
 
@@ -3068,10 +3080,11 @@ co: PRON | ADV
 Expected: {
 za_ADP mv_NOUN ksc_PROPN predseda_NOUN mestnv_NOUN *_SYM vana_PROPN ,_PUNCT za_ADP knv_PROPN *_SYM bouril_PROPN ,_PUNCT za_ADP onv_NOUN *_SYM samek_PROPN ,_PUNCT osi_PROPN predsedkyne_NOUN ksk_PROPN *_SYM krausova_PROPN ,_PUNCT za_ADP tos_PROPN celakovice_PROPN *_SYM vrba_PROPN ,_PUNCT za_ADP csz_PROPN *_SYM fantikova_PROPN ,_PUNCT za_ADP srps_PROPN *_SYM parizek_PROPN ,_PUNCT za_ADP odpm_NOUN reditel_NOUN *_SYM fesenmayer_PROPN a_CCONJ skupinova_ADJ vedouci_NOUN po_PROPN *_SYM bodlakova_PROPN ._PUNCT}
 Predicted: {
-za_ADP mv_NOUN ksc_PROPN predseda_NOUN mestnv_NOUN *_SYM vana_PROPN ,_PUNCT za_ADP knv_PROPN *_PUNCT bouril_PROPN ,_PUNCT za_ADP onv_NOUN *_SYM samek_PROPN ,_PUNCT osi_PROPN predsedkyne_NOUN ksk_PROPN *_SYM krausova_PROPN ,_PUNCT za_ADP tos_PROPN celakovice_PROPN *_PUNCT vrba_PROPN ,_PUNCT za_ADP csz_PROPN *_PUNCT fantikova_PROPN ,_PUNCT za_ADP srps_NOUN *_SYM parizek_PROPN ,_PUNCT za_ADP odpm_ADJ reditel_NOUN *_SYM fesenmayer_PROPN a_CCONJ skupinova_ADJ vedouci_NOUN po_ADP *_SYM bodlakova_PROPN ._PUNCT}
+za_ADP mv_NOUN ksc_PROPN predseda_NOUN mestnv_NOUN *_SYM vana_PROPN ,_PUNCT za_ADP knv_PROPN *_PUNCT bouril_PROPN ,_PUNCT za_ADP onv_NOUN *_SYM samek_PROPN ,_PUNCT osi_PROPN predsedkyne_NOUN ksk_PROPN *_PUNCT krausova_PROPN ,_PUNCT za_ADP tos_PROPN celakovice_PROPN *_PUNCT vrba_PROPN ,_PUNCT za_ADP csz_PROPN *_PUNCT fantikova_PROPN ,_PUNCT za_ADP srps_NOUN *_SYM parizek_PROPN ,_PUNCT za_ADP odpm_ADJ reditel_NOUN *_SYM fesenmayer_PROPN a_CCONJ skupinova_ADJ vedouci_NOUN po_ADP *_SYM bodlakova_PROPN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+*: SYM | PUNCT
 *: SYM | PUNCT
 *: SYM | PUNCT
 *: SYM | PUNCT
@@ -3906,10 +3919,11 @@ vidinu: PROPN | NOUN
 Expected: {
 stara_ADJ planina_NOUN ,_PUNCT sredna_ADJ gora_PROPN ,_PUNCT pohori_NOUN rila_PROPN a_CCONJ rodopy_PROPN poskytovaly_VERB utociste_NOUN hajdukum_NOUN a_CCONJ bojovnikum_NOUN proti_ADP turecke_ADJ nadvlade_NOUN ,_PUNCT chranily_VERB i_CCONJ partyzany_NOUN v_ADP boji_NOUN proti_ADP fasistum_NOUN ._PUNCT}
 Predicted: {
-stara_ADJ planina_NOUN ,_PUNCT sredna_ADJ gora_PROPN ,_PUNCT pohori_NOUN rila_VERB a_CCONJ rodopy_NOUN poskytovaly_VERB utociste_NOUN hajdukum_NOUN a_CCONJ bojovnikum_NOUN proti_ADP turecke_ADJ nadvlade_NOUN ,_PUNCT chranily_VERB i_CCONJ partyzany_ADJ v_ADP boji_NOUN proti_ADP fasistum_NOUN ._PUNCT}
+stara_ADJ planina_NOUN ,_PUNCT sredna_ADP gora_PROPN ,_PUNCT pohori_NOUN rila_VERB a_CCONJ rodopy_NOUN poskytovaly_VERB utociste_NOUN hajdukum_NOUN a_CCONJ bojovnikum_NOUN proti_ADP turecke_ADJ nadvlade_NOUN ,_PUNCT chranily_VERB i_CCONJ partyzany_ADJ v_ADP boji_NOUN proti_ADP fasistum_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+sredna: ADJ | ADP
 rila: PROPN | VERB
 rodopy: PROPN | NOUN
 partyzany: NOUN | ADJ
@@ -5236,10 +5250,11 @@ to: PART | DET
 Expected: {
 gratuluji_VERB martinu_PROPN ruzkovi_PROPN ,_PUNCT ze_SCONJ pry_PART ma_VERB cas_NOUN ,_PUNCT aspon_ADV tak_ADV jsem_AUX to_DET slysel_VERB od_ADP jeho_DET zlomyslnych_ADJ kolegu_NOUN ,_PUNCT jit_VERB na_ADP dlouhou_ADJ prochazku_NOUN s_ADP rodinou_NOUN ,_PUNCT se_ADP psem_NOUN ,_PUNCT do_ADP prirody_NOUN ,_PUNCT kterou_DET neprestal_VERB milovat_VERB ._PUNCT}
 Predicted: {
-gratuluji_VERB martinu_PROPN ruzkovi_PROPN ,_PUNCT ze_SCONJ pry_PART ma_VERB cas_NOUN ,_PUNCT aspon_ADV tak_ADV jsem_AUX to_DET slysel_VERB od_ADP jeho_DET zlomyslnych_ADJ kolegu_NOUN ,_PUNCT jit_VERB na_ADP dlouhou_ADJ prochazku_NOUN s_ADP rodinou_NOUN ,_PUNCT se_PRON psem_NOUN ,_PUNCT do_ADP prirody_NOUN ,_PUNCT kterou_DET neprestal_VERB milovat_VERB ._PUNCT}
+gratuluji_VERB martinu_PROPN ruzkovi_PROPN ,_PUNCT ze_SCONJ pry_PART ma_VERB cas_NOUN ,_PUNCT aspon_PART tak_ADV jsem_AUX to_DET slysel_VERB od_ADP jeho_DET zlomyslnych_ADJ kolegu_NOUN ,_PUNCT jit_VERB na_ADP dlouhou_ADJ prochazku_NOUN s_ADP rodinou_NOUN ,_PUNCT se_PRON psem_NOUN ,_PUNCT do_ADP prirody_NOUN ,_PUNCT kterou_DET neprestal_VERB milovat_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+aspon: ADV | PART
 se: ADP | PRON
 }
 
@@ -6183,6 +6198,16 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 stat: VERB | NOUN
+}
+
+Expected: {
+koupe_NOUN vsak_CCONJ muze_VERB byt_AUX casove_ADV odlozena_ADJ ,_PUNCT penize_NOUN ulozeny_ADJ jako_SCONJ poklad_NOUN ._PUNCT}
+Predicted: {
+koupe_NOUN vsak_CCONJ muze_VERB byt_AUX casove_ADJ odlozena_ADJ ,_PUNCT penize_NOUN ulozeny_ADJ jako_SCONJ poklad_NOUN ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+casove: ADV | ADJ
 }
 
 Expected: {
@@ -7378,10 +7403,11 @@ soustavne: ADJ | ADV
 Expected: {
 jde_VERB o_ADP proces_NOUN ,_PUNCT ktery_DET sice_ADV prolina_VERB celym_ADJ lidskym_ADJ zivotem_NOUN ,_PUNCT ktery_DET vsak_CCONJ ma_VERB rozhodujici_ADJ vahu_NOUN predevsim_ADV v_ADP obdobi_NOUN mladi_NOUN a_CCONJ dospivani_NOUN ,_PUNCT v_ADP obdobi_NOUN ,_PUNCT v_ADP nemz_PRON jedinec_NOUN nedosahl_VERB jeste_ADV statusu_NOUN dospeleho_NOUN ._PUNCT}
 Predicted: {
-jde_VERB o_ADP proces_NOUN ,_PUNCT ktery_DET sice_ADV prolina_VERB celym_ADJ lidskym_ADJ zivotem_NOUN ,_PUNCT ktery_DET vsak_CCONJ ma_VERB rozhodujici_ADJ vahu_NOUN predevsim_ADV v_ADP obdobi_NOUN mladi_NOUN a_CCONJ dospivani_NOUN ,_PUNCT v_ADP obdobi_NOUN ,_PUNCT v_ADP nemz_PRON jedinec_NOUN nedosahl_VERB jeste_ADV statusu_NOUN dospeleho_ADJ ._PUNCT}
+jde_VERB o_ADP proces_NOUN ,_PUNCT ktery_DET sice_ADV prolina_VERB celym_ADJ lidskym_ADJ zivotem_NOUN ,_PUNCT ktery_DET vsak_CCONJ ma_VERB rozhodujici_ADJ vahu_NOUN predevsim_ADV v_ADP obdobi_NOUN mladi_ADJ a_CCONJ dospivani_NOUN ,_PUNCT v_ADP obdobi_NOUN ,_PUNCT v_ADP nemz_PRON jedinec_NOUN nedosahl_VERB jeste_ADV statusu_NOUN dospeleho_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+mladi: NOUN | ADJ
 dospeleho: NOUN | ADJ
 }
 
@@ -8285,12 +8311,11 @@ sklani: VERB | NOUN
 Expected: {
 u_ADP mnohych_ADJ ptaku_NOUN uz_ADV tri_NUM az_PART pet_NUM prednich_ADJ hrudnich_ADJ obratlu_NOUN navzajem_ADV pevne_ADV srusta_VERB v_ADP kost_NOUN zadovou_ADJ ,_PUNCT os_NOUN dorsale_ADJ notarium_ADJ ,_PUNCT zatimco_SCONJ posledni_ADJ hrudni_ADJ obratle_NOUN srustaji_VERB s_ADP bedernimi_ADJ krizovymi_ADJ a_CCONJ prednimi_ADJ obratli_NOUN zakrneleho_ADJ ocasu_NOUN a_CCONJ splyvaji_VERB i_CCONJ s_ADP panvi_NOUN ._PUNCT}
 Predicted: {
-u_ADP mnohych_ADJ ptaku_NOUN uz_ADV tri_NUM az_CCONJ pet_NUM prednich_ADJ hrudnich_ADJ obratlu_NOUN navzajem_ADV pevne_ADV srusta_VERB v_ADP kost_NOUN zadovou_ADJ ,_PUNCT os_NOUN dorsale_ADP notarium_NOUN ,_PUNCT zatimco_SCONJ posledni_ADJ hrudni_ADJ obratle_NOUN srustaji_VERB s_ADP bedernimi_ADJ krizovymi_ADJ a_CCONJ prednimi_ADJ obratli_NOUN zakrneleho_ADJ ocasu_NOUN a_CCONJ splyvaji_VERB i_CCONJ s_ADP panvi_NOUN ._PUNCT}
+u_ADP mnohych_ADJ ptaku_NOUN uz_ADV tri_NUM az_CCONJ pet_NUM prednich_ADJ hrudnich_ADJ obratlu_NOUN navzajem_ADV pevne_ADV srusta_VERB v_ADP kost_NOUN zadovou_ADJ ,_PUNCT os_NOUN dorsale_ADJ notarium_NOUN ,_PUNCT zatimco_SCONJ posledni_ADJ hrudni_ADJ obratle_NOUN srustaji_VERB s_ADP bedernimi_ADJ krizovymi_ADJ a_CCONJ prednimi_ADJ obratli_NOUN zakrneleho_ADJ ocasu_NOUN a_CCONJ splyvaji_VERB i_CCONJ s_ADP panvi_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 az: PART | CCONJ
-dorsale: ADJ | ADP
 notarium: ADJ | NOUN
 }
 
@@ -9307,249 +9332,189 @@ slabeji: ADV | VERB
 }
 
 Expected: {
-(1)_PUNCT pokud_SCONJ tento_DET zakon_NOUN nestanovi_VERB jinak_ADV ,_PUNCT radnou_ADJ nebo_CCONJ mimoradnou_ADJ ucetni_ADJ zaverku_NOUN jsou_AUX povinny_ADJ mit_VERB overenu_ADJ auditorem_NOUN tyto_DET ucetni_ADJ jednotky_NOUN a)_X akciove_ADJ spolecnosti_NOUN ,_PUNCT pokud_SCONJ ke_ADP konci_NOUN rozvahoveho_ADJ dne_NOUN ucetniho_ADJ obdobi_NOUN ,_PUNCT za_ADP nejz_PRON se_PRON ucetni_ADJ zaverka_NOUN (_PUNCT §_18_odst._3_X )_PUNCT overuje_VERB ,_PUNCT a_CCONJ ucetniho_ADJ obdobi_NOUN bezprostredne_ADV predchazejiciho_ADJ ,_PUNCT prekrocily_VERB nebo_CCONJ jiz_ADV dosahly_VERB alespon_ADV jedno_NUM ze_ADP tri_NUM uvedenych_ADJ kriterii_NOUN :_PUNCT 1_NUM ._PUNCT aktiva_NOUN celkem_ADV vice_ADV nez_SCONJ 40000000_NUM kc_NOUN ;_PUNCT aktivy_NOUN celkem_ADV se_PRON pro_ADP ucely_NOUN tohoto_DET zakona_NOUN rozumi_VERB uhrn_NOUN zjisteny_ADJ z_ADP rozvahy_NOUN v_ADP oceneni_NOUN neupravenem_ADJ o_ADP polozky_NOUN podle_ADP §_26_odst._3_X ,_PUNCT 2_NUM ._PUNCT rocni_ADJ uhrn_NOUN cisteho_ADJ obratu_NOUN vice_ADV nez_SCONJ 80000000_NUM kc_NOUN ;_PUNCT rocnim_ADJ uhrnem_NOUN cisteho_ADJ obratu_NOUN se_PRON pro_ADP ucely_NOUN tohoto_DET zakona_NOUN rozumi_VERB vyse_NOUN vynosu_NOUN snizena_ADJ o_ADP prodejni_ADJ slevy_NOUN a_CCONJ delena_ADJ poctem_NOUN zapocatych_ADJ mesicu_NOUN ,_PUNCT po_ADP ktere_DET trvalo_VERB ucetni_ADJ obdobi_NOUN ,_PUNCT a_CCONJ vynasobena_ADJ dvanacti_NUM ,_PUNCT 3_NUM ._PUNCT prumerny_ADJ prepocteny_ADJ stav_NOUN zamestnancu_NOUN v_ADP prubehu_NOUN ucetniho_ADJ obdobi_NOUN vice_ADV nez_SCONJ 50_NUM ,_PUNCT zjisteny_ADJ zpusobem_NOUN stanovenym_ADJ na_ADP zaklade_NOUN zvlastniho_ADJ pravniho_ADJ predpisu_NOUN ,_PUNCT b)_X ostatni_ADJ obchodni_ADJ spolecnosti_NOUN a_CCONJ druzstva_NOUN ,_PUNCT pokud_SCONJ ke_ADP konci_NOUN rozvahoveho_ADJ dne_NOUN ucetniho_ADJ obdobi_NOUN ,_PUNCT za_ADP nejz_PRON se_PRON ucetni_ADJ zaverka_NOUN (_PUNCT §_18_odst._3_X )_PUNCT overuje_VERB ,_PUNCT a_CCONJ ucetniho_ADJ obdobi_NOUN bezprotredne_X predchazejiciho_ADJ ,_PUNCT prekrocily_VERB nebo_CCONJ jiz_ADV dosahly_VERB alespon_ADV dvou_NUM ze_ADP tri_NUM kriterii_NOUN uvedenych_ADJ v_ADP pismenu_NOUN a)_X bodech_NOUN 1_NUM az_PART 3_NUM ;_PUNCT v_ADP pripade_NOUN druzstva_NOUN se_PRON zamestnancem_NOUN podle_ADP pismene_NOUN a)_bodu_3_X rozumi_VERB i_CCONJ pracovni_ADJ vztah_NOUN clena_NOUN k_ADP druzstvu_NOUN ,_PUNCT c)_X ucetni_ADJ jednotky_NOUN podle_ADP §_1_odst._2_pism._b)_X ,_PUNCT ktere_DET jsou_AUX podnikateli_NOUN ,_PUNCT a_CCONJ to_PART za_ADP podminek_NOUN podle_ADP pismene_NOUN b)_X ,_PUNCT d)_X ucetni_ADJ jednotky_NOUN podle_ADP §_1_odst._2_pism._d)_az_h)_X za_ADP podminek_NOUN podle_ADP pismene_NOUN b)_X ,_PUNCT e)_X ucetni_ADJ jednotky_NOUN ,_PUNCT kterym_DET tuto_DET povinnost_NOUN stanovi_VERB zvlastni_ADJ pravni_ADJ predpis_NOUN ._PUNCT}
+odpisova_ADJ sazba_NOUN na_ADP jednotku_NOUN tezeneho_ADJ mnozstvi_NOUN (_PUNCT kc_NOUN /_SYM t_NOUN ,_PUNCT kc_NOUN /_SYM m_NOUN je_AUX podilem_NOUN porizovaci_ADJ ceny_NOUN loziska_NOUN na_ADP jednotlivem_ADJ pozemku_NOUN a_CCONJ zasob_NOUN nevyhrazeneho_ADJ nerostu_NOUN (_PUNCT t_DET ,_PUNCT m_NOUN prokazanych_ADJ geologickym_ADJ pruzkumem_NOUN na_ADP tomto_DET pozemku_NOUN ._PUNCT}
 Predicted: {
-(1)_PUNCT pokud_SCONJ tento_DET zakon_NOUN nestanovi_VERB jinak_ADV ,_PUNCT radnou_ADJ nebo_CCONJ mimoradnou_ADJ ucetni_ADJ zaverku_NOUN jsou_AUX povinny_ADJ mit_VERB overenu_NOUN auditorem_NOUN tyto_DET ucetni_ADJ jednotky_NOUN a)_X akciove_ADJ spolecnosti_NOUN ,_PUNCT pokud_SCONJ ke_ADP konci_NOUN rozvahoveho_ADJ dne_NOUN ucetniho_ADJ obdobi_NOUN ,_PUNCT za_ADP nejz_PRON se_PRON ucetni_ADJ zaverka_NOUN (_PUNCT §_18_odst._3_X )_PUNCT overuje_VERB ,_PUNCT a_CCONJ ucetniho_ADJ obdobi_NOUN bezprostredne_ADV predchazejiciho_ADJ ,_PUNCT prekrocily_VERB nebo_CCONJ jiz_ADV dosahly_VERB alespon_ADV jedno_NUM ze_ADP tri_NUM uvedenych_ADJ kriterii_NOUN :_PUNCT 1_NUM ._PUNCT aktiva_NOUN celkem_ADV vice_ADV nez_SCONJ 40000000_NUM kc_NOUN ;_PUNCT aktivy_NOUN celkem_ADV se_PRON pro_ADP ucely_NOUN tohoto_DET zakona_NOUN rozumi_VERB uhrn_NOUN zjisteny_ADJ z_ADP rozvahy_NOUN v_ADP oceneni_NOUN neupravenem_ADJ o_ADP polozky_NOUN podle_ADP §_26_odst._3_X ,_PUNCT 2_NUM ._PUNCT rocni_ADJ uhrn_NOUN cisteho_ADJ obratu_NOUN vice_ADV nez_SCONJ 80000000_NUM kc_NOUN ;_PUNCT rocnim_ADJ uhrnem_NOUN cisteho_ADJ obratu_NOUN se_PRON pro_ADP ucely_NOUN tohoto_DET zakona_NOUN rozumi_VERB vyse_NOUN vynosu_NOUN snizena_ADJ o_ADP prodejni_ADJ slevy_NOUN a_CCONJ delena_ADJ poctem_NOUN zapocatych_ADJ mesicu_NOUN ,_PUNCT po_ADP ktere_DET trvalo_VERB ucetni_ADJ obdobi_NOUN ,_PUNCT a_CCONJ vynasobena_ADJ dvanacti_NUM ,_PUNCT 3_NUM ._PUNCT prumerny_ADJ prepocteny_ADJ stav_NOUN zamestnancu_NOUN v_ADP prubehu_NOUN ucetniho_ADJ obdobi_NOUN vice_ADV nez_SCONJ 50_NUM ,_PUNCT zjisteny_ADJ zpusobem_NOUN stanovenym_ADJ na_ADP zaklade_NOUN zvlastniho_ADJ pravniho_ADJ predpisu_NOUN ,_PUNCT b)_X ostatni_ADJ obchodni_ADJ spolecnosti_NOUN a_CCONJ druzstva_NOUN ,_PUNCT pokud_SCONJ ke_ADP konci_NOUN rozvahoveho_ADJ dne_NOUN ucetniho_ADJ obdobi_NOUN ,_PUNCT za_ADP nejz_PRON se_PRON ucetni_ADJ zaverka_NOUN (_PUNCT §_18_odst._3_X )_PUNCT overuje_VERB ,_PUNCT a_CCONJ ucetniho_ADJ obdobi_NOUN bezprotredne_ADV predchazejiciho_ADJ ,_PUNCT prekrocily_VERB nebo_CCONJ jiz_ADV dosahly_VERB alespon_ADV dvou_NUM ze_ADP tri_NUM kriterii_NOUN uvedenych_ADJ v_ADP pismenu_NOUN a)_PUNCT bodech_NOUN 1_NUM az_SCONJ 3_NUM ;_PUNCT v_ADP pripade_NOUN druzstva_NOUN se_PRON zamestnancem_NOUN podle_ADP pismene_NOUN a)_bodu_3_X rozumi_VERB i_CCONJ pracovni_ADJ vztah_NOUN clena_NOUN k_ADP druzstvu_NOUN ,_PUNCT c)_X ucetni_ADJ jednotky_NOUN podle_ADP §_1_odst._2_pism._b)_X ,_PUNCT ktere_DET jsou_AUX podnikateli_NOUN ,_PUNCT a_CCONJ to_PART za_ADP podminek_NOUN podle_ADP pismene_NOUN b)_X ,_PUNCT d)_X ucetni_ADJ jednotky_NOUN podle_ADP §_1_odst._2_pism._d)_az_h)_X za_ADP podminek_NOUN podle_ADP pismene_NOUN b)_X ,_PUNCT e)_X ucetni_ADJ jednotky_NOUN ,_PUNCT kterym_DET tuto_DET povinnost_NOUN stanovi_VERB zvlastni_ADJ pravni_ADJ predpis_NOUN ._PUNCT}
+odpisova_ADJ sazba_NOUN na_ADP jednotku_NOUN tezeneho_ADJ mnozstvi_NOUN (_PUNCT kc_NOUN /_PUNCT t_NOUN ,_PUNCT kc_NOUN /_PUNCT m_NOUN je_AUX podilem_NOUN porizovaci_ADJ ceny_NOUN loziska_NOUN na_ADP jednotlivem_ADJ pozemku_NOUN a_CCONJ zasob_NOUN nevyhrazeneho_ADJ nerostu_NOUN (_PUNCT t_PROPN ,_PUNCT m_PROPN prokazanych_ADJ geologickym_ADJ pruzkumem_NOUN na_ADP tomto_DET pozemku_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-overenu: ADJ | NOUN
-bezprotredne: X | ADV
-a): X | PUNCT
-az: PART | SCONJ
+/: SYM | PUNCT
+/: SYM | PUNCT
+t: DET | PROPN
+m: NOUN | PROPN
 }
 
 Expected: {
-ucetni_ADJ jednotky_NOUN ,_PUNCT ktere_DET podle_ADP zvlastniho_ADJ pravniho_ADJ predpisu_NOUN predavaji_VERB vyrocni_ADJ zpravu_NOUN ceske_ADJ narodni_ADJ bance_NOUN ,_PUNCT predavaji_VERB ucetni_ADJ zaverku_NOUN a_CCONJ vyrocni_ADJ zpravu_NOUN do_ADP sbirky_NOUN listin_NOUN obchodniho_ADJ rejstriku_NOUN prostrednictvim_ADP ceske_ADJ narodni_ADJ banky_NOUN ._PUNCT}
+(4)_PUNCT kursove_ADJ rozdily_NOUN z_ADP aktiv_NOUN a_CCONJ zavazku_NOUN v_ADP cizi_ADJ mene_NOUN ,_PUNCT ktere_DET ucetni_ADJ jednotka_NOUN vykazuje_VERB v_ADP rozvaze_NOUN a_CCONJ kterymi_DET se_PRON rozhodla_VERB zajistit_VERB proti_ADP menovemu_ADJ riziku_NOUN jiz_ADV vznikle_ADJ nebo_CCONJ ocekavane_ADJ smluvni_ADJ vztahy_NOUN ,_PUNCT jejichz_DET plneni_NOUN je_AUX v_ADP cizi_ADJ mene_NOUN a_CCONJ o_ADP nichz_PRON neni_AUX dosud_ADV uctovano_ADJ ,_PUNCT se_PRON uctuji_VERB ,_PUNCT nejde-li_X o_ADP derivaty_NOUN ,_PUNCT na_ADP rozvahovych_ADJ uctech_NOUN uctove_ADJ skupiny_NOUN 41_NUM ._PUNCT}
 Predicted: {
-ucetni_ADJ jednotky_NOUN ,_PUNCT ktere_DET podle_ADP zvlastniho_ADJ pravniho_ADJ predpisu_NOUN predavaji_VERB vyrocni_ADJ zpravu_NOUN ceske_ADJ narodni_ADJ bance_NOUN ,_PUNCT predavaji_VERB ucetni_ADJ zaverku_NOUN a_CCONJ vyrocni_ADJ zpravu_NOUN do_ADP sbirky_NOUN listin_NOUN obchodniho_ADJ rejstriku_NOUN prostrednictvim_NOUN ceske_ADJ narodni_ADJ banky_NOUN ._PUNCT}
+(4)_PUNCT kursove_ADJ rozdily_NOUN z_ADP aktiv_NOUN a_CCONJ zavazku_NOUN v_ADP cizi_ADJ mene_NOUN ,_PUNCT ktere_DET ucetni_ADJ jednotka_NOUN vykazuje_VERB v_ADP rozvaze_NOUN a_CCONJ kterymi_DET se_PRON rozhodla_VERB zajistit_VERB proti_ADP menovemu_ADJ riziku_NOUN jiz_ADV vznikle_ADJ nebo_CCONJ ocekavane_ADJ smluvni_ADJ vztahy_NOUN ,_PUNCT jejichz_DET plneni_NOUN je_AUX v_ADP cizi_ADJ mene_NOUN a_CCONJ o_ADP nichz_PRON neni_AUX dosud_ADV uctovano_ADJ ,_PUNCT se_PRON uctuji_VERB ,_PUNCT nejde-li_PUNCT o_ADP derivaty_NOUN ,_PUNCT na_ADP rozvahovych_ADJ uctech_NOUN uctove_ADJ skupiny_NOUN 41_NUM ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+nejde-li: X | PUNCT
+}
+
+Expected: {
+(6)_PUNCT do_ADP konsolidacniho_ADJ celku_NOUN nemusi_VERB byt_AUX zahrnuty_ADJ konsolidovane_ADJ ucetni_ADJ jednotky_NOUN ,_PUNCT a)_X u_ADP nichz_PRON neni_AUX podil_NOUN na_ADP konsolidacnim_ADJ celku_NOUN vyznamny_ADJ z_ADP hlediska_NOUN podani_NOUN verneho_ADJ a_CCONJ poctiveho_ADJ obrazu_NOUN predmetu_NOUN ucetnictvi_NOUN a_CCONJ financni_ADJ situace_NOUN konsolidacniho_ADJ celku_NOUN ;_PUNCT pokud_SCONJ je_AUX u_ADP dvou_NUM a_CCONJ vice_ADV takovych_DET konsolidovanych_ADJ ucetnich_ADJ jednotek_NOUN jejich_DET souhrnny_ADJ podil_NOUN vyznamny_ADJ ,_PUNCT jsou_AUX tyto_DET ucetni_ADJ jednotky_NOUN zahrnuty_ADJ do_ADP konsolidacniho_ADJ celku_NOUN ,_PUNCT nebo_CCONJ b)_X u_ADP nichz_PRON dlouhodoba_ADJ omezeni_NOUN vyznamne_ADV brani_VERB konsolidujici_ADJ ucetni_NOUN jednotce_NOUN ve_ADP vykonu_NOUN jejich_DET prav_NOUN ohledne_ADP nakladani_NOUN s_ADP majetkem_NOUN nebo_CCONJ rizeni_NOUN uvedenych_ADJ konsolidovanych_ADJ ucetnich_ADJ jednotek_NOUN ,_PUNCT nebo_CCONJ vyjimecne_ADV nelze-li_X bez_ADP prokazatelne_ADV nutnych_ADJ neprimerenych_ADJ nakladu_NOUN nebo_CCONJ bez_ADP prokazatelne_ADV nutneho_ADJ zbytecneho_ADJ zdrzeni_NOUN ziskat_VERB informace_NOUN nezbytne_ADJ pro_ADP sestaveni_NOUN konsolidovane_ADJ ucetni_ADJ zaverky_NOUN podle_ADP teto_DET vyhlasky_NOUN ,_PUNCT nebo_CCONJ c)_X jsou_AUX -_PUNCT li_PART akcie_NOUN nebo_CCONJ podily_NOUN konsolidovanych_ADJ ucetnich_ADJ jednotek_NOUN drzeny_ADJ vyhradne_ADV za_ADP ucelem_NOUN jejich_DET prodeje_NOUN ._PUNCT :_PUNCT a)_X plna_ADJ konsolidace_NOUN ,_PUNCT ktera_DET se_PRON pouzije_VERB pri_ADP zahrnuti_NOUN konsolidovane_ADJ ucetni_ADJ jednotky_NOUN do_ADP konsolidovane_ADJ ucetni_ADJ zaverky_NOUN ,_PUNCT c)_X konsolidace_NOUN ekvivalenci_NOUN (_PUNCT protihodnotou_NOUN )_PUNCT ,_PUNCT ktera_DET se_PRON pouzije_VERB pri_ADP zahrnuti_NOUN ucetni_ADJ jednotky_NOUN pridruzene_ADJ do_ADP konsolidovane_ADJ ucetni_ADJ zaverky_NOUN}
+Predicted: {
+(6)_PUNCT do_ADP konsolidacniho_ADJ celku_NOUN nemusi_VERB byt_AUX zahrnuty_ADJ konsolidovane_ADJ ucetni_ADJ jednotky_NOUN ,_PUNCT a)_X u_ADP nichz_PRON neni_AUX podil_NOUN na_ADP konsolidacnim_ADJ celku_NOUN vyznamny_ADJ z_ADP hlediska_NOUN podani_NOUN verneho_ADJ a_CCONJ poctiveho_ADJ obrazu_NOUN predmetu_NOUN ucetnictvi_NOUN a_CCONJ financni_ADJ situace_NOUN konsolidacniho_ADJ celku_NOUN ;_PUNCT pokud_SCONJ je_AUX u_ADP dvou_NUM a_CCONJ vice_ADV takovych_DET konsolidovanych_ADJ ucetnich_ADJ jednotek_NOUN jejich_DET souhrnny_ADJ podil_NOUN vyznamny_ADJ ,_PUNCT jsou_AUX tyto_DET ucetni_ADJ jednotky_NOUN zahrnuty_ADJ do_ADP konsolidacniho_ADJ celku_NOUN ,_PUNCT nebo_CCONJ b)_X u_ADP nichz_PRON dlouhodoba_ADJ omezeni_NOUN vyznamne_ADJ brani_NOUN konsolidujici_ADJ ucetni_ADJ jednotce_NOUN ve_ADP vykonu_NOUN jejich_DET prav_NOUN ohledne_ADP nakladani_NOUN s_ADP majetkem_NOUN nebo_CCONJ rizeni_NOUN uvedenych_ADJ konsolidovanych_ADJ ucetnich_ADJ jednotek_NOUN ,_PUNCT nebo_CCONJ vyjimecne_ADV nelze-li_PUNCT bez_ADP prokazatelne_ADV nutnych_ADJ neprimerenych_ADJ nakladu_NOUN nebo_CCONJ bez_ADP prokazatelne_ADJ nutneho_ADJ zbytecneho_ADJ zdrzeni_NOUN ziskat_VERB informace_NOUN nezbytne_ADJ pro_ADP sestaveni_NOUN konsolidovane_ADJ ucetni_ADJ zaverky_NOUN podle_ADP teto_DET vyhlasky_NOUN ,_PUNCT nebo_CCONJ c)_X jsou_AUX -_PUNCT li_PART akcie_NOUN nebo_CCONJ podily_NOUN konsolidovanych_ADJ ucetnich_ADJ jednotek_NOUN drzeny_ADJ vyhradne_ADV za_ADP ucelem_NOUN jejich_DET prodeje_NOUN ._PUNCT :_PUNCT a)_X plna_ADJ konsolidace_NOUN ,_PUNCT ktera_DET se_PRON pouzije_VERB pri_ADP zahrnuti_NOUN konsolidovane_ADJ ucetni_ADJ jednotky_NOUN do_ADP konsolidovane_ADJ ucetni_ADJ zaverky_NOUN ,_PUNCT c)_X konsolidace_NOUN ekvivalenci_NOUN (_PUNCT protihodnotou_NOUN )_PUNCT ,_PUNCT ktera_DET se_PRON pouzije_VERB pri_ADP zahrnuti_NOUN ucetni_ADJ jednotky_NOUN pridruzene_ADJ do_ADP konsolidovane_ADJ ucetni_ADJ zaverky_NOUN}
+Errors: {
+Tok: Ref | Pred
+---------------
+vyznamne: ADV | ADJ
+brani: VERB | NOUN
+ucetni: NOUN | ADJ
+nelze-li: X | PUNCT
+prokazatelne: ADV | ADJ
+}
+
+Expected: {
+(1)_PUNCT v_ADP konsolidovanem_ADJ vykazu_NOUN zisku_NOUN a_CCONJ ztraty_NOUN se_PRON uvadi_VERB vyse_ADV nakladu_NOUN a_CCONJ vynosu_NOUN oddelene_ADV za_ADP bezne_ADJ ucetni_ADJ obdobi_NOUN a_CCONJ minule_ADJ ucetni_ADJ obdobi_NOUN ._PUNCT}
+Predicted: {
+(1)_PUNCT v_ADP konsolidovanem_NOUN vykazu_NOUN zisku_NOUN a_CCONJ ztraty_NOUN se_PRON uvadi_VERB vyse_NOUN nakladu_NOUN a_CCONJ vynosu_NOUN oddelene_ADV za_ADP bezne_ADJ ucetni_ADJ obdobi_NOUN a_CCONJ minule_ADJ ucetni_ADJ obdobi_NOUN ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+konsolidovanem: ADJ | NOUN
+vyse: ADV | NOUN
+}
+
+Expected: {
+(2)_PUNCT ustanoveni_NOUN teto_DET vyhlasky_NOUN nemusi_VERB uplatnit_VERB ucetni_ADJ jednotky_NOUN v_ADP likvidaci_NOUN ,_PUNCT jejichz_DET likvidace_NOUN byla_AUX zahajena_ADJ pred_ADP 1_NUM ._PUNCT lednem_NOUN 1993_NUM ,_PUNCT a_CCONJ statni_ADJ podniky_NOUN hospodarici_ADJ v_ADP rezimu_NOUN zakona_c._111/1990_sb._X ,_PUNCT o_ADP statnim_ADJ podniku_NOUN ,_PUNCT ve_ADP zneni_NOUN pozdejsich_ADJ predpisu_NOUN ,_PUNCT do_ADP doby_NOUN jejich_DET zaniku_NOUN ._PUNCT}
+Predicted: {
+(2)_PUNCT ustanoveni_NOUN teto_DET vyhlasky_NOUN nemusi_VERB uplatnit_VERB ucetni_ADJ jednotky_NOUN v_ADP likvidaci_NOUN ,_PUNCT jejichz_DET likvidace_NOUN byla_AUX zahajena_ADJ pred_ADP 1_NUM ._PUNCT lednem_NOUN 1993_NUM ,_PUNCT a_CCONJ statni_ADJ podniky_NOUN hospodarici_ADJ v_ADP rezimu_NOUN zakona_c._111/1990_sb._PUNCT ,_PUNCT o_ADP statnim_ADJ podniku_NOUN ,_PUNCT ve_ADP zneni_NOUN pozdejsich_ADJ predpisu_NOUN ,_PUNCT do_ADP doby_NOUN jejich_DET zaniku_NOUN ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+zakona_c._111/1990_sb.: X | PUNCT
+}
+
+Expected: {
+2_NUM ._PUNCT v_ADP prvnim_ADJ dni_NOUN ucetniho_ADJ obdobi_NOUN zapocateho_ADJ 1.ledna_X 2004_NUM a_CCONJ pozdeji_ADV se_PRON opravne_ADJ polozky_NOUN u_ADP pohledavek_NOUN ,_PUNCT ktere_DET ucetni_ADJ jednotka_NOUN nabyla_VERB v_ADP ucetnich_ADJ obdobich_NOUN zapocatych_ADJ pred_ADP 1_NUM ._PUNCT lednem_NOUN 2004_NUM a_CCONJ urcila_VERB k_ADP obchodovani_NOUN ,_PUNCT zrusi_VERB ve_ADP prospech_NOUN nakladu_NOUN ;_PUNCT ke_ADP stejnemu_ADJ okamziku_NOUN se_PRON zauctuje_VERB snizeni_NOUN hodnoty_NOUN pohledavek_NOUN prostrednictvim_ADP uctu_NOUN v_ADP uctove_ADJ skupine_NOUN 58_NUM ._PUNCT}
+Predicted: {
+2_NUM ._PUNCT v_ADP prvnim_ADJ dni_NOUN ucetniho_ADJ obdobi_NOUN zapocateho_ADJ 1.ledna_ADP 2004_NUM a_CCONJ pozdeji_ADV se_PRON opravne_ADJ polozky_NOUN u_ADP pohledavek_NOUN ,_PUNCT ktere_DET ucetni_ADJ jednotka_NOUN nabyla_VERB v_ADP ucetnich_ADJ obdobich_NOUN zapocatych_ADJ pred_ADP 1_NUM ._PUNCT lednem_NOUN 2004_NUM a_CCONJ urcila_VERB k_ADP obchodovani_NOUN ,_PUNCT zrusi_VERB ve_ADP prospech_NOUN nakladu_NOUN ;_PUNCT ke_ADP stejnemu_ADJ okamziku_NOUN se_PRON zauctuje_VERB snizeni_NOUN hodnoty_NOUN pohledavek_NOUN prostrednictvim_NOUN uctu_NOUN v_ADP uctove_ADJ skupine_NOUN 58_NUM ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+1.ledna: X | ADP
 prostrednictvim: ADP | NOUN
 }
 
 Expected: {
-(2)_PUNCT ucetni_ADJ jednotky_NOUN ocenuji_VERB majetek_NOUN a_CCONJ zavazky_NOUN a)_X k_ADP okamziku_NOUN uskutecneni_NOUN ucetniho_ADJ pripadu_NOUN zpusoby_NOUN podle_ADP §_25_X ,_PUNCT b)_X ke_ADP konci_NOUN rozvahoveho_ADJ dne_NOUN nebo_CCONJ k_ADP jinemu_ADJ okamziku_NOUN ,_PUNCT k_ADP nemuz_PRON se_PRON ucetni_ADJ zaverka_NOUN sestavuje_VERB ,_PUNCT zpusoby_NOUN podle_ADP §_27_X ;_PUNCT rovnez_ADV toto_DET oceneni_NOUN je_AUX povinna_ADJ zaznamenat_VERB v_ADP ucetnich_ADJ knihach_NOUN ,_PUNCT (_PUNCT dale_ADV jen_PART "_PUNCT okamzik_X oceneni_X "_PUNCT )_PUNCT ._PUNCT}
+nastupnicka_ADJ ucetni_ADJ jednotka_NOUN ,_PUNCT ktera_DET nebyla_AUX zucastnenou_ADJ ucetni_ADJ jednotkou_NOUN ,_PUNCT otevira_VERB ucetni_NOUN knihy_NOUN ke_ADP dni_NOUN zapisu_NOUN premeny_NOUN spolecnosti_NOUN do_ADP obchodniho_ADJ rejstriku_NOUN s_ADP ucinky_NOUN od_ADP rozhodneho_ADJ dne_NOUN v_ADP souladu_NOUN s_ADP metodou_NOUN premeny_NOUN spolecnosti_NOUN ._PUNCT}
 Predicted: {
-(2)_PUNCT ucetni_ADJ jednotky_NOUN ocenuji_VERB majetek_NOUN a_CCONJ zavazky_NOUN a)_X k_ADP okamziku_NOUN uskutecneni_NOUN ucetniho_ADJ pripadu_NOUN zpusoby_NOUN podle_ADP §_25_X ,_PUNCT b)_X ke_ADP konci_NOUN rozvahoveho_ADJ dne_NOUN nebo_CCONJ k_ADP jinemu_ADJ okamziku_NOUN ,_PUNCT k_ADP nemuz_PRON se_PRON ucetni_ADJ zaverka_NOUN sestavuje_VERB ,_PUNCT zpusoby_NOUN podle_ADP §_27_X ;_PUNCT rovnez_ADV toto_DET oceneni_NOUN je_AUX povinna_ADJ zaznamenat_VERB v_ADP ucetnich_ADJ knihach_NOUN ,_PUNCT (_PUNCT dale_ADV jen_PART "_PUNCT okamzik_NOUN oceneni_NOUN "_PUNCT )_PUNCT ._PUNCT}
+nastupnicka_ADJ ucetni_ADJ jednotka_NOUN ,_PUNCT ktera_DET nebyla_AUX zucastnenou_ADJ ucetni_ADJ jednotkou_NOUN ,_PUNCT otevira_VERB ucetni_ADJ knihy_NOUN ke_ADP dni_NOUN zapisu_NOUN premeny_NOUN spolecnosti_NOUN do_ADP obchodniho_ADJ rejstriku_NOUN s_ADP ucinky_NOUN od_ADP rozhodneho_ADJ dne_NOUN v_ADP souladu_NOUN s_ADP metodou_NOUN premeny_NOUN spolecnosti_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-okamzik: X | NOUN
-oceneni: X | NOUN
-}
-
-Expected: {
-(6)_PUNCT v_ADP pripade_NOUN majetku_NOUN podle_ADP odstavce_NOUN 1_NUM pism._l)_X se_PRON reprodukcni_ADJ porizovaci_ADJ cena_NOUN nepouzije_VERB v_ADP pripade_NOUN bezuplatne_ADJ zmeny_NOUN prislusnosti_NOUN k_ADP hospodareni_NOUN s_ADP majetkem_NOUN statu_NOUN nebo_CCONJ svereni_NOUN majetku_NOUN do_ADP spravy_NOUN podle_ADP zakona_NOUN upravujiciho_ADJ rozpoctova_ADJ pravidla_NOUN uzemnich_ADJ samospravnych_ADJ celku_NOUN ,_PUNCT vypujcky_NOUN nebo_CCONJ bezuplatneho_ADJ prevodu_NOUN nebo_CCONJ prechodu_NOUN majetku_NOUN mezi_ADP vybranymi_ADJ ucetnimi_ADJ jednotkami_NOUN ;_PUNCT v_ADP techto_DET pripadech_NOUN ucetni_ADJ jednotka_NOUN pri_ADP oceneni_NOUN majetku_NOUN navazuje_VERB na_ADP vysi_NOUN oceneni_NOUN v_ADP ucetnictvi_NOUN ucetni_ADJ jednotky_NOUN ,_PUNCT ktera_DET o_ADP tomto_DET majetku_NOUN naposledy_ADV uctovala_VERB ._PUNCT}
-Predicted: {
-(6)_PUNCT v_ADP pripade_NOUN majetku_NOUN podle_ADP odstavce_NOUN 1_NUM pism._l)_PUNCT se_PRON reprodukcni_ADJ porizovaci_ADJ cena_NOUN nepouzije_VERB v_ADP pripade_NOUN bezuplatne_ADJ zmeny_NOUN prislusnosti_NOUN k_ADP hospodareni_NOUN s_ADP majetkem_NOUN statu_NOUN nebo_CCONJ svereni_NOUN majetku_NOUN do_ADP spravy_NOUN podle_ADP zakona_NOUN upravujiciho_ADJ rozpoctova_ADJ pravidla_NOUN uzemnich_ADJ samospravnych_ADJ celku_NOUN ,_PUNCT vypujcky_NOUN nebo_CCONJ bezuplatneho_ADJ prevodu_NOUN nebo_CCONJ prechodu_NOUN majetku_NOUN mezi_ADP vybranymi_ADJ ucetnimi_ADJ jednotkami_NOUN ;_PUNCT v_ADP techto_DET pripadech_NOUN ucetni_ADJ jednotka_NOUN pri_ADP oceneni_NOUN majetku_NOUN navazuje_VERB na_ADP vysi_NOUN oceneni_NOUN v_ADP ucetnictvi_NOUN ucetni_ADJ jednotky_NOUN ,_PUNCT ktera_DET o_ADP tomto_DET majetku_NOUN naposledy_ADV uctovala_VERB ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-pism._l): X | PUNCT
-}
-
-Expected: {
-(1)_PUNCT z_ADP jednotlivych_ADJ slozek_NOUN majetku_NOUN a_CCONJ zavazku_NOUN k_ADP okamziku_NOUN oceneni_NOUN podle_ADP §_24_odst._2_pism._b)_X se_PRON realnou_ADJ hodnotou_NOUN ocenuji_VERB a)_X cenne_ADJ papiry_NOUN ,_PUNCT s_ADP vyjimkou_NOUN cennych_ADJ papiru_NOUN drzenych_ADJ do_ADP splatnosti_NOUN ,_PUNCT dluhopisu_NOUN porizenych_ADJ v_ADP primarnich_ADJ emisich_NOUN neurcenych_ADJ ucetni_ADJ jednotkou_NOUN k_ADP obchodovani_NOUN ,_PUNCT cennych_ADJ papiru_NOUN predstavujicich_ADJ ucast_NOUN v_ADP ovladane_ADJ osobe_NOUN nebo_CCONJ v_ADP osobe_NOUN pod_ADP podstatnym_ADJ vlivem_NOUN a_CCONJ cennych_ADJ papiru_NOUN emitovanych_ADJ ucetni_ADJ jednotkou_NOUN ,_PUNCT b)_X derivaty_NOUN ,_PUNCT c)_X financni_ADJ umisteni_NOUN ,_PUNCT s_ADP vyjimkou_NOUN dluhopisu_NOUN drzenych_ADJ do_ADP splatnosti_NOUN ,_PUNCT jejichz_DET emitentem_NOUN je_AUX clensky_ADJ stat_NOUN organizace_NOUN pro_ADP ekonomickou_ADJ spolupraci_NOUN a_CCONJ rozvoj_NOUN a_CCONJ jejichz_DET hodnoceni_NOUN bylo_AUX alespon_ADV dvema_NUM mezinarodne_ADV uznavanymi_ADJ ratingovymi_ADJ agenturami_NOUN stanoveno_ADJ na_ADP urovni_NOUN ceske_ADJ republiky_NOUN nebo_CCONJ vyssi_ADJ ,_PUNCT nejedna-li_X se_PRON o_ADP financni_ADJ umisteni_NOUN vztahujici_ADJ se_PRON k_ADP zavazkum_NOUN ze_ADP zivotniho_ADJ pojisteni_NOUN ,_PUNCT je_AUX -_PUNCT li_PART nositelem_NOUN investicniho_ADJ rizika_NOUN pojistnik_NOUN ,_PUNCT a_CCONJ technicke_ADJ rezervy_NOUN u_ADP ucetnich_ADJ jednotek_NOUN ,_PUNCT ktere_DET provozuji_VERB cinnost_NOUN pojisteni_NOUN nebo_CCONJ zajisteni_NOUN podle_ADP zvlastnich_ADJ pravnich_ADJ predpisu_NOUN ,_PUNCT krome_ADP verejneho_ADJ zdravotniho_ADJ pojisteni_NOUN ,_PUNCT d)_X majetek_NOUN a_CCONJ zavazky_NOUN v_ADP pripadech_NOUN ,_PUNCT kdy_ADV oceneni_NOUN realnou_ADJ hodnotou_NOUN uklada_VERB zvlastni_ADJ pravni_ADJ predpis_NOUN ,_PUNCT to_DET neplati_VERB v_ADP pripadech_NOUN uvedenych_ADJ v_ADP odstavci_NOUN 3_NUM ,_PUNCT e)_X cast_NOUN majetku_NOUN a_CCONJ zavazku_NOUN zajistena_ADJ derivaty_NOUN ,_PUNCT f)_X pohledavky_NOUN ,_PUNCT ktere_DET ucetni_ADJ jednotka_NOUN nabyla_VERB a_CCONJ urcila_VERB k_ADP obchodovani_NOUN ,_PUNCT g)_X zavazky_NOUN vratit_VERB cenne_ADJ papiry_NOUN ,_PUNCT ktere_DET ucetni_ADJ jednotka_NOUN zcizila_VERB a_CCONJ do_ADP okamziku_NOUN oceneni_NOUN je_PRON neziskala_VERB zpet_ADV ,_PUNCT h)_X u_ADP vybranych_ADJ ucetnich_ADJ jednotek_NOUN majetek_NOUN urceny_ADJ k_ADP prodeji_NOUN s_ADP vyjimkou_NOUN zasob_NOUN ._PUNCT}
-Predicted: {
-(1)_PUNCT z_ADP jednotlivych_ADJ slozek_NOUN majetku_NOUN a_CCONJ zavazku_NOUN k_ADP okamziku_NOUN oceneni_NOUN podle_ADP §_24_odst._2_pism._b)_X se_PRON realnou_ADJ hodnotou_NOUN ocenuji_VERB a)_X cenne_ADJ papiry_NOUN ,_PUNCT s_ADP vyjimkou_NOUN cennych_ADJ papiru_NOUN drzenych_ADJ do_ADP splatnosti_NOUN ,_PUNCT dluhopisu_NOUN porizenych_ADJ v_ADP primarnich_ADJ emisich_NOUN neurcenych_ADJ ucetni_ADJ jednotkou_NOUN k_ADP obchodovani_NOUN ,_PUNCT cennych_ADJ papiru_NOUN predstavujicich_ADJ ucast_NOUN v_ADP ovladane_ADJ osobe_NOUN nebo_CCONJ v_ADP osobe_NOUN pod_ADP podstatnym_ADJ vlivem_NOUN a_CCONJ cennych_ADJ papiru_NOUN emitovanych_ADJ ucetni_ADJ jednotkou_NOUN ,_PUNCT b)_X derivaty_NOUN ,_PUNCT c)_X financni_ADJ umisteni_NOUN ,_PUNCT s_ADP vyjimkou_NOUN dluhopisu_NOUN drzenych_ADJ do_ADP splatnosti_NOUN ,_PUNCT jejichz_DET emitentem_NOUN je_AUX clensky_ADJ stat_NOUN organizace_NOUN pro_ADP ekonomickou_ADJ spolupraci_NOUN a_CCONJ rozvoj_NOUN a_CCONJ jejichz_DET hodnoceni_NOUN bylo_AUX alespon_ADV dvema_NUM mezinarodne_ADV uznavanymi_ADJ ratingovymi_ADJ agenturami_NOUN stanoveno_ADJ na_ADP urovni_NOUN ceske_ADJ republiky_NOUN nebo_CCONJ vyssi_ADJ ,_PUNCT nejedna-li_PUNCT se_PRON o_ADP financni_ADJ umisteni_NOUN vztahujici_ADJ se_PRON k_ADP zavazkum_NOUN ze_ADP zivotniho_ADJ pojisteni_NOUN ,_PUNCT je_AUX -_PUNCT li_PART nositelem_NOUN investicniho_ADJ rizika_NOUN pojistnik_NOUN ,_PUNCT a_CCONJ technicke_ADJ rezervy_NOUN u_ADP ucetnich_ADJ jednotek_NOUN ,_PUNCT ktere_DET provozuji_VERB cinnost_NOUN pojisteni_NOUN nebo_CCONJ zajisteni_NOUN podle_ADP zvlastnich_ADJ pravnich_ADJ predpisu_NOUN ,_PUNCT krome_ADP verejneho_ADJ zdravotniho_ADJ pojisteni_NOUN ,_PUNCT d)_X majetek_NOUN a_CCONJ zavazky_NOUN v_ADP pripadech_NOUN ,_PUNCT kdy_ADV oceneni_NOUN realnou_ADJ hodnotou_NOUN uklada_VERB zvlastni_ADJ pravni_ADJ predpis_NOUN ,_PUNCT to_DET neplati_VERB v_ADP pripadech_NOUN uvedenych_ADJ v_ADP odstavci_NOUN 3_NUM ,_PUNCT e)_X cast_NOUN majetku_NOUN a_CCONJ zavazku_NOUN zajistena_ADJ derivaty_NOUN ,_PUNCT f)_X pohledavky_NOUN ,_PUNCT ktere_DET ucetni_ADJ jednotka_NOUN nabyla_VERB a_CCONJ urcila_VERB k_ADP obchodovani_NOUN ,_PUNCT g)_X zavazky_NOUN vratit_VERB cenne_ADJ papiry_NOUN ,_PUNCT ktere_DET ucetni_ADJ jednotka_NOUN zcizila_VERB a_CCONJ do_ADP okamziku_NOUN oceneni_NOUN je_AUX neziskala_VERB zpet_ADV ,_PUNCT h)_X u_ADP vybranych_ADJ ucetnich_ADJ jednotek_NOUN majetek_NOUN urceny_ADJ k_ADP prodeji_NOUN s_ADP vyjimkou_NOUN zasob_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-nejedna-li: X | PUNCT
-je: PRON | AUX
-}
-
-Expected: {
-(1)_PUNCT pouziji-li_NOUN ucetni_NOUN jednotky_NOUN ucetni_ADJ zaznamy_NOUN i_CCONJ pro_ADP jiny_ADJ ucel_NOUN nez_SCONJ uvedeny_ADJ v_ADP §_31_odst._1_X ,_PUNCT a_CCONJ to_PART zejmena_ADV pro_ADP ucely_NOUN trestniho_ADJ rizeni_NOUN ,_PUNCT opatreni_NOUN proti_ADP legalizaci_NOUN vynosu_NOUN z_ADP trestne_ADJ cinnosti_NOUN ,_PUNCT spravniho_ADJ rizeni_NOUN ,_PUNCT obcanskeho_ADJ soudniho_ADJ rizeni_NOUN ,_PUNCT danoveho_ADJ rizeni_NOUN ,_PUNCT vyberu_NOUN archivalii_NOUN ve_ADP skartacnim_ADJ rizeni_NOUN nebo_CCONJ mimo_ADP nej_PRON ,_PUNCT nebo_CCONJ pro_ADP ucely_NOUN socialniho_ADJ zabezpeceni_NOUN ,_PUNCT verejneho_ADJ zdravotniho_ADJ pojisteni_NOUN anebo_CCONJ pro_ADP ucely_NOUN ochrany_NOUN autorskych_ADJ prav_NOUN ,_PUNCT postupuji_VERB po_ADP uplynuti_NOUN dob_NOUN uschovy_NOUN uvedenych_ADJ v_ADP §_31_odst._2_X dale_ADV tak_ADV ,_PUNCT aby by_SCONJ AUX byly_AUX zajisteny_ADJ pozadavky_NOUN vyplyvajici_ADJ z_ADP jejich_DET pouziti_NOUN pro_ADP uvedene_ADJ ucely_NOUN ;_PUNCT v_ADP pripade_NOUN ,_PUNCT kdy_ADV ucetni_ADJ jednotky_NOUN pouziji_VERB ucetni_ADJ zaznamy_NOUN k_ADP temto_DET ucelum_NOUN ,_PUNCT plati_VERB vsechna_DET ustanoveni_NOUN tohoto_DET zakona_NOUN tykajici_ADJ se_PRON ucetnich_ADJ zaznamu_NOUN obdobne_ADV ._PUNCT}
-Predicted: {
-(1)_PUNCT pouziji-li_PUNCT ucetni_ADJ jednotky_NOUN ucetni_ADJ zaznamy_NOUN i_CCONJ pro_ADP jiny_ADJ ucel_NOUN nez_SCONJ uvedeny_ADJ v_ADP §_31_odst._1_X ,_PUNCT a_CCONJ to_PART zejmena_ADV pro_ADP ucely_NOUN trestniho_ADJ rizeni_NOUN ,_PUNCT opatreni_NOUN proti_ADP legalizaci_NOUN vynosu_NOUN z_ADP trestne_ADJ cinnosti_NOUN ,_PUNCT spravniho_ADJ rizeni_NOUN ,_PUNCT obcanskeho_ADJ soudniho_ADJ rizeni_NOUN ,_PUNCT danoveho_ADJ rizeni_NOUN ,_PUNCT vyberu_NOUN archivalii_NOUN ve_ADP skartacnim_ADJ rizeni_NOUN nebo_CCONJ mimo_ADP nej_PRON ,_PUNCT nebo_CCONJ pro_ADP ucely_NOUN socialniho_ADJ zabezpeceni_NOUN ,_PUNCT verejneho_ADJ zdravotniho_ADJ pojisteni_NOUN anebo_CCONJ pro_ADP ucely_NOUN ochrany_NOUN autorskych_ADJ prav_NOUN ,_PUNCT postupuji_VERB po_ADP uplynuti_NOUN dob_NOUN uschovy_NOUN uvedenych_ADJ v_ADP §_31_odst._2_X dale_ADV tak_ADV ,_PUNCT aby by_SCONJ AUX byly_AUX zajisteny_ADJ pozadavky_NOUN vyplyvajici_ADJ z_ADP jejich_DET pouziti_NOUN pro_ADP uvedene_ADJ ucely_NOUN ;_PUNCT v_ADP pripade_NOUN ,_PUNCT kdy_ADV ucetni_ADJ jednotky_NOUN pouziji_VERB ucetni_ADJ zaznamy_NOUN k_ADP temto_DET ucelum_NOUN ,_PUNCT plati_VERB vsechna_PRON ustanoveni_NOUN tohoto_DET zakona_NOUN tykajici_ADJ se_PRON ucetnich_ADJ zaznamu_NOUN obdobne_ADJ ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-pouziji-li: NOUN | PUNCT
 ucetni: NOUN | ADJ
-vsechna: DET | PRON
-obdobne: ADV | ADJ
 }
 
 Expected: {
-(4)_PUNCT ucetni_ADJ zaznam_NOUN v_ADP technicke_ADJ nebo_CCONJ smisene_ADJ forme_NOUN ,_PUNCT se_ADP skartacnimi_ADJ znaky_NOUN "_PUNCT a_X "_PUNCT nebo_CCONJ "_PUNCT v_X "_PUNCT vznikly_ADJ z_ADP cinnosti_NOUN ucetni_ADJ jednotky_NOUN ,_PUNCT musi_VERB byt_AUX ve_ADP formatu_NOUN ,_PUNCT ktery_DET zaruci_VERB jeho_DET nemennost_NOUN a_CCONJ umozni_VERB jeho_DET naslednou_ADJ citelnost_NOUN pro_ADP fyzickou_ADJ osobu_NOUN ._PUNCT}
+(1)_PUNCT z_ADP ucetnich_ADJ jednotek_NOUN podle_ADP §_1_odst._2_X jsou_AUX povinny_ADJ ucetni_ADJ zaverku_NOUN i_CCONJ vyrocni_ADJ zpravu_NOUN ,_PUNCT vyzaduje-li_X jeji_DET vyhotoveni_NOUN tento_DET zakon_NOUN nebo_CCONJ zvlastni_ADJ pravni_ADJ predpis_NOUN ,_PUNCT zverejnit_VERB ty_DET ,_PUNCT ktere_DET se_PRON zapisuji_VERB do_ADP obchodniho_ADJ rejstriku_NOUN ,_PUNCT nebo_CCONJ ty_DET ,_PUNCT kterym_DET tuto_ADV povinnost_NOUN stanovi_VERB zvlastni_ADJ pravni_ADJ predpis_NOUN ._PUNCT}
 Predicted: {
-(4)_PUNCT ucetni_ADJ zaznam_NOUN v_ADP technicke_ADJ nebo_CCONJ smisene_ADJ forme_NOUN ,_PUNCT se_PRON skartacnimi_ADJ znaky_NOUN "_PUNCT a_CCONJ "_PUNCT nebo_CCONJ "_PUNCT v_ADP "_PUNCT vznikly_ADJ z_ADP cinnosti_NOUN ucetni_ADJ jednotky_NOUN ,_PUNCT musi_VERB byt_AUX ve_ADP formatu_NOUN ,_PUNCT ktery_DET zaruci_VERB jeho_DET nemennost_NOUN a_CCONJ umozni_VERB jeho_DET naslednou_ADJ citelnost_NOUN pro_ADP fyzickou_ADJ osobu_NOUN ._PUNCT}
+(1)_PUNCT z_ADP ucetnich_ADJ jednotek_NOUN podle_ADP §_1_odst._2_X jsou_AUX povinny_ADJ ucetni_ADJ zaverku_NOUN i_CCONJ vyrocni_ADJ zpravu_NOUN ,_PUNCT vyzaduje-li_NOUN jeji_DET vyhotoveni_NOUN tento_DET zakon_NOUN nebo_CCONJ zvlastni_ADJ pravni_ADJ predpis_NOUN ,_PUNCT zverejnit_VERB ty_DET ,_PUNCT ktere_DET se_PRON zapisuji_VERB do_ADP obchodniho_ADJ rejstriku_NOUN ,_PUNCT nebo_CCONJ ty_DET ,_PUNCT kterym_DET tuto_DET povinnost_NOUN stanovi_VERB zvlastni_ADJ pravni_ADJ predpis_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-se: ADP | PRON
-a: X | CCONJ
-v: X | ADP
-}
-
-Expected: {
-(8)_PUNCT v_ADP rizeni_NOUN ve_ADP vecech_NOUN tykajicich_ADJ se_PRON ucetnictvi_NOUN nebo_CCONJ vychazejicich_ADJ z_ADP ucetnictvi_NOUN lze_VERB pouzit_VERB k_ADP dukazu_NOUN prukazne_ADJ ucetni_ADJ zaznamy_NOUN (_PUNCT §_33a_X )_PUNCT ,_PUNCT ktere_DET splnuji_VERB pozadavky_NOUN tohoto_DET zakona_NOUN ._PUNCT}
-Predicted: {
-(8)_PUNCT v_ADP rizeni_NOUN ve_ADP vecech_NOUN tykajicich_ADJ se_PRON ucetnictvi_NOUN nebo_CCONJ vychazejicich_NOUN z_ADP ucetnictvi_NOUN lze_VERB pouzit_VERB k_ADP dukazu_NOUN prukazne_ADJ ucetni_ADJ zaznamy_NOUN (_PUNCT §_33a_X )_PUNCT ,_PUNCT ktere_DET splnuji_VERB pozadavky_NOUN tohoto_DET zakona_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-vychazejicich: ADJ | NOUN
-}
-
-Expected: {
-(1)_PUNCT ucetni_ADJ jednotka_NOUN neuvedena_ADJ v_ADP §_37_X se_PRON dopusti_VERB spravniho_ADJ deliktu_NOUN tim_DET ,_PUNCT ze_SCONJ a)_X nevede_VERB ucetnictvi_NOUN podle_ADP §_4_odst._1_X ,_PUNCT b)_X nesestavi_VERB ucetni_ADJ zaverku_NOUN podle_ADP §_6_odst._4_X ,_PUNCT nebo_CCONJ nesestavi_VERB ucetni_ADJ zaverku_NOUN ke_ADP dni_NOUN stanovenemu_ADJ v_ADP §_19_odst._1_X ,_PUNCT nebo_CCONJ nevyhotovi_VERB vyrocni_ADJ zpravu_NOUN podle_ADP §_21_odst._1_az_5_X ,_PUNCT c)_X vede_VERB ucetnictvi_NOUN v_ADP rozporu_NOUN s_ADP §_7_odst._1_a_2_X ,_PUNCT d)_X vede_VERB ucetnictvi_NOUN v_ADP rozporu_NOUN s_ADP §_8_odst._2_X ,_PUNCT e)_X ji_PRON sestavena_ADJ ucetni_ADJ zaverka_NOUN neobsahuje_VERB vsechny_DET povinne_ADJ soucasti_NOUN uvedene_ADJ v_ADP §_18_odst._1_X nebo_CCONJ 2_NUM ,_PUNCT f)_X v_ADP rozporu_NOUN s_ADP §_19a_odst._1_X nepouzije_VERB pro_ADP uctovani_NOUN a_CCONJ sestaveni_NOUN ucetni_ADJ zaverky_NOUN mezinarodni_ADJ ucetni_ADJ standardy_NOUN ,_PUNCT g)_X v_ADP rozporu_NOUN s_ADP §_20_odst._1_X nema_VERB ucetni_ADJ zaverku_NOUN overenou_ADJ auditorem_NOUN nebo_CCONJ v_ADP rozporu_NOUN s_ADP §_21_odst._6_X nema_VERB vyrocni_ADJ zpravu_NOUN overenou_ADJ auditorem_NOUN ,_PUNCT h)_X nezverejni_VERB ucetni_ADJ zaverku_NOUN nebo_CCONJ vyrocni_ADJ zpravu_NOUN podle_ADP §_21a_X ,_PUNCT i)_X nesestavi_VERB ucetni_ADJ vykazy_NOUN za_ADP dilci_ADJ konsolidacni_ADJ celek_NOUN statu_NOUN nebo_CCONJ ucetni_ADJ vykazy_NOUN za_ADP ceskou_ADJ republiku_NOUN ,_PUNCT ac_SCONJ je_AUX k_ADP tomu_DET povinna_ADJ podle_ADP §_23b_X ,_PUNCT j)_X v_ADP rozporu_NOUN s_ADP §_31_X neuschova_VERB ucetni_ADJ zaznamy_NOUN ,_PUNCT nebo_CCONJ k)_X nezajisti_VERB podminky_NOUN pro_ADP predavani_NOUN ucetnich_ADJ zaznamu_NOUN do_ADP centralniho_ADJ systemu_NOUN ucetnich_ADJ informaci_NOUN statu_NOUN zpusobem_NOUN stanovenym_ADJ provadecim_ADJ pravnim_ADJ predpisem_NOUN vydanym_ADJ na_ADP zaklade_NOUN §_4_odst._8_a_§_23b_odst._534_X )_PUNCT nebo_CCONJ nepreda_VERB ucetni_ADJ zaznam_NOUN do_ADP centralniho_ADJ systemu_NOUN ucetnich_ADJ informaci_NOUN statu_NOUN ,_PUNCT ac_SCONJ ji_PRON tuto_ADV povinnost_NOUN stanovi_VERB zakon_NOUN nebo_CCONJ jiny_ADJ pravni_ADJ predpis_NOUN ._PUNCT}
-Predicted: {
-(1)_PUNCT ucetni_ADJ jednotka_NOUN neuvedena_ADJ v_ADP §_37_X se_PRON dopusti_VERB spravniho_ADJ deliktu_NOUN tim_DET ,_PUNCT ze_SCONJ a)_X nevede_VERB ucetnictvi_NOUN podle_ADP §_4_odst._1_X ,_PUNCT b)_X nesestavi_VERB ucetni_ADJ zaverku_NOUN podle_ADP §_6_odst._4_X ,_PUNCT nebo_CCONJ nesestavi_VERB ucetni_ADJ zaverku_NOUN ke_ADP dni_NOUN stanovenemu_ADJ v_ADP §_19_odst._1_X ,_PUNCT nebo_CCONJ nevyhotovi_VERB vyrocni_ADJ zpravu_NOUN podle_ADP §_21_odst._1_az_5_X ,_PUNCT c)_X vede_VERB ucetnictvi_NOUN v_ADP rozporu_NOUN s_ADP §_7_odst._1_a_2_X ,_PUNCT d)_X vede_VERB ucetnictvi_NOUN v_ADP rozporu_NOUN s_ADP §_8_odst._2_X ,_PUNCT e)_X ji_PRON sestavena_ADJ ucetni_ADJ zaverka_NOUN neobsahuje_VERB vsechny_DET povinne_ADJ soucasti_NOUN uvedene_ADJ v_ADP §_18_odst._1_X nebo_CCONJ 2_NUM ,_PUNCT f)_X v_ADP rozporu_NOUN s_ADP §_19a_odst._1_X nepouzije_VERB pro_ADP uctovani_NOUN a_CCONJ sestaveni_NOUN ucetni_ADJ zaverky_NOUN mezinarodni_ADJ ucetni_ADJ standardy_NOUN ,_PUNCT g)_X v_ADP rozporu_NOUN s_ADP §_20_odst._1_X nema_VERB ucetni_ADJ zaverku_NOUN overenou_ADJ auditorem_NOUN nebo_CCONJ v_ADP rozporu_NOUN s_ADP §_21_odst._6_X nema_VERB vyrocni_ADJ zpravu_NOUN overenou_ADJ auditorem_NOUN ,_PUNCT h)_X nezverejni_ADJ ucetni_ADJ zaverku_NOUN nebo_CCONJ vyrocni_ADJ zpravu_NOUN podle_ADP §_21a_X ,_PUNCT i)_X nesestavi_VERB ucetni_ADJ vykazy_NOUN za_ADP dilci_ADJ konsolidacni_ADJ celek_NOUN statu_NOUN nebo_CCONJ ucetni_ADJ vykazy_NOUN za_ADP ceskou_ADJ republiku_NOUN ,_PUNCT ac_SCONJ je_AUX k_ADP tomu_DET povinna_ADJ podle_ADP §_23b_X ,_PUNCT j)_X v_ADP rozporu_NOUN s_ADP §_31_X neuschova_ADJ ucetni_ADJ zaznamy_NOUN ,_PUNCT nebo_CCONJ k)_PUNCT nezajisti_ADJ podminky_NOUN pro_ADP predavani_NOUN ucetnich_ADJ zaznamu_NOUN do_ADP centralniho_ADJ systemu_NOUN ucetnich_ADJ informaci_NOUN statu_NOUN zpusobem_NOUN stanovenym_ADJ provadecim_ADJ pravnim_ADJ predpisem_NOUN vydanym_ADJ na_ADP zaklade_NOUN §_4_odst._8_a_§_23b_odst._534_X )_PUNCT nebo_CCONJ nepreda_VERB ucetni_ADJ zaznam_NOUN do_ADP centralniho_ADJ systemu_NOUN ucetnich_ADJ informaci_NOUN statu_NOUN ,_PUNCT ac_SCONJ ji_PRON tuto_DET povinnost_NOUN stanovi_VERB zakon_NOUN nebo_CCONJ jiny_ADJ pravni_ADJ predpis_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-nezverejni: VERB | ADJ
-neuschova: VERB | ADJ
-k): X | PUNCT
-nezajisti: VERB | ADJ
+vyzaduje-li: X | NOUN
 tuto: ADV | DET
 }
 
 Expected: {
-(1)_PUNCT v_ADP rozvaze_NOUN (_PUNCT bilanci_NOUN )_PUNCT a_CCONJ ve_ADP vykazu_NOUN zisku_NOUN a_CCONJ ztraty_NOUN se_PRON polozky_NOUN podle_ADP priloh_NOUN c._1,_c._2_a_c._3_X k_ADP teto_DET vyhlasce_NOUN uvadeji_VERB oddelene_ADV a_CCONJ ve_ADP stanovenem_ADJ poradi_NOUN ._PUNCT}
+(9)_PUNCT v_ADP pripade_NOUN cizi_ADJ meny_NOUN ,_PUNCT u_ADP ktere_DET se_PRON nevyhlasuje_VERB kurs_NOUN devizoveho_ADJ trhu_NOUN denne_ADV ,_PUNCT pouzije_VERB ucetni_ADJ jednotka_NOUN pro_ADP jeji_DET prepocet_NOUN a)_X kurs_NOUN mezibankovniho_ADJ trhu_NOUN pro_ADP tuto_DET menu_NOUN k_ADP usd_NOUN nebo_CCONJ eur_NOUN a_CCONJ kurs_NOUN devizoveho_ADJ trhu_NOUN vyhlaseny_ADJ ceskou_ADJ narodni_ADJ bankou_NOUN pro_ADP usd_NOUN nebo_CCONJ eur_NOUN ke_ADP stejnemu_ADJ dni_NOUN ,_PUNCT nebo_CCONJ b)_X posledni_ADJ znamy_ADJ kurs_NOUN vyhlaseny_ADJ ci_CCONJ zverejneny_ADJ ceskou_ADJ narodni_ADJ bankou_NOUN ;_PUNCT tento_DET postup_NOUN nepouziji_VERB ucetni_ADJ jednotky_NOUN ,_PUNCT na_ADP ktere_DET se_PRON nevztahuje_VERB ustanoveni_NOUN odstavce_NOUN 7_NUM ._PUNCT}
 Predicted: {
-(1)_PUNCT v_ADP rozvaze_NOUN (_PUNCT bilanci_NOUN )_PUNCT a_CCONJ ve_ADP vykazu_NOUN zisku_NOUN a_CCONJ ztraty_NOUN se_PRON polozky_NOUN podle_ADP priloh_NOUN c._1,_c._2_a_c._3_X k_ADP teto_DET vyhlasce_NOUN uvadeji_VERB oddelene_ADJ a_CCONJ ve_ADP stanovenem_ADJ poradi_NOUN ._PUNCT}
+(9)_PUNCT v_ADP pripade_NOUN cizi_ADJ meny_NOUN ,_PUNCT u_ADP ktere_DET se_PRON nevyhlasuje_VERB kurs_NOUN devizoveho_ADJ trhu_NOUN denne_ADV ,_PUNCT pouzije_VERB ucetni_ADJ jednotka_NOUN pro_ADP jeji_DET prepocet_NOUN a)_PUNCT kurs_NOUN mezibankovniho_ADJ trhu_NOUN pro_ADP tuto_DET menu_NOUN k_ADP usd_NOUN nebo_CCONJ eur_NOUN a_CCONJ kurs_NOUN devizoveho_ADJ trhu_NOUN vyhlaseny_ADJ ceskou_ADJ narodni_ADJ bankou_NOUN pro_ADP usd_NOUN nebo_CCONJ eur_NOUN ke_ADP stejnemu_ADJ dni_NOUN ,_PUNCT nebo_CCONJ b)_X posledni_ADJ znamy_ADJ kurs_NOUN vyhlaseny_ADJ ci_CCONJ zverejneny_ADJ ceskou_ADJ narodni_ADJ bankou_NOUN ;_PUNCT tento_DET postup_NOUN nepouziji_VERB ucetni_ADJ jednotky_NOUN ,_PUNCT na_ADP ktere_DET se_PRON nevztahuje_VERB ustanoveni_NOUN odstavce_NOUN 7_NUM ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-oddelene: ADV | ADJ
+a): X | PUNCT
 }
 
 Expected: {
-polozka_NOUN "_PUNCT ***vysledek_X hospodareni_X za_X ucetni_X obdobi_X "_PUNCT uvedena_ADJ ve_ADP vykazu_NOUN zisku_NOUN a_CCONJ ztraty_NOUN se_PRON musi_VERB rovnat_VERB polozce_NOUN "_PUNCT a._X v._X vysledek_X hospodareni_X bezneho_X ucetniho_X obdobi_X "_PUNCT uvedene_ADJ v_ADP rozvaze_NOUN (_PUNCT bilanci_NOUN )_PUNCT ._PUNCT}
+(4)_PUNCT pro_ADP ucely_NOUN tohoto_DET zakona_NOUN se_PRON jako_SCONJ realna_ADJ hodnota_NOUN pouzije_VERB a)_X trzni_ADJ hodnota_NOUN ,_PUNCT b)_X oceneni_NOUN kvalifikovanym_ADJ odhadem_NOUN nebo_CCONJ posudkem_NOUN znalce_NOUN ,_PUNCT neni_AUX -_PUNCT li_PART trzni_ADJ hodnota_NOUN k_ADP dispozici_NOUN nebo_CCONJ tato_DET nedostatecne_ADV predstavuje_VERB realnou_ADJ hodnotu_NOUN ;_PUNCT metody_NOUN oceneni_NOUN pouzite_ADJ pri_ADP kvalifikovanem_ADJ odhadu_NOUN nebo_CCONJ posudku_NOUN znalce_NOUN musi_VERB zajistit_VERB primerene_ADJ priblizeni_NOUN se_PRON k_ADP trzni_ADJ hodnote_NOUN ,_PUNCT c)_X oceneni_NOUN stanovene_ADJ podle_ADP zvlastnich_ADJ pravnich_ADJ predpisu_NOUN ,_PUNCT nelze-li_X postupovat_VERB podle_ADP pismen_NOUN a)_a_b)_X ._PUNCT}
 Predicted: {
-polozka_NOUN "_PUNCT ***vysledek_X hospodareni_X za_ADP ucetni_ADJ obdobi_NOUN "_PUNCT uvedena_ADJ ve_ADP vykazu_NOUN zisku_NOUN a_CCONJ ztraty_NOUN se_PRON musi_VERB rovnat_VERB polozce_NOUN "_PUNCT a._PUNCT v._PUNCT vysledek_NOUN hospodareni_NOUN bezneho_ADJ ucetniho_ADJ obdobi_NOUN "_PUNCT uvedene_ADJ v_ADP rozvaze_NOUN (_PUNCT bilanci_NOUN )_PUNCT ._PUNCT}
+(4)_PUNCT pro_ADP ucely_NOUN tohoto_DET zakona_NOUN se_PRON jako_SCONJ realna_ADJ hodnota_NOUN pouzije_VERB a)_X trzni_ADJ hodnota_NOUN ,_PUNCT b)_X oceneni_NOUN kvalifikovanym_ADJ odhadem_NOUN nebo_CCONJ posudkem_NOUN znalce_NOUN ,_PUNCT neni_AUX -_PUNCT li_PART trzni_ADJ hodnota_NOUN k_ADP dispozici_NOUN nebo_CCONJ tato_DET nedostatecne_ADV predstavuje_VERB realnou_ADJ hodnotu_NOUN ;_PUNCT metody_NOUN oceneni_NOUN pouzite_ADJ pri_ADP kvalifikovanem_ADJ odhadu_NOUN nebo_CCONJ posudku_NOUN znalce_NOUN musi_VERB zajistit_VERB primerene_ADJ priblizeni_NOUN se_PRON k_ADP trzni_ADJ hodnote_NOUN ,_PUNCT c)_X oceneni_NOUN stanovene_ADJ podle_ADP zvlastnich_ADJ pravnich_ADJ predpisu_NOUN ,_PUNCT nelze-li_PUNCT postupovat_VERB podle_ADP pismen_NOUN a)_a_b)_X ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-za: X | ADP
-ucetni: X | ADJ
-obdobi: X | NOUN
-a.: X | PUNCT
-v.: X | PUNCT
-vysledek: X | NOUN
-hospodareni: X | NOUN
-bezneho: X | ADJ
-ucetniho: X | ADJ
-obdobi: X | NOUN
+nelze-li: X | PUNCT
 }
 
 Expected: {
-dobou_NOUN pouzitelnosti_NOUN se_PRON rozumi_VERB doba_NOUN ,_PUNCT po_ADP kterou_DET je_AUX majetek_NOUN vyuzitelny_ADJ pro_ADP soucasnou_ADJ nebo_CCONJ uchovatelny_ADJ pro_ADP dalsi_ADJ cinnost_NOUN nebo_CCONJ muze_VERB slouzit_VERB jako_SCONJ podklad_NOUN nebo_CCONJ soucast_NOUN zdokonalovanych_ADJ nebo_CCONJ jinych_ADJ postupu_NOUN a_CCONJ reseni_NOUN vcetne_ADV doby_NOUN overovani_NOUN nehmotnych_ADJ vysledku_NOUN ._PUNCT}
+podil_NOUN ,_PUNCT ktery_DET predstavuje_VERB ucast_NOUN v_ADP ovladane_ADJ osobe_NOUN nebo_CCONJ v_ADP osobe_NOUN pod_ADP podstatnym_ADJ vlivem_NOUN ,_PUNCT muze_VERB byt_AUX ocenen_ADJ ekvivalenci_NOUN (_PUNCT protihodnotou_NOUN )_PUNCT ;_PUNCT pouzije-li_X ucetni_ADJ jednotka_NOUN uvedeny_ADJ zpusob_NOUN oceneni_NOUN ,_PUNCT je_AUX povinna_ADJ jej_PRON pouzit_VERB pro_ADP oceneni_NOUN vsech_DET takovych_DET podilu_NOUN ._PUNCT}
 Predicted: {
-dobou_NOUN pouzitelnosti_NOUN se_PRON rozumi_VERB doba_NOUN ,_PUNCT po_ADP kterou_DET je_AUX majetek_NOUN vyuzitelny_ADJ pro_ADP soucasnou_ADJ nebo_CCONJ uchovatelny_ADJ pro_ADP dalsi_ADJ cinnost_NOUN nebo_CCONJ muze_VERB slouzit_VERB jako_SCONJ podklad_NOUN nebo_CCONJ soucast_NOUN zdokonalovanych_ADJ nebo_CCONJ jinych_ADJ postupu_NOUN a_CCONJ reseni_NOUN vcetne_ADP doby_NOUN overovani_NOUN nehmotnych_ADJ vysledku_NOUN ._PUNCT}
+podil_NOUN ,_PUNCT ktery_DET predstavuje_VERB ucast_NOUN v_ADP ovladane_ADJ osobe_NOUN nebo_CCONJ v_ADP osobe_NOUN pod_ADP podstatnym_ADJ vlivem_NOUN ,_PUNCT muze_VERB byt_AUX ocenen_ADJ ekvivalenci_NOUN (_PUNCT protihodnotou_NOUN )_PUNCT ;_PUNCT pouzije-li_X ucetni_X jednotka_X uvedeny_X zpusob_NOUN oceneni_NOUN ,_PUNCT je_AUX povinna_ADJ jej_PRON pouzit_VERB pro_ADP oceneni_NOUN vsech_DET takovych_DET podilu_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-vcetne: ADV | ADP
+ucetni: ADJ | X
+jednotka: NOUN | X
+uvedeny: ADJ | X
 }
 
 Expected: {
-v_ADP pripade_NOUN variantniho_ADJ postupu_NOUN pri_ADP porizovani_NOUN dlouhodobeho_ADJ nehmotneho_ADJ majetku_NOUN nebo_CCONJ jeho_DET casti_NOUN jsou_AUX soucasti_NOUN oceneni_NOUN dlouhodobeho_ADJ nehmotneho_ADJ majetku_NOUN vsechna_DET variantni_ADJ reseni_NOUN ._PUNCT}
+(6)_PUNCT ucetni_ADJ jednotky_NOUN pri_ADP inventarizaci_NOUN periodicke_ADJ a)_X mohou_VERB zahajit_VERB ,_PUNCT inventuru_NOUN nejdrive_ADV b)_X ctyri_NUM ukonci_VERB mesice_NOUN inventuru_NOUN pred_ADP nejpozdeji_ADV rozvahovym_ADJ dva_NUM dnem_NOUN mesice_NOUN po_ADP rozvahovem_ADJ dni_NOUN ._PUNCT}
 Predicted: {
-v_ADP pripade_NOUN variantniho_ADJ postupu_NOUN pri_ADP porizovani_NOUN dlouhodobeho_ADJ nehmotneho_ADJ majetku_NOUN nebo_CCONJ jeho_DET casti_NOUN jsou_AUX soucasti_NOUN oceneni_NOUN dlouhodobeho_ADJ nehmotneho_ADJ majetku_NOUN vsechna_PRON variantni_ADJ reseni_NOUN ._PUNCT}
+(6)_PUNCT ucetni_ADJ jednotky_NOUN pri_ADP inventarizaci_NOUN periodicke_ADJ a)_PUNCT mohou_VERB zahajit_VERB ,_PUNCT inventuru_NOUN nejdrive_ADV b)_PUNCT ctyri_NUM ukonci_NOUN mesice_NOUN inventuru_NOUN pred_ADP nejpozdeji_ADV rozvahovym_ADJ dva_NUM dnem_NOUN mesice_NOUN po_ADP rozvahovem_ADJ dni_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-vsechna: DET | PRON
+a): X | PUNCT
+b): X | PUNCT
+ukonci: VERB | NOUN
 }
 
 Expected: {
-(1)_PUNCT polozka_NOUN "_PUNCT b.ii.1._X pozemky_X "_PUNCT obsahuje_VERB pozemky_NOUN bez_ADP ohledu_NOUN na_ADP vysi_NOUN oceneni_NOUN ,_PUNCT pokud_SCONJ nejsou_AUX zbozim_NOUN (_PUNCT §_9_odst._5_X )_PUNCT ._PUNCT}
+tuto_DET dokumentaci_NOUN uschovavaji_VERB ucetni_ADJ jednotky_NOUN po_ADP dobu_NOUN stanovenou_ADJ v_ADP §_31_odst._2_X podle_ADP toho_DET ,_PUNCT jakou_DET funkci_NOUN plni_VERB pri_ADP vedeni_NOUN ucetnictvi_NOUN ,_PUNCT nejde-li_X o_ADP pripad_NOUN podle_ADP odstavce_NOUN 1_NUM ._PUNCT}
 Predicted: {
-(1)_PUNCT polozka_NOUN "_PUNCT b.ii.1._X pozemky_NOUN "_PUNCT obsahuje_VERB pozemky_NOUN bez_ADP ohledu_NOUN na_ADP vysi_NOUN oceneni_NOUN ,_PUNCT pokud_SCONJ nejsou_AUX zbozim_NOUN (_PUNCT §_9_odst._5_X )_PUNCT ._PUNCT}
+tuto_DET dokumentaci_NOUN uschovavaji_VERB ucetni_ADJ jednotky_NOUN po_ADP dobu_NOUN stanovenou_ADJ v_ADP §_31_odst._2_X podle_ADP toho_DET ,_PUNCT jakou_DET funkci_NOUN plni_VERB pri_ADP vedeni_NOUN ucetnictvi_NOUN ,_PUNCT nejde-li_PUNCT o_ADP pripad_NOUN podle_ADP odstavce_NOUN 1_NUM ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-pozemky: X | NOUN
+nejde-li: X | PUNCT
 }
 
 Expected: {
-(2)_PUNCT polozka_NOUN "_PUNCT c.i.2._X nedokoncena_X vyroba_X a_X polotovary_X "_PUNCT obsahuje_VERB a)_X produkty_NOUN ,_PUNCT ktere_DET prosly_VERB jednim_NUM nebo_CCONJ nekolika_DET vyrobnimi_ADJ stupni_NOUN a_CCONJ nejsou_AUX jiz_ADV materialem_NOUN ,_PUNCT nejsou_AUX vsak_CCONJ dosud_ADV hotovym_ADJ vyrobkem_NOUN ;_PUNCT tato_DET polozka_NOUN rovnez_ADV obsahuje_VERB nedokoncene_ADJ cinnosti_NOUN ,_PUNCT pri_ADP nichz_PRON nevznikaji_VERB hmotne_ADJ produkty_NOUN ,_PUNCT b)_X oddelene_ADV evidovane_ADJ produkty_NOUN ,_PUNCT to_DET je_AUX polotovary_NOUN ,_PUNCT ktere_DET dosud_ADV neprosly_VERB vsemi_DET vyrobnimi_ADJ stupni_NOUN a_CCONJ budou_AUX dokonceny_ADJ nebo_CCONJ zkompletovany_ADJ do_ADP hotovych_ADJ vyrobku_NOUN v_ADP dalsim_ADJ vyrobnim_ADJ procesu_NOUN ucetni_ADJ jednotky_NOUN ._PUNCT}
+pro_ADP ucely_NOUN tohoto_DET zakona_NOUN se_PRON povazuje_VERB za_ADP a)_X listinnou_ADJ formu_NOUN ucetni_ADJ zaznam_NOUN provedeny_ADJ na_ADP analogovy_ADJ nosic_NOUN rukopisem_NOUN ,_PUNCT psacim_ADJ strojem_NOUN ,_PUNCT tiskarskymi_ADJ nebo_CCONJ reprografickymi_ADJ technikami_NOUN anebo_CCONJ tiskovym_ADJ vystupnim_ADJ zarizenim_NOUN vypocetni_ADJ techniky_NOUN ,_PUNCT jehoz_PRON obsah_NOUN je_AUX pro_ADP fyzickou_ADJ osobu_NOUN citelny_ADJ ,_PUNCT b)_X technickou_ADJ formu_NOUN ucetni_ADJ zaznam_NOUN provedeny_ADJ elektronickym_ADJ ,_PUNCT optickym_ADJ nebo_CCONJ jinym_ADJ zpusobem_NOUN nespadajicim_ADJ pod_ADP pismeno_NOUN a)_X ,_PUNCT ktery_DET umoznuje_VERB jeho_DET prevedeni_NOUN do_ADP formy_NOUN ,_PUNCT v_ADP niz_PRON je_AUX jeho_DET obsah_NOUN pro_ADP fyzickou_ADJ osobu_NOUN citelny_ADJ ,_PUNCT c)_X smisenou_ADJ formu_NOUN ucetni_ADJ zaznam_NOUN v_ADP listinne_ADJ forme_NOUN obsahujici_ADJ tez_ADV informace_NOUN v_ADP technicke_ADJ forme_NOUN pro_ADP fyzickou_ADJ osobu_NOUN necitelne_ADJ ,_PUNCT ktery_DET umoznuje_VERB jeho_DET prevedeni_NOUN do_ADP formy_NOUN ,_PUNCT v_ADP niz_PRON je_AUX jeho_DET obsah_NOUN pro_ADP fyzickou_ADJ osobu_NOUN citelny_ADJ ._PUNCT}
 Predicted: {
-(2)_PUNCT polozka_NOUN "_PUNCT c.i.2._X nedokoncena_ADJ vyroba_NOUN a_CCONJ polotovary_NOUN "_PUNCT obsahuje_VERB a)_X produkty_NOUN ,_PUNCT ktere_DET prosly_VERB jednim_NUM nebo_CCONJ nekolika_DET vyrobnimi_ADJ stupni_NOUN a_CCONJ nejsou_AUX jiz_ADV materialem_NOUN ,_PUNCT nejsou_AUX vsak_CCONJ dosud_ADV hotovym_ADJ vyrobkem_NOUN ;_PUNCT tato_DET polozka_NOUN rovnez_ADV obsahuje_VERB nedokoncene_ADJ cinnosti_NOUN ,_PUNCT pri_ADP nichz_PRON nevznikaji_VERB hmotne_ADJ produkty_NOUN ,_PUNCT b)_X oddelene_ADJ evidovane_ADJ produkty_NOUN ,_PUNCT to_DET je_AUX polotovary_NOUN ,_PUNCT ktere_DET dosud_ADV neprosly_VERB vsemi_DET vyrobnimi_ADJ stupni_NOUN a_CCONJ budou_AUX dokonceny_ADJ nebo_CCONJ zkompletovany_ADJ do_ADP hotovych_ADJ vyrobku_NOUN v_ADP dalsim_ADJ vyrobnim_ADJ procesu_NOUN ucetni_ADJ jednotky_NOUN ._PUNCT}
+pro_ADP ucely_NOUN tohoto_DET zakona_NOUN se_PRON povazuje_VERB za_ADP a)_X listinnou_ADJ formu_NOUN ucetni_ADJ zaznam_NOUN provedeny_ADJ na_ADP analogovy_ADJ nosic_NOUN rukopisem_NOUN ,_PUNCT psacim_ADJ strojem_NOUN ,_PUNCT tiskarskymi_ADJ nebo_CCONJ reprografickymi_ADJ technikami_NOUN anebo_CCONJ tiskovym_ADJ vystupnim_ADJ zarizenim_NOUN vypocetni_ADJ techniky_NOUN ,_PUNCT jehoz_DET obsah_NOUN je_AUX pro_ADP fyzickou_ADJ osobu_NOUN citelny_ADJ ,_PUNCT b)_X technickou_ADJ formu_NOUN ucetni_ADJ zaznam_NOUN provedeny_ADJ elektronickym_ADJ ,_PUNCT optickym_ADJ nebo_CCONJ jinym_ADJ zpusobem_NOUN nespadajicim_ADJ pod_ADP pismeno_NOUN a)_X ,_PUNCT ktery_DET umoznuje_VERB jeho_DET prevedeni_NOUN do_ADP formy_NOUN ,_PUNCT v_ADP niz_PRON je_AUX jeho_DET obsah_NOUN pro_ADP fyzickou_ADJ osobu_NOUN citelny_ADJ ,_PUNCT c)_X smisenou_ADJ formu_NOUN ucetni_ADJ zaznam_NOUN v_ADP listinne_ADJ forme_NOUN obsahujici_ADJ tez_ADV informace_NOUN v_ADP technicke_ADJ forme_NOUN pro_ADP fyzickou_ADJ osobu_NOUN necitelne_ADJ ,_PUNCT ktery_DET umoznuje_VERB jeho_DET prevedeni_NOUN do_ADP formy_NOUN ,_PUNCT v_ADP niz_PRON je_AUX jeho_DET obsah_NOUN pro_ADP fyzickou_ADJ osobu_NOUN citelny_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-nedokoncena: X | ADJ
-vyroba: X | NOUN
-a: X | CCONJ
-polotovary: X | NOUN
-oddelene: ADV | ADJ
+jehoz: PRON | DET
 }
 
 Expected: {
-ucetni_ADJ jednotka_NOUN popise_VERB tuto_ADV skutecnost_NOUN v_ADP priloze_NOUN v_ADP ucetni_ADJ zaverce_NOUN ._PUNCT}
+tato_DET vyhlaska_NOUN zapracovavqa_X prislusne_ADJ predpisy_NOUN evropske_ADJ unie_NOUN a_CCONJ upravuje_VERB :_PUNCT a)_X rozsah_NOUN a_CCONJ zpusob_NOUN sestavovani_NOUN ucetni_ADJ zaverky_NOUN ;_PUNCT usporadani_NOUN ,_PUNCT oznacovani_NOUN a_CCONJ obsahove_ADJ vymezeni_NOUN polozek_NOUN majetku_NOUN a_CCONJ jinych_ADJ aktiv_NOUN ,_PUNCT zavazku_NOUN a_CCONJ jinych_ADJ pasiv_NOUN v_ADP ucetni_ADJ zaverce_NOUN ;_PUNCT usporadani_NOUN ,_PUNCT oznacovani_NOUN a_CCONJ obsahove_ADJ vymezeni_NOUN nakladu_NOUN ,_PUNCT vynosu_NOUN a_CCONJ vysledku_NOUN hospodareni_NOUN v_ADP ucetni_ADJ zaverce_NOUN ;_PUNCT usporadani_NOUN a_CCONJ obsahove_ADJ vymezeni_NOUN vysvetlujicich_ADJ a_CCONJ doplnujicich_ADJ informaci_NOUN v_ADP priloze_NOUN v_ADP ucetni_ADJ zaverce_NOUN ;_PUNCT usporadani_NOUN ,_PUNCT oznacovani_NOUN a_CCONJ obsahove_ADJ vymezeni_NOUN polozek_NOUN konsolidovane_ADJ ucetni_ADJ zaverky_NOUN ;_PUNCT metody_NOUN konsolidace_NOUN ucetni_ADJ zaverky_NOUN a_CCONJ postup_NOUN zahrnovani_NOUN ucetnich_ADJ jednotek_NOUN do_ADP konsolidacniho_ADJ celku_NOUN ;_PUNCT b)_X usporadani_NOUN a_CCONJ obsahove_ADJ vymezeni_NOUN prehledu_NOUN o_ADP peneznich_ADJ tocich_NOUN a_CCONJ prehledu_NOUN o_ADP zmenach_NOUN vlastniho_ADJ kapitalu_NOUN ;_PUNCT smernou_ADJ uctovou_ADJ osnovu_NOUN ;_PUNCT ucetni_ADJ metody_NOUN ;_PUNCT metody_NOUN prechodu_NOUN z_ADP danove_ADJ evidence_NOUN podle_ADP zvlastniho_ADJ zakona_NOUN na_ADP ucetnictvi_NOUN ;_PUNCT c)_X metodu_NOUN oceneni_NOUN pri_ADP porizeni_NOUN souboru_NOUN movitych_ADJ veci_NOUN se_ADP samostatnym_ADJ technicko-ekonomickym_X urcenim_NOUN ;_PUNCT d)_X metodu_NOUN ocenovani_NOUN pri_ADP premene_NOUN spolecnosti_NOUN nebo_CCONJ druzstva_NOUN (_PUNCT dale_ADV jen_PART "_PUNCT spolecnost_X "_PUNCT )_PUNCT podle_ADP zakona_NOUN upravujiciho_ADJ premeny_NOUN obchodnich_ADJ spolecnosti_NOUN a_CCONJ druzstev_NOUN (_PUNCT dale_ADV jen_PART "_PUNCT zakon_X o_X premenach_X "_PUNCT )_PUNCT ,_PUNCT vcetne_ADP uprav_NOUN provadenych_ADJ v_ADP ramci_NOUN premen_NOUN spolecnosti_NOUN ke_ADP dni_NOUN zapisu_NOUN do_ADP obchodniho_ADJ rejstriku_NOUN s_ADP ucinky_NOUN od_ADP rozhodneho_ADJ dne_NOUN ;_PUNCT e)_X metodu_NOUN sestaveni_NOUN zahajovaci_ADJ rozvahy_NOUN pri_ADP premene_NOUN spolecnosti_NOUN ;_PUNCT f)_X upravy_NOUN pri_ADP preshranicni_ADJ premene_NOUN nebo_CCONJ prevodu_NOUN podniku_NOUN ;_PUNCT g)_X metodu_NOUN oceneni_NOUN pri_ADP nabyti_NOUN vice_ADV nez_SCONJ jedne_NUM slozky_NOUN majetku_NOUN prevodem_NOUN ci_CCONJ prechodem_NOUN ,_PUNCT vcetne_ADP moznosti_NOUN pouziti_NOUN zpusobu_NOUN ocenovani_NOUN podle_ADP §_24_odst._3_pism._a)_bodu_1_X v_ADP pripade_NOUN preshranicni_ADJ premeny_NOUN ,_PUNCT vkladu_NOUN nebo_CCONJ prodeje_NOUN podniku_NOUN ;_PUNCT h)_X oceneni_NOUN majetku_NOUN a_CCONJ zavazku_NOUN pri_ADP premene_NOUN spolecnosti_NOUN vcetne_ADP okamziku_NOUN uctovani_NOUN o_ADP oceneni_NOUN realnou_ADJ hodnotou_NOUN ._PUNCT}
 Predicted: {
-ucetni_ADJ jednotka_NOUN popise_VERB tuto_DET skutecnost_NOUN v_ADP priloze_NOUN v_ADP ucetni_ADJ zaverce_NOUN ._PUNCT}
+tato_DET vyhlaska_NOUN zapracovavqa_VERB prislusne_ADJ predpisy_NOUN evropske_ADJ unie_NOUN a_CCONJ upravuje_VERB :_PUNCT a)_X rozsah_NOUN a_CCONJ zpusob_NOUN sestavovani_NOUN ucetni_ADJ zaverky_NOUN ;_PUNCT usporadani_NOUN ,_PUNCT oznacovani_NOUN a_CCONJ obsahove_ADJ vymezeni_NOUN polozek_NOUN majetku_NOUN a_CCONJ jinych_ADJ aktiv_NOUN ,_PUNCT zavazku_NOUN a_CCONJ jinych_ADJ pasiv_NOUN v_ADP ucetni_ADJ zaverce_NOUN ;_PUNCT usporadani_NOUN ,_PUNCT oznacovani_NOUN a_CCONJ obsahove_ADJ vymezeni_NOUN nakladu_NOUN ,_PUNCT vynosu_NOUN a_CCONJ vysledku_NOUN hospodareni_NOUN v_ADP ucetni_ADJ zaverce_NOUN ;_PUNCT usporadani_NOUN a_CCONJ obsahove_ADJ vymezeni_NOUN vysvetlujicich_ADJ a_CCONJ doplnujicich_ADJ informaci_NOUN v_ADP priloze_NOUN v_ADP ucetni_ADJ zaverce_NOUN ;_PUNCT usporadani_NOUN ,_PUNCT oznacovani_NOUN a_CCONJ obsahove_ADJ vymezeni_NOUN polozek_NOUN konsolidovane_ADJ ucetni_ADJ zaverky_NOUN ;_PUNCT metody_NOUN konsolidace_NOUN ucetni_ADJ zaverky_NOUN a_CCONJ postup_NOUN zahrnovani_NOUN ucetnich_ADJ jednotek_NOUN do_ADP konsolidacniho_ADJ celku_NOUN ;_PUNCT b)_X usporadani_NOUN a_CCONJ obsahove_ADJ vymezeni_NOUN prehledu_NOUN o_ADP peneznich_ADJ tocich_NOUN a_CCONJ prehledu_NOUN o_ADP zmenach_NOUN vlastniho_ADJ kapitalu_NOUN ;_PUNCT smernou_ADJ uctovou_ADJ osnovu_NOUN ;_PUNCT ucetni_ADJ metody_NOUN ;_PUNCT metody_NOUN prechodu_NOUN z_ADP danove_ADJ evidence_NOUN podle_ADP zvlastniho_ADJ zakona_NOUN na_ADP ucetnictvi_NOUN ;_PUNCT c)_X metodu_NOUN oceneni_NOUN pri_ADP porizeni_NOUN souboru_NOUN movitych_ADJ veci_NOUN se_ADP samostatnym_ADJ technicko-ekonomickym_X urcenim_NOUN ;_PUNCT d)_X metodu_NOUN ocenovani_NOUN pri_ADP premene_NOUN spolecnosti_NOUN nebo_CCONJ druzstva_NOUN (_PUNCT dale_ADV jen_PART "_PUNCT spolecnost_NOUN "_PUNCT )_PUNCT podle_ADP zakona_NOUN upravujiciho_ADJ premeny_NOUN obchodnich_ADJ spolecnosti_NOUN a_CCONJ druzstev_NOUN (_PUNCT dale_ADV jen_PART "_PUNCT zakon_NOUN o_ADP premenach_NOUN "_PUNCT )_PUNCT ,_PUNCT vcetne_ADP uprav_NOUN provadenych_ADJ v_ADP ramci_NOUN premen_NOUN spolecnosti_NOUN ke_ADP dni_NOUN zapisu_NOUN do_ADP obchodniho_ADJ rejstriku_NOUN s_ADP ucinky_NOUN od_ADP rozhodneho_ADJ dne_NOUN ;_PUNCT e)_X metodu_NOUN sestaveni_NOUN zahajovaci_ADJ rozvahy_NOUN pri_ADP premene_NOUN spolecnosti_NOUN ;_PUNCT f)_X upravy_NOUN pri_ADP preshranicni_ADJ premene_NOUN nebo_CCONJ prevodu_NOUN podniku_NOUN ;_PUNCT g)_X metodu_NOUN oceneni_NOUN pri_ADP nabyti_NOUN vice_ADV nez_SCONJ jedne_NUM slozky_NOUN majetku_NOUN prevodem_NOUN ci_CCONJ prechodem_NOUN ,_PUNCT vcetne_ADP moznosti_NOUN pouziti_NOUN zpusobu_NOUN ocenovani_NOUN podle_ADP §_24_odst._3_pism._a)_bodu_1_X v_ADP pripade_NOUN preshranicni_ADJ premeny_NOUN ,_PUNCT vkladu_NOUN nebo_CCONJ prodeje_NOUN podniku_NOUN ;_PUNCT h)_X oceneni_NOUN majetku_NOUN a_CCONJ zavazku_NOUN pri_ADP premene_NOUN spolecnosti_NOUN vcetne_ADP okamziku_NOUN uctovani_NOUN o_ADP oceneni_NOUN realnou_ADJ hodnotou_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-tuto: ADV | DET
+zapracovavqa: X | VERB
+spolecnost: X | NOUN
+zakon: X | NOUN
+o: X | ADP
+premenach: X | NOUN
 }
 
 Expected: {
-(2)_PUNCT polozka_NOUN "_PUNCT a.i.3._X zmeny_X zakladniho_X kapitalu_X "_PUNCT obsahuje_VERB zmeny_NOUN zakladniho_ADJ kapitalu_NOUN vykazovane_ADJ prislusnymi_ADJ obchodnimi_ADJ spolecnostmi_NOUN pred_ADP zapisem_NOUN zmen_NOUN zakladniho_ADJ kapitalu_NOUN do_ADP obchodniho_ADJ rejstriku_NOUN ._PUNCT}
+(1)_PUNCT polozka_NOUN "_PUNCT b.i._X dlouhodoby_X nehmotny_X majetek_X "_PUNCT obsahuje_VERB zejmena_ADV zrizovaci_ADJ vydaje_NOUN ,_PUNCT nehmotne_ADJ vysledky_NOUN vyzkumu_NOUN a_CCONJ vyvoje_NOUN ,_PUNCT software_NOUN ,_PUNCT ocenitelna_ADJ prava_NOUN a_CCONJ goodwill_NOUN s_ADP dobou_NOUN pouzitelnosti_NOUN delsi_VERB nez_SCONJ jeden_NUM rok_NOUN a_CCONJ od_ADP vyse_NOUN oceneni_NOUN urcene_ADJ ucetni_NOUN jednotkou_NOUN ,_PUNCT s_ADP vyjimkou_NOUN goodwillu_NOUN ,_PUNCT a_CCONJ pri_ADP splneni_NOUN podminek_NOUN dale_ADV stanovenych_ADJ a_CCONJ pri_ADP splneni_NOUN povinnosti_NOUN stanovenych_ADJ zakonem_NOUN ,_PUNCT zejmena_ADV respektovanim_NOUN principu_NOUN vyznamnosti_NOUN a_CCONJ verneho_ADJ a_CCONJ poctiveho_ADJ zobrazeni_NOUN majetku_NOUN ._PUNCT}
 Predicted: {
-(2)_PUNCT polozka_NOUN "_PUNCT a.i.3._X zmeny_NOUN zakladniho_ADJ kapitalu_NOUN "_PUNCT obsahuje_VERB zmeny_NOUN zakladniho_ADJ kapitalu_NOUN vykazovane_ADJ prislusnymi_ADJ obchodnimi_ADJ spolecnostmi_NOUN pred_ADP zapisem_NOUN zmen_NOUN zakladniho_ADJ kapitalu_NOUN do_ADP obchodniho_ADJ rejstriku_NOUN ._PUNCT}
+(1)_PUNCT polozka_NOUN "_PUNCT b.i._X dlouhodoby_X nehmotny_X majetek_X "_PUNCT obsahuje_VERB zejmena_ADV zrizovaci_ADJ vydaje_NOUN ,_PUNCT nehmotne_ADJ vysledky_NOUN vyzkumu_NOUN a_CCONJ vyvoje_NOUN ,_PUNCT software_NOUN ,_PUNCT ocenitelna_ADJ prava_NOUN a_CCONJ goodwill_NOUN s_ADP dobou_NOUN pouzitelnosti_NOUN delsi_ADJ nez_SCONJ jeden_NUM rok_NOUN a_CCONJ od_ADP vyse_NOUN oceneni_NOUN urcene_ADJ ucetni_ADJ jednotkou_NOUN ,_PUNCT s_ADP vyjimkou_NOUN goodwillu_PROPN ,_PUNCT a_CCONJ pri_ADP splneni_NOUN podminek_NOUN dale_ADV stanovenych_ADJ a_CCONJ pri_ADP splneni_NOUN povinnosti_NOUN stanovenych_ADJ zakonem_NOUN ,_PUNCT zejmena_ADV respektovanim_NOUN principu_NOUN vyznamnosti_NOUN a_CCONJ verneho_ADJ a_CCONJ poctiveho_ADJ zobrazeni_NOUN majetku_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-zmeny: X | NOUN
-zakladniho: X | ADJ
-kapitalu: X | NOUN
+delsi: VERB | ADJ
+ucetni: NOUN | ADJ
+goodwillu: NOUN | PROPN
 }
 
 Expected: {
-polozka_NOUN "_PUNCT a.iii._X rezervni_X fondy,_X nedelitelny_X fond_X a_X ostatni_X fondy_X ze_X zisku_X "_PUNCT obsahuje_VERB fondy_NOUN vytvarene_ADJ podle_ADP obchodniho_ADJ zakoniku_NOUN ,_PUNCT popripade_ADV stanov_NOUN ,_PUNCT spolecenske_ADJ smlouvy_NOUN ,_PUNCT zakladatelske_ADJ smlouvy_NOUN ,_PUNCT zakladatelske_ADJ listiny_NOUN nebo_CCONJ podle_ADP zakona_NOUN o_ADP statnim_ADJ podniku_NOUN ._PUNCT}
+o_ADP pripadnou_ADJ naslednou_ADJ zmenu_NOUN kupni_ADJ ceny_NOUN podniku_NOUN nebo_CCONJ jeho_DET casti_NOUN se_PRON upravi_VERB hodnota_NOUN goodwillu_NOUN nebo_CCONJ zaporneho_ADJ goodwillu_NOUN ,_PUNCT a_CCONJ to_PART beze_ADP zmeny_NOUN doby_NOUN odpisovani_NOUN ,_PUNCT e)_X povolenkami_NOUN na_ADP emise_NOUN bez_ADP ohledu_NOUN na_ADP vysi_NOUN oceneni_NOUN :_PUNCT 2_NUM ._PUNCT jednotky_NOUN snizeni_NOUN emisi_NOUN a_CCONJ overeneho_ADJ snizeni_NOUN emisi_NOUN z_ADP projektovych_ADJ cinnosti_NOUN ,_PUNCT 1_NUM ._PUNCT povolenky_NOUN na_ADP emise_NOUN sklenikovych_ADJ plynu_NOUN a_CCONJ povolenky_NOUN na_ADP emise_NOUN zpusobene_ADJ letectvim_NOUN ,_PUNCT 3_NUM ._PUNCT jednotky_NOUN prideleneho_ADJ mnozstvi_NOUN ,_PUNCT f)_X preferencnimi_ADJ limity_NOUN zejmena_ADV individualni_ADJ referencni_ADJ mnozstvi_NOUN mleka_NOUN ,_PUNCT individualni_ADJ produkcni_ADJ kvoty_NOUN a_CCONJ individualni_ADJ limit_NOUN premiovych_ADJ prav_NOUN bez_ADP ohledu_NOUN na_ADP vysi_NOUN oceneni_NOUN ;_PUNCT u_ADP prvniho_ADJ drzitele_NOUN pouze_ADV v_ADP pripade_NOUN ,_PUNCT pokud_SCONJ by_AUX naklady_NOUN na_ADP ziskani_NOUN informace_NOUN o_ADP jejich_DET oceneni_NOUN reprodukcni_ADJ porizovaci_ADJ cenou_NOUN neprevysily_VERB jeji_DET vyznamnost_NOUN ._PUNCT}
 Predicted: {
-polozka_NOUN "_PUNCT a.iii._X rezervni_ADJ fondy,_PUNCT nedelitelny_ADJ fond_NOUN a_CCONJ ostatni_ADJ fondy_NOUN ze_ADP zisku_NOUN "_PUNCT obsahuje_VERB fondy_NOUN vytvarene_ADJ podle_ADP obchodniho_ADJ zakoniku_NOUN ,_PUNCT popripade_ADV stanov_NOUN ,_PUNCT spolecenske_ADJ smlouvy_NOUN ,_PUNCT zakladatelske_ADJ smlouvy_NOUN ,_PUNCT zakladatelske_ADJ listiny_NOUN nebo_CCONJ podle_ADP zakona_NOUN o_ADP statnim_ADJ podniku_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-rezervni: X | ADJ
-fondy,: X | PUNCT
-nedelitelny: X | ADJ
-fond: X | NOUN
-a: X | CCONJ
-ostatni: X | ADJ
-fondy: X | NOUN
-ze: X | ADP
-zisku: X | NOUN
-}
-
-Expected: {
-(3)_PUNCT rezerva_NOUN na_ADP dan_NOUN z_ADP prijmu_NOUN se_PRON vykazuje_VERB v_ADP pripade_NOUN ,_PUNCT kdy_ADV okamzik_NOUN sestaveni_NOUN ucetni_ADJ zaverky_NOUN predchazi_VERB okamziku_NOUN radneho_ADJ vycisleni_NOUN dane_NOUN a_CCONJ zauctuje_VERB se_PRON ve_ADP vysi_NOUN predpokladane_ADJ dane_NOUN ._PUNCT}
-Predicted: {
-(3)_PUNCT rezerva_NOUN na_ADP dan_NOUN z_ADP prijmu_NOUN se_PRON vykazuje_VERB v_ADP pripade_NOUN ,_PUNCT kdy_ADV okamzik_NOUN sestaveni_NOUN ucetni_ADJ zaverky_NOUN predchazi_VERB okamziku_NOUN radneho_ADJ vycisleni_NOUN dane_ADJ a_CCONJ zauctuje_VERB se_PRON ve_ADP vysi_NOUN predpokladane_ADJ dane_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-dane: NOUN | ADJ
-}
-
-Expected: {
-polozka_NOUN "_PUNCT d._X dane_X a_X poplatky_X "_PUNCT obsahuje_VERB veskere_PRON dane_NOUN a_CCONJ poplatky_NOUN zauctovane_ADJ ucetni_ADJ jednotkou_NOUN jako_SCONJ naklady_NOUN s_ADP vyjimkou_NOUN dane_NOUN z_ADP prijmu_NOUN ._PUNCT}
-Predicted: {
-polozka_NOUN "_PUNCT d._PUNCT dane_NOUN a_CCONJ poplatky_NOUN "_PUNCT obsahuje_VERB veskere_PRON dane_NOUN a_CCONJ poplatky_NOUN zauctovane_ADJ ucetni_ADJ jednotkou_NOUN jako_SCONJ naklady_NOUN s_ADP vyjimkou_NOUN dane_NOUN z_ADP prijmu_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-d.: X | PUNCT
-dane: X | NOUN
-a: X | CCONJ
-poplatky: X | NOUN
-}
-
-Expected: {
-skodou_NOUN se_PRON v_ADP tomto_DET pripade_NOUN rozumi_VERB fyzicke_ADJ znehodnoceni_NOUN ,_PUNCT to_DET je_AUX neodstranitelne_ADJ poskozeni_NOUN nebo_CCONJ zniceni_NOUN ,_PUNCT dlouhodobeho_ADJ nehmotneho_ADJ a_CCONJ hmotneho_ADJ majetku_NOUN a_CCONJ zasob_NOUN ,_PUNCT a_CCONJ to_PART z_ADP objektivnich_ADJ i_CCONJ subjektivnich_ADJ pricin_NOUN ._PUNCT}
-Predicted: {
-skodou_NOUN se_PRON v_ADP tomto_DET pripade_NOUN rozumi_VERB fyzicke_ADJ znehodnoceni_NOUN ,_PUNCT to_DET je_AUX neodstranitelne_ADJ poskozeni_NOUN nebo_CCONJ zniceni_NOUN ,_PUNCT dlouhodobeho_ADJ nehmotneho_ADJ a_CCONJ hmotneho_ADJ majetku_NOUN a_CCONJ zasob_NOUN ,_PUNCT a_CCONJ to_DET z_ADP objektivnich_ADJ i_CCONJ subjektivnich_ADJ pricin_NOUN ._PUNCT}
+o_ADP pripadnou_ADJ naslednou_ADJ zmenu_NOUN kupni_ADJ ceny_NOUN podniku_NOUN nebo_CCONJ jeho_DET casti_NOUN se_PRON upravi_VERB hodnota_NOUN goodwillu_NOUN nebo_CCONJ zaporneho_ADJ goodwillu_NOUN ,_PUNCT a_CCONJ to_DET beze_ADP zmeny_NOUN doby_NOUN odpisovani_NOUN ,_PUNCT e)_X povolenkami_NOUN na_ADP emise_NOUN bez_ADP ohledu_NOUN na_ADP vysi_NOUN oceneni_NOUN :_PUNCT 2_NUM ._PUNCT jednotky_NOUN snizeni_NOUN emisi_NOUN a_CCONJ overeneho_ADJ snizeni_NOUN emisi_NOUN z_ADP projektovych_ADJ cinnosti_NOUN ,_PUNCT 1_NUM ._PUNCT povolenky_NOUN na_ADP emise_NOUN sklenikovych_ADJ plynu_NOUN a_CCONJ povolenky_NOUN na_ADP emise_NOUN zpusobene_ADJ letectvim_NOUN ,_PUNCT 3_NUM ._PUNCT jednotky_NOUN prideleneho_ADJ mnozstvi_NOUN ,_PUNCT f)_X preferencnimi_ADJ limity_NOUN zejmena_ADV individualni_ADJ referencni_ADJ mnozstvi_NOUN mleka_NOUN ,_PUNCT individualni_ADJ produkcni_ADJ kvoty_NOUN a_CCONJ individualni_ADJ limit_NOUN premiovych_ADJ prav_NOUN bez_ADP ohledu_NOUN na_ADP vysi_NOUN oceneni_NOUN ;_PUNCT u_ADP prvniho_ADJ drzitele_NOUN pouze_ADV v_ADP pripade_NOUN ,_PUNCT pokud_SCONJ by_AUX naklady_NOUN na_ADP ziskani_NOUN informace_NOUN o_ADP jejich_DET oceneni_NOUN reprodukcni_ADJ porizovaci_ADJ cenou_NOUN neprevysily_VERB jeji_DET vyznamnost_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -9557,148 +9522,100 @@ to: PART | DET
 }
 
 Expected: {
-(5)_PUNCT polozka_NOUN "_PUNCT ***_PUNCT vysledek_X hospodareni_X za_X ucetni_X obdobi_X "_PUNCT a)_X ve_ADP vykazu_NOUN zisku_NOUN a_CCONJ ztraty_NOUN -_PUNCT druhove_ADJ cleneni_NOUN je_AUX souctem_NOUN polozek_NOUN "_PUNCT **_PUNCT vysledek_X hospodareni_X za_X beznou_X cinnost_X "_PUNCT a_CCONJ "_PUNCT *_PUNCT mimoradny_X vysledek_X hospodareni_X "_PUNCT snizenym_ADJ o_ADP polozku_NOUN "_PUNCT t._X prevod_X podilu_X na_X vysledku_X hospodareni_X spolecnikum_X "_PUNCT ,_PUNCT b)_X ve_ADP vykazu_NOUN zisku_NOUN a_CCONJ ztraty_NOUN -_PUNCT ucelove_ADJ cleneni_NOUN je_AUX souctem_NOUN polozek_NOUN "_PUNCT **_PUNCT vysledek_X hospodareni_X za_X beznou_X cinnost_X "_PUNCT a_CCONJ "_PUNCT *_PUNCT mimoradny_X vysledek_X hospodareni_X "_PUNCT snizenym_ADJ o_ADP polozku_NOUN "_PUNCT o._X prevod_X podilu_X na_X vysledku_X hospodareni_X spolecnikum_X "_PUNCT ._PUNCT}
+(7)_PUNCT polozka_NOUN "_PUNCT b.ii.2._X stavby_X "_PUNCT a_CCONJ polozka_NOUN "_PUNCT b.ii.3._X samostatne_X movite_X veci_X a_X soubory_X movitych_X veci_X "_PUNCT dale_ADV obsahuje_VERB technicke_ADJ zhodnoceni_NOUN a)_X k_ADP jehoz_DET uctovani_NOUN a_CCONJ odpisovani_NOUN je_AUX opravnena_ADJ jina_ADJ ucetni_ADJ jednotka_NOUN nez_SCONJ vlastnik_NOUN majetku_NOUN ,_PUNCT a_CCONJ to_PART od_ADP castky_NOUN stanovene_ADJ zakonem_NOUN o_ADP danich_NOUN z_ADP prijmu_NOUN ,_PUNCT b)_X drobneho_ADJ hmotneho_ADJ majetku_NOUN od_ADP castky_NOUN technickeho_ADJ zhodnoceni_NOUN stanovene_ADJ zakonem_NOUN o_ADP danich_NOUN z_ADP prijmu_NOUN ._PUNCT}
 Predicted: {
-(5)_PUNCT polozka_NOUN "_PUNCT ***_X vysledek_X hospodareni_X za_ADP ucetni_ADJ obdobi_NOUN "_PUNCT a)_X ve_ADP vykazu_NOUN zisku_NOUN a_CCONJ ztraty_NOUN -_PUNCT druhove_ADJ cleneni_NOUN je_AUX souctem_NOUN polozek_NOUN "_PUNCT **_PUNCT vysledek_X hospodareni_X za_X beznou_X cinnost_X "_PUNCT a_CCONJ "_PUNCT *_PUNCT mimoradny_X vysledek_X hospodareni_X "_PUNCT snizenym_ADJ o_ADP polozku_NOUN "_PUNCT t._X prevod_X podilu_X na_X vysledku_X hospodareni_X spolecnikum_X "_PUNCT ,_PUNCT b)_X ve_ADP vykazu_NOUN zisku_NOUN a_CCONJ ztraty_NOUN -_PUNCT ucelove_ADJ cleneni_NOUN je_AUX souctem_NOUN polozek_NOUN "_PUNCT **_PUNCT vysledek_X hospodareni_X za_X beznou_X cinnost_X "_PUNCT a_CCONJ "_PUNCT *_PUNCT mimoradny_X vysledek_X hospodareni_X "_PUNCT snizenym_ADJ o_ADP polozku_NOUN "_PUNCT o._X prevod_X podilu_X na_X vysledku_X hospodareni_X spolecnikum_X "_PUNCT ._PUNCT}
+(7)_PUNCT polozka_NOUN "_PUNCT b.ii.2._X stavby_X "_PUNCT a_CCONJ polozka_NOUN "_PUNCT b.ii.3._X samostatne_X movite_X veci_X a_X soubory_X movitych_X veci_X "_PUNCT dale_ADV obsahuje_VERB technicke_ADJ zhodnoceni_NOUN a)_PUNCT k_ADP jehoz_DET uctovani_NOUN a_CCONJ odpisovani_NOUN je_AUX opravnena_ADJ jina_ADJ ucetni_ADJ jednotka_NOUN nez_SCONJ vlastnik_NOUN majetku_NOUN ,_PUNCT a_CCONJ to_PART od_ADP castky_NOUN stanovene_ADJ zakonem_NOUN o_ADP danich_NOUN z_ADP prijmu_NOUN ,_PUNCT b)_X drobneho_ADJ hmotneho_ADJ majetku_NOUN od_ADP castky_NOUN technickeho_ADJ zhodnoceni_NOUN stanovene_ADJ zakonem_NOUN o_ADP danich_NOUN z_ADP prijmu_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-***: PUNCT | X
-za: X | ADP
-ucetni: X | ADJ
-obdobi: X | NOUN
+a): X | PUNCT
 }
 
 Expected: {
-zvlast_ADV uvede_VERB vyznamne_ADJ udaje_NOUN ,_PUNCT ktere_DET nejsou_AUX v_ADP rozvaze_NOUN (_PUNCT bilanci_NOUN )_PUNCT a_CCONJ vykazu_NOUN zisku_NOUN a_CCONJ ztraty_NOUN samostatne_ADV vykazany_ADJ ,_PUNCT zejmena_ADV domerky_NOUN splatne_ADJ dane_NOUN z_ADP prijmu_NOUN za_ADP minula_ADJ ucetni_ADJ obdobi_NOUN ,_PUNCT rozpis_NOUN odlozeneho_ADJ danoveho_ADJ zavazku_NOUN nebo_CCONJ pohledavky_NOUN ,_PUNCT rozpis_NOUN rezerv_NOUN a_CCONJ dlouhodobych_ADJ bankovnich_ADJ uveru_NOUN vcetne_ADP urokovych_ADJ sazeb_NOUN a_CCONJ popisu_NOUN zajisteni_NOUN uveru_NOUN ,_PUNCT vysi_NOUN splatnych_ADJ zavazku_NOUN pojistneho_NOUN na_ADP socialni_ADJ zabezpeceni_NOUN a_CCONJ prispevku_NOUN na_ADP statni_ADJ politiku_NOUN zamestnanosti_NOUN ,_PUNCT vysi_NOUN splatnych_ADJ zavazku_NOUN verejneho_ADJ zdravotniho_ADJ pojisteni_NOUN a_CCONJ vysi_NOUN evidovanych_ADJ danovych_ADJ nedoplatku_NOUN u_ADP mistne_ADV prislusnych_ADJ financnich_ADJ a_CCONJ celnich_ADJ organu_NOUN ,_PUNCT vysi_NOUN pohledavek_NOUN urcenych_ADJ k_ADP obchodovani_NOUN ocenenych_ADJ realnou_ADJ hodnotou_NOUN ,_PUNCT prijate_ADJ dotace_NOUN na_ADP investicni_ADJ a_CCONJ provozni_ADJ ucely_NOUN ._PUNCT}
+(1)_PUNCT polozka_NOUN "_PUNCT a.i.1._X zakladni_X kapital_X "_PUNCT obsahuje_VERB zapsany_ADJ zakladni_ADJ kapital_NOUN obchodnich_ADJ spolecnosti_NOUN ,_PUNCT zapsane_ADJ i_CCONJ nezapsane_ADJ kmenove_ADJ jmeni_NOUN statnich_ADJ podniku_NOUN ,_PUNCT zapsany_ADJ i_CCONJ nezapsany_ADJ zakladni_ADJ kapital_NOUN druzstev_NOUN ,_PUNCT zakladni_ADJ kapital_NOUN obchodnich_ADJ spolecnosti_NOUN povinne_ADV nezapisovany_ADJ ._PUNCT}
 Predicted: {
-zvlast_ADV uvede_VERB vyznamne_ADJ udaje_NOUN ,_PUNCT ktere_DET nejsou_AUX v_ADP rozvaze_NOUN (_PUNCT bilanci_NOUN )_PUNCT a_CCONJ vykazu_NOUN zisku_NOUN a_CCONJ ztraty_NOUN samostatne_ADJ vykazany_ADJ ,_PUNCT zejmena_ADV domerky_NOUN splatne_ADJ dane_NOUN z_ADP prijmu_NOUN za_ADP minula_ADJ ucetni_ADJ obdobi_NOUN ,_PUNCT rozpis_NOUN odlozeneho_ADJ danoveho_ADJ zavazku_NOUN nebo_CCONJ pohledavky_NOUN ,_PUNCT rozpis_NOUN rezerv_NOUN a_CCONJ dlouhodobych_ADJ bankovnich_ADJ uveru_NOUN vcetne_ADP urokovych_ADJ sazeb_NOUN a_CCONJ popisu_NOUN zajisteni_NOUN uveru_NOUN ,_PUNCT vysi_NOUN splatnych_ADJ zavazku_NOUN pojistneho_NOUN na_ADP socialni_ADJ zabezpeceni_NOUN a_CCONJ prispevku_NOUN na_ADP statni_ADJ politiku_NOUN zamestnanosti_NOUN ,_PUNCT vysi_NOUN splatnych_ADJ zavazku_NOUN verejneho_ADJ zdravotniho_ADJ pojisteni_NOUN a_CCONJ vysi_NOUN evidovanych_ADJ danovych_ADJ nedoplatku_NOUN u_ADP mistne_ADV prislusnych_ADJ financnich_ADJ a_CCONJ celnich_ADJ organu_NOUN ,_PUNCT vysi_NOUN pohledavek_NOUN urcenych_ADJ k_ADP obchodovani_NOUN ocenenych_ADJ realnou_ADJ hodnotou_NOUN ,_PUNCT prijate_ADJ dotace_NOUN na_ADP investicni_ADJ a_CCONJ provozni_ADJ ucely_NOUN ._PUNCT}
+(1)_PUNCT polozka_NOUN "_PUNCT a.i.1._X zakladni_X kapital_X "_PUNCT obsahuje_VERB zapsany_ADJ zakladni_ADJ kapital_NOUN obchodnich_ADJ spolecnosti_NOUN ,_PUNCT zapsane_ADJ i_CCONJ nezapsane_ADJ kmenove_ADJ jmeni_NOUN statnich_ADJ podniku_NOUN ,_PUNCT zapsany_ADJ i_CCONJ nezapsany_ADJ zakladni_ADJ kapital_NOUN druzstev_NOUN ,_PUNCT zakladni_ADJ kapital_NOUN obchodnich_ADJ spolecnosti_NOUN povinne_ADJ nezapisovany_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-samostatne: ADV | ADJ
+povinne: ADV | ADJ
 }
 
 Expected: {
-(13)_PUNCT ucetni_ADJ jednotka_NOUN ,_PUNCT ktera_DET je_AUX pravnickou_ADJ osobou_NOUN a_CCONJ prekrocila_VERB ke_ADP konci_NOUN rozvahoveho_ADJ dne_NOUN ,_PUNCT za_ADP ktery_DET se_PRON ucetni_ADJ zaverka_NOUN sestavuje_VERB ,_PUNCT alespon_ADV dve_NUM ze_ADP tri_NUM kriterii_NOUN uvedenych_ADJ v_ADP odstavci_NOUN 9_NUM pism._c)_X ,_PUNCT dale_ADV v_ADP priloze_NOUN uvede_VERB a)_X informaci_NOUN o_ADP rozcleneni_NOUN trzeb_NOUN z_ADP prodeje_NOUN zbozi_NOUN ,_PUNCT vyrobku_NOUN a_CCONJ sluzeb_NOUN podle_ADP kategorii_NOUN cinnosti_NOUN a_CCONJ podle_ADP zemepisnych_ADJ trhu_NOUN ,_PUNCT pokud_SCONJ se_PRON tyto_DET kategorie_NOUN a_CCONJ trhy_NOUN mezi_ADP sebou_PRON podstatne_ADV lisi_VERB z_ADP hlediska_NOUN zpusobu_NOUN ,_PUNCT kterym_DET je_AUX organizovan_ADJ prodej_NOUN zbozi_NOUN a_CCONJ vyrobku_NOUN a_CCONJ poskytovani_NOUN sluzeb_NOUN spadajicich_ADJ do_ADP bezne_ADJ cinnosti_NOUN ucetni_ADJ jednotky_NOUN ,_PUNCT b)_X vysvetleni_NOUN castky_NOUN vykazane_ADJ v_ADP polozce_NOUN "_PUNCT b.i.1._X zrizovaci_X vydaje_X "_PUNCT ._PUNCT}
+ostatni_ADJ provozni_NOUN naklady_NOUN}
 Predicted: {
-(13)_X ucetni_ADJ jednotka_NOUN ,_PUNCT ktera_DET je_AUX pravnickou_ADJ osobou_NOUN a_CCONJ prekrocila_VERB ke_ADP konci_NOUN rozvahoveho_ADJ dne_NOUN ,_PUNCT za_ADP ktery_DET se_PRON ucetni_ADJ zaverka_NOUN sestavuje_VERB ,_PUNCT alespon_ADV dve_NUM ze_ADP tri_NUM kriterii_NOUN uvedenych_ADJ v_ADP odstavci_NOUN 9_NUM pism._c)_X ,_PUNCT dale_ADV v_ADP priloze_NOUN uvede_VERB a)_X informaci_NOUN o_ADP rozcleneni_NOUN trzeb_NOUN z_ADP prodeje_NOUN zbozi_NOUN ,_PUNCT vyrobku_NOUN a_CCONJ sluzeb_NOUN podle_ADP kategorii_NOUN cinnosti_NOUN a_CCONJ podle_ADP zemepisnych_ADJ trhu_NOUN ,_PUNCT pokud_SCONJ se_PRON tyto_DET kategorie_NOUN a_CCONJ trhy_NOUN mezi_ADP sebou_PRON podstatne_ADV lisi_VERB z_ADP hlediska_NOUN zpusobu_NOUN ,_PUNCT kterym_DET je_AUX organizovan_ADJ prodej_NOUN zbozi_NOUN a_CCONJ vyrobku_NOUN a_CCONJ poskytovani_NOUN sluzeb_NOUN spadajicich_ADJ do_ADP bezne_ADJ cinnosti_NOUN ucetni_ADJ jednotky_NOUN ,_PUNCT b)_X vysvetleni_NOUN castky_NOUN vykazane_ADJ v_ADP polozce_NOUN "_PUNCT b.i.1._X zrizovaci_X vydaje_X "_PUNCT ._PUNCT}
+ostatni_ADJ provozni_ADJ naklady_NOUN}
 Errors: {
 Tok: Ref | Pred
 ---------------
-(13): PUNCT | X
+provozni: NOUN | ADJ
 }
 
 Expected: {
-ucetni_NOUN metody_NOUN}
+polozka_NOUN "_PUNCT k._X naklady_X z_X financniho_X majetku_X "_PUNCT obsahuje_VERB napriklad_ADV u_ADP dluhopisu_NOUN s_ADP pevnou_ADJ urokovou_ADJ sazbou_NOUN drzenych_ADJ do_ADP splatnosti_NOUN rozdil_NOUN mezi_ADP porizovaci_ADJ cenou_NOUN bez_ADP kuponu_NOUN a_CCONJ jmenovitou_ADJ hodnotou_NOUN ve_ADP vecne_ADJ a_CCONJ casove_ADJ souvislosti_NOUN ._PUNCT}
 Predicted: {
-ucetni_ADJ metody_NOUN}
+polozka_NOUN "_PUNCT k._PUNCT naklady_NOUN z_ADP financniho_ADJ majetku_NOUN "_PUNCT obsahuje_VERB napriklad_ADV u_ADP dluhopisu_NOUN s_ADP pevnou_ADJ urokovou_ADJ sazbou_NOUN drzenych_ADJ do_ADP splatnosti_NOUN rozdil_NOUN mezi_ADP porizovaci_ADJ cenou_NOUN bez_ADP kuponu_NOUN a_CCONJ jmenovitou_ADJ hodnotou_NOUN ve_ADP vecne_ADJ a_CCONJ casove_ADJ souvislosti_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-ucetni: NOUN | ADJ
+k.: X | PUNCT
+naklady: X | NOUN
+z: X | ADP
+financniho: X | ADJ
+majetku: X | NOUN
 }
 
 Expected: {
-(6)_PUNCT ustanoveni_NOUN odstavcu_NOUN 1_NUM az_SCONJ 5_NUM se_PRON nepouziji_VERB pri_ADP zmene_NOUN pravni_ADJ formy_NOUN a_CCONJ preshranicnim_ADJ premisteni_NOUN sidla_NOUN ._PUNCT}
+a)_X (9)_PUNCT celkovou_ADJ v_ADP vysi_NOUN dalsi_ADJ zavazku_NOUN casti_NOUN ,_PUNCT prilohy_NOUN je_AUX -_PUNCT li_PART uvede_VERB tato_DET ucetni_ADJ informace_NOUN jednotka_NOUN vyznamna_ADJ informace_NOUN k_ADP ,_PUNCT posouzeni_NOUN ktere_DET financni_ADJ nejsou_AUX situace_NOUN vykazany_ADJ ucetni_ADJ v_ADP jednotky_NOUN rozvaze_NOUN ,_PUNCT (_PUNCT bilanci_NOUN b)_X )_PUNCT s_ADP :_PUNCT ohledem_NOUN na_ADP ._PUNCT princip_NOUN vyznamnosti_NOUN drobny_ADJ nehmotny_ADJ a_CCONJ hmotny_ADJ majetek_NOUN ,_PUNCT c)_X charakter_NOUN a_CCONJ obchodni_ADJ ucel_NOUN operaci_NOUN ucetni_ADJ jednotky_NOUN ,_PUNCT ktera_DET je_AUX pravnickou_ADJ osobou_NOUN ,_PUNCT jsou_AUX -_PUNCT li_PART rizika_NOUN nebo_CCONJ uzitky_NOUN z_ADP techto_DET operaci_NOUN vyznamne_ADJ a_CCONJ pokud_SCONJ je_AUX zverejneni_NOUN techto_DET rizik_NOUN nebo_CCONJ uzitku_NOUN nezbytne_ADJ k_ADP posouzeni_NOUN financni_ADJ situace_NOUN ucetni_ADJ jednotky_NOUN}
 Predicted: {
-(6)_PUNCT ustanoveni_NOUN odstavcu_NOUN 1_NUM az_PART 5_NUM se_ADP nepouziji_VERB pri_ADP zmene_NOUN pravni_ADJ formy_NOUN a_CCONJ preshranicnim_ADJ premisteni_NOUN sidla_NOUN ._PUNCT}
+a)_X (9)_PUNCT celkovou_ADJ v_ADP vysi_NOUN dalsi_ADJ zavazku_NOUN casti_NOUN ,_PUNCT prilohy_NOUN je_AUX -_PUNCT li_PART uvede_VERB tato_DET ucetni_ADJ informace_NOUN jednotka_NOUN vyznamna_ADJ informace_NOUN k_ADP ,_PUNCT posouzeni_NOUN ktere_DET financni_ADJ nejsou_AUX situace_NOUN vykazany_ADJ ucetni_ADJ v_SCONJ AUX jednotky_NOUN rozvaze_NOUN ,_PUNCT (_PUNCT bilanci_NOUN b)_PUNCT )_PUNCT s_ADP :_PUNCT ohledem_NOUN na_NOUN ._PUNCT princip_NOUN vyznamnosti_NOUN drobny_ADJ nehmotny_ADJ a_CCONJ hmotny_ADJ majetek_NOUN ,_PUNCT c)_X charakter_NOUN a_CCONJ obchodni_ADJ ucel_NOUN operaci_NOUN ucetni_ADJ jednotky_NOUN ,_PUNCT ktera_DET je_AUX pravnickou_ADJ osobou_NOUN ,_PUNCT jsou_AUX -_PUNCT li_PART rizika_NOUN nebo_CCONJ uzitky_NOUN z_ADP techto_DET operaci_NOUN vyznamne_ADV a_CCONJ pokud_SCONJ je_AUX zverejneni_NOUN techto_DET rizik_NOUN nebo_CCONJ uzitku_NOUN nezbytne_ADJ k_ADP posouzeni_NOUN financni_ADJ situace_NOUN ucetni_ADJ jednotky_NOUN}
 Errors: {
 Tok: Ref | Pred
 ---------------
-az: SCONJ | PART
-se: PRON | ADP
+v: ADP | SCONJ AUX
+b): X | PUNCT
+na: ADP | NOUN
+vyznamne: ADJ | ADV
 }
 
 Expected: {
-(4)_PUNCT pri_ADP vymene_NOUN komponenty_NOUN se_PRON oceneni_NOUN majetku_NOUN podle_ADP odstavce_NOUN 1_NUM upravuje_VERB tak_ADV ,_PUNCT ze_SCONJ se_PRON snizuje_VERB o_ADP vysi_NOUN oceneni_NOUN vyrazovane_ADJ komponenty_NOUN a_CCONJ zvysuje_VERB o_ADP vysi_NOUN oceneni_NOUN nove_ADV zarazovane_ADJ komponenty_NOUN vcetne_ADP nahradnich_ADJ dilu_NOUN spotrebovanych_ADJ na_ADP vymenu_NOUN komponenty_NOUN a_CCONJ o_ADP naklady_NOUN souvisejici_ADJ s_ADP vymenou_NOUN teto_DET komponenty_NOUN podle_ADP ustanoveni_NOUN §_47_X ._PUNCT}
+v_ADP pripade_NOUN ,_PUNCT ze_SCONJ je_PRON nelze_VERB priradit_VERB ,_PUNCT uvedou_VERB se_PRON v_ADP provozni_ADJ cinnosti_NOUN ._PUNCT}
 Predicted: {
-(4)_PUNCT pri_ADP vymene_NOUN komponenty_NOUN se_ADP oceneni_NOUN majetku_NOUN podle_ADP odstavce_NOUN 1_NUM upravuje_VERB tak_ADV ,_PUNCT ze_SCONJ se_PRON snizuje_VERB o_ADP vysi_NOUN oceneni_NOUN vyrazovane_ADJ komponenty_NOUN a_CCONJ zvysuje_VERB o_ADP vysi_NOUN oceneni_NOUN nove_ADJ zarazovane_ADJ komponenty_NOUN vcetne_ADP nahradnich_ADJ dilu_NOUN spotrebovanych_ADJ na_ADP vymenu_NOUN komponenty_NOUN a_CCONJ o_ADP naklady_NOUN souvisejici_ADJ s_ADP vymenou_NOUN teto_DET komponenty_NOUN podle_ADP ustanoveni_NOUN §_47_X ._PUNCT}
+v_ADP pripade_NOUN ,_PUNCT ze_SCONJ je_AUX nelze_VERB priradit_VERB ,_PUNCT uvedou_VERB se_PRON v_ADP provozni_ADJ cinnosti_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-se: PRON | ADP
-nove: ADV | ADJ
+je: PRON | AUX
 }
 
 Expected: {
-(3)_PUNCT kursove_ADJ rozdily_NOUN z_ADP cennych_ADJ papiru_NOUN a_CCONJ podilu_NOUN se_PRON pri_ADP oceneni_NOUN ke_ADP konci_NOUN rozvahoveho_ADJ dne_NOUN nebo_CCONJ k_ADP jinemu_ADJ okamziku_NOUN ,_PUNCT k_ADP nemuz_PRON se_PRON sestavuje_VERB ucetni_ADJ zaverka_NOUN ,_PUNCT neuctuji_VERB samostatne_ADV na_ADP prislusne_ADJ ucty_NOUN nakladu_NOUN a_CCONJ vynosu_NOUN ,_PUNCT ale_CCONJ jsou_AUX soucasti_NOUN oceneni_NOUN realnou_ADJ hodnotou_NOUN nebo_CCONJ oceneni_NOUN ekvivalenci_NOUN ,_PUNCT at_CCONJ je_AUX uctovana_ADJ vysledkove_ADV nebo_CCONJ rozvahove_ADV ._PUNCT}
+za_ADP dotaci_NOUN se_PRON povazuji_VERB bezuplatna_ADJ plneni_NOUN ,_PUNCT ktera_DET se_PRON poskytuji_VERB primo_ADV nebo_CCONJ zprostredkovane_ADV podle_ADP zvlastnich_ADJ pravnich_ADJ predpisu_NOUN ze_ADP statniho_ADJ rozpoctu_NOUN ,_PUNCT statnich_ADJ financnich_ADJ aktiv_NOUN ,_PUNCT narodniho_ADJ fondu_NOUN ,_PUNCT ze_ADP statnich_ADJ fondu_NOUN ,_PUNCT z_ADP rozpoctu_NOUN uzemnich_ADJ samospravnych_ADJ celku_NOUN na_ADP stanoveny_ADJ ucel_NOUN ._PUNCT}
 Predicted: {
-(3)_PUNCT kursove_ADJ rozdily_NOUN z_ADP cennych_ADJ papiru_NOUN a_CCONJ podilu_NOUN se_PRON pri_ADP oceneni_NOUN ke_ADP konci_NOUN rozvahoveho_ADJ dne_NOUN nebo_CCONJ k_ADP jinemu_ADJ okamziku_NOUN ,_PUNCT k_ADP nemuz_PRON se_PRON sestavuje_VERB ucetni_ADJ zaverka_NOUN ,_PUNCT neuctuji_VERB samostatne_ADV na_ADP prislusne_ADJ ucty_NOUN nakladu_NOUN a_CCONJ vynosu_NOUN ,_PUNCT ale_CCONJ jsou_AUX soucasti_NOUN oceneni_NOUN realnou_ADJ hodnotou_NOUN nebo_CCONJ oceneni_NOUN ekvivalenci_NOUN ,_PUNCT at_SCONJ je_AUX uctovana_ADJ vysledkove_ADJ nebo_CCONJ rozvahove_ADJ ._PUNCT}
+za_ADP dotaci_NOUN se_PRON povazuji_VERB bezuplatna_ADJ plneni_NOUN ,_PUNCT ktera_DET se_PRON poskytuji_VERB primo_ADV nebo_CCONJ zprostredkovane_ADV podle_ADP zvlastnich_ADJ pravnich_ADJ predpisu_NOUN ze_ADP statniho_ADJ rozpoctu_NOUN ,_PUNCT statnich_ADJ financnich_ADJ aktiv_NOUN ,_PUNCT narodniho_ADJ fondu_NOUN ,_PUNCT ze_SCONJ statnich_ADJ fondu_NOUN ,_PUNCT z_ADP rozpoctu_NOUN uzemnich_ADJ samospravnych_ADJ celku_NOUN na_ADP stanoveny_ADJ ucel_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-at: CCONJ | SCONJ
-vysledkove: ADV | ADJ
-rozvahove: ADV | ADJ
+ze: ADP | SCONJ
 }
 
 Expected: {
-(3)_PUNCT podle_ADP odstavce_NOUN 2_NUM se_PRON postupuje_VERB ,_PUNCT pokud_SCONJ jsou_AUX splneny_ADJ tyto_DET podminky_NOUN :_PUNCT a)_X konsolidujici_ADJ ucetni_ADJ jednotka_NOUN a_CCONJ vsechny_DET ji_PRON konsolidovane_ADJ ucetni_ADJ jednotky_NOUN jsou_AUX zahrnuty_ADJ do_ADP konsolidovane_ADJ ucetni_ADJ zaverky_NOUN konsolidacniho_ADJ celku_NOUN jine_ADJ konsolidujici_ADJ ucetni_ADJ jednotky_NOUN ,_PUNCT b)_X konsolidovana_ADJ ucetni_ADJ zaverka_NOUN podle_ADP pismene_NOUN a)_X a_CCONJ konsolidovana_ADJ vyrocni_ADJ zprava_NOUN jsou_AUX sestaveny_ADJ jinou_ADJ konsolidujici_ADJ ucetni_ADJ jednotkou_NOUN a_CCONJ jsou_AUX overeny_ADJ auditorem_NOUN podle_ADP prava_NOUN statu_NOUN ,_PUNCT kterym_DET se_PRON tato_DET jina_ADJ konsolidujici_ADJ ucetni_ADJ jednotka_NOUN ridi_VERB ,_PUNCT c)_X konsolidovanou_ADJ ucetni_ADJ zaverku_NOUN podle_ADP pismene_NOUN a)_X a_CCONJ konsolidovanou_ADJ vyrocni_ADJ zpravu_NOUN podle_ADP pismene_NOUN b)_X a_CCONJ zpravu_NOUN auditora_NOUN odpovedneho_ADJ za_ADP overeni_NOUN teto_DET konsolidovane_ADJ ucetni_ADJ zaverky_NOUN a_CCONJ konsolidovane_ADJ vyrocni_ADJ zpravy_NOUN konsolidujici_ADJ ucetni_ADJ jednotka_NOUN zverejni_VERB podle_ADP §_21a_zakona_X ;_PUNCT tyto_DET ucetni_ADJ zaznamy_NOUN musi_VERB byt_AUX zverejneny_ADJ v_ADP ceskem_ADJ jazyce_NOUN a_CCONJ d)_X priloha_NOUN k_ADP ucetni_ADJ zaverce_NOUN konsolidujici_ADJ ucetni_ADJ jednotky_NOUN obsahuje_VERB obchodni_ADJ firmu_NOUN a_CCONJ sidlo_NOUN jine_ADJ konsolidujici_ADJ ucetni_ADJ jednotky_NOUN ,_PUNCT ktera_DET konsolidovanou_ADJ ucetni_ADJ zaverku_NOUN podle_ADP pismene_NOUN a)_X sestavila_VERB ,_PUNCT a_CCONJ duvody_NOUN nevytvoreni_NOUN konsolidacniho_ADJ celku_NOUN ._PUNCT}
+vyse_NOUN tohoto_DET znehodnoceni_NOUN odpovida_VERB kladnemu_ADJ rozdilu_NOUN mezi_ADP ocenenim_NOUN realizovatelneho_ADJ cenneho_ADJ papiru_NOUN pri_ADP jeho_DET nabyti_NOUN a_CCONJ stavajici_ADJ realnou_ADJ hodnotou_NOUN se_ADP zohlednenim_NOUN predchozich_ADJ ztrat_NOUN ze_ADP znehodnoceni_NOUN ._PUNCT}
 Predicted: {
-(3)_PUNCT podle_ADP odstavce_NOUN 2_NUM se_PRON postupuje_VERB ,_PUNCT pokud_SCONJ jsou_AUX splneny_ADJ tyto_DET podminky_NOUN :_PUNCT a)_X konsolidujici_ADJ ucetni_ADJ jednotka_NOUN a_CCONJ vsechny_DET ji_PRON konsolidovane_ADJ ucetni_ADJ jednotky_NOUN jsou_AUX zahrnuty_ADJ do_ADP konsolidovane_ADJ ucetni_ADJ zaverky_NOUN konsolidacniho_ADJ celku_NOUN jine_ADJ konsolidujici_ADJ ucetni_ADJ jednotky_NOUN ,_PUNCT b)_X konsolidovana_ADJ ucetni_ADJ zaverka_NOUN podle_ADP pismene_NOUN a)_X a_CCONJ konsolidovana_ADJ vyrocni_ADJ zprava_NOUN jsou_AUX sestaveny_ADJ jinou_ADJ konsolidujici_ADJ ucetni_ADJ jednotkou_NOUN a_CCONJ jsou_AUX overeny_ADJ auditorem_NOUN podle_ADP prava_NOUN statu_NOUN ,_PUNCT kterym_DET se_PRON tato_DET jina_ADJ konsolidujici_ADJ ucetni_ADJ jednotka_NOUN ridi_VERB ,_PUNCT c)_X konsolidovanou_ADJ ucetni_ADJ zaverku_NOUN podle_ADP pismene_NOUN a)_X a_CCONJ konsolidovanou_ADJ vyrocni_ADJ zpravu_NOUN podle_ADP pismene_NOUN b)_X a_CCONJ zpravu_NOUN auditora_NOUN odpovedneho_ADJ za_ADP overeni_NOUN teto_DET konsolidovane_ADJ ucetni_ADJ zaverky_NOUN a_CCONJ konsolidovane_ADJ vyrocni_ADJ zpravy_NOUN konsolidujici_ADJ ucetni_ADJ jednotka_NOUN zverejni_VERB podle_ADP §_21a_zakona_X ;_PUNCT tyto_DET ucetni_ADJ zaznamy_NOUN musi_VERB byt_AUX zverejneny_ADJ v_ADP ceskem_ADJ jazyce_NOUN a_CCONJ d)_PUNCT priloha_NOUN k_ADP ucetni_ADJ zaverce_NOUN konsolidujici_ADJ ucetni_ADJ jednotky_NOUN obsahuje_VERB obchodni_ADJ firmu_NOUN a_CCONJ sidlo_NOUN jine_ADJ konsolidujici_ADJ ucetni_ADJ jednotky_NOUN ,_PUNCT ktera_DET konsolidovanou_ADJ ucetni_ADJ zaverku_NOUN podle_ADP pismene_NOUN a)_X sestavila_VERB ,_PUNCT a_CCONJ duvody_NOUN nevytvoreni_NOUN konsolidacniho_ADJ celku_NOUN ._PUNCT}
+vyse_NOUN tohoto_DET znehodnoceni_NOUN odpovida_VERB kladnemu_ADJ rozdilu_NOUN mezi_ADP ocenenim_NOUN realizovatelneho_ADJ cenneho_ADJ papiru_NOUN pri_ADP jeho_DET nabyti_NOUN a_CCONJ stavajici_ADJ realnou_ADJ hodnotou_NOUN se_PRON zohlednenim_NOUN predchozich_ADJ ztrat_NOUN ze_ADP znehodnoceni_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-d): X | PUNCT
+se: ADP | PRON
 }
 
 Expected: {
-(2)_PUNCT rozvaha_NOUN se_PRON podle_ADP pouzite_ADJ metody_NOUN konsolidace_NOUN doplni_VERB o_ADP polozky_NOUN a)_X kladny_ADJ konsolidacni_ADJ rozdil_NOUN ,_PUNCT b)_X zaporny_ADJ konsolidacni_ADJ rozdil_NOUN ,_PUNCT c)_X mensinovy_ADJ vlastni_ADJ kapital_NOUN ,_PUNCT d)_X mensinovy_ADJ zakladni_ADJ kapital_NOUN ,_PUNCT e)_X mensinove_ADJ kapitalove_ADJ fondy_NOUN ,_PUNCT f)_X mensinove_ADJ fondy_NOUN ze_ADP zisku_NOUN vcetne_ADP nerozdeleneho_ADJ zisku_NOUN a_CCONJ neuhrazene_ADJ ztraty_NOUN minulych_ADJ let_NOUN ,_PUNCT g)_X mensinovy_ADJ vysledek_NOUN hospodareni_NOUN bezneho_ADJ ucetniho_ADJ obdobi_NOUN ,_PUNCT h)_X cenne_ADJ papiry_NOUN a_CCONJ podily_NOUN v_ADP ekvivalenci_NOUN ,_PUNCT i)_X konsolidacni_ADJ rezervni_ADJ fond_NOUN ,_PUNCT j)_X podil_NOUN na_ADP vysledku_NOUN hospodareni_NOUN v_ADP ekvivalenci_NOUN ._PUNCT}
+(4)_PUNCT ucetni_ADJ jednotka_NOUN pri_ADP preshranicni_ADJ premene_NOUN spolecnosti_NOUN ,_PUNCT z_ADP titulu_NOUN zmeny_NOUN pravni_ADJ formy_NOUN ,_PUNCT preshranicniho_ADJ premisteni_NOUN sidla_NOUN nebo_CCONJ z_ADP titulu_NOUN prevodu_NOUN jmeni_NOUN na_ADP spolecnika_NOUN ,_PUNCT ktery_DET nevede_VERB ani_CCONJ nepovede_VERB ucetnictvi_NOUN po_ADP zapisu_NOUN premeny_NOUN do_ADP obchodniho_ADJ rejstriku_NOUN ,_PUNCT neuctuje_VERB o_ADP ocenovani_NOUN majetku_NOUN a_CCONJ zavazku_NOUN realnou_ADJ hodnotou_NOUN ,_PUNCT a_CCONJ to_PART ani_CCONJ v_ADP pripade_NOUN ,_PUNCT ze_SCONJ zakon_NOUN o_ADP premenach_NOUN oceneni_NOUN jmeni_NOUN vyzaduje_VERB ._PUNCT}
 Predicted: {
-(2)_PUNCT rozvaha_NOUN se_PRON podle_ADP pouzite_ADJ metody_NOUN konsolidace_NOUN doplni_VERB o_ADP polozky_NOUN a)_X kladny_X konsolidacni_X rozdil_X ,_PUNCT b)_X zaporny_X konsolidacni_X rozdil_X ,_PUNCT c)_X mensinovy_ADJ vlastni_ADJ kapital_NOUN ,_PUNCT d)_X mensinovy_ADJ zakladni_ADJ kapital_NOUN ,_PUNCT e)_X mensinove_ADJ kapitalove_ADJ fondy_NOUN ,_PUNCT f)_X mensinove_ADJ fondy_NOUN ze_ADP zisku_NOUN vcetne_ADP nerozdeleneho_ADJ zisku_NOUN a_CCONJ neuhrazene_ADJ ztraty_NOUN minulych_ADJ let_NOUN ,_PUNCT g)_PUNCT mensinovy_ADJ vysledek_NOUN hospodareni_NOUN bezneho_ADJ ucetniho_ADJ obdobi_NOUN ,_PUNCT h)_X cenne_ADJ papiry_NOUN a_CCONJ podily_NOUN v_ADP ekvivalenci_NOUN ,_PUNCT i)_X konsolidacni_ADJ rezervni_ADJ fond_NOUN ,_PUNCT j)_X podil_NOUN na_ADP vysledku_NOUN hospodareni_NOUN v_ADP ekvivalenci_NOUN ._PUNCT}
+(4)_PUNCT ucetni_ADJ jednotka_NOUN pri_ADP preshranicni_ADJ premene_NOUN spolecnosti_NOUN ,_PUNCT z_ADP titulu_NOUN zmeny_NOUN pravni_ADJ formy_NOUN ,_PUNCT preshranicniho_ADJ premisteni_NOUN sidla_NOUN nebo_CCONJ z_ADP titulu_NOUN prevodu_NOUN jmeni_NOUN na_ADP spolecnika_NOUN ,_PUNCT ktery_DET nevede_VERB ani_CCONJ nepovede_VERB ucetnictvi_NOUN po_ADP zapisu_NOUN premeny_NOUN do_ADP obchodniho_ADJ rejstriku_NOUN ,_PUNCT neuctuje_VERB o_ADP ocenovani_NOUN majetku_NOUN a_CCONJ zavazku_NOUN realnou_ADJ hodnotou_NOUN ,_PUNCT a_CCONJ to_DET ani_CCONJ v_ADP pripade_NOUN ,_PUNCT ze_SCONJ zakon_NOUN o_ADP premenach_NOUN oceneni_NOUN jmeni_NOUN vyzaduje_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-kladny: ADJ | X
-konsolidacni: ADJ | X
-rozdil: NOUN | X
-zaporny: ADJ | X
-konsolidacni: ADJ | X
-rozdil: NOUN | X
-g): X | PUNCT
-}
-
-Expected: {
-2_NUM ._PUNCT v_ADP pripadech_NOUN ,_PUNCT kdy_ADV byl_AUX projekt_NOUN premeny_NOUN vypracovan_ADJ podle_ADP zakona_c._125/2008_sb._X ,_PUNCT o_ADP premenach_NOUN obchodnich_ADJ spolecnosti_NOUN a_CCONJ druzstev_NOUN ,_PUNCT ve_ADP zneni_NOUN ucinnem_ADJ do_ADJ 31_NUM ._PUNCT prosince_NOUN 2011_NUM ,_PUNCT postupuje_VERB se_PRON pri_ADP uctovani_NOUN o_ADP premene_NOUN spolecnosti_NOUN podle_ADP vyhlasky_c._500/2002_sb._X ,_PUNCT ve_ADP zneni_NOUN ucinnem_ADJ do_ADP dne_NOUN nabyti_NOUN ucinnosti_NOUN teto_DET vyhlasky_NOUN ._PUNCT}
-Predicted: {
-2_NUM ._PUNCT v_ADP pripadech_NOUN ,_PUNCT kdy_ADV byl_AUX projekt_NOUN premeny_NOUN vypracovan_ADJ podle_ADP zakona_c._125/2008_sb._X ,_PUNCT o_ADP premenach_NOUN obchodnich_ADJ spolecnosti_NOUN a_CCONJ druzstev_NOUN ,_PUNCT ve_ADP zneni_NOUN ucinnem_ADJ do_ADP 31_NUM ._PUNCT prosince_NOUN 2011_NUM ,_PUNCT postupuje_VERB se_PRON pri_ADP uctovani_NOUN o_ADP premene_NOUN spolecnosti_NOUN podle_ADP vyhlasky_c._500/2002_sb._X ,_PUNCT ve_ADP zneni_NOUN ucinnem_ADJ do_ADP dne_NOUN nabyti_NOUN ucinnosti_NOUN teto_DET vyhlasky_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-do: ADJ | ADP
-}
-
-Expected: {
-(14)_PUNCT za_ADP informacni_ADJ system_NOUN podle_ADP zvlastniho_ADJ pravniho_ADJ predpisu_NOUN lze_VERB ucetnictvi_NOUN povazovat_VERB pouze_ADV jako_SCONJ celek_NOUN ._PUNCT}
-Predicted: {
-(14)_NOUN za_ADP informacni_ADJ system_NOUN podle_ADP zvlastniho_ADJ pravniho_ADJ predpisu_NOUN lze_VERB ucetnictvi_NOUN povazovat_VERB pouze_ADV jako_SCONJ celek_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-(14): PUNCT | NOUN
-}
-
-Expected: {
-(2)_PUNCT hlavni_ADJ kniha_NOUN zahrnuje_VERB synteticke_ADJ ucty_NOUN podle_ADP uctoveho_ADJ rozvrhu_NOUN ,_PUNCT ktere_DET obsahuji_VERB minimalne_ADV tyto_DET informace_NOUN :_PUNCT a)_X zustatky_NOUN uctu_NOUN ke_ADP dni_NOUN ,_PUNCT k_ADP nemuz_PRON se_PRON otevira_VERB hlavni_ADJ kniha_NOUN ,_PUNCT b)_X souhrnne_ADJ obraty_NOUN strany_NOUN ma_VERB dati_VERB a_CCONJ dal_VERB uctu_NOUN ,_PUNCT alespon_ADV za_ADP kalendarni_ADJ mesic_NOUN ;_PUNCT vybrane_ADJ ucetni_ADJ jednotky_NOUN uvadeji_VERB souhrnne_ADJ obraty_NOUN denne_ADV ,_PUNCT nenaplni-li_X tuto_ADV povinnost_NOUN vybrana_ADJ ucetni_ADJ jednotka_NOUN v_ADP jine_ADJ ucetni_ADJ knize_NOUN ,_PUNCT c)_X zustatky_NOUN uctu_NOUN ke_ADP dni_NOUN ,_PUNCT ke_ADP kteremu_DET se_PRON sestavuje_VERB ucetni_ADJ zaverka_NOUN ._PUNCT}
-Predicted: {
-(2)_PUNCT hlavni_ADJ kniha_NOUN zahrnuje_VERB synteticke_ADJ ucty_NOUN podle_ADP uctoveho_ADJ rozvrhu_NOUN ,_PUNCT ktere_DET obsahuji_VERB minimalne_ADV tyto_DET informace_NOUN :_PUNCT a)_X zustatky_NOUN uctu_NOUN ke_ADP dni_NOUN ,_PUNCT k_ADP nemuz_PRON se_PRON otevira_VERB hlavni_ADJ kniha_NOUN ,_PUNCT b)_X souhrnne_ADJ obraty_NOUN strany_NOUN ma_VERB dati_VERB a_CCONJ dal_VERB uctu_NOUN ,_PUNCT alespon_ADV za_ADP kalendarni_ADJ mesic_NOUN ;_PUNCT vybrane_ADJ ucetni_ADJ jednotky_NOUN uvadeji_VERB souhrnne_ADJ obraty_NOUN denne_ADV ,_PUNCT nenaplni-li_PUNCT tuto_DET povinnost_NOUN vybrana_ADJ ucetni_ADJ jednotka_NOUN v_ADP jine_ADJ ucetni_ADJ knize_NOUN ,_PUNCT c)_X zustatky_NOUN uctu_NOUN ke_ADP dni_NOUN ,_PUNCT ke_ADP kteremu_DET se_PRON sestavuje_VERB ucetni_ADJ zaverka_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-nenaplni-li: X | PUNCT
-tuto: ADV | DET
-}
-
-Expected: {
-(6)_PUNCT podle_ADP odstavcu_NOUN 3_NUM az_SCONJ 5_NUM se_PRON nepostupuje_VERB ,_PUNCT je_AUX -_PUNCT li_PART pri_ADP premene_NOUN spolecnosti_NOUN den_NOUN zapisu_NOUN premeny_NOUN spolecnosti_NOUN do_ADP obchodniho_ADJ rejstriku_NOUN shodny_ADJ s_ADP rozhodnym_ADJ dnem_NOUN ._PUNCT}
-Predicted: {
-(6)_PUNCT podle_ADP odstavcu_NOUN 3_NUM az_PART 5_NUM se_ADP nepostupuje_VERB ,_PUNCT je_AUX -_PUNCT li_PART pri_ADP premene_NOUN spolecnosti_NOUN den_NOUN zapisu_NOUN premeny_NOUN spolecnosti_NOUN do_ADP obchodniho_ADJ rejstriku_NOUN shodny_ADJ s_ADP rozhodnym_ADJ dnem_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-az: SCONJ | PART
-se: PRON | ADP
+to: PART | DET
 }
 
 Expected: {
@@ -9719,16 +9636,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 opravdu: PART | ADV
-}
-
-Expected: {
-znate_VERB to_DET :_PUNCT mozna_PART jste_AUX uz_ADV take_ADV zazili_VERB onu_DET hranici_NOUN stinu_NOUN ._PUNCT}
-Predicted: {
-znate_VERB to_DET :_PUNCT mozna_ADV jste_AUX uz_ADV take_ADV zazili_VERB onu_DET hranici_NOUN stinu_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-mozna: PART | ADV
 }
 
 Expected: {
@@ -10379,7 +10286,7 @@ uprostred: ADP | ADV
 Expected: {
 byl_AUX by_AUX dal_VERB nevim_VERB co_PRON za_ADP to_DET ,_PUNCT aby by_SCONJ AUX to_DET nemusil_VERB ucinit_VERB ,_PUNCT a_CCONJ ucinil_VERB -_PUNCT li_SCONJ to_DET prece_PART ,_PUNCT tedy_PART ,_PUNCT verte_VERB ,_PUNCT jenom_ADV proto_ADV ,_PUNCT ze_SCONJ to_DET ucinit_VERB opravdu_PART musil_VERB :_PUNCT situace_NOUN ,_PUNCT do_ADP niz_PRON vstoupil_VERB hned_ADV od_ADP pocatku_NOUN vecera_NOUN ,_PUNCT byla_AUX totiz_PART tak_ADV autoritativni_ADJ ,_PUNCT ze_SCONJ bylo_AUX sice_CCONJ mozno_ADJ jeji_DET beh_NOUN zpomalovat_VERB ,_PUNCT ale_CCONJ nebylo_AUX ho_PRON mozno_ADJ nijak_ADV zastavit_VERB ,_PUNCT takze_SCONJ prilozil_VERB -_PUNCT li_SCONJ eduard_PROPN dlan_NOUN na_ADP reditelcino_ADJ prso_NOUN ,_PUNCT podrobil_VERB se_PRON pouze_ADV prikazu_NOUN zcela_ADV neodvratne_ADJ nutnosti_NOUN ._PUNCT}
 Predicted: {
-byl_AUX by_AUX dal_ADV nevim_VERB co_ADV za_ADP to_DET ,_PUNCT aby by_SCONJ AUX to_DET nemusil_VERB ucinit_VERB ,_PUNCT a_CCONJ ucinil_VERB -_PUNCT li_PART to_DET prece_ADV ,_PUNCT tedy_ADV ,_PUNCT verte_VERB ,_PUNCT jenom_PART proto_ADV ,_PUNCT ze_SCONJ to_DET ucinit_VERB opravdu_ADV musil_VERB :_PUNCT situace_NOUN ,_PUNCT do_ADP niz_PRON vstoupil_VERB hned_ADV od_ADP pocatku_NOUN vecera_NOUN ,_PUNCT byla_AUX totiz_ADV tak_ADV autoritativni_ADJ ,_PUNCT ze_SCONJ bylo_AUX sice_ADV mozno_ADJ jeji_DET beh_NOUN zpomalovat_VERB ,_PUNCT ale_CCONJ nebylo_AUX ho_PRON mozno_ADJ nijak_ADV zastavit_VERB ,_PUNCT takze_SCONJ prilozil_VERB -_PUNCT li_PART eduard_PROPN dlan_NOUN na_ADP reditelcino_NOUN prso_NOUN ,_PUNCT podrobil_VERB se_PRON pouze_ADV prikazu_NOUN zcela_ADV neodvratne_ADJ nutnosti_NOUN ._PUNCT}
+byl_AUX by_AUX dal_ADV nevim_VERB co_ADV za_ADP to_DET ,_PUNCT aby by_SCONJ AUX to_DET nemusil_VERB ucinit_VERB ,_PUNCT a_CCONJ ucinil_VERB -_PUNCT li_PART to_DET prece_ADV ,_PUNCT tedy_ADV ,_PUNCT verte_VERB ,_PUNCT jenom_PART proto_ADV ,_PUNCT ze_SCONJ to_DET ucinit_VERB opravdu_ADV musil_VERB :_PUNCT situace_NOUN ,_PUNCT do_ADP niz_PRON vstoupil_VERB hned_ADV od_ADP pocatku_NOUN vecera_NOUN ,_PUNCT byla_AUX totiz_ADV tak_ADV autoritativni_ADJ ,_PUNCT ze_NOUN bylo_AUX sice_ADV mozno_ADJ jeji_DET beh_NOUN zpomalovat_VERB ,_PUNCT ale_CCONJ nebylo_AUX ho_PRON mozno_ADJ nijak_ADV zastavit_VERB ,_PUNCT takze_SCONJ prilozil_VERB -_PUNCT li_PART eduard_PROPN dlan_NOUN na_ADP reditelcino_NOUN prso_NOUN ,_PUNCT podrobil_VERB se_PRON pouze_ADV prikazu_NOUN zcela_ADV neodvratne_ADJ nutnosti_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -10391,6 +10298,7 @@ tedy: PART | ADV
 jenom: ADV | PART
 opravdu: PART | ADV
 totiz: PART | ADV
+ze: SCONJ | NOUN
 sice: CCONJ | ADV
 li: SCONJ | PART
 reditelcino: ADJ | NOUN
@@ -15406,10 +15314,11 @@ purkyneho: PROPN | ADJ
 Expected: {
 v_ADP navrzene_ADJ forme_NOUN podle_ADP nej_PRON zakon_NOUN nepodpori_VERB jak_ADV opozice_NOUN ,_PUNCT tak_CCONJ ani_CCONJ zbytek_NOUN koalice_NOUN ._PUNCT}
 Predicted: {
-v_ADP navrzene_ADJ forme_NOUN podle_ADP nej_PRON zakon_NOUN nepodpori_VERB jak_ADV opozice_NOUN ,_PUNCT tak_ADV ani_CCONJ zbytek_NOUN koalice_NOUN ._PUNCT}
+v_ADP navrzene_ADJ forme_NOUN podle_ADP nej_ADJ zakon_NOUN nepodpori_VERB jak_ADV opozice_NOUN ,_PUNCT tak_ADV ani_CCONJ zbytek_NOUN koalice_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+nej: PRON | ADJ
 tak: CCONJ | ADV
 }
 
@@ -15624,6 +15533,16 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 je: PRON | AUX
+}
+
+Expected: {
+sedlacek_PROPN z_ADP voleje_NOUN strilel_VERB nepresne_ADV ,_PUNCT penickovu_ADJ hlavicku_NOUN chytil_VERB pohotovy_ADJ simurka_PROPN a_CCONJ v_ADP 71_NUM ._PUNCT minute_NOUN dokonce_ADV horvath_PROPN nastrelil_VERB tyc_NOUN ._PUNCT}
+Predicted: {
+sedlacek_PROPN z_ADP voleje_NOUN strilel_VERB nepresne_ADJ ,_PUNCT penickovu_ADJ hlavicku_NOUN chytil_VERB pohotovy_ADJ simurka_PROPN a_CCONJ v_ADP 71_NUM ._PUNCT minute_NOUN dokonce_ADV horvath_PROPN nastrelil_VERB tyc_NOUN ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+nepresne: ADV | ADJ
 }
 
 Expected: {
@@ -16054,16 +15973,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 klenerem: PROPN | NOUN
-}
-
-Expected: {
-osmapadesatilety_ADJ americky_ADJ herec_NOUN ,_PUNCT reziser_NOUN a_CCONJ scenarista_NOUN dennis_PROPN hopper_PROPN 2_NUM ._PUNCT brezna_NOUN v_ADP prazskem_ADJ kine_NOUN u_ADP hradeb_NOUN osobne_ADV uvede_VERB obnovenou_ADJ premieru_NOUN sve_DET slavne_ADJ rezijni_ADJ prvotiny_NOUN bezstarostna_ADJ jizda_NOUN (_PUNCT 1969_NUM )_PUNCT ._PUNCT}
-Predicted: {
-osmapadesatilety_ADJ americky_ADJ herec_NOUN ,_PUNCT reziser_NOUN a_CCONJ scenarista_NOUN dennis_PROPN hopper_PROPN 2_NUM ._PUNCT brezna_NOUN v_ADP prazskem_ADJ kine_NOUN u_ADP hradeb_NOUN osobne_ADV uvede_VERB obnovenou_NOUN premieru_NOUN sve_DET slavne_ADJ rezijni_ADJ prvotiny_NOUN bezstarostna_ADJ jizda_NOUN (_PUNCT 1969_NUM )_PUNCT ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-obnovenou: ADJ | NOUN
 }
 
 Expected: {
@@ -16704,16 +16613,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 tu: DET | ADV
-}
-
-Expected: {
-praxe_NOUN "_PUNCT ohleduplneho_ADJ zamlcovani_NOUN "_PUNCT podle_ADP ni_PRON ale_CCONJ pretrvava_VERB zejmena_ADV na_ADP okresech_NOUN :_PUNCT}
-Predicted: {
-praxe_NOUN "_PUNCT ohleduplneho_ADP zamlcovani_NOUN "_PUNCT podle_ADP ni_PRON ale_CCONJ pretrvava_VERB zejmena_ADV na_ADP okresech_NOUN :_PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-ohleduplneho: ADJ | ADP
 }
 
 Expected: {
@@ -17735,16 +17634,6 @@ Tok: Ref | Pred
 ---------------
 presvedceni: ADJ | NOUN
 kritikove: NOUN | ADJ
-}
-
-Expected: {
-od_ADP 1_NUM ._PUNCT ledna_NOUN 1991_NUM se_PRON domaci_ADJ cenova_ADJ hladina_NOUN zvysila_VERB asi_PART o_ADP polovinu_NOUN ,_PUNCT ale_CCONJ nominalni_ADJ kurs_NOUN koruny_NOUN se_PRON prakticky_ADV nezmenil_VERB ._PUNCT}
-Predicted: {
-od_ADP 1_NUM ._PUNCT ledna_NOUN 1991_NUM se_PRON domaci_ADJ cenova_ADJ hladina_NOUN zvysila_VERB asi_PART o_ADP polovinu_NOUN ,_PUNCT ale_CCONJ nominalni_ADJ kurs_NOUN koruny_NOUN se_ADP prakticky_ADV nezmenil_VERB ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-se: PRON | ADP
 }
 
 Expected: {
@@ -21077,16 +20966,6 @@ tynecka: ADJ | NOUN
 }
 
 Expected: {
-zahranicni_ADJ firma_NOUN by_AUX jawu_PROPN kupovala_VERB za_ADP trzni_ADJ cenu_NOUN ,_PUNCT cesky_ADJ zajemce_NOUN musi_VERB koupit_VERB podnik_NOUN se_ADP zavazky_NOUN a_CCONJ navic_ADV minimalne_ADV za_ADP ucetni_ADJ hodnotu_NOUN ._PUNCT}
-Predicted: {
-zahranicni_ADJ firma_NOUN by_AUX jawu_PROPN kupovala_VERB za_ADP trzni_ADJ cenu_NOUN ,_PUNCT cesky_ADJ zajemce_NOUN musi_VERB koupit_VERB podnik_NOUN se_PRON zavazky_NOUN a_CCONJ navic_ADV minimalne_ADV za_ADP ucetni_ADJ hodnotu_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-se: ADP | PRON
-}
-
-Expected: {
 firma_NOUN konzea_PROPN se_PRON dukladne_ADV podivala_VERB "_PUNCT pod_ADP kabat_NOUN "_PUNCT nejedne_DET pamatkove_ADJ budove_NOUN a_CCONJ pomohla_VERB ji_PRON ve_ADP zdravi_NOUN prezit_VERB dalsi_ADJ roky_NOUN ._PUNCT}
 Predicted: {
 firma_NOUN konzea_PROPN se_PRON dukladne_ADV podivala_VERB "_PUNCT pod_ADP kabat_NOUN "_PUNCT nejedne_ADV pamatkove_ADJ budove_NOUN a_CCONJ pomohla_VERB ji_PRON ve_ADP zdravi_NOUN prezit_VERB dalsi_ADJ roky_NOUN ._PUNCT}
@@ -22979,16 +22858,6 @@ rovecne: PROPN | ADV
 }
 
 Expected: {
-"_PUNCT kdyz_SCONJ tady_ADV byl_AUX prvni_ADJ krecek_NOUN ,_PUNCT meli_VERB jsme_AUX o_ADP nej_PRON strach_NOUN ,_PUNCT aby by_SCONJ AUX mu_PRON deti_NOUN samou_DET laskou_NOUN neublizily_VERB ,_PUNCT nosily_VERB ho_PRON dokonce_ADV tajne_ADV v_ADP kapsach_NOUN do_ADP skoly_NOUN ,_PUNCT "_PUNCT dozvidame_VERB se_PRON ._PUNCT}
-Predicted: {
-"_PUNCT kdyz_SCONJ tady_ADV byl_AUX prvni_ADJ krecek_NOUN ,_PUNCT meli_VERB jsme_AUX o_ADP nej_PRON strach_NOUN ,_PUNCT aby by_SCONJ AUX mu_PRON deti_NOUN samou_ADJ laskou_NOUN neublizily_VERB ,_PUNCT nosily_VERB ho_PRON dokonce_ADV tajne_ADV v_ADP kapsach_NOUN do_ADP skoly_NOUN ,_PUNCT "_PUNCT dozvidame_VERB se_PRON ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-samou: DET | ADJ
-}
-
-Expected: {
 s_ADP plynovou_ADJ pistoli_NOUN v_ADP ruce_NOUN pozadoval_VERB neznamy_ADJ muz_NOUN pozde_ADV vecer_ADV 25_NUM ._PUNCT prosince_NOUN na_ADP pracovnikovi_NOUN non_NOUN stop_NOUN smenarny_NOUN v_ADP ostrove_PROPN vydani_NOUN penez_NOUN ._PUNCT}
 Predicted: {
 s_ADP plynovou_ADJ pistoli_NOUN v_ADP ruce_NOUN pozadoval_VERB neznamy_ADJ muz_NOUN pozde_ADV vecer_ADV 25_NUM ._PUNCT prosince_NOUN na_ADP pracovnikovi_NOUN non_PART stop_NOUN smenarny_NOUN v_ADP ostrove_NOUN vydani_NOUN penez_NOUN ._PUNCT}
@@ -23858,16 +23727,6 @@ novotny: PROPN | ADJ
 }
 
 Expected: {
-o_ADP pruvodech_NOUN ,_PUNCT o_ADP tisicich_NOUN ochraptelych_ADJ lidi_NOUN opevujicich_ADJ vecny_ADJ svazek_NOUN se_ADP sovetskym_ADJ svazem_NOUN ,_PUNCT o_ADP svatku_NOUN prace_NOUN se_PRON nezminoval_VERB nikdo_PRON ._PUNCT}
-Predicted: {
-o_ADP pruvodech_NOUN ,_PUNCT o_ADP tisicich_ADJ ochraptelych_ADJ lidi_NOUN opevujicich_ADJ vecny_ADJ svazek_NOUN se_ADP sovetskym_ADJ svazem_NOUN ,_PUNCT o_ADP svatku_NOUN prace_NOUN se_PRON nezminoval_VERB nikdo_PRON ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-tisicich: NOUN | ADJ
-}
-
-Expected: {
 "_PUNCT az_SCONJ se_PRON mandela_PROPN ujme_VERB moci_NOUN a_CCONJ nebude_AUX schopen_ADJ splnit_VERB sve_DET predvolebni_ADJ sliby_NOUN ,_PUNCT budeme_AUX teprve_ADV svedky_NOUN problemu_NOUN ,_PUNCT "_PUNCT zduraznil_VERB ._PUNCT}
 Predicted: {
 "_PUNCT az_PART se_PRON mandela_PROPN ujme_VERB moci_NOUN a_CCONJ nebude_AUX schopen_ADJ splnit_VERB sve_DET predvolebni_ADJ sliby_NOUN ,_PUNCT budeme_AUX teprve_ADV svedky_NOUN problemu_NOUN ,_PUNCT "_PUNCT zduraznil_VERB ._PUNCT}
@@ -23911,12 +23770,11 @@ animozitu: NOUN | CCONJ
 Expected: {
 tuto_DET informaci_NOUN prinesl_VERB mj_ADV ._PUNCT ve_ADP svem_DET predposlednim_ADJ cisle_NOUN tydenik_NOUN respekt_PROPN a_CCONJ ln_PROPN ji_PRON potvrdil_VERB i_CCONJ dalsi_ADJ nezavisly_ADJ zdroj_NOUN z_ADP okoli_NOUN bohemie_PROPN ._PUNCT}
 Predicted: {
-tuto_DET informaci_NOUN prinesl_VERB mj_ADV ._PUNCT ve_ADP svem_DET predposlednim_NOUN cisle_NOUN tydenik_NOUN respekt_NOUN a_CCONJ ln_PROPN ji_PRON potvrdil_VERB i_CCONJ dalsi_ADJ nezavisly_ADJ zdroj_NOUN z_ADP okoli_NOUN bohemie_PROPN ._PUNCT}
+tuto_DET informaci_NOUN prinesl_VERB mj_ADV ._PUNCT ve_ADP svem_DET predposlednim_NOUN cisle_NOUN tydenik_NOUN respekt_PROPN a_CCONJ ln_PROPN ji_PRON potvrdil_VERB i_CCONJ dalsi_ADJ nezavisly_ADJ zdroj_NOUN z_ADP okoli_NOUN bohemie_PROPN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 predposlednim: ADJ | NOUN
-respekt: PROPN | NOUN
 }
 
 Expected: {
@@ -25769,12 +25627,13 @@ knoflicka: PROPN | ADJ
 Expected: {
 ten_DET mezi_ADP 10_NUM ._PUNCT a_CCONJ 20_NUM ._PUNCT minutou_NOUN vedl_VERB k_ADP otoceni_NOUN skore_NOUN z_ADP 0_NUM :_PUNCT 1_NUM na_ADP 2_NUM :_PUNCT 1_NUM a_CCONJ druhy_ADJ po_ADP stridani_NOUN prilis_ADV defenzivniho_ADJ hyraveho_PROPN cizkem_NOUN a_CCONJ preskupeni_NOUN domaci_ADJ zalohy_NOUN v_ADP prvnich_ADJ dvaceti_NUM minutach_NOUN 1_NUM ._PUNCT polocasu_NOUN ._PUNCT}
 Predicted: {
-ten_DET mezi_ADP 10_NUM ._PUNCT a_CCONJ 20_NUM ._PUNCT minutou_NOUN vedl_VERB k_ADP otoceni_NOUN skore_NOUN z_ADP 0_NUM :_PUNCT 1_NUM na_ADP 2_NUM :_PUNCT 1_NUM a_CCONJ druhy_NOUN po_ADP stridani_NOUN prilis_ADV defenzivniho_ADJ hyraveho_PROPN cizkem_PROPN a_CCONJ preskupeni_NOUN domaci_ADJ zalohy_NOUN v_ADP prvnich_ADJ dvaceti_NUM minutach_NOUN 1_NUM ._PUNCT polocasu_NOUN ._PUNCT}
+ten_DET mezi_ADP 10_NUM ._PUNCT a_CCONJ 20_NUM ._PUNCT minutou_NOUN vedl_VERB k_ADP otoceni_NOUN skore_NOUN z_ADP 0_NUM :_PUNCT 1_NUM na_ADP 2_NUM :_PUNCT 1_NUM a_CCONJ druhy_NOUN po_ADP stridani_NOUN prilis_ADV defenzivniho_ADJ hyraveho_PROPN cizkem_PROPN a_CCONJ preskupeni_ADJ domaci_ADJ zalohy_NOUN v_ADP prvnich_ADJ dvaceti_NUM minutach_NOUN 1_NUM ._PUNCT polocasu_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 druhy: ADJ | NOUN
 cizkem: NOUN | PROPN
+preskupeni: NOUN | ADJ
 }
 
 Expected: {
@@ -27228,12 +27087,12 @@ konecneho: PROPN | ADJ
 Expected: {
 muzi_NOUN by_AUX se_PRON mohli_VERB pohybovat_VERB v_ADP cervenem_ADJ automobilu_NOUN favorit_PROPN se_ADP statni_ADJ poznavaci_ADJ znackou_NOUN bmv_NOUN 31_NUM 79_NUM ._PUNCT}
 Predicted: {
-muzi_NOUN by_AUX se_PRON mohli_VERB pohybovat_VERB v_ADP cervenem_ADJ automobilu_NOUN favorit_PROPN se_PRON statni_ADJ poznavaci_ADJ znackou_NOUN bmv_ADP 31_NUM 79_NUM ._PUNCT}
+muzi_NOUN by_AUX se_PRON mohli_VERB pohybovat_VERB v_ADP cervenem_ADJ automobilu_NOUN favorit_PROPN se_PRON statni_ADJ poznavaci_ADJ znackou_NOUN bmv_PROPN 31_NUM 79_NUM ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 se: ADP | PRON
-bmv: NOUN | ADP
+bmv: NOUN | PROPN
 }
 
 Expected: {
@@ -27290,12 +27149,21 @@ manesa: PROPN | NOUN
 Expected: {
 skupinu_NOUN vzdy_ADV charakterizoval_VERB chlapecky_ADV mekky_ADJ zpev_NOUN toma_PROPN hinglaye_PROPN a_CCONJ az_PART tanecne_ADV chytlavy_ADJ ,_PUNCT radostne_ADV bzucici_ADJ zvuk_NOUN varhan_NOUN znacky_NOUN farfisa_PROPN nebo_CCONJ hammond_PROPN ._PUNCT}
 Predicted: {
-skupinu_NOUN vzdy_ADV charakterizoval_VERB chlapecky_ADJ mekky_ADJ zpev_NOUN toma_PROPN hinglaye_PROPN a_CCONJ az_PART tanecne_ADV chytlavy_NOUN ,_PUNCT radostne_ADV bzucici_ADJ zvuk_NOUN varhan_NOUN znacky_NOUN farfisa_PROPN nebo_CCONJ hammond_PROPN ._PUNCT}
+skupinu_NOUN vzdy_ADV charakterizoval_VERB chlapecky_ADJ mekky_ADJ zpev_NOUN toma_PROPN hinglaye_PROPN a_CCONJ az_PART tanecne_ADV chytlavy_ADJ ,_PUNCT radostne_ADV bzucici_ADJ zvuk_NOUN varhan_NOUN znacky_NOUN farfisa_PROPN nebo_CCONJ hammond_PROPN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 chlapecky: ADV | ADJ
-chytlavy: ADJ | NOUN
+}
+
+Expected: {
+na_ADP prezentaci_NOUN v_ADP novem_ADJ obchodnim_ADJ centru_NOUN byly_AUX predstaveny_ADJ nejnovejsi_ADJ produkty_NOUN jejich_DET strategickych_ADJ partneru_NOUN -_PUNCT firem_NOUN microsoft_PROPN a_CCONJ intel_PROPN ._PUNCT}
+Predicted: {
+na_ADP prezentaci_NOUN v_ADP novem_ADJ obchodnim_ADJ centru_NOUN byly_AUX predstaveny_NOUN nejnovejsi_ADJ produkty_NOUN jejich_DET strategickych_ADJ partneru_NOUN -_PUNCT firem_NOUN microsoft_PROPN a_CCONJ intel_PROPN ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+predstaveny: ADJ | NOUN
 }
 
 Expected: {
@@ -28817,10 +28685,11 @@ zloreci: VERB | NOUN
 Expected: {
 jako_SCONJ by_AUX vykrikovali_VERB :_PUNCT jeste_ADV ne_PART na_ADP svetove_ADJ urovni_NOUN ,_PUNCT a_CCONJ prave_ADV proto_CCONJ tak_ADV rozkosne_ADV zivouci_ADJ ._PUNCT}
 Predicted: {
-jako_SCONJ by_AUX vykrikovali_VERB :_PUNCT jeste_ADV ne_PART na_ADP svetove_ADJ urovni_NOUN ,_PUNCT a_CCONJ prave_ADV proto_CCONJ tak_ADV rozkosne_ADJ zivouci_NOUN ._PUNCT}
+jako_SCONJ by_AUX vykrikovali_VERB :_PUNCT jeste_ADV ne_PART na_ADP svetove_ADJ urovni_NOUN ,_PUNCT a_CCONJ prave_ADV proto_ADV tak_ADV rozkosne_ADJ zivouci_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+proto: CCONJ | ADV
 rozkosne: ADV | ADJ
 zivouci: ADJ | NOUN
 }
@@ -31471,12 +31340,13 @@ podlaska: PROPN | NOUN
 Expected: {
 maji_VERB jen_PART malou_ADJ nadeji_NOUN dostat_VERB se_PRON opet_ADV k_ADP moci_NOUN ,_PUNCT ale_CCONJ stale_ADV jeste_ADV jsou_AUX s_PART to_PART napachat_VERB velke_ADJ skody_NOUN na_ADP venkove_NOUN a_CCONJ odcerpavat_VERB tak_ADV zdroje_NOUN ,_PUNCT jichz_PRON by_AUX se_PRON dalo_VERB lepe_ADV vyuzit_VERB k_ADP prestavbe_NOUN zeme_NOUN ._PUNCT}
 Predicted: {
-maji_VERB jen_PART malou_ADJ nadeji_NOUN dostat_VERB se_PRON opet_ADV k_ADP moci_NOUN ,_PUNCT ale_CCONJ stale_ADV jeste_ADV jsou_AUX s_ADP to_DET napachat_VERB velke_ADJ skody_NOUN na_ADP venkove_NOUN a_CCONJ odcerpavat_VERB tak_ADV zdroje_NOUN ,_PUNCT jichz_PRON by_AUX se_PRON dalo_VERB lepe_ADV vyuzit_VERB k_ADP prestavbe_NOUN zeme_NOUN ._PUNCT}
+maji_VERB jen_PART malou_ADJ nadeji_NOUN dostat_VERB se_PRON opet_ADV k_ADP moci_NOUN ,_PUNCT ale_CCONJ stale_ADV jeste_ADV jsou_AUX s_ADP to_DET napachat_VERB velke_ADJ skody_NOUN na_ADP venkove_NOUN a_CCONJ odcerpavat_VERB tak_CCONJ zdroje_NOUN ,_PUNCT jichz_PRON by_AUX se_PRON dalo_VERB lepe_ADV vyuzit_VERB k_ADP prestavbe_NOUN zeme_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 s: PART | ADP
 to: PART | DET
+tak: ADV | CCONJ
 }
 
 Expected: {
@@ -31579,6 +31449,16 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 modrany: PROPN | ADJ
+}
+
+Expected: {
+samostatne_ADJ svazy_NOUN podle_ADP jeho_DET nazoru_NOUN nemohou_VERB byt_AUX schopny_ADJ dostatecne_ADV hajit_VERB zajmy_NOUN clenu_NOUN ._PUNCT}
+Predicted: {
+samostatne_ADV svazy_NOUN podle_ADP jeho_DET nazoru_NOUN nemohou_VERB byt_AUX schopny_ADJ dostatecne_ADV hajit_VERB zajmy_NOUN clenu_NOUN ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+samostatne: ADJ | ADV
 }
 
 Expected: {
@@ -31910,6 +31790,16 @@ Tok: Ref | Pred
 ---------------
 ocividne: ADV | ADJ
 jak: SCONJ | ADP
+}
+
+Expected: {
+jak_SCONJ oznamil_VERB mistopredseda_NOUN du_PROPN milan_PROPN knazko_PROPN ,_PUNCT duvodem_NOUN pro_ADP tento_DET postup_NOUN bylo_AUX meciarovo_ADJ vyjadreni_NOUN ,_PUNCT ze_SCONJ jeste_ADV pred_ADP parlamentnimi_ADJ volbami_NOUN mel_VERB k_ADP dispozici_NOUN od_ADP clena_NOUN du_PROPN peticni_ADJ archy_NOUN ,_PUNCT se_ADP kterymi_DET sla_VERB strana_NOUN do_ADP voleb_NOUN ._PUNCT}
+Predicted: {
+jak_SCONJ oznamil_VERB mistopredseda_NOUN du_PROPN milan_PROPN knazko_PROPN ,_PUNCT duvodem_NOUN pro_ADP tento_DET postup_NOUN bylo_AUX meciarovo_ADJ vyjadreni_NOUN ,_PUNCT ze_SCONJ jeste_ADV pred_ADP parlamentnimi_ADJ volbami_NOUN mel_VERB k_ADP dispozici_NOUN od_ADP clena_NOUN du_ADP peticni_ADJ archy_NOUN ,_PUNCT se_ADP kterymi_DET sla_VERB strana_NOUN do_ADP voleb_NOUN ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+du: PROPN | ADP
 }
 
 Expected: {
@@ -32633,16 +32523,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 standa: PROPN | NOUN
-}
-
-Expected: {
-dramaturgie_NOUN letosniho_ADJ berlinale_PROPN jako_SCONJ by_AUX znala_VERB zakony_NOUN dramatu_NOUN :_PUNCT po_ADP slabsi_ADJ expozici_NOUN ,_PUNCT nevydarene_ADJ zapletce_NOUN s_ADP robertem_PROPN redfordem_PROPN (_PUNCT slibil_VERB a_CCONJ neprijel_VERB )_PUNCT a_CCONJ pred_ADP dnesnim_ADJ rozuzlenim_NOUN v_ADP podobe_NOUN rozdelovani_NOUN cen_NOUN ,_PUNCT zahustila_VERB zaverecne_ADJ dejstvi_NOUN prehlidky_NOUN hned_ADV nekolika_DET vrcholnymi_ADJ cisly_NOUN ._PUNCT}
-Predicted: {
-dramaturgie_NOUN letosniho_ADJ berlinale_NOUN jako_SCONJ by_AUX znala_VERB zakony_NOUN dramatu_NOUN :_PUNCT po_ADP slabsi_ADJ expozici_NOUN ,_PUNCT nevydarene_ADJ zapletce_NOUN s_ADP robertem_PROPN redfordem_PROPN (_PUNCT slibil_VERB a_CCONJ neprijel_VERB )_PUNCT a_CCONJ pred_ADP dnesnim_ADJ rozuzlenim_NOUN v_ADP podobe_NOUN rozdelovani_NOUN cen_NOUN ,_PUNCT zahustila_VERB zaverecne_ADJ dejstvi_NOUN prehlidky_NOUN hned_ADV nekolika_DET vrcholnymi_ADJ cisly_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-berlinale: PROPN | NOUN
 }
 
 Expected: {
@@ -33766,6 +33646,16 @@ rezignacnim: ADJ | NOUN
 }
 
 Expected: {
+stredobodem_NOUN kozyrevova_ADJ zajmu_NOUN totiz_ADV neni_AUX splneni_NOUN jistych_ADJ podminek_NOUN ze_ADP strany_NOUN srbska_PROPN ,_PUNCT nybrz_CCONJ takrka_ADV bezpodminecne_ADJ zruseni_NOUN sankci_NOUN uvalenych_ADJ na_ADP belehrad_PROPN ,_PUNCT napsal_VERB vcera_ADV nemecky_ADJ list_NOUN die_ADJ welt_PROPN ._PUNCT}
+Predicted: {
+stredobodem_NOUN kozyrevova_ADJ zajmu_NOUN totiz_ADV neni_AUX splneni_NOUN jistych_ADJ podminek_NOUN ze_ADP strany_NOUN srbska_PROPN ,_PUNCT nybrz_CCONJ takrka_ADV bezpodminecne_ADV zruseni_NOUN sankci_NOUN uvalenych_ADJ na_ADP belehrad_PROPN ,_PUNCT napsal_VERB vcera_ADV nemecky_ADJ list_NOUN die_ADJ welt_PROPN ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+bezpodminecne: ADJ | ADV
+}
+
+Expected: {
 prestoze_SCONJ vcera_ADV van_ADP miert_PROPN i_CCONJ claes_PROPN sve_DET spojeni_NOUN s_ADP agustou_PROPN rozhorcene_ADV odmitli_VERB ,_PUNCT posledni_ADJ vyvoj_NOUN udalosti_NOUN v_ADP bruselu_PROPN naznacuje_VERB ,_PUNCT ze_SCONJ tentokrat_ADV by_AUX mohly_VERB zacit_VERB padat_VERB hlavy_NOUN "_PUNCT evropskeho_ADJ formatu_NOUN "_PUNCT ._PUNCT}
 Predicted: {
 prestoze_SCONJ vcera_ADV van_ADP miert_PROPN i_CCONJ claes_PROPN sve_DET spojeni_NOUN s_ADP agustou_PROPN rozhorcene_ADJ odmitli_VERB ,_PUNCT posledni_ADJ vyvoj_NOUN udalosti_NOUN v_ADP bruselu_PROPN naznacuje_VERB ,_PUNCT ze_SCONJ tentokrat_ADV by_AUX mohly_VERB zacit_VERB padat_VERB hlavy_NOUN "_PUNCT evropskeho_ADJ formatu_NOUN "_PUNCT ._PUNCT}
@@ -33878,11 +33768,12 @@ liznera: PROPN | NOUN
 Expected: {
 pred_ADP podpisem_NOUN je_AUX dohoda_NOUN s_ADP mestem_NOUN o_ADP provozovani_NOUN koksovny_NOUN sverma_PROPN do_ADP roku_NOUN 2005_NUM a_CCONJ svoboda_NOUN do_ADP roku_NOUN 2009_NUM ._PUNCT}
 Predicted: {
-pred_ADP podpisem_NOUN je_AUX dohoda_NOUN s_ADP mestem_NOUN o_ADP provozovani_NOUN koksovny_NOUN sverma_NOUN do_ADP roku_NOUN 2005_NUM a_CCONJ svoboda_NOUN do_ADP roku_NOUN 2009_NUM ._PUNCT}
+pred_ADP podpisem_NOUN je_AUX dohoda_NOUN s_ADP mestem_NOUN o_ADP provozovani_NOUN koksovny_NOUN sverma_NOUN do_ADP roku_NOUN 2005_NUM a_CCONJ svoboda_PROPN do_ADP roku_NOUN 2009_NUM ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 sverma: PROPN | NOUN
+svoboda: NOUN | PROPN
 }
 
 Expected: {
@@ -34630,16 +34521,6 @@ artforum: NOUN | PROPN
 }
 
 Expected: {
-od_ADP reditele_NOUN uradu_NOUN prace_NOUN v_ADP praze_PROPN 5_NUM se_PRON ale_CCONJ dozvedel_VERB ,_PUNCT ze_SCONJ na_ADP nove_ADJ dilny_NOUN v_ADP praze_PROPN nejsou_AUX finance_NOUN ._PUNCT}
-Predicted: {
-od_ADP reditele_NOUN uradu_NOUN prace_NOUN v_ADP praze_PROPN 5_NUM se_ADP ale_CCONJ dozvedel_VERB ,_PUNCT ze_SCONJ na_ADP nove_ADJ dilny_NOUN v_ADP praze_PROPN nejsou_AUX finance_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-se: PRON | ADP
-}
-
-Expected: {
 take_ADV se_PRON pocita_VERB s_ADP tim_DET ,_PUNCT ze_SCONJ by_AUX nemocnice_NOUN v_ADP prvnich_ADJ ctrnacti_NUM dnech_NOUN pobytu_NOUN pacientu_NOUN na_ADP akutnim_ADJ luzku_NOUN dostavaly_VERB vice_ADV penez_NOUN na_ADP ne_PRON i_CCONJ na_ADP luzka_NOUN ._PUNCT}
 Predicted: {
 take_ADV se_PRON pocita_VERB s_ADP tim_DET ,_PUNCT ze_SCONJ by_AUX nemocnice_NOUN v_ADP prvnich_ADJ ctrnacti_NUM dnech_NOUN pobytu_NOUN pacientu_NOUN na_ADP akutnim_ADJ luzku_NOUN dostavaly_VERB vice_ADV penez_NOUN na_ADP ne_PART i_CCONJ na_ADP luzka_NOUN ._PUNCT}
@@ -35089,11 +34970,11 @@ rovnomerne: ADJ | ADV
 Expected: {
 vztahy_NOUN cechu_PROPN a_CCONJ slovaku_PROPN jsou_AUX odstranenim_NOUN pomlcky_NOUN oprosteny_ADJ od_ADP emoci_NOUN ._PUNCT}
 Predicted: {
-vztahy_NOUN cechu_PROPN a_CCONJ slovaku_PROPN jsou_AUX odstranenim_NOUN pomlcky_NOUN oprosteny_NOUN od_ADP emoci_NOUN ._PUNCT}
+vztahy_NOUN cechu_PROPN a_CCONJ slovaku_PROPN jsou_AUX odstranenim_NOUN pomlcky_ADV oprosteny_ADJ od_ADP emoci_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-oprosteny: ADJ | NOUN
+pomlcky: NOUN | ADV
 }
 
 Expected: {
@@ -36486,16 +36367,6 @@ sami: DET | NOUN
 }
 
 Expected: {
-druhy_ADJ dil_NOUN prvouky_NOUN (_PUNCT ziva_ADJ a_CCONJ neziva_ADJ priroda_NOUN )_PUNCT vyjde_VERB letos_ADV v_ADP rijnu_NOUN ,_PUNCT stejne_ADV jako_SCONJ pracovni_ADJ listy_NOUN ._PUNCT}
-Predicted: {
-druhy_ADJ dil_NOUN prvouky_ADJ (_PUNCT ziva_ADJ a_CCONJ neziva_ADJ priroda_NOUN )_PUNCT vyjde_VERB letos_ADV v_ADP rijnu_NOUN ,_PUNCT stejne_ADV jako_SCONJ pracovni_ADJ listy_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-prvouky: NOUN | ADJ
-}
-
-Expected: {
 23.10_NUM fair_ADJ chess_NOUN festival_NOUN}
 Predicted: {
 23.10_NUM fair_PROPN chess_PROPN festival_NOUN}
@@ -36711,6 +36582,16 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 uvnitr: ADP | ADV
+}
+
+Expected: {
+ve_ADP finale_NOUN startovali_VERB spolecne_ADV s_ADP havlem_PROPN z_ADP posledni_ADJ rady_NOUN a_CCONJ na_ADP vic_ADV nez_SCONJ 6_NUM ._PUNCT a_CCONJ 7_NUM ._PUNCT misto_NOUN to_DET nebylo_AUX ._PUNCT}
+Predicted: {
+ve_ADP finale_NOUN startovali_VERB spolecne_ADV s_ADP havlem_PROPN z_ADP posledni_ADJ rady_NOUN a_CCONJ na_ADP vic_ADV nez_SCONJ 6_NUM ._PUNCT a_CCONJ 7_NUM ._PUNCT misto_ADP to_DET nebylo_AUX ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+misto: NOUN | ADP
 }
 
 Expected: {
@@ -38269,11 +38150,12 @@ zobecnenim: NOUN | ADJ
 Expected: {
 podle_ADP nej_PRON jsou_AUX venkovsti_ADJ lekari_NOUN znevyhodneni_ADJ ,_PUNCT protoze_SCONJ museji_VERB dojizdet_VERB a_CCONJ misto_ADP prace_NOUN hodne_ADV uradovat_VERB ._PUNCT}
 Predicted: {
-podle_ADP nej_PRON jsou_AUX venkovsti_ADJ lekari_NOUN znevyhodneni_NOUN ,_PUNCT protoze_SCONJ museji_VERB dojizdet_VERB a_CCONJ misto_ADP prace_NOUN hodne_ADV uradovat_VERB ._PUNCT}
+podle_ADP nej_PRON jsou_AUX venkovsti_ADJ lekari_NOUN znevyhodneni_NOUN ,_PUNCT protoze_SCONJ museji_VERB dojizdet_VERB a_CCONJ misto_NOUN prace_NOUN hodne_ADV uradovat_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 znevyhodneni: ADJ | NOUN
+misto: ADP | NOUN
 }
 
 Expected: {
@@ -40517,13 +40399,12 @@ hydroxy: ADJ | NOUN
 Expected: {
 svet_NOUN ale_CCONJ neni_AUX rizen_ADJ z_ADP jedine_ADJ centraly_NOUN plne_ADJ tlacitek_NOUN a_CCONJ hejbatek_NOUN s_ADP cedulkami_NOUN :_PUNCT "_PUNCT stav_NOUN ozonosfery_NOUN "_PUNCT ,_PUNCT "_PUNCT koncentrace_NOUN co_NOUN 2_NUM "_PUNCT ,_PUNCT "_PUNCT znecisteni_NOUN oceanu_NOUN "_PUNCT ,_PUNCT "_PUNCT rozloha_NOUN tropickych_ADJ pralesu_NOUN "_PUNCT ,_PUNCT atd_ADV ._PUNCT}
 Predicted: {
-svet_NOUN ale_CCONJ neni_AUX rizen_ADJ z_ADP jedine_ADJ centraly_NOUN plne_ADV tlacitek_NOUN a_CCONJ hejbatek_NOUN s_ADP cedulkami_NOUN :_PUNCT "_PUNCT stav_NOUN ozonosfery_NOUN "_PUNCT ,_PUNCT "_PUNCT koncentrace_NOUN co_PRON 2_NUM "_PUNCT ,_PUNCT "_PUNCT znecisteni_NOUN oceanu_NOUN "_PUNCT ,_PUNCT "_PUNCT rozloha_VERB tropickych_ADJ pralesu_NOUN "_PUNCT ,_PUNCT atd_ADV ._PUNCT}
+svet_NOUN ale_CCONJ neni_AUX rizen_ADJ z_ADP jedine_ADJ centraly_NOUN plne_ADV tlacitek_NOUN a_CCONJ hejbatek_NOUN s_ADP cedulkami_NOUN :_PUNCT "_PUNCT stav_NOUN ozonosfery_NOUN "_PUNCT ,_PUNCT "_PUNCT koncentrace_NOUN co_PRON 2_NUM "_PUNCT ,_PUNCT "_PUNCT znecisteni_NOUN oceanu_NOUN "_PUNCT ,_PUNCT "_PUNCT rozloha_NOUN tropickych_ADJ pralesu_NOUN "_PUNCT ,_PUNCT atd_ADV ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 plne: ADJ | ADV
 co: NOUN | PRON
-rozloha: NOUN | VERB
 }
 
 Expected: {

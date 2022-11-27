@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9991194665453587
+Evaluation-Score=0.9991983144278562
 Training-Sample-Size=114744
 Evaluation-Sample-Size=12749
 Training-Algorithm=MAXENT_QN
@@ -9,9 +9,9 @@ Component-Name=TokenizerME
 Language=cs
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1665718049307
+Timestamp=1668911487502
 TrainerType=Event
-Training-Eventhash=b3c0bdc5abcc972a9aeb0fb62898eab
+Training-Eventhash=60c270f33d493366a189c0f804852c56
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
@@ -56,9 +56,10 @@ hranicím
 Expected: {
 je to už pár let<SPLIT>, co mi dědeček věnoval atlas zemí koruny české<SPLIT>, rakousko<SPLIT>-<SPLIT>uherského<SPLIT>mocnářství a ostatního světa<SPLIT>.}
 Predicted: {
-je to už pár let<SPLIT>, co mi dědeček věnoval atlas zemí koruny české<SPLIT>, rakousko<SPLIT>-<SPLIT>uherskéhomocnářství a ostatního světa<SPLIT>.}
+je to už pár let<SPLIT>, co mi dědeček věnoval atlas zemí koruny české<SPLIT>, rakousko<SPLIT>-<SPLIT>uherské<SPLIT>homocnářství a ostatního světa<SPLIT>.}
 False positives: {
-uherskéhomocnářství
+uherské
+homocnářství
 } False negatives: {
 uherského
 mocnářství
@@ -87,17 +88,6 @@ filosofii
 }
 
 Expected: {
-tento teoreticko<SPLIT>-<SPLIT>metodologický<SPLIT>postup<SPLIT>, rozpracovaný zvláště skupinou vedenou * machoninem<SPLIT>, sloužil k ospravedlnění revizionistické teze<SPLIT>, podle níž třídy v naší společnosti přestaly existovat a vedoucí úloha dělnické třídy ztratila svůj význam<SPLIT>.}
-Predicted: {
-tento teoreticko<SPLIT>-<SPLIT>metodologickýpostup<SPLIT>, rozpracovaný zvláště skupinou vedenou * machoninem<SPLIT>, sloužil k ospravedlnění revizionistické teze<SPLIT>, podle níž třídy v naší společnosti přestaly existovat a vedoucí úloha dělnické třídy ztratila svůj význam<SPLIT>.}
-False positives: {
-metodologickýpostup
-} False negatives: {
-metodologický
-postup
-}
-
-Expected: {
 zdánlivě tak vzniká jakýsi vztah mezi těmito tvrzeními a marxisticko<SPLIT>-<SPLIT>leninskými<SPLIT>koncepcemi vědeckotechnické revoluce<SPLIT>, které jsou všestranně rozpracovány v socialistických zemích a které podtrhují rostoucí úlohu vědy jakožto bezprostřední výrobní síly<SPLIT>.}
 Predicted: {
 zdánlivě tak vzniká jakýsi vztah mezi těmito tvrzeními a marxisticko<SPLIT>-<SPLIT>leninskýmikoncepcemi vědeckotechnické revoluce<SPLIT>, které jsou všestranně rozpracovány v socialistických zemích a které podtrhují rostoucí úlohu vědy jakožto bezprostřední výrobní síly<SPLIT>.}
@@ -120,17 +110,6 @@ metody
 }
 
 Expected: {
-ve společenském zpracování s informacemi z úseku seismiky<SPLIT>, geomagnetismu včetně paleomagnetismu<SPLIT>, geoelektřiny<SPLIT>, geotermiky<SPLIT>, georadioaktivity a dalších poznatků o zemské kůře a zčásti i o svrchním plášti<SPLIT>, k nimž přibyly zásadní poznatky o recentních pohybech u nás<SPLIT>, a vlivu vnější topografie zbavených odchylek tížnic<SPLIT>, můžeme vidět důležitou základnu pro strukturně<SPLIT>-<SPLIT>geologické<SPLIT>závěry<SPLIT>.}
-Predicted: {
-ve společenském zpracování s informacemi z úseku seismiky<SPLIT>, geomagnetismu včetně paleomagnetismu<SPLIT>, geoelektřiny<SPLIT>, geotermiky<SPLIT>, georadioaktivity a dalších poznatků o zemské kůře a zčásti i o svrchním plášti<SPLIT>, k nimž přibyly zásadní poznatky o recentních pohybech u nás<SPLIT>, a vlivu vnější topografie zbavených odchylek tížnic<SPLIT>, můžeme vidět důležitou základnu pro strukturně<SPLIT>-<SPLIT>geologickézávěry<SPLIT>.}
-False positives: {
-geologickézávěry
-} False negatives: {
-geologické
-závěry
-}
-
-Expected: {
 nejdříve bylo vyneseno měřených režimů pro ? v log<SPLIT>-<SPLIT>log<SPLIT>souřadnicích a efektivními hodnotami jednotlivých harmonických byla proložena přímka tak<SPLIT>, aby co nejlépe charakterizovala maxima harmonických<SPLIT>, harmonickou při tom neuvažujeme<SPLIT>.}
 Predicted: {
 nejdříve bylo vyneseno měřených režimů pro ? v log<SPLIT>-<SPLIT>logsouřadnicích a efektivními hodnotami jednotlivých harmonických byla proložena přímka tak<SPLIT>, aby co nejlépe charakterizovala maxima harmonických<SPLIT>, harmonickou při tom neuvažujeme<SPLIT>.}
@@ -142,282 +121,238 @@ souřadnicích
 }
 
 Expected: {
-(1) pokud tento zákon nestanoví jinak<SPLIT>, řádnou nebo mimořádnou účetní závěrku jsou povinny mít ověřenu auditorem tyto účetní jednotky a) akciové společnosti<SPLIT>, pokud ke konci rozvahového dne účetního období<SPLIT>, za nějž se účetní závěrka (<SPLIT>§_18_odst._3<SPLIT>) ověřuje<SPLIT>, a účetního období bezprostředně předcházejícího<SPLIT>, překročily nebo již dosáhly alespoň jedno ze tří uvedených kritérií<SPLIT>: 1<SPLIT>. aktiva celkem více než 40000000 kč<SPLIT>; aktivy celkem se pro účely tohoto zákona rozumí úhrn zjištěný z rozvahy v ocenění neupraveném o položky podle §_26_odst._3<SPLIT>, 2<SPLIT>. roční úhrn čistého obratu více než 80000000 kč<SPLIT>; ročním úhrnem čistého obratu se pro účely tohoto zákona rozumí výše výnosů snížená o prodejní slevy a dělená počtem započatých měsíců<SPLIT>, po které trvalo účetní období<SPLIT>, a vynásobená dvanácti<SPLIT>, 3<SPLIT>. průměrný přepočtený stav zaměstnanců v průběhu účetního období více než 50<SPLIT>, zjištěný způsobem stanoveným na základě zvláštního právního předpisu<SPLIT>, b) ostatní obchodní společnosti a družstva<SPLIT>, pokud ke konci rozvahového dne účetního období<SPLIT>, za nějž se účetní závěrka (<SPLIT>§_18_odst._3<SPLIT>) ověřuje<SPLIT>, a účetního období bezprotředně předcházejícího<SPLIT>, překročily nebo již dosáhly alespoň dvou ze tří kritérií uvedených v písmenu a) bodech 1 až 3<SPLIT>; v případě družstva se zaměstnancem podle písmene a)_bodu_3 rozumí i pracovní vztah člena k družstvu<SPLIT>, c) účetní jednotky podle §_1_odst._2_písm._b)<SPLIT>, které jsou podnikateli<SPLIT>, a to za podmínek podle písmene b)<SPLIT>, d) účetní jednotky podle §_1_odst._2_písm._d)_až_h) za podmínek podle písmene b)<SPLIT>, e) účetní jednotky<SPLIT>, kterým tuto povinnost stanoví zvláštní právní předpis<SPLIT>.}
+(4) kursové rozdíly z aktiv a závazků v cizí měně<SPLIT>, které účetní jednotka vykazuje v rozvaze a kterými se rozhodla zajistit proti měnovému riziku již vzniklé nebo očekávané smluvní vztahy<SPLIT>, jejichž plnění je v cizí měně a o nichž není dosud účtováno<SPLIT>, se účtují<SPLIT>, nejde-li o deriváty<SPLIT>, na rozvahových účtech účtové skupiny 41<SPLIT>.}
 Predicted: {
-(1) pokud tento zákon nestanoví jinak<SPLIT>, řádnou nebo mimořádnou účetní závěrku jsou povinny mít ověřenu auditorem tyto účetní jednotky a) akciové společnosti<SPLIT>, pokud ke konci rozvahového dne účetního období<SPLIT>, za nějž se účetní závěrka (<SPLIT>§_18_odst._3) ověřuje<SPLIT>, a účetního období bezprostředně předcházejícího<SPLIT>, překročily nebo již dosáhly alespoň jedno ze tří uvedených kritérií<SPLIT>: 1<SPLIT>. aktiva celkem více než 40000000 kč<SPLIT>; aktivy celkem se pro účely tohoto zákona rozumí úhrn zjištěný z rozvahy v ocenění neupraveném o položky podle §_26_odst._3<SPLIT>, 2<SPLIT>. roční úhrn čistého obratu více než 80000000 kč<SPLIT>; ročním úhrnem čistého obratu se pro účely tohoto zákona rozumí výše výnosů snížená o prodejní slevy a dělená počtem započatých měsíců<SPLIT>, po které trvalo účetní období<SPLIT>, a vynásobená dvanácti<SPLIT>, 3<SPLIT>. průměrný přepočtený stav zaměstnanců v průběhu účetního období více než 50<SPLIT>, zjištěný způsobem stanoveným na základě zvláštního právního předpisu<SPLIT>, b) ostatní obchodní společnosti a družstva<SPLIT>, pokud ke konci rozvahového dne účetního období<SPLIT>, za nějž se účetní závěrka (<SPLIT>§_18_odst._3) ověřuje<SPLIT>, a účetního období bezprotředně předcházejícího<SPLIT>, překročily nebo již dosáhly alespoň dvou ze tří kritérií uvedených v písmenu a) bodech 1 až 3<SPLIT>; v případě družstva se zaměstnancem podle písmene a)_bodu_3 rozumí i pracovní vztah člena k družstvu<SPLIT>, c) účetní jednotky podle §_1_odst._2_písm._b)<SPLIT>, které jsou podnikateli<SPLIT>, a to za podmínek podle písmene b<SPLIT>)<SPLIT>, d) účetní jednotky podle §_1_odst._2_písm._d)_až_h) za podmínek podle písmene b<SPLIT>)<SPLIT>, e) účetní jednotky<SPLIT>, kterým tuto povinnost stanoví zvláštní právní předpis<SPLIT>.}
+(4) kursové rozdíly z aktiv a závazků v cizí měně<SPLIT>, které účetní jednotka vykazuje v rozvaze a kterými se rozhodla zajistit proti měnovému riziku již vzniklé nebo očekávané smluvní vztahy<SPLIT>, jejichž plnění je v cizí měně a o nichž není dosud účtováno<SPLIT>, se účtují<SPLIT>, nejde<SPLIT>-<SPLIT>li o deriváty<SPLIT>, na rozvahových účtech účtové skupiny 41<SPLIT>.}
 False positives: {
-§_18_odst._3)
-§_18_odst._3)
-b
-)
-b
-)
-} False negatives: {
-§_18_odst._3
-)
-§_18_odst._3
-)
-b)
-b)
-}
-
-Expected: {
-(1) z jednotlivých složek majetku a závazků k okamžiku ocenění podle §_24_odst._2_písm._b) se reálnou hodnotou oceňují a) cenné papíry<SPLIT>, s výjimkou cenných papírů držených do splatnosti<SPLIT>, dluhopisů pořízených v primárních emisích neurčených účetní jednotkou k obchodování<SPLIT>, cenných papírů představujících účast v ovládané osobě nebo v osobě pod podstatným vlivem a cenných papírů emitovaných účetní jednotkou<SPLIT>, b) deriváty<SPLIT>, c) finanční umístění<SPLIT>, s výjimkou dluhopisů držených do splatnosti<SPLIT>, jejichž emitentem je členský stát organizace pro ekonomickou spolupráci a rozvoj a jejichž hodnocení bylo alespoň dvěma mezinárodně uznávanými ratingovými agenturami stanoveno na úrovni české republiky nebo vyšší<SPLIT>, nejedná-li se o finanční umístění vztahující se k závazkům ze životního pojištění<SPLIT>, je<SPLIT>-<SPLIT>li nositelem investičního rizika pojistník<SPLIT>, a technické rezervy u účetních jednotek<SPLIT>, které provozují činnost pojištění nebo zajištění podle zvláštních právních předpisů<SPLIT>, kromě veřejného zdravotního pojištění<SPLIT>, d) majetek a závazky v případech<SPLIT>, kdy ocenění reálnou hodnotou ukládá zvláštní právní předpis<SPLIT>, to neplatí v případech uvedených v odstavci 3<SPLIT>, e) část majetku a závazků zajištěná deriváty<SPLIT>, f) pohledávky<SPLIT>, které účetní jednotka nabyla a určila k obchodování<SPLIT>, g) závazky vrátit cenné papíry<SPLIT>, které účetní jednotka zcizila a do okamžiku ocenění je nezískala zpět<SPLIT>, h) u vybraných účetních jednotek majetek určený k prodeji s výjimkou zásob<SPLIT>.}
-Predicted: {
-(1) z jednotlivých složek majetku a závazků k okamžiku ocenění podle §_24_odst._2_písm._b) se reálnou hodnotou oceňují a) cenné papíry<SPLIT>, s výjimkou cenných papírů držených do splatnosti<SPLIT>, dluhopisů pořízených v primárních emisích neurčených účetní jednotkou k obchodování<SPLIT>, cenných papírů představujících účast v ovládané osobě nebo v osobě pod podstatným vlivem a cenných papírů emitovaných účetní jednotkou<SPLIT>, b) deriváty<SPLIT>, c) finanční umístění<SPLIT>, s výjimkou dluhopisů držených do splatnosti<SPLIT>, jejichž emitentem je členský stát organizace pro ekonomickou spolupráci a rozvoj a jejichž hodnocení bylo alespoň dvěma mezinárodně uznávanými ratingovými agenturami stanoveno na úrovni české republiky nebo vyšší<SPLIT>, nejedná<SPLIT>-<SPLIT>li se o finanční umístění vztahující se k závazkům ze životního pojištění<SPLIT>, je<SPLIT>-<SPLIT>li nositelem investičního rizika pojistník<SPLIT>, a technické rezervy u účetních jednotek<SPLIT>, které provozují činnost pojištění nebo zajištění podle zvláštních právních předpisů<SPLIT>, kromě veřejného zdravotního pojištění<SPLIT>, d) majetek a závazky v případech<SPLIT>, kdy ocenění reálnou hodnotou ukládá zvláštní právní předpis<SPLIT>, to neplatí v případech uvedených v odstavci 3<SPLIT>, e) část majetku a závazků zajištěná deriváty<SPLIT>, f) pohledávky<SPLIT>, které účetní jednotka nabyla a určila k obchodování<SPLIT>, g) závazky vrátit cenné papíry<SPLIT>, které účetní jednotka zcizila a do okamžiku ocenění je nezískala zpět<SPLIT>, h) u vybraných účetních jednotek majetek určený k prodeji s výjimkou zásob<SPLIT>.}
-False positives: {
-nejedná
+nejde
 -
 li
 } False negatives: {
-nejedná-li
+nejde-li
 }
 
 Expected: {
-(12) ustanovení týkající se inventarizace majetku a závazků se použijí i pro inventarizaci jiných aktiv a jiných pasiv<SPLIT>, včetně skutečností účtovaných v knize podrozvahových účtů<SPLIT>.}
+(6) do konsolidačního celku nemusí být zahrnuty konsolidované účetní jednotky<SPLIT>, a) u nichž není podíl na konsolidačním celku významný z hlediska podání věrného a poctivého obrazu předmětu účetnictví a finanční situace konsolidačního celku<SPLIT>; pokud je u dvou a více takových konsolidovaných účetních jednotek jejich souhrnný podíl významný<SPLIT>, jsou tyto účetní jednotky zahrnuty do konsolidačního celku<SPLIT>, nebo b) u nichž dlouhodobá omezení významně brání konsolidující účetní jednotce ve výkonu jejích práv ohledně nakládání s majetkem nebo řízení uvedených konsolidovaných účetních jednotek<SPLIT>, nebo výjimečně nelze-li bez prokazatelně nutných nepřiměřených nákladů nebo bez prokazatelně nutného zbytečného zdržení získat informace nezbytné pro sestavení konsolidované účetní závěrky podle této vyhlášky<SPLIT>, nebo c) jsou<SPLIT>-<SPLIT>li akcie nebo podíly konsolidovaných účetních jednotek drženy výhradně za účelem jejich prodeje<SPLIT>. : a) plná konsolidace<SPLIT>, která se použije při zahrnutí konsolidované účetní jednotky do konsolidované účetní závěrky<SPLIT>, c) konsolidace ekvivalencí (<SPLIT>protihodnotou<SPLIT>)<SPLIT>, která se použije při zahrnutí účetní jednotky přidružené do konsolidované účetní závěrky}
 Predicted: {
-(<SPLIT>12<SPLIT>) ustanovení týkající se inventarizace majetku a závazků se použijí i pro inventarizaci jiných aktiv a jiných pasiv<SPLIT>, včetně skutečností účtovaných v knize podrozvahových účtů<SPLIT>.}
+(6) do konsolidačního celku nemusí být zahrnuty konsolidované účetní jednotky<SPLIT>, a) u nichž není podíl na konsolidačním celku významný z hlediska podání věrného a poctivého obrazu předmětu účetnictví a finanční situace konsolidačního celku<SPLIT>; pokud je u dvou a více takových konsolidovaných účetních jednotek jejich souhrnný podíl významný<SPLIT>, jsou tyto účetní jednotky zahrnuty do konsolidačního celku<SPLIT>, nebo b) u nichž dlouhodobá omezení významně brání konsolidující účetní jednotce ve výkonu jejích práv ohledně nakládání s majetkem nebo řízení uvedených konsolidovaných účetních jednotek<SPLIT>, nebo výjimečně nelze<SPLIT>-<SPLIT>li bez prokazatelně nutných nepřiměřených nákladů nebo bez prokazatelně nutného zbytečného zdržení získat informace nezbytné pro sestavení konsolidované účetní závěrky podle této vyhlášky<SPLIT>, nebo c) jsou<SPLIT>-<SPLIT>li akcie nebo podíly konsolidovaných účetních jednotek drženy výhradně za účelem jejich prodeje<SPLIT>. : a) plná konsolidace<SPLIT>, která se použije při zahrnutí konsolidované účetní jednotky do konsolidované účetní závěrky<SPLIT>, c) konsolidace ekvivalencí (<SPLIT>protihodnotou<SPLIT>)<SPLIT>, která se použije při zahrnutí účetní jednotky přidružené do konsolidované účetní závěrky}
 False positives: {
-(
-12
-)
-} False negatives: {
-(12)
-}
-
-Expected: {
-(1) použijí-li účetní jednotky účetní záznamy i pro jiný účel než uvedený v §_31_odst._1<SPLIT>, a to zejména pro účely trestního řízení<SPLIT>, opatření proti legalizaci výnosů z trestné činnosti<SPLIT>, správního řízení<SPLIT>, občanského soudního řízení<SPLIT>, daňového řízení<SPLIT>, výběru archiválií ve skartačním řízení nebo mimo něj<SPLIT>, nebo pro účely sociálního zabezpečení<SPLIT>, veřejného zdravotního pojištění anebo pro účely ochrany autorských práv<SPLIT>, postupují po uplynutí dob úschovy uvedených v §_31_odst._2 dále tak<SPLIT>, aby byly zajištěny požadavky vyplývající z jejich použití pro uvedené účely<SPLIT>; v případě<SPLIT>, kdy účetní jednotky použijí účetní záznamy k těmto účelům<SPLIT>, platí všechna ustanovení tohoto zákona týkající se účetních záznamů obdobně<SPLIT>.}
-Predicted: {
-(1) použijí<SPLIT>-<SPLIT>li účetní jednotky účetní záznamy i pro jiný účel než uvedený v §_31_odst._1<SPLIT>, a to zejména pro účely trestního řízení<SPLIT>, opatření proti legalizaci výnosů z trestné činnosti<SPLIT>, správního řízení<SPLIT>, občanského soudního řízení<SPLIT>, daňového řízení<SPLIT>, výběru archiválií ve skartačním řízení nebo mimo něj<SPLIT>, nebo pro účely sociálního zabezpečení<SPLIT>, veřejného zdravotního pojištění anebo pro účely ochrany autorských práv<SPLIT>, postupují po uplynutí dob úschovy uvedených v §_31_odst._2 dále tak<SPLIT>, aby byly zajištěny požadavky vyplývající z jejich použití pro uvedené účely<SPLIT>; v případě<SPLIT>, kdy účetní jednotky použijí účetní záznamy k těmto účelům<SPLIT>, platí všechna ustanovení tohoto zákona týkající se účetních záznamů obdobně<SPLIT>.}
-False positives: {
-použijí
+nelze
 -
 li
 } False negatives: {
-použijí-li
+nelze-li
 }
 
 Expected: {
-(4) účetní záznam v technické nebo smíšené formě<SPLIT>, se skartačními znaky „<SPLIT>a<SPLIT>“ nebo „<SPLIT>v<SPLIT>“ vzniklý z činnosti účetní jednotky<SPLIT>, musí být ve formátu<SPLIT>, který zaručí jeho neměnnost a umožní jeho následnou čitelnost pro fyzickou osobu<SPLIT>.}
+(2) ustanovení této vyhlášky nemusí uplatnit účetní jednotky v likvidaci<SPLIT>, jejichž likvidace byla zahájena před 1<SPLIT>. lednem 1993<SPLIT>, a státní podniky hospodařící v režimu zákona_č._111/1990_sb.<SPLIT>, o státním podniku<SPLIT>, ve znění pozdějších předpisů<SPLIT>, do doby jejich zániku<SPLIT>.}
 Predicted: {
-(4) účetní záznam v technické nebo smíšené formě<SPLIT>, se skartačními znaky „<SPLIT>a“ nebo „<SPLIT>v“ vzniklý z činnosti účetní jednotky<SPLIT>, musí být ve formátu<SPLIT>, který zaručí jeho neměnnost a umožní jeho následnou čitelnost pro fyzickou osobu<SPLIT>.}
+(2) ustanovení této vyhlášky nemusí uplatnit účetní jednotky v likvidaci<SPLIT>, jejichž likvidace byla zahájena před 1<SPLIT>. lednem 1993<SPLIT>, a státní podniky hospodařící v režimu zákona_č._111<SPLIT>/<SPLIT>1990_sb.<SPLIT>, o státním podniku<SPLIT>, ve znění pozdějších předpisů<SPLIT>, do doby jejich zániku<SPLIT>.}
 False positives: {
-a“
-v“
+zákona_č._111
+/
+1990_sb.
 } False negatives: {
+zákona_č._111/1990_sb.
+}
+
+Expected: {
+2<SPLIT>. v prvním dni účetního období započatého 1.ledna 2004 a později se opravné položky u pohledávek<SPLIT>, které účetní jednotka nabyla v účetních obdobích započatých před 1<SPLIT>. lednem 2004 a určila k obchodování<SPLIT>, zruší ve prospěch nákladů<SPLIT>; ke stejnému okamžiku se zaúčtuje snížení hodnoty pohledávek prostřednictvím účtu v účtové skupině 58<SPLIT>.}
+Predicted: {
+2<SPLIT>. v prvním dni účetního období započatého 1<SPLIT>.<SPLIT>ledna 2004 a později se opravné položky u pohledávek<SPLIT>, které účetní jednotka nabyla v účetních obdobích započatých před 1<SPLIT>. lednem 2004 a určila k obchodování<SPLIT>, zruší ve prospěch nákladů<SPLIT>; ke stejnému okamžiku se zaúčtuje snížení hodnoty pohledávek prostřednictvím účtu v účtové skupině 58<SPLIT>.}
+False positives: {
+1
+.
+ledna
+} False negatives: {
+1.ledna
+}
+
+Expected: {
+přechodná ustanovení zavedena vyhláškou č._419/2010_sb._čl._ii}
+Predicted: {
+přechodná ustanovení zavedena vyhláškou č._419<SPLIT>/2010_sb._čl._ii}
+False positives: {
+č._419
+/2010_sb._čl._ii
+} False negatives: {
+č._419/2010_sb._čl._ii
+}
+
+Expected: {
+(3) účetní jednotky uvedené v §_1_odst._2_písm._e) jsou povinny vést účetnictví od prvního dne účetního období následujícího po kalendářním roce<SPLIT>, ve kterém se staly účetní jednotkou<SPLIT>, až do posledního dne účetního období<SPLIT>, ve kterém přestaly být účetní jednotkou<SPLIT>, nevznikla-li jim povinnost vést účetnictví podle §_1_odst._2_písm._d),_g) nebo h)<SPLIT>.}
+Predicted: {
+(3) účetní jednotky uvedené v §_1_odst._2_písm._e) jsou povinny vést účetnictví od prvního dne účetního období následujícího po kalendářním roce<SPLIT>, ve kterém se staly účetní jednotkou<SPLIT>, až do posledního dne účetního období<SPLIT>, ve kterém přestaly být účetní jednotkou<SPLIT>, nevznikla-<SPLIT>li jim povinnost vést účetnictví podle §_1_odst._2_písm._d),_g) nebo h<SPLIT>)<SPLIT>.}
+False positives: {
+nevznikla-
+li
+h
+)
+} False negatives: {
+nevznikla-li
+h)
+}
+
+Expected: {
+(1) z účetních jednotek podle §_1_odst._2 jsou povinny účetní závěrku i výroční zprávu<SPLIT>, vyžaduje-li její vyhotovení tento zákon nebo zvláštní právní předpis<SPLIT>, zveřejnit ty<SPLIT>, které se zapisují do obchodního rejstříku<SPLIT>, nebo ty<SPLIT>, kterým tuto povinnost stanoví zvláštní právní předpis<SPLIT>.}
+Predicted: {
+(1) z účetních jednotek podle §_1_odst._2 jsou povinny účetní závěrku i výroční zprávu<SPLIT>, vyžaduje<SPLIT>-<SPLIT>li její vyhotovení tento zákon nebo zvláštní právní předpis<SPLIT>, zveřejnit ty<SPLIT>, které se zapisují do obchodního rejstříku<SPLIT>, nebo ty<SPLIT>, kterým tuto povinnost stanoví zvláštní právní předpis<SPLIT>.}
+False positives: {
+vyžaduje
+-
+li
+} False negatives: {
+vyžaduje-li
+}
+
+Expected: {
+(4) pro účely tohoto zákona se jako reálná hodnota použije a) tržní hodnota<SPLIT>, b) ocenění kvalifikovaným odhadem nebo posudkem znalce<SPLIT>, není<SPLIT>-<SPLIT>li tržní hodnota k dispozici nebo tato nedostatečně představuje reálnou hodnotu<SPLIT>; metody ocenění použité při kvalifikovaném odhadu nebo posudku znalce musí zajistit přiměřené přiblížení se k tržní hodnotě<SPLIT>, c) ocenění stanovené podle zvláštních právních předpisů<SPLIT>, nelze-li postupovat podle písmen a)_a_b)<SPLIT>.}
+Predicted: {
+(4) pro účely tohoto zákona se jako reálná hodnota použije a) tržní hodnota<SPLIT>, b) ocenění kvalifikovaným odhadem nebo posudkem znalce<SPLIT>, není<SPLIT>-<SPLIT>li tržní hodnota k dispozici nebo tato nedostatečně představuje reálnou hodnotu<SPLIT>; metody ocenění použité při kvalifikovaném odhadu nebo posudku znalce musí zajistit přiměřené přiblížení se k tržní hodnotě<SPLIT>, c) ocenění stanovené podle zvláštních právních předpisů<SPLIT>, nelze<SPLIT>-<SPLIT>li postupovat podle písmen a)_a_b)<SPLIT>.}
+False positives: {
+nelze
+-
+li
+} False negatives: {
+nelze-li
+}
+
+Expected: {
+podíl<SPLIT>, který představuje účast v ovládané osobě nebo v osobě pod podstatným vlivem<SPLIT>, může být oceněn ekvivalencí (<SPLIT>protihodnotou<SPLIT>)<SPLIT>; použije-li účetní jednotka uvedený způsob ocenění<SPLIT>, je povinna jej použít pro ocenění všech takových podílů<SPLIT>.}
+Predicted: {
+podíl<SPLIT>, který představuje účast v ovládané osobě nebo v osobě pod podstatným vlivem<SPLIT>, může být oceněn ekvivalencí (<SPLIT>protihodnotou<SPLIT>)<SPLIT>; použije<SPLIT>-<SPLIT>li účetní jednotka uvedený způsob ocenění<SPLIT>, je povinna jej použít pro ocenění všech takových podílů<SPLIT>.}
+False positives: {
+použije
+-
+li
+} False negatives: {
+použije-li
+}
+
+Expected: {
+(6) účetní jednotky při inventarizaci periodické a) mohou zahájit , inventuru nejdříve b) čtyři ukončí měsíce inventuru před nejpozději rozvahovým dva dnem<SPLIT>měsíce po rozvahovém dni<SPLIT>.}
+Predicted: {
+(6) účetní jednotky při inventarizaci periodické a) mohou zahájit , inventuru nejdříve b) čtyři ukončí měsíce inventuru před nejpozději rozvahovým dva dnemměsíce po rozvahovém dni<SPLIT>.}
+False positives: {
+dnemměsíce
+} False negatives: {
+dnem
+měsíce
+}
+
+Expected: {
+tuto dokumentaci uschovávají účetní jednotky po dobu stanovenou v §_31_odst._2 podle toho<SPLIT>, jakou funkci plní při vedení účetnictví<SPLIT>, nejde-li o případ podle odstavce 1<SPLIT>.}
+Predicted: {
+tuto dokumentaci uschovávají účetní jednotky po dobu stanovenou v §_31_odst._2 podle toho<SPLIT>, jakou funkci plní při vedení účetnictví<SPLIT>, nejde<SPLIT>-<SPLIT>li o případ podle odstavce 1<SPLIT>.}
+False positives: {
+nejde
+-
+li
+} False negatives: {
+nejde-li
+}
+
+Expected: {
+pro účely tohoto zákona se považuje za a) listinnou formu účetní záznam provedený na analogový nosič rukopisem<SPLIT>, psacím strojem<SPLIT>, tiskařskými nebo reprografickými technikami anebo tiskovým výstupním zařízením výpočetní techniky<SPLIT>, jehož obsah je pro fyzickou osobu čitelný<SPLIT>, b) technickou formu účetní záznam provedený elektronickým<SPLIT>, optickým nebo jiným způsobem nespadajícím pod písmeno a)<SPLIT>, který umožňuje jeho převedení do formy<SPLIT>, v níž je jeho obsah pro fyzickou osobu čitelný<SPLIT>, c) smíšenou formu účetní záznam v listinné formě obsahující též informace v technické formě pro fyzickou osobu nečitelné<SPLIT>, který umožňuje jeho převedení do formy<SPLIT>, v níž je jeho obsah pro fyzickou osobu čitelný<SPLIT>.}
+Predicted: {
+pro účely tohoto zákona se považuje za a) listinnou formu účetní záznam provedený na analogový nosič rukopisem<SPLIT>, psacím strojem<SPLIT>, tiskařskými nebo reprografickými technikami anebo tiskovým výstupním zařízením výpočetní techniky<SPLIT>, jehož obsah je pro fyzickou osobu čitelný<SPLIT>, b) technickou formu účetní záznam provedený elektronickým<SPLIT>, optickým nebo jiným způsobem nespadajícím pod písmeno a<SPLIT>)<SPLIT>, který umožňuje jeho převedení do formy<SPLIT>, v níž je jeho obsah pro fyzickou osobu čitelný<SPLIT>, c) smíšenou formu účetní záznam v listinné formě obsahující též informace v technické formě pro fyzickou osobu nečitelné<SPLIT>, který umožňuje jeho převedení do formy<SPLIT>, v níž je jeho obsah pro fyzickou osobu čitelný<SPLIT>.}
+False positives: {
 a
-“
-v
-“
+)
+} False negatives: {
+a)
 }
 
 Expected: {
-(1) účetní jednotka neuvedená v §_37 se dopustí správního deliktu tím<SPLIT>, že a) nevede účetnictví podle §_4_odst._1<SPLIT>, b) nesestaví účetní závěrku podle §_6_odst._4<SPLIT>, nebo nesestaví účetní závěrku ke dni stanovenému v §_19_odst._1<SPLIT>, nebo nevyhotoví výroční zprávu podle §_21_odst._1_až_5<SPLIT>, c) vede účetnictví v rozporu s §_7_odst._1_a_2<SPLIT>, d) vede účetnictví v rozporu s §_8_odst._2<SPLIT>, e) jí sestavená účetní závěrka neobsahuje všechny povinné součásti uvedené v §_18_odst._1 nebo 2<SPLIT>, f) v rozporu s §_19a_odst._1 nepoužije pro účtování a sestavení účetní závěrky mezinárodní účetní standardy<SPLIT>, g) v rozporu s §_20_odst._1 nemá účetní závěrku ověřenou auditorem nebo v rozporu s §_21_odst._6 nemá výroční zprávu ověřenou auditorem<SPLIT>, h) nezveřejní účetní závěrku nebo výroční zprávu podle §_21a<SPLIT>, i) nesestaví účetní výkazy za dílčí konsolidační celek státu nebo účetní výkazy za českou republiku<SPLIT>, ač je k tomu povinna podle §_23b<SPLIT>, j) v rozporu s §_31 neuschová účetní záznamy<SPLIT>, nebo k) nezajistí podmínky pro předávání účetních záznamů do centrálního systému účetních informací státu způsobem stanoveným prováděcím právním předpisem vydaným na základě §_4_odst._8_a_§_23b_odst._534<SPLIT>) nebo nepředá účetní záznam do centrálního systému účetních informací státu<SPLIT>, ač jí tuto povinnost stanoví zákon nebo jiný právní předpis<SPLIT>.}
+(2) ode dne účinnosti tohoto zákona nepostupuje federální ministerstvo financí podle ustanovení §_4_odst._2,_§_14_a_§_35_odst._3_zákona_č._21/1971_sb.<SPLIT>, o jednotné soustavě sociálně ekonomických informací<SPLIT>, ve znění zákona_č._128/1989_sb.}
 Predicted: {
-(1) účetní jednotka neuvedená v §_37 se dopustí správního deliktu tím<SPLIT>, že a) nevede účetnictví podle §_4_odst._1<SPLIT>, b) nesestaví účetní závěrku podle §_6_odst._4<SPLIT>, nebo nesestaví účetní závěrku ke dni stanovenému v §_19_odst._1<SPLIT>, nebo nevyhotoví výroční zprávu podle §_21_odst._1_až_5<SPLIT>, c) vede účetnictví v rozporu s §_7_odst._1_a_2<SPLIT>, d) vede účetnictví v rozporu s §_8_odst._2<SPLIT>, e) jí sestavená účetní závěrka neobsahuje všechny povinné součásti uvedené v §_18_odst._1 nebo 2<SPLIT>, f) v rozporu s §_19a_odst._1 nepoužije pro účtování a sestavení účetní závěrky mezinárodní účetní standardy<SPLIT>, g) v rozporu s §_20_odst._1 nemá účetní závěrku ověřenou auditorem nebo v rozporu s §_21_odst._6 nemá výroční zprávu ověřenou auditorem<SPLIT>, h) nezveřejní účetní závěrku nebo výroční zprávu podle §_21a<SPLIT>, i<SPLIT>) nesestaví účetní výkazy za dílčí konsolidační celek státu nebo účetní výkazy za českou republiku<SPLIT>, ač je k tomu povinna podle §_23b<SPLIT>, j) v rozporu s §_31 neuschová účetní záznamy<SPLIT>, nebo k<SPLIT>) nezajistí podmínky pro předávání účetních záznamů do centrálního systému účetních informací státu způsobem stanoveným prováděcím právním předpisem vydaným na základě §_4_odst._8_a_§_23b_odst._534<SPLIT>) nebo nepředá účetní záznam do centrálního systému účetních informací státu<SPLIT>, ač jí tuto povinnost stanoví zákon nebo jiný právní předpis<SPLIT>.}
+(2) ode dne účinnosti tohoto zákona nepostupuje federální ministerstvo financí podle ustanovení §_4_odst._2,_§_14_a_§_35_odst._3_zákona_č._21<SPLIT>/<SPLIT>1971_sb.<SPLIT>, o jednotné soustavě sociálně ekonomických informací<SPLIT>, ve znění zákona_č._128<SPLIT>/<SPLIT>1989_sb.}
 False positives: {
-i
+§_4_odst._2,_§_14_a_§_35_odst._3_zákona_č._21
+/
+1971_sb.
+zákona_č._128
+/
+1989_sb.
+} False negatives: {
+§_4_odst._2,_§_14_a_§_35_odst._3_zákona_č._21/1971_sb.
+zákona_č._128/1989_sb.
+}
+
+Expected: {
+tato vyhláška zapracovávqá příslušné předpisy evropské unie a upravuje<SPLIT>: a) rozsah a způsob sestavování účetní závěrky<SPLIT>; uspořádání<SPLIT>, označování a obsahové vymezení položek majetku a jiných aktiv<SPLIT>, závazků a jiných pasiv v účetní závěrce<SPLIT>; uspořádání<SPLIT>, označování a obsahové vymezení nákladů<SPLIT>, výnosů a výsledků hospodaření v účetní závěrce<SPLIT>; uspořádání a obsahové vymezení vysvětlujících a doplňujících informací v příloze v účetní závěrce<SPLIT>; uspořádání<SPLIT>, označování a obsahové vymezení položek konsolidované účetní závěrky<SPLIT>; metody konsolidace účetní závěrky a postup zahrnování účetních jednotek do konsolidačního celku<SPLIT>; b) uspořádání a obsahové vymezení přehledu o peněžních tocích a přehledu o změnách vlastního kapitálu<SPLIT>; směrnou účtovou osnovu<SPLIT>; účetní metody<SPLIT>; metody přechodu z daňové evidence podle zvláštního zákona na účetnictví<SPLIT>; c) metodu ocenění při pořízení souboru movitých věcí se samostatným technicko-ekonomickým určením<SPLIT>; d) metodu oceňování při přeměně společnosti nebo družstva (<SPLIT>dále jen „<SPLIT>společnost<SPLIT>“<SPLIT>) podle zákona upravujícího přeměny obchodních společností a družstev (<SPLIT>dále jen „<SPLIT>zákon o přeměnách<SPLIT>“<SPLIT>)<SPLIT>, včetně úprav prováděných v rámci přeměn společnosti ke dni zápisu do obchodního rejstříku s účinky od rozhodného dne<SPLIT>; e) metodu sestavení zahajovací rozvahy při přeměně společnosti<SPLIT>; f) úpravy při přeshraniční přeměně nebo převodu podniku<SPLIT>; g) metodu ocenění při nabytí více než jedné složky majetku převodem či přechodem<SPLIT>, včetně možnosti použití způsobu oceňování podle §_24_odst._3_písm._a)_bodu_1 v případě přeshraniční přeměny<SPLIT>, vkladu nebo prodeje podniku<SPLIT>; h) ocenění majetku a závazků při přeměně společnosti včetně okamžiku účtování o ocenění reálnou hodnotou<SPLIT>.}
+Predicted: {
+tato vyhláška zapracovávqá příslušné předpisy evropské unie a upravuje<SPLIT>: a) rozsah a způsob sestavování účetní závěrky<SPLIT>; uspořádání<SPLIT>, označování a obsahové vymezení položek majetku a jiných aktiv<SPLIT>, závazků a jiných pasiv v účetní závěrce<SPLIT>; uspořádání<SPLIT>, označování a obsahové vymezení nákladů<SPLIT>, výnosů a výsledků hospodaření v účetní závěrce<SPLIT>; uspořádání a obsahové vymezení vysvětlujících a doplňujících informací v příloze v účetní závěrce<SPLIT>; uspořádání<SPLIT>, označování a obsahové vymezení položek konsolidované účetní závěrky<SPLIT>; metody konsolidace účetní závěrky a postup zahrnování účetních jednotek do konsolidačního celku<SPLIT>; b) uspořádání a obsahové vymezení přehledu o peněžních tocích a přehledu o změnách vlastního kapitálu<SPLIT>; směrnou účtovou osnovu<SPLIT>; účetní metody<SPLIT>; metody přechodu z daňové evidence podle zvláštního zákona na účetnictví<SPLIT>; c) metodu ocenění při pořízení souboru movitých věcí se samostatným technicko-ekonomickým určením<SPLIT>; d) metodu oceňování při přeměně společnosti nebo družstva (<SPLIT>dále jen „<SPLIT>společnost<SPLIT>“<SPLIT>) podle zákona upravujícího přeměny obchodních společností a družstev (<SPLIT>dále jen „<SPLIT>zákon o přeměnách<SPLIT>“<SPLIT>)<SPLIT>, včetně úprav prováděných v rámci přeměn společnosti ke dni zápisu do obchodního rejstříku s účinky od rozhodného dne<SPLIT>; e) metodu sestavení zahajovací rozvahy při přeměně společnosti<SPLIT>; f) úpravy při přeshraniční přeměně nebo převodu podniku<SPLIT>; g) metodu ocenění při nabytí více než jedné složky majetku převodem či přechodem<SPLIT>, včetně možnosti použití způsobu oceňování podle §_24_odst._3_písm._a)_bodu_1 v případě přeshraniční přeměny<SPLIT>, vkladu nebo prodeje podniku<SPLIT>; h<SPLIT>) ocenění majetku a závazků při přeměně společnosti včetně okamžiku účtování o ocenění reálnou hodnotou<SPLIT>.}
+False positives: {
+h
 )
+} False negatives: {
+h)
+}
+
+Expected: {
+(6) položka „<SPLIT>c.ii.5. dlouhodobé poskytnuté zálohy<SPLIT>“ obsahuje u všech účetních jednotek poskytnuté dlouhodobé zálohy<SPLIT>, s výjimkou záloh vykázaných v položkách „<SPLIT>b.i.8. poskytnuté zálohy na dlouhodobý nehmotný majetek<SPLIT>“<SPLIT>, „<SPLIT>b.ii.8. poskytnuté zálohy na dlouhodobý hmotný majetek<SPLIT>“<SPLIT>, „<SPLIT>b.iii.7. poskytnuté zálohy na dlouhodobý finanční majetek<SPLIT>“<SPLIT>, „<SPLIT>c.i.6. poskytnuté zálohy na zásoby<SPLIT>“ a „<SPLIT>c.iii.7. krátkodobé poskytnuté zálohy<SPLIT>“<SPLIT>.}
+Predicted: {
+(6) položka „<SPLIT>c.ii.5<SPLIT>. dlouhodobé poskytnuté zálohy<SPLIT>“ obsahuje u všech účetních jednotek poskytnuté dlouhodobé zálohy<SPLIT>, s výjimkou záloh vykázaných v položkách „<SPLIT>b.i.8<SPLIT>. poskytnuté zálohy na dlouhodobý nehmotný majetek<SPLIT>“<SPLIT>, „<SPLIT>b.ii.8<SPLIT>. poskytnuté zálohy na dlouhodobý hmotný majetek<SPLIT>“<SPLIT>, „<SPLIT>b.iii.7<SPLIT>. poskytnuté zálohy na dlouhodobý finanční majetek<SPLIT>“<SPLIT>, „<SPLIT>c.i.6. poskytnuté zálohy na zásoby<SPLIT>“ a „<SPLIT>c.iii.7<SPLIT>. krátkodobé poskytnuté zálohy<SPLIT>“<SPLIT>.}
+False positives: {
+c.ii.5
+.
+b.i.8
+.
+b.ii.8
+.
+b.iii.7
+.
+c.iii.7
+.
+} False negatives: {
+c.ii.5.
+b.i.8.
+b.ii.8.
+b.iii.7.
+c.iii.7.
+}
+
+Expected: {
+položka „<SPLIT>ii. výkony<SPLIT>“ obsahuje a) tržby za prodej vlastních výrobků a služeb<SPLIT>, b) změnu stavu zásob vlastní výroby<SPLIT>, to je nedokončené výroby<SPLIT>, polotovarů<SPLIT>, výrobků a mladých a ostatních zvířat a jejich skupin<SPLIT>; tato položka může mít i zápornou hodnotu<SPLIT>, c) aktivaci<SPLIT>, v této položce je hodnota aktivovaných nákladů zejména na zásoby a dlouhodobý nehmotný a hmotný majetek vytvořený vlastní činností<SPLIT>.}
+Predicted: {
+položka „<SPLIT>ii<SPLIT>. výkony<SPLIT>“ obsahuje a) tržby za prodej vlastních výrobků a služeb<SPLIT>, b) změnu stavu zásob vlastní výroby<SPLIT>, to je nedokončené výroby<SPLIT>, polotovarů<SPLIT>, výrobků a mladých a ostatních zvířat a jejich skupin<SPLIT>; tato položka může mít i zápornou hodnotu<SPLIT>, c) aktivaci<SPLIT>, v této položce je hodnota aktivovaných nákladů zejména na zásoby a dlouhodobý nehmotný a hmotný majetek vytvořený vlastní činností<SPLIT>.}
+False positives: {
+ii
+.
+} False negatives: {
+ii.
+}
+
+Expected: {
+a) (9) celkovou v výši další závazků<SPLIT>části , přílohy je<SPLIT>-<SPLIT>li uvede tato účetní informace jednotka významná informace<SPLIT>k , posouzení které finanční nejsou situace vykázány účetní v jednotky<SPLIT>rozvaze , (<SPLIT>bilanci<SPLIT>b) )<SPLIT>s : ohledem na . princip významnosti drobný nehmotný a hmotný majetek<SPLIT>, c) charakter a obchodní účel operací účetní jednotky<SPLIT>, která je právnickou osobou<SPLIT>, jsou<SPLIT>-<SPLIT>li rizika nebo užitky z těchto operací významné a pokud je zveřejnění těchto rizik nebo užitků nezbytné k posouzení finanční situace účetní jednotky}
+Predicted: {
+a) (9) celkovou v výši další závazkůčásti , přílohy je<SPLIT>-<SPLIT>li uvede tato účetní informace jednotka významná informacek , posouzení které finanční nejsou situace vykázány účetní v jednotkyrozvaze , (<SPLIT>bilancib<SPLIT>) )<SPLIT>s : ohledem na . princip významnosti drobný nehmotný a hmotný majetek<SPLIT>, c) charakter a obchodní účel operací účetní jednotky<SPLIT>, která je právnickou osobou<SPLIT>, jsou<SPLIT>-<SPLIT>li rizika nebo užitky z těchto operací významné a pokud je zveřejnění těchto rizik nebo užitků nezbytné k posouzení finanční situace účetní jednotky}
+False positives: {
+závazkůčásti
+informacek
+jednotkyrozvaze
+bilancib
+)
+} False negatives: {
+závazků
+části
+informace
 k
-)
-} False negatives: {
-i)
-k)
-}
-
-Expected: {
-položka „<SPLIT>***výsledek hospodaření za účetní období<SPLIT>“ uvedená ve výkazu zisku a ztráty se musí rovnat položce „<SPLIT>a. v. výsledek hospodaření běžného účetního období<SPLIT>“ uvedené v rozvaze (<SPLIT>bilanci<SPLIT>)<SPLIT>.}
-Predicted: {
-položka „<SPLIT>**<SPLIT>*výsledek hospodaření za účetní období<SPLIT>“ uvedená ve výkazu zisku a ztráty se musí rovnat položce „<SPLIT>a. v<SPLIT>. výsledek hospodaření běžného účetního období<SPLIT>“ uvedené v rozvaze (<SPLIT>bilanci<SPLIT>)<SPLIT>.}
-False positives: {
-**
-*výsledek
-v
-.
-} False negatives: {
-***výsledek
-v.
-}
-
-Expected: {
-(9) položka „<SPLIT>b.ii.8. poskytnuté zálohy na dlouhodobý hmotný majetek<SPLIT>“ obsahuje krátkodobé a dlouhodobé zálohy poskytnuté na pořízení dlouhodobého hmotného majetku<SPLIT>.}
-Predicted: {
-(9) položka „<SPLIT>b.ii.8<SPLIT>. poskytnuté zálohy na dlouhodobý hmotný majetek<SPLIT>“ obsahuje krátkodobé a dlouhodobé zálohy poskytnuté na pořízení dlouhodobého hmotného majetku<SPLIT>.}
-False positives: {
-b.ii.8
-.
-} False negatives: {
-b.ii.8.
-}
-
-Expected: {
-(8) položka „<SPLIT>c.ii.7. jiné pohledávky<SPLIT>“ obsahuje u všech účetních jednotek zejména dlouhodobé pohledávky za zaměstnanci<SPLIT>, pohledávky z prodeje podniku nebo jeho části<SPLIT>, pohledávky z pronájmu podniku nebo jeho části<SPLIT>, nakoupené opce<SPLIT>, pohledávky z titulu náhrady mank a škod a dlouhodobé pohledávky z vydaných dluhopisů<SPLIT>.}
-Predicted: {
-(8) položka „<SPLIT>c.ii.7<SPLIT>. jiné pohledávky<SPLIT>“ obsahuje u všech účetních jednotek zejména dlouhodobé pohledávky za zaměstnanci<SPLIT>, pohledávky z prodeje podniku nebo jeho části<SPLIT>, pohledávky z pronájmu podniku nebo jeho části<SPLIT>, nakoupené opce<SPLIT>, pohledávky z titulu náhrady mank a škod a dlouhodobé pohledávky z vydaných dluhopisů<SPLIT>.}
-False positives: {
-c.ii.7
-.
-} False negatives: {
-c.ii.7.
-}
-
-Expected: {
-položka „<SPLIT>a.iii. rezervní fondy, nedělitelný fond a ostatní fondy ze zisku<SPLIT>“ obsahuje fondy vytvářené podle obchodního zákoníku<SPLIT>, popřípadě stanov<SPLIT>, společenské smlouvy<SPLIT>, zakladatelské smlouvy<SPLIT>, zakladatelské listiny nebo podle zákona o státním podniku<SPLIT>.}
-Predicted: {
-položka „<SPLIT>a.iii<SPLIT>. rezervní fondy<SPLIT>, nedělitelný fond a ostatní fondy ze zisku<SPLIT>“ obsahuje fondy vytvářené podle obchodního zákoníku<SPLIT>, popřípadě stanov<SPLIT>, společenské smlouvy<SPLIT>, zakladatelské smlouvy<SPLIT>, zakladatelské listiny nebo podle zákona o státním podniku<SPLIT>.}
-False positives: {
-a.iii
-.
-fondy
-,
-} False negatives: {
-a.iii.
-fondy,
-}
-
-Expected: {
-(2) obsahové vymezení položek krátkodobých závazků „<SPLIT>b.iii.1. závazky z obchodních vztahů<SPLIT>“ až „<SPLIT>b.iii.3. závazky - podstatný vliv<SPLIT>“<SPLIT>, „<SPLIT>b.iii.9. vydané dluhopisy<SPLIT>“ a „<SPLIT>b.iii.10. dohadné účty pasivní<SPLIT>“ je obdobné obsahovému vymezení položek dlouhodobých závazků „<SPLIT>b.ii.1. závazky z obchodních vztahů<SPLIT>“ až „<SPLIT>b.ii.3. závazky - podstatný vliv<SPLIT>“<SPLIT>, „<SPLIT>b.ii.6. vydané dluhopisy<SPLIT>“ a „<SPLIT>b.ii.8. dohadné účty pasivní<SPLIT>“<SPLIT>.}
-Predicted: {
-(2) obsahové vymezení položek krátkodobých závazků „<SPLIT>b.iii.1. závazky z obchodních vztahů<SPLIT>“ až „<SPLIT>b.iii.3. závazky - podstatný vliv<SPLIT>“<SPLIT>, „<SPLIT>b.iii.9<SPLIT>. vydané dluhopisy<SPLIT>“ a „<SPLIT>b.iii.10<SPLIT>. dohadné účty pasivní<SPLIT>“ je obdobné obsahovému vymezení položek dlouhodobých závazků „<SPLIT>b.ii.1. závazky z obchodních vztahů<SPLIT>“ až „<SPLIT>b.ii.3. závazky - podstatný vliv<SPLIT>“<SPLIT>, „<SPLIT>b.ii.6. vydané dluhopisy<SPLIT>“ a „<SPLIT>b.ii.8<SPLIT>. dohadné účty pasivní<SPLIT>“<SPLIT>.}
-False positives: {
-b.iii.9
-.
-b.iii.10
-.
-b.ii.8
-.
-} False negatives: {
-b.iii.9.
-b.iii.10.
-b.ii.8.
-}
-
-Expected: {
-(5) položka „<SPLIT>*** výsledek hospodaření za účetní období<SPLIT>“ a) ve výkazu zisku a ztráty - druhové členění je součtem položek „<SPLIT>** výsledek hospodaření za běžnou činnost<SPLIT>“ a „<SPLIT>* mimořádný výsledek hospodaření<SPLIT>“ sníženým o položku „<SPLIT>t. převod podílu na výsledku hospodaření společníkům<SPLIT>“<SPLIT>, b) ve výkazu zisku a ztráty - účelové členění je součtem položek „<SPLIT>** výsledek hospodaření za běžnou činnost<SPLIT>“ a „<SPLIT>* mimořádný výsledek hospodaření<SPLIT>“ sníženým o položku „<SPLIT>o. převod podílu na výsledku hospodaření společníkům<SPLIT>“<SPLIT>.}
-Predicted: {
-(5) položka „<SPLIT>**<SPLIT>* výsledek hospodaření za účetní období<SPLIT>“ a) ve výkazu zisku a ztráty - druhové členění je součtem položek „<SPLIT>** výsledek hospodaření za běžnou činnost<SPLIT>“ a „<SPLIT>* mimořádný výsledek hospodaření<SPLIT>“ sníženým o položku „<SPLIT>t. převod podílu na výsledku hospodaření společníkům<SPLIT>“<SPLIT>, b) ve výkazu zisku a ztráty - účelové členění je součtem položek „<SPLIT>** výsledek hospodaření za běžnou činnost<SPLIT>“ a „<SPLIT>* mimořádný výsledek hospodaření<SPLIT>“ sníženým o položku „<SPLIT>o. převod podílu na výsledku hospodaření společníkům<SPLIT>“<SPLIT>.}
-False positives: {
-**
-*
-} False negatives: {
-***
-}
-
-Expected: {
-(13) účetní jednotka<SPLIT>, která je právnickou osobou a překročila ke konci rozvahového dne<SPLIT>, za který se účetní závěrka sestavuje<SPLIT>, alespoň dvě ze tří kritérií uvedených v odstavci 9 písm._c)<SPLIT>, dále v příloze uvede a) informaci o rozčlenění tržeb z prodeje zboží<SPLIT>, výrobků a služeb podle kategorií činností a podle zeměpisných trhů<SPLIT>, pokud se tyto kategorie a trhy mezi sebou podstatně liší z hlediska způsobu<SPLIT>, kterým je organizován prodej zboží a výrobků a poskytování služeb spadajících do běžné činnosti účetní jednotky<SPLIT>, b) vysvětlení částky vykázané v položce „<SPLIT>b.i.1. zřizovací výdaje<SPLIT>“<SPLIT>.}
-Predicted: {
-(<SPLIT>13<SPLIT>) účetní jednotka<SPLIT>, která je právnickou osobou a překročila ke konci rozvahového dne<SPLIT>, za který se účetní závěrka sestavuje<SPLIT>, alespoň dvě ze tří kritérií uvedených v odstavci 9 písm._c)<SPLIT>, dále v příloze uvede a) informaci o rozčlenění tržeb z prodeje zboží<SPLIT>, výrobků a služeb podle kategorií činností a podle zeměpisných trhů<SPLIT>, pokud se tyto kategorie a trhy mezi sebou podstatně liší z hlediska způsobu<SPLIT>, kterým je organizován prodej zboží a výrobků a poskytování služeb spadajících do běžné činnosti účetní jednotky<SPLIT>, b) vysvětlení částky vykázané v položce „<SPLIT>b.i.1. zřizovací výdaje<SPLIT>“<SPLIT>.}
-False positives: {
-(
-13
-)
-} False negatives: {
-(13)
-}
-
-Expected: {
-§_61a}
-Predicted: {
-§_61<SPLIT>a}
-False positives: {
-§_61
-a
-} False negatives: {
-§_61a
-}
-
-Expected: {
-(2) rozvaha se podle použité metody konsolidace doplní o položky a) kladný konsolidační rozdíl<SPLIT>, b) záporný konsolidační rozdíl<SPLIT>, c) menšinový vlastní kapitál<SPLIT>, d) menšinový základní kapitál<SPLIT>, e) menšinové kapitálové fondy<SPLIT>, f) menšinové fondy ze zisku včetně nerozděleného zisku a neuhrazené ztráty minulých let<SPLIT>, g) menšinový výsledek hospodaření běžného účetního období<SPLIT>, h) cenné papíry a podíly v ekvivalenci<SPLIT>, i) konsolidační rezervní fond<SPLIT>, j) podíl na výsledku hospodaření v ekvivalenci<SPLIT>.}
-Predicted: {
-(2) rozvaha se podle použité metody konsolidace doplní o položky a) kladný konsolidační rozdíl<SPLIT>, b) záporný konsolidační rozdíl<SPLIT>, c) menšinový vlastní kapitál<SPLIT>, d) menšinový základní kapitál<SPLIT>, e) menšinové kapitálové fondy<SPLIT>, f) menšinové fondy ze zisku včetně nerozděleného zisku a neuhrazené ztráty minulých let<SPLIT>, g) menšinový výsledek hospodaření běžného účetního období<SPLIT>, h) cenné papíry a podíly v ekvivalenci<SPLIT>, i<SPLIT>) konsolidační rezervní fond<SPLIT>, j) podíl na výsledku hospodaření v ekvivalenci<SPLIT>.}
-False positives: {
-i
-)
-} False negatives: {
-i)
-}
-
-Expected: {
-2<SPLIT>. v případech<SPLIT>, kdy byl projekt přeměny vypracován podle zákona_č._125/2008_sb.<SPLIT>, o přeměnách obchodních společností a družstev<SPLIT>, ve znění účinném do 31<SPLIT>. prosince 2011<SPLIT>, postupuje se při účtování o přeměně společnosti podle vyhlášky_č._500/2002_sb.<SPLIT>, ve znění účinném do dne nabytí účinnosti této vyhlášky<SPLIT>.}
-Predicted: {
-2<SPLIT>. v případech<SPLIT>, kdy byl projekt přeměny vypracován podle zákona_č._125<SPLIT>/2008_sb.<SPLIT>, o přeměnách obchodních společností a družstev<SPLIT>, ve znění účinném do 31<SPLIT>. prosince 2011<SPLIT>, postupuje se při účtování o přeměně společnosti podle vyhlášky_č._500/2002_sb.<SPLIT>, ve znění účinném do dne nabytí účinnosti této vyhlášky<SPLIT>.}
-False positives: {
-zákona_č._125
-/2008_sb.
-} False negatives: {
-zákona_č._125/2008_sb.
-}
-
-Expected: {
-(14) za informační systém podle zvláštního právního předpisu lze účetnictví považovat pouze jako celek<SPLIT>.}
-Predicted: {
-(<SPLIT>14<SPLIT>) za informační systém podle zvláštního právního předpisu lze účetnictví považovat pouze jako celek<SPLIT>.}
-False positives: {
-(
-14
-)
-} False negatives: {
-(14)
-}
-
-Expected: {
-(2) hlavní kniha zahrnuje syntetické účty podle účtového rozvrhu<SPLIT>, které obsahují minimálně tyto informace<SPLIT>: a) zůstatky účtů ke dni<SPLIT>, k němuž se otevírá hlavní kniha<SPLIT>, b) souhrnné obraty strany má dáti a dal účtů<SPLIT>, alespoň za kalendářní měsíc<SPLIT>; vybrané účetní jednotky uvádějí souhrnné obraty denně<SPLIT>, nenaplní-li tuto povinnost vybraná účetní jednotka v jiné účetní knize<SPLIT>, c) zůstatky účtů ke dni<SPLIT>, ke kterému se sestavuje účetní závěrka<SPLIT>.}
-Predicted: {
-(2) hlavní kniha zahrnuje syntetické účty podle účtového rozvrhu<SPLIT>, které obsahují minimálně tyto informace<SPLIT>: a) zůstatky účtů ke dni<SPLIT>, k němuž se otevírá hlavní kniha<SPLIT>, b) souhrnné obraty strany má dáti a dal účtů<SPLIT>, alespoň za kalendářní měsíc<SPLIT>; vybrané účetní jednotky uvádějí souhrnné obraty denně<SPLIT>, nenaplní<SPLIT>-<SPLIT>li tuto povinnost vybraná účetní jednotka v jiné účetní knize<SPLIT>, c) zůstatky účtů ke dni<SPLIT>, ke kterému se sestavuje účetní závěrka<SPLIT>.}
-False positives: {
-nenaplní
--
-li
-} False negatives: {
-nenaplní-li
-}
-
-Expected: {
-(1) není<SPLIT>-<SPLIT>li dále stanoveno jinak<SPLIT>, účetní jednotky otevírají účetní knihy a) ke dni vzniku povinnosti vést účetnictví<SPLIT>, b) k prvnímu dni účetního období<SPLIT>, c) ke dni vstupu do likvidace<SPLIT>, d) ke dni následujícímu po dni zpracování návrhu na rozdělení likvidačního zůstatku nebo ke dni následujícímu po dni zpracování zprávy o naložení s majetkem podle zvláštních právních předpisů<SPLIT>, e) ke dni<SPLIT>, kterým nastanou účinky rozhodnutí o úpadku nebo ke kterému nastanou účinky rozhodnutí soudu o přeměně reorganizace v konkurs<SPLIT>, f) ke dni následujícímu po dni<SPLIT>, kterým nastanou účinky zrušení konkursu<SPLIT>, g) ke dni<SPLIT>, kterým nastanou účinky schválení reorganizačního plánu<SPLIT>, h) ke dni následujícímu po dni<SPLIT>, kterým nastanou účinky splnění reorganizačního plánu<SPLIT>, i) ke dni následujícímu po dni<SPLIT>, kterým nastanou účinky splnění plánu oddlužení<SPLIT>, nebo j) ke dni<SPLIT>, který pro sestavení zahajovací rozvahy stanoví zvláštní právní předpis<SPLIT>.}
-Predicted: {
-(1) není<SPLIT>-<SPLIT>li dále stanoveno jinak<SPLIT>, účetní jednotky otevírají účetní knihy a) ke dni vzniku povinnosti vést účetnictví<SPLIT>, b) k prvnímu dni účetního období<SPLIT>, c) ke dni vstupu do likvidace<SPLIT>, d) ke dni následujícímu po dni zpracování návrhu na rozdělení likvidačního zůstatku nebo ke dni následujícímu po dni zpracování zprávy o naložení s majetkem podle zvláštních právních předpisů<SPLIT>, e) ke dni<SPLIT>, kterým nastanou účinky rozhodnutí o úpadku nebo ke kterému nastanou účinky rozhodnutí soudu o přeměně reorganizace v konkurs<SPLIT>, f) ke dni následujícímu po dni<SPLIT>, kterým nastanou účinky zrušení konkursu<SPLIT>, g) ke dni<SPLIT>, kterým nastanou účinky schválení reorganizačního plánu<SPLIT>, h) ke dni následujícímu po dni<SPLIT>, kterým nastanou účinky splnění reorganizačního plánu<SPLIT>, i<SPLIT>) ke dni následujícímu po dni<SPLIT>, kterým nastanou účinky splnění plánu oddlužení<SPLIT>, nebo j) ke dni<SPLIT>, který pro sestavení zahajovací rozvahy stanoví zvláštní právní předpis<SPLIT>.}
-False positives: {
-i
-)
-} False negatives: {
-i)
-}
-
-Expected: {
-občanská sdružení<SPLIT>, jejich organizační jednotky<SPLIT>, které mají právní subjektivitu<SPLIT>, církve a náboženské společnosti nebo církevní instituce<SPLIT>, které jsou církevní právnickou osobou<SPLIT>, a honební společenstva mohou vést účetnictví podle zákona_č._563/1991_sb.<SPLIT>, o účetnictví<SPLIT>, ve znění zákona_č._117/1994_sb.,_zákona_č._227/1997_sb.,_zákona_č._492/2000_sb.,_zákona_č._353/2001_sb._a_zákona_č._437/2003_sb.<SPLIT>, pokud jejich celkové příjmy za poslední uzavřené účetní období nepřesáhnou 3000000 kč<SPLIT>; přitom se na ně vztahují ustanovení zákona_č._563/1991_sb.<SPLIT>, o účetnictví<SPLIT>, a jeho prováděcích právních předpisů<SPLIT>, která upravují účtování v soustavě jednoduchého účetnictví<SPLIT>, ve znění účinném k 31<SPLIT>. prosinci 2003<SPLIT>.}
-Predicted: {
-občanská sdružení<SPLIT>, jejich organizační jednotky<SPLIT>, které mají právní subjektivitu<SPLIT>, církve a náboženské společnosti nebo církevní instituce<SPLIT>, které jsou církevní právnickou osobou<SPLIT>, a honební společenstva mohou vést účetnictví podle zákona_č._563/<SPLIT>1991_sb.<SPLIT>, o účetnictví<SPLIT>, ve znění zákona_č._117<SPLIT>/<SPLIT>1994_sb.,_zákona_č._227<SPLIT>/<SPLIT>1997_sb.,_zákona_č._492<SPLIT>/<SPLIT>2000_sb.,_zákona_č._353/2001_sb._a_zákona_č._437<SPLIT>/<SPLIT>2003_sb.<SPLIT>, pokud jejich celkové příjmy za poslední uzavřené účetní období nepřesáhnou 3000000 kč<SPLIT>; přitom se na ně vztahují ustanovení zákona_č._563/<SPLIT>1991_sb.<SPLIT>, o účetnictví<SPLIT>, a jeho prováděcích právních předpisů<SPLIT>, která upravují účtování v soustavě jednoduchého účetnictví<SPLIT>, ve znění účinném k 31<SPLIT>. prosinci 2003<SPLIT>.}
-False positives: {
-zákona_č._563/
-1991_sb.
-zákona_č._117
-/
-1994_sb.,_zákona_č._227
-/
-1997_sb.,_zákona_č._492
-/
-2000_sb.,_zákona_č._353/2001_sb._a_zákona_č._437
-/
-2003_sb.
-zákona_č._563/
-1991_sb.
-} False negatives: {
-zákona_č._563/1991_sb.
-zákona_č._117/1994_sb.,_zákona_č._227/1997_sb.,_zákona_č._492/2000_sb.,_zákona_č._353/2001_sb._a_zákona_č._437/2003_sb.
-zákona_č._563/1991_sb.
+jednotky
+rozvaze
+bilanci
+b)
 }
 
 Expected: {
 ha-vel pr-chá<SPLIT>!}
 Predicted: {
-ha<SPLIT>-vel pr-<SPLIT>chá<SPLIT>!}
+ha-vel pr-<SPLIT>chá<SPLIT>!}
 False positives: {
-ha
--vel
 pr-
 chá
 } False negatives: {
-ha-vel
 pr-chá
 }
 
@@ -501,6 +436,17 @@ tádžická
 }
 
 Expected: {
+hrad hukvaldy<SPLIT>: 26<SPLIT>. -<SPLIT>27<SPLIT>.}
+Predicted: {
+hrad hukvaldy<SPLIT>: 26<SPLIT>. -27<SPLIT>.}
+False positives: {
+-27
+} False negatives: {
+-
+27
+}
+
+Expected: {
 s účinností od 1<SPLIT>.<SPLIT>8<SPLIT>.<SPLIT>1992<SPLIT>byly provedeny změny společných ustanovení závazných čsn pro chléb ( čsn 56 1001<SPLIT>)<SPLIT>, pšeničné pečivo běžné (<SPLIT>čsn 56 1030<SPLIT>) a pšeničné pečivo jemné (<SPLIT>čsn 56 1003<SPLIT>)<SPLIT>.}
 Predicted: {
 s účinností od 1.8.1992byly provedeny změny společných ustanovení závazných čsn pro chléb ( čsn 56 1001<SPLIT>)<SPLIT>, pšeničné pečivo běžné (<SPLIT>čsn 56 1030<SPLIT>) a pšeničné pečivo jemné (<SPLIT>čsn 56 1003<SPLIT>)<SPLIT>.}
@@ -513,17 +459,6 @@ False positives: {
 .
 1992
 byly
-}
-
-Expected: {
-pokud jde o budoucí federální shromáždění<SPLIT>, ve variantě počítající s 30<SPLIT>člennou federální radou (<SPLIT>jak ji navrhuje prezident havel<SPLIT>) by mělo být jednokomorové buď s 200<SPLIT>, nebo 300 poslanci<SPLIT>.}
-Predicted: {
-pokud jde o budoucí federální shromáždění<SPLIT>, ve variantě počítající s 30člennou federální radou (<SPLIT>jak ji navrhuje prezident havel<SPLIT>) by mělo být jednokomorové buď s 200<SPLIT>, nebo 300 poslanci<SPLIT>.}
-False positives: {
-30člennou
-} False negatives: {
-30
-člennou
 }
 
 Expected: {
@@ -562,21 +497,22 @@ metrů
 Expected: {
 v tokiu v pondělí jeho kurs k marce klesl na nejnižší úroveň za 28 měsíců - 1.4710 dem - a k jenu na 3<SPLIT>,<SPLIT>5<SPLIT>měsíční minimum - 96.82 jpy<SPLIT>.}
 Predicted: {
-v tokiu v pondělí jeho kurs k marce klesl na nejnižší úroveň za 28 měsíců - 1.4710 dem - a k jenu na 3<SPLIT>,<SPLIT>5měsíční minimum - 96.82 jpy<SPLIT>.}
+v tokiu v pondělí jeho kurs k marce klesl na nejnižší úroveň za 28 měsíců - 1.4710 dem - a k jenu na 3,<SPLIT>5<SPLIT>měsíční minimum - 96.82 jpy<SPLIT>.}
 False positives: {
-5měsíční
+3,
 } False negatives: {
-5
-měsíční
+3
+,
 }
 
 Expected: {
 mode<SPLIT>-<SPLIT>woche<SPLIT>-<SPLIT>münchen (<SPLIT>jaro<SPLIT>) - mezinárodní odborný veletrh módy<SPLIT>: 20<SPLIT>. - 22<SPLIT>.<SPLIT>2<SPLIT>.}
 Predicted: {
-mode<SPLIT>-<SPLIT>woche<SPLIT>-<SPLIT>münchen (<SPLIT>jaro<SPLIT>) - mezinárodní odborný veletrh módy<SPLIT>: 20<SPLIT>. - 22<SPLIT>.2.}
+mode<SPLIT>-<SPLIT>woche<SPLIT>-<SPLIT>münchen (<SPLIT>jaro<SPLIT>) - mezinárodní odborný veletrh módy<SPLIT>: 20<SPLIT>. - 22.2.}
 False positives: {
-.2.
+22.2.
 } False negatives: {
+22
 .
 2
 .
@@ -747,17 +683,6 @@ False positives: {
 }
 
 Expected: {
-ze 145 kompaktních disků posuzovaných v uplynulém období recenzenty harmonie získalo nejvyšší hodnocení (<SPLIT>čtyři h<SPLIT>) 53<SPLIT>.}
-Predicted: {
-ze 145 kompaktních disků posuzovaných v uplynulém období recenzenty harmonie získalo nejvyšší hodnocení (<SPLIT>čtyři h) 53<SPLIT>.}
-False positives: {
-h)
-} False negatives: {
-h
-)
-}
-
-Expected: {
 argumenty odvozenými z věcné analýzy tržního procesu<SPLIT>, v němž živelnost již střídá seberegulace<SPLIT>, usměrňovaná konkurencí i legislativou<SPLIT>, je ovšem na sjezdu korigoval předseda ruského výboru pro kinematografii armen<SPLIT>medveděv<SPLIT>.}
 Predicted: {
 argumenty odvozenými z věcné analýzy tržního procesu<SPLIT>, v němž živelnost již střídá seberegulace<SPLIT>, usměrňovaná konkurencí i legislativou<SPLIT>, je ovšem na sjezdu korigoval předseda ruského výboru pro kinematografii armenmedveděv<SPLIT>.}
@@ -813,19 +738,6 @@ slc
 }
 
 Expected: {
-podle ředitele elite varnsdorf erharta mahnela se na základě rozhodnutí vlády v současné době uzavírá smlouva mezi fondem národního majetku a i<SPLIT>.<SPLIT>i<SPLIT>.<SPLIT>t<SPLIT>.<SPLIT>e<SPLIT>.}
-Predicted: {
-podle ředitele elite varnsdorf erharta mahnela se na základě rozhodnutí vlády v současné době uzavírá smlouva mezi fondem národního majetku a i.i.<SPLIT>t<SPLIT>.<SPLIT>e<SPLIT>.}
-False positives: {
-i.i.
-} False negatives: {
-i
-.
-i
-.
-}
-
-Expected: {
 stanoví<SPLIT>-<SPLIT>li to zástavní smlouva<SPLIT>, může zástavní věřitel prodat zástavu i jiným vhodným způsobem<SPLIT>.}
 Predicted: {
 stanoví-<SPLIT>li to zástavní smlouva<SPLIT>, může zástavní věřitel prodat zástavu i jiným vhodným způsobem<SPLIT>.}
@@ -850,12 +762,11 @@ m
 Expected: {
 po 1<SPLIT>.<SPLIT>f<SPLIT>4 nebo 1<SPLIT>.<SPLIT>d<SPLIT>4 by vyhrál černý a to si ukážeme dále<SPLIT>.}
 Predicted: {
-po 1<SPLIT>.f4 nebo 1<SPLIT>.<SPLIT>d4 by vyhrál černý a to si ukážeme dále<SPLIT>.}
+po 1<SPLIT>.<SPLIT>f4 nebo 1<SPLIT>.<SPLIT>d4 by vyhrál černý a to si ukážeme dále<SPLIT>.}
 False positives: {
-.f4
+f4
 d4
 } False negatives: {
-.
 f
 4
 d
@@ -865,16 +776,13 @@ d
 Expected: {
 dobrým příkladem je studie moravcova<SPLIT>, která má toto základní postavení<SPLIT>: bílý<SPLIT>: kc<SPLIT>6 vb<SPLIT>1 - černý<SPLIT>: ka<SPLIT>7 pg<SPLIT>2 h<SPLIT>2<SPLIT>.}
 Predicted: {
-dobrým příkladem je studie moravcova<SPLIT>, která má toto základní postavení<SPLIT>: bílý<SPLIT>: kc6 vb1 - černý<SPLIT>: ka7 pg2 h2<SPLIT>.}
+dobrým příkladem je studie moravcova<SPLIT>, která má toto základní postavení<SPLIT>: bílý<SPLIT>: kc<SPLIT>6 vb1 - černý<SPLIT>: ka7 pg2 h2<SPLIT>.}
 False positives: {
-kc6
 vb1
 ka7
 pg2
 h2
 } False negatives: {
-kc
-6
 vb
 1
 ka
@@ -883,17 +791,6 @@ pg
 2
 h
 2
-}
-
-Expected: {
-harold brown<SPLIT>, bývalý ministr obrany spojených států<SPLIT>, v komentáři pro deník international herald tribune<SPLIT>*}
-Predicted: {
-harold brown<SPLIT>, bývalý ministr obrany spojených států<SPLIT>, v komentáři pro deník international herald tribune*}
-False positives: {
-tribune*
-} False negatives: {
-tribune
-*
 }
 
 Expected: {
@@ -1031,10 +928,13 @@ False positives: {
 Expected: {
 japonsko možná nedosáhne 3<SPLIT>,<SPLIT>5<SPLIT>procentního růstu hnp<SPLIT>, plánovaného na současný finanční rok<SPLIT>.}
 Predicted: {
-japonsko možná nedosáhne 3<SPLIT>,<SPLIT>5procentního růstu hnp<SPLIT>, plánovaného na současný finanční rok<SPLIT>.}
+japonsko možná nedosáhne 3,<SPLIT>5procentního růstu hnp<SPLIT>, plánovaného na současný finanční rok<SPLIT>.}
 False positives: {
+3,
 5procentního
 } False negatives: {
+3
+,
 5
 procentního
 }

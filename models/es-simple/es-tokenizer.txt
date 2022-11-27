@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9990430718401225
+Evaluation-Score=0.9990682588527999
 Training-Sample-Size=31202
 Evaluation-Sample-Size=3466
 Training-Algorithm=MAXENT_QN
@@ -9,9 +9,9 @@ Component-Name=TokenizerME
 Language=es
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1666065163526
+Timestamp=1668928895611
 TrainerType=Event
-Training-Eventhash=db449cbd41428f024e51ebb17e39ba9d
+Training-Eventhash=e0811e86f367579ca97bc511912bb0b3
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
@@ -271,11 +271,12 @@ amalgama
 Expected: {
 se estaba muriendo lady day<SPLIT>, y no obstante<SPLIT>, mientras moría<SPLIT>, su alma cantaba<SPLIT>, baby, won't you please come home<SPLIT>.}
 Predicted: {
-se estaba muriendo lady day<SPLIT>, y no obstante<SPLIT>, mientras moría<SPLIT>, su alma cantaba<SPLIT>, baby<SPLIT>, won'<SPLIT>t you please come home<SPLIT>.}
+se estaba muriendo lady day<SPLIT>, y no obstante<SPLIT>, mientras moría<SPLIT>, su alma cantaba<SPLIT>, baby<SPLIT>, won<SPLIT>'<SPLIT>t you please come home<SPLIT>.}
 False positives: {
 baby
 ,
-won'
+won
+'
 t
 } False negatives: {
 baby,
@@ -324,28 +325,6 @@ False positives: {
 ;
 } False negatives: {
 &lt;
-}
-
-Expected: {
-aun así<SPLIT>, si comparamos esta densidad con la del plomo<SPLIT>, de unos 11 g / cm<SPLIT>³<SPLIT>, vemos que representa una considerable compresión<SPLIT>, sobre todo cuando se considera que en el interior del blanco tenemos unas densidades iniciales de de unos 0,1 g / cm<SPLIT>³ de dt<SPLIT>.}
-Predicted: {
-aun así<SPLIT>, si comparamos esta densidad con la del plomo<SPLIT>, de unos 11 g / cm³<SPLIT>, vemos que representa una considerable compresión<SPLIT>, sobre todo cuando se considera que en el interior del blanco tenemos unas densidades iniciales de de unos 0,1 g / cm<SPLIT>³ de dt<SPLIT>.}
-False positives: {
-cm³
-} False negatives: {
-cm
-³
-}
-
-Expected: {
--- fernando gago<SPLIT>: pese a sus 24 años ya su buen rendimiento en los últimos partidos de liga<SPLIT>, el<SPLIT>'' pintita<SPLIT>'' no entra en los planes para la siguiente campaña<SPLIT>.}
-Predicted: {
--- fernando gago<SPLIT>: pese a sus 24 años ya su buen rendimiento en los últimos partidos de liga<SPLIT>, el<SPLIT>'' pintita<SPLIT>'<SPLIT>' no entra en los planes para la siguiente campaña<SPLIT>.}
-False positives: {
-'
-'
-} False negatives: {
-''
 }
 
 Expected: {

@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.998290825216136
-Training-Sample-Size=25682
-Evaluation-Sample-Size=2853
+Evaluation-Score=0.9983173057382314
+Training-Sample-Size=26617
+Evaluation-Sample-Size=2957
 Training-Algorithm=MAXENT_QN
 
 === MODEL PROPERTIES ===
@@ -9,25 +9,14 @@ Component-Name=TokenizerME
 Language=fr
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1666067195728
+Timestamp=1669006367220
 TrainerType=Event
-Training-Eventhash=b67557fd16d7d817743aa86f55fe8cbe
+Training-Eventhash=44fa34877c380d53a42ca516f3667cb4
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
 
 === MISCLASSIFIED DETAILS ===
-Expected: {
-quel est le véritable nom de "<SPLIT>dr. death<SPLIT>" ?}
-Predicted: {
-quel est le véritable nom de "<SPLIT>dr<SPLIT>. death<SPLIT>" ?}
-False positives: {
-dr
-.
-} False negatives: {
-dr.
-}
-
 Expected: {
 comment nomme<SPLIT>-t-on quelqu'<SPLIT>un dont la vue est courte ?}
 Predicted: {
@@ -40,17 +29,6 @@ un
 }
 
 Expected: {
-où est né c. s. lewis ?}
-Predicted: {
-où est né c. s<SPLIT>. lewis ?}
-False positives: {
-s
-.
-} False negatives: {
-s.
-}
-
-Expected: {
 douarnenez accueillera le spectacle de clôture<SPLIT>, pour trois représentations vendredi 28 et samedi 29<SPLIT>, à 20<SPLIT>h<SPLIT>30 ;}
 Predicted: {
 douarnenez accueillera le spectacle de clôture<SPLIT>, pour trois représentations vendredi 28 et samedi 29<SPLIT>, à 20h<SPLIT>30 ;}
@@ -59,17 +37,6 @@ False positives: {
 } False negatives: {
 20
 h
-}
-
-Expected: {
-elle a existé en 2 et 5 places<SPLIT>, et une variante pick up a été fournie par l'<SPLIT>entreprise de carrossiers indépendants (<SPLIT>gruau par ex<SPLIT>.<SPLIT>)}
-Predicted: {
-elle a existé en 2 et 5 places<SPLIT>, et une variante pick up a été fournie par l'<SPLIT>entreprise de carrossiers indépendants (<SPLIT>gruau par ex.<SPLIT>)}
-False positives: {
-ex.
-} False negatives: {
-ex
-.
 }
 
 Expected: {
@@ -95,16 +62,26 @@ v
 }
 
 Expected: {
+en 1945<SPLIT>, le destroyer de l'<SPLIT>us navy uss o'hare (<SPLIT>dd-889<SPLIT>) fut baptisé en son honneur<SPLIT>.}
+Predicted: {
+en 1945<SPLIT>, le destroyer de l'<SPLIT>us navy uss o'<SPLIT>hare (<SPLIT>dd-889<SPLIT>) fut baptisé en son honneur<SPLIT>.}
+False positives: {
+o'
+hare
+} False negatives: {
+o'hare
+}
+
+Expected: {
 (<SPLIT>source : commentcamarche.net http://www.commentcamarche.net/elec/connecteur-prise-db25.php3<SPLIT>)}
 Predicted: {
-(<SPLIT>source : commentcamarche<SPLIT>.net http://www.commentcamarche<SPLIT>.net<SPLIT>/<SPLIT>elec/<SPLIT>connecteur-prise-db25.php3<SPLIT>)}
+(<SPLIT>source : commentcamarche<SPLIT>.net http://www.commentcamarche<SPLIT>.net<SPLIT>/elec/<SPLIT>connecteur-prise-db25.php3<SPLIT>)}
 False positives: {
 commentcamarche
 .net
 http://www.commentcamarche
 .net
-/
-elec/
+/elec/
 connecteur-prise-db25.php3
 } False negatives: {
 commentcamarche.net
@@ -228,17 +205,6 @@ h
 }
 
 Expected: {
-par la suite malgré la politique généreuse menée par le gouverneur d'<SPLIT>abû inan au da'ra<SPLIT>, certaines fractions continuent leurs malversations dans toute la région<SPLIT>.}
-Predicted: {
-par la suite malgré la politique généreuse menée par le gouverneur d'<SPLIT>abû inan au da'<SPLIT>ra<SPLIT>, certaines fractions continuent leurs malversations dans toute la région<SPLIT>.}
-False positives: {
-da'
-ra
-} False negatives: {
-da'ra
-}
-
-Expected: {
 les hivers sont très froids<SPLIT>, avec des températures tombant à −25 °<SPLIT>c<SPLIT>, et les étés sont tempérés<SPLIT>, avec des températures qui ne dépassent guère 35 °<SPLIT>c<SPLIT>.}
 Predicted: {
 les hivers sont très froids<SPLIT>, avec des températures tombant à −25 °c<SPLIT>, et les étés sont tempérés<SPLIT>, avec des températures qui ne dépassent guère 35 °c<SPLIT>.}
@@ -276,6 +242,37 @@ pays-bas/serbie
 }
 
 Expected: {
+durant un combat avec des bombardiers-torpilleurs japonais<SPLIT>, o'hare fut abattu et son avion ne fut jamais retrouvé<SPLIT>.}
+Predicted: {
+durant un combat avec des bombardiers-torpilleurs japonais<SPLIT>, o'<SPLIT>hare fut abattu et son avion ne fut jamais retrouvé<SPLIT>.}
+False positives: {
+o'
+hare
+} False negatives: {
+o'hare
+}
+
+Expected: {
+quand il faut représenter [<SPLIT>gj<SPLIT>] et [<SPLIT>nj<SPLIT>]<SPLIT>, on remplace le j par i<SPLIT>, afin d'<SPLIT>éviter l'<SPLIT>ambiguïté : [<SPLIT>gja<SPLIT>] s'<SPLIT>écrit donc gia<SPLIT>, gja notant déjà [<SPLIT>ɟa<SPLIT>]<SPLIT>.}
+Predicted: {
+quand il faut représenter [gj<SPLIT>] et [nj<SPLIT>]<SPLIT>, on remplace le j par i<SPLIT>, afin d'<SPLIT>éviter l'<SPLIT>ambiguïté : [gja<SPLIT>] s'<SPLIT>écrit donc gia<SPLIT>, gja notant déjà [<SPLIT>ɟa]<SPLIT>.}
+False positives: {
+[gj
+[nj
+[gja
+ɟa]
+} False negatives: {
+[
+gj
+[
+nj
+[
+gja
+ɟa
+]
+}
+
+Expected: {
 avec en plus facturation de 3h de main d'<SPLIT>oeuvre pour une révision qui au bas mot prend 1h30<SPLIT>/<SPLIT>2h maximum<SPLIT>.}
 Predicted: {
 avec en plus facturation de 3h de main d'<SPLIT>oeuvre pour une révision qui au bas mot prend 1h<SPLIT>30<SPLIT>/<SPLIT>2h maximum<SPLIT>.}
@@ -289,102 +286,105 @@ False positives: {
 Expected: {
 concernant le transport aérien<SPLIT>, aéroport agen<SPLIT>-<SPLIT>la garenne ou aéroport toulouse-blagnac<SPLIT>.}
 Predicted: {
-concernant le transport aérien<SPLIT>, aéroport agen-<SPLIT>la garenne ou aéroport toulouse-blagnac<SPLIT>.}
+concernant le transport aérien<SPLIT>, aéroport agen-la garenne ou aéroport toulouse-blagnac<SPLIT>.}
 False positives: {
-agen-
+agen-la
 } False negatives: {
 agen
 -
+la
 }
 
 Expected: {
 time investit au cœur de la révolution numérique en finançant en fonds propres le développement d'<SPLIT>entreprises européennes innovantes et en croissance rapide du secteur des télécoms<SPLIT>/<SPLIT>internet<SPLIT>/<SPLIT>media<SPLIT>/<SPLIT>e-business<SPLIT>.}
 Predicted: {
-time investit au cœur de la révolution numérique en finançant en fonds propres le développement d'<SPLIT>entreprises européennes innovantes et en croissance rapide du secteur des télécoms/internet<SPLIT>/<SPLIT>media<SPLIT>/e-business<SPLIT>.}
+time investit au cœur de la révolution numérique en finançant en fonds propres le développement d'<SPLIT>entreprises européennes innovantes et en croissance rapide du secteur des télécoms/internet<SPLIT>/<SPLIT>media<SPLIT>/<SPLIT>e-business<SPLIT>.}
 False positives: {
 télécoms/internet
-/e-business
 } False negatives: {
 télécoms
 /
 internet
-/
-e-business
 }
 
 Expected: {
-ces suicides<SPLIT>, suivis d'<SPLIT>autres cas chez psa peugeot<SPLIT>-<SPLIT>citroën en 2007<SPLIT>, avaient soulevé au plan national la question de la souffrance au travail<SPLIT>.}
+ana dispose de l'<SPLIT>un des services les plus puissants du circuit<SPLIT>, qui peut souvent dépasser les 180 km/h<SPLIT>.}
 Predicted: {
-ces suicides<SPLIT>, suivis d'<SPLIT>autres cas chez psa peugeot-citroën en 2007<SPLIT>, avaient soulevé au plan national la question de la souffrance au travail<SPLIT>.}
+ana dispose de l'<SPLIT>un des services les plus puissants du circuit<SPLIT>, qui peut souvent dépasser les 180 km<SPLIT>/h<SPLIT>.}
 False positives: {
-peugeot-citroën
+km
+/h
 } False negatives: {
-peugeot
--
-citroën
+km/h
 }
 
 Expected: {
-en 2010 la liaison est gérée par la compagnie<SPLIT>''<SPLIT>kihnu veeted<SPLIT>''<SPLIT>.}
+mais c'<SPLIT>est la montreal street railway co. (<SPLIT>ou montreal tramway co.<SPLIT>)<SPLIT>, la principale compagnie privée de transport de la ville<SPLIT>, qui reçoit l'<SPLIT>assentiment du gouvernement provincial<SPLIT>.}
 Predicted: {
-en 2010 la liaison est gérée par la compagnie<SPLIT>''<SPLIT>kihnu veeted''<SPLIT>.}
+mais c'<SPLIT>est la montreal street railway co<SPLIT>. (<SPLIT>ou montreal tramway co.<SPLIT>)<SPLIT>, la principale compagnie privée de transport de la ville<SPLIT>, qui reçoit l'<SPLIT>assentiment du gouvernement provincial<SPLIT>.}
 False positives: {
-veeted''
+co
+.
 } False negatives: {
-veeted
-''
+co.
 }
 
 Expected: {
-par exemple<SPLIT>, le 10 février 1956 on relevait −21,4 °<SPLIT>c alors que la température minimum moyenne est de l'<SPLIT>ordre de −1 °<SPLIT>c<SPLIT>.}
+le chrono le plus rapide des qualifications a été établi par kenny brack avec une série de 4 tours à la moyenne de 227,598 mph (<SPLIT>366,283 km/h<SPLIT>) lors du deuxième week-end de qualifications<SPLIT>.}
 Predicted: {
-par exemple<SPLIT>, le 10 février 1956 on relevait −21,4 °c alors que la température minimum moyenne est de l'<SPLIT>ordre de −1 °c<SPLIT>.}
+le chrono le plus rapide des qualifications a été établi par kenny brack avec une série de 4 tours à la moyenne de 227,598 mph (<SPLIT>366,283 km<SPLIT>/h<SPLIT>) lors du deuxième week-end de qualifications<SPLIT>.}
 False positives: {
-°c
-°c
+km
+/h
 } False negatives: {
-°
-c
-°
-c
+km/h
 }
 
 Expected: {
-traduite en presque trente langues<SPLIT>, la saga d'<SPLIT>angélique<SPLIT>, parue en librairie et en feuilleton dans la presse<SPLIT>, aborde dès 1956 des thèmes alors tabous comme les sorcières guérisseuses<SPLIT>, l'<SPLIT>amour physique<SPLIT>, l'<SPLIT>ostracisme de l'<SPLIT>église<SPLIT>, la persécution des protestants<SPLIT>, le viol<SPLIT>, l'<SPLIT>esclavage des chrétiens<SPLIT>, la foi des amérindien etc.<SPLIT>..}
+ces dispositions<SPLIT>-ci ne sont pas affectées par le choix du régime matrimonial (<SPLIT>art. 226<SPLIT>)<SPLIT>.}
 Predicted: {
-traduite en presque trente langues<SPLIT>, la saga d'<SPLIT>angélique<SPLIT>, parue en librairie et en feuilleton dans la presse<SPLIT>, aborde dès 1956 des thèmes alors tabous comme les sorcières guérisseuses<SPLIT>, l'<SPLIT>amour physique<SPLIT>, l'<SPLIT>ostracisme de l'<SPLIT>église<SPLIT>, la persécution des protestants<SPLIT>, le viol<SPLIT>, l'<SPLIT>esclavage des chrétiens<SPLIT>, la foi des amérindien etc<SPLIT>...}
+ces dispositions-ci ne sont pas affectées par le choix du régime matrimonial (<SPLIT>art<SPLIT>. 226<SPLIT>)<SPLIT>.}
 False positives: {
-etc
-...
+dispositions-ci
+art
+.
 } False negatives: {
-etc.
-..
+dispositions
+-ci
+art.
 }
 
 Expected: {
-l'<SPLIT>axe paris<SPLIT>-<SPLIT>tel-aviv<SPLIT>-<SPLIT>cnt fonctionnait alors à plein régime<SPLIT>.}
+l'<SPLIT>homme de ma vie<SPLIT>, c'<SPLIT>est moi qui l'<SPLIT>appelle ainsi<SPLIT>, me portait sur ses épaules pour que sa petite louve crie encore plus fort que tous les loups<SPLIT>... je hurlais « liberté pourquoi m'<SPLIT>as<SPLIT>-tu abandonnée ?}
 Predicted: {
-l'<SPLIT>axe paris-tel-aviv-cnt fonctionnait alors à plein régime<SPLIT>.}
+l'<SPLIT>homme de ma vie<SPLIT>, c'<SPLIT>est moi qui l'<SPLIT>appelle ainsi<SPLIT>, me portait sur ses épaules pour que sa petite louve crie encore plus fort que tous les loups<SPLIT>... je hurlais « liberté pourquoi m'<SPLIT>as-tu abandonnée ?}
 False positives: {
-paris-tel-aviv-cnt
+as-tu
 } False negatives: {
-paris
--
-tel-aviv
--
-cnt
+as
+-tu
 }
 
 Expected: {
-le second single<SPLIT>, let's work<SPLIT>, s'<SPLIT>est positionné à la 9e place au hot r&b/hip-hop songs en 1982<SPLIT>.}
+leur vitesse est plutôt modérée<SPLIT>, de 1,5 à 4,5 m/s<SPLIT>, minimale en octobre et maximale durant les mois de mars et d'<SPLIT>avril<SPLIT>.}
 Predicted: {
-le second single<SPLIT>, let's work<SPLIT>, s'<SPLIT>est positionné à la 9e place au hot r&b<SPLIT>/<SPLIT>hip-hop songs en 1982<SPLIT>.}
+leur vitesse est plutôt modérée<SPLIT>, de 1,5 à 4,5 m/<SPLIT>s<SPLIT>, minimale en octobre et maximale durant les mois de mars et d'<SPLIT>avril<SPLIT>.}
 False positives: {
-r&b
-/
-hip-hop
+m/
+s
 } False negatives: {
-r&b/hip-hop
+m/s
+}
+
+Expected: {
+paul luce prit donc possession de la propriété industrielle de l'<SPLIT>entreprise<SPLIT>, qu'<SPLIT>il transféra à boulder<SPLIT>, colorado<SPLIT>, en 1973 sous la désignation interceptor co.}
+Predicted: {
+paul luce prit donc possession de la propriété industrielle de l'<SPLIT>entreprise<SPLIT>, qu'<SPLIT>il transféra à boulder<SPLIT>, colorado<SPLIT>, en 1973 sous la désignation interceptor co<SPLIT>.}
+False positives: {
+co
+.
+} False negatives: {
+co.
 }
 
 Expected: {
@@ -396,17 +396,6 @@ h45
 } False negatives: {
 h
 45
-}
-
-Expected: {
-l'<SPLIT>auteur francine ouellette présentera une conférence sur l'<SPLIT>influence des amérindiens sur notre culture<SPLIT>, le 27 avril à 19<SPLIT>h<SPLIT>30 à la place lagny<SPLIT>.}
-Predicted: {
-l'<SPLIT>auteur francine ouellette présentera une conférence sur l'<SPLIT>influence des amérindiens sur notre culture<SPLIT>, le 27 avril à 19h<SPLIT>30 à la place lagny<SPLIT>.}
-False positives: {
-19h
-} False negatives: {
-19
-h
 }
 
 Expected: {
@@ -558,6 +547,17 @@ vigueur
 }
 
 Expected: {
+madame la présidente<SPLIT>, si le procès<SPLIT>-<SPLIT>verbal reflète correctement le vote de mon groupe<SPLIT>, je n'<SPLIT>ai et n'<SPLIT>aurai aucune objection à formuler<SPLIT>.}
+Predicted: {
+madame la présidente<SPLIT>, si le procès-<SPLIT>verbal reflète correctement le vote de mon groupe<SPLIT>, je n'<SPLIT>ai et n'<SPLIT>aurai aucune objection à formuler<SPLIT>.}
+False positives: {
+procès-
+} False negatives: {
+procès
+-
+}
+
+Expected: {
 monsieur le président<SPLIT>, monsieur le commissaire<SPLIT>, chers collègues<SPLIT>, la preuve que ce parlement n'<SPLIT>a toujours pas dépassé la phase de l'<SPLIT>institution consultative et subordonnée est que l'<SPLIT>excellent rapport de ma collègue<SPLIT>, mme elisabeth schroedter<SPLIT>, n'<SPLIT>a pas pu parvenir en plénière parce que les plans de développement régional pour la période 2000<SPLIT>-<SPLIT>2006 pour les territoires de l'<SPLIT>objectif 1 sont sur la table de la commission depuis des mois<SPLIT>.}
 Predicted: {
 monsieur le président<SPLIT>, monsieur le commissaire<SPLIT>, chers collègues<SPLIT>, la preuve que ce parlement n'<SPLIT>a toujours pas dépassé la phase de l'<SPLIT>institution consultative et subordonnée est que l'<SPLIT>excellent rapport de ma collègue<SPLIT>, mme elisabeth schroedter<SPLIT>, n'<SPLIT>a pas pu parvenir en plénière parce que les plans de développement régional pour la période 2000<SPLIT>-2006 pour les territoires de l'<SPLIT>objectif 1 sont sur la table de la commission depuis des mois<SPLIT>.}
@@ -591,82 +591,91 @@ False positives: {
 }
 
 Expected: {
-de temps en temps<SPLIT>, il y a quelqu'<SPLIT>un qui s'<SPLIT>arrête pour lui donner une pièce<SPLIT>, mais sans le regarder<SPLIT>.}
+donc<SPLIT>, euh<SPLIT>, le scénario auquel on peut s'<SPLIT>attendre encore une fois avec toutes les précautions qu'<SPLIT>il faut<SPLIT>, d'<SPLIT>usage<SPLIT>, qu'<SPLIT>il faut mettre<SPLIT>, c'<SPLIT>est que cette souche que l'<SPLIT>on voit en amérique du nord ne va pas se plaire beaucoup avec l'<SPLIT>été<SPLIT>, euh<SPLIT>, chez nous<SPLIT>, dans l'<SPLIT>hémisphère nord<SPLIT>.}
 Predicted: {
-de temps en temps<SPLIT>, il y a quelqu'un qui s'<SPLIT>arrête pour lui donner une pièce<SPLIT>, mais sans le regarder<SPLIT>.}
+donc<SPLIT>, euh<SPLIT>, le scénario auquel on peut s'<SPLIT>attendre encore une fois avec toutes les précautions qu'<SPLIT>il faut<SPLIT>, d'<SPLIT>usage<SPLIT>, qu'<SPLIT>il faut mettre<SPLIT>, c'<SPLIT>est que cette souche que l'on voit en amérique du nord ne va pas se plaire beaucoup avec l'<SPLIT>été<SPLIT>, euh<SPLIT>, chez nous<SPLIT>, dans l'<SPLIT>hémisphère nord<SPLIT>.}
 False positives: {
-quelqu'un
+l'on
 } False negatives: {
-quelqu'
-un
+l'
+on
 }
 
 Expected: {
-et sais -tu que la paille a été abîmée ?}
+des études in vitro ont également montré que la bivalirudine allonge de manière concentration<SPLIT>-<SPLIT>dépendante le temps de thromboplastine partielle activée (<SPLIT>aptt<SPLIT>)<SPLIT>, le temps de thrombine (<SPLIT>tt<SPLIT>) et le taux de prothrombine (<SPLIT>tp<SPLIT>) d'<SPLIT>un plasma humain normal<SPLIT>, et qu'<SPLIT>elle n'<SPLIT>induit pas d'<SPLIT>agrégation plaquettaire en réponse à des sérums de patients avec antécédents de syndrome de thrombocytopénie induite par l'<SPLIT>héparine avec thrombose (<SPLIT>tih<SPLIT>/<SPLIT>stiht<SPLIT>)<SPLIT>.}
 Predicted: {
-et sais -<SPLIT>tu que la paille a été abîmée ?}
+des études in vitro ont également montré que la bivalirudine allonge de manière concentration-dépendante le temps de thromboplastine partielle activée (<SPLIT>aptt<SPLIT>)<SPLIT>, le temps de thrombine (<SPLIT>tt<SPLIT>) et le taux de prothrombine (<SPLIT>tp<SPLIT>) d'<SPLIT>un plasma humain normal<SPLIT>, et qu'<SPLIT>elle n'<SPLIT>induit pas d'<SPLIT>agrégation plaquettaire en réponse à des sérums de patients avec antécédents de syndrome de thrombocytopénie induite par l'<SPLIT>héparine avec thrombose (<SPLIT>tih<SPLIT>/<SPLIT>stiht<SPLIT>)<SPLIT>.}
 False positives: {
+concentration-dépendante
+} False negatives: {
+concentration
 -
-tu
-} False negatives: {
--tu
+dépendante
 }
 
 Expected: {
-excusez<SPLIT>-moi<SPLIT>.}
+le vendredi 25 juin<SPLIT>, au ciné 3000 à 20<SPLIT>h<SPLIT>30<SPLIT>, une soirée thématique sera organisée avec projections de films et diaporamas pour découvrir ce moment unique où la lune se place dans la trajectoire du soleil<SPLIT>.}
 Predicted: {
-excusez-moi<SPLIT>.}
+le vendredi 25 juin<SPLIT>, au ciné 3000 à 20h<SPLIT>30<SPLIT>, une soirée thématique sera organisée avec projections de films et diaporamas pour découvrir ce moment unique où la lune se place dans la trajectoire du soleil<SPLIT>.}
 False positives: {
-excusez-moi
+20h
 } False negatives: {
-excusez
--moi
-}
-
-Expected: {
-ouverture tous les jours sauf le lundi de 14<SPLIT>h<SPLIT>30 à 18<SPLIT>h<SPLIT>.}
-Predicted: {
-ouverture tous les jours sauf le lundi de 14h30 à 18h<SPLIT>.}
-False positives: {
-14h30
-18h
-} False negatives: {
-14
-h
-30
-18
+20
 h
 }
 
 Expected: {
-lors du dépassement d'<SPLIT>un véhicule circulant dans le sens chavannes-sur-l'etang<SPLIT>- montreux-vieux<SPLIT>, le côté gauche de la voiture qui doublait a mordu l'<SPLIT>accotement<SPLIT>.}
+aux sénatoriales de la même année<SPLIT>, la stricte alternance homme<SPLIT>-<SPLIT>femme dans les départements élisant plus de deux sénateurs<SPLIT>, donc avec scrutin de liste à la proportionnelle<SPLIT>, a permis de tripler le nombre de femmes élues<SPLIT>.}
 Predicted: {
-lors du dépassement d'<SPLIT>un véhicule circulant dans le sens chavannes-sur-l'<SPLIT>etang<SPLIT>- montreux-vieux<SPLIT>, le côté gauche de la voiture qui doublait a mordu l'<SPLIT>accotement<SPLIT>.}
+aux sénatoriales de la même année<SPLIT>, la stricte alternance homme-femme dans les départements élisant plus de deux sénateurs<SPLIT>, donc avec scrutin de liste à la proportionnelle<SPLIT>, a permis de tripler le nombre de femmes élues<SPLIT>.}
 False positives: {
-chavannes-sur-l'
-etang
+homme-femme
 } False negatives: {
-chavannes-sur-l'etang
+homme
+-
+femme
 }
 
 Expected: {
-emea / h/c/562}
+il était alors 20<SPLIT>h<SPLIT>.}
 Predicted: {
-emea / h/c/<SPLIT>562}
+il était alors 20h<SPLIT>.}
 False positives: {
-h/c/
-562
+20h
 } False negatives: {
-h/c/562
+20
+h
 }
 
 Expected: {
-le groupe aclasta a montré une perte de taille moindre de 2,5 mm environ par rapport au placebo (<SPLIT>(<SPLIT>ic à 95<SPLIT>% : 1,6 mm<SPLIT>, 3,5 mm<SPLIT>) [<SPLIT>p < 0,0001<SPLIT>]<SPLIT>.}
+le titulaire de l'<SPLIT>amm s'<SPLIT>engage à fournir des études et des données de pharmacovigilance supplémentaires détaillées dans le plan de pharmacovigilance<SPLIT>, comme convenu dans la version 4 du plan de gestion des risques (<SPLIT>pgr<SPLIT>) présenté dans le module 1.8.2. de l'<SPLIT>autorisation de mise sur le marché et toutes mises à jour du pgr autorisées par le chmp<SPLIT>.}
 Predicted: {
-le groupe aclasta a montré une perte de taille moindre de 2,5 mm environ par rapport au placebo (<SPLIT>(ic à 95<SPLIT>% : 1,6 mm<SPLIT>, 3,5 mm<SPLIT>) [<SPLIT>p < 0,0001<SPLIT>]<SPLIT>.}
+le titulaire de l'<SPLIT>amm s'<SPLIT>engage à fournir des études et des données de pharmacovigilance supplémentaires détaillées dans le plan de pharmacovigilance<SPLIT>, comme convenu dans la version 4 du plan de gestion des risques (<SPLIT>pgr<SPLIT>) présenté dans le module 1.8.2<SPLIT>. de l'<SPLIT>autorisation de mise sur le marché et toutes mises à jour du pgr autorisées par le chmp<SPLIT>.}
 False positives: {
-(ic
+1.8.2
+.
 } False negatives: {
-(
-ic
+1.8.2.
+}
+
+Expected: {
+- ministère de l'<SPLIT>économie et des finances : mi-avril 2002<SPLIT>, les juges ont une nouvelle fois demandé au ministre de l'<SPLIT>économie laurent fabius la levée du secret défense afin d'<SPLIT>obtenir la déclassification de documents de thomson<SPLIT>, maître d'<SPLIT>oeuvre du contrat<SPLIT>.}
+Predicted: {
+- ministère de l'<SPLIT>économie et des finances : mi-<SPLIT>avril 2002<SPLIT>, les juges ont une nouvelle fois demandé au ministre de l'<SPLIT>économie laurent fabius la levée du secret défense afin d'<SPLIT>obtenir la déclassification de documents de thomson<SPLIT>, maître d'<SPLIT>oeuvre du contrat<SPLIT>.}
+False positives: {
+mi-
+avril
+} False negatives: {
+mi-avril
+}
+
+Expected: {
+(<SPLIT>jean-michel dumay<SPLIT>, le monde du 11.01.02.<SPLIT>)}
+Predicted: {
+(<SPLIT>jean-michel dumay<SPLIT>, le monde du 11.01.02<SPLIT>.<SPLIT>)}
+False positives: {
+11.01.02
+.
+} False negatives: {
+11.01.02.
 }

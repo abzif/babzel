@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.8889692399080554
+Evaluation-Score=0.888995067021359
 Training-Sample-Size=32984
 Evaluation-Sample-Size=3664
 Training-Algorithm=MAXENT
@@ -10,9 +10,9 @@ Component-Name=POSTaggerME
 Language=fi
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1666500918747
+Timestamp=1669002014193
 TrainerType=Event
-Training-Eventhash=e865181d0aadaa03f36ac813e6171268
+Training-Eventhash=891bfae60dc592d0da558e4eacddf7b2
 factory=opennlp.tools.postag.POSTaggerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -6112,11 +6112,12 @@ toi: PRON | VERB
 Expected: {
 totisesti_ADV toivon_VERB etta_SCONJ aitikin_NOUN olisi_AUX kohtuullisen_ADJ tyytyvainen_ADJ ,_PUNCT oli_VERB han_PRON sitten_PART missa_ADV lienee_PART ._PUNCT}
 Predicted: {
-totisesti_ADV toivon_VERB etta_SCONJ aitikin_NOUN olisi_AUX kohtuullisen_ADJ tyytyvainen_ADJ ,_PUNCT oli_AUX han_PRON sitten_PART missa_PRON lienee_PART ._PUNCT}
+totisesti_ADV toivon_VERB etta_SCONJ aitikin_NOUN olisi_AUX kohtuullisen_ADJ tyytyvainen_ADJ ,_PUNCT oli_AUX han_PRON sitten_ADV missa_PRON lienee_PART ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 oli: VERB | AUX
+sitten: PART | ADV
 missa: ADV | PRON
 }
 
@@ -7034,6 +7035,16 @@ tunnetuimmat: ADJ | NOUN
 samba: NOUN | PROPN
 bossa: NOUN | PROPN
 nova: NOUN | PROPN
+}
+
+Expected: {
+postimyynnin_NOUN riesa_NOUN ovat_AUX yritykset_NOUN ,_PUNCT jotka_PRON keraavat_VERB asiakkailta_NOUN rahat_NOUN ja_CCONJ katoavat_VERB sitten_ADV jaljettomiin_ADV ._PUNCT}
+Predicted: {
+postimyynnin_NOUN riesa_NOUN ovat_AUX yritykset_NOUN ,_PUNCT jotka_PRON keraavat_VERB asiakkailta_ADJ rahat_NOUN ja_CCONJ katoavat_VERB sitten_ADV jaljettomiin_ADV ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+asiakkailta: NOUN | ADJ
 }
 
 Expected: {
@@ -9920,11 +9931,10 @@ saa: AUX | VERB
 Expected: {
 kirjan_NOUN lukee_VERB missa_ADV ja_CCONJ milloin_ADV vain_PART ,_PUNCT haluamaansa_VERB tahtiin_NOUN haluamissaan_VERB jaksoissa_NOUN ja_CCONJ niin_PART monta_DET kertaa_NOUN kuin_SCONJ haluaa_VERB ._PUNCT}
 Predicted: {
-kirjan_NOUN lukee_VERB missa_PRON ja_CCONJ milloin_ADV vain_ADV ,_PUNCT haluamaansa_VERB tahtiin_NOUN haluamissaan_VERB jaksoissa_NOUN ja_CCONJ niin_ADV monta_PRON kertaa_NOUN kuin_SCONJ haluaa_VERB ._PUNCT}
+kirjan_NOUN lukee_VERB missa_ADV ja_CCONJ milloin_ADV vain_ADV ,_PUNCT haluamaansa_VERB tahtiin_NOUN haluamissaan_VERB jaksoissa_NOUN ja_CCONJ niin_ADV monta_PRON kertaa_NOUN kuin_SCONJ haluaa_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-missa: ADV | PRON
 vain: PART | ADV
 niin: PART | ADV
 monta: DET | PRON
@@ -16205,16 +16215,15 @@ hammastella: VERB | ADJ
 }
 
 Expected: {
-omat_ADJ tulokset_NOUN saattavat_AUX tuntua_VERB mitattomilta_ADJ ja_CCONJ liian_ADV raskailta_ADJ kannettaviksi_VERB ,_PUNCT mutta_CCONJ tyomme_NOUN on_AUX tyota_NOUN siina_PRON missa_PRON muittenkin_PRON ;_PUNCT pennissa_NOUN on_AUX miljoonan_NUM alku_NOUN ja_CCONJ muita_PRON typeria_ADJ sananlaskuja_NOUN ._PUNCT}
+omat_ADJ tulokset_NOUN saattavat_AUX tuntua_VERB mitattomilta_ADJ ja_CCONJ liian_ADV raskailta_ADJ kannettaviksi_VERB ,_PUNCT mutta_CCONJ tyomme_NOUN on_AUX tyota_NOUN siina_ADV missa_ADV muittenkin_PRON ;_PUNCT pennissa_NOUN on_AUX miljoonan_NUM alku_NOUN ja_CCONJ muita_PRON typeria_ADJ sananlaskuja_NOUN ._PUNCT}
 Predicted: {
-omat_ADJ tulokset_NOUN saattavat_AUX tuntua_VERB mitattomilta_PRON ja_CCONJ liian_ADV raskailta_ADJ kannettaviksi_NOUN ,_PUNCT mutta_CCONJ tyomme_NOUN on_VERB tyota_NOUN siina_ADV missa_PRON muittenkin_PRON ;_PUNCT pennissa_NOUN on_AUX miljoonan_NUM alku_NOUN ja_CCONJ muita_PRON typeria_ADJ sananlaskuja_NOUN ._PUNCT}
+omat_ADJ tulokset_NOUN saattavat_AUX tuntua_VERB mitattomilta_PRON ja_CCONJ liian_ADV raskailta_ADJ kannettaviksi_NOUN ,_PUNCT mutta_CCONJ tyomme_NOUN on_VERB tyota_NOUN siina_ADV missa_ADV muittenkin_PRON ;_PUNCT pennissa_NOUN on_AUX miljoonan_NUM alku_NOUN ja_CCONJ muita_PRON typeria_ADJ sananlaskuja_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 mitattomilta: ADJ | PRON
 kannettaviksi: VERB | NOUN
 on: AUX | VERB
-siina: PRON | ADV
 }
 
 Expected: {
@@ -16240,11 +16249,10 @@ tyovoimapoliittisten: ADJ | NOUN
 Expected: {
 samalla_ADV kun_SCONJ tyovoimapoliittisen_ADJ aikuiskoulutuksen_NOUN teho_NOUN laski_VERB ,_PUNCT yha_ADV harvempi_ADJ tyovoimakoulutukseen_NOUN osallistunut_VERB sai_VERB toita_NOUN koulutuksen_NOUN jalkeen_ADP ._PUNCT}
 Predicted: {
-samalla_ADV kun_SCONJ tyovoimapoliittisen_NOUN aikuiskoulutuksen_NOUN teho_NOUN laski_VERB ,_PUNCT yha_PART harvempi_ADJ tyovoimakoulutukseen_NOUN osallistunut_VERB sai_VERB toita_NOUN koulutuksen_NOUN jalkeen_ADP ._PUNCT}
+samalla_ADV kun_SCONJ tyovoimapoliittisen_ADJ aikuiskoulutuksen_NOUN teho_NOUN laski_VERB ,_PUNCT yha_PART harvempi_ADJ tyovoimakoulutukseen_NOUN osallistunut_VERB sai_VERB toita_NOUN koulutuksen_NOUN jalkeen_ADP ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-tyovoimapoliittisen: ADJ | NOUN
 yha: ADV | PART
 }
 

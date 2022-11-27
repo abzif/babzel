@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.8883404827122848
+Evaluation-Score=0.8883146415835443
 Training-Sample-Size=33005
 Evaluation-Sample-Size=3667
 Training-Algorithm=MAXENT
@@ -10,9 +10,9 @@ Component-Name=POSTaggerME
 Language=fi
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1666494942518
+Timestamp=1668930807521
 TrainerType=Event
-Training-Eventhash=c8109133cff99989f3edcc4be8236fe0
+Training-Eventhash=28f91d149358e5bd0fb7bb7260210820
 factory=opennlp.tools.postag.POSTaggerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -775,12 +775,13 @@ asunnostaan: NOUN | VERB
 Expected: {
 von_PROPN wright_PROPN ja_CCONJ hän_PRON tekivät_VERB nuorina_ADJ miehinä_NOUN paestumin_PROPN temppelin_NOUN raunioilla_NOUN valan_NOUN :_PUNCT viinaa_NOUN ei_AUX juoda_VERB mutta_CCONJ viiniä_NOUN kyllä_PART ._PUNCT}
 Predicted: {
-von_PROPN wright_PROPN ja_CCONJ hän_PRON tekivät_VERB nuorina_NOUN miehinä_NOUN paestumin_NOUN temppelin_NOUN raunioilla_NOUN valan_NOUN :_PUNCT viinaa_NOUN ei_AUX juoda_VERB mutta_CCONJ viiniä_NOUN kyllä_ADV ._PUNCT}
+von_PROPN wright_PROPN ja_CCONJ hän_PRON tekivät_VERB nuorina_NOUN miehinä_NOUN paestumin_PROPN temppelin_PROPN raunioilla_PROPN valan_NOUN :_PUNCT viinaa_NOUN ei_AUX juoda_VERB mutta_CCONJ viiniä_NOUN kyllä_ADV ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 nuorina: ADJ | NOUN
-paestumin: PROPN | NOUN
+temppelin: NOUN | PROPN
+raunioilla: NOUN | PROPN
 kyllä: PART | ADV
 }
 
@@ -3135,11 +3136,12 @@ korostavampana: VERB | NOUN
 Expected: {
 martti_PROPN selitti_VERB mitä_PRON sen_DET miniä_NOUN oli_AUX talolle_NOUN teettänyt_VERB ennen_ADV kuin_SCONJ pani_VERB pojan_NOUN rakentamaan_VERB niille_PRON oman_ADJ talon_NOUN}
 Predicted: {
-martti_PROPN selitti_VERB mitä_PART sen_DET miniä_NOUN oli_AUX talolle_NOUN teettänyt_VERB ennen_ADV kuin_SCONJ pani_VERB pojan_NOUN rakentamaan_VERB niille_PRON oman_ADJ talon_NOUN}
+martti_PROPN selitti_VERB mitä_PART sen_PRON miniä_NOUN oli_AUX talolle_NOUN teettänyt_VERB ennen_ADV kuin_SCONJ pani_VERB pojan_NOUN rakentamaan_VERB niille_PRON oman_ADJ talon_NOUN}
 Errors: {
 Tok: Ref | Pred
 ---------------
 mitä: PRON | PART
+sen: DET | PRON
 }
 
 Expected: {
@@ -3412,6 +3414,16 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 myös: PART | ADV
+}
+
+Expected: {
+ainoa_ADJ maa_NOUN ,_PUNCT missä_PRON rakennetaan_VERB on_AUX saksa_PROPN ._PUNCT}
+Predicted: {
+ainoa_ADJ maa_NOUN ,_PUNCT missä_ADV rakennetaan_VERB on_AUX saksa_PROPN ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+missä: PRON | ADV
 }
 
 Expected: {
@@ -4566,11 +4578,10 @@ vihreät: ADJ | NOUN
 Expected: {
 se_PRON on_AUX vaatinut_VERB työtä_NOUN kaikilla_DET tasoilla_NOUN ja_CCONJ tästä_DET saavutuksesta_NOUN samoin_ADV kuin_SCONJ alaistensa_NOUN panoksesta_NOUN mäkelä_PROPN on_AUX erittäin_PART tyytyväinen_ADJ ._PUNCT}
 Predicted: {
-se_PRON on_AUX vaatinut_VERB työtä_NOUN kaikilla_PRON tasoilla_NOUN ja_CCONJ tästä_PRON saavutuksesta_VERB samoin_ADV kuin_SCONJ alaistensa_NOUN panoksesta_NOUN mäkelä_PROPN on_AUX erittäin_PART tyytyväinen_ADJ ._PUNCT}
+se_PRON on_AUX vaatinut_VERB työtä_NOUN kaikilla_DET tasoilla_NOUN ja_CCONJ tästä_PRON saavutuksesta_VERB samoin_ADV kuin_SCONJ alaistensa_NOUN panoksesta_NOUN mäkelä_PROPN on_AUX erittäin_PART tyytyväinen_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-kaikilla: DET | PRON
 tästä: DET | PRON
 saavutuksesta: NOUN | VERB
 }
@@ -17914,13 +17925,14 @@ on: AUX | VERB
 }
 
 Expected: {
-sanon_VERB näin_ADV ,_PUNCT koska_SCONJ sillä_PRON on_AUX merkitystä_NOUN koko_ADJ elinkeinoelämälle_NOUN ,_PUNCT samoin_ADV kuin_SCONJ teollisuudelle_NOUN ._PUNCT}
+sanon_VERB näin_ADV ,_PUNCT koska_SCONJ sillä_PRON on_AUX merkitystä_NOUN koko_ADJ elinkeinoelämälle_NOUN ,_PUNCT samoin_ADV kuin_CCONJ teollisuudelle_NOUN ._PUNCT}
 Predicted: {
 sanon_VERB näin_VERB ,_PUNCT koska_SCONJ sillä_PRON on_AUX merkitystä_NOUN koko_ADJ elinkeinoelämälle_NOUN ,_PUNCT samoin_ADV kuin_SCONJ teollisuudelle_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 näin: ADV | VERB
+kuin: CCONJ | SCONJ
 teollisuudelle: NOUN | ADJ
 }
 
@@ -18705,11 +18717,10 @@ buleriasia: PROPN | NOUN
 Expected: {
 viikon_NOUN tyttö_NOUN melkein_ADV nukkuu_VERB työpaikalla_NOUN ,_PUNCT vaikka ei_SCONJ AUX sitä_PRON kukaan_PRON ehdi_VERB huomatakaan_VERB ._PUNCT}
 Predicted: {
-viikon_NOUN tyttö_NOUN melkein_ADV nukkuu_VERB työpaikalla_NOUN ,_PUNCT vaikka ei_SCONJ AUX sitä_PRON kukaan_PRON ehdi_AUX huomatakaan_ADV ._PUNCT}
+viikon_NOUN tyttö_NOUN melkein_ADV nukkuu_VERB työpaikalla_NOUN ,_PUNCT vaikka ei_SCONJ AUX sitä_PRON kukaan_PRON ehdi_VERB huomatakaan_ADV ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-ehdi: VERB | AUX
 huomatakaan: VERB | ADV
 }
 
@@ -19510,12 +19521,11 @@ tulvineen: VERB | NOUN
 Expected: {
 hyssyttelin_VERB vaan_ADV sitä_PRON ,_PUNCT ja_CCONJ sanoin_VERB että_SCONJ etkö_AUX sä_PRON huomaa_VERB että_SCONJ teillä_PRON on_AUX vieras_ADJ lehmä_NOUN pihassa_NOUN ,_PUNCT ja_CCONJ että_SCONJ toisin_ADV ku_SCONJ luullaan_VERB ,_PUNCT ni_ADV myös_ADV lehmät_NOUN ärsyyntyy_VERB ._PUNCT}
 Predicted: {
-hyssyttelin_VERB vaan_CCONJ sitä_PRON ,_PUNCT ja_CCONJ sanoin_VERB että_SCONJ etkö_AUX sä_PRON huomaa_VERB että_SCONJ teillä_PRON on_AUX vieras_NOUN lehmä_NOUN pihassa_NOUN ,_PUNCT ja_CCONJ että_SCONJ toisin_ADV ku_SCONJ luullaan_VERB ,_PUNCT ni_PART myös_PART lehmät_NOUN ärsyyntyy_VERB ._PUNCT}
+hyssyttelin_VERB vaan_CCONJ sitä_PRON ,_PUNCT ja_CCONJ sanoin_VERB että_SCONJ etkö_AUX sä_PRON huomaa_VERB että_SCONJ teillä_PRON on_AUX vieras_ADJ lehmä_NOUN pihassa_NOUN ,_PUNCT ja_CCONJ että_SCONJ toisin_ADV ku_SCONJ luullaan_VERB ,_PUNCT ni_PART myös_PART lehmät_NOUN ärsyyntyy_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 vaan: ADV | CCONJ
-vieras: ADJ | NOUN
 ni: ADV | PART
 myös: ADV | PART
 }

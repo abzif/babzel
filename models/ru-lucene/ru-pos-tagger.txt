@@ -10,9 +10,9 @@ Component-Name=POSTaggerME
 Language=ru
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1666236445970
+Timestamp=1669169635545
 TrainerType=Event
-Training-Eventhash=3f287f8694a9902dbe2e57c6f10c7788
+Training-Eventhash=d03d9c4710383bf2337ad942630b4f83
 factory=opennlp.tools.postag.POSTaggerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -9002,11 +9002,11 @@ Tok: Ref | Pred
 Expected: {
 но_CCONJ в_ADP сезоне_NOUN 1974_ADJ года_NOUN номера_NOUN 0_NUM не_PART было_VERB ,_PUNCT а_CCONJ под_ADP номером_NOUN 1_NUM выступал_VERB ронни_PROPN петерсон_PROPN из_ADP команды_NOUN "_PUNCT лотус_PROPN "_PUNCT ,_PUNCT фактически_ADV унаследовавшии_VERB номер_NOUN от_ADP чемпиона_NOUN 1972_ADJ года_NOUN эмерсона_PROPN фиттипальди_PROPN ,_PUNCT перешедшего_VERB в_ADP "_PUNCT макларен_NOUN "_PUNCT ._PUNCT}
 Predicted: {
-но_CCONJ в_ADP сезоне_NOUN 1974_ADJ года_NOUN номера_NOUN 0_NUM не_PART было_VERB ,_PUNCT а_CCONJ под_ADP номером_NOUN 1_NUM выступал_VERB ронни_PROPN петерсон_PROPN из_ADP команды_NOUN "_PUNCT лотус_PROPN "_PUNCT ,_PUNCT фактически_ADV унаследовавшии_VERB номер_NOUN от_ADP чемпиона_NOUN 1972_ADJ года_NOUN эмерсона_PROPN фиттипальди_PROPN ,_PUNCT перешедшего_VERB в_ADP "_PUNCT макларен_PROPN "_PUNCT ._PUNCT}
+но_CCONJ в_ADP сезоне_NOUN 1974_ADJ года_NOUN номера_NOUN 0_NUM не_PART было_VERB ,_PUNCT а_CCONJ под_ADP номером_NOUN 1_NUM выступал_VERB ронни_PROPN петерсон_PROPN из_ADP команды_NOUN "_PUNCT лотус_PROPN "_PUNCT ,_PUNCT фактически_ADV унаследовавшии_VERB номер_NOUN от_ADP чемпиона_NOUN 1972_ADJ года_NOUN эмерсона_PROPN фиттипальди_PROPN ,_PUNCT перешедшего_VERB в_ADP "_PUNCT макларен_ADJ "_PUNCT ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-макларен: NOUN | PROPN
+макларен: NOUN | ADJ
 }
 
 Expected: {
@@ -18598,16 +18598,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 и: CCONJ | PART
-}
-
-Expected: {
-журналисты_NOUN лучше_ADV всех_PRON знают_VERB ,_PUNCT что_SCONJ "_PUNCT свобода_NOUN всегда_ADV лучше_ADJ несвободы_NOUN "_PUNCT ._PUNCT}
-Predicted: {
-журналисты_NOUN лучше_ADJ всех_PRON знают_VERB ,_PUNCT что_SCONJ "_PUNCT свобода_NOUN всегда_ADV лучше_ADJ несвободы_NOUN "_PUNCT ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-лучше: ADV | ADJ
 }
 
 Expected: {
@@ -45542,6 +45532,16 @@ Tok: Ref | Pred
 основном: ADJ | NOUN
 это: PART | PRON
 что: SCONJ | PRON
+}
+
+Expected: {
+в_ADP музеи_NOUN в_ADP детстве_NOUN часто_ADV ходила_VERB ,_PUNCT нравилась_VERB комната_NOUN со_ADP зверями_NOUN и_CCONJ камнями_NOUN ,_PUNCT сеичас_ADV не_PART хожу_VERB ,_PUNCT но_CCONJ кто_PRON не_PART был_VERB обязательно_ADV надо_VERB сходить_VERB ,_PUNCT детеи_NOUN своих_DET водили_VERB несколько_NUM раз_NOUN ,_PUNCT довольны_ADJ}
+Predicted: {
+в_ADP музеи_NOUN в_ADP детстве_NOUN часто_ADV ходила_VERB ,_PUNCT нравилась_VERB комната_NOUN со_ADP зверями_NOUN и_CCONJ камнями_NOUN ,_PUNCT сеичас_ADV не_PART хожу_VERB ,_PUNCT но_CCONJ кто_PRON не_PART был_AUX обязательно_ADV надо_VERB сходить_VERB ,_PUNCT детеи_NOUN своих_DET водили_VERB несколько_NUM раз_NOUN ,_PUNCT довольны_ADJ}
+Errors: {
+Tok: Ref | Pred
+---------------
+был: VERB | AUX
 }
 
 Expected: {

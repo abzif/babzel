@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9660338833397716
+Evaluation-Score=0.9660062910435406
 Training-Sample-Size=65673
 Evaluation-Sample-Size=7296
 Training-Algorithm=MAXENT
@@ -10,9 +10,9 @@ Component-Name=StatisticalLemmatizer
 Language=de
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1666063331298
+Timestamp=1668927319678
 TrainerType=Event
-Training-Eventhash=f745b4a15c47a63f7645ec91e84aa180
+Training-Eventhash=8270ff9b97b6dafd4effacdc65d4d5e4
 factory=opennlp.tools.lemmatizer.LemmatizerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -4251,6 +4251,34 @@ einschussen: einschuss | einschussen
 }
 
 Expected: {
+nein	PART	nein
+,	PUNCT	,
+man	PRON	man
+muss	AUX	mussen
+das	DET	der
+problem	NOUN	problem
+starker	ADV	stark
+thematisieren	VERB	thematisieren
+.	PUNCT	.
+}
+Predicted: {
+nein	PART	nein
+,	PUNCT	,
+man	PRON	man
+muss	AUX	mussen
+das	DET	der
+problem	NOUN	problem
+starker	ADV	starker
+thematisieren	VERB	thematisieren
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+starker: stark | starker
+}
+
+Expected: {
 der	DET	der
 erste	ADJ	erst
 grosse	ADJ	gross
@@ -6923,7 +6951,7 @@ fahning	PROPN	fahning
 muss	AUX	mussen
 in	ADP	in
 den	DET	der
-nachsten	ADJ	nachster
+nachsten	ADJ	nah
 jahren	NOUN	jahr
 allerhochste	ADJ	allerhochster
 prioritat	NOUN	prioritat
@@ -6985,7 +7013,6 @@ soll	AUX	sollen
 Errors: {
 Tok: Ref | Pred
 ---------------
-nachsten: nachster | nah
 allerhochste: allerhochster | alll
 einer: ein | einer
 }
@@ -8529,7 +8556,7 @@ wollen	AUX	wollen
 wir	PRON	wir
 bis	ADP	bis
 ende	NOUN	ende
-nachsten	ADJ	nachster
+nachsten	ADJ	nah
 jahres	NOUN	jahr
 schon	ADV	schon
 noch	ADV	noch
@@ -8562,7 +8589,7 @@ haben	VERB	haben
 Errors: {
 Tok: Ref | Pred
 ---------------
-nachsten: nachster | null
+nachsten: nah | null
 }
 
 Expected: {
@@ -16981,7 +17008,7 @@ mathematik	NOUN	mathematik
 ,	PUNCT	,
 ein	NUM	ein
 jahr	NOUN	jahr
-spater	ADV	spat
+spater	ADV	spater
 wurde	AUX	werden
 er	PRON	er
 bei	ADP	bei
@@ -17012,6 +17039,7 @@ habilitiert	VERB	habilitieren
 Errors: {
 Tok: Ref | Pred
 ---------------
+spater: spat | spater
 methoden: methode | methoden
 elliptischen: elliptisch | elliptischen
 }
@@ -21794,6 +21822,102 @@ einbrachte: einbringen | einbrachte
 }
 
 Expected: {
+die	DET	der
+strasse	NOUN	strasse
+29a	PROPN	29a
+verlauft	VERB	verlaufen
+uber	ADP	uber
+varfu	PROPN	varfu
+campului	PROPN	campului
+nach	ADP	nach
+suceava	PROPN	suceava
+(	PUNCT	(
+39	NUM	39
+km	NOUN	km
+)	PUNCT	)
+,	PUNCT	,
+die	DET	der
+29f	PROPN	29f
+uber	ADP	uber
+pomarla	PROPN	pomarla
+zu der	ADP DET	zu der
+ukrainischen	ADJ	ukrainisch
+grenze	NOUN	grenze
+und	CCONJ	und
+weiter	ADJ	weit
+nach	ADP	nach
+czernowitz	PROPN	czernowitz
+,	PUNCT	,
+die	DET	der
+29b	PROPN	29b
+in	ADP	in
+die	DET	der
+kreishauptstadt	NOUN	kreishauptstadt
+botosani	PROPN	botosani
+(	PUNCT	(
+33	NUM	33
+km	NOUN	km
+)	PUNCT	)
+und	CCONJ	und
+die	DET	der
+29a	PROPN	29a
+in	ADP	in
+nordliche	ADJ	nordlich
+richtung	NOUN	richtung
+.	PUNCT	.
+}
+Predicted: {
+die	DET	der
+strasse	NOUN	strasse
+29a	PROPN	29a
+verlauft	VERB	verlaufen
+uber	ADP	uber
+varfu	PROPN	varfu
+campului	PROPN	campului
+nach	ADP	nach
+suceava	PROPN	suceava
+(	PUNCT	(
+39	NUM	39
+km	NOUN	km
+)	PUNCT	)
+,	PUNCT	,
+die	DET	der
+29f	PROPN	29f
+uber	ADP	uber
+pomarla	PROPN	pomarla
+zu der	ADP DET	zu der
+ukrainischen	ADJ	ukrainisch
+grenze	NOUN	grenze
+und	CCONJ	und
+weiter	ADJ	weiter
+nach	ADP	nach
+czernowitz	PROPN	czernowitz
+,	PUNCT	,
+die	DET	der
+29b	PROPN	29b
+in	ADP	in
+die	DET	der
+kreishauptstadt	NOUN	kreishauptstadt
+botosani	PROPN	botosani
+(	PUNCT	(
+33	NUM	33
+km	NOUN	km
+)	PUNCT	)
+und	CCONJ	und
+die	DET	der
+29a	PROPN	29a
+in	ADP	in
+nordliche	ADJ	nordlich
+richtung	NOUN	richtung
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+weiter: weit | weiter
+}
+
+Expected: {
 nach	ADP	nach
 de	PROPN	de
 gaulles	PROPN	gaulle
@@ -22333,7 +22457,7 @@ der	DET	der
 ersten	ADJ	erst
 staffel	NOUN	staffel
 nicht	PART	nicht
-weiter	ADJ	weiter
+weiter	ADJ	weit
 verlangert	VERB	verlangern
 .	PUNCT	.
 }
@@ -22362,6 +22486,7 @@ Tok: Ref | Pred
 gewunschten: gewunscht | ewunsctn
 einschaltquoten: einschaltquote | einschaltquot
 ersten: erst | null
+weiter: weit | weiter
 }
 
 Expected: {
@@ -22400,6 +22525,70 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 einen: ein | einen
+}
+
+Expected: {
+neben	ADP	neben
+der	DET	der
+ursprunglich	ADJ	ursprunglich
+romanischen	ADJ	romanisch
+martinskirche	PROPN	martinskirche
+mit	ADP	mit
+gotischen	ADJ	gotisch
+figuren	NOUN	figur
+ist	AUX	sein
+an	ADP	an
+alten	ADJ	alt
+bauwerken	NOUN	bauwerk
+in	ADP	in
+ramsdorf	PROPN	ramsdorf
+noch	ADV	noch
+der	DET	der
+ehemalige	ADJ	ehemalig
+herrschaftssitz	NOUN	herrschaftssitz
+der	DET	der
+ramsdorfer	NOUN	ramsdorfer
+,	PUNCT	,
+spater	ADV	spat
+der	DET	der
+goder	PROPN	goder
+zu	PART	zu
+erwahnen	VERB	erwahnen
+.	PUNCT	.
+}
+Predicted: {
+neben	ADP	neben
+der	DET	der
+ursprunglich	ADJ	ursprunglich
+romanischen	ADJ	romanisch
+martinskirche	PROPN	martinskirche
+mit	ADP	mit
+gotischen	ADJ	gotisch
+figuren	NOUN	figur
+ist	AUX	sein
+an	ADP	an
+alten	ADJ	alt
+bauwerken	NOUN	bauwerk
+in	ADP	in
+ramsdorf	PROPN	ramsdorf
+noch	ADV	noch
+der	DET	der
+ehemalige	ADJ	ehemalig
+herrschaftssitz	NOUN	herrschaftssitz
+der	DET	der
+ramsdorfer	NOUN	ramsdorfer
+,	PUNCT	,
+spater	ADV	spater
+der	DET	der
+goder	PROPN	goder
+zu	PART	zu
+erwahnen	VERB	erwahnen
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+spater: spat | spater
 }
 
 Expected: {
@@ -26971,6 +27160,40 @@ messwerts: messwert | messwerts
 }
 
 Expected: {
+gleichzeitig	ADJ	gleichzeitig
+anderte	VERB	andern
+er	PRON	er
+das	DET	der
+zuchtungsprogramm	NOUN	zuchtungsprogramm
+und	CCONJ	und
+baute	VERB	bauen
+den	DET	der
+rosenzuchtbetrieb	NOUN	rosenzuchtbetrieb
+weiter	ADJ	weit
+aus	ADP	aus
+.	PUNCT	.
+}
+Predicted: {
+gleichzeitig	ADJ	gleichzeitig
+anderte	VERB	andern
+er	PRON	er
+das	DET	der
+zuchtungsprogramm	NOUN	zuchtungsprogramm
+und	CCONJ	und
+baute	VERB	bauen
+den	DET	der
+rosenzuchtbetrieb	NOUN	rosenzuchtbetrieb
+weiter	ADJ	weiter
+aus	ADP	aus
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+weiter: weit | weiter
+}
+
+Expected: {
 nach	ADP	nach
 dem	DET	der
 ende	NOUN	ende
@@ -29432,7 +29655,7 @@ peptidbindungen: peptidbindungen | peptidbindung
 Expected: {
 gegenuber	ADP	gegenuber
 der	DET	der
-weiter	ADJ	weiter
+weiter	ADJ	weit
 verbreiteten	ADJ	verbreitet
 spitzzange	NOUN	spitzzange
 kann	AUX	konnen
@@ -29453,8 +29676,8 @@ werden	AUX	werden
 Predicted: {
 gegenuber	ADP	gegenuber
 der	DET	der
-weiter	ADJ	weiter
-verbreiteten	ADJ	verbreiten
+weiter	ADJ	weit
+verbreiteten	ADJ	verbreitet
 spitzzange	NOUN	spitzzange
 kann	AUX	konnen
 mit	ADP	mit
@@ -29474,7 +29697,6 @@ werden	AUX	werden
 Errors: {
 Tok: Ref | Pred
 ---------------
-verbreiteten: verbreitet | verbreiten
 einer: ein | einer
 eine: ein | eine
 }
@@ -35777,64 +35999,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 eine: ein | eine
-}
-
-Expected: {
-villa	PROPN	villa
-wird	AUX	werden
-von	ADP	von
-den	DET	der
-zeitgenossen	NOUN	zeitgenosse
-als	ADP	als
-ein	DET	ein
-sehr	ADV	sehr
-emotionaler	ADJ	emotional
-und	CCONJ	und
-impulsiver	ADJ	impulsiv
-mensch	NOUN	mensch
-beschrieben	VERB	beschreiben
-,	PUNCT	,
-dessen	DET	der
-temperament	NOUN	temperament
-es	PRON	es
-an dem	ADP DET	an der
-notigen	ADJ	notig
-mittelmass	NOUN	mittelmass
-zu	PART	zu
-fehlen	VERB	fehlen
-schien	VERB	scheinen
-.	PUNCT	.
-}
-Predicted: {
-villa	PROPN	villa
-wird	AUX	werden
-von	ADP	von
-den	DET	der
-zeitgenossen	NOUN	zeitgenosse
-als	ADP	als
-ein	DET	ein
-sehr	ADV	sehr
-emotionaler	ADJ	emotional
-und	CCONJ	und
-impulsiver	ADJ	impulsiver
-mensch	NOUN	mensch
-beschrieben	VERB	beschreiben
-,	PUNCT	,
-dessen	DET	der
-temperament	NOUN	temperament
-es	PRON	es
-an dem	ADP DET	an der
-notigen	ADJ	notig
-mittelmass	NOUN	mittelmass
-zu	PART	zu
-fehlen	VERB	fehlen
-schien	VERB	scheinen
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-impulsiver: impulsiv | impulsiver
 }
 
 Expected: {
@@ -52877,42 +53041,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 dieses: dieses | dies
-}
-
-Expected: {
-eine	DET	eine
-ubersicht	NOUN	ubersicht
-uber	ADP	uber
-alternative	ADJ	alternativ
-anbieter	NOUN	anbieter
-findet	VERB	finden
-sich	PRON	sich
-in	ADP	in
-ausgabe	NOUN	ausgabe
-13/2001	NUM	13/2001
-von	ADP	von
-c't	PROPN	c't
-.	PUNCT	.
-}
-Predicted: {
-eine	DET	eine
-ubersicht	NOUN	ubersicht
-uber	ADP	uber
-alternative	ADJ	alternative
-anbieter	NOUN	anbieter
-findet	VERB	finden
-sich	PRON	sich
-in	ADP	in
-ausgabe	NOUN	ausgabe
-13/2001	NUM	13/2001
-von	ADP	von
-c't	PROPN	c't
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-alternative: alternativ | alternative
 }
 
 Expected: {
@@ -74220,7 +74348,7 @@ Predicted: {
 ein	DET	ein
 modell	NOUN	modell
 fur	ADP	fur
-alternative	ADJ	alternative
+alternative	ADJ	alternativ
 kommunikation	NOUN	kommunikation
 sieht	VERB	sehen
 serres	PROPN	serres
@@ -74238,7 +74366,6 @@ salons	NOUN	salons
 Errors: {
 Tok: Ref | Pred
 ---------------
-alternative: alternativ | alternative
 salons: salon | salons
 }
 
@@ -91840,6 +91967,24 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 virenfreie: virenfreie | virenfrei
+}
+
+Expected: {
+internet	X	internet
+explorer	X	explorer
+veruntreut	VERB	veruntreuen
+passworter	NOUN	passwort
+}
+Predicted: {
+internet	X	internet
+explorer	X	explorer
+veruntreut	VERB	veruntreuen
+passworter	NOUN	passworter
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+passworter: passwort | passworter
 }
 
 Expected: {
@@ -110537,7 +110682,7 @@ madchen	NOUN	madchen
 die	PRON	der
 er	PRON	er
 wenig	ADV	wenig
-spater	ADV	spat
+spater	ADV	spater
 gestand	VERB	gestehen
 .	PUNCT	.
 }
@@ -110545,6 +110690,7 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 eine: ein | eine
+spater: spat | spater
 }
 
 Expected: {

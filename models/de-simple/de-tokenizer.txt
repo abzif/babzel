@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.99781791340853
+Evaluation-Score=0.997836506303655
 Training-Sample-Size=65675
 Evaluation-Sample-Size=7297
 Training-Algorithm=MAXENT_QN
@@ -9,9 +9,9 @@ Component-Name=TokenizerME
 Language=de
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1665731103823
+Timestamp=1668924514149
 TrainerType=Event
-Training-Eventhash=70b1b7cb97e7ed7607238137551498ad
+Training-Eventhash=ee214dd3ad14278a0cc51382e5469a8c
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
@@ -38,17 +38,6 @@ virus
 '
 } False negatives: {
 virus'
-}
-
-Expected: {
-die tv<SPLIT>-<SPLIT>werkschau kommt 1996 auch als video auf den markt<SPLIT>.}
-Predicted: {
-die tv-<SPLIT>werkschau kommt 1996 auch als video auf den markt<SPLIT>.}
-False positives: {
-tv-
-} False negatives: {
-tv
--
 }
 
 Expected: {
@@ -197,13 +186,12 @@ spieles
 Expected: {
 rund die hälfte der in dem us<SPLIT>-<SPLIT>werk gefertigten autos soll exportiert werden<SPLIT>.}
 Predicted: {
-rund die hälfte der in dem us-werk gefertigten autos soll exportiert werden<SPLIT>.}
+rund die hälfte der in dem us-<SPLIT>werk gefertigten autos soll exportiert werden<SPLIT>.}
 False positives: {
-us-werk
+us-
 } False negatives: {
 us
 -
-werk
 }
 
 Expected: {
@@ -235,23 +223,21 @@ flughafen
 Expected: {
 ``<SPLIT>der wohnungsbau<SPLIT>''<SPLIT>, mahnt landesbank<SPLIT>-<SPLIT>chef hans fahning<SPLIT>, ``<SPLIT>muß in den nächsten jahren allerhöchste priorität haben<SPLIT>, wenn die stadt zu einer ausgewogenen und sozial verträglichen entwicklung finden soll<SPLIT>''<SPLIT>.}
 Predicted: {
-``<SPLIT>der wohnungsbau<SPLIT>''<SPLIT>, mahnt landesbank-chef hans fahning<SPLIT>, ``<SPLIT>muß in den nächsten jahren allerhöchste priorität haben<SPLIT>, wenn die stadt zu einer ausgewogenen und sozial verträglichen entwicklung finden soll<SPLIT>''<SPLIT>.}
+``<SPLIT>der wohnungsbau<SPLIT>''<SPLIT>, mahnt landesbank-<SPLIT>chef hans fahning<SPLIT>, ``<SPLIT>muß in den nächsten jahren allerhöchste priorität haben<SPLIT>, wenn die stadt zu einer ausgewogenen und sozial verträglichen entwicklung finden soll<SPLIT>''<SPLIT>.}
 False positives: {
-landesbank-chef
+landesbank-
 } False negatives: {
 landesbank
 -
-chef
 }
 
 Expected: {
 und coca cola<SPLIT>, ibm<SPLIT>, siemens oder bmw sind keine schimpf<SPLIT>-<SPLIT>bezeichnungen mehr<SPLIT>.}
 Predicted: {
-und coca cola<SPLIT>, ibm<SPLIT>, siemens oder bmw sind keine schimpf-bezeichnungen mehr<SPLIT>.}
+und coca cola<SPLIT>, ibm<SPLIT>, siemens oder bmw sind keine schimpf<SPLIT>-bezeichnungen mehr<SPLIT>.}
 False positives: {
-schimpf-bezeichnungen
+-bezeichnungen
 } False negatives: {
-schimpf
 -
 bezeichnungen
 }
@@ -299,11 +285,10 @@ jährige
 Expected: {
 caritas<SPLIT>-<SPLIT>chef und bischof armando franco wies darauf hin<SPLIT>, daß die ausländer zum reichtum des landes beitrügen<SPLIT>.}
 Predicted: {
-caritas-chef und bischof armando franco wies darauf hin<SPLIT>, daß die ausländer zum reichtum des landes beitrügen<SPLIT>.}
+caritas<SPLIT>-chef und bischof armando franco wies darauf hin<SPLIT>, daß die ausländer zum reichtum des landes beitrügen<SPLIT>.}
 False positives: {
-caritas-chef
+-chef
 } False negatives: {
-caritas
 -
 chef
 }
@@ -351,6 +336,17 @@ False positives: {
 } False negatives: {
 3
 .
+}
+
+Expected: {
+calasetta und seine nachbarorte wie carloforte und sant'antioco verfügen alle über gut geschützte häfen<SPLIT>.}
+Predicted: {
+calasetta und seine nachbarorte wie carloforte und sant<SPLIT>'antioco verfügen alle über gut geschützte häfen<SPLIT>.}
+False positives: {
+sant
+'antioco
+} False negatives: {
+sant'antioco
 }
 
 Expected: {
@@ -412,6 +408,17 @@ griech.
 }
 
 Expected: {
+ein klassische unterscheidung in wirtschaft und (<SPLIT>arbeits -<SPLIT>) psychologie wird oft vorgenommen in beanspruchung und belastung<SPLIT>.}
+Predicted: {
+ein klassische unterscheidung in wirtschaft und (<SPLIT>arbeits -) psychologie wird oft vorgenommen in beanspruchung und belastung<SPLIT>.}
+False positives: {
+-)
+} False negatives: {
+-
+)
+}
+
+Expected: {
 der bundestagswahlkreis cuxhaven -- stade ii (<SPLIT>wahlkreis 30<SPLIT>) liegt in niedersachsen und umfasst den landkreis cuxhaven sowie den nordteil des landkreises stade mit der gemeinde drochtersen sowie den samtgemeinden himmelpforten<SPLIT>, nordkehdingen und oldendorf<SPLIT>.}
 Predicted: {
 der bundestagswahlkreis cuxhaven -- stade ii (<SPLIT>wahlkreis 30) liegt in niedersachsen und umfasst den landkreis cuxhaven sowie den nordteil des landkreises stade mit der gemeinde drochtersen sowie den samtgemeinden himmelpforten<SPLIT>, nordkehdingen und oldendorf<SPLIT>.}
@@ -457,17 +464,6 @@ rhin
 et
 -
 moselle
-}
-
-Expected: {
-zweite<SPLIT>, falsche lösung mit der gleichen anzahl von ausreißern wie bei 1a<SPLIT>.}
-Predicted: {
-zweite<SPLIT>, falsche lösung mit der gleichen anzahl von ausreißern wie bei 1a.}
-False positives: {
-1a.
-} False negatives: {
-1a
-.
 }
 
 Expected: {
@@ -548,6 +544,20 @@ dell'anima
 }
 
 Expected: {
+die gleich darauf folgende<SPLIT>, etwas größere bucht von "<SPLIT>cala sapone<SPLIT>" (<SPLIT>cal'e saboni<SPLIT>) gehört bereits zur gemeinde sant'antioco<SPLIT>.}
+Predicted: {
+die gleich darauf folgende<SPLIT>, etwas größere bucht von "<SPLIT>cala sapone<SPLIT>" (<SPLIT>cal<SPLIT>'e saboni<SPLIT>) gehört bereits zur gemeinde sant<SPLIT>'antioco<SPLIT>.}
+False positives: {
+cal
+'e
+sant
+'antioco
+} False negatives: {
+cal'e
+sant'antioco
+}
+
+Expected: {
 peter holtz veröffentlichte im laufe seiner karriere 194 wissenschaftliche publikationen<SPLIT>, die meisten davon in der fachzeitschrift naunyn - schmiedeberg<SPLIT>'s archiv für pharmakologie<SPLIT>, deren redaktion er ab 1960 angehörte<SPLIT>.}
 Predicted: {
 peter holtz veröffentlichte im laufe seiner karriere 194 wissenschaftliche publikationen<SPLIT>, die meisten davon in der fachzeitschrift naunyn - schmiedeberg's archiv für pharmakologie<SPLIT>, deren redaktion er ab 1960 angehörte<SPLIT>.}
@@ -614,18 +624,6 @@ False positives: {
 }
 
 Expected: {
-ethische fragen spielen in marx<SPLIT>'<SPLIT>denken nur eine sehr untergeordnete rolle<SPLIT>.}
-Predicted: {
-ethische fragen spielen in marx'denken nur eine sehr untergeordnete rolle<SPLIT>.}
-False positives: {
-marx'denken
-} False negatives: {
-marx
-'
-denken
-}
-
-Expected: {
 das wappen der gemeinde entspricht dem wappen der familie bioncourt aus dem 13<SPLIT>.}
 Predicted: {
 das wappen der gemeinde entspricht dem wappen der familie bioncourt aus dem 13.}
@@ -645,17 +643,6 @@ jap
 .
 } False negatives: {
 jap.
-}
-
-Expected: {
-die im folgenden aufgeführten bekleidungsvorschriften entsprechen dem stand von 1913<SPLIT>.}
-Predicted: {
-die im folgenden aufgeführten bekleidungsvorschriften entsprechen dem stand von 1913.}
-False positives: {
-1913.
-} False negatives: {
-1913
-.
 }
 
 Expected: {
@@ -694,10 +681,9 @@ so
 Expected: {
 corel-"gratisversion" nur halbe sache}
 Predicted: {
-corel-<SPLIT>"gratisversion<SPLIT>" nur halbe sache}
+corel-"gratisversion<SPLIT>" nur halbe sache}
 False positives: {
-corel-
-"gratisversion
+corel-"gratisversion
 "
 } False negatives: {
 corel-"gratisversion"
@@ -719,10 +705,11 @@ xmlns="http://www.w3.org/profiles/voyager-strict">
 Expected: {
 <liste xml:base="/ix/events/"> <listenpunkt> <link xlink:type="simple " xlink:href="web.html">www-veranstaltung</link> </listenpunkt> </liste>}
 Predicted: {
-<liste xml:base=<SPLIT>"/ix/events/<SPLIT>"<SPLIT>> <listenpunkt> <link xlink:type=<SPLIT>"<SPLIT>simple " xlink:href=<SPLIT>"<SPLIT>web.html"<SPLIT>>www-veranstaltung</link> </listenpunkt> </liste>}
+<liste xml:base=<SPLIT>"<SPLIT>/ix/events/<SPLIT>"<SPLIT>> <listenpunkt> <link xlink:type=<SPLIT>"<SPLIT>simple " xlink:href=<SPLIT>"<SPLIT>web.html<SPLIT>"<SPLIT>>www-veranstaltung</link> </listenpunkt> </liste>}
 False positives: {
 xml:base=
-"/ix/events/
+"
+/ix/events/
 "
 >
 xlink:type=
@@ -730,7 +717,8 @@ xlink:type=
 simple
 xlink:href=
 "
-web.html"
+web.html
+"
 >www-veranstaltung</link>
 } False negatives: {
 xml:base="/ix/events/">
@@ -827,14 +815,14 @@ False positives: {
 }
 
 Expected: {
-sametime 2.0 bringt einige wesentliche erweiterung gegenüber dem aktuellen release 1.5<SPLIT>.}
+george bush jr. hatte bereits im vorfeld der wahl angedeutet<SPLIT>, dass er den fall nicht um jeden preis weiterführen wolle<SPLIT>.}
 Predicted: {
-sametime 2.0 bringt einige wesentliche erweiterung gegenüber dem aktuellen release 1.5.}
+george bush jr<SPLIT>. hatte bereits im vorfeld der wahl angedeutet<SPLIT>, dass er den fall nicht um jeden preis weiterführen wolle<SPLIT>.}
 False positives: {
-1.5.
-} False negatives: {
-1.5
+jr
 .
+} False negatives: {
+jr.
 }
 
 Expected: {
@@ -862,10 +850,9 @@ f22
 Expected: {
 laut intel startete der ease-of-use-"kreuzzug"<SPLIT>auf dem idf 1998 mit der vorstellung erster<SPLIT>" concept pcs "<SPLIT>.}
 Predicted: {
-laut intel startete der ease-of-use-<SPLIT>"kreuzzug<SPLIT>"<SPLIT>auf dem idf 1998 mit der vorstellung erster<SPLIT>" concept pcs "<SPLIT>.}
+laut intel startete der ease-of-use-"kreuzzug<SPLIT>"<SPLIT>auf dem idf 1998 mit der vorstellung erster<SPLIT>" concept pcs "<SPLIT>.}
 False positives: {
-ease-of-use-
-"kreuzzug
+ease-of-use-"kreuzzug
 "
 } False negatives: {
 ease-of-use-"kreuzzug"
@@ -902,6 +889,17 @@ u
 .
 } False negatives: {
 u.
+}
+
+Expected: {
+auch bei auslands- und ferngesprächen komme die telekom voll auf ihre kosten<SPLIT>.}
+Predicted: {
+auch bei auslands<SPLIT>- und ferngesprächen komme die telekom voll auf ihre kosten<SPLIT>.}
+False positives: {
+auslands
+-
+} False negatives: {
+auslands-
 }
 
 Expected: {
@@ -950,17 +948,6 @@ tel.
 }
 
 Expected: {
-eine lang angekündigte unabhängige technische untersuchung des strato-gau von ende märz läßt unterdessen weiter auf sich warten<SPLIT>.}
-Predicted: {
-eine lang angekündigte unabhängige technische untersuchung des strato-<SPLIT>gau von ende märz läßt unterdessen weiter auf sich warten<SPLIT>.}
-False positives: {
-strato-
-gau
-} False negatives: {
-strato-gau
-}
-
-Expected: {
 die deutschen brüder theo & karl albrecht belegen mit einem vermögen von 13,6 milliarden dollar platz 9<SPLIT>.}
 Predicted: {
 die deutschen brüder theo & karl albrecht belegen mit einem vermögen von 13,6 milliarden dollar platz 9.}
@@ -969,17 +956,6 @@ False positives: {
 } False negatives: {
 9
 .
-}
-
-Expected: {
-steve cohen von st. martin's press<SPLIT>, in dem die gedruckte version erscheint<SPLIT>, glaubt nicht<SPLIT>, daß die gleichzeitige veröffentlichung dem verkauf des buches schaden werde<SPLIT>.}
-Predicted: {
-steve cohen von st. martin<SPLIT>'s press<SPLIT>, in dem die gedruckte version erscheint<SPLIT>, glaubt nicht<SPLIT>, daß die gleichzeitige veröffentlichung dem verkauf des buches schaden werde<SPLIT>.}
-False positives: {
-martin
-'s
-} False negatives: {
-martin's
 }
 
 Expected: {
@@ -1061,6 +1037,17 @@ die
 }
 
 Expected: {
+alleiniger vorstand sei nun bernd-wolfgang diekmann<SPLIT>, teilte das am neuen markt notierte unternehmen am heutigen donnerstag mit<SPLIT>.}
+Predicted: {
+alleiniger vorstand sei nun bernd<SPLIT>-wolfgang diekmann<SPLIT>, teilte das am neuen markt notierte unternehmen am heutigen donnerstag mit<SPLIT>.}
+False positives: {
+bernd
+-wolfgang
+} False negatives: {
+bernd-wolfgang
+}
+
+Expected: {
 potenziellen bewerbern von<SPLIT>.web bis<SPLIT>.kid gab man in dem jetzt veröffentlichten papier allerdings schon einmal ein paar anhaltspunkte<SPLIT>, welche anforderungen sie erfüllen müssen<SPLIT>.}
 Predicted: {
 potenziellen bewerbern von<SPLIT>.web bis.kid gab man in dem jetzt veröffentlichten papier allerdings schon einmal ein paar anhaltspunkte<SPLIT>, welche anforderungen sie erfüllen müssen<SPLIT>.}
@@ -1080,17 +1067,6 @@ s;
 } False negatives: {
 s
 ;
-}
-
-Expected: {
-eventuell reicht sogar ein set dstrace=*<SPLIT>.}
-Predicted: {
-eventuell reicht sogar ein set dstrace=<SPLIT>*<SPLIT>.}
-False positives: {
-dstrace=
-*
-} False negatives: {
-dstrace=*
 }
 
 Expected: {
@@ -1171,15 +1147,36 @@ you've
 }
 
 Expected: {
+es gibt genug zu tun<SPLIT>, lassen wir<SPLIT>'s zu<SPLIT>, wird sich steve ballmer<SPLIT>, neuer chef von microsoft<SPLIT>, gedacht haben<SPLIT>:}
+Predicted: {
+es gibt genug zu tun<SPLIT>, lassen wir's zu<SPLIT>, wird sich steve ballmer<SPLIT>, neuer chef von microsoft<SPLIT>, gedacht haben<SPLIT>:}
+False positives: {
+wir's
+} False negatives: {
+wir
+'s
+}
+
+Expected: {
 dort habe bereits das "<SPLIT>edv-geschichtlich primitive verfahren der lochkarte<SPLIT>" zu großen problemen geführt<SPLIT>.}
 Predicted: {
-dort habe bereits das "<SPLIT>edv<SPLIT>-<SPLIT>geschichtlich primitive verfahren der lochkarte<SPLIT>" zu großen problemen geführt<SPLIT>.}
+dort habe bereits das "<SPLIT>edv<SPLIT>-geschichtlich primitive verfahren der lochkarte<SPLIT>" zu großen problemen geführt<SPLIT>.}
 False positives: {
 edv
--
-geschichtlich
+-geschichtlich
 } False negatives: {
 edv-geschichtlich
+}
+
+Expected: {
+zusammengerechnet haben beide unternehmen im jahr 1996 einen umsatz von 65 mio. us-$ erwirtschaftet<SPLIT>.}
+Predicted: {
+zusammengerechnet haben beide unternehmen im jahr 1996 einen umsatz von 65 mio<SPLIT>. us-$ erwirtschaftet<SPLIT>.}
+False positives: {
+mio
+.
+} False negatives: {
+mio.
 }
 
 Expected: {
@@ -1194,23 +1191,11 @@ False positives: {
 }
 
 Expected: {
-danach mutiert es zum schnöden bit mit einer festen 1 oder 0<SPLIT>.}
-Predicted: {
-danach mutiert es zum schnöden bit mit einer festen 1 oder 0.}
-False positives: {
-0.
-} False negatives: {
-0
-.
-}
-
-Expected: {
 dies könnte schon eher bei dem von den bell labs der firma lucent entwickelten elektronen-"skalpell" der fall sein<SPLIT>:}
 Predicted: {
-dies könnte schon eher bei dem von den bell labs der firma lucent entwickelten elektronen-<SPLIT>"skalpell<SPLIT>" der fall sein<SPLIT>:}
+dies könnte schon eher bei dem von den bell labs der firma lucent entwickelten elektronen-"skalpell<SPLIT>" der fall sein<SPLIT>:}
 False positives: {
-elektronen-
-"skalpell
+elektronen-"skalpell
 "
 } False negatives: {
 elektronen-"skalpell"
@@ -1359,12 +1344,15 @@ einzel
 Expected: {
 eine vielzahl an germanischen und hauptsächlich slawischen stämmen durchquerte mähren während der völkerwanderungszeit<SPLIT>, bevor die slawen im 6. jahrhundert n<SPLIT>. chr. dort ansässig wurden<SPLIT>.}
 Predicted: {
-eine vielzahl an germanischen und hauptsächlich slawischen stämmen durchquerte mähren während der völkerwanderungszeit<SPLIT>, bevor die slawen im 6. jahrhundert n. chr. dort ansässig wurden<SPLIT>.}
+eine vielzahl an germanischen und hauptsächlich slawischen stämmen durchquerte mähren während der völkerwanderungszeit<SPLIT>, bevor die slawen im 6. jahrhundert n. chr<SPLIT>. dort ansässig wurden<SPLIT>.}
 False positives: {
 n.
+chr
+.
 } False negatives: {
 n
 .
+chr.
 }
 
 Expected: {
@@ -1456,12 +1444,12 @@ modells
 Expected: {
 laut le figaro könnten durch diesen plan der regierung 42 mio<SPLIT>. euro frei werden<SPLIT>, von denen 15,5 mio. für die sicherheit eingesetzt werden würden<SPLIT>.}
 Predicted: {
-laut le figaro könnten durch diesen plan der regierung 42 mio. euro frei werden<SPLIT>, von denen 15,5 mio. für die sicherheit eingesetzt werden würden<SPLIT>.}
+laut le figaro könnten durch diesen plan der regierung 42 mio<SPLIT>. euro frei werden<SPLIT>, von denen 15,5 mio<SPLIT>. für die sicherheit eingesetzt werden würden<SPLIT>.}
 False positives: {
-mio.
-} False negatives: {
 mio
 .
+} False negatives: {
+mio.
 }
 
 Expected: {

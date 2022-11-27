@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.7248868778280543
+Evaluation-Score=0.7249962286921103
 Training-Sample-Size=6569
 Evaluation-Sample-Size=729
 Training-Algorithm=MAXENT_QN
@@ -9,9 +9,9 @@ Component-Name=SentenceDetectorME
 Language=de
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1665730904561
+Timestamp=1668924341297
 TrainerType=Event
-Training-Eventhash=48d12293fcf8bc28f2935af20e2f2b59
+Training-Eventhash=2b383da88295ad12fd1697d4de0f0292
 eosCharacters=.!?
 factory=opennlp.tools.sentdetect.SentenceDetectorFactory
 useTokenEnd=true
@@ -92,8 +92,7 @@ meine meinung zur dieser firma ist, dass man dort nicht nur gut beraten wird, so
 Predicted: {
 leihwagen und so war alles klar.
 letztendlich bezahlten wir für die gläser aber den gleichen preis wie bei jedem anderen optiker macht weiter so!
-man beginnt mit grundtechniken wie jabs, punches, haken, etc.
-man hat sich wirklich um einen gekümmert und vom preis her war es günstiger als bei den meisten.
+man beginnt mit grundtechniken wie jabs, punches, haken, etc. man hat sich wirklich um einen gekümmert und vom preis her war es günstiger als bei den meisten.
 man konnte durch die gläser nicht vernünftig gucken.
 man spürt hier die liebe gottes.
 mein fazit: nie wieder diese werkstatt!
@@ -102,9 +101,12 @@ meine meinung zur dieser firma ist, dass man dort nicht nur gut beraten wird, so
 }
 False positives: {
 letztendlich bezahlten wir für die gläser aber den gleichen preis wie bei jedem anderen optiker macht weiter so!
+man beginnt mit grundtechniken wie jabs, punches, haken, etc. man hat sich wirklich um einen gekümmert und vom preis her war es günstiger als bei den meisten.
 } False negatives: {
 letztendlich bezahlten wir für die gläser aber den gleichen preis wie bei jedem anderen optiker
 macht weiter so!
+man beginnt mit grundtechniken wie jabs, punches, haken, etc.
+man hat sich wirklich um einen gekümmert und vom preis her war es günstiger als bei den meisten.
 }
 
 Expected: {
@@ -3677,8 +3679,7 @@ sonnet bietet wieder flatrate an
 }
 Predicted: {
 schiller gab aber auch zu, dass es zwischen den beiden fällen parallelen gibt: auf grund der unterschiede ist schiller aber zuversichtlich, dass es im falle napsters zu keiner verurteilung kommt.
-mp3.com
-will umstrittenen service wieder anbieten robertson hofft nun auf die berufung.
+mp3.com will umstrittenen service wieder anbieten robertson hofft nun auf die berufung.
 robertson zeigte sich zwar verwundert darüber, dass universal bisher eine einigung ausgeschlossen hat, glaubt aber, dass auch hier noch etwas erreicht werden kann.
 außerdem glaubt er weiterhin, dass mp3.com im grunde nichts falsch gemacht habe.
 dazu stellte mp3.com tausende von cds in digitaler form online.
@@ -3687,8 +3688,7 @@ sonnet bietet wieder flatrate an
 }
 False positives: {
 schiller gab aber auch zu, dass es zwischen den beiden fällen parallelen gibt: auf grund der unterschiede ist schiller aber zuversichtlich, dass es im falle napsters zu keiner verurteilung kommt.
-mp3.com
-will umstrittenen service wieder anbieten robertson hofft nun auf die berufung.
+mp3.com will umstrittenen service wieder anbieten robertson hofft nun auf die berufung.
 fernsehen made by microsoft ein weitere vereinbarung hat microsoft mit dem holländischen unternehmen philips getroffen.
 } False negatives: {
 schiller gab aber auch zu, dass es zwischen den beiden fällen parallelen gibt:
@@ -10819,8 +10819,7 @@ Predicted: {
 die von der regierung angestrebte kontrolle des internetzugangs durch blockierung unliebsamer websites wie cnn, bbc oder im ausland befindlicher chinesischer dissidenten wird aber von newsletters wie vip reference oder tunnel durchbrochen.
 mehr in telepolis: in polen könnte es demnächst gleich zu zwei sehr verschiedenartigen streiks kommen.
 den gewerkschaften der gerade privatisierten telekomunikacja polska sa (tp sa) geht es um kostenlose aktien ihres unternehmens, die ihnen von gesetz wegen nach der privatisierung zustehen.
-am 1.
-12.
+am 1. 12.
 wollen sie für die senkung der gebühren kämpfen, indem sie für einen tag offline gehen.
 mehr in telepolis: streik gegen streik.
 sie gilt als die erste astrobiologische mission der nasa, deren primäre aufgabe es ist, die eigenschaften der meteoriten festzustellen, um ihren einfluß auf das irdische leben in der vergangenheit, der gegenwart und der zukunft besser zu verstehen.
@@ -10828,8 +10827,7 @@ mehr in telepolis: der perfekte spiegel
 }
 False positives: {
 mehr in telepolis: in polen könnte es demnächst gleich zu zwei sehr verschiedenartigen streiks kommen.
-am 1.
-12.
+am 1. 12.
 wollen sie für die senkung der gebühren kämpfen, indem sie für einen tag offline gehen.
 mehr in telepolis: streik gegen streik.
 mehr in telepolis: der perfekte spiegel
@@ -15213,18 +15211,16 @@ sie ist rück- wie vorschau zugleich.
 was war.
 dabei ist dem guten mann entgangen, dass wir deutschen eine gute portion humor besitzen.
 und dann dürfen wir diese humoristische meldung lesen: " traurig, aber wahr: ein bekannter englischer detektiv würde nun messerscharf schlussfolgern, dass das "gesamte deutsche internet" etwas anderes sein muss als das netz, in dem wir uns täglich virtuell bewegen.
-wohl bekomm s. tatsächlich hat es schon ganz andere kaliber erwischt, schreiben sie.
+wohl bekomm s.
+tatsächlich hat es schon ganz andere kaliber erwischt, schreiben sie.
 wie es der zufall will, wurde in der letzten woche der 3com park wieder zum candlestick park umgetauft.
 }
 False positives: {
 und dann dürfen wir diese humoristische meldung lesen: " traurig, aber wahr: ein bekannter englischer detektiv würde nun messerscharf schlussfolgern, dass das "gesamte deutsche internet" etwas anderes sein muss als das netz, in dem wir uns täglich virtuell bewegen.
-wohl bekomm s. tatsächlich hat es schon ganz andere kaliber erwischt, schreiben sie.
 } False negatives: {
 und dann dürfen wir diese humoristische meldung lesen:
 " traurig, aber wahr:
 ein bekannter englischer detektiv würde nun messerscharf schlussfolgern, dass das "gesamte deutsche internet" etwas anderes sein muss als das netz, in dem wir uns täglich virtuell bewegen.
-wohl bekomm s.
-tatsächlich hat es schon ganz andere kaliber erwischt, schreiben sie.
 }
 
 Expected: {

@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9210762489661604
+Evaluation-Score=0.9192572869460951
 Training-Sample-Size=10129
 Evaluation-Sample-Size=1125
 Training-Algorithm=MAXENT_QN
@@ -9,9 +9,9 @@ Component-Name=TokenizerME
 Language=he
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1666069104710
+Timestamp=1669008114099
 TrainerType=Event
-Training-Eventhash=d8f1026674f415c2f47cfff50d1aa193
+Training-Eventhash=abda43ea413f6b5b0db480d5a2be06bb
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
@@ -87,16 +87,13 @@ False positives: {
 Expected: {
 ברצוני להדגיש משפט אחד בדבריה<SPLIT>: "<SPLIT>אנו<SPLIT>, נפגעי ה<SPLIT>משכנתאות<SPLIT>, נקלענו למצבנו ה<SPLIT>קשה לא בגלל ריבית נמוכה<SPLIT>, אלא בגלל ה<SPLIT>אינפלציה ו<SPLIT>ה<SPLIT>הצמדה<SPLIT>"<SPLIT>.}
 Predicted: {
-ב<SPLIT>רצוני להדגיש משפט אחד ב<SPLIT>דבריה<SPLIT>: "<SPLIT>אנו<SPLIT>, נפגעי ה<SPLIT>משכנתאות<SPLIT>, נקלענו ל<SPLIT>מצבנו ה<SPLIT>קשה לא בגלל ריבית נמוכה<SPLIT>, אלא בגלל ה<SPLIT>אינפלציה ו<SPLIT>ה<SPLIT>הצמדה<SPLIT>"<SPLIT>.}
+ברצוני להדגיש משפט אחד ב<SPLIT>דבריה<SPLIT>: "<SPLIT>אנו<SPLIT>, נפגעי ה<SPLIT>משכנתאות<SPLIT>, נקלענו ל<SPLIT>מצבנו ה<SPLIT>קשה לא בגלל ריבית נמוכה<SPLIT>, אלא בגלל ה<SPLIT>אינפלציה ו<SPLIT>ה<SPLIT>הצמדה<SPLIT>"<SPLIT>.}
 False positives: {
-ב
-רצוני
 ב
 דבריה
 ל
 מצבנו
 } False negatives: {
-ברצוני
 בדבריה
 למצבנו
 }
@@ -104,13 +101,10 @@ False positives: {
 Expected: {
 אומרים עליה<SPLIT>, ש<SPLIT>יש בה יותר ארגונים פציפיסטיים ל<SPLIT>קילומטר מרובע מאשר ב<SPLIT>כל מדינה אחרת של ארה"ב<SPLIT>.}
 Predicted: {
-אומרים עליה<SPLIT>, ש<SPLIT>יש ב<SPLIT>ה יותר ארגונים פציפיסטיים לקילומטר מרובע מאשר ב<SPLIT>כל מדינה אחרת של ארה"ב<SPLIT>.}
+אומרים עליה<SPLIT>, ש<SPLIT>יש בה יותר ארגונים פציפיסטיים לקילומטר מרובע מאשר ב<SPLIT>כל מדינה אחרת של ארה"ב<SPLIT>.}
 False positives: {
-ב
-ה
 לקילומטר
 } False negatives: {
-בה
 ל
 קילומטר
 }
@@ -118,11 +112,14 @@ False positives: {
 Expected: {
 לצד ה<SPLIT>אותיות ה<SPLIT>אדומות הציב ה<SPLIT>עיתון את סמל תנועת ה<SPLIT>התנגדות ל<SPLIT>מלחמת וייטנאם<SPLIT>.}
 Predicted: {
-לצד ה<SPLIT>אותיות ה<SPLIT>אדומות הציב ה<SPLIT>עיתון את סמל תנועת ה<SPLIT>התנגדות ל<SPLIT>מלחמת ו<SPLIT>ייטנאם<SPLIT>.}
+ל<SPLIT>צד ה<SPLIT>אותיות ה<SPLIT>אדומות הציב ה<SPLIT>עיתון את סמל תנועת ה<SPLIT>התנגדות ל<SPLIT>מלחמת ו<SPLIT>ייטנאם<SPLIT>.}
 False positives: {
+ל
+צד
 ו
 ייטנאם
 } False negatives: {
+לצד
 וייטנאם
 }
 
@@ -149,17 +146,6 @@ False positives: {
 ארקין
 } False negatives: {
 הארקין
-}
-
-Expected: {
-ה<SPLIT>מעסיקים אינם מצפים ש<SPLIT>יצליחו למשוך מספר ניכר של עובדים ישראליים לקטיף<SPLIT>, בגלל ה<SPLIT>שכר ה<SPLIT>נמוך ה<SPLIT>משולם ל<SPLIT>עבודה זו מעט מעל שכר ה<SPLIT>מינימום במשק<SPLIT>.}
-Predicted: {
-ה<SPLIT>מעסיקים אינם מצפים ש<SPLIT>יצליחו למשוך מספר ניכר של עובדים ישראליים לקטיף<SPLIT>, בגלל ה<SPLIT>שכר ה<SPLIT>נמוך ה<SPLIT>משולם ל<SPLIT>עבודה זו מעט מעל שכר ה<SPLIT>מינימום ב<SPLIT>משק<SPLIT>.}
-False positives: {
-ב
-משק
-} False negatives: {
-במשק
 }
 
 Expected: {
@@ -216,13 +202,16 @@ False positives: {
 Expected: {
 ה<SPLIT>קרנות אוהבות יותר ו<SPLIT>יותר סימנים מוחשיים כאלה להשפעה ש<SPLIT>יש ל<SPLIT>כנסים ו<SPLIT>ל<SPLIT>התוועדויות<SPLIT>.}
 Predicted: {
-ה<SPLIT>קרנות אוהבות יותר ו<SPLIT>יותר סימנים מוחשיים כאלה ל<SPLIT>השפעה ש<SPLIT>יש לכנסים ו<SPLIT>להתוועדויות<SPLIT>.}
+ה<SPLIT>קרנות אוהבות יותר ויותר סימנים מוחשיים כאלה ל<SPLIT>השפעה ש<SPLIT>יש לכנסים ו<SPLIT>להתוועדויות<SPLIT>.}
 False positives: {
+ויותר
 ל
 השפעה
 לכנסים
 להתוועדויות
 } False negatives: {
+ו
+יותר
 להשפעה
 ל
 כנסים
@@ -284,31 +273,25 @@ False positives: {
 Expected: {
 האם ה<SPLIT>כסף דוחף את ה<SPLIT>רעיונות או שמא זוכים ה<SPLIT>רעיונות ל<SPLIT>תמיכה כספית בזכות ערכם ו<SPLIT>ה<SPLIT>חידוש שבהם<SPLIT>?}
 Predicted: {
-ה<SPLIT>אם ה<SPLIT>כסף דוחף את ה<SPLIT>רעיונות או שמא זוכים ה<SPLIT>רעיונות ל<SPLIT>תמיכה כספית ב<SPLIT>זכות ערכם ו<SPLIT>ה<SPLIT>חידוש ש<SPLIT>בהם<SPLIT>?}
+ה<SPLIT>אם ה<SPLIT>כסף דוחף את ה<SPLIT>רעיונות או שמא זוכים ה<SPLIT>רעיונות ל<SPLIT>תמיכה כספית בזכות ערכם ו<SPLIT>ה<SPLIT>חידוש שב<SPLIT>הם<SPLIT>?}
 False positives: {
 ה
 אם
-ב
-זכות
-ש
-בהם
+שב
+הם
 } False negatives: {
 האם
-בזכות
 שבהם
 }
 
 Expected: {
 כנראה רק בזכות ה<SPLIT>הצבעה בדואר הצליח לבסוף ה<SPLIT>סנאטור פיט ווילסון לנצח<SPLIT>, ב<SPLIT>הפרש קטן<SPLIT>.}
 Predicted: {
-כנראה רק ב<SPLIT>זכות ה<SPLIT>הצבעה ב<SPLIT>דואר הצליח לבסוף ה<SPLIT>סנאטור פיט ווילסון לנצח<SPLIT>, ב<SPLIT>הפרש קטן<SPLIT>.}
+כנראה רק בזכות ה<SPLIT>הצבעה ב<SPLIT>דואר הצליח לבסוף ה<SPLIT>סנאטור פיט ווילסון לנצח<SPLIT>, ב<SPLIT>הפרש קטן<SPLIT>.}
 False positives: {
-ב
-זכות
 ב
 דואר
 } False negatives: {
-בזכות
 בדואר
 }
 
@@ -329,22 +312,16 @@ False positives: {
 Expected: {
 אלי ויזל<SPLIT>, פרופסור ב<SPLIT>אוניברסיטת בוסטון<SPLIT>, ש<SPLIT>סילבר התאמץ הרבה למען זכייתו ב<SPLIT>פרס נובל ל<SPLIT>שלום<SPLIT>, תמך בגלוי במועמדותו ל<SPLIT>משרת ה<SPLIT>מושל<SPLIT>.}
 Predicted: {
-אלי ו<SPLIT>יזל<SPLIT>, פרופסור ב<SPLIT>אוניברסיטת בוסטון<SPLIT>, ש<SPLIT>סילבר ה<SPLIT>תאמץ הרבה למען זכייתו ב<SPLIT>פרס נובל ל<SPLIT>שלום<SPLIT>, תמך ב<SPLIT>גלוי ב<SPLIT>מועמדותו למשרת ה<SPLIT>מושל<SPLIT>.}
+אלי ו<SPLIT>יזל<SPLIT>, פרופסור ב<SPLIT>אוניברסיטת בוסטון<SPLIT>, ש<SPLIT>סילבר התאמץ הרבה למען זכייתו ב<SPLIT>פרס נובל ל<SPLIT>שלום<SPLIT>, תמך ב<SPLIT>גלוי במועמדותו למשרת ה<SPLIT>מושל<SPLIT>.}
 False positives: {
 ו
 יזל
-ה
-תאמץ
 ב
 גלוי
-ב
-מועמדותו
 למשרת
 } False negatives: {
 ויזל
-התאמץ
 בגלוי
-במועמדותו
 ל
 משרת
 }
@@ -397,28 +374,28 @@ False positives: {
 Expected: {
 הוא יעץ לנשים<SPLIT>, ש<SPLIT>אם הן נופלות קרבן ל<SPLIT>אונס ו<SPLIT>הן חסרות אונים<SPLIT>, "<SPLIT>מוטב לשתוק ו<SPLIT>ליהנות<SPLIT>"<SPLIT>.}
 Predicted: {
-הוא יעץ ל<SPLIT>נשים<SPLIT>, שאם הן נופלות קרבן לאונס ו<SPLIT>הן חסרות אונים<SPLIT>, "<SPLIT>מוטב לשתוק ו<SPLIT>ליהנות<SPLIT>"<SPLIT>.}
+הוא יעץ ל<SPLIT>נשים<SPLIT>, שאם הן נופלות קרבן ל<SPLIT>אונס ו<SPLIT>הן חסרות אונים<SPLIT>, "<SPLIT>מוטב לשתוק ו<SPLIT>ליהנות<SPLIT>"<SPLIT>.}
 False positives: {
 ל
 נשים
 שאם
-לאונס
 } False negatives: {
 לנשים
 ש
 אם
-ל
-אונס
 }
 
 Expected: {
 אשה שלישית<SPLIT>, מדלן קיונין<SPLIT>, יהודייה מלאה<SPLIT>, סיימה שש שנות כהונה כ<SPLIT>מושלת ורמונט<SPLIT>, ו<SPLIT>לא העמידה את עצמה ל<SPLIT>בחירה חוזרת<SPLIT>.}
 Predicted: {
-אשה שלישית<SPLIT>, מדלן קיונין<SPLIT>, יהודייה מלאה<SPLIT>, סיימה שש שנות כהונה כ<SPLIT>מושלת ו<SPLIT>רמונט<SPLIT>, ו<SPLIT>לא העמידה את עצמה ל<SPLIT>בחירה חוזרת<SPLIT>.}
+אשה שלישית<SPLIT>, מדלן קיונין<SPLIT>, יהודייה מלאה<SPLIT>, סיימה שש שנות כהונה כמושלת ו<SPLIT>רמונט<SPLIT>, ו<SPLIT>לא העמידה את עצמה ל<SPLIT>בחירה חוזרת<SPLIT>.}
 False positives: {
+כמושלת
 ו
 רמונט
 } False negatives: {
+כ
+מושלת
 ורמונט
 }
 
@@ -475,15 +452,12 @@ False positives: {
 Expected: {
 תחילה ב<SPLIT>שקט ו<SPLIT>אחר כך תוך קריאות גוברות ו<SPLIT>הולכות<SPLIT>: "<SPLIT>מוות לערבים<SPLIT>"<SPLIT>, "<SPLIT>מוות לשמאלנים<SPLIT>"<SPLIT>, "<SPLIT>רוצים נקמה<SPLIT>"<SPLIT>.}
 Predicted: {
-תחילה בשקט ואחר כך תוך קריאות גוברות ו<SPLIT>הולכות<SPLIT>: "<SPLIT>מוות לערבים<SPLIT>"<SPLIT>, "<SPLIT>מוות לשמאלנים<SPLIT>"<SPLIT>, "<SPLIT>רוצים נקמה<SPLIT>"<SPLIT>.}
+תחילה בשקט ו<SPLIT>אחר כך תוך קריאות גוברות ו<SPLIT>הולכות<SPLIT>: "<SPLIT>מוות לערבים<SPLIT>"<SPLIT>, "<SPLIT>מוות לשמאלנים<SPLIT>"<SPLIT>, "<SPLIT>רוצים נקמה<SPLIT>"<SPLIT>.}
 False positives: {
 בשקט
-ואחר
 } False negatives: {
 ב
 שקט
-ו
-אחר
 }
 
 Expected: {
@@ -556,17 +530,6 @@ False positives: {
 }
 
 Expected: {
-שחקני תל אביב הראו רק שמץ מיכולתם<SPLIT>.}
-Predicted: {
-שחקני תל אביב ה<SPLIT>ראו רק שמץ מיכולתם<SPLIT>.}
-False positives: {
-ה
-ראו
-} False negatives: {
-הראו
-}
-
-Expected: {
 הוא נחסם שלא כחוק ו<SPLIT>נשקרה עבירה<SPLIT>.}
 Predicted: {
 הוא נחסם ש<SPLIT>לא כ<SPLIT>חוק ו<SPLIT>נשקרה עבירה<SPLIT>.}
@@ -578,6 +541,17 @@ False positives: {
 } False negatives: {
 שלא
 כחוק
+}
+
+Expected: {
+שתי דקות מ<SPLIT>ה<SPLIT>סיום (<SPLIT>דקה 48<SPLIT>) עלה מכבי ל<SPLIT>יתרון 3 נקודות מ<SPLIT>סל של גמצי מ<SPLIT>חוץ לקשת (<SPLIT>107 104<SPLIT>)<SPLIT>.}
+Predicted: {
+שתי דקות מ<SPLIT>ה<SPLIT>סיום (<SPLIT>דקה 48<SPLIT>) עלה מכבי ל<SPLIT>יתרון 3 נקודות מסל של גמצי מ<SPLIT>חוץ לקשת (<SPLIT>107 104<SPLIT>)<SPLIT>.}
+False positives: {
+מסל
+} False negatives: {
+מ
+סל
 }
 
 Expected: {
@@ -594,11 +568,14 @@ False positives: {
 Expected: {
 אולם אט<SPLIT>-<SPLIT>אט נכנסה למאבק<SPLIT>.}
 Predicted: {
-אולם אט<SPLIT>-<SPLIT>אט נכנסה ל<SPLIT>מאבק<SPLIT>.}
+אולם אט<SPLIT>-אט נכנסה ל<SPLIT>מאבק<SPLIT>.}
 False positives: {
+-אט
 ל
 מאבק
 } False negatives: {
+-
+אט
 למאבק
 }
 
@@ -678,29 +655,37 @@ False positives: {
 Expected: {
 הוא ציטט עוד מ<SPLIT>ה<SPLIT>ספר<SPLIT>, כי "<SPLIT>טענת קיזוז היא טענת הגנה ככל טענה אחרת<SPLIT>, ובעטיה תינתן לנתבע ה<SPLIT>רשות להתגונן כל אימת ש<SPLIT>ה<SPLIT>דין ה<SPLIT>מהותי מכיר בה<SPLIT>"<SPLIT>.}
 Predicted: {
-הוא ציטט עוד מ<SPLIT>ה<SPLIT>ספר<SPLIT>, כי "<SPLIT>טענת קיזוז היא טענת הגנה כ<SPLIT>כל טענה אחרת<SPLIT>, ו<SPLIT>בעטיה תינתן לנתבע ה<SPLIT>רשות להתגונן כל אימת ש<SPLIT>ה<SPLIT>דין ה<SPLIT>מהותי מכיר בה<SPLIT>"<SPLIT>.}
+הוא ציטט עוד מ<SPLIT>ה<SPLIT>ספר<SPLIT>, כי "<SPLIT>טענת קיזוז היא טענת הגנה ככל טענה אחרת<SPLIT>, ו<SPLIT>בעטיה תינתן לנתבע ה<SPLIT>רשות להתגונן כל אימת ש<SPLIT>ה<SPLIT>דין ה<SPLIT>מהותי מכיר ב<SPLIT>ה<SPLIT>"<SPLIT>.}
 False positives: {
-כ
-כל
 ו
 בעטיה
+ב
+ה
 } False negatives: {
-ככל
 ובעטיה
+בה
+}
+
+Expected: {
+ב<SPLIT>ביצוע נאמן לאופיו נפתח ערב זה<SPLIT>.}
+Predicted: {
+ב<SPLIT>ביצוע נאמן ל<SPLIT>אופיו נפתח ערב זה<SPLIT>.}
+False positives: {
+ל
+אופיו
+} False negatives: {
+לאופיו
 }
 
 Expected: {
 ו<SPLIT>אכן<SPLIT>, הן כ<SPLIT>תולדה ש<SPLIT>יש בה משהו<SPLIT>, אך ש<SPLIT>אינה מוסיפה הרבה על ש<SPLIT>היה<SPLIT>.}
 Predicted: {
-ו<SPLIT>אכן<SPLIT>, הן כתולדה ש<SPLIT>יש ב<SPLIT>ה משהו<SPLIT>, אך ש<SPLIT>אינה מוסיפה הרבה על ש<SPLIT>היה<SPLIT>.}
+ו<SPLIT>אכן<SPLIT>, הן כתולדה ש<SPLIT>יש בה משהו<SPLIT>, אך ש<SPLIT>אינה מוסיפה הרבה על ש<SPLIT>היה<SPLIT>.}
 False positives: {
 כתולדה
-ב
-ה
 } False negatives: {
 כ
 תולדה
-בה
 }
 
 Expected: {
@@ -811,29 +796,26 @@ False positives: {
 Expected: {
 "<SPLIT>ה<SPLIT>תבונה ו<SPLIT>ה<SPLIT>אחריות ה<SPLIT>ציבורית לא נמצאו אצל אלה שבידיהם כוח ה<SPLIT>הצבעה<SPLIT>"<SPLIT>, כתב<SPLIT>, "<SPLIT>ו<SPLIT>הם דאגו ל<SPLIT>חידוש בחירת עצמם<SPLIT>, במקום לחתור ל<SPLIT>בחירת עורכי<SPLIT>-<SPLIT>דין אחרים בעלי שיעור קומה<SPLIT>"<SPLIT>.}
 Predicted: {
-"<SPLIT>התבונה ו<SPLIT>ה<SPLIT>אחריות ה<SPLIT>ציבורית לא נמצאו אצל אלה ש<SPLIT>בידיהם כוח ה<SPLIT>הצבעה<SPLIT>"<SPLIT>, כתב<SPLIT>, "<SPLIT>ו<SPLIT>הם דאגו ל<SPLIT>חידוש בחירת עצמם<SPLIT>, ב<SPLIT>מקום לחתור ל<SPLIT>בחירת עורכי<SPLIT>-<SPLIT>דין אחרים בעלי שיעור קומה<SPLIT>"<SPLIT>.}
+"<SPLIT>התבונה ו<SPLIT>ה<SPLIT>אחריות ה<SPLIT>ציבורית לא נמצאו אצל אלה ש<SPLIT>בידיהם כוח ה<SPLIT>הצבעה<SPLIT>"<SPLIT>, כתב<SPLIT>, "<SPLIT>ו<SPLIT>הם דאגו ל<SPLIT>חידוש בחירת עצמם<SPLIT>, במקום לחתור ל<SPLIT>בחירת עורכי<SPLIT>-<SPLIT>דין אחרים בעלי שיעור קומה<SPLIT>"<SPLIT>.}
 False positives: {
 התבונה
 ש
 בידיהם
-ב
-מקום
 } False negatives: {
 ה
 תבונה
 שבידיהם
-במקום
 }
 
 Expected: {
 התרחבותו ה<SPLIT>הדרגתית מאפשרת פתיחת חלונות צרים ו<SPLIT>גבוהים<SPLIT>, ה<SPLIT>מטילים אור ל<SPLIT>כיוון ה<SPLIT>במה ו<SPLIT>ארון ה<SPLIT>קודש<SPLIT>.}
 Predicted: {
-ה<SPLIT>תרחבותו ה<SPLIT>הדרגתית מאפשרת פתיחת חלונות צרים ו<SPLIT>גבוהים<SPLIT>, ה<SPLIT>מטילים אור ל<SPLIT>כיוון ה<SPLIT>במה ו<SPLIT>ארון ה<SPLIT>קודש<SPLIT>.}
+התרחבותו ה<SPLIT>הדרגתית מאפשרת פתיחת חלונות צרים ו<SPLIT>גבוהים<SPLIT>, ה<SPLIT>מטילים אור לכיוון ה<SPLIT>במה ו<SPLIT>ארון ה<SPLIT>קודש<SPLIT>.}
 False positives: {
-ה
-תרחבותו
+לכיוון
 } False negatives: {
-התרחבותו
+ל
+כיוון
 }
 
 Expected: {
@@ -853,15 +835,18 @@ False positives: {
 Expected: {
 ה<SPLIT>כיפה שמקורה<SPLIT>, אולי<SPLIT>, ב<SPLIT>כיפת ה<SPLIT>סלע ש<SPLIT>הפכה ל<SPLIT>"<SPLIT>מזרח<SPLIT>" ה<SPLIT>מסמל את בית ה<SPLIT>מקדש בבית ה<SPLIT>יהודי בגלות ו<SPLIT>ה<SPLIT>קשתות<SPLIT>, נעשו מ<SPLIT>אז ל<SPLIT>מסמנים ה<SPLIT>מקובלים של בתי ה<SPLIT>כנסת אשר נבנו כאן<SPLIT>.}
 Predicted: {
-ה<SPLIT>כיפה ש<SPLIT>מקור<SPLIT>ה<SPLIT>, אולי<SPLIT>, ב<SPLIT>כיפת ה<SPLIT>סלע ש<SPLIT>הפכה ל<SPLIT>"<SPLIT>מזרח<SPLIT>" ה<SPLIT>מסמל את בית ה<SPLIT>מקדש ב<SPLIT>בית ה<SPLIT>יהודי בגלות ו<SPLIT>ה<SPLIT>קשתות<SPLIT>, נעשו מ<SPLIT>אז ל<SPLIT>מסמנים ה<SPLIT>מקובלים של בתי ה<SPLIT>כנסת אשר נבנו כאן<SPLIT>.}
+ה<SPLIT>כיפה ש<SPLIT>מקור<SPLIT>ה<SPLIT>, אולי<SPLIT>, בכיפת ה<SPLIT>סלע ש<SPLIT>הפכה ל<SPLIT>"<SPLIT>מזרח<SPLIT>" ה<SPLIT>מסמל את בית ה<SPLIT>מקדש ב<SPLIT>בית ה<SPLIT>יהודי בגלות ו<SPLIT>ה<SPLIT>קשתות<SPLIT>, נעשו מ<SPLIT>אז ל<SPLIT>מסמנים ה<SPLIT>מקובלים של בתי ה<SPLIT>כנסת אשר נבנו כאן<SPLIT>.}
 False positives: {
 ש
 מקור
 ה
+בכיפת
 ב
 בית
 } False negatives: {
 שמקורה
+ב
+כיפת
 בבית
 }
 
@@ -976,11 +961,14 @@ False positives: {
 Expected: {
 ה<SPLIT>פגם ה<SPLIT>יחיד ב<SPLIT>מנה זו היה ש<SPLIT>רוטב ה<SPLIT>שמנת ש<SPLIT>יצקו על ה<SPLIT>פטריות היה ב<SPLIT>צבע אפור חום מדאיג ומרקמו היה גרעיני מדי<SPLIT>.}
 Predicted: {
-ה<SPLIT>פגם ה<SPLIT>יחיד ב<SPLIT>מנה זו היה ש<SPLIT>רוטב ה<SPLIT>שמנת ש<SPLIT>יצקו על ה<SPLIT>פטריות היה ב<SPLIT>צבע אפור חום מדאיג ו<SPLIT>מרקמו היה גרעיני מדי<SPLIT>.}
+ה<SPLIT>פגם ה<SPLIT>יחיד במנה זו היה ש<SPLIT>רוטב ה<SPLIT>שמנת ש<SPLIT>יצקו על ה<SPLIT>פטריות היה ב<SPLIT>צבע אפור חום מדאיג ו<SPLIT>מרקמו היה גרעיני מדי<SPLIT>.}
 False positives: {
+במנה
 ו
 מרקמו
 } False negatives: {
+ב
+מנה
 ומרקמו
 }
 
@@ -1040,14 +1028,11 @@ False positives: {
 Expected: {
 עוד נמסר כי ה<SPLIT>מהומות התפשטו ל<SPLIT>כל ה<SPLIT>שכונות ה<SPLIT>צפוניות ב<SPLIT>רצועת עזה ו<SPLIT>כן ל<SPLIT>מחנות ה<SPLIT>פליטים גיבאליה<SPLIT>, חאן יונס<SPLIT>, שייח רדואן ו<SPLIT>ה<SPLIT>עיר עזה<SPLIT>.}
 Predicted: {
-עוד נמסר כי ה<SPLIT>מהומות ה<SPLIT>תפשטו ל<SPLIT>כל ה<SPLIT>שכונות ה<SPLIT>צפוניות ב<SPLIT>רצועת עזה ו<SPLIT>כן ל<SPLIT>מחנות ה<SPLIT>פליטים גיבאליה<SPLIT>, חאן יונס<SPLIT>, ש<SPLIT>ייח רדואן ו<SPLIT>ה<SPLIT>עיר עזה<SPLIT>.}
+עוד נמסר כי ה<SPLIT>מהומות התפשטו ל<SPLIT>כל ה<SPLIT>שכונות ה<SPLIT>צפוניות ב<SPLIT>רצועת עזה ו<SPLIT>כן ל<SPLIT>מחנות ה<SPLIT>פליטים גיבאליה<SPLIT>, חאן יונס<SPLIT>, ש<SPLIT>ייח רדואן ו<SPLIT>ה<SPLIT>עיר עזה<SPLIT>.}
 False positives: {
-ה
-תפשטו
 ש
 ייח
 } False negatives: {
-התפשטו
 שייח
 }
 
@@ -1082,17 +1067,14 @@ False positives: {
 Expected: {
 שלושה בקבוקי תבערה הושלכו אמש לעבר מפקדת כוחות צה"ל ברצועה<SPLIT>, ה<SPLIT>ממוקמת בעיר עזה<SPLIT>.}
 Predicted: {
-שלושה ב<SPLIT>קבוקי תבערה הושלכו אמש לעבר מפקדת כוחות צה"ל ב<SPLIT>רצועה<SPLIT>, ה<SPLIT>ממוקמת ב<SPLIT>עיר עזה<SPLIT>.}
+שלושה ב<SPLIT>קבוקי תבערה הושלכו אמש לעבר מפקדת כוחות צה"ל ברצועה<SPLIT>, ה<SPLIT>ממוקמת ב<SPLIT>עיר עזה<SPLIT>.}
 False positives: {
 ב
 קבוקי
 ב
-רצועה
-ב
 עיר
 } False negatives: {
 בקבוקי
-ברצועה
 בעיר
 }
 
@@ -1130,16 +1112,13 @@ False positives: {
 Expected: {
 ו<SPLIT>לאחר ש<SPLIT>תחושה כזו אכן התפשטה ב<SPLIT>חלקים גדולים למדי של ה<SPLIT>חברה<SPLIT>, מה ה<SPLIT>פלא ש<SPLIT>מי ש<SPLIT>ממשיך להעיז ו<SPLIT>להתרגש מ<SPLIT>סמלים לאומיים יהיה חשוד ב<SPLIT>נטייה ימנית מסוכנת<SPLIT>.}
 Predicted: {
-ו<SPLIT>לאחר ש<SPLIT>תחושה כ<SPLIT>זו אכן ה<SPLIT>תפשטה ב<SPLIT>חלקים גדולים למדי של ה<SPLIT>חברה<SPLIT>, מה ה<SPLIT>פלא ש<SPLIT>מי ש<SPLIT>ממשיך להעיז ו<SPLIT>להתרגש מסמלים לאומיים יהיה חשוד ב<SPLIT>נטייה ימנית מסוכנת<SPLIT>.}
+ו<SPLIT>לאחר ש<SPLIT>תחושה כ<SPLIT>זו אכן התפשטה ב<SPLIT>חלקים גדולים למדי של ה<SPLIT>חברה<SPLIT>, מה ה<SPLIT>פלא ש<SPLIT>מי ש<SPLIT>ממשיך להעיז ו<SPLIT>להתרגש מסמלים לאומיים יהיה חשוד ב<SPLIT>נטייה ימנית מסוכנת<SPLIT>.}
 False positives: {
 כ
 זו
-ה
-תפשטה
 מסמלים
 } False negatives: {
 כזו
-התפשטה
 מ
 סמלים
 }
@@ -1197,15 +1176,18 @@ False positives: {
 Expected: {
 על ה<SPLIT>ממשלה בכלל<SPLIT>, ו<SPLIT>על ראש ה<SPLIT>ממשלה בפרט<SPLIT>, מוטלת ה<SPLIT>חובה לחזק את הרגשתם של כל ה<SPLIT>עוסקים ב<SPLIT>ביטחון ה<SPLIT>מדינה כי עליהם לפעול ב<SPLIT>תקיפות נגד כל מי ש<SPLIT>מפר את ה<SPLIT>חוק אחת היא אם מדובר ב<SPLIT>ערבי או ב<SPLIT>יהודי<SPLIT>.}
 Predicted: {
-על ה<SPLIT>ממשלה בכלל<SPLIT>, ו<SPLIT>על ראש ה<SPLIT>ממשלה ב<SPLIT>פרט<SPLIT>, מוטלת ה<SPLIT>חובה לחזק את ה<SPLIT>רגשתם של כל ה<SPLIT>עוסקים ב<SPLIT>ביטחון ה<SPLIT>מדינה כי עליהם לפעול ב<SPLIT>תקיפות נגד כל מי ש<SPLIT>מפר את ה<SPLIT>חוק אחת היא אם מדובר ב<SPLIT>ערבי או ב<SPLIT>יהודי<SPLIT>.}
+על ה<SPLIT>ממשלה בכלל<SPLIT>, ו<SPLIT>על ראש ה<SPLIT>ממשלה ב<SPLIT>פרט<SPLIT>, מוטלת ה<SPLIT>חובה לחזק את ה<SPLIT>רגשתם של כל ה<SPLIT>עוסקים ב<SPLIT>ביטחון ה<SPLIT>מדינה כי עלי<SPLIT>הם לפעול ב<SPLIT>תקיפות נגד כל מי ש<SPLIT>מפר את ה<SPLIT>חוק אחת היא אם מדובר ב<SPLIT>ערבי או ב<SPLIT>יהודי<SPLIT>.}
 False positives: {
 ב
 פרט
 ה
 רגשתם
+עלי
+הם
 } False negatives: {
 בפרט
 הרגשתם
+עליהם
 }
 
 Expected: {
@@ -1233,12 +1215,10 @@ False positives: {
 Expected: {
 על אף ש<SPLIT>ה<SPLIT>סכסוך נמשך כבר תקופה ארוכה ו<SPLIT>מתסכלת ש<SPLIT>די היה בה כדי לגבש מחנה שלישי חסר אופטימיות<SPLIT>, ה<SPLIT>משלים עם ה<SPLIT>מציאות ו<SPLIT>ערוך לחיות על פיה עוד זמן רב<SPLIT>, נראה כי יש בו בינתיים רק חבר אחד ראש עיריית ירושלים<SPLIT>, טדי קולק<SPLIT>.}
 Predicted: {
-על אף ש<SPLIT>הסכסוך נמשך כבר תקופה ארוכה ו<SPLIT>מתסכלת שדי היה ב<SPLIT>ה כדי לגבש מחנה שלישי חסר אופטימיות<SPLIT>, ה<SPLIT>משלים עם ה<SPLIT>מציאות ו<SPLIT>ערוך לחיות על פיה עוד זמן רב<SPLIT>, נראה כי יש ב<SPLIT>ו בינתיים רק חבר אחד ראש עיריית ירושלים<SPLIT>, טדי קולק<SPLIT>.}
+על אף ש<SPLIT>הסכסוך נמשך כבר תקופה ארוכה ו<SPLIT>מתסכלת שדי היה בה כדי לגבש מחנה שלישי חסר אופטימיות<SPLIT>, ה<SPLIT>משלים עם ה<SPLIT>מציאות ו<SPLIT>ערוך לחיות על פיה עוד זמן רב<SPLIT>, נראה כי יש ב<SPLIT>ו בינתיים רק חבר אחד ראש עיריית ירושלים<SPLIT>, טדי קולק<SPLIT>.}
 False positives: {
 הסכסוך
 שדי
-ב
-ה
 ב
 ו
 } False negatives: {
@@ -1246,7 +1226,6 @@ False positives: {
 סכסוך
 ש
 די
-בה
 בו
 }
 
@@ -1303,34 +1282,34 @@ False positives: {
 Expected: {
 בית ה<SPLIT>מרקחת שלו הפך ל<SPLIT>כ<SPLIT>עין מרכז קהילתי<SPLIT>: אנשים היו באים<SPLIT>, ב<SPLIT>כל שעות ה<SPLIT>יום ו<SPLIT>ה<SPLIT>לילה<SPLIT>; לא אחת לנו ב<SPLIT>בית ה<SPLIT>מרקחת<SPLIT>, מ<SPLIT>חשש ש<SPLIT>ייעצרו בבתיהם ו<SPLIT>יגורשו ל<SPLIT>מחנה ה<SPLIT>ריכוז ה<SPLIT>סמוך<SPLIT>, פלאשוב<SPLIT>.}
 Predicted: {
-בית ה<SPLIT>מרקחת שלו הפך ל<SPLIT>כעין מרכז קהילתי<SPLIT>: אנשים היו ב<SPLIT>אים<SPLIT>, ב<SPLIT>כל שעות ה<SPLIT>יום ו<SPLIT>ה<SPLIT>לילה<SPLIT>; לא אחת לנו ב<SPLIT>בית ה<SPLIT>מרקחת<SPLIT>, מ<SPLIT>חשש ש<SPLIT>ייעצרו ב<SPLIT>בתיהם ו<SPLIT>יגורשו ל<SPLIT>מחנה ה<SPLIT>ריכוז ה<SPLIT>סמוך<SPLIT>, פלאשוב<SPLIT>.}
+בית ה<SPLIT>מרקחת שלו הפך ל<SPLIT>כעין מרכז קהילתי<SPLIT>: אנשים היו ב<SPLIT>אים<SPLIT>, ב<SPLIT>כל שעות ה<SPLIT>יום ו<SPLIT>ה<SPLIT>לילה<SPLIT>; לא אחת לנו ב<SPLIT>בית ה<SPLIT>מרקחת<SPLIT>, מ<SPLIT>חשש ש<SPLIT>ייעצרו ב<SPLIT>בתיהם ויגורשו ל<SPLIT>מחנה ה<SPLIT>ריכוז ה<SPLIT>סמוך<SPLIT>, פלאשוב<SPLIT>.}
 False positives: {
 כעין
 ב
 אים
 ב
 בתיהם
+ויגורשו
 } False negatives: {
 כ
 עין
 באים
 בבתיהם
+ו
+יגורשו
 }
 
 Expected: {
 למה<SPLIT>, בעצם<SPLIT>, נשאר שם ב<SPLIT>בית ה<SPLIT>מרקחת<SPLIT>, בגטו ה<SPLIT>יהודי<SPLIT>, שאלנו אותו<SPLIT>, ו<SPLIT>פנקייביץ הביט בנו ב<SPLIT>תימהון<SPLIT>.}
 Predicted: {
-למה<SPLIT>, ב<SPLIT>עצם<SPLIT>, נשאר שם ב<SPLIT>בית ה<SPLIT>מרקחת<SPLIT>, ב<SPLIT>גטו ה<SPLIT>יהודי<SPLIT>, ש<SPLIT>אלנו אותו<SPLIT>, ו<SPLIT>פנקייביץ הביט בנו ב<SPLIT>תימהון<SPLIT>.}
+למה<SPLIT>, ב<SPLIT>עצם<SPLIT>, נשאר שם ב<SPLIT>בית ה<SPLIT>מרקחת<SPLIT>, בגטו ה<SPLIT>יהודי<SPLIT>, ש<SPLIT>אלנו אותו<SPLIT>, ו<SPLIT>פנקייביץ הביט בנו ב<SPLIT>תימהון<SPLIT>.}
 False positives: {
 ב
 עצם
-ב
-גטו
 ש
 אלנו
 } False negatives: {
 בעצם
-בגטו
 שאלנו
 }
 
@@ -1473,6 +1452,17 @@ False positives: {
 }
 
 Expected: {
+בכלל<SPLIT>, זו היתה שיחה מאוד פסימית מצדו<SPLIT>.}
+Predicted: {
+בכלל<SPLIT>, זו היתה שיחה מאוד פסימית מצד<SPLIT>ו<SPLIT>.}
+False positives: {
+מצד
+ו
+} False negatives: {
+מצדו
+}
+
+Expected: {
 ו<SPLIT>ה<SPLIT>מראיין ה<SPLIT>ערבי אומר לו<SPLIT>: "<SPLIT>אבל גם לנו יש אלוהים<SPLIT>"<SPLIT>.}
 Predicted: {
 ו<SPLIT>ה<SPLIT>מראיין ה<SPLIT>ערבי אומר ל<SPLIT>ו<SPLIT>: "<SPLIT>אבל גם לנו יש אלוהים<SPLIT>"<SPLIT>.}
@@ -1486,11 +1476,10 @@ False positives: {
 Expected: {
 לכן<SPLIT>, מעבר ל<SPLIT>ביטויים של סיפוק בשל רצח ה<SPLIT>איש<SPLIT>, עיקר ה<SPLIT>גילויים בשטחים לאחר ה<SPLIT>רצח היו של פחד<SPLIT>; פחד מ<SPLIT>אווירת ה<SPLIT>אלימות ש<SPLIT>ה<SPLIT>שלטון ה<SPLIT>ישראלי לא יוכל לעצור<SPLIT>.}
 Predicted: {
-ל<SPLIT>כן<SPLIT>, מעבר לביטויים של סיפוק בשל רצח ה<SPLIT>איש<SPLIT>, עיקר ה<SPLIT>גילויים ב<SPLIT>שטחים לאחר ה<SPLIT>רצח היו של פחד<SPLIT>; פחד מאווירת ה<SPLIT>אלימות ש<SPLIT>ה<SPLIT>שלטון ה<SPLIT>ישראלי לא יוכל ל<SPLIT>עצור<SPLIT>.}
+ל<SPLIT>כן<SPLIT>, מעבר ל<SPLIT>ביטויים של סיפוק בשל רצח ה<SPLIT>איש<SPLIT>, עיקר ה<SPLIT>גילויים ב<SPLIT>שטחים לאחר ה<SPLIT>רצח היו של פחד<SPLIT>; פחד מאווירת ה<SPLIT>אלימות ש<SPLIT>ה<SPLIT>שלטון ה<SPLIT>ישראלי לא יוכל ל<SPLIT>עצור<SPLIT>.}
 False positives: {
 ל
 כן
-לביטויים
 ב
 שטחים
 מאווירת
@@ -1498,8 +1487,6 @@ False positives: {
 עצור
 } False negatives: {
 לכן
-ל
-ביטויים
 בשטחים
 מ
 אווירת
@@ -1509,7 +1496,7 @@ False positives: {
 Expected: {
 אשה אחת השיבה תשובה נשית קלסית<SPLIT>: "<SPLIT>ראיסה תקנה לה בטח עוד כמה מחרוזות יהלומים<SPLIT>"<SPLIT>, ו<SPLIT>איש צעיר אחד מיהר לחשב את ערכו של ה<SPLIT>פרס ברובלים חסרי<SPLIT>-<SPLIT>ה<SPLIT>ערך ו<SPLIT>הגיע למסקנה ה<SPLIT>באה<SPLIT>: "<SPLIT>ל<SPLIT>כל כך הרבה שטרות אין מקום אפילו ב<SPLIT>דאצה שלו<SPLIT>, בטח ישאיר את זה ב<SPLIT>בנק שווייצרי ב<SPLIT>דולרים<SPLIT>"<SPLIT>.}
 Predicted: {
-אשה אחת ה<SPLIT>שיבה תשובה נשית קלסית<SPLIT>: "<SPLIT>ראיסה תקנה לה בטח עוד כמה מחרוזות יהלומים<SPLIT>"<SPLIT>, ו<SPLIT>איש צעיר אחד מיהר ל<SPLIT>חשב את ערכו של ה<SPLIT>פרס ברובלים חסרי<SPLIT>-<SPLIT>ה<SPLIT>ערך ו<SPLIT>הגיע ל<SPLIT>מסקנה ה<SPLIT>באה<SPLIT>: "<SPLIT>לכל כך הרבה שטרות אין מקום אפילו בדאצה שלו<SPLIT>, בטח ישאיר את זה ב<SPLIT>בנק שווייצרי ב<SPLIT>דולרים<SPLIT>"<SPLIT>.}
+אשה אחת ה<SPLIT>שיבה תשובה נשית קלסית<SPLIT>: "<SPLIT>ראיסה תקנה לה בטח עוד כמה מחרוזות יהלומים<SPLIT>"<SPLIT>, ו<SPLIT>איש צעיר אחד מיהר ל<SPLIT>חשב את ערכו של ה<SPLIT>פרס ברובלים חסרי<SPLIT>-<SPLIT>ה<SPLIT>ערך ו<SPLIT>הגיע ל<SPLIT>מסקנה ה<SPLIT>באה<SPLIT>: "<SPLIT>ל<SPLIT>כל כך הרבה שטרות אין מקום אפילו בדאצה שלו<SPLIT>, בטח ישאיר את זה ב<SPLIT>בנק שווייצרי ב<SPLIT>דולרים<SPLIT>"<SPLIT>.}
 False positives: {
 ה
 שיבה
@@ -1517,14 +1504,11 @@ False positives: {
 חשב
 ל
 מסקנה
-לכל
 בדאצה
 } False negatives: {
 השיבה
 לחשב
 למסקנה
-ל
-כל
 ב
 דאצה
 }
@@ -1532,13 +1516,10 @@ False positives: {
 Expected: {
 בהחלט בטוח יותר להעניק את ה<SPLIT>פרסים הללו ל<SPLIT>נזירות ה<SPLIT>מטפלות ב<SPLIT>יתומי כלכותה<SPLIT>, אף ש<SPLIT>קראתי לא מעט התקפות על ה<SPLIT>פרס ש<SPLIT>קיבלה ה<SPLIT>אם תרזה<SPLIT>.}
 Predicted: {
-בהחלט בטוח יותר להעניק את ה<SPLIT>פרסים הללו לנזירות ה<SPLIT>מטפלות ביתומי כלכותה<SPLIT>, אף ש<SPLIT>קראתי לא מעט התקפות על ה<SPLIT>פרס ש<SPLIT>קיבלה ה<SPLIT>אם תרזה<SPLIT>.}
+בהחלט בטוח יותר להעניק את ה<SPLIT>פרסים הללו ל<SPLIT>נזירות ה<SPLIT>מטפלות ביתומי כלכותה<SPLIT>, אף ש<SPLIT>קראתי לא מעט התקפות על ה<SPLIT>פרס ש<SPLIT>קיבלה ה<SPLIT>אם תרזה<SPLIT>.}
 False positives: {
-לנזירות
 ביתומי
 } False negatives: {
-ל
-נזירות
 ב
 יתומי
 }
@@ -1563,12 +1544,11 @@ False positives: {
 Expected: {
 ה<SPLIT>סופרים עשויים להיות מנוסים ו<SPLIT>מחוכמים<SPLIT>, ו<SPLIT>יתגלו באנושיותם דווקא לנוכח ה<SPLIT>פרס ה<SPLIT>גדול<SPLIT>.}
 Predicted: {
-ה<SPLIT>סופרים עשויים להיות מנוסים ו<SPLIT>מחוכמים<SPLIT>, ויתגלו ב<SPLIT>אנושיות<SPLIT>ם דווקא לנוכח ה<SPLIT>פרס ה<SPLIT>גדול<SPLIT>.}
+ה<SPLIT>סופרים עשויים להיות מנוסים ו<SPLIT>מחוכמים<SPLIT>, ויתגלו ב<SPLIT>אנושיותם דווקא לנוכח ה<SPLIT>פרס ה<SPLIT>גדול<SPLIT>.}
 False positives: {
 ויתגלו
 ב
-אנושיות
-ם
+אנושיותם
 } False negatives: {
 ו
 יתגלו
@@ -1593,17 +1573,31 @@ False positives: {
 }
 
 Expected: {
+"<SPLIT>שוב בחרו ב<SPLIT>זבל<SPLIT>"<SPLIT>, הוא אומר לי מדי שנה<SPLIT>.}
+Predicted: {
+"<SPLIT>שוב בחרו בזבל<SPLIT>"<SPLIT>, הוא אומר לי מדי שנה<SPLIT>.}
+False positives: {
+בזבל
+} False negatives: {
+ב
+זבל
+}
+
+Expected: {
 היו שם סטודנט ל<SPLIT>אמנות מ<SPLIT>וורשה ה<SPLIT>שוטף מכוניות ב<SPLIT>תל<SPLIT>-<SPLIT>אביב<SPLIT>, ו<SPLIT>מהנדסת בניין מ<SPLIT>לובלין ה<SPLIT>עובדת כ<SPLIT>עוזרת בית ב<SPLIT>פרבר אמיד<SPLIT>.}
 Predicted: {
-היו שם סטודנט ל<SPLIT>אמנות מ<SPLIT>וורשה ה<SPLIT>שוטף מכוניות ב<SPLIT>תל<SPLIT>-<SPLIT>אביב<SPLIT>, ו<SPLIT>מה<SPLIT>נדסת בניין מלובלין ה<SPLIT>עובדת כ<SPLIT>עוזרת בית ב<SPLIT>פרבר אמיד<SPLIT>.}
+היו שם סטודנט ל<SPLIT>אמנות מ<SPLIT>וורשה ה<SPLIT>שוטף מכוניות ב<SPLIT>תל<SPLIT>-<SPLIT>אביב<SPLIT>, ו<SPLIT>מה<SPLIT>נדסת בניין מלובלין ה<SPLIT>עובדת כעוזרת בית ב<SPLIT>פרבר אמיד<SPLIT>.}
 False positives: {
 מה
 נדסת
 מלובלין
+כעוזרת
 } False negatives: {
 מהנדסת
 מ
 לובלין
+כ
+עוזרת
 }
 
 Expected: {
@@ -1678,13 +1672,14 @@ False positives: {
 Expected: {
 הוא עבד ב<SPLIT>ישראל ב<SPLIT>זהות שאולה של חברו יורק פרס במפעל של אמקור ב<SPLIT>הרצליה פיתוח<SPLIT>, כ<SPLIT>עוזר ל<SPLIT>מודד קרקעות ו<SPLIT>כ<SPLIT>נהג משאית<SPLIT>.}
 Predicted: {
-הוא עבד ב<SPLIT>ישראל בזהות ש<SPLIT>אולה של חברו יורק פרס ב<SPLIT>מפעל של אמקור ב<SPLIT>הרצליה פיתוח<SPLIT>, כ<SPLIT>עוזר למודד קרקעות ו<SPLIT>כנהג משאית<SPLIT>.}
+הוא עבד ב<SPLIT>ישראל בזהות ש<SPLIT>אולה של חברו יורק פרס ב<SPLIT>מפעל של אמקור ב<SPLIT>הרצליה פיתוח<SPLIT>, כעוזר למודד קרקעות ו<SPLIT>כנהג משאית<SPLIT>.}
 False positives: {
 בזהות
 ש
 אולה
 ב
 מפעל
+כעוזר
 למודד
 כנהג
 } False negatives: {
@@ -1692,6 +1687,8 @@ False positives: {
 זהות
 שאולה
 במפעל
+כ
+עוזר
 ל
 מודד
 כ
@@ -1715,23 +1712,15 @@ False positives: {
 Expected: {
 על אף ה<SPLIT>השראה ש<SPLIT>שאב ו<SPLIT>ספג מחייו ב<SPLIT>תל<SPLIT>-<SPLIT>אביב<SPLIT>, היו חייו בסופו של דבר קשי<SPLIT>-<SPLIT>יום<SPLIT>.}
 Predicted: {
-על אף ה<SPLIT>השראה ש<SPLIT>שאב ו<SPLIT>ספג מחייו ב<SPLIT>תל<SPLIT>-<SPLIT>אביב<SPLIT>, היו חיי<SPLIT>ו בסופו של דבר קשי<SPLIT>-<SPLIT>יום<SPLIT>.}
+על אף ה<SPLIT>השראה ש<SPLIT>שאב ו<SPLIT>ספג מחיי<SPLIT>ו ב<SPLIT>תל<SPLIT>-<SPLIT>אביב<SPLIT>, היו חיי<SPLIT>ו בסופו של דבר קשי<SPLIT>-<SPLIT>יום<SPLIT>.}
 False positives: {
+מחיי
+ו
 חיי
 ו
 } False negatives: {
+מחייו
 חייו
-}
-
-Expected: {
-אחר כך נפרדו דרכיהם<SPLIT>, אך ה<SPLIT>קשר ביניהם נשמר<SPLIT>.}
-Predicted: {
-אחר כך נפרדו דרכיהם<SPLIT>, אך ה<SPLIT>קשר ביני<SPLIT>הם נשמר<SPLIT>.}
-False positives: {
-ביני
-הם
-} False negatives: {
-ביניהם
 }
 
 Expected: {
@@ -1765,12 +1754,11 @@ False positives: {
 Expected: {
 אבל ב<SPLIT>41 ב<SPLIT>יוני 9691 הוא נמצא מת במיטתו בדירתו של ה<SPLIT>מפיק ה<SPLIT>גרמני<SPLIT>.}
 Predicted: {
-אבל ב41 ב<SPLIT>יוני 9691 הוא נמצא מת ב<SPLIT>מיטת<SPLIT>ו ב<SPLIT>דירתו של ה<SPLIT>מפיק ה<SPLIT>גרמני<SPLIT>.}
+אבל ב41 ב<SPLIT>יוני 9691 הוא נמצא מת ב<SPLIT>מיטתו ב<SPLIT>דירתו של ה<SPLIT>מפיק ה<SPLIT>גרמני<SPLIT>.}
 False positives: {
 ב41
 ב
-מיטת
-ו
+מיטתו
 ב
 דירתו
 } False negatives: {
@@ -1778,6 +1766,17 @@ False positives: {
 41
 במיטתו
 בדירתו
+}
+
+Expected: {
+אבל מאתנו נשלל גם מעט ה<SPLIT>צחוק ש<SPLIT>אנו זכאים לו<SPLIT>.}
+Predicted: {
+אבל מאתנו נשלל גם מעט הצחוק ש<SPLIT>אנו זכאים לו<SPLIT>.}
+False positives: {
+הצחוק
+} False negatives: {
+ה
+צחוק
 }
 
 Expected: {
@@ -1794,29 +1793,15 @@ False positives: {
 Expected: {
 דורון נשר ש<SPLIT>נבחר לשעשע את קהל ה<SPLIT>צופים נחשב ל<SPLIT>בחור מוכשר<SPLIT>, אבל מתקבל ה<SPLIT>רושם ש<SPLIT>הוא מתפרס על<SPLIT>-<SPLIT>פני תחומים רבים מדי<SPLIT>, ו<SPLIT>נוהג בכישוריו ב<SPLIT>יד נדיבה<SPLIT>.}
 Predicted: {
-דורון נשר ש<SPLIT>נבחר לשעשע את קהל ה<SPLIT>צופים נחשב לבחור מוכשר<SPLIT>, אבל מתקבל ה<SPLIT>רושם ש<SPLIT>הוא מתפרס על<SPLIT>-<SPLIT>פני תחומים רבים מדי<SPLIT>, ו<SPLIT>נוהג ב<SPLIT>כישוריו ביד נדיבה<SPLIT>.}
+דורון נשר ש<SPLIT>נבחר לשעשע את קהל ה<SPLIT>צופים נחשב לבחור מוכשר<SPLIT>, אבל מתקבל ה<SPLIT>רושם ש<SPLIT>הוא מתפרס על<SPLIT>-<SPLIT>פני תחומים רבים מדי<SPLIT>, ו<SPLIT>נוהג בכישוריו ביד נדיבה<SPLIT>.}
 False positives: {
 לבחור
-ב
-כישוריו
 ביד
 } False negatives: {
 ל
 בחור
-בכישוריו
 ב
 יד
-}
-
-Expected: {
-אלא ש<SPLIT>גם ה<SPLIT>דיווח ה<SPLIT>ענייני<SPLIT>, ה<SPLIT>מהיר<SPLIT>, ב<SPLIT>"<SPLIT>מצב ה<SPLIT>רוח<SPLIT>" מחטיא במעט את ה<SPLIT>מטרה<SPLIT>.}
-Predicted: {
-אלא ש<SPLIT>גם ה<SPLIT>דיווח ה<SPLIT>ענייני<SPLIT>, ה<SPLIT>מהיר<SPLIT>, ב<SPLIT>"<SPLIT>מצב ה<SPLIT>רוח<SPLIT>" מ<SPLIT>חטיא במעט את ה<SPLIT>מטרה<SPLIT>.}
-False positives: {
-מ
-חטיא
-} False negatives: {
-מחטיא
 }
 
 Expected: {
@@ -1859,6 +1844,17 @@ False positives: {
 }
 
 Expected: {
+ה<SPLIT>מעשה ה<SPLIT>קובע הוא רצון ה<SPLIT>אל<SPLIT>, קבע<SPLIT>, ו<SPLIT>גם אם הוא עצמו יגיע ל<SPLIT>ראשות ה<SPLIT>ממשלה יבוא אסון גדול על מדינת ישראל אם תושביה לא יחזרו ב<SPLIT>תשובה<SPLIT>.}
+Predicted: {
+המעשה ה<SPLIT>קובע הוא רצון ה<SPLIT>אל<SPLIT>, קבע<SPLIT>, ו<SPLIT>גם אם הוא עצמו יגיע ל<SPLIT>ראשות ה<SPLIT>ממשלה יבוא אסון גדול על מדינת ישראל אם תושביה לא יחזרו ב<SPLIT>תשובה<SPLIT>.}
+False positives: {
+המעשה
+} False negatives: {
+ה
+מעשה
+}
+
+Expected: {
 החלטת בג"ץ ש<SPLIT>אישרה את פסילת רשימתו של כהנא שמה קץ לחלום<SPLIT>, ו<SPLIT>המיטה מהלומה אנושה על "<SPLIT>כך<SPLIT>"<SPLIT>.}
 Predicted: {
 החלטת בג"ץ ש<SPLIT>אישרה את פסילת רשימתו של כהנא שמה קץ לחלום<SPLIT>, ו<SPLIT>ה<SPLIT>מיטה מ<SPLIT>הלומה אנושה על "<SPLIT>כך<SPLIT>"<SPLIT>.}
@@ -1886,27 +1882,22 @@ False positives: {
 Expected: {
 הוא קרא דרור ל<SPLIT>יצרי ה<SPLIT>נקמה הכי כמוסים<SPLIT>.}
 Predicted: {
-הוא קרא דרור ליצרי ה<SPLIT>נקמה ה<SPLIT>כי כ<SPLIT>מוסים<SPLIT>.}
+הוא קרא דרור ליצרי ה<SPLIT>נקמה הכי כמוסים<SPLIT>.}
 False positives: {
 ליצרי
-ה
-כי
-כ
-מוסים
 } False negatives: {
 ל
 יצרי
-הכי
-כמוסים
 }
 
 Expected: {
 מותו של סאלם איסמעיל מובארק רק ריחף ב<SPLIT>חלל ה<SPLIT>אולם שבו התנהל ה<SPLIT>משפט<SPLIT>, אך לא נחת על שולחנם של ה<SPLIT>שופטים תת<SPLIT>-<SPLIT>ניצב אברהם מלכה<SPLIT>, ניצב משנה זיווה פרי<SPLIT>-<SPLIT>הר<SPLIT>, ו<SPLIT>סגן<SPLIT>-<SPLIT>ניצב משה אלכסנדרוני<SPLIT>.}
 Predicted: {
-מותו של סאלם איסמעיל מובארק רק ריחף ב<SPLIT>חלל ה<SPLIT>אולם ש<SPLIT>בו התנהל ה<SPLIT>משפט<SPLIT>, אך לא נחת על שולחנם של ה<SPLIT>שופטים תת<SPLIT>-<SPLIT>ניצב אברהם מלכה<SPLIT>, ניצב משנה זיווה פרי<SPLIT>-<SPLIT>הר<SPLIT>, ו<SPLIT>סגן<SPLIT>-<SPLIT>ניצב משה אלכסנדרוני<SPLIT>.}
+מותו של סאלם איסמעיל מובארק רק ריחף ב<SPLIT>חלל ה<SPLIT>אולם ש<SPLIT>ב<SPLIT>ו התנהל ה<SPLIT>משפט<SPLIT>, אך לא נחת על שולחנם של ה<SPLIT>שופטים תת<SPLIT>-<SPLIT>ניצב אברהם מלכה<SPLIT>, ניצב משנה זיווה פרי<SPLIT>-<SPLIT>הר<SPLIT>, ו<SPLIT>סגן<SPLIT>-<SPLIT>ניצב משה אלכסנדרוני<SPLIT>.}
 False positives: {
 ש
-בו
+ב
+ו
 } False negatives: {
 שבו
 }
@@ -1914,18 +1905,15 @@ False positives: {
 Expected: {
 ה<SPLIT>חוליה ה<SPLIT>נעלמת היא טיב ה<SPLIT>חקירה ש<SPLIT>ניהל ה<SPLIT>מחוז ה<SPLIT>דרומי<SPLIT>, שבסופה לא נמסרו ל<SPLIT>פרקליטות ה<SPLIT>מחוז ראיות ש<SPLIT>היו מספיקות ל<SPLIT>שם ניסוח כתב<SPLIT>-<SPLIT>אישום בגין הריגה<SPLIT>.}
 Predicted: {
-ה<SPLIT>חוליה ה<SPLIT>נעלמת היא טיב ה<SPLIT>חקירה ש<SPLIT>ניהל ה<SPLIT>מחוז ה<SPLIT>דרומי<SPLIT>, ש<SPLIT>ב<SPLIT>סופה לא נמסרו לפרקליטות ה<SPLIT>מחוז ראיות ש<SPLIT>היו מספיקות ל<SPLIT>שם ניסוח כתב<SPLIT>-<SPLIT>אישום בגין ה<SPLIT>ריגה<SPLIT>.}
+ה<SPLIT>חוליה ה<SPLIT>נעלמת היא טיב ה<SPLIT>חקירה ש<SPLIT>ניהל ה<SPLIT>מחוז ה<SPLIT>דרומי<SPLIT>, ש<SPLIT>ב<SPLIT>סופה לא נמסרו ל<SPLIT>פרקליטות ה<SPLIT>מחוז ראיות ש<SPLIT>היו מספיקות ל<SPLIT>שם ניסוח כתב<SPLIT>-<SPLIT>אישום בגין ה<SPLIT>ריגה<SPLIT>.}
 False positives: {
 ש
 ב
 סופה
-לפרקליטות
 ה
 ריגה
 } False negatives: {
 שבסופה
-ל
-פרקליטות
 הריגה
 }
 
@@ -1957,26 +1945,18 @@ False positives: {
 Expected: {
 ב<SPLIT>יבנה ישחקו היום (<SPLIT>1400<SPLIT>) מכבי ה<SPLIT>מקומי ו<SPLIT>ה<SPLIT>פועל טבריה ש<SPLIT>אינו מתעלה ב<SPLIT>משחקי חוץ<SPLIT>.}
 Predicted: {
-ביבנה ישחקו ה<SPLIT>יום (<SPLIT>1400<SPLIT>) מכבי ה<SPLIT>מקומי ו<SPLIT>ה<SPLIT>פועל טבריה ש<SPLIT>אינו מתעלה ב<SPLIT>משחקי חוץ<SPLIT>.}
+ביבנה ישחקו ה<SPLIT>יום (<SPLIT>1400<SPLIT>) מכבי ה<SPLIT>מקומי ו<SPLIT>ה<SPLIT>פועל טבריה ש<SPLIT>אינו מתעלה במשחקי חוץ<SPLIT>.}
 False positives: {
 ביבנה
 ה
 יום
+במשחקי
 } False negatives: {
 ב
 יבנה
 היום
-}
-
-Expected: {
-מה ש<SPLIT>ברור מעל ל<SPLIT>כל ספק<SPLIT>: מצבו של ה<SPLIT>איגרוף ב<SPLIT>ישראל לא יהיה טוב יותר<SPLIT>, או טוב פחות<SPLIT>, בגלל נסיעתו או אי נסיעתו של ללקין ליבשת ה<SPLIT>חמישית<SPLIT>.}
-Predicted: {
-מה ש<SPLIT>ברור מעל ל<SPLIT>כל ספק<SPLIT>: מצבו של ה<SPLIT>איגרוף ב<SPLIT>ישראל לא יהיה טוב יותר<SPLIT>, או טוב פחות<SPLIT>, בגלל נסיעתו או אי נסיעתו של ל<SPLIT>לקין ליבשת ה<SPLIT>חמישית<SPLIT>.}
-False positives: {
-ל
-לקין
-} False negatives: {
-ללקין
+ב
+משחקי
 }
 
 Expected: {
@@ -2018,12 +1998,12 @@ False positives: {
 Expected: {
 ב<SPLIT>21 שנותיו בסנאט היה בושוויץ ה<SPLIT>ידיד ה<SPLIT>אפקטיווי ביותר של ישראל במפלגה ה<SPLIT>רפובליקאית<SPLIT>.}
 Predicted: {
-ב<SPLIT>21 שנותיו בסנאט היה בושוויץ ה<SPLIT>ידיד ה<SPLIT>אפקטיווי ביותר של ישראל ב<SPLIT>מפלגה ה<SPLIT>רפובליקאית<SPLIT>.}
+ב<SPLIT>21 שנותיו בסנאט היה בושוויץ הידיד ה<SPLIT>אפקטיווי ביותר של ישראל במפלגה ה<SPLIT>רפובליקאית<SPLIT>.}
 False positives: {
-ב
-מפלגה
+הידיד
 } False negatives: {
-במפלגה
+ה
+ידיד
 }
 
 Expected: {
@@ -2080,32 +2060,32 @@ False positives: {
 Expected: {
 נציג אחת ה<SPLIT>רשתות ש<SPLIT>סיפר לי את ה<SPLIT>סיפור מעיד<SPLIT>, ש<SPLIT>ה<SPLIT>מראה ב<SPLIT>חוף תל אביב נועז פי כמה מ<SPLIT>מה ש<SPLIT>הרשו ל<SPLIT>עצמן עקרות ה<SPLIT>בית ה<SPLIT>אמריקאיות ש<SPLIT>הופיעו ב<SPLIT>אותו ליל חמסין סעודי ב<SPLIT>שגרירות ארה"ב<SPLIT>.}
 Predicted: {
-נציג אחת ה<SPLIT>רשתות ש<SPLIT>סיפר לי את ה<SPLIT>סיפור מעיד<SPLIT>, ש<SPLIT>ה<SPLIT>מראה ב<SPLIT>חוף תל אביב נועז פי כמה ממה ש<SPLIT>ה<SPLIT>רשו ל<SPLIT>עצמן עקרות ה<SPLIT>בית ה<SPLIT>אמריקאיות ש<SPLIT>הופיעו ב<SPLIT>אותו ליל חמסין סעודי ב<SPLIT>שגרירות ארה"ב<SPLIT>.}
+נציג אחת ה<SPLIT>רשתות ש<SPLIT>סיפר לי את ה<SPLIT>סיפור מעיד<SPLIT>, ש<SPLIT>ה<SPLIT>מראה ב<SPLIT>חוף תל אביב נועז פי כמה ממה ש<SPLIT>הרשו ל<SPLIT>עצמן עקרות ה<SPLIT>בית ה<SPLIT>אמריקאיות ש<SPLIT>הופיעו ב<SPLIT>אותו ליל חמסין סעודי ב<SPLIT>שגרירות ארה"ב<SPLIT>.}
 False positives: {
 ממה
-ה
-רשו
 } False negatives: {
 מ
 מה
-הרשו
 }
 
 Expected: {
 אפשר כמובן ללעוג ל<SPLIT>"<SPLIT>ינקים<SPLIT>" ה<SPLIT>מתרפסים בפני ה<SPLIT>שליטים ה<SPLIT>הוללים<SPLIT>, ה<SPLIT>צבועים<SPLIT>, של סעודיה<SPLIT>, ש<SPLIT>בלי אותם חיילים אמריקאים חייהם שווים כ<SPLIT>קליפת ה<SPLIT>שום<SPLIT>.}
 Predicted: {
-אפשר כמובן ללעוג ל<SPLIT>"<SPLIT>ינקים<SPLIT>" ה<SPLIT>מתרפסים בפני ה<SPLIT>שליטים ה<SPLIT>הוללים<SPLIT>, ה<SPLIT>צבועים<SPLIT>, של סעודיה<SPLIT>, ש<SPLIT>בלי אותם חיילים אמריקאים חיי<SPLIT>הם שווים כ<SPLIT>קליפת ה<SPLIT>שום<SPLIT>.}
+אפשר כמובן ללעוג ל<SPLIT>"ינקים<SPLIT>" ה<SPLIT>מתרפסים בפני ה<SPLIT>שליטים ה<SPLIT>הוללים<SPLIT>, ה<SPLIT>צבועים<SPLIT>, של סעודיה<SPLIT>, ש<SPLIT>בלי אותם חיילים אמריקאים חיי<SPLIT>הם שווים כ<SPLIT>קליפת ה<SPLIT>שום<SPLIT>.}
 False positives: {
+"ינקים
 חיי
 הם
 } False negatives: {
+"
+ינקים
 חייהם
 }
 
 Expected: {
 ב<SPLIT>הרצאה ש<SPLIT>נשא ב<SPLIT>חודש מארס טען פרופסור יהושפט הרכבי כי ב<SPLIT>כך איפשרה ארה"ב ל<SPLIT>ממשלות ישראל ולציבור בארץ לבצע משגים<SPLIT>, ש<SPLIT>יום אחד הם אלה ש<SPLIT>ייאלצו לשלם את ה<SPLIT>מחיר בעבורם<SPLIT>.}
 Predicted: {
-ב<SPLIT>הרצאה ש<SPLIT>נשא ב<SPLIT>חודש מארס טען פרופסור יהושפט ה<SPLIT>רכבי כי ב<SPLIT>כך איפשרה ארה"ב ל<SPLIT>ממשלות ישראל ו<SPLIT>ל<SPLIT>ציבור ב<SPLIT>ארץ לבצע משגים<SPLIT>, ש<SPLIT>יום אחד הם אלה ש<SPLIT>ייאלצו לשלם את ה<SPLIT>מחיר ב<SPLIT>עבורם<SPLIT>.}
+ב<SPLIT>הרצאה ש<SPLIT>נשא ב<SPLIT>חודש מארס טען פרופסור יהושפט ה<SPLIT>רכבי כי ב<SPLIT>כך איפשרה ארה"ב ל<SPLIT>ממשלות ישראל ו<SPLIT>ל<SPLIT>ציבור ב<SPLIT>ארץ לבצע משגים<SPLIT>, ש<SPLIT>יום אחד הם אלה ש<SPLIT>ייאלצו לשלם את ה<SPLIT>מחיר בעבורם<SPLIT>.}
 False positives: {
 ה
 רכבי
@@ -2114,13 +2094,10 @@ False positives: {
 ציבור
 ב
 ארץ
-ב
-עבורם
 } False negatives: {
 הרכבי
 ולציבור
 בארץ
-בעבורם
 }
 
 Expected: {
@@ -2224,15 +2201,12 @@ False positives: {
 Expected: {
 סיום משחק ה<SPLIT>ניצחון של ה<SPLIT>פועל ירושלים על ה<SPLIT>גליל עשו ה<SPLIT>אורחים מ<SPLIT>ה<SPLIT>צפון דרכם ל<SPLIT>חדר ה<SPLIT>הלבשה<SPLIT>, כש<SPLIT>ארשת פניהם כעוסה<SPLIT>.}
 Predicted: {
-סיום משחק ה<SPLIT>ניצחון של ה<SPLIT>פועל ירושלים על ה<SPLIT>גליל עשו ה<SPLIT>אורחים מ<SPLIT>ה<SPLIT>צפון דרכ<SPLIT>ם ל<SPLIT>חדר ה<SPLIT>הלבשה<SPLIT>, כש<SPLIT>ארשת פניהם כ<SPLIT>עוסה<SPLIT>.}
+סיום משחק ה<SPLIT>ניצחון של ה<SPLIT>פועל ירושלים על ה<SPLIT>גליל עשו ה<SPLIT>אורחים מ<SPLIT>ה<SPLIT>צפון דרכ<SPLIT>ם ל<SPLIT>חדר ה<SPLIT>הלבשה<SPLIT>, כש<SPLIT>ארשת פניהם כעוסה<SPLIT>.}
 False positives: {
 דרכ
 ם
-כ
-עוסה
 } False negatives: {
 דרכם
-כעוסה
 }
 
 Expected: {
@@ -2282,28 +2256,26 @@ False positives: {
 Expected: {
 א.ס. רמת ה<SPLIT>שרון נקנסה גם היא ב<SPLIT>-<SPLIT>2,500 שקל ו<SPLIT>הוטל עליה עונש הרחקה מ<SPLIT>-<SPLIT>4 מישחקים על תנאי ל<SPLIT>שנה<SPLIT>, בעקבות התפרעות אוהדים אחרי ה<SPLIT>מישחק נגד בית"ר ת"א<SPLIT>.}
 Predicted: {
-א.ס<SPLIT>. רמת ה<SPLIT>שרון נקנסה גם היא ב<SPLIT>-<SPLIT>2,500 שקל ו<SPLIT>הוטל עליה עונש ה<SPLIT>רחקה מ<SPLIT>-<SPLIT>4 מישחקים על תנאי ל<SPLIT>שנה<SPLIT>, בעקבות ה<SPLIT>תפרעות אוהדים אחרי ה<SPLIT>מישחק נגד בית"ר ת"א<SPLIT>.}
+א.ס<SPLIT>. רמת ה<SPLIT>שרון נקנסה גם היא ב<SPLIT>-<SPLIT>2,500 שקל ו<SPLIT>הוטל עליה עונש ה<SPLIT>רחקה מ<SPLIT>-<SPLIT>4 מישחקים על תנאי ל<SPLIT>שנה<SPLIT>, בעקבות התפרעות אוהדים אחרי ה<SPLIT>מישחק נגד בית"ר ת"א<SPLIT>.}
 False positives: {
 א.ס
 .
 ה
 רחקה
-ה
-תפרעות
 } False negatives: {
 א.ס.
 הרחקה
-התפרעות
 }
 
 Expected: {
 כאן מתוארים שוב ו<SPLIT>שוב ו<SPLIT>ב<SPLIT>הדגשה משחקי ה<SPLIT>אור ו<SPLIT>ה<SPLIT>צל<SPLIT>, ה<SPLIT>מתחוללים ב<SPLIT>חדר שבו נערכת ה<SPLIT>פגישה ה<SPLIT>ראשונה בין שני גיבורי ה<SPLIT>רומאן<SPLIT>, ה<SPLIT>מהווים את שני ה<SPLIT>קטבים שביניהם מטלטל וייט את ה<SPLIT>שאלות ה<SPLIT>מטאפיסיות ש<SPLIT>הוא מעלה ב<SPLIT>ספר זה<SPLIT>, שאלות ב<SPLIT>דבר קיום ה<SPLIT>אל<SPLIT>, עבודת ה<SPLIT>אל<SPLIT>, התגלותו ו<SPLIT>אפשרות ה<SPLIT>אמונה בו<SPLIT>.}
 Predicted: {
-כאן מתוארים שוב ו<SPLIT>שוב ו<SPLIT>ב<SPLIT>הדגשה משחקי ה<SPLIT>אור ו<SPLIT>הצל<SPLIT>, ה<SPLIT>מתחוללים ב<SPLIT>חדר ש<SPLIT>בו נערכת ה<SPLIT>פגישה ה<SPLIT>ראשונה בין שני גיבורי ה<SPLIT>רומאן<SPLIT>, ה<SPLIT>מהווים את שני ה<SPLIT>קטבים ש<SPLIT>ביניהם מטלטל וייט את ה<SPLIT>שאלות ה<SPLIT>מטאפיסיות ש<SPLIT>הוא מעלה ב<SPLIT>ספר זה<SPLIT>, שאלות ב<SPLIT>דבר קיום ה<SPLIT>אל<SPLIT>, עבודת ה<SPLIT>אל<SPLIT>, התגלותו ו<SPLIT>אפשרות ה<SPLIT>אמונה ב<SPLIT>ו<SPLIT>.}
+כאן מתוארים שוב ו<SPLIT>שוב ו<SPLIT>ב<SPLIT>הדגשה משחקי ה<SPLIT>אור ו<SPLIT>הצל<SPLIT>, ה<SPLIT>מתחוללים ב<SPLIT>חדר ש<SPLIT>ב<SPLIT>ו נערכת ה<SPLIT>פגישה ה<SPLIT>ראשונה בין שני גיבורי ה<SPLIT>רומאן<SPLIT>, ה<SPLIT>מהווים את שני ה<SPLIT>קטבים ש<SPLIT>ביניהם מטלטל וייט את ה<SPLIT>שאלות ה<SPLIT>מטאפיסיות ש<SPLIT>הוא מעלה ב<SPLIT>ספר זה<SPLIT>, שאלות ב<SPLIT>דבר קיום ה<SPLIT>אל<SPLIT>, עבודת ה<SPLIT>אל<SPLIT>, התגלותו ו<SPLIT>אפשרות ה<SPLIT>אמונה ב<SPLIT>ו<SPLIT>.}
 False positives: {
 הצל
 ש
-בו
+ב
+ו
 ש
 ביניהם
 ב
@@ -2319,46 +2291,43 @@ False positives: {
 Expected: {
 לא היתה זו החלטה קלה<SPLIT>, ו<SPLIT>היא היתה מלווה ב<SPLIT>הבנה כי יש לה ה<SPLIT>יכולת להאמין רק ב<SPLIT>אותם דברים ה<SPLIT>ניתנים ל<SPLIT>תפישה מוחשית<SPLIT>, אם כי היתה בה בפירוש התלהבות ל<SPLIT>פתרון בעיות מתימטיות<SPLIT>, כלומר<SPLIT>, נטייה אל ה<SPLIT>מופשט<SPLIT>.}
 Predicted: {
-לא היתה זו החלטה קלה<SPLIT>, ו<SPLIT>היא היתה מלווה ב<SPLIT>הבנה כי יש לה ה<SPLIT>יכולת להאמין רק ב<SPLIT>אותם דברים ה<SPLIT>ניתנים לתפישה מוחשית<SPLIT>, אם כי היתה ב<SPLIT>ה ב<SPLIT>פירוש התלהבות ל<SPLIT>פתרון בעיות מתימטיות<SPLIT>, כלומר<SPLIT>, נטייה אל ה<SPLIT>מופשט<SPLIT>.}
+לא היתה זו החלטה קלה<SPLIT>, ו<SPLIT>היא היתה מלווה ב<SPLIT>הבנה כי יש לה ה<SPLIT>יכולת להאמין רק ב<SPLIT>אותם דברים ה<SPLIT>ניתנים לתפישה מוחשית<SPLIT>, אם כי היתה בה ב<SPLIT>פירוש התלהבות ל<SPLIT>פתרון בעיות מתימטיות<SPLIT>, כלומר<SPLIT>, נטייה אל ה<SPLIT>מופשט<SPLIT>.}
 False positives: {
 לתפישה
-ב
-ה
 ב
 פירוש
 } False negatives: {
 ל
 תפישה
-בה
 בפירוש
 }
 
 Expected: {
 ו<SPLIT>עוד הבדל<SPLIT>: מסע ה<SPLIT>חניכה ש<SPLIT>טווה וייט הוא מסע דתי ו<SPLIT>אילו ה<SPLIT>מסע ה<SPLIT>הומרי הוא מסע חילוני<SPLIT>, מסע נוצרי בעליל לעומת מסעו ה<SPLIT>פגאני של הומרוס<SPLIT>.}
 Predicted: {
-ו<SPLIT>עוד ה<SPLIT>בדל<SPLIT>: מסע ה<SPLIT>חניכה ש<SPLIT>טווה וייט הוא מסע דתי ו<SPLIT>אילו ה<SPLIT>מסע ה<SPLIT>הומרי הוא מסע חילוני<SPLIT>, מסע נוצרי בעליל לעומת מסעו ה<SPLIT>פגאני של הומרוס<SPLIT>.}
+ו<SPLIT>עוד ה<SPLIT>בדל<SPLIT>: מסע ה<SPLIT>חניכה שטווה וייט הוא מסע דתי ו<SPLIT>אילו ה<SPLIT>מסע ה<SPLIT>הומרי הוא מסע חילוני<SPLIT>, מסע נוצרי בעליל לעומת מסעו ה<SPLIT>פגאני של הומרוס<SPLIT>.}
 False positives: {
 ה
 בדל
+שטווה
 } False negatives: {
 הבדל
+ש
+טווה
 }
 
 Expected: {
 ה<SPLIT>אחרון במתים הוא פוס<SPLIT>, אשר ככל ש<SPLIT>הוא מתקדם במסעו כך הוא מרבה שיח עם לורה<SPLIT>, ו<SPLIT>כאשר פצעיו נאכלים ב<SPLIT>רימה ו<SPLIT>הוא אינו נכנע ו<SPLIT>מוסיף לרכוב "<SPLIT>ב<SPLIT>רחבי ה<SPLIT>גיהנום<SPLIT>"<SPLIT>, מבטיחה לו לורה כי לא תכזיב ו<SPLIT>מורחת על פצעיו "<SPLIT>משחה של מלים<SPLIT>"<SPLIT>.}
 Predicted: {
-ה<SPLIT>אחרון ב<SPLIT>מתים הוא פוס<SPLIT>, אשר כ<SPLIT>כל ש<SPLIT>הוא מתקדם ב<SPLIT>מסעו כך הוא מרבה שיח עם לורה<SPLIT>, ו<SPLIT>כאשר פצעיו נאכלים ברימה ו<SPLIT>הוא אינו נכנע ו<SPLIT>מוסיף לרכוב "<SPLIT>ב<SPLIT>רחבי ה<SPLIT>גיהנום<SPLIT>"<SPLIT>, מבטיחה לו לורה כי לא תכזיב ו<SPLIT>מורחת על פצעיו "<SPLIT>משחה של מלים<SPLIT>"<SPLIT>.}
+ה<SPLIT>אחרון ב<SPLIT>מתים הוא פוס<SPLIT>, אשר ככל ש<SPLIT>הוא מתקדם ב<SPLIT>מסעו כך הוא מרבה שיח עם לורה<SPLIT>, ו<SPLIT>כאשר פצעיו נאכלים ברימה ו<SPLIT>הוא אינו נכנע ו<SPLIT>מוסיף לרכוב "<SPLIT>ב<SPLIT>רחבי ה<SPLIT>גיהנום<SPLIT>"<SPLIT>, מבטיחה לו לורה כי לא תכזיב ו<SPLIT>מורחת על פצעיו "<SPLIT>משחה של מלים<SPLIT>"<SPLIT>.}
 False positives: {
 ב
 מתים
-כ
-כל
 ב
 מסעו
 ברימה
 } False negatives: {
 במתים
-ככל
 במסעו
 ב
 רימה
@@ -2378,11 +2347,10 @@ False positives: {
 Expected: {
 דווקא ה<SPLIT>מרד שלו ב<SPLIT>פוס ל<SPLIT>טובת ה<SPLIT>חיים מעיד עליו ש<SPLIT>הוא עד מהימן ו<SPLIT>כדי ש<SPLIT>יוכל להעיד<SPLIT>, צריך היה ש<SPLIT>יישאר בחיים<SPLIT>.}
 Predicted: {
-דווקא ה<SPLIT>מרד שלו ב<SPLIT>פוס ל<SPLIT>טובת ה<SPLIT>חיים מעיד עליו ש<SPLIT>הוא עד מ<SPLIT>ה<SPLIT>ימן ו<SPLIT>כדי ש<SPLIT>יוכל להעיד<SPLIT>, צריך היה ש<SPLIT>יישאר ב<SPLIT>חיים<SPLIT>.}
+דווקא ה<SPLIT>מרד שלו ב<SPLIT>פוס ל<SPLIT>טובת ה<SPLIT>חיים מעיד עליו ש<SPLIT>הוא עד מ<SPLIT>הימן ו<SPLIT>כדי ש<SPLIT>יוכל להעיד<SPLIT>, צריך היה ש<SPLIT>יישאר ב<SPLIT>חיים<SPLIT>.}
 False positives: {
 מ
-ה
-ימן
+הימן
 ב
 חיים
 } False negatives: {
@@ -2393,39 +2361,36 @@ False positives: {
 Expected: {
 אם הבליע כאן וייט את אשר הטרידו ב<SPLIT>אותו זמן מתחת לקליפותיו של רומאן היסטורי<SPLIT>, כביכול<SPLIT>, אודיסיאה מודרנית<SPLIT>, או אלתורים על מחזה פאסיון<SPLIT>, לא ייפלא ש<SPLIT>מצא ל<SPLIT>נכון לשוב ו<SPLIT>לעסוק ב<SPLIT>כך במפורש ב<SPLIT>רומאן גדול אחר שלו<SPLIT>, אולי אחד ה<SPLIT>רומאנים ה<SPLIT>גדולים ש<SPLIT>נכתבו ב<SPLIT>זמן מן ה<SPLIT>זמנים<SPLIT>, ב<SPLIT>"<SPLIT>יורדי ה<SPLIT>מרכבה<SPLIT>"<SPLIT>, ספר ש<SPLIT>מתחת למעטה ה<SPLIT>מיסטי שלו<SPLIT>, הוא היגד עמוק ו<SPLIT>רב<SPLIT>-<SPLIT>עוצמה על ה<SPLIT>אנטישמיות ו<SPLIT>ה<SPLIT>שואה<SPLIT>.}
 Predicted: {
-אם ה<SPLIT>בליע כאן וייט את אשר ה<SPLIT>טרידו ב<SPLIT>אותו זמן מתחת לקליפותיו של רומאן ה<SPLIT>יסטורי<SPLIT>, כביכול<SPLIT>, אודיסיאה מודרנית<SPLIT>, או אלתורים על מחזה פאסיון<SPLIT>, לא ייפלא ש<SPLIT>מצא ל<SPLIT>נכון לשוב ו<SPLIT>לעסוק ב<SPLIT>כך במפורש ב<SPLIT>רומאן גדול אחר שלו<SPLIT>, אולי אחד ה<SPLIT>רומאנים ה<SPLIT>גדולים ש<SPLIT>נכתבו ב<SPLIT>זמן מן ה<SPLIT>זמנים<SPLIT>, ב<SPLIT>"<SPLIT>יורדי ה<SPLIT>מרכבה<SPLIT>"<SPLIT>, ספר ש<SPLIT>מתחת ל<SPLIT>מעטה ה<SPLIT>מיסטי שלו<SPLIT>, הוא ה<SPLIT>יגד עמוק ו<SPLIT>רב<SPLIT>-<SPLIT>עוצמה על ה<SPLIT>אנטישמיות ו<SPLIT>ה<SPLIT>שואה<SPLIT>.}
+אם ה<SPLIT>בליע כאן וייט את אשר ה<SPLIT>טרידו ב<SPLIT>אותו זמן מתחת לקליפותיו של רומאן היסטורי<SPLIT>, כביכול<SPLIT>, אודיסיאה מודרנית<SPLIT>, או אלתורים על מחזה פאסיון<SPLIT>, לא ייפלא ש<SPLIT>מצא ל<SPLIT>נכון לשוב ו<SPLIT>לעסוק ב<SPLIT>כך במפורש ב<SPLIT>רומאן גדול אחר שלו<SPLIT>, אולי אחד ה<SPLIT>רומאנים ה<SPLIT>גדולים ש<SPLIT>נכתבו ב<SPLIT>זמן מן ה<SPLIT>זמנים<SPLIT>, ב<SPLIT>"<SPLIT>יורדי ה<SPLIT>מרכבה<SPLIT>"<SPLIT>, ספר ש<SPLIT>מתחת ל<SPLIT>מעטה ה<SPLIT>מיסטי שלו<SPLIT>, הוא היגד עמוק ו<SPLIT>רב<SPLIT>-<SPLIT>עוצמה על ה<SPLIT>אנטישמיות ו<SPLIT>ה<SPLIT>שואה<SPLIT>.}
 False positives: {
 ה
 בליע
 ה
 טרידו
-ה
-יסטורי
 ל
 מעטה
-ה
-יגד
 } False negatives: {
 הבליע
 הטרידו
-היסטורי
 למעטה
-היגד
 }
 
 Expected: {
 הגנה כזו<SPLIT>, שתכליתה לאפשר ל<SPLIT>אנשים אלה למלא את תפקידם<SPLIT>, מגיעה ל<SPLIT>עיתונאים כמו ש<SPLIT>מגיעה ל<SPLIT>עובדי ציבור<SPLIT>, שוטרים<SPLIT>, או פוליטיקאים<SPLIT>.}
 Predicted: {
-הגנה כ<SPLIT>זו<SPLIT>, ש<SPLIT>תכליתה לאפשר ל<SPLIT>אנשים אלה למלא את תפקידם<SPLIT>, מגיעה לעיתונאים כמו ש<SPLIT>מגיעה ל<SPLIT>עובדי ציבור<SPLIT>, שוטרים<SPLIT>, או פוליטיקאים<SPLIT>.}
+הגנה כ<SPLIT>זו<SPLIT>, ש<SPLIT>תכליתה לאפשר ל<SPLIT>אנשים אלה למלא את תפקיד<SPLIT>ם<SPLIT>, מגיעה לעיתונאים כמו ש<SPLIT>מגיעה ל<SPLIT>עובדי ציבור<SPLIT>, שוטרים<SPLIT>, או פוליטיקאים<SPLIT>.}
 False positives: {
 כ
 זו
 ש
 תכליתה
+תפקיד
+ם
 לעיתונאים
 } False negatives: {
 כזו
 שתכליתה
+תפקידם
 ל
 עיתונאים
 }
@@ -2469,42 +2434,43 @@ False positives: {
 Expected: {
 ה<SPLIT>פרסומים על אודות ה<SPLIT>מתיחות ה<SPLIT>רבה ביחסים ש<SPLIT>בין הנהלת בנק ישראל ו<SPLIT>ציבור ה<SPLIT>עובדים מדאיגים את ה<SPLIT>נגיד ועוזריו<SPLIT>.}
 Predicted: {
-ה<SPLIT>פרסומים על אודות ה<SPLIT>מתיחות הרבה ב<SPLIT>יחסים ש<SPLIT>בין הנהלת בנק ישראל ו<SPLIT>ציבור ה<SPLIT>עובדים מדאיגים את ה<SPLIT>נגיד ו<SPLIT>עוזריו<SPLIT>.}
+ה<SPLIT>פרסומים על אודות ה<SPLIT>מתיחות הרבה ב<SPLIT>יחסים שבין הנהלת בנק ישראל ו<SPLIT>ציבור ה<SPLIT>עובדים מדאיגים את ה<SPLIT>נגיד ו<SPLIT>עוזריו<SPLIT>.}
 False positives: {
 הרבה
 ב
 יחסים
+שבין
 ו
 עוזריו
 } False negatives: {
 ה
 רבה
 ביחסים
+ש
+בין
 ועוזריו
 }
 
 Expected: {
 למרות ש<SPLIT>יחסי ה<SPLIT>חוץ של ישראל אינם כעת ב<SPLIT>שיא פריחתם<SPLIT>, פנה משרד ראש ה<SPLIT>ממשלה ל<SPLIT>וועדת ה<SPLIT>כספים לקבל תוספת תקציבית של 1.3 מיליון ש"ח בגין אירוח ראשי מדינה בארץ<SPLIT>.}
 Predicted: {
-למרות ש<SPLIT>יחסי ה<SPLIT>חוץ של ישראל אינם כ<SPLIT>עת ב<SPLIT>שיא פריחתם<SPLIT>, פנה משרד ראש ה<SPLIT>ממשלה ל<SPLIT>וועדת ה<SPLIT>כספים לקבל תוספת תקציבית של 1.3 מיליון ש"ח בגין אירוח ראשי מדינה ב<SPLIT>ארץ<SPLIT>.}
+למרות ש<SPLIT>יחסי ה<SPLIT>חוץ של ישראל אינם כ<SPLIT>עת ב<SPLIT>שיא פריחתם<SPLIT>, פנה משרד ראש ה<SPLIT>ממשלה ל<SPLIT>וועדת ה<SPLIT>כספים לקבל תוספת תקציבית של 1.3 מיליון ש"ח בגין אירוח ראשי מדינה בארץ<SPLIT>.}
 False positives: {
 כ
 עת
-ב
-ארץ
 } False negatives: {
 כעת
-בארץ
 }
 
 Expected: {
 ב<SPLIT>אחת ה<SPLIT>הזדמנויות התבטא להט ב<SPLIT>אומרו<SPLIT>, כי לא איכפת לו ש<SPLIT>ל<SPLIT>לשכת ה<SPLIT>מהנדסים לא תהיה כלל אכסניה ב<SPLIT>תל<SPLIT>-<SPLIT>אביב ומצידו ש<SPLIT>יעברו ל<SPLIT>גבעתיים<SPLIT>, רמת<SPLIT>-<SPLIT>גן או ערים אחרות בסביבה<SPLIT>.}
 Predicted: {
-ב<SPLIT>אחת ה<SPLIT>הזדמנויות התבטא להט ב<SPLIT>אומרו<SPLIT>, כי לא איכפת לו שללשכת ה<SPLIT>מהנדסים לא תהיה כלל אכסניה ב<SPLIT>תל<SPLIT>-<SPLIT>אביב ו<SPLIT>מצידו ש<SPLIT>יעברו לגבעתיים<SPLIT>, רמת<SPLIT>-<SPLIT>גן או ערים אחרות ב<SPLIT>סביבה<SPLIT>.}
+ב<SPLIT>אחת ה<SPLIT>הזדמנויות התבטא להט ב<SPLIT>אומרו<SPLIT>, כי לא איכפת לו שללשכת ה<SPLIT>מהנדסים לא תהיה כלל אכסניה ב<SPLIT>תל<SPLIT>-<SPLIT>אביב ו<SPLIT>מצידו שיעברו לגבעתיים<SPLIT>, רמת<SPLIT>-<SPLIT>גן או ערים אחרות ב<SPLIT>סביבה<SPLIT>.}
 False positives: {
 שללשכת
 ו
 מצידו
+שיעברו
 לגבעתיים
 ב
 סביבה
@@ -2513,6 +2479,8 @@ False positives: {
 ל
 לשכת
 ומצידו
+ש
+יעברו
 ל
 גבעתיים
 בסביבה
@@ -2543,18 +2511,18 @@ False positives: {
 Expected: {
 מי יודע כמה משקיעים<SPLIT>-<SPLIT>ב<SPLIT>כוח כבר נואשו מ<SPLIT>קבלת תשובות לשאלותיהם<SPLIT>, ו<SPLIT>החליטו להשקיע ב<SPLIT>מקום אחר<SPLIT>.}
 Predicted: {
-מי יודע כמה משקיעים<SPLIT>-<SPLIT>ב<SPLIT>כוח כבר נואשו מקבלת תשובות לשאלותיהם<SPLIT>, ו<SPLIT>החליטו להשקיע ב<SPLIT>מקום אחר<SPLIT>.}
+מי יודע כמה משקיעים<SPLIT>-<SPLIT>ב<SPLIT>כוח כבר נואשו מ<SPLIT>קבלת תשובות לשאלותיהם<SPLIT>, ו<SPLIT>החליטו להשקיע במקום אחר<SPLIT>.}
 False positives: {
-מקבלת
+במקום
 } False negatives: {
-מ
-קבלת
+ב
+מקום
 }
 
 Expected: {
 ב<SPLIT>שלושה נושאים עיקריים עסק ה<SPLIT>כנס<SPLIT>: ביוזמות ה<SPLIT>כלכליות ה<SPLIT>לא<SPLIT>-<SPLIT>יהודיות ש<SPLIT>היו ב<SPLIT>ראשית ה<SPLIT>מאה ב<SPLIT>רחבי ארץ<SPLIT>-<SPLIT>ישראל<SPLIT>, ביוזמות ה<SPLIT>פרטיות ביישוב ה<SPLIT>ישן בעיקר ב<SPLIT>ירושלים ו<SPLIT>ב<SPLIT>צפת<SPLIT>, וביוזמות ביישוב ה<SPLIT>חדש<SPLIT>, בעיקר ב<SPLIT>מושבות ה<SPLIT>ברון<SPLIT>.}
 Predicted: {
-ב<SPLIT>שלושה נושאים עיקריים עסק ה<SPLIT>כנס<SPLIT>: ב<SPLIT>יוזמות ה<SPLIT>כלכליות ה<SPLIT>לא<SPLIT>-<SPLIT>יהודיות ש<SPLIT>היו ב<SPLIT>ראשית ה<SPLIT>מאה ב<SPLIT>רחבי ארץ<SPLIT>-<SPLIT>ישראל<SPLIT>, ב<SPLIT>יוזמות ה<SPLIT>פרטיות ב<SPLIT>יישוב ה<SPLIT>ישן בעיקר ב<SPLIT>ירושלים ו<SPLIT>ב<SPLIT>צפת<SPLIT>, ו<SPLIT>ביוזמות ב<SPLIT>יישוב ה<SPLIT>חדש<SPLIT>, בעיקר ב<SPLIT>מושבות ה<SPLIT>ברון<SPLIT>.}
+ב<SPLIT>שלושה נושאים עיקריים עסק ה<SPLIT>כנס<SPLIT>: ב<SPLIT>יוזמות ה<SPLIT>כלכליות ה<SPLIT>לא<SPLIT>-<SPLIT>יהודיות ש<SPLIT>היו ב<SPLIT>ראשית ה<SPLIT>מאה ב<SPLIT>רחבי ארץ<SPLIT>-<SPLIT>ישראל<SPLIT>, ב<SPLIT>יוזמות ה<SPLIT>פרטיות ב<SPLIT>יישוב ה<SPLIT>ישן בעיקר ב<SPLIT>ירושלים ו<SPLIT>ב<SPLIT>צפת<SPLIT>, ו<SPLIT>ב<SPLIT>יוזמות ב<SPLIT>יישוב ה<SPLIT>חדש<SPLIT>, בעיקר ב<SPLIT>מושבות ה<SPLIT>ברון<SPLIT>.}
 False positives: {
 ב
 יוזמות
@@ -2563,7 +2531,8 @@ False positives: {
 ב
 יישוב
 ו
-ביוזמות
+ב
+יוזמות
 ב
 יישוב
 } False negatives: {
@@ -2597,14 +2566,14 @@ False positives: {
 }
 
 Expected: {
-כמו<SPLIT>-<SPLIT>כן טוען מנהל ה<SPLIT>חברה כי פנה ל<SPLIT>מנהל ה<SPLIT>סניף ו<SPLIT>ביקש ממנו ערבות בנקאית כדי לקבל הלוואות חיצוניות נוחות (<SPLIT>מ<SPLIT>חוץ לבנק<SPLIT>)<SPLIT>.}
+ה<SPLIT>דיון ב<SPLIT>מעמד שני ה<SPLIT>צדדים נקבע ל<SPLIT>4 ב<SPLIT>דצמבר<SPLIT>.}
 Predicted: {
-כ<SPLIT>מו<SPLIT>-<SPLIT>כן טוען מנהל ה<SPLIT>חברה כי פנה ל<SPLIT>מנהל ה<SPLIT>סניף ו<SPLIT>ביקש ממנו ערבות בנקאית כדי לקבל הלוואות חיצוניות נוחות (<SPLIT>מ<SPLIT>חוץ לבנק<SPLIT>)<SPLIT>.}
+ה<SPLIT>דיון ב<SPLIT>מעמד שני ה<SPLIT>צדדים נקבע ל4 ב<SPLIT>דצמבר<SPLIT>.}
 False positives: {
-כ
-מו
+ל4
 } False negatives: {
-כמו
+ל
+4
 }
 
 Expected: {
@@ -2707,6 +2676,20 @@ False positives: {
 מ
 מה
 בתחילה
+}
+
+Expected: {
+קפידבינפחות מ<SPLIT>מחצית מתוך כלל 081 חברי ה<SPLIT>מועצה הגיעו לאסיפה<SPLIT>.}
+Predicted: {
+קפידבינפחות ממחצית מתוך כלל 081 חברי ה<SPLIT>מועצה הגיעו ל<SPLIT>אסיפה<SPLIT>.}
+False positives: {
+ממחצית
+ל
+אסיפה
+} False negatives: {
+מ
+מחצית
+לאסיפה
 }
 
 Expected: {
@@ -2826,10 +2809,11 @@ False positives: {
 Expected: {
 ה<SPLIT>חדר שבו מאושפז א<SPLIT>-<SPLIT>נוסייר<SPLIT>, ה<SPLIT>מחובר ל<SPLIT>צינורות הזנה ו<SPLIT>מסכת חמצן<SPLIT>, נמצא תחת שמירה משטרתית כבדה<SPLIT>.}
 Predicted: {
-ה<SPLIT>חדר ש<SPLIT>בו מאושפז א<SPLIT>-<SPLIT>נוסייר<SPLIT>, ה<SPLIT>מחובר לצינורות ה<SPLIT>זנה ו<SPLIT>מסכת חמצן<SPLIT>, נמצא תחת שמירה משטרתית כבדה<SPLIT>.}
+ה<SPLIT>חדר ש<SPLIT>ב<SPLIT>ו מאושפז א<SPLIT>-<SPLIT>נוסייר<SPLIT>, ה<SPLIT>מחובר לצינורות ה<SPLIT>זנה ו<SPLIT>מסכת חמצן<SPLIT>, נמצא תחת שמירה משטרתית כבדה<SPLIT>.}
 False positives: {
 ש
-בו
+ב
+ו
 לצינורות
 ה
 זנה
@@ -2899,14 +2883,17 @@ False positives: {
 Expected: {
 ה<SPLIT>הנהלה ה<SPLIT>פעילה של חברת בית ה<SPLIT>ספר ה<SPLIT>מרכזי ל<SPLIT>מלונאות תדמור ב<SPLIT>הרצליה<SPLIT>, החליטה לוותר על 5<SPLIT>% ברוטו ממשכורתם ה<SPLIT>חודשית של ארבעת חבריה<SPLIT>, בשל ה<SPLIT>משבר ה<SPLIT>פוקד את ענף ה<SPLIT>תיירות<SPLIT>.}
 Predicted: {
-ה<SPLIT>הנהלה ה<SPLIT>פעילה של חברת בית ה<SPLIT>ספר ה<SPLIT>מרכזי למלונאות תדמור ב<SPLIT>הרצליה<SPLIT>, החליטה לוותר על 5<SPLIT>% ברוטו ממשכורת<SPLIT>ם ה<SPLIT>חודשית של ארבעת חברי<SPLIT>ה<SPLIT>, בשל ה<SPLIT>משבר ה<SPLIT>פוקד את ענף ה<SPLIT>תיירות<SPLIT>.}
+ה<SPLIT>הנהלה הפעילה של חברת בית ה<SPLIT>ספר ה<SPLIT>מרכזי למלונאות תדמור ב<SPLIT>הרצליה<SPLIT>, החליטה לוותר על 5<SPLIT>% ברוטו ממשכורת<SPLIT>ם ה<SPLIT>חודשית של ארבעת חברי<SPLIT>ה<SPLIT>, בשל ה<SPLIT>משבר ה<SPLIT>פוקד את ענף ה<SPLIT>תיירות<SPLIT>.}
 False positives: {
+הפעילה
 למלונאות
 ממשכורת
 ם
 חברי
 ה
 } False negatives: {
+ה
+פעילה
 ל
 מלונאות
 ממשכורתם
@@ -2947,15 +2934,12 @@ False positives: {
 Expected: {
 נראה כי רובינסון זכתה בכהונה במיוחד בזכות קולות ה<SPLIT>נשים<SPLIT>.}
 Predicted: {
-נראה כי רובינסון זכתה ב<SPLIT>כהונה במיוחד ב<SPLIT>זכות קולות ה<SPLIT>נשים<SPLIT>.}
+נראה כי רובינסון זכתה ב<SPLIT>כהונה במיוחד בזכות קולות ה<SPLIT>נשים<SPLIT>.}
 False positives: {
 ב
 כהונה
-ב
-זכות
 } False negatives: {
 בכהונה
-בזכות
 }
 
 Expected: {
@@ -3003,14 +2987,14 @@ False positives: {
 }
 
 Expected: {
-ללקין<SPLIT>: "<SPLIT>אני לא מלין ש<SPLIT>אין לנו כסף<SPLIT>.}
+רוצים ש<SPLIT>נהיה כמו אמריקה<SPLIT>.}
 Predicted: {
-ל<SPLIT>לקין<SPLIT>: "<SPLIT>אני לא מלין ש<SPLIT>אין לנו כסף<SPLIT>.}
+רוצים שנהיה כמו אמריקה<SPLIT>.}
 False positives: {
-ל
-לקין
+שנהיה
 } False negatives: {
-ללקין
+ש
+נהיה
 }
 
 Expected: {
@@ -3038,12 +3022,15 @@ False positives: {
 Expected: {
 ה<SPLIT>מכבים נסוגו כדי לשמור על יתרונם<SPLIT>, גם דריקס ירד ל<SPLIT>עזרת ה<SPLIT>הגנה ו<SPLIT>אנדריי בל ו<SPLIT>מרכוס ב<SPLIT>כושר טוב שמרו על ניצחון מכבי<SPLIT>.}
 Predicted: {
-ה<SPLIT>מכבים נסוגו כדי לשמור על יתרונ<SPLIT>ם<SPLIT>, גם דריקס ירד ל<SPLIT>עזרת ה<SPLIT>הגנה ו<SPLIT>אנדריי בל ו<SPLIT>מרכוס ב<SPLIT>כושר טוב שמרו על ניצחון מכבי<SPLIT>.}
+ה<SPLIT>מכבים נסוגו כדי לשמור על יתרונ<SPLIT>ם<SPLIT>, גם דריקס ירד ל<SPLIT>עזרת ה<SPLIT>הגנה ו<SPLIT>אנדריי בל ו<SPLIT>מרכוס ב<SPLIT>כושר טוב שמרו על ניצחון מ<SPLIT>כבי<SPLIT>.}
 False positives: {
 יתרונ
 ם
+מ
+כבי
 } False negatives: {
 יתרונם
+מכבי
 }
 
 Expected: {
@@ -3069,6 +3056,17 @@ False positives: {
 }
 
 Expected: {
+יתר משחקי ה<SPLIT>מחזור ה<SPLIT>שמיני<SPLIT>: קאליארי לאציו<SPLIT>, פיורנטינה גנואה<SPLIT>, אינטר פארמה<SPLIT>, רומא צזנה<SPLIT>, טורינו לצה<SPLIT>.}
+Predicted: {
+יתר משחקי ה<SPLIT>מחזור ה<SPLIT>שמיני<SPLIT>: קאליארי ל<SPLIT>אציו<SPLIT>, פיורנטינה גנואה<SPLIT>, אינטר פארמה<SPLIT>, רומא צזנה<SPLIT>, טורינו לצה<SPLIT>.}
+False positives: {
+ל
+אציו
+} False negatives: {
+לאציו
+}
+
+Expected: {
 , שחקן ה<SPLIT>ציר של נבחרת צרפת<SPLIT>, עלול להיעדר מ<SPLIT>משחק נבחרתו ב<SPLIT>אליפות אירופה<SPLIT>, כולל נגד ישראל<SPLIT>.}
 Predicted: {
 , שחקן ה<SPLIT>ציר של נבחרת צרפת<SPLIT>, עלול להיעדר ממשחק נבחרת<SPLIT>ו ב<SPLIT>אליפות אירופה<SPLIT>, כולל נגד ישראל<SPLIT>.}
@@ -3085,20 +3083,17 @@ False positives: {
 Expected: {
 שרף מוסיף ל<SPLIT>כך גם את ה<SPLIT>עובדה ש<SPLIT>דורון גמצי<SPLIT>, בעל פוטנציאל להיות כזה<SPLIT>, אינו בכושר ה<SPLIT>רצוי ו<SPLIT>כי מכבי ממתין ל<SPLIT>זר חדש (<SPLIT>במקום הורטון<SPLIT>) ה<SPLIT>עשוי לעזור ו<SPLIT>לשנות או להיות יעיל עוד פחות ממנו<SPLIT>.}
 Predicted: {
-שרף מוסיף ל<SPLIT>כך גם את ה<SPLIT>עובדה ש<SPLIT>דורון גמצי<SPLIT>, בעל פוטנציאל להיות כזה<SPLIT>, אינו ב<SPLIT>כושר ה<SPLIT>רצוי ו<SPLIT>כי מכבי ממתין לזר חדש (<SPLIT>במקום הורטון<SPLIT>) ה<SPLIT>עשוי ל<SPLIT>עזור ו<SPLIT>ל<SPLIT>שנות או להיות יעיל עוד פחות ממנו<SPLIT>.}
+שרף מוסיף ל<SPLIT>כך גם את ה<SPLIT>עובדה ש<SPLIT>דורון גמצי<SPLIT>, בעל פוטנציאל להיות כזה<SPLIT>, אינו ב<SPLIT>כושר ה<SPLIT>רצוי ו<SPLIT>כי מכבי ממתין לזר חדש (<SPLIT>במקום הורטון<SPLIT>) ה<SPLIT>עשוי לעזור ו<SPLIT>ל<SPLIT>שנות או להיות יעיל עוד פחות ממנו<SPLIT>.}
 False positives: {
 ב
 כושר
 לזר
-ל
-עזור
 ל
 שנות
 } False negatives: {
 בכושר
 ל
 זר
-לעזור
 לשנות
 }
 
@@ -3116,24 +3111,21 @@ False positives: {
 Expected: {
 ראש הבקיע שער שני במשחק (<SPLIT>11 שלו העונה<SPLIT>) בדקה ה<SPLIT>-<SPLIT>93<SPLIT>.}
 Predicted: {
-ראש הבקיע שער שני ב<SPLIT>משחק (<SPLIT>11 שלו ה<SPLIT>עונה<SPLIT>) בדקה ה<SPLIT>-<SPLIT>93<SPLIT>.}
+ראש הבקיע שער שני במשחק (<SPLIT>11 שלו ה<SPLIT>עונה<SPLIT>) בדקה ה<SPLIT>-<SPLIT>93<SPLIT>.}
 False positives: {
-ב
-משחק
 ה
 עונה
 } False negatives: {
-במשחק
 העונה
 }
 
 Expected: {
 לק.פ.ר.<SPLIT>: מרק פאלקו (<SPLIT>1 4<SPLIT>)<SPLIT>.}
 Predicted: {
-לק.פ.ר<SPLIT>.<SPLIT>: מרק פאלקו (<SPLIT>1 4<SPLIT>)<SPLIT>.}
+לק<SPLIT>.פ.ר.<SPLIT>: מרק פאלקו (<SPLIT>1 4<SPLIT>)<SPLIT>.}
 False positives: {
-לק.פ.ר
-.
+לק
+.פ.ר.
 } False negatives: {
 לק.פ.ר.
 }
@@ -3152,16 +3144,19 @@ False positives: {
 Expected: {
 אל ה<SPLIT>מקום ה<SPLIT>שני נסוג בית"ר ירושלים<SPLIT>, ש<SPLIT>ירד לנגב ו<SPLIT>איפשר למארחו ב<SPLIT>באר שבע להשיג את ניצחונו ה<SPLIT>ראשון העונה (<SPLIT>2 0<SPLIT>)<SPLIT>, אחרי סידרה בלעדית מפתיעה של 5 תיקו בזה אחר זה<SPLIT>.}
 Predicted: {
-אל ה<SPLIT>מקום ה<SPLIT>שני נסוג בית"ר ירושלים<SPLIT>, ש<SPLIT>ירד לנגב ו<SPLIT>איפשר ל<SPLIT>מארחו ב<SPLIT>באר שבע להשיג את ניצחונו ה<SPLIT>ראשון ה<SPLIT>עונה (<SPLIT>2 0<SPLIT>)<SPLIT>, אחרי סידרה בלעדית מפתיעה של 5 תיקו ב<SPLIT>זה אחר זה<SPLIT>.}
+אל ה<SPLIT>מקום ה<SPLIT>שני נסוג בית"ר ירושלים<SPLIT>, ש<SPLIT>ירד לנגב ו<SPLIT>איפשר ל<SPLIT>מארחו ב<SPLIT>באר שבע להשיג את ניצחונ<SPLIT>ו ה<SPLIT>ראשון ה<SPLIT>עונה (<SPLIT>2 0<SPLIT>)<SPLIT>, אחרי סידרה בלעדית מפתיעה של 5 תיקו ב<SPLIT>זה אחר זה<SPLIT>.}
 False positives: {
 ל
 מארחו
+ניצחונ
+ו
 ה
 עונה
 ב
 זה
 } False negatives: {
 למארחו
+ניצחונו
 העונה
 בזה
 }
@@ -3169,24 +3164,24 @@ False positives: {
 Expected: {
 מיגבלת ה<SPLIT>גיל (<SPLIT>עד 12<SPLIT>)<SPLIT>, ש<SPLIT>הונהגה ל<SPLIT>משחקי 2991 ב<SPLIT>ברצלונה<SPLIT>, יש בה לכאורה קושי מסויים אך גם תועלת לא מבוטלת<SPLIT>.}
 Predicted: {
-מיגבלת ה<SPLIT>גיל (<SPLIT>עד 12<SPLIT>)<SPLIT>, ש<SPLIT>הונהגה למשחקי 2991 ב<SPLIT>ברצלונה<SPLIT>, יש ב<SPLIT>ה לכאורה קושי מסויים אך גם תועלת לא מבוטלת<SPLIT>.}
+מיגבלת ה<SPLIT>גיל (<SPLIT>עד 12<SPLIT>)<SPLIT>, ש<SPLIT>הונהגה למשחקי 2991 ב<SPLIT>ברצלונה<SPLIT>, יש בה לכאורה קושי מסויים אך גם תועלת לא מבוטלת<SPLIT>.}
 False positives: {
 למשחקי
-ב
-ה
 } False negatives: {
 ל
 משחקי
-בה
 }
 
 Expected: {
 אורח ה<SPLIT>חיים ה<SPLIT>כללי השתנה מן ה<SPLIT>יסוד<SPLIT>; רק ה<SPLIT>כדורגל שלנו נשאר כ<SPLIT>ש<SPLIT>היה<SPLIT>.}
 Predicted: {
-אורח ה<SPLIT>חיים ה<SPLIT>כללי השתנה מן ה<SPLIT>יסוד<SPLIT>; רק ה<SPLIT>כדורגל שלנו נשאר כש<SPLIT>היה<SPLIT>.}
+אורח ה<SPLIT>חיים ה<SPLIT>כללי השתנה מן היסוד<SPLIT>; רק ה<SPLIT>כדורגל שלנו נשאר כש<SPLIT>היה<SPLIT>.}
 False positives: {
+היסוד
 כש
 } False negatives: {
+ה
+יסוד
 כ
 ש
 }
@@ -3194,14 +3189,20 @@ False positives: {
 Expected: {
 רק לאחר כיבוש שער נהדר זה התעורר ה<SPLIT>משחק ו<SPLIT>נוצרו מספר מצבים ליד ה<SPLIT>שערים<SPLIT>, אך היה זה יומו של ה<SPLIT>פועל ש<SPLIT>הצליח לשמור<SPLIT>, משחק שני ב<SPLIT>רציפות<SPLIT>, על רשת נקייה<SPLIT>, ו<SPLIT>אתמול במשחקו ה<SPLIT>שישי אף זכה ב<SPLIT>ניצחון ראשון<SPLIT>.}
 Predicted: {
-רק לאחר כיבוש שער נהדר זה ה<SPLIT>תעורר ה<SPLIT>משחק ו<SPLIT>נוצרו מספר מצבים ליד ה<SPLIT>שערים<SPLIT>, אך היה זה יומו של ה<SPLIT>פועל ש<SPLIT>הצליח לשמור<SPLIT>, משחק שני ב<SPLIT>רציפות<SPLIT>, על רשת נקייה<SPLIT>, ו<SPLIT>אתמול ב<SPLIT>משחקו ה<SPLIT>שישי אף זכה ב<SPLIT>ניצחון ראשון<SPLIT>.}
+רק לאחר כיבוש שער נהדר זה ה<SPLIT>תעורר ה<SPLIT>משחק ו<SPLIT>נוצרו מספר מצבים ליד ה<SPLIT>שערים<SPLIT>, אך היה זה יומ<SPLIT>ו של ה<SPLIT>פועל ש<SPLIT>הצליח לשמור<SPLIT>, משחק שני ברציפות<SPLIT>, על רשת נקייה<SPLIT>, ו<SPLIT>אתמול במשחק<SPLIT>ו ה<SPLIT>שישי אף זכה ב<SPLIT>ניצחון ראשון<SPLIT>.}
 False positives: {
 ה
 תעורר
-ב
-משחקו
+יומ
+ו
+ברציפות
+במשחק
+ו
 } False negatives: {
 התעורר
+יומו
+ב
+רציפות
 במשחקו
 }
 
@@ -3289,24 +3290,27 @@ False positives: {
 Expected: {
 ה<SPLIT>הזמנה של ה<SPLIT>חאן נתנה לי לגיטימציה מלאה לעסוק ב<SPLIT>דלקות<SPLIT>, ש<SPLIT>היום הן כבר לא דלקות אלא רק סימנים על ה<SPLIT>עור<SPLIT>"<SPLIT>.}
 Predicted: {
-ה<SPLIT>הזמנה של ה<SPLIT>חאן נתנה לי לגיטימציה מלאה לעסוק ב<SPLIT>דלקות<SPLIT>, ש<SPLIT>ה<SPLIT>יום הן כבר לא דלקות אלא רק סימנים על ה<SPLIT>עור<SPLIT>"<SPLIT>.}
+ה<SPLIT>הזמנה של ה<SPLIT>חאן נתנה לי לגיטימציה מלאה לעסוק בדלקות<SPLIT>, ש<SPLIT>היום הן כבר לא דלקות אלא רק סימנים על ה<SPLIT>עור<SPLIT>"<SPLIT>.}
 False positives: {
-ה
-יום
+בדלקות
 } False negatives: {
-היום
+ב
+דלקות
 }
 
 Expected: {
 ה<SPLIT>שתיים נפגשות ב<SPLIT>חדר קטן ב<SPLIT>פנימייה<SPLIT>, ו<SPLIT>עד ש<SPLIT>מתבררת ה<SPLIT>תרמית<SPLIT>, צצים ו<SPLIT>עולים ה<SPLIT>פערים בין ה<SPLIT>שתיים<SPLIT>.}
 Predicted: {
-השתיים נפגשות ב<SPLIT>חדר קטן ב<SPLIT>פנימייה<SPLIT>, ו<SPLIT>עד ש<SPLIT>מתבררת ה<SPLIT>תרמית<SPLIT>, צצים ו<SPLIT>עולים ה<SPLIT>פערים בין השתיים<SPLIT>.}
+השתיים נפגשות ב<SPLIT>חדר קטן ב<SPLIT>פנימייה<SPLIT>, ו<SPLIT>עד ש<SPLIT>מתבררת התרמית<SPLIT>, צצים ו<SPLIT>עולים ה<SPLIT>פערים בין השתיים<SPLIT>.}
 False positives: {
 השתיים
+התרמית
 השתיים
 } False negatives: {
 ה
 שתיים
+ה
+תרמית
 ה
 שתיים
 }
@@ -3358,7 +3362,7 @@ False positives: {
 Expected: {
 "<SPLIT>פנטסיה על נושא רומנטי<SPLIT>" יוקרן ב<SPLIT>סינמטק תל<SPLIT>-<SPLIT>אביב<SPLIT>, ב15 וב16 ב<SPLIT>נובמבר בחצות<SPLIT>, ב17 ב<SPLIT>נובמבר ב<SPLIT>שעה 7.30 וב30 ב<SPLIT>נובמבר ב<SPLIT>שעה שתיים אחר ה<SPLIT>צהרים<SPLIT>.}
 Predicted: {
-"<SPLIT>פנטסיה על נושא רומנטי<SPLIT>" יוקרן ב<SPLIT>סינמטק תל<SPLIT>-<SPLIT>אביב<SPLIT>, ב<SPLIT>15 ו<SPLIT>ב16 ב<SPLIT>נובמבר ב<SPLIT>חצות<SPLIT>, ב<SPLIT>17 ב<SPLIT>נובמבר ב<SPLIT>שעה 7.30 ו<SPLIT>ב30 ב<SPLIT>נובמבר ב<SPLIT>שעה שתיים אחר ה<SPLIT>צהרים<SPLIT>.}
+"<SPLIT>פנטסיה על נושא רומנטי<SPLIT>" יוקרן ב<SPLIT>סינמטק תל<SPLIT>-<SPLIT>אביב<SPLIT>, ב<SPLIT>15 ו<SPLIT>ב16 ב<SPLIT>נובמבר ב<SPLIT>חצות<SPLIT>, ב<SPLIT>17 ב<SPLIT>נובמבר ב<SPLIT>שעה 7.30 ו<SPLIT>ב<SPLIT>30 ב<SPLIT>נובמבר ב<SPLIT>שעה שתיים אחר ה<SPLIT>צהרים<SPLIT>.}
 False positives: {
 ב
 15
@@ -3369,7 +3373,8 @@ False positives: {
 ב
 17
 ו
-ב30
+ב
+30
 } False negatives: {
 ב15
 וב16
@@ -3381,12 +3386,15 @@ False positives: {
 Expected: {
 האם ה<SPLIT>בנק מוליך שולל את ה<SPLIT>חוסך ה<SPLIT>תמים<SPLIT>?}
 Predicted: {
-ה<SPLIT>אם ה<SPLIT>בנק מוליך שולל את ה<SPLIT>חוסך ה<SPLIT>תמים<SPLIT>?}
+ה<SPLIT>אם ה<SPLIT>בנק מוליך שולל את ה<SPLIT>חוסך התמים<SPLIT>?}
 False positives: {
 ה
 אם
+התמים
 } False negatives: {
 האם
+ה
+תמים
 }
 
 Expected: {
@@ -3436,16 +3444,19 @@ False positives: {
 Expected: {
 חוסר אונים מול בנות שלרובן השכלה טובה יותר<SPLIT>, בהלה לנוכח כשלונן<SPLIT>-<SPLIT>הן ו<SPLIT>פחד מ<SPLIT>תוכחת ה<SPLIT>בעל ל<SPLIT>אמהות טורקיות יש סיבות רבות לחנך את בנותיהן ב<SPLIT>חומרה לא פחות מ<SPLIT>זאת ש<SPLIT>נכפתה עליהן<SPLIT>.}
 Predicted: {
-חוסר אונים מול בנות שלרובן השכלה טובה יותר<SPLIT>, ב<SPLIT>הלה לנוכח כשלונן<SPLIT>-<SPLIT>הן ו<SPLIT>פחד מתוכחת ה<SPLIT>בעל לאמהות טורקיות יש סיבות רבות לחנך את ב<SPLIT>נותיהן ב<SPLIT>חומרה לא פחות מ<SPLIT>זאת ש<SPLIT>נכפתה עליהן<SPLIT>.}
+חוסר אונים מול בנות שלרובן השכלה טובה יותר<SPLIT>, ב<SPLIT>הלה לנוכח כש<SPLIT>לונן<SPLIT>-<SPLIT>הן ו<SPLIT>פחד מתוכחת ה<SPLIT>בעל לאמהות טורקיות יש סיבות רבות לחנך את ב<SPLIT>נותיהן ב<SPLIT>חומרה לא פחות מ<SPLIT>זאת ש<SPLIT>נכפתה עליהן<SPLIT>.}
 False positives: {
 ב
 הלה
+כש
+לונן
 מתוכחת
 לאמהות
 ב
 נותיהן
 } False negatives: {
 בהלה
+כשלונן
 מ
 תוכחת
 ל
@@ -3456,18 +3467,24 @@ False positives: {
 Expected: {
 מ<SPLIT>עלי ס. (<SPLIT>54<SPLIT>)<SPLIT>, בעל חברת ייבוא<SPLIT>-<SPLIT>ייצוא<SPLIT>, נלקחה ה<SPLIT>אפוטרופסות על שתי בנותיו<SPLIT>, אסומן בת ה16 ו<SPLIT>עיילה בת ה12<SPLIT>, כיוון ש<SPLIT>נהג להכות אותן ב<SPLIT>מוט מתכת<SPLIT>.}
 Predicted: {
-מעלי ס. (<SPLIT>54<SPLIT>)<SPLIT>, בעל חברת ייבוא<SPLIT>-<SPLIT>ייצוא<SPLIT>, נלקחה ה<SPLIT>אפוטרופסות על שתי ב<SPLIT>נותיו<SPLIT>, אסומן בת ה16 ו<SPLIT>עיילה בת ה<SPLIT>12<SPLIT>, כיוון ש<SPLIT>נהג להכות אותן ב<SPLIT>מוט מתכת<SPLIT>.}
+מעלי ס. (<SPLIT>54<SPLIT>)<SPLIT>, בעל חברת ייבוא<SPLIT>-<SPLIT>ייצוא<SPLIT>, נלקחה ה<SPLIT>אפוטרופסות על שתי ב<SPLIT>נותיו<SPLIT>, אסומן בת ה<SPLIT>16 ו<SPLIT>עיילה בת ה<SPLIT>12<SPLIT>, כיוון ש<SPLIT>נהג להכות אותן במוט מתכת<SPLIT>.}
 False positives: {
 מעלי
 ב
 נותיו
 ה
+16
+ה
 12
+במוט
 } False negatives: {
 מ
 עלי
 בנותיו
+ה16
 ה12
+ב
+מוט
 }
 
 Expected: {
@@ -3484,39 +3501,28 @@ False positives: {
 Expected: {
 איך ייתכן ש<SPLIT>מוצר ה<SPLIT>מכיל ביצים אין בו כולסטרול<SPLIT>?}
 Predicted: {
-איך ייתכן ש<SPLIT>מוצר ה<SPLIT>מכיל ביצים אין ב<SPLIT>ו כולסטרול<SPLIT>?}
+איך ייתכן שמוצר ה<SPLIT>מכיל ביצים אין ב<SPLIT>ו כולסטרול<SPLIT>?}
 False positives: {
+שמוצר
 ב
 ו
 } False negatives: {
+ש
+מוצר
 בו
-}
-
-Expected: {
-ב<SPLIT>שני ה<SPLIT>מקרים ה<SPLIT>סימון ב<SPLIT>עברית היה<SPLIT>: "<SPLIT>עשוי מ<SPLIT>חלב דל שומן<SPLIT>, אחוז שומן 62<SPLIT>%<SPLIT>"<SPLIT>.}
-Predicted: {
-ב<SPLIT>שני ה<SPLIT>מקרים ה<SPLIT>סימון ב<SPLIT>עברית ה<SPLIT>יה<SPLIT>: "<SPLIT>עשוי מ<SPLIT>חלב דל שומן<SPLIT>, אחוז שומן 62<SPLIT>%<SPLIT>"<SPLIT>.}
-False positives: {
-ה
-יה
-} False negatives: {
-היה
 }
 
 Expected: {
 סמינר אחד מתמקד בצמחייה של ה<SPLIT>מקום<SPLIT>, ו<SPLIT>אחר בחי<SPLIT>.}
 Predicted: {
-סמינר אחד מתמקד ב<SPLIT>צמחייה של ה<SPLIT>מקום<SPLIT>, ואחר ב<SPLIT>חי<SPLIT>.}
+סמינר אחד מתמקד ב<SPLIT>צמחייה של ה<SPLIT>מקום<SPLIT>, ו<SPLIT>אחר ב<SPLIT>חי<SPLIT>.}
 False positives: {
 ב
 צמחייה
-ואחר
 ב
 חי
 } False negatives: {
 בצמחייה
-ו
-אחר
 בחי
 }
 
@@ -3535,17 +3541,37 @@ False positives: {
 }
 
 Expected: {
+בגישה ה<SPLIT>קונוונציונלית<SPLIT>, לעומת זאת<SPLIT>, מצב ה<SPLIT>עיניים נחשב לצד ה<SPLIT>בריאותי ו<SPLIT>ליקויי ראייה נחשבים לצד ה<SPLIT>תפקודי ו<SPLIT>אפילו ה<SPLIT>קוסמטי<SPLIT>"<SPLIT>.}
+Predicted: {
+בגישה ה<SPLIT>קונוונציונלית<SPLIT>, לעומת זאת<SPLIT>, מצב ה<SPLIT>עיניים נחשב ל<SPLIT>צד ה<SPLIT>בריאותי ו<SPLIT>ליקויי ראייה נחשבים ל<SPLIT>צד התפקודי ו<SPLIT>אפילו ה<SPLIT>קוסמטי<SPLIT>"<SPLIT>.}
+False positives: {
+ל
+צד
+ל
+צד
+התפקודי
+} False negatives: {
+לצד
+לצד
+ה
+תפקודי
+}
+
+Expected: {
 עבודה ה<SPLIT>משלבת גם אספקטים נפשיים גורמת לאדם להחזיר ל<SPLIT>עצמו את ה<SPLIT>אינסטינקטים ה<SPLIT>טבעיים ל<SPLIT>שימוש נכון בעיניים<SPLIT>, ו<SPLIT>אז אין עוד צורך ב<SPLIT>תרגילים<SPLIT>.}
 Predicted: {
-עבודה ה<SPLIT>משלבת גם אספקטים נפשיים גורמת ל<SPLIT>אדם להחזיר ל<SPLIT>עצמו את ה<SPLIT>אינסטינקטים ה<SPLIT>טבעיים ל<SPLIT>שימוש נכון ב<SPLIT>עיניים<SPLIT>, ו<SPLIT>אז אין עוד צורך ב<SPLIT>תרגילים<SPLIT>.}
+עבודה ה<SPLIT>משלבת גם אספקטים נפשיים גורמת ל<SPLIT>אדם להחזיר ל<SPLIT>עצמו את ה<SPLIT>אינסטינקטים ה<SPLIT>טבעיים ל<SPLIT>שימוש נכון ב<SPLIT>עיניים<SPLIT>, ו<SPLIT>אז אין עוד צורך בתרגילים<SPLIT>.}
 False positives: {
 ל
 אדם
 ב
 עיניים
+בתרגילים
 } False negatives: {
 לאדם
 בעיניים
+ב
+תרגילים
 }
 
 Expected: {
@@ -3565,16 +3591,19 @@ False positives: {
 Expected: {
 דיומא מוביל את גיבורו במשעול ה<SPLIT>צר ש<SPLIT>בין "<SPLIT>פאוסט<SPLIT>"<SPLIT>, מ<SPLIT>צד אחד<SPLIT>, ו<SPLIT>"<SPLIT>דוקטור גקיל ו<SPLIT>מיסטר הייד<SPLIT>"<SPLIT>, מ<SPLIT>צד שני<SPLIT>.}
 Predicted: {
-דיומא מוביל את גיבורו ב<SPLIT>משעול ה<SPLIT>צר ש<SPLIT>בין "<SPLIT>פאוסט<SPLIT>"<SPLIT>, מצד אחד<SPLIT>, ו<SPLIT>"<SPLIT>דוקטור גקיל ו<SPLIT>מיסטר ה<SPLIT>ייד<SPLIT>"<SPLIT>, מצד שני<SPLIT>.}
+דיומא מוביל את גיבורו במשעול הצר שבין "<SPLIT>פאוסט<SPLIT>"<SPLIT>, מצד אחד<SPLIT>, ו<SPLIT>"<SPLIT>דוקטור גקיל ו<SPLIT>מיסטר ה<SPLIT>ייד<SPLIT>"<SPLIT>, מצד שני<SPLIT>.}
 False positives: {
-ב
-משעול
+הצר
+שבין
 מצד
 ה
 ייד
 מצד
 } False negatives: {
-במשעול
+ה
+צר
+ש
+בין
 מ
 צד
 הייד
@@ -3610,27 +3639,27 @@ False positives: {
 Expected: {
 צבע אדום<SPLIT>, ל<SPLIT>דוגמה<SPLIT>, משדר סכנה<SPLIT>, צנרת אדומה מסמלת צנרת כיבוי אש ו<SPLIT>צנרת כחולה מסמלת צנרת מים<SPLIT>.}
 Predicted: {
-צבע אדום<SPLIT>, ל<SPLIT>דוגמה<SPLIT>, מ<SPLIT>שדר סכנה<SPLIT>, צנרת אדומה מסמלת צנרת כיבוי אש ו<SPLIT>צנרת כ<SPLIT>חולה מסמלת צנרת מים<SPLIT>.}
+צבע אדום<SPLIT>, ל<SPLIT>דוגמה<SPLIT>, משדר סכנה<SPLIT>, צנרת אדומה מסמלת צנרת כיבוי אש ו<SPLIT>צנרת כ<SPLIT>חולה מסמלת צנרת מים<SPLIT>.}
 False positives: {
-מ
-שדר
 כ
 חולה
 } False negatives: {
-משדר
 כחולה
 }
 
 Expected: {
 ב<SPLIT>תהליך ה<SPLIT>עבודה מקבלת רוטנברג תצלומי<SPLIT>-<SPLIT>אוויר של ה<SPLIT>מבנה<SPLIT>, מסיירת בתחומיו ו<SPLIT>מקבלת הסברים על ה<SPLIT>פונקציות ה<SPLIT>שונות<SPLIT>.}
 Predicted: {
-ב<SPLIT>תהליך ה<SPLIT>עבודה מקבלת רוטנברג תצלומי<SPLIT>-<SPLIT>אוויר של ה<SPLIT>מבנה<SPLIT>, מסיירת ב<SPLIT>תחומיו ו<SPLIT>מקבלת ה<SPLIT>סברים על ה<SPLIT>פונקציות ה<SPLIT>שונות<SPLIT>.}
+ב<SPLIT>תהליך ה<SPLIT>עבודה מ<SPLIT>קבלת רוטנברג תצלומי<SPLIT>-<SPLIT>אוויר של ה<SPLIT>מבנה<SPLIT>, מסיירת ב<SPLIT>תחומיו ו<SPLIT>מקבלת ה<SPLIT>סברים על ה<SPLIT>פונקציות ה<SPLIT>שונות<SPLIT>.}
 False positives: {
+מ
+קבלת
 ב
 תחומיו
 ה
 סברים
 } False negatives: {
+מקבלת
 בתחומיו
 הסברים
 }
@@ -3675,46 +3704,46 @@ False positives: {
 }
 
 Expected: {
-ב<SPLIT>כל פעם ש<SPLIT>שרון טוען ש<SPLIT>צריך סדר חדש<SPLIT>, אני מעמידה כנגד טענתו שש מאות סימני שאלה<SPLIT>.}
-Predicted: {
-ב<SPLIT>כל פעם ש<SPLIT>שרון טוען ש<SPLIT>צריך סדר חדש<SPLIT>, אני מעמידה כנגד טענתו שש מאות סימני ש<SPLIT>אלה<SPLIT>.}
-False positives: {
-ש
-אלה
-} False negatives: {
-שאלה
-}
-
-Expected: {
 ירושלים<SPLIT>: כ<SPLIT>מי ש<SPLIT>התלווה ל<SPLIT>קבוצת עולים מ<SPLIT>רוסיה ש<SPLIT>ערכו סיור ב<SPLIT>יד ו<SPLIT>שם<SPLIT>, ב<SPLIT>מצדה ובכותל<SPLIT>, ברצוני להדגיש את ה<SPLIT>חשיבות ה<SPLIT>עצומה של סיורים אלה<SPLIT>.}
 Predicted: {
-ירושלים<SPLIT>: כ<SPLIT>מי ש<SPLIT>התלווה ל<SPLIT>קבוצת עולים מרוסיה ש<SPLIT>ערכו סיור ביד ו<SPLIT>שם<SPLIT>, ב<SPLIT>מצדה ו<SPLIT>ב<SPLIT>כותל<SPLIT>, ב<SPLIT>רצוני להדגיש את ה<SPLIT>חשיבות ה<SPLIT>עצומה של סיורים אלה<SPLIT>.}
+ירושלים<SPLIT>: כ<SPLIT>מי ש<SPLIT>התלווה ל<SPLIT>קבוצת עולים מרוסיה ש<SPLIT>ערכו סיור ביד ו<SPLIT>שם<SPLIT>, ב<SPLIT>מצדה ו<SPLIT>ב<SPLIT>כותל<SPLIT>, ברצוני להדגיש את ה<SPLIT>חשיבות ה<SPLIT>עצומה של סיורים אלה<SPLIT>.}
 False positives: {
 מרוסיה
 ביד
 ו
 ב
 כותל
-ב
-רצוני
 } False negatives: {
 מ
 רוסיה
 ב
 יד
 ובכותל
-ברצוני
 }
 
 Expected: {
 בפנייתי ל<SPLIT>בג"ץ<SPLIT>, ה<SPLIT>אגודה ל<SPLIT>זכויות ה<SPLIT>אזרח הצטרפה ל<SPLIT>שדולת ה<SPLIT>נשים ב<SPLIT>ישראל<SPLIT>, ו<SPLIT>יוצגתי על ידי עו"ד אביגדור פלדמן מטעמה של ה<SPLIT>אגודה ל<SPLIT>זכויות ה<SPLIT>אזרח<SPLIT>, יחד עם עו"ד פרנסיס רדאי מ<SPLIT>שדולת ה<SPLIT>נשים ב<SPLIT>ישראל<SPLIT>.}
 Predicted: {
-ב<SPLIT>פנייתי ל<SPLIT>בג"ץ<SPLIT>, ה<SPLIT>אגודה ל<SPLIT>זכויות ה<SPLIT>אזרח הצטרפה ל<SPLIT>שדולת ה<SPLIT>נשים ב<SPLIT>ישראל<SPLIT>, ו<SPLIT>יוצגתי על ידי עו"ד אביגדור פלדמן מטעמה של ה<SPLIT>אגודה ל<SPLIT>זכויות ה<SPLIT>אזרח<SPLIT>, יחד עם עו"ד פרנסיס רדאי מ<SPLIT>שדולת ה<SPLIT>נשים ב<SPLIT>ישראל<SPLIT>.}
+ב<SPLIT>פנייתי ל<SPLIT>בג"ץ<SPLIT>, ה<SPLIT>אגודה ל<SPLIT>זכויות ה<SPLIT>אזרח הצטרפה ל<SPLIT>שדולת ה<SPLIT>נשים ב<SPLIT>ישראל<SPLIT>, ו<SPLIT>יוצגתי על ידי עו"ד אביגדור פלדמן מטעמה של ה<SPLIT>אגודה ל<SPLIT>זכויות ה<SPLIT>אזרח<SPLIT>, יחד עם עו"ד פרנסיס רדאי משדולת ה<SPLIT>נשים ב<SPLIT>ישראל<SPLIT>.}
 False positives: {
 ב
 פנייתי
+משדולת
 } False negatives: {
 בפנייתי
+מ
+שדולת
+}
+
+Expected: {
+לו רק היה ה<SPLIT>ימין סומך קצת על ה<SPLIT>שמאל ש<SPLIT>יעזור לו להשתחרר מ<SPLIT>ה<SPLIT>פחד<SPLIT>, היינו כולנו נשכרים<SPLIT>.}
+Predicted: {
+לו רק היה ה<SPLIT>ימין סומך קצת על ה<SPLIT>שמאל שיעזור לו להשתחרר מ<SPLIT>ה<SPLIT>פחד<SPLIT>, היינו כולנו נשכרים<SPLIT>.}
+False positives: {
+שיעזור
+} False negatives: {
+ש
+יעזור
 }
 
 Expected: {
@@ -3793,15 +3822,12 @@ False positives: {
 Expected: {
 ברצוני להבהיר חד משמעית<SPLIT>, שבמפעל של לנקום<SPLIT>, אשר נמצא ב<SPLIT>קודרי ב<SPLIT>צפון צרפת<SPLIT>, לא מיוצרים מוצרי גמיי<SPLIT>.}
 Predicted: {
-ב<SPLIT>רצוני להבהיר חד משמעית<SPLIT>, ש<SPLIT>ב<SPLIT>מפעל של לנקום<SPLIT>, אשר נמצא ב<SPLIT>קודרי ב<SPLIT>צפון צרפת<SPLIT>, לא מיוצרים מוצרי גמיי<SPLIT>.}
+ברצוני להבהיר חד משמעית<SPLIT>, ש<SPLIT>ב<SPLIT>מפעל של לנקום<SPLIT>, אשר נמצא ב<SPLIT>קודרי ב<SPLIT>צפון צרפת<SPLIT>, לא מיוצרים מוצרי גמיי<SPLIT>.}
 False positives: {
-ב
-רצוני
 ש
 ב
 מפעל
 } False negatives: {
-ברצוני
 שבמפעל
 }
 
@@ -3814,17 +3840,6 @@ False positives: {
 } False negatives: {
 ב
 קליפה
-}
-
-Expected: {
-הוא הבטיח לשלוח לי ב<SPLIT>דואר חוזר משלוח מלא מ<SPLIT>קו ייצור קודם<SPLIT>.}
-Predicted: {
-הוא הבטיח לשלוח לי ב<SPLIT>דואר חוזר משלוח מלא מקו ייצור קודם<SPLIT>.}
-False positives: {
-מקו
-} False negatives: {
-מ
-קו
 }
 
 Expected: {
@@ -4021,6 +4036,17 @@ False positives: {
 }
 
 Expected: {
+שר ה<SPLIT>תחבורה<SPLIT>, ספד ו<SPLIT>אמר<SPLIT>: "<SPLIT>למדנו להכיר אותו<SPLIT>, להוקיר אותו ו<SPLIT>לאהוב אותו<SPLIT>.}
+Predicted: {
+שר ה<SPLIT>תחבורה<SPLIT>, ספד ו<SPLIT>אמר<SPLIT>: "<SPLIT>ל<SPLIT>מדנו להכיר אותו<SPLIT>, להוקיר אותו ו<SPLIT>לאהוב אותו<SPLIT>.}
+False positives: {
+ל
+מדנו
+} False negatives: {
+למדנו
+}
+
+Expected: {
 אך יש יצרנים ה<SPLIT>מעדיפים להשקיע בהאדרתו של ה<SPLIT>חומר ה<SPLIT>נוח<SPLIT>, כדי ש<SPLIT>יוכלו ליהנות מ<SPLIT>שני ה<SPLIT>עולמות<SPLIT>: גם חומר זול ליצרן<SPLIT>, ו<SPLIT>גם יקר לצרכן<SPLIT>.}
 Predicted: {
 אך יש יצרנים ה<SPLIT>מעדיפים להשקיע ב<SPLIT>האדרת<SPLIT>ו של ה<SPLIT>חומר ה<SPLIT>נוח<SPLIT>, כדי ש<SPLIT>יוכלו ל<SPLIT>יהנות מ<SPLIT>שני ה<SPLIT>עולמות<SPLIT>: גם חומר זול ליצרן<SPLIT>, ו<SPLIT>גם יקר לצרכן<SPLIT>.}
@@ -4074,15 +4100,21 @@ False positives: {
 Expected: {
 זאת משום ש<SPLIT>ה<SPLIT>קורות ה<SPLIT>עבות מחוזקות בו ב<SPLIT>כיווני סיבים נוגדים<SPLIT>, ו<SPLIT>יחד עם עובי ה<SPLIT>קורות תורמים ל<SPLIT>חיזוק יחידת ה<SPLIT>דלת<SPLIT>.}
 Predicted: {
-זאת משום ש<SPLIT>הקורות ה<SPLIT>עבות מחוזקות ב<SPLIT>ו ב<SPLIT>כיווני סיבים נוגדים<SPLIT>, ו<SPLIT>יחד עם עובי ה<SPLIT>קורות תורמים ל<SPLIT>חיזוק יחידת ה<SPLIT>דלת<SPLIT>.}
+זאת משום ש<SPLIT>הקורות ה<SPLIT>עבות מחוזקות ב<SPLIT>ו בכיווני סיבים נוגדים<SPLIT>, ו<SPLIT>יחד עם עובי הקורות תורמים ל<SPLIT>חיזוק יחידת ה<SPLIT>דלת<SPLIT>.}
 False positives: {
 הקורות
 ב
 ו
+בכיווני
+הקורות
 } False negatives: {
 ה
 קורות
 בו
+ב
+כיווני
+ה
+קורות
 }
 
 Expected: {
@@ -4131,20 +4163,9 @@ False positives: {
 }
 
 Expected: {
-ב<SPLIT>סניף בנק ה<SPLIT>פועלים ב<SPLIT>רחוב פנקס ב<SPLIT>תל<SPLIT>-<SPLIT>אביב שדד לייבוביץ<SPLIT>, ב<SPLIT>נוסף ל43,820 שקל מ<SPLIT>כספי ה<SPLIT>בנק<SPLIT>, גם סך של 2,734 שקל מ<SPLIT>אחד מ<SPLIT>לקוחות ה<SPLIT>סניף<SPLIT>, ש<SPLIT>עמד ליד ה<SPLIT>דלפק של ה<SPLIT>כספרית ש<SPLIT>נשדדה<SPLIT>.}
-Predicted: {
-ב<SPLIT>סניף בנק ה<SPLIT>פועלים ב<SPLIT>רחוב פנקס ב<SPLIT>תל<SPLIT>-<SPLIT>אביב שדד לייבוביץ<SPLIT>, ב<SPLIT>נוסף ל<SPLIT>43,820 שקל מ<SPLIT>כספי ה<SPLIT>בנק<SPLIT>, גם סך של 2,734 שקל מ<SPLIT>אחד מ<SPLIT>לקוחות ה<SPLIT>סניף<SPLIT>, ש<SPLIT>עמד ליד ה<SPLIT>דלפק של ה<SPLIT>כספרית ש<SPLIT>נשדדה<SPLIT>.}
-False positives: {
-ל
-43,820
-} False negatives: {
-ל43,820
-}
-
-Expected: {
 שר ה<SPLIT>בינוי ו<SPLIT>ה<SPLIT>שיכון אריאל שרון הורה ב<SPLIT>סוף ה<SPLIT>שבוע ל<SPLIT>חברת עמידר לאפשר ל<SPLIT>זכאי ה<SPLIT>משרד<SPLIT>, מ<SPLIT>קרב חסרי ה<SPLIT>דיור<SPLIT>, ש<SPLIT>עוד נותרו באוהלים<SPLIT>, לשכור חדר ב<SPLIT>בתי מלון<SPLIT>, שעמם הגיעה עמידר ל<SPLIT>הסדר שכירות<SPLIT>.}
 Predicted: {
-שר ה<SPLIT>בינוי ו<SPLIT>ה<SPLIT>שיכון אריאל שרון הורה ב<SPLIT>סוף ה<SPLIT>שבוע ל<SPLIT>חברת עמידר לאפשר לזכאי ה<SPLIT>משרד<SPLIT>, מקרב חסרי ה<SPLIT>דיור<SPLIT>, ש<SPLIT>עוד נותרו ב<SPLIT>אוהלים<SPLIT>, לשכור חדר ב<SPLIT>בתי מלון<SPLIT>, ש<SPLIT>עמם הגיעה עמידר ל<SPLIT>הסדר ש<SPLIT>כירות<SPLIT>.}
+שר ה<SPLIT>בינוי ו<SPLIT>ה<SPLIT>שיכון אריאל שרון הורה ב<SPLIT>סוף ה<SPLIT>שבוע ל<SPLIT>חברת עמידר לאפשר לזכאי ה<SPLIT>משרד<SPLIT>, מקרב חסרי ה<SPLIT>דיור<SPLIT>, ש<SPLIT>עוד נותרו ב<SPLIT>אוהלים<SPLIT>, לשכור חדר ב<SPLIT>בתי מלון<SPLIT>, ש<SPLIT>עמם הגיעה עמידר ל<SPLIT>הסדר שכירות<SPLIT>.}
 False positives: {
 לזכאי
 מקרב
@@ -4152,8 +4173,6 @@ False positives: {
 אוהלים
 ש
 עמם
-ש
-כירות
 } False negatives: {
 ל
 זכאי
@@ -4161,18 +4180,6 @@ False positives: {
 קרב
 באוהלים
 שעמם
-שכירות
-}
-
-Expected: {
-ב<SPLIT>בלגיה עדיין קיימים שרידים של ה<SPLIT>קבוצה<SPLIT>, בתור יחידת מסגרת<SPLIT>, ו<SPLIT>יש ברשותה משדרים חשאיים<SPLIT>.}
-Predicted: {
-ב<SPLIT>בלגיה עדיין קיימים שרידים של ה<SPLIT>קבוצה<SPLIT>, בתור יחידת מסגרת<SPLIT>, ו<SPLIT>יש ברשותה מ<SPLIT>שדרים חשאיים<SPLIT>.}
-False positives: {
-מ
-שדרים
-} False negatives: {
-משדרים
 }
 
 Expected: {
@@ -4192,15 +4199,12 @@ False positives: {
 Expected: {
 אלה ה<SPLIT>ממשיכים לטפל בסימפטום במקום ב<SPLIT>שורש ה<SPLIT>בעיה מוצאים עידוד בגלל ה<SPLIT>גידול ה<SPLIT>דרמטי ב<SPLIT>מספר ה<SPLIT>תושבים<SPLIT>, לאחר תקופה ארוכה של קיפאון ו<SPLIT>נסיגה<SPLIT>, מה גם ש<SPLIT>מדובר ב<SPLIT>"<SPLIT>עלייה טובה<SPLIT>"<SPLIT>.}
 Predicted: {
-אלה ה<SPLIT>ממשיכים לטפל ב<SPLIT>סימפטום ב<SPLIT>מקום ב<SPLIT>שורש ה<SPLIT>בעיה מוצאים עידוד בגלל ה<SPLIT>גידול ה<SPLIT>דרמטי ב<SPLIT>מספר ה<SPLIT>תושבים<SPLIT>, לאחר תקופה ארוכה של קיפאון ו<SPLIT>נסיגה<SPLIT>, מה גם ש<SPLIT>מדובר ב<SPLIT>"<SPLIT>עלייה טובה<SPLIT>"<SPLIT>.}
+אלה ה<SPLIT>ממשיכים לטפל ב<SPLIT>סימפטום במקום ב<SPLIT>שורש ה<SPLIT>בעיה מוצאים עידוד בגלל ה<SPLIT>גידול ה<SPLIT>דרמטי ב<SPLIT>מספר ה<SPLIT>תושבים<SPLIT>, לאחר תקופה ארוכה של קיפאון ו<SPLIT>נסיגה<SPLIT>, מה גם ש<SPLIT>מדובר ב<SPLIT>"<SPLIT>עלייה טובה<SPLIT>"<SPLIT>.}
 False positives: {
 ב
 סימפטום
-ב
-מקום
 } False negatives: {
 בסימפטום
-במקום
 }
 
 Expected: {
@@ -4217,25 +4221,31 @@ False positives: {
 Expected: {
 "<SPLIT>מפליא ה<SPLIT>דבר<SPLIT>, לפיכך<SPLIT>, ש<SPLIT>ה<SPLIT>ממשלה התעלמה מ<SPLIT>דרישת ה<SPLIT>אופוזיציה לפזר מועצה זו מ<SPLIT>אז ש<SPLIT>נבחרה ו<SPLIT>התעקשה ש<SPLIT>מועצה מזויפת זו תמשיך לכהן<SPLIT>.}
 Predicted: {
-"<SPLIT>מפליא ה<SPLIT>דבר<SPLIT>, לפיכך<SPLIT>, ש<SPLIT>ה<SPLIT>ממשלה ה<SPLIT>תעלמה מ<SPLIT>דרישת ה<SPLIT>אופוזיציה לפזר מועצה זו מ<SPLIT>אז ש<SPLIT>נבחרה ו<SPLIT>התעקשה ש<SPLIT>מועצה מזויפת זו תמשיך ל<SPLIT>כהן<SPLIT>.}
+"<SPLIT>מפליא ה<SPLIT>דבר<SPLIT>, לפיכך<SPLIT>, ש<SPLIT>ה<SPLIT>ממשלה ה<SPLIT>תעלמה מ<SPLIT>דרישת ה<SPLIT>אופוזיציה לפזר מועצה זו מ<SPLIT>אז ש<SPLIT>נבחרה ו<SPLIT>התעקשה שמועצה מזויפת זו תמשיך ל<SPLIT>כהן<SPLIT>.}
 False positives: {
 ה
 תעלמה
+שמועצה
 ל
 כהן
 } False negatives: {
 התעלמה
+ש
+מועצה
 לכהן
 }
 
 Expected: {
 כל זה תמורת שחרורם של כ<SPLIT>2,000 בני ערובה מערביים ו<SPLIT>תמורת הבטחה של סדאם להתנהג כיאות (<SPLIT>ו<SPLIT>גם זאת<SPLIT>, לא כלפי ישראל<SPLIT>, שאותה התחייב לא מ<SPLIT>כבר "<SPLIT>להעביר מן ה<SPLIT>עולם אחת ו<SPLIT>לתמיד<SPLIT>"<SPLIT>)<SPLIT>.}
 Predicted: {
-כל זה תמורת שחרורם של כ<SPLIT>2,000 בני ערובה מערביים ו<SPLIT>תמורת הבטחה של סדאם להתנהג כיאות (<SPLIT>ו<SPLIT>גם זאת<SPLIT>, לא כלפי ישראל<SPLIT>, ש<SPLIT>אותה התחייב לא מ<SPLIT>כבר "<SPLIT>להעביר מן ה<SPLIT>עולם אחת ו<SPLIT>לתמיד<SPLIT>"<SPLIT>)<SPLIT>.}
+כל זה תמורת ש<SPLIT>חרורם של כ<SPLIT>2,000 בני ערובה מערביים ו<SPLIT>תמורת הבטחה של סדאם להתנהג כיאות (<SPLIT>ו<SPLIT>גם זאת<SPLIT>, לא כלפי ישראל<SPLIT>, ש<SPLIT>אותה התחייב לא מ<SPLIT>כבר "<SPLIT>להעביר מן ה<SPLIT>עולם אחת ו<SPLIT>לתמיד<SPLIT>"<SPLIT>)<SPLIT>.}
 False positives: {
+ש
+חרורם
 ש
 אותה
 } False negatives: {
+שחרורם
 שאותה
 }
 
@@ -4253,16 +4263,22 @@ False positives: {
 Expected: {
 עיראק יכולה להתמודד עם תשלום חובותיה<SPLIT>, ו<SPLIT>סיפוק צרכיה היא<SPLIT>, אך ו<SPLIT>רק ב<SPLIT>אחת מ<SPLIT>ה<SPLIT>אפשרויות ה<SPLIT>באות<SPLIT>, או טוב יותר מבחינתה<SPLIT>, ב<SPLIT>שילוב מלא ביניהן<SPLIT>: עלייה של ממש ב<SPLIT>מחיר ה<SPLIT>נפט ה<SPLIT>גולמי<SPLIT>, ש<SPLIT>את מחירו יצטרך לשלם ה<SPLIT>צרכן בעולם כולו<SPLIT>; עלייה של ממש ב<SPLIT>תפוקת ה<SPLIT>נפט של עיראק<SPLIT>, לצד הרחבת מקורות ה<SPLIT>נפט ה<SPLIT>נמצאים ב<SPLIT>שטחי שכנותיה<SPLIT>.}
 Predicted: {
-עיראק יכולה להתמודד עם תשלום חובותיה<SPLIT>, ו<SPLIT>סיפוק צרכיה היא<SPLIT>, אך ו<SPLIT>רק ב<SPLIT>אחת מ<SPLIT>ה<SPLIT>אפשרויות ה<SPLIT>באות<SPLIT>, או טוב יותר מבחינתה<SPLIT>, ב<SPLIT>שילוב מלא ביניהן<SPLIT>: עלייה של ממש ב<SPLIT>מחיר ה<SPLIT>נפט ה<SPLIT>גולמי<SPLIT>, ש<SPLIT>את מחירו יצטרך לשלם ה<SPLIT>צרכן ב<SPLIT>עולם כולו<SPLIT>; עלייה של ממש ב<SPLIT>תפוקת ה<SPLIT>נפט של עיראק<SPLIT>, לצד ה<SPLIT>רחבת מקורות ה<SPLIT>נפט ה<SPLIT>נמצאים ב<SPLIT>שטחי ש<SPLIT>כנותיה<SPLIT>.}
+עיראק יכולה להתמודד עם תשלום חובותיה<SPLIT>, ו<SPLIT>סיפוק צרכיה היא<SPLIT>, אך ו<SPLIT>רק ב<SPLIT>אחת מ<SPLIT>ה<SPLIT>אפשרויות ה<SPLIT>באות<SPLIT>, או טוב יותר מבחינתה<SPLIT>, ב<SPLIT>שילוב מלא ביניהן<SPLIT>: עלייה של ממש ב<SPLIT>מחיר ה<SPLIT>נפט ה<SPLIT>גולמי<SPLIT>, ש<SPLIT>את מחירו יצטרך לשלם ה<SPLIT>צרכן ב<SPLIT>עולם כולו<SPLIT>; עלייה של ממש בתפוקת ה<SPLIT>נפט של עיראק<SPLIT>, ל<SPLIT>צד ה<SPLIT>רחבת מקורות ה<SPLIT>נפט ה<SPLIT>נמצאים ב<SPLIT>שטחי ש<SPLIT>כנותיה<SPLIT>.}
 False positives: {
 ב
 עולם
+בתפוקת
+ל
+צד
 ה
 רחבת
 ש
 כנותיה
 } False negatives: {
 בעולם
+ב
+תפוקת
+לצד
 הרחבת
 שכנותיה
 }
@@ -4302,6 +4318,17 @@ False positives: {
 } False negatives: {
 ל
 יער
+}
+
+Expected: {
+כ<SPLIT>עובד נקיון או עובד עזר ב<SPLIT>בנייה<SPLIT>, מתייחסים עמיתיו אל ה<SPLIT>טורקי ה<SPLIT>חי ב<SPLIT>גרמניה כאל קטין מפגר ו<SPLIT>מלגלגים עליו<SPLIT>, מבעד ל<SPLIT>מנסרות דעת ה<SPLIT>קהל הוא נשקף ב<SPLIT>אור מסולף ו<SPLIT>מעוות<SPLIT>.}
+Predicted: {
+כעובד נקיון או עובד עזר ב<SPLIT>בנייה<SPLIT>, מתייחסים עמיתיו אל ה<SPLIT>טורקי ה<SPLIT>חי ב<SPLIT>גרמניה כאל קטין מפגר ו<SPLIT>מלגלגים עליו<SPLIT>, מבעד ל<SPLIT>מנסרות דעת ה<SPLIT>קהל הוא נשקף ב<SPLIT>אור מסולף ו<SPLIT>מעוות<SPLIT>.}
+False positives: {
+כעובד
+} False negatives: {
+כ
+עובד
 }
 
 Expected: {
@@ -4363,10 +4390,13 @@ False positives: {
 Expected: {
 יש גם מבחר נעלי אדידס מ<SPLIT>דגמי "<SPLIT>דסטי<SPLIT>" ו "<SPLIT>קריסטי<SPLIT>"<SPLIT>; נעלי עור ספולדינג עולים 79.90 ש"ח<SPLIT>.}
 Predicted: {
-יש גם מבחר נעלי אדידס מדגמי "<SPLIT>דסטי<SPLIT>" ו "<SPLIT>קריסטי<SPLIT>"<SPLIT>; נעלי עור ספולדינג עולים 79.90 ש"ח<SPLIT>.}
+יש גם מ<SPLIT>בחר נעלי אדידס מדגמי "<SPLIT>דסטי<SPLIT>" ו "<SPLIT>קריסטי<SPLIT>"<SPLIT>; נעלי עור ספולדינג עולים 79.90 ש"ח<SPLIT>.}
 False positives: {
+מ
+בחר
 מדגמי
 } False negatives: {
+מבחר
 מ
 דגמי
 }
@@ -4407,31 +4437,31 @@ False positives: {
 Expected: {
 ברור ש<SPLIT>גם פידל קסטרו עשה שגיאות שעמו יזקוף לחובתו<SPLIT>, אבל הוא פעל תמיד ב<SPLIT>יושר מרבי<SPLIT>.}
 Predicted: {
-ברור ש<SPLIT>גם פידל קסטרו עשה ש<SPLIT>גיאות שעמו יזקוף ל<SPLIT>חובתו<SPLIT>, אבל הוא פעל תמיד ב<SPLIT>יושר מרבי<SPLIT>.}
+ברור ש<SPLIT>גם פידל קסטרו עשה ש<SPLIT>גיאות שעמ<SPLIT>ו יזקוף ל<SPLIT>חובתו<SPLIT>, אבל הוא פעל תמיד ב<SPLIT>יושר מרבי<SPLIT>.}
 False positives: {
 ש
 גיאות
+שעמ
+ו
 ל
 חובתו
 } False negatives: {
 שגיאות
+שעמו
 לחובתו
 }
 
 Expected: {
 שלטונו של סרזו היה נגוע ב<SPLIT>שחיתות ובמהלכו אירעו שני נסיונות הפיכה<SPLIT>.}
 Predicted: {
-ש<SPLIT>לטונו של סרזו היה נגוע ב<SPLIT>שחיתות ו<SPLIT>ב<SPLIT>מהלכו אירעו שני נסיונות ה<SPLIT>פיכה<SPLIT>.}
+שלטונו של סרזו היה נגוע ב<SPLIT>שחיתות ו<SPLIT>ב<SPLIT>מהלכו אירעו שני נסיונות ה<SPLIT>פיכה<SPLIT>.}
 False positives: {
-ש
-לטונו
 ו
 ב
 מהלכו
 ה
 פיכה
 } False negatives: {
-שלטונו
 ובמהלכו
 הפיכה
 }
@@ -4439,30 +4469,47 @@ False positives: {
 Expected: {
 ל<SPLIT>ישראל הם הגיעו ב28 ב<SPLIT>מאי<SPLIT>, ו<SPLIT>ב<SPLIT>יום ה<SPLIT>מחרת כבר צפו מ<SPLIT>מרפסת ביתה של אחותו של סרגיי ב<SPLIT>נחיתת ה<SPLIT>מחבלים ב<SPLIT>חוף ניצנים<SPLIT>.}
 Predicted: {
-ל<SPLIT>ישראל הם הגיעו ב<SPLIT>28 ב<SPLIT>מאי<SPLIT>, ו<SPLIT>ב<SPLIT>יום ה<SPLIT>מחרת כבר צפו מ<SPLIT>מרפסת ביתה של אחותו של סרגיי בנחיתת ה<SPLIT>מחבלים ב<SPLIT>חוף ניצנים<SPLIT>.}
+ל<SPLIT>ישראל הם הגיעו ב<SPLIT>28 ב<SPLIT>מאי<SPLIT>, ו<SPLIT>ב<SPLIT>יום ה<SPLIT>מחרת כבר צפו ממרפסת ביתה של אחותו של סרגיי בנחיתת ה<SPLIT>מחבלים ב<SPLIT>חוף ניצנים<SPLIT>.}
 False positives: {
 ב
 28
+ממרפסת
 בנחיתת
 } False negatives: {
 ב28
+מ
+מרפסת
 ב
 נחיתת
 }
 
 Expected: {
+ה<SPLIT>עולים מ<SPLIT>בריה"ם נושאים עמם עולם דימויים עוין כלפי ה<SPLIT>קיבוץ<SPLIT>.}
+Predicted: {
+ה<SPLIT>עולים מ<SPLIT>בריה"ם נושאים עמם עולם דימויים עוין כלפי הקיבוץ<SPLIT>.}
+False positives: {
+הקיבוץ
+} False negatives: {
+ה
+קיבוץ
+}
+
+Expected: {
 בחוברות ובפרסומים ה<SPLIT>רשמיים<SPLIT>, ש<SPLIT>הם מקבלים ב<SPLIT>נציגויות ישראל ב<SPLIT>חו"ל<SPLIT>, אין מזכירים את ה<SPLIT>קיבוץ<SPLIT>.}
 Predicted: {
-ב<SPLIT>חוברות ו<SPLIT>ב<SPLIT>פרסומים ה<SPLIT>רשמיים<SPLIT>, ש<SPLIT>הם מקבלים ב<SPLIT>נציגויות ישראל ב<SPLIT>חו"ל<SPLIT>, אין מזכירים את ה<SPLIT>קיבוץ<SPLIT>.}
+ב<SPLIT>חוברות ו<SPLIT>ב<SPLIT>פרסומים ה<SPLIT>רשמיים<SPLIT>, ש<SPLIT>הם מקבלים ב<SPLIT>נציגויות ישראל ב<SPLIT>חו"ל<SPLIT>, אין מזכירים את הקיבוץ<SPLIT>.}
 False positives: {
 ב
 חוברות
 ו
 ב
 פרסומים
+הקיבוץ
 } False negatives: {
 בחוברות
 ובפרסומים
+ה
+קיבוץ
 }
 
 Expected: {
@@ -4574,7 +4621,7 @@ False positives: {
 Expected: {
 ב<SPLIT>כתר מציינים כי בשנתיים ה<SPLIT>אחרונות הוביל ליפמן את חטיבת ה<SPLIT>מו"לות שבניהולו ל<SPLIT>רווחיות<SPLIT>, ה<SPLIT>בולטת בעיקר על רקע ה<SPLIT>משבר ה<SPLIT>שורר בשנים ה<SPLIT>אחרונות ב<SPLIT>ענף ה<SPLIT>הוצאה לאור ב<SPLIT>ארה"ב<SPLIT>.}
 Predicted: {
-ב<SPLIT>כתר מציינים כי ב<SPLIT>שנתיים ה<SPLIT>אחרונות הוביל ליפמן את חטיבת ה<SPLIT>מו"לות ש<SPLIT>בניהולו לרווחיות<SPLIT>, ה<SPLIT>בולטת בעיקר על רקע ה<SPLIT>משבר ה<SPLIT>שורר ב<SPLIT>שנים ה<SPLIT>אחרונות ב<SPLIT>ענף ה<SPLIT>הוצאה לאור ב<SPLIT>ארה"ב<SPLIT>.}
+ב<SPLIT>כתר מציינים כי ב<SPLIT>שנתיים ה<SPLIT>אחרונות הוביל ליפמן את חטיבת ה<SPLIT>מו"לות ש<SPLIT>בניהולו לרווחיות<SPLIT>, ה<SPLIT>בולטת בעיקר על רקע ה<SPLIT>משבר ה<SPLIT>שורר ב<SPLIT>שנים ה<SPLIT>אחרונות ב<SPLIT>ענף ה<SPLIT>הוצאה ל<SPLIT>אור ב<SPLIT>ארה"ב<SPLIT>.}
 False positives: {
 ב
 שנתיים
@@ -4583,25 +4630,34 @@ False positives: {
 לרווחיות
 ב
 שנים
+ל
+אור
 } False negatives: {
 בשנתיים
 שבניהולו
 ל
 רווחיות
 בשנים
+לאור
 }
 
 Expected: {
 לליטאים<SPLIT>, לגרוזינים ולאחרים<SPLIT>, ה<SPLIT>מנסים להינתק מ<SPLIT>ברית ה<SPLIT>מועצות<SPLIT>, יהיה אולי קשה להאמין<SPLIT>, אבל קיים חבל ה<SPLIT>מנסה להיהפך ל<SPLIT>רפובליקה סובייטית<SPLIT>.}
 Predicted: {
-לליטאים<SPLIT>, לגרוזינים ו<SPLIT>ל<SPLIT>אחרים<SPLIT>, ה<SPLIT>מנסים להינתק מ<SPLIT>ברית ה<SPLIT>מועצות<SPLIT>, יהיה אולי קשה להאמין<SPLIT>, אבל קיים חבל ה<SPLIT>מנסה להיהפך לרפובליקה סובייטית<SPLIT>.}
+לליטאים<SPLIT>, ל<SPLIT>גרוזינים ו<SPLIT>ל<SPLIT>אחרים<SPLIT>, ה<SPLIT>מנסים להינתק מ<SPLIT>ברית ה<SPLIT>מועצות<SPLIT>, יהיה אולי קשה ל<SPLIT>האמין<SPLIT>, אבל קיים חבל ה<SPLIT>מנסה להיהפך לרפובליקה סובייטית<SPLIT>.}
 False positives: {
+ל
+גרוזינים
 ו
 ל
 אחרים
+ל
+האמין
 לרפובליקה
 } False negatives: {
+לגרוזינים
 ולאחרים
+להאמין
 ל
 רפובליקה
 }
@@ -4631,20 +4687,17 @@ False positives: {
 Expected: {
 "<SPLIT>אנחנו מוכנים להיות ה<SPLIT>קורבנות בדרך לריבונות<SPLIT>"<SPLIT>, אומרת פאזיה באירנובה מ<SPLIT>מפלגת ה<SPLIT>עצמאות ה<SPLIT>טטרית "<SPLIT>איטיפאק<SPLIT>"<SPLIT>, ה<SPLIT>מעריכה ש<SPLIT>"<SPLIT>אפשר גם ש<SPLIT>דם יישפך<SPLIT>"<SPLIT>.}
 Predicted: {
-"<SPLIT>אנחנו מוכנים להיות ה<SPLIT>קורבנות ב<SPLIT>דרך לריבונות<SPLIT>"<SPLIT>, אומרת פאזיה ב<SPLIT>אירנובה מ<SPLIT>מפלגת ה<SPLIT>עצמאות ה<SPLIT>טטרית "<SPLIT>איטיפאק<SPLIT>"<SPLIT>, ה<SPLIT>מעריכה ש<SPLIT>"אפשר גם ש<SPLIT>דם יישפ<SPLIT>ך<SPLIT>"<SPLIT>.}
+"<SPLIT>אנחנו מוכנים להיות ה<SPLIT>קורבנות ב<SPLIT>דרך לריבונות<SPLIT>"<SPLIT>, אומרת פאזיה ב<SPLIT>אירנובה מ<SPLIT>מפלגת ה<SPLIT>עצמאות ה<SPLIT>טטרית "<SPLIT>איטיפאק<SPLIT>"<SPLIT>, ה<SPLIT>מעריכה ש<SPLIT>"<SPLIT>אפשר גם ש<SPLIT>דם יישפ<SPLIT>ך<SPLIT>"<SPLIT>.}
 False positives: {
 ב
 דרך
 ב
 אירנובה
-"אפשר
 יישפ
 ך
 } False negatives: {
 בדרך
 באירנובה
-"
-אפשר
 יישפך
 }
 
@@ -4710,11 +4763,10 @@ False positives: {
 Expected: {
 עד כה מראים ה<SPLIT>סימנים<SPLIT>, שלהיטותם של קוני ה<SPLIT>אמנות ה<SPLIT>יפאנים בעינה עומדת<SPLIT>.}
 Predicted: {
-עד כה מראים ה<SPLIT>סימנים<SPLIT>, ש<SPLIT>להיטות<SPLIT>ם של קוני ה<SPLIT>אמנות ה<SPLIT>יפאנים ב<SPLIT>עינה עומדת<SPLIT>.}
+עד כה מראים ה<SPLIT>סימנים<SPLIT>, ש<SPLIT>להיטותם של קוני ה<SPLIT>אמנות ה<SPLIT>יפאנים ב<SPLIT>עינה עומדת<SPLIT>.}
 False positives: {
 ש
-להיטות
-ם
+להיטותם
 ב
 עינה
 } False negatives: {
@@ -4736,12 +4788,18 @@ False positives: {
 Expected: {
 ה<SPLIT>נהירה ל<SPLIT>קנייה של מוצרים מ<SPLIT>תוצרת עצמית היא ש<SPLIT>דירבנה את ה<SPLIT>פופולריות של ה<SPLIT>אימפרסיוניזם<SPLIT>, ה<SPLIT>פוביזם ו<SPLIT>ה<SPLIT>אמנות ה<SPLIT>מודרנית של ה<SPLIT>מאה ה<SPLIT>02 בשוק ה<SPLIT>יפאני<SPLIT>.}
 Predicted: {
-ה<SPLIT>נהירה ל<SPLIT>קנייה של מוצרים מ<SPLIT>תוצרת עצמית היא ש<SPLIT>דירבנה את ה<SPLIT>פופולריות של ה<SPLIT>אימפרסיוניזם<SPLIT>, ה<SPLIT>פוביזם ו<SPLIT>ה<SPLIT>אמנות ה<SPLIT>מודרנית של ה<SPLIT>מאה ה<SPLIT>02 ב<SPLIT>שוק ה<SPLIT>יפאני<SPLIT>.}
+ה<SPLIT>נהירה לקנייה של מוצרים מ<SPLIT>תוצרת עצמית היא ש<SPLIT>דירבנה את ה<SPLIT>פופולריות של ה<SPLIT>אימפרסיוניזם<SPLIT>, ה<SPLIT>פוביזם ו<SPLIT>ה<SPLIT>אמנות ה<SPLIT>מודרנית של ה<SPLIT>מאה ה<SPLIT>02 ב<SPLIT>שוק היפאני<SPLIT>.}
 False positives: {
+לקנייה
 ב
 שוק
+היפאני
 } False negatives: {
+ל
+קנייה
 בשוק
+ה
+יפאני
 }
 
 Expected: {
@@ -4845,28 +4903,29 @@ False positives: {
 Expected: {
 אבל ב<SPLIT>תחום ה<SPLIT>פנסיה נשארו ה<SPLIT>הסדרים בתוקפם כאילו אליעזר קפלן<SPLIT>, לוי אשכול ו<SPLIT>פנחס ספיר ה<SPLIT>מנוחים<SPLIT>, עדיין מנהלים את משרד ה<SPLIT>אוצר<SPLIT>.}
 Predicted: {
-אבל ב<SPLIT>תחום ה<SPLIT>פנסיה נשארו ה<SPLIT>הסדרים ב<SPLIT>תוקפם כ<SPLIT>אילו אליעזר קפלן<SPLIT>, לוי אשכול ו<SPLIT>פנחס ספיר ה<SPLIT>מנוחים<SPLIT>, עדיין מנהלים את משרד ה<SPLIT>אוצר<SPLIT>.}
+אבל ב<SPLIT>תחום ה<SPLIT>פנסיה נשארו ה<SPLIT>הסדרים ב<SPLIT>תוקפ<SPLIT>ם כאילו אליעזר קפלן<SPLIT>, לוי אשכול ו<SPLIT>פנחס ספיר ה<SPLIT>מנוחים<SPLIT>, עדיין מנהלים את משרד ה<SPLIT>אוצר<SPLIT>.}
 False positives: {
 ב
-תוקפם
-כ
-אילו
+תוקפ
+ם
 } False negatives: {
 בתוקפם
-כאילו
 }
 
 Expected: {
 לפני כ<SPLIT>שבועיים קבע בית ה<SPLIT>משפט ה<SPLIT>עליון הלכה חדשה<SPLIT>, שלפיה אם אדם עומד על דוכן ה<SPLIT>עדים ו<SPLIT>ממלא פיו מים<SPLIT>, יהיו דברים ש<SPLIT>אמר קודם לכן מ<SPLIT>חוץ ל<SPLIT>כותלי בית ה<SPLIT>משפט<SPLIT>, למשל בחקירה במשטרה<SPLIT>, קבילים כראיה<SPLIT>.}
 Predicted: {
-לפני כשבועיים קבע בית ה<SPLIT>משפט ה<SPLIT>עליון הלכה חדשה<SPLIT>, שלפיה אם אדם עומד על דוכן ה<SPLIT>עדים ו<SPLIT>ממלא פיו מים<SPLIT>, יהיו דברים ש<SPLIT>אמר קודם לכן מ<SPLIT>חוץ ל<SPLIT>כותלי בית ה<SPLIT>משפט<SPLIT>, למשל ב<SPLIT>חקירה במשטרה<SPLIT>, קבילים כראיה<SPLIT>.}
+לפני כשבועיים קבע בית ה<SPLIT>משפט ה<SPLIT>עליון הלכה חדשה<SPLIT>, שלפיה אם אדם עומד על דוכן ה<SPLIT>עדים ו<SPLIT>ממלא פיו מים<SPLIT>, יהיו דברים ש<SPLIT>אמר קודם לכן מ<SPLIT>חוץ לכותלי בית ה<SPLIT>משפט<SPLIT>, למשל ב<SPLIT>חקירה במשטרה<SPLIT>, קבילים כראיה<SPLIT>.}
 False positives: {
 כשבועיים
+לכותלי
 ב
 חקירה
 } False negatives: {
 כ
 שבועיים
+ל
+כותלי
 בחקירה
 }
 
@@ -4951,29 +5010,18 @@ False positives: {
 Expected: {
 ה<SPLIT>סיוע לסטודנט צריך להיות ישיר ו<SPLIT>נפרד לחלוטין מ<SPLIT>ה<SPLIT>סיוע לאוניברסיטה<SPLIT>, ו<SPLIT>הוא צריך להינתן ל<SPLIT>כל ציבור ה<SPLIT>סטודנטים בארץ<SPLIT>, בלי שים לב למוסד בו הם לומדים<SPLIT>.}
 Predicted: {
-ה<SPLIT>סיוע ל<SPLIT>סטודנט צריך להיות ישיר ו<SPLIT>נפרד לחלוטין מ<SPLIT>ה<SPLIT>סיוע לאוניברסיטה<SPLIT>, ו<SPLIT>הוא צריך להינתן ל<SPLIT>כל ציבור ה<SPLIT>סטודנטים ב<SPLIT>ארץ<SPLIT>, בלי שים לב למוסד ב<SPLIT>ו הם לומדים<SPLIT>.}
+ה<SPLIT>סיוע לסטודנט צריך להיות ישיר ו<SPLIT>נפרד לחלוטין מ<SPLIT>ה<SPLIT>סיוע ל<SPLIT>אוניברסיטה<SPLIT>, ו<SPLIT>הוא צריך להינתן ל<SPLIT>כל ציבור ה<SPLIT>סטודנטים ב<SPLIT>ארץ<SPLIT>, בלי שים לב למוסד ב<SPLIT>ו הם לומדים<SPLIT>.}
 False positives: {
 ל
-סטודנט
+אוניברסיטה
 ב
 ארץ
 ב
 ו
 } False negatives: {
-לסטודנט
+לאוניברסיטה
 בארץ
 בו
-}
-
-Expected: {
-ב<SPLIT>ביה"ס ל<SPLIT>משפטים של ה<SPLIT>מכללה ל<SPLIT>מינהל<SPLIT>, התפלגות ה<SPLIT>תלמידים לפי ארץ מוצא ה<SPLIT>אב היא כדלקמן<SPLIT>: ישראל<SPLIT>: 53.8<SPLIT>%<SPLIT>, אירופה<SPLIT>-<SPLIT>ארה"ב<SPLIT>: 23<SPLIT>%<SPLIT>, ו<SPLIT>אסיה<SPLIT>-<SPLIT>אפריקה 32.3<SPLIT>%<SPLIT>.}
-Predicted: {
-ב<SPLIT>ביה"ס ל<SPLIT>משפטים של ה<SPLIT>מכללה ל<SPLIT>מינהל<SPLIT>, ה<SPLIT>תפלגות ה<SPLIT>תלמידים לפי ארץ מוצא ה<SPLIT>אב היא כדלקמן<SPLIT>: ישראל<SPLIT>: 53.8<SPLIT>%<SPLIT>, אירופה<SPLIT>-<SPLIT>ארה"ב<SPLIT>: 23<SPLIT>%<SPLIT>, ו<SPLIT>אסיה<SPLIT>-<SPLIT>אפריקה 32.3<SPLIT>%<SPLIT>.}
-False positives: {
-ה
-תפלגות
-} False negatives: {
-התפלגות
 }
 
 Expected: {
@@ -4993,13 +5041,10 @@ False positives: {
 Expected: {
 ככל ש<SPLIT>ישראל נמנעת מ<SPLIT>להתערב<SPLIT>, היא אינה פטורה מ<SPLIT>ה<SPLIT>חובה לדאוג לבטחונה<SPLIT>.}
 Predicted: {
-כ<SPLIT>כל ש<SPLIT>ישראל נמנעת מלהתערב<SPLIT>, היא אינה פטורה מ<SPLIT>ה<SPLIT>חובה לדאוג לבטחונה<SPLIT>.}
+ככל ש<SPLIT>ישראל נמנעת מלהתערב<SPLIT>, היא אינה פטורה מ<SPLIT>ה<SPLIT>חובה לדאוג לבטחונה<SPLIT>.}
 False positives: {
-כ
-כל
 מלהתערב
 } False negatives: {
-ככל
 מ
 להתערב
 }
@@ -5032,15 +5077,18 @@ False positives: {
 Expected: {
 ה<SPLIT>גזענות ה<SPLIT>ישראלית היא תוצר של ה<SPLIT>תזוזה ה<SPLIT>פוליטית ה<SPLIT>מתמדת ימינה<SPLIT>, ש<SPLIT>מסרה את ה<SPLIT>שלטון ל<SPLIT>ידי ה<SPLIT>ליכוד ו<SPLIT>הביאה ל<SPLIT>ידי הקמת ממשלה לאומנית טהורה<SPLIT>.}
 Predicted: {
-ה<SPLIT>גזענות ה<SPLIT>ישראלית היא תוצר של ה<SPLIT>תזוזה ה<SPLIT>פוליטית ה<SPLIT>מתמדת ימינה<SPLIT>, ש<SPLIT>מסרה את ה<SPLIT>שלטון לידי ה<SPLIT>ליכוד ו<SPLIT>הביאה לידי הקמת ממשלה לאומנית טהורה<SPLIT>.}
+ה<SPLIT>גזענות ה<SPLIT>ישראלית היא תוצר של ה<SPLIT>תזוזה ה<SPLIT>פוליטית ה<SPLIT>מתמדת ימינה<SPLIT>, ש<SPLIT>מסרה את ה<SPLIT>שלטון לידי ה<SPLIT>ליכוד ו<SPLIT>הביאה לידי הקמת ממשלה ל<SPLIT>אומנית טהורה<SPLIT>.}
 False positives: {
 לידי
 לידי
+ל
+אומנית
 } False negatives: {
 ל
 ידי
 ל
 ידי
+לאומנית
 }
 
 Expected: {
@@ -5076,16 +5124,13 @@ False positives: {
 Expected: {
 עתה עלתה על ה<SPLIT>פרק הצעת גד יעקובי<SPLIT>, ש<SPLIT>חרף מתינותה הסעירה את סיעות ה<SPLIT>ליכוד ו<SPLIT>ה<SPLIT>מערך<SPLIT>: לא סגירה מיידית של ה<SPLIT>קו ה<SPLIT>ירוק<SPLIT>, אלא ב<SPLIT>הדרגה<SPLIT>; לא נסיגה מלאה של צה"ל מ<SPLIT>ה<SPLIT>שטחים<SPLIT>, אלא היערכות מחדש<SPLIT>, ו<SPLIT>לא הסתלקות מ<SPLIT>כל אחריות<SPLIT>, אלא ב<SPLIT>הודעה מתוכננת מראש<SPLIT>.}
 Predicted: {
-עתה עלתה על ה<SPLIT>פרק הצעת גד יעקובי<SPLIT>, שחרף מתינותה ה<SPLIT>סעירה את סיעות ה<SPLIT>ליכוד ו<SPLIT>ה<SPLIT>מערך<SPLIT>: לא סגירה מיידית של ה<SPLIT>קו ה<SPLIT>ירוק<SPLIT>, אלא ב<SPLIT>הדרגה<SPLIT>; לא נסיגה מלאה של צה"ל מ<SPLIT>ה<SPLIT>שטחים<SPLIT>, אלא היערכות מ<SPLIT>חדש<SPLIT>, ו<SPLIT>לא הסתלקות מ<SPLIT>כל אחריות<SPLIT>, אלא ב<SPLIT>הודעה מתוכננת מראש<SPLIT>.}
+עתה עלתה על ה<SPLIT>פרק הצעת גד יעקובי<SPLIT>, ש<SPLIT>חרף מתינותה ה<SPLIT>סעירה את סיעות ה<SPLIT>ליכוד ו<SPLIT>ה<SPLIT>מערך<SPLIT>: לא סגירה מיידית של ה<SPLIT>קו ה<SPLIT>ירוק<SPLIT>, אלא ב<SPLIT>הדרגה<SPLIT>; לא נסיגה מלאה של צה"ל מ<SPLIT>ה<SPLIT>שטחים<SPLIT>, אלא היערכות מ<SPLIT>חדש<SPLIT>, ו<SPLIT>לא הסתלקות מ<SPLIT>כל אחריות<SPLIT>, אלא ב<SPLIT>הודעה מתוכננת מראש<SPLIT>.}
 False positives: {
-שחרף
 ה
 סעירה
 מ
 חדש
 } False negatives: {
-ש
-חרף
 הסעירה
 מחדש
 }
@@ -5125,7 +5170,7 @@ False positives: {
 Expected: {
 ד"ר שי פלדמן<SPLIT>, מ<SPLIT>ה<SPLIT>מרכז ל<SPLIT>מחקרים אסטראטגיים ב<SPLIT>אוניברסיטת ת"א<SPLIT>, טוען כי ישראל עלולה למצוא עצמה מואשמת כ<SPLIT>מי ש<SPLIT>הציתה בפעולותיה את ניצוץ ה<SPLIT>מלחמה במפרץ<SPLIT>, מבלי להתחשב באינטרסים של ארה"ב<SPLIT>, ו<SPLIT>כ<SPLIT>מי ש<SPLIT>גרמה ל<SPLIT>אובדן חיי חיילים אמריקאים רבים<SPLIT>.}
 Predicted: {
-ד"ר שי פלדמן<SPLIT>, מ<SPLIT>ה<SPLIT>מרכז ל<SPLIT>מחקרים אסטראטגיים ב<SPLIT>אוניברסיטת ת"א<SPLIT>, טוען כי ישראל עלולה למצוא עצמה מואשמת כ<SPLIT>מי ש<SPLIT>ה<SPLIT>ציתה ב<SPLIT>פעולותיה את ניצוץ ה<SPLIT>מלחמה ב<SPLIT>מפרץ<SPLIT>, מבלי להתחשב ב<SPLIT>אינטרסים של ארה"ב<SPLIT>, ו<SPLIT>כ<SPLIT>מי ש<SPLIT>גרמה לאובדן חיי חיילים אמריקאים רבים<SPLIT>.}
+ד"ר שי פלדמן<SPLIT>, מ<SPLIT>ה<SPLIT>מרכז ל<SPLIT>מחקרים אסטראטגיים ב<SPLIT>אוניברסיטת ת"א<SPLIT>, טוען כי ישראל עלולה למצוא עצמה מואשמת כ<SPLIT>מי ש<SPLIT>ה<SPLIT>ציתה ב<SPLIT>פעולותיה את ניצוץ ה<SPLIT>מלחמה ב<SPLIT>מפרץ<SPLIT>, מבלי להתחשב ב<SPLIT>אינטרסים של ארה"ב<SPLIT>, ו<SPLIT>כ<SPLIT>מי ש<SPLIT>גרמה ל<SPLIT>אובדן חיי חיילים אמריקאים רבים<SPLIT>.}
 False positives: {
 ה
 ציתה
@@ -5135,14 +5180,11 @@ False positives: {
 מפרץ
 ב
 אינטרסים
-לאובדן
 } False negatives: {
 הציתה
 בפעולותיה
 במפרץ
 באינטרסים
-ל
-אובדן
 }
 
 Expected: {
@@ -5177,13 +5219,16 @@ False positives: {
 Expected: {
 ב<SPLIT>ראיית עולמו ה<SPLIT>פוליטית אין רגע מת<SPLIT>, מסבירים חבריו<SPLIT>, כי ביילין היה טרוד השבוע מכדי להשיב על שאלות ב<SPLIT>נושא זה<SPLIT>.}
 Predicted: {
-ב<SPLIT>ראיית עולמו ה<SPLIT>פוליטית אין רגע מת<SPLIT>, מסבירים חברי<SPLIT>ו<SPLIT>, כי ביילין היה טרוד ה<SPLIT>שבוע מכדי להשיב על שאלות ב<SPLIT>נושא זה<SPLIT>.}
+ב<SPLIT>ראיית עולמ<SPLIT>ו ה<SPLIT>פוליטית אין רגע מת<SPLIT>, מסבירים חברי<SPLIT>ו<SPLIT>, כי ביילין היה טרוד ה<SPLIT>שבוע מכדי להשיב על שאלות ב<SPLIT>נושא זה<SPLIT>.}
 False positives: {
+עולמ
+ו
 חברי
 ו
 ה
 שבוע
 } False negatives: {
+עולמו
 חבריו
 השבוע
 }
@@ -5233,30 +5278,30 @@ False positives: {
 Expected: {
 יו"ר ועדת ה<SPLIT>כלכלה ח"כ שושנה ארבלי<SPLIT>-<SPLIT>אלמולזינו (<SPLIT>מערך<SPLIT>) הגישה הצעה דחופה ל<SPLIT>סדר ה<SPLIT>יום ב<SPLIT>נושא אי תשלום משכורות ל<SPLIT>עובדי מד"א<SPLIT>.}
 Predicted: {
-יו"ר ועדת ה<SPLIT>כלכלה ח"כ שושנה ארבלי<SPLIT>-<SPLIT>אלמולזינו (<SPLIT>מערך<SPLIT>) ה<SPLIT>גישה הצעה דחופה לסדר ה<SPLIT>יום ב<SPLIT>נושא אי תשלום משכורות ל<SPLIT>עובדי מד"א<SPLIT>.}
+יו"ר ועדת ה<SPLIT>כלכלה ח"כ שושנה ארבלי<SPLIT>-<SPLIT>אלמולזינו (<SPLIT>מערך<SPLIT>) ה<SPLIT>גישה הצעה דחופה ל<SPLIT>סדר ה<SPLIT>יום ב<SPLIT>נושא אי תשלום משכורות ל<SPLIT>עובדי מד"א<SPLIT>.}
 False positives: {
 ה
 גישה
-לסדר
 } False negatives: {
 הגישה
-ל
-סדר
 }
 
 Expected: {
 ה<SPLIT>אוצר בפרסומיו מנסה לפלג בין מתמחים ל<SPLIT>בכירים ו<SPLIT>להציג את הר"י כ<SPLIT>לוחמת למען "<SPLIT>ה<SPLIT>חזקים<SPLIT>"<SPLIT>.}
 Predicted: {
-ה<SPLIT>אוצר ב<SPLIT>פרסומיו מנסה ל<SPLIT>פלג בין מתמחים ל<SPLIT>בכירים ו<SPLIT>להציג את הר"י כלוחמת למען "<SPLIT>ה<SPLIT>חזקים<SPLIT>"<SPLIT>.}
+ה<SPLIT>אוצר ב<SPLIT>פרסומיו מנסה ל<SPLIT>פלג בין מתמחים לבכירים ו<SPLIT>להציג את הר"י כלוחמת למען "<SPLIT>ה<SPLIT>חזקים<SPLIT>"<SPLIT>.}
 False positives: {
 ב
 פרסומיו
 ל
 פלג
+לבכירים
 כלוחמת
 } False negatives: {
 בפרסומיו
 לפלג
+ל
+בכירים
 כ
 לוחמת
 }
@@ -5264,10 +5309,13 @@ False positives: {
 Expected: {
 קפידבינהעיתון "<SPLIT>ניו יורק טיימס<SPLIT>" מוסר עוד כי ב<SPLIT>ספטמבר 1986 אירעה ל<SPLIT>נוסייר תאונת עבודה<SPLIT>, ו<SPLIT>כ<SPLIT>תוצאה מ<SPLIT>הלם אלקטרוני ש<SPLIT>גרם ל<SPLIT>כווייה חמורה בידו<SPLIT>, סבל מ<SPLIT>ליקוי ב<SPLIT>תפקוד רגלו ה<SPLIT>שמאלית<SPLIT>.}
 Predicted: {
-קפידבינהעיתון "<SPLIT>ניו יורק טיימס<SPLIT>" מוסר עוד כי ב<SPLIT>ספטמבר 1986 אירעה ל<SPLIT>נוסייר תאונת עבודה<SPLIT>, ו<SPLIT>כ<SPLIT>תוצאה מ<SPLIT>הלם אלקטרוני ש<SPLIT>גרם ל<SPLIT>כווייה חמורה בידו<SPLIT>, סבל מליקוי ב<SPLIT>תפקוד רגלו ה<SPLIT>שמאלית<SPLIT>.}
+קפידבינהעיתון "<SPLIT>ניו יורק טיימס<SPLIT>" מוסר עוד כי ב<SPLIT>ספטמבר 1986 אירעה ל<SPLIT>נוסייר תאונת עבודה<SPLIT>, ו<SPLIT>כ<SPLIT>תוצאה מ<SPLIT>הלם אלקטרוני ש<SPLIT>גרם לכווייה חמורה בידו<SPLIT>, סבל מליקוי ב<SPLIT>תפקוד רגלו ה<SPLIT>שמאלית<SPLIT>.}
 False positives: {
+לכווייה
 מליקוי
 } False negatives: {
+ל
+כווייה
 מ
 ליקוי
 }
@@ -5275,10 +5323,11 @@ False positives: {
 Expected: {
 מקורות ב<SPLIT>משטרת ניו יורק מסרו כי הצליחו לזהות את ה<SPLIT>מספר ה<SPLIT>סידורי של ה<SPLIT>אקדח שבו ירה נוסייר ב<SPLIT>כהנא<SPLIT>.}
 Predicted: {
-מקורות ב<SPLIT>משטרת ניו יורק מסרו כי הצליחו לזהות את ה<SPLIT>מספר ה<SPLIT>סידורי של ה<SPLIT>אקדח ש<SPLIT>בו ירה נוסייר ב<SPLIT>כהנא<SPLIT>.}
+מקורות ב<SPLIT>משטרת ניו יורק מסרו כי הצליחו לזהות את ה<SPLIT>מספר ה<SPLIT>סידורי של ה<SPLIT>אקדח ש<SPLIT>ב<SPLIT>ו ירה נוסייר ב<SPLIT>כהנא<SPLIT>.}
 False positives: {
 ש
-בו
+ב
+ו
 } False negatives: {
 שבו
 }
@@ -5405,8 +5454,10 @@ False positives: {
 Expected: {
 קוהל מצדו אמר<SPLIT>, שארצו תסייע ל<SPLIT>מוסקווה ב<SPLIT>תהליך הבנייה מחדש<SPLIT>, ו<SPLIT>תפעל אצל בעלות בריתה כדי ש<SPLIT>גם הן יעזרו בשיקומה של בריה"ם<SPLIT>.}
 Predicted: {
-קוהל מצדו אמר<SPLIT>, ש<SPLIT>ארצו תסייע למוסקווה ב<SPLIT>תהליך ה<SPLIT>בנייה מ<SPLIT>חדש<SPLIT>, ו<SPLIT>תפעל אצל בעלות בריתה כדי ש<SPLIT>גם הן יעזרו ב<SPLIT>שיקומה של בריה"ם<SPLIT>.}
+קוהל מצד<SPLIT>ו אמר<SPLIT>, ש<SPLIT>ארצו תסייע למוסקווה ב<SPLIT>תהליך ה<SPLIT>בנייה מ<SPLIT>חדש<SPLIT>, ו<SPLIT>תפעל אצל בעלות בריתה כדי ש<SPLIT>גם הן יעזרו ב<SPLIT>שיקומה של בריה"ם<SPLIT>.}
 False positives: {
+מצד
+ו
 ש
 ארצו
 למוסקווה
@@ -5417,6 +5468,7 @@ False positives: {
 ב
 שיקומה
 } False negatives: {
+מצדו
 שארצו
 ל
 מוסקווה
@@ -5439,18 +5491,15 @@ False positives: {
 Expected: {
 שאנדרה שקאר הושבע אתמול ל<SPLIT>ראשות ממשלה ה<SPLIT>מבוססת על פרלמנט רב<SPLIT>-<SPLIT>סיעות ו<SPLIT>תככים ב<SPLIT>מדינה שסועה עקב אלימות בדלנית<SPLIT>, דתית<SPLIT>, ו<SPLIT>מעמדית<SPLIT>.}
 Predicted: {
-ש<SPLIT>אנדרה שקאר הושבע אתמול ל<SPLIT>ראשות ממשלה ה<SPLIT>מבוססת על פרלמנט רב<SPLIT>-<SPLIT>סיעות ו<SPLIT>תככים ב<SPLIT>מדינה ש<SPLIT>סועה עקב אלימות ב<SPLIT>דלנית<SPLIT>, דתית<SPLIT>, ו<SPLIT>מעמדית<SPLIT>.}
+ש<SPLIT>אנדרה שקאר הושבע אתמול ל<SPLIT>ראשות ממשלה ה<SPLIT>מבוססת על פרלמנט רב<SPLIT>-<SPLIT>סיעות ו<SPLIT>תככים ב<SPLIT>מדינה ש<SPLIT>סועה עקב אלימות בדלנית<SPLIT>, דתית<SPLIT>, ו<SPLIT>מעמדית<SPLIT>.}
 False positives: {
 ש
 אנדרה
 ש
 סועה
-ב
-דלנית
 } False negatives: {
 שאנדרה
 שסועה
-בדלנית
 }
 
 Expected: {
@@ -5467,12 +5516,15 @@ False positives: {
 Expected: {
 נוסף על כל אלה שקועה הודו ב<SPLIT>משבר כלכלי עמוק ש<SPLIT>החריף מ<SPLIT>אז פלישת עיראק ל<SPLIT>כוויית<SPLIT>.}
 Predicted: {
-נוסף על כל אלה ש<SPLIT>קועה הודו ב<SPLIT>משבר כלכלי עמוק ש<SPLIT>החריף מ<SPLIT>אז פלישת עיראק ל<SPLIT>כוויית<SPLIT>.}
+נוסף על כל אלה ש<SPLIT>קועה הודו ב<SPLIT>משבר כלכלי עמוק ש<SPLIT>החריף מ<SPLIT>אז פלישת עיראק לכוויית<SPLIT>.}
 False positives: {
 ש
 קועה
+לכוויית
 } False negatives: {
 שקועה
+ל
+כוויית
 }
 
 Expected: {
@@ -5566,14 +5618,14 @@ False positives: {
 Expected: {
 אני חושב<SPLIT>, כי נחוץ קצת משא<SPLIT>-<SPLIT>ו<SPLIT>מתן<SPLIT>, ו<SPLIT>קצת התפייסות<SPLIT>, ו<SPLIT>אני חושב שבסופו של דבר יהיה הסדר כלשהו של שטחים תמורת שלום<SPLIT>.}
 Predicted: {
-אני חושב<SPLIT>, כי נחוץ קצת משא<SPLIT>-<SPLIT>ו<SPLIT>מתן<SPLIT>, ו<SPLIT>קצת ה<SPLIT>תפייסות<SPLIT>, ו<SPLIT>אני חושב שבסופו של דבר יהיה ה<SPLIT>סדר כלשהו של שטחים תמורת שלום<SPLIT>.}
+אני חושב<SPLIT>, כי נחוץ קצת משא<SPLIT>-<SPLIT>ומתן<SPLIT>, ו<SPLIT>קצת התפייסות<SPLIT>, ו<SPLIT>אני חושב שבסופו של דבר יהיה ה<SPLIT>סדר כלשהו של שטחים תמורת שלום<SPLIT>.}
 False positives: {
-ה
-תפייסות
+ומתן
 ה
 סדר
 } False negatives: {
-התפייסות
+ו
+מתן
 הסדר
 }
 
@@ -5602,12 +5654,15 @@ False positives: {
 Expected: {
 מצבו של ה<SPLIT>שוטר עופר חאגבי<SPLIT>, ש<SPLIT>נדקר אתמול בבוקר ב<SPLIT>רח ה<SPLIT>נביאים ב<SPLIT>ירושלים על ידי צעיר ערבי מ<SPLIT>שכם<SPLIT>, מוסיף להיות קשה ו<SPLIT>הוא טרם יצא מ<SPLIT>כלל סכנה<SPLIT>.}
 Predicted: {
-מצבו של ה<SPLIT>שוטר עופר חאגבי<SPLIT>, ש<SPLIT>נדקר אתמול ב<SPLIT>בוקר ב<SPLIT>רח ה<SPLIT>נביאים ב<SPLIT>ירושלים על ידי צעיר ערבי משכם<SPLIT>, מוסיף להיות קשה ו<SPLIT>הוא טרם יצא מ<SPLIT>כלל סכנה<SPLIT>.}
+מצבו של ה<SPLIT>שוטר עופר חאגבי<SPLIT>, שנדקר אתמול ב<SPLIT>בוקר ב<SPLIT>רח ה<SPLIT>נביאים ב<SPLIT>ירושלים על ידי צעיר ערבי משכם<SPLIT>, מוסיף להיות קשה ו<SPLIT>הוא טרם יצא מ<SPLIT>כלל סכנה<SPLIT>.}
 False positives: {
+שנדקר
 ב
 בוקר
 משכם
 } False negatives: {
+ש
+נדקר
 בבוקר
 מ
 שכם
@@ -5909,13 +5964,13 @@ False positives: {
 Expected: {
 ל<SPLIT>נאגטס<SPLIT>: אולדרידג 40<SPLIT>, הרוקי כריס גקסון במשחקו ה<SPLIT>ראשון 26<SPLIT>.}
 Predicted: {
-לנאגטס<SPLIT>: אולדרידג 40<SPLIT>, ה<SPLIT>רוקי כריס גקסון ב<SPLIT>משחקו ה<SPLIT>ראשון 26<SPLIT>.}
+לנאגטס<SPLIT>: אולדרידג 40<SPLIT>, ה<SPLIT>רוקי כריס גקסון במשחק<SPLIT>ו ה<SPLIT>ראשון 26<SPLIT>.}
 False positives: {
 לנאגטס
 ה
 רוקי
-ב
-משחקו
+במשחק
+ו
 } False negatives: {
 ל
 נאגטס
@@ -5932,6 +5987,17 @@ False positives: {
 הרכב
 } False negatives: {
 בהרכב
+}
+
+Expected: {
+"<SPLIT>אנו מקווים כי נהיה ה<SPLIT>חיילים ה<SPLIT>ראשונים ש<SPLIT>יחזרו ל<SPLIT>כוויית<SPLIT>.}
+Predicted: {
+"<SPLIT>אנו מקווים כי נהיה ה<SPLIT>חיילים ה<SPLIT>ראשונים ש<SPLIT>יחזרו לכוויית<SPLIT>.}
+False positives: {
+לכוויית
+} False negatives: {
+ל
+כוויית
 }
 
 Expected: {
@@ -5973,11 +6039,14 @@ False positives: {
 Expected: {
 עקילוב<SPLIT>, בעליה של חברה ל<SPLIT>יבוא ו<SPLIT>שיווק מכשירי חשמל<SPLIT>, ה<SPLIT>מודע ל<SPLIT>כך שקרנו של רחוב אלנבי ירדה<SPLIT>, מוכן להפחית את שכר ה<SPLIT>דירה ו<SPLIT>להסתפק ב<SPLIT>4,000 דולר ל<SPLIT>חודש<SPLIT>.}
 Predicted: {
-עקילוב<SPLIT>, בעליה של חברה ל<SPLIT>יבוא ו<SPLIT>שיווק מכשירי חשמל<SPLIT>, ה<SPLIT>מודע ל<SPLIT>כך ש<SPLIT>קרנו של רחוב אלנבי ירדה<SPLIT>, מוכן להפחית את שכר ה<SPLIT>דירה ו<SPLIT>להסתפק ב<SPLIT>4,000 דולר ל<SPLIT>חודש<SPLIT>.}
+עקילוב<SPLIT>, ב<SPLIT>עליה של חברה ל<SPLIT>יבוא ו<SPLIT>שיווק מכשירי חשמל<SPLIT>, ה<SPLIT>מודע ל<SPLIT>כך ש<SPLIT>קרנו של רחוב אלנבי ירדה<SPLIT>, מוכן להפחית את שכר ה<SPLIT>דירה ו<SPLIT>להסתפק ב<SPLIT>4,000 דולר ל<SPLIT>חודש<SPLIT>.}
 False positives: {
+ב
+עליה
 ש
 קרנו
 } False negatives: {
+בעליה
 שקרנו
 }
 
@@ -5995,14 +6064,17 @@ False positives: {
 Expected: {
 לידס עלתה למקום ה<SPLIT>חמישי אחרי ש<SPLIT>ניצחה אתמול בחוץ ב<SPLIT>משחק השלמה את מנצסטר סיטי 3 2<SPLIT>.}
 Predicted: {
-לידס עלתה למקום ה<SPLIT>חמישי אחרי ש<SPLIT>ניצחה אתמול ב<SPLIT>חוץ ב<SPLIT>משחק ה<SPLIT>שלמה את מנצסטר סיטי 3 2<SPLIT>.}
+לידס עלתה למקום ה<SPLIT>חמישי אחרי ש<SPLIT>ניצחה אתמול ב<SPLIT>חוץ במשחק ה<SPLIT>שלמה את מנצסטר סיטי 3 2<SPLIT>.}
 False positives: {
 ב
 חוץ
+במשחק
 ה
 שלמה
 } False negatives: {
 בחוץ
+ב
+משחק
 השלמה
 }
 
@@ -6023,14 +6095,11 @@ False positives: {
 Expected: {
 בריאנט הוא שחקן חזק מאוד ש<SPLIT>יכול היה לעזור ל<SPLIT>מכבי מתחת לסלים<SPLIT>.}
 Predicted: {
-בריאנט הוא שחקן חזק מאוד ש<SPLIT>יכול היה ל<SPLIT>עזור ל<SPLIT>מכבי מתחת ל<SPLIT>סלים<SPLIT>.}
+בריאנט הוא שחקן חזק מאוד ש<SPLIT>יכול היה לעזור ל<SPLIT>מכבי מתחת ל<SPLIT>סלים<SPLIT>.}
 False positives: {
-ל
-עזור
 ל
 סלים
 } False negatives: {
-לעזור
 לסלים
 }
 
@@ -6070,12 +6139,15 @@ False positives: {
 Expected: {
 נ שאפו לנצח כדי לשפר את מצב ה<SPLIT>רוח בעקבות ה<SPLIT>ארועים ה<SPLIT>סוערים ש<SPLIT>עברו עליהם בשבוע ש<SPLIT>עבר ב<SPLIT>ירושלים<SPLIT>.}
 Predicted: {
-נ ש<SPLIT>אפו לנצח כדי לשפר את מצב ה<SPLIT>רוח בעקבות ה<SPLIT>ארועים ה<SPLIT>סוערים ש<SPLIT>עברו עליהם בשבוע ש<SPLIT>עבר ב<SPLIT>ירושלים<SPLIT>.}
+נ ש<SPLIT>אפו לנצח כדי לשפר את מצב ה<SPLIT>רוח בעקבות ה<SPLIT>ארועים ה<SPLIT>סוערים ש<SPLIT>עברו עלי<SPLIT>הם בשבוע ש<SPLIT>עבר ב<SPLIT>ירושלים<SPLIT>.}
 False positives: {
 ש
 אפו
+עלי
+הם
 } False negatives: {
 שאפו
+עליהם
 }
 
 Expected: {
@@ -6138,6 +6210,17 @@ False positives: {
 }
 
 Expected: {
+ענפי גפנים משתרגים הם מוטיב נפוץ ב<SPLIT>רצפות פסיפס ביזנטיות ב<SPLIT>ארץ ישראל<SPLIT>, ו<SPLIT>גם ב<SPLIT>בתי כנסת בני ה<SPLIT>תקופה<SPLIT>, כמו ב<SPLIT>עזה ו<SPLIT>ב<SPLIT>מעון<SPLIT>.}
+Predicted: {
+ענפי גפנים משתרגים הם מוטיב נפוץ ברצפות פסיפס ביזנטיות ב<SPLIT>ארץ ישראל<SPLIT>, ו<SPLIT>גם ב<SPLIT>בתי כנסת בני ה<SPLIT>תקופה<SPLIT>, כמו ב<SPLIT>עזה ו<SPLIT>ב<SPLIT>מעון<SPLIT>.}
+False positives: {
+ברצפות
+} False negatives: {
+ב
+רצפות
+}
+
+Expected: {
 נושא ה<SPLIT>פסיפס<SPLIT>, ל<SPLIT>דעת חוקרים רבים<SPLIT>, הוא זיכרון ה<SPLIT>חיים את ה<SPLIT>מתים<SPLIT>, ו<SPLIT>ה<SPLIT>מעבר בין ה<SPLIT>עולם ה<SPLIT>זה ל<SPLIT>עולם ה<SPLIT>בא<SPLIT>.}
 Predicted: {
 נושא ה<SPLIT>פסיפס<SPLIT>, לדעת חוקרים רבים<SPLIT>, הוא זיכרון ה<SPLIT>חיים את ה<SPLIT>מתים<SPLIT>, ו<SPLIT>ה<SPLIT>מעבר בין ה<SPLIT>עולם ה<SPLIT>זה לעולם ה<SPLIT>בא<SPLIT>.}
@@ -6165,13 +6248,16 @@ False positives: {
 Expected: {
 מס רווח הון<SPLIT>הוא מס ה<SPLIT>מוטל על ישות ה<SPLIT>מוכרת נכס תוך גידול ב<SPLIT>הון של<SPLIT>ה<SPLIT>; גידול הון זה מבוסס על ה<SPLIT>הפרש ש<SPLIT>בין תמורה ש<SPLIT>התקבלה על מכירת נכס לבין ה<SPLIT>מחיר ב<SPLIT>ו נרכש ב<SPLIT>מקור (<SPLIT>"<SPLIT>יתרת ה<SPLIT>מחיר ה<SPLIT>מקורי<SPLIT>"<SPLIT>)<SPLIT>.}
 Predicted: {
-מס רווח הון<SPLIT>הוא מס ה<SPLIT>מוטל על ישות ה<SPLIT>מוכרת נכס תוך גידול ב<SPLIT>הון ש<SPLIT>לה<SPLIT>; גידול הון זה מבוסס על ה<SPLIT>הפרש ש<SPLIT>בין תמורה ש<SPLIT>התקבלה על מכירת נכס לבין ה<SPLIT>מחיר ב<SPLIT>ו נרכש ב<SPLIT>מקור (<SPLIT>"<SPLIT>יתרת ה<SPLIT>מחיר ה<SPLIT>מקורי<SPLIT>"<SPLIT>)<SPLIT>.}
+מס רווח הון<SPLIT>הוא מס ה<SPLIT>מוטל על ישות ה<SPLIT>מוכרת נכס תוך גידול ב<SPLIT>הון ש<SPLIT>לה<SPLIT>; גידול הון זה מבוסס על ה<SPLIT>הפרש שבין תמורה ש<SPLIT>התקבלה על מכירת נכס לבין ה<SPLIT>מחיר ב<SPLIT>ו נרכש ב<SPLIT>מקור (<SPLIT>"<SPLIT>יתרת ה<SPLIT>מחיר ה<SPLIT>מקורי<SPLIT>"<SPLIT>)<SPLIT>.}
 False positives: {
 ש
 לה
+שבין
 } False negatives: {
 של
 ה
+ש
+בין
 }
 
 Expected: {
@@ -6191,13 +6277,10 @@ False positives: {
 Expected: {
 רעידת ה<SPLIT>אדמה גרמה ל<SPLIT>נזקים ב<SPLIT>בניינים ב<SPLIT>אילת ו<SPLIT>ב<SPLIT>עקבה<SPLIT>.}
 Predicted: {
-רעידת ה<SPLIT>אדמה גרמה לנזקים ב<SPLIT>בניינים ב<SPLIT>אילת ו<SPLIT>בעקבה<SPLIT>.}
+רעידת ה<SPLIT>אדמה גרמה ל<SPLIT>נזקים ב<SPLIT>בניינים ב<SPLIT>אילת ו<SPLIT>בעקבה<SPLIT>.}
 False positives: {
-לנזקים
 בעקבה
 } False negatives: {
-ל
-נזקים
 ב
 עקבה
 }
@@ -6225,16 +6308,13 @@ False positives: {
 Expected: {
 כ<SPLIT>מודל ל<SPLIT>סעיף זה שימשה ה<SPLIT>הוראה ב<SPLIT>צ'רטר ה<SPLIT>קנדי ל<SPLIT>זכויות ו<SPLIT>חירויות (<SPLIT>canadian charter of rights and freedoms<SPLIT>)<SPLIT>, ש<SPLIT>נחקק ב<SPLIT>שנת 1982<SPLIT>, כ<SPLIT>חלק מ<SPLIT>תהליך של היפרדות חוקתית של קנדה מ<SPLIT>בריטניה<SPLIT>, ב<SPLIT>הובלת ראש ממשלת קנדה פייר אליוט טרודו<SPLIT>.}
 Predicted: {
-כ<SPLIT>מודל ל<SPLIT>סעיף זה שימשה ה<SPLIT>הוראה ב<SPLIT>צ'רטר ה<SPLIT>קנדי ל<SPLIT>זכויות ו<SPLIT>חירויות (<SPLIT>canadian charter of rights and freedoms<SPLIT>)<SPLIT>, ש<SPLIT>נחקק ב<SPLIT>שנת 1982<SPLIT>, כ<SPLIT>חלק מתהליך של ה<SPLIT>יפרדות חוקתית של קנדה מבריטניה<SPLIT>, ב<SPLIT>הובלת ראש ממשלת קנדה פייר אליוט טרודו<SPLIT>.}
+כמודל ל<SPLIT>סעיף זה שימשה ה<SPLIT>הוראה ב<SPLIT>צ'רטר ה<SPLIT>קנדי ל<SPLIT>זכויות ו<SPLIT>חירויות (<SPLIT>canadian charter of rights and freedoms<SPLIT>)<SPLIT>, ש<SPLIT>נחקק ב<SPLIT>שנת 1982<SPLIT>, כ<SPLIT>חלק מ<SPLIT>תהליך של היפרדות חוקתית של קנדה מבריטניה<SPLIT>, ב<SPLIT>הובלת ראש ממשלת קנדה פייר אליוט טרודו<SPLIT>.}
 False positives: {
-מתהליך
-ה
-יפרדות
+כמודל
 מבריטניה
 } False negatives: {
-מ
-תהליך
-היפרדות
+כ
+מודל
 מ
 בריטניה
 }
@@ -6264,12 +6344,15 @@ False positives: {
 Expected: {
 לעומת תפיסת ה<SPLIT>חוקה כ<SPLIT>משריינת ערכים יסודיים<SPLIT>, מציע ספיר את '<SPLIT>ה<SPLIT>מודל ה<SPLIT>דיאלוגי ל<SPLIT>חוקה<SPLIT>'<SPLIT>.}
 Predicted: {
-לעומת תפיסת ה<SPLIT>חוקה כמשריינת ערכים יסודיים<SPLIT>, מציע ספיר את '<SPLIT>ה<SPLIT>מודל ה<SPLIT>דיאלוגי ל<SPLIT>חוקה<SPLIT>'<SPLIT>.}
+לעומת תפיסת ה<SPLIT>חוקה כמשריינת ערכים יסודיים<SPLIT>, מציע ספיר את '<SPLIT>המודל ה<SPLIT>דיאלוגי ל<SPLIT>חוקה<SPLIT>'<SPLIT>.}
 False positives: {
 כמשריינת
+המודל
 } False negatives: {
 כ
 משריינת
+ה
+מודל
 }
 
 Expected: {
@@ -6322,16 +6405,16 @@ False positives: {
 Expected: {
 צפורי קרא לקדם את '<SPLIT>חוק ה<SPLIT>משילות<SPLIT>' אות<SPLIT>ו ניסח ו<SPLIT>אשר מיישם את '<SPLIT>ה<SPLIT>מודל ה<SPLIT>בריטי<SPLIT>' לפי<SPLIT>ו בית ה<SPLIT>משפט יכול רק להמליץ ל<SPLIT>כנסת על שינוי חקיקה בשל אי התאמה ל<SPLIT>חוק יסוד<SPLIT>.}
 Predicted: {
-צפורי קרא לקדם את '<SPLIT>חוק ה<SPLIT>משילות<SPLIT>' אותו ניסח ואשר מיישם את '<SPLIT>ה<SPLIT>מודל ה<SPLIT>בריטי' לפי<SPLIT>ו בית ה<SPLIT>משפט יכול רק להמליץ ל<SPLIT>כנסת על שינוי חקיקה בשל אי התאמה ל<SPLIT>חוק יסוד<SPLIT>.}
+צפורי קרא לקדם את '<SPLIT>חוק ה<SPLIT>משילות<SPLIT>' אותו ניסח ו<SPLIT>אשר מיישם את '<SPLIT>המודל ה<SPLIT>בריטי' לפי<SPLIT>ו בית ה<SPLIT>משפט יכול רק להמליץ ל<SPLIT>כנסת על שינוי חקיקה בשל אי התאמה ל<SPLIT>חוק יסוד<SPLIT>.}
 False positives: {
 אותו
-ואשר
+המודל
 בריטי'
 } False negatives: {
 אות
 ו
-ו
-אשר
+ה
+מודל
 בריטי
 '
 }
@@ -6446,6 +6529,28 @@ False positives: {
 }
 
 Expected: {
+ה<SPLIT>מנדט חודש ב<SPLIT>רציפות ו<SPLIT>הוא תקף עד 30 ב<SPLIT>יוני 2023<SPLIT>.}
+Predicted: {
+ה<SPLIT>מנדט חודש ברציפות ו<SPLIT>הוא תקף עד 30 ב<SPLIT>יוני 2023<SPLIT>.}
+False positives: {
+ברציפות
+} False negatives: {
+ב
+רציפות
+}
+
+Expected: {
+נכון ל<SPLIT>שנת 2021<SPLIT>, נכללים ב<SPLIT>ה כ<SPLIT>חמישה מיליון פליטים<SPLIT>.}
+Predicted: {
+נכון ל<SPLIT>שנת 2021<SPLIT>, נכללים בה כ<SPLIT>חמישה מיליון פליטים<SPLIT>.}
+False positives: {
+בה
+} False negatives: {
+ב
+ה
+}
+
+Expected: {
 ב<SPLIT>נוסף ל<SPLIT>פעילות ה<SPLIT>הומניטרית ו<SPLIT>ה<SPLIT>חינוכית<SPLIT>, ל<SPLIT>אונר"א מחלקה של מיקרו מימון ל<SPLIT>עסקים קטנים<SPLIT>, הלוואות<SPLIT>, ו<SPLIT>פרויקטי תשתיות - בעיקר ב<SPLIT>מחנות ה<SPLIT>פליטים<SPLIT>.}
 Predicted: {
 ב<SPLIT>נוסף ל<SPLIT>פעילות ה<SPLIT>הומניטרית ו<SPLIT>ה<SPLIT>חינוכית<SPLIT>, ל<SPLIT>אונר"א מחלקה של מיקרו מימון ל<SPLIT>עסקים קטנים<SPLIT>, ה<SPLIT>לוואות<SPLIT>, ו<SPLIT>פרויקטי תשתיות - בעיקר ב<SPLIT>מחנות ה<SPLIT>פליטים<SPLIT>.}
@@ -6454,6 +6559,17 @@ False positives: {
 לוואות
 } False negatives: {
 הלוואות
+}
+
+Expected: {
+הגדרת ה<SPLIT>פליטים של אונר"א אף אינה מחריגה מ<SPLIT>מצבת ה<SPLIT>פליטים את אלו ש<SPLIT>ביצעו פשע מלחמה או פשע נגד ה<SPLIT>אנושות<SPLIT>, אוכלוסייה ש<SPLIT>נציבות ה<SPLIT>או"ם ל<SPLIT>פליטים שוללת מ<SPLIT>הם את מעמד ה<SPLIT>פליט<SPLIT>.}
+Predicted: {
+הגדרת ה<SPLIT>פליטים של אונר"א אף אינה מחריגה ממצבת ה<SPLIT>פליטים את אלו ש<SPLIT>ביצעו פשע מלחמה או פשע נגד ה<SPLIT>אנושות<SPLIT>, אוכלוסייה ש<SPLIT>נציבות ה<SPLIT>או"ם ל<SPLIT>פליטים שוללת מ<SPLIT>הם את מעמד ה<SPLIT>פליט<SPLIT>.}
+False positives: {
+ממצבת
+} False negatives: {
+מ
+מצבת
 }
 
 Expected: {
@@ -6577,10 +6693,11 @@ False positives: {
 Expected: {
 ב<SPLIT>מסגרת<SPLIT>ה<SPLIT>כספים ש<SPLIT>הושבו ו<SPLIT>ה<SPLIT>קנסות ש<SPLIT>נגזרו הוחזר מלוא סכום ה<SPLIT>חוב ל<SPLIT>נושים ה<SPLIT>ראשוניים (<SPLIT>עובדי ה<SPLIT>בנק ו<SPLIT>רשויות ה<SPLIT>מס<SPLIT>)<SPLIT>, ו<SPLIT>כ<SPLIT>־<SPLIT>60<SPLIT>% מ<SPLIT>ה<SPLIT>סכום ש<SPLIT>בנק ישראל השיב ל<SPLIT>לקוחות ה<SPLIT>בנק מ<SPLIT>כספ<SPLIT>ו<SPLIT>.}
 Predicted: {
-ב<SPLIT>מסגרת<SPLIT>ה<SPLIT>כספים ש<SPLIT>הושבו ו<SPLIT>ה<SPLIT>קנסות ש<SPLIT>נגזרו הוחזר מלוא סכום ה<SPLIT>חוב ל<SPLIT>נושים ה<SPLIT>ראשוניים (<SPLIT>עובדי ה<SPLIT>בנק ו<SPLIT>רשויות ה<SPLIT>מס<SPLIT>)<SPLIT>, ו<SPLIT>כ<SPLIT>־<SPLIT>60<SPLIT>% מ<SPLIT>ה<SPLIT>סכום ש<SPLIT>בנק ישראל השיב ל<SPLIT>לקוחות ה<SPLIT>בנק מ<SPLIT>כספו<SPLIT>.}
+ב<SPLIT>מסגרת<SPLIT>ה<SPLIT>כספים ש<SPLIT>הושבו ו<SPLIT>ה<SPLIT>קנסות ש<SPLIT>נגזרו הוחזר מלוא סכום ה<SPLIT>חוב ל<SPLIT>נושים ה<SPLIT>ראשוניים (<SPLIT>עובדי ה<SPLIT>בנק ו<SPLIT>רשויות ה<SPLIT>מס<SPLIT>)<SPLIT>, ו<SPLIT>כ<SPLIT>־<SPLIT>60<SPLIT>% מ<SPLIT>ה<SPLIT>סכום ש<SPLIT>בנק ישראל השיב ל<SPLIT>לקוחות ה<SPLIT>בנק מכספו<SPLIT>.}
 False positives: {
-כספו
+מכספו
 } False negatives: {
+מ
 כספ
 ו
 }
@@ -6588,12 +6705,15 @@ False positives: {
 Expected: {
 אמנם מדובר ב<SPLIT>תהליך אשר החל עוד לפני חשיפת ה<SPLIT>פרשה ו<SPLIT>התרחש מ<SPLIT>מגוון סיבות<SPLIT>, אך ה<SPLIT>פרשה האיצה אות<SPLIT>ו בשל שני גורמים מרכזיים<SPLIT>:}
 Predicted: {
-אמנם מדובר ב<SPLIT>תהליך אשר החל עוד לפני חשיפת ה<SPLIT>פרשה ו<SPLIT>התרחש מ<SPLIT>מגוון סיבות<SPLIT>, אך ה<SPLIT>פרשה ה<SPLIT>איצה אותו בשל שני גורמים מרכזיים<SPLIT>:}
+אמנם מדובר ב<SPLIT>תהליך אשר החל עוד לפני חשיפת ה<SPLIT>פרשה ו<SPLIT>התרחש ממגוון סיבות<SPLIT>, אך ה<SPLIT>פרשה ה<SPLIT>איצה אותו בשל שני גורמים מרכזיים<SPLIT>:}
 False positives: {
+ממגוון
 ה
 איצה
 אותו
 } False negatives: {
+מ
+מגוון
 האיצה
 אות
 ו
@@ -6602,14 +6722,11 @@ False positives: {
 Expected: {
 אביגדור השתחרר אחרי ש<SPLIT>סיים לרצות 4 מתוך 6 שנות ה<SPLIT>מאסר אשר נגזרו עלי<SPLIT>ו עקב מצב<SPLIT>ו ה<SPLIT>בריאותי<SPLIT>.}
 Predicted: {
-אביגדור השתחרר אחרי ש<SPLIT>סיים ל<SPLIT>רצות 4 מתוך 6 שנות ה<SPLIT>מאסר אשר נגזרו עליו עקב מצבו ה<SPLIT>בריאותי<SPLIT>.}
+אביגדור השתחרר אחרי ש<SPLIT>סיים לרצות 4 מתוך 6 שנות ה<SPLIT>מאסר אשר נגזרו עליו עקב מצבו ה<SPLIT>בריאותי<SPLIT>.}
 False positives: {
-ל
-רצות
 עליו
 מצבו
 } False negatives: {
-לרצות
 עלי
 ו
 מצב
@@ -6636,21 +6753,29 @@ False positives: {
 Expected: {
 שופטי בג"ץ<SPLIT>, דליה דורנר יצחק אנגלרד ו<SPLIT>אדמונד לוי<SPLIT>, נמנעו מ<SPLIT>להכריע ב<SPLIT>עתירה<SPLIT>, ו<SPLIT>המליצו להעלות את ה<SPLIT>בקשה ב<SPLIT>בית משפט ה<SPLIT>שלום<SPLIT>, ש<SPLIT>ב<SPLIT>ו מתנהל ה<SPLIT>משפט ה<SPLIT>פלילי<SPLIT>.}
 Predicted: {
-שופטי בג"ץ<SPLIT>, דליה דורנר יצחק אנגלרד ו<SPLIT>אדמונד לוי<SPLIT>, נמנעו מלהכריע בעתירה<SPLIT>, ו<SPLIT>ה<SPLIT>מליצו להעלות את ה<SPLIT>בקשה ב<SPLIT>בית משפט ה<SPLIT>שלום<SPLIT>, ש<SPLIT>בו מתנהל ה<SPLIT>משפט ה<SPLIT>פלילי<SPLIT>.}
+שופטי בג"ץ<SPLIT>, דליה דורנר יצחק אנגלרד ו<SPLIT>אדמונד לוי<SPLIT>, נמנעו מלהכריע בעתירה<SPLIT>, ו<SPLIT>ה<SPLIT>מליצו להעלות את ה<SPLIT>בקשה ב<SPLIT>בית משפט ה<SPLIT>שלום<SPLIT>, ש<SPLIT>ב<SPLIT>ו מתנהל ה<SPLIT>משפט ה<SPLIT>פלילי<SPLIT>.}
 False positives: {
 מלהכריע
 בעתירה
 ה
 מליצו
-בו
 } False negatives: {
 מ
 להכריע
 ב
 עתירה
 המליצו
-ב
-ו
+}
+
+Expected: {
+סעיף 4 משקף את ה<SPLIT>תפיסה<SPLIT>, כי ב<SPLIT>צד זכויות אדם קיימות גם חובות אדם<SPLIT>.}
+Predicted: {
+סעיף 4 משקף את התפיסה<SPLIT>, כי ב<SPLIT>צד זכויות אדם קיימות גם חובות אדם<SPLIT>.}
+False positives: {
+התפיסה
+} False negatives: {
+ה
+תפיסה
 }
 
 Expected: {
@@ -6679,13 +6804,10 @@ False positives: {
 Expected: {
 ב<SPLIT>פברואר 1940 נישאה ל<SPLIT>שלמה בשמי (<SPLIT>נפטר ב<SPLIT>-<SPLIT>1988<SPLIT>)<SPLIT>, מנהל "<SPLIT>שולמית<SPLIT>"<SPLIT>, ו<SPLIT>הוא שימש גם כ<SPLIT>סוכנ<SPLIT>ה ה<SPLIT>אמנותי<SPLIT>.}
 Predicted: {
-ב<SPLIT>פברואר 1940 נישאה לשלמה בשמי (<SPLIT>נפטר ב<SPLIT>-<SPLIT>1988<SPLIT>)<SPLIT>, מנהל "<SPLIT>שולמית<SPLIT>"<SPLIT>, ו<SPLIT>הוא שימש גם כ<SPLIT>סוכנה ה<SPLIT>אמנותי<SPLIT>.}
+ב<SPLIT>פברואר 1940 נישאה ל<SPLIT>שלמה בשמי (<SPLIT>נפטר ב<SPLIT>-<SPLIT>1988<SPLIT>)<SPLIT>, מנהל "<SPLIT>שולמית<SPLIT>"<SPLIT>, ו<SPLIT>הוא שימש גם כ<SPLIT>סוכנה ה<SPLIT>אמנותי<SPLIT>.}
 False positives: {
-לשלמה
 סוכנה
 } False negatives: {
-ל
-שלמה
 סוכנ
 ה
 }
@@ -6693,12 +6815,18 @@ False positives: {
 Expected: {
 ערב קום ה<SPLIT>מדינה ערכה עם משה וילנסקי מסע הופעות מרגש ב<SPLIT>מחנות ה<SPLIT>מעצר ב<SPLIT>קפריסין<SPLIT>, שם שרה את ה<SPLIT>שיר "<SPLIT>הביתה<SPLIT>" ו<SPLIT>גם שיר מוכר ב<SPLIT>יידיש ב<SPLIT>שם "<SPLIT>צימוקים ו<SPLIT>שקדים<SPLIT>" (<SPLIT>"<SPLIT>ראזשינקעס מיט מאנדלען<SPLIT>"<SPLIT>)<SPLIT>.}
 Predicted: {
-ערב קום ה<SPLIT>מדינה ערכה עם משה וילנסקי מסע הופעות מרגש ב<SPLIT>מחנות ה<SPLIT>מעצר ב<SPLIT>קפריסין<SPLIT>, שם שרה את ה<SPLIT>שיר "<SPLIT>ה<SPLIT>ביתה<SPLIT>" ו<SPLIT>גם שיר מוכר ביידיש ב<SPLIT>שם "<SPLIT>צימוקים ו<SPLIT>שקדים<SPLIT>" (<SPLIT>"<SPLIT>ראזשינקעס מיט מאנדלען<SPLIT>"<SPLIT>)<SPLIT>.}
+ערב קום ה<SPLIT>מדינה ערכה עם משה וילנסקי מסע הופעות מ<SPLIT>רגש ב<SPLIT>מחנות ה<SPLIT>מעצר בקפריסין<SPLIT>, שם שרה את ה<SPLIT>שיר "<SPLIT>ה<SPLIT>ביתה<SPLIT>" ו<SPLIT>גם שיר מוכר ביידיש ב<SPLIT>שם "<SPLIT>צימוקים ו<SPLIT>שקדים<SPLIT>" (<SPLIT>"<SPLIT>ראזשינקעס מיט מאנדלען<SPLIT>"<SPLIT>)<SPLIT>.}
 False positives: {
+מ
+רגש
+בקפריסין
 ה
 ביתה
 ביידיש
 } False negatives: {
+מרגש
+ב
+קפריסין
 הביתה
 ב
 יידיש
@@ -6707,15 +6835,18 @@ False positives: {
 Expected: {
 היא ביצעה ב<SPLIT>אותה תקופה גם שירים בעלי גוון תימני<SPLIT>, כמו ה<SPLIT>שיר "<SPLIT>אם ננעלו<SPLIT>" של רבי שלום שבזי (<SPLIT>אות<SPLIT>ו ביצעה ל<SPLIT>ימים גם עפרה חזה ב<SPLIT>עיבוד חדש<SPLIT>)<SPLIT>.}
 Predicted: {
-היא ביצעה ב<SPLIT>אותה תקופה גם שירים בעלי גוון תימני<SPLIT>, כמו ה<SPLIT>שיר "<SPLIT>אם ננעלו<SPLIT>" של רבי שלום ש<SPLIT>בזי (<SPLIT>אותו ביצעה ל<SPLIT>ימים גם עפרה חזה ב<SPLIT>עיבוד חדש<SPLIT>)<SPLIT>.}
+היא ביצעה ב<SPLIT>אותה תקופה גם שירים בעלי גוון תימני<SPLIT>, כמו ה<SPLIT>שיר "<SPLIT>אם ננעלו<SPLIT>" של רבי שלום ש<SPLIT>בזי (<SPLIT>אותו ביצעה לימים גם עפרה חזה ב<SPLIT>עיבוד חדש<SPLIT>)<SPLIT>.}
 False positives: {
 ש
 בזי
 אותו
+לימים
 } False negatives: {
 שבזי
 אות
 ו
+ל
+ימים
 }
 
 Expected: {
@@ -6757,15 +6888,12 @@ False positives: {
 Expected: {
 דמארי התארחה ב<SPLIT>חלק מ<SPLIT>הופעותי<SPLIT>ו של רייכל ו<SPLIT>ה<SPLIT>שניים אף החלו ב<SPLIT>חזרות ל<SPLIT>מופע משותף<SPLIT>, ש<SPLIT>לא זכתה לבצע<SPLIT>ו<SPLIT>.}
 Predicted: {
-דמארי ה<SPLIT>תארחה ב<SPLIT>חלק מ<SPLIT>הופעותיו של רייכל ו<SPLIT>ה<SPLIT>שניים אף החלו בחזרות ל<SPLIT>מופע משותף<SPLIT>, ש<SPLIT>לא זכתה לבצעו<SPLIT>.}
+דמארי התארחה ב<SPLIT>חלק מ<SPLIT>הופעותיו של רייכל ו<SPLIT>ה<SPLIT>שניים אף החלו בחזרות ל<SPLIT>מופע משותף<SPLIT>, ש<SPLIT>לא זכתה לבצעו<SPLIT>.}
 False positives: {
-ה
-תארחה
 הופעותיו
 בחזרות
 לבצעו
 } False negatives: {
-התארחה
 הופעותי
 ו
 ב
@@ -6775,20 +6903,28 @@ False positives: {
 }
 
 Expected: {
+ב<SPLIT>תחילה נעשה שימוש ב<SPLIT>מדד על מנת להעריך את רמת ה<SPLIT>הכרה של חולה לאחר ניתוח ראש<SPLIT>, אך כיום ה<SPLIT>מדד מיושם ב<SPLIT>מגוון תחומים - כולל רפואת חירום<SPLIT>, ב<SPLIT>ה הוא מתבצע על ידי רופא<SPLIT>, פרמדיק או חובש מיד ב<SPLIT>הערכה ה<SPLIT>ראשונית<SPLIT>.}
+Predicted: {
+ב<SPLIT>תחילה נעשה שימוש ב<SPLIT>מדד על מנת להעריך את רמת ה<SPLIT>הכרה של חולה לאחר ניתוח ראש<SPLIT>, אך כיום ה<SPLIT>מדד מיושם ב<SPLIT>מגוון תחומים - כולל רפואת חירום<SPLIT>, בה הוא מתבצע על ידי רופא<SPLIT>, פרמדיק או חובש מיד ב<SPLIT>הערכה ה<SPLIT>ראשונית<SPLIT>.}
+False positives: {
+בה
+} False negatives: {
+ב
+ה
+}
+
+Expected: {
 עין נפתחת ב<SPLIT>תגובה ל<SPLIT>דיבור<SPLIT>: אין לבלבל עם אדם ה<SPLIT>מתעורר מ<SPLIT>שינה<SPLIT>; מטופל כ<SPLIT>זה מקבל תוצאה של 4<SPLIT>, לא 3<SPLIT>.}
 Predicted: {
-עין נפתחת ב<SPLIT>תגובה לדיבור<SPLIT>: אין לבלבל עם אדם ה<SPLIT>מתעורר משינה<SPLIT>; מטופל כזה מקבל תוצאה של 4<SPLIT>, לא 3<SPLIT>.}
+עין נפתחת ב<SPLIT>תגובה לדיבור<SPLIT>: אין לבלבל עם אדם ה<SPLIT>מתעורר משינה<SPLIT>; מטופל כ<SPLIT>זה מקבל תוצאה של 4<SPLIT>, לא 3<SPLIT>.}
 False positives: {
 לדיבור
 משינה
-כזה
 } False negatives: {
 ל
 דיבור
 מ
 שינה
-כ
-זה
 }
 
 Expected: {
@@ -6848,13 +6984,16 @@ False positives: {
 Expected: {
 ה<SPLIT>חומר מביא ל<SPLIT>העלאה ב<SPLIT>מוליך ה<SPLIT>עצבי דופמין (<SPLIT>בעיקר ב<SPLIT>אזור קליפת ה<SPLIT>מוח ה<SPLIT>קדם<SPLIT>-<SPLIT>מצחית<SPLIT>)<SPLIT>, ו<SPLIT>כמו כן ל<SPLIT>העלאה ב<SPLIT>רמת ה<SPLIT>דופמין ו<SPLIT>נוראפינפרין<SPLIT>.}
 Predicted: {
-ה<SPLIT>חומר מביא להעלאה ב<SPLIT>מוליך ה<SPLIT>עצבי דופמין (<SPLIT>בעיקר ב<SPLIT>אזור קליפת ה<SPLIT>מוח ה<SPLIT>קדם<SPLIT>-<SPLIT>מצחית<SPLIT>)<SPLIT>, ו<SPLIT>כמו כן להעלאה ב<SPLIT>רמת ה<SPLIT>דופמין ו<SPLIT>נוראפינפרין<SPLIT>.}
+ה<SPLIT>חומר מביא להעלאה במוליך ה<SPLIT>עצבי דופמין (<SPLIT>בעיקר ב<SPLIT>אזור קליפת ה<SPLIT>מוח ה<SPLIT>קדם<SPLIT>-<SPLIT>מצחית<SPLIT>)<SPLIT>, ו<SPLIT>כמו כן להעלאה ב<SPLIT>רמת ה<SPLIT>דופמין ו<SPLIT>נוראפינפרין<SPLIT>.}
 False positives: {
 להעלאה
+במוליך
 להעלאה
 } False negatives: {
 ל
 העלאה
+ב
+מוליך
 ל
 העלאה
 }
@@ -6911,24 +7050,23 @@ False positives: {
 Expected: {
 סלומון ערך את מחקר<SPLIT>ו על 3,000 מסטקטומיות<SPLIT>, ו<SPLIT>הצליח לראשונה לערוך השוואה בין רקמות שד בריאות ל<SPLIT>רקמות שד נגועות באמצעות קרני רנטגן ו<SPLIT>ב<SPLIT>כך הוכיח ש<SPLIT>ניתן לבצע אבחנה רדיולוגית בין קרצינומות ממאירות ו<SPLIT>שפירות<SPLIT>.}
 Predicted: {
-סלומון ערך את מחקר<SPLIT>ו על 3,000 מסטקטומיות<SPLIT>, ו<SPLIT>הצליח לראשונה לערוך השוואה בין רקמות שד בריאות לרקמות שד נגועות באמצעות קרני רנטגן ו<SPLIT>ב<SPLIT>כך הוכיח ש<SPLIT>ניתן לבצע אבחנה רדיולוגית בין קרצינומות מ<SPLIT>מאירות ו<SPLIT>שפירות<SPLIT>.}
+סלומון ערך את מחקרו על 3,000 מסטקטומיות<SPLIT>, ו<SPLIT>הצליח לראשונה לערוך השוואה בין רקמות שד בריאות לרקמות שד נגועות באמצעות קרני רנטגן ו<SPLIT>ב<SPLIT>כך הוכיח ש<SPLIT>ניתן לבצע אבחנה רדיולוגית בין קרצינומות ממאירות ו<SPLIT>שפירות<SPLIT>.}
 False positives: {
+מחקרו
 לרקמות
-מ
-מאירות
 } False negatives: {
+מחקר
+ו
 ל
 רקמות
-ממאירות
 }
 
 Expected: {
 ב<SPLIT>המשך כתב עלי<SPLIT>ו רוברט איגן (<SPLIT>egan<SPLIT>) ש<SPLIT>"<SPLIT>על אף חוסר ה<SPLIT>הכרה ה<SPLIT>מוחלט על ידי עמיתי<SPLIT>ו ב<SPLIT>עיר<SPLIT>ו [<SPLIT>פילדלפיה<SPLIT>]<SPLIT>, גרשון<SPLIT>-<SPLIT>כהן התעקש על ה<SPLIT>שימוש ב<SPLIT>בדיקת רנטגן של ה<SPLIT>שד<SPLIT>, המשיך כ<SPLIT>תלמיד מסור של ה<SPLIT>ממוגרפיה ו<SPLIT>כתב ללא לאות על ה<SPLIT>נושא ב<SPLIT>ניסיון לשכנע את עמיתי<SPLIT>ו<SPLIT>.}
 Predicted: {
-ב<SPLIT>המשך כתב עליו רוברט איגן (<SPLIT>egan<SPLIT>) ש<SPLIT>"על אף חוסר ה<SPLIT>הכרה ה<SPLIT>מוחלט על ידי עמיתיו ב<SPLIT>עירו [<SPLIT>פילדלפיה<SPLIT>]<SPLIT>, גרשון<SPLIT>-<SPLIT>כהן ה<SPLIT>תעקש על ה<SPLIT>שימוש ב<SPLIT>בדיקת רנטגן של ה<SPLIT>שד<SPLIT>, המשיך כתלמיד מסור של ה<SPLIT>ממוגרפיה ו<SPLIT>כתב ללא לאות על ה<SPLIT>נושא ב<SPLIT>ניסיון לשכנע את עמיתיו<SPLIT>.}
+ב<SPLIT>המשך כתב עליו רוברט איגן (<SPLIT>egan<SPLIT>) ש<SPLIT>"<SPLIT>על אף חוסר ה<SPLIT>הכרה ה<SPLIT>מוחלט על ידי עמיתיו ב<SPLIT>עירו [<SPLIT>פילדלפיה<SPLIT>]<SPLIT>, גרשון<SPLIT>-<SPLIT>כהן ה<SPLIT>תעקש על ה<SPLIT>שימוש ב<SPLIT>בדיקת רנטגן של ה<SPLIT>שד<SPLIT>, המשיך כתלמיד מסור של ה<SPLIT>ממוגרפיה ו<SPLIT>כתב ללא לאות על ה<SPLIT>נושא ב<SPLIT>ניסיון לשכנע את עמיתיו<SPLIT>.}
 False positives: {
 עליו
-"על
 עמיתיו
 עירו
 ה
@@ -6938,8 +7076,6 @@ False positives: {
 } False negatives: {
 עלי
 ו
-"
-על
 עמיתי
 ו
 עיר
@@ -7180,34 +7316,40 @@ False positives: {
 Expected: {
 מחקרים קליניים מראים ש<SPLIT>חולים ש<SPLIT>התגלו ב<SPLIT>גיל ה<SPLIT>התבגרות כ<SPLIT>בעלי סוכרת מ<SPLIT>סוג 1 נשארו בעלי אותו מבנה גוף גם ב<SPLIT>בגרות<SPLIT>ם ככל ה<SPLIT>נראה מ<SPLIT>הרס תאי ה<SPLIT>שומן ה<SPLIT>מהיר<SPLIT>.}
 Predicted: {
-מחקרים קליניים מראים ש<SPLIT>חולים ש<SPLIT>התגלו ב<SPLIT>גיל ה<SPLIT>התבגרות כ<SPLIT>בעלי סוכרת מ<SPLIT>סוג 1 נשארו בעלי אותו מבנה גוף גם ב<SPLIT>בגרות<SPLIT>ם כ<SPLIT>כל ה<SPLIT>נראה מ<SPLIT>הרס תאי ה<SPLIT>שומן ה<SPLIT>מהיר<SPLIT>.}
+מחקרים קליניים מראים ש<SPLIT>חולים ש<SPLIT>התגלו ב<SPLIT>גיל ה<SPLIT>התבגרות כ<SPLIT>בעלי סוכרת מ<SPLIT>סוג 1 נשארו בעלי אותו מבנה גוף גם ב<SPLIT>בגרותם ככל ה<SPLIT>נראה מ<SPLIT>הרס תאי ה<SPLIT>שומן ה<SPLIT>מהיר<SPLIT>.}
 False positives: {
-כ
-כל
+בגרותם
 } False negatives: {
-ככל
+בגרות
+ם
 }
 
 Expected: {
 לצד תצרוכת סוכר מוגברת ו<SPLIT>השמנה<SPLIT>, מופרשים ל<SPLIT>דם ה<SPLIT>אישה הורמונים רבים ה<SPLIT>מתנגדים ל<SPLIT>אינסולין (<SPLIT>כגון קורטיזול<SPLIT>)<SPLIT>.}
 Predicted: {
-לצד תצרוכת סוכר מוגברת ו<SPLIT>ה<SPLIT>שמנה<SPLIT>, מופרשים ל<SPLIT>דם ה<SPLIT>אישה הורמונים רבים ה<SPLIT>מתנגדים ל<SPLIT>אינסולין (<SPLIT>כגון קורטיזול<SPLIT>)<SPLIT>.}
+ל<SPLIT>צד תצרוכת סוכר מוגברת ו<SPLIT>ה<SPLIT>שמנה<SPLIT>, מופרשים ל<SPLIT>דם ה<SPLIT>אישה הורמונים רבים ה<SPLIT>מתנגדים ל<SPLIT>אינסולין (<SPLIT>כגון קורטיזול<SPLIT>)<SPLIT>.}
 False positives: {
+ל
+צד
 ה
 שמנה
 } False negatives: {
+לצד
 השמנה
 }
 
 Expected: {
 כאשר ל<SPLIT>אחד מ<SPLIT>תאומים<SPLIT>-<SPLIT>זהים יש סוכרת מ<SPLIT>סוג 2<SPLIT>, ה<SPLIT>סיכוי של ה<SPLIT>תאום ה<SPLIT>שני לסבול מ<SPLIT>ה<SPLIT>מחלה הוא כ<SPLIT>-<SPLIT>90<SPLIT>%<SPLIT>.}
 Predicted: {
-כאשר ל<SPLIT>אחד מתאומים<SPLIT>-<SPLIT>זהים יש סוכרת מ<SPLIT>סוג 2<SPLIT>, ה<SPLIT>סיכוי של ה<SPLIT>תאום ה<SPLIT>שני לסבול מ<SPLIT>ה<SPLIT>מחלה הוא כ<SPLIT>-<SPLIT>90<SPLIT>%<SPLIT>.}
+כאשר ל<SPLIT>אחד מתאומים<SPLIT>-<SPLIT>זהים יש סוכרת מ<SPLIT>סוג 2<SPLIT>, ה<SPLIT>סיכוי של התאום ה<SPLIT>שני לסבול מ<SPLIT>ה<SPLIT>מחלה הוא כ<SPLIT>-<SPLIT>90<SPLIT>%<SPLIT>.}
 False positives: {
 מתאומים
+התאום
 } False negatives: {
 מ
 תאומים
+ה
+תאום
 }
 
 Expected: {
@@ -7255,17 +7397,6 @@ False positives: {
 }
 
 Expected: {
-היפרגליקמיה<SPLIT>מתרחשת ל<SPLIT>רוב מ<SPLIT>שתי סיבות אפשריות<SPLIT>: ה<SPLIT>ראשונה<SPLIT>, אכילת כמות גדולה מדי של פחמימות בכלל<SPLIT>, או ב<SPLIT>יחס ל<SPLIT>כמות ה<SPLIT>אינסולין ש<SPLIT>הוזרקה (<SPLIT>או ב<SPLIT>תזמון לא מתאים<SPLIT>)<SPLIT>.}
-Predicted: {
-ה<SPLIT>יפרגליקמיה<SPLIT>מתרחשת ל<SPLIT>רוב מ<SPLIT>שתי סיבות אפשריות<SPLIT>: ה<SPLIT>ראשונה<SPLIT>, אכילת כמות גדולה מדי של פחמימות בכלל<SPLIT>, או ב<SPLIT>יחס ל<SPLIT>כמות ה<SPLIT>אינסולין ש<SPLIT>הוזרקה (<SPLIT>או ב<SPLIT>תזמון לא מתאים<SPLIT>)<SPLIT>.}
-False positives: {
-ה
-יפרגליקמיה
-} False negatives: {
-היפרגליקמיה
-}
-
-Expected: {
 מחלות כלי דם אלה גורמות חוסר אספקת חמצן (<SPLIT>איסכמיה<SPLIT>) ב<SPLIT>איברים שונים ו<SPLIT>כוללות התקפי לב<SPLIT>, שבץ איסכמי<SPLIT>, נמק ב<SPLIT>כפות ה<SPLIT>ידיים ו<SPLIT>ה<SPLIT>רגליים<SPLIT>, אימפוטנציה ו<SPLIT>עוד<SPLIT>.}
 Predicted: {
 מחלות כלי דם אלה גורמות חוסר אספקת חמצן (<SPLIT>איסכמיה<SPLIT>) ב<SPLIT>איברים שונים ו<SPLIT>כוללות ה<SPLIT>תקפי לב<SPLIT>, שבץ איסכמי<SPLIT>, נמק ב<SPLIT>כפות הידיים ו<SPLIT>ה<SPLIT>רגליים<SPLIT>, אימפוטנציה ו<SPLIT>עוד<SPLIT>.}
@@ -7293,23 +7424,15 @@ False positives: {
 Expected: {
 ה<SPLIT>דבר מורכב עוד יותר עקב כמות ה<SPLIT>גורמים ה<SPLIT>ידועים (<SPLIT>ו<SPLIT>ה<SPLIT>לא ידועים<SPLIT>) ה<SPLIT>משפיעים על מדדים אלה<SPLIT>, ה<SPLIT>כוללים תזונה<SPLIT>, פעילות גופנית<SPLIT>, דחק נפשי<SPLIT>, וסת (<SPLIT>אצל נשים<SPLIT>) ו<SPLIT>אפילו מזג ה<SPLIT>אוויר<SPLIT>.}
 Predicted: {
-ה<SPLIT>דבר מורכב עוד יותר עקב כמות ה<SPLIT>גורמים ה<SPLIT>ידועים (<SPLIT>ו<SPLIT>הלא ידועים<SPLIT>) ה<SPLIT>משפיעים על מדדים אלה<SPLIT>, ה<SPLIT>כוללים תזונה<SPLIT>, פעילות גופנית<SPLIT>, דחק נפשי<SPLIT>, וסת (<SPLIT>אצל נשים<SPLIT>) ו<SPLIT>אפילו מזג ה<SPLIT>אוויר<SPLIT>.}
+ה<SPLIT>דבר מורכב עוד יותר עקב כמות ה<SPLIT>גורמים הידועים (<SPLIT>ו<SPLIT>הלא ידועים<SPLIT>) ה<SPLIT>משפיעים על מדדים אלה<SPLIT>, ה<SPLIT>כוללים תזונה<SPLIT>, פעילות גופנית<SPLIT>, דחק נפשי<SPLIT>, וסת (<SPLIT>אצל נשים<SPLIT>) ו<SPLIT>אפילו מזג ה<SPLIT>אוויר<SPLIT>.}
 False positives: {
+הידועים
 הלא
 } False negatives: {
 ה
-לא
-}
-
-Expected: {
-ל<SPLIT>מטופלים עם תוחלת חיים צפויה של פחות מ<SPLIT>-<SPLIT>10 שנים<SPLIT>, לפי גיל מתקדם<SPLIT>, מגורים ב<SPLIT>מוסד סיעודי או מצבים כרוניים ב<SPLIT>שלב סופני<SPLIT>, אין לאזן לפי ערך hba1c אלא לטפל ל<SPLIT>מניעת תסמיני היפרגליקמיה<SPLIT>.}
-Predicted: {
-ל<SPLIT>מטופלים עם תוחלת חיים צפויה של פחות מ<SPLIT>-<SPLIT>10 שנים<SPLIT>, לפי גיל מתקדם<SPLIT>, מגורים ב<SPLIT>מוסד סיעודי או מצבים כרוניים ב<SPLIT>שלב סופני<SPLIT>, אין לאזן לפי ערך hba1c אלא לטפל ל<SPLIT>מניעת תסמיני ה<SPLIT>יפרגליקמיה<SPLIT>.}
-False positives: {
+ידועים
 ה
-יפרגליקמיה
-} False negatives: {
-היפרגליקמיה
+לא
 }
 
 Expected: {
@@ -7337,14 +7460,11 @@ False positives: {
 Expected: {
 במקום הפרשה מהירה ו<SPLIT>חזקה לאחר ה<SPLIT>אוכל<SPLIT>, ה<SPLIT>אינסולין מופרש לאט יותר<SPLIT>.}
 Predicted: {
-ב<SPLIT>מקום ה<SPLIT>פרשה מהירה ו<SPLIT>חזקה לאחר ה<SPLIT>אוכל<SPLIT>, ה<SPLIT>אינסולין מופרש לאט יותר<SPLIT>.}
+במקום ה<SPLIT>פרשה מהירה ו<SPLIT>חזקה לאחר ה<SPLIT>אוכל<SPLIT>, ה<SPLIT>אינסולין מופרש לאט יותר<SPLIT>.}
 False positives: {
-ב
-מקום
 ה
 פרשה
 } False negatives: {
-במקום
 הפרשה
 }
 
@@ -7362,19 +7482,13 @@ False positives: {
 Expected: {
 רץ אברהם אחרי<SPLIT>ו שם ו<SPLIT>מצא שם אדם ו<SPLIT>חווה שוכבים על ה<SPLIT>מיטות ו<SPLIT>ישנים<SPLIT>, ו<SPLIT>נרות דולקים עלי<SPLIT>הם ו<SPLIT>ריח טוב עלי<SPLIT>הם כ<SPLIT>ריח ניחוח<SPLIT>.}
 Predicted: {
-רץ אברהם אחריו שם ו<SPLIT>מצא שם אדם ו<SPLIT>חווה שוכבים על ה<SPLIT>מיטות ו<SPLIT>ישנים<SPLIT>, ו<SPLIT>נרות דולקים עליהם ו<SPLIT>ריח טוב עליהם כריח ניחוח<SPLIT>.}
+רץ אברהם אחריו שם ו<SPLIT>מצא שם אדם ו<SPLIT>חווה שוכבים על ה<SPLIT>מיטות ו<SPLIT>ישנים<SPLIT>, ו<SPLIT>נרות דולקים עלי<SPLIT>הם ו<SPLIT>ריח טוב עלי<SPLIT>הם כריח ניחוח<SPLIT>.}
 False positives: {
 אחריו
-עליהם
-עליהם
 כריח
 } False negatives: {
 אחרי
 ו
-עלי
-הם
-עלי
-הם
 כ
 ריח
 }
@@ -7396,13 +7510,12 @@ False positives: {
 Expected: {
 אלהים יעזר<SPLIT>ני על כל ו<SPLIT>יקים ל<SPLIT>י נדר<SPLIT>י ל<SPLIT>ה' אשלם - אמן<SPLIT>"<SPLIT>.}
 Predicted: {
-אלהים יעזרני על כל ויקים לי נדרי לה' אשלם - אמן<SPLIT>"<SPLIT>.}
+אלהים יעזרני על כל ויקים לי נדרי ל<SPLIT>ה' אשלם - אמן<SPLIT>"<SPLIT>.}
 False positives: {
 יעזרני
 ויקים
 לי
 נדרי
-לה'
 } False negatives: {
 יעזר
 ני
@@ -7412,18 +7525,19 @@ False positives: {
 י
 נדר
 י
-ל
-ה'
 }
 
 Expected: {
 ו<SPLIT>הם כ<SPLIT>עשרים בעלי בתים מכונסים ב<SPLIT>מבוי אחד ה<SPLIT>סגור עלי<SPLIT>הם<SPLIT>, ו<SPLIT>לא יעבור ביני<SPLIT>הם ישמעאל ו<SPLIT>טמא<SPLIT>.}
 Predicted: {
-ו<SPLIT>הם כ<SPLIT>עשרים בעלי בתים מכונסים ב<SPLIT>מבוי אחד ה<SPLIT>סגור עליהם<SPLIT>, ו<SPLIT>לא יעבור ביני<SPLIT>הם ישמעאל ו<SPLIT>טמא<SPLIT>.}
+ו<SPLIT>הם כ<SPLIT>עשרים בעלי בתים מכונסים ב<SPLIT>מבוי אחד ה<SPLIT>סגור עליהם<SPLIT>, ו<SPLIT>לא יעבור ביניהם ישמעאל ו<SPLIT>טמא<SPLIT>.}
 False positives: {
 עליהם
+ביניהם
 } False negatives: {
 עלי
+הם
+ביני
 הם
 }
 
@@ -7436,6 +7550,17 @@ False positives: {
 אז
 } False negatives: {
 מאז
+}
+
+Expected: {
+על פי נתוני ה<SPLIT>סיכום ה<SPLIT>שנתי של משמר ה<SPLIT>גבול ב<SPLIT>מערת ה<SPLIT>מכפלה<SPLIT>, ב<SPLIT>שנת 2019 נכנסו ל<SPLIT>מערת ה<SPLIT>מכפלה כ<SPLIT>מיליון ו<SPLIT>חצי מבקרים ו<SPLIT>מתפללים<SPLIT>, מתוכ<SPLIT>ם כ<SPLIT>-<SPLIT>700,000 יהודים<SPLIT>, כ<SPLIT>-<SPLIT>600,000 מוסלמים<SPLIT>, ו<SPLIT>כ<SPLIT>-<SPLIT>100,000 תיירים בני לאומים שונים<SPLIT>.}
+Predicted: {
+על פי נתוני ה<SPLIT>סיכום ה<SPLIT>שנתי של משמר ה<SPLIT>גבול ב<SPLIT>מערת ה<SPLIT>מכפלה<SPLIT>, ב<SPLIT>שנת 2019 נכנסו ל<SPLIT>מערת ה<SPLIT>מכפלה כ<SPLIT>מיליון ו<SPLIT>חצי מבקרים ו<SPLIT>מתפללים<SPLIT>, מתוכ<SPLIT>ם כ<SPLIT>-<SPLIT>700,000 יהודים<SPLIT>, כ<SPLIT>-<SPLIT>600,000 מוסלמים<SPLIT>, ו<SPLIT>כ<SPLIT>-<SPLIT>100,000 תיירים בני ל<SPLIT>אומים שונים<SPLIT>.}
+False positives: {
+ל
+אומים
+} False negatives: {
+לאומים
 }
 
 Expected: {
@@ -7456,27 +7581,27 @@ False positives: {
 Expected: {
 ב<SPLIT>שנת 1922 מיפה ה<SPLIT>ארכאולוג לואי<SPLIT>-<SPLIT>איג ונסאן (<SPLIT>"<SPLIT>ה<SPLIT>אב ונסן<SPLIT>"<SPLIT>) את ה<SPLIT>מערה ו<SPLIT>כן תיאר מערה ש<SPLIT>מצא מתחת ל<SPLIT>מבנים<SPLIT>, ו<SPLIT>ב<SPLIT>ה מצבות ו<SPLIT>פתחים שונים ל<SPLIT>מערות נוספות<SPLIT>.}
 Predicted: {
-ב<SPLIT>שנת 1922 מיפה ה<SPLIT>ארכאולוג לואי<SPLIT>-<SPLIT>איג ו<SPLIT>נסאן (<SPLIT>"<SPLIT>ה<SPLIT>אב ו<SPLIT>נסן<SPLIT>"<SPLIT>) את ה<SPLIT>מערה ו<SPLIT>כן תיאר מערה ש<SPLIT>מצא מתחת ל<SPLIT>מבנים<SPLIT>, ו<SPLIT>ב<SPLIT>ה מצבות ו<SPLIT>פתחים שונים ל<SPLIT>מערות נוספות<SPLIT>.}
+ב<SPLIT>שנת 1922 מיפה ה<SPLIT>ארכאולוג לואי<SPLIT>-<SPLIT>איג ו<SPLIT>נסאן (<SPLIT>"<SPLIT>ה<SPLIT>אב ו<SPLIT>נסן<SPLIT>"<SPLIT>) את ה<SPLIT>מערה ו<SPLIT>כן תיאר מערה ש<SPLIT>מצא מתחת ל<SPLIT>מבנים<SPLIT>, ו<SPLIT>בה מצבות ו<SPLIT>פתחים שונים ל<SPLIT>מערות נוספות<SPLIT>.}
 False positives: {
 ו
 נסאן
 ו
 נסן
+בה
 } False negatives: {
 ונסאן
 ונסן
+ב
+ה
 }
 
 Expected: {
 לעומת זאת<SPLIT>, בקרב חוגי שמאל ה<SPLIT>מתנגדים ל<SPLIT>שליטה ה<SPLIT>ישראלית ב<SPLIT>חבלי ארץ אלה<SPLIT>, יש ה<SPLIT>רואים ב<SPLIT>מונח זה כלי ב<SPLIT>השתלטות ה<SPLIT>ישראלית עלי<SPLIT>הם ו<SPLIT>מעדיפים על<SPLIT>-<SPLIT>כן את ה<SPLIT>מונח "<SPLIT>ה<SPLIT>גדה ה<SPLIT>מערבית<SPLIT>" או "<SPLIT>ה<SPLIT>שטחים ה<SPLIT>כבושים<SPLIT>" (<SPLIT>מונח רחב יותר<SPLIT>, ה<SPLIT>כולל גם את רצועת עזה ו<SPLIT>רמת ה<SPLIT>גולן ו<SPLIT>ב<SPLIT>עבר כלל גם את סיני<SPLIT>)<SPLIT>.}
 Predicted: {
-לעומת זאת<SPLIT>, בקרב חוגי שמאל ה<SPLIT>מתנגדים ל<SPLIT>שליטה ה<SPLIT>ישראלית ב<SPLIT>חבלי ארץ אלה<SPLIT>, יש ה<SPLIT>רואים ב<SPLIT>מונח זה כלי ב<SPLIT>השתלטות ה<SPLIT>ישראלית עליהם ו<SPLIT>מעדיפים על<SPLIT>-<SPLIT>כן את ה<SPLIT>מונח "<SPLIT>ה<SPLIT>גדה ה<SPLIT>מערבית<SPLIT>" או "<SPLIT>ה<SPLIT>שטחים ה<SPLIT>כבושים<SPLIT>" (<SPLIT>מונח רחב יותר<SPLIT>, ה<SPLIT>כולל גם את רצועת עזה ו<SPLIT>רמת ה<SPLIT>גולן ו<SPLIT>בעבר כלל גם את סיני<SPLIT>)<SPLIT>.}
+לעומת זאת<SPLIT>, בקרב חוגי שמאל ה<SPLIT>מתנגדים ל<SPLIT>שליטה ה<SPLIT>ישראלית ב<SPLIT>חבלי ארץ אלה<SPLIT>, יש ה<SPLIT>רואים ב<SPLIT>מונח זה כלי ב<SPLIT>השתלטות ה<SPLIT>ישראלית עלי<SPLIT>הם ו<SPLIT>מעדיפים על<SPLIT>-<SPLIT>כן את ה<SPLIT>מונח "<SPLIT>ה<SPLIT>גדה ה<SPLIT>מערבית<SPLIT>" או "<SPLIT>ה<SPLIT>שטחים ה<SPLIT>כבושים<SPLIT>" (<SPLIT>מונח רחב יותר<SPLIT>, ה<SPLIT>כולל גם את רצועת עזה ו<SPLIT>רמת ה<SPLIT>גולן ו<SPLIT>בעבר כלל גם את סיני<SPLIT>)<SPLIT>.}
 False positives: {
-עליהם
 בעבר
 } False negatives: {
-עלי
-הם
 ב
 עבר
 }
@@ -7533,6 +7658,17 @@ False positives: {
 }
 
 Expected: {
+אחד ה<SPLIT>אתרים ה<SPLIT>ידועים ו<SPLIT>ה<SPLIT>חשובים ביותר הוא מזבח הר עיבל<SPLIT>.}
+Predicted: {
+אחד ה<SPLIT>אתרים הידועים ו<SPLIT>ה<SPLIT>חשובים ביותר הוא מזבח הר עיבל<SPLIT>.}
+False positives: {
+הידועים
+} False negatives: {
+ה
+ידועים
+}
+
+Expected: {
 בשל ה<SPLIT>מצב ה<SPLIT>גאופוליטי ב<SPLIT>שטחי יו"ש<SPLIT>, נושא זה משפיע גם על מצב<SPLIT>ה ה<SPLIT>מדיני<SPLIT>-<SPLIT>ביטחוני של ישראל ו<SPLIT>על מעמד<SPLIT>ה ב<SPLIT>עולם<SPLIT>.}
 Predicted: {
 בשל ה<SPLIT>מצב ה<SPLIT>גאופוליטי ב<SPLIT>שטחי יו"ש<SPLIT>, נושא זה משפיע גם על מצבה ה<SPLIT>מדיני<SPLIT>-<SPLIT>ביטחוני של ישראל ו<SPLIT>על מעמדה ב<SPLIT>עולם<SPLIT>.}
@@ -7564,17 +7700,6 @@ False positives: {
 }
 
 Expected: {
-יצוין כי מחקר מודרני ש<SPLIT>נערך ב<SPLIT>שנות ה<SPLIT>-<SPLIT>70 של ה<SPLIT>מאה ה<SPLIT>-<SPLIT>20 תיארך את ה<SPLIT>קברים ש<SPLIT>ב<SPLIT>גן ה<SPLIT>קבר ל<SPLIT>תקופת בית ראשון<SPLIT>, היינו - מאות שנים לפני תקופת<SPLIT>ו של ישו<SPLIT>.}
-Predicted: {
-יצוין כי מחקר מודרני ש<SPLIT>נערך ב<SPLIT>שנות ה<SPLIT>-<SPLIT>70 של ה<SPLIT>מאה ה<SPLIT>-<SPLIT>20 תיארך את ה<SPLIT>קברים ש<SPLIT>ב<SPLIT>גן ה<SPLIT>קבר ל<SPLIT>תקופת בית ראשון<SPLIT>, היינו - מאות שנים לפני תקופתו של ישו<SPLIT>.}
-False positives: {
-תקופתו
-} False negatives: {
-תקופת
-ו
-}
-
-Expected: {
 אליבא ד<SPLIT>קואנון (<SPLIT>couasnon<SPLIT>)<SPLIT>, מבנה ה<SPLIT>בזיליקה של ה<SPLIT>עיר ש<SPLIT>עמד ב<SPLIT>פורום זה<SPLIT>, פורק ו<SPLIT>נבנה מחדש כ<SPLIT>בזיליקה של ה<SPLIT>כנסייה - (<SPLIT>ה<SPLIT>"<SPLIT>מרטיריון<SPLIT>"<SPLIT>) - ב<SPLIT>סמוך ל<SPLIT>סלע ה<SPLIT>צליבה<SPLIT>, ו<SPLIT>ל<SPLIT>מבנה ה<SPLIT>קבר<SPLIT>.}
 Predicted: {
 אליבא דקואנון (<SPLIT>couasnon<SPLIT>)<SPLIT>, מבנה ה<SPLIT>בזיליקה של ה<SPLIT>עיר ש<SPLIT>עמד ב<SPLIT>פורום זה<SPLIT>, פורק ו<SPLIT>נבנה מחדש כבזיליקה של ה<SPLIT>כנסייה - (<SPLIT>ה<SPLIT>"<SPLIT>מרטיריון<SPLIT>"<SPLIT>) - ב<SPLIT>סמוך ל<SPLIT>סלע ה<SPLIT>צליבה<SPLIT>, ו<SPLIT>ל<SPLIT>מבנה ה<SPLIT>קבר<SPLIT>.}
@@ -7602,13 +7727,12 @@ False positives: {
 Expected: {
 מ<SPLIT>תקופת<SPLIT>ו של מונומכוס נותרו שרידים ב<SPLIT>כנסייה<SPLIT>.}
 Predicted: {
-מתקופתו של מונומכוס נותרו שרידים ב<SPLIT>כנסייה<SPLIT>.}
+מתקופת<SPLIT>ו של מונומכוס נותרו שרידים ב<SPLIT>כנסייה<SPLIT>.}
 False positives: {
-מתקופתו
+מתקופת
 } False negatives: {
 מ
 תקופת
-ו
 }
 
 Expected: {
@@ -7628,11 +7752,10 @@ False positives: {
 Expected: {
 תיאור ה<SPLIT>כנסייה מופיע ב<SPLIT>כתבי יד שונים מן ה<SPLIT>תקופה כמו מפת קמבריי<SPLIT>, כש<SPLIT>ל<SPLIT>ציד<SPLIT>ה מכלול ה<SPLIT>מסדר ה<SPLIT>הוספיטלרי<SPLIT>.}
 Predicted: {
-תיאור ה<SPLIT>כנסייה מופיע ב<SPLIT>כתבי יד שונים מן ה<SPLIT>תקופה כמו מפת קמבריי<SPLIT>, כשלצידה מכלול ה<SPLIT>מסדר ה<SPLIT>הוספיטלרי<SPLIT>.}
+תיאור ה<SPLIT>כנסייה מופיע ב<SPLIT>כתבי יד שונים מן ה<SPLIT>תקופה כמו מפת קמבריי<SPLIT>, כש<SPLIT>לצידה מכלול ה<SPLIT>מסדר ה<SPLIT>הוספיטלרי<SPLIT>.}
 False positives: {
-כשלצידה
+לצידה
 } False negatives: {
-כש
 ל
 ציד
 ה
@@ -7680,15 +7803,12 @@ False positives: {
 Expected: {
 ב<SPLIT>תקופה ה<SPLIT>צלבנית ניתן היה לעלות ל<SPLIT>גולגולתא דרך ה<SPLIT>מדרגות ה<SPLIT>חיצוניות ה<SPLIT>מובילות ל<SPLIT>קפלה<SPLIT>, ש<SPLIT>הייתה מחוברת ישירות עם ה<SPLIT>גולגולתא<SPLIT>.}
 Predicted: {
-ב<SPLIT>תקופה ה<SPLIT>צלבנית ניתן היה לעלות ל<SPLIT>גולגולתא דרך ה<SPLIT>מדרגות ה<SPLIT>חיצוניות ה<SPLIT>מובילות לקפלה<SPLIT>, ש<SPLIT>הייתה מ<SPLIT>חוברת ישירות עם ה<SPLIT>גולגולתא<SPLIT>.}
+ב<SPLIT>תקופה ה<SPLIT>צלבנית ניתן היה לעלות ל<SPLIT>גולגולתא דרך ה<SPLIT>מדרגות ה<SPLIT>חיצוניות ה<SPLIT>מובילות לקפלה<SPLIT>, ש<SPLIT>הייתה מחוברת ישירות עם ה<SPLIT>גולגולתא<SPLIT>.}
 False positives: {
 לקפלה
-מ
-חוברת
 } False negatives: {
 ל
 קפלה
-מחוברת
 }
 
 Expected: {
@@ -7708,10 +7828,13 @@ False positives: {
 Expected: {
 לצד ה<SPLIT>מזבח הוקמה ויטרינה עשויה זכוכית דרכ<SPLIT>ה אפשר לראות את סלע ה<SPLIT>גולגולתא<SPLIT>.}
 Predicted: {
-לצד ה<SPLIT>מזבח הוקמה ויטרינה עשויה זכוכית דרכה אפשר לראות את סלע ה<SPLIT>גולגולתא<SPLIT>.}
+ל<SPLIT>צד ה<SPLIT>מזבח הוקמה ויטרינה עשויה זכוכית דרכה אפשר לראות את סלע ה<SPLIT>גולגולתא<SPLIT>.}
 False positives: {
+ל
+צד
 דרכה
 } False negatives: {
+לצד
 דרכ
 ה
 }
@@ -7764,10 +7887,13 @@ False positives: {
 Expected: {
 ב<SPLIT>שיפוצים ש<SPLIT>נהסתיימו ב<SPLIT>שנת 2018 נחשפה על גבי מבנה ה<SPLIT>אדיקולה ה<SPLIT>מקורי מ<SPLIT>-<SPLIT>1810 כתובת ב<SPLIT>יוונית ה<SPLIT>סובבת את חלק<SPLIT>ו ה<SPLIT>עליון<SPLIT>.}
 Predicted: {
-ב<SPLIT>שיפוצים ש<SPLIT>נהסתיימו ב<SPLIT>שנת 2018 נחשפה על גבי מבנה ה<SPLIT>אדיקולה ה<SPLIT>מקורי מ<SPLIT>-<SPLIT>1810 כתובת ב<SPLIT>יוונית ה<SPLIT>סובבת את חלקו ה<SPLIT>עליון<SPLIT>.}
+ב<SPLIT>שיפוצים שנהסתיימו ב<SPLIT>שנת 2018 נחשפה על גבי מבנה ה<SPLIT>אדיקולה ה<SPLIT>מקורי מ<SPLIT>-<SPLIT>1810 כתובת ב<SPLIT>יוונית ה<SPLIT>סובבת את חלקו ה<SPLIT>עליון<SPLIT>.}
 False positives: {
+שנהסתיימו
 חלקו
 } False negatives: {
+ש
+נהסתיימו
 חלק
 ו
 }
@@ -7792,28 +7918,6 @@ False positives: {
 } False negatives: {
 אמ
 ו
-}
-
-Expected: {
-קפלת מציאת ה<SPLIT>צלב - ה<SPLIT>מקום<SPLIT>, על פי ה<SPLIT>מסורת ה<SPLIT>נוצרית<SPLIT>, ש<SPLIT>ב<SPLIT>ו מצאה ו<SPLIT>זיהתה הלנה את ה<SPLIT>צלב ה<SPLIT>אמיתי<SPLIT>.}
-Predicted: {
-קפלת מציאת ה<SPLIT>צלב - ה<SPLIT>מקום<SPLIT>, על פי ה<SPLIT>מסורת ה<SPLIT>נוצרית<SPLIT>, ש<SPLIT>בו מצאה ו<SPLIT>זיהתה הלנה את ה<SPLIT>צלב ה<SPLIT>אמיתי<SPLIT>.}
-False positives: {
-בו
-} False negatives: {
-ב
-ו
-}
-
-Expected: {
-ב<SPLIT>מבואה ל<SPLIT>קפלה נמצאת עליה ל<SPLIT>שתי קומות סגורות ל<SPLIT>ציבור ב<SPLIT>הן נמצאים תאי מגורים ל<SPLIT>נזירים<SPLIT>.}
-Predicted: {
-ב<SPLIT>מבואה ל<SPLIT>קפלה נמצאת עליה ל<SPLIT>שתי קומות סגורות ל<SPLIT>ציבור ב<SPLIT>הן נמצאים תאי מגורים לנזירים<SPLIT>.}
-False positives: {
-לנזירים
-} False negatives: {
-ל
-נזירים
 }
 
 Expected: {
@@ -7850,6 +7954,17 @@ False positives: {
 } False negatives: {
 ב
 ווקף
+}
+
+Expected: {
+מ<SPLIT>אז מנסים ה<SPLIT>קתולים לחזור ל<SPLIT>"<SPLIT>תור ה<SPLIT>זהב<SPLIT>" של 1740<SPLIT>.}
+Predicted: {
+מ<SPLIT>אז מנסים ה<SPLIT>קתולים לחזור ל<SPLIT>"תור ה<SPLIT>זהב<SPLIT>" של 1740<SPLIT>.}
+False positives: {
+"תור
+} False negatives: {
+"
+תור
 }
 
 Expected: {
@@ -7903,6 +8018,17 @@ False positives: {
 } False negatives: {
 מ
 אורך
+}
+
+Expected: {
+לאור זאת יש להתייחס ב<SPLIT>ספקנות רבה ל<SPLIT>שני ה<SPLIT>סיפורים<SPLIT>.}
+Predicted: {
+ל<SPLIT>אור זאת יש להתייחס ב<SPLIT>ספקנות רבה ל<SPLIT>שני ה<SPLIT>סיפורים<SPLIT>.}
+False positives: {
+ל
+אור
+} False negatives: {
+לאור
 }
 
 Expected: {
@@ -7966,14 +8092,12 @@ False positives: {
 Expected: {
 כדי לחזק את עמדת<SPLIT>ו<SPLIT>, העלה בן<SPLIT>-<SPLIT>גוריון את ה<SPLIT>רעיון ש<SPLIT>בעוד ש<SPLIT>ה<SPLIT>ערבים יכולים להפסיד מלחמה אחר מלחמה<SPLIT>, הרי ש<SPLIT>ל<SPLIT>ישראל אסור להפסיד ו<SPLIT>לו ב<SPLIT>מלחמה אחת - ה<SPLIT>חברה ה<SPLIT>ישראלית לא תוכל לחיות עם תוצאותי<SPLIT>ה של מלחמה ש<SPLIT>ב<SPLIT>ה יש ל<SPLIT>ישראל קורבנות רבים<SPLIT>, דבר ש<SPLIT>יפורר אות<SPLIT>ה מ<SPLIT>בפנים ו<SPLIT>למעשה יביא בעקיפין ל<SPLIT>סופ<SPLIT>ה<SPLIT>.}
 Predicted: {
-כדי לחזק את עמדתו<SPLIT>, ה<SPLIT>עלה בן<SPLIT>-<SPLIT>גוריון את ה<SPLIT>רעיון ש<SPLIT>בעוד ש<SPLIT>ה<SPLIT>ערבים יכולים להפסיד מלחמה אחר מלחמה<SPLIT>, הרי של<SPLIT>ישראל אסור להפסיד ו<SPLIT>לו ב<SPLIT>מלחמה אחת - ה<SPLIT>חברה ה<SPLIT>ישראלית לא תוכל לחיות עם תוצאותיה של מלחמה ש<SPLIT>בה יש ל<SPLIT>ישראל קורבנות רבים<SPLIT>, דבר שיפורר אותה מבפנים ו<SPLIT>למעשה יביא בעקיפין ל<SPLIT>סופה<SPLIT>.}
+כדי לחזק את עמדתו<SPLIT>, העלה בן<SPLIT>-<SPLIT>גוריון את ה<SPLIT>רעיון ש<SPLIT>בעוד ש<SPLIT>ה<SPLIT>ערבים יכולים להפסיד מלחמה אחר מלחמה<SPLIT>, הרי של<SPLIT>ישראל אסור להפסיד ו<SPLIT>לו ב<SPLIT>מלחמה אחת - ה<SPLIT>חברה ה<SPLIT>ישראלית לא תוכל לחיות עם תוצאותיה של מלחמה שבה יש ל<SPLIT>ישראל קורבנות רבים<SPLIT>, דבר שיפורר אותה מבפנים ו<SPLIT>למעשה יביא בעקיפין ל<SPLIT>סופה<SPLIT>.}
 False positives: {
 עמדתו
-ה
-עלה
 של
 תוצאותיה
-בה
+שבה
 שיפורר
 אותה
 מבפנים
@@ -7981,11 +8105,11 @@ False positives: {
 } False negatives: {
 עמדת
 ו
-העלה
 ש
 ל
 תוצאותי
 ה
+ש
 ב
 ה
 ש
@@ -8013,17 +8137,6 @@ False positives: {
 }
 
 Expected: {
-ב<SPLIT>-<SPLIT>7 ב<SPLIT>אוגוסט דחתה ה<SPLIT>כנסת הצעה ל<SPLIT>סדר ה<SPLIT>יום של מפ"ם ו<SPLIT>מק"י<SPLIT>, ל<SPLIT>דיון ב<SPLIT>פירוז ה<SPLIT>מזרח ה<SPLIT>תיכון מ<SPLIT>נשק גרעיני<SPLIT>.}
-Predicted: {
-ב<SPLIT>-<SPLIT>7 ב<SPLIT>אוגוסט דחתה ה<SPLIT>כנסת הצעה לסדר ה<SPLIT>יום של מפ"ם ו<SPLIT>מק"י<SPLIT>, ל<SPLIT>דיון ב<SPLIT>פירוז ה<SPLIT>מזרח ה<SPLIT>תיכון מ<SPLIT>נשק גרעיני<SPLIT>.}
-False positives: {
-לסדר
-} False negatives: {
-ל
-סדר
-}
-
-Expected: {
 ב<SPLIT>יוני 1960 טענה ישראל כי ה<SPLIT>מבנה ה<SPLIT>מוקם הוא "<SPLIT>מפעל טקסטיל<SPLIT>"<SPLIT>, ב<SPLIT>ספטמבר אותה שנה תיארו אישים ישראלים את ה<SPLIT>מבנה ה<SPLIT>הולך ו<SPLIT>נבנה כ<SPLIT>"<SPLIT>תחנת מחקר ב<SPLIT>מטלורגיה<SPLIT>"<SPLIT>, ו<SPLIT>לאחר מ<SPLIT>כן נטען כי זהו כור ל<SPLIT>מטרות שלום בלבד<SPLIT>.}
 Predicted: {
 ב<SPLIT>יוני 1960 טענה ישראל כי ה<SPLIT>מבנה ה<SPLIT>מוקם הוא "<SPLIT>מפעל טקסטיל<SPLIT>"<SPLIT>, ב<SPLIT>ספטמבר אותה שנה תיארו אישים ישראלים את ה<SPLIT>מבנה ה<SPLIT>הולך ו<SPLIT>נבנה כ<SPLIT>"<SPLIT>תחנת מחקר ב<SPLIT>מטלורגיה<SPLIT>"<SPLIT>, ו<SPLIT>לאחר מכן נטען כי זהו כור ל<SPLIT>מטרות שלום בלבד<SPLIT>.}
@@ -8048,30 +8161,24 @@ False positives: {
 Expected: {
 היות ש<SPLIT>ל<SPLIT>ישראל יש מספר מועט של צוללות<SPLIT>, ה<SPLIT>מוגבלות ב<SPLIT>טווח ה<SPLIT>פעילות של<SPLIT>הן ו<SPLIT>ב<SPLIT>מספר ה<SPLIT>טילים ש<SPLIT>הן נושאות<SPLIT>, יהיה זה בזבזני מ<SPLIT>בחינת כושר ה<SPLIT>הרתעה להשתמש ב<SPLIT>הן ל<SPLIT>מכה ראשונה<SPLIT>, אם כי<SPLIT>, בשל ה<SPLIT>סיכונים ה<SPLIT>כרוכים ב<SPLIT>שיגור נשק גרעיני מתוך שטח<SPLIT>ה של ה<SPLIT>מדינה<SPLIT>, במיוחד בשל אחוזי ה<SPLIT>כישלון ה<SPLIT>גבוהים יחסית ב<SPLIT>עת שיגור ה<SPLIT>שביט (<SPLIT>שני כישלונות ב<SPLIT>שיגור לווייני "<SPLIT>אופק<SPLIT>"<SPLIT>, אם כי ב<SPLIT>תנאים קשים מאוד של שיגור אנכי ו<SPLIT>כנגד סיבוב כדור ה<SPLIT>ארץ כדי למנוע את נפילת ה<SPLIT>לוויינים ב<SPLIT>שטח מדינות אויב<SPLIT>) ש<SPLIT>עלי<SPLIT>ו<SPLIT>, על פי הערכות<SPLIT>, מבוססים ה<SPLIT>טילים ארוכי ה<SPLIT>טווח של ישראל<SPLIT>, קיימת אפשרות ש<SPLIT>ישראל תשתמש ב<SPLIT>צוללות כבר ב<SPLIT>מכה ה<SPLIT>ראשונה של תרחיש קיצוני ש<SPLIT>ב<SPLIT>ו היא תבחר להשתמש ב<SPLIT>נשק גרעיני<SPLIT>.}
 Predicted: {
-היות של<SPLIT>ישראל יש מספר מועט של צוללות<SPLIT>, ה<SPLIT>מוגבלות ב<SPLIT>טווח ה<SPLIT>פעילות שלהן ו<SPLIT>ב<SPLIT>מספר ה<SPLIT>טילים ש<SPLIT>הן נושאות<SPLIT>, יהיה זה ב<SPLIT>זבזני מ<SPLIT>בחינת כושר ה<SPLIT>הרתעה להשתמש ב<SPLIT>הן ל<SPLIT>מכה ראשונה<SPLIT>, אם כי<SPLIT>, בשל ה<SPLIT>סיכונים הכרוכים ב<SPLIT>שיגור נשק גרעיני מתוך שטח<SPLIT>ה של ה<SPLIT>מדינה<SPLIT>, במיוחד בשל אחוזי ה<SPLIT>כישלון ה<SPLIT>גבוהים יחסית ב<SPLIT>עת שיגור ה<SPLIT>שביט (<SPLIT>שני כישלונות ב<SPLIT>שיגור לווייני "<SPLIT>אופק<SPLIT>"<SPLIT>, אם כי ב<SPLIT>תנאים קשים מאוד של שיגור אנכי ו<SPLIT>כנגד סיבוב כדור ה<SPLIT>ארץ כדי למנוע את נפילת ה<SPLIT>לוויינים ב<SPLIT>שטח מדינות אויב<SPLIT>) ש<SPLIT>עליו<SPLIT>, על פי ה<SPLIT>ערכות<SPLIT>, מבוססים ה<SPLIT>טילים ארוכי ה<SPLIT>טווח של ישראל<SPLIT>, קיימת אפשרות ש<SPLIT>ישראל תשתמש ב<SPLIT>צוללות כבר ב<SPLIT>מכה ה<SPLIT>ראשונה של תרחיש קיצוני ש<SPLIT>בו היא תבחר להשתמש ב<SPLIT>נשק גרעיני<SPLIT>.}
+היות של<SPLIT>ישראל יש מספר מועט של צוללות<SPLIT>, ה<SPLIT>מוגבלות ב<SPLIT>טווח ה<SPLIT>פעילות שלהן ו<SPLIT>ב<SPLIT>מספר ה<SPLIT>טילים ש<SPLIT>הן נושאות<SPLIT>, יהיה זה בזבזני מ<SPLIT>בחינת כושר ה<SPLIT>הרתעה להשתמש ב<SPLIT>הן ל<SPLIT>מכה ראשונה<SPLIT>, אם כי<SPLIT>, בשל ה<SPLIT>סיכונים הכרוכים ב<SPLIT>שיגור נשק גרעיני מתוך שטח<SPLIT>ה של ה<SPLIT>מדינה<SPLIT>, במיוחד בשל אחוזי ה<SPLIT>כישלון ה<SPLIT>גבוהים יחסית ב<SPLIT>עת שיגור ה<SPLIT>שביט (<SPLIT>שני כישלונות ב<SPLIT>שיגור לווייני "<SPLIT>אופק<SPLIT>"<SPLIT>, אם כי ב<SPLIT>תנאים קשים מאוד של שיגור אנכי ו<SPLIT>כנגד סיבוב כדור ה<SPLIT>ארץ כדי למנוע את נפילת ה<SPLIT>לוויינים ב<SPLIT>שטח מדינות אויב<SPLIT>) ש<SPLIT>עליו<SPLIT>, על פי ה<SPLIT>ערכות<SPLIT>, מבוססים ה<SPLIT>טילים ארוכי ה<SPLIT>טווח של ישראל<SPLIT>, קיימת אפשרות ש<SPLIT>ישראל תשתמש ב<SPLIT>צוללות כבר ב<SPLIT>מכה ה<SPLIT>ראשונה של תרחיש קיצוני ש<SPLIT>ב<SPLIT>ו היא תבחר להשתמש ב<SPLIT>נשק גרעיני<SPLIT>.}
 False positives: {
 של
 שלהן
-ב
-זבזני
 הכרוכים
 עליו
 ה
 ערכות
-בו
 } False negatives: {
 ש
 ל
 של
 הן
-בזבזני
 ה
 כרוכים
 עלי
 ו
 הערכות
-ב
-ו
 }
 
 Expected: {
@@ -8180,12 +8287,15 @@ False positives: {
 Expected: {
 ב<SPLIT>-<SPLIT>1975 פורסמה הערכה זו ב<SPLIT>ניסוח שונה על ידי משרד ה<SPLIT>חוץ ה<SPLIT>אמריקני ו<SPLIT>ב<SPLIT>ה ה<SPLIT>קביעות ה<SPLIT>חד<SPLIT>-<SPLIT>משמעיות הוחלפו ב<SPLIT>"<SPLIT>חשדות<SPLIT>" ל<SPLIT>קיום נשק גרעיני בידי ישראל<SPLIT>.}
 Predicted: {
-ב<SPLIT>-<SPLIT>1975 פורסמה הערכה זו בניסוח שונה על ידי משרד ה<SPLIT>חוץ ה<SPLIT>אמריקני ו<SPLIT>ב<SPLIT>ה ה<SPLIT>קביעות ה<SPLIT>חד<SPLIT>-<SPLIT>משמעיות הוחלפו ב<SPLIT>"<SPLIT>חשדות<SPLIT>" ל<SPLIT>קיום נשק גרעיני בידי ישראל<SPLIT>.}
+ב<SPLIT>-<SPLIT>1975 פורסמה הערכה זו בניסוח שונה על ידי משרד ה<SPLIT>חוץ ה<SPLIT>אמריקני ו<SPLIT>בה ה<SPLIT>קביעות ה<SPLIT>חד<SPLIT>-<SPLIT>משמעיות הוחלפו ב<SPLIT>"<SPLIT>חשדות<SPLIT>" ל<SPLIT>קיום נשק גרעיני בידי ישראל<SPLIT>.}
 False positives: {
 בניסוח
+בה
 } False negatives: {
 ב
 ניסוח
+ב
+ה
 }
 
 Expected: {
@@ -8241,23 +8351,27 @@ False positives: {
 Expected: {
 הד ל<SPLIT>תפיסותי<SPLIT>ה של גרוסמן ניתן למצוא כבר ב<SPLIT>ראשית שנות ה<SPLIT>-<SPLIT>40<SPLIT>, אז החל יעקב לב<SPLIT>, ש<SPLIT>כיהן מ<SPLIT>שנת 1939 כ<SPLIT>ראש ה<SPLIT>מחלקה ל<SPLIT>פיסול ב<SPLIT>"<SPLIT>בצלאל ה<SPLIT>חדש<SPLIT>"<SPLIT>, ללמד ב<SPLIT>מחלקה שיעורי קדרות<SPLIT>.}
 Predicted: {
-הד לתפיסותיה של גרוסמן ניתן למצוא כבר ב<SPLIT>ראשית שנות ה<SPLIT>-<SPLIT>40<SPLIT>, אז החל יעקב לב<SPLIT>, ש<SPLIT>כיהן מ<SPLIT>שנת 1939 כ<SPLIT>ראש ה<SPLIT>מחלקה ל<SPLIT>פיסול ב<SPLIT>"<SPLIT>בצלאל ה<SPLIT>חדש<SPLIT>"<SPLIT>, ללמד ב<SPLIT>מחלקה שיעורי קדרות<SPLIT>.}
+הד לתפיסותיה של גרוסמן ניתן למצוא כבר ב<SPLIT>ראשית שנות ה<SPLIT>-<SPLIT>40<SPLIT>, אז החל יעקב לב<SPLIT>, שכיהן מ<SPLIT>שנת 1939 כ<SPLIT>ראש ה<SPLIT>מחלקה ל<SPLIT>פיסול ב<SPLIT>"<SPLIT>בצלאל ה<SPLIT>חדש<SPLIT>"<SPLIT>, ללמד ב<SPLIT>מחלקה שיעורי קדרות<SPLIT>.}
 False positives: {
 לתפיסותיה
+שכיהן
 } False negatives: {
 ל
 תפיסותי
 ה
+ש
+כיהן
 }
 
 Expected: {
 אהרון כהנא<SPLIT>, ש<SPLIT>פתח ב<SPLIT>שנת 1956 ב<SPLIT>יחד עם רעית<SPLIT>ו מידא כהנא סדנה גדולה<SPLIT>, ש<SPLIT>ב<SPLIT>ה הועסקו כ<SPLIT>שלושה אסיסטנטים<SPLIT>, ב<SPLIT>שם "<SPLIT>בית ה<SPLIT>יוצר<SPLIT>"<SPLIT>, היטיב להגדיר את ה<SPLIT>סגנון ה<SPLIT>רווח כ<SPLIT>שילוב ש<SPLIT>בין הפשטה מודרניסטית לבין מוטיבים עממיים ו<SPLIT>דקורטיביים<SPLIT>.}
 Predicted: {
-אהרון כהנא<SPLIT>, ש<SPLIT>פתח ב<SPLIT>שנת 1956 ביחד עם רעיתו מידא כהנא סדנה גדולה<SPLIT>, ש<SPLIT>בה הועסקו כ<SPLIT>שלושה אסיסטנטים<SPLIT>, ב<SPLIT>שם "<SPLIT>בית ה<SPLIT>יוצר<SPLIT>"<SPLIT>, היטיב להגדיר את ה<SPLIT>סגנון ה<SPLIT>רווח כ<SPLIT>שילוב ש<SPLIT>בין ה<SPLIT>פשטה מודרניסטית לבין מוטיבים עממיים ו<SPLIT>דקורטיביים<SPLIT>.}
+אהרון כהנא<SPLIT>, ש<SPLIT>פתח ב<SPLIT>שנת 1956 ביחד עם רעיתו מידא כהנא סדנה גדולה<SPLIT>, שבה הועסקו כ<SPLIT>שלושה אסיסטנטים<SPLIT>, ב<SPLIT>שם "<SPLIT>בית ה<SPLIT>יוצר<SPLIT>"<SPLIT>, היטיב להגדיר את ה<SPLIT>סגנון ה<SPLIT>רווח כ<SPLIT>שילוב שבין ה<SPLIT>פשטה מודרניסטית לבין מוטיבים עממיים ו<SPLIT>דקורטיביים<SPLIT>.}
 False positives: {
 ביחד
 רעיתו
-בה
+שבה
+שבין
 ה
 פשטה
 } False negatives: {
@@ -8265,8 +8379,11 @@ False positives: {
 יחד
 רעית
 ו
+ש
 ב
 ה
+ש
+בין
 הפשטה
 }
 
@@ -8299,12 +8416,15 @@ False positives: {
 Expected: {
 סביב ה<SPLIT>סדנה החלה לפעול קבוצה של אמנים תושבי ה<SPLIT>כפר ו<SPLIT>אמנים ה<SPLIT>קרובים אלי<SPLIT>הם<SPLIT>, ש<SPLIT>הפכו את ה<SPLIT>קרמיקה ל<SPLIT>מדיום נוסף ב<SPLIT>עבודת<SPLIT>ם<SPLIT>.}
 Predicted: {
-סביב ה<SPLIT>סדנה החלה לפעול קבוצה של אמנים תושבי ה<SPLIT>כפר ו<SPLIT>אמנים ה<SPLIT>קרובים אליהם<SPLIT>, ש<SPLIT>הפכו את ה<SPLIT>קרמיקה ל<SPLIT>מדיום נוסף ב<SPLIT>עבודת<SPLIT>ם<SPLIT>.}
+סביב ה<SPLIT>סדנה החלה לפעול קבוצה של אמנים תושבי ה<SPLIT>כפר ו<SPLIT>אמנים ה<SPLIT>קרובים אליהם<SPLIT>, ש<SPLIT>הפכו את ה<SPLIT>קרמיקה ל<SPLIT>מדיום נוסף בעבודת<SPLIT>ם<SPLIT>.}
 False positives: {
 אליהם
+בעבודת
 } False negatives: {
 אלי
 הם
+ב
+עבודת
 }
 
 Expected: {
@@ -8321,26 +8441,26 @@ False positives: {
 Expected: {
 גורם מרכזי ב<SPLIT>הפצת סוגה זו הייתה הוראת<SPLIT>ה של גדולה עוגן ב<SPLIT>בצלאל<SPLIT>.}
 Predicted: {
-גורם מרכזי ב<SPLIT>הפצת סוגה זו הייתה הוראתה של גדולה עוגן בבצלאל<SPLIT>.}
+גורם מרכזי ב<SPLIT>הפצת סוגה זו הייתה הוראתה של גדולה עוגן ב<SPLIT>בצלאל<SPLIT>.}
 False positives: {
 הוראתה
-בבצלאל
 } False negatives: {
 הוראת
 ה
-ב
-בצלאל
 }
 
 Expected: {
 ב<SPLIT>מהלך שנות ה<SPLIT>-<SPLIT>80 של ה<SPLIT>מאה ה<SPLIT>-<SPLIT>20<SPLIT>, התרחש שינוי מהותי ב<SPLIT>תפיסת ה<SPLIT>קרמיקה ה<SPLIT>ישראלית<SPLIT>.}
 Predicted: {
-ב<SPLIT>מהלך שנות ה<SPLIT>-<SPLIT>80 של ה<SPLIT>מאה ה<SPLIT>-<SPLIT>20<SPLIT>, התרחש שינוי מ<SPLIT>הותי ב<SPLIT>תפיסת ה<SPLIT>קרמיקה ה<SPLIT>ישראלית<SPLIT>.}
+ב<SPLIT>מהלך שנות ה<SPLIT>-<SPLIT>80 של ה<SPLIT>מאה ה<SPLIT>-<SPLIT>20<SPLIT>, התרחש שינוי מ<SPLIT>הותי בתפיסת ה<SPLIT>קרמיקה ה<SPLIT>ישראלית<SPLIT>.}
 False positives: {
 מ
 הותי
+בתפיסת
 } False negatives: {
 מהותי
+ב
+תפיסת
 }
 
 Expected: {
@@ -8374,23 +8494,15 @@ False positives: {
 Expected: {
 ו<SPLIT>דניאל דייוויס יצר ב<SPLIT>עבודת אובניים כדים גדולי ממדים ש<SPLIT>שברי<SPLIT>הם "<SPLIT>אוחו<SPLIT>" ב<SPLIT>רצועות ברזל<SPLIT>.}
 Predicted: {
-ו<SPLIT>דניאל דייוויס יצר ב<SPLIT>עבודת אובניים כדים גדולי ממדים ש<SPLIT>שבריהם "<SPLIT>אוחו<SPLIT>" ב<SPLIT>רצועות ברזל<SPLIT>.}
+ו<SPLIT>דניאל דייוויס יצר ב<SPLIT>עבודת אובניים כדים גדולי ממדים ש<SPLIT>שבריהם "<SPLIT>אוחו<SPLIT>" ברצועות ברזל<SPLIT>.}
 False positives: {
 שבריהם
+ברצועות
 } False negatives: {
 שברי
 הם
-}
-
-Expected: {
-דרכ<SPLIT>ם<SPLIT>, התמודדה ה<SPLIT>אמנית עם מסורת ה<SPLIT>קדרות ה<SPLIT>אירופית ו<SPLIT>ה<SPLIT>אסייתית<SPLIT>.}
-Predicted: {
-דרכ<SPLIT>ם<SPLIT>, ה<SPLIT>תמודדה ה<SPLIT>אמנית עם מסורת ה<SPLIT>קדרות ה<SPLIT>אירופית ו<SPLIT>ה<SPLIT>אסייתית<SPLIT>.}
-False positives: {
-ה
-תמודדה
-} False negatives: {
-התמודדה
+ב
+רצועות
 }
 
 Expected: {
@@ -8419,29 +8531,21 @@ False positives: {
 }
 
 Expected: {
-ועדת ה<SPLIT>חקירה ה<SPLIT>אנגלו<SPLIT>-<SPLIT>אמריקאית ל<SPLIT>ענייני ארץ ישראל ש<SPLIT>זומנה לחקור את סוגיית ארץ ישראל לאחר מלחמת ה<SPLIT>עולם ה<SPLIT>שנייה<SPLIT>, פרסמה ב<SPLIT>אפריל 1946 מסקנותי<SPLIT>ה<SPLIT>, ה<SPLIT>קובעות ש<SPLIT>אין להקים מדינה דו<SPLIT>-<SPLIT>לאומית ב<SPLIT>שטח ה<SPLIT>מנדט<SPLIT>.}
-Predicted: {
-ועדת ה<SPLIT>חקירה ה<SPLIT>אנגלו<SPLIT>-<SPLIT>אמריקאית ל<SPLIT>ענייני ארץ ישראל ש<SPLIT>זומנה לחקור את סוגיית ארץ ישראל לאחר מלחמת ה<SPLIT>עולם ה<SPLIT>שנייה<SPLIT>, פרסמה ב<SPLIT>אפריל 1946 מסקנותיה<SPLIT>, ה<SPLIT>קובעות ש<SPLIT>אין להקים מדינה דו<SPLIT>-<SPLIT>לאומית ב<SPLIT>שטח ה<SPLIT>מנדט<SPLIT>.}
-False positives: {
-מסקנותיה
-} False negatives: {
-מסקנותי
-ה
-}
-
-Expected: {
 ב<SPLIT>אפריל 1920 נפגשו נציגי ה<SPLIT>מעצמות ב<SPLIT>וועידת סן רמו כדי לדון ב<SPLIT>דרכים ל<SPLIT>יישום סעיפים אלה ו<SPLIT>שם חולקו ה<SPLIT>שטחים ש<SPLIT>נכבשו מידי ה<SPLIT>עות'מאנים ב<SPLIT>מלחמת ה<SPLIT>עולם ה<SPLIT>ראשונה<SPLIT>: בריטניה קיבלה את ה<SPLIT>מנדט על ארץ ישראל ו<SPLIT>עבר ה<SPLIT>ירדן<SPLIT>, ב<SPLIT>מטרה ליישם את הצהרת בלפור "<SPLIT>...<SPLIT>תוך מתן אפשרות ל<SPLIT>עליית יהודים<SPLIT>... ו<SPLIT>תוך עידוד התיישבות צפופה ב<SPLIT>ארץ<SPLIT>"<SPLIT>.}
 Predicted: {
-ב<SPLIT>אפריל 1920 נפגשו נציגי ה<SPLIT>מעצמות ב<SPLIT>וועידת סן רמו כדי לדון בדרכים ל<SPLIT>יישום סעיפים אלה ו<SPLIT>שם חולקו ה<SPLIT>שטחים ש<SPLIT>נכבשו מידי ה<SPLIT>עות'מאנים ב<SPLIT>מלחמת ה<SPLIT>עולם ה<SPLIT>ראשונה<SPLIT>: בריטניה קיבלה את ה<SPLIT>מנדט על ארץ ישראל ו<SPLIT>עבר ה<SPLIT>ירדן<SPLIT>, ב<SPLIT>מטרה ליישם את הצהרת בלפור "<SPLIT>...תוך מתן אפשרות ל<SPLIT>עליית יהודים<SPLIT>... ותוך עידוד התיישבות צפופה ב<SPLIT>ארץ<SPLIT>"<SPLIT>.}
+ב<SPLIT>אפריל 1920 נפגשו נציגי ה<SPLIT>מעצמות ב<SPLIT>וועידת סן רמו כדי לדון בדרכים ל<SPLIT>יישום סעיפים אלה ו<SPLIT>שם חולקו ה<SPLIT>שטחים ש<SPLIT>נכבשו מידי ה<SPLIT>עות'מאנים ב<SPLIT>מלחמת ה<SPLIT>עולם ה<SPLIT>ראשונה<SPLIT>: בריטניה קיבלה את ה<SPLIT>מנדט על ארץ ישראל ו<SPLIT>עבר ה<SPLIT>ירדן<SPLIT>, ב<SPLIT>מטרה ליישם את הצהרת בלפור "<SPLIT>...תוך מתן אפשרות ל<SPLIT>עליית יהודים<SPLIT>.<SPLIT>.. ותוך עידוד התיישבות צפופה ב<SPLIT>ארץ<SPLIT>"<SPLIT>.}
 False positives: {
 בדרכים
 ...תוך
+.
+..
 ותוך
 } False negatives: {
 ב
 דרכים
 ...
 תוך
+...
 ו
 תוך
 }
@@ -8449,27 +8553,31 @@ False positives: {
 Expected: {
 ב<SPLIT>אותה שנה<SPLIT>, הופרדה עבר ה<SPLIT>ירדן מינהלית מ<SPLIT>ארץ ישראל ש<SPLIT>מ<SPLIT>מערב ל<SPLIT>ירדן (<SPLIT>ש<SPLIT>כונתה פלשתינה<SPLIT>)<SPLIT>, לפי החלטת<SPLIT>ו של וינסטון צ'רצ'יל<SPLIT>, שר ה<SPLIT>מושבות ה<SPLIT>בריטי<SPLIT>, ש<SPLIT>ניסח נייר עמדה אשר כונה "<SPLIT>ה<SPLIT>ספר ה<SPLIT>לבן של צ'רצ'יל<SPLIT>"<SPLIT>.}
 Predicted: {
-ב<SPLIT>אותה שנה<SPLIT>, הופרדה עבר ה<SPLIT>ירדן מינהלית מארץ ישראל ש<SPLIT>מ<SPLIT>מערב ל<SPLIT>ירדן (<SPLIT>ש<SPLIT>כונתה פלשתינה<SPLIT>)<SPLIT>, לפי ה<SPLIT>חלטת<SPLIT>ו של וינסטון צ'רצ'יל<SPLIT>, שר ה<SPLIT>מושבות ה<SPLIT>בריטי<SPLIT>, ש<SPLIT>ניסח נייר עמדה אשר כונה "<SPLIT>ה<SPLIT>ספר ה<SPLIT>לבן של צ'רצ'יל<SPLIT>"<SPLIT>.}
+ב<SPLIT>אותה שנה<SPLIT>, הופרדה עבר ה<SPLIT>ירדן מינהלית מארץ ישראל ש<SPLIT>מ<SPLIT>מערב ל<SPLIT>ירדן (<SPLIT>ש<SPLIT>כונתה פלשתינה<SPLIT>)<SPLIT>, לפי ה<SPLIT>חלטתו של וינסטון צ'רצ'יל<SPLIT>, שר ה<SPLIT>מושבות ה<SPLIT>בריטי<SPLIT>, ש<SPLIT>ניסח נייר עמדה אשר כונה "<SPLIT>ה<SPLIT>ספר ה<SPLIT>לבן של צ'רצ'יל<SPLIT>"<SPLIT>.}
 False positives: {
 מארץ
 ה
-חלטת
+חלטתו
 } False negatives: {
 מ
 ארץ
 החלטת
+ו
 }
 
 Expected: {
 ה<SPLIT>עולים נקלטו ב<SPLIT>ארץ על ידי תנועות מיישבות<SPLIT>, ש<SPLIT>קיבלו ל<SPLIT>רשות<SPLIT>ן קרקעות - ב<SPLIT>תנאי ש<SPLIT>יעובדו על ידי יהודים<SPLIT>, ו<SPLIT>ישמשו ל<SPLIT>צורכי קליטת ה<SPLIT>עלייה<SPLIT>.}
 Predicted: {
-ה<SPLIT>עולים נקלטו ב<SPLIT>ארץ על ידי תנועות מיישבות<SPLIT>, ש<SPLIT>קיבלו לרשותן קרקעות - ב<SPLIT>תנאי ש<SPLIT>יעובדו על ידי יהודים<SPLIT>, ו<SPLIT>ישמשו ל<SPLIT>צורכי קליטת ה<SPLIT>עלייה<SPLIT>.}
+ה<SPLIT>עולים נקלטו ב<SPLIT>ארץ על ידי תנועות מיישבות<SPLIT>, ש<SPLIT>קיבלו לרשותן קרקעות - ב<SPLIT>תנאי שיעובדו על ידי יהודים<SPLIT>, ו<SPLIT>ישמשו ל<SPLIT>צורכי קליטת ה<SPLIT>עלייה<SPLIT>.}
 False positives: {
 לרשותן
+שיעובדו
 } False negatives: {
 ל
 רשות
 ן
+ש
+יעובדו
 }
 
 Expected: {
@@ -8515,33 +8623,22 @@ False positives: {
 Expected: {
 ה<SPLIT>"<SPLIT>כלל<SPLIT>" ש<SPLIT>טבע דוד בן<SPLIT>-<SPLIT>גוריון היה<SPLIT>: "<SPLIT>עלי<SPLIT>נו לעזור ל<SPLIT>בריטים ב<SPLIT>מלחמת<SPLIT>ם כאילו אין ספר לבן<SPLIT>, ו<SPLIT>עלי<SPLIT>נו לעמוד נגד ה<SPLIT>ספר ה<SPLIT>לבן כאילו אין מלחמה<SPLIT>"<SPLIT>.}
 Predicted: {
-ה<SPLIT>"<SPLIT>כלל<SPLIT>" שטבע דוד בן<SPLIT>-<SPLIT>גוריון ה<SPLIT>יה<SPLIT>: "<SPLIT>עלינו ל<SPLIT>עזור ל<SPLIT>בריטים ב<SPLIT>מלחמתם כ<SPLIT>אילו אין ספר לבן<SPLIT>, ו<SPLIT>עלינו לעמוד נגד ה<SPLIT>ספר ה<SPLIT>לבן כ<SPLIT>אילו אין מלחמה<SPLIT>"<SPLIT>.}
+ה<SPLIT>"<SPLIT>כלל<SPLIT>" שטבע דוד בן<SPLIT>-<SPLIT>גוריון היה<SPLIT>: "<SPLIT>עלינו לעזור ל<SPLIT>בריטים במלחמתם כאילו אין ספר לבן<SPLIT>, ו<SPLIT>עלינו לעמוד נגד ה<SPLIT>ספר ה<SPLIT>לבן כאילו אין מלחמה<SPLIT>"<SPLIT>.}
 False positives: {
 שטבע
-ה
-יה
 עלינו
-ל
-עזור
-מלחמתם
-כ
-אילו
+במלחמתם
 עלינו
-כ
-אילו
 } False negatives: {
 ש
 טבע
-היה
 עלי
 נו
-לעזור
+ב
 מלחמת
 ם
-כאילו
 עלי
 נו
-כאילו
 }
 
 Expected: {
@@ -8564,6 +8661,17 @@ False positives: {
 חרפה
 } False negatives: {
 החרפה
+}
+
+Expected: {
+רוב<SPLIT>ם נתפסו ב<SPLIT>חופי ה<SPLIT>ארץ ו<SPLIT>נשלח ל<SPLIT>מחנות מעצר ב<SPLIT>קפריסין (<SPLIT>ש<SPLIT>הייתה אז מושבה בריטית<SPLIT>)<SPLIT>.}
+Predicted: {
+רוב<SPLIT>ם נתפסו ב<SPLIT>חופי ה<SPLIT>ארץ ו<SPLIT>נשלח ל<SPLIT>מחנות מעצר בקפריסין (<SPLIT>ש<SPLIT>הייתה אז מושבה בריטית<SPLIT>)<SPLIT>.}
+False positives: {
+בקפריסין
+} False negatives: {
+ב
+קפריסין
 }
 
 Expected: {
@@ -8615,6 +8723,17 @@ False positives: {
 }
 
 Expected: {
+ה<SPLIT>בריטים החליטו לסיים את ה<SPLIT>מנדט ב<SPLIT>שעת חצות ש<SPLIT>בין 14 ב<SPLIT>מאי ל<SPLIT>-<SPLIT>15 ב<SPLIT>ו<SPLIT>, כאשר ה<SPLIT>נציב ה<SPLIT>עליון הוריד את דגל בריטניה ב<SPLIT>נמל חיפה<SPLIT>.}
+Predicted: {
+ה<SPLIT>בריטים החליטו לסיים את ה<SPLIT>מנדט ב<SPLIT>שעת חצות שבין 14 ב<SPLIT>מאי ל<SPLIT>-<SPLIT>15 ב<SPLIT>ו<SPLIT>, כאשר ה<SPLIT>נציב ה<SPLIT>עליון הוריד את דגל בריטניה ב<SPLIT>נמל חיפה<SPLIT>.}
+False positives: {
+שבין
+} False negatives: {
+ש
+בין
+}
+
+Expected: {
 ספר ה<SPLIT>הגנה מציג את טענות ה<SPLIT>צד ה<SPLIT>יהודי<SPLIT>: "<SPLIT>עמדת<SPLIT>ה ה<SPLIT>רשמית של ה<SPLIT>ממשלה ה<SPLIT>בריטית לגבי ה<SPLIT>מאבק בין ה<SPLIT>יהודים לבין ה<SPLIT>ערבים הייתה של נייטרליות<SPLIT>.}
 Predicted: {
 ספר ה<SPLIT>הגנה מציג את טענות ה<SPLIT>צד ה<SPLIT>יהודי<SPLIT>: "<SPLIT>עמדתה ה<SPLIT>רשמית של ה<SPLIT>ממשלה ה<SPLIT>בריטית לגבי ה<SPLIT>מאבק בין ה<SPLIT>יהודים לבין ה<SPLIT>ערבים הייתה של נייטרליות<SPLIT>.}
@@ -8634,6 +8753,17 @@ False positives: {
 סיקה
 } False negatives: {
 הסיקה
+}
+
+Expected: {
+ה<SPLIT>נציב ה<SPLIT>עליון היה בא כוח<SPLIT>ו של ה<SPLIT>מלך<SPLIT>, ו<SPLIT>ב<SPLIT>כך מונה לעמוד ב<SPLIT>ראש ה<SPLIT>שלטון<SPLIT>, הן ה<SPLIT>צבאי ו<SPLIT>הן ה<SPLIT>אזרחי<SPLIT>.}
+Predicted: {
+ה<SPLIT>נציב ה<SPLIT>עליון היה בא כוחו של ה<SPLIT>מלך<SPLIT>, ו<SPLIT>ב<SPLIT>כך מונה לעמוד ב<SPLIT>ראש ה<SPLIT>שלטון<SPLIT>, הן ה<SPLIT>צבאי ו<SPLIT>הן ה<SPLIT>אזרחי<SPLIT>.}
+False positives: {
+כוחו
+} False negatives: {
+כוח
+ו
 }
 
 Expected: {
@@ -8685,32 +8815,37 @@ False positives: {
 Expected: {
 שער זה מתפרסם בערך ב<SPLIT>-<SPLIT>15:30<SPLIT>, ו<SPLIT>מבוסס ב<SPLIT>מרבית ה<SPLIT>מקרים על דגימה אקראית בין 13:15 ל<SPLIT>-<SPLIT>15:15<SPLIT>.}
 Predicted: {
-שער זה מתפרסם ב<SPLIT>ערך ב<SPLIT>-<SPLIT>15:30<SPLIT>, ו<SPLIT>מבוסס ב<SPLIT>מרבית ה<SPLIT>מקרים על דגימה אקראית בין 13<SPLIT>:15 ל<SPLIT>-<SPLIT>15:15<SPLIT>.}
+שער זה מתפרסם ב<SPLIT>ערך ב<SPLIT>-<SPLIT>15:30<SPLIT>, ו<SPLIT>מבוסס ב<SPLIT>מרבית ה<SPLIT>מקרים על דגימה אקראית בין 13:15 ל<SPLIT>-<SPLIT>15:15<SPLIT>.}
 False positives: {
 ב
 ערך
-13
-:15
 } False negatives: {
 בערך
-13:15
 }
 
 Expected: {
 בשל כך<SPLIT>, ב<SPLIT>בוקר יום הפקיעה ישנו מחזור גבוה משמעותית מאשר מחזור ה<SPLIT>פתיחה ב<SPLIT>כל יום אחר ו<SPLIT>אשר ב<SPLIT>פקיעות חודשיות אף מגיע ל<SPLIT>מחזור של יום מסחר שלם ו<SPLIT>אף מעבר ל<SPLIT>כך<SPLIT>.}
 Predicted: {
-בשל כך<SPLIT>, ב<SPLIT>בוקר יום ה<SPLIT>פקיעה ישנו מחזור גבוה משמעותית מאשר מחזור ה<SPLIT>פתיחה ב<SPLIT>כל יום אחר ואשר ב<SPLIT>פקיעות חודשיות אף מגיע למחזור של יום מסחר שלם ו<SPLIT>אף מעבר ל<SPLIT>כך<SPLIT>.}
+בשל כך<SPLIT>, ב<SPLIT>בוקר יום ה<SPLIT>פקיעה ישנו מחזור גבוה משמעותית מאשר מחזור ה<SPLIT>פתיחה ב<SPLIT>כל יום אחר ו<SPLIT>אשר ב<SPLIT>פקיעות חודשיות אף מגיע למחזור של יום מסחר שלם ו<SPLIT>אף מעבר ל<SPLIT>כך<SPLIT>.}
 False positives: {
 ה
 פקיעה
-ואשר
 למחזור
 } False negatives: {
 הפקיעה
-ו
-אשר
 ל
 מחזור
+}
+
+Expected: {
+כך למשל<SPLIT>, קניה של אופציה מ<SPLIT>סוג call ו<SPLIT>מכירה של אופציה מ<SPLIT>סוג put ב<SPLIT>אותו ערך פקיעה<SPLIT>, שקולה כמעט לחלוטין (<SPLIT>ה<SPLIT>הבדל מתבטא ב<SPLIT>ריבית חסרת סיכון על ערך ה<SPLIT>הפקדה<SPLIT>) ל<SPLIT>קניה של חוזה עתידי ו<SPLIT>זאת בשל יחס מתמטיקה פיננסית put-call parity<SPLIT>.}
+Predicted: {
+כך למשל<SPLIT>, קניה של אופציה מ<SPLIT>סוג call ו<SPLIT>מכירה של אופציה מ<SPLIT>סוג put ב<SPLIT>אותו ערך פקיעה<SPLIT>, שקולה כמעט לחלוטין (<SPLIT>ה<SPLIT>הבדל מתבטא ב<SPLIT>ריבית חסרת סיכון על ערך ה<SPLIT>הפקדה<SPLIT>) לקניה של חוזה עתידי ו<SPLIT>זאת בשל יחס מתמטיקה פיננסית put-call parity<SPLIT>.}
+False positives: {
+לקניה
+} False negatives: {
+ל
+קניה
 }
 
 Expected: {
@@ -8790,28 +8925,25 @@ False positives: {
 Expected: {
 נוסף על כך<SPLIT>, ב<SPLIT>סוף שנות ה<SPLIT>שבעים ו<SPLIT>ב<SPLIT>תחילת שנות ה<SPLIT>שמונים התרחבו ה<SPLIT>בנקים ב<SPLIT>מהירות עצומה<SPLIT>, הוסיפו אלפי עובדים ו<SPLIT>בנו מאות סניפים (<SPLIT>תופעה ש<SPLIT>כונתה על<SPLIT>-<SPLIT>ידי "<SPLIT>ה<SPLIT>גשש ה<SPLIT>חיוור<SPLIT>" ב<SPLIT>בדיחות ה<SPLIT>דעת "<SPLIT>בנק ב<SPLIT>כל חור<SPLIT>"<SPLIT>)<SPLIT>.}
 Predicted: {
-נוסף על כך<SPLIT>, ב<SPLIT>סוף שנות ה<SPLIT>שבעים ו<SPLIT>ב<SPLIT>תחילת שנות ה<SPLIT>שמונים ה<SPLIT>תרחבו ה<SPLIT>בנקים ב<SPLIT>מהירות עצומה<SPLIT>, הוסיפו אלפי עובדים ו<SPLIT>בנ<SPLIT>ו מאות סניפים (<SPLIT>תופעה ש<SPLIT>כונתה על<SPLIT>-<SPLIT>ידי "<SPLIT>ה<SPLIT>גשש ה<SPLIT>חיוור<SPLIT>" ב<SPLIT>בדיחות ה<SPLIT>דעת "<SPLIT>בנק ב<SPLIT>כל חור<SPLIT>"<SPLIT>)<SPLIT>.}
+נוסף על כך<SPLIT>, ב<SPLIT>סוף שנות ה<SPLIT>שבעים ו<SPLIT>ב<SPLIT>תחילת שנות ה<SPLIT>שמונים התרחבו ה<SPLIT>בנקים ב<SPLIT>מהירות עצומה<SPLIT>, הוסיפו אלפי עובדים ו<SPLIT>בנ<SPLIT>ו מאות סניפים (<SPLIT>תופעה ש<SPLIT>כונתה על<SPLIT>-<SPLIT>ידי "<SPLIT>ה<SPLIT>גשש ה<SPLIT>חיוור<SPLIT>" ב<SPLIT>בדיחות ה<SPLIT>דעת "<SPLIT>בנק ב<SPLIT>כל חור<SPLIT>"<SPLIT>)<SPLIT>.}
 False positives: {
-ה
-תרחבו
 בנ
 ו
 } False negatives: {
-התרחבו
 בנו
 }
 
 Expected: {
 נוסף על כך<SPLIT>, ככל ש<SPLIT>גדל היקף שוק מניות ה<SPLIT>בנקים<SPLIT>, כך קטנה השפעת פעולת ה<SPLIT>וויסות של ה<SPLIT>בנקים<SPLIT>, שכן כל אגורה ש<SPLIT>הושקעה על<SPLIT>-<SPLIT>יד<SPLIT>ם היוותה חלק הולך ו<SPLIT>קטן ב<SPLIT>כלל ה<SPLIT>הון ה<SPLIT>מושקע ב<SPLIT>מניות<SPLIT>.}
 Predicted: {
-נוסף על כך<SPLIT>, כ<SPLIT>כל ש<SPLIT>גדל היקף שוק מניות ה<SPLIT>בנקים<SPLIT>, כך קטנה השפעת פעולת ה<SPLIT>וויסות של ה<SPLIT>בנקים<SPLIT>, ש<SPLIT>כן כל אגורה ש<SPLIT>הושקעה על<SPLIT>-<SPLIT>יד<SPLIT>ם היוותה חלק הולך ו<SPLIT>קטן ב<SPLIT>כלל ה<SPLIT>הון ה<SPLIT>מושקע ב<SPLIT>מניות<SPLIT>.}
+נוסף על כך<SPLIT>, ככל שגדל היקף שוק מניות ה<SPLIT>בנקים<SPLIT>, כך קטנה השפעת פעולת ה<SPLIT>וויסות של ה<SPLIT>בנקים<SPLIT>, ש<SPLIT>כן כל אגורה ש<SPLIT>הושקעה על<SPLIT>-<SPLIT>יד<SPLIT>ם היוותה חלק הולך ו<SPLIT>קטן ב<SPLIT>כלל ה<SPLIT>הון ה<SPLIT>מושקע ב<SPLIT>מניות<SPLIT>.}
 False positives: {
-כ
-כל
+שגדל
 ש
 כן
 } False negatives: {
-ככל
+ש
+גדל
 שכן
 }
 
@@ -8909,6 +9041,17 @@ False positives: {
 }
 
 Expected: {
+לעומת זאת<SPLIT>, חדלו ה<SPLIT>בנקים לתת אשראי ל<SPLIT>קניית מניות חדשות<SPLIT>.}
+Predicted: {
+לעומת זאת<SPLIT>, חדלו ה<SPLIT>בנקים לתת אשראי לקניית מניות חדשות<SPLIT>.}
+False positives: {
+לקניית
+} False negatives: {
+ל
+קניית
+}
+
+Expected: {
 ב<SPLIT>התאם ל<SPLIT>דוקטרינה זו הבקעת מערך ה<SPLIT>הגנה של ה<SPLIT>אויב תתבצע ב<SPLIT>מספר נקודות<SPLIT>, ו<SPLIT>לא ב<SPLIT>מאמץ עיקרי אחד<SPLIT>, ב<SPLIT>עזרת סיוע ארטילרי מאסיבי<SPLIT>.}
 Predicted: {
 ב<SPLIT>התאם לדוקטרינה זו ה<SPLIT>בקעת מערך ה<SPLIT>הגנה של ה<SPLIT>אויב תתבצע ב<SPLIT>מספר נקודות<SPLIT>, ו<SPLIT>לא ב<SPLIT>מאמץ עיקרי אחד<SPLIT>, ב<SPLIT>עזרת סיוע ארטילרי מאסיבי<SPLIT>.}
@@ -8936,11 +9079,10 @@ False positives: {
 Expected: {
 פתיחת ה<SPLIT>אש החלה 35 דקות לפני כן עם תחילת ה<SPLIT>תנועה של ה<SPLIT>כוחות ה<SPLIT>קידמיים אל עבר ה<SPLIT>גבול ב<SPLIT>שעה 13:55<SPLIT>.}
 Predicted: {
-פתיחת ה<SPLIT>אש החלה 35 דקות לפני כן עם תחילת ה<SPLIT>תנועה של ה<SPLIT>כוחות ה<SPLIT>קידמיים אל עבר ה<SPLIT>גבול ב<SPLIT>שעה 13<SPLIT>:<SPLIT>55<SPLIT>.}
+פתיחת ה<SPLIT>אש החלה 35 דקות לפני כן עם תחילת ה<SPLIT>תנועה של ה<SPLIT>כוחות ה<SPLIT>קידמיים אל עבר ה<SPLIT>גבול ב<SPLIT>שעה 13<SPLIT>:55<SPLIT>.}
 False positives: {
 13
-:
-55
+:55
 } False negatives: {
 13:55
 }
@@ -8973,8 +9115,9 @@ False positives: {
 Expected: {
 כוח<SPLIT>ו של גבע (<SPLIT>ה<SPLIT>טנקים ש<SPLIT>נותרו מ<SPLIT>שתי פלוגות של ה<SPLIT>גדוד ו<SPLIT>פלוגת מילואים מ<SPLIT>חטיבה 179<SPLIT>)<SPLIT>, ש<SPLIT>סבל מ<SPLIT>מחסור ה<SPLIT>תחמושת ו<SPLIT>נמצא תחת לחץ סורי כבד<SPLIT>, נטש את ה<SPLIT>גזרה עלי<SPLIT>ה ה<SPLIT>גן ב<SPLIT>סביבות שעה 12:00<SPLIT>, ו<SPLIT>נע צפונה לחבור אל חטיבת ה<SPLIT>אם של<SPLIT>ו<SPLIT>, ב<SPLIT>התאם ל<SPLIT>הוראת מפקד חטיבה 7<SPLIT>, יאנוש בן-גל<SPLIT>.}
 Predicted: {
-כוח<SPLIT>ו של גבע (<SPLIT>ה<SPLIT>טנקים ש<SPLIT>נותרו מ<SPLIT>שתי פלוגות של ה<SPLIT>גדוד ו<SPLIT>פלוגת מילואים מ<SPLIT>חטיבה 179<SPLIT>)<SPLIT>, ש<SPLIT>סבל מ<SPLIT>מחסור ה<SPLIT>תחמושת ו<SPLIT>נמצא תחת לחץ סורי כבד<SPLIT>, נטש את ה<SPLIT>גזרה עליה ה<SPLIT>גן ב<SPLIT>סביבות שעה 12:00<SPLIT>, ו<SPLIT>נע צפונה ל<SPLIT>חבור אל חטיבת ה<SPLIT>אם שלו<SPLIT>, ב<SPLIT>התאם ל<SPLIT>הוראת מפקד חטיבה 7<SPLIT>, יאנוש בן<SPLIT>-<SPLIT>גל<SPLIT>.}
+כוחו של גבע (<SPLIT>ה<SPLIT>טנקים ש<SPLIT>נותרו מ<SPLIT>שתי פלוגות של ה<SPLIT>גדוד ו<SPLIT>פלוגת מילואים מ<SPLIT>חטיבה 179<SPLIT>)<SPLIT>, ש<SPLIT>סבל מ<SPLIT>מחסור ה<SPLIT>תחמושת ו<SPLIT>נמצא תחת לחץ סורי כבד<SPLIT>, נטש את ה<SPLIT>גזרה עליה ה<SPLIT>גן ב<SPLIT>סביבות שעה 12:00<SPLIT>, ו<SPLIT>נע צפונה ל<SPLIT>חבור אל חטיבת ה<SPLIT>אם שלו<SPLIT>, ב<SPLIT>התאם ל<SPLIT>הוראת מפקד חטיבה 7<SPLIT>, יאנוש בן<SPLIT>-<SPLIT>גל<SPLIT>.}
 False positives: {
+כוחו
 עליה
 ל
 חבור
@@ -8983,6 +9126,8 @@ False positives: {
 -
 גל
 } False negatives: {
+כוח
+ו
 עלי
 ה
 לחבור
@@ -9012,17 +9157,6 @@ False positives: {
 עת
 } False negatives: {
 כעת
-}
-
-Expected: {
-עם בוקר חידשו ה<SPLIT>כוחות ה<SPLIT>סורים ש<SPLIT>ניצבו ב<SPLIT>מרחב ש<SPLIT>מ<SPLIT>דרום ל<SPLIT>נפח את ניסיונ<SPLIT>ם לכבוש את ה<SPLIT>מחנה<SPLIT>.}
-Predicted: {
-עם בוקר חידשו ה<SPLIT>כוחות ה<SPLIT>סורים ש<SPLIT>ניצבו ב<SPLIT>מרחב ש<SPLIT>מדרום ל<SPLIT>נפח את ניסיונ<SPLIT>ם לכבוש את ה<SPLIT>מחנה<SPLIT>.}
-False positives: {
-מדרום
-} False negatives: {
-מ
-דרום
 }
 
 Expected: {
@@ -9082,25 +9216,27 @@ False positives: {
 Expected: {
 ב<SPLIT>רוב ה<SPLIT>מקרים ה<SPLIT>ילדים אושפזו ב<SPLIT>מחנות עולים או ב<SPLIT>בתי חולים<SPLIT>, ל<SPLIT>הורי<SPLIT>הם נאמר כי הם נפטרו ו<SPLIT>נקברו<SPLIT>, אולם רבים מן ה<SPLIT>הורים ו<SPLIT>אחרים מפקפקים ב<SPLIT>כך ו<SPLIT>טוענים כי ה<SPLIT>ילדים נלקחו מ<SPLIT>הם<SPLIT>, ב<SPLIT>יוזמה מקומית או ב<SPLIT>אופן ממוסד<SPLIT>.}
 Predicted: {
-ב<SPLIT>רוב ה<SPLIT>מקרים ה<SPLIT>ילדים אושפזו ב<SPLIT>מחנות עולים או ב<SPLIT>בתי חולים<SPLIT>, להורי<SPLIT>הם נאמר כי הם נפטרו ו<SPLIT>נקברו<SPLIT>, אולם רבים מן ה<SPLIT>הורים ו<SPLIT>אחרים מפקפקים ב<SPLIT>כך ו<SPLIT>טוענים כי ה<SPLIT>ילדים נלקחו מ<SPLIT>הם<SPLIT>, ב<SPLIT>יוזמה מקומית או ב<SPLIT>אופן ממוסד<SPLIT>.}
+ב<SPLIT>רוב ה<SPLIT>מקרים ה<SPLIT>ילדים אושפזו ב<SPLIT>מחנות עולים או ב<SPLIT>בתי חולים<SPLIT>, להורי<SPLIT>הם נאמר כי הם נפטרו ו<SPLIT>נקברו<SPLIT>, אולם רבים מן ה<SPLIT>הורים ו<SPLIT>אחרים מפקפקים ב<SPLIT>כך ו<SPLIT>טוענים כי ה<SPLIT>ילדים נלקחו מהם<SPLIT>, ב<SPLIT>יוזמה מקומית או ב<SPLIT>אופן ממוסד<SPLIT>.}
 False positives: {
 להורי
+מהם
 } False negatives: {
 ל
 הורי
+מ
+הם
 }
 
 Expected: {
 לפי ד"ר דב לויטן<SPLIT>, 40<SPLIT>% מ<SPLIT>ה<SPLIT>ילדים בני ה<SPLIT>שנה ש<SPLIT>עלו מ<SPLIT>תימן ל<SPLIT>ישראל נפטרו<SPLIT>, משום ש<SPLIT>ב<SPLIT>תימן לא הכירו את ה<SPLIT>רפואה ה<SPLIT>מודרנית<SPLIT>, ו<SPLIT>כן בשל תנאי ה<SPLIT>מחיה ה<SPLIT>קשים של ה<SPLIT>עולים - מסע ה<SPLIT>עלייה ה<SPLIT>מפרך<SPLIT>, ה<SPLIT>תנאים ה<SPLIT>קשים ב<SPLIT>מחנות ה<SPLIT>מעבר ו<SPLIT>ה<SPLIT>תנאים ב<SPLIT>מחנות ב<SPLIT>ישראל ב<SPLIT>תקופת ה<SPLIT>מחסור ש<SPLIT>שררה אז<SPLIT>.}
 Predicted: {
-לפי ד"ר דב לויטן<SPLIT>, 40<SPLIT>% מ<SPLIT>ה<SPLIT>ילדים בני ה<SPLIT>שנה שעלו מתימן ל<SPLIT>ישראל נפטרו<SPLIT>, משום ש<SPLIT>בתימן לא ה<SPLIT>כירו את ה<SPLIT>רפואה ה<SPLIT>מודרנית<SPLIT>, ו<SPLIT>כן בשל תנאי ה<SPLIT>מחיה ה<SPLIT>קשים של ה<SPLIT>עולים - מסע ה<SPLIT>עלייה ה<SPLIT>מפרך<SPLIT>, ה<SPLIT>תנאים ה<SPLIT>קשים ב<SPLIT>מחנות ה<SPLIT>מעבר ו<SPLIT>התנאים ב<SPLIT>מחנות ב<SPLIT>ישראל ב<SPLIT>תקופת ה<SPLIT>מחסור ש<SPLIT>שררה אז<SPLIT>.}
+לפי ד"ר דב לויטן<SPLIT>, 40<SPLIT>% מ<SPLIT>ה<SPLIT>ילדים בני ה<SPLIT>שנה שעלו מתימן ל<SPLIT>ישראל נפטרו<SPLIT>, משום ש<SPLIT>בתימן לא ה<SPLIT>כירו את ה<SPLIT>רפואה ה<SPLIT>מודרנית<SPLIT>, ו<SPLIT>כן בשל תנאי ה<SPLIT>מחיה ה<SPLIT>קשים של ה<SPLIT>עולים - מסע ה<SPLIT>עלייה ה<SPLIT>מפרך<SPLIT>, ה<SPLIT>תנאים ה<SPLIT>קשים ב<SPLIT>מחנות ה<SPLIT>מעבר ו<SPLIT>ה<SPLIT>תנאים ב<SPLIT>מחנות ב<SPLIT>ישראל ב<SPLIT>תקופת ה<SPLIT>מחסור ש<SPLIT>שררה אז<SPLIT>.}
 False positives: {
 שעלו
 מתימן
 בתימן
 ה
 כירו
-התנאים
 } False negatives: {
 ש
 עלו
@@ -9109,8 +9245,6 @@ False positives: {
 ב
 תימן
 הכירו
-ה
-תנאים
 }
 
 Expected: {
@@ -9130,11 +9264,11 @@ False positives: {
 Expected: {
 ל<SPLIT>דברי<SPLIT>ו<SPLIT>, כל תינוק ש<SPLIT>הובא ל<SPLIT>מחנה הוכנס קודם כל ל<SPLIT>בית ה<SPLIT>תינוקות<SPLIT>, שם נרשם ב<SPLIT>שם ש<SPLIT>נמסר ל<SPLIT>מטפלת על ידי הורי ה<SPLIT>תינוק ו<SPLIT>מדבקה עם שמ<SPLIT>ו הוצמדה ל<SPLIT>יד<SPLIT>ו ה<SPLIT>ימנית<SPLIT>.}
 Predicted: {
-לדבריו<SPLIT>, כל תינוק ש<SPLIT>הובא ל<SPLIT>מחנה הוכנס קודם כל ל<SPLIT>בית ה<SPLIT>תינוקות<SPLIT>, שם נרשם ב<SPLIT>שם ש<SPLIT>נמסר ל<SPLIT>מטפלת על ידי הורי ה<SPLIT>תינוק ו<SPLIT>מדבקה עם שמו הוצמדה ליד<SPLIT>ו ה<SPLIT>ימנית<SPLIT>.}
+לדבריו<SPLIT>, כל תינוק ש<SPLIT>הובא ל<SPLIT>מחנה הוכנס קודם כל ל<SPLIT>בית ה<SPLIT>תינוקות<SPLIT>, שם נרשם ב<SPLIT>שם ש<SPLIT>נמסר ל<SPLIT>מטפלת על ידי הורי ה<SPLIT>תינוק ו<SPLIT>מדבקה עם שמו הוצמדה לידו ה<SPLIT>ימנית<SPLIT>.}
 False positives: {
 לדבריו
 שמו
-ליד
+לידו
 } False negatives: {
 ל
 דברי
@@ -9143,6 +9277,7 @@ False positives: {
 ו
 ל
 יד
+ו
 }
 
 Expected: {
@@ -9159,15 +9294,12 @@ False positives: {
 Expected: {
 גורם נוסף ש<SPLIT>גרם ל<SPLIT>בלבול היה אחיות חדשות ש<SPLIT>רק החלו לעבוד ב<SPLIT>ישראל ו<SPLIT>חלק<SPLIT>ן לא ידעו לקרוא עברית<SPLIT>.}
 Predicted: {
-גורם נוסף ש<SPLIT>גרם לבלבול היה אחיות חדשות ש<SPLIT>רק החלו לעבוד ב<SPLIT>ישראל ו<SPLIT>חלקן לא ידעו לקרוא עברית<SPLIT>.}
+גורם נוסף ש<SPLIT>גרם לבלבול היה אחיות חדשות ש<SPLIT>רק החלו לעבוד ב<SPLIT>ישראל ו<SPLIT>חלק<SPLIT>ן לא ידעו לקרוא עברית<SPLIT>.}
 False positives: {
 לבלבול
-חלקן
 } False negatives: {
 ל
 בלבול
-חלק
-ן
 }
 
 Expected: {
@@ -9199,17 +9331,31 @@ False positives: {
 }
 
 Expected: {
+ה<SPLIT>דיון ה<SPLIT>ראשון ב<SPLIT>מליאת ה<SPLIT>כנסת ב<SPLIT>פרשה זו התקיים ב<SPLIT>-<SPLIT>20 ב<SPLIT>נובמבר 1950<SPLIT>, ב<SPLIT>מסגרת דיון על ה<SPLIT>מצב ב<SPLIT>מעברות<SPLIT>.}
+Predicted: {
+ה<SPLIT>דיון ה<SPLIT>ראשון במליאת ה<SPLIT>כנסת ב<SPLIT>פרשה זו התקיים ב<SPLIT>-<SPLIT>20 ב<SPLIT>נובמבר 1950<SPLIT>, ב<SPLIT>מסגרת דיון על ה<SPLIT>מצב ב<SPLIT>מעברות<SPLIT>.}
+False positives: {
+במליאת
+} False negatives: {
+ב
+מליאת
+}
+
+Expected: {
 היא פנתה ל<SPLIT>ציבור באמצעות ה<SPLIT>עיתונות ו<SPLIT>ה<SPLIT>רדיו למסור ל<SPLIT>ה ידיעות ה<SPLIT>נוגעות ל<SPLIT>העלמות ה<SPLIT>ילדים<SPLIT>.}
 Predicted: {
-היא פנתה ל<SPLIT>ציבור באמצעות ה<SPLIT>עיתונות ו<SPLIT>ה<SPLIT>רדיו למסור לה ידיעות ה<SPLIT>נוגעות להעלמות ה<SPLIT>ילדים<SPLIT>.}
+היא פנתה ל<SPLIT>ציבור באמצעות ה<SPLIT>עיתונות ו<SPLIT>ה<SPLIT>רדיו למסור לה ידיעות ה<SPLIT>נוגעות להעלמות הילדים<SPLIT>.}
 False positives: {
 לה
 להעלמות
+הילדים
 } False negatives: {
 ל
 ה
 ל
 העלמות
+ה
+ילדים
 }
 
 Expected: {
@@ -9222,6 +9368,17 @@ False positives: {
 ל
 ידי
 ה
+}
+
+Expected: {
+ל<SPLIT>וועדה לא הייתה סמכות לברר תלונות על כוונות זדון או לחקור את ה<SPLIT>התנהגות של גורמים שונים ש<SPLIT>טיפלו ב<SPLIT>נושא ב<SPLIT>הם גורמי ה<SPLIT>ממסד<SPLIT>.}
+Predicted: {
+ל<SPLIT>וועדה לא הייתה סמכות לברר תלונות על כוונות זדון או לחקור את ה<SPLIT>התנהגות של גורמים שונים שטיפלו ב<SPLIT>נושא ב<SPLIT>הם גורמי ה<SPLIT>ממסד<SPLIT>.}
+False positives: {
+שטיפלו
+} False negatives: {
+ש
+טיפלו
 }
 
 Expected: {
@@ -9349,15 +9506,12 @@ False positives: {
 Expected: {
 ועדת ה<SPLIT>חקירה ה<SPLIT>ממלכתית חקרה מקרה ב<SPLIT>בית ה<SPLIT>חולים ל<SPLIT>ילדים של הדסה ב<SPLIT>ראש ה<SPLIT>עין<SPLIT>, ש<SPLIT>ב<SPLIT>ו החדירו ל<SPLIT>גופ<SPLIT>ם של ארבעה תינוקות ש<SPLIT>סבלו מ<SPLIT>תת<SPLIT>-<SPLIT>תזונה תמיסות מלחים ו<SPLIT>פרוטאינים דרך עירוי דם<SPLIT>.}
 Predicted: {
-ועדת ה<SPLIT>חקירה ה<SPLIT>ממלכתית חקרה מקרה ב<SPLIT>בית ה<SPLIT>חולים ל<SPLIT>ילדים של הדסה ב<SPLIT>ראש ה<SPLIT>עין<SPLIT>, ש<SPLIT>בו ה<SPLIT>חדירו ל<SPLIT>גופ<SPLIT>ם של ארבעה תינוקות ש<SPLIT>סבלו מתת<SPLIT>-<SPLIT>תזונה תמיסות מלחים ו<SPLIT>פרוטאינים דרך עירוי דם<SPLIT>.}
+ועדת ה<SPLIT>חקירה ה<SPLIT>ממלכתית חקרה מקרה ב<SPLIT>בית ה<SPLIT>חולים ל<SPLIT>ילדים של הדסה ב<SPLIT>ראש ה<SPLIT>עין<SPLIT>, ש<SPLIT>ב<SPLIT>ו ה<SPLIT>חדירו ל<SPLIT>גופ<SPLIT>ם של ארבעה תינוקות ש<SPLIT>סבלו מתת<SPLIT>-<SPLIT>תזונה תמיסות מלחים ו<SPLIT>פרוטאינים דרך עירוי דם<SPLIT>.}
 False positives: {
-בו
 ה
 חדירו
 מתת
 } False negatives: {
-ב
-ו
 החדירו
 מ
 תת
@@ -9366,14 +9520,17 @@ False positives: {
 Expected: {
 אי מתן ה<SPLIT>הודעה ל<SPLIT>מערער ב<SPLIT>פתח חקירת<SPLIT>ו ב<SPLIT>דבר זכות<SPLIT>ו להיוועץ ב<SPLIT>עורך<SPLIT>-<SPLIT>דין אינה בגדר מקרה חד<SPLIT>-<SPLIT>פעמי<SPLIT>, ו<SPLIT>כי ב<SPLIT>תקופה ב<SPLIT>ה נחקר ה<SPLIT>מערער על ידי ה<SPLIT>משטרה ה<SPLIT>צבאית היו הפרות אלה תופעה רווחת<SPLIT>.}
 Predicted: {
-אי מתן ה<SPLIT>הודעה ל<SPLIT>מערער ב<SPLIT>פתח חקירת<SPLIT>ו ב<SPLIT>דבר זכותו להיוועץ ב<SPLIT>עורך<SPLIT>-<SPLIT>דין אינה בגדר מקרה חד<SPLIT>-<SPLIT>פעמי<SPLIT>, ו<SPLIT>כי ב<SPLIT>תקופה ב<SPLIT>ה נחקר ה<SPLIT>מערער על ידי ה<SPLIT>משטרה ה<SPLIT>צבאית היו ה<SPLIT>פרות אלה תופעה רווחת<SPLIT>.}
+אי מתן ה<SPLIT>הודעה ל<SPLIT>מערער ב<SPLIT>פתח חקירת<SPLIT>ו ב<SPLIT>דבר זכותו להיוועץ ב<SPLIT>עורך<SPLIT>-<SPLIT>דין אינה בגדר מקרה חד<SPLIT>-<SPLIT>פעמי<SPLIT>, ו<SPLIT>כי ב<SPLIT>תקופה בה נחקר ה<SPLIT>מערער על ידי ה<SPLIT>משטרה ה<SPLIT>צבאית היו ה<SPLIT>פרות אלה תופעה רווחת<SPLIT>.}
 False positives: {
 זכותו
+בה
 ה
 פרות
 } False negatives: {
 זכות
 ו
+ב
+ה
 הפרות
 }
 
@@ -9401,12 +9558,15 @@ False positives: {
 Expected: {
 שופט ה<SPLIT>מיעוט אשר גרוניס סבר ש<SPLIT>לא ראוי ש<SPLIT>בית ה<SPLIT>משפט יאמץ<SPLIT>, על דרך "<SPLIT>חקיקה שיפוטית<SPLIT>"<SPLIT>, דוקטרינה רחבה של פסילת ראיות אשר הושגו שלא כ<SPLIT>דין<SPLIT>.}
 Predicted: {
-שופט ה<SPLIT>מיעוט אשר גרוניס סבר ש<SPLIT>לא ראוי ש<SPLIT>בית ה<SPLIT>משפט יאמץ<SPLIT>, על דרך "<SPLIT>חקיקה שיפוטית<SPLIT>"<SPLIT>, דוקטרינה רחבה של פסילת ראיות אשר הושגו ש<SPLIT>לא כ<SPLIT>דין<SPLIT>.}
+שופט ה<SPLIT>מיעוט אשר גרוניס סבר ש<SPLIT>לא ראוי ש<SPLIT>בית ה<SPLIT>משפט יאמץ<SPLIT>, על דרך "<SPLIT>חקיקה שיפוטית<SPLIT>"<SPLIT>, דוקטרינה רחבה של פסילת ראיות אשר הושגו ש<SPLIT>לא כדין<SPLIT>.}
 False positives: {
 ש
 לא
+כדין
 } False negatives: {
 שלא
+כ
+דין
 }
 
 Expected: {
@@ -9512,14 +9672,13 @@ False positives: {
 Expected: {
 היא נעשית תוך הקפדה על איזון עדין ו<SPLIT>זהיר<SPLIT>, ל<SPLIT>הבטחת עצמאות<SPLIT>ה של ה<SPLIT>כנסת<SPLIT>, רום<SPLIT>-<SPLIT>מעמד<SPLIT>ה ו<SPLIT>דרכי פעולת<SPLIT>ה<SPLIT>, בד ב<SPLIT>בד עם הבטחת ה<SPLIT>תנאים ל<SPLIT>חקיקת חוק ראוי ל<SPLIT>שמ<SPLIT>ו<SPLIT>; לא ב<SPLIT>ביקורת על תוכנ<SPLIT>ו של ה<SPLIT>חוק עסקינן<SPLIT>, אלא ב<SPLIT>פיקוח על הליכי חקיקת<SPLIT>ו<SPLIT>.}
 Predicted: {
-היא נעשית תוך ה<SPLIT>קפדה על איזון עדין ו<SPLIT>זהיר<SPLIT>, להבטחת עצמאותה של ה<SPLIT>כנסת<SPLIT>, רום<SPLIT>-<SPLIT>מעמדה ו<SPLIT>דרכי פעולתה<SPLIT>, בד ב<SPLIT>בד עם ה<SPLIT>בטחת ה<SPLIT>תנאים ל<SPLIT>חקיקת חוק ראוי לשמו<SPLIT>; לא ב<SPLIT>ביקורת על תוכנ<SPLIT>ו של ה<SPLIT>חוק עסקינן<SPLIT>, אלא ב<SPLIT>פיקוח על הליכי חקיקת<SPLIT>ו<SPLIT>.}
+היא נעשית תוך ה<SPLIT>קפדה על איזון עדין ו<SPLIT>זהיר<SPLIT>, להבטחת עצמאותה של ה<SPLIT>כנסת<SPLIT>, רום<SPLIT>-<SPLIT>מעמדה ו<SPLIT>דרכי פעולת<SPLIT>ה<SPLIT>, בד ב<SPLIT>בד עם ה<SPLIT>בטחת ה<SPLIT>תנאים ל<SPLIT>חקיקת חוק ראוי לשמו<SPLIT>; לא ב<SPLIT>ביקורת על תוכנ<SPLIT>ו של ה<SPLIT>חוק עסקינן<SPLIT>, אלא ב<SPLIT>פיקוח על הליכי חקיקת<SPLIT>ו<SPLIT>.}
 False positives: {
 ה
 קפדה
 להבטחת
 עצמאותה
 מעמדה
-פעולתה
 ה
 בטחת
 לשמו
@@ -9530,8 +9689,6 @@ False positives: {
 עצמאות
 ה
 מעמד
-ה
-פעולת
 ה
 הבטחת
 ל
@@ -9564,18 +9721,24 @@ False positives: {
 Expected: {
 ו<SPLIT>דוק<SPLIT>: סעד מ<SPLIT>סוג זה הולם במיוחד מצבים של פגיעה ב<SPLIT>נורמה מוסדית<SPLIT>-<SPLIT>דיונית<SPLIT>, ה<SPLIT>ניתנת ב<SPLIT>דרך כלל ל<SPLIT>תיקון<SPLIT>, להבדיל מ<SPLIT>פגיעה ב<SPLIT>זכות אדם<SPLIT>; ו<SPLIT>ב<SPLIT>יתר שאת מקום ב<SPLIT>ו ה<SPLIT>עתירה נגד ה<SPLIT>חוק גופ<SPLIT>ו נדחתה על ה<SPLIT>סף<SPLIT>.}
 Predicted: {
-ו<SPLIT>דוק<SPLIT>: סעד מ<SPLIT>סוג זה הולם במיוחד מצבים של פגיעה ב<SPLIT>נורמה מוסדית<SPLIT>-<SPLIT>דיונית<SPLIT>, ה<SPLIT>ניתנת ב<SPLIT>דרך כלל לתיקון<SPLIT>, להבדיל מ<SPLIT>פגיעה ב<SPLIT>זכות אדם<SPLIT>; ו<SPLIT>ב<SPLIT>יתר ש<SPLIT>את מקום ב<SPLIT>ו ה<SPLIT>עתירה נגד ה<SPLIT>חוק גופו נדחתה על ה<SPLIT>סף<SPLIT>.}
+ו<SPLIT>דוק<SPLIT>: סעד מ<SPLIT>סוג זה הולם במיוחד מצבים של פגיעה ב<SPLIT>נורמה מוסדית<SPLIT>-<SPLIT>דיונית<SPLIT>, ה<SPLIT>ניתנת ב<SPLIT>דרך כלל לתיקון<SPLIT>, להבדיל מ<SPLIT>פגיעה בזכות אדם<SPLIT>; ו<SPLIT>ב<SPLIT>יתר ש<SPLIT>את מקום ב<SPLIT>ו ה<SPLIT>עתירה נגד ה<SPLIT>חוק גופו נדחתה על הסף<SPLIT>.}
 False positives: {
 לתיקון
+בזכות
 ש
 את
 גופו
+הסף
 } False negatives: {
 ל
 תיקון
+ב
+זכות
 שאת
 גופ
 ו
+ה
+סף
 }
 
 Expected: {
@@ -9632,14 +9795,17 @@ False positives: {
 Expected: {
 ב<SPLIT>נוסף<SPLIT>, רבים מ<SPLIT>אלו ש<SPLIT>כיהנו ב<SPLIT>תפקיד פרקליט ה<SPLIT>מדינה או ה<SPLIT>יועץ ה<SPLIT>משפטי ל<SPLIT>ממשלה מונו ישירות כ<SPLIT>שופטים ב<SPLIT>בית ה<SPLIT>משפט ה<SPLIT>עליון<SPLIT>, ב<SPLIT>הם חיים כהן<SPLIT>, מאיר שמגר<SPLIT>, גבריאל בך<SPLIT>, פרופ' אהרן ברק<SPLIT>, פרופ' יצחק זמיר<SPLIT>, אליקים רובינשטיין<SPLIT>, דורית ביניש ו<SPLIT>עדנה ארבל<SPLIT>, ה<SPLIT>חוק תוקן ו<SPLIT>ישנה תקופת צינון בת 18 חודשים על מינוי של ה<SPLIT>יועץ ה<SPLIT>משפטי ל<SPLIT>ממשלה ו<SPLIT>פרקליט ה<SPLIT>מדינה ל<SPLIT>בית ה<SPLIT>משפט ה<SPLIT>עליון<SPLIT>.}
 Predicted: {
-ב<SPLIT>נוסף<SPLIT>, רבים מאלו ש<SPLIT>כיהנו ב<SPLIT>תפקיד פרקליט ה<SPLIT>מדינה או ה<SPLIT>יועץ ה<SPLIT>משפטי ל<SPLIT>ממשלה מונו ישירות כ<SPLIT>שופטים ב<SPLIT>בית ה<SPLIT>משפט ה<SPLIT>עליון<SPLIT>, ב<SPLIT>הם חיים כהן<SPLIT>, מאיר ש<SPLIT>מגר<SPLIT>, גבריאל בך<SPLIT>, פרופ' אהרן ברק<SPLIT>, פרופ' יצחק זמיר<SPLIT>, אליקים רובינשטיין<SPLIT>, דורית ביניש ו<SPLIT>עדנה ארבל<SPLIT>, ה<SPLIT>חוק תוקן ו<SPLIT>ישנה תקופת צינון בת 18 חודשים על מינוי של ה<SPLIT>יועץ ה<SPLIT>משפטי ל<SPLIT>ממשלה ו<SPLIT>פרקליט ה<SPLIT>מדינה ל<SPLIT>בית ה<SPLIT>משפט ה<SPLIT>עליון<SPLIT>.}
+ב<SPLIT>נוסף<SPLIT>, רבים מאלו שכיהנו ב<SPLIT>תפקיד פרקליט ה<SPLIT>מדינה או ה<SPLIT>יועץ ה<SPLIT>משפטי ל<SPLIT>ממשלה מונו ישירות כ<SPLIT>שופטים ב<SPLIT>בית ה<SPLIT>משפט ה<SPLIT>עליון<SPLIT>, ב<SPLIT>הם חיים כהן<SPLIT>, מאיר ש<SPLIT>מגר<SPLIT>, גבריאל בך<SPLIT>, פרופ' אהרן ברק<SPLIT>, פרופ' יצחק זמיר<SPLIT>, אליקים רובינשטיין<SPLIT>, דורית ביניש ו<SPLIT>עדנה ארבל<SPLIT>, ה<SPLIT>חוק תוקן ו<SPLIT>ישנה תקופת צינון בת 18 חודשים על מינוי של ה<SPLIT>יועץ ה<SPLIT>משפטי ל<SPLIT>ממשלה ו<SPLIT>פרקליט ה<SPLIT>מדינה ל<SPLIT>בית ה<SPLIT>משפט ה<SPLIT>עליון<SPLIT>.}
 False positives: {
 מאלו
+שכיהנו
 ש
 מגר
 } False negatives: {
 מ
 אלו
+ש
+כיהנו
 שמגר
 }
 
@@ -9669,17 +9835,6 @@ False positives: {
 מ
 חוגי
 שמאלנית
-}
-
-Expected: {
-ככל ש<SPLIT>ה<SPLIT>נושא ה<SPLIT>נדון חדש ו<SPLIT>עקרוני יותר<SPLIT>, ה<SPLIT>הרכב רחב יותר<SPLIT>.}
-Predicted: {
-כ<SPLIT>כל ש<SPLIT>ה<SPLIT>נושא ה<SPLIT>נדון חדש ו<SPLIT>עקרוני יותר<SPLIT>, ה<SPLIT>הרכב רחב יותר<SPLIT>.}
-False positives: {
-כ
-כל
-} False negatives: {
-ככל
 }
 
 Expected: {
@@ -9717,16 +9872,30 @@ False positives: {
 }
 
 Expected: {
+ה<SPLIT>אחראי ל<SPLIT>פעולות אלו היה זיגפריד מוזס<SPLIT>, כלכלן יוצא גרמניה (<SPLIT>ש<SPLIT>היה ל<SPLIT>ימים מבקר ה<SPLIT>מדינה ה<SPLIT>ראשון<SPLIT>)<SPLIT>.}
+Predicted: {
+ה<SPLIT>אחראי ל<SPLIT>פעולות אלו היה זיגפריד מוזס<SPLIT>, כלכלן יוצא גרמניה (<SPLIT>ש<SPLIT>היה לימים מבקר ה<SPLIT>מדינה ה<SPLIT>ראשון<SPLIT>)<SPLIT>.}
+False positives: {
+לימים
+} False negatives: {
+ל
+ימים
+}
+
+Expected: {
 משרד ה<SPLIT>חוץ ו<SPLIT>ה<SPLIT>וועדה ש<SPLIT>מונתה על יד<SPLIT>ו המליצו לפנות ישירות ל<SPLIT>גרמניה לשם דיון על ה<SPLIT>פיצויים ה<SPLIT>כלליים<SPLIT>, ב<SPLIT>נוסף ל<SPLIT>פיצויים ה<SPLIT>אישיים<SPLIT>.}
 Predicted: {
-משרד ה<SPLIT>חוץ ו<SPLIT>ה<SPLIT>וועדה ש<SPLIT>מונתה על ידו ה<SPLIT>מליצו לפנות ישירות ל<SPLIT>גרמניה ל<SPLIT>שם דיון על ה<SPLIT>פיצויים ה<SPLIT>כלליים<SPLIT>, ב<SPLIT>נוסף ל<SPLIT>פיצויים ה<SPLIT>אישיים<SPLIT>.}
+משרד ה<SPLIT>חוץ ו<SPLIT>ה<SPLIT>וועדה שמונתה על ידו ה<SPLIT>מליצו לפנות ישירות ל<SPLIT>גרמניה ל<SPLIT>שם דיון על ה<SPLIT>פיצויים ה<SPLIT>כלליים<SPLIT>, ב<SPLIT>נוסף ל<SPLIT>פיצויים ה<SPLIT>אישיים<SPLIT>.}
 False positives: {
+שמונתה
 ידו
 ה
 מליצו
 ל
 שם
 } False negatives: {
+ש
+מונתה
 יד
 ו
 המליצו
@@ -9742,6 +9911,17 @@ False positives: {
 } False negatives: {
 מ
 שגרירות
+}
+
+Expected: {
+ה<SPLIT>הפגנה החלה ב<SPLIT>כיכר ציון ב<SPLIT>ירושלים<SPLIT>, ו<SPLIT>צעדה ל<SPLIT>בניין ה<SPLIT>כנסת (<SPLIT>אז ב<SPLIT>בית פרומין<SPLIT>, מרחק דקות הליכה מ<SPLIT>ה<SPLIT>כיכר<SPLIT>)<SPLIT>.}
+Predicted: {
+ה<SPLIT>הפגנה החלה בכיכר ציון ב<SPLIT>ירושלים<SPLIT>, ו<SPLIT>צעדה ל<SPLIT>בניין ה<SPLIT>כנסת (<SPLIT>אז ב<SPLIT>בית פרומין<SPLIT>, מרחק דקות הליכה מ<SPLIT>ה<SPLIT>כיכר<SPLIT>)<SPLIT>.}
+False positives: {
+בכיכר
+} False negatives: {
+ב
+כיכר
 }
 
 Expected: {
@@ -9799,13 +9979,10 @@ False positives: {
 Expected: {
 ב<SPLIT>המשך<SPLIT>, החל ייצוא סחורות מ<SPLIT>ישראל ל<SPLIT>גרמניה<SPLIT>, מגמה ש<SPLIT>התחזקה ו<SPLIT>הגיעה ל<SPLIT>שיא<SPLIT>ה ב<SPLIT>שנות ה<SPLIT>שישים<SPLIT>.}
 Predicted: {
-ב<SPLIT>המשך<SPLIT>, החל ייצוא סחורות מ<SPLIT>ישראל לגרמניה<SPLIT>, מגמה ש<SPLIT>התחזקה ו<SPLIT>הגיעה ל<SPLIT>שיאה ב<SPLIT>שנות ה<SPLIT>שישים<SPLIT>.}
+ב<SPLIT>המשך<SPLIT>, החל ייצוא סחורות מ<SPLIT>ישראל ל<SPLIT>גרמניה<SPLIT>, מגמה ש<SPLIT>התחזקה ו<SPLIT>הגיעה ל<SPLIT>שיאה ב<SPLIT>שנות ה<SPLIT>שישים<SPLIT>.}
 False positives: {
-לגרמניה
 שיאה
 } False negatives: {
-ל
-גרמניה
 שיא
 ה
 }
@@ -9813,16 +9990,17 @@ False positives: {
 Expected: {
 גרמניה ה<SPLIT>מערבית מצד<SPLIT>ה אישרה בקשות ל<SPLIT>פיצויים על<SPLIT>-<SPLIT>פי עדויות ו<SPLIT>מסמכים ש<SPLIT>סיפקו ה<SPLIT>ניצולים<SPLIT>, אך מבלי לבחון את מהימנות<SPLIT>ם ב<SPLIT>אופן יסודי<SPLIT>.}
 Predicted: {
-גרמניה ה<SPLIT>מערבית מצדה אישרה בקשות ל<SPLIT>פיצויים על<SPLIT>-<SPLIT>פי עדויות ו<SPLIT>מסמכים ש<SPLIT>סיפקו ה<SPLIT>ניצולים<SPLIT>, אך מבלי לבחון את מ<SPLIT>ה<SPLIT>ימנות<SPLIT>ם ב<SPLIT>אופן יסודי<SPLIT>.}
+גרמניה ה<SPLIT>מערבית מצדה אישרה בקשות ל<SPLIT>פיצויים על<SPLIT>-<SPLIT>פי עדויות ו<SPLIT>מסמכים ש<SPLIT>סיפקו ה<SPLIT>ניצולים<SPLIT>, אך מבלי לבחון את מ<SPLIT>ה<SPLIT>ימנותם ב<SPLIT>אופן יסודי<SPLIT>.}
 False positives: {
 מצדה
 מ
 ה
-ימנות
+ימנותם
 } False negatives: {
 מצד
 ה
 מהימנות
+ם
 }
 
 Expected: {
@@ -9879,11 +10057,14 @@ False positives: {
 Expected: {
 הורי<SPLIT>ה עלו ב<SPLIT>שנת 1933 מ<SPLIT>פולין<SPLIT>, ו<SPLIT>אבי<SPLIT>ה ה<SPLIT>רב ניהל יחד עם אמ<SPLIT>ה חנות מכולת ב<SPLIT>שכונה<SPLIT>.}
 Predicted: {
-הורי<SPLIT>ה עלו ב<SPLIT>שנת 1933 מפולין<SPLIT>, ו<SPLIT>אבי<SPLIT>ה ה<SPLIT>רב ניהל יחד עם אמה חנות מכולת ב<SPLIT>שכונה<SPLIT>.}
+הוריה עלו ב<SPLIT>שנת 1933 מפולין<SPLIT>, ו<SPLIT>אבי<SPLIT>ה ה<SPLIT>רב ניהל יחד עם אמה חנות מכולת ב<SPLIT>שכונה<SPLIT>.}
 False positives: {
+הוריה
 מפולין
 אמה
 } False negatives: {
+הורי
+ה
 מ
 פולין
 אמ
@@ -9910,12 +10091,12 @@ False positives: {
 Expected: {
 השראה ל<SPLIT>מחקר<SPLIT>ה סיפקו ה<SPLIT>דובים<SPLIT>, אשר נכנסים ל<SPLIT>תרדמת חורף<SPLIT>, ש<SPLIT>ב<SPLIT>מהלכ<SPLIT>ה ה<SPLIT>ריבוזומים ב<SPLIT>תאי<SPLIT>הם מתכנסים ל<SPLIT>מבנה דמוי גביש<SPLIT>.}
 Predicted: {
-השראה ל<SPLIT>מחקרה סיפקו ה<SPLIT>דובים<SPLIT>, אשר נכנסים לתרדמת חורף<SPLIT>, ש<SPLIT>במהלכה ה<SPLIT>ריבוזומים ב<SPLIT>תאיהם מתכנסים ל<SPLIT>מבנה דמוי גביש<SPLIT>.}
+השראה ל<SPLIT>מחקרה סיפקו ה<SPLIT>דובים<SPLIT>, אשר נכנסים לתרדמת חורף<SPLIT>, ש<SPLIT>במהלכה ה<SPLIT>ריבוזומים בתאיהם מתכנסים ל<SPLIT>מבנה דמוי גביש<SPLIT>.}
 False positives: {
 מחקרה
 לתרדמת
 במהלכה
-תאיהם
+בתאיהם
 } False negatives: {
 מחקר
 ה
@@ -9924,6 +10105,7 @@ False positives: {
 ב
 מהלכ
 ה
+ב
 תאי
 הם
 }
@@ -9931,19 +10113,22 @@ False positives: {
 Expected: {
 פיתוחים אלו אפשרו את גיבוש<SPLIT>ם של ה<SPLIT>ריבוזומים<SPLIT>, הקרנת<SPLIT>ם ו<SPLIT>הבנת שלבי ה<SPLIT>פעולה ב<SPLIT>תהליך ה<SPLIT>סינתזה של חלבונים<SPLIT>, ו<SPLIT>מכאן נדרשה עבודה על שיפור ה<SPLIT>הפרדה (<SPLIT>רזולוציה<SPLIT>) של ה<SPLIT>תמונות<SPLIT>.}
 Predicted: {
-פיתוחים אלו אפשרו את גיבושם של ה<SPLIT>ריבוזומים<SPLIT>, ה<SPLIT>קרנתם ו<SPLIT>הבנת שלבי ה<SPLIT>פעולה ב<SPLIT>תהליך ה<SPLIT>סינתזה של חלבונים<SPLIT>, ו<SPLIT>מ<SPLIT>כאן נדרשה עבודה על שיפור ה<SPLIT>הפרדה (<SPLIT>רזולוציה<SPLIT>) של ה<SPLIT>תמונות<SPLIT>.}
+פיתוחים אלו אפשרו את גיבושם של ה<SPLIT>ריבוזומים<SPLIT>, ה<SPLIT>קרנתם ו<SPLIT>הבנת שלבי ה<SPLIT>פעולה ב<SPLIT>תהליך ה<SPLIT>סינתזה של חלבונים<SPLIT>, ו<SPLIT>מ<SPLIT>כאן נדרשה עבודה על שיפור ה<SPLIT>הפרדה (<SPLIT>רזולוציה<SPLIT>) של התמונות<SPLIT>.}
 False positives: {
 גיבושם
 ה
 קרנתם
 מ
 כאן
+התמונות
 } False negatives: {
 גיבוש
 ם
 הקרנת
 ם
 מכאן
+ה
+תמונות
 }
 
 Expected: {
@@ -9975,11 +10160,14 @@ False positives: {
 Expected: {
 ב<SPLIT>אליפות ה<SPLIT>עולם ב<SPLIT>אותה שנה ש<SPLIT>נערכה ב<SPLIT>ברמינגהאם הוא סיים ב<SPLIT>מקום ה<SPLIT>חמישי לאחר ש<SPLIT>הפסיד ב<SPLIT>קרב על ה<SPLIT>ארד ל<SPLIT>ניקולה גיל ה<SPLIT>קנדי<SPLIT>.}
 Predicted: {
-ב<SPLIT>אליפות ה<SPLIT>עולם ב<SPLIT>אותה שנה ש<SPLIT>נערכה ב<SPLIT>ברמינגהאם הוא סיים ב<SPLIT>מקום ה<SPLIT>חמישי לאחר ש<SPLIT>הפסיד בקרב על ה<SPLIT>ארד לניקולה גיל ה<SPLIT>קנדי<SPLIT>.}
+ב<SPLIT>אליפות ה<SPLIT>עולם ב<SPLIT>אותה שנה ש<SPLIT>נערכה ב<SPLIT>ברמינגהאם הוא סיים במקום ה<SPLIT>חמישי לאחר ש<SPLIT>הפסיד בקרב על ה<SPLIT>ארד לניקולה גיל ה<SPLIT>קנדי<SPLIT>.}
 False positives: {
+במקום
 בקרב
 לניקולה
 } False negatives: {
+ב
+מקום
 ב
 קרב
 ל
@@ -10035,17 +10223,6 @@ False positives: {
 }
 
 Expected: {
-ב<SPLIT>שמינית ה<SPLIT>גמר זאבי הפסיד ל<SPLIT>אלוף אירופה ה<SPLIT>מכהן<SPLIT>, הנק חרול ה<SPLIT>הולנדי ש<SPLIT>ניצח ב<SPLIT>יוקו בזכות עונשים<SPLIT>.}
-Predicted: {
-ב<SPLIT>שמינית ה<SPLIT>גמר זאבי הפסיד ל<SPLIT>אלוף אירופה ה<SPLIT>מכהן<SPLIT>, הנק חרול ה<SPLIT>הולנדי ש<SPLIT>ניצח ב<SPLIT>יוקו ב<SPLIT>זכות עונשים<SPLIT>.}
-False positives: {
-ב
-זכות
-} False negatives: {
-בזכות
-}
-
-Expected: {
 עשיתי טעות ו<SPLIT>שילמתי עלי<SPLIT>ה<SPLIT>"<SPLIT>.}
 Predicted: {
 עשיתי טעות ו<SPLIT>שילמתי עליה<SPLIT>"<SPLIT>.}
@@ -10054,6 +10231,17 @@ False positives: {
 } False negatives: {
 עלי
 ה
+}
+
+Expected: {
+ב<SPLIT>מכביה ה<SPLIT>חמישית ש<SPLIT>נערכה ב<SPLIT>שנת 1957 זכה ב<SPLIT>מדליית ארד ב<SPLIT>קפיצה ל<SPLIT>גובה ב<SPLIT>תוצאה של 1.75 מטר<SPLIT>.}
+Predicted: {
+ב<SPLIT>מכביה ה<SPLIT>חמישית ש<SPLIT>נערכה ב<SPLIT>שנת 1957 זכה ב<SPLIT>מדליית ארד בקפיצה ל<SPLIT>גובה ב<SPLIT>תוצאה של 1.75 מטר<SPLIT>.}
+False positives: {
+בקפיצה
+} False negatives: {
+ב
+קפיצה
 }
 
 Expected: {
@@ -10073,10 +10261,11 @@ False positives: {
 Expected: {
 ב<SPLIT>אותה שנה השתתף ב<SPLIT>הצגה "<SPLIT>אירמה לה דוס<SPLIT>"<SPLIT>, ש<SPLIT>ב<SPLIT>ה גילם את אחד מ<SPLIT>ה<SPLIT>תפקידים ה<SPLIT>ראשיים<SPLIT>: ה<SPLIT>סרסור ה<SPLIT>קנאי<SPLIT>.}
 Predicted: {
-ב<SPLIT>אותה שנה השתתף ב<SPLIT>הצגה "<SPLIT>אירמה לה דוס<SPLIT>"<SPLIT>, ש<SPLIT>בה גילם את אחד מ<SPLIT>ה<SPLIT>תפקידים ה<SPLIT>ראשיים<SPLIT>: ה<SPLIT>סרסור ה<SPLIT>קנאי<SPLIT>.}
+ב<SPLIT>אותה שנה השתתף ב<SPLIT>הצגה "<SPLIT>אירמה לה דוס<SPLIT>"<SPLIT>, שבה גילם את אחד מ<SPLIT>ה<SPLIT>תפקידים ה<SPLIT>ראשיים<SPLIT>: ה<SPLIT>סרסור ה<SPLIT>קנאי<SPLIT>.}
 False positives: {
-בה
+שבה
 } False negatives: {
+ש
 ב
 ה
 }
@@ -10109,10 +10298,11 @@ the
 Expected: {
 שירים רבים אחרים מ<SPLIT>ה<SPLIT>אלבום הפכו ל<SPLIT>להיטים<SPLIT>, ו<SPLIT>ב<SPLIT>הם "<SPLIT>זמר נוגה<SPLIT>" (<SPLIT>"<SPLIT>ה<SPLIT>תשמע קול<SPLIT>י<SPLIT>...<SPLIT>"<SPLIT>)<SPLIT>, "<SPLIT>יחזקאל<SPLIT>" ו<SPLIT>"<SPLIT>אינך יכולה<SPLIT>"<SPLIT>.}
 Predicted: {
-שירים רבים אחרים מ<SPLIT>ה<SPLIT>אלבום הפכו ללהיטים<SPLIT>, ו<SPLIT>ב<SPLIT>הם "<SPLIT>זמר נוגה<SPLIT>" (<SPLIT>"<SPLIT>ה<SPLIT>תשמע קולי..."<SPLIT>)<SPLIT>, "<SPLIT>יחזקאל<SPLIT>" ו<SPLIT>"<SPLIT>אינך יכולה<SPLIT>"<SPLIT>.}
+שירים רבים אחרים מ<SPLIT>ה<SPLIT>אלבום הפכו ללהיטים<SPLIT>, ו<SPLIT>ב<SPLIT>הם "<SPLIT>זמר נוגה<SPLIT>" (<SPLIT>"<SPLIT>ה<SPLIT>תשמע קולי<SPLIT>..."<SPLIT>)<SPLIT>, "<SPLIT>יחזקאל<SPLIT>" ו<SPLIT>"<SPLIT>אינך יכולה<SPLIT>"<SPLIT>.}
 False positives: {
 ללהיטים
-קולי..."
+קולי
+..."
 } False negatives: {
 ל
 להיטים
@@ -10156,16 +10346,17 @@ False positives: {
 Expected: {
 כ<SPLIT>חלק מ<SPLIT>ה<SPLIT>עבודה על ה<SPLIT>אלבום הקים איינשטיין עם צבי שיסל ו<SPLIT>בועז דוידזון חברת הפקות עצמאית ב<SPLIT>שם "<SPLIT>הגר<SPLIT>"<SPLIT>, ש<SPLIT>ב<SPLIT>ה הופקו אלבומי<SPLIT>ו ה<SPLIT>באים<SPLIT>.}
 Predicted: {
-כ<SPLIT>חלק מ<SPLIT>ה<SPLIT>עבודה על ה<SPLIT>אלבום הקים איינשטיין עם צבי שיסל ו<SPLIT>בועז דוידזון חברת ה<SPLIT>פקות עצמאית ב<SPLIT>שם "<SPLIT>ה<SPLIT>גר<SPLIT>"<SPLIT>, ש<SPLIT>בה הופקו אלבומי<SPLIT>ו ה<SPLIT>באים<SPLIT>.}
+כ<SPLIT>חלק מ<SPLIT>ה<SPLIT>עבודה על ה<SPLIT>אלבום הקים איינשטיין עם צבי שיסל ו<SPLIT>בועז דוידזון חברת ה<SPLIT>פקות עצמאית ב<SPLIT>שם "<SPLIT>ה<SPLIT>גר<SPLIT>"<SPLIT>, שבה הופקו אלבומי<SPLIT>ו ה<SPLIT>באים<SPLIT>.}
 False positives: {
 ה
 פקות
 ה
 גר
-בה
+שבה
 } False negatives: {
 הפקות
 הגר
+ש
 ב
 ה
 }
@@ -10190,29 +10381,15 @@ False positives: {
 Expected: {
 ב<SPLIT>סוף אותה שנה זכה איינשטיין ב<SPLIT>פרס כינור דוד<SPLIT>, אך סירב לקבל<SPLIT>ו<SPLIT>, ב<SPLIT>טענה ש<SPLIT>אומנות אינה ניתנת ל<SPLIT>תחרות ו<SPLIT>ל<SPLIT>מדידה<SPLIT>.}
 Predicted: {
-ב<SPLIT>סוף אותה שנה זכה איינשטיין ב<SPLIT>פרס כינור דוד<SPLIT>, אך סירב לקבלו<SPLIT>, ב<SPLIT>טענה ש<SPLIT>אומנות אינה ניתנת לתחרות ו<SPLIT>למדידה<SPLIT>.}
+ב<SPLIT>סוף אותה שנה זכה איינשטיין ב<SPLIT>פרס כינור דוד<SPLIT>, אך סירב לקבלו<SPLIT>, ב<SPLIT>טענה ש<SPLIT>אומנות אינה ניתנת לתחרות ו<SPLIT>ל<SPLIT>מדידה<SPLIT>.}
 False positives: {
 לקבלו
 לתחרות
-למדידה
 } False negatives: {
 לקבל
 ו
 ל
 תחרות
-ל
-מדידה
-}
-
-Expected: {
-ה<SPLIT>אלבום נקרא "<SPLIT>שירי ילדים<SPLIT>" ו<SPLIT>יצא ל<SPLIT>אור ב<SPLIT>אפריל 1971<SPLIT>.}
-Predicted: {
-ה<SPLIT>אלבום נקרא "<SPLIT>שירי ילדים<SPLIT>" ו<SPLIT>יצא לאור ב<SPLIT>אפריל 1971<SPLIT>.}
-False positives: {
-לאור
-} False negatives: {
-ל
-אור
 }
 
 Expected: {
@@ -10229,7 +10406,7 @@ False positives: {
 Expected: {
 למרות זאת זכה ה<SPLIT>אלבום ל<SPLIT>ביקורות חיוביות ב<SPLIT>עיתונות<SPLIT>, ו<SPLIT>הניב מספר רב של להיטים בולטים<SPLIT>: "<SPLIT>כמה טוב ש<SPLIT>באת הביתה<SPLIT>" (<SPLIT>רוטבליט<SPLIT>/<SPLIT>חנוך<SPLIT>)<SPLIT>, "<SPLIT>דון קישוט<SPLIT>" (<SPLIT>גפן<SPLIT>/<SPLIT>שם טוב לוי<SPLIT>)<SPLIT>, "<SPLIT>שיר של אחרי מלחמה<SPLIT>" (<SPLIT>איינשטיין<SPLIT>/<SPLIT>לוי<SPLIT>) ו<SPLIT>"<SPLIT>אמא אדמה<SPLIT>" (<SPLIT>רוטבליט<SPLIT>/<SPLIT>גבריאלוב<SPLIT>)<SPLIT>.}
 Predicted: {
-למרות זאת זכה ה<SPLIT>אלבום ל<SPLIT>ביקורות חיוביות ב<SPLIT>עיתונות<SPLIT>, ו<SPLIT>ה<SPLIT>ניב מספר רב של להיטים בולטים<SPLIT>: "<SPLIT>כמה טוב ש<SPLIT>ב<SPLIT>את ה<SPLIT>ביתה<SPLIT>" (<SPLIT>רוטבליט<SPLIT>/<SPLIT>חנוך<SPLIT>)<SPLIT>, "<SPLIT>דון קישוט<SPLIT>" (<SPLIT>גפן<SPLIT>/<SPLIT>שם טוב לוי<SPLIT>)<SPLIT>, "<SPLIT>שיר של אחרי מלחמה<SPLIT>" (<SPLIT>איינשטיין<SPLIT>/<SPLIT>לוי<SPLIT>) ו<SPLIT>"<SPLIT>אמא אדמה<SPLIT>" (<SPLIT>רוטבליט<SPLIT>/<SPLIT>גבריאלוב<SPLIT>)<SPLIT>.}
+למרות זאת זכה ה<SPLIT>אלבום ל<SPLIT>ביקורות חיוביות ב<SPLIT>עיתונות<SPLIT>, ו<SPLIT>ה<SPLIT>ניב מספר רב של להיטים בולטים<SPLIT>: "<SPLIT>כמה טוב ש<SPLIT>ב<SPLIT>את ה<SPLIT>ביתה<SPLIT>" (<SPLIT>רוטבליט<SPLIT>/חנוך<SPLIT>)<SPLIT>, "<SPLIT>דון קישוט<SPLIT>" (<SPLIT>גפן<SPLIT>/<SPLIT>שם טוב לוי<SPLIT>)<SPLIT>, "<SPLIT>שיר של אחרי מלחמה<SPLIT>" (<SPLIT>איינשטיין<SPLIT>/<SPLIT>לוי<SPLIT>) ו<SPLIT>"<SPLIT>אמא אדמה<SPLIT>" (<SPLIT>רוטבליט<SPLIT>/<SPLIT>גבריאלוב<SPLIT>)<SPLIT>.}
 False positives: {
 ה
 ניב
@@ -10237,10 +10414,13 @@ False positives: {
 את
 ה
 ביתה
+/חנוך
 } False negatives: {
 הניב
 באת
 הביתה
+/
+חנוך
 }
 
 Expected: {
@@ -10257,10 +10437,11 @@ False positives: {
 Expected: {
 ב<SPLIT>שנת 1976 חבר איינשטיין ל<SPLIT>מוזיקאי יוני רכטר<SPLIT>, לאחר ש<SPLIT>הבחין ב<SPLIT>כישרונ<SPLIT>ו כש<SPLIT>היה רכטר חבר ב<SPLIT>להקת כוורת<SPLIT>.}
 Predicted: {
-ב<SPLIT>שנת 1976 חבר איינשטיין ל<SPLIT>מוזיקאי יוני רכטר<SPLIT>, לאחר ש<SPLIT>הבחין ב<SPLIT>כישרונו כש<SPLIT>היה רכטר חבר ב<SPLIT>להקת כוורת<SPLIT>.}
+ב<SPLIT>שנת 1976 חבר איינשטיין ל<SPLIT>מוזיקאי יוני רכטר<SPLIT>, לאחר ש<SPLIT>הבחין בכישרונו כש<SPLIT>היה רכטר חבר ב<SPLIT>להקת כוורת<SPLIT>.}
 False positives: {
-כישרונו
+בכישרונו
 } False negatives: {
+ב
 כישרונ
 ו
 }
@@ -10291,12 +10472,15 @@ False positives: {
 Expected: {
 מאז ה<SPLIT>תאונה מיעט איינשטיין להיראות ב<SPLIT>ציבור או להתראיין ב<SPLIT>תקשורת<SPLIT>.}
 Predicted: {
-מ<SPLIT>אז ה<SPLIT>תאונה מיעט איינשטיין להיראות ב<SPLIT>ציבור או להתראיין ב<SPLIT>תקשורת<SPLIT>.}
+מ<SPLIT>אז התאונה מיעט איינשטיין להיראות ב<SPLIT>ציבור או להתראיין ב<SPLIT>תקשורת<SPLIT>.}
 False positives: {
 מ
 אז
+התאונה
 } False negatives: {
 מאז
+ה
+תאונה
 }
 
 Expected: {
@@ -10330,17 +10514,6 @@ False positives: {
 חולה
 } False negatives: {
 כחולה
-}
-
-Expected: {
-ה<SPLIT>קלטת יצאה ל<SPLIT>אור ב<SPLIT>מרץ 1994<SPLIT>.}
-Predicted: {
-ה<SPLIT>קלטת יצאה לאור ב<SPLIT>מרץ 1994<SPLIT>.}
-False positives: {
-לאור
-} False negatives: {
-ל
-אור
 }
 
 Expected: {
@@ -10399,14 +10572,11 @@ False positives: {
 Expected: {
 ב<SPLIT>־<SPLIT>7 ב<SPLIT>פברואר 2012 יצא ל<SPLIT>אור ב<SPLIT>סינגל דואט של איינשטיין ו<SPLIT>שלמה ארצי ב<SPLIT>שם "<SPLIT>חוזרים הביתה<SPLIT>"<SPLIT>, ש<SPLIT>כתב ו<SPLIT>הלחין ארצי<SPLIT>.}
 Predicted: {
-ב<SPLIT>־<SPLIT>7 ב<SPLIT>פברואר 2012 יצא לאור ב<SPLIT>סינגל דואט של איינשטיין ו<SPLIT>שלמה ארצי ב<SPLIT>שם "<SPLIT>חוזרים ה<SPLIT>ביתה<SPLIT>"<SPLIT>, ש<SPLIT>כתב ו<SPLIT>הלחין ארצי<SPLIT>.}
+ב<SPLIT>־<SPLIT>7 ב<SPLIT>פברואר 2012 יצא ל<SPLIT>אור ב<SPLIT>סינגל דואט של איינשטיין ו<SPLIT>שלמה ארצי ב<SPLIT>שם "<SPLIT>חוזרים ה<SPLIT>ביתה<SPLIT>"<SPLIT>, ש<SPLIT>כתב ו<SPLIT>הלחין ארצי<SPLIT>.}
 False positives: {
-לאור
 ה
 ביתה
 } False negatives: {
-ל
-אור
 הביתה
 }
 
@@ -10479,12 +10649,24 @@ False positives: {
 }
 
 Expected: {
+אלבומים נוספים ש<SPLIT>ב<SPLIT>הם איינשטיין שיתף פעולה עם גבריאלוב היו "<SPLIT>סע לאט<SPLIT>" (<SPLIT>1974<SPLIT>)<SPLIT>, "<SPLIT>חמוש ב<SPLIT>משקפיים<SPLIT>" (<SPLIT>1980<SPLIT>)<SPLIT>, "<SPLIT>אוהב להיות ב<SPLIT>בית<SPLIT>" (<SPLIT>1986<SPLIT>) ו<SPLIT>"<SPLIT>על גבול ה<SPLIT>אור<SPLIT>" (<SPLIT>1987<SPLIT>)<SPLIT>.}
+Predicted: {
+אלבומים נוספים ש<SPLIT>ב<SPLIT>הם איינשטיין שיתף פעולה עם גבריאלוב היו "<SPLIT>סע לאט<SPLIT>" (<SPLIT>1974<SPLIT>)<SPLIT>, "<SPLIT>חמוש במשקפיים<SPLIT>" (<SPLIT>1980<SPLIT>)<SPLIT>, "<SPLIT>אוהב להיות ב<SPLIT>בית<SPLIT>" (<SPLIT>1986<SPLIT>) ו<SPLIT>"<SPLIT>על גבול ה<SPLIT>אור<SPLIT>" (<SPLIT>1987<SPLIT>)<SPLIT>.}
+False positives: {
+במשקפיים
+} False negatives: {
+ב
+משקפיים
+}
+
+Expected: {
 איינשטיין ו<SPLIT>רכטר שבו ל<SPLIT>שיתוף פעולה מלא ב<SPLIT>סוף שנות ה<SPLIT>שמונים<SPLIT>, ב<SPLIT>אלבום "<SPLIT>מ<SPLIT>שירי אברהם חלפי<SPLIT>" ו<SPLIT>ב<SPLIT>אלבומי ה<SPLIT>ילדים "<SPLIT>הייתי פעם ילד<SPLIT>" ו<SPLIT>"<SPLIT>ה<SPLIT>אריה<SPLIT>, ה<SPLIT>יונה ו<SPLIT>תרנגולת כחולה<SPLIT>"<SPLIT>.}
 Predicted: {
-איינשטיין ו<SPLIT>רכטר ש<SPLIT>בו ל<SPLIT>שיתוף פעולה מלא ב<SPLIT>סוף שנות ה<SPLIT>שמונים<SPLIT>, ב<SPLIT>אלבום "<SPLIT>מ<SPLIT>שירי אברהם חלפי<SPLIT>" ו<SPLIT>ב<SPLIT>אלבומי ה<SPLIT>ילדים "<SPLIT>הייתי פעם ילד<SPLIT>" ו<SPLIT>"<SPLIT>ה<SPLIT>אריה<SPLIT>, ה<SPLIT>יונה ו<SPLIT>תרנגולת כ<SPLIT>חולה<SPLIT>"<SPLIT>.}
+איינשטיין ו<SPLIT>רכטר ש<SPLIT>ב<SPLIT>ו ל<SPLIT>שיתוף פעולה מלא ב<SPLIT>סוף שנות ה<SPLIT>שמונים<SPLIT>, ב<SPLIT>אלבום "<SPLIT>מ<SPLIT>שירי אברהם חלפי<SPLIT>" ו<SPLIT>ב<SPLIT>אלבומי ה<SPLIT>ילדים "<SPLIT>הייתי פעם ילד<SPLIT>" ו<SPLIT>"<SPLIT>ה<SPLIT>אריה<SPLIT>, ה<SPLIT>יונה ו<SPLIT>תרנגולת כ<SPLIT>חולה<SPLIT>"<SPLIT>.}
 False positives: {
 ש
-בו
+ב
+ו
 כ
 חולה
 } False negatives: {

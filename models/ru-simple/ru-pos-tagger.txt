@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9626422397971102
+Evaluation-Score=0.9626311164503176
 Training-Sample-Size=99689
 Evaluation-Sample-Size=11076
 Training-Algorithm=MAXENT
@@ -10,9 +10,9 @@ Component-Name=POSTaggerME
 Language=ru
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1666157296390
+Timestamp=1669094688103
 TrainerType=Event
-Training-Eventhash=74c962ba724c88106f189cf5fd83bf38
+Training-Eventhash=da0e4a120f3106b52d90c92fd8c05cd
 factory=opennlp.tools.postag.POSTaggerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -16114,11 +16114,12 @@ Tok: Ref | Pred
 Expected: {
 их_DET лозунгом_NOUN было_AUX :_PUNCT если_SCONJ во_ADP время_NOUN войны_NOUN кто-то_PRON должен_ADJ голодать_VERB ,_PUNCT пусть_PART голодают_VERB другие_ADJ ;_PUNCT если_SCONJ военная_ADJ инфляция_NOUN неизбежна_ADJ ,_PUNCT пусть_PART от_ADP нее_PRON страдает_VERB в_ADP первую_ADJ очередь_NOUN население_NOUN покоренных_VERB стран_NOUN ._PUNCT}
 Predicted: {
-их_DET лозунгом_NOUN было_VERB :_PUNCT если_SCONJ во_ADP время_NOUN войны_NOUN кто-то_PRON должен_ADJ голодать_VERB ,_PUNCT пусть_PART голодают_VERB другие_ADJ ;_PUNCT если_SCONJ военная_ADJ инфляция_NOUN неизбежна_ADJ ,_PUNCT пусть_PART от_ADP нее_PRON страдает_VERB в_ADP первую_ADJ очередь_NOUN население_NOUN покоренных_VERB стран_NOUN ._PUNCT}
+их_DET лозунгом_NOUN было_VERB :_PUNCT если_SCONJ во_ADP время_NOUN войны_NOUN кто-то_PRON должен_ADJ голодать_VERB ,_PUNCT пусть_PART голодают_VERB другие_ADJ ;_PUNCT если_SCONJ военная_ADJ инфляция_NOUN неизбежна_ADJ ,_PUNCT пусть_SCONJ от_ADP нее_PRON страдает_VERB в_ADP первую_ADJ очередь_NOUN население_NOUN покоренных_VERB стран_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 было: AUX | VERB
+пусть: PART | SCONJ
 }
 
 Expected: {
@@ -45632,6 +45633,16 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 вера: PROPN | NOUN
+}
+
+Expected: {
+было_AUX видно_ADJ ,_PUNCT что_SCONJ ей_PRON тяжело_ADJ ,_PUNCT и_CCONJ надя_PROPN ,_PUNCT не_PART вынеся_VERB такого_DET зрелища_NOUN ,_PUNCT подошла_VERB к_ADP старушке_NOUN ._PUNCT}
+Predicted: {
+было_AUX видно_ADJ ,_PUNCT что_SCONJ ей_PRON тяжело_ADV ,_PUNCT и_CCONJ надя_PROPN ,_PUNCT не_PART вынеся_VERB такого_DET зрелища_NOUN ,_PUNCT подошла_VERB к_ADP старушке_NOUN ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+тяжело: ADJ | ADV
 }
 
 Expected: {

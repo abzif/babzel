@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9992248218096886
+Evaluation-Score=0.9991845281841154
 Training-Sample-Size=31199
 Evaluation-Sample-Size=3466
 Training-Algorithm=MAXENT_QN
@@ -9,9 +9,9 @@ Component-Name=TokenizerME
 Language=es
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1666066265071
+Timestamp=1668929865559
 TrainerType=Event
-Training-Eventhash=a3b56f96f051cd580e1bf45998acc987
+Training-Eventhash=eec4db9c8b464e659dfca3d38ee026a2
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
@@ -48,17 +48,6 @@ kms
 .
 } False negatives: {
 kms.
-}
-
-Expected: {
-roberto aseguro que no ha hablado con rivaldo del choque entre eternos rivales que real madrid y barcelona disputaran el sabado en el estadio santiago bernabeu<SPLIT>.}
-Predicted: {
-roberto aseguro que no ha hablado con rivaldo del choque entre eter<SPLIT>nos rivales que real madrid y barcelona disputaran el sabado en el estadio santiago bernabeu<SPLIT>.}
-False positives: {
-eter
-nos
-} False negatives: {
-eternos
 }
 
 Expected: {
@@ -109,6 +98,17 @@ g..
 } False negatives: {
 g.
 .
+}
+
+Expected: {
+los mejicanos que entran ilegalmente en california tienen que ver<SPLIT>se<SPLIT>las con la policia de emigracion a la que nombran con una palabra que tiene su dosis de magia<SPLIT>: la migra<SPLIT>.}
+Predicted: {
+los mejicanos que entran ilegalmente en california tienen que ver<SPLIT>selas con la policia de emigracion a la que nombran con una palabra que tiene su dosis de magia<SPLIT>: la migra<SPLIT>.}
+False positives: {
+selas
+} False negatives: {
+se
+las
 }
 
 Expected: {
@@ -415,6 +415,17 @@ iv
 }
 
 Expected: {
+vea<SPLIT>se mas informacion en la saga de teutoburgo y sus articulos relacionados<SPLIT>.}
+Predicted: {
+vease mas informacion en la saga de teutoburgo y sus articulos relacionados<SPLIT>.}
+False positives: {
+vease
+} False negatives: {
+vea
+se
+}
+
+Expected: {
 dos anos mas tarde ficho por skoda<SPLIT>, donde estuvo tres anos<SPLIT>, pero sin conseguir resultados notables.}
 Predicted: {
 dos anos mas tarde ficho por skoda<SPLIT>, donde estuvo tres anos<SPLIT>, pero sin conseguir resultados notables<SPLIT>.}
@@ -428,10 +439,9 @@ notables.
 Expected: {
 la recesion mundial debilitara la economia rusa y la forzar�� a escoger entre una mayor propiedad publica o una mayor dependencia de fondos estatales para rescatar a destacados oligarcas<SPLIT>.}
 Predicted: {
-la recesion mundial debilitara la economia rusa y la forzar<SPLIT>�<SPLIT>� a escoger entre una mayor propiedad publica o una mayor dependencia de fondos estatales para rescatar a destacados oligarcas<SPLIT>.}
+la recesion mundial debilitara la economia rusa y la forzar�<SPLIT>� a escoger entre una mayor propiedad publica o una mayor dependencia de fondos estatales para rescatar a destacados oligarcas<SPLIT>.}
 False positives: {
-forzar
-�
+forzar�
 �
 } False negatives: {
 forzar��
@@ -468,6 +478,20 @@ d'amboise
 } False negatives: {
 d'
 amboise
+}
+
+Expected: {
+cormier fue clasificado 2<SPLIT>o y collignon<SPLIT>, 3<SPLIT>o<SPLIT>.}
+Predicted: {
+cormier fue clasificado 2o y collignon<SPLIT>, 3o<SPLIT>.}
+False positives: {
+2o
+3o
+} False negatives: {
+2
+o
+3
+o
 }
 
 Expected: {

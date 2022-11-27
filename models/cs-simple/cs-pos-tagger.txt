@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9819136575304216
+Evaluation-Score=0.9820260035857671
 Training-Sample-Size=114744
 Evaluation-Sample-Size=12749
 Training-Algorithm=MAXENT
@@ -10,9 +10,9 @@ Component-Name=POSTaggerME
 Language=cs
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1665718677495
+Timestamp=1668912086069
 TrainerType=Event
-Training-Eventhash=9c3c6fe423a866fab87d9133a383a4a1
+Training-Eventhash=c4054c7678ed29bc6ef81802744e3cb3
 factory=opennlp.tools.postag.POSTaggerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -3665,10 +3665,11 @@ to: PART | DET
 Expected: {
 gratuluji_VERB martinu_PROPN růžkovi_PROPN ,_PUNCT že_SCONJ prý_PART má_VERB čas_NOUN ,_PUNCT aspoň_ADV tak_ADV jsem_AUX to_DET slyšel_VERB od_ADP jeho_DET zlomyslných_ADJ kolegů_NOUN ,_PUNCT jít_VERB na_ADP dlouhou_ADJ procházku_NOUN s_ADP rodinou_NOUN ,_PUNCT se_ADP psem_NOUN ,_PUNCT do_ADP přírody_NOUN ,_PUNCT kterou_DET nepřestal_VERB milovat_VERB ._PUNCT}
 Predicted: {
-gratuluji_VERB martinu_PROPN růžkovi_PROPN ,_PUNCT že_SCONJ prý_PART má_VERB čas_NOUN ,_PUNCT aspoň_ADV tak_ADV jsem_AUX to_DET slyšel_VERB od_ADP jeho_DET zlomyslných_ADJ kolegů_NOUN ,_PUNCT jít_VERB na_ADP dlouhou_ADJ procházku_NOUN s_ADP rodinou_NOUN ,_PUNCT se_PRON psem_NOUN ,_PUNCT do_ADP přírody_NOUN ,_PUNCT kterou_DET nepřestal_VERB milovat_VERB ._PUNCT}
+gratuluji_VERB martinu_PROPN růžkovi_PROPN ,_PUNCT že_SCONJ prý_PART má_VERB čas_NOUN ,_PUNCT aspoň_PART tak_ADV jsem_AUX to_DET slyšel_VERB od_ADP jeho_DET zlomyslných_ADJ kolegů_NOUN ,_PUNCT jít_VERB na_ADP dlouhou_ADJ procházku_NOUN s_ADP rodinou_NOUN ,_PUNCT se_PRON psem_NOUN ,_PUNCT do_ADP přírody_NOUN ,_PUNCT kterou_DET nepřestal_VERB milovat_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+aspoň: ADV | PART
 se: ADP | PRON
 }
 
@@ -3804,6 +3805,16 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 proto: ADV | CCONJ
+}
+
+Expected: {
+tak_ADV brown_PROPN udává_VERB tato_DET kritéria_NOUN pro_ADP identifikaci_NOUN proměnné_ADJ jako_SCONJ motivační_ADJ proměnné_ADJ ._PUNCT}
+Predicted: {
+tak_ADV brown_PROPN udává_VERB tato_DET kritéria_NOUN pro_ADP identifikaci_NOUN proměnné_NOUN jako_SCONJ motivační_ADJ proměnné_ADJ ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+proměnné: ADJ | NOUN
 }
 
 Expected: {
@@ -4082,6 +4093,16 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 spínací: ADJ | NOUN
+}
+
+Expected: {
+je_AUX -_PUNCT li_PART signál_NOUN přenášen_ADJ elektrony_NOUN ,_PUNCT mluvíme_VERB o_ADP tranzistoru_NOUN typu_NOUN *_SYM ,_PUNCT je_AUX -_PUNCT li_PART přenášen_ADJ pomocí_ADP děr_NOUN ,_PUNCT mluvíme_VERB o_ADP tranzistoru_NOUN typu_NOUN *_SYM ._PUNCT}
+Predicted: {
+je_AUX -_PUNCT li_PART signál_NOUN přenášen_ADJ elektrony_NOUN ,_PUNCT mluvíme_VERB o_ADP tranzistoru_NOUN typu_NOUN *_SYM ,_PUNCT je_AUX -_PUNCT li_PART přenášen_ADJ pomocí_NOUN děr_NOUN ,_PUNCT mluvíme_VERB o_ADP tranzistoru_NOUN typu_NOUN *_SYM ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+pomocí: ADP | NOUN
 }
 
 Expected: {
@@ -4394,16 +4415,6 @@ ovšem: PART | CCONJ
 }
 
 Expected: {
-jde_VERB zde_ADV o_ADP dvojjediný_ADJ úkol_NOUN ,_PUNCT při_ADP kritice_NOUN nemarxistických_ADJ názorů_NOUN rozvíjet_VERB pozitivně_ADV naši_DET filozofii_NOUN a_CCONJ při_ADP rozpracování_NOUN klíčových_ADJ otázek_NOUN naší_DET filozofie_NOUN zároveň_ADV provádět_VERB fundovanou_ADJ kritiku_NOUN všech_PRON nepřátelských_ADJ názorů_NOUN ._PUNCT}
-Predicted: {
-jde_VERB zde_ADV o_ADP dvojjediný_ADJ úkol_NOUN ,_PUNCT při_ADP kritice_NOUN nemarxistických_ADJ názorů_NOUN rozvíjet_VERB pozitivně_ADV naši_DET filozofii_NOUN a_CCONJ při_ADP rozpracování_NOUN klíčových_ADJ otázek_NOUN naší_DET filozofie_NOUN zároveň_ADV provádět_VERB fundovanou_ADJ kritiku_NOUN všech_DET nepřátelských_ADJ názorů_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-všech: PRON | DET
-}
-
-Expected: {
 teoretické_ADJ poznání_NOUN vzniká_VERB z_ADP empirického_ADJ ,_PUNCT avšak_CCONJ nikoli_ADV ve_ADP smyslu_NOUN formálně_ADV logického_ADJ odvození_NOUN ,_PUNCT ale_CCONJ ve_ADP smyslu_NOUN genetické_ADJ prvotnosti_NOUN nižších_ADJ úrovní_NOUN poznání_NOUN ,_PUNCT méně_ADV zprostředkovaně_ADV spojených_ADJ s_ADP empirickou_ADJ skutečností_NOUN ve_ADP vztahu_NOUN k_ADP vyšším_ADJ úrovním_NOUN ._PUNCT}
 Predicted: {
 teoretické_ADJ poznání_NOUN vzniká_VERB z_ADP empirického_ADJ ,_PUNCT avšak_CCONJ nikoli_ADV ve_ADP smyslu_NOUN formálně_ADV logického_ADJ odvození_NOUN ,_PUNCT ale_CCONJ ve_ADP smyslu_NOUN genetické_ADJ prvotnosti_NOUN nižších_ADJ úrovní_NOUN poznání_NOUN ,_PUNCT méně_ADV zprostředkovaně_ADV spojených_ADJ s_ADP empirickou_ADJ skutečností_NOUN ve_ADP vztahu_NOUN k_ADP vyšším_ADJ úrovním_ADJ ._PUNCT}
@@ -4534,16 +4545,6 @@ Tok: Ref | Pred
 ---------------
 velmožských: ADJ | CCONJ
 dvorec: NOUN | PROPN
-}
-
-Expected: {
-důležité_ADJ bylo_AUX zjištění_NOUN příkopu_NOUN před_ADP původním_ADJ severním_ADJ portálem_NOUN ,_PUNCT *_SYM se_PRON právem_ADV domnívat_VERB ,_PUNCT že_SCONJ přístup_NOUN k_ADP portálu_NOUN vedl_VERB od_ADP severní_ADJ strany_NOUN přes_ADP můstek_NOUN ,_PUNCT jehož_DET zakotvení_NOUN ,_PUNCT jehož_DET dřevěnou_ADJ konstrukci_NOUN dokládají_VERB právě_ADV uvedené_ADJ jamky_NOUN ._PUNCT}
-Predicted: {
-důležité_ADJ bylo_AUX zjištění_NOUN příkopu_NOUN před_ADP původním_ADJ severním_ADJ portálem_NOUN ,_PUNCT *_SYM se_PRON právem_ADV domnívat_VERB ,_PUNCT že_SCONJ přístup_NOUN k_ADP portálu_NOUN vedl_VERB od_ADP severní_ADJ strany_NOUN přes_ADP můstek_NOUN ,_PUNCT jehož_DET zakotvení_NOUN ,_PUNCT jehož_PRON dřevěnou_ADJ konstrukci_NOUN dokládají_VERB právě_ADV uvedené_ADJ jamky_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-jehož: DET | PRON
 }
 
 Expected: {
@@ -6267,238 +6268,191 @@ všem: PRON | DET
 }
 
 Expected: {
-(1)_PUNCT pokud_SCONJ tento_DET zákon_NOUN nestanoví_VERB jinak_ADV ,_PUNCT řádnou_ADJ nebo_CCONJ mimořádnou_ADJ účetní_ADJ závěrku_NOUN jsou_AUX povinny_ADJ mít_VERB ověřenu_ADJ auditorem_NOUN tyto_DET účetní_ADJ jednotky_NOUN a)_X akciové_ADJ společnosti_NOUN ,_PUNCT pokud_SCONJ ke_ADP konci_NOUN rozvahového_ADJ dne_NOUN účetního_ADJ období_NOUN ,_PUNCT za_ADP nějž_PRON se_PRON účetní_ADJ závěrka_NOUN (_PUNCT §_18_odst._3_X )_PUNCT ověřuje_VERB ,_PUNCT a_CCONJ účetního_ADJ období_NOUN bezprostředně_ADV předcházejícího_ADJ ,_PUNCT překročily_VERB nebo_CCONJ již_ADV dosáhly_VERB alespoň_ADV jedno_NUM ze_ADP tří_NUM uvedených_ADJ kritérií_NOUN :_PUNCT 1_NUM ._PUNCT aktiva_NOUN celkem_ADV více_ADV než_SCONJ 40000000_NUM kč_NOUN ;_PUNCT aktivy_NOUN celkem_ADV se_PRON pro_ADP účely_NOUN tohoto_DET zákona_NOUN rozumí_VERB úhrn_NOUN zjištěný_ADJ z_ADP rozvahy_NOUN v_ADP ocenění_NOUN neupraveném_ADJ o_ADP položky_NOUN podle_ADP §_26_odst._3_X ,_PUNCT 2_NUM ._PUNCT roční_ADJ úhrn_NOUN čistého_ADJ obratu_NOUN více_ADV než_SCONJ 80000000_NUM kč_NOUN ;_PUNCT ročním_ADJ úhrnem_NOUN čistého_ADJ obratu_NOUN se_PRON pro_ADP účely_NOUN tohoto_DET zákona_NOUN rozumí_VERB výše_NOUN výnosů_NOUN snížená_ADJ o_ADP prodejní_ADJ slevy_NOUN a_CCONJ dělená_ADJ počtem_NOUN započatých_ADJ měsíců_NOUN ,_PUNCT po_ADP které_DET trvalo_VERB účetní_ADJ období_NOUN ,_PUNCT a_CCONJ vynásobená_ADJ dvanácti_NUM ,_PUNCT 3_NUM ._PUNCT průměrný_ADJ přepočtený_ADJ stav_NOUN zaměstnanců_NOUN v_ADP průběhu_NOUN účetního_ADJ období_NOUN více_ADV než_SCONJ 50_NUM ,_PUNCT zjištěný_ADJ způsobem_NOUN stanoveným_ADJ na_ADP základě_NOUN zvláštního_ADJ právního_ADJ předpisu_NOUN ,_PUNCT b)_X ostatní_ADJ obchodní_ADJ společnosti_NOUN a_CCONJ družstva_NOUN ,_PUNCT pokud_SCONJ ke_ADP konci_NOUN rozvahového_ADJ dne_NOUN účetního_ADJ období_NOUN ,_PUNCT za_ADP nějž_PRON se_PRON účetní_ADJ závěrka_NOUN (_PUNCT §_18_odst._3_X )_PUNCT ověřuje_VERB ,_PUNCT a_CCONJ účetního_ADJ období_NOUN bezprotředně_X předcházejícího_ADJ ,_PUNCT překročily_VERB nebo_CCONJ již_ADV dosáhly_VERB alespoň_ADV dvou_NUM ze_ADP tří_NUM kritérií_NOUN uvedených_ADJ v_ADP písmenu_NOUN a)_X bodech_NOUN 1_NUM až_PART 3_NUM ;_PUNCT v_ADP případě_NOUN družstva_NOUN se_PRON zaměstnancem_NOUN podle_ADP písmene_NOUN a)_bodu_3_X rozumí_VERB i_CCONJ pracovní_ADJ vztah_NOUN člena_NOUN k_ADP družstvu_NOUN ,_PUNCT c)_X účetní_ADJ jednotky_NOUN podle_ADP §_1_odst._2_písm._b)_X ,_PUNCT které_DET jsou_AUX podnikateli_NOUN ,_PUNCT a_CCONJ to_PART za_ADP podmínek_NOUN podle_ADP písmene_NOUN b)_X ,_PUNCT d)_X účetní_ADJ jednotky_NOUN podle_ADP §_1_odst._2_písm._d)_až_h)_X za_ADP podmínek_NOUN podle_ADP písmene_NOUN b)_X ,_PUNCT e)_X účetní_ADJ jednotky_NOUN ,_PUNCT kterým_DET tuto_DET povinnost_NOUN stanoví_VERB zvláštní_ADJ právní_ADJ předpis_NOUN ._PUNCT}
+odpisová_ADJ sazba_NOUN na_ADP jednotku_NOUN těženého_ADJ množství_NOUN (_PUNCT kč_NOUN /_SYM t_NOUN ,_PUNCT kč_NOUN /_SYM m_NOUN je_AUX podílem_NOUN pořizovací_ADJ ceny_NOUN ložiska_NOUN na_ADP jednotlivém_ADJ pozemku_NOUN a_CCONJ zásob_NOUN nevyhrazeného_ADJ nerostu_NOUN (_PUNCT t_DET ,_PUNCT m_NOUN prokázaných_ADJ geologickým_ADJ průzkumem_NOUN na_ADP tomto_DET pozemku_NOUN ._PUNCT}
 Predicted: {
-(1)_PUNCT pokud_SCONJ tento_DET zákon_NOUN nestanoví_VERB jinak_ADV ,_PUNCT řádnou_ADJ nebo_CCONJ mimořádnou_ADJ účetní_ADJ závěrku_NOUN jsou_AUX povinny_ADJ mít_VERB ověřenu_ADJ auditorem_NOUN tyto_DET účetní_ADJ jednotky_NOUN a)_PUNCT akciové_ADJ společnosti_NOUN ,_PUNCT pokud_SCONJ ke_ADP konci_NOUN rozvahového_ADJ dne_NOUN účetního_ADJ období_NOUN ,_PUNCT za_ADP nějž_PRON se_PRON účetní_ADJ závěrka_NOUN (_PUNCT §_18_odst._3_X )_PUNCT ověřuje_VERB ,_PUNCT a_CCONJ účetního_ADJ období_NOUN bezprostředně_ADV předcházejícího_ADJ ,_PUNCT překročily_VERB nebo_CCONJ již_ADV dosáhly_VERB alespoň_ADV jedno_NUM ze_ADP tří_NUM uvedených_ADJ kritérií_NOUN :_PUNCT 1_NUM ._PUNCT aktiva_NOUN celkem_ADV více_ADV než_SCONJ 40000000_NUM kč_NOUN ;_PUNCT aktivy_NOUN celkem_ADV se_PRON pro_ADP účely_NOUN tohoto_DET zákona_NOUN rozumí_VERB úhrn_NOUN zjištěný_ADJ z_ADP rozvahy_NOUN v_ADP ocenění_NOUN neupraveném_ADJ o_ADP položky_NOUN podle_ADP §_26_odst._3_X ,_PUNCT 2_NUM ._PUNCT roční_ADJ úhrn_NOUN čistého_ADJ obratu_NOUN více_ADV než_SCONJ 80000000_NUM kč_NOUN ;_PUNCT ročním_ADJ úhrnem_NOUN čistého_ADJ obratu_NOUN se_PRON pro_ADP účely_NOUN tohoto_DET zákona_NOUN rozumí_VERB výše_NOUN výnosů_NOUN snížená_ADJ o_ADP prodejní_ADJ slevy_NOUN a_CCONJ dělená_ADJ počtem_NOUN započatých_ADJ měsíců_NOUN ,_PUNCT po_ADP které_DET trvalo_VERB účetní_ADJ období_NOUN ,_PUNCT a_CCONJ vynásobená_ADJ dvanácti_NUM ,_PUNCT 3_NUM ._PUNCT průměrný_ADJ přepočtený_ADJ stav_NOUN zaměstnanců_NOUN v_ADP průběhu_NOUN účetního_ADJ období_NOUN více_ADV než_SCONJ 50_NUM ,_PUNCT zjištěný_ADJ způsobem_NOUN stanoveným_ADJ na_ADP základě_NOUN zvláštního_ADJ právního_ADJ předpisu_NOUN ,_PUNCT b)_X ostatní_ADJ obchodní_ADJ společnosti_NOUN a_CCONJ družstva_NOUN ,_PUNCT pokud_SCONJ ke_ADP konci_NOUN rozvahového_ADJ dne_NOUN účetního_ADJ období_NOUN ,_PUNCT za_ADP nějž_PRON se_PRON účetní_ADJ závěrka_NOUN (_PUNCT §_18_odst._3_X )_PUNCT ověřuje_VERB ,_PUNCT a_CCONJ účetního_ADJ období_NOUN bezprotředně_ADV předcházejícího_ADJ ,_PUNCT překročily_VERB nebo_CCONJ již_ADV dosáhly_VERB alespoň_ADV dvou_NUM ze_ADP tří_NUM kritérií_NOUN uvedených_ADJ v_ADP písmenu_NOUN a)_PUNCT bodech_NOUN 1_NUM až_SCONJ 3_NUM ;_PUNCT v_ADP případě_NOUN družstva_NOUN se_PRON zaměstnancem_NOUN podle_ADP písmene_NOUN a)_bodu_3_X rozumí_VERB i_CCONJ pracovní_ADJ vztah_NOUN člena_NOUN k_ADP družstvu_NOUN ,_PUNCT c)_X účetní_ADJ jednotky_NOUN podle_ADP §_1_odst._2_písm._b)_X ,_PUNCT které_DET jsou_AUX podnikateli_NOUN ,_PUNCT a_CCONJ to_PART za_ADP podmínek_NOUN podle_ADP písmene_NOUN b)_X ,_PUNCT d)_X účetní_ADJ jednotky_NOUN podle_ADP §_1_odst._2_písm._d)_až_h)_X za_ADP podmínek_NOUN podle_ADP písmene_NOUN b)_X ,_PUNCT e)_X účetní_ADJ jednotky_NOUN ,_PUNCT kterým_DET tuto_DET povinnost_NOUN stanoví_VERB zvláštní_ADJ právní_ADJ předpis_NOUN ._PUNCT}
+odpisová_ADJ sazba_NOUN na_ADP jednotku_NOUN těženého_ADJ množství_NOUN (_PUNCT kč_NOUN /_PUNCT t_NOUN ,_PUNCT kč_NOUN /_PUNCT m_NOUN je_AUX podílem_NOUN pořizovací_ADJ ceny_NOUN ložiska_NOUN na_ADP jednotlivém_ADJ pozemku_NOUN a_CCONJ zásob_NOUN nevyhrazeného_ADJ nerostu_NOUN (_PUNCT t_PROPN ,_PUNCT m_PROPN prokázaných_ADJ geologickým_ADJ průzkumem_NOUN na_ADP tomto_DET pozemku_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-a): X | PUNCT
-bezprotředně: X | ADV
-a): X | PUNCT
-až: PART | SCONJ
+/: SYM | PUNCT
+/: SYM | PUNCT
+t: DET | PROPN
+m: NOUN | PROPN
 }
 
 Expected: {
-účetní_ADJ jednotky_NOUN ,_PUNCT které_DET podle_ADP zvláštního_ADJ právního_ADJ předpisu_NOUN předávají_VERB výroční_ADJ zprávu_NOUN české_ADJ národní_ADJ bance_NOUN ,_PUNCT předávají_VERB účetní_ADJ závěrku_NOUN a_CCONJ výroční_ADJ zprávu_NOUN do_ADP sbírky_NOUN listin_NOUN obchodního_ADJ rejstříku_NOUN prostřednictvím_ADP české_ADJ národní_ADJ banky_NOUN ._PUNCT}
+(4)_PUNCT kursové_ADJ rozdíly_NOUN z_ADP aktiv_NOUN a_CCONJ závazků_NOUN v_ADP cizí_ADJ měně_NOUN ,_PUNCT které_DET účetní_ADJ jednotka_NOUN vykazuje_VERB v_ADP rozvaze_NOUN a_CCONJ kterými_DET se_PRON rozhodla_VERB zajistit_VERB proti_ADP měnovému_ADJ riziku_NOUN již_ADV vzniklé_ADJ nebo_CCONJ očekávané_ADJ smluvní_ADJ vztahy_NOUN ,_PUNCT jejichž_DET plnění_NOUN je_AUX v_ADP cizí_ADJ měně_NOUN a_CCONJ o_ADP nichž_PRON není_AUX dosud_ADV účtováno_ADJ ,_PUNCT se_PRON účtují_VERB ,_PUNCT nejde-li_X o_ADP deriváty_NOUN ,_PUNCT na_ADP rozvahových_ADJ účtech_NOUN účtové_ADJ skupiny_NOUN 41_NUM ._PUNCT}
 Predicted: {
-účetní_ADJ jednotky_NOUN ,_PUNCT které_DET podle_ADP zvláštního_ADJ právního_ADJ předpisu_NOUN předávají_VERB výroční_ADJ zprávu_NOUN české_ADJ národní_ADJ bance_NOUN ,_PUNCT předávají_VERB účetní_ADJ závěrku_NOUN a_CCONJ výroční_ADJ zprávu_NOUN do_ADP sbírky_NOUN listin_NOUN obchodního_ADJ rejstříku_NOUN prostřednictvím_NOUN české_ADJ národní_ADJ banky_NOUN ._PUNCT}
+(4)_PUNCT kursové_ADJ rozdíly_NOUN z_ADP aktiv_NOUN a_CCONJ závazků_NOUN v_ADP cizí_ADJ měně_NOUN ,_PUNCT které_DET účetní_ADJ jednotka_NOUN vykazuje_VERB v_ADP rozvaze_NOUN a_CCONJ kterými_DET se_PRON rozhodla_VERB zajistit_VERB proti_ADP měnovému_ADJ riziku_NOUN již_ADV vzniklé_ADJ nebo_CCONJ očekávané_ADJ smluvní_ADJ vztahy_NOUN ,_PUNCT jejichž_DET plnění_NOUN je_AUX v_ADP cizí_ADJ měně_NOUN a_CCONJ o_ADP nichž_PRON není_AUX dosud_ADV účtováno_ADJ ,_PUNCT se_PRON účtují_VERB ,_PUNCT nejde-li_PUNCT o_ADP deriváty_NOUN ,_PUNCT na_ADP rozvahových_ADJ účtech_NOUN účtové_ADJ skupiny_NOUN 41_NUM ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+nejde-li: X | PUNCT
+}
+
+Expected: {
+(6)_PUNCT do_ADP konsolidačního_ADJ celku_NOUN nemusí_VERB být_AUX zahrnuty_ADJ konsolidované_ADJ účetní_ADJ jednotky_NOUN ,_PUNCT a)_X u_ADP nichž_PRON není_AUX podíl_NOUN na_ADP konsolidačním_ADJ celku_NOUN významný_ADJ z_ADP hlediska_NOUN podání_NOUN věrného_ADJ a_CCONJ poctivého_ADJ obrazu_NOUN předmětu_NOUN účetnictví_NOUN a_CCONJ finanční_ADJ situace_NOUN konsolidačního_ADJ celku_NOUN ;_PUNCT pokud_SCONJ je_AUX u_ADP dvou_NUM a_CCONJ více_ADV takových_DET konsolidovaných_ADJ účetních_ADJ jednotek_NOUN jejich_DET souhrnný_ADJ podíl_NOUN významný_ADJ ,_PUNCT jsou_AUX tyto_DET účetní_ADJ jednotky_NOUN zahrnuty_ADJ do_ADP konsolidačního_ADJ celku_NOUN ,_PUNCT nebo_CCONJ b)_X u_ADP nichž_PRON dlouhodobá_ADJ omezení_NOUN významně_ADV brání_VERB konsolidující_ADJ účetní_NOUN jednotce_NOUN ve_ADP výkonu_NOUN jejích_DET práv_NOUN ohledně_ADP nakládání_NOUN s_ADP majetkem_NOUN nebo_CCONJ řízení_NOUN uvedených_ADJ konsolidovaných_ADJ účetních_ADJ jednotek_NOUN ,_PUNCT nebo_CCONJ výjimečně_ADV nelze-li_X bez_ADP prokazatelně_ADV nutných_ADJ nepřiměřených_ADJ nákladů_NOUN nebo_CCONJ bez_ADP prokazatelně_ADV nutného_ADJ zbytečného_ADJ zdržení_NOUN získat_VERB informace_NOUN nezbytné_ADJ pro_ADP sestavení_NOUN konsolidované_ADJ účetní_ADJ závěrky_NOUN podle_ADP této_DET vyhlášky_NOUN ,_PUNCT nebo_CCONJ c)_X jsou_AUX -_PUNCT li_PART akcie_NOUN nebo_CCONJ podíly_NOUN konsolidovaných_ADJ účetních_ADJ jednotek_NOUN drženy_ADJ výhradně_ADV za_ADP účelem_NOUN jejich_DET prodeje_NOUN ._PUNCT :_PUNCT a)_X plná_ADJ konsolidace_NOUN ,_PUNCT která_DET se_PRON použije_VERB při_ADP zahrnutí_NOUN konsolidované_ADJ účetní_ADJ jednotky_NOUN do_ADP konsolidované_ADJ účetní_ADJ závěrky_NOUN ,_PUNCT c)_X konsolidace_NOUN ekvivalencí_NOUN (_PUNCT protihodnotou_NOUN )_PUNCT ,_PUNCT která_DET se_PRON použije_VERB při_ADP zahrnutí_NOUN účetní_ADJ jednotky_NOUN přidružené_ADJ do_ADP konsolidované_ADJ účetní_ADJ závěrky_NOUN}
+Predicted: {
+(6)_PUNCT do_ADP konsolidačního_ADJ celku_NOUN nemusí_VERB být_AUX zahrnuty_ADJ konsolidované_ADJ účetní_ADJ jednotky_NOUN ,_PUNCT a)_X u_ADP nichž_PRON není_AUX podíl_NOUN na_ADP konsolidačním_ADJ celku_NOUN významný_ADJ z_ADP hlediska_NOUN podání_NOUN věrného_ADJ a_CCONJ poctivého_ADJ obrazu_NOUN předmětu_NOUN účetnictví_NOUN a_CCONJ finanční_ADJ situace_NOUN konsolidačního_ADJ celku_NOUN ;_PUNCT pokud_SCONJ je_AUX u_ADP dvou_NUM a_CCONJ více_ADV takových_DET konsolidovaných_ADJ účetních_ADJ jednotek_NOUN jejich_DET souhrnný_ADJ podíl_NOUN významný_ADJ ,_PUNCT jsou_AUX tyto_DET účetní_ADJ jednotky_NOUN zahrnuty_ADJ do_ADP konsolidačního_ADJ celku_NOUN ,_PUNCT nebo_CCONJ b)_X u_ADP nichž_PRON dlouhodobá_ADJ omezení_NOUN významně_ADV brání_VERB konsolidující_ADJ účetní_ADJ jednotce_NOUN ve_ADP výkonu_NOUN jejích_DET práv_NOUN ohledně_ADP nakládání_NOUN s_ADP majetkem_NOUN nebo_CCONJ řízení_NOUN uvedených_ADJ konsolidovaných_ADJ účetních_ADJ jednotek_NOUN ,_PUNCT nebo_CCONJ výjimečně_ADV nelze-li_PUNCT bez_ADP prokazatelně_ADV nutných_ADJ nepřiměřených_ADJ nákladů_NOUN nebo_CCONJ bez_ADP prokazatelně_ADV nutného_ADJ zbytečného_ADJ zdržení_NOUN získat_VERB informace_NOUN nezbytné_ADJ pro_ADP sestavení_NOUN konsolidované_ADJ účetní_ADJ závěrky_NOUN podle_ADP této_DET vyhlášky_NOUN ,_PUNCT nebo_CCONJ c)_X jsou_AUX -_PUNCT li_PART akcie_NOUN nebo_CCONJ podíly_NOUN konsolidovaných_ADJ účetních_ADJ jednotek_NOUN drženy_ADJ výhradně_ADV za_ADP účelem_NOUN jejich_DET prodeje_NOUN ._PUNCT :_PUNCT a)_X plná_ADJ konsolidace_NOUN ,_PUNCT která_DET se_PRON použije_VERB při_ADP zahrnutí_NOUN konsolidované_ADJ účetní_ADJ jednotky_NOUN do_ADP konsolidované_ADJ účetní_ADJ závěrky_NOUN ,_PUNCT c)_X konsolidace_NOUN ekvivalencí_NOUN (_PUNCT protihodnotou_NOUN )_PUNCT ,_PUNCT která_DET se_PRON použije_VERB při_ADP zahrnutí_NOUN účetní_ADJ jednotky_NOUN přidružené_ADJ do_ADP konsolidované_ADJ účetní_ADJ závěrky_NOUN}
+Errors: {
+Tok: Ref | Pred
+---------------
+účetní: NOUN | ADJ
+nelze-li: X | PUNCT
+}
+
+Expected: {
+(1)_PUNCT v_ADP konsolidovaném_ADJ výkazu_NOUN zisku_NOUN a_CCONJ ztráty_NOUN se_PRON uvádí_VERB výše_ADV nákladů_NOUN a_CCONJ výnosů_NOUN odděleně_ADV za_ADP běžné_ADJ účetní_ADJ období_NOUN a_CCONJ minulé_ADJ účetní_ADJ období_NOUN ._PUNCT}
+Predicted: {
+(1)_PUNCT v_ADP konsolidovaném_ADJ výkazu_NOUN zisku_NOUN a_CCONJ ztráty_NOUN se_PRON uvádí_VERB výše_NOUN nákladů_NOUN a_CCONJ výnosů_NOUN odděleně_ADV za_ADP běžné_ADJ účetní_ADJ období_NOUN a_CCONJ minulé_ADJ účetní_ADJ období_NOUN ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+výše: ADV | NOUN
+}
+
+Expected: {
+(2)_PUNCT ustanovení_NOUN této_DET vyhlášky_NOUN nemusí_VERB uplatnit_VERB účetní_ADJ jednotky_NOUN v_ADP likvidaci_NOUN ,_PUNCT jejichž_DET likvidace_NOUN byla_AUX zahájena_ADJ před_ADP 1_NUM ._PUNCT lednem_NOUN 1993_NUM ,_PUNCT a_CCONJ státní_ADJ podniky_NOUN hospodařící_ADJ v_ADP režimu_NOUN zákona_č._111/1990_sb._X ,_PUNCT o_ADP státním_ADJ podniku_NOUN ,_PUNCT ve_ADP znění_NOUN pozdějších_ADJ předpisů_NOUN ,_PUNCT do_ADP doby_NOUN jejich_DET zániku_NOUN ._PUNCT}
+Predicted: {
+(2)_PUNCT ustanovení_NOUN této_DET vyhlášky_NOUN nemusí_VERB uplatnit_VERB účetní_ADJ jednotky_NOUN v_ADP likvidaci_NOUN ,_PUNCT jejichž_DET likvidace_NOUN byla_AUX zahájena_ADJ před_ADP 1_NUM ._PUNCT lednem_NOUN 1993_NUM ,_PUNCT a_CCONJ státní_ADJ podniky_NOUN hospodařící_ADJ v_ADP režimu_NOUN zákona_č._111/1990_sb._PUNCT ,_PUNCT o_ADP státním_ADJ podniku_NOUN ,_PUNCT ve_ADP znění_NOUN pozdějších_ADJ předpisů_NOUN ,_PUNCT do_ADP doby_NOUN jejich_DET zániku_NOUN ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+zákona_č._111/1990_sb.: X | PUNCT
+}
+
+Expected: {
+2_NUM ._PUNCT v_ADP prvním_ADJ dni_NOUN účetního_ADJ období_NOUN započatého_ADJ 1.ledna_X 2004_NUM a_CCONJ později_ADV se_PRON opravné_ADJ položky_NOUN u_ADP pohledávek_NOUN ,_PUNCT které_DET účetní_ADJ jednotka_NOUN nabyla_VERB v_ADP účetních_ADJ obdobích_NOUN započatých_ADJ před_ADP 1_NUM ._PUNCT lednem_NOUN 2004_NUM a_CCONJ určila_VERB k_ADP obchodování_NOUN ,_PUNCT zruší_VERB ve_ADP prospěch_NOUN nákladů_NOUN ;_PUNCT ke_ADP stejnému_ADJ okamžiku_NOUN se_PRON zaúčtuje_VERB snížení_NOUN hodnoty_NOUN pohledávek_NOUN prostřednictvím_ADP účtu_NOUN v_ADP účtové_ADJ skupině_NOUN 58_NUM ._PUNCT}
+Predicted: {
+2_NUM ._PUNCT v_ADP prvním_ADJ dni_NOUN účetního_ADJ období_NOUN započatého_ADJ 1.ledna_ADP 2004_NUM a_CCONJ později_ADV se_PRON opravné_ADJ položky_NOUN u_ADP pohledávek_NOUN ,_PUNCT které_DET účetní_ADJ jednotka_NOUN nabyla_VERB v_ADP účetních_ADJ obdobích_NOUN započatých_ADJ před_ADP 1_NUM ._PUNCT lednem_NOUN 2004_NUM a_CCONJ určila_VERB k_ADP obchodování_NOUN ,_PUNCT zruší_VERB ve_ADP prospěch_NOUN nákladů_NOUN ;_PUNCT ke_ADP stejnému_ADJ okamžiku_NOUN se_PRON zaúčtuje_VERB snížení_NOUN hodnoty_NOUN pohledávek_NOUN prostřednictvím_NOUN účtu_NOUN v_ADP účtové_ADJ skupině_NOUN 58_NUM ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+1.ledna: X | ADP
 prostřednictvím: ADP | NOUN
 }
 
 Expected: {
-(2)_PUNCT povinnost_NOUN sestavit_VERB konsolidovanou_ADJ účetní_ADJ závěrku_NOUN má_VERB ,_PUNCT za_ADP podmínek_NOUN stanovených_ADJ tímto_DET zákonem_NOUN a_CCONJ prováděcími_ADJ právními_ADJ předpisy_NOUN ,_PUNCT účetní_ADJ jednotka_NOUN ,_PUNCT která_DET je_AUX obchodní_ADJ společností_NOUN a_CCONJ je_AUX ovládající_ADJ osobou_NOUN ,_PUNCT s_ADP výjimkou_NOUN ovládajících_ADJ osob_NOUN ,_PUNCT které_DET vykonávají_VERB společný_ADJ vliv_NOUN podle_ADP odstavce_NOUN 4_NUM (_PUNCT dále_ADV jen_PART „_PUNCT konsolidující_X účetní_X jednotka_X “_PUNCT )_PUNCT ._PUNCT}
+(1)_PUNCT účetní_ADJ zápisy_NOUN jsou_AUX účetní_ADJ záznamy_NOUN ,_PUNCT jejichž_DET obsah_NOUN je_AUX určen_ADJ ustanoveními_NOUN tohoto_DET zákona_NOUN ,_PUNCT která_DET se_PRON týkají_VERB účetních_ADJ knih_NOUN ._PUNCT}
 Predicted: {
-(2)_PUNCT povinnost_NOUN sestavit_VERB konsolidovanou_ADJ účetní_ADJ závěrku_NOUN má_VERB ,_PUNCT za_ADP podmínek_NOUN stanovených_ADJ tímto_DET zákonem_NOUN a_CCONJ prováděcími_ADJ právními_ADJ předpisy_NOUN ,_PUNCT účetní_ADJ jednotka_NOUN ,_PUNCT která_DET je_AUX obchodní_ADJ společností_NOUN a_CCONJ je_AUX ovládající_ADJ osobou_NOUN ,_PUNCT s_ADP výjimkou_NOUN ovládajících_ADJ osob_NOUN ,_PUNCT které_DET vykonávají_VERB společný_ADJ vliv_NOUN podle_ADP odstavce_NOUN 4_NUM (_PUNCT dále_ADV jen_PART „_PUNCT konsolidující_ADJ účetní_ADJ jednotka_NOUN “_PUNCT )_PUNCT ._PUNCT}
+(1)_PUNCT účetní_ADJ zápisy_NOUN jsou_AUX účetní_ADJ záznamy_NOUN ,_PUNCT jejichž_DET obsah_NOUN je_AUX určen_ADJ ustanoveními_ADP tohoto_DET zákona_NOUN ,_PUNCT která_DET se_PRON týkají_VERB účetních_ADJ knih_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-konsolidující: X | ADJ
-účetní: X | ADJ
-jednotka: X | NOUN
+ustanoveními: NOUN | ADP
 }
 
 Expected: {
-(2)_PUNCT účetní_ADJ jednotky_NOUN oceňují_VERB majetek_NOUN a_CCONJ závazky_NOUN a)_X k_ADP okamžiku_NOUN uskutečnění_NOUN účetního_ADJ případu_NOUN způsoby_NOUN podle_ADP §_25_X ,_PUNCT b)_X ke_ADP konci_NOUN rozvahového_ADJ dne_NOUN nebo_CCONJ k_ADP jinému_ADJ okamžiku_NOUN ,_PUNCT k_ADP němuž_PRON se_PRON účetní_ADJ závěrka_NOUN sestavuje_VERB ,_PUNCT způsoby_NOUN podle_ADP §_27_X ;_PUNCT rovněž_ADV toto_DET ocenění_NOUN je_AUX povinna_ADJ zaznamenat_VERB v_ADP účetních_ADJ knihách_NOUN ,_PUNCT (_PUNCT dále_ADV jen_PART „_PUNCT okamžik_X ocenění_X “_PUNCT )_PUNCT ._PUNCT}
+nástupnická_ADJ účetní_ADJ jednotka_NOUN ,_PUNCT která_DET nebyla_AUX zúčastněnou_ADJ účetní_ADJ jednotkou_NOUN ,_PUNCT otevírá_VERB účetní_NOUN knihy_NOUN ke_ADP dni_NOUN zápisu_NOUN přeměny_NOUN společnosti_NOUN do_ADP obchodního_ADJ rejstříku_NOUN s_ADP účinky_NOUN od_ADP rozhodného_ADJ dne_NOUN v_ADP souladu_NOUN s_ADP metodou_NOUN přeměny_NOUN společnosti_NOUN ._PUNCT}
 Predicted: {
-(2)_PUNCT účetní_ADJ jednotky_NOUN oceňují_VERB majetek_NOUN a_CCONJ závazky_NOUN a)_X k_ADP okamžiku_NOUN uskutečnění_NOUN účetního_ADJ případu_NOUN způsoby_NOUN podle_ADP §_25_X ,_PUNCT b)_X ke_ADP konci_NOUN rozvahového_ADJ dne_NOUN nebo_CCONJ k_ADP jinému_ADJ okamžiku_NOUN ,_PUNCT k_ADP němuž_PRON se_PRON účetní_ADJ závěrka_NOUN sestavuje_VERB ,_PUNCT způsoby_VERB podle_ADP §_27_X ;_PUNCT rovněž_ADV toto_DET ocenění_NOUN je_AUX povinna_ADJ zaznamenat_VERB v_ADP účetních_ADJ knihách_NOUN ,_PUNCT (_PUNCT dále_ADV jen_PART „_PUNCT okamžik_NOUN ocenění_NOUN “_PUNCT )_PUNCT ._PUNCT}
+nástupnická_ADJ účetní_ADJ jednotka_NOUN ,_PUNCT která_DET nebyla_AUX zúčastněnou_ADJ účetní_ADJ jednotkou_NOUN ,_PUNCT otevírá_VERB účetní_ADJ knihy_NOUN ke_ADP dni_NOUN zápisu_NOUN přeměny_NOUN společnosti_NOUN do_ADP obchodního_ADJ rejstříku_NOUN s_ADP účinky_NOUN od_ADP rozhodného_ADJ dne_NOUN v_ADP souladu_NOUN s_ADP metodou_NOUN přeměny_NOUN společnosti_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-způsoby: NOUN | VERB
-okamžik: X | NOUN
-ocenění: X | NOUN
-}
-
-Expected: {
-při_ADP používání_NOUN pevného_ADJ kursu_NOUN může_VERB účetní_ADJ jednotka_NOUN tento_DET kurs_NOUN změnit_VERB svým_DET vnitřním_ADJ předpisem_NOUN i_CCONJ v_ADP průběhu_NOUN stanovené_ADJ doby_NOUN ;_PUNCT v_ADP případech_NOUN vyhlášení_NOUN devalvace_NOUN i_CCONJ revalvace_NOUN české_ADJ koruny_NOUN musí_VERB být_AUX pevný_ADJ kurs_NOUN změněn_ADJ vždy_ADV ._PUNCT}
-Predicted: {
-při_ADP používání_NOUN pevného_ADJ kursu_NOUN může_VERB účetní_ADJ jednotka_NOUN tento_DET kurs_NOUN změnit_VERB svým_DET vnitřním_ADJ předpisem_NOUN i_CCONJ v_ADP průběhu_NOUN stanovené_ADJ doby_NOUN ;_PUNCT v_ADP případech_NOUN vyhlášení_NOUN devalvace_NOUN i_CCONJ revalvace_NOUN české_ADJ koruny_NOUN musí_VERB být_AUX pevný_ADJ kurs_NOUN změněn_NOUN vždy_ADV ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-změněn: ADJ | NOUN
-}
-
-Expected: {
-(6)_PUNCT v_ADP případě_NOUN majetku_NOUN podle_ADP odstavce_NOUN 1_NUM písm._l)_X se_PRON reprodukční_ADJ pořizovací_ADJ cena_NOUN nepoužije_VERB v_ADP případě_NOUN bezúplatné_ADJ změny_NOUN příslušnosti_NOUN k_ADP hospodaření_NOUN s_ADP majetkem_NOUN státu_NOUN nebo_CCONJ svěření_NOUN majetku_NOUN do_ADP správy_NOUN podle_ADP zákona_NOUN upravujícího_ADJ rozpočtová_ADJ pravidla_NOUN územních_ADJ samosprávných_ADJ celků_NOUN ,_PUNCT výpůjčky_NOUN nebo_CCONJ bezúplatného_ADJ převodu_NOUN nebo_CCONJ přechodu_NOUN majetku_NOUN mezi_ADP vybranými_ADJ účetními_ADJ jednotkami_NOUN ;_PUNCT v_ADP těchto_DET případech_NOUN účetní_ADJ jednotka_NOUN při_ADP ocenění_NOUN majetku_NOUN navazuje_VERB na_ADP výši_NOUN ocenění_NOUN v_ADP účetnictví_NOUN účetní_ADJ jednotky_NOUN ,_PUNCT která_DET o_ADP tomto_DET majetku_NOUN naposledy_ADV účtovala_VERB ._PUNCT}
-Predicted: {
-(6)_PUNCT v_ADP případě_NOUN majetku_NOUN podle_ADP odstavce_NOUN 1_NUM písm._l)_PUNCT se_PRON reprodukční_ADJ pořizovací_ADJ cena_NOUN nepoužije_VERB v_ADP případě_NOUN bezúplatné_ADJ změny_NOUN příslušnosti_NOUN k_ADP hospodaření_NOUN s_ADP majetkem_NOUN státu_NOUN nebo_CCONJ svěření_NOUN majetku_NOUN do_ADP správy_NOUN podle_ADP zákona_NOUN upravujícího_ADJ rozpočtová_ADJ pravidla_NOUN územních_ADJ samosprávných_ADJ celků_NOUN ,_PUNCT výpůjčky_NOUN nebo_CCONJ bezúplatného_ADJ převodu_NOUN nebo_CCONJ přechodu_NOUN majetku_NOUN mezi_ADP vybranými_ADJ účetními_ADJ jednotkami_NOUN ;_PUNCT v_ADP těchto_DET případech_NOUN účetní_ADJ jednotka_NOUN při_ADP ocenění_NOUN majetku_NOUN navazuje_VERB na_ADP výši_NOUN ocenění_NOUN v_ADP účetnictví_NOUN účetní_ADJ jednotky_NOUN ,_PUNCT která_DET o_ADP tomto_DET majetku_NOUN naposledy_ADV účtovala_VERB ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-písm._l): X | PUNCT
-}
-
-Expected: {
-(1)_PUNCT z_ADP jednotlivých_ADJ složek_NOUN majetku_NOUN a_CCONJ závazků_NOUN k_ADP okamžiku_NOUN ocenění_NOUN podle_ADP §_24_odst._2_písm._b)_X se_PRON reálnou_ADJ hodnotou_NOUN oceňují_VERB a)_X cenné_ADJ papíry_NOUN ,_PUNCT s_ADP výjimkou_NOUN cenných_ADJ papírů_NOUN držených_ADJ do_ADP splatnosti_NOUN ,_PUNCT dluhopisů_NOUN pořízených_ADJ v_ADP primárních_ADJ emisích_NOUN neurčených_ADJ účetní_ADJ jednotkou_NOUN k_ADP obchodování_NOUN ,_PUNCT cenných_ADJ papírů_NOUN představujících_ADJ účast_NOUN v_ADP ovládané_ADJ osobě_NOUN nebo_CCONJ v_ADP osobě_NOUN pod_ADP podstatným_ADJ vlivem_NOUN a_CCONJ cenných_ADJ papírů_NOUN emitovaných_ADJ účetní_ADJ jednotkou_NOUN ,_PUNCT b)_X deriváty_NOUN ,_PUNCT c)_X finanční_ADJ umístění_NOUN ,_PUNCT s_ADP výjimkou_NOUN dluhopisů_NOUN držených_ADJ do_ADP splatnosti_NOUN ,_PUNCT jejichž_DET emitentem_NOUN je_AUX členský_ADJ stát_NOUN organizace_NOUN pro_ADP ekonomickou_ADJ spolupráci_NOUN a_CCONJ rozvoj_NOUN a_CCONJ jejichž_DET hodnocení_NOUN bylo_AUX alespoň_ADV dvěma_NUM mezinárodně_ADV uznávanými_ADJ ratingovými_ADJ agenturami_NOUN stanoveno_ADJ na_ADP úrovni_NOUN české_ADJ republiky_NOUN nebo_CCONJ vyšší_ADJ ,_PUNCT nejedná-li_X se_PRON o_ADP finanční_ADJ umístění_NOUN vztahující_ADJ se_PRON k_ADP závazkům_NOUN ze_ADP životního_ADJ pojištění_NOUN ,_PUNCT je_AUX -_PUNCT li_PART nositelem_NOUN investičního_ADJ rizika_NOUN pojistník_NOUN ,_PUNCT a_CCONJ technické_ADJ rezervy_NOUN u_ADP účetních_ADJ jednotek_NOUN ,_PUNCT které_DET provozují_VERB činnost_NOUN pojištění_NOUN nebo_CCONJ zajištění_NOUN podle_ADP zvláštních_ADJ právních_ADJ předpisů_NOUN ,_PUNCT kromě_ADP veřejného_ADJ zdravotního_ADJ pojištění_NOUN ,_PUNCT d)_X majetek_NOUN a_CCONJ závazky_NOUN v_ADP případech_NOUN ,_PUNCT kdy_ADV ocenění_NOUN reálnou_ADJ hodnotou_NOUN ukládá_VERB zvláštní_ADJ právní_ADJ předpis_NOUN ,_PUNCT to_DET neplatí_VERB v_ADP případech_NOUN uvedených_ADJ v_ADP odstavci_NOUN 3_NUM ,_PUNCT e)_X část_NOUN majetku_NOUN a_CCONJ závazků_NOUN zajištěná_ADJ deriváty_NOUN ,_PUNCT f)_X pohledávky_NOUN ,_PUNCT které_DET účetní_ADJ jednotka_NOUN nabyla_VERB a_CCONJ určila_VERB k_ADP obchodování_NOUN ,_PUNCT g)_X závazky_NOUN vrátit_VERB cenné_ADJ papíry_NOUN ,_PUNCT které_DET účetní_ADJ jednotka_NOUN zcizila_VERB a_CCONJ do_ADP okamžiku_NOUN ocenění_NOUN je_PRON nezískala_VERB zpět_ADV ,_PUNCT h)_X u_ADP vybraných_ADJ účetních_ADJ jednotek_NOUN majetek_NOUN určený_ADJ k_ADP prodeji_NOUN s_ADP výjimkou_NOUN zásob_NOUN ._PUNCT}
-Predicted: {
-(1)_PUNCT z_ADP jednotlivých_ADJ složek_NOUN majetku_NOUN a_CCONJ závazků_NOUN k_ADP okamžiku_NOUN ocenění_NOUN podle_ADP §_24_odst._2_písm._b)_X se_PRON reálnou_ADJ hodnotou_NOUN oceňují_VERB a)_X cenné_ADJ papíry_NOUN ,_PUNCT s_ADP výjimkou_NOUN cenných_ADJ papírů_NOUN držených_ADJ do_ADP splatnosti_NOUN ,_PUNCT dluhopisů_NOUN pořízených_ADJ v_ADP primárních_ADJ emisích_NOUN neurčených_ADJ účetní_ADJ jednotkou_NOUN k_ADP obchodování_NOUN ,_PUNCT cenných_ADJ papírů_NOUN představujících_ADJ účast_NOUN v_ADP ovládané_ADJ osobě_NOUN nebo_CCONJ v_ADP osobě_NOUN pod_ADP podstatným_ADJ vlivem_NOUN a_CCONJ cenných_ADJ papírů_NOUN emitovaných_ADJ účetní_ADJ jednotkou_NOUN ,_PUNCT b)_X deriváty_NOUN ,_PUNCT c)_X finanční_ADJ umístění_NOUN ,_PUNCT s_ADP výjimkou_NOUN dluhopisů_NOUN držených_ADJ do_ADP splatnosti_NOUN ,_PUNCT jejichž_DET emitentem_NOUN je_AUX členský_ADJ stát_NOUN organizace_NOUN pro_ADP ekonomickou_ADJ spolupráci_NOUN a_CCONJ rozvoj_NOUN a_CCONJ jejichž_DET hodnocení_NOUN bylo_AUX alespoň_ADV dvěma_NUM mezinárodně_ADV uznávanými_ADJ ratingovými_ADJ agenturami_NOUN stanoveno_ADJ na_ADP úrovni_NOUN české_ADJ republiky_NOUN nebo_CCONJ vyšší_ADJ ,_PUNCT nejedná-li_PUNCT se_PRON o_ADP finanční_ADJ umístění_NOUN vztahující_ADJ se_PRON k_ADP závazkům_NOUN ze_ADP životního_ADJ pojištění_NOUN ,_PUNCT je_AUX -_PUNCT li_PART nositelem_NOUN investičního_ADJ rizika_NOUN pojistník_NOUN ,_PUNCT a_CCONJ technické_ADJ rezervy_NOUN u_ADP účetních_ADJ jednotek_NOUN ,_PUNCT které_DET provozují_VERB činnost_NOUN pojištění_NOUN nebo_CCONJ zajištění_NOUN podle_ADP zvláštních_ADJ právních_ADJ předpisů_NOUN ,_PUNCT kromě_ADP veřejného_ADJ zdravotního_ADJ pojištění_NOUN ,_PUNCT d)_X majetek_NOUN a_CCONJ závazky_NOUN v_ADP případech_NOUN ,_PUNCT kdy_ADV ocenění_NOUN reálnou_ADJ hodnotou_NOUN ukládá_VERB zvláštní_ADJ právní_ADJ předpis_NOUN ,_PUNCT to_DET neplatí_VERB v_ADP případech_NOUN uvedených_ADJ v_ADP odstavci_NOUN 3_NUM ,_PUNCT e)_X část_NOUN majetku_NOUN a_CCONJ závazků_NOUN zajištěná_ADJ deriváty_NOUN ,_PUNCT f)_X pohledávky_NOUN ,_PUNCT které_DET účetní_ADJ jednotka_NOUN nabyla_VERB a_CCONJ určila_VERB k_ADP obchodování_NOUN ,_PUNCT g)_X závazky_NOUN vrátit_VERB cenné_ADJ papíry_NOUN ,_PUNCT které_DET účetní_ADJ jednotka_NOUN zcizila_VERB a_CCONJ do_ADP okamžiku_NOUN ocenění_NOUN je_AUX nezískala_VERB zpět_ADV ,_PUNCT h)_X u_ADP vybraných_ADJ účetních_ADJ jednotek_NOUN majetek_NOUN určený_ADJ k_ADP prodeji_NOUN s_ADP výjimkou_NOUN zásob_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-nejedná-li: X | PUNCT
-je: PRON | AUX
-}
-
-Expected: {
-(3)_PUNCT účetní_ADJ jednotky_NOUN mohou_VERB při_ADP fyzické_ADJ inventuře_NOUN zjišťovat_VERB skutečný_ADJ stav_NOUN majetku_NOUN počítáním_NOUN ,_PUNCT měřením_NOUN ,_PUNCT vážením_NOUN a_CCONJ dalšími_ADJ obdobnými_ADJ způsoby_NOUN ,_PUNCT případně_ADV mohou_VERB využívat_VERB účetní_ADJ záznamy_NOUN ,_PUNCT které_DET prokazují_VERB jeho_DET existenci_NOUN ._PUNCT}
-Predicted: {
-(3)_PUNCT účetní_ADJ jednotky_NOUN mohou_VERB při_ADP fyzické_ADJ inventuře_NOUN zjišťovat_VERB skutečný_ADJ stav_NOUN majetku_NOUN počítáním_NOUN ,_PUNCT měřením_NOUN ,_PUNCT vážením_ADJ a_CCONJ dalšími_ADJ obdobnými_ADJ způsoby_NOUN ,_PUNCT případně_ADV mohou_VERB využívat_VERB účetní_ADJ záznamy_NOUN ,_PUNCT které_DET prokazují_VERB jeho_DET existenci_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-vážením: NOUN | ADJ
-}
-
-Expected: {
-(1)_PUNCT použijí-li_NOUN účetní_NOUN jednotky_NOUN účetní_ADJ záznamy_NOUN i_CCONJ pro_ADP jiný_ADJ účel_NOUN než_SCONJ uvedený_ADJ v_ADP §_31_odst._1_X ,_PUNCT a_CCONJ to_PART zejména_ADV pro_ADP účely_NOUN trestního_ADJ řízení_NOUN ,_PUNCT opatření_NOUN proti_ADP legalizaci_NOUN výnosů_NOUN z_ADP trestné_ADJ činnosti_NOUN ,_PUNCT správního_ADJ řízení_NOUN ,_PUNCT občanského_ADJ soudního_ADJ řízení_NOUN ,_PUNCT daňového_ADJ řízení_NOUN ,_PUNCT výběru_NOUN archiválií_NOUN ve_ADP skartačním_ADJ řízení_NOUN nebo_CCONJ mimo_ADP něj_PRON ,_PUNCT nebo_CCONJ pro_ADP účely_NOUN sociálního_ADJ zabezpečení_NOUN ,_PUNCT veřejného_ADJ zdravotního_ADJ pojištění_NOUN anebo_CCONJ pro_ADP účely_NOUN ochrany_NOUN autorských_ADJ práv_NOUN ,_PUNCT postupují_VERB po_ADP uplynutí_NOUN dob_NOUN úschovy_NOUN uvedených_ADJ v_ADP §_31_odst._2_X dále_ADV tak_ADV ,_PUNCT aby by_SCONJ AUX byly_AUX zajištěny_ADJ požadavky_NOUN vyplývající_ADJ z_ADP jejich_DET použití_NOUN pro_ADP uvedené_ADJ účely_NOUN ;_PUNCT v_ADP případě_NOUN ,_PUNCT kdy_ADV účetní_ADJ jednotky_NOUN použijí_VERB účetní_ADJ záznamy_NOUN k_ADP těmto_DET účelům_NOUN ,_PUNCT platí_VERB všechna_DET ustanovení_NOUN tohoto_DET zákona_NOUN týkající_ADJ se_PRON účetních_ADJ záznamů_NOUN obdobně_ADV ._PUNCT}
-Predicted: {
-(1)_PUNCT použijí-li_PUNCT účetní_ADJ jednotky_NOUN účetní_ADJ záznamy_NOUN i_CCONJ pro_ADP jiný_ADJ účel_NOUN než_SCONJ uvedený_ADJ v_ADP §_31_odst._1_X ,_PUNCT a_CCONJ to_PART zejména_ADV pro_ADP účely_NOUN trestního_ADJ řízení_NOUN ,_PUNCT opatření_NOUN proti_ADP legalizaci_NOUN výnosů_NOUN z_ADP trestné_ADJ činnosti_NOUN ,_PUNCT správního_ADJ řízení_NOUN ,_PUNCT občanského_ADJ soudního_ADJ řízení_NOUN ,_PUNCT daňového_ADJ řízení_NOUN ,_PUNCT výběru_NOUN archiválií_NOUN ve_ADP skartačním_ADJ řízení_NOUN nebo_CCONJ mimo_ADP něj_PRON ,_PUNCT nebo_CCONJ pro_ADP účely_NOUN sociálního_ADJ zabezpečení_NOUN ,_PUNCT veřejného_ADJ zdravotního_ADJ pojištění_NOUN anebo_CCONJ pro_ADP účely_NOUN ochrany_NOUN autorských_ADJ práv_NOUN ,_PUNCT postupují_VERB po_ADP uplynutí_NOUN dob_NOUN úschovy_NOUN uvedených_ADJ v_ADP §_31_odst._2_X dále_ADV tak_ADV ,_PUNCT aby by_SCONJ AUX byly_AUX zajištěny_ADJ požadavky_NOUN vyplývající_ADJ z_ADP jejich_DET použití_NOUN pro_ADP uvedené_ADJ účely_NOUN ;_PUNCT v_ADP případě_NOUN ,_PUNCT kdy_ADV účetní_ADJ jednotky_NOUN použijí_VERB účetní_ADJ záznamy_NOUN k_ADP těmto_DET účelům_NOUN ,_PUNCT platí_VERB všechna_PRON ustanovení_NOUN tohoto_DET zákona_NOUN týkající_ADJ se_PRON účetních_ADJ záznamů_NOUN obdobně_ADV ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-použijí-li: NOUN | PUNCT
 účetní: NOUN | ADJ
-všechna: DET | PRON
 }
 
 Expected: {
-(4)_PUNCT účetní_ADJ záznam_NOUN v_ADP technické_ADJ nebo_CCONJ smíšené_ADJ formě_NOUN ,_PUNCT se_ADP skartačními_ADJ znaky_NOUN „_PUNCT a_X “_PUNCT nebo_CCONJ „_PUNCT v_X “_PUNCT vzniklý_ADJ z_ADP činnosti_NOUN účetní_ADJ jednotky_NOUN ,_PUNCT musí_VERB být_AUX ve_ADP formátu_NOUN ,_PUNCT který_DET zaručí_VERB jeho_DET neměnnost_NOUN a_CCONJ umožní_VERB jeho_DET následnou_ADJ čitelnost_NOUN pro_ADP fyzickou_ADJ osobu_NOUN ._PUNCT}
+informace_NOUN je_AUX včasná_ADJ ,_PUNCT je_AUX -_PUNCT li_PART získána_ADJ ve_ADP správném_ADJ čase_NOUN z_ADP hlediska_NOUN její_DET významnosti_NOUN a_CCONJ nákladů_NOUN na_ADP její_DET získání_NOUN ,_PUNCT pokud_SCONJ tyto_DET náklady_NOUN nepřevýší_VERB přínosy_NOUN plynoucí_ADJ z_ADP této_DET informace_NOUN ._PUNCT}
 Predicted: {
-(4)_PUNCT účetní_ADJ záznam_NOUN v_ADP technické_ADJ nebo_CCONJ smíšené_ADJ formě_NOUN ,_PUNCT se_PRON skartačními_PRON znaky_NOUN „_PUNCT a_CCONJ “_PUNCT nebo_CCONJ „_PUNCT v_ADP “_PUNCT vzniklý_ADJ z_ADP činnosti_NOUN účetní_ADJ jednotky_NOUN ,_PUNCT musí_VERB být_AUX ve_ADP formátu_NOUN ,_PUNCT který_DET zaručí_VERB jeho_DET neměnnost_NOUN a_CCONJ umožní_VERB jeho_DET následnou_ADJ čitelnost_NOUN pro_ADP fyzickou_ADJ osobu_NOUN ._PUNCT}
+informace_NOUN je_AUX včasná_ADJ ,_PUNCT je_AUX -_PUNCT li_PART získána_NOUN ve_ADP správném_ADJ čase_NOUN z_ADP hlediska_NOUN její_DET významnosti_NOUN a_CCONJ nákladů_NOUN na_ADP její_DET získání_NOUN ,_PUNCT pokud_SCONJ tyto_DET náklady_NOUN nepřevýší_VERB přínosy_NOUN plynoucí_ADJ z_ADP této_DET informace_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-se: ADP | PRON
-skartačními: ADJ | PRON
-a: X | CCONJ
-v: X | ADP
+získána: ADJ | NOUN
 }
 
 Expected: {
-(1)_PUNCT účetní_ADJ jednotka_NOUN neuvedená_ADJ v_ADP §_37_X se_PRON dopustí_VERB správního_ADJ deliktu_NOUN tím_DET ,_PUNCT že_SCONJ a)_X nevede_VERB účetnictví_NOUN podle_ADP §_4_odst._1_X ,_PUNCT b)_X nesestaví_VERB účetní_ADJ závěrku_NOUN podle_ADP §_6_odst._4_X ,_PUNCT nebo_CCONJ nesestaví_VERB účetní_ADJ závěrku_NOUN ke_ADP dni_NOUN stanovenému_ADJ v_ADP §_19_odst._1_X ,_PUNCT nebo_CCONJ nevyhotoví_VERB výroční_ADJ zprávu_NOUN podle_ADP §_21_odst._1_až_5_X ,_PUNCT c)_X vede_VERB účetnictví_NOUN v_ADP rozporu_NOUN s_ADP §_7_odst._1_a_2_X ,_PUNCT d)_X vede_VERB účetnictví_NOUN v_ADP rozporu_NOUN s_ADP §_8_odst._2_X ,_PUNCT e)_X jí_PRON sestavená_ADJ účetní_ADJ závěrka_NOUN neobsahuje_VERB všechny_DET povinné_ADJ součásti_NOUN uvedené_ADJ v_ADP §_18_odst._1_X nebo_CCONJ 2_NUM ,_PUNCT f)_X v_ADP rozporu_NOUN s_ADP §_19a_odst._1_X nepoužije_VERB pro_ADP účtování_NOUN a_CCONJ sestavení_NOUN účetní_ADJ závěrky_NOUN mezinárodní_ADJ účetní_ADJ standardy_NOUN ,_PUNCT g)_X v_ADP rozporu_NOUN s_ADP §_20_odst._1_X nemá_VERB účetní_ADJ závěrku_NOUN ověřenou_ADJ auditorem_NOUN nebo_CCONJ v_ADP rozporu_NOUN s_ADP §_21_odst._6_X nemá_VERB výroční_ADJ zprávu_NOUN ověřenou_ADJ auditorem_NOUN ,_PUNCT h)_X nezveřejní_VERB účetní_ADJ závěrku_NOUN nebo_CCONJ výroční_ADJ zprávu_NOUN podle_ADP §_21a_X ,_PUNCT i)_X nesestaví_VERB účetní_ADJ výkazy_NOUN za_ADP dílčí_ADJ konsolidační_ADJ celek_NOUN státu_NOUN nebo_CCONJ účetní_ADJ výkazy_NOUN za_ADP českou_ADJ republiku_NOUN ,_PUNCT ač_SCONJ je_AUX k_ADP tomu_DET povinna_ADJ podle_ADP §_23b_X ,_PUNCT j)_X v_ADP rozporu_NOUN s_ADP §_31_X neuschová_VERB účetní_ADJ záznamy_NOUN ,_PUNCT nebo_CCONJ k)_X nezajistí_VERB podmínky_NOUN pro_ADP předávání_NOUN účetních_ADJ záznamů_NOUN do_ADP centrálního_ADJ systému_NOUN účetních_ADJ informací_NOUN státu_NOUN způsobem_NOUN stanoveným_ADJ prováděcím_ADJ právním_ADJ předpisem_NOUN vydaným_ADJ na_ADP základě_NOUN §_4_odst._8_a_§_23b_odst._534_X )_PUNCT nebo_CCONJ nepředá_VERB účetní_ADJ záznam_NOUN do_ADP centrálního_ADJ systému_NOUN účetních_ADJ informací_NOUN státu_NOUN ,_PUNCT ač_SCONJ jí_PRON tuto_ADV povinnost_NOUN stanoví_VERB zákon_NOUN nebo_CCONJ jiný_ADJ právní_ADJ předpis_NOUN ._PUNCT}
+(1)_PUNCT z_ADP účetních_ADJ jednotek_NOUN podle_ADP §_1_odst._2_X jsou_AUX povinny_ADJ účetní_ADJ závěrku_NOUN i_CCONJ výroční_ADJ zprávu_NOUN ,_PUNCT vyžaduje-li_X její_DET vyhotovení_NOUN tento_DET zákon_NOUN nebo_CCONJ zvláštní_ADJ právní_ADJ předpis_NOUN ,_PUNCT zveřejnit_VERB ty_DET ,_PUNCT které_DET se_PRON zapisují_VERB do_ADP obchodního_ADJ rejstříku_NOUN ,_PUNCT nebo_CCONJ ty_DET ,_PUNCT kterým_DET tuto_ADV povinnost_NOUN stanoví_VERB zvláštní_ADJ právní_ADJ předpis_NOUN ._PUNCT}
 Predicted: {
-(1)_PUNCT účetní_ADJ jednotka_NOUN neuvedená_ADJ v_ADP §_37_X se_PRON dopustí_VERB správního_ADJ deliktu_NOUN tím_DET ,_PUNCT že_SCONJ a)_X nevede_VERB účetnictví_NOUN podle_ADP §_4_odst._1_X ,_PUNCT b)_X nesestaví_VERB účetní_ADJ závěrku_NOUN podle_ADP §_6_odst._4_X ,_PUNCT nebo_CCONJ nesestaví_VERB účetní_ADJ závěrku_NOUN ke_ADP dni_NOUN stanovenému_ADJ v_ADP §_19_odst._1_X ,_PUNCT nebo_CCONJ nevyhotoví_VERB výroční_ADJ zprávu_NOUN podle_ADP §_21_odst._1_až_5_X ,_PUNCT c)_X vede_VERB účetnictví_NOUN v_ADP rozporu_NOUN s_ADP §_7_odst._1_a_2_X ,_PUNCT d)_X vede_VERB účetnictví_NOUN v_ADP rozporu_NOUN s_ADP §_8_odst._2_X ,_PUNCT e)_X jí_PRON sestavená_ADJ účetní_ADJ závěrka_NOUN neobsahuje_VERB všechny_DET povinné_ADJ součásti_NOUN uvedené_ADJ v_ADP §_18_odst._1_X nebo_CCONJ 2_NUM ,_PUNCT f)_X v_ADP rozporu_NOUN s_ADP §_19a_odst._1_X nepoužije_VERB pro_ADP účtování_NOUN a_CCONJ sestavení_NOUN účetní_ADJ závěrky_NOUN mezinárodní_ADJ účetní_ADJ standardy_NOUN ,_PUNCT g)_X v_ADP rozporu_NOUN s_ADP §_20_odst._1_X nemá_VERB účetní_ADJ závěrku_NOUN ověřenou_ADJ auditorem_NOUN nebo_CCONJ v_ADP rozporu_NOUN s_ADP §_21_odst._6_X nemá_VERB výroční_ADJ zprávu_NOUN ověřenou_ADJ auditorem_NOUN ,_PUNCT h)_X nezveřejní_ADJ účetní_ADJ závěrku_NOUN nebo_CCONJ výroční_ADJ zprávu_NOUN podle_ADP §_21a_X ,_PUNCT i)_X nesestaví_VERB účetní_ADJ výkazy_NOUN za_ADP dílčí_ADJ konsolidační_ADJ celek_NOUN státu_NOUN nebo_CCONJ účetní_ADJ výkazy_NOUN za_ADP českou_ADJ republiku_NOUN ,_PUNCT ač_SCONJ je_AUX k_ADP tomu_DET povinna_ADJ podle_ADP §_23b_X ,_PUNCT j)_X v_ADP rozporu_NOUN s_ADP §_31_X neuschová_VERB účetní_ADJ záznamy_NOUN ,_PUNCT nebo_CCONJ k)_PUNCT nezajistí_VERB podmínky_NOUN pro_ADP předávání_NOUN účetních_ADJ záznamů_NOUN do_ADP centrálního_ADJ systému_NOUN účetních_ADJ informací_NOUN státu_NOUN způsobem_NOUN stanoveným_ADJ prováděcím_ADJ právním_ADJ předpisem_NOUN vydaným_ADJ na_ADP základě_NOUN §_4_odst._8_a_§_23b_odst._534_X )_PUNCT nebo_CCONJ nepředá_VERB účetní_ADJ záznam_NOUN do_ADP centrálního_ADJ systému_NOUN účetních_ADJ informací_NOUN státu_NOUN ,_PUNCT ač_SCONJ jí_PRON tuto_DET povinnost_NOUN stanoví_VERB zákon_NOUN nebo_CCONJ jiný_ADJ právní_ADJ předpis_NOUN ._PUNCT}
+(1)_PUNCT z_ADP účetních_ADJ jednotek_NOUN podle_ADP §_1_odst._2_X jsou_AUX povinny_ADJ účetní_ADJ závěrku_NOUN i_CCONJ výroční_ADJ zprávu_NOUN ,_PUNCT vyžaduje-li_PUNCT její_DET vyhotovení_NOUN tento_DET zákon_NOUN nebo_CCONJ zvláštní_ADJ právní_ADJ předpis_NOUN ,_PUNCT zveřejnit_VERB ty_DET ,_PUNCT které_DET se_PRON zapisují_VERB do_ADP obchodního_ADJ rejstříku_NOUN ,_PUNCT nebo_CCONJ ty_DET ,_PUNCT kterým_DET tuto_DET povinnost_NOUN stanoví_VERB zvláštní_ADJ právní_ADJ předpis_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-nezveřejní: VERB | ADJ
-k): X | PUNCT
+vyžaduje-li: X | PUNCT
 tuto: ADV | DET
 }
 
 Expected: {
-položka_NOUN „_PUNCT ***výsledek_X hospodaření_X za_X účetní_X období_X “_PUNCT uvedená_ADJ ve_ADP výkazu_NOUN zisku_NOUN a_CCONJ ztráty_NOUN se_PRON musí_VERB rovnat_VERB položce_NOUN „_PUNCT a._X v._X výsledek_X hospodaření_X běžného_X účetního_X období_X “_PUNCT uvedené_ADJ v_ADP rozvaze_NOUN (_PUNCT bilanci_NOUN )_PUNCT ._PUNCT}
+(9)_PUNCT v_ADP případě_NOUN cizí_ADJ měny_NOUN ,_PUNCT u_ADP které_DET se_PRON nevyhlašuje_VERB kurs_NOUN devizového_ADJ trhu_NOUN denně_ADV ,_PUNCT použije_VERB účetní_ADJ jednotka_NOUN pro_ADP její_DET přepočet_NOUN a)_X kurs_NOUN mezibankovního_ADJ trhu_NOUN pro_ADP tuto_DET měnu_NOUN k_ADP usd_NOUN nebo_CCONJ eur_NOUN a_CCONJ kurs_NOUN devizového_ADJ trhu_NOUN vyhlášený_ADJ českou_ADJ národní_ADJ bankou_NOUN pro_ADP usd_NOUN nebo_CCONJ eur_NOUN ke_ADP stejnému_ADJ dni_NOUN ,_PUNCT nebo_CCONJ b)_X poslední_ADJ známý_ADJ kurs_NOUN vyhlášený_ADJ či_CCONJ zveřejněný_ADJ českou_ADJ národní_ADJ bankou_NOUN ;_PUNCT tento_DET postup_NOUN nepoužijí_VERB účetní_ADJ jednotky_NOUN ,_PUNCT na_ADP které_DET se_PRON nevztahuje_VERB ustanovení_NOUN odstavce_NOUN 7_NUM ._PUNCT}
 Predicted: {
-položka_NOUN „_PUNCT ***výsledek_X hospodaření_X za_ADP účetní_ADJ období_NOUN “_PUNCT uvedená_ADJ ve_ADP výkazu_NOUN zisku_NOUN a_CCONJ ztráty_NOUN se_PRON musí_VERB rovnat_VERB položce_NOUN „_PUNCT a._PUNCT v._PUNCT výsledek_NOUN hospodaření_NOUN běžného_ADJ účetního_ADJ období_NOUN “_PUNCT uvedené_ADJ v_ADP rozvaze_NOUN (_PUNCT bilanci_NOUN )_PUNCT ._PUNCT}
+(9)_PUNCT v_ADP případě_NOUN cizí_ADJ měny_NOUN ,_PUNCT u_ADP které_DET se_PRON nevyhlašuje_VERB kurs_NOUN devizového_ADJ trhu_NOUN denně_ADV ,_PUNCT použije_VERB účetní_ADJ jednotka_NOUN pro_ADP její_DET přepočet_NOUN a)_PUNCT kurs_NOUN mezibankovního_ADJ trhu_NOUN pro_ADP tuto_DET měnu_NOUN k_ADP usd_NOUN nebo_CCONJ eur_NOUN a_CCONJ kurs_NOUN devizového_ADJ trhu_NOUN vyhlášený_ADJ českou_ADJ národní_ADJ bankou_NOUN pro_ADP usd_NOUN nebo_CCONJ eur_NOUN ke_ADP stejnému_ADJ dni_NOUN ,_PUNCT nebo_CCONJ b)_X poslední_ADJ známý_ADJ kurs_NOUN vyhlášený_ADJ či_CCONJ zveřejněný_ADJ českou_ADJ národní_ADJ bankou_NOUN ;_PUNCT tento_DET postup_NOUN nepoužijí_VERB účetní_ADJ jednotky_NOUN ,_PUNCT na_ADP které_DET se_PRON nevztahuje_VERB ustanovení_NOUN odstavce_NOUN 7_NUM ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-za: X | ADP
-účetní: X | ADJ
-období: X | NOUN
-a.: X | PUNCT
-v.: X | PUNCT
-výsledek: X | NOUN
-hospodaření: X | NOUN
-běžného: X | ADJ
-účetního: X | ADJ
-období: X | NOUN
+a): X | PUNCT
 }
 
 Expected: {
-dobou_NOUN použitelnosti_NOUN se_PRON rozumí_VERB doba_NOUN ,_PUNCT po_ADP kterou_DET je_AUX majetek_NOUN využitelný_ADJ pro_ADP současnou_ADJ nebo_CCONJ uchovatelný_ADJ pro_ADP další_ADJ činnost_NOUN nebo_CCONJ může_VERB sloužit_VERB jako_SCONJ podklad_NOUN nebo_CCONJ součást_NOUN zdokonalovaných_ADJ nebo_CCONJ jiných_ADJ postupů_NOUN a_CCONJ řešení_NOUN včetně_ADV doby_NOUN ověřování_NOUN nehmotných_ADJ výsledků_NOUN ._PUNCT}
+(4)_PUNCT pro_ADP účely_NOUN tohoto_DET zákona_NOUN se_PRON jako_SCONJ reálná_ADJ hodnota_NOUN použije_VERB a)_X tržní_ADJ hodnota_NOUN ,_PUNCT b)_X ocenění_NOUN kvalifikovaným_ADJ odhadem_NOUN nebo_CCONJ posudkem_NOUN znalce_NOUN ,_PUNCT není_AUX -_PUNCT li_PART tržní_ADJ hodnota_NOUN k_ADP dispozici_NOUN nebo_CCONJ tato_DET nedostatečně_ADV představuje_VERB reálnou_ADJ hodnotu_NOUN ;_PUNCT metody_NOUN ocenění_NOUN použité_ADJ při_ADP kvalifikovaném_ADJ odhadu_NOUN nebo_CCONJ posudku_NOUN znalce_NOUN musí_VERB zajistit_VERB přiměřené_ADJ přiblížení_NOUN se_PRON k_ADP tržní_ADJ hodnotě_NOUN ,_PUNCT c)_X ocenění_NOUN stanovené_ADJ podle_ADP zvláštních_ADJ právních_ADJ předpisů_NOUN ,_PUNCT nelze-li_X postupovat_VERB podle_ADP písmen_NOUN a)_a_b)_X ._PUNCT}
 Predicted: {
-dobou_NOUN použitelnosti_NOUN se_PRON rozumí_VERB doba_NOUN ,_PUNCT po_ADP kterou_DET je_AUX majetek_NOUN využitelný_ADJ pro_ADP současnou_ADJ nebo_CCONJ uchovatelný_ADJ pro_ADP další_ADJ činnost_NOUN nebo_CCONJ může_VERB sloužit_VERB jako_SCONJ podklad_NOUN nebo_CCONJ součást_NOUN zdokonalovaných_ADJ nebo_CCONJ jiných_ADJ postupů_NOUN a_CCONJ řešení_NOUN včetně_ADP doby_NOUN ověřování_NOUN nehmotných_ADJ výsledků_NOUN ._PUNCT}
+(4)_PUNCT pro_ADP účely_NOUN tohoto_DET zákona_NOUN se_PRON jako_SCONJ reálná_ADJ hodnota_NOUN použije_VERB a)_X tržní_ADJ hodnota_NOUN ,_PUNCT b)_X ocenění_NOUN kvalifikovaným_ADJ odhadem_NOUN nebo_CCONJ posudkem_NOUN znalce_NOUN ,_PUNCT není_AUX -_PUNCT li_PART tržní_ADJ hodnota_NOUN k_ADP dispozici_NOUN nebo_CCONJ tato_DET nedostatečně_ADV představuje_VERB reálnou_ADJ hodnotu_NOUN ;_PUNCT metody_NOUN ocenění_NOUN použité_ADJ při_ADP kvalifikovaném_ADJ odhadu_NOUN nebo_CCONJ posudku_NOUN znalce_NOUN musí_VERB zajistit_VERB přiměřené_ADJ přiblížení_NOUN se_PRON k_ADP tržní_ADJ hodnotě_NOUN ,_PUNCT c)_X ocenění_NOUN stanovené_ADJ podle_ADP zvláštních_ADJ právních_ADJ předpisů_NOUN ,_PUNCT nelze-li_PUNCT postupovat_VERB podle_ADP písmen_NOUN a)_a_b)_X ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-včetně: ADV | ADP
+nelze-li: X | PUNCT
 }
 
 Expected: {
-v_ADP případě_NOUN variantního_ADJ postupu_NOUN při_ADP pořizování_NOUN dlouhodobého_ADJ nehmotného_ADJ majetku_NOUN nebo_CCONJ jeho_DET části_NOUN jsou_AUX součástí_NOUN ocenění_NOUN dlouhodobého_ADJ nehmotného_ADJ majetku_NOUN všechna_DET variantní_ADJ řešení_NOUN ._PUNCT}
+(6)_PUNCT účetní_ADJ jednotky_NOUN při_ADP inventarizaci_NOUN periodické_ADJ a)_X mohou_VERB zahájit_VERB ,_PUNCT inventuru_NOUN nejdříve_ADV b)_X čtyři_NUM ukončí_VERB měsíce_NOUN inventuru_NOUN před_ADP nejpozději_ADV rozvahovým_ADJ dva_NUM dnem_NOUN měsíce_NOUN po_ADP rozvahovém_ADJ dni_NOUN ._PUNCT}
 Predicted: {
-v_ADP případě_NOUN variantního_ADJ postupu_NOUN při_ADP pořizování_NOUN dlouhodobého_ADJ nehmotného_ADJ majetku_NOUN nebo_CCONJ jeho_DET části_NOUN jsou_AUX součástí_NOUN ocenění_NOUN dlouhodobého_ADJ nehmotného_ADJ majetku_NOUN všechna_ADP variantní_ADJ řešení_NOUN ._PUNCT}
+(6)_PUNCT účetní_ADJ jednotky_NOUN při_ADP inventarizaci_NOUN periodické_ADJ a)_PUNCT mohou_VERB zahájit_VERB ,_PUNCT inventuru_NOUN nejdříve_ADV b)_PUNCT čtyři_NUM ukončí_VERB měsíce_NOUN inventuru_NOUN před_ADP nejpozději_ADV rozvahovým_ADJ dva_NUM dnem_NOUN měsíce_NOUN po_ADP rozvahovém_ADJ dni_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-všechna: DET | ADP
+a): X | PUNCT
+b): X | PUNCT
 }
 
 Expected: {
-(2)_PUNCT položka_NOUN „_PUNCT c.i.2._X nedokončená_X výroba_X a_X polotovary_X “_PUNCT obsahuje_VERB a)_X produkty_NOUN ,_PUNCT které_DET prošly_VERB jedním_NUM nebo_CCONJ několika_DET výrobními_ADJ stupni_NOUN a_CCONJ nejsou_AUX již_ADV materiálem_NOUN ,_PUNCT nejsou_AUX však_CCONJ dosud_ADV hotovým_ADJ výrobkem_NOUN ;_PUNCT tato_DET položka_NOUN rovněž_ADV obsahuje_VERB nedokončené_ADJ činnosti_NOUN ,_PUNCT při_ADP nichž_PRON nevznikají_VERB hmotné_ADJ produkty_NOUN ,_PUNCT b)_X odděleně_ADV evidované_ADJ produkty_NOUN ,_PUNCT to_DET je_AUX polotovary_NOUN ,_PUNCT které_DET dosud_ADV neprošly_VERB všemi_DET výrobními_ADJ stupni_NOUN a_CCONJ budou_AUX dokončeny_ADJ nebo_CCONJ zkompletovány_ADJ do_ADP hotových_ADJ výrobků_NOUN v_ADP dalším_ADJ výrobním_ADJ procesu_NOUN účetní_ADJ jednotky_NOUN ._PUNCT}
+tuto_DET dokumentaci_NOUN uschovávají_VERB účetní_ADJ jednotky_NOUN po_ADP dobu_NOUN stanovenou_ADJ v_ADP §_31_odst._2_X podle_ADP toho_DET ,_PUNCT jakou_DET funkci_NOUN plní_VERB při_ADP vedení_NOUN účetnictví_NOUN ,_PUNCT nejde-li_X o_ADP případ_NOUN podle_ADP odstavce_NOUN 1_NUM ._PUNCT}
 Predicted: {
-(2)_PUNCT položka_NOUN „_PUNCT c.i.2._X nedokončená_ADJ výroba_NOUN a_CCONJ polotovary_NOUN “_PUNCT obsahuje_VERB a)_X produkty_NOUN ,_PUNCT které_DET prošly_VERB jedním_NUM nebo_CCONJ několika_DET výrobními_ADJ stupni_NOUN a_CCONJ nejsou_AUX již_ADV materiálem_NOUN ,_PUNCT nejsou_AUX však_CCONJ dosud_ADV hotovým_ADJ výrobkem_NOUN ;_PUNCT tato_DET položka_NOUN rovněž_ADV obsahuje_VERB nedokončené_ADJ činnosti_NOUN ,_PUNCT při_ADP nichž_PRON nevznikají_VERB hmotné_ADJ produkty_NOUN ,_PUNCT b)_X odděleně_ADV evidované_ADJ produkty_NOUN ,_PUNCT to_DET je_AUX polotovary_NOUN ,_PUNCT které_DET dosud_ADV neprošly_VERB všemi_DET výrobními_ADJ stupni_NOUN a_CCONJ budou_AUX dokončeny_ADJ nebo_CCONJ zkompletovány_ADJ do_ADP hotových_ADJ výrobků_NOUN v_ADP dalším_ADJ výrobním_ADJ procesu_NOUN účetní_ADJ jednotky_NOUN ._PUNCT}
+tuto_DET dokumentaci_NOUN uschovávají_VERB účetní_ADJ jednotky_NOUN po_ADP dobu_NOUN stanovenou_ADJ v_ADP §_31_odst._2_X podle_ADP toho_DET ,_PUNCT jakou_DET funkci_NOUN plní_VERB při_ADP vedení_NOUN účetnictví_NOUN ,_PUNCT nejde-li_PUNCT o_ADP případ_NOUN podle_ADP odstavce_NOUN 1_NUM ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-nedokončená: X | ADJ
-výroba: X | NOUN
-a: X | CCONJ
-polotovary: X | NOUN
+nejde-li: X | PUNCT
 }
 
 Expected: {
-účetní_ADJ jednotka_NOUN popíše_VERB tuto_ADV skutečnost_NOUN v_ADP příloze_NOUN v_ADP účetní_ADJ závěrce_NOUN ._PUNCT}
+pro_ADP účely_NOUN tohoto_DET zákona_NOUN se_PRON považuje_VERB za_ADP a)_X listinnou_ADJ formu_NOUN účetní_ADJ záznam_NOUN provedený_ADJ na_ADP analogový_ADJ nosič_NOUN rukopisem_NOUN ,_PUNCT psacím_ADJ strojem_NOUN ,_PUNCT tiskařskými_ADJ nebo_CCONJ reprografickými_ADJ technikami_NOUN anebo_CCONJ tiskovým_ADJ výstupním_ADJ zařízením_NOUN výpočetní_ADJ techniky_NOUN ,_PUNCT jehož_PRON obsah_NOUN je_AUX pro_ADP fyzickou_ADJ osobu_NOUN čitelný_ADJ ,_PUNCT b)_X technickou_ADJ formu_NOUN účetní_ADJ záznam_NOUN provedený_ADJ elektronickým_ADJ ,_PUNCT optickým_ADJ nebo_CCONJ jiným_ADJ způsobem_NOUN nespadajícím_ADJ pod_ADP písmeno_NOUN a)_X ,_PUNCT který_DET umožňuje_VERB jeho_DET převedení_NOUN do_ADP formy_NOUN ,_PUNCT v_ADP níž_PRON je_AUX jeho_DET obsah_NOUN pro_ADP fyzickou_ADJ osobu_NOUN čitelný_ADJ ,_PUNCT c)_X smíšenou_ADJ formu_NOUN účetní_ADJ záznam_NOUN v_ADP listinné_ADJ formě_NOUN obsahující_ADJ též_ADV informace_NOUN v_ADP technické_ADJ formě_NOUN pro_ADP fyzickou_ADJ osobu_NOUN nečitelné_ADJ ,_PUNCT který_DET umožňuje_VERB jeho_DET převedení_NOUN do_ADP formy_NOUN ,_PUNCT v_ADP níž_PRON je_AUX jeho_DET obsah_NOUN pro_ADP fyzickou_ADJ osobu_NOUN čitelný_ADJ ._PUNCT}
 Predicted: {
-účetní_ADJ jednotka_NOUN popíše_VERB tuto_DET skutečnost_NOUN v_ADP příloze_NOUN v_ADP účetní_ADJ závěrce_NOUN ._PUNCT}
+pro_ADP účely_NOUN tohoto_DET zákona_NOUN se_PRON považuje_VERB za_ADP a)_X listinnou_ADJ formu_NOUN účetní_ADJ záznam_NOUN provedený_ADJ na_ADP analogový_ADJ nosič_NOUN rukopisem_NOUN ,_PUNCT psacím_ADJ strojem_NOUN ,_PUNCT tiskařskými_ADJ nebo_CCONJ reprografickými_ADJ technikami_NOUN anebo_CCONJ tiskovým_ADJ výstupním_ADJ zařízením_NOUN výpočetní_ADJ techniky_NOUN ,_PUNCT jehož_DET obsah_NOUN je_AUX pro_ADP fyzickou_ADJ osobu_NOUN čitelný_ADJ ,_PUNCT b)_X technickou_ADJ formu_NOUN účetní_ADJ záznam_NOUN provedený_ADJ elektronickým_ADJ ,_PUNCT optickým_ADJ nebo_CCONJ jiným_ADJ způsobem_NOUN nespadajícím_ADJ pod_ADP písmeno_NOUN a)_X ,_PUNCT který_DET umožňuje_VERB jeho_DET převedení_NOUN do_ADP formy_NOUN ,_PUNCT v_ADP níž_PRON je_AUX jeho_DET obsah_NOUN pro_ADP fyzickou_ADJ osobu_NOUN čitelný_ADJ ,_PUNCT c)_X smíšenou_ADJ formu_NOUN účetní_ADJ záznam_NOUN v_ADP listinné_ADJ formě_NOUN obsahující_ADJ též_ADV informace_NOUN v_ADP technické_ADJ formě_NOUN pro_ADP fyzickou_ADJ osobu_NOUN nečitelné_ADJ ,_PUNCT který_DET umožňuje_VERB jeho_DET převedení_NOUN do_ADP formy_NOUN ,_PUNCT v_ADP níž_PRON je_AUX jeho_DET obsah_NOUN pro_ADP fyzickou_ADJ osobu_NOUN čitelný_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-tuto: ADV | DET
+jehož: PRON | DET
 }
 
 Expected: {
-(2)_PUNCT položka_NOUN „_PUNCT a.i.3._X změny_X základního_X kapitálu_X “_PUNCT obsahuje_VERB změny_NOUN základního_ADJ kapitálu_NOUN vykazované_ADJ příslušnými_ADJ obchodními_ADJ společnostmi_NOUN před_ADP zápisem_NOUN změn_NOUN základního_ADJ kapitálu_NOUN do_ADP obchodního_ADJ rejstříku_NOUN ._PUNCT}
+tato_DET vyhláška_NOUN zapracovávqá_X příslušné_ADJ předpisy_NOUN evropské_ADJ unie_NOUN a_CCONJ upravuje_VERB :_PUNCT a)_X rozsah_NOUN a_CCONJ způsob_NOUN sestavování_NOUN účetní_ADJ závěrky_NOUN ;_PUNCT uspořádání_NOUN ,_PUNCT označování_NOUN a_CCONJ obsahové_ADJ vymezení_NOUN položek_NOUN majetku_NOUN a_CCONJ jiných_ADJ aktiv_NOUN ,_PUNCT závazků_NOUN a_CCONJ jiných_ADJ pasiv_NOUN v_ADP účetní_ADJ závěrce_NOUN ;_PUNCT uspořádání_NOUN ,_PUNCT označování_NOUN a_CCONJ obsahové_ADJ vymezení_NOUN nákladů_NOUN ,_PUNCT výnosů_NOUN a_CCONJ výsledků_NOUN hospodaření_NOUN v_ADP účetní_ADJ závěrce_NOUN ;_PUNCT uspořádání_NOUN a_CCONJ obsahové_ADJ vymezení_NOUN vysvětlujících_ADJ a_CCONJ doplňujících_ADJ informací_NOUN v_ADP příloze_NOUN v_ADP účetní_ADJ závěrce_NOUN ;_PUNCT uspořádání_NOUN ,_PUNCT označování_NOUN a_CCONJ obsahové_ADJ vymezení_NOUN položek_NOUN konsolidované_ADJ účetní_ADJ závěrky_NOUN ;_PUNCT metody_NOUN konsolidace_NOUN účetní_ADJ závěrky_NOUN a_CCONJ postup_NOUN zahrnování_NOUN účetních_ADJ jednotek_NOUN do_ADP konsolidačního_ADJ celku_NOUN ;_PUNCT b)_X uspořádání_NOUN a_CCONJ obsahové_ADJ vymezení_NOUN přehledu_NOUN o_ADP peněžních_ADJ tocích_NOUN a_CCONJ přehledu_NOUN o_ADP změnách_NOUN vlastního_ADJ kapitálu_NOUN ;_PUNCT směrnou_ADJ účtovou_ADJ osnovu_NOUN ;_PUNCT účetní_ADJ metody_NOUN ;_PUNCT metody_NOUN přechodu_NOUN z_ADP daňové_ADJ evidence_NOUN podle_ADP zvláštního_ADJ zákona_NOUN na_ADP účetnictví_NOUN ;_PUNCT c)_X metodu_NOUN ocenění_NOUN při_ADP pořízení_NOUN souboru_NOUN movitých_ADJ věcí_NOUN se_ADP samostatným_ADJ technicko-ekonomickým_X určením_NOUN ;_PUNCT d)_X metodu_NOUN oceňování_NOUN při_ADP přeměně_NOUN společnosti_NOUN nebo_CCONJ družstva_NOUN (_PUNCT dále_ADV jen_PART „_PUNCT společnost_X “_PUNCT )_PUNCT podle_ADP zákona_NOUN upravujícího_ADJ přeměny_NOUN obchodních_ADJ společností_NOUN a_CCONJ družstev_NOUN (_PUNCT dále_ADV jen_PART „_PUNCT zákon_X o_X přeměnách_X “_PUNCT )_PUNCT ,_PUNCT včetně_ADP úprav_NOUN prováděných_ADJ v_ADP rámci_NOUN přeměn_NOUN společnosti_NOUN ke_ADP dni_NOUN zápisu_NOUN do_ADP obchodního_ADJ rejstříku_NOUN s_ADP účinky_NOUN od_ADP rozhodného_ADJ dne_NOUN ;_PUNCT e)_X metodu_NOUN sestavení_NOUN zahajovací_ADJ rozvahy_NOUN při_ADP přeměně_NOUN společnosti_NOUN ;_PUNCT f)_X úpravy_NOUN při_ADP přeshraniční_ADJ přeměně_NOUN nebo_CCONJ převodu_NOUN podniku_NOUN ;_PUNCT g)_X metodu_NOUN ocenění_NOUN při_ADP nabytí_NOUN více_ADV než_SCONJ jedné_NUM složky_NOUN majetku_NOUN převodem_NOUN či_CCONJ přechodem_NOUN ,_PUNCT včetně_ADP možnosti_NOUN použití_NOUN způsobu_NOUN oceňování_NOUN podle_ADP §_24_odst._3_písm._a)_bodu_1_X v_ADP případě_NOUN přeshraniční_ADJ přeměny_NOUN ,_PUNCT vkladu_NOUN nebo_CCONJ prodeje_NOUN podniku_NOUN ;_PUNCT h)_X ocenění_NOUN majetku_NOUN a_CCONJ závazků_NOUN při_ADP přeměně_NOUN společnosti_NOUN včetně_ADP okamžiku_NOUN účtování_NOUN o_ADP ocenění_NOUN reálnou_ADJ hodnotou_NOUN ._PUNCT}
 Predicted: {
-(2)_PUNCT položka_NOUN „_PUNCT a.i.3._X změny_NOUN základního_ADJ kapitálu_NOUN “_PUNCT obsahuje_VERB změny_NOUN základního_ADJ kapitálu_NOUN vykazované_ADJ příslušnými_ADJ obchodními_ADJ společnostmi_NOUN před_ADP zápisem_NOUN změn_NOUN základního_ADJ kapitálu_NOUN do_ADP obchodního_ADJ rejstříku_NOUN ._PUNCT}
+tato_DET vyhláška_NOUN zapracovávqá_VERB příslušné_ADJ předpisy_NOUN evropské_ADJ unie_NOUN a_CCONJ upravuje_VERB :_PUNCT a)_X rozsah_NOUN a_CCONJ způsob_NOUN sestavování_NOUN účetní_ADJ závěrky_NOUN ;_PUNCT uspořádání_NOUN ,_PUNCT označování_NOUN a_CCONJ obsahové_ADJ vymezení_NOUN položek_NOUN majetku_NOUN a_CCONJ jiných_ADJ aktiv_NOUN ,_PUNCT závazků_NOUN a_CCONJ jiných_ADJ pasiv_NOUN v_ADP účetní_ADJ závěrce_NOUN ;_PUNCT uspořádání_NOUN ,_PUNCT označování_NOUN a_CCONJ obsahové_ADJ vymezení_NOUN nákladů_NOUN ,_PUNCT výnosů_NOUN a_CCONJ výsledků_NOUN hospodaření_NOUN v_ADP účetní_ADJ závěrce_NOUN ;_PUNCT uspořádání_NOUN a_CCONJ obsahové_ADJ vymezení_NOUN vysvětlujících_ADJ a_CCONJ doplňujících_ADJ informací_NOUN v_ADP příloze_NOUN v_ADP účetní_ADJ závěrce_NOUN ;_PUNCT uspořádání_NOUN ,_PUNCT označování_NOUN a_CCONJ obsahové_ADJ vymezení_NOUN položek_NOUN konsolidované_ADJ účetní_ADJ závěrky_NOUN ;_PUNCT metody_NOUN konsolidace_NOUN účetní_ADJ závěrky_NOUN a_CCONJ postup_NOUN zahrnování_NOUN účetních_ADJ jednotek_NOUN do_ADP konsolidačního_ADJ celku_NOUN ;_PUNCT b)_X uspořádání_NOUN a_CCONJ obsahové_ADJ vymezení_NOUN přehledu_NOUN o_ADP peněžních_ADJ tocích_NOUN a_CCONJ přehledu_NOUN o_ADP změnách_NOUN vlastního_ADJ kapitálu_NOUN ;_PUNCT směrnou_ADJ účtovou_ADJ osnovu_NOUN ;_PUNCT účetní_ADJ metody_NOUN ;_PUNCT metody_NOUN přechodu_NOUN z_ADP daňové_ADJ evidence_NOUN podle_ADP zvláštního_ADJ zákona_NOUN na_ADP účetnictví_NOUN ;_PUNCT c)_X metodu_NOUN ocenění_NOUN při_ADP pořízení_NOUN souboru_NOUN movitých_ADJ věcí_NOUN se_ADP samostatným_ADJ technicko-ekonomickým_X určením_NOUN ;_PUNCT d)_X metodu_NOUN oceňování_NOUN při_ADP přeměně_NOUN společnosti_NOUN nebo_CCONJ družstva_NOUN (_PUNCT dále_ADV jen_PART „_PUNCT společnost_NOUN “_PUNCT )_PUNCT podle_ADP zákona_NOUN upravujícího_ADJ přeměny_NOUN obchodních_ADJ společností_NOUN a_CCONJ družstev_NOUN (_PUNCT dále_ADV jen_PART „_PUNCT zákon_NOUN o_ADP přeměnách_NOUN “_PUNCT )_PUNCT ,_PUNCT včetně_ADP úprav_NOUN prováděných_ADJ v_ADP rámci_NOUN přeměn_NOUN společnosti_NOUN ke_ADP dni_NOUN zápisu_NOUN do_ADP obchodního_ADJ rejstříku_NOUN s_ADP účinky_NOUN od_ADP rozhodného_ADJ dne_NOUN ;_PUNCT e)_X metodu_NOUN sestavení_NOUN zahajovací_ADJ rozvahy_NOUN při_ADP přeměně_NOUN společnosti_NOUN ;_PUNCT f)_X úpravy_NOUN při_ADP přeshraniční_ADJ přeměně_NOUN nebo_CCONJ převodu_NOUN podniku_NOUN ;_PUNCT g)_X metodu_NOUN ocenění_NOUN při_ADP nabytí_NOUN více_ADV než_SCONJ jedné_NUM složky_NOUN majetku_NOUN převodem_NOUN či_CCONJ přechodem_NOUN ,_PUNCT včetně_ADP možnosti_NOUN použití_NOUN způsobu_NOUN oceňování_NOUN podle_ADP §_24_odst._3_písm._a)_bodu_1_X v_ADP případě_NOUN přeshraniční_ADJ přeměny_NOUN ,_PUNCT vkladu_NOUN nebo_CCONJ prodeje_NOUN podniku_NOUN ;_PUNCT h)_X ocenění_NOUN majetku_NOUN a_CCONJ závazků_NOUN při_ADP přeměně_NOUN společnosti_NOUN včetně_ADP okamžiku_NOUN účtování_NOUN o_ADP ocenění_NOUN reálnou_ADJ hodnotou_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-změny: X | NOUN
-základního: X | ADJ
-kapitálu: X | NOUN
+zapracovávqá: X | VERB
+společnost: X | NOUN
+zákon: X | NOUN
+o: X | ADP
+přeměnách: X | NOUN
 }
 
 Expected: {
-položka_NOUN „_PUNCT a.iii._X rezervní_X fondy,_X nedělitelný_X fond_X a_X ostatní_X fondy_X ze_X zisku_X “_PUNCT obsahuje_VERB fondy_NOUN vytvářené_ADJ podle_ADP obchodního_ADJ zákoníku_NOUN ,_PUNCT popřípadě_ADV stanov_NOUN ,_PUNCT společenské_ADJ smlouvy_NOUN ,_PUNCT zakladatelské_ADJ smlouvy_NOUN ,_PUNCT zakladatelské_ADJ listiny_NOUN nebo_CCONJ podle_ADP zákona_NOUN o_ADP státním_ADJ podniku_NOUN ._PUNCT}
+(1)_PUNCT položka_NOUN „_PUNCT b.i._X dlouhodobý_X nehmotný_X majetek_X “_PUNCT obsahuje_VERB zejména_ADV zřizovací_ADJ výdaje_NOUN ,_PUNCT nehmotné_ADJ výsledky_NOUN výzkumu_NOUN a_CCONJ vývoje_NOUN ,_PUNCT software_NOUN ,_PUNCT ocenitelná_ADJ práva_NOUN a_CCONJ goodwill_NOUN s_ADP dobou_NOUN použitelnosti_NOUN delší_VERB než_SCONJ jeden_NUM rok_NOUN a_CCONJ od_ADP výše_NOUN ocenění_NOUN určené_ADJ účetní_NOUN jednotkou_NOUN ,_PUNCT s_ADP výjimkou_NOUN goodwillu_NOUN ,_PUNCT a_CCONJ při_ADP splnění_NOUN podmínek_NOUN dále_ADV stanovených_ADJ a_CCONJ při_ADP splnění_NOUN povinností_NOUN stanovených_ADJ zákonem_NOUN ,_PUNCT zejména_ADV respektováním_NOUN principu_NOUN významnosti_NOUN a_CCONJ věrného_ADJ a_CCONJ poctivého_ADJ zobrazení_NOUN majetku_NOUN ._PUNCT}
 Predicted: {
-položka_NOUN „_PUNCT a.iii._X rezervní_X fondy,_PUNCT nedělitelný_ADJ fond_NOUN a_CCONJ ostatní_ADJ fondy_NOUN ze_ADP zisku_NOUN “_PUNCT obsahuje_VERB fondy_NOUN vytvářené_ADJ podle_ADP obchodního_ADJ zákoníku_NOUN ,_PUNCT popřípadě_ADV stanov_NOUN ,_PUNCT společenské_ADJ smlouvy_NOUN ,_PUNCT zakladatelské_ADJ smlouvy_NOUN ,_PUNCT zakladatelské_ADJ listiny_NOUN nebo_CCONJ podle_ADP zákona_NOUN o_ADP státním_ADJ podniku_NOUN ._PUNCT}
+(1)_PUNCT položka_NOUN „_PUNCT b.i._X dlouhodobý_X nehmotný_X majetek_X “_PUNCT obsahuje_VERB zejména_ADV zřizovací_ADJ výdaje_NOUN ,_PUNCT nehmotné_ADJ výsledky_NOUN výzkumu_NOUN a_CCONJ vývoje_NOUN ,_PUNCT software_NOUN ,_PUNCT ocenitelná_ADJ práva_NOUN a_CCONJ goodwill_NOUN s_ADP dobou_NOUN použitelnosti_NOUN delší_ADJ než_SCONJ jeden_NUM rok_NOUN a_CCONJ od_ADP výše_NOUN ocenění_NOUN určené_ADJ účetní_ADJ jednotkou_NOUN ,_PUNCT s_ADP výjimkou_NOUN goodwillu_NOUN ,_PUNCT a_CCONJ při_ADP splnění_NOUN podmínek_NOUN dále_ADV stanovených_ADJ a_CCONJ při_ADP splnění_NOUN povinností_NOUN stanovených_ADJ zákonem_NOUN ,_PUNCT zejména_ADV respektováním_NOUN principu_NOUN významnosti_NOUN a_CCONJ věrného_ADJ a_CCONJ poctivého_ADJ zobrazení_NOUN majetku_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-fondy,: X | PUNCT
-nedělitelný: X | ADJ
-fond: X | NOUN
-a: X | CCONJ
-ostatní: X | ADJ
-fondy: X | NOUN
-ze: X | ADP
-zisku: X | NOUN
+delší: VERB | ADJ
+účetní: NOUN | ADJ
 }
 
 Expected: {
-položka_NOUN „_PUNCT d._X daně_X a_X poplatky_X “_PUNCT obsahuje_VERB veškeré_PRON daně_NOUN a_CCONJ poplatky_NOUN zaúčtované_ADJ účetní_ADJ jednotkou_NOUN jako_SCONJ náklady_NOUN s_ADP výjimkou_NOUN daně_NOUN z_ADP příjmů_NOUN ._PUNCT}
+o_ADP případnou_ADJ následnou_ADJ změnu_NOUN kupní_ADJ ceny_NOUN podniku_NOUN nebo_CCONJ jeho_DET části_NOUN se_PRON upraví_VERB hodnota_NOUN goodwillu_NOUN nebo_CCONJ záporného_ADJ goodwillu_NOUN ,_PUNCT a_CCONJ to_PART beze_ADP změny_NOUN doby_NOUN odpisování_NOUN ,_PUNCT e)_X povolenkami_NOUN na_ADP emise_NOUN bez_ADP ohledu_NOUN na_ADP výši_NOUN ocenění_NOUN :_PUNCT 2_NUM ._PUNCT jednotky_NOUN snížení_NOUN emisí_NOUN a_CCONJ ověřeného_ADJ snížení_NOUN emisí_NOUN z_ADP projektových_ADJ činností_NOUN ,_PUNCT 1_NUM ._PUNCT povolenky_NOUN na_ADP emise_NOUN skleníkových_ADJ plynů_NOUN a_CCONJ povolenky_NOUN na_ADP emise_NOUN způsobené_ADJ letectvím_NOUN ,_PUNCT 3_NUM ._PUNCT jednotky_NOUN přiděleného_ADJ množství_NOUN ,_PUNCT f)_X preferenčními_ADJ limity_NOUN zejména_ADV individuální_ADJ referenční_ADJ množství_NOUN mléka_NOUN ,_PUNCT individuální_ADJ produkční_ADJ kvóty_NOUN a_CCONJ individuální_ADJ limit_NOUN prémiových_ADJ práv_NOUN bez_ADP ohledu_NOUN na_ADP výši_NOUN ocenění_NOUN ;_PUNCT u_ADP prvního_ADJ držitele_NOUN pouze_ADV v_ADP případě_NOUN ,_PUNCT pokud_SCONJ by_AUX náklady_NOUN na_ADP získání_NOUN informace_NOUN o_ADP jejich_DET ocenění_NOUN reprodukční_ADJ pořizovací_ADJ cenou_NOUN nepřevýšily_VERB její_DET významnost_NOUN ._PUNCT}
 Predicted: {
-položka_NOUN „_PUNCT d._PUNCT daně_NOUN a_CCONJ poplatky_NOUN “_PUNCT obsahuje_VERB veškeré_PRON daně_NOUN a_CCONJ poplatky_NOUN zaúčtované_ADJ účetní_ADJ jednotkou_NOUN jako_SCONJ náklady_NOUN s_ADP výjimkou_NOUN daně_NOUN z_ADP příjmů_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-d.: X | PUNCT
-daně: X | NOUN
-a: X | CCONJ
-poplatky: X | NOUN
-}
-
-Expected: {
-škodou_NOUN se_PRON v_ADP tomto_DET případě_NOUN rozumí_VERB fyzické_ADJ znehodnocení_NOUN ,_PUNCT to_DET je_AUX neodstranitelné_ADJ poškození_NOUN nebo_CCONJ zničení_NOUN ,_PUNCT dlouhodobého_ADJ nehmotného_ADJ a_CCONJ hmotného_ADJ majetku_NOUN a_CCONJ zásob_NOUN ,_PUNCT a_CCONJ to_PART z_ADP objektivních_ADJ i_CCONJ subjektivních_ADJ příčin_NOUN ._PUNCT}
-Predicted: {
-škodou_NOUN se_PRON v_ADP tomto_DET případě_NOUN rozumí_VERB fyzické_ADJ znehodnocení_NOUN ,_PUNCT to_DET je_AUX neodstranitelné_ADJ poškození_NOUN nebo_CCONJ zničení_NOUN ,_PUNCT dlouhodobého_ADJ nehmotného_ADJ a_CCONJ hmotného_ADJ majetku_NOUN a_CCONJ zásob_NOUN ,_PUNCT a_CCONJ to_DET z_ADP objektivních_ADJ i_CCONJ subjektivních_ADJ příčin_NOUN ._PUNCT}
+o_ADP případnou_ADJ následnou_ADJ změnu_NOUN kupní_ADJ ceny_NOUN podniku_NOUN nebo_CCONJ jeho_DET části_NOUN se_PRON upraví_VERB hodnota_NOUN goodwillu_NOUN nebo_CCONJ záporného_ADJ goodwillu_NOUN ,_PUNCT a_CCONJ to_DET beze_ADP změny_NOUN doby_NOUN odpisování_NOUN ,_PUNCT e)_X povolenkami_NOUN na_ADP emise_NOUN bez_ADP ohledu_NOUN na_ADP výši_NOUN ocenění_NOUN :_PUNCT 2_NUM ._PUNCT jednotky_NOUN snížení_NOUN emisí_NOUN a_CCONJ ověřeného_ADJ snížení_NOUN emisí_NOUN z_ADP projektových_ADJ činností_NOUN ,_PUNCT 1_NUM ._PUNCT povolenky_NOUN na_ADP emise_NOUN skleníkových_ADJ plynů_NOUN a_CCONJ povolenky_NOUN na_ADP emise_NOUN způsobené_ADJ letectvím_NOUN ,_PUNCT 3_NUM ._PUNCT jednotky_NOUN přiděleného_ADJ množství_NOUN ,_PUNCT f)_X preferenčními_ADJ limity_NOUN zejména_ADV individuální_ADJ referenční_ADJ množství_NOUN mléka_NOUN ,_PUNCT individuální_ADJ produkční_ADJ kvóty_NOUN a_CCONJ individuální_ADJ limit_NOUN prémiových_ADJ práv_NOUN bez_ADP ohledu_NOUN na_ADP výši_NOUN ocenění_NOUN ;_PUNCT u_ADP prvního_ADJ držitele_NOUN pouze_ADV v_ADP případě_NOUN ,_PUNCT pokud_SCONJ by_AUX náklady_NOUN na_ADP získání_NOUN informace_NOUN o_ADP jejich_DET ocenění_NOUN reprodukční_ADJ pořizovací_ADJ cenou_NOUN nepřevýšily_VERB její_DET významnost_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -6506,134 +6460,90 @@ to: PART | DET
 }
 
 Expected: {
-(5)_PUNCT položka_NOUN „_PUNCT ***_PUNCT výsledek_X hospodaření_X za_X účetní_X období_X “_PUNCT a)_X ve_ADP výkazu_NOUN zisku_NOUN a_CCONJ ztráty_NOUN -_PUNCT druhové_ADJ členění_NOUN je_AUX součtem_NOUN položek_NOUN „_PUNCT **_PUNCT výsledek_X hospodaření_X za_X běžnou_X činnost_X “_PUNCT a_CCONJ „_PUNCT *_PUNCT mimořádný_X výsledek_X hospodaření_X “_PUNCT sníženým_ADJ o_ADP položku_NOUN „_PUNCT t._X převod_X podílu_X na_X výsledku_X hospodaření_X společníkům_X “_PUNCT ,_PUNCT b)_X ve_ADP výkazu_NOUN zisku_NOUN a_CCONJ ztráty_NOUN -_PUNCT účelové_ADJ členění_NOUN je_AUX součtem_NOUN položek_NOUN „_PUNCT **_PUNCT výsledek_X hospodaření_X za_X běžnou_X činnost_X “_PUNCT a_CCONJ „_PUNCT *_PUNCT mimořádný_X výsledek_X hospodaření_X “_PUNCT sníženým_ADJ o_ADP položku_NOUN „_PUNCT o._X převod_X podílu_X na_X výsledku_X hospodaření_X společníkům_X “_PUNCT ._PUNCT}
+(7)_PUNCT položka_NOUN „_PUNCT b.ii.2._X stavby_X “_PUNCT a_CCONJ položka_NOUN „_PUNCT b.ii.3._X samostatné_X movité_X věci_X a_X soubory_X movitých_X věcí_X “_PUNCT dále_ADV obsahuje_VERB technické_ADJ zhodnocení_NOUN a)_X k_ADP jehož_DET účtování_NOUN a_CCONJ odpisování_NOUN je_AUX oprávněna_ADJ jiná_ADJ účetní_ADJ jednotka_NOUN než_SCONJ vlastník_NOUN majetku_NOUN ,_PUNCT a_CCONJ to_PART od_ADP částky_NOUN stanovené_ADJ zákonem_NOUN o_ADP daních_NOUN z_ADP příjmů_NOUN ,_PUNCT b)_X drobného_ADJ hmotného_ADJ majetku_NOUN od_ADP částky_NOUN technického_ADJ zhodnocení_NOUN stanovené_ADJ zákonem_NOUN o_ADP daních_NOUN z_ADP příjmů_NOUN ._PUNCT}
 Predicted: {
-(5)_PUNCT položka_NOUN „_PUNCT ***_X výsledek_X hospodaření_X za_ADP účetní_ADJ období_NOUN “_PUNCT a)_X ve_ADP výkazu_NOUN zisku_NOUN a_CCONJ ztráty_NOUN -_PUNCT druhové_ADJ členění_NOUN je_AUX součtem_NOUN položek_NOUN „_PUNCT **_PUNCT výsledek_X hospodaření_X za_X běžnou_X činnost_X “_PUNCT a_CCONJ „_PUNCT *_SYM mimořádný_X výsledek_X hospodaření_X “_PUNCT sníženým_ADJ o_ADP položku_NOUN „_PUNCT t._X převod_X podílu_X na_X výsledku_X hospodaření_X společníkům_X “_PUNCT ,_PUNCT b)_X ve_ADP výkazu_NOUN zisku_NOUN a_CCONJ ztráty_NOUN -_PUNCT účelové_ADJ členění_NOUN je_AUX součtem_NOUN položek_NOUN „_PUNCT **_PUNCT výsledek_X hospodaření_X za_X běžnou_X činnost_X “_PUNCT a_CCONJ „_PUNCT *_SYM mimořádný_X výsledek_X hospodaření_X “_PUNCT sníženým_ADJ o_ADP položku_NOUN „_PUNCT o._X převod_X podílu_X na_X výsledku_X hospodaření_X společníkům_X “_PUNCT ._PUNCT}
+(7)_PUNCT položka_NOUN „_PUNCT b.ii.2._X stavby_X “_PUNCT a_CCONJ položka_NOUN „_PUNCT b.ii.3._X samostatné_X movité_X věci_X a_X soubory_X movitých_X věcí_X “_PUNCT dále_ADV obsahuje_VERB technické_ADJ zhodnocení_NOUN a)_PUNCT k_ADP jehož_DET účtování_NOUN a_CCONJ odpisování_NOUN je_AUX oprávněna_ADJ jiná_ADJ účetní_ADJ jednotka_NOUN než_SCONJ vlastník_NOUN majetku_NOUN ,_PUNCT a_CCONJ to_PART od_ADP částky_NOUN stanovené_ADJ zákonem_NOUN o_ADP daních_NOUN z_ADP příjmů_NOUN ,_PUNCT b)_X drobného_ADJ hmotného_ADJ majetku_NOUN od_ADP částky_NOUN technického_ADJ zhodnocení_NOUN stanovené_ADJ zákonem_NOUN o_ADP daních_NOUN z_ADP příjmů_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-***: PUNCT | X
-za: X | ADP
-účetní: X | ADJ
-období: X | NOUN
+a): X | PUNCT
+}
+
+Expected: {
+ostatní_ADJ provozní_NOUN náklady_NOUN}
+Predicted: {
+ostatní_ADJ provozní_ADJ náklady_NOUN}
+Errors: {
+Tok: Ref | Pred
+---------------
+provozní: NOUN | ADJ
+}
+
+Expected: {
+položka_NOUN „_PUNCT k._X náklady_X z_X finančního_X majetku_X “_PUNCT obsahuje_VERB například_ADV u_ADP dluhopisů_NOUN s_ADP pevnou_ADJ úrokovou_ADJ sazbou_NOUN držených_ADJ do_ADP splatnosti_NOUN rozdíl_NOUN mezi_ADP pořizovací_ADJ cenou_NOUN bez_ADP kuponu_NOUN a_CCONJ jmenovitou_ADJ hodnotou_NOUN ve_ADP věcné_ADJ a_CCONJ časové_ADJ souvislosti_NOUN ._PUNCT}
+Predicted: {
+položka_NOUN „_PUNCT k._PUNCT náklady_NOUN z_ADP finančního_ADJ majetku_NOUN “_PUNCT obsahuje_VERB například_ADV u_ADP dluhopisů_NOUN s_ADP pevnou_ADJ úrokovou_ADJ sazbou_NOUN držených_ADJ do_ADP splatnosti_NOUN rozdíl_NOUN mezi_ADP pořizovací_ADJ cenou_NOUN bez_ADP kuponu_NOUN a_CCONJ jmenovitou_ADJ hodnotou_NOUN ve_ADP věcné_ADJ a_CCONJ časové_ADJ souvislosti_NOUN ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+k.: X | PUNCT
+náklady: X | NOUN
+z: X | ADP
+finančního: X | ADJ
+majetku: X | NOUN
+}
+
+Expected: {
+(3)_PUNCT položka_NOUN „_PUNCT **_PUNCT výsledek_X hospodaření_X za_X běžnou_X činnost_X “_PUNCT a)_X ve_ADP výkazu_NOUN zisku_NOUN a_CCONJ ztráty_NOUN -_PUNCT druhové_ADJ členění_NOUN je_AUX součtem_NOUN položek_NOUN „_PUNCT *_PUNCT provozní_X výsledek_X hospodaření_X “_PUNCT a_CCONJ „_PUNCT *_PUNCT finanční_X výsledek_X hospodaření_X “_PUNCT sníženým_ADJ o_ADP položku_NOUN „_PUNCT q._X daň_X z_X příjmů_X za_X běžnou_X činnost_X “_PUNCT ,_PUNCT b)_X ve_ADP výkazu_NOUN zisku_NOUN a_CCONJ ztráty_NOUN -_PUNCT účelové_ADJ členění_NOUN je_AUX součtem_NOUN položek_NOUN „_PUNCT *_PUNCT provozní_X výsledek_X hospodaření_X “_PUNCT a_CCONJ „_PUNCT *_PUNCT finanční_X výsledek_X hospodaření_X “_PUNCT sníženým_ADJ o_ADP položku_NOUN „_PUNCT l._X daň_X z_X příjmů_X za_X běžnou_X činnost_X “_PUNCT ._PUNCT}
+Predicted: {
+(3)_PUNCT položka_NOUN „_PUNCT **_PUNCT výsledek_X hospodaření_X za_X běžnou_X činnost_X “_PUNCT a)_X ve_ADP výkazu_NOUN zisku_NOUN a_CCONJ ztráty_NOUN -_PUNCT druhové_ADJ členění_NOUN je_AUX součtem_NOUN položek_NOUN „_PUNCT *_PUNCT provozní_X výsledek_X hospodaření_X “_PUNCT a_CCONJ „_PUNCT *_SYM finanční_X výsledek_X hospodaření_X “_PUNCT sníženým_ADJ o_ADP položku_NOUN „_PUNCT q._X daň_X z_X příjmů_X za_X běžnou_X činnost_X “_PUNCT ,_PUNCT b)_X ve_ADP výkazu_NOUN zisku_NOUN a_CCONJ ztráty_NOUN -_PUNCT účelové_ADJ členění_NOUN je_AUX součtem_NOUN položek_NOUN „_PUNCT *_PUNCT provozní_X výsledek_X hospodaření_X “_PUNCT a_CCONJ „_PUNCT *_SYM finanční_X výsledek_X hospodaření_X “_PUNCT sníženým_ADJ o_ADP položku_NOUN „_PUNCT l._X daň_X z_X příjmů_X za_X běžnou_X činnost_X “_PUNCT ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
 *: PUNCT | SYM
 *: PUNCT | SYM
 }
 
 Expected: {
-(13)_PUNCT účetní_ADJ jednotka_NOUN ,_PUNCT která_DET je_AUX právnickou_ADJ osobou_NOUN a_CCONJ překročila_VERB ke_ADP konci_NOUN rozvahového_ADJ dne_NOUN ,_PUNCT za_ADP který_DET se_PRON účetní_ADJ závěrka_NOUN sestavuje_VERB ,_PUNCT alespoň_ADV dvě_NUM ze_ADP tří_NUM kritérií_NOUN uvedených_ADJ v_ADP odstavci_NOUN 9_NUM písm._c)_X ,_PUNCT dále_ADV v_ADP příloze_NOUN uvede_VERB a)_X informaci_NOUN o_ADP rozčlenění_NOUN tržeb_NOUN z_ADP prodeje_NOUN zboží_NOUN ,_PUNCT výrobků_NOUN a_CCONJ služeb_NOUN podle_ADP kategorií_NOUN činností_NOUN a_CCONJ podle_ADP zeměpisných_ADJ trhů_NOUN ,_PUNCT pokud_SCONJ se_PRON tyto_DET kategorie_NOUN a_CCONJ trhy_NOUN mezi_ADP sebou_PRON podstatně_ADV liší_VERB z_ADP hlediska_NOUN způsobu_NOUN ,_PUNCT kterým_DET je_AUX organizován_ADJ prodej_NOUN zboží_NOUN a_CCONJ výrobků_NOUN a_CCONJ poskytování_NOUN služeb_NOUN spadajících_ADJ do_ADP běžné_ADJ činnosti_NOUN účetní_ADJ jednotky_NOUN ,_PUNCT b)_X vysvětlení_NOUN částky_NOUN vykázané_ADJ v_ADP položce_NOUN „_PUNCT b.i.1._X zřizovací_X výdaje_X “_PUNCT ._PUNCT}
+a)_X (9)_PUNCT celkovou_ADJ v_ADP výši_NOUN další_ADJ závazků_NOUN části_NOUN ,_PUNCT přílohy_NOUN je_AUX -_PUNCT li_PART uvede_VERB tato_DET účetní_ADJ informace_NOUN jednotka_NOUN významná_ADJ informace_NOUN k_ADP ,_PUNCT posouzení_NOUN které_DET finanční_ADJ nejsou_AUX situace_NOUN vykázány_ADJ účetní_ADJ v_ADP jednotky_NOUN rozvaze_NOUN ,_PUNCT (_PUNCT bilanci_NOUN b)_X )_PUNCT s_ADP :_PUNCT ohledem_NOUN na_ADP ._PUNCT princip_NOUN významnosti_NOUN drobný_ADJ nehmotný_ADJ a_CCONJ hmotný_ADJ majetek_NOUN ,_PUNCT c)_X charakter_NOUN a_CCONJ obchodní_ADJ účel_NOUN operací_NOUN účetní_ADJ jednotky_NOUN ,_PUNCT která_DET je_AUX právnickou_ADJ osobou_NOUN ,_PUNCT jsou_AUX -_PUNCT li_PART rizika_NOUN nebo_CCONJ užitky_NOUN z_ADP těchto_DET operací_NOUN významné_ADJ a_CCONJ pokud_SCONJ je_AUX zveřejnění_NOUN těchto_DET rizik_NOUN nebo_CCONJ užitků_NOUN nezbytné_ADJ k_ADP posouzení_NOUN finanční_ADJ situace_NOUN účetní_ADJ jednotky_NOUN}
 Predicted: {
-(13)_X účetní_ADJ jednotka_NOUN ,_PUNCT která_DET je_AUX právnickou_ADJ osobou_NOUN a_CCONJ překročila_VERB ke_ADP konci_NOUN rozvahového_ADJ dne_NOUN ,_PUNCT za_ADP který_DET se_PRON účetní_ADJ závěrka_NOUN sestavuje_VERB ,_PUNCT alespoň_ADV dvě_NUM ze_ADP tří_NUM kritérií_NOUN uvedených_ADJ v_ADP odstavci_NOUN 9_NUM písm._c)_X ,_PUNCT dále_ADV v_ADP příloze_NOUN uvede_VERB a)_X informaci_NOUN o_ADP rozčlenění_NOUN tržeb_NOUN z_ADP prodeje_NOUN zboží_NOUN ,_PUNCT výrobků_NOUN a_CCONJ služeb_NOUN podle_ADP kategorií_NOUN činností_NOUN a_CCONJ podle_ADP zeměpisných_ADJ trhů_NOUN ,_PUNCT pokud_SCONJ se_PRON tyto_DET kategorie_NOUN a_CCONJ trhy_NOUN mezi_ADP sebou_PRON podstatně_ADV liší_VERB z_ADP hlediska_NOUN způsobu_NOUN ,_PUNCT kterým_DET je_AUX organizován_ADJ prodej_NOUN zboží_NOUN a_CCONJ výrobků_NOUN a_CCONJ poskytování_NOUN služeb_NOUN spadajících_ADJ do_ADP běžné_ADJ činnosti_NOUN účetní_ADJ jednotky_NOUN ,_PUNCT b)_X vysvětlení_NOUN částky_NOUN vykázané_ADJ v_ADP položce_NOUN „_PUNCT b.i.1._X zřizovací_X výdaje_X “_PUNCT ._PUNCT}
+a)_X (9)_PUNCT celkovou_ADJ v_ADP výši_NOUN další_ADJ závazků_NOUN části_NOUN ,_PUNCT přílohy_NOUN je_AUX -_PUNCT li_PART uvede_VERB tato_DET účetní_ADJ informace_NOUN jednotka_NOUN významná_ADJ informace_NOUN k_ADV ,_PUNCT posouzení_NOUN které_DET finanční_ADJ nejsou_AUX situace_NOUN vykázány_ADJ účetní_ADJ v_ADP jednotky_NOUN rozvaze_NOUN ,_PUNCT (_PUNCT bilanci_NOUN b)_PUNCT )_PUNCT s_ADP :_PUNCT ohledem_NOUN na_NOUN ._PUNCT princip_NOUN významnosti_NOUN drobný_ADJ nehmotný_ADJ a_CCONJ hmotný_ADJ majetek_NOUN ,_PUNCT c)_X charakter_NOUN a_CCONJ obchodní_ADJ účel_NOUN operací_NOUN účetní_ADJ jednotky_NOUN ,_PUNCT která_DET je_AUX právnickou_ADJ osobou_NOUN ,_PUNCT jsou_AUX -_PUNCT li_PART rizika_NOUN nebo_CCONJ užitky_NOUN z_ADP těchto_DET operací_NOUN významné_ADJ a_CCONJ pokud_SCONJ je_AUX zveřejnění_NOUN těchto_DET rizik_NOUN nebo_CCONJ užitků_NOUN nezbytné_ADJ k_ADP posouzení_NOUN finanční_ADJ situace_NOUN účetní_ADJ jednotky_NOUN}
 Errors: {
 Tok: Ref | Pred
 ---------------
-(13): PUNCT | X
+k: ADP | ADV
+b): X | PUNCT
+na: ADP | NOUN
 }
 
 Expected: {
-účetní_NOUN metody_NOUN}
+v_ADP případě_NOUN ,_PUNCT že_SCONJ je_PRON nelze_VERB přiřadit_VERB ,_PUNCT uvedou_VERB se_PRON v_ADP provozní_ADJ činnosti_NOUN ._PUNCT}
 Predicted: {
-účetní_ADJ metody_NOUN}
+v_ADP případě_NOUN ,_PUNCT že_SCONJ je_AUX nelze_VERB přiřadit_VERB ,_PUNCT uvedou_VERB se_PRON v_ADP provozní_ADJ činnosti_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-účetní: NOUN | ADJ
+je: PRON | AUX
 }
 
 Expected: {
-(6)_PUNCT ustanovení_NOUN odstavců_NOUN 1_NUM až_SCONJ 5_NUM se_PRON nepoužijí_VERB při_ADP změně_NOUN právní_ADJ formy_NOUN a_CCONJ přeshraničním_ADJ přemístění_NOUN sídla_NOUN ._PUNCT}
+výše_NOUN tohoto_DET znehodnocení_NOUN odpovídá_VERB kladnému_ADJ rozdílu_NOUN mezi_ADP oceněním_NOUN realizovatelného_ADJ cenného_ADJ papíru_NOUN při_ADP jeho_DET nabytí_NOUN a_CCONJ stávající_ADJ reálnou_ADJ hodnotou_NOUN se_ADP zohledněním_NOUN předchozích_ADJ ztrát_NOUN ze_ADP znehodnocení_NOUN ._PUNCT}
 Predicted: {
-(6)_PUNCT ustanovení_NOUN odstavců_NOUN 1_NUM až_PART 5_NUM se_ADP nepoužijí_VERB při_ADP změně_NOUN právní_ADJ formy_NOUN a_CCONJ přeshraničním_ADJ přemístění_NOUN sídla_NOUN ._PUNCT}
+výše_NOUN tohoto_DET znehodnocení_NOUN odpovídá_VERB kladnému_ADJ rozdílu_NOUN mezi_ADP oceněním_NOUN realizovatelného_ADJ cenného_ADJ papíru_NOUN při_ADP jeho_DET nabytí_NOUN a_CCONJ stávající_ADJ reálnou_ADJ hodnotou_NOUN se_PRON zohledněním_NOUN předchozích_ADJ ztrát_NOUN ze_ADP znehodnocení_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-až: SCONJ | PART
-se: PRON | ADP
+se: ADP | PRON
 }
 
 Expected: {
-(4)_PUNCT při_ADP výměně_NOUN komponenty_NOUN se_PRON ocenění_NOUN majetku_NOUN podle_ADP odstavce_NOUN 1_NUM upravuje_VERB tak_ADV ,_PUNCT že_SCONJ se_PRON snižuje_VERB o_ADP výši_NOUN ocenění_NOUN vyřazované_ADJ komponenty_NOUN a_CCONJ zvyšuje_VERB o_ADP výši_NOUN ocenění_NOUN nově_ADV zařazované_ADJ komponenty_NOUN včetně_ADP náhradních_ADJ dílů_NOUN spotřebovaných_ADJ na_ADP výměnu_NOUN komponenty_NOUN a_CCONJ o_ADP náklady_NOUN související_ADJ s_ADP výměnou_NOUN této_DET komponenty_NOUN podle_ADP ustanovení_NOUN §_47_X ._PUNCT}
+(4)_PUNCT účetní_ADJ jednotka_NOUN při_ADP přeshraniční_ADJ přeměně_NOUN společnosti_NOUN ,_PUNCT z_ADP titulu_NOUN změny_NOUN právní_ADJ formy_NOUN ,_PUNCT přeshraničního_ADJ přemístění_NOUN sídla_NOUN nebo_CCONJ z_ADP titulu_NOUN převodu_NOUN jmění_NOUN na_ADP společníka_NOUN ,_PUNCT který_DET nevede_VERB ani_CCONJ nepovede_VERB účetnictví_NOUN po_ADP zápisu_NOUN přeměny_NOUN do_ADP obchodního_ADJ rejstříku_NOUN ,_PUNCT neúčtuje_VERB o_ADP oceňování_NOUN majetku_NOUN a_CCONJ závazků_NOUN reálnou_ADJ hodnotou_NOUN ,_PUNCT a_CCONJ to_PART ani_CCONJ v_ADP případě_NOUN ,_PUNCT že_SCONJ zákon_NOUN o_ADP přeměnách_NOUN ocenění_NOUN jmění_NOUN vyžaduje_VERB ._PUNCT}
 Predicted: {
-(4)_PUNCT při_ADP výměně_NOUN komponenty_NOUN se_ADP ocenění_NOUN majetku_NOUN podle_ADP odstavce_NOUN 1_NUM upravuje_VERB tak_ADV ,_PUNCT že_SCONJ se_PRON snižuje_VERB o_ADP výši_NOUN ocenění_NOUN vyřazované_ADJ komponenty_NOUN a_CCONJ zvyšuje_VERB o_ADP výši_NOUN ocenění_NOUN nově_ADV zařazované_ADJ komponenty_NOUN včetně_ADP náhradních_ADJ dílů_NOUN spotřebovaných_ADJ na_ADP výměnu_NOUN komponenty_NOUN a_CCONJ o_ADP náklady_NOUN související_ADJ s_ADP výměnou_NOUN této_DET komponenty_NOUN podle_ADP ustanovení_NOUN §_47_X ._PUNCT}
+(4)_PUNCT účetní_ADJ jednotka_NOUN při_ADP přeshraniční_ADJ přeměně_NOUN společnosti_NOUN ,_PUNCT z_ADP titulu_NOUN změny_NOUN právní_ADJ formy_NOUN ,_PUNCT přeshraničního_ADJ přemístění_NOUN sídla_NOUN nebo_CCONJ z_ADP titulu_NOUN převodu_NOUN jmění_NOUN na_ADP společníka_NOUN ,_PUNCT který_DET nevede_VERB ani_CCONJ nepovede_VERB účetnictví_NOUN po_ADP zápisu_NOUN přeměny_NOUN do_ADP obchodního_ADJ rejstříku_NOUN ,_PUNCT neúčtuje_VERB o_ADP oceňování_NOUN majetku_NOUN a_CCONJ závazků_NOUN reálnou_ADJ hodnotou_NOUN ,_PUNCT a_CCONJ to_DET ani_CCONJ v_ADP případě_NOUN ,_PUNCT že_SCONJ zákon_NOUN o_ADP přeměnách_NOUN ocenění_NOUN jmění_NOUN vyžaduje_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-se: PRON | ADP
-}
-
-Expected: {
-(3)_PUNCT kursové_ADJ rozdíly_NOUN z_ADP cenných_ADJ papírů_NOUN a_CCONJ podílů_NOUN se_PRON při_ADP ocenění_NOUN ke_ADP konci_NOUN rozvahového_ADJ dne_NOUN nebo_CCONJ k_ADP jinému_ADJ okamžiku_NOUN ,_PUNCT k_ADP němuž_PRON se_PRON sestavuje_VERB účetní_ADJ závěrka_NOUN ,_PUNCT neúčtují_VERB samostatně_ADV na_ADP příslušné_ADJ účty_NOUN nákladů_NOUN a_CCONJ výnosů_NOUN ,_PUNCT ale_CCONJ jsou_AUX součástí_NOUN ocenění_NOUN reálnou_ADJ hodnotou_NOUN nebo_CCONJ ocenění_NOUN ekvivalencí_NOUN ,_PUNCT ať_CCONJ je_AUX účtována_ADJ výsledkově_ADV nebo_CCONJ rozvahově_ADV ._PUNCT}
-Predicted: {
-(3)_PUNCT kursové_ADJ rozdíly_NOUN z_ADP cenných_ADJ papírů_NOUN a_CCONJ podílů_NOUN se_PRON při_ADP ocenění_NOUN ke_ADP konci_NOUN rozvahového_ADJ dne_NOUN nebo_CCONJ k_ADP jinému_ADJ okamžiku_NOUN ,_PUNCT k_ADP němuž_PRON se_PRON sestavuje_VERB účetní_ADJ závěrka_NOUN ,_PUNCT neúčtují_VERB samostatně_ADV na_ADP příslušné_ADJ účty_NOUN nákladů_NOUN a_CCONJ výnosů_NOUN ,_PUNCT ale_CCONJ jsou_AUX součástí_NOUN ocenění_NOUN reálnou_ADJ hodnotou_NOUN nebo_CCONJ ocenění_NOUN ekvivalencí_NOUN ,_PUNCT ať_SCONJ je_AUX účtována_ADJ výsledkově_ADV nebo_CCONJ rozvahově_ADV ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-ať: CCONJ | SCONJ
-}
-
-Expected: {
-(3)_PUNCT podle_ADP odstavce_NOUN 2_NUM se_PRON postupuje_VERB ,_PUNCT pokud_SCONJ jsou_AUX splněny_ADJ tyto_DET podmínky_NOUN :_PUNCT a)_X konsolidující_ADJ účetní_ADJ jednotka_NOUN a_CCONJ všechny_DET jí_PRON konsolidované_ADJ účetní_ADJ jednotky_NOUN jsou_AUX zahrnuty_ADJ do_ADP konsolidované_ADJ účetní_ADJ závěrky_NOUN konsolidačního_ADJ celku_NOUN jiné_ADJ konsolidující_ADJ účetní_ADJ jednotky_NOUN ,_PUNCT b)_X konsolidovaná_ADJ účetní_ADJ závěrka_NOUN podle_ADP písmene_NOUN a)_X a_CCONJ konsolidovaná_ADJ výroční_ADJ zpráva_NOUN jsou_AUX sestaveny_ADJ jinou_ADJ konsolidující_ADJ účetní_ADJ jednotkou_NOUN a_CCONJ jsou_AUX ověřeny_ADJ auditorem_NOUN podle_ADP práva_NOUN státu_NOUN ,_PUNCT kterým_DET se_PRON tato_DET jiná_ADJ konsolidující_ADJ účetní_ADJ jednotka_NOUN řídí_VERB ,_PUNCT c)_X konsolidovanou_ADJ účetní_ADJ závěrku_NOUN podle_ADP písmene_NOUN a)_X a_CCONJ konsolidovanou_ADJ výroční_ADJ zprávu_NOUN podle_ADP písmene_NOUN b)_X a_CCONJ zprávu_NOUN auditora_NOUN odpovědného_ADJ za_ADP ověření_NOUN této_DET konsolidované_ADJ účetní_ADJ závěrky_NOUN a_CCONJ konsolidované_ADJ výroční_ADJ zprávy_NOUN konsolidující_ADJ účetní_ADJ jednotka_NOUN zveřejní_VERB podle_ADP §_21a_zákona_X ;_PUNCT tyto_DET účetní_ADJ záznamy_NOUN musí_VERB být_AUX zveřejněny_ADJ v_ADP českém_ADJ jazyce_NOUN a_CCONJ d)_X příloha_NOUN k_ADP účetní_ADJ závěrce_NOUN konsolidující_ADJ účetní_ADJ jednotky_NOUN obsahuje_VERB obchodní_ADJ firmu_NOUN a_CCONJ sídlo_NOUN jiné_ADJ konsolidující_ADJ účetní_ADJ jednotky_NOUN ,_PUNCT která_DET konsolidovanou_ADJ účetní_ADJ závěrku_NOUN podle_ADP písmene_NOUN a)_X sestavila_VERB ,_PUNCT a_CCONJ důvody_NOUN nevytvoření_NOUN konsolidačního_ADJ celku_NOUN ._PUNCT}
-Predicted: {
-(3)_PUNCT podle_ADP odstavce_NOUN 2_NUM se_PRON postupuje_VERB ,_PUNCT pokud_SCONJ jsou_AUX splněny_ADJ tyto_DET podmínky_NOUN :_PUNCT a)_X konsolidující_ADJ účetní_ADJ jednotka_NOUN a_CCONJ všechny_DET jí_PRON konsolidované_ADJ účetní_ADJ jednotky_NOUN jsou_AUX zahrnuty_ADJ do_ADP konsolidované_ADJ účetní_ADJ závěrky_NOUN konsolidačního_ADJ celku_NOUN jiné_ADJ konsolidující_ADJ účetní_ADJ jednotky_NOUN ,_PUNCT b)_X konsolidovaná_ADJ účetní_ADJ závěrka_NOUN podle_ADP písmene_NOUN a)_X a_CCONJ konsolidovaná_ADJ výroční_ADJ zpráva_NOUN jsou_AUX sestaveny_ADJ jinou_ADJ konsolidující_ADJ účetní_ADJ jednotkou_NOUN a_CCONJ jsou_AUX ověřeny_ADJ auditorem_NOUN podle_ADP práva_NOUN státu_NOUN ,_PUNCT kterým_DET se_PRON tato_DET jiná_ADJ konsolidující_ADJ účetní_ADJ jednotka_NOUN řídí_VERB ,_PUNCT c)_X konsolidovanou_ADJ účetní_ADJ závěrku_NOUN podle_ADP písmene_NOUN a)_X a_CCONJ konsolidovanou_ADJ výroční_ADJ zprávu_NOUN podle_ADP písmene_NOUN b)_X a_CCONJ zprávu_NOUN auditora_NOUN odpovědného_ADJ za_ADP ověření_NOUN této_DET konsolidované_ADJ účetní_ADJ závěrky_NOUN a_CCONJ konsolidované_ADJ výroční_ADJ zprávy_NOUN konsolidující_ADJ účetní_ADJ jednotka_NOUN zveřejní_VERB podle_ADP §_21a_zákona_X ;_PUNCT tyto_DET účetní_ADJ záznamy_NOUN musí_VERB být_AUX zveřejněny_ADJ v_ADP českém_ADJ jazyce_NOUN a_CCONJ d)_PUNCT příloha_NOUN k_ADP účetní_ADJ závěrce_NOUN konsolidující_ADJ účetní_ADJ jednotky_NOUN obsahuje_VERB obchodní_ADJ firmu_NOUN a_CCONJ sídlo_NOUN jiné_ADJ konsolidující_ADJ účetní_ADJ jednotky_NOUN ,_PUNCT která_DET konsolidovanou_ADJ účetní_ADJ závěrku_NOUN podle_ADP písmene_NOUN a)_X sestavila_VERB ,_PUNCT a_CCONJ důvody_NOUN nevytvoření_NOUN konsolidačního_ADJ celku_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-d): X | PUNCT
-}
-
-Expected: {
-(2)_PUNCT rozvaha_NOUN se_PRON podle_ADP použité_ADJ metody_NOUN konsolidace_NOUN doplní_VERB o_ADP položky_NOUN a)_X kladný_ADJ konsolidační_ADJ rozdíl_NOUN ,_PUNCT b)_X záporný_ADJ konsolidační_ADJ rozdíl_NOUN ,_PUNCT c)_X menšinový_ADJ vlastní_ADJ kapitál_NOUN ,_PUNCT d)_X menšinový_ADJ základní_ADJ kapitál_NOUN ,_PUNCT e)_X menšinové_ADJ kapitálové_ADJ fondy_NOUN ,_PUNCT f)_X menšinové_ADJ fondy_NOUN ze_ADP zisku_NOUN včetně_ADP nerozděleného_ADJ zisku_NOUN a_CCONJ neuhrazené_ADJ ztráty_NOUN minulých_ADJ let_NOUN ,_PUNCT g)_X menšinový_ADJ výsledek_NOUN hospodaření_NOUN běžného_ADJ účetního_ADJ období_NOUN ,_PUNCT h)_X cenné_ADJ papíry_NOUN a_CCONJ podíly_NOUN v_ADP ekvivalenci_NOUN ,_PUNCT i)_X konsolidační_ADJ rezervní_ADJ fond_NOUN ,_PUNCT j)_X podíl_NOUN na_ADP výsledku_NOUN hospodaření_NOUN v_ADP ekvivalenci_NOUN ._PUNCT}
-Predicted: {
-(2)_PUNCT rozvaha_NOUN se_PRON podle_ADP použité_ADJ metody_NOUN konsolidace_NOUN doplní_VERB o_ADP položky_NOUN a)_X kladný_X konsolidační_X rozdíl_X ,_PUNCT b)_X záporný_ADJ konsolidační_ADJ rozdíl_NOUN ,_PUNCT c)_X menšinový_ADJ vlastní_ADJ kapitál_NOUN ,_PUNCT d)_X menšinový_ADJ základní_ADJ kapitál_NOUN ,_PUNCT e)_X menšinové_ADJ kapitálové_ADJ fondy_NOUN ,_PUNCT f)_X menšinové_ADJ fondy_NOUN ze_ADP zisku_NOUN včetně_ADP nerozděleného_ADJ zisku_NOUN a_CCONJ neuhrazené_ADJ ztráty_NOUN minulých_ADJ let_NOUN ,_PUNCT g)_PUNCT menšinový_ADJ výsledek_NOUN hospodaření_NOUN běžného_ADJ účetního_ADJ období_NOUN ,_PUNCT h)_X cenné_ADJ papíry_NOUN a_CCONJ podíly_NOUN v_ADP ekvivalenci_NOUN ,_PUNCT i)_X konsolidační_ADJ rezervní_ADJ fond_NOUN ,_PUNCT j)_X podíl_NOUN na_ADP výsledku_NOUN hospodaření_NOUN v_ADP ekvivalenci_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-kladný: ADJ | X
-konsolidační: ADJ | X
-rozdíl: NOUN | X
-g): X | PUNCT
-}
-
-Expected: {
-2_NUM ._PUNCT v_ADP případech_NOUN ,_PUNCT kdy_ADV byl_AUX projekt_NOUN přeměny_NOUN vypracován_ADJ podle_ADP zákona_č._125/2008_sb._X ,_PUNCT o_ADP přeměnách_NOUN obchodních_ADJ společností_NOUN a_CCONJ družstev_NOUN ,_PUNCT ve_ADP znění_NOUN účinném_ADJ do_ADJ 31_NUM ._PUNCT prosince_NOUN 2011_NUM ,_PUNCT postupuje_VERB se_PRON při_ADP účtování_NOUN o_ADP přeměně_NOUN společnosti_NOUN podle_ADP vyhlášky_č._500/2002_sb._X ,_PUNCT ve_ADP znění_NOUN účinném_ADJ do_ADP dne_NOUN nabytí_NOUN účinnosti_NOUN této_DET vyhlášky_NOUN ._PUNCT}
-Predicted: {
-2_NUM ._PUNCT v_ADP případech_NOUN ,_PUNCT kdy_ADV byl_AUX projekt_NOUN přeměny_NOUN vypracován_ADJ podle_ADP zákona_č._125/2008_sb._X ,_PUNCT o_ADP přeměnách_NOUN obchodních_ADJ společností_NOUN a_CCONJ družstev_NOUN ,_PUNCT ve_ADP znění_NOUN účinném_ADJ do_ADP 31_NUM ._PUNCT prosince_NOUN 2011_NUM ,_PUNCT postupuje_VERB se_PRON při_ADP účtování_NOUN o_ADP přeměně_NOUN společnosti_NOUN podle_ADP vyhlášky_č._500/2002_sb._X ,_PUNCT ve_ADP znění_NOUN účinném_ADJ do_ADP dne_NOUN nabytí_NOUN účinnosti_NOUN této_DET vyhlášky_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-do: ADJ | ADP
-}
-
-Expected: {
-(14)_PUNCT za_ADP informační_ADJ systém_NOUN podle_ADP zvláštního_ADJ právního_ADJ předpisu_NOUN lze_VERB účetnictví_NOUN považovat_VERB pouze_ADV jako_SCONJ celek_NOUN ._PUNCT}
-Predicted: {
-(14)_NOUN za_ADP informační_ADJ systém_NOUN podle_ADP zvláštního_ADJ právního_ADJ předpisu_NOUN lze_VERB účetnictví_NOUN považovat_VERB pouze_ADV jako_SCONJ celek_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-(14): PUNCT | NOUN
-}
-
-Expected: {
-(2)_PUNCT hlavní_ADJ kniha_NOUN zahrnuje_VERB syntetické_ADJ účty_NOUN podle_ADP účtového_ADJ rozvrhu_NOUN ,_PUNCT které_DET obsahují_VERB minimálně_ADV tyto_DET informace_NOUN :_PUNCT a)_X zůstatky_NOUN účtů_NOUN ke_ADP dni_NOUN ,_PUNCT k_ADP němuž_PRON se_PRON otevírá_VERB hlavní_ADJ kniha_NOUN ,_PUNCT b)_X souhrnné_ADJ obraty_NOUN strany_NOUN má_VERB dáti_VERB a_CCONJ dal_VERB účtů_NOUN ,_PUNCT alespoň_ADV za_ADP kalendářní_ADJ měsíc_NOUN ;_PUNCT vybrané_ADJ účetní_ADJ jednotky_NOUN uvádějí_VERB souhrnné_ADJ obraty_NOUN denně_ADV ,_PUNCT nenaplní-li_X tuto_ADV povinnost_NOUN vybraná_ADJ účetní_ADJ jednotka_NOUN v_ADP jiné_ADJ účetní_ADJ knize_NOUN ,_PUNCT c)_X zůstatky_NOUN účtů_NOUN ke_ADP dni_NOUN ,_PUNCT ke_ADP kterému_DET se_PRON sestavuje_VERB účetní_ADJ závěrka_NOUN ._PUNCT}
-Predicted: {
-(2)_PUNCT hlavní_ADJ kniha_NOUN zahrnuje_VERB syntetické_ADJ účty_NOUN podle_ADP účtového_ADJ rozvrhu_NOUN ,_PUNCT které_DET obsahují_VERB minimálně_ADV tyto_DET informace_NOUN :_PUNCT a)_X zůstatky_NOUN účtů_NOUN ke_ADP dni_NOUN ,_PUNCT k_ADP němuž_PRON se_PRON otevírá_VERB hlavní_ADJ kniha_NOUN ,_PUNCT b)_X souhrnné_ADJ obraty_NOUN strany_NOUN má_VERB dáti_VERB a_CCONJ dal_VERB účtů_NOUN ,_PUNCT alespoň_ADV za_ADP kalendářní_ADJ měsíc_NOUN ;_PUNCT vybrané_ADJ účetní_ADJ jednotky_NOUN uvádějí_VERB souhrnné_ADJ obraty_NOUN denně_ADV ,_PUNCT nenaplní-li_PUNCT tuto_DET povinnost_NOUN vybraná_ADJ účetní_ADJ jednotka_NOUN v_ADP jiné_ADJ účetní_ADJ knize_NOUN ,_PUNCT c)_X zůstatky_NOUN účtů_NOUN ke_ADP dni_NOUN ,_PUNCT ke_ADP kterému_DET se_PRON sestavuje_VERB účetní_ADJ závěrka_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-nenaplní-li: X | PUNCT
-tuto: ADV | DET
-}
-
-Expected: {
-(6)_PUNCT podle_ADP odstavců_NOUN 3_NUM až_SCONJ 5_NUM se_PRON nepostupuje_VERB ,_PUNCT je_AUX -_PUNCT li_PART při_ADP přeměně_NOUN společnosti_NOUN den_NOUN zápisu_NOUN přeměny_NOUN společnosti_NOUN do_ADP obchodního_ADJ rejstříku_NOUN shodný_ADJ s_ADP rozhodným_ADJ dnem_NOUN ._PUNCT}
-Predicted: {
-(6)_PUNCT podle_ADP odstavců_NOUN 3_NUM až_PART 5_NUM se_ADP nepostupuje_VERB ,_PUNCT je_AUX -_PUNCT li_PART při_ADP přeměně_NOUN společnosti_NOUN den_NOUN zápisu_NOUN přeměny_NOUN společnosti_NOUN do_ADP obchodního_ADJ rejstříku_NOUN shodný_ADJ s_ADP rozhodným_ADJ dnem_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-až: SCONJ | PART
-se: PRON | ADP
+to: PART | DET
 }
 
 Expected: {
@@ -9322,16 +9232,6 @@ možná: PART | ADV
 }
 
 Expected: {
-nemám_VERB vůbec_ADV náladu_NOUN se_PRON s_ADP někým_PRON bavit_VERB ._PUNCT}
-Predicted: {
-nemám_VERB vůbec_PART náladu_NOUN se_PRON s_ADP někým_PRON bavit_VERB ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-vůbec: ADV | PART
-}
-
-Expected: {
 mám_VERB tolik_ADV ráda_ADJ přírodu_NOUN ._PUNCT}
 Predicted: {
 mám_VERB tolik_DET ráda_ADJ přírodu_NOUN ._PUNCT}
@@ -10313,6 +10213,16 @@ vůbec: PART | ADV
 }
 
 Expected: {
+"_PUNCT nechtěl_VERB jsem_AUX ,_PUNCT aby by_SCONJ AUX se_PRON vedle_ADP všech_DET svých_DET velkých_ADJ starostí_NOUN musel_VERB ještě_ADV trápit_VERB kvůli_ADP své_DET nepozornosti_NOUN ,_PUNCT "_PUNCT odpověděl_VERB mistr_NOUN ._PUNCT}
+Predicted: {
+"_PUNCT nechtěl_VERB jsem_AUX ,_PUNCT aby by_SCONJ AUX se_PRON vedle_ADP všech_PRON svých_DET velkých_ADJ starostí_NOUN musel_VERB ještě_ADV trápit_VERB kvůli_ADP své_DET nepozornosti_NOUN ,_PUNCT "_PUNCT odpověděl_VERB mistr_NOUN ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+všech: DET | PRON
+}
+
+Expected: {
 zmizela_VERB ale_CCONJ už_PART před_ADP značnou_ADJ dobou_NOUN ,_PUNCT a_CCONJ proto_CCONJ se_PRON pronásledovatelé_NOUN zeptali_VERB muže_NOUN ,_PUNCT který_DET seděl_VERB pod_ADP stromem_NOUN ,_PUNCT zda_SCONJ ji_PRON neviděl_VERB ._PUNCT}
 Predicted: {
 zmizela_VERB ale_CCONJ už_ADV před_ADP značnou_ADJ dobou_NOUN ,_PUNCT a_CCONJ proto_CCONJ se_PRON pronásledovatelé_NOUN zeptali_VERB muže_NOUN ,_PUNCT který_DET seděl_VERB pod_ADP stromem_NOUN ,_PUNCT zda_SCONJ ji_PRON neviděl_VERB ._PUNCT}
@@ -10610,13 +10520,13 @@ slídilové: NOUN | ADJ
 Expected: {
 vana_NOUN plechová_ADJ se_PRON zahřeje_VERB rychle_ADV a_CCONJ rychle_ADV zchladne_VERB ,_PUNCT vana_NOUN litinová_ADJ se_PRON chová_VERB naopak_ADV ._PUNCT}
 Predicted: {
-vana_PROPN plechová_PROPN se_PRON zahřeje_VERB rychle_ADV a_CCONJ rychle_ADV zchladne_VERB ,_PUNCT vana_PROPN litinová_PROPN se_PRON chová_VERB naopak_ADV ._PUNCT}
+vana_PROPN plechová_PROPN se_PRON zahřeje_VERB rychle_ADV a_CCONJ rychle_ADV zchladne_VERB ,_PUNCT vana_ADP litinová_PROPN se_PRON chová_VERB naopak_ADV ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 vana: NOUN | PROPN
 plechová: ADJ | PROPN
-vana: NOUN | PROPN
+vana: NOUN | ADP
 litinová: ADJ | PROPN
 }
 
@@ -11019,10 +10929,11 @@ m: PROPN | NOUN
 Expected: {
 v_ADP navržené_ADJ formě_NOUN podle_ADP něj_PRON zákon_NOUN nepodpoří_VERB jak_ADV opozice_NOUN ,_PUNCT tak_CCONJ ani_CCONJ zbytek_NOUN koalice_NOUN ._PUNCT}
 Predicted: {
-v_ADP navržené_ADJ formě_NOUN podle_ADP něj_PRON zákon_NOUN nepodpoří_VERB jak_ADV opozice_NOUN ,_PUNCT tak_ADV ani_CCONJ zbytek_NOUN koalice_NOUN ._PUNCT}
+v_ADP navržené_ADJ formě_NOUN podle_ADP něj_DET zákon_NOUN nepodpoří_VERB jak_ADV opozice_NOUN ,_PUNCT tak_ADV ani_CCONJ zbytek_NOUN koalice_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+něj: PRON | DET
 tak: CCONJ | ADV
 }
 
@@ -12860,11 +12771,10 @@ stát: NOUN | VERB
 Expected: {
 rusko_PROPN -_PUNCT jak_ADV známo_ADJ -_PUNCT rádo_ADJ ctí_VERB tradice_NOUN ._PUNCT}
 Predicted: {
-rusko_PROPN -_PUNCT jak_ADV známo_ADJ -_PUNCT rádo_ADP ctí_NOUN tradice_NOUN ._PUNCT}
+rusko_PROPN -_PUNCT jak_ADV známo_ADJ -_PUNCT rádo_ADJ ctí_NOUN tradice_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-rádo: ADJ | ADP
 ctí: VERB | NOUN
 }
 
@@ -12995,12 +12905,11 @@ omezováním: NOUN | ADJ
 Expected: {
 m_PROPN ._PUNCT grondzík_PROPN přijel_VERB ke_ADP včerejšímu_ADJ líčení_NOUN s_ADP alegoricky_ADV upraveným_ADJ vozem_NOUN škoda_PROPN 1203_NUM ,_PUNCT jemuž_PRON na_ADP střeše_NOUN vévodila_VERB zhruba_ADV 1.5_NUM m_NOUN vysoká_ADJ figurína_NOUN jana_PROPN husa_PROPN ,_PUNCT a_CCONJ auto_NOUN bylo_AUX pomalováno_ADJ heslem_NOUN nezapomeňte_VERB ,_PUNCT husa_PROPN upálili_VERB katolíci_NOUN ._PUNCT}
 Predicted: {
-m_PROPN ._PUNCT grondzík_PROPN přijel_VERB ke_ADP včerejšímu_ADJ líčení_NOUN s_ADP alegoricky_DET upraveným_ADJ vozem_NOUN škoda_PROPN 1203_PROPN ,_PUNCT jemuž_PRON na_ADP střeše_NOUN vévodila_VERB zhruba_ADV 1.5_NUM m_NOUN vysoká_ADJ figurína_NOUN jana_PROPN husa_PROPN ,_PUNCT a_CCONJ auto_NOUN bylo_AUX pomalováno_ADJ heslem_NOUN nezapomeňte_VERB ,_PUNCT husa_NOUN upálili_VERB katolíci_NOUN ._PUNCT}
+m_PROPN ._PUNCT grondzík_PROPN přijel_VERB ke_ADP včerejšímu_ADJ líčení_NOUN s_ADP alegoricky_DET upraveným_ADJ vozem_NOUN škoda_PROPN 1203_NUM ,_PUNCT jemuž_PRON na_ADP střeše_NOUN vévodila_VERB zhruba_ADV 1.5_NUM m_NOUN vysoká_ADJ figurína_NOUN jana_PROPN husa_PROPN ,_PUNCT a_CCONJ auto_NOUN bylo_AUX pomalováno_ADJ heslem_NOUN nezapomeňte_VERB ,_PUNCT husa_NOUN upálili_VERB katolíci_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 alegoricky: ADV | DET
-1203: NUM | PROPN
 husa: PROPN | NOUN
 }
 
@@ -14669,13 +14578,13 @@ co: ADV | PRON
 Expected: {
 podle_ADP j_PROPN ._PUNCT charitona_PROPN se_PRON sssr_PROPN rozhodl_VERB právě_ADV na_ADP základě_NOUN této_DET zprávy_NOUN zorganizovat_VERB vědeckotechnické_ADJ centrum_NOUN pro_ADP vytvoření_NOUN jaderné_ADJ zbraně_NOUN ,_PUNCT jehož_PRON šéfem_NOUN se_PRON stal_VERB na_ADP doporučení_NOUN i_PROPN ._PUNCT joffeho_PROPN igor_PROPN kurčatov_PROPN ._PUNCT}
 Predicted: {
-podle_ADP j_PROPN ._PUNCT charitona_PROPN se_PRON sssr_PROPN rozhodl_VERB právě_ADV na_ADP základě_NOUN této_DET zprávy_NOUN zorganizovat_VERB vědeckotechnické_ADJ centrum_NOUN pro_ADP vytvoření_NOUN jaderné_ADJ zbraně_NOUN ,_PUNCT jehož_DET šéfem_NOUN se_PRON stal_VERB na_ADP doporučení_NOUN i_CCONJ ._PUNCT joffeho_ADP igor_PROPN kurčatov_PROPN ._PUNCT}
+podle_ADP j_PROPN ._PUNCT charitona_PROPN se_PRON sssr_PROPN rozhodl_VERB právě_ADV na_ADP základě_NOUN této_DET zprávy_NOUN zorganizovat_VERB vědeckotechnické_ADJ centrum_NOUN pro_ADP vytvoření_NOUN jaderné_ADJ zbraně_NOUN ,_PUNCT jehož_DET šéfem_NOUN se_PRON stal_VERB na_ADP doporučení_NOUN i_CCONJ ._PUNCT joffeho_DET igor_PROPN kurčatov_PROPN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 jehož: PRON | DET
 i: PROPN | CCONJ
-joffeho: PROPN | ADP
+joffeho: PROPN | DET
 }
 
 Expected: {
@@ -17370,10 +17279,11 @@ proto: CCONJ | ADV
 Expected: {
 podnik_NOUN moskevské_ADJ společnosti_NOUN coca_ADJ -_PUNCT cola_PROPN refreshments_PROPN (_PUNCT ccrm_PROPN )_PUNCT vyrábí_VERB coca_ADJ -_PUNCT colu_PROPN ,_PUNCT fantu_PROPN a_CCONJ sprite_PROPN ve_ADP dvoulitrových_ADJ plastových_ADJ lahvích_NOUN ,_PUNCT stáčí_VERB a_CCONJ balí_VERB šťávy_NOUN pro_ADP stánkový_ADJ prodej_NOUN ._PUNCT}
 Predicted: {
-podnik_NOUN moskevské_ADJ společnosti_NOUN coca_ADJ -_PUNCT cola_PROPN refreshments_PROPN (_PUNCT ccrm_PROPN )_PUNCT vyrábí_VERB coca_ADJ -_PUNCT colu_PROPN ,_PUNCT fantu_NOUN a_CCONJ sprite_NOUN ve_ADP dvoulitrových_ADJ plastových_ADJ lahvích_NOUN ,_PUNCT stáčí_VERB a_CCONJ balí_VERB šťávy_NOUN pro_ADP stánkový_ADJ prodej_NOUN ._PUNCT}
+podnik_NOUN moskevské_ADJ společnosti_NOUN coca_ADJ -_PUNCT cola_PROPN refreshments_NOUN (_PUNCT ccrm_PROPN )_PUNCT vyrábí_VERB coca_ADJ -_PUNCT colu_PROPN ,_PUNCT fantu_NOUN a_CCONJ sprite_NOUN ve_ADP dvoulitrových_ADJ plastových_ADJ lahvích_NOUN ,_PUNCT stáčí_VERB a_CCONJ balí_VERB šťávy_NOUN pro_ADP stánkový_ADJ prodej_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+refreshments: PROPN | NOUN
 fantu: PROPN | NOUN
 sprite: PROPN | NOUN
 }
@@ -20269,10 +20179,11 @@ neúspěších: NOUN | ADJ
 Expected: {
 stane_VERB -_PUNCT li_PART se_PRON vyrovnanost_NOUN ústavní_ADJ ,_PUNCT všemi_DET nejostřeji_ADV sledovanou_ADJ modlou_NOUN ,_PUNCT bude_AUX každá_DET vláda_NOUN tendovat_VERB k_ADP vytváření_NOUN co_ADV největších_ADJ rozpočtových_ADJ rezerv_NOUN ,_PUNCT bude_AUX tedy_ADV ve_ADP skutečnosti_NOUN sestavovat_VERB rozpočet_NOUN přebytkový_ADJ ,_PUNCT bude_AUX se_PRON všemi_DET silami_NOUN snažit_VERB bránit_VERB snižování_NOUN daní_NOUN ,_PUNCT a_CCONJ naopak_ADV je_PRON bude_AUX skrytě_ADV i_CCONJ nepokrytě_ADV zvyšovat_VERB ._PUNCT}
 Predicted: {
-stane_VERB -_PUNCT li_PART se_PRON vyrovnanost_NOUN ústavní_ADJ ,_PUNCT všemi_DET nejostřeji_ADV sledovanou_ADJ modlou_NOUN ,_PUNCT bude_AUX každá_DET vláda_NOUN tendovat_VERB k_ADP vytváření_NOUN co_PRON největších_ADJ rozpočtových_ADJ rezerv_NOUN ,_PUNCT bude_AUX tedy_ADV ve_ADP skutečnosti_NOUN sestavovat_VERB rozpočet_NOUN přebytkový_ADJ ,_PUNCT bude_AUX se_ADP všemi_DET silami_NOUN snažit_VERB bránit_VERB snižování_NOUN daní_NOUN ,_PUNCT a_CCONJ naopak_ADV je_AUX bude_AUX skrytě_ADV i_CCONJ nepokrytě_ADV zvyšovat_VERB ._PUNCT}
+stane_VERB -_PUNCT li_PART se_PRON vyrovnanost_NOUN ústavní_ADJ ,_PUNCT všemi_DET nejostřeji_PRON sledovanou_ADJ modlou_NOUN ,_PUNCT bude_AUX každá_DET vláda_NOUN tendovat_VERB k_ADP vytváření_NOUN co_PRON největších_ADJ rozpočtových_ADJ rezerv_NOUN ,_PUNCT bude_AUX tedy_ADV ve_ADP skutečnosti_NOUN sestavovat_VERB rozpočet_NOUN přebytkový_ADJ ,_PUNCT bude_AUX se_ADP všemi_DET silami_NOUN snažit_VERB bránit_VERB snižování_NOUN daní_NOUN ,_PUNCT a_CCONJ naopak_ADV je_AUX bude_AUX skrytě_ADV i_CCONJ nepokrytě_ADV zvyšovat_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+nejostřeji: ADV | PRON
 co: ADV | PRON
 se: PRON | ADP
 je: PRON | AUX
@@ -24607,10 +24518,11 @@ proto: CCONJ | ADV
 Expected: {
 je_AUX jim_PRON proto_CCONJ nabídnuta_ADJ pomocí_ADP německých_ADJ sociálních_ADJ pracovníků_NOUN tato_DET forma_NOUN alternativní_ADJ výchovy_NOUN v_ADP různých_ADJ zemích_NOUN -_PUNCT například_ADV ve_ADP španělsku_PROPN ,_PUNCT portugalsku_PROPN ,_PUNCT dánsku_PROPN ._PUNCT}
 Predicted: {
-je_AUX jim_PRON proto_CCONJ nabídnuta_VERB pomocí_ADP německých_ADJ sociálních_ADJ pracovníků_NOUN tato_DET forma_NOUN alternativní_ADJ výchovy_NOUN v_ADP různých_ADJ zemích_NOUN -_PUNCT například_ADV ve_ADP španělsku_PROPN ,_PUNCT portugalsku_PROPN ,_PUNCT dánsku_PROPN ._PUNCT}
+je_AUX jim_PRON proto_ADV nabídnuta_VERB pomocí_ADP německých_ADJ sociálních_ADJ pracovníků_NOUN tato_DET forma_NOUN alternativní_ADJ výchovy_NOUN v_ADP různých_ADJ zemích_NOUN -_PUNCT například_ADV ve_ADP španělsku_PROPN ,_PUNCT portugalsku_PROPN ,_PUNCT dánsku_PROPN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+proto: CCONJ | ADV
 nabídnuta: ADJ | VERB
 }
 
@@ -24747,16 +24659,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 artfórum: NOUN | PROPN
-}
-
-Expected: {
-od_ADP ředitele_NOUN úřadu_NOUN práce_NOUN v_ADP praze_PROPN 5_NUM se_PRON ale_CCONJ dozvěděl_VERB ,_PUNCT že_SCONJ na_ADP nové_ADJ dílny_NOUN v_ADP praze_PROPN nejsou_AUX finance_NOUN ._PUNCT}
-Predicted: {
-od_ADP ředitele_NOUN úřadu_NOUN práce_NOUN v_ADP praze_PROPN 5_NUM se_ADP ale_CCONJ dozvěděl_VERB ,_PUNCT že_SCONJ na_ADP nové_ADJ dílny_NOUN v_ADP praze_PROPN nejsou_AUX finance_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-se: PRON | ADP
 }
 
 Expected: {
@@ -26120,16 +26022,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 složil: PROPN | VERB
-}
-
-Expected: {
-poté_ADV plénum_NOUN zamítlo_VERB návrh_NOUN ,_PUNCT podle_ADP něhož_PRON by_AUX výsledky_NOUN referenda_NOUN mohly_VERB být_AUX změněny_ADJ jen_PART novým_ADJ referendem_NOUN ._PUNCT}
-Predicted: {
-poté_ADV plénum_NOUN zamítlo_VERB návrh_NOUN ,_PUNCT podle_ADP něhož_PRON by_AUX výsledky_NOUN referenda_NOUN mohly_VERB být_AUX změněny_NOUN jen_PART novým_ADJ referendem_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-změněny: ADJ | NOUN
 }
 
 Expected: {

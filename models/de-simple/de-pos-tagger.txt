@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9466650680635998
+Evaluation-Score=0.9466097318035932
 Training-Sample-Size=65673
 Evaluation-Sample-Size=7297
 Training-Algorithm=MAXENT
@@ -10,9 +10,9 @@ Component-Name=POSTaggerME
 Language=de
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1665731398371
+Timestamp=1668924782260
 TrainerType=Event
-Training-Eventhash=324e0d0adb03c4350e1a103ff5ba72f5
+Training-Eventhash=d54e7d9fb1cd410434cf368f0a766dec
 factory=opennlp.tools.postag.POSTaggerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -741,13 +741,12 @@ soest: NOUN | ADV
 Expected: {
 leider_ADV ,_PUNCT ja_PART wirklich_ADV leider_ADV ,_PUNCT sind_AUX meine_DET frau_NOUN und_CCONJ ich_PRON ,_PUNCT die_PRON wir_PRON um_ADP die_DET ecke_NOUN wohnen_VERB ,_PUNCT bereits_ADV endtäuscht_VERB worden_AUX ._PUNCT}
 Predicted: {
-leider_ADV ,_PUNCT ja_ADV wirklich_ADJ leider_ADV ,_PUNCT sind_AUX meine_DET frau_NOUN und_CCONJ ich_PRON ,_PUNCT die_DET wir_PRON um_ADP die_DET ecke_NOUN wohnen_VERB ,_PUNCT bereits_ADV endtäuscht_VERB worden_AUX ._PUNCT}
+leider_ADV ,_PUNCT ja_ADV wirklich_ADJ leider_ADV ,_PUNCT sind_AUX meine_DET frau_NOUN und_CCONJ ich_PRON ,_PUNCT die_PRON wir_PRON um_ADP die_DET ecke_NOUN wohnen_VERB ,_PUNCT bereits_ADV endtäuscht_VERB worden_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 ja: PART | ADV
 wirklich: ADV | ADJ
-die: PRON | DET
 }
 
 Expected: {
@@ -3187,11 +3186,10 @@ brewster: PROPN | NOUN
 Expected: {
 an_ADP der_DET universität_NOUN oslo_PROPN studierte_VERB bjerknes_PROPN zuerst_ADV bergbau_NOUN ,_PUNCT um_ADP danach_ADV mathematik_NOUN an_ADP der_DET universität_NOUN göttingen_PROPN und_CCONJ in_ADP paris_PROPN zu_PART studieren_VERB ._PUNCT}
 Predicted: {
-an_ADP der_DET universität_NOUN oslo_PROPN studierte_VERB bjerknes_PRON zuerst_ADV bergbau_NOUN ,_PUNCT um_SCONJ danach_ADV mathematik_NOUN an_ADP der_DET universität_NOUN göttingen_PROPN und_CCONJ in_ADP paris_PROPN zu_PART studieren_VERB ._PUNCT}
+an_ADP der_DET universität_NOUN oslo_PROPN studierte_VERB bjerknes_PROPN zuerst_ADV bergbau_NOUN ,_PUNCT um_SCONJ danach_ADV mathematik_NOUN an_ADP der_DET universität_NOUN göttingen_PROPN und_CCONJ in_ADP paris_PROPN zu_PART studieren_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-bjerknes: PROPN | PRON
 um: ADP | SCONJ
 }
 
@@ -6192,12 +6190,10 @@ sampler: PROPN | NOUN
 Expected: {
 der_DET gleueler_PROPN bach_PROPN ist_AUX ein_DET kleiner_ADJ bach_NOUN ,_PUNCT der_PRON bei_ADP gleuel_PROPN entspringt_VERB und_CCONJ in_ADP west_ADJ -_PUNCT östliche_ADJ richtung_NOUN auf_ADP köln_PROPN zufließt_VERB ._PUNCT}
 Predicted: {
-der_DET gleueler_ADJ bach_NOUN ist_AUX ein_DET kleiner_ADJ bach_NOUN ,_PUNCT der_PRON bei_ADP gleuel_PROPN entspringt_VERB und_CCONJ in_ADP west_PROPN -_PUNCT östliche_ADJ richtung_NOUN auf_ADP köln_PROPN zufließt_VERB ._PUNCT}
+der_DET gleueler_PROPN bach_PROPN ist_AUX ein_DET kleiner_ADJ bach_NOUN ,_PUNCT der_PRON bei_ADP gleuel_PROPN entspringt_VERB und_CCONJ in_ADP west_PROPN -_PUNCT östliche_ADJ richtung_NOUN auf_ADP köln_PROPN zufließt_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-gleueler: PROPN | ADJ
-bach: PROPN | NOUN
 west: ADJ | PROPN
 }
 
@@ -7116,11 +7112,10 @@ presença: PROPN | NOUN
 Expected: {
 liam_PROPN d'_PROPN arcy_PROPN brown_PROPN studierte_VERB sinologie_NOUN an_ADP der_DET university_PROPN of_PROPN oxford_PROPN und_CCONJ nach_ADP dem_DET grundstudium_NOUN der_DET chinesischen_ADJ sprache_NOUN ,_PUNCT schrift_NOUN ,_PUNCT philosophie_NOUN und_CCONJ geschichte_NOUN an_ADP der_DET fudan_PROPN -_PUNCT universität_PROPN in_ADP shanghai_PROPN ._PUNCT}
 Predicted: {
-liam_PROPN d'_PROPN arcy_PROPN brown_PROPN studierte_VERB sinologie_PRON an_ADP der_DET university_PROPN of_PROPN oxford_PROPN und_CCONJ nach_ADP dem_DET grundstudium_NOUN der_DET chinesischen_ADJ sprache_NOUN ,_PUNCT schrift_NOUN ,_PUNCT philosophie_NOUN und_CCONJ geschichte_NOUN an_ADP der_DET fudan_PROPN -_PUNCT universität_NOUN in_ADP shanghai_PROPN ._PUNCT}
+liam_PROPN d'_PROPN arcy_PROPN brown_PROPN studierte_VERB sinologie_NOUN an_ADP der_DET university_PROPN of_PROPN oxford_PROPN und_CCONJ nach_ADP dem_DET grundstudium_NOUN der_DET chinesischen_ADJ sprache_NOUN ,_PUNCT schrift_NOUN ,_PUNCT philosophie_NOUN und_CCONJ geschichte_NOUN an_ADP der_DET fudan_PROPN -_PUNCT universität_NOUN in_ADP shanghai_PROPN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-sinologie: NOUN | PRON
 universität: PROPN | NOUN
 }
 
@@ -8000,12 +7995,11 @@ betrvg: PROPN | NOUN
 Expected: {
 kaufmann_PROPN übernahm_VERB während_ADP seines_DET studiums_NOUN der_DET germanistik_NOUN ,_PUNCT rhetorik_NOUN und_CCONJ ethnologie_NOUN in_ADP tübingen_PROPN die_DET organisationsleitung_NOUN des_DET landesjugendchores_PROPN baden_PROPN -_PUNCT württemberg_PROPN ._PUNCT}
 Predicted: {
-kaufmann_NOUN übernahm_VERB während_ADP seines_DET studiums_NOUN der_DET germanistik_NOUN ,_PUNCT rhetorik_NOUN und_CCONJ ethnologie_NOUN in_ADP tübingen_PROPN die_DET organisationsleitung_NOUN des_DET landesjugendchores_NOUN baden_PROPN -_PUNCT württemberg_PROPN ._PUNCT}
+kaufmann_NOUN übernahm_VERB während_ADP seines_DET studiums_NOUN der_DET germanistik_NOUN ,_PUNCT rhetorik_NOUN und_CCONJ ethnologie_NOUN in_ADP tübingen_PROPN die_DET organisationsleitung_NOUN des_DET landesjugendchores_PROPN baden_PROPN -_PUNCT württemberg_PROPN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 kaufmann: PROPN | NOUN
-landesjugendchores: PROPN | NOUN
 }
 
 Expected: {
@@ -9639,11 +9633,13 @@ diesem: PRON | DET
 Expected: {
 die_DET oper_NOUN enthält_VERB viele_DET einschmeichelnde_ADJ melodien_NOUN ._PUNCT}
 Predicted: {
-die_DET oper_NOUN enthält_VERB viele_ADJ einschmeichelnde_ADJ melodien_NOUN ._PUNCT}
+die_DET oper_NOUN enthält_VERB viele_ADJ einschmeichelnde_NOUN melodien_PROPN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 viele: DET | ADJ
+einschmeichelnde: ADJ | NOUN
+melodien: NOUN | PROPN
 }
 
 Expected: {
@@ -10167,11 +10163,12 @@ welchem: PRON | DET
 Expected: {
 unter_ADP römischer_ADJ herrschaft_NOUN wurde_AUX an dem_ADP DET selben_DET ort_NOUN eine_DET neue_ADJ stadt_NOUN ,_PUNCT novum_PROPN clusium_PROPN gegründet_VERB ,_PUNCT die_PRON bei_ADP plinius_PROPN erwähnt_VERB wird_AUX ._PUNCT}
 Predicted: {
-unter_ADP römischer_ADJ herrschaft_NOUN wurde_AUX an dem_ADP DET selben_ADJ ort_NOUN eine_DET neue_ADJ stadt_NOUN ,_PUNCT novum_PROPN clusium_PROPN gegründet_VERB ,_PUNCT die_PRON bei_ADP plinius_PROPN erwähnt_VERB wird_AUX ._PUNCT}
+unter_ADP römischer_ADJ herrschaft_NOUN wurde_AUX an dem_ADP DET selben_ADJ ort_NOUN eine_DET neue_ADJ stadt_NOUN ,_PUNCT novum_SCONJ clusium_PROPN gegründet_VERB ,_PUNCT die_PRON bei_ADP plinius_PROPN erwähnt_VERB wird_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 selben: DET | ADJ
+novum: PROPN | SCONJ
 }
 
 Expected: {
@@ -10473,12 +10470,11 @@ kurfürsten: NOUN | ADJ
 Expected: {
 zeitweise_ADV hatte_VERB hessen_PROPN einen_DET eigenen_ADJ katholischen_ADJ seelsorger_NOUN ,_PUNCT danach_ADV wurde_AUX hessen_PROPN von dem_ADP DET seelsorger_NOUN aus_ADP osterwieck_PROPN betreut_VERB ._PUNCT}
 Predicted: {
-zeitweise_ADV hatte_AUX hessen_PROPN einen_DET eigenen_ADJ katholischen_ADJ seelsorger_NOUN ,_PUNCT danach_ADV wurde_AUX hessen_PROPN von dem_ADP DET seelsorger_PROPN aus_ADP osterwieck_PROPN betreut_VERB ._PUNCT}
+zeitweise_ADV hatte_AUX hessen_PROPN einen_DET eigenen_ADJ katholischen_ADJ seelsorger_NOUN ,_PUNCT danach_ADV wurde_AUX hessen_PROPN von dem_ADP DET seelsorger_NOUN aus_ADP osterwieck_PROPN betreut_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 hatte: VERB | AUX
-seelsorger: NOUN | PROPN
 }
 
 Expected: {
@@ -16818,6 +16814,26 @@ mit: ADV | ADP
 }
 
 Expected: {
+in dem_ADP DET einzelnen_ADJ handelt_VERB es_PRON sich_PRON um_ADP die_DET modelle_NOUN wd64aa_PROPN ,_PUNCT wd68aa_PROPN ,_PUNCT wd84aa_PROPN ,_PUNCT wd100aa_PROPN ,_PUNCT wd102aa_PROPN ,_PUNCT wd135aa_PROPN ,_PUNCT wd136aa_PROPN ,_PUNCT wd170aa_PROPN ,_PUNCT wd172aa_PROPN ,_PUNCT wd200aa_PROPN und_CCONJ wd205aa_PROPN ._PUNCT}
+Predicted: {
+in dem_ADP DET einzelnen_ADJ handelt_VERB es_PRON sich_PRON um_ADP die_DET modelle_NOUN wd64aa_X ,_PUNCT wd68aa_X ,_PUNCT wd84aa_X ,_PUNCT wd100aa_X ,_PUNCT wd102aa_X ,_PUNCT wd135aa_X ,_PUNCT wd136aa_X ,_PUNCT wd170aa_X ,_PUNCT wd172aa_X ,_PUNCT wd200aa_X und_CCONJ wd205aa_X ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+wd64aa: PROPN | X
+wd68aa: PROPN | X
+wd84aa: PROPN | X
+wd100aa: PROPN | X
+wd102aa: PROPN | X
+wd135aa: PROPN | X
+wd136aa: PROPN | X
+wd170aa: PROPN | X
+wd172aa: PROPN | X
+wd200aa: PROPN | X
+wd205aa: PROPN | X
+}
+
+Expected: {
 ab_ADP 120_NUM dm_NOUN umsatz_NOUN pro_ADP monat_NOUN soll_AUX der_DET dialer_NOUN kostenlos_ADJ angeboten_VERB werden_AUX ._PUNCT}
 Predicted: {
 ab_ADP 120_NUM dm_NOUN umsatz_NOUN pro_ADP monat_NOUN soll_AUX der_DET dialer_ADJ kostenlos_ADJ angeboten_VERB werden_AUX ._PUNCT}
@@ -17287,16 +17303,6 @@ Tok: Ref | Pred
 ---------------
 green: X | PROPN
 card: X | PROPN
-}
-
-Expected: {
-bei_ADP den_DET stark_ADJ gefallenen_ADJ preisen_NOUN wieder_ADV einzusteigen_VERB ,_PUNCT halten_VERB die_DET meisten_ADJ börsianer_NOUN offenbar_ADJ nicht_PART für_ADP ratsam_ADJ ._PUNCT}
-Predicted: {
-bei_ADP den_DET stark_ADJ gefallenen_ADJ preisen_NOUN wieder_ADV einzusteigen_ADJ ,_PUNCT halten_VERB die_DET meisten_ADJ börsianer_NOUN offenbar_ADJ nicht_PART für_ADP ratsam_ADJ ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-einzusteigen: VERB | ADJ
 }
 
 Expected: {
@@ -22595,6 +22601,16 @@ unter: ADV | ADP
 }
 
 Expected: {
+wichtig_ADJ ist_AUX dem_DET internet_NOUN council_X offenbar_ADJ vor_ADP allem_PRON ,_PUNCT die_DET regierung_NOUN möglichst_ADV von_ADP allen_DET regulierungen_NOUN fernzuhalten_VERB ,_PUNCT vornehmlich_ADV was_PRON die_DET kontrolle_NOUN der_DET inhalte_NOUN und_CCONJ den_DET zugang_NOUN zu dem_ADP DET netz_NOUN unter_ADP der_DET devise_NOUN "_PUNCT eines_DET höheren_ADJ öffentlichen_ADJ guts_NOUN "_PUNCT angeht_VERB ._PUNCT}
+Predicted: {
+wichtig_ADJ ist_AUX dem_DET internet_NOUN council_NOUN offenbar_ADJ vor_ADP allem_PRON ,_PUNCT die_DET regierung_NOUN möglichst_ADV von_ADP allen_DET regulierungen_NOUN fernzuhalten_VERB ,_PUNCT vornehmlich_ADV was_PRON die_DET kontrolle_NOUN der_DET inhalte_NOUN und_CCONJ den_DET zugang_NOUN zu dem_ADP DET netz_NOUN unter_ADP der_DET devise_NOUN "_PUNCT eines_DET höheren_ADJ öffentlichen_ADJ guts_NOUN "_PUNCT angeht_VERB ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+council: X | NOUN
+}
+
+Expected: {
 fightaids@home_PROPN fordert_VERB die_DET neueste_ADJ initiative_NOUN für_ADP verteiltes_ADJ rechnen_NOUN ,_PUNCT die_PRON seit_ADP ende_NOUN september_NOUN begonnen_VERB hat_AUX ._PUNCT}
 Predicted: {
 fightaids@home_PROPN fordert_VERB die_DET neueste_ADJ initiative_NOUN für_ADP verteiltes_ADJ rechnen_NOUN ,_PUNCT die_DET seit_ADP ende_NOUN september_NOUN begonnen_VERB hat_AUX ._PUNCT}
@@ -27157,12 +27173,10 @@ in: X | ADP
 Expected: {
 but_X we_X have_X made_X these_X investments_X with_X specific_X focus_X ,_PUNCT never_X hastily_X ,_PUNCT and_X always_X with_X an_X eye_X on_X our_X financial_X capabilities_X and_X within_X our_X strategy_X of_X increasing_X the_X shareholder_X value_X of_X the_X company_X in_X the_X long_X term_X ._PUNCT}
 Predicted: {
-but_X we_X have_X made_X these_X investments_X with_X specific_X focus_X ,_PUNCT never_PROPN hastily_PROPN ,_PUNCT and_X always_X with_X an_ADP eye_X on_X our_X financial_X capabilities_X and_X within_X our_X strategy_X of_X increasing_X the_X shareholder_X value_X of_X the_X company_X in_X the_X long_X term_X ._PUNCT}
+but_X we_X have_X made_X these_X investments_X with_X specific_X focus_X ,_PUNCT never_X hastily_X ,_PUNCT and_X always_X with_X an_ADP eye_X on_X our_X financial_X capabilities_X and_X within_X our_X strategy_X of_X increasing_X the_X shareholder_X value_X of_X the_X company_X in_X the_X long_X term_X ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-never: X | PROPN
-hastily: X | PROPN
 an: X | ADP
 }
 
@@ -30049,11 +30063,12 @@ jounal: X | NOUN
 Expected: {
 allerdings_ADV herrscht_VERB so_ADV viel_ADJ uneinigkeit_NOUN bei_ADP der_DET umsetzung_NOUN des_DET vorhabens_NOUN ,_PUNCT dass_SCONJ die_DET zerstrittenen_ADJ parteien_NOUN sich_PRON auch_ADV nach_ADP monatelanger_ADJ diskussion_NOUN nicht_PART einigen_VERB konnten_AUX ._PUNCT}
 Predicted: {
-allerdings_ADV herrscht_VERB so_ADV viel_ADV uneinigkeit_NOUN bei_ADP der_DET umsetzung_NOUN des_DET vorhabens_NOUN ,_PUNCT dass_SCONJ die_DET zerstrittenen_ADJ parteien_NOUN sich_PRON auch_ADV nach_ADP monatelanger_ADJ diskussion_NOUN nicht_PART einigen_VERB konnten_AUX ._PUNCT}
+allerdings_ADV herrscht_VERB so_ADV viel_ADV uneinigkeit_NOUN bei_ADP der_DET umsetzung_NOUN des_DET vorhabens_NOUN ,_PUNCT dass_SCONJ die_DET zerstrittenen_ADJ parteien_NOUN sich_PRON auch_ADV nach_ADP monatelanger_NOUN diskussion_NOUN nicht_PART einigen_VERB konnten_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 viel: ADJ | ADV
+monatelanger: ADJ | NOUN
 }
 
 Expected: {
