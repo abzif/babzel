@@ -39,7 +39,7 @@ public class UniDepURLSupplier {
         var htmlDoc = Jsoup.parse(new String(webClient.readContentAsBytes(uniDepURL)));
         var treebankDownloadPageAnchors = htmlDoc.select("a[href*='hdl.handle.net/11234']");
         Assert.isTrue(!treebankDownloadPageAnchors.isEmpty(), "Universal Dependencies treebank download page anchor not found");
-        return new URL(uniDepURL, treebankDownloadPageAnchors.attr("href"));
+        return new URL(treebankDownloadPageAnchors.attr("href"));
     }
 
     @SneakyThrows
@@ -47,6 +47,6 @@ public class UniDepURLSupplier {
         var htmlDoc = Jsoup.parse(new String(webClient.readContentAsBytes(treebankDownloadPageURL)));
         var treebankAnchors = htmlDoc.select("meta[content*='ud-treebanks-v']");
         Assert.isTrue(!treebankAnchors.isEmpty(), "Universal Dependencies treebank download anchor not found");
-        return new URL(treebankDownloadPageURL, treebankAnchors.attr("content"));
+        return new URL(treebankAnchors.attr("content"));
     }
 }
