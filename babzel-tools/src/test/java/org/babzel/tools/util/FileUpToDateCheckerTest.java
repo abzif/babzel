@@ -13,9 +13,8 @@
  */
 package org.babzel.tools.util;
 
-import com.gargoylesoftware.htmlunit.MockWebConnection;
-import com.gargoylesoftware.htmlunit.util.NameValuePair;
 import com.google.common.jimfs.Jimfs;
+import io.vavr.collection.HashMap;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -23,23 +22,23 @@ import java.nio.file.attribute.FileTime;
 import java.time.ZoneId;
 import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
-import java.util.List;
-import org.assertj.core.api.Assertions;
-import org.babzel.tools.ToolsConfig;
-import org.junit.jupiter.api.BeforeEach;
+import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.BDDMockito.given;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.verifyNoMoreInteractions;
+import org.mockito.junit.jupiter.MockitoExtension;
 
+@ExtendWith(MockitoExtension.class)
 public class FileUpToDateCheckerTest {
-    private MockWebConnection mockWebConnection;
+    @Mock
+    private WebClient webClient;
+    @InjectMocks
     private FileUpToDateChecker checker;
-
-    @BeforeEach
-    public void setUp() {
-        mockWebConnection = new MockWebConnection();
-        var webClient = ToolsConfig.createSimpleWebClient();
-        webClient.setWebConnection(mockWebConnection);
-        checker = new FileUpToDateChecker(() -> webClient);
-    }
 
     @Test
     public void urlDependent_OutputPathDoesNotExists() throws Exception {
@@ -48,27 +47,26 @@ public class FileUpToDateCheckerTest {
 
         boolean isUpToDate = checker.isUpToDate(outputPath, new URL("http://host/path"));
 
-        Assertions.assertThat(isUpToDate).isEqualTo(false);
+        assertThat(isUpToDate).isEqualTo(false);
     }
 
     @Test
     public void urlDependent_NoHeadersToCheck() throws Exception {
-        mockWebConnection.setResponse(new URL("http://host/path"), "input");
+        given(webClient.getHeaders(any())).willReturn(HashMap.empty());
         Path rootPath = Jimfs.newFileSystem().getPath("");
         Path outputPath = rootPath.resolve("output.txt");
         Files.writeString(outputPath, "output");
 
         boolean isUpToDate = checker.isUpToDate(outputPath, new URL("http://host/path"));
 
-        Assertions.assertThat(isUpToDate).isEqualTo(false);
+        verify(webClient).getHeaders(new URL("http://host/path"));
+        verifyNoMoreInteractions(webClient);
+        assertThat(isUpToDate).isEqualTo(false);
     }
 
     @Test
     public void urlDependent_LastModifiedCheckFails() throws Exception {
-        mockWebConnection.setResponse(new URL("http://host/path"),
-                "input", 200, "OK",
-                "text/plain", List.of(
-                        new NameValuePair("Last-Modified", "Thu, 04 Nov 2021 16:31:21 GMT")));
+        given(webClient.getHeaders(any())).willReturn(HashMap.of("Last-Modified", "Thu, 04 Nov 2021 16:31:21 GMT"));
         Path rootPath = Jimfs.newFileSystem().getPath("");
         Path outputPath = rootPath.resolve("output.txt");
         Files.writeString(outputPath, "output");
@@ -76,31 +74,28 @@ public class FileUpToDateCheckerTest {
 
         boolean isUpToDate = checker.isUpToDate(outputPath, new URL("http://host/path"));
 
-        Assertions.assertThat(isUpToDate).isEqualTo(false);
+        verify(webClient).getHeaders(new URL("http://host/path"));
+        verifyNoMoreInteractions(webClient);
+        assertThat(isUpToDate).isEqualTo(false);
     }
 
     @Test
     public void urlDependent_ContentLengthCheckFails() throws Exception {
-        mockWebConnection.setResponse(new URL("http://host/path"),
-                "input", 200, "OK",
-                "text/plain", List.of(
-                        new NameValuePair("Content-Length", "333")));
+        given(webClient.getHeaders(any())).willReturn(HashMap.of("Content-Length", "333"));
         Path rootPath = Jimfs.newFileSystem().getPath("");
         Path outputPath = rootPath.resolve("output.txt");
         Files.writeString(outputPath, "output");
 
         boolean isUpToDate = checker.isUpToDate(outputPath, new URL("http://host/path"));
 
-        Assertions.assertThat(isUpToDate).isEqualTo(false);
+        verify(webClient).getHeaders(new URL("http://host/path"));
+        verifyNoMoreInteractions(webClient);
+        assertThat(isUpToDate).isEqualTo(false);
     }
 
     @Test
     public void urlDependent_UpToDate() throws Exception {
-        mockWebConnection.setResponse(new URL("http://host/path"),
-                "input", 200, "OK",
-                "text/plain", List.of(
-                        new NameValuePair("Content-Length", "6"),
-                        new NameValuePair("Last-Modified", "Thu, 04 Nov 2021 16:31:21 GMT")));
+        given(webClient.getHeaders(any())).willReturn(HashMap.of("Last-Modified", "Thu, 04 Nov 2021 16:31:21 GMT", "Content-Length", "6"));
         Path rootPath = Jimfs.newFileSystem().getPath("");
         Path outputPath = rootPath.resolve("output.txt");
         Files.writeString(outputPath, "output");
@@ -108,7 +103,9 @@ public class FileUpToDateCheckerTest {
 
         boolean isUpToDate = checker.isUpToDate(outputPath, new URL("http://host/path"));
 
-        Assertions.assertThat(isUpToDate).isEqualTo(true);
+        verify(webClient).getHeaders(new URL("http://host/path"));
+        verifyNoMoreInteractions(webClient);
+        assertThat(isUpToDate).isEqualTo(true);
     }
 
     @Test
@@ -120,7 +117,7 @@ public class FileUpToDateCheckerTest {
 
         boolean isUpToDate = checker.isUpToDate(outputPath, inputPath);
 
-        Assertions.assertThat(isUpToDate).isEqualTo(false);
+        assertThat(isUpToDate).isEqualTo(false);
     }
 
     @Test
@@ -132,7 +129,7 @@ public class FileUpToDateCheckerTest {
 
         boolean isUpToDate = checker.isUpToDate(outputPath, inputPath);
 
-        Assertions.assertThat(isUpToDate).isEqualTo(false);
+        assertThat(isUpToDate).isEqualTo(false);
     }
 
     @Test
@@ -147,7 +144,7 @@ public class FileUpToDateCheckerTest {
 
         boolean isUpToDate = checker.isUpToDate(outputPath, inputPath);
 
-        Assertions.assertThat(isUpToDate).isEqualTo(false);
+        assertThat(isUpToDate).isEqualTo(false);
     }
 
     @Test
@@ -162,6 +159,6 @@ public class FileUpToDateCheckerTest {
 
         boolean isUpToDate = checker.isUpToDate(outputPath, inputPath);
 
-        Assertions.assertThat(isUpToDate).isEqualTo(true);
+        assertThat(isUpToDate).isEqualTo(true);
     }
 }

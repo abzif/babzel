@@ -103,8 +103,8 @@
                             <include>**/babzel/**</include>
                         </includes>
                         <excludes>
-                            <exclude>**/*Config.class</exclude>
-                            <exclude>**/*Cmd.class</exclude>
+                            <exclude>**/*Config*.class</exclude>
+                            <exclude>**/*Cmd*.class</exclude>
                         </excludes>
                         <rules>
                             <rule>
@@ -285,11 +285,11 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!-- htmlunit -->
+            <!-- jsoup html parser -->
             <dependency>
-                <groupId>net.sourceforge.htmlunit</groupId>
-                <artifactId>htmlunit</artifactId>
-                <version>2.64.0</version>
+                <groupId>org.jsoup</groupId>
+                <artifactId>jsoup</artifactId>
+                <version>1.15.3</version>
             </dependency>
             <!-- common compress -->
             <dependency>

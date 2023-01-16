@@ -13,13 +13,9 @@
  */
 package org.babzel.tools.util;
 
-import com.gargoylesoftware.htmlunit.Page;
-import com.gargoylesoftware.htmlunit.WebClient;
-import java.io.InputStream;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.StandardCopyOption;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
@@ -29,15 +25,12 @@ import org.springframework.stereotype.Component;
 @RequiredArgsConstructor
 public class FileDownloader {
     @NonNull
-    private final WebClientFactory webClientFactory;
+    private final WebClient webClient;
 
     @SneakyThrows
     public void downloadFile(@NonNull URL inputURL, @NonNull Path outputPath) {
-        WebClient webClient = webClientFactory.createWebClient();
-        Page page = webClient.getPage(inputURL);
-        try ( InputStream in = page.getWebResponse().getContentAsStream()) {
-            PathUtils.createParentDirectories(outputPath);
-            Files.copy(in, outputPath, StandardCopyOption.REPLACE_EXISTING);
-        }
+        var bytes = webClient.readContentAsBytes(inputURL);
+        PathUtils.createParentDirectories(outputPath);
+        Files.write(outputPath, bytes);
     }
 }

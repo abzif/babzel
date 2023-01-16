@@ -13,10 +13,8 @@
  */
 package org.babzel.tools.util;
 
-import com.gargoylesoftware.htmlunit.HttpMethod;
-import com.gargoylesoftware.htmlunit.Page;
-import com.gargoylesoftware.htmlunit.WebClient;
-import com.gargoylesoftware.htmlunit.WebRequest;
+import io.vavr.collection.Map;
+import io.vavr.control.Option;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -31,24 +29,23 @@ import org.springframework.stereotype.Component;
 @Component
 @RequiredArgsConstructor
 public class FileUpToDateChecker {
-    private final WebClientFactory webClientFactory;
+    @NonNull
+    private final WebClient webClient;
 
     @SneakyThrows
     public boolean isUpToDate(@NonNull Path outputPath, @NonNull URL inputURL) {
         if (Files.exists(outputPath)) {
             FileTime outputLastModified = Files.getLastModifiedTime(outputPath);
             long outputFileLength = Files.size(outputPath);
-            WebClient webClient = webClientFactory.createWebClient();
-            WebRequest webRequest = new WebRequest(inputURL, HttpMethod.HEAD);
-            Page page = webClient.getPage(webRequest);
-            String lastModifiedHeader = page.getWebResponse().getResponseHeaderValue("Last-Modified");
-            String contentLengthHeader = page.getWebResponse().getResponseHeaderValue("Content-Length");
-            if (lastModifiedHeader != null || contentLengthHeader != null) {
-                boolean lastModifiedUpToDate = lastModifiedHeader != null
-                        ? getLastModifiedMillis(lastModifiedHeader) <= outputLastModified.toMillis()
+            Map<String, String> headers = webClient.getHeaders(inputURL);
+            Option<String> lastModifiedHeader = headers.get("Last-Modified");
+            Option<String> contentLengthHeader = headers.get("Content-Length");
+            if (lastModifiedHeader.isDefined() || contentLengthHeader.isDefined()) {
+                boolean lastModifiedUpToDate = lastModifiedHeader.isDefined()
+                        ? getLastModifiedMillis(lastModifiedHeader.get()) <= outputLastModified.toMillis()
                         : true;
-                boolean contentLengthUpToDate = contentLengthHeader != null
-                        ? getContentLength(contentLengthHeader) <= outputFileLength
+                boolean contentLengthUpToDate = contentLengthHeader.isDefined()
+                        ? getContentLength(contentLengthHeader.get()) <= outputFileLength
                         : true;
                 return lastModifiedUpToDate && contentLengthUpToDate;
             }

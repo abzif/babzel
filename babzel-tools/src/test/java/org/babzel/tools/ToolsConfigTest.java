@@ -13,8 +13,6 @@
  */
 package org.babzel.tools;
 
-import com.gargoylesoftware.htmlunit.MockWebConnection;
-import com.gargoylesoftware.htmlunit.WebClient;
 import com.google.common.jimfs.Jimfs;
 import java.nio.file.FileSystem;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -23,9 +21,10 @@ import org.babzel.tools.opennlp.unidep.UniDepConlluModelProcessor;
 import org.babzel.tools.util.ResourceDirectorySupplier;
 import org.babzel.tools.util.RootDirectorySupplier;
 import org.babzel.tools.util.TextNormalizer;
-import org.babzel.tools.util.WebClientFactory;
+import org.babzel.tools.util.WebClient;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import static org.mockito.Mockito.mock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -39,13 +38,8 @@ public class ToolsConfigTest {
     public static class XToolsConfig extends ToolsConfig {
         @Override
         @Bean
-        public WebClientFactory webClientFactory() {
-            return () -> createMockedWebClient(mockWebConnection());
-        }
-
-        @Bean
-        public MockWebConnection mockWebConnection() {
-            return new MockWebConnection();
+        public WebClient webClient() {
+            return mock(WebClient.class);
         }
 
         @Override
@@ -57,12 +51,6 @@ public class ToolsConfigTest {
         @Bean
         public FileSystem fileSystem() {
             return Jimfs.newFileSystem();
-        }
-
-        public static WebClient createMockedWebClient(MockWebConnection mockWebConnection) {
-            WebClient webClient = ToolsConfig.createSimpleWebClient();
-            webClient.setWebConnection(mockWebConnection);
-            return webClient;
         }
 
         @Bean

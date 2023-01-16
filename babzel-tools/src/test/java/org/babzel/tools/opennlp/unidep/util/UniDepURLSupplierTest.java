@@ -13,38 +13,56 @@
  */
 package org.babzel.tools.opennlp.unidep.util;
 
-import com.gargoylesoftware.htmlunit.MockWebConnection;
 import java.net.URL;
 import static org.assertj.core.api.Assertions.assertThat;
-import org.babzel.tools.ToolsConfig;
-import org.junit.jupiter.api.BeforeEach;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import org.babzel.tools.util.WebClient;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.BDDMockito.given;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.verifyNoMoreInteractions;
+import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.util.FileCopyUtils;
 
+@ExtendWith(MockitoExtension.class)
 public class UniDepURLSupplierTest {
-    private MockWebConnection mockWebConnection;
+    @Mock
+    private WebClient webClient;
+    @InjectMocks
     private UniDepURLSupplier supplier;
 
-    @BeforeEach
-    public void setUp() {
-        mockWebConnection = new MockWebConnection();
-        var webClient = ToolsConfig.createSimpleWebClient();
-        webClient.setWebConnection(mockWebConnection);
-        supplier = new UniDepURLSupplier(() -> webClient);
+    @Test
+    public void supplyTreebankURLIncorrectMainPage() throws Exception {
+        given(webClient.readContentAsBytes(any())).willReturn("".getBytes());
+
+        assertThatThrownBy(() -> supplier.supplyTreebankURL());
+    }
+
+    @Test
+    public void supplyTreebankURLIncorrectDownloadPage() throws Exception {
+        given(webClient.readContentAsBytes(any())).willReturn(copyClassPathResourceAsBytes("uni-dep-main.html"), "".getBytes());
+
+        assertThatThrownBy(() -> supplier.supplyTreebankURL());
     }
 
     @Test
     public void supplyTreebankURL() throws Exception {
-        mockWebConnection.setResponse(new URL("http://universaldependencies.org/"), copyClassPathResourceToString("uni-dep-main.html"));
-        mockWebConnection.setResponse(new URL("http://hdl.handle.net/11234/1-4611"), copyClassPathResourceToString("uni-dep-download.html"));
+        given(webClient.readContentAsBytes(any())).willReturn(copyClassPathResourceAsBytes("uni-dep-main.html"), copyClassPathResourceAsBytes("uni-dep-download.html"));
 
         var url = supplier.supplyTreebankURL();
 
-        assertThat(url).isEqualTo(new URL("http://hdl.handle.net/repository/xmlui/bitstream/handle/11234/1-4611/ud-treebanks-v2.9.tgz?sequence=1&isAllowed=y"));
+        verify(webClient).readContentAsBytes(new URL("http://universaldependencies.org"));
+        verify(webClient).readContentAsBytes(new URL("http://hdl.handle.net/11234/1-4611"));
+        verifyNoMoreInteractions(webClient);
+        assertThat(url).isEqualTo(new URL("https://lindat.mff.cuni.cz/repository/xmlui/bitstream/11234/1-4611/1/ud-treebanks-v2.9.tgz"));
     }
 
-    private String copyClassPathResourceToString(String path) throws Exception {
-        return new String(FileCopyUtils.copyToByteArray(new ClassPathResource(path, getClass()).getInputStream()));
+    private byte[] copyClassPathResourceAsBytes(String path) throws Exception {
+        return FileCopyUtils.copyToByteArray(new ClassPathResource(path, getClass()).getInputStream());
     }
 }

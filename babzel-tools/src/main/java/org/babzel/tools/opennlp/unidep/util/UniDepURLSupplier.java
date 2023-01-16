@@ -13,15 +13,12 @@
  */
 package org.babzel.tools.opennlp.unidep.util;
 
-import com.gargoylesoftware.htmlunit.WebClient;
-import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
-import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import java.net.URL;
-import java.util.Optional;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
-import org.babzel.tools.util.WebClientFactory;
+import org.babzel.tools.util.WebClient;
+import org.jsoup.Jsoup;
 import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 
@@ -29,31 +26,27 @@ import org.springframework.util.Assert;
 @RequiredArgsConstructor
 public class UniDepURLSupplier {
     @NonNull
-    private final WebClientFactory webClientFactory;
+    private final WebClient webClient;
 
     public URL supplyTreebankURL() {
-        WebClient webClient = webClientFactory.createWebClient();
-        HtmlAnchor treebankDownloadPageAnchor = supplyTreebankDownloadPageAnchor(webClient);
-        return supplyTreebankURL(webClient, treebankDownloadPageAnchor);
+        var treebankDownloadPageURL = supplyTreebankDownloadPageURL();
+        return supplyTreebankURL(treebankDownloadPageURL);
     }
 
     @SneakyThrows
-    private HtmlAnchor supplyTreebankDownloadPageAnchor(WebClient webClient) {
-        HtmlPage mainPage = webClient.getPage("http://universaldependencies.org");
-        Optional<HtmlAnchor> treebankDownloadPageAnchor = mainPage.getAnchors().stream()
-                .filter(a -> a.getHrefAttribute().contains("hdl.handle.net/11234"))
-                .findFirst();
-        Assert.isTrue(treebankDownloadPageAnchor.isPresent(), "Universal Dependencies treebank download page anchor not found");
-        return treebankDownloadPageAnchor.get();
+    private URL supplyTreebankDownloadPageURL() {
+        var uniDepURL = new URL("http://universaldependencies.org");
+        var htmlDoc = Jsoup.parse(new String(webClient.readContentAsBytes(uniDepURL)));
+        var treebankDownloadPageAnchors = htmlDoc.select("a[href*='hdl.handle.net/11234']");
+        Assert.isTrue(!treebankDownloadPageAnchors.isEmpty(), "Universal Dependencies treebank download page anchor not found");
+        return new URL(uniDepURL, treebankDownloadPageAnchors.attr("href"));
     }
 
     @SneakyThrows
-    private URL supplyTreebankURL(WebClient webClient, HtmlAnchor treebankDownloadPageAnchor) {
-        HtmlPage treebankDownloadPage = treebankDownloadPageAnchor.click();
-        Optional<HtmlAnchor> treebankAnchor = treebankDownloadPage.getAnchors().stream()
-                .filter(a -> a.getHrefAttribute().contains("ud-treebanks-v"))
-                .findFirst();
-        Assert.isTrue(treebankAnchor.isPresent(), "Universal Dependencies treebank download anchor not found");
-        return treebankDownloadPage.getFullyQualifiedUrl(treebankAnchor.get().getHrefAttribute());
+    private URL supplyTreebankURL(URL treebankDownloadPageURL) {
+        var htmlDoc = Jsoup.parse(new String(webClient.readContentAsBytes(treebankDownloadPageURL)));
+        var treebankAnchors = htmlDoc.select("meta[content*='ud-treebanks-v']");
+        Assert.isTrue(!treebankAnchors.isEmpty(), "Universal Dependencies treebank download anchor not found");
+        return new URL(treebankDownloadPageURL, treebankAnchors.attr("content"));
     }
 }

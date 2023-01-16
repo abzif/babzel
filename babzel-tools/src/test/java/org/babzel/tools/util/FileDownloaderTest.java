@@ -13,34 +13,35 @@
  */
 package org.babzel.tools.util;
 
-import com.gargoylesoftware.htmlunit.MockWebConnection;
 import com.google.common.jimfs.Jimfs;
 import java.net.URL;
-import java.nio.file.Path;
-import org.assertj.core.api.Assertions;
-import org.babzel.tools.ToolsConfig;
-import org.junit.jupiter.api.BeforeEach;
+import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.BDDMockito.given;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.verifyNoMoreInteractions;
+import org.mockito.junit.jupiter.MockitoExtension;
 
+@ExtendWith(MockitoExtension.class)
 public class FileDownloaderTest {
-    private MockWebConnection mockWebConnection;
+    @Mock
+    private WebClient webClient;
+    @InjectMocks
     private FileDownloader downloader;
-
-    @BeforeEach
-    public void setUp() {
-        mockWebConnection = new MockWebConnection();
-        var webClient = ToolsConfig.createSimpleWebClient();
-        webClient.setWebConnection(mockWebConnection);
-        downloader = new FileDownloader(() -> webClient);
-    }
 
     @Test
     public void downloadFile() throws Exception {
-        mockWebConnection.setResponse(new URL("http://host/p/file.txt"), "###content###");
-        Path outputPath = Jimfs.newFileSystem().getPath("some", "dir", "file.txt");
+        given(webClient.readContentAsBytes(any())).willReturn("###content###".getBytes());
+        var outputPath = Jimfs.newFileSystem().getPath("some", "dir", "file.txt");
 
         downloader.downloadFile(new URL("http://host/p/file.txt"), outputPath);
 
-        Assertions.assertThat(outputPath).content().isEqualTo("###content###");
+        verify(webClient).readContentAsBytes(new URL("http://host/p/file.txt"));
+        verifyNoMoreInteractions(webClient);
+        assertThat(outputPath).content().isEqualTo("###content###");
     }
 }
