@@ -13,24 +13,18 @@
  */
 package org.babzel.tools.util;
 
+import io.vavr.collection.Map;
+import io.vavr.control.Option;
 import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
-import lombok.SneakyThrows;
-import org.springframework.stereotype.Component;
+import lombok.Value;
 
-@Component
-@RequiredArgsConstructor
-public class FileDownloader {
+@Value
+public class WebResponse {
     @NonNull
-    private final WebClient webClient;
-
-    @SneakyThrows
-    public void downloadFile(@NonNull URL inputURL, @NonNull Path outputPath) {
-        var bytes = webClient.makeGetRequest(inputURL).getBody().getOrElse(new byte[0]);
-        PathUtils.createParentDirectories(outputPath);
-        Files.write(outputPath, bytes);
-    }
+    private final URL url;
+    @NonNull
+    private final Map<String, String> headers;
+    @NonNull
+    private final Option<byte[]> body;
 }

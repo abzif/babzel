@@ -36,17 +36,19 @@ public class UniDepURLSupplier {
     @SneakyThrows
     private URL supplyTreebankDownloadPageURL() {
         var uniDepURL = new URL("http://universaldependencies.org");
-        var htmlDoc = Jsoup.parse(new String(webClient.readContentAsBytes(uniDepURL)));
+        var response = webClient.makeGetRequest(uniDepURL);
+        var htmlDoc = Jsoup.parse(new String(response.getBody().getOrElse(new byte[0])));
         var treebankDownloadPageAnchors = htmlDoc.select("a[href*='hdl.handle.net/11234']");
         Assert.isTrue(!treebankDownloadPageAnchors.isEmpty(), "Universal Dependencies treebank download page anchor not found");
-        return new URL(treebankDownloadPageAnchors.attr("href"));
+        return new URL(response.getUrl(), treebankDownloadPageAnchors.attr("href"));
     }
 
     @SneakyThrows
     private URL supplyTreebankURL(URL treebankDownloadPageURL) {
-        var htmlDoc = Jsoup.parse(new String(webClient.readContentAsBytes(treebankDownloadPageURL)));
-        var treebankAnchors = htmlDoc.select("meta[content*='ud-treebanks-v']");
+        var response = webClient.makeGetRequest(treebankDownloadPageURL);
+        var htmlDoc = Jsoup.parse(new String(response.getBody().getOrElse(new byte[0])));
+        var treebankAnchors = htmlDoc.select("a[href*='ud-treebanks-v']");
         Assert.isTrue(!treebankAnchors.isEmpty(), "Universal Dependencies treebank download anchor not found");
-        return new URL(treebankAnchors.attr("content"));
+        return new URL(response.getUrl(), treebankAnchors.attr("href"));
     }
 }

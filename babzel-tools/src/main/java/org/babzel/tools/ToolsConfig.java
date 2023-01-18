@@ -14,7 +14,7 @@
 package org.babzel.tools;
 
 import io.vavr.collection.HashMap;
-import io.vavr.collection.Map;
+import io.vavr.control.Option;
 import java.net.URL;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -24,6 +24,7 @@ import java.time.Duration;
 import lombok.SneakyThrows;
 import org.babzel.tools.util.RootDirectorySupplier;
 import org.babzel.tools.util.WebClient;
+import org.babzel.tools.util.WebResponse;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -42,18 +43,18 @@ public class ToolsConfig {
         return new WebClient() {
             @Override
             @SneakyThrows
-            public byte[] readContentAsBytes(URL url) {
+            public WebResponse makeGetRequest(URL url) {
                 var request = HttpRequest.newBuilder().GET().uri(url.toURI()).build();
                 var response = httpClient.send(request, HttpResponse.BodyHandlers.ofByteArray());
-                return response.body();
+                return new WebResponse(response.request().uri().toURL(), HashMap.ofAll(response.headers().map()).mapValues(vl -> vl.get(0)), Option.some(response.body()));
             }
 
             @Override
             @SneakyThrows
-            public Map<String, String> getHeaders(URL url) {
+            public WebResponse makeHeadRequest(URL url) {
                 var request = HttpRequest.newBuilder().method("HEAD", HttpRequest.BodyPublishers.noBody()).uri(url.toURI()).build();
                 var response = httpClient.send(request, HttpResponse.BodyHandlers.ofByteArray());
-                return HashMap.ofAll(response.headers().map()).mapValues(vl -> vl.get(0));
+                return new WebResponse(response.request().uri().toURL(), HashMap.ofAll(response.headers().map()).mapValues(vl -> vl.get(0)), Option.none());
             }
         };
     }

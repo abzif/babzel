@@ -13,11 +13,10 @@
  */
 package org.babzel.tools.util;
 
-import io.vavr.collection.Map;
 import java.net.URL;
 
 public interface WebClient {
-    public byte[] readContentAsBytes(URL url);
+    public WebResponse makeGetRequest(URL url);
 
-    public Map<String, String> getHeaders(URL url);
+    public WebResponse makeHeadRequest(URL url);
 }

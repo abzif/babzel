@@ -15,6 +15,7 @@ package org.babzel.tools.util;
 
 import com.google.common.jimfs.Jimfs;
 import io.vavr.collection.HashMap;
+import io.vavr.control.Option;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -42,68 +43,85 @@ public class FileUpToDateCheckerTest {
 
     @Test
     public void urlDependent_OutputPathDoesNotExists() throws Exception {
+        URL url = new URL("http://host/path");
         Path rootPath = Jimfs.newFileSystem().getPath("");
         Path outputPath = rootPath.resolve("output.txt");
 
-        boolean isUpToDate = checker.isUpToDate(outputPath, new URL("http://host/path"));
+        boolean isUpToDate = checker.isUpToDate(outputPath, url);
 
         assertThat(isUpToDate).isEqualTo(false);
     }
 
     @Test
     public void urlDependent_NoHeadersToCheck() throws Exception {
-        given(webClient.getHeaders(any())).willReturn(HashMap.empty());
+        URL url = new URL("http://host/path");
+        given(webClient.makeHeadRequest(any())).willReturn(new WebResponse(
+                url,
+                HashMap.empty(),
+                Option.none()));
         Path rootPath = Jimfs.newFileSystem().getPath("");
         Path outputPath = rootPath.resolve("output.txt");
         Files.writeString(outputPath, "output");
 
-        boolean isUpToDate = checker.isUpToDate(outputPath, new URL("http://host/path"));
+        boolean isUpToDate = checker.isUpToDate(outputPath, url);
 
-        verify(webClient).getHeaders(new URL("http://host/path"));
+        verify(webClient).makeHeadRequest(url);
         verifyNoMoreInteractions(webClient);
         assertThat(isUpToDate).isEqualTo(false);
     }
 
     @Test
     public void urlDependent_LastModifiedCheckFails() throws Exception {
-        given(webClient.getHeaders(any())).willReturn(HashMap.of("Last-Modified", "Thu, 04 Nov 2021 16:31:21 GMT"));
+        URL url = new URL("http://host/path");
+        given(webClient.makeHeadRequest(any())).willReturn(new WebResponse(
+                url,
+                HashMap.of("last-modified", "Thu, 04 Nov 2021 16:31:21 GMT"),
+                Option.none()));
         Path rootPath = Jimfs.newFileSystem().getPath("");
         Path outputPath = rootPath.resolve("output.txt");
         Files.writeString(outputPath, "output");
         Files.setLastModifiedTime(outputPath, FileTime.from(ZonedDateTime.of(2021, 11, 4, 16, 31, 20, 0, ZoneId.ofOffset("", ZoneOffset.UTC)).toInstant()));
 
-        boolean isUpToDate = checker.isUpToDate(outputPath, new URL("http://host/path"));
+        boolean isUpToDate = checker.isUpToDate(outputPath, url);
 
-        verify(webClient).getHeaders(new URL("http://host/path"));
+        verify(webClient).makeHeadRequest(url);
         verifyNoMoreInteractions(webClient);
         assertThat(isUpToDate).isEqualTo(false);
     }
 
     @Test
     public void urlDependent_ContentLengthCheckFails() throws Exception {
-        given(webClient.getHeaders(any())).willReturn(HashMap.of("Content-Length", "333"));
+        URL url = new URL("http://host/path");
+        given(webClient.makeHeadRequest(any())).willReturn(new WebResponse(
+                url,
+                HashMap.of("content-length", "333"),
+                Option.none()));
         Path rootPath = Jimfs.newFileSystem().getPath("");
         Path outputPath = rootPath.resolve("output.txt");
         Files.writeString(outputPath, "output");
 
-        boolean isUpToDate = checker.isUpToDate(outputPath, new URL("http://host/path"));
+        boolean isUpToDate = checker.isUpToDate(outputPath, url);
 
-        verify(webClient).getHeaders(new URL("http://host/path"));
+        verify(webClient).makeHeadRequest(url);
         verifyNoMoreInteractions(webClient);
         assertThat(isUpToDate).isEqualTo(false);
     }
 
     @Test
     public void urlDependent_UpToDate() throws Exception {
-        given(webClient.getHeaders(any())).willReturn(HashMap.of("Last-Modified", "Thu, 04 Nov 2021 16:31:21 GMT", "Content-Length", "6"));
+        URL url = new URL("http://host/path");
+        given(webClient.makeHeadRequest(any())).willReturn(new WebResponse(
+                url,
+                HashMap.of("last-modified", "Thu, 04 Nov 2021 16:31:21 GMT", "content-length", "6"),
+                Option.none()));
         Path rootPath = Jimfs.newFileSystem().getPath("");
         Path outputPath = rootPath.resolve("output.txt");
         Files.writeString(outputPath, "output");
         Files.setLastModifiedTime(outputPath, FileTime.from(ZonedDateTime.of(2021, 11, 4, 16, 31, 21, 0, ZoneId.ofOffset("", ZoneOffset.UTC)).toInstant()));
 
-        boolean isUpToDate = checker.isUpToDate(outputPath, new URL("http://host/path"));
+        boolean isUpToDate = checker.isUpToDate(outputPath, url);
 
-        verify(webClient).getHeaders(new URL("http://host/path"));
+        verify(webClient).makeHeadRequest(url);
         verifyNoMoreInteractions(webClient);
         assertThat(isUpToDate).isEqualTo(true);
     }

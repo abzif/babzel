@@ -14,6 +14,8 @@
 package org.babzel.tools.util;
 
 import com.google.common.jimfs.Jimfs;
+import io.vavr.collection.HashMap;
+import io.vavr.control.Option;
 import java.net.URL;
 import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.jupiter.api.Test;
@@ -35,12 +37,15 @@ public class FileDownloaderTest {
 
     @Test
     public void downloadFile() throws Exception {
-        given(webClient.readContentAsBytes(any())).willReturn("###content###".getBytes());
+        given(webClient.makeGetRequest(any())).willReturn(new WebResponse(
+                new URL("http://host/path"),
+                HashMap.empty(),
+                Option.some("###content###".getBytes())));
         var outputPath = Jimfs.newFileSystem().getPath("some", "dir", "file.txt");
 
         downloader.downloadFile(new URL("http://host/p/file.txt"), outputPath);
 
-        verify(webClient).readContentAsBytes(new URL("http://host/p/file.txt"));
+        verify(webClient).makeGetRequest(new URL("http://host/p/file.txt"));
         verifyNoMoreInteractions(webClient);
         assertThat(outputPath).content().isEqualTo("###content###");
     }

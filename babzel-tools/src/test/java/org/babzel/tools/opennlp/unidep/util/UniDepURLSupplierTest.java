@@ -13,10 +13,13 @@
  */
 package org.babzel.tools.opennlp.unidep.util;
 
+import io.vavr.collection.HashMap;
+import io.vavr.control.Option;
 import java.net.URL;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import org.babzel.tools.util.WebClient;
+import org.babzel.tools.util.WebResponse;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import static org.mockito.ArgumentMatchers.any;
@@ -38,28 +41,33 @@ public class UniDepURLSupplierTest {
 
     @Test
     public void supplyTreebankURLIncorrectMainPage() throws Exception {
-        given(webClient.readContentAsBytes(any())).willReturn("".getBytes());
+        given(webClient.makeGetRequest(any())).willReturn(
+                new WebResponse(new URL("http://host/path"), HashMap.empty(), Option.none()));
 
         assertThatThrownBy(() -> supplier.supplyTreebankURL());
     }
 
     @Test
     public void supplyTreebankURLIncorrectDownloadPage() throws Exception {
-        given(webClient.readContentAsBytes(any())).willReturn(copyClassPathResourceAsBytes("uni-dep-main.html"), "".getBytes());
+        given(webClient.makeGetRequest(any())).willReturn(
+                new WebResponse(new URL("http://host1/path1"), HashMap.empty(), Option.some(copyClassPathResourceAsBytes("uni-dep-main.html"))),
+                new WebResponse(new URL("http://host2/path2"), HashMap.empty(), Option.none()));
 
         assertThatThrownBy(() -> supplier.supplyTreebankURL());
     }
 
     @Test
     public void supplyTreebankURL() throws Exception {
-        given(webClient.readContentAsBytes(any())).willReturn(copyClassPathResourceAsBytes("uni-dep-main.html"), copyClassPathResourceAsBytes("uni-dep-download.html"));
+        given(webClient.makeGetRequest(any())).willReturn(
+                new WebResponse(new URL("http://host1/path1"), HashMap.empty(), Option.some(copyClassPathResourceAsBytes("uni-dep-main.html"))),
+                new WebResponse(new URL("http://host2/path2"), HashMap.empty(), Option.some(copyClassPathResourceAsBytes("uni-dep-download.html"))));
 
         var url = supplier.supplyTreebankURL();
 
-        verify(webClient).readContentAsBytes(new URL("http://universaldependencies.org"));
-        verify(webClient).readContentAsBytes(new URL("http://hdl.handle.net/11234/1-4611"));
+        verify(webClient).makeGetRequest(new URL("http://universaldependencies.org"));
+        verify(webClient).makeGetRequest(new URL("http://hdl.handle.net/11234/1-4611"));
         verifyNoMoreInteractions(webClient);
-        assertThat(url).isEqualTo(new URL("https://lindat.mff.cuni.cz/repository/xmlui/bitstream/11234/1-4611/1/ud-treebanks-v2.9.tgz"));
+        assertThat(url).isEqualTo(new URL("http://host2/repository/xmlui/bitstream/handle/11234/1-4611/ud-treebanks-v2.9.tgz?sequence=1&isAllowed=y"));
     }
 
     private byte[] copyClassPathResourceAsBytes(String path) throws Exception {

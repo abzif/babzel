@@ -37,9 +37,9 @@ public class FileUpToDateChecker {
         if (Files.exists(outputPath)) {
             FileTime outputLastModified = Files.getLastModifiedTime(outputPath);
             long outputFileLength = Files.size(outputPath);
-            Map<String, String> headers = webClient.getHeaders(inputURL);
-            Option<String> lastModifiedHeader = headers.get("Last-Modified");
-            Option<String> contentLengthHeader = headers.get("Content-Length");
+            Map<String, String> headers = webClient.makeHeadRequest(inputURL).getHeaders();
+            Option<String> lastModifiedHeader = headers.get("last-modified");
+            Option<String> contentLengthHeader = headers.get("content-length");
             if (lastModifiedHeader.isDefined() || contentLengthHeader.isDefined()) {
                 boolean lastModifiedUpToDate = lastModifiedHeader.isDefined()
                         ? getLastModifiedMillis(lastModifiedHeader.get()) <= outputLastModified.toMillis()
