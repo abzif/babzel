@@ -75,7 +75,12 @@ String getTrainingAlgorithm(Path reportFile) throws Exception {
 }
 
 String getEvaluationScore(Path reportFile) throws Exception {
-    return getPropertyValue(reportFile, "Evaluation-Score");
+    try {
+        double evaluationScore = Double.parseDouble(getPropertyValue(reportFile, "Evaluation-Score"));
+        return String.format("%.02f", evaluationScore);
+    } catch (NumberFormatException e) {
+        return "?";
+    }
 }
 
 String createLanguageHeader(Path workDir, String languageCode) throws Exception {

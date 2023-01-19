@@ -16,6 +16,7 @@ package org.babzel.tools.opennlp.model.train;
 import io.vavr.collection.Seq;
 import io.vavr.control.Option;
 import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import opennlp.tools.sentdetect.SentenceDetectorFactory;
 import opennlp.tools.sentdetect.SentenceDetectorME;
@@ -23,11 +24,16 @@ import opennlp.tools.sentdetect.SentenceModel;
 import opennlp.tools.sentdetect.SentenceSample;
 import opennlp.tools.util.InsufficientTrainingDataException;
 import opennlp.tools.util.TrainingParameters;
+import org.babzel.tools.opennlp.model.util.EOSCharsSupplier;
 import org.babzel.tools.opennlp.model.util.SeqObjectStream;
 import org.springframework.stereotype.Component;
 
 @Component
+@RequiredArgsConstructor
 public class SentenceModelTrainer implements ModelTrainer<SentenceModel, SentenceSample> {
+    @NonNull
+    private final EOSCharsSupplier eosCharsSupplier;
+
     @Override
     @SneakyThrows
     public Option<SentenceModel> trainModel(@NonNull String algorithm, @NonNull String language, @NonNull Seq<SentenceSample> samples) {
@@ -37,11 +43,18 @@ public class SentenceModelTrainer implements ModelTrainer<SentenceModel, Sentenc
             var model = SentenceDetectorME.train(
                     language,
                     new SeqObjectStream<>(samples),
-                    new SentenceDetectorFactory(language, true, null, null),
+                    new SentenceDetectorFactory(language, true, null, getEosChars(language)),
                     params);
             return Option.some(model);
         } catch (InsufficientTrainingDataException e) {
             return Option.none();
         }
+    }
+
+    private char[] getEosChars(String language) {
+        var eosChars = eosCharsSupplier.getEOSChars(language);
+        var eosCharsPrimitive = new char[eosChars.size()];
+        eosChars.zipWithIndex().forEach(t -> eosCharsPrimitive[t._2] = t._1);
+        return eosCharsPrimitive;
     }
 }

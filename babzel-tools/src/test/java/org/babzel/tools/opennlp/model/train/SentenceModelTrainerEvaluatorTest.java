@@ -20,25 +20,43 @@ import opennlp.tools.util.Span;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import org.babzel.tools.opennlp.model.ModelAlgorithm;
+import org.babzel.tools.opennlp.model.util.EOSCharsSupplier;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.BDDMockito.given;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 
+@ExtendWith(MockitoExtension.class)
 public class SentenceModelTrainerEvaluatorTest {
-    private SentenceModelTrainer trainer = new SentenceModelTrainer();
-    private SentenceModelEvaluator evaluator = new SentenceModelEvaluator();
+    @Mock
+    private EOSCharsSupplier eosCharsSupplier;
+    @InjectMocks
+    private SentenceModelTrainer trainer;
+    @InjectMocks
+    private SentenceModelEvaluator evaluator;
+
+    @BeforeEach
+    private void setUp() {
+        given(eosCharsSupplier.getEOSChars(any())).willReturn(Vector.ofAll('#', '@', '$'));
+    }
 
     @Test
     public void trainEvaluate() {
         Seq<SentenceSample> trainSamples = Vector.of(
-                createSample("a1! a2."),
-                createSample("b1? b2!"),
-                createSample("c1? c2?"),
-                createSample("d1. d2."),
-                createSample("e1. e2!"),
-                createSample("f1! f2?"));
+                createSample("a1# a2@"),
+                createSample("b1$ b2#"),
+                createSample("c1$ c2$"),
+                createSample("d1@ d2@"),
+                createSample("e1@ e2#"),
+                createSample("f1# f2$"));
         Seq<SentenceSample> evalSamples = Vector.of(
-                createSample("g1 g2."),
-                createSample("h1 h2!"),
-                createSample("i1 i2?"));
+                createSample("g1 g2@"),
+                createSample("h1 h2#"),
+                createSample("i1 i2$"));
 
         var modelOpt = trainer.trainModel(ModelAlgorithm.MAXENT_QN, "lx", trainSamples);
         assertThat(modelOpt).isNotEmpty();
