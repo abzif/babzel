@@ -74,9 +74,9 @@ String getTrainingAlgorithm(Path reportFile) throws Exception {
     return getPropertyValue(reportFile, "Training-Algorithm");
 }
 
-String getEvaluationScore(Path reportFile) throws Exception {
+String getEvaluationScoreInPercent(Path reportFile) throws Exception {
     try {
-        double evaluationScore = Double.parseDouble(getPropertyValue(reportFile, "Evaluation-Score"));
+        double evaluationScore = Double.parseDouble(getPropertyValue(reportFile, "Evaluation-Score")) * 100;
         return String.format("%.02f", evaluationScore);
     } catch (NumberFormatException e) {
         return "?";
@@ -103,8 +103,8 @@ String createModelLine(Path workDir, String languageCode, String normalizerType,
     String reportFileName = getReportFileName(languageCode, modelType);
     Path reportPath = workDir.resolve(resourceDirName).resolve(reportFileName);
     String algorithm = getTrainingAlgorithm(reportPath);
-    String score = getEvaluationScore(reportPath);
-    return String.format("     - model file: **[%s](models/%s/%s)**, evaluation report: **[%s](models/%s/%s)**, training algorithm: **%s**, evaluation score: **%s**",
+    String score = getEvaluationScoreInPercent(reportPath);
+    return String.format("     - model file: **[%s](models/%s/%s)**, evaluation report: **[%s](models/%s/%s)**, training algorithm: **%s**, evaluation score: **%s**%%",
             modelFileName, resourceDirName, modelFileName,
             reportFileName, resourceDirName, reportFileName,
             algorithm, score);
