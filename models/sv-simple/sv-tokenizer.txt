@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9990025435140392
-Training-Sample-Size=10909
-Evaluation-Sample-Size=1212
+Evaluation-Score=0.9995799613564449
+Training-Sample-Size=10143
+Evaluation-Sample-Size=1126
 Training-Algorithm=MAXENT_QN
 
 === MODEL PROPERTIES ===
@@ -9,71 +9,23 @@ Component-Name=TokenizerME
 Language=sv
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1674455716541
+Timestamp=1677222655888
 TrainerType=Event
-Training-Eventhash=91561913144f280bb03d7303d1cdba6b
+Training-Eventhash=c57a4aaa4b3ed02f5188784dd22df9f7
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
 
 === MISCLASSIFIED DETAILS ===
 Expected: {
-vivien bayleys livliga<SPLIT>, ivriga ansikte blandade sig i konversationen i förbifarten<SPLIT>:<SPLIT>... det där var hjalmar wentz' dotter<SPLIT>... som du satt bredvid<SPLIT>.}
+adnan z. amin<SPLIT>, generaldirektör för den internationella organisationen för förnyelsebara energier (<SPLIT>irena<SPLIT>)<SPLIT>, är säker<SPLIT>: ”<SPLIT>vindkraft till havs kan bli den största energikällan i en global ekonomi som är fri från kolbaserad energi<SPLIT>.<SPLIT>”}
 Predicted: {
-vivien bayleys livliga<SPLIT>, ivriga ansikte blandade sig i konversationen i förbifarten<SPLIT>:<SPLIT>... det där var hjalmar wentz<SPLIT>' dotter<SPLIT>... som du satt bredvid<SPLIT>.}
+adnan z<SPLIT>. amin<SPLIT>, generaldirektör för den internationella organisationen för förnyelsebara energier (<SPLIT>irena<SPLIT>)<SPLIT>, är säker<SPLIT>: ”<SPLIT>vindkraft till havs kan bli den största energikällan i en global ekonomi som är fri från kolbaserad energi<SPLIT>.<SPLIT>”}
 False positives: {
-wentz
-'
+z
+.
 } False negatives: {
-wentz'
-}
-
-Expected: {
-lägg också märke till entiteten &apos;<SPLIT>, som kommer att omvandlas till en apostrof när informationen importeras av mottagarprogrammet<SPLIT>.}
-Predicted: {
-lägg också märke till entiteten &apos<SPLIT>;<SPLIT>, som kommer att omvandlas till en apostrof när informationen importeras av mottagarprogrammet<SPLIT>.}
-False positives: {
-&apos
-;
-} False negatives: {
-&apos;
-}
-
-Expected: {
-en fn-rapport över nationella planer för att minska kolet säger att de är långt under de nivåer som behövs för att hålla ökningen av den globala temperaturen under 2 °<SPLIT>c<SPLIT>.}
-Predicted: {
-en fn-rapport över nationella planer för att minska kolet säger att de är långt under de nivåer som behövs för att hålla ökningen av den globala temperaturen under 2 °c<SPLIT>.}
-False positives: {
-°c
-} False negatives: {
-°
-c
-}
-
-Expected: {
-senare<SPLIT>, när augustus grundade det romerska imperiet hänvisade romarna till medelhavet som mare nostrum (<SPLIT>”<SPLIT>vårt hav<SPLIT>”<SPLIT>)<SPLIT>.}
-Predicted: {
-senare<SPLIT>, när augustus grundade det romerska imperiet hänvisade romarna till medelhavet som mare nostrum (<SPLIT>”vårt hav”<SPLIT>)<SPLIT>.}
-False positives: {
-”vårt
-hav”
-} False negatives: {
-”
-vårt
-hav
-”
-}
-
-Expected: {
-rafferty spelade in en ny version av sin humblebums-låt ”<SPLIT>her father did<SPLIT>n't like me anyway<SPLIT>” på albumet over my head (<SPLIT>1994<SPLIT>)<SPLIT>.}
-Predicted: {
-rafferty spelade in en ny version av sin humblebums-låt ”<SPLIT>her father didn<SPLIT>'t like me anyway<SPLIT>” på albumet over my head (<SPLIT>1994<SPLIT>)<SPLIT>.}
-False positives: {
-didn
-'t
-} False negatives: {
-did
-n't
+z.
 }
 
 Expected: {
@@ -88,59 +40,34 @@ ms.
 }
 
 Expected: {
-8. ur a. i. rabin<SPLIT>: kibbutzchildren - researchfindings to date<SPLIT>.}
+följden blir ett efterfrågeöverskott = e<SPLIT>.}
 Predicted: {
-8<SPLIT>. ur a. i<SPLIT>. rabin<SPLIT>: kibbutzchildren - researchfindings to date<SPLIT>.}
+följden blir ett efterfrågeöverskott = e.}
 False positives: {
-8
-.
-i
-.
+e.
 } False negatives: {
-8.
-i.
+e
+.
 }
 
 Expected: {
-del 2<SPLIT>:}
+se också sveri m.fl. , kap. 1<SPLIT>.}
 Predicted: {
-del 2:}
+se också sveri m.fl. , kap. 1.}
 False positives: {
-2:
+1.
 } False negatives: {
-2
-:
+1
+.
 }
 
 Expected: {
-ansökan beräknas lämnas till kungl. maj:t i juni 1970<SPLIT>.}
+1 i kor. 7:2<SPLIT>.}
 Predicted: {
-ansökan beräknas lämnas till kungl<SPLIT>. maj:t i juni 1970<SPLIT>.}
+1 i kor<SPLIT>. 7:2<SPLIT>.}
 False positives: {
-kungl
+kor
 .
 } False negatives: {
-kungl.
-}
-
-Expected: {
-socialt beteende kan även resultera i samverkan i större grupper<SPLIT>, ofta utan samband med fortplantningen (<SPLIT>fig. 20<SPLIT>)<SPLIT>.}
-Predicted: {
-socialt beteende kan även resultera i samverkan i större grupper<SPLIT>, ofta utan samband med fortplantningen (<SPLIT>fig<SPLIT>. 20<SPLIT>)<SPLIT>.}
-False positives: {
-fig
-.
-} False negatives: {
-fig.
-}
-
-Expected: {
-björn och visent stämplar sina revir med urin (<SPLIT>fig. 22<SPLIT>)<SPLIT>.}
-Predicted: {
-björn och visent stämplar sina revir med urin (<SPLIT>fig<SPLIT>. 22<SPLIT>)<SPLIT>.}
-False positives: {
-fig
-.
-} False negatives: {
-fig.
+kor.
 }

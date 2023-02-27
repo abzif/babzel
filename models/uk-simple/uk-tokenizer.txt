@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.996005326231691
-Training-Sample-Size=6376
-Evaluation-Sample-Size=708
+Evaluation-Score=0.9990319457889641
+Training-Sample-Size=6144
+Evaluation-Sample-Size=682
 Training-Algorithm=PERCEPTRON
 
 === MODEL PROPERTIES ===
@@ -9,269 +9,72 @@ Component-Name=TokenizerME
 Language=uk
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1674456201895
+Timestamp=1677223069512
 TrainerType=Event
-Training-Eventhash=d6ae2bc6f32a2547df5cdab2d39a8305
+Training-Eventhash=ff566597f193b367584c826f2a8c3df7
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
 
 === MISCLASSIFIED DETAILS ===
 Expected: {
-вони надсилатимуть інформацію про рівні води<SPLIT>, повітряні опади і температуру повітря і води до гідрометеорологічних центрів у луцьку<SPLIT>, україна<SPLIT>, і бресті<SPLIT>, білорусь<SPLIT>, і водночас розміщувати цю інформацію в режимі он-лайн<SPLIT>.}
+можна бути хрещеною матір"ю декільком діткам<SPLIT>, але хресна повинна усвідомлювати<SPLIT>, що вона відповідає за тих діток<SPLIT>.}
 Predicted: {
-вони надсилатимуть інформацію про рівні води<SPLIT>, повітряні опади і температуру повітря і води до гідрометеорологічних центрів у луцьку<SPLIT>, україна<SPLIT>, і бресті<SPLIT>, білорусь<SPLIT>, і водночас розміщувати цю інформацію в режимі он<SPLIT>-<SPLIT>лайн<SPLIT>.}
+можна бути хрещеною матір<SPLIT>"<SPLIT>ю декільком діткам<SPLIT>, але хресна повинна усвідомлювати<SPLIT>, що вона відповідає за тих діток<SPLIT>.}
 False positives: {
-он
--
-лайн
+матір
+"
+ю
 } False negatives: {
-он-лайн
+матір"ю
 }
 
 Expected: {
-караюча рука бійця упа досягла навіть найчільніших представників окупантів<SPLIT>, як от<SPLIT>: шефа са люце<SPLIT>, командуючого "<SPLIT>i-им українським фронтом<SPLIT>" ватутіна<SPLIT>, чи заступника міністра збройних сил польщі свєрчевського<SPLIT>.}
+про скандал у пісочниці<SPLIT>: як гройсман відібрав в омеляна паровозики<SPLIT>, а також про тіну кароль та двері в нарнію у шафі поліцейського — у новій серії «<SPLIT>#@)₴?$0 з майклом щуром<SPLIT>»}
 Predicted: {
-караюча рука бійця упа досягла навіть найчільніших представників окупантів<SPLIT>, як от<SPLIT>: шефа са люце<SPLIT>, командуючого "<SPLIT>i<SPLIT>-им українським фронтом<SPLIT>" ватутіна<SPLIT>, чи заступника міністра збройних сил польщі свєрчевського<SPLIT>.}
+про скандал у пісочниці<SPLIT>: як гройсман відібрав в омеляна паровозики<SPLIT>, а також про тіну кароль та двері в нарнію у шафі поліцейського — у новій серії «<SPLIT>#<SPLIT>@<SPLIT>)₴<SPLIT>?$<SPLIT>0 з майклом щуром<SPLIT>»}
 False positives: {
-i
--им
+#
+@
+)₴
+?$
+0
 } False negatives: {
-i-им
+#@)₴?$0
 }
 
 Expected: {
-не сподівалась від наших виконавців такого бруду на будь-кого зі свого цеху}
+на початку xxi ст<SPLIT>. глибина шахт сягає 3<SPLIT>,<SPLIT>5<SPLIT>-<SPLIT>4<SPLIT>,<SPLIT>5 км<SPLIT>. (<SPLIT>вугільні ш<SPLIT>. йдуть до відміток 1<SPLIT>,<SPLIT>3<SPLIT>-<SPLIT>1<SPLIT>,<SPLIT>5 км<SPLIT>, рудні до 4<SPLIT>,<SPLIT>5 км<SPLIT>)<SPLIT>.}
 Predicted: {
-не сподівалась від наших виконавців такого бруду на будь-<SPLIT>кого зі свого цеху}
+на початку xxi ст<SPLIT>. глибина шахт сягає 3<SPLIT>,<SPLIT>5<SPLIT>-<SPLIT>4<SPLIT>,<SPLIT>5 км<SPLIT>. (<SPLIT>вугільні ш<SPLIT>. йдуть до відміток 1<SPLIT>,<SPLIT>3<SPLIT>-<SPLIT>1,<SPLIT>5 км<SPLIT>, рудні до 4<SPLIT>,<SPLIT>5 км<SPLIT>)<SPLIT>.}
 False positives: {
-будь-
-кого
+1,
 } False negatives: {
-будь-кого
-}
-
-Expected: {
-разом з тим він переконаний<SPLIT>: яким урешті-решт буде врожай овочів<SPLIT>, залежить від того<SPLIT>, скільки праці вклали під час їх вирощування<SPLIT>.}
-Predicted: {
-разом з тим він переконаний<SPLIT>: яким урешті-<SPLIT>решт буде врожай овочів<SPLIT>, залежить від того<SPLIT>, скільки праці вклали під час їх вирощування<SPLIT>.}
-False positives: {
-урешті-
-решт
-} False negatives: {
-урешті-решт
-}
-
-Expected: {
-ага<SPLIT>))}
-Predicted: {
-ага<SPLIT>)<SPLIT>)}
-False positives: {
-)
-)
-} False negatives: {
-))
-}
-
-Expected: {
-у той же час кортеж дудаєва виїхав у район села гехі-чу<SPLIT>.}
-Predicted: {
-у той же час кортеж дудаєва виїхав у район села гехі<SPLIT>-<SPLIT>чу<SPLIT>.}
-False positives: {
-гехі
--
-чу
-} False negatives: {
-гехі-чу
-}
-
-Expected: {
-по-перше<SPLIT>,<SPLIT>ви тепер точно знаєте що праві<SPLIT>,<SPLIT>по-друге<SPLIT>,<SPLIT>ви виглядаєте гарною і молодою<SPLIT>,<SPLIT>і якщо у співрозмовника не вистачає не тільки аргументів<SPLIT>,<SPLIT>а і розуму<SPLIT>-<SPLIT>це вже не ваша проблема<SPLIT>.}
-Predicted: {
-по-перше<SPLIT>,<SPLIT>ви тепер точно знаєте що праві<SPLIT>,<SPLIT>по-<SPLIT>друге<SPLIT>,<SPLIT>ви виглядаєте гарною і молодою<SPLIT>,<SPLIT>і якщо у співрозмовника не вистачає не тільки аргументів<SPLIT>,<SPLIT>а і розуму<SPLIT>-<SPLIT>це вже не ваша проблема<SPLIT>.}
-False positives: {
-по-
-друге
-} False negatives: {
-по-друге
-}
-
-Expected: {
-головне<SPLIT>, щоб дітки знали своїх хресних батьків<SPLIT>, а не так як тут описано - навіть ніколи й не бачили :rolleyes: .}
-Predicted: {
-головне<SPLIT>, щоб дітки знали своїх хресних батьків<SPLIT>, а не так як тут описано - навіть ніколи й не бачили :rolleyes<SPLIT>: .}
-False positives: {
-:rolleyes
-:
-} False negatives: {
-:rolleyes:
-}
-
-Expected: {
-очі його повні алкоголю<SPLIT>, що перебрали міру й спинилися на напруженому півбожевільному настроєві<SPLIT>.}
-Predicted: {
-очі його повні алкоголю<SPLIT>, що перебрали міру й спинилися на напруженому пів<SPLIT>божевільному настроєві<SPLIT>.}
-False positives: {
-пів
-божевільному
-} False negatives: {
-півбожевільному
-}
-
-Expected: {
-сьогодні сінгапур займає у рейтингу transparency international (<SPLIT>2009 рік<SPLIT>) 4-е місце за чистотою від корупції у світі та 1-е – в азії<SPLIT>.}
-Predicted: {
-сьогодні сінгапур займає у рейтингу transparency international (<SPLIT>2009 рік<SPLIT>) 4<SPLIT>-е місце за чистотою від корупції у світі та 1<SPLIT>-е – в азії<SPLIT>.}
-False positives: {
-4
--е
 1
--е
-} False negatives: {
-4-е
-1-е
-}
-
-Expected: {
-тарас<SPLIT>, ок<SPLIT>, навіть якщо розглядати таз і ноги як систему двох фізичних маятників<SPLIT>, точки підвісу яких рухаються відносно одна одної за певною траекторією<SPLIT>(<SPLIT>тут постає питання про максимальні кути і процентуальний вплив на швидкість<SPLIT>)<SPLIT>, ми не можемо нехтувати іншими біологічними факторами<SPLIT>, такими як довжина ніг<SPLIT>, вага тіла<SPLIT>, відсоток жиру<SPLIT>, транспорт кисню<SPLIT>, здатність м’язів до скорочення<SPLIT>, в кінці кінців — підготовка спортсменів<SPLIT>, вид забігу<SPLIT>(<SPLIT>!<SPLIT>)<SPLIT>.}
-Predicted: {
-тарас<SPLIT>, ок<SPLIT>, навіть якщо розглядати таз і ноги як систему двох фізичних маятників<SPLIT>, точки підвісу яких рухаються відносно одна одної за певною траекторією(<SPLIT>тут постає питання про максимальні кути і процентуальний вплив на швидкість<SPLIT>)<SPLIT>, ми не можемо нехтувати іншими біологічними факторами<SPLIT>, такими як довжина ніг<SPLIT>, вага тіла<SPLIT>, відсоток жиру<SPLIT>, транспорт кисню<SPLIT>, здатність м’язів до скорочення<SPLIT>, в кінці кінців — підготовка спортсменів<SPLIT>, вид забігу(<SPLIT>!<SPLIT>)<SPLIT>.}
-False positives: {
-траекторією(
-забігу(
-} False negatives: {
-траекторією
-(
-забігу
-(
-}
-
-Expected: {
-а математик ранком так умовляв одного ученика<SPLIT>, що не хтів тихо сидіти<SPLIT>: «<SPLIT>та посидьте ж<SPLIT>, корраді<SPLIT>, ще пів<SPLIT>годинки тихо<SPLIT>, а я вже вас сам на гонки поведу<SPLIT>, їй-богу<SPLIT>, поведу<SPLIT>, тільки заспокойтесь<SPLIT>»<SPLIT>.}
-Predicted: {
-а математик ранком так умовляв одного ученика<SPLIT>, що не хтів тихо сидіти<SPLIT>: «<SPLIT>та посидьте ж<SPLIT>, корраді<SPLIT>, ще пів<SPLIT>годинки тихо<SPLIT>, а я вже вас сам на гонки поведу<SPLIT>, їй<SPLIT>-<SPLIT>богу<SPLIT>, поведу<SPLIT>, тільки заспокойтесь<SPLIT>»<SPLIT>.}
-False positives: {
-їй
--
-богу
-} False negatives: {
-їй-богу
-}
-
-Expected: {
-як office 365<SPLIT>, так і office 2016 постачаються із 25-значним алфавітно<SPLIT>-<SPLIT>цифровим кодом<SPLIT>, який слід застосувати для активації вашого продукту<SPLIT>.}
-Predicted: {
-як office 365<SPLIT>, так і office 2016 постачаються із 25<SPLIT>-<SPLIT>значним алфавітно<SPLIT>-<SPLIT>цифровим кодом<SPLIT>, який слід застосувати для активації вашого продукту<SPLIT>.}
-False positives: {
-25
--
-значним
-} False negatives: {
-25-значним
-}
-
-Expected: {
-коли сьогодні нарікаємо<SPLIT>, "<SPLIT>чому в нас у владі весь час злочинці й дебіли<SPLIT>"<SPLIT>, непогано б розуміти - та от саме тому<SPLIT>))<SPLIT>.}
-Predicted: {
-коли сьогодні нарікаємо<SPLIT>, "<SPLIT>чому в нас у владі весь час злочинці й дебіли<SPLIT>"<SPLIT>, непогано б розуміти - та от саме тому<SPLIT>)<SPLIT>)<SPLIT>.}
-False positives: {
-)
-)
-} False negatives: {
-))
-}
-
-Expected: {
-це логарифмічний пошук і ніколи не вироджений в лінійний (<SPLIT>це ж червоно<SPLIT>-<SPLIT>чорне дерево<SPLIT>, bitches<SPLIT>!<SPLIT>)<SPLIT>.}
-Predicted: {
-це логарифмічний пошук і ніколи не вироджений в лінійний (<SPLIT>це ж червоно<SPLIT>-<SPLIT>чорне дерево<SPLIT>, bitches!<SPLIT>)<SPLIT>.}
-False positives: {
-bitches!
-} False negatives: {
-bitches
-!
-}
-
-Expected: {
-найбільші гонорари вона отримала за фільми «<SPLIT>розлучення по-американськи<SPLIT>» (<SPLIT>2006<SPLIT>, $ 8,000,000<SPLIT>)<SPLIT>, «<SPLIT>ходять чутки<SPLIT>» (<SPLIT>2005<SPLIT>, $ 8,000,000<SPLIT>)<SPLIT>, «<SPLIT>а ось і поллі<SPLIT>!<SPLIT>» (<SPLIT>2004<SPLIT>, $ 5,000,000<SPLIT>)<SPLIT>, «<SPLIT>рок<SPLIT>-<SPLIT>зірка<SPLIT>» (<SPLIT>2001<SPLIT>, $ 3,000,000<SPLIT>) і «<SPLIT>портрет досконалості<SPLIT>» (<SPLIT>1997<SPLIT>, $ 2,000,000<SPLIT>)<SPLIT>.}
-Predicted: {
-найбільші гонорари вона отримала за фільми «<SPLIT>розлучення по-американськи<SPLIT>» (<SPLIT>2006<SPLIT>, $ 8<SPLIT>,<SPLIT>000<SPLIT>,<SPLIT>000<SPLIT>)<SPLIT>, «<SPLIT>ходять чутки<SPLIT>» (<SPLIT>2005<SPLIT>, $ 8<SPLIT>,<SPLIT>000<SPLIT>,<SPLIT>000<SPLIT>)<SPLIT>, «<SPLIT>а ось і поллі<SPLIT>!<SPLIT>» (<SPLIT>2004<SPLIT>, $ 5<SPLIT>,<SPLIT>000<SPLIT>,<SPLIT>000<SPLIT>)<SPLIT>, «<SPLIT>рок<SPLIT>-<SPLIT>зірка<SPLIT>» (<SPLIT>2001<SPLIT>, $ 3<SPLIT>,<SPLIT>000<SPLIT>,<SPLIT>000<SPLIT>) і «<SPLIT>портрет досконалості<SPLIT>» (<SPLIT>1997<SPLIT>, $ 2<SPLIT>,<SPLIT>000<SPLIT>,<SPLIT>000<SPLIT>)<SPLIT>.}
-False positives: {
-8
 ,
-000
-,
-000
-8
-,
-000
-,
-000
-5
-,
-000
-,
-000
-3
-,
-000
-,
-000
-2
-,
-000
-,
-000
-} False negatives: {
-8,000,000
-8,000,000
-5,000,000
-3,000,000
-2,000,000
-}
-
-Expected: {
-згадайте лише як спіймали на хабарі екс-заступника міністра охорони здоров’я романа василишина<SPLIT>, який довгий час до того працював головним лікарем жовтневої лікарні в києві<SPLIT>?}
-Predicted: {
-згадайте лише як спіймали на хабарі екс-<SPLIT>заступника міністра охорони здоров’я романа василишина<SPLIT>, який довгий час до того працював головним лікарем жовтневої лікарні в києві<SPLIT>?}
-False positives: {
-екс-
-заступника
-} False negatives: {
-екс-заступника
 }
 
 Expected: {
 сонячний простір потребує яскравого наповнення<SPLIT>, тож конкурс буде жорстким<SPLIT>, а відбір принциповим<SPLIT>, але<SPLIT>, якщо вам є що запропонувати та чим здивувати творчо<SPLIT>-<SPLIT>інтелектуальний київ<SPLIT>, заповнюйте гугл<SPLIT>-<SPLIT>форму : http://bit.ly/2so29wx та пам'ятайте<SPLIT>, що дедлайн подачі заявок 3 липня<SPLIT>.}
 Predicted: {
-сонячний простір потребує яскравого наповнення<SPLIT>, тож конкурс буде жорстким<SPLIT>, а відбір принциповим<SPLIT>, але<SPLIT>, якщо вам є що запропонувати та чим здивувати творчо<SPLIT>-<SPLIT>інтелектуальний київ<SPLIT>, заповнюйте гугл<SPLIT>-<SPLIT>форму : http://bit<SPLIT>.<SPLIT>ly/<SPLIT>2so29wx та пам'ятайте<SPLIT>, що дедлайн подачі заявок 3 липня<SPLIT>.}
+сонячний простір потребує яскравого наповнення<SPLIT>, тож конкурс буде жорстким<SPLIT>, а відбір принциповим<SPLIT>, але<SPLIT>, якщо вам є що запропонувати та чим здивувати творчо<SPLIT>-<SPLIT>інтелектуальний київ<SPLIT>, заповнюйте гугл<SPLIT>-<SPLIT>форму : http:/<SPLIT>/bit<SPLIT>.ly<SPLIT>/<SPLIT>2so29wx та пам'ятайте<SPLIT>, що дедлайн подачі заявок 3 липня<SPLIT>.}
 False positives: {
-http://bit
-.
-ly/
+http:/
+/bit
+.ly
+/
 2so29wx
 } False negatives: {
 http://bit.ly/2so29wx
 }
 
 Expected: {
-цю працю написав д-р олег кандиба в 1935 р<SPLIT>. декілька місяців після того<SPLIT>, як він брав участь у розкопках культури кам’яної доби в старчево та їздив і досліджував подібні рештки інших культур у музеях румунії<SPLIT>, мадярщини<SPLIT>, югославії та австрії (<SPLIT>1934 р<SPLIT>.<SPLIT>)<SPLIT>.}
+а на фоні видних кісток ребер і грудини<SPLIT>, то тим явно груди виглядають неприродно<SPLIT>(}
 Predicted: {
-цю працю написав д-<SPLIT>р олег кандиба в 1935 р<SPLIT>. декілька місяців після того<SPLIT>, як він брав участь у розкопках культури кам’яної доби в старчево та їздив і досліджував подібні рештки інших культур у музеях румунії<SPLIT>, мадярщини<SPLIT>, югославії та австрії (<SPLIT>1934 р<SPLIT>.<SPLIT>)<SPLIT>.}
+а на фоні видних кісток ребер і грудини<SPLIT>, то тим явно груди виглядають неприродно(}
 False positives: {
-д-
-р
+неприродно(
 } False negatives: {
-д-р
-}
-
-Expected: {
-в титулатурі молдавських воєвод з 90-их років xiv ст<SPLIT>. є вже згадка про володіння просторами від „<SPLIT>планини до моря<SPLIT>“<SPLIT>.}
-Predicted: {
-в титулатурі молдавських воєвод з 90<SPLIT>-их років xiv ст<SPLIT>. є вже згадка про володіння просторами від „<SPLIT>планини до моря<SPLIT>“<SPLIT>.}
-False positives: {
-90
--их
-} False negatives: {
-90-их
+неприродно
+(
 }

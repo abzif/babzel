@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9959646107822545
-Training-Sample-Size=33024
-Evaluation-Sample-Size=3669
+Evaluation-Score=0.9967776271087587
+Training-Sample-Size=30103
+Evaluation-Sample-Size=3344
 Training-Algorithm=MAXENT_QN
 
 === MODEL PROPERTIES ===
@@ -9,18 +9,18 @@ Component-Name=TokenizerME
 Language=fi
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1674198313625
+Timestamp=1677048804532
 TrainerType=Event
-Training-Eventhash=8f4d5490669f872ad5ac8365bc26241f
+Training-Eventhash=3f545cdc67d8419faff986568c940a9
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
 
 === MISCLASSIFIED DETAILS ===
 Expected: {
-kangen perässä putoaa ylhäältä hiekkaa ja roskia , mutt<SPLIT>ei mitään isompaa .}
+kirsin olisi pitänyt siivota hiekkalaatikko , mutt<SPLIT>ei hän viitsinyt .}
 Predicted: {
-kangen perässä putoaa ylhäältä hiekkaa ja roskia , muttei mitään isompaa .}
+kirsin olisi pitänyt siivota hiekkalaatikko , muttei hän viitsinyt .}
 False positives: {
 muttei
 } False negatives: {
@@ -29,85 +29,72 @@ ei
 }
 
 Expected: {
-sanoin ensiksi , että minä mikko tapani alatalo jne. kunnes huomasin ottaa uusiksi : minä seija johanna jne .}
+gluteeniton makaroni maksaa 86 mk/kg , kun tavalliset makaronit maksavat 8,8 mk/kg .}
 Predicted: {
-sanoin ensiksi , että minä mikko tapani alatalo jne<SPLIT>. kunnes huomasin ottaa uusiksi : minä seija johanna jne .}
+gluteeniton makaroni maksaa 86 mk/<SPLIT>kg , kun tavalliset makaronit maksavat 8,8 mk/<SPLIT>kg .}
 False positives: {
-jne
-.
+mk/
+kg
+mk/
+kg
 } False negatives: {
-jne.
+mk/kg
+mk/kg
 }
 
 Expected: {
-ei tästä enempää , jott<SPLIT>en pilaa katsojan yllätysmomenttia .}
+oletimme , ett<SPLIT>eivät nahkatakit näyttäytyisi kulmilla}
 Predicted: {
-ei tästä enempää , jotten pilaa katsojan yllätysmomenttia .}
+oletimme , etteivät nahkatakit näyttäytyisi kulmilla}
 False positives: {
-jotten
+etteivät
 } False negatives: {
-jott
-en
+ett
+eivät
 }
 
 Expected: {
-lehti oli jopa lakkautettu pariin otteeseen vv. 1947-56 .}
+kun ihminen joka kerralla saa vastaukseksi " eiks' kukaan oo sanonu " , se aikaansaa yleisen epävarmuuden tunteen .}
 Predicted: {
-lehti oli jopa lakkautettu pariin otteeseen vv<SPLIT>. 1947-56 .}
+kun ihminen joka kerralla saa vastaukseksi " eiks<SPLIT>' kukaan oo sanonu " , se aikaansaa yleisen epävarmuuden tunteen .}
 False positives: {
-vv
-.
+eiks
+'
 } False negatives: {
-vv.
+eiks'
 }
 
 Expected: {
-hb laski ad 85<SPLIT>, sai 2 ps -----> hb 121<SPLIT>.}
+milloin alistus on tapahtunut , meneteltäköön niin kuin edellä 35 §:ssä on säädetty .}
 Predicted: {
-hb laski ad 85<SPLIT>, sai 2 ps -<SPLIT>-<SPLIT>-<SPLIT>--> hb 121.}
+milloin alistus on tapahtunut , meneteltäköön niin kuin edellä 35 §<SPLIT>:ssä on säädetty .}
 False positives: {
--
--
--
--->
-121.
+§
+:ssä
 } False negatives: {
------>
-121
-.
+§:ssä
 }
 
 Expected: {
-sentraalisen kanyylin valkoinen linja temppuilee<SPLIT>--<SPLIT>huudeltu<SPLIT>.}
+jos pistää meidän talossa niin rei'ittämään niin perkele minä en kuuntele yhtään mitään .}
 Predicted: {
-sentraalisen kanyylin valkoinen linja temppuilee<SPLIT>--huudeltu<SPLIT>.}
+jos pistää meidän talossa niin rei<SPLIT>'ittämään niin perkele minä en kuuntele yhtään mitään .}
 False positives: {
---huudeltu
+rei
+'ittämään
 } False negatives: {
---
-huudeltu
+rei'ittämään
 }
 
 Expected: {
-iltayöstä<SPLIT>, kun nukahti<SPLIT>, hapetus nousi - astrup happi jopa 12<SPLIT>.}
+maksan kohdalla näkyvissä hematoomaa<SPLIT>/<SPLIT>vuotoa<SPLIT>.}
 Predicted: {
-iltayöstä<SPLIT>, kun nukahti<SPLIT>, hapetus nousi - astrup happi jopa 12.}
+maksan kohdalla näkyvissä hematoomaa/<SPLIT>vuotoa<SPLIT>.}
 False positives: {
-12.
+hematoomaa/
 } False negatives: {
-12
-.
-}
-
-Expected: {
-raajojen pass. mobilisaatio<SPLIT>.}
-Predicted: {
-raajojen pass<SPLIT>. mobilisaatio<SPLIT>.}
-False positives: {
-pass
-.
-} False negatives: {
-pass.
+hematoomaa
+/
 }
 
 Expected: {
@@ -125,75 +112,43 @@ saa
 }
 
 Expected: {
-satuoi hiukan päälle 70<SPLIT>.}
+sr mutta paljon eteisper. rytmihäiriöitä<SPLIT>, ei haarakatkosta<SPLIT>.}
 Predicted: {
-satuoi hiukan päälle 70.}
+sr mutta paljon eteisper<SPLIT>. rytmihäiriöitä<SPLIT>, ei haarakatkosta<SPLIT>.}
 False positives: {
-70.
+eteisper
+.
 } False negatives: {
-70
+eteisper.
+}
+
+Expected: {
+flimmeri<SPLIT>, nousee ajoittain ad 147 laskee itsellään ~<SPLIT>110<SPLIT>.}
+Predicted: {
+flimmeri<SPLIT>, nousee ajoittain ad 147 laskee itsellään ~110.}
+False positives: {
+~110.
+} False negatives: {
+~
+110
 .
 }
 
 Expected: {
-hengitys kovin ahdistavaa ja vinkuvaa<SPLIT>, satur. tippuu ad. 82<SPLIT>.}
+@kaisa_hiltunen @puhakka_tanke @aapupoika @santta74 @kristiinainen @sini_74 @kahvineuvos @tweetpetri @theteemu1 astianpesukone pyörii<SPLIT>, kauppareissu tehty ja kohta siivous edessä 😊}
 Predicted: {
-hengitys kovin ahdistavaa ja vinkuvaa<SPLIT>, satur. tippuu ad<SPLIT>. 82<SPLIT>.}
+@kaisa_<SPLIT>hiltunen @puhakka_tanke @aapupoika @santta74 @kristiinainen @sini_74 @kahvineuvos @tweetpetri @theteemu1 astianpesukone pyörii<SPLIT>, kauppareissu tehty ja kohta siivous edessä 😊}
 False positives: {
-ad
-.
+@kaisa_
+hiltunen
 } False negatives: {
-ad.
+@kaisa_hiltunen
 }
 
 Expected: {
--<SPLIT>saturaatiot kuitenkin 98-100<SPLIT>.}
+jätetään nämä kommunismin retkut tänne ja mennä sijoittamaan sinne missä työvoima on halpaa ja voitot suuria<SPLIT>!!}
 Predicted: {
--saturaatiot kuitenkin 98-100<SPLIT>.}
-False positives: {
--saturaatiot
-} False negatives: {
--
-saturaatiot
-}
-
-Expected: {
--<SPLIT>sydämmen ukg tehty<SPLIT>, edelleen ainakin 3/4 vuoto mitraaliläpässä ja pleuranestettä<SPLIT>.}
-Predicted: {
--sydämmen ukg tehty<SPLIT>, edelleen ainakin 3/4 vuoto mitraaliläpässä ja pleuranestettä<SPLIT>.}
-False positives: {
--sydämmen
-} False negatives: {
--
-sydämmen
-}
-
-Expected: {
--<SPLIT>tukilääkkeet jatkuneet}
-Predicted: {
--tukilääkkeet jatkuneet}
-False positives: {
--tukilääkkeet
-} False negatives: {
--
-tukilääkkeet
-}
-
-Expected: {
-saanut kahdesti panadol -poretbl po<SPLIT>.}
-Predicted: {
-saanut kahdesti panadol -poretbl po.}
-False positives: {
-po.
-} False negatives: {
-po
-.
-}
-
-Expected: {
-mutta sitten tuuletin<SPLIT>, koska sain vihdoinkin piilarit<SPLIT>, mitä en koskaan ajatellut saavani<SPLIT>!!}
-Predicted: {
-mutta sitten tuuletin<SPLIT>, koska sain vihdoinkin piilarit<SPLIT>, mitä en koskaan ajatellut saavani<SPLIT>!<SPLIT>!}
+jätetään nämä kommunismin retkut tänne ja mennä sijoittamaan sinne missä työvoima on halpaa ja voitot suuria<SPLIT>!<SPLIT>!}
 False positives: {
 !
 !
@@ -202,189 +157,105 @@ False positives: {
 }
 
 Expected: {
-hänen äitinsä pyysi kerran minua käymään heillä kylässä<SPLIT>, "<SPLIT>kun [sensuroitu]lla ei ole kavereita<SPLIT>...<SPLIT>"<SPLIT>.}
+tai ainakin osa lukijoista on joskus viimeisen reilu vuoden aikana kuullut<SPLIT>; "<SPLIT>ei ku mä meen malmille hommiin<SPLIT>.<SPLIT>" tai "<SPLIT>mä oon malmilla<SPLIT>.<SPLIT>" tms. ;)}
 Predicted: {
-hänen äitinsä pyysi kerran minua käymään heillä kylässä<SPLIT>, "<SPLIT>kun [<SPLIT>sensuroitu<SPLIT>]lla ei ole kavereita<SPLIT>...<SPLIT>"<SPLIT>.}
+tai ainakin osa lukijoista on joskus viimeisen reilu vuoden aikana kuullut<SPLIT>; "<SPLIT>ei ku mä meen malmille hommiin<SPLIT>.<SPLIT>" tai "<SPLIT>mä oon malmilla<SPLIT>.<SPLIT>" tms<SPLIT>. ;)}
 False positives: {
-[
-sensuroitu
-]lla
-} False negatives: {
-[sensuroitu]lla
-}
-
-Expected: {
-*** captain america<SPLIT>: the return of the first avenger (<SPLIT>captain america<SPLIT>: the winter soldier<SPLIT>, 2014<SPLIT>) ohjaus<SPLIT>: anthony russo<SPLIT>, joe russo<SPLIT>.}
-Predicted: {
-**<SPLIT>* captain america<SPLIT>: the return of the first avenger (<SPLIT>captain america<SPLIT>: the winter soldier<SPLIT>, 2014<SPLIT>) ohjaus<SPLIT>: anthony russo<SPLIT>, joe russo<SPLIT>.}
-False positives: {
-**
-*
-} False negatives: {
-***
-}
-
-Expected: {
-nuo joustavat aseet<SPLIT>- improvisoidut tai ei - tahtovat tulla ilkeästi torjunnan ympäri<SPLIT>, yleensä vielä kovalla momentilla kun pyörimissäde muuttuu<SPLIT>.}
-Predicted: {
-nuo joustavat aseet- improvisoidut tai ei - tahtovat tulla ilkeästi torjunnan ympäri<SPLIT>, yleensä vielä kovalla momentilla kun pyörimissäde muuttuu<SPLIT>.}
-False positives: {
-aseet-
-} False negatives: {
-aseet
--
-}
-
-Expected: {
-foorumeilla tulee tietysti noudattaa hyviä tapoja ja pyrkiä rakentavaan keskustelutapaan<SPLIT>, ks. säännöt .}
-Predicted: {
-foorumeilla tulee tietysti noudattaa hyviä tapoja ja pyrkiä rakentavaan keskustelutapaan<SPLIT>, ks<SPLIT>. säännöt .}
-False positives: {
-ks
+tms
 .
 } False negatives: {
-ks.
+tms.
 }
 
 Expected: {
-" nymfit " (<SPLIT>2013<SPLIT>) on suomalainen fisher king -tuotantoyhtiön tuottama fantasia-draamasarja<SPLIT>, jonka esittäminen alkoi mtv3-kanavalla 24. maaliskuuta 2014<SPLIT>.}
+tietysti jos haluatte hoitaa asian viimeisenpäälle asiallisesti<SPLIT>, niin voitte jo etukäteen informoida paikallisia kalastusalueita<SPLIT>/<SPLIT>osakaskuntia suorittamastanne kalanmerkinnästä<SPLIT>.}
 Predicted: {
-" nymfit " (<SPLIT>2013<SPLIT>) on suomalainen fisher king -tuotantoyhtiön tuottama fantasia-draamasarja<SPLIT>, jonka esittäminen alkoi mtv3-kanavalla 24. maaliskuuta 2014.}
+tietysti jos haluatte hoitaa asian viimeisenpäälle asiallisesti<SPLIT>, niin voitte jo etukäteen informoida paikallisia kalastusalueita<SPLIT>/osakaskuntia suorittamastanne kalanmerkinnästä<SPLIT>.}
 False positives: {
-2014.
+/osakaskuntia
 } False negatives: {
-2014
-.
+/
+osakaskuntia
 }
 
 Expected: {
-lopulta<SPLIT>, noin vuosien 512<SPLIT>-<SPLIT>511 ekr. aikana<SPLIT>, makedonian kuningas amyntas i hyväksyi arkhaimenidien herruuden<SPLIT>, ja luovutti maansa arkhaimenidien persian vasallivaltioksi<SPLIT>.}
+miksi en<SPLIT>/<SPLIT>miksi joo<SPLIT>?}
 Predicted: {
-lopulta<SPLIT>, noin vuosien 512-511 ekr. aikana<SPLIT>, makedonian kuningas amyntas i hyväksyi arkhaimenidien herruuden<SPLIT>, ja luovutti maansa arkhaimenidien persian vasallivaltioksi<SPLIT>.}
+miksi en/<SPLIT>miksi joo<SPLIT>?}
 False positives: {
-512-511
+en/
 } False negatives: {
-512
--
-511
+en
+/
 }
 
 Expected: {
-työministeriön tutkimuksessa pahimmista lapsityövoiman muodoista raportoitiin<SPLIT>, että 56 % 5<SPLIT>-<SPLIT>14<SPLIT>-vuotiaista lapsista työskentelee<SPLIT>, ja että lähes 53 % 7<SPLIT>-<SPLIT>14<SPLIT>-vuotiaista lapsista käy töissä ja koulussa<SPLIT>.}
+1. mene osoitteeseen http://support.twitter.com/forms ja avaa uusi ticket ( = vikailmoitus / avunpyyntö )}
 Predicted: {
-työministeriön tutkimuksessa pahimmista lapsityövoiman muodoista raportoitiin<SPLIT>, että 56 % 5-14-vuotiaista lapsista työskentelee<SPLIT>, ja että lähes 53 % 7-14-vuotiaista lapsista käy töissä ja koulussa<SPLIT>.}
+1. mene osoitteeseen http:/<SPLIT>/support.twitter.com/forms ja avaa uusi ticket ( = vikailmoitus / avunpyyntö )}
 False positives: {
-5-14-vuotiaista
-7-14-vuotiaista
+http:/
+/support.twitter.com/forms
 } False negatives: {
-5
--
-14
--vuotiaista
-7
--
-14
--vuotiaista
+http://support.twitter.com/forms
 }
 
 Expected: {
-1350-luvulla kuningas gongmin oli viimein vapaa uudistamaan goryeon hallinnon<SPLIT>, kun yuan<SPLIT>-dynastia alkoi murentua<SPLIT>.}
+ja ettei nyt jäätäisi ihan sinne menneisyyteen ja toiseen maailmansotaan<SPLIT>, niin perjantaina lähdetään caron ja sophien kanssa viikonlopuksi brysseliin ihmettelemään vähän eu:ta<SPLIT>.}
 Predicted: {
-1350-luvulla kuningas gongmin oli viimein vapaa uudistamaan goryeon hallinnon<SPLIT>, kun yuan-dynastia alkoi murentua<SPLIT>.}
-False positives: {
-yuan-dynastia
-} False negatives: {
-yuan
--dynastia
-}
-
-Expected: {
-hän keräsi lisää mainetta hovissa sen jälkeen<SPLIT>, kun hänet oli lähetetty lähettilääksi kitaanien liao<SPLIT>-dynastiaan kesällä 1075<SPLIT>.}
-Predicted: {
-hän keräsi lisää mainetta hovissa sen jälkeen<SPLIT>, kun hänet oli lähetetty lähettilääksi kitaanien liao-dynastiaan kesällä 1075<SPLIT>.}
-False positives: {
-liao-dynastiaan
-} False negatives: {
-liao
--dynastiaan
-}
-
-Expected: {
-sen jälkeen<SPLIT>, kun thought ’ya knew -albumin nousu billboard 200 -listalla päättyi sijalle 96<SPLIT>, se kiipesi yhdistyneen kuningaskunnan listalla sijalle 31<SPLIT>, mutta albumi pysyi tällä listalla vain kaksi viikkoa<SPLIT>.}
-Predicted: {
-sen jälkeen<SPLIT>, kun thought ’<SPLIT>ya knew -albumin nousu billboard 200 -listalla päättyi sijalle 96<SPLIT>, se kiipesi yhdistyneen kuningaskunnan listalla sijalle 31<SPLIT>, mutta albumi pysyi tällä listalla vain kaksi viikkoa<SPLIT>.}
-False positives: {
-’
-ya
-} False negatives: {
-’ya
-}
-
-Expected: {
-siellä on muistomerkki martin luther king jr.:lle<SPLIT>.}
-Predicted: {
-siellä on muistomerkki martin luther king jr.<SPLIT>:lle<SPLIT>.}
-False positives: {
-jr.
-:lle
-} False negatives: {
-jr.:lle
-}
-
-Expected: {
-von bellingshausen näki etelänapamantereen 27. tammikuuta 1820<SPLIT>, kolme päivää ennen kuin bransfield näki maata<SPLIT>, ja kymmenen kuukautta ennen kuin palmer näki maata marraskuussa 1820<SPLIT>.}
-Predicted: {
-von bellingshausen näki etelänapamantereen 27. tammikuuta 1820<SPLIT>, kolme päivää ennen kuin bransfield näki maata<SPLIT>, ja kymmenen kuukautta ennen kuin palmer näki maata marraskuussa 1820.}
-False positives: {
-1820.
-} False negatives: {
-1820
-.
-}
-
-Expected: {
-paistettu kiinankaali hupenee paljon kypsymisen aikana<SPLIT>...<SPLIT>.}
-Predicted: {
-paistettu kiinankaali hupenee paljon kypsymisen aikana<SPLIT>....}
-False positives: {
-....
-} False negatives: {
-...
-.
-}
-
-Expected: {
-löisi sellaisella voimalla<SPLIT>, etten kuulisi näitä ajatuksia<SPLIT>, kuulisi autosi ääntä<SPLIT>, avainta lukossa ja sinua<SPLIT>.}
-Predicted: {
-löisi sellaisella voimalla<SPLIT>, ett<SPLIT>en kuulisi näitä ajatuksia<SPLIT>, kuulisi autosi ääntä<SPLIT>, avainta lukossa ja sinua<SPLIT>.}
+ja ett<SPLIT>ei nyt jäätäisi ihan sinne menneisyyteen ja toiseen maailmansotaan<SPLIT>, niin perjantaina lähdetään caron ja sophien kanssa viikonlopuksi brysseliin ihmettelemään vähän eu:ta<SPLIT>.}
 False positives: {
 ett
-en
-} False negatives: {
-etten
-}
-
-Expected: {
-suomen ev.-lut. kirkon virsikirjan pääsiäisvirsi 94 (<SPLIT>nyt kansat kaikki laulakaamme<SPLIT>) pohjautuu johannes damaskolaisen kirjoittamaan hymniin<SPLIT>.}
-Predicted: {
-suomen ev.<SPLIT>-lut<SPLIT>. kirkon virsikirjan pääsiäisvirsi 94 (<SPLIT>nyt kansat kaikki laulakaamme<SPLIT>) pohjautuu johannes damaskolaisen kirjoittamaan hymniin<SPLIT>.}
-False positives: {
-ev.
--lut
-.
-} False negatives: {
-ev.-lut.
-}
-
-Expected: {
-jouluvalmistelut ovat tällä hetkellä monen naisen mielessä ja miksei miestenkin<SPLIT>. :)}
-Predicted: {
-jouluvalmistelut ovat tällä hetkellä monen naisen mielessä ja miks<SPLIT>ei miestenkin<SPLIT>. :)}
-False positives: {
-miks
 ei
 } False negatives: {
-miksei
+ettei
+}
+
+Expected: {
+varo<SPLIT>, ettet ylikypsennä mössöksi<SPLIT>.}
+Predicted: {
+varo<SPLIT>, ett<SPLIT>et ylikypsennä mössöksi<SPLIT>.}
+False positives: {
+ett
+et
+} False negatives: {
+ettet
+}
+
+Expected: {
+pyhä johannes damaskolainen (<SPLIT>lat. iohannes damascenus tai johannes damascenus<SPLIT>) (<SPLIT>n.<SPLIT>676 – 5. joulukuuta 749<SPLIT>) oli melkiitteihin kuulunut munkki ja seurakunnanvanhin<SPLIT>.}
+Predicted: {
+pyhä johannes damaskolainen (<SPLIT>lat<SPLIT>. iohannes damascenus tai johannes damascenus<SPLIT>) (<SPLIT>n.676 – 5. joulukuuta 749<SPLIT>) oli melkiitteihin kuulunut munkki ja seurakunnanvanhin<SPLIT>.}
+False positives: {
+lat
+.
+n.676
+} False negatives: {
+lat.
+n.
+676
+}
+
+Expected: {
+simonides tajusi<SPLIT>, ettei theron muuttaisi mieltään<SPLIT>.}
+Predicted: {
+simonides tajusi<SPLIT>, ett<SPLIT>ei theron muuttaisi mieltään<SPLIT>.}
+False positives: {
+ett
+ei
+} False negatives: {
+ettei
+}
+
+Expected: {
+ministeri henna virkkunen luovutti tiedonjulkistamisen valtionpalkinnot keskiviikkona 28.4<SPLIT>.}
+Predicted: {
+ministeri henna virkkunen luovutti tiedonjulkistamisen valtionpalkinnot keskiviikkona 28.4.}
+False positives: {
+28.4.
+} False negatives: {
+28.4
+.
 }
 
 Expected: {
@@ -396,6 +267,50 @@ ett
 en
 } False negatives: {
 etten
+}
+
+Expected: {
+vappupäivänä oli hinta 9.80 e ja nyt listan mukainen hinta on 10.20 e<SPLIT>...<SPLIT>.}
+Predicted: {
+vappupäivänä oli hinta 9.80 e ja nyt listan mukainen hinta on 10.20 e<SPLIT>....}
+False positives: {
+....
+} False negatives: {
+...
+.
+}
+
+Expected: {
+ei toilaan<SPLIT>...<SPLIT>makeaa herkkuahan nimi tarkoittaa<SPLIT>...<SPLIT>.}
+Predicted: {
+ei toilaan<SPLIT>...<SPLIT>makeaa herkkuahan nimi tarkoittaa<SPLIT>....}
+False positives: {
+....
+} False negatives: {
+...
+.
+}
+
+Expected: {
+valmistajien täytyy tietää se<SPLIT>, ettei ole niin suurta kustannuspainetta<SPLIT>, joka vapauttaisi ne vastuusta valvoa täysimääräisesti joka ainoaa tuotantoprosessin ja toimitusketjun osaa<SPLIT>.}
+Predicted: {
+valmistajien täytyy tietää se<SPLIT>, ett<SPLIT>ei ole niin suurta kustannuspainetta<SPLIT>, joka vapauttaisi ne vastuusta valvoa täysimääräisesti joka ainoaa tuotantoprosessin ja toimitusketjun osaa<SPLIT>.}
+False positives: {
+ett
+ei
+} False negatives: {
+ettei
+}
+
+Expected: {
+ei se paljoo välitä et onko se kundi vai gimma vai nuori vai kalkkis<SPLIT>, ne on kaikki sen narkkareita ja se on muutenki niin iso<SPLIT>, ettei sen tartte välittää<SPLIT>.}
+Predicted: {
+ei se paljoo välitä et onko se kundi vai gimma vai nuori vai kalkkis<SPLIT>, ne on kaikki sen narkkareita ja se on muutenki niin iso<SPLIT>, ett<SPLIT>ei sen tartte välittää<SPLIT>.}
+False positives: {
+ett
+ei
+} False negatives: {
+ettei
 }
 
 Expected: {
@@ -432,44 +347,71 @@ ettei
 }
 
 Expected: {
-suomalainen kirjakauppa perustettiin vuonna 1912<SPLIT>, ja rautakirja on omistanut sen vuodesta 1924<SPLIT>.}
+suomen kielen tiedepäivään liittyvä posterinäyttely on esillä fennicumin aulassa 20.4.−27.4.2010<SPLIT>.}
 Predicted: {
-suomalainen kirjakauppa perustettiin vuonna 1912<SPLIT>, ja rautakirja on omistanut sen vuodesta 1924.}
+suomen kielen tiedepäivään liittyvä posterinäyttely on esillä fennicumin aulassa 20.4.−27.4.2010.}
 False positives: {
-1924.
+20.4.−27.4.2010.
 } False negatives: {
-1924
+20.4.−27.4.2010
 .
 }
 
 Expected: {
-vuonna 1994 lillehammerin talviolympialaisissa bédard voitti naisten molemmat henkilökohtaiset matkat<SPLIT>: 7,5 km ja 15 km<SPLIT>.}
+purkki saa pienen miinuksen siitä<SPLIT>, ettei siinä ole minkäänlaista annostelusysteemiä<SPLIT>, vaan purkista on helppo ottaa liikaa tai sen voi pienellä ranneliikkeellän humpsauttaa kokonaan lattialle<SPLIT>.}
 Predicted: {
-vuonna 1994 lillehammerin talviolympialaisissa bédard voitti naisten molemmat henkilökohtaiset matkat<SPLIT>: 7,5 km ja 15 km.}
+purkki saa pienen miinuksen siitä<SPLIT>, ett<SPLIT>ei siinä ole minkäänlaista annostelusysteemiä<SPLIT>, vaan purkista on helppo ottaa liikaa tai sen voi pienellä ranneliikkeellän humpsauttaa kokonaan lattialle<SPLIT>.}
 False positives: {
-km.
+ett
+ei
 } False negatives: {
-km
-.
+ettei
 }
 
 Expected: {
-jan pieterszoon sweelinck (<SPLIT>1562<SPLIT>–<SPLIT>16. lokakuuta 1621<SPLIT>) oli alankomaalainen säveltäjä<SPLIT>, urkuri ja pedagogi<SPLIT>.}
+ihan vaan pikkaisen parempi tämä alla oleva kuva kuin ne itse ottamani itselaukaisusalamakökkökuvat<SPLIT>.<SPLIT>:/}
 Predicted: {
-jan pieterszoon sweelinck (<SPLIT>1562–16<SPLIT>. lokakuuta 1621<SPLIT>) oli alankomaalainen säveltäjä<SPLIT>, urkuri ja pedagogi<SPLIT>.}
+ihan vaan pikkaisen parempi tämä alla oleva kuva kuin ne itse ottamani itselaukaisusalamakökkökuvat.:/}
 False positives: {
-1562–16
-.
+itselaukaisusalamakökkökuvat.:/
 } False negatives: {
-1562
+itselaukaisusalamakökkökuvat
+.
+:/
+}
+
+Expected: {
+sanoisin<SPLIT>, etten tiedä mitään ärsyttävämpää kuin se<SPLIT>, että joku kuvaa minua<SPLIT>, vaikka nimenomaan olen sanonut<SPLIT>, etten halua naamaani kameran eteen<SPLIT>.<SPLIT>:/}
+Predicted: {
+sanoisin<SPLIT>, ett<SPLIT>en tiedä mitään ärsyttävämpää kuin se<SPLIT>, että joku kuvaa minua<SPLIT>, vaikka nimenomaan olen sanonut<SPLIT>, ett<SPLIT>en halua naamaani kameran eteen<SPLIT>.<SPLIT>:/}
+False positives: {
+ett
+en
+ett
+en
+} False negatives: {
+etten
+etten
+}
+
+Expected: {
+ps. blogin kommentointiin on lisätty muista minut –täppä<SPLIT>, vaatii keksit (<SPLIT>cookiet<SPLIT>)<SPLIT>, jotta toimii<SPLIT>.}
+Predicted: {
+ps<SPLIT>. blogin kommentointiin on lisätty muista minut –<SPLIT>täppä<SPLIT>, vaatii keksit (<SPLIT>cookiet<SPLIT>)<SPLIT>, jotta toimii<SPLIT>.}
+False positives: {
+ps
+.
 –
-16.
+täppä
+} False negatives: {
+ps.
+–täppä
 }
 
 Expected: {
-alun perin pelin piti ilmestyä 20. maaliskuuta<SPLIT>, mutta electronic arts joutui lopulta myöntämään<SPLIT>, ettei peli ole valmis<SPLIT>.}
+ehkä se on se<SPLIT>, ettei ole puhunut muille ihmisille virallisempaa suomen kieltä pitkään aikaan<SPLIT>, vaan höpöttelee ainoastaan tutuille<SPLIT>...}
 Predicted: {
-alun perin pelin piti ilmestyä 20. maaliskuuta<SPLIT>, mutta electronic arts joutui lopulta myöntämään<SPLIT>, ett<SPLIT>ei peli ole valmis<SPLIT>.}
+ehkä se on se<SPLIT>, ett<SPLIT>ei ole puhunut muille ihmisille virallisempaa suomen kieltä pitkään aikaan<SPLIT>, vaan höpöttelee ainoastaan tutuille<SPLIT>...}
 False positives: {
 ett
 ei
@@ -478,68 +420,9 @@ ettei
 }
 
 Expected: {
-saman kohtalon koki 89. minuutilla as roman marco motta<SPLIT>.}
+ei meillä fasaanipaistia syötäs<SPLIT>, vaikka hää tuliskin uusintavierailulle<SPLIT>...<SPLIT>.}
 Predicted: {
-saman kohtalon koki 89<SPLIT>. minuutilla as roman marco motta<SPLIT>.}
-False positives: {
-89
-.
-} False negatives: {
-89.
-}
-
-Expected: {
-harmi<SPLIT>, ettei sitä saatu videolle<SPLIT>!}
-Predicted: {
-harmi<SPLIT>, ett<SPLIT>ei sitä saatu videolle<SPLIT>!}
-False positives: {
-ett
-ei
-} False negatives: {
-ettei
-}
-
-Expected: {
-eilisellä kotimatkalla<SPLIT>, kun raahasin miljoona laukkujani<SPLIT>/<SPLIT>kassejani<SPLIT>/<SPLIT>pussukoitani rautatieasemalta kotiin<SPLIT>, vasenta jalkaani alkoi vihloa<SPLIT>.}
-Predicted: {
-eilisellä kotimatkalla<SPLIT>, kun raahasin miljoona laukkujani/kassejani<SPLIT>/<SPLIT>pussukoitani rautatieasemalta kotiin<SPLIT>, vasenta jalkaani alkoi vihloa<SPLIT>.}
-False positives: {
-laukkujani/kassejani
-} False negatives: {
-laukkujani
-/
-kassejani
-}
-
-Expected: {
-@digikim kyseli twitterissä<SPLIT>, olisiko mahdollista analysoida backlinkkaajien sivustoja eli muodostaa eräänlainen politiikan pagerank<SPLIT>.}
-Predicted: {
-@digikim kyseli twitterissä<SPLIT>, olisiko mahdollista analysoida backlinkkaajien sivustoja eli muodostaa eräänlainen politiikan pagerank.}
-False positives: {
-pagerank.
-} False negatives: {
-pagerank
-.
-}
-
-Expected: {
-- ruisleipä<SPLIT>+<SPLIT>oivariini<SPLIT>+<SPLIT>oltermanni maistuu vaan niin hyvältä<SPLIT>.}
-Predicted: {
-- ruisleipä+oivariini+oltermanni maistuu vaan niin hyvältä<SPLIT>.}
-False positives: {
-ruisleipä+oivariini+oltermanni
-} False negatives: {
-ruisleipä
-+
-oivariini
-+
-oltermanni
-}
-
-Expected: {
-... ja näin minä tämän seiruoan tein<SPLIT>...<SPLIT>.}
-Predicted: {
-... ja näin minä tämän seiruoan tein<SPLIT>....}
+ei meillä fasaanipaistia syötäs<SPLIT>, vaikka hää tuliskin uusintavierailulle<SPLIT>....}
 False positives: {
 ....
 } False negatives: {
@@ -548,42 +431,75 @@ False positives: {
 }
 
 Expected: {
-kanelille maistuvia makeita raejuusto-ohukaisia tulee aina silloin tällöin paisteltua<SPLIT>...<SPLIT>.}
+varovaisen mutta todenmukaisen arvioni<SPLIT>, joka perustuu laserin lailla leikkaavaan tarkkailukykyyni<SPLIT>, mukaan 75<SPLIT>% toiseen naiseen liittyvistä riidoista eivät liity millään tavalla mustasukkaisuuteen<SPLIT>.}
 Predicted: {
-kanelille maistuvia makeita raejuusto-ohukaisia tulee aina silloin tällöin paisteltua<SPLIT>....}
+varovaisen mutta todenmukaisen arvioni<SPLIT>, joka perustuu laserin lailla leikkaavaan tarkkailukykyyni<SPLIT>, mukaan 75% toiseen naiseen liittyvistä riidoista eivät liity millään tavalla mustasukkaisuuteen<SPLIT>.}
 False positives: {
-....
+75%
 } False negatives: {
-...
+75
+%
+}
+
+Expected: {
+meille kerrotaan tänään epäilemättä<SPLIT>, ettei belgian lainsäädäntöä<SPLIT>, jolla nämä direktiivit pannaan täytäntöön<SPLIT>, sovelleta komissioon julkisena hallintona<SPLIT>, ja kuitenkin nämä opettajat palkattiin belgialaisin työsopimuksin<SPLIT>, joihin sovelletaan belgian työlainsäädäntöä<SPLIT>.}
+Predicted: {
+meille kerrotaan tänään epäilemättä<SPLIT>, ett<SPLIT>ei belgian lainsäädäntöä<SPLIT>, jolla nämä direktiivit pannaan täytäntöön<SPLIT>, sovelleta komissioon julkisena hallintona<SPLIT>, ja kuitenkin nämä opettajat palkattiin belgialaisin työsopimuksin<SPLIT>, joihin sovelletaan belgian työlainsäädäntöä<SPLIT>.}
+False positives: {
+ett
+ei
+} False negatives: {
+ettei
+}
+
+Expected: {
+yksikkö vastasi<SPLIT>, ettei ole<SPLIT>.}
+Predicted: {
+yksikkö vastasi<SPLIT>, ett<SPLIT>ei ole<SPLIT>.}
+False positives: {
+ett
+ei
+} False negatives: {
+ettei
+}
+
+Expected: {
+arvoisa puhemies<SPLIT>, yhteisön oikeuden soveltaminen on yhä vaikeampaa<SPLIT>, sillä komission kertomuksen mukaan vuonna 1999 se on aloittanut 2270 asiaa<SPLIT>, kun taas vuonna 1978 niitä aloitettiin vain 124<SPLIT>.}
+Predicted: {
+arvoisa puhemies<SPLIT>, yhteisön oikeuden soveltaminen on yhä vaikeampaa<SPLIT>, sillä komission kertomuksen mukaan vuonna 1999 se on aloittanut 2270 asiaa<SPLIT>, kun taas vuonna 1978 niitä aloitettiin vain 124.}
+False positives: {
+124.
+} False negatives: {
+124
 .
 }
 
 Expected: {
-muotoile lihamurekeseos sukkuloiksi<SPLIT>/<SPLIT>pitkiksi pötkylöiksi ja päällystä jokainen pekonisuikaleella<SPLIT>.}
+aloin epäillä<SPLIT>, etten ollut sitä koskaan tietänytkään<SPLIT>.}
 Predicted: {
-muotoile lihamurekeseos sukkuloiksi<SPLIT>/pitkiksi pötkylöiksi ja päällystä jokainen pekonisuikaleella<SPLIT>.}
+aloin epäillä<SPLIT>, ett<SPLIT>en ollut sitä koskaan tietänytkään<SPLIT>.}
 False positives: {
-/pitkiksi
+ett
+en
 } False negatives: {
-/
-pitkiksi
+etten
 }
 
 Expected: {
-marjaisan herkun voi tehdä muistakin marjoista kuin mustikasta<SPLIT>...<SPLIT>.}
+viikon tyttö melkein nukkuu työpaikalla<SPLIT>, vaikkei sitä kukaan ehdi huomatakaan<SPLIT>.}
 Predicted: {
-marjaisan herkun voi tehdä muistakin marjoista kuin mustikasta<SPLIT>....}
+viikon tyttö melkein nukkuu työpaikalla<SPLIT>, vaikk<SPLIT>ei sitä kukaan ehdi huomatakaan<SPLIT>.}
 False positives: {
-....
+vaikk
+ei
 } False negatives: {
-...
-.
+vaikkei
 }
 
 Expected: {
-luulen kuitenkin<SPLIT>, ettei ongelmaa voida tarkastella ainoastaan romantiikan ja moraalisen suuttumuksen valossa<SPLIT>, vaan että tässä on tilaisuus nähdä kansainvälisen kaupan kieroutuneet mekanismit<SPLIT>, joiden ansiosta kaikki tällaiset rikolliset teot voivat levitä<SPLIT>.}
+on viileää<SPLIT>, muttei vielä niin viileää ettei voisi<SPLIT>.}
 Predicted: {
-luulen kuitenkin<SPLIT>, ett<SPLIT>ei ongelmaa voida tarkastella ainoastaan romantiikan ja moraalisen suuttumuksen valossa<SPLIT>, vaan että tässä on tilaisuus nähdä kansainvälisen kaupan kieroutuneet mekanismit<SPLIT>, joiden ansiosta kaikki tällaiset rikolliset teot voivat levitä<SPLIT>.}
+on viileää<SPLIT>, muttei vielä niin viileää ett<SPLIT>ei voisi<SPLIT>.}
 False positives: {
 ett
 ei
@@ -592,9 +508,20 @@ ettei
 }
 
 Expected: {
-teen näin varmistaakseni sen<SPLIT>, ettei euroopan unionin tarvitse puuttua asioihin seuraavan kerran<SPLIT>, kun jollakin suurella eurooppalaisella joella tapahtuu onnettomuus<SPLIT>, koska näin voi tapahtua<SPLIT>, ellemme laajenna kuluttajansuojalainsäädäntöä koskemaan myös tätä alaa<SPLIT>.}
+miksei voisi<SPLIT>?}
 Predicted: {
-teen näin varmistaakseni sen<SPLIT>, ett<SPLIT>ei euroopan unionin tarvitse puuttua asioihin seuraavan kerran<SPLIT>, kun jollakin suurella eurooppalaisella joella tapahtuu onnettomuus<SPLIT>, koska näin voi tapahtua<SPLIT>, ellemme laajenna kuluttajansuojalainsäädäntöä koskemaan myös tätä alaa<SPLIT>.}
+miks<SPLIT>ei voisi<SPLIT>?}
+False positives: {
+miks
+ei
+} False negatives: {
+miksei
+}
+
+Expected: {
+tuo kone<SPLIT>, joka sinne oli laskeutunut tuntui olevan syynä siihen<SPLIT>, ettei uudessa laajennusosassa toiminut mikään niin kuin olisi pitänyt<SPLIT>.}
+Predicted: {
+tuo kone<SPLIT>, joka sinne oli laskeutunut tuntui olevan syynä siihen<SPLIT>, ett<SPLIT>ei uudessa laajennusosassa toiminut mikään niin kuin olisi pitänyt<SPLIT>.}
 False positives: {
 ett
 ei
@@ -603,86 +530,9 @@ ettei
 }
 
 Expected: {
-hän hymyilee<SPLIT>, ei alaspäin<SPLIT>, niin ettei sitä oikein voi kuvata<SPLIT>, mutta sen kuitenkin näkee hymyksi<SPLIT>, ilkeäksi virnistykseksi<SPLIT>.}
+sekin oli yks tieto lisää minkä tiesin ettei jussi tienny<SPLIT>.}
 Predicted: {
-hän hymyilee<SPLIT>, ei alaspäin<SPLIT>, niin ett<SPLIT>ei sitä oikein voi kuvata<SPLIT>, mutta sen kuitenkin näkee hymyksi<SPLIT>, ilkeäksi virnistykseksi<SPLIT>.}
-False positives: {
-ett
-ei
-} False negatives: {
-ettei
-}
-
-Expected: {
-ihmeellistä<SPLIT>, että pari vuotta sitten rakastin tasaista tunnusmerkitöntä (<SPLIT>pääsykoekirjojen kieli tunkee vahingossakin sanastooni<SPLIT>) rintakehääni<SPLIT>, mutta nyt toivoisin edes yhden ihmisen kiinnittävän huomiota siihen<SPLIT>, ettei minulla ole rintaliivejä<SPLIT>.}
-Predicted: {
-ihmeellistä<SPLIT>, että pari vuotta sitten rakastin tasaista tunnusmerkitöntä (<SPLIT>pääsykoekirjojen kieli tunkee vahingossakin sanastooni<SPLIT>) rintakehääni<SPLIT>, mutta nyt toivoisin edes yhden ihmisen kiinnittävän huomiota siihen<SPLIT>, ett<SPLIT>ei minulla ole rintaliivejä<SPLIT>.}
-False positives: {
-ett
-ei
-} False negatives: {
-ettei
-}
-
-Expected: {
-ja ovat onnellisia siitä<SPLIT>, ettei tämmöinen ikävä tapahtuma aiheuttanut sitä tiettyä ikävää lisää tiettyihin ikäviin tilastoihin<SPLIT>.}
-Predicted: {
-ja ovat onnellisia siitä<SPLIT>, ett<SPLIT>ei tämmöinen ikävä tapahtuma aiheuttanut sitä tiettyä ikävää lisää tiettyihin ikäviin tilastoihin<SPLIT>.}
-False positives: {
-ett
-ei
-} False negatives: {
-ettei
-}
-
-Expected: {
-”<SPLIT>joo<SPLIT>, joo. mä vaan eka käväsen paskalla<SPLIT>.<SPLIT>”}
-Predicted: {
-”<SPLIT>joo<SPLIT>, joo<SPLIT>. mä vaan eka käväsen paskalla<SPLIT>.<SPLIT>”}
-False positives: {
-joo
-.
-} False negatives: {
-joo.
-}
-
-Expected: {
-löysinkin sopivat hanskat ja palasin hissikuilu<SPLIT>/<SPLIT>seinäaukolle<SPLIT>.}
-Predicted: {
-löysinkin sopivat hanskat ja palasin hissikuilu/<SPLIT>seinäaukolle<SPLIT>.}
-False positives: {
-hissikuilu/
-} False negatives: {
-hissikuilu
-/
-}
-
-Expected: {
-silti<SPLIT>, se oli sellanen tuntu aina keväisin<SPLIT>, että ties ettei nukkua paljo ehtiny ku pelloilla meni päivät ja illat<SPLIT>.}
-Predicted: {
-silti<SPLIT>, se oli sellanen tuntu aina keväisin<SPLIT>, että ties ett<SPLIT>ei nukkua paljo ehtiny ku pelloilla meni päivät ja illat<SPLIT>.}
-False positives: {
-ett
-ei
-} False negatives: {
-ettei
-}
-
-Expected: {
-toisin ku meidän tilan lähestymistie<SPLIT>, ni jussin vanhemmat oli onneks aidannu sen tien silleen<SPLIT>, ettei molla päässy ku sinne tilalle päin<SPLIT>.}
-Predicted: {
-toisin ku meidän tilan lähestymistie<SPLIT>, ni jussin vanhemmat oli onneks aidannu sen tien silleen<SPLIT>, ett<SPLIT>ei molla päässy ku sinne tilalle päin<SPLIT>.}
-False positives: {
-ett
-ei
-} False negatives: {
-ettei
-}
-
-Expected: {
-siis se ettei punanen oo se mistä ne vauhkoontuu vaan se liike mitä ne matadorit tekee<SPLIT>.}
-Predicted: {
-siis se ett<SPLIT>ei punanen oo se mistä ne vauhkoontuu vaan se liike mitä ne matadorit tekee<SPLIT>.}
+sekin oli yks tieto lisää minkä tiesin ett<SPLIT>ei jussi tienny<SPLIT>.}
 False positives: {
 ett
 ei
@@ -702,124 +552,62 @@ etten
 }
 
 Expected: {
-'<SPLIT>ne oli<SPLIT>, nyt ne on meidän lätäkön sukellusveneinä<SPLIT>'}
+- mm<SPLIT>.. the killersiä<SPLIT>, mitenniin<SPLIT>?}
 Predicted: {
-'ne oli<SPLIT>, nyt ne on meidän lätäkön sukellusveneinä<SPLIT>'}
+- mm.. the killersiä<SPLIT>, mitenniin<SPLIT>?}
 False positives: {
-'ne
+mm..
 } False negatives: {
+mm
+..
+}
+
+Expected: {
+huoneessaan pieni poika leikki pakonomaisesti leluautoillaan<SPLIT>, esitti itselleen ettei mitään ollut tapahtunutkaan<SPLIT>, vaikka sen huudon peittämiseksi olisi korvien päälle tarvittu kahdet kädet lisää<SPLIT>, '<SPLIT>antakaa minut anteeksi<SPLIT>'<SPLIT>.}
+Predicted: {
+huoneessaan pieni poika leikki pakonomaisesti leluautoillaan<SPLIT>, esitti itselleen ett<SPLIT>ei mitään ollut tapahtunutkaan<SPLIT>, vaikka sen huudon peittämiseksi olisi korvien päälle tarvittu kahdet kädet lisää<SPLIT>, 'antakaa minut anteeksi<SPLIT>'<SPLIT>.}
+False positives: {
+ett
+ei
+'antakaa
+} False negatives: {
+ettei
 '
-ne
+antakaa
 }
 
 Expected: {
-'<SPLIT>ota nämä mun<SPLIT>'<SPLIT>, niko sanoi ja riisui shortsinsa<SPLIT>.}
+d<SPLIT>) '<SPLIT>matkatavaralla<SPLIT>'<SPLIT>, jollei sitä ole toisin määritelty<SPLIT>, montrealin yleissopimuksen 17 artiklan 4 kohdassa olevan määritelmän mukaista sekä kirjattua että kirjaamatonta matkatavaraa<SPLIT>;}
 Predicted: {
-'ota nämä mun<SPLIT>'<SPLIT>, niko sanoi ja riisui shortsinsa<SPLIT>.}
+d<SPLIT>) '<SPLIT>matkatavaralla<SPLIT>'<SPLIT>, joll<SPLIT>ei sitä ole toisin määritelty<SPLIT>, montrealin yleissopimuksen 17 artiklan 4 kohdassa olevan määritelmän mukaista sekä kirjattua että kirjaamatonta matkatavaraa<SPLIT>;}
 False positives: {
-'ota
-} False negatives: {
-'
-ota
-}
-
-Expected: {
-tarttee olla varma ettei sano jotain mikä ei pidä paikkaansa<SPLIT>.<SPLIT>”}
-Predicted: {
-tarttee olla varma ett<SPLIT>ei sano jotain mikä ei pidä paikkaansa<SPLIT>.<SPLIT>”}
-False positives: {
-ett
+joll
 ei
 } False negatives: {
-ettei
+jollei
 }
 
 Expected: {
-sitten nainen alkoi ylittää katua<SPLIT>, varoen tarkoin ettei astuisi muille kuin valkoisille viivoille<SPLIT>.}
+1. jos este ilmenee<SPLIT>, ja jollei 2 artiklasta muuta johdu<SPLIT>, asianomaisen jäsenvaltion on a<SPLIT>) toteutettava kaikki tarvittavat ja suhteelliset toimenpiteet niin<SPLIT>, että tavaroiden vapaa liikkuvuus jäsenvaltion alueella varmistetaan perustamissopimuksen mukaisesti<SPLIT>, ja b<SPLIT>) ilmoitettava välittömästi komissiolle toimista<SPLIT>, jotka sen viranomaiset ovat toteuttaneet tai aikovat toteuttaa<SPLIT>.}
 Predicted: {
-sitten nainen alkoi ylittää katua<SPLIT>, varoen tarkoin ett<SPLIT>ei astuisi muille kuin valkoisille viivoille<SPLIT>.}
+1. jos este ilmenee<SPLIT>, ja joll<SPLIT>ei 2 artiklasta muuta johdu<SPLIT>, asianomaisen jäsenvaltion on a<SPLIT>) toteutettava kaikki tarvittavat ja suhteelliset toimenpiteet niin<SPLIT>, että tavaroiden vapaa liikkuvuus jäsenvaltion alueella varmistetaan perustamissopimuksen mukaisesti<SPLIT>, ja b<SPLIT>) ilmoitettava välittömästi komissiolle toimista<SPLIT>, jotka sen viranomaiset ovat toteuttaneet tai aikovat toteuttaa<SPLIT>.}
 False positives: {
-ett
+joll
 ei
 } False negatives: {
-ettei
+jollei
 }
 
 Expected: {
-fiatin grand prix -autossa oli hydrauliset jarrut jo vuonna 1914<SPLIT>.}
+(<SPLIT>15<SPLIT>) on välttämätöntä varmistaa lainojen luottotappioita<SPLIT>/<SPLIT>arvonalennuksia koskevien<SPLIT>, tarkoituksenmukaisesti yhdenmukaistettujen ja korkealaatuisten tietojen saatavuus kohdistamalla tätä koskeva vaatimus tiedonantajille<SPLIT>.}
 Predicted: {
-fiatin grand prix -autossa oli hydrauliset jarrut jo vuonna 1914.}
+(<SPLIT>15<SPLIT>) on välttämätöntä varmistaa lainojen luottotappioita/arvonalennuksia koskevien<SPLIT>, tarkoituksenmukaisesti yhdenmukaistettujen ja korkealaatuisten tietojen saatavuus kohdistamalla tätä koskeva vaatimus tiedonantajille<SPLIT>.}
 False positives: {
-1914.
+luottotappioita/arvonalennuksia
 } False negatives: {
-1914
-.
-}
-
-Expected: {
-[<SPLIT>pic<SPLIT>] | euroopan yhteisöjen komissio | bryssel 28.11.2005 kom(2005) 606 lopullinen vihreä kirja euroopan muuttoliikeiden verkoston tulevaisuudesta (<SPLIT>komission esittämä<SPLIT>)}
-Predicted: {
-[<SPLIT>pic<SPLIT>] | euroopan yhteisöjen komissio | bryssel 28.11.2005 kom(2005<SPLIT>) 606 lopullinen vihreä kirja euroopan muuttoliikeiden verkoston tulevaisuudesta (<SPLIT>komission esittämä<SPLIT>)}
-False positives: {
-kom(2005
-)
-} False negatives: {
-kom(2005)
-}
-
-Expected: {
-tällä hetkellä emn koostuu jäsenvaltioiden nimeämien 14 kansallisen yhteyspisteen (<SPLIT>ncp<SPLIT>; national contact points<SPLIT>) verkostosta<SPLIT>.}
-Predicted: {
-tällä hetkellä emn koostuu jäsenvaltioiden nimeämien 14 kansallisen yhteyspisteen (<SPLIT>ncp; national contact points<SPLIT>) verkostosta<SPLIT>.}
-False positives: {
-ncp;
-} False negatives: {
-ncp
-;
-}
-
-Expected: {
-neuvoston puolesta k.-h. funke puheenjohtaja (<SPLIT>1<SPLIT>)}
-Predicted: {
-neuvoston puolesta k.-h<SPLIT>. funke puheenjohtaja (<SPLIT>1<SPLIT>)}
-False positives: {
-k.-h
-.
-} False negatives: {
-k.-h.
-}
-
-Expected: {
-(<SPLIT>2<SPLIT>) tämä yhteinen järjestely otettiin käyttöön olemassa olevien kansainvälisten velvoitteiden mukaisesti ja erityisesti sellaisten velvoitteiden mukaisesti<SPLIT>, jotka johtuvat tullitariffeja ja kauppaa koskevan yleissopimuksen<SPLIT>, jäljempänä `<SPLIT>gatt-sopimus<SPLIT>`<SPLIT>, vi artiklasta<SPLIT>, gatt-sopimuksen vi artiklan täytäntöönpanoa koskevasta sopimuksesta (<SPLIT>vuoden 1979 polkumyyntikoodi<SPLIT>) sekä gatt-sopimuksen vi<SPLIT>, xvi ja xxiii artiklan tulkintaa ja soveltamista koskevasta sopimuksesta (<SPLIT>vientituki- ja tasoitustullikoodi<SPLIT>)<SPLIT>;}
-Predicted: {
-(<SPLIT>2<SPLIT>) tämä yhteinen järjestely otettiin käyttöön olemassa olevien kansainvälisten velvoitteiden mukaisesti ja erityisesti sellaisten velvoitteiden mukaisesti<SPLIT>, jotka johtuvat tullitariffeja ja kauppaa koskevan yleissopimuksen<SPLIT>, jäljempänä `gatt-sopimus<SPLIT>`<SPLIT>, vi artiklasta<SPLIT>, gatt-sopimuksen vi artiklan täytäntöönpanoa koskevasta sopimuksesta (<SPLIT>vuoden 1979 polkumyyntikoodi<SPLIT>) sekä gatt-sopimuksen vi<SPLIT>, xvi ja xxiii artiklan tulkintaa ja soveltamista koskevasta sopimuksesta (<SPLIT>vientituki- ja tasoitustullikoodi<SPLIT>)<SPLIT>;}
-False positives: {
-`gatt-sopimus
-} False negatives: {
-`
-gatt-sopimus
-}
-
-Expected: {
-4. tässä asetuksessa ilmaisun `<SPLIT>samankaltainen tuote<SPLIT>` on tulkittava tarkoittavan tuotetta<SPLIT>, joka on identtinen<SPLIT>, toisin sanoen kaikissa suhteissa samanlainen kuin kysymyksessä oleva tuote<SPLIT>, tai sellaisen tuotteen puuttuessa<SPLIT>, muuta tuotetta<SPLIT>, joka<SPLIT>, vaikka se ei ole kaikissa suhteissa samanlainen<SPLIT>, muistuttaa ominaispiirteiltään kyseistä tuotetta<SPLIT>.}
-Predicted: {
-4. tässä asetuksessa ilmaisun `<SPLIT>samankaltainen tuote` on tulkittava tarkoittavan tuotetta<SPLIT>, joka on identtinen<SPLIT>, toisin sanoen kaikissa suhteissa samanlainen kuin kysymyksessä oleva tuote<SPLIT>, tai sellaisen tuotteen puuttuessa<SPLIT>, muuta tuotetta<SPLIT>, joka<SPLIT>, vaikka se ei ole kaikissa suhteissa samanlainen<SPLIT>, muistuttaa ominaispiirteiltään kyseistä tuotetta<SPLIT>.}
-False positives: {
-tuote`
-} False negatives: {
-tuote
-`
-}
-
-Expected: {
-tositilanne on nimittäin se<SPLIT>, ettei kellään vaikuttaisi olevan juuri minkäänlaista yleispätevää käsitystä siitä<SPLIT>, mitä tuo 27 tunnin työmäärä käytännössä tarkoittaa<SPLIT>.}
-Predicted: {
-tositilanne on nimittäin se<SPLIT>, ett<SPLIT>ei kellään vaikuttaisi olevan juuri minkäänlaista yleispätevää käsitystä siitä<SPLIT>, mitä tuo 27 tunnin työmäärä käytännössä tarkoittaa<SPLIT>.}
-False positives: {
-ett
-ei
-} False negatives: {
-ettei
+luottotappioita
+/
+arvonalennuksia
 }
 
 Expected: {
@@ -836,208 +624,108 @@ tähän(kin)
 }
 
 Expected: {
-sijoituspankki ing invest managementin tekemässä kyselyssä vain seitsemän prosenttia vastaajista uskoo<SPLIT>, etteivät ekp:n viimeaikaiset toimet nosta inflaatiota<SPLIT>.}
+s<SPLIT>&<SPLIT>p:n lista on yksistään muutamaa maata isompi<SPLIT>.}
 Predicted: {
-sijoituspankki ing invest managementin tekemässä kyselyssä vain seitsemän prosenttia vastaajista uskoo<SPLIT>, ett<SPLIT>eivät ekp:n viimeaikaiset toimet nosta inflaatiota<SPLIT>.}
+s&<SPLIT>p:n lista on yksistään muutamaa maata isompi<SPLIT>.}
 False positives: {
-ett
-eivät
+s&
 } False negatives: {
-etteivät
+s
+&
 }
 
 Expected: {
-ennusteet vaihtelivat 42,5-57,0 miljoonan euron haarukassa<SPLIT>.}
+viime viikolla luokitusta pudotti moody's<SPLIT>.}
 Predicted: {
-ennusteet vaihtelivat 42<SPLIT>,5-57,0 miljoonan euron haarukassa<SPLIT>.}
+viime viikolla luokitusta pudotti moody's.}
 False positives: {
-42
-,5-57,0
+moody's.
 } False negatives: {
-42,5-57,0
-}
-
-Expected: {
-– lisäksi suomessa on tehty paljon taudinvastaista työtä<SPLIT>, eli hävitetty maasta eläintauteja kokonaan.<SPLIT>, lääkealan turvallisuus- ja kehittämiskeskus fimean eläinlääkäri fia westerholm sanoo<SPLIT>.}
-Predicted: {
-– lisäksi suomessa on tehty paljon taudinvastaista työtä<SPLIT>, eli hävitetty maasta eläintauteja kokonaan<SPLIT>.<SPLIT>, lääkealan turvallisuus- ja kehittämiskeskus fimean eläinlääkäri fia westerholm sanoo<SPLIT>.}
-False positives: {
-kokonaan
-.
-} False negatives: {
-kokonaan.
-}
-
-Expected: {
-− miksei keskiajalla ollut suomenkielisiä kirjoja<SPLIT>, soikkanen kysyy oppilasryhmältä<SPLIT>.}
-Predicted: {
-− miks<SPLIT>ei keskiajalla ollut suomenkielisiä kirjoja<SPLIT>, soikkanen kysyy oppilasryhmältä<SPLIT>.}
-False positives: {
-miks
-ei
-} False negatives: {
-miksei
-}
-
-Expected: {
-heitä olivat teemu kautonen<SPLIT>,<SPLIT>riitta laitinen<SPLIT>,<SPLIT>tutta palin ja matti peikola<SPLIT>.}
-Predicted: {
-heitä olivat teemu kautonen<SPLIT>,riitta laitinen,tutta palin ja matti peikola<SPLIT>.}
-False positives: {
-,riitta
-laitinen,tutta
-} False negatives: {
-,
-riitta
-laitinen
-,
-tutta
-}
-
-Expected: {
-nyt julkaistussa kiinan miljoonakaupungit − hallinto<SPLIT>, liike-elämä ja elinympäristö muutoksessa -teoksessa kiinnitetään kaupunkisuunnittelun lisäksi erityistä huomiota muun muassa kaupunkilaisten kulutustottumuksiin<SPLIT>, järjestötoimintaan sekä ympäristökysymyksiin<SPLIT>.}
-Predicted: {
-nyt julkaistussa kiinan miljoonakaupungit − hallinto<SPLIT>, liike-elämä ja elinympäristö muutoksessa -<SPLIT>teoksessa kiinnitetään kaupunkisuunnittelun lisäksi erityistä huomiota muun muassa kaupunkilaisten kulutustottumuksiin<SPLIT>, järjestötoimintaan sekä ympäristökysymyksiin<SPLIT>.}
-False positives: {
--
-teoksessa
-} False negatives: {
--teoksessa
-}
-
-Expected: {
-binderup ei usko liberaaleissa autonomisissa yhteiskunnissa koskaan tultavan sellaiseen pisteeseen<SPLIT>, etteikö suvaitsemattomuutta enää ilmenisi tai asian ympärillä käytäisi jonkinlaisia kamppailuja<SPLIT>.}
-Predicted: {
-binderup ei usko liberaaleissa autonomisissa yhteiskunnissa koskaan tultavan sellaiseen pisteeseen<SPLIT>, ett<SPLIT>eikö suvaitsemattomuutta enää ilmenisi tai asian ympärillä käytäisi jonkinlaisia kamppailuja<SPLIT>.}
-False positives: {
-ett
-eikö
-} False negatives: {
-etteikö
-}
-
-Expected: {
-siirto 2...lc5 sisältää myös avausansan aloittelijoille<SPLIT>: jos valkea jatkaa fxe5?<SPLIT>, musta pelaa 3...dh4+<SPLIT>, jolloin valkea menettää joko torninsa (<SPLIT>4.g3 dxe4+<SPLIT>) tai joutuu matitetuksi (<SPLIT>4.ke2 dxe4#<SPLIT>)<SPLIT>.}
-Predicted: {
-siirto 2...lc5 sisältää myös avausansan aloittelijoille<SPLIT>: jos valkea jatkaa fxe5<SPLIT>?<SPLIT>, musta pelaa 3...dh4+<SPLIT>, jolloin valkea menettää joko torninsa (<SPLIT>4.g3 dxe4+<SPLIT>) tai joutuu matitetuksi (<SPLIT>4.ke2 dxe4#<SPLIT>)<SPLIT>.}
-False positives: {
-fxe5
-?
-} False negatives: {
-fxe5?
-}
-
-Expected: {
-tärkeimpiä hietasessa toimivia logistiikkayrityksiä ovat steveco oy<SPLIT>, nurminen logistics oyj ja wallenius wilhelmsen logistics<SPLIT>.}
-Predicted: {
-tärkeimpiä hietasessa toimivia logistiikkayrityksiä ovat steveco oy<SPLIT>, nurminen logistics oyj ja wallenius wilhelmsen logistics.}
-False positives: {
-logistics.
-} False negatives: {
-logistics
+moody's
 .
 }
 
 Expected: {
-mutta ei ollut helppoa piirittäjälläkään<SPLIT>: näitä kuoli ainakin tuhat leirissä riehuneeseen kulkutautiin<SPLIT>lähde<SPLIT>?<SPLIT>.}
+cunninghamin puolustus 3...le7 on mustan aggressiivisin vaihtoehto<SPLIT>; musta voi estää valkeaa linnoittamasta jatkossa 4.lc4 lh4+ 5.kf1<SPLIT>.}
 Predicted: {
-mutta ei ollut helppoa piirittäjälläkään<SPLIT>: näitä kuoli ainakin tuhat leirissä riehuneeseen kulkutautiinlähde<SPLIT>?<SPLIT>.}
+cunninghamin puolustus 3...<SPLIT>le7 on mustan aggressiivisin vaihtoehto<SPLIT>; musta voi estää valkeaa linnoittamasta jatkossa 4.lc4 lh4+ 5.kf1<SPLIT>.}
 False positives: {
-kulkutautiinlähde
+3...
+le7
 } False negatives: {
-kulkutautiin
-lähde
+3...le7
 }
 
 Expected: {
-ykkösestä liigaan olivat nousseet kups ja rops<SPLIT>.}
+sana voidaan usein korvata merkityksen mukaan joko sanalla ”<SPLIT>kappaleelta<SPLIT>” tai ”<SPLIT>kukin<SPLIT>” tai vaihteluväliä ilmaistaessa ajatusviivalla tai muulla ilmauksella<SPLIT>, esimerkiksi ”<SPLIT>4 à 6<SPLIT>” tarkoittaa samaa kuin ”<SPLIT>4–6<SPLIT>” tai ”<SPLIT>4:stä 6:een<SPLIT>”<SPLIT>.}
 Predicted: {
-ykkösestä liigaan olivat nousseet kups ja rops.}
+sana voidaan usein korvata merkityksen mukaan joko sanalla ”<SPLIT>kappaleelta<SPLIT>” tai ”<SPLIT>kukin<SPLIT>” tai vaihteluväliä ilmaistaessa ajatusviivalla tai muulla ilmauksella<SPLIT>, esimerkiksi ”<SPLIT>4 à 6<SPLIT>” tarkoittaa samaa kuin ”<SPLIT>4–<SPLIT>6<SPLIT>” tai ”<SPLIT>4:stä 6:een<SPLIT>”<SPLIT>.}
 False positives: {
-rops.
+4–
+6
 } False negatives: {
-rops
+4–6
+}
+
+Expected: {
+kokljuschkin on toiminut finnlevyn kotimaisen musiikin tuotepäällikkönä ja scandian<SPLIT>, finnscandian<SPLIT>, sonet/discophonin ja polygramin toimitusjohtajana vuosina 1977–1998<SPLIT>.}
+Predicted: {
+kokljuschkin on toiminut finnlevyn kotimaisen musiikin tuotepäällikkönä ja scandian<SPLIT>, finnscandian<SPLIT>, sonet<SPLIT>/discophonin ja polygramin toimitusjohtajana vuosina 1977–1998<SPLIT>.}
+False positives: {
+sonet
+/discophonin
+} False negatives: {
+sonet/discophonin
+}
+
+Expected: {
+vuori tunnetaan eri kielillä eri nimillä<SPLIT>: turkiksi ağrı<SPLIT>; armeniaksi արարատ<SPLIT>; farsiksi آرارات ja hepreaksi אררט<SPLIT>.}
+Predicted: {
+vuori tunnetaan eri kielillä eri nimillä<SPLIT>: turkiksi ağrı<SPLIT>; armeniaksi արարատ<SPLIT>; farsiksi آرارات ja hepreaksi אררט.}
+False positives: {
+אררט.
+} False negatives: {
+אררט
 .
 }
 
 Expected: {
-oao sollers (<SPLIT>ven. оао «<SPLIT>соллерс<SPLIT>»<SPLIT>, sollers<SPLIT>) (<SPLIT>micex<SPLIT>: svav , rts<SPLIT>: svav ) on venäläinen autoteollisuusyhtymä<SPLIT>, johon on yhdistetty useita entisiä neuvostoliittolaisia autonvalmistajia<SPLIT>.}
+sodan alussa hän oli 28. saksalaisen jalkaväkirykmentin esikunnassa<SPLIT>, ja palveli myöhemmin 83. jääkärirykmentissä<SPLIT>, 704. jalkaväkidivisioonassa ja vielä 104. jääkäridivisioonassa<SPLIT>.}
 Predicted: {
-oao sollers (<SPLIT>ven<SPLIT>. оао «соллерс»<SPLIT>, sollers<SPLIT>) (<SPLIT>micex<SPLIT>: svav , rts<SPLIT>: svav ) on venäläinen autoteollisuusyhtymä<SPLIT>, johon on yhdistetty useita entisiä neuvostoliittolaisia autonvalmistajia<SPLIT>.}
+sodan alussa hän oli 28. saksalaisen jalkaväkirykmentin esikunnassa<SPLIT>, ja palveli myöhemmin 83<SPLIT>. jääkärirykmentissä<SPLIT>, 704<SPLIT>. jalkaväkidivisioonassa ja vielä 104<SPLIT>. jääkäridivisioonassa<SPLIT>.}
 False positives: {
-ven
+83
 .
-«соллерс»
-} False negatives: {
-ven.
-«
-соллерс
-»
-}
-
-Expected: {
-uudet kappaleet smashes<SPLIT>, thrashes & hitsillä ovat "<SPLIT>let's put the x in sex<SPLIT>" ja "<SPLIT>(<SPLIT>you make me<SPLIT>) rock hard<SPLIT>"<SPLIT>, jotka molemmat ovat tyylillisesti vuoden 1987 crazy nights -albumin kanssa yhteneväisiä - hiottua<SPLIT>, melodista glam rockia<SPLIT>.}
-Predicted: {
-uudet kappaleet smashes<SPLIT>, thrashes & hitsillä ovat "<SPLIT>let<SPLIT>'s put the x in sex<SPLIT>" ja "<SPLIT>(<SPLIT>you make me<SPLIT>) rock hard<SPLIT>"<SPLIT>, jotka molemmat ovat tyylillisesti vuoden 1987 crazy nights -albumin kanssa yhteneväisiä - hiottua<SPLIT>, melodista glam rockia<SPLIT>.}
-False positives: {
-let
-'s
-} False negatives: {
-let's
-}
-
-Expected: {
-lainsäädännössä edellytetään isännöitsijältä ainoastaan<SPLIT>, ettei hän ole vajaavaltainen (<SPLIT>alle 18-vuotias tai edunvalvonnan alainen<SPLIT>) eikä konkurssissa ja että hänellä on asuinpaikka euroopan talousalueella<SPLIT>.}
-Predicted: {
-lainsäädännössä edellytetään isännöitsijältä ainoastaan<SPLIT>, ett<SPLIT>ei hän ole vajaavaltainen (<SPLIT>alle 18-vuotias tai edunvalvonnan alainen<SPLIT>) eikä konkurssissa ja että hänellä on asuinpaikka euroopan talousalueella<SPLIT>.}
-False positives: {
-ett
-ei
-} False negatives: {
-ettei
-}
-
-Expected: {
-khosroidit eli khosro[v]iani-dynastia (<SPLIT>georg. ხოსრო[ვ]იანი<SPLIT>) oli iberian (<SPLIT>paikallisesti kartlin<SPLIT>) eli muinaisen georgian hallitsijasuku 300–800-luvuilla<SPLIT>.}
-Predicted: {
-khosroidit eli khosro<SPLIT>[<SPLIT>v]iani-dynastia (<SPLIT>georg<SPLIT>. ხოსრო[<SPLIT>ვ]იანი<SPLIT>) oli iberian (<SPLIT>paikallisesti kartlin<SPLIT>) eli muinaisen georgian hallitsijasuku 300–800-luvuilla<SPLIT>.}
-False positives: {
-khosro
-[
-v]iani-dynastia
-georg
+704
 .
-ხოსრო[
-ვ]იანი
-} False negatives: {
-khosro[v]iani-dynastia
-georg.
-ხოსრო[ვ]იანი
-}
-
-Expected: {
-otto vilhelm (<SPLIT>o.v.<SPLIT>) turunen (<SPLIT>30. marraskuuta 1875 heinävesi – 9. syyskuuta 1954 mikkelin maalaiskunta<SPLIT>) oli suomalainen toimitusjohtaja<SPLIT>, maanviljelijä ja sosialidemokraattien kansanedustaja<SPLIT>.}
-Predicted: {
-otto vilhelm (<SPLIT>o.<SPLIT>v.<SPLIT>) turunen (<SPLIT>30<SPLIT>. marraskuuta 1875 heinävesi – 9. syyskuuta 1954 mikkelin maalaiskunta<SPLIT>) oli suomalainen toimitusjohtaja<SPLIT>, maanviljelijä ja sosialidemokraattien kansanedustaja<SPLIT>.}
-False positives: {
-o.
-v.
-30
+104
 .
 } False negatives: {
-o.v.
-30.
+83.
+704.
+104.
 }
 
 Expected: {
-asiasta uutisoi aamun koitto<SPLIT>-lehti<SPLIT>.}
+toinen sota (<SPLIT>83 eaa.<SPLIT>–<SPLIT>81 eaa.<SPLIT>) oli suppeampi laajuudeltaan<SPLIT>.}
 Predicted: {
-asiasta uutisoi aamun koitto-lehti<SPLIT>.}
+toinen sota (<SPLIT>83 eaa.<SPLIT>–81 eaa.<SPLIT>) oli suppeampi laajuudeltaan<SPLIT>.}
 False positives: {
-koitto-lehti
+–81
 } False negatives: {
-koitto
--lehti
+–
+81
+}
+
+Expected: {
+libuše (<SPLIT>saks. libussa tai libuscha<SPLIT>) oli přemyslidien hallitsijasuvun perustaja ja tšekkiläisten myyttinen esiäiti<SPLIT>.}
+Predicted: {
+libuše (<SPLIT>saks<SPLIT>. libussa tai libuscha<SPLIT>) oli přemyslidien hallitsijasuvun perustaja ja tšekkiläisten myyttinen esiäiti<SPLIT>.}
+False positives: {
+saks
+.
+} False negatives: {
+saks.
 }
 
 Expected: {
@@ -1052,12 +740,12 @@ yrität
 }
 
 Expected: {
-sopulit ovat selviytyneet talvesta hyvin<SPLIT>, mutta kanta saattaa äkillisesti romahtaa<SPLIT>, niin ettei vaellusta tulekaan<SPLIT>.}
+–<SPLIT>olen erittäin onnellinen<SPLIT>.}
 Predicted: {
-sopulit ovat selviytyneet talvesta hyvin<SPLIT>, mutta kanta saattaa äkillisesti romahtaa<SPLIT>, niin ett<SPLIT>ei vaellusta tulekaan<SPLIT>.}
+–olen erittäin onnellinen<SPLIT>.}
 False positives: {
-ett
-ei
+–olen
 } False negatives: {
-ettei
+–
+olen
 }

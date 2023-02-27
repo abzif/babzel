@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.99312093905354
-Training-Sample-Size=31222
-Evaluation-Sample-Size=3469
+Evaluation-Score=0.9930763389467102
+Training-Sample-Size=31138
+Evaluation-Sample-Size=3459
 Training-Algorithm=MAXENT_QN
 
 === MODEL PROPERTIES ===
@@ -9,122 +9,75 @@ Component-Name=TokenizerME
 Language=ko
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1674284555312
+Timestamp=1677129285381
 TrainerType=Event
-Training-Eventhash=93fbf4248f6084a2acbba310b07e7187
+Training-Eventhash=d401afa6e04824c375007e52819eaf16
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
 
 === MISCLASSIFIED DETAILS ===
 Expected: {
-한국의 부락제<SPLIT>(<SPLIT>部落祭<SPLIT>)<SPLIT>는 그 연원<SPLIT>(<SPLIT>淵源<SPLIT>)<SPLIT>이 오래되었으며<SPLIT>, '<SPLIT>영고<SPLIT>(<SPLIT>迎鼓<SPLIT>)<SPLIT>' '<SPLIT>무천<SPLIT>(<SPLIT>舞天<SPLIT>)<SPLIT>' '<SPLIT>동맹<SPLIT>(<SPLIT>東盟<SPLIT>)<SPLIT>' 등과 '<SPLIT>팔관회<SPLIT>'<SPLIT>'<SPLIT>중동팔관회<SPLIT>(<SPLIT>仲冬八關會<SPLIT>)<SPLIT>' 등의 영향을 받아 이루어진 것이다<SPLIT>.}
+석유•화학제품 수출 증가에 힘입어 2003년 37<SPLIT>%<SPLIT>에 불과했던 매출액 대비 수출 비중은 2007년 처음으로 50<SPLIT>%<SPLIT>를 돌파했고<SPLIT>, 지난해에는 59.1<SPLIT>%<SPLIT>까지 올라섰다<SPLIT>.}
 Predicted: {
-한국의 부락제<SPLIT>(<SPLIT>部落祭<SPLIT>)<SPLIT>는 그 연원<SPLIT>(<SPLIT>淵源<SPLIT>)<SPLIT>이 오래되었으며<SPLIT>, '<SPLIT>영고<SPLIT>(<SPLIT>迎鼓<SPLIT>)<SPLIT>' '<SPLIT>무천<SPLIT>(<SPLIT>舞天<SPLIT>)<SPLIT>' '<SPLIT>동맹<SPLIT>(<SPLIT>東盟<SPLIT>)<SPLIT>' 등과 '<SPLIT>팔관회<SPLIT>''<SPLIT>중동팔관회<SPLIT>(<SPLIT>仲冬八關會<SPLIT>)<SPLIT>' 등의 영향을 받아 이루어진 것이다<SPLIT>.}
+석유<SPLIT>•<SPLIT>화학제품 수출 증가에 힘입어 2003년 37<SPLIT>%<SPLIT>에 불과했던 매출액 대비 수출 비중은 2007년 처음으로 50<SPLIT>%<SPLIT>를 돌파했고<SPLIT>, 지난해에는 59.1<SPLIT>%<SPLIT>까지 올라섰다<SPLIT>.}
 False positives: {
-''
+석유
+•
+화학제품
 } False negatives: {
-'
-'
+석유•화학제품
 }
 
 Expected: {
-솔직히 강된장밥은 짠대 계속 먹게 됨<SPLIT>.}
+사생대회 수상자는 대구광역시교육감상 3명<SPLIT>, 포항•구미교육장상 6명을 비롯해 대구은행장상 1,644명으로 수상자에게는 장학금 및 부상이 각각 주어졌다<SPLIT>.}
 Predicted: {
-솔직히 강된<SPLIT>장밥은 짠대 계속 먹게 됨<SPLIT>.}
+사생대회 수상자는 대구광역시교육감상 3명<SPLIT>, 포항<SPLIT>•<SPLIT>구미교육장상 6명을 비롯해 대구은행장상 1,644명으로 수상자에게는 장학금 및 부상이 각각 주어졌다<SPLIT>.}
 False positives: {
-강된
-장밥은
+포항
+•
+구미교육장상
 } False negatives: {
-강된장밥은
+포항•구미교육장상
 }
 
 Expected: {
-그러자 아마로 주니어 단장은 "<SPLIT>반갑다<SPLIT>"<SPLIT>라는 짧은 인사를 건넨 뒤 "<SPLIT>박찬호는 계약 기간 2년 300만 달러<SPLIT>(<SPLIT>약 34억 원<SPLIT>) 계약을 거절했다<SPLIT>"<SPLIT>고 말했습니다<SPLIT>.}
+최장의 경험과 연륜으로 성실 시공하는 업체<SPLIT>.<SPLIT>.}
 Predicted: {
-그러자 아마로 주니어 단장은 "<SPLIT>반갑다<SPLIT>"<SPLIT>라는 짧은 인사를 건넨 뒤 "<SPLIT>박찬호는 계약 기간 2년 300만 달러<SPLIT>(<SPLIT>약 34<SPLIT>억 원<SPLIT>) 계약을 거절했다<SPLIT>"<SPLIT>고 말했습니다<SPLIT>.}
+최장의 경험과 연륜으로 성실 시공하는 업체<SPLIT>..}
 False positives: {
-34
-억
+..
 } False negatives: {
-34억
-}
-
-Expected: {
-이번 친선경기는 k-파워스 그룹이 후원하며 수익금 전액은 국제아동권리기관인 `<SPLIT>세이브 더 칠드런 재팬<SPLIT>`<SPLIT>에 기부된다<SPLIT>.}
-Predicted: {
-이번 친선경기는 k-파워스 그룹이 후원하며 수익금 전액은 국제아동권리기관인 `<SPLIT>세이브 더 칠드런 재팬`<SPLIT>에 기부된다<SPLIT>.}
-False positives: {
-재팬`
-} False negatives: {
-재팬
-`
-}
-
-Expected: {
-이 장롱은 받침대 위에 같은 규격의 두 개의 농을 위<SPLIT>ㆍ<SPLIT>아래로 결합한 형태이며<SPLIT>, 각각은 분리가 가능하다<SPLIT>.}
-Predicted: {
-이 장롱은 받침대 위에 같은 규격의 두 개의 농을 위ㆍ아래로 결합한 형태이며<SPLIT>, 각각은 분리가 가능하다<SPLIT>.}
-False positives: {
-위ㆍ아래로
-} False negatives: {
-위
-ㆍ
-아래로
-}
-
-Expected: {
-간이 피자 판매점에서 판매하는 라스티카 (<SPLIT>pizza rustica<SPLIT>)<SPLIT>나 피자 알 탈리오 (<SPLIT>pizza al taglio<SPLIT>)<SPLIT>는 직사각형 모양의 팬으로 구우며<SPLIT>, 다른 피자보다 상대적으로 두꺼운 편이다 (<SPLIT>1<SPLIT>--<SPLIT>2<SPLIT>?<SPLIT>cm )<SPLIT>.}
-Predicted: {
-간이 피자 판매점에서 판매하는 라스티카 (<SPLIT>pizza rustica<SPLIT>)<SPLIT>나 피자 알 탈리오 (<SPLIT>pizza al taglio<SPLIT>)<SPLIT>는 직사각형 모양의 팬으로 구우며<SPLIT>, 다른 피자보다 상대적으로 두꺼운 편이다 (<SPLIT>1-<SPLIT>-2?cm )<SPLIT>.}
-False positives: {
-1-
--2?cm
-} False negatives: {
-1
---
-2
-?
-cm
-}
-
-Expected: {
-미국의 화학자 길버트 n. 루이스<SPLIT>(<SPLIT>1875~1946<SPLIT>)<SPLIT>은 원소에 대한 기호와 전자에 대한 점을 이용하자고 제안하였다<SPLIT>.}
-Predicted: {
-미국의 화학자 길버트 n<SPLIT>. 루이스<SPLIT>(<SPLIT>1875~1946<SPLIT>)<SPLIT>은 원소에 대한 기호와 전자에 대한 점을 이용하자고 제안하였다<SPLIT>.}
-False positives: {
-n
 .
-} False negatives: {
-n.
+.
 }
 
 Expected: {
-세계 최초의 터보프롭 엔진은 헝가리의 공학자 죄르지 옌드라식<SPLIT>(<SPLIT>gyorgy jendrassik<SPLIT>)<SPLIT>이 설계한 '<SPLIT>jendrassik cs-1<SPLIT>'<SPLIT>이다<SPLIT>.}
+이는 결국 12월 초에 유로존 재무장관 모임<SPLIT>(<SPLIT>유로그룹<SPLIT>)<SPLIT>과 ecofin의 특별회의가 각각 한 차례 더 열려야 확정될 것이라는 관측도 나오고 있다<SPLIT>.}
 Predicted: {
-세계 최초의 터보프롭 엔진은 헝가리의 공학자 죄르지 옌드라식<SPLIT>(<SPLIT>gyorgy jendrassik<SPLIT>)<SPLIT>이 설계한 '<SPLIT>jendrassik cs-<SPLIT>1<SPLIT>'<SPLIT>이다<SPLIT>.}
+이는 결국 12월 초에 유로존 재무<SPLIT>장관 모임<SPLIT>(<SPLIT>유로그룹<SPLIT>)<SPLIT>과 ecofin의 특별회의가 각각 한 차례 더 열려야 확정될 것이라는 관측도 나오고 있다<SPLIT>.}
 False positives: {
-cs-
-1
+재무
+장관
 } False negatives: {
-cs-1
+재무장관
 }
 
 Expected: {
-단골 식당 가게인데 한 자리에서 15년 넘게 버티는 저력이 있더군요<SPLIT>.}
+최고 속도는 워프 8.8<SPLIT>이다<SPLIT>.}
 Predicted: {
-단골 식당 가게인데 한 자리에서 15년 넘게 버티<SPLIT>는 저력이 있더군요<SPLIT>.}
+최고 속도는 워프 8.8이다<SPLIT>.}
 False positives: {
-버티
-는
+8.8이다
 } False negatives: {
-버티는
+8.8
+이다
 }
 
 Expected: {
-음식으로만 평가하면 좋은데 불친절한 것만 감당할 수 있으면 강추이에요<SPLIT>~<SPLIT>~ ^^}
+간호사 언니들도 친절하고 의사 선생님 솜씨도 좋아서 무사히 진료를 마쳤습니다 ^^}
 Predicted: {
-음식으로만 평가하면 좋은데 불친절한 것만 감당할 수 있으면 강추이에요<SPLIT>~<SPLIT>~ ^<SPLIT>^}
+간호사 언니들도 친절하고 의사 선생님 솜씨도 좋아서 무사히 진료를 마쳤습니다 ^<SPLIT>^}
 False positives: {
 ^
 ^
@@ -133,1395 +86,1409 @@ False positives: {
 }
 
 Expected: {
-송대현 lg전자 c&c사업부장<SPLIT>(<SPLIT>부사장<SPLIT>)<SPLIT>은 "<SPLIT>오토무빙 기술을 적용한 로보싸이킹은 청소기 사용 고정관점을 깨며 청소 행동까지도 획기적으로 바꿀 수 있는 첨단 제품으로 지속적인 기술 혁신으로 청소기 시장 선두 자리를 이어갈 것<SPLIT>"<SPLIT>이라고 말했다<SPLIT>.}
+사장님께서 친절하게 a<SPLIT>/<SPLIT>s 해주시고 공사 마무리 잘해주시네요}
 Predicted: {
-송대현 lg전자 c&<SPLIT>c사업부장<SPLIT>(<SPLIT>부사장<SPLIT>)<SPLIT>은 "<SPLIT>오토무빙 기술을 적용한 로보싸이킹은 청소기 사용 고정관점을 깨며 청소 행동까지도 획기적으로 바꿀 수 있는 첨단 제품으로 지속적인 기술 혁신으로 청소기 시장 선두 자리를 이어갈 것<SPLIT>"<SPLIT>이라고 말했다<SPLIT>.}
+사장님께서 친절하게 a<SPLIT>/s 해주시고 공사 마무리 잘해주시네요}
 False positives: {
-c&
-c사업부장
+/s
 } False negatives: {
-c&c사업부장
+/
+s
 }
 
 Expected: {
-매출액은 5<SPLIT>15<SPLIT>7억 원으로 전년대비 37.16<SPLIT>% 증가<SPLIT>.}
+이를 토대로 2011년에 30개국<SPLIT>, 200여개 기관을 유치하고 2012년에 40개국<SPLIT>, 300여개 기관<SPLIT>, 2013년에 50개국<SPLIT>, 400여개 기관 가입을 추진한다<SPLIT>.}
 Predicted: {
-매출액은 5157억 원으로 전년대비 37.16<SPLIT>% 증가<SPLIT>.}
+이를 토대로 2011년에 30개국<SPLIT>, 200여개 기관을 유치하고 2012년에 40개국<SPLIT>, 300여개 기관<SPLIT>, 2013<SPLIT>년에 50개국<SPLIT>, 400여개 기관 가입을 추진한다<SPLIT>.}
 False positives: {
-5157억
-} False negatives: {
-5
-15
-7억
-}
-
-Expected: {
-수정난풀<SPLIT>(<SPLIT>水晶蘭-, monotropa uniflora<SPLIT>)<SPLIT>은 한반도 각처 산지의 나무 그늘에 나는 여러해살이 기생식물로서 전체적으로 희며<SPLIT>, 높이는 8-15cm 정도이다<SPLIT>.}
-Predicted: {
-수정난풀<SPLIT>(<SPLIT>水晶蘭-<SPLIT>, monotropa uniflora<SPLIT>)<SPLIT>은 한반도 각처 산지의 나무 그늘에 나는 여러해<SPLIT>살이 기생식물로서 전체적으로 희며<SPLIT>, 높이는 8-15cm 정도이다<SPLIT>.}
-False positives: {
-水晶蘭-
-,
-여러해
-살이
-} False negatives: {
-水晶蘭-,
-여러해살이
-}
-
-Expected: {
-오매사태로부터 이어져 엄영춘이 창시한 영춘권<SPLIT>(<SPLIT>詠春拳<SPLIT>)<SPLIT>과는 구별되는 다른 권법이지만<SPLIT>, 여성이 창시한 권법이라는 공통점이 있는데다가 그 역사와 기법에 공통적인 부분이 많아 오늘날에는 엄영춘이 창시한 영춘권의 한 분파로도 널리 알려져있다<SPLIT>.}
-Predicted: {
-오매사태로부터 이어져 엄영춘이 창시한 영춘권<SPLIT>(<SPLIT>詠春拳<SPLIT>)<SPLIT>과는 구별되는 다른 권법이지만<SPLIT>, 여성이 창시한 권법이라는 공통점이 있는데<SPLIT>다가 그 역사와 기법에 공통적인 부분이 많아 오늘날에는 엄영춘이 창시한 영춘권의 한 분파로도 널리 알려져있다<SPLIT>.}
-False positives: {
-있는데
-다가
-} False negatives: {
-있는데다가
-}
-
-Expected: {
-1852년 10월 존 러셀 힌드가 발견했다<SPLIT>.}
-Predicted: {
-1852<SPLIT>년 10월 존 러셀 힌드가 발견했다<SPLIT>.}
-False positives: {
-1852
-년
-} False negatives: {
-1852년
-}
-
-Expected: {
-여름은 5월부터 9월까지로 평균 기온은 28<SPLIT>?<SPLIT>°c<SPLIT>이나<SPLIT>, 겨울은 12월부터 2월까지로 짧고 매우 따뜻하여 북부에서도 평균 기온은 10<SPLIT>°c<SPLIT>를 넘는다<SPLIT>.}
-Predicted: {
-여름은 5월부터 9월까지로 평균 기온은 28?<SPLIT>°c이나<SPLIT>, 겨울은 12월부터 2월까지로 짧고 매우 따뜻하여 북부에서도 평균 기온은 10<SPLIT>°<SPLIT>c를 넘는다<SPLIT>.}
-False positives: {
-28?
-°c이나
-°
-c를
-} False negatives: {
-28
-?
-°c
-이나
-°c
-를
-}
-
-Expected: {
-마지막으로 간 날 느낌은 이제 이 식당에 오지 말자였어요<SPLIT>ᆢ}
-Predicted: {
-마지막으로 간 날 느낌은 이제 이 식당에 오지 말자였어<SPLIT>요ᆢ}
-False positives: {
-말자였어
-요ᆢ
-} False negatives: {
-말자였어요
-ᆢ
-}
-
-Expected: {
-조동섭<SPLIT>(<SPLIT>1959년 9월 1일 ~ )<SPLIT>은 조선민주주의인민공화국의 축구 감독으로<SPLIT>, 2011년부터 조선민주주의인민공화국 u-20 축구 국가대표팀의 감독을 맡고 있다<SPLIT>.}
-Predicted: {
-조동섭<SPLIT>(<SPLIT>1959년 9월 1일 ~ )<SPLIT>은 조선민주주의인민공화국의 축구 감독으로<SPLIT>, 2011년부터 조선민주주의인민공화국 u-<SPLIT>20 축구 국가대표팀의 감독을 맡고 있다<SPLIT>.}
-False positives: {
-u-
-20
-} False negatives: {
-u-20
-}
-
-Expected: {
-펭귄은 여름이 끝나는 3월 하순경에는 털갈이도 끝내고 물에 들어갈 준비를 하게되며 해표새끼들도 상당히 커진다<SPLIT>.}
-Predicted: {
-펭귄은 여름이 끝나는 3월 하순경에는 털갈이도 끝내고 물에 들어갈 준비를 하게<SPLIT>되며 해표새끼들도 상당히 커진다<SPLIT>.}
-False positives: {
-하게
-되며
-} False negatives: {
-하게되며
-}
-
-Expected: {
-1991년 10월에 캄보디아 공산당은 당대회에서 마르크스 레닌주의와의 결별을 선언하고<SPLIT>, 자유민주주의와 시장경제체제를 도입하기로 결정하였다<SPLIT>.}
-Predicted: {
-1991년 10<SPLIT>월에 캄보디아 공산당은 당대회에서 마르크스 레닌주의와의 결별을 선언하고<SPLIT>, 자유민주주의와 시장경제체제를 도입하기로 결정하였다<SPLIT>.}
-False positives: {
-10
-월에
-} False negatives: {
-10월에
-}
-
-Expected: {
-마땅히 남이 건져주기도 바라지 말며<SPLIT>, 선인들에게 버려두지도 말고<SPLIT>, 다 각기 제 일로 알아 제 힘을 다할지어다<SPLIT>.}
-Predicted: {
-마땅히 남이 건져주기도 바라지 말며<SPLIT>, 선인들에게 버려두지도 말고<SPLIT>, 다 각기 제 일로 알아 제 힘을 다할<SPLIT>지어다<SPLIT>.}
-False positives: {
-다할
-지어다
-} False negatives: {
-다할지어다
-}
-
-Expected: {
-우리가 알고 싶은 것은 '<SPLIT>왜 대폭락이 7월이나 12월이 아닌 10월에 일어났는가<SPLIT>' 이지만<SPLIT>, 역사책은 이에 대해 침묵하고 있다<SPLIT>.}
-Predicted: {
-우리가 알고 싶은 것은 '<SPLIT>왜 대폭락이 7월이나 12월이 아닌 10<SPLIT>월에 일어났는가<SPLIT>' 이지만<SPLIT>, 역사책은 이에 대해 침묵하고 있다<SPLIT>.}
-False positives: {
-10
-월에
-} False negatives: {
-10월에
-}
-
-Expected: {
-따라서 이를 지켜본 사람들은 소련에는 현재 두 사람의 대통령이 존재하고 있으며 조만간 누군가는 물러나야 할 것임을 감지하기 시작했다<SPLIT>.}
-Predicted: {
-따라서 이를 지켜본 사람들은 소련에는 현재 두 사람의 대통령이 존재하고 있으며 조만간 누군<SPLIT>가는 물러나야 할 것임을 감지하기 시작했다<SPLIT>.}
-False positives: {
-누군
-가는
-} False negatives: {
-누군가는
-}
-
-Expected: {
-이들중 후자의 작가들은 사상성을 포기하고 현실의 표면이나 내면적 경험에만 집착하여 파편적 현상과 주관적 개별성을 반영하는 데 그치고 있다<SPLIT>.}
-Predicted: {
-이들중 후자의 작가들은 사상성을 포기하고 현실의 표면이나 내면적 경험에<SPLIT>만 집착하여 파편적 현상과 주관적 개별성을 반영하는 데 그치고 있다<SPLIT>.}
-False positives: {
-경험에
-만
-} False negatives: {
-경험에만
-}
-
-Expected: {
-이 무렵부터 일제는 대륙을 침공했고 이어 침략전쟁을 세계로 확장하고자 시도했다<SPLIT>.}
-Predicted: {
-이 무렵부터 일제는 대륙을 침공했고 이어 침략<SPLIT>전쟁을 세계로 확장하고자 시도했다<SPLIT>.}
-False positives: {
-침략
-전쟁을
-} False negatives: {
-침략전쟁을
-}
-
-Expected: {
-대한항공의 소련 취항과 소련 아에로플로트항공의 서울 취항 상호 개설을 위한 교섭 여부를 놓고 청와대 관계자와 관계부처 고위 실무자간에 입씨름이 벌어졌다<SPLIT>.}
-Predicted: {
-대한항공의 소련 취항과 소련 아에로플로트<SPLIT>항공의 서울 취항 상호 개설을 위한 교섭 여부를 놓고 청와대 관계자와 관계부처 고위 실무자간에 입씨름이 벌어졌다<SPLIT>.}
-False positives: {
-아에로플로트
-항공의
-} False negatives: {
-아에로플로트항공의
-}
-
-Expected: {
-2주일 후에 다시 만나자<SPLIT>.}
-Predicted: {
-2<SPLIT>주일 후에 다시 만나자<SPLIT>.}
-False positives: {
-2
-주일
-} False negatives: {
-2주일
-}
-
-Expected: {
-두 손을 가슴 중앙에 모으고 오른쪽다리를 들어 꼬인 모습을 하고있다<SPLIT>.}
-Predicted: {
-두 손을 가슴 중앙에 모으고 오른쪽다리를 들어 꼬인 모습을 하고<SPLIT>있다<SPLIT>.}
-False positives: {
-하고
-있다
-} False negatives: {
-하고있다
-}
-
-Expected: {
-군지도자들의 대다수가 소지주나 노동자의 후손들이었다<SPLIT>.}
-Predicted: {
-군지도자들의 대다수가 소지주나 노동자의 후손들<SPLIT>이었다<SPLIT>.}
-False positives: {
-후손들
-이었다
-} False negatives: {
-후손들이었다
-}
-
-Expected: {
-그건 오히려 내가 제대로 사고하기 이전에 내 머릿속에 박혀버린 낡은 선입견들을 의심해보고 깨버림으로써 정말 확실한 것<SPLIT>, '<SPLIT>명석하고 분명한 것<SPLIT>' 에 도달하려는것이었지<SPLIT>.}
-Predicted: {
-그건 오히려 내가 제대로 사고하기 이전에 내 머릿속에 박혀버린 낡은 선입견들을 의심해보고 깨버림으로써 정말 확실한 것<SPLIT>, '<SPLIT>명석하고 분명한 것<SPLIT>' 에 도달하려는<SPLIT>것<SPLIT>이었지<SPLIT>.}
-False positives: {
-도달하려는
-것
-이었지
-} False negatives: {
-도달하려는것이었지
-}
-
-Expected: {
-동네일을 공동으로 처리해나가기 위해 어떤 조직망이 필요할 때에는 주민들 스스로 조직을 만들어 운용해나가면 될 일이다<SPLIT>.}
-Predicted: {
-동네일을 공동으로 처리해나가기 위해 어떤 조직망이 필요할 때에는 주민들 스스로 조직을 만들어 운용해<SPLIT>나가면 될 일이다<SPLIT>.}
-False positives: {
-운용해
-나가면
-} False negatives: {
-운용해나가면
-}
-
-Expected: {
-그러면 누군가는 내 이야기를 듣고 허세를 부린다고 말하기도 하였다<SPLIT>.}
-Predicted: {
-그러면 누군<SPLIT>가는 내 이야기를 듣고 허세를 부린다고 말하기도 하였다<SPLIT>.}
-False positives: {
-누군
-가는
-} False negatives: {
-누군가는
-}
-
-Expected: {
-그 모임은 원래 몇 블록 떨어진 거리에 있는 워싱턴 회원제 사교 클럽<SPLIT>인 h<SPLIT>가의 메트로폴리탄 클럽<SPLIT>(<SPLIT>metropolitan club<SPLIT>)<SPLIT>에서 열릴 예정<SPLIT>이었다<SPLIT>.}
-Predicted: {
-그 모임은 원래 몇 블록 떨어진 거리에 있는 워싱턴 회원제 사교 클럽인 h가의 메트로폴리탄 클럽<SPLIT>(<SPLIT>metropolitan club<SPLIT>)<SPLIT>에서 열릴 예정이었다<SPLIT>.}
-False positives: {
-클럽인
-h가의
-예정이었다
-} False negatives: {
-클럽
-인
-h
-가의
-예정
-이었다
-}
-
-Expected: {
-오늘<SPLIT>, 칸지르는 외로운 돼지<SPLIT>일지 몰라도 항상 혼자<SPLIT>인 것은 아니다<SPLIT>.}
-Predicted: {
-오늘<SPLIT>, 칸지르는 외로운 돼지일지 몰라도 항상 혼자인 것은 아니다<SPLIT>.}
-False positives: {
-돼지일지
-혼자인
-} False negatives: {
-돼지
-일지
-혼자
-인
-}
-
-Expected: {
-한 유명<SPLIT>인사의 이름은 처음에는 매우 흔치 않은 이름<SPLIT>이었을 것이 분명하다<SPLIT>.}
-Predicted: {
-한 유명인사의 이름은 처음에는 매우 흔치 않은 이름이었을 것이 분명하다<SPLIT>.}
-False positives: {
-유명인사의
-이름이었을
-} False negatives: {
-유명
-인사의
-이름
-이었을
-}
-
-Expected: {
-그것은 후원과 광고를 통해 돈을 버는 수익 구조<SPLIT>이다<SPLIT>.}
-Predicted: {
-그것은 후원과 광고를 통해 돈을 버는 수익 구조이다<SPLIT>.}
-False positives: {
-구조이다
-} False negatives: {
-구조
-이다
-}
-
-Expected: {
-2014<SPLIT>년에 합병된<SPLIT>크림 반도에서 펼친 러시아의 작전에 대해 "<SPLIT>매우 합리적<SPLIT>"<SPLIT>이라<SPLIT>고 표현한<SPLIT>시갈의 발언이 대서특필되었다<SPLIT>.}
-Predicted: {
-2014년에 합병된<SPLIT>크림 반도에서 펼친 러시아의 작전에 대해 "<SPLIT>매우 합리적<SPLIT>"<SPLIT>이라고 표현한시갈의 발언이 대서특필되었다<SPLIT>.}
-False positives: {
-2014년에
-이라고
-표현한시갈의
-} False negatives: {
-2014
-년에
-이라
-고
-표현한
-시갈의
-}
-
-Expected: {
-연구자들은 종양 dna 분석이 다른 암들의 근본 원인을 파악하는<SPLIT>데 도움이 될 수 있다고 말했다<SPLIT>.}
-Predicted: {
-연구자들은 종양 dna 분석이 다른 암들의 근본 원인을 파악하는데 도움이 될 수 있다고 말했다<SPLIT>.}
-False positives: {
-파악하는데
-} False negatives: {
-파악하는
-데
-}
-
-Expected: {
-그는 또한 클레인이 말이 없고 비협조적<SPLIT>인 사람<SPLIT>이며 법정 심리에 참석하려면<SPLIT>법원 청사 감방에서 나와야 하는데 나오려 하지 않는다고 말했다<SPLIT>.}
-Predicted: {
-그는 또한 클레인이 말이 없고 비협조적인 사람이며 법정 심리에 참석하려면법원 청사 감방에서 나와야 하는데 나오려 하지 않는다고 말했다<SPLIT>.}
-False positives: {
-비협조적인
-사람이며
-참석하려면법원
-} False negatives: {
-비협조적
-인
-사람
-이며
-참석하려면
-법원
-}
-
-Expected: {
-레이와 같은 학생들이 학교 상담사와 만나 사건 경위에 대해 설명했는데<SPLIT>레이는 친구들을 볼 수 있어서 큰 위안을 얻었다고 말했다<SPLIT>.}
-Predicted: {
-레이와 같은 학생들이 학교 상담사와 만나 사건 경위에 대해 설명했는데레이는 친구들을 볼 수 있어서 큰 위안을 얻었다고 말했다<SPLIT>.}
-False positives: {
-설명했는데레이는
-} False negatives: {
-설명했는데
-레이는
-}
-
-Expected: {
-그 일로 최소 여섯 명 이상의 다른 퀘벡 언론인들을 겨냥한<SPLIT>지방 경찰 감시 작전이 진행되었다는<SPLIT>사실이 최근 2<SPLIT>년 사이에 밝혀졌다<SPLIT>.}
-Predicted: {
-그 일로 최소 여섯 명 이상의 다른 퀘벡 언론인들을 겨냥한<SPLIT>지방 경찰 감시 작전이 진행되었다는사실이 최근 2년 사이에 밝혀졌다<SPLIT>.}
-False positives: {
-진행되었다는사실이
-2년
-} False negatives: {
-진행되었다는
-사실이
-2
-년
-}
-
-Expected: {
-철분은 산소를 체내 조직에 운반하는<SPLIT>역할을 하는 적혈구 단백질<SPLIT>인 헤모글로빈을 생성하기<SPLIT>위해 반드시 필요한<SPLIT>체내 필수 요소<SPLIT>이다<SPLIT>.}
-Predicted: {
-철분은 산소를 체내 조직에 운반하는<SPLIT>역할을 하는 적혈구 단백질인 헤모글로빈을 생성하기<SPLIT>위해 반드시 필요한<SPLIT>체내 필수 요소이다<SPLIT>.}
-False positives: {
-단백질인
-요소이다
-} False negatives: {
-단백질
-인
-요소
-이다
-}
-
-Expected: {
-이제 겨우 20<SPLIT>살<SPLIT>인 그녀는 집단 따돌림에 대해 강력히 반대하는<SPLIT>발언과 소녀들이 각자의 미의 기준을 받아들일 수 있도록 도와주는 긍정적<SPLIT>인 발언을 했다<SPLIT>.}
-Predicted: {
-이제 겨우 20살인 그녀는 집단 따돌림에 대해 강력히 반대하는<SPLIT>발언과 소녀들이 각자의 미의 기준을 받아들일 수 있도록 도와주는 긍정적인 발언을 했다<SPLIT>.}
-False positives: {
-20살인
-긍정적인
-} False negatives: {
-20
-살
-인
-긍정적
-인
-}
-
-Expected: {
-노스<SPLIT>캐롤라이나가 2013<SPLIT>년에 제한적<SPLIT>선거권 법안을 통과시킨<SPLIT>후 캠벨은 여러 교회들을 돌아다니며 유권자 등록 방법을 사람들에게 설명해<SPLIT>주었다<SPLIT>.}
-Predicted: {
-노스캐롤라이나가 2013년에 제한적선거권 법안을 통과시킨<SPLIT>후 캠벨은 여러 교회들을 돌아다니며 유권자 등록 방법을 사람들에게 설명해주었다<SPLIT>.}
-False positives: {
-노스캐롤라이나가
-2013년에
-제한적선거권
-설명해주었다
-} False negatives: {
-노스
-캐롤라이나가
 2013
 년에
-제한적
-선거권
-설명해
-주었다
+} False negatives: {
+2013년에
 }
 
 Expected: {
-그들은 대개 많은 일들을 하고 싶어<SPLIT>하는 아티스트들<SPLIT>이다<SPLIT>.}
+소스 부족해서 문의했더니 원래 정량이 그만큼이라는 아주 불친절한 주인의 답변에 맛이 뚝 떨어졌다는<SPLIT>..}
 Predicted: {
-그들은 대개 많은 일들을 하고 싶어하는 아티스트들이다<SPLIT>.}
+소스 부족해서 문의했더니 원래 정량이 그만큼이라는 아주 불친절한 주인의 답변에 맛이 뚝 떨어졌다는<SPLIT>.<SPLIT>.}
 False positives: {
-싶어하는
-아티스트들이다
-} False negatives: {
-싶어
-하는
-아티스트들
-이다
-}
-
-Expected: {
-2010<SPLIT>년<SPLIT>, 재단은 “<SPLIT>zettel’s traum<SPLIT>”<SPLIT>의 조판본을 발매함으로써 사진 오프셋 인쇄의 초안 같은 느낌 때문에 망설였던 사람들의 진입 장벽을 철폐했다<SPLIT>.}
-Predicted: {
-2010년<SPLIT>, 재단은 “<SPLIT>zettel<SPLIT>’s traum<SPLIT>”<SPLIT>의 조판본을 발매함으로써 사진 오프셋 인쇄의 초안 같은 느낌 때문에 망설였던 사람들의 진입 장벽을 철폐했다<SPLIT>.}
-False positives: {
-2010년
-zettel
-’s
-} False negatives: {
-2010
-년
-zettel’s
-}
-
-Expected: {
-그는 대단히 우아한 태도로 그 일을 남자답게<SPLIT>받아들였는데<SPLIT>, 저는 정말 화도 안 나는군요<SPLIT>.}
-Predicted: {
-그는 대단히 우아한 태도로 그 일을 남자답게받아들였는데<SPLIT>, 저는 정말 화도 안 나는군요<SPLIT>.}
-False positives: {
-남자답게받아들였는데
-} False negatives: {
-남자답게
-받아들였는데
-}
-
-Expected: {
-나는 또한 비밀<SPLIT>번호를 알아내느라 애먹고 있다<SPLIT>.}
-Predicted: {
-나는 또한 비밀번호를 알아내느라 애먹고 있다<SPLIT>.}
-False positives: {
-비밀번호를
-} False negatives: {
-비밀
-번호를
-}
-
-Expected: {
-그녀가 내세운 이유는 그것이 미국 근로자들의 일자리와 생활 수준에 해가 가지 않도록 충분히 보호해<SPLIT>주지 못한다는 것<SPLIT>이다<SPLIT>.}
-Predicted: {
-그녀가 내세운 이유는 그것이 미국 근로자들의 일자리와 생활 수준에 해가 가지 않도록 충분히 보호해주지 못한다는 것이다<SPLIT>.}
-False positives: {
-보호해주지
-것이다
-} False negatives: {
-보호해
-주지
-것
-이다
-}
-
-Expected: {
-다음 소음을 더 예민하게 듣게 될 것<SPLIT>이고 그렇게 되면 더 짜증이 날 것<SPLIT>이다<SPLIT>.}
-Predicted: {
-다음 소음을 더 예민하게 듣게 될 것이고 그렇게 되면 더 짜증이 날 것이다<SPLIT>.}
-False positives: {
-것이고
-것이다
-} False negatives: {
-것
-이고
-것
-이다
-}
-
-Expected: {
-나는 모터크로스를 보았는데 보면 볼수록 이 한 여성의 얼굴이 1970<SPLIT>년대에 찍은 것 같은 사진들 속에 계속 등장했다<SPLIT>.}
-Predicted: {
-나는 모터크로스를 보았는데 보면 볼수록 이 한 여성의 얼굴이 1970년대에 찍은 것 같은 사진들 속에 계속 등장했다<SPLIT>.}
-False positives: {
-1970년대에
-} False negatives: {
-1970
-년대에
-}
-
-Expected: {
-호플리는 "<SPLIT>정치적<SPLIT>위험이 급증한<SPLIT>것을 사람들이 눈치채지 못하게 해야 한다<SPLIT>.<SPLIT>”<SPLIT>라고 덧붙여 말했다<SPLIT>.}
-Predicted: {
-호플리는 "<SPLIT>정치적위험이 급증한<SPLIT>것을 사람들이 눈치채지 못하게 해야 한다.<SPLIT>”<SPLIT>라고 덧붙여 말했다<SPLIT>.}
-False positives: {
-정치적위험이
-한다.
-} False negatives: {
-정치적
-위험이
-한다
 .
+.
+} False negatives: {
+..
 }
 
 Expected: {
-아니면 비싼 표준 또는 선불 관세<SPLIT>인가<SPLIT>?}
+아이디플루9<SPLIT>㎍<SPLIT>주<SPLIT>(<SPLIT>피내용 )<SPLIT>, 15<SPLIT>㎍<SPLIT>주<SPLIT>(<SPLIT>피내용<SPLIT>)<SPLIT>의 유통과 공급은 사노피 파스퇴르와 국내 백신 유통에 대한 계약을 체결한 한독약품이 담당한다<SPLIT>.}
 Predicted: {
-아니면 비싼 표준 또는 선불 관세인가<SPLIT>?}
+아이디플루9<SPLIT>㎍<SPLIT>주<SPLIT>(<SPLIT>피내용 )<SPLIT>, 15<SPLIT>㎍<SPLIT>주<SPLIT>(<SPLIT>피내용<SPLIT>)<SPLIT>의 유통과 공급은 사노피 파스<SPLIT>퇴르와 국내 백신 유통에 대한 계약을 체결한 한독약품이 담당한다<SPLIT>.}
 False positives: {
-관세인가
+파스
+퇴르와
 } False negatives: {
-관세
-인가
+파스퇴르와
 }
 
 Expected: {
-나는 천재적<SPLIT>인 솜씨의 수술을 받고 여러 차례 혹독한 재활 치료를 받은 후 완전히 회복했다<SPLIT>.}
+전세<SPLIT>, 월세 등 알아보실 땐 조심하세요}
 Predicted: {
-나는 천재적인 솜씨의 수술을 받고 여러 차례 혹독한 재활 치료를 받은 후 완전히 회복했다<SPLIT>.}
+전<SPLIT>세<SPLIT>, 월세 등 알아보실 땐 조심하세요}
 False positives: {
-천재적인
+전
+세
 } False negatives: {
-천재적
-인
+전세
 }
 
 Expected: {
-도스의 이야기는 믿을 수 없을 정도로 특별해서<SPLIT>더욱더 호소력 있게 다가온다<SPLIT>.}
+또 내년부터 2015년까지 연 1.1<SPLIT>%<SPLIT>의 완만한 상승에 그칠 것으로 전망됐다<SPLIT>.}
 Predicted: {
-도스의 이야기는 믿을 수 없을 정도로 특별해서더욱더 호소력 있게 다가온다<SPLIT>.}
+또 내년부터 2015<SPLIT>년까지 연 1.1<SPLIT>%의 완만한 상승에 그칠 것으로 전망됐다<SPLIT>.}
 False positives: {
-특별해서더욱더
-} False negatives: {
-특별해서
-더욱더
-}
-
-Expected: {
-화요일에 투표를 하러 나오는 것이 관건<SPLIT>인데 등록 유권자가 명단에 없다면 아무 의미가 없다<SPLIT>.}
-Predicted: {
-화요일에 투표를 하러 나오는 것이 관건인데 등록 유권자가 명단에 없다면 아무 의미가 없다<SPLIT>.}
-False positives: {
-관건인데
-} False negatives: {
-관건
-인데
-}
-
-Expected: {
-네간<SPLIT>(<SPLIT>제프리 딘 모건<SPLIT>)<SPLIT>의 사악한<SPLIT>악당들 중 한 명<SPLIT>인 그는 얼마간의 자유를 누릴 여유가 있었다<SPLIT>.}
-Predicted: {
-네간<SPLIT>(<SPLIT>제프리 딘 모건<SPLIT>)<SPLIT>의 사악한<SPLIT>악당들 중 한 명인 그는 얼마간의 자유를 누릴 여유가 있었다<SPLIT>.}
-False positives: {
-명인
-} False negatives: {
-명
-인
-}
-
-Expected: {
-최근 사내에 채팅 게임을 도입한<SPLIT>노력은 첨단 기술 회사가 그리는 더 큰 트렌드의 일부분<SPLIT>이다<SPLIT>.}
-Predicted: {
-최근 사내에 채팅 게임을 도입한<SPLIT>노력은 첨단 기술 회사가 그리는 더 큰 트렌드의 일부분이다<SPLIT>.}
-False positives: {
-일부분이다
-} False negatives: {
-일부분
-이다
-}
-
-Expected: {
-지하 100 미터<SPLIT>(<SPLIT>328 피트<SPLIT>)<SPLIT>까지 뚫어서 만든 평양 메트로는 세계에서 가장 깊은 통근 교통 수단<SPLIT>이다<SPLIT>.}
-Predicted: {
-지하 100 미터<SPLIT>(<SPLIT>328 피트<SPLIT>)<SPLIT>까지 뚫어서 만든 평양 메트로는 세계에서 가장 깊은 통근 교통 수단이다<SPLIT>.}
-False positives: {
-수단이다
-} False negatives: {
-수단
-이다
-}
-
-Expected: {
-2019<SPLIT>년 동계 유니버시아드는 크라스노야르스크에서 개최된다<SPLIT>.}
-Predicted: {
-2019년 동계 유니버시아드는 크라스노야르스크에서 개최된다<SPLIT>.}
-False positives: {
-2019년
-} False negatives: {
-2019
-년
-}
-
-Expected: {
-1912<SPLIT>년 최초의 영화 회사<SPLIT>인 아테네 영화가 설립되었으며<SPLIT>1916<SPLIT>년에는 아스티 영화사가 설립되었다<SPLIT>.}
-Predicted: {
-1912년 최초의 영화 회사인 아테네 영화가 설립되었으며<SPLIT>1916년에는 아스티 영화사가 설립되었다<SPLIT>.}
-False positives: {
-1912년
-회사인
-1916년에는
-} False negatives: {
-1912
-년
-회사
-인
-1916
-년에는
-}
-
-Expected: {
-기원후 6<SPLIT>세기 슬라브족이 국가를 창설하기<SPLIT>전 민족 대이동 기간 동안에 다양한<SPLIT>게르만과 많은 슬라브 민족이 모라비아를 가로질렀다<SPLIT>.}
-Predicted: {
-기원후 6세기 슬라브족이 국가를 창설하기<SPLIT>전 민족 대이동 기간 동안에 다양한<SPLIT>게르만과 많은 슬라브 민족이 모라비아를 가로질렀다<SPLIT>.}
-False positives: {
-6세기
-} False negatives: {
-6
-세기
-}
-
-Expected: {
-대기는 혼란한<SPLIT>구조를 갖기 때문에 구조 내 약간의 변화가 발생하면<SPLIT>전반적<SPLIT>인 구조에 큰 영향을 유발할<SPLIT>수 있다<SPLIT>.}
-Predicted: {
-대기는 혼란한구조를 갖기 때문에 구조 내 약간의 변화가 발생하면<SPLIT>전반적인 구조에 큰 영향을 유발할<SPLIT>수 있다<SPLIT>.}
-False positives: {
-혼란한구조를
-전반적인
-} False negatives: {
-혼란한
-구조를
-전반적
-인
-}
-
-Expected: {
-여러 고대 문명이 지중해 연안 지역에서 발생했으며<SPLIT>바다와<SPLIT>의 근접성으로 인해<SPLIT>상당한<SPLIT>영향을 받았다<SPLIT>.}
-Predicted: {
-여러 고대 문명이 지중해 연안 지역에서 발생했으며<SPLIT>바다와의 근접성으로 인해<SPLIT>상당한<SPLIT>영향을 받았다<SPLIT>.}
-False positives: {
-바다와의
-} False negatives: {
-바다와
-의
-}
-
-Expected: {
-슐라이 및 다네비크와 후줌 사이의 습지는 한겨울에 꽝꽝 얼어<SPLIT>버렸으며 다네비크 바로 남쪽의 영토는 전진하던<SPLIT>독일군이 점령하였다<SPLIT>.}
-Predicted: {
-슐라이 및 다네비크와 후줌 사이의 습지는 한겨울에 꽝꽝 얼어버렸으며 다네비크 바로 남쪽의 영토는 전진하던<SPLIT>독일군이 점령하였다<SPLIT>.}
-False positives: {
-얼어버렸으며
-} False negatives: {
-얼어
-버렸으며
-}
-
-Expected: {
-가장 중요한<SPLIT>것은 미시시피 강으로 흐르는 오하이오 강<SPLIT>이었다<SPLIT>.}
-Predicted: {
-가장 중요한<SPLIT>것은 미시시피 강으로 흐르는 오하이오 강이었다<SPLIT>.}
-False positives: {
-강이었다
-} False negatives: {
-강
-이었다
-}
-
-Expected: {
-유럽의 주요 강은 라인<SPLIT>, 론<SPLIT>, 인<SPLIT>, 티치노 및 포 등 스위스에서 발원하며<SPLIT>모두 알프스에 상류원을 두고 인접 국가로 흐르며 종국에는 북해<SPLIT>, 지중해<SPLIT>, 아드리아<SPLIT>해 및 흑해로 흘러 들어간다<SPLIT>.}
-Predicted: {
-유럽의 주요 강은 라인<SPLIT>, 론<SPLIT>, 인<SPLIT>, 티치노 및 포 등 스위스에서 발원하며<SPLIT>모두 알프스에 상류원을 두고 인접 국가로 흐르며 종국에는 북해<SPLIT>, 지중해<SPLIT>, 아드리아해 및 흑해로 흘러 들어간다<SPLIT>.}
-False positives: {
-아드리아해
-} False negatives: {
-아드리아
-해
-}
-
-Expected: {
-서식지 파괴로 인해<SPLIT>홍수와 가뭄<SPLIT>, 흉작<SPLIT>, 질병 확산 및 수질 오염 등과 같은 자연<SPLIT>재해에 대한 취약성이 크게 증가하였다<SPLIT>.}
-Predicted: {
-서식지 파괴로 인해<SPLIT>홍수와 가뭄<SPLIT>, 흉작<SPLIT>, 질병 확산 및 수질 오염 등과 같은 자연재해에 대한 취약성이 크게 증가하였다<SPLIT>.}
-False positives: {
-자연재해에
-} False negatives: {
-자연
-재해에
-}
-
-Expected: {
-다양한<SPLIT>사적<SPLIT>인 이익들이 국가 전체 중 약 1<SPLIT>%를 차지하는<SPLIT>나머지 땅을 소유했다<SPLIT>.}
-Predicted: {
-다양한<SPLIT>사적인 이익들이 국가 전체 중 약 1<SPLIT>%<SPLIT>를 차지하는<SPLIT>나머지 땅을 소유했다<SPLIT>.}
-False positives: {
-사적인
-%
-를
-} False negatives: {
-사적
-인
-%를
-}
-
-Expected: {
-이런 입자가 땅에 닿을 때 다른 입자를 쳐서 공기 중으로 날리게 되며 이로 인해<SPLIT>연쇄<SPLIT>반응이 일어난다<SPLIT>.}
-Predicted: {
-이런 입자가 땅에 닿을 때 다른 입자를 쳐서 공기 중으로 날리게 되며 이로 인해<SPLIT>연쇄반응이 일어난다<SPLIT>.}
-False positives: {
-연쇄반응이
-} False negatives: {
-연쇄
-반응이
-}
-
-Expected: {
-카리브<SPLIT>해는 1492<SPLIT>년까지 유라시아 사람들에게<SPLIT>는 알려지지 않은 곳<SPLIT>이었는데 이 때 크리스토퍼 콜럼버스<SPLIT>가 아시아 항로 탐색을 위한 목적으로 처음으로 카리브<SPLIT>해를 항해했다<SPLIT>.}
-Predicted: {
-카리브해는 1492년까지 유라시아 사람들에게는 알려지지 않은 곳이었는데 이 때 크리스토퍼 콜럼버스가 아시아 항로 탐색을 위한 목적으로 처음으로 카리브해를 항해했다<SPLIT>.}
-False positives: {
-카리브해는
-1492년까지
-사람들에게는
-곳이었는데
-콜럼버스가
-카리브해를
-} False negatives: {
-카리브
-해는
-1492
+2015
 년까지
-사람들에게
-는
-곳
-이었는데
-콜럼버스
-가
-카리브
-해를
+%의
+} False negatives: {
+2015년까지
+%
+의
 }
 
 Expected: {
-1879<SPLIT>년 문을 연 호주의 왕립 국립<SPLIT>공원은 전 세계에서 두<SPLIT>번째로 공식 설립된<SPLIT>국립<SPLIT>공원<SPLIT>이다<SPLIT>.}
+왜냐하면 그러한 요구는 헤겔 고유의 변증법적방법을 심하게 배반하기 때문이다<SPLIT>.}
 Predicted: {
-1879년 문을 연 호주의 왕립 국립공원은 전 세계에서 두번째로 공식 설립된<SPLIT>국립공원이다<SPLIT>.}
+왜냐하면 그러한 요구는 헤겔 고유의 변증법적<SPLIT>방법을 심하게 배반하기 때문이다<SPLIT>.}
 False positives: {
-1879년
-국립공원은
-두번째로
-국립공원이다
+변증법적
+방법을
 } False negatives: {
-1879
-년
-국립
-공원은
-두
-번째로
-국립
-공원
+변증법적방법을
+}
+
+Expected: {
+그리고 거기에 그의 창작시 記<SPLIT>, 영원한_비밀<SPLIT>, 小曲<SPLIT>, 無 등을 발표했다<SPLIT>.}
+Predicted: {
+그리고 거기에 그의 창작시 記<SPLIT>, 영원한<SPLIT>_비밀<SPLIT>, 小曲<SPLIT>, 無 등을 발표했다<SPLIT>.}
+False positives: {
+영원한
+_비밀
+} False negatives: {
+영원한_비밀
+}
+
+Expected: {
+기원전 3세기부터 오늘날까지 이루어진 도덕경의 주석지는 대체로 200 종을 넘는다<SPLIT>.}
+Predicted: {
+기원전 3<SPLIT>세기부터 오늘날까지 이루어진 도덕경의 주석지는 대체로 200 종을 넘는다<SPLIT>.}
+False positives: {
+3
+세기부터
+} False negatives: {
+3세기부터
+}
+
+Expected: {
+오대산의 아름다움을 한눈에 깨닫게 해주는 이곳은 산을 오르는 초입에 위치하여 더욱 잊지 못할 추억을 만들어 주는 명소가 되고있다<SPLIT>.}
+Predicted: {
+오대산의 아름다움을 한눈에 깨닫게 해주는 이곳은 산을 오르는 초입에 위치하여 더욱 잊지 못할 추억을 만들어 주는 명소가 되고<SPLIT>있다<SPLIT>.}
+False positives: {
+되고
+있다
+} False negatives: {
+되고있다
+}
+
+Expected: {
+이제 신석기 말기이래의 도시국가 체제는 마감되어가고<SPLIT>, 거대한 고대제국의 출현이 예고되고 있었다<SPLIT>.}
+Predicted: {
+이제 신석기 말기이래의 도시<SPLIT>국가 체제는 마감되어가고<SPLIT>, 거대한 고대제국의 출현이 예고되고 있었다<SPLIT>.}
+False positives: {
+도시
+국가
+} False negatives: {
+도시국가
+}
+
+Expected: {
+정치적권력을 상실한 한국인 사회는 그의 지도력을 사회지도층에서 찾게 되었다<SPLIT>.}
+Predicted: {
+정치적<SPLIT>권력을 상실한 한국인 사회는 그의 지도력을 사회지도층에서 찾게 되었다<SPLIT>.}
+False positives: {
+정치적
+권력을
+} False negatives: {
+정치적권력을
+}
+
+Expected: {
+지금의 벨그라드인 싱지두눔과 나이수스를 지나 트라키아로 향할 때<SPLIT>, 서로마의 협상 중재로 진격을 멈췄다<SPLIT>.}
+Predicted: {
+지금의 벨그라드<SPLIT>인 싱지두눔과 나이수스를 지나 트라키아로 향할 때<SPLIT>, 서로마의 협상 중재로 진격을 멈췄다<SPLIT>.}
+False positives: {
+벨그라드
+인
+} False negatives: {
+벨그라드인
+}
+
+Expected: {
+트라이앵글이란 이름은 로리시<SPLIT>, 다알란<SPLIT>, 체페힐시 등 3 개의 도시와 도시 내에 세워진 노스캐롤라이나 주립대학<SPLIT>, 듀크대학<SPLIT>, 사립인 놋느캐롤라이나 대학 등 3 개 대학을 연결하는 삼각지대에서 유래한다<SPLIT>.}
+Predicted: {
+트라이앵글이란 이름은 로리시<SPLIT>, 다알란<SPLIT>, 체페힐시 등 3 개의 도시와 도시 내에 세워진 노스<SPLIT>캐롤라이나 주립대학<SPLIT>, 듀크대학<SPLIT>, 사립인 놋느캐롤라이나 대학 등 3 개 대학을 연결하는 삼각지대에서 유래한다<SPLIT>.}
+False positives: {
+노스
+캐롤라이나
+} False negatives: {
+노스캐롤라이나
+}
+
+Expected: {
+특히 당대표<SPLIT>, 사무총장<SPLIT>, 원내총무<SPLIT>, 지구당위원장 등 주요 당간부직은 자유경선에 의해 선출될 수 있도록 해야 할 것이다<SPLIT>.}
+Predicted: {
+특히 당대표<SPLIT>, 사무<SPLIT>총장<SPLIT>, 원내총무<SPLIT>, 지구당위원장 등 주요 당간부직은 자유경선에 의해 선출될 수 있도록 해야 할 것이다<SPLIT>.}
+False positives: {
+사무
+총장
+} False negatives: {
+사무총장
+}
+
+Expected: {
+또한 후원인의 후원금 하한선을 낮추어야 할 것이다<SPLIT>.}
+Predicted: {
+또한 후원인의 후원금 하한<SPLIT>선을 낮추어야 할 것이다<SPLIT>.}
+False positives: {
+하한
+선을
+} False negatives: {
+하한선을
+}
+
+Expected: {
+세계의 꽃들을 초청해 `<SPLIT>꽃의 계곡<SPLIT>'<SPLIT>을 만들고 183 일간<SPLIT>`<SPLIT>인간과 꽃과 푸르름<SPLIT>' 의 미래상을 연출했다<SPLIT>.}
+Predicted: {
+세계의 꽃들을 초청해 `<SPLIT>꽃의 계곡<SPLIT>'<SPLIT>을 만들고 183 일간`<SPLIT>인간과 꽃과 푸르름<SPLIT>' 의 미래상을 연출했다<SPLIT>.}
+False positives: {
+일간`
+} False negatives: {
+일간
+`
+}
+
+Expected: {
+만약 비행기가 이러한 속도로 줄어들 수 있었다면 지금은 작은 성냥 심지만해졌을 것이다<SPLIT>.}
+Predicted: {
+만약 비행기가 이러한 속도로 줄어들 수 있었다면 지금은 작은 성냥 심지만<SPLIT>해졌을 것이다<SPLIT>.}
+False positives: {
+심지만
+해졌을
+} False negatives: {
+심지만해졌을
+}
+
+Expected: {
+그러나 '<SPLIT>청노루<SPLIT>' 가 한 폭의 그림과 같은 느낌을 주는 것은 주로 묘사를 통해서이지 본격적인 시의 이미지에 의해서가 아니다<SPLIT>.}
+Predicted: {
+그러나 '<SPLIT>청노루<SPLIT>' 가 한 폭의 그림과 같은 느낌을 주는 것은 주로 묘사를 통해서<SPLIT>이지 본격적인 시의 이미지에 의해서가 아니다<SPLIT>.}
+False positives: {
+통해서
+이지
+} False negatives: {
+통해서이지
+}
+
+Expected: {
+타종족에 대한 고구려의 시책은 성공적이었다고 말할 수 있다<SPLIT>.}
+Predicted: {
+타종족에 대한 고구려의 시책은 성공적<SPLIT>이었다고 말할 수 있다<SPLIT>.}
+False positives: {
+성공적
+이었다고
+} False negatives: {
+성공적이었다고
+}
+
+Expected: {
+그러나 이민자 수를 줄여야 한다던 과거의 발언과<SPLIT>는 다르게 미국 공화당 대통령 후보 지명자는 자신이 대통령이 되면 “<SPLIT>실적<SPLIT>주의<SPLIT>(<SPLIT>merit system<SPLIT>)<SPLIT>”<SPLIT>에 기반해<SPLIT>"<SPLIT>엄청난<SPLIT>수<SPLIT>"<SPLIT>의 합법적<SPLIT>인 이민자를 허용하겠다고 선포했다<SPLIT>.}
+Predicted: {
+그러나 이민자 수를 줄여야 한다던 과거의 발언과는 다르게 미국 공화당 대통령 후보 지명자는 자신이 대통령이 되면 “<SPLIT>실적주의<SPLIT>(<SPLIT>merit system<SPLIT>)<SPLIT>”<SPLIT>에 기반해<SPLIT>"<SPLIT>엄청난수<SPLIT>"<SPLIT>의 합법적인 이민자를 허용하겠다고 선포했다<SPLIT>.}
+False positives: {
+발언과는
+실적주의
+엄청난수
+합법적인
+} False negatives: {
+발언과
+는
+실적
+주의
+엄청난
+수
+합법적
+인
+}
+
+Expected: {
+그에 비해<SPLIT>, 2004<SPLIT>년에 운영을 시작한<SPLIT>noma infill metro 전철<SPLIT>역을 짓는 데 1<SPLIT>억 370<SPLIT>만 달러가 소요되었다<SPLIT>.}
+Predicted: {
+그에 비해<SPLIT>, 2004년에 운영을 시작한<SPLIT>noma infill metro 전철역을 짓는 데 1억 370만 달러가 소요되었다<SPLIT>.}
+False positives: {
+2004년에
+전철역을
+1억
+370만
+} False negatives: {
+2004
+년에
+전철
+역을
+1
+억
+370
+만
+}
+
+Expected: {
+경찰은 그녀가 거실에 있는 에어 매트리스에 안드레 프라이스 3<SPLIT>세의 얼굴을 눌러 질식사시킨<SPLIT>후 딸 엔젤도 같은 방법으로 죽이려 했다고 발표했다<SPLIT>.}
+Predicted: {
+경찰은 그녀가 거실에 있는 에어 매트리스에 안드레 프라이스 3세의 얼굴을 눌러 질식사시킨<SPLIT>후 딸 엔젤도 같은 방법으로 죽이려 했다고 발표했다<SPLIT>.}
+False positives: {
+3세의
+} False negatives: {
+3
+세의
+}
+
+Expected: {
+당연히 중국은 공격용<SPLIT>헬리콥터와 수상 비행기 등 다른 군사 무기도 이번 주에 대량 선보일 것<SPLIT>이다<SPLIT>.}
+Predicted: {
+당연히 중국은 공격용헬리콥터와 수상 비행기 등 다른 군사 무기도 이번 주에 대량 선보일 것이다<SPLIT>.}
+False positives: {
+공격용헬리콥터와
+것이다
+} False negatives: {
+공격용
+헬리콥터와
+것
 이다
 }
 
 Expected: {
-이집트 파라오는 자신이 튜닙 지방의 카데시를 훨씬 지나 북부 아무루 지역에 있다는 걸 알게 되었는데 이 지역에는 거의 120<SPLIT>년 전 투트모세 iii<SPLIT>세 시대 이후로<SPLIT>는 이집트 병력이 발견되지<SPLIT>않았다<SPLIT>.}
+그 작업은 4<SPLIT>월부터 6<SPLIT>월까지 멕시코 연안 가까이에서 시행되었다<SPLIT>.}
 Predicted: {
-이집트 파라오는 자신이 튜닙 지방의 카데시를 훨씬 지나 북부 아무루 지역에 있다는 걸 알게 되었는데 이 지역에는 거의 120년 전 투트모세 iii<SPLIT>세 시대 이후로는 이집트 병력이 발견되지<SPLIT>않았다<SPLIT>.}
+그 작업은 4월부터 6월까지 멕시코 연안 가까이에서 시행되었다<SPLIT>.}
 False positives: {
-120년
-이후로는
-} False negatives: {
-120
-년
-이후로
-는
-}
-
-Expected: {
-후기에 극<SPLIT>작가<SPLIT>, 역사학자 및 기타 지식인들은 트로이 전쟁에서 영감을 받아 작품을 저술하였다<SPLIT>.}
-Predicted: {
-후기에 극작가<SPLIT>, 역사학자 및 기타 지식인들은 트로이 전쟁에서 영감을 받아 작품을 저술하였다<SPLIT>.}
-False positives: {
-극작가
-} False negatives: {
-극
-작가
-}
-
-Expected: {
-티베리우스는 자신이 떠난 것에 대해 후회하고<SPLIT>여러 차례 로마로 불러<SPLIT>달라고 요청했으나<SPLIT>그 때<SPLIT>마다 아우구스투스는 티베리우스의 요청을 거절하였다<SPLIT>.}
-Predicted: {
-티베리우스는 자신이 떠난 것에 대해 후회하고<SPLIT>여러 차례 로마로 불러달라고 요청했으나그 때마다 아우구스투스는 티베리우스의 요청을 거절하였다<SPLIT>.}
-False positives: {
-불러달라고
-요청했으나그
-때마다
-} False negatives: {
-불러
-달라고
-요청했으나
-그
-때
-마다
-}
-
-Expected: {
-그녀는 원숭이<SPLIT>띠<SPLIT>였으며 그녀에게 있어 전통적으로 중요하게<SPLIT>여겨진 환갑이 오는 해는 1992<SPLIT>년<SPLIT>이었다<SPLIT>.}
-Predicted: {
-그녀는 원숭이띠였으며 그녀에게 있어 전통적으로 중요하게<SPLIT>여겨진 환갑이 오는 해는 1992년이었다<SPLIT>.}
-False positives: {
-원숭이띠였으며
-1992년이었다
-} False negatives: {
-원숭이
-띠
-였으며
-1992
-년
-이었다
-}
-
-Expected: {
-1566<SPLIT>년 400<SPLIT>명의 귀족으로 구성된<SPLIT>연맹은 파르마의 통치자<SPLIT>인 마가렛에게 나머지가 돌아올 때까지 탄압을 멈추어 달라고 청원했다<SPLIT>.}
-Predicted: {
-1566년 400명의 귀족으로 구성된<SPLIT>연맹은 파르마의 통치자인 마가렛에게 나머지가 돌아올 때까지 탄압을 멈추어 달라고 청원했다<SPLIT>.}
-False positives: {
-1566년
-400명의
-통치자인
-} False negatives: {
-1566
-년
-400
-명의
-통치자
-인
-}
-
-Expected: {
-특히<SPLIT>, 남자 중등<SPLIT>학교 진학률이 평균보다 10<SPLIT>% 상승하는<SPLIT>경우 분쟁 가능성이 3<SPLIT>% 감소한<SPLIT>반면 진학률이 1<SPLIT>% 증가하게<SPLIT>되면 내전 발발 가능성은 약 1<SPLIT>% 낮아지게 된다<SPLIT>.}
-Predicted: {
-특히<SPLIT>, 남자 중등학교 진학률이 평균보다 10<SPLIT>% 상승하는<SPLIT>경우 분쟁 가능성이 3<SPLIT>% 감소한반면 진학률이 1<SPLIT>% 증가하게되면 내전 발발 가능성은 약 1<SPLIT>% 낮아지게 된다<SPLIT>.}
-False positives: {
-중등학교
-감소한반면
-증가하게되면
-} False negatives: {
-중등
-학교
-감소한
-반면
-증가하게
-되면
-}
-
-Expected: {
-스페인은 1492<SPLIT>년 세파르디인들을 추방했고<SPLIT>, 스페인계<SPLIT>유대인 중 다수는 스페인을 떠나 포르투갈로 향했지만 결국 포르투갈에서<SPLIT>도 핍박을 받았다<SPLIT>.}
-Predicted: {
-스페인은 1492년 세파르디인들을 추방했고<SPLIT>, 스페인계유대인 중 다수는 스페인을 떠나 포르투갈로 향했지만 결국 포르투갈에서도 핍박을 받았다<SPLIT>.}
-False positives: {
-1492년
-스페인계유대인
-포르투갈에서도
-} False negatives: {
-1492
-년
-스페인계
-유대인
-포르투갈에서
-도
-}
-
-Expected: {
-이러한 도시<SPLIT>국가는 수코타이 시대와 동일한<SPLIT>시기에 등장하였다<SPLIT>.}
-Predicted: {
-이러한 도시국가는 수코타이 시대와 동일한시기에 등장하였다<SPLIT>.}
-False positives: {
-도시국가는
-동일한시기에
-} False negatives: {
-도시
-국가는
-동일한
-시기에
-}
-
-Expected: {
-그러나 출산<SPLIT>이라는 측면에서 여성을 포함하는<SPLIT>인구 데이터에 대한 포괄적<SPLIT>인 통계 분석은 쭉 있었다<SPLIT>.}
-Predicted: {
-그러나 출산이라는 측면에서 여성을 포함하는<SPLIT>인구 데이터에 대한 포괄적인 통계 분석은 쭉 있었다<SPLIT>.}
-False positives: {
-출산이라는
-포괄적인
-} False negatives: {
-출산
-이라는
-포괄적
-인
-}
-
-Expected: {
-아메리칸 모터스의 소형<SPLIT>차<SPLIT>인 램블러 모델이 성공을 거둠으로써 gm과 포드는 1960<SPLIT>년 자사 차량의 크기를 줄이게 되었다<SPLIT>.}
-Predicted: {
-아메리칸 모터스의 소형차인 램블러 모델이 성공을 거둠으로써 gm과 포드는 1960년 자사 차량의 크기를 줄이게 되었다<SPLIT>.}
-False positives: {
-소형차인
-1960년
-} False negatives: {
-소형
-차
-인
-1960
-년
-}
-
-Expected: {
-챈들러 및 웰러와 같은 몇몇 역사학자들은 영국의 중무장 부대가 독자 생존이 가능한<SPLIT>병력으로 피해를 받았으며 이는 최초의 역사적<SPLIT>인 사건<SPLIT>이었다<SPLIT>고 주장했다<SPLIT>.}
-Predicted: {
-챈들러 및 웰러와 같은 몇몇 역사학자들은 영국의 중무장 부대가 독자 생존이 가능한<SPLIT>병력으로 피해를 받았으며 이는 최초의 역사적인 사건이었다고 주장했다<SPLIT>.}
-False positives: {
-역사적인
-사건이었다고
-} False negatives: {
-역사적
-인
-사건
-이었다
-고
-}
-
-Expected: {
-라마르의 초기 발명품으로<SPLIT>는 개선된<SPLIT>신호등과 물에 녹여 탄산<SPLIT>음료를 만들어 내는 알약 등이 있다<SPLIT>.}
-Predicted: {
-라마르의 초기 발명품으로는 개선된<SPLIT>신호등과 물에 녹여 탄산음료를 만들어 내는 알약 등이 있다<SPLIT>.}
-False positives: {
-발명품으로는
-탄산음료를
-} False negatives: {
-발명품으로
-는
-탄산
-음료를
-}
-
-Expected: {
-어느 날<SPLIT>, 그가 호머를 타깃으로 한 사복 경찰<SPLIT>이란 사실이 암시된다<SPLIT>.}
-Predicted: {
-어느 날<SPLIT>, 그가 호머를 타깃으로 한 사복 경찰이란 사실이 암시된다<SPLIT>.}
-False positives: {
-경찰이란
-} False negatives: {
-경찰
-이란
-}
-
-Expected: {
-최근의 논픽션 작품은 레녹스 백작 부인<SPLIT>인 마가렛 더글라스<SPLIT>에 관한 작품<SPLIT>이었다<SPLIT>.}
-Predicted: {
-최근의 논픽션 작품은 레녹스 백작 부인<SPLIT>인 마가렛 더글라스에 관한 작품이었다<SPLIT>.}
-False positives: {
-더글라스에
-작품이었다
-} False negatives: {
-더글라스
-에
-작품
-이었다
-}
-
-Expected: {
-윌크스는 재선되었고<SPLIT>두 번 더 쫓겨났으며 그 전에 하원에선 그의 후보<SPLIT>자격이 무효하다고 결론을 내린 후 2<SPLIT>위 후보를 승자로 발표하였다<SPLIT>.}
-Predicted: {
-윌크스는 재선되었고두 번 더 쫓겨났으며 그 전에 하원에선 그의 후보자격이 무효하다고 결론을 내린 후 2위 후보를 승자로 발표하였다<SPLIT>.}
-False positives: {
-재선되었고두
-후보자격이
-2위
-} False negatives: {
-재선되었고
-두
-후보
-자격이
-2
-위
-}
-
-Expected: {
-톰슨이 기고한<SPLIT>논문은 마야인에게 방어물이 눈에 띄게 부족했다는<SPLIT>측면에서 그들이 "<SPLIT>평화로운<SPLIT>" 사람들<SPLIT>이었다<SPLIT>고 가정했다<SPLIT>.}
-Predicted: {
-톰슨이 기고한<SPLIT>논문은 마야인에게 방어물이 눈에 띄게 부족했다는측면에서 그들이 "<SPLIT>평화로운<SPLIT>" 사람들이었다고 가정했다<SPLIT>.}
-False positives: {
-부족했다는측면에서
-사람들이었다고
-} False negatives: {
-부족했다는
-측면에서
-사람들
-이었다
-고
-}
-
-Expected: {
-또한 니콜라스 스톨러<SPLIT>가 감독을 하고 제이슨 세걸<SPLIT>이 출연한<SPLIT>2012<SPLIT>년<SPLIT>작 5<SPLIT>년째 약혼 중에 출연했다<SPLIT>.}
-Predicted: {
-또한 니콜라스 스톨러가 감독을 하고 제이슨 세걸이 출연한2012년작 5년째 약혼 중에 출연했다<SPLIT>.}
-False positives: {
-스톨러가
-세걸이
-출연한2012년작
-5년째
-} False negatives: {
-스톨러
-가
-세걸
-이
-출연한
-2012
-년
-작
-5
-년째
-}
-
-Expected: {
-1926<SPLIT>년 초반 레이어는 로나와 협력해<SPLIT>자신의 시험실에서 어떻게 폴로늄 샘플을 만들 수 있는가를 제안하면서<SPLIT>이렌 졸리오 퀴리에게 서신을 보냈다<SPLIT>.}
-Predicted: {
-1926년 초반 레이어는 로나와 협력해자신의 시험실에서 어떻게 폴로늄 샘플을 만들 수 있는가를 제안하면서<SPLIT>이렌 졸리오 퀴리에게 서신을 보냈다<SPLIT>.}
-False positives: {
-1926년
-협력해자신의
-} False negatives: {
-1926
-년
-협력해
-자신의
-}
-
-Expected: {
-페브는 1991<SPLIT>년 자신이 작사한<SPLIT>작품에 대한 새로운 저작권을 보호한<SPLIT>후 가족이 있는 테네시 주 내시빌로 옮겨<SPLIT>갔다<SPLIT>.}
-Predicted: {
-페브는 1991년 자신이 작사한<SPLIT>작품에 대한 새로운 저작권을 보호한<SPLIT>후 가족이 있는 테네시 주 내시빌로 옮겨갔다<SPLIT>.}
-False positives: {
-1991년
-옮겨갔다
-} False negatives: {
-1991
-년
-옮겨
-갔다
-}
-
-Expected: {
-오스만 제국이 마케도니아의 통치권을 잃고 알바니아와<SPLIT>의 영토 관계가 단절된<SPLIT>후 강대국들은 자신들의 결정을 번복해야<SPLIT>한다고 깨달았다<SPLIT>.}
-Predicted: {
-오스만 제국이 마케도니아의 통치권을 잃고 알바니아와의 영토 관계가 단절된<SPLIT>후 강대국들은 자신들의 결정을 번복해야<SPLIT>한다고 깨달았다<SPLIT>.}
-False positives: {
-알바니아와의
-} False negatives: {
-알바니아와
-의
-}
-
-Expected: {
-두 명의 드라마 작가가 어떻게 서로 협력해<SPLIT>나갈지 아는 사람이 없다<SPLIT>.}
-Predicted: {
-두 명의 드라마 작가가 어떻게 서로 협력해나갈지 아는 사람이 없다<SPLIT>.}
-False positives: {
-협력해나갈지
-} False negatives: {
-협력해
-나갈지
-}
-
-Expected: {
-60<SPLIT>년대 히트<SPLIT>송<SPLIT>인 몬스터 매시<SPLIT>(<SPLIT>monster mash<SPLIT>)<SPLIT>에서<SPLIT>처럼 을씨년스러운 오르간 연주가 울릴 때쯤 한밤중 마법의 시간이 시작된다<SPLIT>.}
-Predicted: {
-60년대 히트송인 몬스터 매시<SPLIT>(<SPLIT>monster mash<SPLIT>)<SPLIT>에서처럼 을씨년스러운 오르간 연주가 울릴 때쯤 한밤중 마법의 시간이 시작된다<SPLIT>.}
-False positives: {
-60년대
-히트송인
-에서처럼
-} False negatives: {
-60
-년대
-히트
-송
-인
-에서
-처럼
-}
-
-Expected: {
-그녀는 호주 오픈 테니스 대회에서 센세이션을 일으킨 후 올해 28<SPLIT>세를 맞이하여 치른 세레나 윌리엄스<SPLIT>와<SPLIT>의 결승전에서 패배했다<SPLIT>.}
-Predicted: {
-그녀는 호주 오픈 테니스 대회에서 센세이션을 일으킨 후 올해 28세를 맞이하여 치른 세레나 윌리엄스와의 결승전에서 패배했다<SPLIT>.}
-False positives: {
-28세를
-윌리엄스와의
-} False negatives: {
-28
-세를
-윌리엄스
-와
-의
-}
-
-Expected: {
-그 오염<SPLIT>물질은 아직 충분히 발달되지<SPLIT>않은 어린이의 폐를 손상시킬<SPLIT>수 있을 뿐 아니라 청소년 뇌 발달에<SPLIT>도 장기적<SPLIT>인 손상을 가져올 수 있다<SPLIT>.}
-Predicted: {
-그 오염물질은 아직 충분히 발달되지<SPLIT>않은 어린이의 폐를 손상시킬<SPLIT>수 있을 뿐 아니라 청소년 뇌 발달에도 장기적인 손상을 가져올 수 있다<SPLIT>.}
-False positives: {
-오염물질은
-발달에도
-장기적인
-} False negatives: {
-오염
-물질은
-발달에
-도
-장기적
-인
-}
-
-Expected: {
-11<SPLIT>월 3<SPLIT>일 목요일 생고뎅<SPLIT>시 시장<SPLIT>(<SPLIT>오트<SPLIT>-<SPLIT>가론 지역<SPLIT>)<SPLIT>은 2014<SPLIT>년 정부와 체결한<SPLIT>도심 개발 계약을 중단하기로 결정했다<SPLIT>.}
-Predicted: {
-11월 3일 목요일 생고뎅시 시장<SPLIT>(<SPLIT>오트-<SPLIT>가론 지역<SPLIT>)<SPLIT>은 2014년 정부와 체결한도심 개발 계약을 중단하기로 결정했다<SPLIT>.}
-False positives: {
-11월
-3일
-생고뎅시
-오트-
-2014년
-체결한도심
-} False negatives: {
-11
-월
-3
-일
-생고뎅
-시
-오트
--
-2014
-년
-체결한
-도심
-}
-
-Expected: {
-실제 이동 시간을 측정하지<SPLIT>않고 실제 완료한<SPLIT>근무 시간에서 이동 시간을 제외한<SPLIT>후의 시간을 고려하는<SPLIT>걸 목표로 한다<SPLIT>.}
-Predicted: {
-실제 이동 시간을 측정하지<SPLIT>않고 실제 완료한근무 시간에서 이동 시간을 제외한<SPLIT>후의 시간을 고려하는<SPLIT>걸 목표로 한다<SPLIT>.}
-False positives: {
-완료한근무
-} False negatives: {
-완료한
-근무
-}
-
-Expected: {
-우리가 이탈리아에 완전히 적대적<SPLIT>인 세력과<SPLIT>는 절대로 함께할 수 없다는 사실이 강조되었다<SPLIT>.}
-Predicted: {
-우리가 이탈리아에 완전히 적대적인 세력과는 절대로 함께할 수 없다는 사실이 강조되었다<SPLIT>.}
-False positives: {
-적대적인
-세력과는
-} False negatives: {
-적대적
-인
-세력과
-는
-}
-
-Expected: {
-코라도 파세라<SPLIT>는 "<SPLIT>은행이 우리에게 보여<SPLIT>준 완전히 닫힌 태도<SPLIT>"<SPLIT>로 인해<SPLIT>의원들에게 제안한<SPLIT>내용을 철회하였다<SPLIT>.}
-Predicted: {
-코라도 파세라는 "<SPLIT>은행이 우리에게 보여준 완전히 닫힌 태도<SPLIT>"<SPLIT>로 인해<SPLIT>의원들에게 제안한내용을 철회하였다<SPLIT>.}
-False positives: {
-파세라는
-보여준
-제안한내용을
-} False negatives: {
-파세라
-는
-보여
-준
-제안한
-내용을
-}
-
-Expected: {
-아마존은 세계 최대의 시장 자본화를 이룬 미국 4<SPLIT>위의 기업으로 그 규모가 엑슨 모빌<SPLIT>보다 크다<SPLIT>.}
-Predicted: {
-아마존은 세계 최대의 시장 자본화를 이룬 미국 4위의 기업으로 그 규모가 엑슨 모빌보다 크다<SPLIT>.}
-False positives: {
-4위의
-모빌보다
+4월부터
+6월까지
 } False negatives: {
 4
-위의
-모빌
-보다
+월부터
+6
+월까지
 }
 
 Expected: {
-참고 출처는 그것이 "<SPLIT>100<SPLIT>% 코스페달<SPLIT>"<SPLIT>이라<SPLIT>고 이야기했다<SPLIT>.}
+경찰 대변인은 "<SPLIT>몇 마디 주고 받은<SPLIT>" 후 "<SPLIT>언쟁<SPLIT>"<SPLIT>이 벌어졌지만 부상자는 없었다고 연합<SPLIT>통신에 밝혔다<SPLIT>.}
 Predicted: {
-참고 출처는 그것이 "<SPLIT>100<SPLIT>% 코스페달<SPLIT>"<SPLIT>이라고 이야기했다<SPLIT>.}
+경찰 대변인은 "<SPLIT>몇 마디 주고 받은<SPLIT>" 후 "<SPLIT>언쟁<SPLIT>"<SPLIT>이 벌어졌지만 부상자는 없었다고 연합통신에 밝혔다<SPLIT>.}
 False positives: {
-이라고
+연합통신에
 } False negatives: {
+연합
+통신에
+}
+
+Expected: {
+그러나 늘어나고 있는 중국의 중산층은 날마다 폐를 조여<SPLIT>오는 스모그를 보면서 베이징 같은 도시의 유해 공기에 대해 큰 목소리로 항의하고<SPLIT>있다<SPLIT>.}
+Predicted: {
+그러나 늘어나고 있는 중국의 중산층은 날마다 폐를 조여오는 스모그를 보면서 베이징 같은 도시의 유해 공기에 대해 큰 목소리로 항의하고<SPLIT>있다<SPLIT>.}
+False positives: {
+조여오는
+} False negatives: {
+조여
+오는
+}
+
+Expected: {
+심사단은 또한 북부 온타리오 시의 경찰관들이 게시한<SPLIT>것으로 의심되는<SPLIT>9<SPLIT>월 이후의 선동적<SPLIT>인 페이스<SPLIT>북 포스트를 조사하고<SPLIT>있다<SPLIT>.}
+Predicted: {
+심사단은 또한 북부 온타리오 시의 경찰관들이 게시한<SPLIT>것으로 의심되는<SPLIT>9<SPLIT>월 이후의 선동적인 페이스북 포스트를 조사하고<SPLIT>있다<SPLIT>.}
+False positives: {
+선동적인
+페이스북
+} False negatives: {
+선동적
+인
+페이스
+북
+}
+
+Expected: {
+지난 달 sasktel 무제한 데이터 고객 린제이 게이<SPLIT>는 놀랍다고 보고했다<SPLIT>.}
+Predicted: {
+지난 달 sasktel 무제한 데이터 고객 린제이 게이는 놀랍다고 보고했다<SPLIT>.}
+False positives: {
+게이는
+} False negatives: {
+게이
+는
+}
+
+Expected: {
+텍사스 플레이노<SPLIT>에 사는 임산부 마가렛 부머<SPLIT>는 처음에는 일반적<SPLIT>인 초음파 검사를 받았지만 뱃속의 아기가 희귀 질환에 걸렸고 수술을 받아야 아기가 살 수 있다는 진단을 받은 후부터<SPLIT>는 복잡한 초음파 검사를 받게 되었다<SPLIT>.}
+Predicted: {
+텍사스 플레이노에 사는 임산부 마가렛 부머는 처음에는 일반적인 초음파 검사를 받았지만 뱃속의 아기가 희귀 질환에 걸렸고 수술을 받아야 아기가 살 수 있다는 진단을 받은 후부터는 복잡한 초음파 검사를 받게 되었다<SPLIT>.}
+False positives: {
+플레이노에
+부머는
+일반적인
+후부터는
+} False negatives: {
+플레이노
+에
+부머
+는
+일반적
+인
+후부터
+는
+}
+
+Expected: {
+이 crtc 청문회의 목적은 업계 이해<SPLIT>당사자들과 일반 국민들의 의견을 현장에서 청취하는<SPLIT>것<SPLIT>이다<SPLIT>.}
+Predicted: {
+이 crtc 청문회의 목적은 업계 이해당사자들과 일반 국민들의 의견을 현장에서 청취하는<SPLIT>것<SPLIT>이다<SPLIT>.}
+False positives: {
+이해당사자들과
+} False negatives: {
+이해
+당사자들과
+}
+
+Expected: {
+“<SPLIT>워싱턴과 링컨 대통령 재임 기간의 g.d.p. 성장률이 얼마<SPLIT>였는지<SPLIT>는 모르겠지만<SPLIT>, 그 시절에 일군 제도적<SPLIT>발전은 막대한 영향을 미쳤고 그 영향이 오래 지속되었습니다<SPLIT>.<SPLIT>”}
+Predicted: {
+“<SPLIT>워싱턴과 링컨 대통령 재임 기간의 g.d.p<SPLIT>. 성장률이 얼마였는지는 모르겠지만<SPLIT>, 그 시절에 일군 제도적발전은 막대한 영향을 미쳤고 그 영향이 오래 지속되었습니다<SPLIT>.<SPLIT>”}
+False positives: {
+g.d.p
+.
+얼마였는지는
+제도적발전은
+} False negatives: {
+g.d.p.
+얼마
+였는지
+는
+제도적
+발전은
+}
+
+Expected: {
+그러나 도전과 그 도전을 표현한<SPLIT>노래들은 연결되어<SPLIT>있 추적 가능한<SPLIT>신경계를 무한 연속으로 녹화된<SPLIT>거친 비디오 화면에 추가했다<SPLIT>.}
+Predicted: {
+그러나 도전과 그 도전을 표현한<SPLIT>노래들은 연결되어있 추적 가능한<SPLIT>신경계를 무한 연속으로 녹화된<SPLIT>거친 비디오 화면에 추가했다<SPLIT>.}
+False positives: {
+연결되어있
+} False negatives: {
+연결되어
+있
+}
+
+Expected: {
+또한 냉전 시대 전투 장면을 상상해서<SPLIT>작성되었고<SPLIT>군사 대학 시험에<SPLIT>도 사용된<SPLIT>영국 국방부 지도가 처음으로 전시되고<SPLIT>있다<SPLIT>.}
+Predicted: {
+또한 냉전 시대 전투 장면을 상상해서작성되었고<SPLIT>군사 대학 시험에도 사용된<SPLIT>영국 국방부 지도가 처음으로 전시되고<SPLIT>있다<SPLIT>.}
+False positives: {
+상상해서작성되었고
+시험에도
+} False negatives: {
+상상해서
+작성되었고
+시험에
+도
+}
+
+Expected: {
+델리 남동부의 바다르푸르에 있는 석탄 화력 발전소와 디젤 발전기가 10<SPLIT>일 동안 작동을 중지할<SPLIT>것<SPLIT>이다<SPLIT>.}
+Predicted: {
+델리 남동부의 바다르푸르에 있는 석탄 화력 발전소와 디젤 발전기가 10일 동안 작동을 중지할<SPLIT>것<SPLIT>이다<SPLIT>.}
+False positives: {
+10일
+} False negatives: {
+10
+일
+}
+
+Expected: {
+그것을 당해 낼 재간이 있어야 하는데 누군<SPLIT>가 주변을 빙빙 돌지만 말고 직접 덤벼들었으면 좋겠어요<SPLIT>.}
+Predicted: {
+그것을 당해 낼 재간이 있어야 하는데 누군가 주변을 빙빙 돌지만 말고 직접 덤벼들었으면 좋겠어요<SPLIT>.}
+False positives: {
+누군가
+} False negatives: {
+누군
+가
+}
+
+Expected: {
+예술가들이 사람들의 심금을 울리는 순간만<SPLIT>이 우리가 서로의 차이점을 제쳐 두고 한 자리<SPLIT>에 모여 있는 순간<SPLIT>이다.}
+Predicted: {
+예술가들이 사람들의 심금을 울리는 순간만이 우리가 서로의 차이점을 제쳐 두고 한 자리에 모여 있는 순간이다<SPLIT>.}
+False positives: {
+순간만이
+자리에
+순간이다
+.
+} False negatives: {
+순간만
+이
+자리
+에
+순간
+이다.
+}
+
+Expected: {
+그렇다면 이론상으로<SPLIT>는 원하는<SPLIT>때 언제든지 예금을 입출금할<SPLIT>수 있다<SPLIT>.}
+Predicted: {
+그렇다면 이론상으로는 원하는<SPLIT>때 언제든지 예금을 입출금할<SPLIT>수 있다<SPLIT>.}
+False positives: {
+이론상으로는
+} False negatives: {
+이론상으로
+는
+}
+
+Expected: {
+카탈라노는 런던과 글래스고에서 차례로 거주한<SPLIT>후 그 지역으로 다시 돌아왔고 글래스고에서<SPLIT>는 글래스고 예술<SPLIT>학교<SPLIT>(<SPLIT>glasgow school of art<SPLIT>)<SPLIT>에서 주얼리 디자인을 공부했었다<SPLIT>.}
+Predicted: {
+카탈라노는 런던과 글래스고에서 차례로 거주한<SPLIT>후 그 지역으로 다시 돌아왔고 글래스고에서는 글래스고 예술학교<SPLIT>(<SPLIT>glasgow school of art<SPLIT>)<SPLIT>에서 주얼리 디자인을 공부했었다<SPLIT>.}
+False positives: {
+글래스고에서는
+예술학교
+} False negatives: {
+글래스고에서
+는
+예술
+학교
+}
+
+Expected: {
+rspb는 탄원서를 쓴 마크 에이버리<SPLIT>와 tv 진행자 크리스 패컴<SPLIT>과 같은 많은 주요 환경<SPLIT>보호론자들과<SPLIT>의 입장<SPLIT>차로 갈등을 빚었다<SPLIT>.}
+Predicted: {
+rspb는 탄원서를 쓴 마크 에이버리와 tv 진행자 크리스 패컴과 같은 많은 주요 환경보호론자들과의 입장차로 갈등을 빚었다<SPLIT>.}
+False positives: {
+에이버리와
+패컴과
+환경보호론자들과의
+입장차로
+} False negatives: {
+에이버리
+와
+패컴
+과
+환경
+보호론자들과
+의
+입장
+차로
+}
+
+Expected: {
+주도권을 쥔 경기에서 비기는 것은 한 번쯤은 무시하고<SPLIT>넘어갈 수 있는 일<SPLIT>이지만 세 번이나 비기게 되면 말다툼 하나하나가 약점이 된다<SPLIT>.}
+Predicted: {
+주도권을 쥔 경기에서 비기는 것은 한 번쯤은 무시하고<SPLIT>넘어갈 수 있는 일이지만 세 번이나 비기게 되면 말다툼 하나하나가 약점이 된다<SPLIT>.}
+False positives: {
+일이지만
+} False negatives: {
+일
+이지만
+}
+
+Expected: {
+그는 스캔들이 터진 후 다음 달<SPLIT>인 2015<SPLIT>년 10<SPLIT>월에 의장으로 승진했다<SPLIT>.}
+Predicted: {
+그는 스캔들이 터진 후 다음 달인 2015년 10월에 의장으로 승진했다<SPLIT>.}
+False positives: {
+달인
+2015년
+10월에
+} False negatives: {
+달
+인
+2015
+년
+10
+월에
+}
+
+Expected: {
+이것으로<SPLIT>도 투자자들이 펀드 투자에 몰려드는 것을 막지 못했다<SPLIT>.}
+Predicted: {
+이것으로도 투자자들이 펀드 투자에 몰려드는 것을 막지 못했다<SPLIT>.}
+False positives: {
+이것으로도
+} False negatives: {
+이것으로
+도
+}
+
+Expected: {
+작년은 믿을 수 없는 멋진 한 해<SPLIT>였고 나는 2017<SPLIT>년에 더 좋은 성적을 거두기 위한 대열에 합류할<SPLIT>준비가 되어 있다<SPLIT>.}
+Predicted: {
+작년은 믿을 수 없는 멋진 한 해였고 나는 2017년에 더 좋은 성적을 거두기 위한 대열에 합류할준비가 되어 있다<SPLIT>.}
+False positives: {
+해였고
+2017년에
+합류할준비가
+} False negatives: {
+해
+였고
+2017
+년에
+합류할
+준비가
+}
+
+Expected: {
+지머는 “<SPLIT>슈퍼<SPLIT>히어로는 인간의 경험을 벗어난 존재<SPLIT>이기 때문에 드라마 속 캐릭터처럼 다루지 않았어요<SPLIT>"<SPLIT>라고 말한다<SPLIT>.}
+Predicted: {
+지머는 “<SPLIT>슈퍼히어로는 인간의 경험을 벗어난 존재이기 때문에 드라마 속 캐릭터처럼 다루지 않았어요<SPLIT>"<SPLIT>라고 말한다<SPLIT>.}
+False positives: {
+슈퍼히어로는
+존재이기
+} False negatives: {
+슈퍼
+히어로는
+존재
+이기
+}
+
+Expected: {
+결국<SPLIT>, 근로 안전성 또는 규정 준수 현황의 측면에서<SPLIT>는 조직 성과를 거의 측정하지<SPLIT>않았다<SPLIT>.}
+Predicted: {
+결국<SPLIT>, 근로 안전성 또는 규정 준수 현황의 측면에서는 조직 성과를 거의 측정하지<SPLIT>않았다<SPLIT>.}
+False positives: {
+측면에서는
+} False negatives: {
+측면에서
+는
+}
+
+Expected: {
+570<SPLIT>만 명이 넘는 플로리다 주민들이 직접 가서 투표하는<SPLIT>약 2<SPLIT>주간의 조기 투표에 이미 참여했다<SPLIT>.}
+Predicted: {
+570만 명이 넘는 플로리다 주민들이 직접 가서 투표하는<SPLIT>약 2주간의 조기 투표에 이미 참여했다<SPLIT>.}
+False positives: {
+570만
+2주간의
+} False negatives: {
+570
+만
+2
+주간의
+}
+
+Expected: {
+지칠 줄 모르는 프라이드 치킨에 대한 중국인들의 식탐이 큰 이유로 작용하여<SPLIT>kfc의 모기업<SPLIT>인 얌 브랜드<SPLIT>(<SPLIT>yum brands<SPLIT>)<SPLIT>는 투자자들이 선호하는<SPLIT>기업이 되었다<SPLIT>.}
+Predicted: {
+지칠 줄 모르는 프라이드 치킨에 대한 중국인들의 식탐이 큰 이유로 작용하여kfc의 모기업인 얌 브랜드<SPLIT>(<SPLIT>yum brands<SPLIT>)<SPLIT>는 투자자들이 선호하는<SPLIT>기업이 되었다<SPLIT>.}
+False positives: {
+작용하여kfc의
+모기업인
+} False negatives: {
+작용하여
+kfc의
+모기업
+인
+}
+
+Expected: {
+그러한 인터넷계의 노력이 그 장치에 대한 자본 지출의 주된<SPLIT>동력<SPLIT>이라<SPLIT>고<SPLIT>들 한다<SPLIT>.}
+Predicted: {
+그러한 인터넷계의 노력이 그 장치에 대한 자본 지출의 주된<SPLIT>동력이라고들 한다<SPLIT>.}
+False positives: {
+동력이라고들
+} False negatives: {
+동력
+이라
+고
+들
+}
+
+Expected: {
+본인들 말로<SPLIT>도 골프 실력이 형편 없다<SPLIT>고 자인한<SPLIT>두 명의 호주인이 북한에서 열리는 프리미어 골프 선수권 대회에 참여했다고 허풍을 떨었다<SPLIT>.}
+Predicted: {
+본인들 말로도 골프 실력이 형편 없다고 자인한<SPLIT>두 명의 호주인이 북한에서 열리는 프리미어 골프 선수권 대회에 참여했다고 허풍을 떨었다<SPLIT>.}
+False positives: {
+말로도
+없다고
+} False negatives: {
+말로
+도
+없다
+고
+}
+
+Expected: {
+일본 정부는 이 자기<SPLIT>부상 열차 선로의 완공 후 더 큰 경제적<SPLIT>발전을 기대하고<SPLIT>있는 것 같다<SPLIT>.}
+Predicted: {
+일본 정부는 이 자기부상 열차 선로의 완공 후 더 큰 경제적발전을 기대하고<SPLIT>있는 것 같다<SPLIT>.}
+False positives: {
+자기부상
+경제적발전을
+} False negatives: {
+자기
+부상
+경제적
+발전을
+}
+
+Expected: {
+인도에서<SPLIT>는 늙어서 죽는 것을 축복<SPLIT>이라<SPLIT>고 생각한다<SPLIT>.}
+Predicted: {
+인도에서는 늙어서 죽는 것을 축복이라고 생각한다<SPLIT>.}
+False positives: {
+인도에서는
+축복이라고
+} False negatives: {
+인도에서
+는
+축복
 이라
 고
 }
 
 Expected: {
-아마 그것이 시간의 음절이 그의 작물을 발굴하고<SPLIT>그의 수수께끼를 억류수에 내어<SPLIT>주는 동안 눈물의 솟구침이 그의 눈을 덮는 까닭<SPLIT>일 것<SPLIT>이다<SPLIT>.}
+기원전 5<SPLIT>세기 그리스 도시 국가<SPLIT>인 아테네는 스키타이로부터<SPLIT>의 곡물 수입에 의존했으며<SPLIT>메가라의 식민지<SPLIT>인 비잔티움과 같이 해협을 통치하는<SPLIT>도시 국가와<SPLIT>의 주요 동맹<SPLIT>관계를 유지했다<SPLIT>.}
 Predicted: {
-아마 그것이 시간의 음절이 그의 작물을 발굴하고<SPLIT>그의 수수께끼를 억류수에 내어주는 동안 눈물의 솟구침이 그의 눈을 덮는 까닭일 것이다<SPLIT>.}
+기원전 5세기 그리스 도시 국가인 아테네는 스키타이로부터의 곡물 수입에 의존했으며<SPLIT>메가라의 식민지인 비잔티움과 같이 해협을 통치하는<SPLIT>도시 국가와의 주요 동맹관계를 유지했다<SPLIT>.}
 False positives: {
-내어주는
-까닭일
-것이다
+5세기
+국가인
+스키타이로부터의
+식민지인
+국가와의
+동맹관계를
 } False negatives: {
-내어
-주는
-까닭
-일
-것
-이다
+5
+세기
+국가
+인
+스키타이로부터
+의
+식민지
+인
+국가와
+의
+동맹
+관계를
 }
 
 Expected: {
-1992<SPLIT>년<SPLIT>, 그 공동체의 공간으로 방임되었던<SPLIT>옛 인형 극장 부지를 배우들과 직원들이 인수했다}
+경찰 병력에 순찰과 감시용<SPLIT>보트를 운영하는<SPLIT>특수 부대가 포함된다<SPLIT>.}
 Predicted: {
-1992년<SPLIT>, 그 공동체의 공간으로 방임되었던옛 인형 극장 부지를 배우들과 직원들이 인수했다}
+경찰 병력에 순찰과 감시용보트를 운영하는<SPLIT>특수 부대가 포함된다<SPLIT>.}
 False positives: {
-1992년
-방임되었던옛
+감시용보트를
 } False negatives: {
-1992
-년
-방임되었던
-옛
+감시용
+보트를
 }
 
 Expected: {
-국가 사회당<SPLIT>(<SPLIT>national socialists<SPLIT>)<SPLIT>이 1933<SPLIT>년 정권을 장악한<SPLIT>후 구 식민지를 되찾으려는 시도가 확산되었다<SPLIT>.}
+루도비쿠스 독일<SPLIT>왕이 모라비아를 침공해<SPLIT>모이미르 i<SPLIT>세를 축출하고<SPLIT>자신의 조카<SPLIT>인 라스티즈를 옹립했으며<SPLIT>라스티즈는 이후 성 라스티슬라프가 되었다<SPLIT>.}
 Predicted: {
-국가 사회당<SPLIT>(<SPLIT>national socialists<SPLIT>)<SPLIT>이 1933년 정권을 장악한<SPLIT>후 구 식민지를 되찾으려는 시도가 확산되었다<SPLIT>.}
+루도비쿠스 독일왕이 모라비아를 침공해모이미르 i<SPLIT>세를 축출하고<SPLIT>자신의 조카인 라스티즈를 옹립했으며<SPLIT>라스티즈는 이후 성 라스티슬라프가 되었다<SPLIT>.}
 False positives: {
-1933년
+독일왕이
+침공해모이미르
+조카인
 } False negatives: {
-1933
-년
-}
-
-Expected: {
-2004<SPLIT>년 아테네 올림픽 대회 스트리트 레이스 우승자<SPLIT>인 울리히는 두 번째 금메달을 따겠다는 목표를 추구하였다<SPLIT>.}
-Predicted: {
-2004년 아테네 올림픽 대회 스트리트 레이스 우승자인 울리히는 두 번째 금메달을 따겠다는 목표를 추구하였다<SPLIT>.}
-False positives: {
-2004년
-우승자인
-} False negatives: {
-2004
-년
-우승자
+독일
+왕이
+침공해
+모이미르
+조카
 인
 }
 
 Expected: {
-앰네스티 인터내셔널은 마녀<SPLIT>사냥으로 인해<SPLIT>50<SPLIT>명이 살해당했다는<SPLIT>내용의 2008<SPLIT>년 신문 기사를 인용하였다<SPLIT>.}
+후자 또한 이슬람에서 해안 벨트 지역으로 확장되었지만<SPLIT>대부분의 반투 족<SPLIT>은 이슬람과 전혀 교류가 없었기 때문에 아프리카 전통 종교 문화를 고수할<SPLIT>수 있었다<SPLIT>.}
 Predicted: {
-앰네스티 인터내셔널은 마녀사냥으로 인해<SPLIT>50명이 살해당했다는내용의 2008년 신문 기사를 인용하였다<SPLIT>.}
+후자 또한 이슬람에서 해안 벨트 지역으로 확장되었지만<SPLIT>대부분의 반투 족은 이슬람과 전혀 교류가 없었기 때문에 아프리카 전통 종교 문화를 고수할<SPLIT>수 있었다<SPLIT>.}
 False positives: {
-마녀사냥으로
-50명이
-살해당했다는내용의
-2008년
+족은
 } False negatives: {
-마녀
-사냥으로
-50
-명이
-살해당했다는
-내용의
-2008
-년
+족
+은
 }
 
 Expected: {
-그해 여름<SPLIT>, 조르주와 그의 아내는 당시 18<SPLIT>살<SPLIT>이었던 저메인의 친구 중 한 명의 딸<SPLIT>인 로산느와 함께 스위스로 돌아갔다<SPLIT>.}
+이후<SPLIT>, 아우구스투스가 로마<SPLIT>제국을 건설했을<SPLIT>때 로마인들은 지중해를 마레 노스트룸<SPLIT>(<SPLIT>우리 바다<SPLIT>)<SPLIT>으로 불렀다<SPLIT>.}
 Predicted: {
-그해 여름<SPLIT>, 조르주와 그의 아내는 당시 18살이었던 저메인의 친구 중 한 명의 딸인 로산느와 함께 스위스로 돌아갔다<SPLIT>.}
+이후<SPLIT>, 아우구스투스가 로마제국을 건설했을<SPLIT>때 로마인들은 지중해를 마레 노스트룸<SPLIT>(<SPLIT>우리 바다<SPLIT>)<SPLIT>으로 불렀다<SPLIT>.}
 False positives: {
-18살이었던
-딸인
+로마제국을
 } False negatives: {
+로마
+제국을
+}
+
+Expected: {
+지구 온난화<SPLIT>로 인해<SPLIT>우기 패턴이 바뀌게 되었다<SPLIT>.}
+Predicted: {
+지구 온난화로 인해<SPLIT>우기 패턴이 바뀌게 되었다<SPLIT>.}
+False positives: {
+온난화로
+} False negatives: {
+온난화
+로
+}
+
+Expected: {
+인간 또한 서식지가 파괴되면서<SPLIT>자연적<SPLIT>서식지를 직접 사용하지<SPLIT>못하게 됐다<SPLIT>.}
+Predicted: {
+인간 또한 서식지가 파괴되면서<SPLIT>자연적서식지를 직접 사용하지<SPLIT>못하게 됐다<SPLIT>.}
+False positives: {
+자연적서식지를
+} False negatives: {
+자연적
+서식지를
+}
+
+Expected: {
+브리즈번이 발전하면서<SPLIT>강의 상태는 악화돼<SPLIT>하수와 쓰레기 더미만 남을 정도<SPLIT>였다<SPLIT>.}
+Predicted: {
+브리즈번이 발전하면서강의 상태는 악화돼하수와 쓰레기 더미만 남을 정도였다<SPLIT>.}
+False positives: {
+발전하면서강의
+악화돼하수와
+정도였다
+} False negatives: {
+발전하면서
+강의
+악화돼
+하수와
+정도
+였다
+}
+
+Expected: {
+반면<SPLIT>, 나일<SPLIT>강을 추가적으로 통제한<SPLIT>결과 게지라 섬과 도시 수변 지역 내 발전이 크게 일어났다<SPLIT>.}
+Predicted: {
+반면<SPLIT>, 나일강을 추가적으로 통제한<SPLIT>결과 게지라 섬과 도시 수변 지역 내 발전이 크게 일어났다<SPLIT>.}
+False positives: {
+나일강을
+} False negatives: {
+나일
+강을
+}
+
+Expected: {
+또한 그녀는 기밀<SPLIT>정보를 자신에게 제공한<SPLIT>다수의 정부 과학자들과<SPLIT>의 개인적<SPLIT>인 친분을 이용하였다<SPLIT>.}
+Predicted: {
+또한 그녀는 기밀정보를 자신에게 제공한다수의 정부 과학자들과의 개인적인 친분을 이용하였다<SPLIT>.}
+False positives: {
+기밀정보를
+제공한다수의
+과학자들과의
+개인적인
+} False negatives: {
+기밀
+정보를
+제공한
+다수의
+과학자들과
+의
+개인적
+인
+}
+
+Expected: {
+신약<SPLIT>성서에 따르면 바울은 고린도에서 18<SPLIT>개월을 보냈는데 이는 전도를 시작한<SPLIT>이후 17<SPLIT>년이 지난 무렵<SPLIT>이었다<SPLIT>.}
+Predicted: {
+신약성서에 따르면 바울은 고린도에서 18개월을 보냈는데 이는 전도를 시작한<SPLIT>이후 17년이 지난 무렵이었다<SPLIT>.}
+False positives: {
+신약성서에
+18개월을
+17년이
+무렵이었다
+} False negatives: {
+신약
+성서에
 18
-살
-이었던
-딸
+개월을
+17
+년이
+무렵
+이었다
+}
+
+Expected: {
+유적지에서 발견된<SPLIT>기이한 유물은 매스봇<SPLIT>(<SPLIT>massebot<SPLIT>)<SPLIT>이라고 하는 큰 돌이 한 줄에 10<SPLIT>개로 놓여 있는 모습<SPLIT>이었는데<SPLIT>, 북<SPLIT>-<SPLIT>남을 향한 모습<SPLIT>이었으며<SPLIT>, 가장 큰 돌은 그 크기가 3<SPLIT>미터로 가운데는 제단 형식으로 되어 있고 큰 정사각형의 석조가 놓여 있는 형태<SPLIT>였다<SPLIT>.}
+Predicted: {
+유적지에서 발견된<SPLIT>기이한 유물은 매스봇<SPLIT>(<SPLIT>massebot<SPLIT>)<SPLIT>이라고 하는 큰 돌이 한 줄에 10개로 놓여 있는 모습이었는데<SPLIT>, 북<SPLIT>-<SPLIT>남을 향한 모습이었으며<SPLIT>, 가장 큰 돌은 그 크기가 3미터로 가운데는 제단 형식으로 되어 있고 큰 정사각형의 석조가 놓여 있는 형태였다<SPLIT>.}
+False positives: {
+10개로
+모습이었는데
+모습이었으며
+3미터로
+형태였다
+} False negatives: {
+10
+개로
+모습
+이었는데
+모습
+이었으며
+3
+미터로
+형태
+였다
+}
+
+Expected: {
+그는 단 15<SPLIT>년간 재임했으며<SPLIT>이는 그가 세우던 다수의 건축물 중 미완성된<SPLIT>건물을 통해 알 수 있다<SPLIT>.}
+Predicted: {
+그는 단 15년간 재임했으며<SPLIT>이는 그가 세우던 다수의 건축물 중 미완성된<SPLIT>건물을 통해 알 수 있다<SPLIT>.}
+False positives: {
+15년간
+} False negatives: {
+15
+년간
+}
+
+Expected: {
+당시 키플링도 플로렌스 개러드<SPLIT>를 만나 사랑에 빠졌으며 당시 플로렌스는 트릭스와 함께 남해<SPLIT>(<SPLIT>트릭스가 돌아온 곳<SPLIT>)<SPLIT>로 이동하였다<SPLIT>.}
+Predicted: {
+당시 키플링도 플로렌스 개러드를 만나 사랑에 빠졌으며 당시 플로렌스는 트릭스와 함께 남해<SPLIT>(<SPLIT>트릭스가 돌아온 곳<SPLIT>)<SPLIT>로 이동하였다<SPLIT>.}
+False positives: {
+개러드를
+} False negatives: {
+개러드
+를
+}
+
+Expected: {
+자유의 보장은 지역<SPLIT>간 갈등을 해소하고<SPLIT>제국을 보다 조화로운<SPLIT>곳으로 만들 것을 약속했다<SPLIT>.}
+Predicted: {
+자유의 보장은 지역간 갈등을 해소하고<SPLIT>제국을 보다 조화로운곳으로 만들 것을 약속했다<SPLIT>.}
+False positives: {
+지역간
+조화로운곳으로
+} False negatives: {
+지역
+간
+조화로운
+곳으로
+}
+
+Expected: {
+마케도니아군은 그리스를 양분하고<SPLIT>있는 테르모필레를 지나 진군했지만<SPLIT>테르모필레를 점령하지<SPLIT>않으려 했는데 그 이유는 아테네<SPLIT>, 스파르타 및 아카이아 연합군이 철통같이 방어를 하고 있었기 때문<SPLIT>이었다<SPLIT>.}
+Predicted: {
+마케도니아군은 그리스를 양분하고<SPLIT>있는 테르모필레를 지나 진군했지만테르모필레를 점령하지<SPLIT>않으려 했는데 그 이유는 아테네<SPLIT>, 스파르타 및 아카이아 연합군이 철통같이 방어를 하고 있었기 때문이었다<SPLIT>.}
+False positives: {
+진군했지만테르모필레를
+때문이었다
+} False negatives: {
+진군했지만
+테르모필레를
+때문
+이었다
+}
+
+Expected: {
+자원<SPLIT>봉사자와 민병대에 의존했기<SPLIT>때문에 플로리다에서 벌어진 전쟁에서<SPLIT>는 물류<SPLIT>, 훈련 그리고 식량 문제에 직면하게<SPLIT>되었다<SPLIT>.}
+Predicted: {
+자원봉사자와 민병대에 의존했기<SPLIT>때문에 플로리다에서 벌어진 전쟁에서는 물류<SPLIT>, 훈련 그리고 식량 문제에 직면하게<SPLIT>되었다<SPLIT>.}
+False positives: {
+자원봉사자와
+전쟁에서는
+} False negatives: {
+자원
+봉사자와
+전쟁에서
+는
+}
+
+Expected: {
+처음에 동남아시아<SPLIT>, 아마 파푸아뉴기니<SPLIT>에서 재배가 이뤄지던 바나나와 플랜테인은 이미 약 5<SPLIT>천<SPLIT>년 전 아프리카에서<SPLIT>도 재경작이 이뤄졌다<SPLIT>.}
+Predicted: {
+처음에 동남아시아<SPLIT>, 아마 파푸아뉴기니에서 재배가 이뤄지던 바나나와 플랜테인은 이미 약 5천년 전 아프리카에서도 재경작이 이뤄졌다<SPLIT>.}
+False positives: {
+파푸아뉴기니에서
+5천년
+아프리카에서도
+} False negatives: {
+파푸아뉴기니
+에서
+5
+천
+년
+아프리카에서
+도
+}
+
+Expected: {
+메이지 왕조 이전<SPLIT>, 왕조의 이름이 보다 자주 바뀌었으며 일<SPLIT>왕의 시호를 다른 방식으로 선택하였다<SPLIT>.}
+Predicted: {
+메이지 왕조 이전<SPLIT>, 왕조의 이름이 보다 자주 바뀌었으며 일왕의 시호를 다른 방식으로 선택하였다<SPLIT>.}
+False positives: {
+일왕의
+} False negatives: {
+일
+왕의
+}
+
+Expected: {
+1839<SPLIT>년 후난 및 후베이<SPLIT>성 성주<SPLIT>인 임칙서가 외국과<SPLIT>의 아편 거래를 중단시킨<SPLIT>후 영국과 1<SPLIT>차 아편<SPLIT>전쟁을 벌이게 되었다<SPLIT>.}
+Predicted: {
+1839년 후난 및 후베이성 성주인 임칙서가 외국과의 아편 거래를 중단시킨<SPLIT>후 영국과 1차 아편전쟁을 벌이게 되었다<SPLIT>.}
+False positives: {
+1839년
+후베이성
+성주인
+외국과의
+1차
+아편전쟁을
+} False negatives: {
+1839
+년
+후베이
+성
+성주
+인
+외국과
+의
+1
+차
+아편
+전쟁을
+}
+
+Expected: {
+헤로인 중독으로 인해<SPLIT>몰락하게<SPLIT>된 카랜지의 삶과 경력<SPLIT>, 그리고 인생의 내리막과 1980<SPLIT>년대 에이즈로 사망하게<SPLIT>된 일생을 영화로 제작했다<SPLIT>.}
+Predicted: {
+헤로인 중독으로 인해<SPLIT>몰락하게된 카랜지의 삶과 경력<SPLIT>, 그리고 인생의 내리막과 1980년대 에이즈로 사망하게된 일생을 영화로 제작했다<SPLIT>.}
+False positives: {
+몰락하게된
+1980년대
+사망하게된
+} False negatives: {
+몰락하게
+된
+1980
+년대
+사망하게
+된
+}
+
+Expected: {
+또한 디즈니는 유니버설이 오스왈드에 대한 지식<SPLIT>재산권을 보유했음을 알게 되었다<SPLIT>.}
+Predicted: {
+또한 디즈니는 유니버설이 오스왈드에 대한 지식재산권을 보유했음을 알게 되었다<SPLIT>.}
+False positives: {
+지식재산권을
+} False negatives: {
+지식
+재산권을
+}
+
+Expected: {
+그는 자신의 누이가 더 스코츠맨에서 찾은 구인<SPLIT>광고를 따라간 후<SPLIT>, 1<SPLIT>년 반 동안 노팅엄 저널에서 기자로 활동하였다<SPLIT>.}
+Predicted: {
+그는 자신의 누이가 더 스코츠맨에서 찾은 구인광고를 따라간 후<SPLIT>, 1년 반 동안 노팅엄 저널에서 기자로 활동하였다<SPLIT>.}
+False positives: {
+구인광고를
+1년
+} False negatives: {
+구인
+광고를
+1
+년
+}
+
+Expected: {
+또한<SPLIT>, 주제와 관련하여<SPLIT>재스민은 인권<SPLIT>, 인용적<SPLIT>관용성<SPLIT>, 사회 계층<SPLIT>구조는 물론 삶<SPLIT>, 자유 및 행복 추구를 대변한다<SPLIT>.}
+Predicted: {
+또한<SPLIT>, 주제와 관련하여재스민은 인권<SPLIT>, 인용적관용성<SPLIT>, 사회 계층구조는 물론 삶<SPLIT>, 자유 및 행복 추구를 대변한다<SPLIT>.}
+False positives: {
+관련하여재스민은
+인용적관용성
+계층구조는
+} False negatives: {
+관련하여
+재스민은
+인용적
+관용성
+계층
+구조는
+}
+
+Expected: {
+1770<SPLIT>년 그의 형제<SPLIT>인 컴벌랜드와 스트래댄 공작 헨리 왕자가 간통범<SPLIT>인 것으로 드러났고<SPLIT>, 다음 해 컴벌랜드 공작은 젊은 과부<SPLIT>인 앤 호튼과 결혼했다<SPLIT>.}
+Predicted: {
+1770년 그의 형제인 컴벌랜드와 스트래댄 공작 헨리 왕자가 간통범인 것으로 드러났고<SPLIT>, 다음 해 컴벌랜드 공작은 젊은 과부인 앤 호튼과 결혼했다<SPLIT>.}
+False positives: {
+1770년
+형제인
+간통범인
+과부인
+} False negatives: {
+1770
+년
+형제
+인
+간통범
+인
+과부
 인
 }
 
 Expected: {
-종교적<SPLIT>관행<SPLIT>이라는 측면에서<SPLIT>, 피오렐로는 영국 성공회<SPLIT>에서 교육을 받았으며 일생을 개신교 교회의 일원으로 보냈다<SPLIT>.}
+자신 또한 싱어송라이터<SPLIT>이며 1970<SPLIT>년대 데카 레코드<SPLIT>와<SPLIT>의 계약을 체결한<SPLIT>래퍼티의 형<SPLIT>인 짐과 공동 작곡한<SPLIT>세 곡도 포함되어<SPLIT>있다<SPLIT>.}
 Predicted: {
-종교적관행이라는 측면에서<SPLIT>, 피오렐로는 영국 성공회에서 교육을 받았으며 일생을 개신교 교회의 일원으로 보냈다<SPLIT>.}
+자신 또한 싱어송라이터이며 1970년대 데카 레코드와의 계약을 체결한<SPLIT>래퍼티의 형인 짐과 공동 작곡한<SPLIT>세 곡도 포함되어있다<SPLIT>.}
 False positives: {
-종교적관행이라는
-성공회에서
+싱어송라이터이며
+1970년대
+레코드와의
+형인
+포함되어있다
 } False negatives: {
-종교적
-관행
-이라는
-성공회
+싱어송라이터
+이며
+1970
+년대
+레코드
+와
+의
+형
+인
+포함되어
+있다
+}
+
+Expected: {
+할머니 덕분에 미시마는 도쿠가와 이에야스<SPLIT>의 직계 자손이 되었다<SPLIT>.}
+Predicted: {
+할머니 덕분에 미시마는 도쿠가와 이에야스의 직계 자손이 되었다<SPLIT>.}
+False positives: {
+이에야스의
+} False negatives: {
+이에야스
+의
+}
+
+Expected: {
+추밀원 의장<SPLIT>인 핼리팩스 경이 개인적으로 11<SPLIT>월 독일을 방문해<SPLIT>히틀러와 다른 독일 관계자들을 만났다<SPLIT>.}
+Predicted: {
+추밀원 의장인 핼리팩스 경이 개인적으로 11월 독일을 방문해히틀러와 다른 독일 관계자들을 만났다<SPLIT>.}
+False positives: {
+의장인
+11월
+방문해히틀러와
+} False negatives: {
+의장
+인
+11
+월
+방문해
+히틀러와
+}
+
+Expected: {
+로나는 이 디스크를 사용해<SPLIT>폴로늄의 실험실 표본을 만들 수 있었으며 이 디스크는 향후 연구소의 연구에서 널리 사용되었다<SPLIT>.}
+Predicted: {
+로나는 이 디스크를 사용해폴로늄의 실험실 표본을 만들 수 있었으며 이 디스크는 향후 연구소의 연구에서 널리 사용되었다<SPLIT>.}
+False positives: {
+사용해폴로늄의
+} False negatives: {
+사용해
+폴로늄의
+}
+
+Expected: {
+레이건과 현직 대통령<SPLIT>인 지미 카터 사이의 1980<SPLIT>년 대통령 선거는 국내 문제와 이란의 인질 문제가 계속되던<SPLIT>가운데 치러졌다<SPLIT>.}
+Predicted: {
+레이건과 현직 대통령인 지미 카터 사이의 1980년 대통령 선거는 국내 문제와 이란의 인질 문제가 계속되던가운데 치러졌다<SPLIT>.}
+False positives: {
+대통령인
+1980년
+계속되던가운데
+} False negatives: {
+대통령
+인
+1980
+년
+계속되던
+가운데
+}
+
+Expected: {
+라이트는 도셋의 풀에서 태어났지만 주로 서머싯 웰스<SPLIT>에서 성장했다<SPLIT>.}
+Predicted: {
+라이트는 도셋의 풀에서 태어났지만 주로 서머싯 웰스에서 성장했다<SPLIT>.}
+False positives: {
+웰스에서
+} False negatives: {
+웰스
 에서
 }
 
 Expected: {
-안데스 산맥 형성 이전<SPLIT>, 남미 서쪽의 한계 지역에는 이미 수 차례<SPLIT>의 조산<SPLIT>운동이 일어났다<SPLIT>.}
+오일<SPLIT>, 금<SPLIT>, 또는 밀과 같은 식품은 전<SPLIT>세계 투자금이 수십억 달러에 달하는 천연 자원<SPLIT>이다<SPLIT>.}
 Predicted: {
-안데스 산맥 형성 이전<SPLIT>, 남미 서쪽의 한계 지역에는 이미 수 차례의 조산운동이 일어났다<SPLIT>.}
+오일<SPLIT>, 금<SPLIT>, 또는 밀과 같은 식품은 전세계 투자금이 수십억 달러에 달하는 천연 자원이다<SPLIT>.}
 False positives: {
-차례의
-조산운동이
+전세계
+자원이다
 } False negatives: {
-차례
-의
-조산
-운동이
+전
+세계
+자원
+이다
 }
 
 Expected: {
-그러나 도중에 차단당해 허드슨<SPLIT>강 근처 프리먼에서 전투를 벌여야 했다<SPLIT>.}
+그 법은 조건이 충족이 되면 계약의 효력을 다시 발생시킬<SPLIT>수 있는 그런 수많은 조건들을 서술하고<SPLIT>있는데<SPLIT>, 미국은 2000<SPLIT>년 이후에 나토<SPLIT>(<SPLIT>nato<SPLIT>)<SPLIT>에 가입한<SPLIT>국가에 주둔해<SPLIT>있는 군대를 전부 철수하고<SPLIT>러시아에 대한 제재를 전부 철회하고<SPLIT>그 제재로 인해<SPLIT>발생한<SPLIT>비용을 변상해<SPLIT>주어야 합니다<SPLIT>.}
 Predicted: {
-그러나 도중에 차단당해 허드슨강 근처 프리먼에서 전투를 벌여야 했다<SPLIT>.}
+그 법은 조건이 충족이 되면 계약의 효력을 다시 발생시킬<SPLIT>수 있는 그런 수많은 조건들을 서술하고<SPLIT>있는데<SPLIT>, 미국은 2000년 이후에 나토<SPLIT>(<SPLIT>nato<SPLIT>)<SPLIT>에 가입한<SPLIT>국가에 주둔해있는 군대를 전부 철수하고러시아에 대한 제재를 전부 철회하고<SPLIT>그 제재로 인해<SPLIT>발생한<SPLIT>비용을 변상해주어야 합니다<SPLIT>.}
 False positives: {
-허드슨강
+2000년
+주둔해있는
+철수하고러시아에
+변상해주어야
 } False negatives: {
-허드슨
-강
+2000
+년
+주둔해
+있는
+철수하고
+러시아에
+변상해
+주어야
 }
 
 Expected: {
-그러나 원로원으로부터 집정관과<SPLIT>의 대결을 금지하고<SPLIT>군대를 철수할<SPLIT>것<SPLIT>인지<SPLIT>, 아니면 공공의 적이 될 것<SPLIT>인지 결정하라는<SPLIT>결의에 찬 답을 받았을 때 그는 어떤 선택을 하던지 비무장 상태로 항복해<SPLIT>정적들에게 포위될<SPLIT>것<SPLIT>이라는 사실을 인지하였다<SPLIT>.}
+기독교 신앙에 따르면<SPLIT>, 그 백악석에 묻힌 무덤이 예수의 마지막 안식처<SPLIT>였다<SPLIT>고 한다<SPLIT>.}
 Predicted: {
-그러나 원로원으로부터 집정관과의 대결을 금지하고<SPLIT>군대를 철수할<SPLIT>것<SPLIT>인지<SPLIT>, 아니면 공공의 적이 될 것인지 결정하라는결의에 찬 답을 받았을 때 그는 어떤 선택을 하던지 비무장 상태로 항복해정적들에게 포위될<SPLIT>것<SPLIT>이라는 사실을 인지하였다<SPLIT>.}
+기독교 신앙에 따르면<SPLIT>, 그 백악석에 묻힌 무덤이 예수의 마지막 안식처였다고 한다<SPLIT>.}
 False positives: {
-집정관과의
-것인지
-결정하라는결의에
-항복해정적들에게
+안식처였다고
 } False negatives: {
-집정관과
-의
+안식처
+였다
+고
+}
+
+Expected: {
+둔다르<SPLIT>(<SPLIT>dündar<SPLIT>)<SPLIT>는 에르도안<SPLIT>(<SPLIT>erdogan<SPLIT>)<SPLIT>의 방침을 너무 많이 이해해<SPLIT>주는 것 아니냐며 유럽에게 경고했다<SPLIT>.}
+Predicted: {
+둔다르<SPLIT>(<SPLIT>dündar<SPLIT>)<SPLIT>는 에르도안<SPLIT>(<SPLIT>erdogan<SPLIT>)<SPLIT>의 방침을 너무 많이 이해해주는 것 아니냐며 유럽에게 경고했다<SPLIT>.}
+False positives: {
+이해해주는
+} False negatives: {
+이해해
+주는
+}
+
+Expected: {
+오바마는 누군<SPLIT>가<SPLIT>가 트위터 계정을 처리하지<SPLIT>못할 경우 핵 코드를 처리하지<SPLIT>못할 것<SPLIT>이라<SPLIT>고 조롱했다<SPLIT>.}
+Predicted: {
+오바마는 누군가가 트위터 계정을 처리하지<SPLIT>못할 경우 핵 코드를 처리하지<SPLIT>못할 것이라고 조롱했다<SPLIT>.}
+False positives: {
+누군가가
+것이라고
+} False negatives: {
+누군
+가
+가
 것
-인지
-결정하라는
-결의에
-항복해
-정적들에게
+이라
+고
+}
+
+Expected: {
+스마트폰에 저장이 가능하거나<SPLIT>현물로 제시가 가능한<SPLIT>바우처를 발급했다<SPLIT>.}
+Predicted: {
+스마트폰에 저장이 가능하거나현물로 제시가 가능한<SPLIT>바우처를 발급했다<SPLIT>.}
+False positives: {
+가능하거나현물로
+} False negatives: {
+가능하거나
+현물로
+}
+
+Expected: {
+지난 6<SPLIT>년간 처음으로 실업률이 20<SPLIT>% 이하로 떨어졌으며 이미 1<SPLIT>년 전과 비교할<SPLIT>때 고용<SPLIT>인구가 60<SPLIT>만 명이 증가하였다<SPLIT>.}
+Predicted: {
+지난 6년간 처음으로 실업률이 20<SPLIT>% 이하로 떨어졌으며 이미 1년 전과 비교할<SPLIT>때 고용인구가 60만 명이 증가하였다<SPLIT>.}
+False positives: {
+6년간
+1년
+고용인구가
+60만
+} False negatives: {
+6
+년간
+1
+년
+고용
+인구가
+60
+만
+}
+
+Expected: {
+그렇다면 역사적<SPLIT>권리에 있어 정당은 어떠한가<SPLIT>?}
+Predicted: {
+그렇다면 역사적권리에 있어 정당은 어떠한가<SPLIT>?}
+False positives: {
+역사적권리에
+} False negatives: {
+역사적
+권리에
+}
+
+Expected: {
+여당은 엘 문도<SPLIT>에 저항과 다른 일들이 일어날 것<SPLIT>이며<SPLIT>, 이미 다 계획이 되어 있다고 이야기했다<SPLIT>.}
+Predicted: {
+여당은 엘 문도에 저항과 다른 일들이 일어날 것이며<SPLIT>, 이미 다 계획이 되어 있다고 이야기했다<SPLIT>.}
+False positives: {
+문도에
+것이며
+} False negatives: {
+문도
+에
+것
+이며
+}
+
+Expected: {
+그중에는 예전에 생 피에르와<SPLIT>생 폴 대수도원 성당 수도원<SPLIT>이었던 건물이 있다<SPLIT>.}
+Predicted: {
+그중에는 예전에 생 피에르와생 폴 대수도원 성당 수도원이었던 건물이 있다<SPLIT>.}
+False positives: {
+피에르와생
+수도원이었던
+} False negatives: {
+피에르와
+생
+수도원
+이었던
+}
+
+Expected: {
+2012<SPLIT>년 4<SPLIT>월<SPLIT>, 에르도안 터키 대통령이 보스포루스를 자유롭게<SPLIT>해방시키기<SPLIT>위하여 보스포루스와 평행으로 뻗은 이스탄불 운하를 건설하겠다는<SPLIT>정부 계획을 발표했다<SPLIT>.}
+Predicted: {
+2012년 4월<SPLIT>, 에르도안 터키 대통령이 보스포루스를 자유롭게<SPLIT>해방시키기위하여 보스포루스와 평행으로 뻗은 이스탄불 운하를 건설하겠다는<SPLIT>정부 계획을 발표했다<SPLIT>.}
+False positives: {
+2012년
+4월
+해방시키기위하여
+} False negatives: {
+2012
+년
+4
+월
+해방시키기
+위하여
+}
+
+Expected: {
+디지보덴베르크 수도원이 종교 개혁 이후 해체되고<SPLIT>폐허가 되었다<SPLIT>.}
+Predicted: {
+디지보덴베르크 수도원이 종교 개혁 이후 해체되고폐허가 되었다<SPLIT>.}
+False positives: {
+해체되고폐허가
+} False negatives: {
+해체되고
+폐허가
+}
+
+Expected: {
+사적으로<SPLIT>뿐 아니라 공적으로<SPLIT>도 스프링거는 유대인과 화해하기<SPLIT>위한 노력을 적극적으로 펼쳤고 이스라엘을 여러 번 다녀갔다<SPLIT>.}
+Predicted: {
+사적으로뿐 아니라 공적으로도 스프링거는 유대인과 화해하기<SPLIT>위한 노력을 적극적으로 펼쳤고 이스라엘을 여러 번 다녀갔다<SPLIT>.}
+False positives: {
+사적으로뿐
+공적으로도
+} False negatives: {
+사적으로
+뿐
+공적으로
+도
+}
+
+Expected: {
+비의 달 iii<SPLIT>년<SPLIT>(<SPLIT>1794<SPLIT>년 1 - 2<SPLIT>월<SPLIT>)<SPLIT>에 공포 시대의 압력에서 벗어나 다양한<SPLIT>방식을 적용해<SPLIT>피의자들을 석방하였다<SPLIT>.}
+Predicted: {
+비의 달 iii년<SPLIT>(<SPLIT>1794년 1 - 2월<SPLIT>)<SPLIT>에 공포 시대의 압력에서 벗어나 다양한<SPLIT>방식을 적용해피의자들을 석방하였다<SPLIT>.}
+False positives: {
+iii년
+1794년
+2월
+적용해피의자들을
+} False negatives: {
+iii
+년
+1794
+년
+2
+월
+적용해
+피의자들을
+}
+
+Expected: {
+인도<SPLIT>-<SPLIT>호주 단층에 위치하고<SPLIT>있으며<SPLIT>, 인도와 호주<SPLIT>판의 충돌로 인해<SPLIT>단층이 상승하였다<SPLIT>.}
+Predicted: {
+인도<SPLIT>-<SPLIT>호주 단층에 위치하고<SPLIT>있으며<SPLIT>, 인도와 호주판의 충돌로 인해<SPLIT>단층이 상승하였다<SPLIT>.}
+False positives: {
+호주판의
+} False negatives: {
+호주
+판의
+}
+
+Expected: {
+역사<SPLIT>학자<SPLIT>인 데이비드 크라우치<SPLIT>는 다른 문제에 집중하기<SPLIT>위해 스테판이 당시 도전을 포기했다고 시사한다<SPLIT>.}
+Predicted: {
+역사학자인 데이비드 크라우치는 다른 문제에 집중하기<SPLIT>위해 스테판이 당시 도전을 포기했다고 시사한다<SPLIT>.}
+False positives: {
+역사학자인
+크라우치는
+} False negatives: {
+역사
+학자
+인
+크라우치
+는
+}
+
+Expected: {
+니콜라이는 metti 즉<SPLIT>, one night at dinner<SPLIT>와 같은 모리코네의 다양한<SPLIT>영화 주제곡 작곡에 협력했는데<SPLIT>, 이 곡들 중 일부는 두 사람이 공동으로 작곡하였다<SPLIT>.}
+Predicted: {
+니콜라이는 metti 즉<SPLIT>, one night at dinner와 같은 모리코네의 다양한<SPLIT>영화 주제곡 작곡에 협력했는데<SPLIT>, 이 곡들 중 일부는 두 사람이 공동으로 작곡하였다<SPLIT>.}
+False positives: {
+dinner와
+} False negatives: {
+dinner
+와
+}
+
+Expected: {
+평화를 위한 시도가 마침내 1415<SPLIT>년 봄에 끝났으며 엔리케는 자신의 계획을 수행하기로 결심했으며<SPLIT>, 그것은 프랑스 왕국 전체에 대한 침략<SPLIT>이었다<SPLIT>.}
+Predicted: {
+평화를 위한 시도가 마침내 1415년 봄에 끝났으며 엔리케는 자신의 계획을 수행하기로 결심했으며<SPLIT>, 그것은 프랑스 왕국 전체에 대한 침략이었다<SPLIT>.}
+False positives: {
+1415년
+침략이었다
+} False negatives: {
+1415
+년
+침략
+이었다
 }

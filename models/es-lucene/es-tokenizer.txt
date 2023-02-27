@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9991845281841154
-Training-Sample-Size=31199
-Evaluation-Sample-Size=3466
+Evaluation-Score=0.9992389929515003
+Training-Sample-Size=30250
+Evaluation-Sample-Size=3361
 Training-Algorithm=MAXENT_QN
 
 === MODEL PROPERTIES ===
@@ -9,197 +9,171 @@ Component-Name=TokenizerME
 Language=es
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1674197553622
+Timestamp=1677048082639
 TrainerType=Event
-Training-Eventhash=eec4db9c8b464e659dfca3d38ee026a2
+Training-Eventhash=bfb0b3a58aacb152a0a96006e336e3bf
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
 
 === MISCLASSIFIED DETAILS ===
 Expected: {
-por el pais comenzaba a correr el rumor de tus nombres y las ganas de ver<SPLIT>te<SPLIT>.}
+(<SPLIT>decir<SPLIT>te claramente<SPLIT>, en voz alta<SPLIT>, que aun te amo con todas las consecuencias y que esa es la unica liturgia que conozco y deseo<SPLIT>)<SPLIT>.}
 Predicted: {
-por el pais comenzaba a correr el rumor de tus nombres y las ganas de verte<SPLIT>.}
+(<SPLIT>decirte claramente<SPLIT>, en voz alta<SPLIT>, que aun te amo con todas las consecuencias y que esa es la unica liturgia que conozco y deseo<SPLIT>)<SPLIT>.}
 False positives: {
-verte
+decirte
 } False negatives: {
-ver
+decir
 te
 }
 
 Expected: {
-pero el per<SPLIT>, que se enteren<SPLIT>, pon<SPLIT>lo<SPLIT>, es inversion publica que nosotros convertimos en vivienda<SPLIT>, en cooperativas -<SPLIT>, matizaba un minusvalido puestisimo en el tema<SPLIT>.}
+para<SPLIT>te un momento<SPLIT>, mira hacia atras y reconoce<SPLIT>te<SPLIT>.}
 Predicted: {
-pero el per<SPLIT>, que se enteren<SPLIT>, ponlo<SPLIT>, es inversion publica que nosotros convertimos en vivienda<SPLIT>, en cooperativas -<SPLIT>, matizaba un minusvalido puestisimo en el tema<SPLIT>.}
+parate un momento<SPLIT>, mira hacia atras y reconocete<SPLIT>.}
 False positives: {
-ponlo
+parate
+reconocete
 } False negatives: {
-pon
-lo
-}
-
-Expected: {
-solo los tres hombres del podio<SPLIT>, los autenticos protagonistas del maraton<SPLIT>, terminaron en tiempos de cierto reconocimiento<SPLIT>, ya que el cuarto - wesley chelule<SPLIT>, de kenia<SPLIT>, anunciado con una mejor marca de 2.10:14-<SPLIT>, completo el circuito de 42,195 kms. en 2.16:44<SPLIT>.}
-Predicted: {
-solo los tres hombres del podio<SPLIT>, los autenticos protagonistas del maraton<SPLIT>, terminaron en tiempos de cierto reconocimiento<SPLIT>, ya que el cuarto - wesley chelule<SPLIT>, de kenia<SPLIT>, anunciado con una mejor marca de 2.10:14-<SPLIT>, completo el circuito de 42,195 kms<SPLIT>. en 2.16:44<SPLIT>.}
-False positives: {
-kms
-.
-} False negatives: {
-kms.
-}
-
-Expected: {
-- - c. f. m. hoddle no dimite por su opinion sobre los discapacitados<SPLIT>.}
-Predicted: {
-- - c. f. m<SPLIT>. hoddle no dimite por su opinion sobre los discapacitados<SPLIT>.}
-False positives: {
-m
-.
-} False negatives: {
-m.
-}
-
-Expected: {
-segun informaron fuentes de la federacion<SPLIT>, el incidente se produjo en la madrugada del 31 de mayo<SPLIT>, cuando "<SPLIT>e. m. m. fue violada analmente por su pareja<SPLIT>, que le causo graves y dolorosas lesiones<SPLIT>"<SPLIT>.}
-Predicted: {
-segun informaron fuentes de la federacion<SPLIT>, el incidente se produjo en la madrugada del 31 de mayo<SPLIT>, cuando "<SPLIT>e<SPLIT>. m<SPLIT>. m<SPLIT>. fue violada analmente por su pareja<SPLIT>, que le causo graves y dolorosas lesiones<SPLIT>"<SPLIT>.}
-False positives: {
-e
-.
-m
-.
-m
-.
-} False negatives: {
-e.
-m.
-m.
-}
-
-Expected: {
-tranquilice<SPLIT>se el autor<SPLIT>, alguien ha leido despacio su libro<SPLIT>, ha pensado sobre el y<SPLIT>, como es menos ingenuo<SPLIT>, hasta cree que alguien se decidira a leer la obra que ahora comento<SPLIT>.}
-Predicted: {
-tranquilicese el autor<SPLIT>, alguien ha leido despacio su libro<SPLIT>, ha pensado sobre el y<SPLIT>, como es menos ingenuo<SPLIT>, hasta cree que alguien se decidira a leer la obra que ahora comento<SPLIT>.}
-False positives: {
-tranquilicese
-} False negatives: {
-tranquilice
-se
-}
-
-Expected: {
-en 1926 las fabricas de daimler y de benz<SPLIT>, que nunca se conocieron personalmente<SPLIT>, se reunen en una sola<SPLIT>, la daimlerbenz a. g.<SPLIT>.}
-Predicted: {
-en 1926 las fabricas de daimler y de benz<SPLIT>, que nunca se conocieron personalmente<SPLIT>, se reunen en una sola<SPLIT>, la daimlerbenz a. g..}
-False positives: {
-g..
-} False negatives: {
-g.
-.
-}
-
-Expected: {
-los mejicanos que entran ilegalmente en california tienen que ver<SPLIT>se<SPLIT>las con la policia de emigracion a la que nombran con una palabra que tiene su dosis de magia<SPLIT>: la migra<SPLIT>.}
-Predicted: {
-los mejicanos que entran ilegalmente en california tienen que ver<SPLIT>selas con la policia de emigracion a la que nombran con una palabra que tiene su dosis de magia<SPLIT>: la migra<SPLIT>.}
-False positives: {
-selas
-} False negatives: {
-se
-las
-}
-
-Expected: {
-- - ¡<SPLIT>pero fija<SPLIT>te que pintas<SPLIT>! - - se dijo a si misma<SPLIT>, porque acostumbraba hablar a solas<SPLIT>.}
-Predicted: {
-- - ¡<SPLIT>pero fijate que pintas<SPLIT>! - - se dijo a si misma<SPLIT>, porque acostumbraba hablar a solas<SPLIT>.}
-False positives: {
-fijate
-} False negatives: {
-fija
+para
+te
+reconoce
 te
 }
 
 Expected: {
-el cd toledo se muestra sorprendido por el anuncio de que el lateral riojano pablo pinillos jugara la proxima temporada en la ud levante cuando tiene un ano mas de contrato con el cuadro verde<SPLIT>, descendido esta temporada a segunda division b<SPLIT>.}
+y crea<SPLIT>me<SPLIT>, encargos no me faltan -<SPLIT>, dice con gesto de triunfo<SPLIT>.}
 Predicted: {
-el cd toledo se muestra sorprendido por el anuncio de que el lateral riojano pablo pinillos jugara la proxima temporada en la ud levante cuando tiene un ano mas de contrato con el cuadro verde<SPLIT>, descendido esta temporada a segunda division b.}
+y creame<SPLIT>, encargos no me faltan -<SPLIT>, dice con gesto de triunfo<SPLIT>.}
 False positives: {
-b.
+creame
 } False negatives: {
-b
-.
+crea
+me
 }
 
 Expected: {
-soldado en 1944 (<SPLIT>¡<SPLIT>17 anos<SPLIT>!<SPLIT>)<SPLIT>, desde su liberacion se dedica a la escultura<SPLIT>, al grafismo<SPLIT>, estudia en dusseldorf y pasa unos anos en paris<SPLIT>.}
+luego alzando<SPLIT>se un poco mas grito<SPLIT>: - - ¡<SPLIT>ve<SPLIT>te a la merde<SPLIT>!}
 Predicted: {
-soldado en 1944 (<SPLIT>¡17 anos<SPLIT>!<SPLIT>)<SPLIT>, desde su liberacion se dedica a la escultura<SPLIT>, al grafismo<SPLIT>, estudia en dusseldorf y pasa unos anos en paris<SPLIT>.}
+luego alzando<SPLIT>se un poco mas grito<SPLIT>: - - ¡<SPLIT>vete a la merde<SPLIT>!}
 False positives: {
-¡17
+vete
+} False negatives: {
+ve
+te
+}
+
+Expected: {
+"<SPLIT>mientras en francia exigen a la propietaria del petrolero 'erika'<SPLIT>que pague por sus responsabilidades<SPLIT>, aqui les pagamos<SPLIT>"<SPLIT>, dijo el candidato de iu a la presidencia de la junta de andalucia<SPLIT>, que se mostro "<SPLIT>asombrado por esta actitud<SPLIT>" y aseguro que la comunidad andaluza se encuentra "<SPLIT>al borde del colapso ecologico<SPLIT>"<SPLIT>.}
+Predicted: {
+"<SPLIT>mientras en francia exigen a la propietaria del petrolero '<SPLIT>erika'que pague por sus responsabilidades<SPLIT>, aqui les pagamos<SPLIT>"<SPLIT>, dijo el candidato de iu a la presidencia de la junta de andalucia<SPLIT>, que se mostro "<SPLIT>asombrado por esta actitud<SPLIT>" y aseguro que la comunidad andaluza se encuentra "<SPLIT>al borde del colapso ecologico<SPLIT>"<SPLIT>.}
+False positives: {
+'
+erika'que
+} False negatives: {
+'erika'
+que
+}
+
+Expected: {
+algunas de estas personas<SPLIT>, alertadas de que la policia iba a detener<SPLIT>les<SPLIT>, fueron sorprendidas en la calle cuando intentaban deshacer<SPLIT>se de parte del material incautado<SPLIT>.}
+Predicted: {
+algunas de estas personas<SPLIT>, alertadas de que la policia iba a detenerles<SPLIT>, fueron sorprendidas en la calle cuando intentaban deshacer<SPLIT>se de parte del material incautado<SPLIT>.}
+False positives: {
+detenerles
+} False negatives: {
+detener
+les
+}
+
+Expected: {
+gay y gimelberg filmaron '<SPLIT>hotel room<SPLIT>' con 3 millones de presupuesto<SPLIT>.}
+Predicted: {
+gay y gimelberg filmaron 'hotel room<SPLIT>' con 3 millones de presupuesto<SPLIT>.}
+False positives: {
+'hotel
+} False negatives: {
+'
+hotel
+}
+
+Expected: {
+- - cuente<SPLIT>me que es la patria<SPLIT>.}
+Predicted: {
+- - cuenteme que es la patria<SPLIT>.}
+False positives: {
+cuenteme
+} False negatives: {
+cuente
+me
+}
+
+Expected: {
+"<SPLIT>no<SPLIT>, no puedes obsesionar<SPLIT>te<SPLIT>. cada ano son circunstancias distintas<SPLIT>"<SPLIT>.}
+Predicted: {
+"<SPLIT>no<SPLIT>, no puedes obsesionarte<SPLIT>. cada ano son circunstancias distintas<SPLIT>"<SPLIT>.}
+False positives: {
+obsesionarte
+} False negatives: {
+obsesionar
+te
+}
+
+Expected: {
+una verguenza - - ¡<SPLIT>50 millones cada ano<SPLIT>! - - muy bien retribuida<SPLIT>, no se puede negar<SPLIT>.}
+Predicted: {
+una verguenza - - ¡50 millones cada ano<SPLIT>! - - muy bien retribuida<SPLIT>, no se puede negar<SPLIT>.}
+False positives: {
+¡50
 } False negatives: {
 ¡
-17
+50
 }
 
 Expected: {
-el fiscal pide para r. g. m. 14 anos<SPLIT>.}
+a.p.<SPLIT>.}
 Predicted: {
-el fiscal pide para r. g. m<SPLIT>. 14 anos<SPLIT>.}
+a.p..}
 False positives: {
-m
+a.p..
+} False negatives: {
+a.p.
 .
-} False negatives: {
-m.
 }
 
 Expected: {
-la fundacio la mirada<SPLIT>, entidad difusora la obra de joan oliver<SPLIT>, pere quart (<SPLIT>1899-1986<SPLIT>)<SPLIT>, y de la colla de sabadell - - que oliver lidero junto a francesc trabal y armand obiols - -<SPLIT>, sacara a la luz este verano un libro conmemorativo de la exposicion la colla de sabadell<SPLIT>, entre el noucentisme i l'avantguarda<SPLIT>, organizada en el mes de noviembre de 1999 en el casal pere quart de sabadell con motivo del centenario del nacimiento de oliver y trabal<SPLIT>.}
+es por lo tanto un colectivo vegetal<SPLIT>, con el sufijo "<SPLIT>- eros &lt; - arios<SPLIT>"<SPLIT>.}
 Predicted: {
-la fundacio la mirada<SPLIT>, entidad difusora la obra de joan oliver<SPLIT>, pere quart (<SPLIT>1899-1986<SPLIT>)<SPLIT>, y de la colla de sabadell - - que oliver lidero junto a francesc trabal y armand obiols - -<SPLIT>, sacara a la luz este verano un libro conmemorativo de la exposicion la colla de sabadell<SPLIT>, entre el noucentisme i l'<SPLIT>avantguarda<SPLIT>, organizada en el mes de noviembre de 1999 en el casal pere quart de sabadell con motivo del centenario del nacimiento de oliver y trabal<SPLIT>.}
+es por lo tanto un colectivo vegetal<SPLIT>, con el sufijo "<SPLIT>- eros &lt<SPLIT>; - arios<SPLIT>"<SPLIT>.}
 False positives: {
-l'
-avantguarda
+&lt
+;
 } False negatives: {
-l'avantguarda
+&lt;
 }
 
 Expected: {
-fue el primer disco de un artista de la casa sun que alcanzo un millon de copias<SPLIT>, dicho tema seria interpretado posteriormente por elvis presley con un estilo country mas marcado<SPLIT>, colocandolo nuevamente como un exito<SPLIT>.}
+si te pretenden regalar una sarten<SPLIT>, un televisor o un ordenador<SPLIT>, mejor ve y compra<SPLIT>te<SPLIT>lo en el corte ingles que te saldra mas barato<SPLIT>.}
 Predicted: {
-fue el primer disco de un artista de la casa sun que alcanzo un millon de copias<SPLIT>, dicho tema seria interpretado posteriormente por elvis presley con un estilo country mas marcado<SPLIT>, colocando<SPLIT>lo nuevamente como un exito<SPLIT>.}
+si te pretenden regalar una sarten<SPLIT>, un televisor o un ordenador<SPLIT>, mejor ve y compratelo en el corte ingles que te saldra mas barato<SPLIT>.}
 False positives: {
-colocando
+compratelo
+} False negatives: {
+compra
+te
 lo
-} False negatives: {
-colocandolo
 }
 
 Expected: {
-ambos estan tratando de rechazar su naturaleza actual como depredadores sobrenaturales - george es estricto con la gestion de sus transformaciones y sus efectos sobre los demas -<SPLIT>, mitchell absteniendose de beber sangre<SPLIT>.}
+asimismo<SPLIT>, nuestro pa��s se situa en cuarto lugar en las preferencias de los turistas del pais asiatico<SPLIT>, por detras de francia<SPLIT>, reino unido y alemania<SPLIT>.}
 Predicted: {
-ambos estan tratando de rechazar su naturaleza actual como depredadores sobrenaturales - george es estricto con la gestion de sus transformaciones y sus efectos sobre los demas -<SPLIT>, mitchell absteniendo<SPLIT>se de beber sangre<SPLIT>.}
+asimismo<SPLIT>, nuestro pa�<SPLIT>�s se situa en cuarto lugar en las preferencias de los turistas del pais asiatico<SPLIT>, por detras de francia<SPLIT>, reino unido y alemania<SPLIT>.}
 False positives: {
-absteniendo
-se
+pa�
+�s
 } False negatives: {
-absteniendose
-}
-
-Expected: {
-suele medir<SPLIT>se en m3 / seg lo cual genera un valor anual medido en m3 o en hm<SPLIT>3 (<SPLIT>hectometros cubicos<SPLIT>: un hm<SPLIT>3 equivale a un millon de m3<SPLIT>) que puede emplear<SPLIT>se para planificar los recursos hidrologicos y su uso a traves de embalses y obras de canalizacion<SPLIT>.}
-Predicted: {
-suele medir<SPLIT>se en m3 / seg lo cual genera un valor anual medido en m3 o en hm3 (<SPLIT>hectometros cubicos<SPLIT>: un hm3 equivale a un millon de m3<SPLIT>) que puede emplear<SPLIT>se para planificar los recursos hidrologicos y su uso a traves de embalses y obras de canalizacion<SPLIT>.}
-False positives: {
-hm3
-hm3
-} False negatives: {
-hm
-3
-hm
-3
+pa��s
 }
 
 Expected: {
@@ -214,284 +188,169 @@ me
 }
 
 Expected: {
-el delantero ingles no tiene sitio en el manchester united y puede venirle muy bien al schalke 04<SPLIT>.}
+gisela se encuentra ubicado en las coordenadas<SPLIT>.}
 Predicted: {
-el delantero ingles no tiene sitio en el manchester united y puede venir<SPLIT>le muy bien al schalke 04<SPLIT>.}
+gise<SPLIT>la se encuentra ubicado en las coordenadas<SPLIT>.}
 False positives: {
-venir
-le
+gise
+la
 } False negatives: {
-venirle
+gisela
 }
 
 Expected: {
-con pablo mackenna como invitado<SPLIT>, transmitieron un capitulo especial en el que exhibieron un especial de top five de todos los tiempos<SPLIT>, y una nota en la que se reunio material desde los inicios de cqc en chile<SPLIT>, ademas de entrevistas a sus conductores y noteros parodiando al programa de television e<SPLIT>!}
+son bastante bordes y su actitud es de "<SPLIT>te estoy haciendo un favor arreglando<SPLIT>te<SPLIT>lo<SPLIT>"<SPLIT>.}
 Predicted: {
-con pablo mackenna como invitado<SPLIT>, transmitieron un capitulo especial en el que exhibieron un especial de top five de todos los tiempos<SPLIT>, y una nota en la que se reunio material desde los inicios de cqc en chile<SPLIT>, ademas de entrevistas a sus conductores y noteros parodiando al programa de television e!}
+son bastante bordes y su actitud es de "<SPLIT>te estoy haciendo un favor arreglandotelo<SPLIT>"<SPLIT>.}
 False positives: {
-e!
+arreglandotelo
 } False negatives: {
-e
-!
-}
-
-Expected: {
-muy pronto<SPLIT>, prats era insultado y mofado<SPLIT>, acusando<SPLIT>se<SPLIT>le de intentar matar a la mujer<SPLIT>.}
-Predicted: {
-muy pronto<SPLIT>, prats era insultado y mofado<SPLIT>, acusandose<SPLIT>le de intentar matar a la mujer<SPLIT>.}
-False positives: {
-acusandose
-} False negatives: {
-acusando
-se
-}
-
-Expected: {
-esto incluia a la cancion de inxs "<SPLIT>please (<SPLIT>you 've got that<SPLIT>...<SPLIT>)<SPLIT>"<SPLIT>, en el full moon<SPLIT>, dirty hearts<SPLIT>, asi como la cancion designing women en su sexta sesion<SPLIT>.}
-Predicted: {
-esto incluia a la cancion de inxs "<SPLIT>please (<SPLIT>you '<SPLIT>ve got that<SPLIT>...<SPLIT>)<SPLIT>"<SPLIT>, en el full moon<SPLIT>, dirty hearts<SPLIT>, asi como la cancion designing women en su sexta sesion<SPLIT>.}
-False positives: {
-'
-ve
-} False negatives: {
-'ve
-}
-
-Expected: {
-por si ello fuera poco<SPLIT>, el aviojet debia ser capaz de aterrizar a 100 nudos (<SPLIT>185 km / h<SPLIT>) y mantener<SPLIT>se en vuelo invertido durante 20 s<SPLIT>.}
-Predicted: {
-por si ello fuera poco<SPLIT>, el aviojet debia ser capaz de aterrizar a 100 nudos (<SPLIT>185 km / h<SPLIT>) y mantener<SPLIT>se en vuelo invertido durante 20 s.}
-False positives: {
-s.
-} False negatives: {
-s
-.
-}
-
-Expected: {
-actualmente no es concebible la practica medica sin el uso de algun tipo de delantal (<SPLIT>dependiendo cual sea el contexto del uso<SPLIT>)<SPLIT>, muchos hospitales en la total extension del planeta han normado o han asumido la importancia de la normacion del uso del delantal<SPLIT>, por<SPLIT>lo tanto ya no solo es algo un mecanismo ejecutorial o un accesorio<SPLIT>, sino que es un ritual pauteado bajo las normativas que se entrecruzan en la totalidad del mundo de la medicina<SPLIT>.}
-Predicted: {
-actualmente no es concebible la practica medica sin el uso de algun tipo de delantal (<SPLIT>dependiendo cual sea el contexto del uso<SPLIT>)<SPLIT>, muchos hospitales en la total extension del planeta han normado o han asumido la importancia de la normacion del uso del delantal<SPLIT>, porlo tanto ya no solo es algo un mecanismo ejecutorial o un accesorio<SPLIT>, sino que es un ritual pauteado bajo las normativas que se entrecruzan en la totalidad del mundo de la medicina<SPLIT>.}
-False positives: {
-porlo
-} False negatives: {
-por
+arreglando
+te
 lo
 }
 
 Expected: {
-en esta esquina vive mi hermana m. amparo de mendoza<SPLIT>.}
+la iniciativa de la diputada de la coalicion civica<SPLIT>, adriana montes<SPLIT>, especifica que los celiacos deben consumir productos libres de gluten y que por eso es de "<SPLIT>suma importancia que los supermercados e hipermercados tengan una gondola especial donde se exhiban los productos sin tacc es decir trigo<SPLIT>, avena<SPLIT>, cebada y centeno<SPLIT>"<SPLIT>.}
 Predicted: {
-en esta esquina vive mi hermana m<SPLIT>. amparo de mendoza<SPLIT>.}
+la iniciativa de la diputada de la coalicion civica<SPLIT>, adriana montes<SPLIT>, especifica que los celiacos deben consumir productos libres de gluten y que por eso es de "<SPLIT>suma importancia que los supermercados e hipermercados tengan una gondo<SPLIT>la especial donde se exhiban los productos sin tacc es decir trigo<SPLIT>, avena<SPLIT>, cebada y centeno<SPLIT>"<SPLIT>.}
 False positives: {
-m
+gondo
+la
+} False negatives: {
+gondola
+}
+
+Expected: {
+inicialmente desarrollada por la empresa midway games<SPLIT>, y por warner bros. desde 2009<SPLIT>.}
+Predicted: {
+inicialmente desarrollada por la empresa midway games<SPLIT>, y por warner bros<SPLIT>. desde 2009<SPLIT>.}
+False positives: {
+bros
 .
 } False negatives: {
-m.
+bros.
 }
 
 Expected: {
-permite que dispositivos como un reproductor de audio digital o telefono movil actuen como host<SPLIT>, por lo que se les puede conectar un pendrive<SPLIT>, un raton<SPLIT>, un teclado<SPLIT>, un disco duro<SPLIT>, etc<SPLIT>....}
+esta respuesta<SPLIT>, aludiendo a criterios tecnicos para justificar el cambio de postura del consorcio<SPLIT>, ha enervado a la oposicion<SPLIT>, y albert rivera (<SPLIT>c 's<SPLIT>) ha indicado que ciu trata de confundir sus intereses partidistas con los de toda catalunya<SPLIT>.}
 Predicted: {
-permite que dispositivos como un reproductor de audio digital o telefono movil actuen como host<SPLIT>, por lo que se les puede conectar un pendrive<SPLIT>, un raton<SPLIT>, un teclado<SPLIT>, un disco duro<SPLIT>, etc....}
+esta respuesta<SPLIT>, aludiendo a criterios tecnicos para justificar el cambio de postura del consorcio<SPLIT>, ha enervado a la oposicion<SPLIT>, y albert rivera (<SPLIT>c '<SPLIT>s<SPLIT>) ha indicado que ciu trata de confundir sus intereses partidistas con los de toda catalunya<SPLIT>.}
 False positives: {
-etc....
-} False negatives: {
-etc
-....
-}
-
-Expected: {
-tardan nada en atender<SPLIT>te ¡<SPLIT>y en servir<SPLIT>te<SPLIT>!}
-Predicted: {
-tardan nada en atenderte ¡<SPLIT>y en servirte<SPLIT>!}
-False positives: {
-atenderte
-servirte
-} False negatives: {
-atender
-te
-servir
-te
-}
-
-Expected: {
-la propiedad principal del antiguo marquesado<SPLIT>, la finca de yavi<SPLIT>, fue transmitida a los herederos de fernando campero barragan y de su segunda esposa corina araoz de campero<SPLIT>, quienes la mantuvieron en su patrimonio hasta mediados del siglo xx.}
-Predicted: {
-la propiedad principal del antiguo marquesado<SPLIT>, la finca de yavi<SPLIT>, fue transmitida a los herederos de fernando campero barragan y de su segunda esposa corina araoz de campero<SPLIT>, quienes la mantuvieron en su patrimonio hasta mediados del siglo xx<SPLIT>.}
-False positives: {
-xx
-.
-} False negatives: {
-xx.
-}
-
-Expected: {
-miembro de la academia de buenas letras (<SPLIT>1924<SPLIT>)<SPLIT>, a la que presidio entre 1961 y 1963<SPLIT>, del institut d'<SPLIT>estudis catalans (<SPLIT>1942<SPLIT>)<SPLIT>, del que fue presidente en 1957<SPLIT>, y de la academia de bellas artes de sant jordi (<SPLIT>1968<SPLIT>)<SPLIT>, fue el organizador del museo comarcal de cervera<SPLIT>.}
-Predicted: {
-miembro de la academia de buenas letras (<SPLIT>1924<SPLIT>)<SPLIT>, a la que presidio entre 1961 y 1963<SPLIT>, del institut d'estudis catalans (<SPLIT>1942<SPLIT>)<SPLIT>, del que fue presidente en 1957<SPLIT>, y de la academia de bellas artes de sant jordi (<SPLIT>1968<SPLIT>)<SPLIT>, fue el organizador del museo comarcal de cervera<SPLIT>.}
-False positives: {
-d'estudis
-} False negatives: {
-d'
-estudis
-}
-
-Expected: {
-dos anos despues<SPLIT>, en the avengers annual # 6 (<SPLIT>nov. 1976<SPLIT>)<SPLIT>, el escritor gerry conway reinterpreto el origen del personaje y la historia para que la "<SPLIT>transfusion de sangre mangosta<SPLIT>" no fuera la fuente del poder<SPLIT>, pero si el factor que "<SPLIT>desencadeno una latente capacidad mutante<SPLIT>"<SPLIT>.}
-Predicted: {
-dos anos despues<SPLIT>, en the avengers annual # 6 (<SPLIT>nov<SPLIT>. 1976<SPLIT>)<SPLIT>, el escritor gerry conway reinterpreto el origen del personaje y la historia para que la "<SPLIT>transfusion de sangre mangosta<SPLIT>" no fuera la fuente del poder<SPLIT>, pero si el factor que "<SPLIT>desencadeno una latente capacidad mutante<SPLIT>"<SPLIT>.}
-False positives: {
-nov
-.
-} False negatives: {
-nov.
-}
-
-Expected: {
-en 1938 hiram walker construyo una gran destileria de whisky en el rio leven (<SPLIT>en el lugar que ocupaban unos antiguos astilleros<SPLIT>)<SPLIT>, el pueblo fue conocido como un importante centro de la industria de whisky desde mediados a finales del siglo x.}
-Predicted: {
-en 1938 hiram walker construyo una gran destileria de whisky en el rio leven (<SPLIT>en el lugar que ocupaban unos antiguos astilleros<SPLIT>)<SPLIT>, el pueblo fue conocido como un importante centro de la industria de whisky desde mediados a finales del siglo x<SPLIT>.}
-False positives: {
-x
-.
-} False negatives: {
-x.
-}
-
-Expected: {
-entre las especies nativas se reconocia especies de mojarra (<SPLIT>cichlasoma sp<SPLIT>.<SPLIT>)}
-Predicted: {
-entre las especies nativas se reconocia especies de mojarra (<SPLIT>cichlasoma sp.<SPLIT>)}
-False positives: {
-sp.
-} False negatives: {
-sp
-.
-}
-
-Expected: {
-cuxac - d'aude en idioma frances<SPLIT>, cuxac d'<SPLIT>aude en idioma occitano<SPLIT>, es una localidad y comuna francesa<SPLIT>, situada en el departamento del aude en la region de languedoc - rosellon<SPLIT>.}
-Predicted: {
-cuxac - d'aude en idioma frances<SPLIT>, cuxac d'aude en idioma occitano<SPLIT>, es una localidad y comuna francesa<SPLIT>, situada en el departamento del aude en la region de languedoc - rosellon<SPLIT>.}
-False positives: {
-d'aude
-} False negatives: {
-d'
-aude
-}
-
-Expected: {
-para salvar<SPLIT>os de todo esto ha venido el movimiento nacional que<SPLIT>, por ser<SPLIT>lo<SPLIT>, es movimiento popular<SPLIT>, ni de izquierdas ni de derechas<SPLIT>, porque quiere que ambos se unan al movimiento y le sostengan<SPLIT>.}
-Predicted: {
-para salvaros de todo esto ha venido el movimiento nacional que<SPLIT>, por ser<SPLIT>lo<SPLIT>, es movimiento popular<SPLIT>, ni de izquierdas ni de derechas<SPLIT>, porque quiere que ambos se unan al movimiento y le sostengan<SPLIT>.}
-False positives: {
-salvaros
-} False negatives: {
-salvar
-os
-}
-
-Expected: {
-en fecha 31 de diciembre del 2000<SPLIT>, fueron reducidas en un 55 %<SPLIT>, de 5.1 millones de toneladas de roca (<SPLIT>aproximadamente 410,000 onzas de oro<SPLIT>) a 2.1 millones de toneladas de roca (<SPLIT>aprox. 170,000 onzas de oro<SPLIT>)<SPLIT>.}
-Predicted: {
-en fecha 31 de diciembre del 2000<SPLIT>, fueron reducidas en un 55 %<SPLIT>, de 5.1 millones de toneladas de roca (<SPLIT>aproximadamente 410,000 onzas de oro<SPLIT>) a 2.1 millones de toneladas de roca (<SPLIT>aprox<SPLIT>. 170,000 onzas de oro<SPLIT>)<SPLIT>.}
-False positives: {
-aprox
-.
-} False negatives: {
-aprox.
-}
-
-Expected: {
-la secuela de '<SPLIT>lost planet<SPLIT>'<SPLIT>, apostara mucho mas por el multijugador<SPLIT>, aterrizara en nuestro pais en mayo<SPLIT>, mientras que '<SPLIT>super street fighter iv<SPLIT>' lo hara en abril<SPLIT>.}
-Predicted: {
-la secuela de '<SPLIT>lost planet<SPLIT>'<SPLIT>, apostara mucho mas por el multijugador<SPLIT>, aterrizara en nuestro pais en mayo<SPLIT>, mientras que '<SPLIT>super street fighter iv' lo hara en abril<SPLIT>.}
-False positives: {
-iv'
-} False negatives: {
-iv
 '
-}
-
-Expected: {
-vea<SPLIT>se mas informacion en la saga de teutoburgo y sus articulos relacionados<SPLIT>.}
-Predicted: {
-vease mas informacion en la saga de teutoburgo y sus articulos relacionados<SPLIT>.}
-False positives: {
-vease
+s
 } False negatives: {
-vea
-se
+'s
 }
 
 Expected: {
-dos anos mas tarde ficho por skoda<SPLIT>, donde estuvo tres anos<SPLIT>, pero sin conseguir resultados notables.}
+en mexico el sello pearless edito un ep con 3 temas<SPLIT>.}
 Predicted: {
-dos anos mas tarde ficho por skoda<SPLIT>, donde estuvo tres anos<SPLIT>, pero sin conseguir resultados notables<SPLIT>.}
+en mexico el sello pear<SPLIT>less edito un ep con 3 temas<SPLIT>.}
 False positives: {
-notables
+pear
+less
+} False negatives: {
+pearless
+}
+
+Expected: {
+o'neill cree que k'tano lo envia porque sabe que no regresara con vida<SPLIT>, e intenta convencer a teal'c para que no lo haga<SPLIT>, pero sin exito<SPLIT>.}
+Predicted: {
+o'neill cree que k'tano lo envia porque sabe que no regresara con vida<SPLIT>, e intenta convencer a teal'<SPLIT>c para que no lo haga<SPLIT>, pero sin exito<SPLIT>.}
+False positives: {
+teal'
+c
+} False negatives: {
+teal'c
+}
+
+Expected: {
+un secreto temblor<SPLIT>, su segundo poemario<SPLIT>, gana el premio de poesia arcipreste de hita.}
+Predicted: {
+un secreto temblor<SPLIT>, su segundo poemario<SPLIT>, gana el premio de poesia arcipreste de hita<SPLIT>.}
+False positives: {
+hita
 .
 } False negatives: {
-notables.
+hita.
 }
 
 Expected: {
-la recesion mundial debilitara la economia rusa y la forzar�� a escoger entre una mayor propiedad publica o una mayor dependencia de fondos estatales para rescatar a destacados oligarcas<SPLIT>.}
+fue lanzada por la agencia espacial japonesa jaxa el 20 de mayo de 2010 junto a la sonda planet - c<SPLIT>.}
 Predicted: {
-la recesion mundial debilitara la economia rusa y la forzar�<SPLIT>� a escoger entre una mayor propiedad publica o una mayor dependencia de fondos estatales para rescatar a destacados oligarcas<SPLIT>.}
+fue lanzada por la agencia espacial japonesa jaxa el 20 de mayo de 2010 junto a la sonda planet - c.}
 False positives: {
-forzar�
-�
+c.
 } False negatives: {
-forzar��
+c
+.
 }
 
 Expected: {
-por cierto si no quereis pegar<SPLIT>os la paliza de coche desde la meseta<SPLIT>, sabed que girona tiene un aeropuerto donde vuelan companias de bajo coste y desde donde se pude alquilar un coche<SPLIT>.}
+derrotados de nuevo<SPLIT>, terminaron dispersandose<SPLIT>.}
 Predicted: {
-por cierto si no quereis pegaros la paliza de coche desde la meseta<SPLIT>, sabed que girona tiene un aeropuerto donde vuelan companias de bajo coste y desde donde se pude alquilar un coche<SPLIT>.}
+derrotados de nuevo<SPLIT>, terminaron dispersando<SPLIT>se<SPLIT>.}
 False positives: {
-pegaros
+dispersando
+se
 } False negatives: {
-pegar
+dispersandose
+}
+
+Expected: {
+es hermano de los tambien jugadores profesionales campy y walker russell<SPLIT>, y tio de walker russell jr.<SPLIT>.}
+Predicted: {
+es hermano de los tambien jugadores profesionales campy y walker russell<SPLIT>, y tio de walker russell jr..}
+False positives: {
+jr..
+} False negatives: {
+jr.
+.
+}
+
+Expected: {
+queria dar<SPLIT>os las gracias por la maravillosa despedida que nos habeis organizado el pasado fin de semana en sanxenxo<SPLIT>.}
+Predicted: {
+queria daros las gracias por la maravillosa despedida que nos habeis organizado el pasado fin de semana en sanxenxo<SPLIT>.}
+False positives: {
+daros
+} False negatives: {
+dar
 os
 }
 
 Expected: {
-el video de "<SPLIT>pon de replay<SPLIT>" fue dirigida por el director de videos musicales little x.}
+una erupcion pliniana es un tipo de erupcion volcanica caracterizada por su similitud con la acontecida en el monte vesubio en el ano 79 d<SPLIT>.}
 Predicted: {
-el video de "<SPLIT>pon de replay<SPLIT>" fue dirigida por el director de videos musicales little x<SPLIT>.}
+una erupcion pliniana es un tipo de erupcion volcanica caracterizada por su similitud con la acontecida en el monte vesubio en el ano 79 d.}
 False positives: {
-x
+d.
+} False negatives: {
+d
+.
+}
+
+Expected: {
+general nicolas a. y. chacon fue un militar mexicano que participo en la revolucion mexicana<SPLIT>.}
+Predicted: {
+general nicolas a. y<SPLIT>. chacon fue un militar mexicano que participo en la revolucion mexicana<SPLIT>.}
+False positives: {
+y
 .
 } False negatives: {
-x.
+y.
 }
 
 Expected: {
-francisco i manifiesta un verdadero afecto por el viejo hombre<SPLIT>, al que llama "<SPLIT>padre mio<SPLIT>" y a quien instala en clos luce<SPLIT>, al alcance del chateau royal d'<SPLIT>amboise<SPLIT>.}
+a mitad de ano sube de categoria a kf2 (<SPLIT>ex inter - a<SPLIT>) para hacer el campeonato de espana<SPLIT>, luchando en las ultimas carreras en las posiciones de cabeza<SPLIT>.}
 Predicted: {
-francisco i manifiesta un verdadero afecto por el viejo hombre<SPLIT>, al que llama "<SPLIT>padre mio<SPLIT>" y a quien instala en clos luce<SPLIT>, al alcance del chateau royal d'amboise<SPLIT>.}
+a mitad de ano sube de categoria a kf2 (<SPLIT>ex inter - a) para hacer el campeonato de espana<SPLIT>, luchando en las ultimas carreras en las posiciones de cabeza<SPLIT>.}
 False positives: {
-d'amboise
+a)
 } False negatives: {
-d'
-amboise
-}
-
-Expected: {
-cormier fue clasificado 2<SPLIT>o y collignon<SPLIT>, 3<SPLIT>o<SPLIT>.}
-Predicted: {
-cormier fue clasificado 2o y collignon<SPLIT>, 3o<SPLIT>.}
-False positives: {
-2o
-3o
-} False negatives: {
-2
-o
-3
-o
+a
+)
 }
 
 Expected: {
@@ -506,59 +365,143 @@ ud.
 }
 
 Expected: {
-estas comparecencias de la radio<SPLIT>-<SPLIT>television y la comision canadienses de las telecomunicaciones (<SPLIT>crtc<SPLIT>) tienen como proposito obtener respuestas de las industrias interesadas y del publico<SPLIT>.}
+tienen los mejores precios de alquiler de coches en aeropuertos<SPLIT>, estaciones<SPLIT>, etc.<SPLIT>.. ¿<SPLIT>como podran conseguir esos precios<SPLIT>?}
 Predicted: {
-estas comparecencias de la radio-television y la comision canadienses de las telecomunicaciones (<SPLIT>crtc<SPLIT>) tienen como proposito obtener respuestas de las industrias interesadas y del publico<SPLIT>.}
+tienen los mejores precios de alquiler de coches en aeropuertos<SPLIT>, estaciones<SPLIT>, etc... ¿<SPLIT>como podran conseguir esos precios<SPLIT>?}
 False positives: {
-radio-television
+etc...
 } False negatives: {
-radio
--
-television
+etc.
+..
 }
 
 Expected: {
-rafferty grabo una nueva version de la cancion "<SPLIT>her father didn<SPLIT>'<SPLIT>t like me anyway<SPLIT>"<SPLIT>, de su banda humblebums<SPLIT>, en el album over my head (<SPLIT>1994<SPLIT>)<SPLIT>.}
+tambien el estar cerca de la costa y cerca de la montana tambien es una ventaja a la hora de mover<SPLIT>te<SPLIT>, en fin muy recomendable<SPLIT>.}
 Predicted: {
-rafferty grabo una nueva version de la cancion "<SPLIT>her father didn't like me anyway<SPLIT>"<SPLIT>, de su banda humblebums<SPLIT>, en el album over my head (<SPLIT>1994<SPLIT>)<SPLIT>.}
+tambien el estar cerca de la costa y cerca de la montana tambien es una ventaja a la hora de moverte<SPLIT>, en fin muy recomendable<SPLIT>.}
 False positives: {
-didn't
+moverte
 } False negatives: {
-didn
-'
-t
+mover
+te
 }
 
 Expected: {
-la union de la fuerza obrera lamenta que sus observaciones de la guia de contenido no fueran incluidas<SPLIT>: "<SPLIT>no hubo realmente una consulta<SPLIT>,<SPLIT>" dijo el sr<SPLIT>. gillard<SPLIT>.}
+una evaluacion de la onu de los planes nacionales para reducir el carbono afirma que estos no alcanzan los niveles necesarios para mantener el aumento de temperatura global por debajo de 2o c<SPLIT>.}
 Predicted: {
-la union de la fuerza obrera lamenta que sus observaciones de la guia de contenido no fueran incluidas<SPLIT>: "<SPLIT>no hubo realmente una consulta<SPLIT>,<SPLIT>" dijo el sr. gillard<SPLIT>.}
+una evaluacion de la onu de los planes nacionales para reducir el carbono afirma que estos no alcanzan los niveles necesarios para mantener el aumento de temperatura global por debajo de 2o c.}
 False positives: {
-sr.
+c.
 } False negatives: {
-sr
+c
 .
 }
 
 Expected: {
-durante la guerra de la primera coalicion<SPLIT>, despues de la revolucion francesa<SPLIT>, fue destacando la figura de un joven oficial de artilleria corso<SPLIT>: napoleon bonaparte<SPLIT>.}
+esa tasa del 3<SPLIT>% tambien se aplica a los titulares de una tarjeta nectar que quieran tomar prestadas entre 15.001 y 19.999 libras durante un periodo de entre dos y tres anos<SPLIT>.}
 Predicted: {
-durante la guerra de la primera coalicion<SPLIT>, despues de la revolucion francesa<SPLIT>, fue destacando la figura de un joven oficial de artilleria corso<SPLIT>: napoleon bonapar<SPLIT>te<SPLIT>.}
+esa tasa del 3% tambien se aplica a los titulares de una tarjeta nectar que quieran tomar prestadas entre 15.001 y 19.999 libras durante un periodo de entre dos y tres anos<SPLIT>.}
 False positives: {
-bonapar
-te
+3%
 } False negatives: {
-bonaparte
+3
+%
 }
 
 Expected: {
-en 1976 se reunio con una amiga que trabajaba en su productora the rocket record company<SPLIT>, kiki dee<SPLIT>, para grabar lo que seria otro sencillo exitoso para el britanico<SPLIT>: "<SPLIT>don<SPLIT>'<SPLIT>t go breaking my heart<SPLIT>"<SPLIT>.}
+fue seguido por los fondos de renta y multi<SPLIT>-<SPLIT>estrategia con un objetivo de rentabilidad para inversores de aviva<SPLIT>, en los que los inversores depositaron 2 mil millones y 1,4 mil millones de libras respectivamente<SPLIT>.}
 Predicted: {
-en 1976 se reunio con una amiga que trabajaba en su productora the rocket record company<SPLIT>, kiki dee<SPLIT>, para grabar lo que seria otro sencillo exitoso para el britanico<SPLIT>: "<SPLIT>don't go breaking my heart<SPLIT>"<SPLIT>.}
+fue seguido por los fondos de renta y multi<SPLIT>-estrategia con un objetivo de rentabilidad para inversores de aviva<SPLIT>, en los que los inversores depositaron 2 mil millones y 1,4 mil millones de libras respectivamente<SPLIT>.}
 False positives: {
-don't
+-estrategia
 } False negatives: {
-don
-'
-t
+-
+estrategia
+}
+
+Expected: {
+empezo en rsc a mediados de los anos 60 representando a un interno de un psiquiatrico en marat<SPLIT>/<SPLIT>sade<SPLIT>.}
+Predicted: {
+empezo en rsc a mediados de los anos 60 representando a un interno de un psiquiatrico en marat/sade<SPLIT>.}
+False positives: {
+marat/sade
+} False negatives: {
+marat
+/
+sade
+}
+
+Expected: {
+los hallazgos del ministerio de trabajo sobre las peores formas de trabajo infantil indicaban que un 56<SPLIT>% de los ninos con edades entre 5 y 14 anos estaban trabajando y que casi un 53<SPLIT>% de los ninos con edades entre 7 y 14 anos compaginaban trabajar con ir al colegio<SPLIT>.}
+Predicted: {
+los hallazgos del ministerio de trabajo sobre las peores formas de trabajo infantil indicaban que un 56% de los ninos con edades entre 5 y 14 anos estaban trabajando y que casi un 53% de los ninos con edades entre 7 y 14 anos compaginaban trabajar con ir al colegio<SPLIT>.}
+False positives: {
+56%
+53%
+} False negatives: {
+56
+%
+53
+%
+}
+
+Expected: {
+aunque el area es solo un 11<SPLIT>% de la superficie de europa<SPLIT>, los alpes proporcionan mas de 90<SPLIT>% del agua a las tierras bajas de europa<SPLIT>, particularmente a las areas aridas y durante los meses de verano<SPLIT>.}
+Predicted: {
+aunque el area es solo un 11% de la superficie de europa<SPLIT>, los alpes proporcionan mas de 90% del agua a las tierras bajas de europa<SPLIT>, particularmente a las areas aridas y durante los meses de verano<SPLIT>.}
+False positives: {
+11%
+90%
+} False negatives: {
+11
+%
+90
+%
+}
+
+Expected: {
+el jueves<SPLIT>, 3 de noviembre<SPLIT>, el alcalde de saint<SPLIT>-<SPLIT>gaudens (<SPLIT>en la region haute<SPLIT>-<SPLIT>garonne<SPLIT>) decidio suspender el acuerdo de desarrollo urbano con el gobierno formado en el 2014<SPLIT>.}
+Predicted: {
+el jueves<SPLIT>, 3 de noviembre<SPLIT>, el alcalde de saint<SPLIT>-gaudens (<SPLIT>en la region haute<SPLIT>-garonne<SPLIT>) decidio suspender el acuerdo de desarrollo urbano con el gobierno formado en el 2014<SPLIT>.}
+False positives: {
+-gaudens
+-garonne
+} False negatives: {
+-
+gaudens
+-
+garonne
+}
+
+Expected: {
+es<SPLIT>, aseguran las fuentes consultadas<SPLIT>, "<SPLIT>100<SPLIT>% cospedal<SPLIT>"<SPLIT>.}
+Predicted: {
+es<SPLIT>, aseguran las fuentes consultadas<SPLIT>, "<SPLIT>100% cospedal<SPLIT>"<SPLIT>.}
+False positives: {
+100%
+} False negatives: {
+100
+%
+}
+
+Expected: {
+contiene un monumento a martin luther king<SPLIT>, jr<SPLIT>.}
+Predicted: {
+contiene un monumento a martin luther king<SPLIT>, jr.}
+False positives: {
+jr.
+} False negatives: {
+jr
+.
+}
+
+Expected: {
+pero cuando el senado le contesto definitivamente impidiendo<SPLIT>le concurrir al consulado y poniendo<SPLIT>le en la disyuntiva de licenciar a sus legiones o ser declarado enemigo publico<SPLIT>, comprendio que<SPLIT>, escogiera la alternativa que escogiera<SPLIT>, se entregaba inerme en manos de sus enemigos politicos<SPLIT>.}
+Predicted: {
+pero cuando el senado le contesto definitivamente impidiendo<SPLIT>le concurrir al consulado y poniendo<SPLIT>le en la disyuntiva de licenciar a sus legiones o ser declarado enemigo publico<SPLIT>, comprendio que<SPLIT>, escogiera la alternativa que escogiera<SPLIT>, se entregaba iner<SPLIT>me en manos de sus enemigos politicos<SPLIT>.}
+False positives: {
+iner
+me
+} False negatives: {
+inerme
 }

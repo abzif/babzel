@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9998021995411029
-Training-Sample-Size=9399
-Evaluation-Sample-Size=1044
+Evaluation-Score=0.9995936446015685
+Training-Sample-Size=9297
+Evaluation-Sample-Size=1032
 Training-Algorithm=MAXENT
 
 === MODEL PROPERTIES ===
@@ -10,9 +10,9 @@ Component-Name=StatisticalLemmatizer
 Language=zh
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1674457038492
+Timestamp=1677290580794
 TrainerType=Event
-Training-Eventhash=3191f505f9793861eca2ae9608ae8880
+Training-Eventhash=487644b8ad4f4f6e79e7bb2476b9dde
 factory=opennlp.tools.lemmatizer.LemmatizerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -163,120 +163,411 @@ Tok: Ref | Pred
 }
 
 Expected: {
-而	ADV	而
-旅居	VERB	旅居
-美国	PROPN	美国
-的	PART	的
-罗马尼亚	PROPN	罗马尼亚
-知名	ADJ	知名
-作家	NOUN	作家
-诺尔曼	PROPN	诺尔曼
-·	PUNCT	·
-马内阿	PROPN	马内阿
-(	PUNCT	(
-norman	X	norman
-manea	X	manea
-)	PUNCT	)
+玩家	NOUN	玩家
+以	ADP	以
+地下	NOUN	地下
+军	PART	军
+新	PART	新
+成员	NOUN	成员
+与	ADP	与
+达夏	PROPN	达夏
+取得	VERB	取得
+联络	NOUN	联络
 ,	PUNCT	,
-曾	ADV	曾
-如此	VERB	如此
-描述	VERB	描述
-他	PRON	他
-:	PUNCT	:
-"	PUNCT	"
-他	PRON	他
-是	AUX	是
-一	NUM	一
-位	NOUN	位
-杰出	ADJ	杰出
+从	ADP	从
+达夏	PROPN	达夏
+那	PRON	那
+玩家	NOUN	玩家
+得知	VERB	得知
+为	ADP	为
+针对	VERB	针对
+盟军	NOUN	盟军
 的	PART	的
-反叛	VERB	反叛
-者	PART	者
+抵抗	NOUN	抵抗
+活动	NOUN	活动
+已经	ADV	已经
+就绪	VERB	就绪
 ,	PUNCT	,
-也是	AUX	也是
-一	NUM	一
-位	NOUN	位
-独具	VERB	独具
-怀疑	NOUN	怀疑
-精神	NOUN	精神
-的	PART	的
-厌世	VERB	厌世
-者	PART	者
-,	PUNCT	,
-一而再	ADJ	一而再
-、	PUNCT	、
-再而三	ADJ	再而三
-地	PART	地
-让	VERB	让
+但	ADV	但
+为	ADP	为
 我们	PRON	我
-在	ADP	在
-人类	NOUN	人类
-存在	VERB	存在
+研发	VERB	研发
+新	PART	新
+武器	NOUN	武器
 的	PART	的
-虚无	NOUN	虚无
-当中	NOUN	当中
-惊醒	VERB	惊醒
-过来	VERB	过来
+苏联	PROPN	苏联
+首席	NOUN	首席
+科学	NOUN	科学
+家	PART	家
+却	ADV	却
+神秘	ADV	神秘
+失踪	VERB	失踪
+.	PUNCT	.
+}
+Predicted: {
+玩家	NOUN	玩家
+以	ADP	以
+地下	NOUN	地下
+军	PART	军
+新	PART	新
+成员	NOUN	成员
+与	ADP	与
+达夏	PROPN	达夏
+取得	VERB	取得
+联络	NOUN	联络
+,	PUNCT	,
+从	ADP	从
+达夏	PROPN	达夏
+那	PRON	那
+玩家	NOUN	玩家
+得知	VERB	得知
+为	ADP	为
+针对	VERB	针对
+盟军	NOUN	盟军
+的	PART	的
+抵抗	NOUN	抵抗
+活动	NOUN	活动
+已经	ADV	已经
+就绪	VERB	就绪
+,	PUNCT	,
+但	ADV	但
+为	ADP	为
+我们	PRON	我们
+研发	VERB	研发
+新	PART	新
+武器	NOUN	武器
+的	PART	的
+苏联	PROPN	苏联
+首席	NOUN	首席
+科学	NOUN	科学
+家	PART	家
+却	ADV	却
+神秘	ADV	神秘
+失踪	VERB	失踪
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+我们: 我 | 我们
+}
+
+Expected: {
+1945	NUM	1945
+年	NOUN	年
+11	NUM	11
+月	NOUN	月
+,	PUNCT	,
+张	PROPN	张
+西曼	PROPN	西曼
+主编	VERB	主编
+的	PART	的
+《	PUNCT	《
+民主	NOUN	民主
+与	CCONJ	与
+科学	NOUN	科学
+》	PUNCT	》
+杂志	NOUN	杂志
+联合	VERB	联合
+了	AUX	了
+重庆	PROPN	重庆
+的	PART	的
+26	NUM	26
+家	NOUN	家
+杂志	NOUN	杂志
+,	PUNCT	,
+共同	ADV	共同
+呼吁	VERB	呼吁
+"	PUNCT	"
+不要	AUX	不要
+内战	VERB	内战
+"	PUNCT	"
+,	PUNCT	,
+并	ADV	并
+提出	VERB	提出
+"	PUNCT	"
+我们	PRON	我
+为	ADP	为
+自身	NOUN	自身
+着想	VERB	着想
+,	PUNCT	,
+同时	NOUN	同时
+为	ADP	为
+我们	PRON	我
+的	PART	的
+子孙	NOUN	子孙
+着想	VERB	着想
+,	PUNCT	,
+万万	ADV	万万
+不愿	AUX	不愿
+再见	VERB	再见
+内战	NOUN	内战
+的	PART	的
+局面	NOUN	局面
 .	PUNCT	.
 "	PUNCT	"
 }
 Predicted: {
-而	ADV	而
-旅居	VERB	旅居
-美国	PROPN	美国
-的	PART	的
-罗马尼亚	PROPN	罗马尼亚
-知名	ADJ	知名
-作家	NOUN	作家
-诺尔曼	PROPN	诺尔曼
-·	PUNCT	·
-马内阿	PROPN	马内阿
-(	PUNCT	(
-norman	X	norman
-manea	X	manea
-)	PUNCT	)
+1945	NUM	1945
+年	NOUN	年
+11	NUM	11
+月	NOUN	月
 ,	PUNCT	,
-曾	ADV	曾
-如此	VERB	如此
-描述	VERB	描述
-他	PRON	他
-:	PUNCT	:
+张	PROPN	张
+西曼	PROPN	西曼
+主编	VERB	主编
+的	PART	的
+《	PUNCT	《
+民主	NOUN	民主
+与	CCONJ	与
+科学	NOUN	科学
+》	PUNCT	》
+杂志	NOUN	杂志
+联合	VERB	联合
+了	AUX	了
+重庆	PROPN	重庆
+的	PART	的
+26	NUM	26
+家	NOUN	家
+杂志	NOUN	杂志
+,	PUNCT	,
+共同	ADV	共同
+呼吁	VERB	呼吁
 "	PUNCT	"
-他	PRON	他
-是	AUX	是
-一	NUM	一
-位	NOUN	位
-杰出	ADJ	杰出
-的	PART	的
-反叛	VERB	反叛
-者	PART	者
+不要	AUX	不要
+内战	VERB	内战
+"	PUNCT	"
 ,	PUNCT	,
-也是	AUX	也是
-一	NUM	一
-位	NOUN	位
-独具	VERB	独具
-怀疑	NOUN	怀疑
-精神	NOUN	精神
-的	PART	的
-厌世	VERB	厌世
-者	PART	者
-,	PUNCT	,
-一而再	ADJ	一而再
-、	PUNCT	、
-再而三	ADJ	再而三
-地	PART	地
-让	VERB	让
+并	ADV	并
+提出	VERB	提出
+"	PUNCT	"
 我们	PRON	我们
-在	ADP	在
-人类	NOUN	人类
-存在	VERB	存在
+为	ADP	为
+自身	NOUN	自身
+着想	VERB	着想
+,	PUNCT	,
+同时	NOUN	同时
+为	ADP	为
+我们	PRON	我们
 的	PART	的
-虚无	NOUN	虚无
-当中	NOUN	当中
-惊醒	VERB	惊醒
-过来	VERB	过来
+子孙	NOUN	子孙
+着想	VERB	着想
+,	PUNCT	,
+万万	ADV	万万
+不愿	AUX	不愿
+再见	VERB	再见
+内战	NOUN	内战
+的	PART	的
+局面	NOUN	局面
 .	PUNCT	.
 "	PUNCT	"
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+我们: 我 | 我们
+我们: 我 | 我们
+}
+
+Expected: {
+焚烧	VERB	焚烧
+国旗	NOUN	国旗
+的	PART	的
+同时	NOUN	同时
+,	PUNCT	,
+这	DET	这
+群	NOUN	群
+人	NOUN	人
+一边	ADV	一边
+大喊	VERB	大喊
+着	AUX	着
+口号	NOUN	口号
+:	PUNCT	:
+"	PUNCT	"
+美国	PROPN	美国
+,	PUNCT	,
+红	NOUN	红
+、	PUNCT	、
+白	NOUN	白
+、	PUNCT	、
+蓝	NOUN	蓝
+,	PUNCT	,
+我们	PRON	我
+对	ADP	对
+你	PRON	你
+吐	VERB	吐
+口	NOUN	口
+痰	NOUN	痰
+,	PUNCT	,
+你	PRON	你
+的	PART	的
+立场	NOUN	立场
+是	AUX	是
+抢夺	NOUN	抢夺
+,	PUNCT	,
+你	PRON	你
+的	PART	的
+下场	NOUN	下场
+是	AUX	是
+地狱	NOUN	地狱
+.	PUNCT	.
+"	PUNCT	"
+}
+Predicted: {
+焚烧	VERB	焚烧
+国旗	NOUN	国旗
+的	PART	的
+同时	NOUN	同时
+,	PUNCT	,
+这	DET	这
+群	NOUN	群
+人	NOUN	人
+一边	ADV	一边
+大喊	VERB	大喊
+着	AUX	着
+口号	NOUN	口号
+:	PUNCT	:
+"	PUNCT	"
+美国	PROPN	美国
+,	PUNCT	,
+红	NOUN	红
+、	PUNCT	、
+白	NOUN	白
+、	PUNCT	、
+蓝	NOUN	蓝
+,	PUNCT	,
+我们	PRON	我们
+对	ADP	对
+你	PRON	你
+吐	VERB	吐
+口	NOUN	口
+痰	NOUN	痰
+,	PUNCT	,
+你	PRON	你
+的	PART	的
+立场	NOUN	立场
+是	AUX	是
+抢夺	NOUN	抢夺
+,	PUNCT	,
+你	PRON	你
+的	PART	的
+下场	NOUN	下场
+是	AUX	是
+地狱	NOUN	地狱
+.	PUNCT	.
+"	PUNCT	"
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+我们: 我 | 我们
+}
+
+Expected: {
+从	ADP	从
+一	NUM	一
+夸脱	NOUN	夸脱
+牛奶	NOUN	牛奶
+和	CCONJ	和
+从	ADP	从
+一	NUM	一
+夸脱	NOUN	夸脱
+牛奶	NOUN	牛奶
+转换	VERB	转换
+出	VERB	出
+一	NUM	一
+磅	NOUN	磅
+乳酪	NOUN	乳酪
+的	PART	的
+过程	NOUN	过程
+,	PUNCT	,
+我们	PRON	我
+获得	VERB	获得
+一	NUM	一
+磅	NOUN	磅
+乳酪	NOUN	乳酪
+.	PUNCT	.
+}
+Predicted: {
+从	ADP	从
+一	NUM	一
+夸脱	NOUN	夸脱
+牛奶	NOUN	牛奶
+和	CCONJ	和
+从	ADP	从
+一	NUM	一
+夸脱	NOUN	夸脱
+牛奶	NOUN	牛奶
+转换	VERB	转换
+出	VERB	出
+一	NUM	一
+磅	NOUN	磅
+乳酪	NOUN	乳酪
+的	PART	的
+过程	NOUN	过程
+,	PUNCT	,
+我们	PRON	我们
+获得	VERB	获得
+一	NUM	一
+磅	NOUN	磅
+乳酪	NOUN	乳酪
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+我们: 我 | 我们
+}
+
+Expected: {
+但	ADV	但
+我们	PRON	我
+发现	VERB	发现
+的	PART	的
+殖民	NOUN	殖民
+活动	NOUN	活动
+不	ADV	不
+一定	ADV	一定
+有	VERB	有
+地外	NOUN	地外
+生物	NOUN	生物
+参与	VERB	参与
+,	PUNCT	,
+也	ADV	也
+可能	AUX	可能
+是	AUX	是
+探测	VERB	探测
+器	PART	器
+或者	CCONJ	或者
+信息	NOUN	信息
+采集	NOUN	采集
+装置	NOUN	装置
+.	PUNCT	.
+}
+Predicted: {
+但	ADV	但
+我们	PRON	我们
+发现	VERB	发现
+的	PART	的
+殖民	NOUN	殖民
+活动	NOUN	活动
+不	ADV	不
+一定	ADV	一定
+有	VERB	有
+地外	NOUN	地外
+生物	NOUN	生物
+参与	VERB	参与
+,	PUNCT	,
+也	ADV	也
+可能	AUX	可能
+是	AUX	是
+探测	VERB	探测
+器	PART	器
+或者	CCONJ	或者
+信息	NOUN	信息
+采集	NOUN	采集
+装置	NOUN	装置
+.	PUNCT	.
 }
 Errors: {
 Tok: Ref | Pred

@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9975722142397067
-Training-Sample-Size=4961
-Evaluation-Sample-Size=551
+Evaluation-Score=0.9986805805445603
+Training-Sample-Size=4275
+Evaluation-Sample-Size=475
 Training-Algorithm=MAXENT_QN
 
 === MODEL PROPERTIES ===
@@ -9,171 +9,88 @@ Component-Name=TokenizerME
 Language=da
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1674192027089
+Timestamp=1677043239040
 TrainerType=Event
-Training-Eventhash=65195ede1d3287c97cf4046d2a90aa32
+Training-Eventhash=dd16ce554bf93406c9c104bf394571ee
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
 
 === MISCLASSIFIED DETAILS ===
 Expected: {
-sarah-langben-koch viser 60'ere for b.t. i dag<SPLIT>, og jeg garanterer<SPLIT>, at sko stilen så længe det unikke varelager haves fås fra str. 36 til 41 - eller i hvert fald til str. 40<SPLIT>.}
+den danske importør<SPLIT>, vilh. nellemann autoimport<SPLIT>, har besluttet at satse på markedet for jobbiler frem for at sprede sig for meget<SPLIT>.}
 Predicted: {
-sarah-langben-koch viser 60'ere for b.t. i dag<SPLIT>, og jeg garanterer<SPLIT>, at sko stilen så længe det unikke varelager haves fås fra str<SPLIT>. 36 til 41 - eller i hvert fald til str<SPLIT>. 40<SPLIT>.}
+den danske importør<SPLIT>, vilh<SPLIT>. nellemann autoimport<SPLIT>, har besluttet at satse på markedet for jobbiler frem for at sprede sig for meget<SPLIT>.}
 False positives: {
-str
-.
-str
+vilh
 .
 } False negatives: {
-str.
-str.
+vilh.
 }
 
 Expected: {
-for altid vil lykketallet være 13<SPLIT>.}
+det økonomiske regnestykke er forlængst på plads<SPLIT>: der skal investeres 1,5 til 2 mia. kr. i en sammenlægning af carlsberg og tuborgs to københavnske bryggerier i ét fælles bryggeri<SPLIT>.}
 Predicted: {
-for altid vil lykketallet være 13.}
+det økonomiske regnestykke er forlængst på plads<SPLIT>: der skal investeres 1,5 til 2 mia<SPLIT>. kr. i en sammenlægning af carlsberg og tuborgs to københavnske bryggerier i ét fælles bryggeri<SPLIT>.}
 False positives: {
-13.
-} False negatives: {
-13
+mia
 .
+} False negatives: {
+mia.
 }
 
 Expected: {
-i en alder af bare 27 år debuterede den unge cand.-jur. helle stangerup i 1967 med et brag af en krimi<SPLIT>, "<SPLIT>gravskrift for rødhætte<SPLIT>"<SPLIT>.}
+4<SPLIT>.}
 Predicted: {
-i en alder af bare 27 år debuterede den unge cand.-jur<SPLIT>. helle stangerup i 1967 med et brag af en krimi<SPLIT>, "<SPLIT>gravskrift for rødhætte<SPLIT>"<SPLIT>.}
+4.}
 False positives: {
-cand.-jur
-.
+4.
 } False negatives: {
-cand.-jur.
-}
-
-Expected: {
-"<SPLIT>hvis der er den nødvendige politiske vilje til både at bygge nyt og at bevilge penge til driften<SPLIT>, så vil en udskillelse af skuespilafdelingen fra kgs. nytorv være en naturlig følge<SPLIT>.<SPLIT>"}
-Predicted: {
-"<SPLIT>hvis der er den nødvendige politiske vilje til både at bygge nyt og at bevilge penge til driften<SPLIT>, så vil en udskillelse af skuespilafdelingen fra kgs<SPLIT>. nytorv være en naturlig følge<SPLIT>.<SPLIT>"}
-False positives: {
-kgs
-.
-} False negatives: {
-kgs.
-}
-
-Expected: {
-i foråret 1990 blev rungsted gymnasium sammen med fem andre danske skoler inviteret til at være med i et internationalt miljøundervisningsprojekt<SPLIT>: baltic sea project<SPLIT>.}
-Predicted: {
-i foråret 1990 blev rungsted gymnasium sammen med fem andre danske skoler inviteret til at være med i et internationalt miljøundervisningsprojekt<SPLIT>: baltic sea project.}
-False positives: {
-project.
-} False negatives: {
-project
+4
 .
 }
 
 Expected: {
-vi skal i dag se et spil fra det jyske lokalopgør mellem på den ene side steen schou fra århus med anker pabst<SPLIT>, h. c. nielsen og knud-aage boesgaard og på den anden side frederik mørk fra vejle med torben stetkær<SPLIT>, erik brok og otto dahl<SPLIT>.}
+hvis man da ikke er nogen<SPLIT>, som andre bare har drømt<SPLIT>...<SPLIT>"}
 Predicted: {
-vi skal i dag se et spil fra det jyske lokalopgør mellem på den ene side steen schou fra århus med anker pabst<SPLIT>, h. c. nielsen og knud-aage boesgaard og på den anden side frederik mørk fra vejle med torben stetkær<SPLIT>, erik brok og otto dahl.}
+hvis man da ikke er nogen<SPLIT>, som andre bare har drømt...<SPLIT>"}
 False positives: {
-dahl.
+drømt...
 } False negatives: {
-dahl
-.
+drømt
+...
 }
 
 Expected: {
-et lidt pikant problem i samme forbindelse er<SPLIT>, hvordan schleimanns sekretær<SPLIT>, hans samleverske<SPLIT>, annie gertz'<SPLIT>stilling bliver<SPLIT>.}
+politiet kan ikke forklare den voldsomme stigning i antallet af narkodødsfald<SPLIT>, men nøjes med at fastslå<SPLIT>, at der ingen sammenhæng er mellem dødsfaldene og det<SPLIT>, at alle ofrene i årevis havde været misbrugere af euforiserende stoffer<SPLIT>, skriver fyens stiftstidende.(rb)}
 Predicted: {
-et lidt pikant problem i samme forbindelse er<SPLIT>, hvordan schleimanns sekretær<SPLIT>, hans samleverske<SPLIT>, annie gertz'stilling bliver<SPLIT>.}
+politiet kan ikke forklare den voldsomme stigning i antallet af narkodødsfald<SPLIT>, men nøjes med at fastslå<SPLIT>, at der ingen sammenhæng er mellem dødsfaldene og det<SPLIT>, at alle ofrene i årevis havde været misbrugere af euforiserende stoffer<SPLIT>, skriver fyens stiftstidende<SPLIT>.(rb<SPLIT>)}
 False positives: {
-gertz'stilling
-} False negatives: {
-gertz'
-stilling
-}
-
-Expected: {
-2<SPLIT>.}
-Predicted: {
-2.}
-False positives: {
-2.
-} False negatives: {
-2
-.
-}
-
-Expected: {
-københavns og frederiksborg amter vil hele tiden vurdere badevandsforholdene.(rb)}
-Predicted: {
-københavns og frederiksborg amter vil hele tiden vurdere badevandsforholdene<SPLIT>.(rb<SPLIT>)}
-False positives: {
-badevandsforholdene
+stiftstidende
 .(rb
 )
 } False negatives: {
-badevandsforholdene.(rb)
+stiftstidende.(rb)
 }
 
 Expected: {
-til vaflerne piskes 2 store æggeblommer med 1 spsk. sukker<SPLIT>, 1 tsk. vanillesukker og 1 knivspids salt<SPLIT>.}
+arne fryman<SPLIT>, vestersøgade 78<SPLIT>, 1601 københavn v<SPLIT>.}
 Predicted: {
-til vaflerne piskes 2 store æggeblommer med 1 spsk<SPLIT>. sukker<SPLIT>, 1 tsk<SPLIT>. vanillesukker og 1 knivspids salt<SPLIT>.}
+arne fryman<SPLIT>, vestersøgade 78<SPLIT>, 1601 københavn v.}
 False positives: {
-spsk
-.
-tsk
-.
+v.
 } False negatives: {
-spsk.
-tsk.
-}
-
-Expected: {
-mens det konservative folkeparti går 1,3 procent frem<SPLIT>, viser gfk-undersøgelsen<SPLIT>, der er foretaget 31. august<SPLIT>.}
-Predicted: {
-mens det konservative folkeparti går 1,3 procent frem<SPLIT>, viser gfk-undersøgelsen<SPLIT>, der er foretaget 31<SPLIT>. august<SPLIT>.}
-False positives: {
-31
-.
-} False negatives: {
-31.
-}
-
-Expected: {
-"<SPLIT>jeg kender mit job sammen med john<SPLIT>.}
-Predicted: {
-"<SPLIT>jeg kender mit job sammen med john.}
-False positives: {
-john.
-} False negatives: {
-john
+v
 .
 }
 
 Expected: {
-svenskerne havde regnet med at få en ren finale<SPLIT>, men det satte de to sidste års pondus-vinder jean-michel saive en stopper for<SPLIT>, da han i semifinalen fortsatte sit flotte spil fra de indledende runder og vandt over appelgren med 21-15<SPLIT>, 21-10<SPLIT>.}
+et skaktræk som med et slag viftede kreditorer med et tilgodehavende på seks mia. kr. væk<SPLIT>.}
 Predicted: {
-svenskerne havde regnet med at få en ren finale<SPLIT>, men det satte de to sidste års pondus-vinder jean-michel saive en stopper for<SPLIT>, da han i semifinalen fortsatte sit flotte spil fra de indledende runder og vandt over appelgren med 21-15<SPLIT>, 21-10.}
+et skaktræk som med et slag viftede kreditorer med et tilgodehavende på seks mia<SPLIT>. kr. væk<SPLIT>.}
 False positives: {
-21-10.
-} False negatives: {
-21-10
+mia
 .
-}
-
-Expected: {
-vi har et interview med statsministeren om åbningstalen i magasinet kl. 19<SPLIT>.}
-Predicted: {
-vi har et interview med statsministeren om åbningstalen i magasinet kl. 19.}
-False positives: {
-19.
 } False negatives: {
-19
-.
+mia.
 }

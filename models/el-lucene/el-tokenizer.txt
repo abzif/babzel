@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9992842942345924
-Training-Sample-Size=2268
-Evaluation-Sample-Size=251
+Evaluation-Score=0.9992837246319141
+Training-Sample-Size=2195
+Evaluation-Sample-Size=243
 Training-Algorithm=MAXENT_QN
 
 === MODEL PROPERTIES ===
@@ -9,35 +9,43 @@ Component-Name=TokenizerME
 Language=el
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1674195358308
+Timestamp=1677046069697
 TrainerType=Event
-Training-Eventhash=bbd82cc0f62ca93cb7b5f0bc12beb34e
+Training-Eventhash=44784c6154bad817d050669db2101597
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
 
 === MISCLASSIFIED DETAILS ===
 Expected: {
-παρολα αυτα το προβλημα συνεχισε να απασχολει τη β' διεθνη και αργοτερα και την γ' διεθνη<SPLIT>, με σκοπο την δημιουργια ανεξαρτητου κρατουσ<SPLIT>, θεση η οποια το 1924 υιοθετηθηκε επισημα και απο το κκε.}
+με την αμεση μεταφραση<SPLIT>, ορισμενοι θα ψηφιζουν για το κονδυλιο 2 του προυπολογισμου<SPLIT>, την ωρα που καποιοι αλλοι θα ψηφιζουν ακομη για το κονδυλιο 1<SPLIT>.}
 Predicted: {
-παρολα αυτα το προβλημα συνεχισε να απασχολει τη β' διεθνη και αργοτερα και την γ' διεθνη<SPLIT>, με σκοπο την δημιουργια ανεξαρτητου κρατουσ<SPLIT>, θεση η οποια το 1924 υιοθετηθηκε επισημα και απο το κκε<SPLIT>.}
+με την αμεση μεταφραση<SPLIT>, ορισμενοι θα ψηφιζουν για το κονδυλιο 2 του προυπολογισμου<SPLIT>, την ωρα που καποιοι αλλοι θα ψηφιζουν ακομη για το κονδυλιο 1.}
 False positives: {
-κκε
-.
+1.
 } False negatives: {
-κκε.
+1
+.
 }
 
 Expected: {
-3. η εκκενωση των τουρκικων θυλακων απο την ειρηνευτικη δυναμη του οηε.}
+13,6 εκ. ανθρωπων σ<SPLIT>την εε ειναι ανεργοι<SPLIT>.}
 Predicted: {
-3<SPLIT>. η εκκενωση των τουρκικων θυλακων απο την ειρηνευτικη δυναμη του οηε<SPLIT>.}
+13,6 εκ<SPLIT>. ανθρωπων σ<SPLIT>την εε ειναι ανεργοι<SPLIT>.}
 False positives: {
-3
-.
-οηε
+εκ
 .
 } False negatives: {
-3.
-οηε.
+εκ.
+}
+
+Expected: {
+5. η διεξαγωγη διαπραγματευσεων με συμμετοχη ελληνοκυπριων και τουρκοκυπριων για οριστικη διευθετηση του κυπριακου<SPLIT>.}
+Predicted: {
+5<SPLIT>. η διεξαγωγη διαπραγματευσεων με συμμετοχη ελληνοκυπριων και τουρκοκυπριων για οριστικη διευθετηση του κυπριακου<SPLIT>.}
+False positives: {
+5
+.
+} False negatives: {
+5.
 }

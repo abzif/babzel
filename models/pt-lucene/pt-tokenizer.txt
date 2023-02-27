@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9983304031573484
-Training-Sample-Size=62743
-Evaluation-Sample-Size=6971
+Evaluation-Score=0.9981235863815496
+Training-Sample-Size=56816
+Evaluation-Sample-Size=6312
 Training-Algorithm=MAXENT_QN
 
 === MODEL PROPERTIES ===
@@ -9,25 +9,14 @@ Component-Name=TokenizerME
 Language=pt
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1674364208398
+Timestamp=1677206527614
 TrainerType=Event
-Training-Eventhash=cb1db5d97f42380c153173da91bfca0c
+Training-Eventhash=280eb8759dd1fa6cc9b31266a0d3e6f8
 alphaNumericPattern=^[0-9a-záãâàéêíóõôúüçA-ZÁÃÂÀÉÊÍÓÕÔÚÜÇ]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
 
 === MISCLASSIFIED DETAILS ===
-Expected: {
-ao contrario<SPLIT>, nesta situacao economica de extrema gravidade<SPLIT>, todos gostariam de ajudar o pais<SPLIT>.}
-Predicted: {
-a<SPLIT>o contrario<SPLIT>, nesta situacao economica de extrema gravidade<SPLIT>, todos gostariam de ajudar o pais<SPLIT>.}
-False positives: {
-a
-o
-} False negatives: {
-ao
-}
-
 Expected: {
 sua virtude<SPLIT>: 2,08 m.}
 Predicted: {
@@ -40,80 +29,15 @@ m.
 }
 
 Expected: {
-mr. frost<SPLIT>, deadly mr. frost}
+(<SPLIT>...<SPLIT>) mas a pesquisa formal e basicamente a mesma<SPLIT>.}
 Predicted: {
-mr<SPLIT>. frost<SPLIT>, deadly mr<SPLIT>. frost}
+(...) mas a pesquisa formal e basicamente a mesma<SPLIT>.}
 False positives: {
-mr
-.
-mr
-.
+(...)
 } False negatives: {
-mr.
-mr.
-}
-
-Expected: {
-(<SPLIT>...<SPLIT>) em 1975<SPLIT>, nos estados unidos<SPLIT>, a comissao trilateral divulgava um relatorio intitulado "<SPLIT>crise da democracia<SPLIT>"<SPLIT>, no qual culpava pela contestacao a "<SPLIT>autoridade fundada na hierarquia<SPLIT>, na competencia e no dinheiro ...<SPLIT>" os intelectuais e grupos proximos<SPLIT>, que estavam a tornar as democracias ocidentais<SPLIT>, liberais<SPLIT>, parlamentares<SPLIT>, ingovernaveis porque ameacadas por uma gravissima crise de autoridade<SPLIT>, fomentada por intelectuais e jornalistas<SPLIT>.}
-Predicted: {
-(<SPLIT>...) em 1975<SPLIT>, nos estados unidos<SPLIT>, a comissao trilateral divulgava um relatorio intitulado "<SPLIT>crise da democracia<SPLIT>"<SPLIT>, no qual culpava pela contestacao a "<SPLIT>autoridade fundada na hierarquia<SPLIT>, na competencia e no dinheiro ...<SPLIT>" os intelectuais e grupos proximos<SPLIT>, que estavam a tornar as democracias ocidentais<SPLIT>, liberais<SPLIT>, parlamentares<SPLIT>, ingovernaveis porque ameacadas por uma gravissima crise de autoridade<SPLIT>, fomentada por intelectuais e jornalistas<SPLIT>.}
-False positives: {
-...)
-} False negatives: {
+(
 ...
 )
-}
-
-Expected: {
-e foi assim que ontem -- precisamente por causa do portugal<SPLIT>-<SPLIT>turquia -- a televisao guineense reabriu ... a hora necessaria para transmitir o portugal<SPLIT>-<SPLIT>turquia<SPLIT>, o que motivou grandes ajuntamentos em locais publicos que dispunham de televisores<SPLIT>, tanto em bissau como no interior do pais<SPLIT>.}
-Predicted: {
-e foi assim que ontem -- precisamente por causa do portugal-turquia -- a televisao guineense reabriu ... a hora necessaria para transmitir o portugal-turquia<SPLIT>, o que motivou grandes ajuntamentos em locais publicos que dispunham de televisores<SPLIT>, tanto em bissau como no interior do pais<SPLIT>.}
-False positives: {
-portugal-turquia
-portugal-turquia
-} False negatives: {
-portugal
--
-turquia
-portugal
--
-turquia
-}
-
-Expected: {
-uma pela dupla bfe<SPLIT>/<SPLIT>salomon brothers e outra pelo bpi em associacao com a ubs (<SPLIT>union des banques suisses<SPLIT>)<SPLIT>.}
-Predicted: {
-uma pela dupla bfe/salomon brothers e outra pelo bpi em associacao com a ubs (<SPLIT>union des banques suisses<SPLIT>)<SPLIT>.}
-False positives: {
-bfe/salomon
-} False negatives: {
-bfe
-/
-salomon
-}
-
-Expected: {
-a seca que atingiu as areas produtoras de graos nao deve causar grandes estragos na safra 1994<SPLIT>/<SPLIT>95<SPLIT>.}
-Predicted: {
-a seca que atingiu as areas produtoras de graos nao deve causar grandes estragos na safra 1994/95<SPLIT>.}
-False positives: {
-1994/95
-} False negatives: {
-1994
-/
-95
-}
-
-Expected: {
-informacoes pelo (011) 263-4700<SPLIT>.}
-Predicted: {
-informacoes pelo (<SPLIT>011<SPLIT>) 263-4700<SPLIT>.}
-False positives: {
-(
-011
-)
-} False negatives: {
-(011)
 }
 
 Expected: {
@@ -128,241 +52,251 @@ min
 }
 
 Expected: {
-a advogada diz que o mais! adulterou a obra "<SPLIT>para satisfazer a vontade de neonazistas brasileiros<SPLIT>"<SPLIT>.}
+aristides tem defendido junto a<SPLIT>o governo a aplicacao do art. 212 da constituicao<SPLIT>, que preve que uniao deve destinar pelo menos 18 % da receita de impostos a educacao<SPLIT>.}
 Predicted: {
-a advogada diz que o mais<SPLIT>! adulterou a obra "<SPLIT>para satisfazer a vontade de neonazistas brasileiros<SPLIT>"<SPLIT>.}
+aristides tem defendido junto a<SPLIT>o governo a aplicacao do art<SPLIT>. 212 da constituicao<SPLIT>, que preve que uniao deve destinar pelo menos 18 % da receita de impostos a educacao<SPLIT>.}
 False positives: {
-mais
-!
+art
+.
 } False negatives: {
-mais!
+art.
 }
 
 Expected: {
-a venda em bancas de jornal ou pelo telefone (0800) 11-5353<SPLIT>.}
+"<SPLIT>adeus america<SPLIT>" de jan schutte<SPLIT>, "<SPLIT>o casamento de muriel<SPLIT>" de p.j. hogan<SPLIT>, "<SPLIT>71 fragmentos da cronologia de um acaso<SPLIT>"<SPLIT>, de michael haneke<SPLIT>, "<SPLIT>fresh<SPLIT>" de boaz yakin<SPLIT>, "<SPLIT>venus de neve<SPLIT>" de sotiris gortisas<SPLIT>, "<SPLIT>costas as costas , cara a cara<SPLIT>" de huang jianxin<SPLIT>, "<SPLIT>rainha bandida<SPLIT>" de shekkar kapur<SPLIT>, "<SPLIT>sem pele<SPLIT>" de alessandro d'<SPLIT>allatri<SPLIT>, "<SPLIT>wrony<SPLIT>" de dorota kedzierzawska<SPLIT>, "<SPLIT>tres palmeiras<SPLIT>" de joao botelho<SPLIT>, "<SPLIT>katia ismailova<SPLIT>" de valeri todorovski<SPLIT>, "<SPLIT>os silencios do palacio<SPLIT>" de moufida tiati e o filme coletivo "<SPLIT>homem, deus e monstro<SPLIT>"<SPLIT>.}
 Predicted: {
-a venda em bancas de jornal ou pelo telefone (<SPLIT>0800<SPLIT>) 11-5353<SPLIT>.}
+"<SPLIT>adeus america<SPLIT>" de jan schutte<SPLIT>, "<SPLIT>o casamento de muriel<SPLIT>" de p.j. hogan<SPLIT>, "<SPLIT>71 fragmentos da cronologia de um acaso<SPLIT>"<SPLIT>, de michael haneke<SPLIT>, "<SPLIT>fresh<SPLIT>" de boaz yakin<SPLIT>, "<SPLIT>venus de neve<SPLIT>" de sotiris gortisas<SPLIT>, "<SPLIT>costas as costas , cara a cara<SPLIT>" de huang jianxin<SPLIT>, "<SPLIT>rainha bandida<SPLIT>" de shekkar kapur<SPLIT>, "<SPLIT>sem pele<SPLIT>" de alessandro d'<SPLIT>allatri<SPLIT>, "<SPLIT>wrony<SPLIT>" de dorota kedzierzawska<SPLIT>, "<SPLIT>tres palmeiras<SPLIT>" de joao botelho<SPLIT>, "<SPLIT>katia ismailova<SPLIT>" de valeri todorovski<SPLIT>, "<SPLIT>os silencios do palacio<SPLIT>" de moufida tiati e o filme coletivo "<SPLIT>homem<SPLIT>, deus e monstro<SPLIT>"<SPLIT>.}
+False positives: {
+homem
+,
+} False negatives: {
+homem,
+}
+
+Expected: {
+montoro disse que sobre esses us$ 15 bilhoes o governo deixa de pagar us$ 1,5 bilhao<SPLIT>/<SPLIT>ano de juros anuais<SPLIT>, mais us$ 1,5 bilhao<SPLIT>/<SPLIT>ano em amortizacoes de dividas e mais us$ 2 bilhoes<SPLIT>/<SPLIT>ano em aportes de capitais as empresas<SPLIT>.}
+Predicted: {
+montoro disse que sobre esses us$ 15 bilhoes o governo deixa de pagar us$ 1,5 bilhao/ano de juros anuais<SPLIT>, mais us$ 1,5 bilhao/ano em amortizacoes de dividas e mais us$ 2 bilhoes/ano em aportes de capitais as empresas<SPLIT>.}
+False positives: {
+bilhao/ano
+bilhao/ano
+bilhoes/ano
+} False negatives: {
+bilhao
+/
+ano
+bilhao
+/
+ano
+bilhoes
+/
+ano
+}
+
+Expected: {
+o nivel de detalhamento do atlas folha/"the new york times" nao tem similar no mercado brasileiro<SPLIT>.}
+Predicted: {
+o nivel de detalhamento do atlas folha<SPLIT>/<SPLIT>"<SPLIT>the new york times<SPLIT>" nao tem similar no mercado brasileiro<SPLIT>.}
+False positives: {
+folha
+/
+"
+the
+times
+"
+} False negatives: {
+folha/"the
+times"
+}
+
+Expected: {
+todos os fax<SPLIT>/<SPLIT>modem saem de fabrica com dois programas um para gerenciamento das transmissoes dfa e outro para gerenciamento das transmissoes de dados<SPLIT>.}
+Predicted: {
+todos os fax<SPLIT>/modem saem de fabrica com dois programas um para gerenciamento das transmissoes dfa e outro para gerenciamento das transmissoes de dados<SPLIT>.}
+False positives: {
+/modem
+} False negatives: {
+/
+modem
+}
+
+Expected: {
+o plantio no cerrado atingiu 5.000 kg<SPLIT>/<SPLIT>ha nas lavouras comerciais e mais de 8.000 kg<SPLIT>/<SPLIT>ha em areas experimentais<SPLIT>.}
+Predicted: {
+o plantio no cerrado atingiu 5.000 kg/ha nas lavouras comerciais e mais de 8.000 kg/ha em areas experimentais<SPLIT>.}
+False positives: {
+kg/ha
+kg/ha
+} False negatives: {
+kg
+/
+ha
+kg
+/
+ha
+}
+
+Expected: {
+art. 2o e obrigatoria a expressao dos valores em cruzeiros reais nas notas fiscais<SPLIT>.}
+Predicted: {
+art<SPLIT>. 2o e obrigatoria a expressao dos valores em cruzeiros reais nas notas fiscais<SPLIT>.}
+False positives: {
+art
+.
+} False negatives: {
+art.
+}
+
+Expected: {
+1. o publico veio dar a imprensa diaria portuguesa uma nova dimensao e<SPLIT>, pelo seu aparecimento<SPLIT>, obrigou os "<SPLIT>grandes<SPLIT>" (<SPLIT>"<SPLIT>jn<SPLIT>" e "<SPLIT>dn<SPLIT>"<SPLIT>) a reformular a sua postura e tambem o seu grafismo<SPLIT>.}
+Predicted: {
+1<SPLIT>. o publico veio dar a imprensa diaria portuguesa uma nova dimensao e<SPLIT>, pelo seu aparecimento<SPLIT>, obrigou os "<SPLIT>grandes<SPLIT>" (<SPLIT>"<SPLIT>jn<SPLIT>" e "<SPLIT>dn<SPLIT>"<SPLIT>) a reformular a sua postura e tambem o seu grafismo<SPLIT>.}
+False positives: {
+1
+.
+} False negatives: {
+1.
+}
+
+Expected: {
+mas e essa a ideia<SPLIT>: para ja promover este encontro<SPLIT>, reunir ideias<SPLIT>, depois se resultar material comecar a incorpora-lo e dar forma a um '<SPLIT>site<SPLIT>' que tem sede simbolica em sagres<SPLIT>.<SPLIT>"}
+Predicted: {
+mas e essa a ideia<SPLIT>: para ja promover este encontro<SPLIT>, reunir ideias<SPLIT>, depois se resultar material comecar a incorpora-lo e dar forma a um 'site<SPLIT>' que tem sede simbolica em sagres<SPLIT>.<SPLIT>"}
+False positives: {
+'site
+} False negatives: {
+'
+site
+}
+
+Expected: {
+botelho da costa garantiu tambem que o orcamento para 98<SPLIT>/<SPLIT>99 sera entrega a<SPLIT>o conselho fiscal a tempo de ser analisado por este<SPLIT>, provavelmente "<SPLIT>no final desta semana<SPLIT>, inicio da proxima<SPLIT>"<SPLIT>.}
+Predicted: {
+botelho da costa garantiu tambem que o orcamento para 98/99 sera entrega a<SPLIT>o conselho fiscal a tempo de ser analisado por este<SPLIT>, provavelmente "<SPLIT>no final desta semana<SPLIT>, inicio da proxima<SPLIT>"<SPLIT>.}
+False positives: {
+98/99
+} False negatives: {
+98
+/
+99
+}
+
+Expected: {
+se for a bem<SPLIT>, tudo bem<SPLIT>; se for a mal<SPLIT>, arranja-se ai um '<SPLIT>31<SPLIT>' que so o tribunal resolve<SPLIT>.}
+Predicted: {
+se for a bem<SPLIT>, tudo bem<SPLIT>; se for a mal<SPLIT>, arranja-se ai um '31<SPLIT>' que so o tribunal resolve<SPLIT>.}
+False positives: {
+'31
+} False negatives: {
+'
+31
+}
+
+Expected: {
+judo (<SPLIT>52.500 contos<SPLIT>)<SPLIT>nelson bras<SPLIT>,<SPLIT>silvia henriques<SPLIT>,<SPLIT>pedro caravana<SPLIT>,<SPLIT>michel almeida<SPLIT>,<SPLIT>guilherme bentes<SPLIT>,<SPLIT>pedro soares e filipa cavalleri<SPLIT>.}
+Predicted: {
+judo (<SPLIT>52.500 contos<SPLIT>)nelson bras<SPLIT>,silvia henriques<SPLIT>,<SPLIT>pedro caravana<SPLIT>,<SPLIT>michel almeida<SPLIT>,guilherme bentes<SPLIT>,<SPLIT>pedro soares e filipa cavalleri<SPLIT>.}
+False positives: {
+)nelson
+,silvia
+,guilherme
+} False negatives: {
+)
+nelson
+,
+silvia
+,
+guilherme
+}
+
+Expected: {
+o alverca foi feliz e conseguiu o golo logo a<SPLIT>os 4'<SPLIT>.}
+Predicted: {
+o alverca foi feliz e conseguiu o golo logo a<SPLIT>os 4<SPLIT>'<SPLIT>.}
+False positives: {
+4
+'
+} False negatives: {
+4'
+}
+
+Expected: {
+o decreto regulamentar 19/91 (b) descobriu que a factura e a guia de remessa permitem controlar o efectivo caracter<SPLIT>, publico ou particular<SPLIT>, do transporte<SPLIT>, pelo que acabou com a guia de transporte<SPLIT>.}
+Predicted: {
+o decreto regulamentar 19/91 (<SPLIT>b<SPLIT>) descobriu que a factura e a guia de remessa permitem controlar o efectivo caracter<SPLIT>, publico ou particular<SPLIT>, do transporte<SPLIT>, pelo que acabou com a guia de transporte<SPLIT>.}
 False positives: {
 (
-0800
+b
 )
 } False negatives: {
-(0800)
+(b)
 }
 
 Expected: {
-media e de 4 passageiros<SPLIT>/<SPLIT>viagem}
+quem brilhou de manha foi lucrecia jardim (<SPLIT>benfica<SPLIT>)<SPLIT>, na eliminatoria de 200m<SPLIT>.}
 Predicted: {
-media e de 4 passageiros/viagem}
+quem brilhou de manha foi lucrecia jardim (<SPLIT>benfica<SPLIT>)<SPLIT>, na eliminatoria de 200<SPLIT>m<SPLIT>.}
 False positives: {
-passageiros/viagem
-} False negatives: {
-passageiros
-/
-viagem
-}
-
-Expected: {
-no periodo mais seco<SPLIT>, quando as chuvas nao passam de dez milimetros<SPLIT>/<SPLIT>mes<SPLIT>, os produtores plantam soja<SPLIT>, que exige menos agua<SPLIT>.}
-Predicted: {
-no periodo mais seco<SPLIT>, quando as chuvas nao passam de dez milimetros/mes<SPLIT>, os produtores plantam soja<SPLIT>, que exige menos agua<SPLIT>.}
-False positives: {
-milimetros/mes
-} False negatives: {
-milimetros
-/
-mes
-}
-
-Expected: {
-esses sao os anos em que elvis deixou de ser o rei do rock'n'roll para tornar-se o simbolo pre-fabricado de uma geracao que sonhava com honolulu e pracinhas<SPLIT>.}
-Predicted: {
-esses sao os anos em que elvis deixou de ser o rei do rock'<SPLIT>n'roll para tornar-se o simbolo pre-fabricado de uma geracao que sonhava com honolulu e pracinhas<SPLIT>.}
-False positives: {
-rock'
-n'roll
-} False negatives: {
-rock'n'roll
-}
-
-Expected: {
-"<SPLIT>este homem mete medo<SPLIT>...<SPLIT>"}
-Predicted: {
-"<SPLIT>este homem mete medo...<SPLIT>"}
-False positives: {
-medo...
-} False negatives: {
-medo
-...
-}
-
-Expected: {
-nos ultimos meses ainda conseguiu escapar-se e ver "<SPLIT>eu, feuerbach<SPLIT>"<SPLIT>, pelo cendrev<SPLIT>, em evora<SPLIT>, e "<SPLIT>a opera do malandro<SPLIT>"<SPLIT>, pelo seiva troupe<SPLIT>, no porto<SPLIT>.}
-Predicted: {
-nos ultimos meses ainda conseguiu escapar-se e ver "<SPLIT>eu<SPLIT>, feuerbach<SPLIT>"<SPLIT>, pelo cendrev<SPLIT>, em evora<SPLIT>, e "<SPLIT>a opera do malandro<SPLIT>"<SPLIT>, pelo seiva troupe<SPLIT>, no porto<SPLIT>.}
-False positives: {
-eu
-,
-} False negatives: {
-eu,
-}
-
-Expected: {
-a acabar confirmou a sua regularidade com 61,87<SPLIT>m<SPLIT>, 62,84<SPLIT>m e 63,09<SPLIT>m<SPLIT>.}
-Predicted: {
-a acabar confirmou a sua regularidade com 61,87m<SPLIT>, 62,84m e 63,09m<SPLIT>.}
-False positives: {
-61,87m
-62,84m
-63,09m
-} False negatives: {
-61,87
+200
 m
-62,84
-m
-63,09
+} False negatives: {
+200m
+}
+
+Expected: {
+destaque para a subida do tourmalet<SPLIT>, a 2115<SPLIT>m de altitude<SPLIT>, que e uma das montanhas miticas da volta a franca<SPLIT>.}
+Predicted: {
+destaque para a subida do tourmalet<SPLIT>, a 2115m de altitude<SPLIT>, que e uma das montanhas miticas da volta a franca<SPLIT>.}
+False positives: {
+2115m
+} False negatives: {
+2115
 m
 }
 
 Expected: {
-e.g.<SPLIT>: a a.b.p.<SPLIT>ganhou bastante e acrescento que nunca houve em delegacao nenhuma<SPLIT>,<SPLIT>uma tao grande afluencia de socios para a votacao<SPLIT>,<SPLIT>como se verificou nestas eleicoes<SPLIT>.}
+ja no dominio da industria<SPLIT>, inaugura as instalacoes da dan<SPLIT>&<SPLIT>cake<SPLIT>, em alverca<SPLIT>, e visita uma empresa de flores e o centro tecnologico da cortica<SPLIT>, a 6<SPLIT>, no montijo<SPLIT>.}
 Predicted: {
-e.g.<SPLIT>: a a<SPLIT>.b.p.ganhou bastante e acrescento que nunca houve em delegacao nenhuma<SPLIT>,<SPLIT>uma tao grande afluencia de socios para a votacao<SPLIT>,<SPLIT>como se verificou nestas eleicoes<SPLIT>.}
+ja no dominio da industria<SPLIT>, inaugura as instalacoes da dan&cake<SPLIT>, em alverca<SPLIT>, e visita uma empresa de flores e o centro tecnologico da cortica<SPLIT>, a 6<SPLIT>, no montijo<SPLIT>.}
 False positives: {
-a
-.b.p.ganhou
+dan&cake
 } False negatives: {
-a.b.p.
-ganhou
+dan
+&
+cake
 }
 
 Expected: {
-as 17 horas<SPLIT>,<SPLIT>pode ser visto "<SPLIT>adamubies<SPLIT>" (<SPLIT>titulo de um poema de guimaraes rosa<SPLIT>)<SPLIT>,<SPLIT>projecto de musica cenica onde textos de miguel torga<SPLIT>,<SPLIT>clarice lispector<SPLIT>,<SPLIT>joao guimaraes rosa e agustina bessa-luis surgirao "<SPLIT>vestidos<SPLIT>" com musicas reinventadas a partir de matrizes populares do brasil<SPLIT>,<SPLIT>africa e portugal<SPLIT>.}
+"<SPLIT>depois de ouvirmos o depoimento do eng. pedro rodrigues ficamos com algumas duvidas relativas a<SPLIT>os concursos publicos e penso que ha aqui algumas questoes que o proprio governo nao conhecia<SPLIT>"<SPLIT>, afirmou carlos duarte a<SPLIT>o publico ha duas semanas<SPLIT>.}
 Predicted: {
-as 17 horas<SPLIT>,pode ser visto "<SPLIT>adamubies<SPLIT>" (<SPLIT>titulo de um poema de guimaraes rosa<SPLIT>)<SPLIT>,<SPLIT>projecto de musica cenica onde textos de miguel torga<SPLIT>,<SPLIT>clarice lispector,joao guimaraes rosa e agustina bessa-luis surgirao "<SPLIT>vestidos<SPLIT>" com musicas reinventadas a partir de matrizes populares do brasil<SPLIT>,africa e portugal<SPLIT>.}
+"<SPLIT>depois de ouvirmos o depoimento do eng<SPLIT>. pedro rodrigues ficamos com algumas duvidas relativas a<SPLIT>os concursos publicos e penso que ha aqui algumas questoes que o proprio governo nao conhecia<SPLIT>"<SPLIT>, afirmou carlos duarte a<SPLIT>o publico ha duas semanas<SPLIT>.}
 False positives: {
-,pode
-lispector,joao
-,africa
+eng
+.
 } False negatives: {
-,
-pode
-lispector
-,
-joao
-,
-africa
+eng.
 }
 
 Expected: {
-portugal alinha com sandra turpin (<SPLIT>benfica<SPLIT>- 5218 pontos<SPLIT>)<SPLIT>, sonia machado (<SPLIT>individual<SPLIT>- 5061 p<SPLIT>)<SPLIT>, monica sousa (<SPLIT>gd cavadas<SPLIT>- 5122 pontos<SPLIT>) e catarina rafael (<SPLIT>bairro anjos<SPLIT>- 4602 pontos<SPLIT>)<SPLIT>.}
+apos negociacoes com o principal patrocinador da equipa<SPLIT>, a shell<SPLIT>, hardwick entregou um dos "<SPLIT>wild cards<SPLIT>" (<SPLIT>convites<SPLIT>) a felisberto teixeira<SPLIT>, que conta tambem com o apoio da federacao nacional de motociclismo (<SPLIT>fnm<SPLIT>) e esta convicto que o portugues fara bom trabalho<SPLIT>, reconhecendo<SPLIT>, porem<SPLIT>, que qualquer estreia<SPLIT>, e muito especialmente em 500<SPLIT>cc<SPLIT>, e sempre dificil<SPLIT>.}
 Predicted: {
-portugal alinha com sandra turpin (<SPLIT>benfica- 5218 pontos<SPLIT>)<SPLIT>, sonia machado (<SPLIT>individual- 5061 p<SPLIT>)<SPLIT>, monica sousa (<SPLIT>gd cavadas- 5122 pontos<SPLIT>) e catarina rafael (<SPLIT>bairro anjos- 4602 pontos<SPLIT>)<SPLIT>.}
+apos negociacoes com o principal patrocinador da equipa<SPLIT>, a shell<SPLIT>, hardwick entregou um dos "<SPLIT>wild cards<SPLIT>" (<SPLIT>convites<SPLIT>) a felisberto teixeira<SPLIT>, que conta tambem com o apoio da federacao nacional de motociclismo (<SPLIT>fnm<SPLIT>) e esta convicto que o portugues fara bom trabalho<SPLIT>, reconhecendo<SPLIT>, porem<SPLIT>, que qualquer estreia<SPLIT>, e muito especialmente em 500cc<SPLIT>, e sempre dificil<SPLIT>.}
 False positives: {
-benfica-
-individual-
-cavadas-
-anjos-
+500cc
 } False negatives: {
-benfica
--
-individual
--
-cavadas
--
-anjos
--
+500
+cc
 }
 
 Expected: {
-sporting<SPLIT>-<SPLIT>vitoria de setubal e maritimo ou ovarense<SPLIT>-<SPLIT>fc porto<SPLIT>.}
+' nao ha falta de um partido que os defenda , que e o pcp. '}
 Predicted: {
-sporting-vitoria de setubal e maritimo ou ovarense-fc porto<SPLIT>.}
+' nao ha falta de um partido que os defenda , que e o pcp<SPLIT>. '}
 False positives: {
-sporting-vitoria
-ovarense-fc
+pcp
+.
 } False negatives: {
-sporting
--
-vitoria
-ovarense
--
-fc
-}
-
-Expected: {
-ontem a noite<SPLIT>, num clube desportivo de darwin<SPLIT>, muitos australianos sentaram-se a<SPLIT>o lado dos estudantes e levantaram-se para gritar "<SPLIT>viva a missao de paz!<SPLIT>"<SPLIT>, "<SPLIT>viva timor-leste<SPLIT>"<SPLIT>, "<SPLIT>viva xanana<SPLIT>"<SPLIT>, quando esta proxima a chegada do lusitania<SPLIT>.}
-Predicted: {
-ontem a noite<SPLIT>, num clube desportivo de darwin<SPLIT>, muitos australianos sentaram-se a<SPLIT>o lado dos estudantes e levantaram-se para gritar "<SPLIT>viva a missao de paz<SPLIT>!<SPLIT>"<SPLIT>, "<SPLIT>viva timor-leste<SPLIT>"<SPLIT>, "<SPLIT>viva xanana<SPLIT>"<SPLIT>, quando esta proxima a chegada do lusitania<SPLIT>.}
-False positives: {
-paz
-!
-} False negatives: {
-paz!
-}
-
-Expected: {
-o holanda<SPLIT>-<SPLIT>jugoslavia e o argentina<SPLIT>-<SPLIT>inglaterra dos oitavos-de-final<SPLIT>?}
-Predicted: {
-o holanda-jugoslavia e o argentina-inglaterra dos oitavos-de-final<SPLIT>?}
-False positives: {
-holanda-jugoslavia
-argentina-inglaterra
-} False negatives: {
-holanda
--
-jugoslavia
-argentina
--
-inglaterra
-}
-
-Expected: {
-ao longo da semana o banco de portugal cedeu liquidez num montante superior a<SPLIT>o da semana anterior<SPLIT>, tendo mantido as taxas<SPLIT>.}
-Predicted: {
-a<SPLIT>o longo da semana o banco de portugal cedeu liquidez num montante superior a<SPLIT>o da semana anterior<SPLIT>, tendo mantido as taxas<SPLIT>.}
-False positives: {
-a
-o
-} False negatives: {
-ao
-}
-
-Expected: {
-por outro lado<SPLIT>, a dita e gabada "<SPLIT>prova desportiva nacional mais popular<SPLIT>"<SPLIT>, a volta a portugal em bicicleta<SPLIT>, parece que nao o e<SPLIT>:}
-Predicted: {
-por outro lado<SPLIT>, a dita e gabada "<SPLIT>prova desportiva nacional mais popular<SPLIT>"<SPLIT>, a volta a portugal em bicicleta<SPLIT>, parece que nao o e:}
-False positives: {
-e:
-} False negatives: {
-e
-:
-}
-
-Expected: {
-os contactos -- de natureza informal<SPLIT>, nem sequer oficiosos -- tem sido com o sr. subsecretario de estado<SPLIT>-<SPLIT>adjunto da ministra<SPLIT>.}
-Predicted: {
-os contactos -- de natureza informal<SPLIT>, nem sequer oficiosos -- tem sido com o sr. subsecretario de estado-adjunto da ministra<SPLIT>.}
-False positives: {
-estado-adjunto
-} False negatives: {
-estado
--
-adjunto
-}
-
-Expected: {
-o republica da irlanda<SPLIT>- espanha de hoje ja ajudara a definir posicoes<SPLIT>, mas devera ser o espanha<SPLIT>- dinamarca de 17 de novembro que tudo esclarecera<SPLIT>.}
-Predicted: {
-o republica da irlanda- espanha de hoje ja ajudara a definir posicoes<SPLIT>, mas devera ser o espanha- dinamarca de 17 de novembro que tudo esclarecera<SPLIT>.}
-False positives: {
-irlanda-
-espanha-
-} False negatives: {
-irlanda
--
-espanha
--
+pcp.
 }
 
 Expected: {
@@ -388,6 +322,39 @@ a.p.
 }
 
 Expected: {
+esta muito agressiva em_ a versao de isaac stern. "}
+Predicted: {
+esta muito agressiva em_ a versao de isaac stern<SPLIT>. "}
+False positives: {
+stern
+.
+} False negatives: {
+stern.
+}
+
+Expected: {
+a a.p. green industries avancou 1,625 , para 36,125 .}
+Predicted: {
+a a<SPLIT>.p. green industries avancou 1,625 , para 36,125 .}
+False positives: {
+a
+.p.
+} False negatives: {
+a.p.
+}
+
+Expected: {
+paul h. aloe , advogado de_ o proprietario de_ o odeon , keith mcnally , negou as acusacoes .}
+Predicted: {
+paul h<SPLIT>. aloe , advogado de_ o proprietario de_ o odeon , keith mcnally , negou as acusacoes .}
+False positives: {
+h
+.
+} False negatives: {
+h.
+}
+
+Expected: {
 o presidente de_ o conselho de administracao , zane e. barnes , disse que os negocios de_ a southwestern bell estao saudaveis e continuam a crescer .}
 Predicted: {
 o presidente de_ o conselho de administracao , zane e<SPLIT>. barnes , disse que os negocios de_ a southwestern bell estao saudaveis e continuam a crescer .}
@@ -399,91 +366,58 @@ e.
 }
 
 Expected: {
-depois , cancelou a producao de_ as mais importantes aeronaves de_ a marinha , o f-14 e o a-6 .}
+isso tambem inclui , obviamente , o likud e a plataforma de_ o likud. '}
 Predicted: {
-depois , cancelou a producao de_ as mais importantes aeronaves de_ a marinha , o f-14 e o a<SPLIT>-6 .}
+isso tambem inclui , obviamente , o likud e a plataforma de_ o likud<SPLIT>. '}
 False positives: {
-a
--6
+likud
+.
 } False negatives: {
-a-6
+likud.
 }
 
 Expected: {
-executivos em_ a avis inc. , cliente de_ a backer spielvogel , bem como em_ a philips lighting co. , cliente de_ a saatchi , tambem disseram que nao viram qualquer efeito .}
+em_ o hoquei em campo , portugal esta quase a_ o nivel de_ a russia. '}
 Predicted: {
-executivos em_ a avis inc. , cliente de_ a backer spielvogel , bem como em_ a philips lighting co<SPLIT>. , cliente de_ a saatchi , tambem disseram que nao viram qualquer efeito .}
+em_ o hoquei em campo , portugal esta quase a_ o nivel de_ a russia<SPLIT>. '}
 False positives: {
-co
+russia
 .
 } False negatives: {
-co.
+russia.
 }
 
 Expected: {
-a hewlett-packard e uma empresa de palo alto , calif. , fabricante de computadores}
+' os de barro nao sobreviverao a_ o inverno. '}
 Predicted: {
-a hewlett-packard e uma empresa de palo alto , calif<SPLIT>. , fabricante de computadores}
+' os de barro nao sobreviverao a_ o inverno<SPLIT>. '}
 False positives: {
-calif
+inverno
 .
 } False negatives: {
-calif.
+inverno.
 }
 
 Expected: {
-em principio , o joaquim de almeida dobrara o brasseur. '}
+' em_ a verdade , teriamos uma especie de muro de berlim. '}
 Predicted: {
-em principio , o joaquim de almeida dobrara o brasseur<SPLIT>. '}
+' em_ a verdade , teriamos uma especie de muro de berlim<SPLIT>. '}
 False positives: {
-brasseur
+berlim
 .
 } False negatives: {
-brasseur.
+berlim.
 }
 
 Expected: {
-em_ o inicio , em_ a fase de_ os clubes , ouviamos muito jazz , john coltrane e roy ayers. '}
+o presidente nao e um deus. '}
 Predicted: {
-em_ o inicio , em_ a fase de_ os clubes , ouviamos muito jazz , john coltrane e roy ayers<SPLIT>. '}
+o presidente nao e um deus<SPLIT>. '}
 False positives: {
-ayers
+deus
 .
 } False negatives: {
-ayers.
-}
-
-Expected: {
-' se nao podemos viver em_ a republica checa iremos a_ a procura de vida em_ a franca , em_ a belgica , em_ os paises baixos. '}
-Predicted: {
-' se nao podemos viver em_ a republica checa iremos a_ a procura de vida em_ a franca , em_ a belgica , em_ os paises baixos<SPLIT>. '}
-False positives: {
-baixos
-.
-} False negatives: {
-baixos.
-}
-
-Expected: {
-estamos perante uma torre de babel. '}
-Predicted: {
-estamos perante uma torre de babel<SPLIT>. '}
-False positives: {
-babel
-.
-} False negatives: {
-babel.
-}
-
-Expected: {
-fi# -lo em_ o interesse de_ a nossa seguranca e de_ a seguranca de toda a europa. '}
-Predicted: {
-fi# -lo em_ o interesse de_ a nossa seguranca e de_ a seguranca de toda a europa<SPLIT>. '}
-False positives: {
-europa
-.
-} False negatives: {
-europa.
+deus.
 }
 
 Expected: {
@@ -498,14 +432,14 @@ lisboa.
 }
 
 Expected: {
-' por isso , nos assaltamos esse simbolo de_ a cultura americana que e a eurodisney. '}
+' embora tenha perdido algumas batalhas , ganhei sempre as guerras contra a madeira. '}
 Predicted: {
-' por isso , nos assaltamos esse simbolo de_ a cultura americana que e a eurodisney<SPLIT>. '}
+' embora tenha perdido algumas batalhas , ganhei sempre as guerras contra a madeira<SPLIT>. '}
 False positives: {
-eurodisney
+madeira
 .
 } False negatives: {
-eurodisney.
+madeira.
 }
 
 Expected: {
@@ -520,99 +454,37 @@ kelly.
 }
 
 Expected: {
-' e um filme sobre o ultimo momento de inocencia de_ a america. '}
+e a sua vantagem sobre bush. '}
 Predicted: {
-' e um filme sobre o ultimo momento de inocencia de_ a america<SPLIT>. '}
+e a sua vantagem sobre bush<SPLIT>. '}
 False positives: {
-america
+bush
 .
 } False negatives: {
-america.
+bush.
 }
 
 Expected: {
-a pre<SPLIT>-<SPLIT>estreia baiana aconteceu uma semana apos o atentado num cinema numa cidade da california (<SPLIT>estados unidos<SPLIT>)<SPLIT>, em que 12 pessoas morreram vitimas do atirador james holmes<SPLIT>, de 24 anos<SPLIT>.}
+apesar dos numeros<SPLIT>, o cientista politico e professor da puc<SPLIT>-<SPLIT>rj ricardo ismael acredita que ainda e cedo para afirmar se o psol ocupara o lugar que cabia a<SPLIT>o pt<SPLIT>.}
 Predicted: {
-a pre-estreia baiana aconteceu uma semana apos o atentado num cinema numa cidade da california (<SPLIT>estados unidos<SPLIT>)<SPLIT>, em que 12 pessoas morreram vitimas do atirador james holmes<SPLIT>, de 24 anos<SPLIT>.}
+apesar dos numeros<SPLIT>, o cientista politico e professor da puc-rj ricardo ismael acredita que ainda e cedo para afirmar se o psol ocupara o lugar que cabia a<SPLIT>o pt<SPLIT>.}
 False positives: {
-pre-estreia
+puc-rj
 } False negatives: {
-pre
+puc
 -
-estreia
+rj
 }
 
 Expected: {
-bessette nasceu em saint - gregoire - le - grand - de - monnoir<SPLIT>, atual saint - gregoire d'<SPLIT>iberville<SPLIT>, quebec<SPLIT>, uma pequena cidade situada 40 quilometros a leste de montreal<SPLIT>.}
+ja o leao da ilha esta quatro pontos atras da lusa e do tricolor de aco<SPLIT>.}
 Predicted: {
-bessette nasceu em saint - gregoire - le - grand - de - monnoir<SPLIT>, atual saint - gregoire d'iberville<SPLIT>, quebec<SPLIT>, uma pequena cidade situada 40 quilometros a leste de montreal<SPLIT>.}
+ja o leao da ilha esta quatro pontos atras da lusa e do tricolor de aco.}
 False positives: {
-d'iberville
+aco.
 } False negatives: {
-d'
-iberville
-}
-
-Expected: {
-face a reiterada ausencia e a paulatina transferencia do centro da diocese para ponta delgada<SPLIT>, o cabido apresentou queixa a<SPLIT>o rei<SPLIT>, que em 1772 mandou o prelado recolher a sua se.}
-Predicted: {
-face a reiterada ausencia e a paulatina transferencia do centro da diocese para ponta delgada<SPLIT>, o cabido apresentou queixa a<SPLIT>o rei<SPLIT>, que em 1772 mandou o prelado recolher a sua se<SPLIT>.}
-False positives: {
-se
+aco
 .
-} False negatives: {
-se.
-}
-
-Expected: {
-derivados do isopentano ou metilbutano (<SPLIT>ch3<SPLIT>) 2 - ch - ch2 - ch3 ==== ====}
-Predicted: {
-derivados do isopentano ou metilbutano (<SPLIT>ch3<SPLIT>) 2 - ch - ch2 - ch3 =<SPLIT>=<SPLIT>=<SPLIT>= =<SPLIT>=<SPLIT>=<SPLIT>=}
-False positives: {
-=
-=
-=
-=
-=
-=
-=
-=
-} False negatives: {
-====
-====
-}
-
-Expected: {
-e em 2008 editou aos olhos de deus<SPLIT>, novamente a partir dum facto historico<SPLIT>, desta vez a grande embaixada enviada a<SPLIT>o papa leao x pelo rei d. manuel i<SPLIT>, m 1514 e em 2011 editou a terra toda<SPLIT>.}
-Predicted: {
-e em 2008 editou a<SPLIT>os olhos de deus<SPLIT>, novamente a partir dum facto historico<SPLIT>, desta vez a grande embaixada enviada a<SPLIT>o papa leao x pelo rei d. manuel i<SPLIT>, m 1514 e em 2011 editou a terra toda<SPLIT>.}
-False positives: {
-a
-os
-} False negatives: {
-aos
-}
-
-Expected: {
-vr<SPLIT>: outro entrevistado desta serie de abordagens que nos estamos fazendo<SPLIT>, o dr<SPLIT>.}
-Predicted: {
-vr<SPLIT>: outro entrevistado desta serie de abordagens que nos estamos fazendo<SPLIT>, o dr.}
-False positives: {
-dr.
-} False negatives: {
-dr
-.
-}
-
-Expected: {
-10 dias sem custos ** apos este periodo<SPLIT>, custo de r $ 0,31 + imp<SPLIT>.}
-Predicted: {
-10 dias sem custos *<SPLIT>* apos este periodo<SPLIT>, custo de r $ 0,31 + imp<SPLIT>.}
-False positives: {
-*
-*
-} False negatives: {
-**
 }
 
 Expected: {
@@ -630,9 +502,42 @@ art.
 }
 
 Expected: {
-os turcos visitaram primeiramente o estadio municipal dr<SPLIT>.}
+em seu livro the evening crowd at kirmser 's<SPLIT>: a gay life in the 1940s<SPLIT>, ricardo j. brown confirma que quando esteve em nova iorque<SPLIT>, vira "<SPLIT>a lot of queer people in the theater and the movies<SPLIT>"<SPLIT>, entre eles tyrone power e tallulah bankhead<SPLIT>.}
 Predicted: {
-os turcos visitaram primeiramente o estadio municipal dr.}
+em seu livro the evening crowd at kirmser '<SPLIT>s<SPLIT>: a gay life in the 1940s<SPLIT>, ricardo j. brown confirma que quando esteve em nova iorque<SPLIT>, vira "<SPLIT>a lot of queer people in the theater and the movies<SPLIT>"<SPLIT>, entre eles tyrone power e tallulah bankhead<SPLIT>.}
+False positives: {
+'
+s
+} False negatives: {
+'s
+}
+
+Expected: {
+recebeu o premio chauvenet em 1972<SPLIT>, pela publicacao on local solvability of linear partial differential equations<SPLIT>, bulletin da american mathematical society<SPLIT>, 76:552<SPLIT>, 1970<SPLIT>.}
+Predicted: {
+recebeu o premio chauvenet em 1972<SPLIT>, pela publicacao on local solvability of linear partial differential equations<SPLIT>, bulletin da american mathematical society<SPLIT>, 76<SPLIT>:552<SPLIT>, 1970<SPLIT>.}
+False positives: {
+76
+:552
+} False negatives: {
+76:552
+}
+
+Expected: {
+este asteroide foi descoberto em 27 de janeiro de 1993 por e. elst<SPLIT>.}
+Predicted: {
+este asteroide foi descoberto em 27 de janeiro de 1993 por e<SPLIT>. elst<SPLIT>.}
+False positives: {
+e
+.
+} False negatives: {
+e.
+}
+
+Expected: {
+bebericando um dr<SPLIT>.}
+Predicted: {
+bebericando um dr.}
 False positives: {
 dr.
 } False negatives: {
@@ -641,219 +546,71 @@ dr
 }
 
 Expected: {
-cada bilhete possui 10 fracoes e a premiacao e proporcional ao que voce adquire<SPLIT>.}
+vasari descreve nas vite a encomenda a baccio d'<SPLIT>agnolo dum novo palacio<SPLIT>, edificado sobre um pre - existente edificio senhorial da mesma familia documentado<SPLIT>, pelo menos<SPLIT>, desde 1435<SPLIT>.}
 Predicted: {
-cada bilhete possui 10 fracoes e a premiacao e proporcional a<SPLIT>o que voce adquire<SPLIT>.}
+vasari descreve nas vite a encomenda a baccio d'agnolo dum novo palacio<SPLIT>, edificado sobre um pre - existente edificio senhorial da mesma familia documentado<SPLIT>, pelo menos<SPLIT>, desde 1435<SPLIT>.}
 False positives: {
-a
-o
-} False negatives: {
-ao
-}
-
-Expected: {
-a ex<SPLIT>-<SPLIT>apresentadora do casseta & planeta disse em entrevista a<SPLIT>o programa confissoes do apocalipse<SPLIT>, que vai a<SPLIT>o ar no canal pago gnt nesta sexta - feira (<SPLIT>6<SPLIT>)<SPLIT>, que todos os cassetas ja tentaram leva - la para a cama<SPLIT>.}
-Predicted: {
-a ex-apresentadora do casseta & planeta disse em entrevista a<SPLIT>o programa confissoes do apocalipse<SPLIT>, que vai a<SPLIT>o ar no canal pago gnt nesta sexta - feira (<SPLIT>6<SPLIT>)<SPLIT>, que todos os cassetas ja tentaram leva - la para a cama<SPLIT>.}
-False positives: {
-ex-apresentadora
-} False negatives: {
-ex
--
-apresentadora
-}
-
-Expected: {
-ela fez tambem varias aparicoes na televisao<SPLIT>, incluindo no papel de jill<SPLIT>, a recepcionista da "<SPLIT>pear tree productions<SPLIT>"<SPLIT>, num episodio da serie i'm alan partridge<SPLIT>, uma dominatrix rural em doc martin assim como papeis em midsomer murders e coronation street<SPLIT>.}
-Predicted: {
-ela fez tambem varias aparicoes na televisao<SPLIT>, incluindo no papel de jill<SPLIT>, a recepcionista da "<SPLIT>pear tree productions<SPLIT>"<SPLIT>, num episodio da serie i'<SPLIT>m alan partridge<SPLIT>, uma dominatrix rural em doc martin assim como papeis em midsomer murders e coronation street<SPLIT>.}
-False positives: {
-i'
-m
-} False negatives: {
-i'm
-}
-
-Expected: {
-um usuario do yahoo! 23 horas atras quem vive de boca e cantor ....}
-Predicted: {
-um usuario do yahoo<SPLIT>! 23 horas atras quem vive de boca e cantor ....}
-False positives: {
-yahoo
-!
-} False negatives: {
-yahoo!
-}
-
-Expected: {
-a prefeitura municipal de campo grande realiza amanha (<SPLIT>21<SPLIT>)<SPLIT>, a partir das 19h30min na praca do radio clube<SPLIT>, a ultima edicao de 2012 da noite seresta especial com odair jose<SPLIT>.}
-Predicted: {
-a prefeitura municipal de campo grande realiza amanha (<SPLIT>21<SPLIT>)<SPLIT>, a partir das 19h30<SPLIT>min na praca do radio clube<SPLIT>, a ultima edicao de 2012 da noite seresta especial com odair jose<SPLIT>.}
-False positives: {
-19h30
-min
-} False negatives: {
-19h30min
-}
-
-Expected: {
-e agora vem a rede 4g<SPLIT>, que vai precisar duma densidade de torres maior do que a existente hoje com o 3g<SPLIT>.}
-Predicted: {
-e agora vem a rede 4g<SPLIT>, que vai precisar duma densidade de torres maior do que a existente hoje com o 3g.}
-False positives: {
-3g.
-} False negatives: {
-3g
-.
-}
-
-Expected: {
-de ai<SPLIT>, dirigem - se a<SPLIT>o nucleo anterior do talamo atraves do feixe mamilo - talamico de vicq d'<SPLIT>azyr<SPLIT>.}
-Predicted: {
-de ai<SPLIT>, dirigem - se a<SPLIT>o nucleo anterior do talamo atraves do feixe mamilo - talamico de vicq d'azyr<SPLIT>.}
-False positives: {
-d'azyr
+d'agnolo
 } False negatives: {
 d'
-azyr
+agnolo
 }
 
 Expected: {
-possui uma declinacao de +18 ° 13 '<SPLIT>03 "<SPLIT>e uma ascensao recta de 2 horas<SPLIT>, 42 minutos e 15,8 segundos<SPLIT>.}
+vice - campeao em queen 's<SPLIT>, david nalbandian pagou caro pelo seu destempero na decisao<SPLIT>.}
 Predicted: {
-possui uma declinacao de +18 ° 13 '03 "<SPLIT>e uma ascensao recta de 2 horas<SPLIT>, 42 minutos e 15,8 segundos<SPLIT>.}
+vice - campeao em queen '<SPLIT>s<SPLIT>, david nalbandian pagou caro pelo seu destempero na decisao<SPLIT>.}
 False positives: {
-'03
-} False negatives: {
 '
-03
+s
+} False negatives: {
+'s
 }
 
 Expected: {
-thierry da alsacia ou teodorico da alsacia (<SPLIT>c. 1110 -- 17 de janeiro de 1168<SPLIT>) foi conde de flandres de 1128 a 1168<SPLIT>.}
+a intervencao integra as obras do macrossistema de esgoto de fortaleza<SPLIT>, onde estao sendo assentados 22km de tubulacao de esgoto de grande porte<SPLIT>.}
 Predicted: {
-thierry da alsacia ou teodorico da alsacia (<SPLIT>c<SPLIT>. 1110 -- 17 de janeiro de 1168<SPLIT>) foi conde de flandres de 1128 a 1168<SPLIT>.}
+a intervencao integra as obras do macrossistema de esgoto de fortaleza<SPLIT>, onde estao sendo assentados 22<SPLIT>km de tubulacao de esgoto de grande porte<SPLIT>.}
 False positives: {
-c
-.
+22
+km
 } False negatives: {
-c.
+22km
 }
 
 Expected: {
-o controle destas atividades e sua sistematizacao<SPLIT>, porem<SPLIT>, sempre foram tenues<SPLIT>, o que levou a criacao dum grupo de trabalho em abril deste ano para elaborar diagnostico<SPLIT>, com base nas pesquisas avaliativas realizadas pelo instituto de pesquisa economica aplicada (<SPLIT>ipea<SPLIT>) e nos relatorios de auditoria realizados pela controladoria - geral da uniao<SPLIT>, segundo informacoes do site do minc<SPLIT>.}
+os investimentos nesta area aumentaram 6<SPLIT>% em 2015<SPLIT>, para $<SPLIT>221<SPLIT>bn<SPLIT>.}
 Predicted: {
-o controle destas atividades e sua sistematizacao<SPLIT>, porem<SPLIT>, sempre foram tenues<SPLIT>, o que levou a criacao dum grupo de trabalho em abril deste ano para elaborar diagnostico<SPLIT>, com base nas pesquisas avaliativas realizadas pelo instituto de pesquisa economica aplicada (<SPLIT>ipea<SPLIT>) e nos relatorios de auditoria realizados pela controladoria - geral da uniao<SPLIT>, segundo informacoes do site do minc.}
+os investimentos nesta area aumentaram 6<SPLIT>% em 2015<SPLIT>, para $221bn<SPLIT>.}
 False positives: {
-minc.
+$221bn
 } False negatives: {
-minc
-.
+$
+221
+bn
 }
 
 Expected: {
-"<SPLIT>aos que questionam o corte<SPLIT>, explicamos a necessidade deste trabalho<SPLIT>.}
+seu orcamento anual e maior que $<SPLIT>1.4 bilhoes e emprega mais de 6.000 pessoas<SPLIT>.}
 Predicted: {
-"<SPLIT>a<SPLIT>os que questionam o corte<SPLIT>, explicamos a necessidade deste trabalho<SPLIT>.}
+seu orcamento anual e maior que $1.4 bilhoes e emprega mais de 6.000 pessoas<SPLIT>.}
 False positives: {
-a
-os
+$1.4
 } False negatives: {
-aos
+$
+1.4
 }
 
 Expected: {
-os whigs acreditavam que jones<SPLIT>, amplamente conhecido como bom orador<SPLIT>, divertido e contador de historias<SPLIT>, era sua melhor estrategia para derrotar o incumbente eloquente e espirituoso<SPLIT>, james k. polk<SPLIT>.}
+ela comecou no rsc no meio dos anos sessenta<SPLIT>, atuando como internada de asilo no marat<SPLIT>/<SPLIT>sade<SPLIT>.}
 Predicted: {
-os whigs acreditavam que jones<SPLIT>, amplamente conhecido como bom orador<SPLIT>, divertido e contador de historias<SPLIT>, era sua melhor estrategia para derrotar o incumbente eloquente e espirituoso<SPLIT>, james k<SPLIT>. polk<SPLIT>.}
+ela comecou no rsc no meio dos anos sessenta<SPLIT>, atuando como internada de asilo no marat/sade<SPLIT>.}
 False positives: {
-k
-.
+marat/sade
 } False negatives: {
-k.
-}
-
-Expected: {
-a unica igreja catolica do lugar e uma maravilha a parte<SPLIT>, construcao provavelmente da decada de 80 para 90 se mantem intacta e muito bem conservada pelos moradores<SPLIT>, igreja que tem como padroeira nossa senhora da luz.}
-Predicted: {
-a unica igreja catolica do lugar e uma maravilha a parte<SPLIT>, construcao provavelmente da decada de 80 para 90 se mantem intacta e muito bem conservada pelos moradores<SPLIT>, igreja que tem como padroeira nossa senhora da luz<SPLIT>.}
-False positives: {
-luz
-.
-} False negatives: {
-luz.
-}
-
-Expected: {
-lembro que essa estrategia vivida pelo psb hoje e muito semelhante ao que o pt teve ha dez<SPLIT>, 12 anos<SPLIT>.}
-Predicted: {
-lembro que essa estrategia vivida pelo psb hoje e muito semelhante a<SPLIT>o que o pt teve ha dez<SPLIT>, 12 anos<SPLIT>.}
-False positives: {
-a
-o
-} False negatives: {
-ao
-}
-
-Expected: {
-no entanto<SPLIT>, em conjunto com a paroquia de aver<SPLIT>-<SPLIT>o<SPLIT>-<SPLIT>mar<SPLIT>, a paroquia encontra - se a esbocar uma igreja interparoquial de grandes dimensoes<SPLIT>, dado que a construcao em altura domina o agro - velho<SPLIT>.}
-Predicted: {
-no entanto<SPLIT>, em conjunto com a paroquia de aver-o-mar<SPLIT>, a paroquia encontra - se a esbocar uma igreja interparoquial de grandes dimensoes<SPLIT>, dado que a construcao em altura domina o agro - velho<SPLIT>.}
-False positives: {
-aver-o-mar
-} False negatives: {
-aver
--
-o
--
-mar
-}
-
-Expected: {
-garotinho tem acusado cabral de<SPLIT>, num primeiro momento<SPLIT>, boicotar a manifestacao desta segunda<SPLIT>-<SPLIT>feira e<SPLIT>, depois<SPLIT>, querer "<SPLIT>passar por lider da passeata<SPLIT>"<SPLIT>.}
-Predicted: {
-garotinho tem acusado cabral de<SPLIT>, num primeiro momento<SPLIT>, boicotar a manifestacao desta segunda-feira e<SPLIT>, depois<SPLIT>, querer "<SPLIT>passar por lider da passeata<SPLIT>"<SPLIT>.}
-False positives: {
-segunda-feira
-} False negatives: {
-segunda
--
-feira
-}
-
-Expected: {
-nao deve haver acesso privilegiado a<SPLIT>o governo<SPLIT>, ou aparente acesso privilegiado<SPLIT>, concedido a individuos ou a organizacoes porque fizeram contribuicoes economicas para os politicos e para os partidos politicos<SPLIT>, le<SPLIT>-<SPLIT>se nas diretrizes<SPLIT>.}
-Predicted: {
-nao deve haver acesso privilegiado a<SPLIT>o governo<SPLIT>, ou aparente acesso privilegiado<SPLIT>, concedido a individuos ou a organizacoes porque fizeram contribuicoes economicas para os politicos e para os partidos politicos<SPLIT>, le-se nas diretrizes<SPLIT>.}
-False positives: {
-le-se
-} False negatives: {
-le
--
-se
-}
-
-Expected: {
-o norman e um dos meus melhores amigos<SPLIT>, entao foi pessimo ve<SPLIT>-<SPLIT>lo naquele estado emocional<SPLIT>.}
-Predicted: {
-o norman e um dos meus melhores amigos<SPLIT>, entao foi pessimo ve<SPLIT>-lo naquele estado emocional<SPLIT>.}
-False positives: {
--lo
-} False negatives: {
--
-lo
-}
-
-Expected: {
-esta e tambem a unica regiao do alasca em que a temperatura media maxima diurna esta acima de 0<SPLIT>°<SPLIT>c durante os meses de inverno<SPLIT>.}
-Predicted: {
-esta e tambem a unica regiao do alasca em que a temperatura media maxima diurna esta acima de 0°c durante os meses de inverno<SPLIT>.}
-False positives: {
-0°c
-} False negatives: {
-0
-°
-c
+marat
+/
+sade
 }
 
 Expected: {
@@ -869,120 +626,194 @@ lhe
 }
 
 Expected: {
-em 1.o de janeiro<SPLIT>, 49 a.c.<SPLIT>, marco antonio leu uma declaracao de cesar<SPLIT>, na qual o pro-consul declarou<SPLIT>-<SPLIT>se um amigo da paz<SPLIT>.}
+depois da sensacao do aberto da australia<SPLIT>, a jogadora de 28 anos perdeu pela primeira vez na partida final contra serena williams<SPLIT>.}
 Predicted: {
-em 1.o de janeiro<SPLIT>, 49 a.c.<SPLIT>, marco antonio leu uma declaracao de cesar<SPLIT>, na qual o pro-consul declarou-se um amigo da paz<SPLIT>.}
+depois da sensacao do aberto da australia<SPLIT>, a jogadora de 28 anos perdeu pela primeira vez na partida final contra serena williams.}
 False positives: {
-declarou-se
+williams.
 } False negatives: {
-declarou
--
-se
-}
-
-Expected: {
-a carburacao da pastilha do precursor era realizada da forma padrao<SPLIT>, resfriada sob fluxo de 120 m<SPLIT>l min-1 de h2 ate a temperatura ambiente e transferida novamente para a celula de iv na camara seca<SPLIT>.}
-Predicted: {
-a carburacao da pastilha do precursor era realizada da forma padrao<SPLIT>, resfriada sob fluxo de 120 ml min-1 de h2 ate a temperatura ambiente e transferida novamente para a celula de iv na camara seca<SPLIT>.}
-False positives: {
-ml
-} False negatives: {
-m
-l
-}
-
-Expected: {
-na area estudada a espessura da fm<SPLIT>. quirico e proxima dos 25 m<SPLIT>, mas podendo alcancar ate 40<SPLIT>m na regiao de varjao de minas (<SPLIT>mg<SPLIT>)<SPLIT>.}
-Predicted: {
-na area estudada a espessura da fm<SPLIT>. quirico e proxima dos 25 m<SPLIT>, mas podendo alcancar ate 40m na regiao de varjao de minas (<SPLIT>mg<SPLIT>)<SPLIT>.}
-False positives: {
-40m
-} False negatives: {
-40
-m
-}
-
-Expected: {
-formacao do aluno na area de asfaltos ; 2. - realizar revisao bibliografica sobre asfaltos e emulsoes ; 3. - preparar asfaltos modificados por vermiculita e avaliar os produtos obtidos fazendo uso dos seguintes ensaios : penetracao , ponto de fulgor , ponto de amolecimento , ductilidade e viscosidade saybolt-furol .}
-Predicted: {
-formacao do aluno na area de asfaltos ; 2<SPLIT>. - realizar revisao bibliografica sobre asfaltos e emulsoes ; 3<SPLIT>. - preparar asfaltos modificados por vermiculita e avaliar os produtos obtidos fazendo uso dos seguintes ensaios : penetracao , ponto de fulgor , ponto de amolecimento , ductilidade e viscosidade saybolt-furol .}
-False positives: {
-2
+williams
 .
-3
-.
-} False negatives: {
-2.
-3.
 }
 
 Expected: {
-para preparar a fase asfalto<SPLIT>, e necessario aquecer o asfalto a uma temperatura de 120 °c e mante-lo no estado liquido para facilitar o processo de emulsificacao<SPLIT>, ja que o mesmo<SPLIT>, na temperatura ambiente<SPLIT>, apresenta consistencia semissolida<SPLIT>.}
+possui tambem razoavel concentracao de ferro ( fe2o3 , 4,5% p/p ) , o que sugere que tenha ocorrido a substituicao isomorfica do aluminio octaedrico por esse ions. .}
 Predicted: {
-para preparar a fase asfalto<SPLIT>, e necessario aquecer o asfalto a uma temperatura de 120 °<SPLIT>c e mante-lo no estado liquido para facilitar o processo de emulsificacao<SPLIT>, ja que o mesmo<SPLIT>, na temperatura ambiente<SPLIT>, apresenta consistencia semissolida<SPLIT>.}
+possui tambem razoavel concentracao de ferro ( fe2o3 , 4,5<SPLIT>% p/p ) , o que sugere que tenha ocorrido a substituicao isomorfica do aluminio octaedrico por esse ions<SPLIT>. .}
 False positives: {
-°
-c
-} False negatives: {
-°c
-}
-
-Expected: {
-- ecotoxicidade para o bentos<SPLIT>*}
-Predicted: {
-- ecotoxicidade para o bentos*}
-False positives: {
-bentos*
-} False negatives: {
-bentos
-*
-}
-
-Expected: {
-a capacidade de troca de cations das argilas foi feita no laboratorio de analise mineralogica -<SPLIT>lam / iq-ufrj<SPLIT>.}
-Predicted: {
-a capacidade de troca de cations das argilas foi feita no laboratorio de analise mineralogica -lam / iq-ufrj<SPLIT>.}
-False positives: {
--lam
-} False negatives: {
--
-lam
-}
-
-Expected: {
-possui uma razoavel concentracao de ferro ( fe2o3 , 5,5% p/p ) , o que sugere a substituicao isomorfica do aluminio octaedrico por esse ions. .}
-Predicted: {
-possui uma razoavel concentracao de ferro ( fe2o3 , 5,5<SPLIT>% p/p ) , o que sugere a substituicao isomorfica do aluminio octaedrico por esse ions<SPLIT>. .}
-False positives: {
-5,5
+4,5
 %
 ions
 .
 } False negatives: {
-5,5%
+4,5%
 ions.
 }
 
 Expected: {
-foram observados afloramentos com ate 25<SPLIT>m na dimensao vertical<SPLIT>, com intercalacoes de sets tabulares metricos de conglomerado clasto-sustentato (<SPLIT>g<SPLIT>) e arenitos com selecao moderada a ruim<SPLIT>, macicos (<SPLIT>sm<SPLIT>) ou mais raramente com estratificacao cruzada acanalada decimetrica (<SPLIT>st<SPLIT>) ou estratificacao plano-paralela (<SPLIT>sh<SPLIT>)<SPLIT>.}
+para catalise heterogenea e comum o uso de razoes de 12:1<SPLIT>, 18:1 ou maiores<SPLIT>, visando a reducao da viscosidade<SPLIT>, maior mistura de alcool:oleo e portanto maior difusividade de reagentes e produtos e tambem maior acessibilidade a<SPLIT>os sitios ativos cataliticos nas fases que antecedem a adsorcao dos reagentes ou que ocorrem apos a dessorcao dos produtos<SPLIT>.}
 Predicted: {
-foram observados afloramentos com ate 25m na dimensao vertical<SPLIT>, com intercalacoes de sets tabulares metricos de conglomerado clasto-sustentato (<SPLIT>g<SPLIT>) e arenitos com selecao moderada a ruim<SPLIT>, macicos (<SPLIT>sm<SPLIT>) ou mais raramente com estratificacao cruzada acanalada decimetrica (<SPLIT>st<SPLIT>) ou estratificacao plano-paralela (<SPLIT>sh<SPLIT>)<SPLIT>.}
+para catalise heterogenea e comum o uso de razoes de 12:1<SPLIT>, 18:1 ou maiores<SPLIT>, visando a reducao da viscosidade<SPLIT>, maior mistura de alcool:<SPLIT>oleo e portanto maior difusividade de reagentes e produtos e tambem maior acessibilidade a<SPLIT>os sitios ativos cataliticos nas fases que antecedem a adsorcao dos reagentes ou que ocorrem apos a dessorcao dos produtos<SPLIT>.}
 False positives: {
-25m
+alcool:
+oleo
 } False negatives: {
-25
-m
+alcool:oleo
 }
 
 Expected: {
-a<SPLIT>o todo foram descritos 34 pontos da fm. quirico (<SPLIT>figura 4<SPLIT>)<SPLIT>.}
+thompson (<SPLIT>1982<SPLIT>) procurou representar as anomalias de campos potenciais atraves de fontes pontuais<SPLIT>, demonstrando que a equacao de homogeneidade de euler pode ser reescrita da seguinte forma (<SPLIT>para fontes infinitamente longas na direcao y<SPLIT>) (<SPLIT>5<SPLIT>) onde ∆<SPLIT>t(<SPLIT>x,z<SPLIT>) e a anomalia do campo magnetico total produzida por uma fonte pontual nas coordenadas (<SPLIT>x0<SPLIT>, z0<SPLIT>) e η ,<SPLIT>que e conhecido como o indice estrutural<SPLIT>, esta relacionado com a natureza da fonte<SPLIT>.}
 Predicted: {
-a<SPLIT>o todo foram descritos 34 pontos da fm<SPLIT>. quirico (<SPLIT>figura 4<SPLIT>)<SPLIT>.}
+thompson (<SPLIT>1982<SPLIT>) procurou representar as anomalias de campos potenciais atraves de fontes pontuais<SPLIT>, demonstrando que a equacao de homogeneidade de euler pode ser reescrita da seguinte forma (<SPLIT>para fontes infinitamente longas na direcao y<SPLIT>) (<SPLIT>5<SPLIT>) onde ∆t(<SPLIT>x,z<SPLIT>) e a anomalia do campo magnetico total produzida por uma fonte pontual nas coordenadas (<SPLIT>x0<SPLIT>, z0<SPLIT>) e η ,<SPLIT>que e conhecido como o indice estrutural<SPLIT>, esta relacionado com a natureza da fonte<SPLIT>.}
+False positives: {
+∆t(
+} False negatives: {
+∆
+t(
+}
+
+Expected: {
+o dominio rb faz limite a<SPLIT>o leste (<SPLIT>proximo a latitude 43o<SPLIT>) com o dominio magnetico tc que estaria associado as litologias constituintes do terreno cabo frio descrito por heilbron et al.(2000<SPLIT>)<SPLIT>.}
+Predicted: {
+o dominio rb faz limite a<SPLIT>o leste (<SPLIT>proximo a latitude 43o<SPLIT>) com o dominio magnetico tc que estaria associado as litologias constituintes do terreno cabo frio descrito por heilbron et al.(<SPLIT>2000<SPLIT>)<SPLIT>.}
+False positives: {
+al.(
+2000
+} False negatives: {
+al.(2000
+}
+
+Expected: {
+4<SPLIT>.2.1<SPLIT>. carbodutos}
+Predicted: {
+4.2.1<SPLIT>. carbodutos}
+False positives: {
+4.2.1
+} False negatives: {
+4
+.2.1
+}
+
+Expected: {
+em pesquisa realizada em outro projeto<SPLIT>, foram realizadas atividades de campo coordenadas pelo prof. dr. norberto morales<SPLIT>, com o objetivo de coletar dados referentes as atitudes de fraturas e falhas<SPLIT>.}
+Predicted: {
+em pesquisa realizada em outro projeto<SPLIT>, foram realizadas atividades de campo coordenadas pelo prof<SPLIT>. dr. norberto morales<SPLIT>, com o objetivo de coletar dados referentes as atitudes de fraturas e falhas<SPLIT>.}
+False positives: {
+prof
+.
+} False negatives: {
+prof.
+}
+
+Expected: {
+este ensaio tem como objetivo determinar a porcentagem<SPLIT>, em massa<SPLIT>, de residuo asfaltico que fica retido na peneira de abertura 841<SPLIT>μm<SPLIT>, quando uma aliquota de 1000 g de emulsao asfaltica e vertida nesta peneira<SPLIT>.}
+Predicted: {
+este ensaio tem como objetivo determinar a porcentagem<SPLIT>, em massa<SPLIT>, de residuo asfaltico que fica retido na peneira de abertura 841μm<SPLIT>, quando uma aliquota de 1000 g de emulsao asfaltica e vertida nesta peneira<SPLIT>.}
+False positives: {
+841μm
+} False negatives: {
+841
+μm
+}
+
+Expected: {
+a classificacao adotada para as demais facies seguiu o criterio adotado pela universidade petrobras para convencoes de descricoes sedimentologicas<SPLIT>: gip<SPLIT>= gipsita e cq<SPLIT>= coquina<SPLIT>, que admite para as tres primeiras letras correspondencia com a litologia<SPLIT>.}
+Predicted: {
+a classificacao adotada para as demais facies seguiu o criterio adotado pela universidade petrobras para convencoes de descricoes sedimentologicas<SPLIT>: gip= gipsita e cq= coquina<SPLIT>, que admite para as tres primeiras letras correspondencia com a litologia<SPLIT>.}
+False positives: {
+gip=
+cq=
+} False negatives: {
+gip
+=
+cq
+=
+}
+
+Expected: {
+se a particula for de um argilomineral<SPLIT>, com d= 2,60<SPLIT>g<SPLIT>/<SPLIT>cm3 e l= 1<SPLIT>μm<SPLIT>, a area especifica sera ae= (<SPLIT>6.104<SPLIT>)<SPLIT>/<SPLIT>(<SPLIT>2,60.1<SPLIT>)<SPLIT>, cm2/g= 2,3m2/g (<SPLIT>santos<SPLIT>, 1989<SPLIT>)<SPLIT>.}
+Predicted: {
+se a particula for de um argilomineral<SPLIT>, com d= 2,60g<SPLIT>/<SPLIT>cm3 e l= 1μm<SPLIT>, a area especifica sera ae= (<SPLIT>6.104<SPLIT>)<SPLIT>/<SPLIT>(<SPLIT>2,60.1<SPLIT>)<SPLIT>, cm2/g= 2,3m2/g (<SPLIT>santos<SPLIT>, 1989<SPLIT>)<SPLIT>.}
+False positives: {
+2,60g
+1μm
+} False negatives: {
+2,60
+g
+1
+μm
+}
+
+Expected: {
+possui tambem alta concentracao de ferro ( fe2o3 , 11,6% p/p ) , o que sugere a substituicao isomorfica do aluminio octaedrico por esse ions. .}
+Predicted: {
+possui tambem alta concentracao de ferro ( fe2o3 , 11,6<SPLIT>% p/p ) , o que sugere a substituicao isomorfica do aluminio octaedrico por esse ions<SPLIT>. .}
+False positives: {
+11,6
+%
+ions
+.
+} False negatives: {
+11,6%
+ions.
+}
+
+Expected: {
+a secao assenta-se sobre filitos do embasamento e pode ser considerada secao representativa da fm. abaete para a area estudada<SPLIT>.}
+Predicted: {
+a secao assenta-se sobre filitos do embasamento e pode ser considerada secao representativa da fm<SPLIT>. abaete para a area estudada<SPLIT>.}
 False positives: {
 fm
 .
 } False negatives: {
 fm.
+}
+
+Expected: {
+sobrepondo esta sequencia predominantemente pelitica<SPLIT>, ocorrem aproximadamente 20m de secao psamitica da fm. tres barras<SPLIT>.}
+Predicted: {
+sobrepondo esta sequencia predominantemente pelitica<SPLIT>, ocorrem aproximadamente 20m de secao psamitica da fm<SPLIT>. tres barras<SPLIT>.}
+False positives: {
+fm
+.
+} False negatives: {
+fm.
+}
+
+Expected: {
+as paleocorrentes dadas pela migracao das dunas eolicas da fm. tres barras permitiram determinar peleoventos com sentido para ssw<SPLIT>.}
+Predicted: {
+as paleocorrentes dadas pela migracao das dunas eolicas da fm<SPLIT>. tres barras permitiram determinar peleoventos com sentido para ssw<SPLIT>.}
+False positives: {
+fm
+.
+} False negatives: {
+fm.
+}
+
+Expected: {
+fonte<SPLIT>: commons.<SPLIT>wikimedia<SPLIT>.<SPLIT>org}
+Predicted: {
+fonte<SPLIT>: commons.wikimedia.org}
+False positives: {
+commons.wikimedia.org
+} False negatives: {
+commons.
+wikimedia
+.
+org
+}
+
+Expected: {
+fonte<SPLIT>: http:/<SPLIT>/<SPLIT>www.pucrs<SPLIT>.}
+Predicted: {
+fonte<SPLIT>: http://www.pucrs<SPLIT>.}
+False positives: {
+http://www.pucrs
+} False negatives: {
+http:/
+/
+www.pucrs
 }
 
 Expected: {
@@ -997,9 +828,70 @@ co2:ch4
 }
 
 Expected: {
-fonte : elaboracao propria baseado nos dutos da transpetro fonte : elaboracao propria com dados da anp e marinetraffic. .}
+com.<SPLIT>br/ver_noticia<SPLIT>.}
 Predicted: {
-fonte : elaboracao propria baseado nos dutos da transpetro fonte : elaboracao propria com dados da anp e marinetraffic<SPLIT>. .}
+com.br/ver_noticia<SPLIT>.}
+False positives: {
+com.br/ver_noticia
+} False negatives: {
+com.
+br/ver_noticia
+}
+
+Expected: {
+com<SPLIT>/<SPLIT>photo/31653943}
+Predicted: {
+com/photo/31653943}
+False positives: {
+com/photo/31653943
+} False negatives: {
+com
+/
+photo/31653943
+}
+
+Expected: {
+fonte<SPLIT>: http:/<SPLIT>/<SPLIT>www.<SPLIT>flickr<SPLIT>.}
+Predicted: {
+fonte<SPLIT>: http://www.flickr<SPLIT>.}
+False positives: {
+http://www.flickr
+} False negatives: {
+http:/
+/
+www.
+flickr
+}
+
+Expected: {
+a produ ao de oleo das plataformas fpso<SPLIT>'s e escoada atraves de navios aliviadores<SPLIT>.}
+Predicted: {
+a produ a<SPLIT>o de oleo das plataformas fpso's e escoada atraves de navios aliviadores<SPLIT>.}
+False positives: {
+a
+o
+fpso's
+} False negatives: {
+ao
+fpso
+'s
+}
+
+Expected: {
+quantidade maxima diaria = 11 0971 + 670 =<SPLIT>19.470,05tco<SPLIT>,<SPLIT>/<SPLIT>dia a ser injetada em barracuda}
+Predicted: {
+quantidade maxima diaria = 11 0971 + 670 =19.470,05tco<SPLIT>,<SPLIT>/<SPLIT>dia a ser injetada em barracuda}
+False positives: {
+=19.470,05tco
+} False negatives: {
+=
+19.470,05tco
+}
+
+Expected: {
+fonte : elaboracao propria com dados da anp e marinetraffic. .}
+Predicted: {
+fonte : elaboracao propria com dados da anp e marinetraffic<SPLIT>. .}
 False positives: {
 marinetraffic
 .
@@ -1008,209 +900,282 @@ marinetraffic.
 }
 
 Expected: {
-figura 4<SPLIT>: reservas do pre-sal na bacia de santos (<SPLIT>fonte<SPLIT>: nota tecnica dge/cetae 003/2009 - desafios do pre-sal<SPLIT>)}
+custo anual de manutencao dos equipamentos subaquaticos = $ >. dos equipamentos subaquaticos de injecao por plataforma de injecao por poco}
 Predicted: {
-figura 4<SPLIT>: reservas do pre-sal na bacia de santos (<SPLIT>fonte: nota tecnica dge<SPLIT>/cetae 003/2009 - desafios do pre-sal<SPLIT>)}
+custo anual de manutencao dos equipamentos subaquaticos = $ ><SPLIT>. dos equipamentos subaquaticos de injecao por plataforma de injecao por poco}
 False positives: {
-fonte:
-dge
-/cetae
+>
+.
 } False negatives: {
-fonte
-:
-dge/cetae
+>.
 }
 
 Expected: {
-neste mesmo mes a producao de gas do pre-sal foi de 14,6 mmm3<SPLIT>/<SPLIT>d<SPLIT>.}
+6<SPLIT>.2.1<SPLIT>. adicionalidade}
 Predicted: {
-neste mesmo mes a producao de gas do pre-sal foi de 14,6 mmm3/d<SPLIT>.}
+6.2.1<SPLIT>. adicionalidade}
 False positives: {
-mmm3/d
+6.2.1
 } False negatives: {
-mmm3
+6
+.2.1
+}
+
+Expected: {
+6<SPLIT>.2.4<SPLIT>. fuga}
+Predicted: {
+6.2.4<SPLIT>. fuga}
+False positives: {
+6.2.4
+} False negatives: {
+6
+.2.4
+}
+
+Expected: {
+a quantidade de oxigenio e dada pela equacao<SPLIT>: quantidade necessaria de oxigenio (<SPLIT>t<SPLIT>o0<SPLIT>,<SPLIT>) = emissoes de co<SPLIT>, (<SPLIT>tco,z<SPLIT>) x 32/44}
+Predicted: {
+a quantidade de oxigenio e dada pela equacao<SPLIT>: quantidade necessaria de oxigenio (<SPLIT>to0<SPLIT>,<SPLIT>) = emissoes de co<SPLIT>, (<SPLIT>tco<SPLIT>,<SPLIT>z<SPLIT>) x 32/44}
+False positives: {
+to0
+tco
+,
+z
+} False negatives: {
+t
+o0
+tco,z
+}
+
+Expected: {
+segue a equacao<SPLIT>: o fator de emissao do oleo cru e de 3,1 tco2<SPLIT>/<SPLIT>t oleo (<SPLIT>api<SPLIT>, 2009<SPLIT>) e a quantidade total de oleo extra produzido por eor em um ano de projeto e de 3.572.734 toneladas<SPLIT>.}
+Predicted: {
+segue a equacao<SPLIT>: o fator de emissao do oleo cru e de 3,1 tco2/t oleo (<SPLIT>api<SPLIT>, 2009<SPLIT>) e a quantidade total de oleo extra produzido por eor em um ano de projeto e de 3.572.734 toneladas<SPLIT>.}
+False positives: {
+tco2/t
+} False negatives: {
+tco2
 /
-d
+t
 }
 
 Expected: {
-o prototipo que tem capacidade de producao de 18 mil barris por dia tem 75 % de conteudo nacional e foi desenvolvido por tres frentes sendo uma delas na holanda<SPLIT>, onde ha uma unidade da empresa fmc voltada para separacao compacta<SPLIT>, outra na noruega<SPLIT>, onde a especificidade sao os sistemas de controle<SPLIT>, e a terceira<SPLIT>, e principal<SPLIT>, no brasil<SPLIT>, onde foi feito todo o resto do estudo<SPLIT>, do desenvolvimento e da fabricacao<SPLIT>. (<SPLIT>www.petronoticias<SPLIT>.<SPLIT>com.br/archives/4618<SPLIT>)<SPLIT>.}
+com a descoberta do campo de mexilhao<SPLIT>, a expectativa e que a producao de gas natural neste campo chegue a 15 milhoes e metros cubicos/dia (<SPLIT>www.ibp.org.br<SPLIT>)<SPLIT>.}
 Predicted: {
-o prototipo que tem capacidade de producao de 18 mil barris por dia tem 75 % de conteudo nacional e foi desenvolvido por tres frentes sendo uma delas na holanda<SPLIT>, onde ha uma unidade da empresa fmc voltada para separacao compacta<SPLIT>, outra na noruega<SPLIT>, onde a especificidade sao os sistemas de controle<SPLIT>, e a terceira<SPLIT>, e principal<SPLIT>, no brasil<SPLIT>, onde foi feito todo o resto do estudo<SPLIT>, do desenvolvimento e da fabricacao<SPLIT>. (<SPLIT>www.petronoticias.com.br/archives/4618<SPLIT>)<SPLIT>.}
+com a descoberta do campo de mexilhao<SPLIT>, a expectativa e que a producao de gas natural neste campo chegue a 15 milhoes e metros cubicos/<SPLIT>dia (<SPLIT>www.ibp.org.br<SPLIT>)<SPLIT>.}
 False positives: {
-www.petronoticias.com.br/archives/4618
+cubicos/
+dia
 } False negatives: {
-www.petronoticias
-.
-com.br/archives/4618
+cubicos/dia
 }
 
 Expected: {
-as macroemulsoes<SPLIT>, ou apenas emulsoes<SPLIT>, possuem o tamanho de gota normalmente acima de 1 μm<SPLIT>.}
+neste trabalho foi utilizado o sistema convencional de recuperacao de meg<SPLIT>.}
 Predicted: {
-as macroemulsoes<SPLIT>, ou apenas emulsoes<SPLIT>, possuem o tamanho de gota normalmente acima de 1 μ<SPLIT>m<SPLIT>.}
+neste trabalho foi utilizado o sistema convencional de recuperacao de meg.}
 False positives: {
-μ
-m
+meg.
 } False negatives: {
-μm
-}
-
-Expected: {
-injecao da solucao de desemulsificante no separador<SPLIT>: apos 1 hora e 20<SPLIT>minutos que o sistema estava em repouso um volume de 2,5l de solucao foi injetado na parte inferior do separador gravitacional atraves da valvula 16 com o auxilio da bomba de engrenagem<SPLIT>.}
-Predicted: {
-injecao da solucao de desemulsificante no separador<SPLIT>: apos 1 hora e 20minutos que o sistema estava em repouso um volume de 2,5l de solucao foi injetado na parte inferior do separador gravitacional atraves da valvula 16 com o auxilio da bomba de engrenagem<SPLIT>.}
-False positives: {
-20minutos
-} False negatives: {
-20
-minutos
-}
-
-Expected: {
-o rotamentro com faixa de operacao de 0,04 a 5 gpm apresentou um erro estatistico de ±<SPLIT>0,0233 gpm e um erro sistematico de ±0,2369 gpm .}
-Predicted: {
-o rotamentro com faixa de operacao de 0,04 a 5 gpm apresentou um erro estatistico de ±0,0233 gpm e um erro sistematico de ±0,2369 gpm .}
-False positives: {
-±0,0233
-} False negatives: {
-±
-0,0233
-}
-
-Expected: {
-a forma geral das equacoes polinomiais negativas obtidas e<SPLIT>: (<SPLIT>4.1<SPLIT>) onde t0 e o instante de tempo que marca o inicio do decaimento da curva (<SPLIT>tabela 4.2<SPLIT>) e t (<SPLIT>≥ 0<SPLIT>) o instante de tempo contado a partir desse inicio<SPLIT>.}
-Predicted: {
-a forma geral das equacoes polinomiais negativas obtidas e: (<SPLIT>4.1<SPLIT>) onde t0 e o instante de tempo que marca o inicio do decaimento da curva (<SPLIT>tabela 4.2<SPLIT>) e t (<SPLIT>≥ 0<SPLIT>) o instante de tempo contado a partir desse inicio<SPLIT>.}
-False positives: {
-e:
-} False negatives: {
-e
-:
-}
-
-Expected: {
-o resultados do tratamento esta no apendice c<SPLIT>.}
-Predicted: {
-o resultados do tratamento esta no apendice c.}
-False positives: {
-c.
-} False negatives: {
-c
+meg
 .
 }
 
 Expected: {
-apesar do biodiesel ter oxigenio em sua composicao os motores diesel operam com excesso de ar<SPLIT>, e por isso a razao ar/combustivel e mais relevante na analise da emissao do oxigenio [<SPLIT>12<SPLIT>]<SPLIT>.}
+adotou-se uma temperatura de chegada no manifold de 40°c (<SPLIT>sant'anna<SPLIT>, 2005<SPLIT>)<SPLIT>.}
 Predicted: {
-apesar do biodiesel ter oxigenio em sua composicao os motores diesel operam com excesso de ar<SPLIT>, e por isso a razao ar<SPLIT>/combustivel e mais relevante na analise da emissao do oxigenio [<SPLIT>12<SPLIT>]<SPLIT>.}
+adotou-se uma temperatura de chegada no manifold de 40<SPLIT>°c (<SPLIT>sant'anna<SPLIT>, 2005<SPLIT>)<SPLIT>.}
 False positives: {
-ar
-/combustivel
+40
+°c
 } False negatives: {
-ar/combustivel
+40°c
 }
 
 Expected: {
-esta analise foi feita de forma qualitativa<SPLIT>, utilizando-se cromatografo shimadzu<SPLIT>, detector de ultra violeta<SPLIT>, coluna clc-ods<SPLIT>, diametro de 4,6<SPLIT>mm x 250<SPLIT>m<SPLIT>m<SPLIT>.}
+a outra corrente proveniente da etapa de separacao onshore<SPLIT>, meg rico<SPLIT>, tem como destino a unidade de recuperacao de meg<SPLIT>, onde<SPLIT>, por processo convencional<SPLIT>, a agua e removida e uma corrente de meg concentrado (<SPLIT>89% molar<SPLIT>) e obtida<SPLIT>.}
 Predicted: {
-esta analise foi feita de forma qualitativa<SPLIT>, utilizando-se cromatografo shimadzu<SPLIT>, detector de ultra violeta<SPLIT>, coluna clc-ods<SPLIT>, diametro de 4,6mm x 250<SPLIT>mm<SPLIT>.}
+a outra corrente proveniente da etapa de separacao onshore<SPLIT>, meg rico<SPLIT>, tem como destino a unidade de recuperacao de meg<SPLIT>, onde<SPLIT>, por processo convencional<SPLIT>, a agua e removida e uma corrente de meg concentrado (<SPLIT>89<SPLIT>% molar<SPLIT>) e obtida<SPLIT>.}
 False positives: {
-4,6mm
-mm
+89
+%
 } False negatives: {
-4,6
-mm
-m
-m
+89%
 }
 
 Expected: {
-para esse trabalho seu preco foi considerado r$1,50/kg (<SPLIT>aboissa<SPLIT>, 2014<SPLIT>)<SPLIT>.}
+a vazao de meg injetada no duto de gas e de 30 sm3/h. .}
 Predicted: {
-para esse trabalho seu preco foi considerado r$<SPLIT>1,50<SPLIT>/kg (<SPLIT>aboissa<SPLIT>, 2014<SPLIT>)<SPLIT>.}
+a vazao de meg injetada no duto de gas e de 30 sm3/<SPLIT>h<SPLIT>. .}
 False positives: {
-r$
-1,50
-/kg
-} False negatives: {
-r$1,50/kg
-}
-
-Expected: {
-aquelas cujo valor de bhl vai de 3 a 9<SPLIT>, possuindo caracteristicas de lipofilia<SPLIT>, constituem os agentes emulsivos a/o<SPLIT>, mas a partir de 8 os tensoativos comecam a apresentar propriedades hidrofilas<SPLIT>, as quais se acentuam com a subida do respectivo valor de bhl<SPLIT>.}
-Predicted: {
-aquelas cujo valor de bhl vai de 3 a 9<SPLIT>, possuindo caracteristicas de lipofilia<SPLIT>, constituem os agentes emulsivos a<SPLIT>/o<SPLIT>, mas a partir de 8 os tensoativos comecam a apresentar propriedades hidrofilas<SPLIT>, as quais se acentuam com a subida do respectivo valor de bhl<SPLIT>.}
-False positives: {
-a
-/o
-} False negatives: {
-a/o
-}
-
-Expected: {
-neste trabalho , os principais materiais utilizados foram oleo diesel , tensoativos e cloroformio pa .  espectrofotometro , modelo gehaka uv-340g ;  agitador magnetico com aquecimento digital , modelo ls59d - 220 - 300 - pi da logen ; 5. - metodologia}
-Predicted: {
-neste trabalho , os principais materiais utilizados foram oleo diesel , tensoativos e cloroformio pa .  espectrofotometro , modelo gehaka uv-340g ;  agitador magnetico com aquecimento digital , modelo ls59d - 220 - 300 - pi da logen ; 5<SPLIT>. - metodologia}
-False positives: {
-5
+sm3/
+h
 .
 } False negatives: {
-5.
+sm3/h.
 }
 
 Expected: {
-cy com areas especificas entre 20 - 60 m2 g-1 foram obtidos por leclerq et al<SPLIT>.}
+neste vaso<SPLIT>, ainda e removido parte do co2 contido na corrente rica em meg<SPLIT>.}
 Predicted: {
-cy com areas especificas entre 20 - 60 m2 g-1 foram obtidos por leclerq et al.}
+neste vaso<SPLIT>, ainda e removido parte do co2 contido na corrente rica em meg.}
 False positives: {
-al.
+meg.
 } False negatives: {
-al
+meg
 .
 }
 
 Expected: {
-eles concluiram que<SPLIT>, apos a completa decomposicao<SPLIT>, a formacao de um dimero de molibdenio<SPLIT>, na forma de um oxicarbeto<SPLIT>, mo2(c)ox<SPLIT>, era a especie mais estavel nas supercavidades das zeolitas<SPLIT>.}
+as emulsoes foram preparadas primeiramente com a dissolucao do tensoativo na fase de maior afinidade<SPLIT>, seguida da agitacao manual por um minuto e agitacao em homogeneizador polytron pt3100d<SPLIT>, por tres minutos a 8000 rpm e 60°c<SPLIT>.}
 Predicted: {
-eles concluiram que<SPLIT>, apos a completa decomposicao<SPLIT>, a formacao de um dimero de molibdenio<SPLIT>, na forma de um oxicarbeto<SPLIT>, mo2(c<SPLIT>)ox<SPLIT>, era a especie mais estavel nas supercavidades das zeolitas<SPLIT>.}
+as emulsoes foram preparadas primeiramente com a dissolucao do tensoativo na fase de maior afinidade<SPLIT>, seguida da agitacao manual por um minuto e agitacao em homogeneizador polytron pt3100d<SPLIT>, por tres minutos a 8000 rpm e 60<SPLIT>°c<SPLIT>.}
 False positives: {
-mo2(c
-)ox
+60
+°c
 } False negatives: {
-mo2(c)ox
+60°c
 }
 
 Expected: {
-bandas em 2122<SPLIT>, 2030<SPLIT>, 1987 e 1961 cm-1 foram observadas [<SPLIT>23<SPLIT>]<SPLIT>.}
+define-se tambem o oleo extra pesado como aquele de densidade acima de 1,00 g/cm3 (<SPLIT>api < 10°<SPLIT>)<SPLIT>, medido em condicoes ambientes<SPLIT>. (<SPLIT>tissot e welte<SPLIT>, 1984<SPLIT>)<SPLIT>.}
 Predicted: {
-bandas em 2122<SPLIT>, 2030<SPLIT>, 1987 e 1961 cm-1 foram observadas [23<SPLIT>]<SPLIT>.}
+define-se tambem o oleo extra pesado como aquele de densidade acima de 1,00 g/<SPLIT>cm3 (<SPLIT>api < 10°<SPLIT>)<SPLIT>, medido em condicoes ambientes<SPLIT>. (<SPLIT>tissot e welte<SPLIT>, 1984<SPLIT>)<SPLIT>.}
 False positives: {
-[23
+g/
+cm3
 } False negatives: {
+g/cm3
+}
+
+Expected: {
+um bocal de acrilico faz com que a agua entre pelas laterais do circuito de tubulacao atraves de um espaco de 1 mm entre a parede externa de vidro e o cone de pvc<SPLIT>.}
+Predicted: {
+um bocal de acrilico faz com que a agua entre pelas laterais do circuito de tubulacao atraves de um espaco de 1 mm entre a parede externa de vidro e o cone de pvc.}
+False positives: {
+pvc.
+} False negatives: {
+pvc
+.
+}
+
+Expected: {
+ainda possui oito canais de temperatura compativeis com termopar tipo k<SPLIT>.}
+Predicted: {
+ainda possui oito canais de temperatura compativeis com termopar tipo k.}
+False positives: {
+k.
+} False negatives: {
+k
+.
+}
+
+Expected: {
+[9<SPLIT>] lobo<SPLIT>, i. p.; ferreira<SPLIT>, s. l. c. biodiesel<SPLIT>: parametros de qualidade e metodos analiticos<SPLIT>.}
+Predicted: {
+[<SPLIT>9<SPLIT>] lobo<SPLIT>, i<SPLIT>. p.<SPLIT>; ferreira<SPLIT>, s. l<SPLIT>. c. biodiesel<SPLIT>: parametros de qualidade e metodos analiticos<SPLIT>.}
+False positives: {
 [
-23
-}
-
-Expected: {
-- bacia de santos : e uma vasta porcao da margem leste<SPLIT>, com orientacao geral sw-ne e geometria concava<SPLIT>, abrangendo cerca de 200.000 km<SPLIT>2 do sudeste brasileiro<SPLIT>.}
-Predicted: {
-- bacia de santos : e uma vasta porcao da margem leste<SPLIT>, com orientacao geral sw-ne e geometria concava<SPLIT>, abrangendo cerca de 200.000 km2 do sudeste brasileiro<SPLIT>.}
-False positives: {
-km2
+9
+i
+.
+p.
+;
+l
+.
 } False negatives: {
-km
-2
+[9
+i.
+p.;
+l.
 }
 
 Expected: {
-a figura 6.4<SPLIT>. mostra o perfil cc<SPLIT>'<SPLIT>, mais a sw<SPLIT>, onde pode-se observar uma regiao rasa<SPLIT>, central<SPLIT>, apresentando contraste negativo de susceptibilidade magnetica (<SPLIT>faixa esbranquicada<SPLIT>) com cerca de 4.000 metros de largura<SPLIT>.}
+a metodologia chamada reacao a temperatura programada (<SPLIT>tpre<SPLIT>, do ingles temperature programmed reaction<SPLIT>)<SPLIT>, representou o maior avanco na obtencao de carbetos com area elevada<SPLIT>, e foi desenvolvido pelo grupo de boudart em 1981 [<SPLIT>8]<SPLIT>.}
 Predicted: {
-a figura 6.4<SPLIT>. mostra o perfil cc'<SPLIT>, mais a sw<SPLIT>, onde pode-se observar uma regiao rasa<SPLIT>, central<SPLIT>, apresentando contraste negativo de susceptibilidade magnetica (<SPLIT>faixa esbranquicada<SPLIT>) com cerca de 4.000 metros de largura<SPLIT>.}
+a metodologia chamada reacao a temperatura programada (<SPLIT>tpre<SPLIT>, do ingles temperature programmed reaction<SPLIT>)<SPLIT>, representou o maior avanco na obtencao de carbetos com area elevada<SPLIT>, e foi desenvolvido pelo grupo de boudart em 1981 [<SPLIT>8<SPLIT>]<SPLIT>.}
+False positives: {
+8
+]
+} False negatives: {
+8]
+}
+
+Expected: {
+o reator era aquecido por um forno ligado a um controlador<SPLIT>/<SPLIT>programador de temperatura<SPLIT>.}
+Predicted: {
+o reator era aquecido por um forno ligado a um controlador/programador de temperatura<SPLIT>.}
+False positives: {
+controlador/programador
+} False negatives: {
+controlador
+/
+programador
+}
+
+Expected: {
+pode ser demonstrado que<SPLIT>, para as fontes bidimensionais<SPLIT>, a amplitude do sinal analitico e independente da direcao de magnetizacao (<SPLIT>xiong li, 2006<SPLIT>)<SPLIT>.}
+Predicted: {
+pode ser demonstrado que<SPLIT>, para as fontes bidimensionais<SPLIT>, a amplitude do sinal analitico e independente da direcao de magnetizacao (<SPLIT>xiong li<SPLIT>, 2006<SPLIT>)<SPLIT>.}
+False positives: {
+li
+,
+} False negatives: {
+li,
+}
+
+Expected: {
+barbosa et al.(1999<SPLIT>) fazem uma analise teorica da equacao (<SPLIT>7<SPLIT>) e fornecem uma detalhada explanacao sobre o comportamento dos parametros estimados x0<SPLIT>, z0 e b e sua relacao com o indice estrutural η<SPLIT>.}
+Predicted: {
+barbosa et al.(<SPLIT>1999<SPLIT>) fazem uma analise teorica da equacao (<SPLIT>7<SPLIT>) e fornecem uma detalhada explanacao sobre o comportamento dos parametros estimados x0<SPLIT>, z0 e b e sua relacao com o indice estrutural η<SPLIT>.}
+False positives: {
+al.(
+1999
+} False negatives: {
+al.(1999
+}
+
+Expected: {
+nao existe nenhum criterio explicito para a interrupcao das iteracoes e extracao de uma estimativa final do vetor de parametros p<SPLIT>.}
+Predicted: {
+nao existe nenhum criterio explicito para a interrupcao das iteracoes e extracao de uma estimativa final do vetor de parametros p.}
+False positives: {
+p.
+} False negatives: {
+p
+.
+}
+
+Expected: {
+o preenchimento sedimentar do graben interno deve alcancar espessura de cerca de 600 m a 700 m"<SPLIT>.}
+Predicted: {
+o preenchimento sedimentar do graben interno deve alcancar espessura de cerca de 600 m a 700 m<SPLIT>"<SPLIT>.}
+False positives: {
+m
+"
+} False negatives: {
+m"
+}
+
+Expected: {
+da mesma forma que o perfil cc<SPLIT>'<SPLIT>, pode-se observar a calha (<SPLIT>faixa central branca<SPLIT>)<SPLIT>, com cerca de 6.000 metros de largura<SPLIT>, preenchida por delgado pacote de sedimentos<SPLIT>.}
+Predicted: {
+da mesma forma que o perfil cc'<SPLIT>, pode-se observar a calha (<SPLIT>faixa central branca<SPLIT>)<SPLIT>, com cerca de 6.000 metros de largura<SPLIT>, preenchida por delgado pacote de sedimentos<SPLIT>.}
 False positives: {
 cc'
 } False negatives: {
 cc
+'
+}
+
+Expected: {
+a interpretacao do perfil aa<SPLIT>' foi conduzida com a utilizacao da deconvoluao de euler<SPLIT>, visando a obtencao dos primeiros vinculos para inicializar o processo de inversao compacta<SPLIT>.}
+Predicted: {
+a interpretacao do perfil aa' foi conduzida com a utilizacao da deconvoluao de euler<SPLIT>, visando a obtencao dos primeiros vinculos para inicializar o processo de inversao compacta<SPLIT>.}
+False positives: {
+aa'
+} False negatives: {
+aa
 '
 }
 
@@ -1227,71 +1192,108 @@ terciario
 }
 
 Expected: {
-os perfis aa' e bb'<SPLIT>(<SPLIT>interpretados no item 6.1.1 e plotados no mapa de interpretacao do anexo 1<SPLIT>) correspondem a secoes transversais a<SPLIT>os alinhamentos magneticos condicionantes dos flancos sul e norte do referido graben<SPLIT>.}
+em geral<SPLIT>, os solidos naturais gerados durante a perfuracao encontrados na subsuperficie tem densidade entre 1,5 e 3,0 (<SPLIT>g/cm3<SPLIT>)<SPLIT>.}
 Predicted: {
-os perfis aa<SPLIT>' e bb'<SPLIT>(interpretados no item 6.1.1 e plotados no mapa de interpretacao do anexo 1<SPLIT>) correspondem a secoes transversais a<SPLIT>os alinhamentos magneticos condicionantes dos flancos sul e norte do referido graben<SPLIT>.}
+em geral<SPLIT>, os solidos naturais gerados durante a perfuracao encontrados na subsuperficie tem densidade entre 1,5 e 3,0 (<SPLIT>g<SPLIT>/<SPLIT>cm3<SPLIT>)<SPLIT>.}
 False positives: {
-aa
-'
-(interpretados
+g
+/
+cm3
 } False negatives: {
-aa'
-(
-interpretados
+g/cm3
 }
 
 Expected: {
-estas estruturas se apresentam em posicao geografica conveniente para polarizacao que resultou na inducao de uma infinidade de anomalias magneticas provocadas pelo campo atual que possui direcao aproximadamente perpendicular<SPLIT>, isto e<SPLIT>, sua declinacao e de aproximadamente 30o w<SPLIT>.}
+matematicamente<SPLIT>, os fluidos newtonianos sao definidos pela equacao 2.3<SPLIT>, e seu comportamento e dado pela curva a. a inclinacao da reta que intercepta a origem e dada pela viscosidade absoluta do fluido<SPLIT>.}
 Predicted: {
-estas estruturas se apresentam em posicao geografica conveniente para polarizacao que resultou na inducao de uma infinidade de anomalias magneticas provocadas pelo campo atual que possui direcao aproximadamente perpendicular<SPLIT>, isto e<SPLIT>, sua declinacao e de aproximadamente 30o w.}
+matematicamente<SPLIT>, os fluidos newtonianos sao definidos pela equacao 2.3<SPLIT>, e seu comportamento e dado pela curva a<SPLIT>. a inclinacao da reta que intercepta a origem e dada pela viscosidade absoluta do fluido<SPLIT>.}
 False positives: {
-w.
+a
+.
 } False negatives: {
-w
+a.
+}
+
+Expected: {
+a maior parte do fluido de perfuracao utilizado em uma operacao de perfuracao e recirculada em um ciclo continuo<SPLIT>: 1. - o fluido de perfuracao (<SPLIT>ou lama<SPLIT>) e misturada e mantida no tanque de lama<SPLIT>.}
+Predicted: {
+a maior parte do fluido de perfuracao utilizado em uma operacao de perfuracao e recirculada em um ciclo continuo<SPLIT>: 1<SPLIT>. - o fluido de perfuracao (<SPLIT>ou lama<SPLIT>) e misturada e mantida no tanque de lama<SPLIT>.}
+False positives: {
+1
+.
+} False negatives: {
+1.
+}
+
+Expected: {
+slb.<SPLIT>com<SPLIT>.}
+Predicted: {
+slb.com<SPLIT>.}
+False positives: {
+slb.com
+} False negatives: {
+slb.
+com
+}
+
+Expected: {
+as figuras que mostram o comportamento tixotropico do fluido para as demais concentracoes estao no anexo d<SPLIT>.}
+Predicted: {
+as figuras que mostram o comportamento tixotropico do fluido para as demais concentracoes estao no anexo d.}
+False positives: {
+d.
+} False negatives: {
+d
 .
 }
 
 Expected: {
-foi utilizado o nai devido a possibilidade de se monitorar a distribuicao de fluidos na amostra por meio de varredura de raios-x<SPLIT>.}
+o diametro da bolhas produzidas e inferior a 102<SPLIT>μ<SPLIT>m<SPLIT>.}
 Predicted: {
-foi utilizado o nai devido a possibilidade de se monitorar a distribuicao de fluidos na amostra por meio de varredura de raios-<SPLIT>x<SPLIT>.}
+o diametro da bolhas produzidas e inferior a 102μm<SPLIT>.}
 False positives: {
-raios-
-x
+102μm
 } False negatives: {
-raios-x
+102
+μ
+m
 }
 
 Expected: {
-na figura 3.3 tem-se as curvas reologicas dos fluidos contendo 4,5 lb/bbl de phpa e 2,5 % em massa de bentonita variando a ordem de adicao do sal. .}
+atraves deste ultimo experimento<SPLIT>, onde se varreu uma ampla faixa na concentracao do metal e pode-se variar a concentracao do tensoativo de 1000 a 1400 mg/<SPLIT>l<SPLIT>, com isso vemos que todas as amostras tiveram remocoes do oleo acima de 90<SPLIT>% e atraves deste pontos podemos encontra uma faixa de concentracao do tensoativo otima para extracao do oleo na agua de producao que fica na faixa de 1350 a 1400 mg<SPLIT>/l<SPLIT>, combinada com a concentracao do calcio que fica na faixa de 700 mg<SPLIT>/l<SPLIT>, concentracao essa que e encontrada nas aguas de producao dos campos produtores de petroleo<SPLIT>.}
 Predicted: {
-na figura 3.3 tem-se as curvas reologicas dos fluidos contendo 4,5 lb/bbl de phpa e 2,5 % em massa de bentonita variando a ordem de adicao do sal<SPLIT>. .}
+atraves deste ultimo experimento<SPLIT>, onde se varreu uma ampla faixa na concentracao do metal e pode-se variar a concentracao do tensoativo de 1000 a 1400 mg/l<SPLIT>, com isso vemos que todas as amostras tiveram remocoes do oleo acima de 90<SPLIT>% e atraves deste pontos podemos encontra uma faixa de concentracao do tensoativo otima para extracao do oleo na agua de producao que fica na faixa de 1350 a 1400 mg/l<SPLIT>, combinada com a concentracao do calcio que fica na faixa de 700 mg/l<SPLIT>, concentracao essa que e encontrada nas aguas de producao dos campos produtores de petroleo<SPLIT>.}
 False positives: {
-sal
-.
+mg/l
+mg/l
+mg/l
 } False negatives: {
-sal.
+mg/
+l
+mg
+/l
+mg
+/l
 }
 
 Expected: {
-vazao relativa de oleo vs. vpi<SPLIT>, para o fluxo reverso em amostras invadidas por fluidos preparados com gx e phpa<SPLIT>(<SPLIT>log-log - completo<SPLIT>)}
+grafico 4.10<SPLIT>: 3° filtracao com extracao na faixa granulometrica de (<SPLIT>28 mesh<SPLIT>)<SPLIT>.}
 Predicted: {
-vazao relativa de oleo vs. vpi<SPLIT>, para o fluxo reverso em amostras invadidas por fluidos preparados com gx e phpa(log-log - completo<SPLIT>)}
+grafico 4.10<SPLIT>: 3<SPLIT>° filtracao com extracao na faixa granulometrica de (<SPLIT>28 mesh<SPLIT>)<SPLIT>.}
 False positives: {
-phpa(log-log
+3
+°
 } False negatives: {
-phpa
-(
-log-log
+3°
 }
 
 Expected: {
-os objetivos especificos sao os seguintes<SPLIT>: a<SPLIT>) construir uma barreira de contencao utilizando garrafa pet. b<SPLIT>) realizar um levantamento sobre os tipos de contencoes existentes<SPLIT>.}
+atraves dos experimentos realizados encontramos uma faixa de concentracao otima de tensoativo para remocao do oleo na agua de producao dos campos produtores<SPLIT>, onde obtivemos extracoes de oleo na faixa de 90<SPLIT>% a 92<SPLIT>% para concentracoes de tensoativos de 1350 mg/l<SPLIT>, combinada com concentracao do calcio em torno de 700 mg<SPLIT>/l<SPLIT>, concentracao essa que encontramos nos efluentes dos campos produtores<SPLIT>.}
 Predicted: {
-os objetivos especificos sao os seguintes<SPLIT>: a<SPLIT>) construir uma barreira de contencao utilizando garrafa pet<SPLIT>. b<SPLIT>) realizar um levantamento sobre os tipos de contencoes existentes<SPLIT>.}
+atraves dos experimentos realizados encontramos uma faixa de concentracao otima de tensoativo para remocao do oleo na agua de producao dos campos produtores<SPLIT>, onde obtivemos extracoes de oleo na faixa de 90<SPLIT>% a 92<SPLIT>% para concentracoes de tensoativos de 1350 mg/l<SPLIT>, combinada com concentracao do calcio em torno de 700 mg/l<SPLIT>, concentracao essa que encontramos nos efluentes dos campos produtores<SPLIT>.}
 False positives: {
-pet
-.
+mg/l
 } False negatives: {
-pet.
+mg
+/l
 }

@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9997652765824271
-Training-Sample-Size=2269
-Evaluation-Sample-Size=252
+Evaluation-Score=0.9992539169360856
+Training-Sample-Size=2196
+Evaluation-Sample-Size=244
 Training-Algorithm=MAXENT_QN
 
 === MODEL PROPERTIES ===
@@ -9,21 +9,35 @@ Component-Name=TokenizerME
 Language=el
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1674195213054
+Timestamp=1677045928657
 TrainerType=Event
-Training-Eventhash=834fda7928de0cc6c7106c385266f0d
+Training-Eventhash=8628f7de2e055bf306c47c4505539bd7
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
 
 === MISCLASSIFIED DETAILS ===
 Expected: {
-1. η μη επέκταση των περιοχών που είχαν κάτω από τον έλεγχό τους οι αντίπαλες δυνάμεις<SPLIT>.}
+θα ψηφίσουμε επίσης υπέρ της τροπολογίας αρ. 43 που προτείνει την αξιολόγηση της αποτελεσματικότητας αυτής της οδηγίας και θα καταψηφίσουμε τις υπόλοιπες τροπολογίες που επιχειρούν να είναι ιδιαίτερα περιοριστικές<SPLIT>.}
 Predicted: {
-1<SPLIT>. η μη επέκταση των περιοχών που είχαν κάτω από τον έλεγχό τους οι αντίπαλες δυνάμεις<SPLIT>.}
+θα ψηφίσουμε επίσης υπέρ της τροπολογίας αρ<SPLIT>. 43 που προτείνει την αξιολόγηση της αποτελεσματικότητας αυτής της οδηγίας και θα καταψηφίσουμε τις υπόλοιπες τροπολογίες που επιχειρούν να είναι ιδιαίτερα περιοριστικές<SPLIT>.}
 False positives: {
-1
+αρ
 .
 } False negatives: {
-1.
+αρ.
+}
+
+Expected: {
+3. η εκκένωση των τουρκικών θυλάκων από την ειρηνευτική δύναμη του οηε.}
+Predicted: {
+3<SPLIT>. η εκκένωση των τουρκικών θυλάκων από την ειρηνευτική δύναμη του οηε<SPLIT>.}
+False positives: {
+3
+.
+οηε
+.
+} False negatives: {
+3.
+οηε.
 }

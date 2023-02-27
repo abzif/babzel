@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9996901986601092
-Training-Sample-Size=9401
-Evaluation-Sample-Size=1044
+Evaluation-Score=0.9997174343034756
+Training-Sample-Size=9298
+Evaluation-Sample-Size=1033
 Training-Algorithm=MAXENT
 
 === MODEL PROPERTIES ===
@@ -10,9 +10,9 @@ Component-Name=StatisticalLemmatizer
 Language=zh
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1674456825245
+Timestamp=1677290422880
 TrainerType=Event
-Training-Eventhash=48a99449c2ef29d534c9e27f184db2b2
+Training-Eventhash=7cb9d1fe088e3c816f1ee7e9a02da4d0
 factory=opennlp.tools.lemmatizer.LemmatizerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -163,170 +163,6 @@ Tok: Ref | Pred
 }
 
 Expected: {
-在	ADP	在
-这	PRON	这
-之后	ADP	之后
-，	PUNCT	，
-他	PRON	他
-接拍	VERB	接拍
-了	AUX	了
-一	NUM	一
-部	NOUN	部
-名	NOUN	名
-为	AUX	为
-《	PUNCT	《
-我们	PRON	我
-是	AUX	是
-马歇尔	PROPN	马歇尔
-》	PUNCT	》
-的	PART	的
-电影	NOUN	电影
-，	PUNCT	，
-这	DET	这
-部	NOUN	部
-电影	NOUN	电影
-讲述	VERB	讲述
-的	PART	的
-是	AUX	是
-大学	NOUN	大学
-橄榄	NOUN	橄榄
-球	PART	球
-队	PART	队
-中	ADP	中
-发生	VERB	发生
-的	PART	的
-故事	NOUN	故事
-，	PUNCT	，
-不过	ADV	不过
-并	ADV	并
-没有	VERB	没有
-获得	VERB	获得
-霹雳	NOUN	霹雳
-娇娃	NOUN	娇娃
-那样	PRON	那样
-的	PART	的
-成功	NOUN	成功
-。	PUNCT	。
-}
-Predicted: {
-在	ADP	在
-这	PRON	这
-之后	ADP	之后
-，	PUNCT	，
-他	PRON	他
-接拍	VERB	接拍
-了	AUX	了
-一	NUM	一
-部	NOUN	部
-名	NOUN	名
-为	AUX	为
-《	PUNCT	《
-我们	PRON	我们
-是	AUX	是
-马歇尔	PROPN	马歇尔
-》	PUNCT	》
-的	PART	的
-电影	NOUN	电影
-，	PUNCT	，
-这	DET	这
-部	NOUN	部
-电影	NOUN	电影
-讲述	VERB	讲述
-的	PART	的
-是	AUX	是
-大学	NOUN	大学
-橄榄	NOUN	橄榄
-球	PART	球
-队	PART	队
-中	ADP	中
-发生	VERB	发生
-的	PART	的
-故事	NOUN	故事
-，	PUNCT	，
-不过	ADV	不过
-并	ADV	并
-没有	VERB	没有
-获得	VERB	获得
-霹雳	NOUN	霹雳
-娇娃	NOUN	娇娃
-那样	PRON	那样
-的	PART	的
-成功	NOUN	成功
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-我们: 我 | 我们
-}
-
-Expected: {
-几	NUM	几
-个	NOUN	个
-月	NOUN	月
-后	ADP	后
-的	PART	的
-一	NUM	一
-次	NOUN	次
-采访	NOUN	采访
-，	PUNCT	，
-艾米	PROPN	艾米
-说到	VERB	说到
-：	PUNCT	：
-“	PUNCT	“
-如果	ADP	如果
-我们	PRON	我
-没有	VERB	没有
-变化	NOUN	变化
-的话	PART	的话
-，	PUNCT	，
-是	VERB	是
-没法	VERB	没法
-做出	VERB	做出
-第二	NUM	第二
-张	NOUN	张
-专辑	NOUN	专辑
-的	PART	的
-。	PUNCT	。
-”	PUNCT	”
-}
-Predicted: {
-几	NUM	几
-个	NOUN	个
-月	NOUN	月
-后	ADP	后
-的	PART	的
-一	NUM	一
-次	NOUN	次
-采访	NOUN	采访
-，	PUNCT	，
-艾米	PROPN	艾米
-说到	VERB	说到
-：	PUNCT	：
-“	PUNCT	“
-如果	ADP	如果
-我们	PRON	我们
-没有	VERB	没有
-变化	NOUN	变化
-的话	PART	的话
-，	PUNCT	，
-是	VERB	是
-没法	VERB	没法
-做出	VERB	做出
-第二	NUM	第二
-张	NOUN	张
-专辑	NOUN	专辑
-的	PART	的
-。	PUNCT	。
-”	PUNCT	”
-}
-Errors: {
-Tok: Ref | Pred
----------------
-我们: 我 | 我们
-}
-
-Expected: {
 电视	NOUN	电视
 台	PART	台
 把	ADP	把
@@ -391,45 +227,50 @@ Tok: Ref | Pred
 }
 
 Expected: {
-尽管	ADP	尽管
-如此	VERB	如此
+谨	ADV	谨
+见证	VERB	见证
 ，	PUNCT	，
 我们	PRON	我
-还是	ADV	还是
-可以	AUX	可以
-通过	ADP	通过
-纸币	NOUN	纸币
-序列	NOUN	序列
-号	PART	号
-来	ADV	来
-辨别	VERB	辨别
-纸币	NOUN	纸币
+已	ADV	已
+在	ADP	在
+指定	VERB	指定
 的	PART	的
-发行	VERB	发行
-国	PART	国
+地点	NOUN	地点
+和	CCONJ	和
+日期	NOUN	日期
+附上	VERB	附上
+了	AUX	了
+我们	PRON	我
+的	PART	的
+签名	NOUN	签名
+或	CCONJ	或
+记号	NOUN	记号
 。	PUNCT	。
 }
 Predicted: {
-尽管	ADP	尽管
-如此	VERB	如此
+谨	ADV	谨
+见证	VERB	见证
 ，	PUNCT	，
 我们	PRON	我们
-还是	ADV	还是
-可以	AUX	可以
-通过	ADP	通过
-纸币	NOUN	纸币
-序列	NOUN	序列
-号	PART	号
-来	ADV	来
-辨别	VERB	辨别
-纸币	NOUN	纸币
+已	ADV	已
+在	ADP	在
+指定	VERB	指定
 的	PART	的
-发行	VERB	发行
-国	PART	国
+地点	NOUN	地点
+和	CCONJ	和
+日期	NOUN	日期
+附上	VERB	附上
+了	AUX	了
+我们	PRON	我们
+的	PART	的
+签名	NOUN	签名
+或	CCONJ	或
+记号	NOUN	记号
 。	PUNCT	。
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
+我们: 我 | 我们
 我们: 我 | 我们
 }
