@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.8594043466595117
-Training-Sample-Size=3517
-Evaluation-Sample-Size=390
+Evaluation-Score=0.8385601730264175
+Training-Sample-Size=3078
+Evaluation-Sample-Size=341
 Training-Algorithm=MAXENT
 
 === MODEL PROPERTIES ===
@@ -9,9 +9,9 @@ Component-Name=SentenceDetectorME
 Language=no
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1682217164323
+Timestamp=1684722607853
 TrainerType=Event
-Training-Eventhash=1ea5708787737837785cb6adcd26f4a1
+Training-Eventhash=66323a1b1eb0c3bf44fe60c52662a446
 eosCharacters=.?!
 factory=opennlp.tools.sentdetect.SentenceDetectorFactory
 useTokenEnd=true
@@ -6369,36 +6369,4 @@ eposten var sendt frå ein server i nederland, og ordren var kort: this will pro
 } False negatives: {
 eposten var sendt frå ein server i nederland, og ordren var kort:
 this will prove a very expensive error!
-}
-
-Expected: {
-og da har eg nær sagt e .
-han kan kan seie det at # einaste karane som er heime det er postopnaren og læraren # eg trur ikkje her er stort andre . # .
-viss ikkje han skal ta med heradskasseraren ja han er nå .
-han bur .
-som regel heime og tar imot .
-ja .
-ta imot skatten .
-jaha .
-og revisoren han e # lyt nå # vere her og passe på ja # .
-ja han også # berre er her ja .
-}
-Predicted: {
-og da har eg nær sagt e .
-han kan kan seie det at # einaste karane som er heime det er postopnaren og læraren # eg trur ikkje her er stort andre .
-# .
-viss ikkje han skal ta med heradskasseraren ja han er nå .
-han bur .
-som regel heime og tar imot .
-ja .
-ta imot skatten .
-jaha .
-og revisoren han e # lyt nå # vere her og passe på ja # .
-ja han også # berre er her ja .
-}
-False positives: {
-han kan kan seie det at # einaste karane som er heime det er postopnaren og læraren # eg trur ikkje her er stort andre .
-# .
-} False negatives: {
-han kan kan seie det at # einaste karane som er heime det er postopnaren og læraren # eg trur ikkje her er stort andre . # .
 }

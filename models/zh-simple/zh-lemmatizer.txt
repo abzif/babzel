@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9997174343034756
-Training-Sample-Size=9298
-Evaluation-Sample-Size=1033
+Evaluation-Score=0.9986047510017172
+Training-Sample-Size=11096
+Evaluation-Sample-Size=1232
 Training-Algorithm=MAXENT
 
 === MODEL PROPERTIES ===
@@ -10,9 +10,9 @@ Component-Name=StatisticalLemmatizer
 Language=zh
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1682317943392
+Timestamp=1684813769651
 TrainerType=Event
-Training-Eventhash=7cb9d1fe088e3c816f1ee7e9a02da4d0
+Training-Eventhash=6fe5fbd8baa2707730efe261bad58749
 factory=opennlp.tools.lemmatizer.LemmatizerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -66,26 +66,44 @@ Tok: Ref | Pred
 
 Expected: {
 我	PRON	我
-对	ADP	对
-他们	PRON	他们
-很	ADV	很
-感动	VERB	感动
+去	VERB	去
+名古屋	PROPN	名古屋
+见	VERB	见
+过	AUX	过
 了	AUX	了
+以前	NOUN	以前
+作为	VERB	为
+交换生	NOUN	交换生
+在	ADP	在
+日本	PROPN	日本
+遇	VERB	遇
+到	VERB	到
+的	PART	的
+老朋友	NOUN	老朋友
 。	PUNCT	。
 }
 Predicted: {
 我	PRON	我
-对	ADP	对
-他们	PRON	他
-很	ADV	很
-感动	VERB	感动
+去	VERB	去
+名古屋	PROPN	名古屋
+见	VERB	见
+过	AUX	过
 了	AUX	了
+以前	NOUN	以前
+作为	VERB	作为
+交换生	NOUN	交换生
+在	ADP	在
+日本	PROPN	日本
+遇	VERB	遇
+到	VERB	到
+的	PART	的
+老朋友	NOUN	老朋友
 。	PUNCT	。
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
-他们: 他们 | 他
+作为: 为 | 作为
 }
 
 Expected: {
@@ -147,130 +165,2153 @@ Tok: Ref | Pred
 }
 
 Expected: {
-是	AUX	是
-他们	PROPN	他们
+吉本	PROPN	吉本
+本	ADV	本
+想	AUX	想
+召集	VERB	召集
+沼田	PROPN	沼田
+一	NUM	一
+家	NOUN	家
+進行	VERB	進行
+家訪	NOUN	家訪
+，	PUNCT	，
+然而	ADV	然而
+關鍵	ADJ	關鍵
+人物	NOUN	人物
+茂之	PROPN	茂之
+卻	ADV	卻
+不肯	AUX	肯
+露面	VERB	露面
+，	PUNCT	，
+面對	VERB	面對
+如此	NOUN	如此
+學生	NOUN	學生
+，	PUNCT	，
+吉本	PROPN	吉本
+作出	VERB	作出
+了	AUX	了
+驚人	ADJ	驚人
+之	PART	之
+舉	NOUN	舉
 。	PUNCT	。
 }
 Predicted: {
-是	AUX	是
-他们	PROPN	他
+吉本	PROPN	吉本
+本	ADV	本
+想	AUX	想
+召集	VERB	召集
+沼田	PROPN	沼田
+一	NUM	一
+家	NOUN	家
+進行	VERB	進行
+家訪	NOUN	家訪
+，	PUNCT	，
+然而	ADV	然而
+關鍵	ADJ	關鍵
+人物	NOUN	人物
+茂之	PROPN	茂之
+卻	ADV	卻
+不肯	AUX	不肯
+露面	VERB	露面
+，	PUNCT	，
+面對	VERB	面對
+如此	NOUN	如此
+學生	NOUN	學生
+，	PUNCT	，
+吉本	PROPN	吉本
+作出	VERB	作出
+了	AUX	了
+驚人	ADJ	驚人
+之	PART	之
+舉	NOUN	舉
 。	PUNCT	。
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
-他们: 他们 | 他
+不肯: 肯 | 不肯
 }
 
 Expected: {
-电视	NOUN	电视
-台	PART	台
-把	ADP	把
-一	NUM	一
-个	NOUN	个
-跋扈	ADJ	跋扈
-专横	ADJ	专横
-、	PUNCT	、
-乱伦	VERB	乱伦
-篡国	VERB	篡国
+其	PRON	其
+便當	NOUN	便當
+都是	VERB	是
+買來	VERB	買來
 的	PART	的
-武	PROPN	武
-则天	PROPN	则天
-演成	VERB	演成
-柔弱	ADJ	柔弱
-堪怜	ADJ	堪怜
-的	PART	的
-女子	NOUN	女子
 ，	PUNCT	，
-这	PRON	这
+就算	ADP	就算
+加熱	VERB	加熱
+也是	ADV	也是
+由	VERB	由
+媽媽	NOUN	媽媽
+負責	VERB	負責
+（	PUNCT	（
+後來	NOUN	後來
+揭曉	VERB	揭曉
+其實	ADV	其實
 是	VERB	是
-我们	PRON	我
-所	ADV	所
-不能	AUX	不能
-容忍	VERB	容忍
-的	PART	的
+避免	VERB	避免
+帶來	VERB	帶來
+厄運	NOUN	厄運
+）	PUNCT	）
+，	PUNCT	，
+父親	NOUN	父親
+則	ADV	則
+在	VERB	在
+電視	NOUN	電視
+台	PART	台
+上班	VERB	上班
 。	PUNCT	。
 }
 Predicted: {
-电视	NOUN	电视
-台	PART	台
-把	ADP	把
-一	NUM	一
-个	NOUN	个
-跋扈	ADJ	跋扈
-专横	ADJ	专横
-、	PUNCT	、
-乱伦	VERB	乱伦
-篡国	VERB	篡国
+其	PRON	其
+便當	NOUN	便當
+都是	VERB	是
+買來	VERB	買來
 的	PART	的
-武	PROPN	武
-则天	PROPN	则天
-演成	VERB	演成
-柔弱	ADJ	柔弱
-堪怜	ADJ	堪怜
-的	PART	的
-女子	NOUN	女子
 ，	PUNCT	，
-这	PRON	这
+就算	ADP	就算
+加熱	VERB	加熱
+也是	ADV	是
+由	VERB	由
+媽媽	NOUN	媽媽
+負責	VERB	負責
+（	PUNCT	（
+後來	NOUN	後來
+揭曉	VERB	揭曉
+其實	ADV	其實
 是	VERB	是
-我们	PRON	我们
-所	ADV	所
-不能	AUX	不能
-容忍	VERB	容忍
-的	PART	的
+避免	VERB	避免
+帶來	VERB	帶來
+厄運	NOUN	厄運
+）	PUNCT	）
+，	PUNCT	，
+父親	NOUN	父親
+則	ADV	則
+在	VERB	在
+電視	NOUN	電視
+台	PART	台
+上班	VERB	上班
 。	PUNCT	。
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
-我们: 我 | 我们
+也是: 也是 | 是
 }
 
 Expected: {
-谨	ADV	谨
-见证	VERB	见证
+有	VERB	有
+人	NOUN	人
+認為	VERB	為
+退化	NOUN	退化
+三	NUM	三
+角	NOUN	角
+形	PART	形
+並	ADV	並
+不能	AUX	能
+算	VERB	算
+是	AUX	是
+三	NUM	三
+角	NOUN	角
+形	PART	形
 ，	PUNCT	，
-我们	PRON	我
-已	ADV	已
+這	PRON	這
+是	VERB	是
+由於	ADP	由於
+它	PRON	它
+介乎	VERB	介乎
+於	VERB	於
+三	NUM	三
+角	NOUN	角
+不等	VERB	等
+式	PART	式
+之間	ADP	之間
+，	PUNCT	，
 在	ADP	在
-指定	VERB	指定
-的	PART	的
-地点	NOUN	地点
-和	CCONJ	和
-日期	NOUN	日期
-附上	VERB	附上
+一些	ADJ	一些
+資料	NOUN	資料
+中	ADP	中
+已	ADV	已
+否定	VERB	否定
 了	AUX	了
-我们	PRON	我
+其中	NOUN	其中
+一	NUM	一
+條	NOUN	條
+邊	NOUN	邊
+等	VERB	等
+於	VERB	於
+其餘	DET	其餘
+兩	NUM	兩
+條	NOUN	條
+邊	NOUN	邊
+之	PART	之
+和	NOUN	和
 的	PART	的
-签名	NOUN	签名
-或	CCONJ	或
-记号	NOUN	记号
+情況	NOUN	情況
 。	PUNCT	。
 }
 Predicted: {
-谨	ADV	谨
-见证	VERB	见证
+有	VERB	有
+人	NOUN	人
+認為	VERB	為
+退化	NOUN	退化
+三	NUM	三
+角	NOUN	角
+形	PART	形
+並	ADV	並
+不能	AUX	能
+算	VERB	算
+是	AUX	是
+三	NUM	三
+角	NOUN	角
+形	PART	形
 ，	PUNCT	，
-我们	PRON	我们
-已	ADV	已
+這	PRON	這
+是	VERB	是
+由於	ADP	由於
+它	PRON	它
+介乎	VERB	介乎
+於	VERB	於
+三	NUM	三
+角	NOUN	角
+不等	VERB	不等
+式	PART	式
+之間	ADP	之間
+，	PUNCT	，
 在	ADP	在
-指定	VERB	指定
-的	PART	的
-地点	NOUN	地点
-和	CCONJ	和
-日期	NOUN	日期
-附上	VERB	附上
+一些	ADJ	一些
+資料	NOUN	資料
+中	ADP	中
+已	ADV	已
+否定	VERB	否定
 了	AUX	了
-我们	PRON	我们
+其中	NOUN	其中
+一	NUM	一
+條	NOUN	條
+邊	NOUN	邊
+等	VERB	等
+於	VERB	於
+其餘	DET	其餘
+兩	NUM	兩
+條	NOUN	條
+邊	NOUN	邊
+之	PART	之
+和	NOUN	和
 的	PART	的
-签名	NOUN	签名
-或	CCONJ	或
-记号	NOUN	记号
+情況	NOUN	情況
 。	PUNCT	。
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
-我们: 我 | 我们
-我们: 我 | 我们
+不等: 等 | 不等
+}
+
+Expected: {
+大	PART	大
+部份	NOUN	部份
+學者	NOUN	學者
+都	ADV	都
+認為	VERB	為
+牠們	PRON	牠
+是	AUX	是
+所有	DET	所有
+現今	NOUN	現今
+齧齒	NOUN	齧齒
+目	PART	目
+的	PART	的
+基底	NOUN	基底
+，	PUNCT	，
+且是	AUX	是
+齧齒	NOUN	齧齒
+目	PART	目
+最後	NOUN	最後
+共同	ADJ	共同
+祖先	NOUN	祖先
+的	PART	的
+祖先	NOUN	祖先
+。	PUNCT	。
+}
+Predicted: {
+大	PART	大
+部份	NOUN	部份
+學者	NOUN	學者
+都	ADV	都
+認為	VERB	為
+牠們	PRON	牠
+是	AUX	是
+所有	DET	所有
+現今	NOUN	現今
+齧齒	NOUN	齧齒
+目	PART	目
+的	PART	的
+基底	NOUN	基底
+，	PUNCT	，
+且是	AUX	且是
+齧齒	NOUN	齧齒
+目	PART	目
+最後	NOUN	最後
+共同	ADJ	共同
+祖先	NOUN	祖先
+的	PART	的
+祖先	NOUN	祖先
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+且是: 是 | 且是
+}
+
+Expected: {
+銅鑼	PROPN	銅鑼
+灣	PART	灣
+每天	DET	每天
+中午	NOUN	中午
+鳴放	VERB	鳴放
+禮炮	NOUN	禮炮
+，	PUNCT	，
+亦是	ADV	亦是
+由	VERB	由
+怡和	PROPN	怡和
+負責	VERB	負責
+。	PUNCT	。
+}
+Predicted: {
+銅鑼	PROPN	銅鑼
+灣	PART	灣
+每天	DET	每天
+中午	NOUN	中午
+鳴放	VERB	鳴放
+禮炮	NOUN	禮炮
+，	PUNCT	，
+亦是	ADV	是
+由	VERB	由
+怡和	PROPN	怡和
+負責	VERB	負責
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+亦是: 亦是 | 是
+}
+
+Expected: {
+屬名	NOUN	屬名
+及	CCONJ	及
+種名	NOUN	種名
+都是	ADV	都是
+由	VERB	由
+蒙古	PROPN	蒙古
+古	PART	古
+生物	NOUN	生物
+學	PART	學
+家	PART	家
+瑞欽	PROPN	瑞欽
+·	PUNCT	·
+巴思缽	PROPN	巴思缽
+（	PUNCT	（
+rinchen	X	rinchen
+barsbold	X	barsbold
+）	PUNCT	）
+所	ADV	所
+命名	VERB	命名
+。	PUNCT	。
+}
+Predicted: {
+屬名	NOUN	屬名
+及	CCONJ	及
+種名	NOUN	種名
+都是	ADV	是
+由	VERB	由
+蒙古	PROPN	蒙古
+古	PART	古
+生物	NOUN	生物
+學	PART	學
+家	PART	家
+瑞欽	PROPN	瑞欽
+·	PUNCT	·
+巴思缽	PROPN	巴思缽
+（	PUNCT	（
+rinchen	X	rinchen
+barsbold	X	barsbold
+）	PUNCT	）
+所	ADV	所
+命名	VERB	命名
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+都是: 都是 | 是
+}
+
+Expected: {
+牙買加	PROPN	牙買加
+的	PART	的
+國內	NOUN	國內
+生產	NOUN	生產
+總值	NOUN	總值
+本	ADV	本
+已	ADV	已
+陷入	VERB	陷入
+經濟	NOUN	經濟
+增長	NOUN	增長
+放緩	VERB	放緩
+的	PART	的
+泥潭	NOUN	泥潭
+，	PUNCT	，
+這	DET	這
+次	NOUN	次
+廣泛	ADJ	廣泛
+的	PART	的
+風暴	NOUN	風暴
+破壞	NOUN	破壞
+更是	AUX	是
+雪上加霜	ADJ	雪上加霜
+。	PUNCT	。
+}
+Predicted: {
+牙買加	PROPN	牙買加
+的	PART	的
+國內	NOUN	國內
+生產	NOUN	生產
+總值	NOUN	總值
+本	ADV	本
+已	ADV	已
+陷入	VERB	陷入
+經濟	NOUN	經濟
+增長	NOUN	增長
+放緩	VERB	放緩
+的	PART	的
+泥潭	NOUN	泥潭
+，	PUNCT	，
+這	DET	這
+次	NOUN	次
+廣泛	ADJ	廣泛
+的	PART	的
+風暴	NOUN	風暴
+破壞	NOUN	破壞
+更是	AUX	更是
+雪上加霜	ADJ	雪上加霜
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+更是: 是 | 更是
+}
+
+Expected: {
+田	PROPN	田
+榮	PROPN	榮
+不服	VERB	服
+，	PUNCT	，
+不	ADV	不
+讓	VERB	讓
+田	PROPN	田
+市	PROPN	市
+離開	VERB	離開
+臨淄	PROPN	臨淄
+去	VERB	去
+膠東	PROPN	膠東
+。	PUNCT	。
+}
+Predicted: {
+田	PROPN	田
+榮	PROPN	榮
+不服	VERB	不服
+，	PUNCT	，
+不	ADV	不
+讓	VERB	讓
+田	PROPN	田
+市	PROPN	市
+離開	VERB	離開
+臨淄	PROPN	臨淄
+去	VERB	去
+膠東	PROPN	膠東
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+不服: 服 | 不服
+}
+
+Expected: {
+蓮屬	NOUN	蓮屬
+與	ADP	與
+睡蓮	NOUN	睡蓮
+屬	PART	屬
+外觀	NOUN	外觀
+相似	ADJ	相似
+，	PUNCT	，
+過去	NOUN	過去
+曾	ADV	曾
+被	AUX	被
+分類	VERB	分類
+為	VERB	為
+睡蓮	NOUN	睡蓮
+科	PART	科
+，	PUNCT	，
+在	VERB	在
+印度	PROPN	印度
+與	CCONJ	與
+中國	PROPN	中國
+常	ADV	常
+將	ADP	將
+這	DET	這
+二	NUM	二
+屬	NOUN	屬
+混為一談	VERB	為
+，	PUNCT	，
+但	ADV	但
+蓮屬	NOUN	蓮屬
+實際	NOUN	實際
+上	ADP	上
+與	ADP	與
+整個	DET	整個
+睡蓮	NOUN	睡蓮
+目	PART	目
+都	ADV	都
+不	ADV	不
+親近	ADJ	親近
+，	PUNCT	，
+是	VERB	是
+屬	VERB	屬
+於	VERB	於
+山龍眼	NOUN	山龍眼
+目	PART	目
+的	PART	的
+一	NUM	一
+支	NOUN	支
+。	PUNCT	。
+}
+Predicted: {
+蓮屬	NOUN	蓮屬
+與	ADP	與
+睡蓮	NOUN	睡蓮
+屬	PART	屬
+外觀	NOUN	外觀
+相似	ADJ	相似
+，	PUNCT	，
+過去	NOUN	過去
+曾	ADV	曾
+被	AUX	被
+分類	VERB	分類
+為	VERB	為
+睡蓮	NOUN	睡蓮
+科	PART	科
+，	PUNCT	，
+在	VERB	在
+印度	PROPN	印度
+與	CCONJ	與
+中國	PROPN	中國
+常	ADV	常
+將	ADP	將
+這	DET	這
+二	NUM	二
+屬	NOUN	屬
+混為一談	VERB	混為一談
+，	PUNCT	，
+但	ADV	但
+蓮屬	NOUN	蓮屬
+實際	NOUN	實際
+上	ADP	上
+與	ADP	與
+整個	DET	整個
+睡蓮	NOUN	睡蓮
+目	PART	目
+都	ADV	都
+不	ADV	不
+親近	ADJ	親近
+，	PUNCT	，
+是	VERB	是
+屬	VERB	屬
+於	VERB	於
+山龍眼	NOUN	山龍眼
+目	PART	目
+的	PART	的
+一	NUM	一
+支	NOUN	支
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+混為一談: 為 | 混為一談
+}
+
+Expected: {
+它	PRON	它
+首先	ADV	首先
+認為	VERB	為
+「	PUNCT	「
+銀河	PROPN	銀河
+聖靈	NOUN	聖靈
+」	PUNCT	」
+對	ADP	對
+銀河	PROPN	銀河
+系	PART	系
+進行	VERB	進行
+精神	NOUN	精神
+領導	NOUN	領導
+，	PUNCT	，
+教士	NOUN	教士
+階級	NOUN	階級
+被	AUX	被
+教導	VERB	教導
+必須	AUX	必須
+相信	VERB	相信
+基地	NOUN	基地
+各項	DET	各項
+科學	NOUN	科學
+技術	NOUN	技術
+的	PART	的
+運行	NOUN	運行
+都是	ADV	都是
+由	VERB	由
+銀河	PROPN	銀河
+聖靈	NOUN	聖靈
+在	ADP	在
+冥冥	NOUN	冥冥
+中	ADP	中
+進行	VERB	進行
+操作	NOUN	操作
+。	PUNCT	。
+}
+Predicted: {
+它	PRON	它
+首先	ADV	首先
+認為	VERB	為
+「	PUNCT	「
+銀河	PROPN	銀河
+聖靈	NOUN	聖靈
+」	PUNCT	」
+對	ADP	對
+銀河	PROPN	銀河
+系	PART	系
+進行	VERB	進行
+精神	NOUN	精神
+領導	NOUN	領導
+，	PUNCT	，
+教士	NOUN	教士
+階級	NOUN	階級
+被	AUX	被
+教導	VERB	教導
+必須	AUX	必須
+相信	VERB	相信
+基地	NOUN	基地
+各項	DET	各項
+科學	NOUN	科學
+技術	NOUN	技術
+的	PART	的
+運行	NOUN	運行
+都是	ADV	是
+由	VERB	由
+銀河	PROPN	銀河
+聖靈	NOUN	聖靈
+在	ADP	在
+冥冥	NOUN	冥冥
+中	ADP	中
+進行	VERB	進行
+操作	NOUN	操作
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+都是: 都是 | 是
+}
+
+Expected: {
+然而	ADV	然而
+，	PUNCT	，
+也	ADV	也
+有	VERB	有
+評論	VERB	評論
+者	PART	者
+對此	VERB	對此
+不	ADV	不
+以爲	AUX	為
+然	ADJ	然
+。	PUNCT	。
+}
+Predicted: {
+然而	ADV	然而
+，	PUNCT	，
+也	ADV	也
+有	VERB	有
+評論	VERB	評論
+者	PART	者
+對此	VERB	對此
+不	ADV	不
+以爲	AUX	以爲
+然	ADJ	然
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+以爲: 為 | 以爲
+}
+
+Expected: {
+他	PRON	他
+並	ADV	並
+沒有	VERB	有
+什麼	PRON	什麼
+特殊	ADJ	特殊
+的	PART	的
+才能	NOUN	才能
+，	PUNCT	，
+有	VERB	有
+的	PART	的
+只是	AUX	是
+對	ADP	對
+「	PUNCT	「
+萌	NOUN	萌
+」	PUNCT	」
+的	PART	的
+知識	NOUN	知識
+、	PUNCT	、
+見識	NOUN	見識
+與	CCONJ	與
+直覺	NOUN	直覺
+。	PUNCT	。
+}
+Predicted: {
+他	PRON	他
+並	ADV	並
+沒有	VERB	有
+什麼	PRON	什麼
+特殊	ADJ	特殊
+的	PART	的
+才能	NOUN	才能
+，	PUNCT	，
+有	VERB	有
+的	PART	的
+只是	AUX	只是
+對	ADP	對
+「	PUNCT	「
+萌	NOUN	萌
+」	PUNCT	」
+的	PART	的
+知識	NOUN	知識
+、	PUNCT	、
+見識	NOUN	見識
+與	CCONJ	與
+直覺	NOUN	直覺
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+只是: 是 | 只是
+}
+
+Expected: {
+中國	PROPN	中國
+國民	PROPN	國民
+黨	PART	黨
+中央	NOUN	中央
+電邀	VERB	電邀
+粵	PROPN	粵
+方	PART	方
+、	PUNCT	、
+滬	PROPN	滬
+方	PART	方
+中央	NOUN	中央
+委員	NOUN	委員
+來	VERB	來
+南京	PROPN	南京
+舉行	VERB	舉行
+中國	PROPN	中國
+國民	PROPN	國民
+黨	PART	黨
+四	NUM	四
+屆	NOUN	屆
+一中全會	PROPN	一中全會
+，	PUNCT	，
+但	ADV	但
+粵	PROPN	粵
+方	PART	方
+堅持	VERB	堅持
+蔣	PROPN	蔣
+必須	AUX	必須
+下野	VERB	下野
+，	PUNCT	，
+否則	VERB	否則
+不去	VERB	去
+南京	PROPN	南京
+參加	VERB	參加
+會議	NOUN	會議
+。	PUNCT	。
+}
+Predicted: {
+中國	PROPN	中國
+國民	PROPN	國民
+黨	PART	黨
+中央	NOUN	中央
+電邀	VERB	電邀
+粵	PROPN	粵
+方	PART	方
+、	PUNCT	、
+滬	PROPN	滬
+方	PART	方
+中央	NOUN	中央
+委員	NOUN	委員
+來	VERB	來
+南京	PROPN	南京
+舉行	VERB	舉行
+中國	PROPN	中國
+國民	PROPN	國民
+黨	PART	黨
+四	NUM	四
+屆	NOUN	屆
+一中全會	PROPN	一中全會
+，	PUNCT	，
+但	ADV	但
+粵	PROPN	粵
+方	PART	方
+堅持	VERB	堅持
+蔣	PROPN	蔣
+必須	AUX	必須
+下野	VERB	下野
+，	PUNCT	，
+否則	VERB	否則
+不去	VERB	不去
+南京	PROPN	南京
+參加	VERB	參加
+會議	NOUN	會議
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+不去: 去 | 不去
+}
+
+Expected: {
+見義勇為	VERB	為
+是	VERB	是
+指	VERB	指
+在	ADP	在
+職務	NOUN	職務
+範圍	NOUN	範圍
+之外	ADP	之外
+，	PUNCT	，
+制止	VERB	制止
+對	ADP	對
+他人	NOUN	他人
+的	PART	的
+人身	NOUN	人身
+、	PUNCT	、
+財產	NOUN	財產
+的	PART	的
+不法	ADJ	不法
+侵害	NOUN	侵害
+，	PUNCT	，
+或者	CCONJ	或者
+搶險	VERB	搶險
+救災	VERB	救災
+、	PUNCT	、
+救助	VERB	救助
+遇難	VERB	遇難
+者	PART	者
+，	PUNCT	，
+一般	ADJ	一般
+而	ADV	而
+言	VERB	言
+，	PUNCT	，
+見義勇為	VERB	為
+會	AUX	會
+使	VERB	使
+行為	VERB	為
+人	PART	人
+自己	PRON	自己
+遭受	VERB	遭受
+損害	NOUN	損害
+，	PUNCT	，
+或者	CCONJ	或者
+承擔	VERB	承擔
+損害	NOUN	損害
+的	PART	的
+風險	NOUN	風險
+。	PUNCT	。
+}
+Predicted: {
+見義勇為	VERB	見義勇為
+是	VERB	是
+指	VERB	指
+在	ADP	在
+職務	NOUN	職務
+範圍	NOUN	範圍
+之外	ADP	之外
+，	PUNCT	，
+制止	VERB	制止
+對	ADP	對
+他人	NOUN	他人
+的	PART	的
+人身	NOUN	人身
+、	PUNCT	、
+財產	NOUN	財產
+的	PART	的
+不法	ADJ	不法
+侵害	NOUN	侵害
+，	PUNCT	，
+或者	CCONJ	或者
+搶險	VERB	搶險
+救災	VERB	救災
+、	PUNCT	、
+救助	VERB	救助
+遇難	VERB	遇難
+者	PART	者
+，	PUNCT	，
+一般	ADJ	一般
+而	ADV	而
+言	VERB	言
+，	PUNCT	，
+見義勇為	VERB	見義勇為
+會	AUX	會
+使	VERB	使
+行為	VERB	行為
+人	PART	人
+自己	PRON	自己
+遭受	VERB	遭受
+損害	NOUN	損害
+，	PUNCT	，
+或者	CCONJ	或者
+承擔	VERB	承擔
+損害	NOUN	損害
+的	PART	的
+風險	NOUN	風險
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+見義勇為: 為 | 見義勇為
+見義勇為: 為 | 見義勇為
+行為: 為 | 行為
+}
+
+Expected: {
+不過	ADV	不過
+車票	PROPN	車票
+價格	PROPN	價格
+即使	ADP	即使
+按照	VERB	按照
+烏克蘭	PROPN	烏克蘭
+標準	NOUN	標準
+也是	ADV	也是
+非常	ADV	非常
+便宜	ADJ	便宜
+，	PUNCT	，
+例如	ADV	例如
+從	ADP	從
+利維夫	PROPN	利維夫
+到	VERB	到
+匈牙利	PROPN	匈牙利
+、	PUNCT	、
+斯洛伐克	PROPN	斯洛伐克
+邊境	NOUN	邊境
+有	VERB	有
+數百	NUM	數百
+千米	NOUN	千米
+的	PART	的
+距離	NOUN	距離
+，	PUNCT	，
+但	ADV	但
+票價	NOUN	票價
+只有	VERB	只有
+幾	NUM	幾
+歐	PROPN	歐
+元	NOUN	元
+。	PUNCT	。
+}
+Predicted: {
+不過	ADV	不過
+車票	PROPN	車票
+價格	PROPN	價格
+即使	ADP	即使
+按照	VERB	按照
+烏克蘭	PROPN	烏克蘭
+標準	NOUN	標準
+也是	ADV	是
+非常	ADV	非常
+便宜	ADJ	便宜
+，	PUNCT	，
+例如	ADV	例如
+從	ADP	從
+利維夫	PROPN	利維夫
+到	VERB	到
+匈牙利	PROPN	匈牙利
+、	PUNCT	、
+斯洛伐克	PROPN	斯洛伐克
+邊境	NOUN	邊境
+有	VERB	有
+數百	NUM	數百
+千米	NOUN	千米
+的	PART	的
+距離	NOUN	距離
+，	PUNCT	，
+但	ADV	但
+票價	NOUN	票價
+只有	VERB	只有
+幾	NUM	幾
+歐	PROPN	歐
+元	NOUN	元
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+也是: 也是 | 是
+}
+
+Expected: {
+吉本	PROPN	吉本
+本	ADV	本
+想	AUX	想
+召集	VERB	召集
+沼田	PROPN	沼田
+一	NUM	一
+家	NOUN	家
+进行	VERB	进行
+家访	NOUN	家访
+，	PUNCT	，
+然而	ADV	然而
+关键	ADJ	关键
+人物	NOUN	人物
+茂之	PROPN	茂之
+却	ADV	却
+不肯	AUX	肯
+露面	VERB	露面
+，	PUNCT	，
+面对	VERB	面对
+如此	NOUN	如此
+学生	NOUN	学生
+，	PUNCT	，
+吉本	PROPN	吉本
+作出	VERB	作出
+了	AUX	了
+惊人	ADJ	惊人
+之	PART	之
+举	NOUN	举
+。	PUNCT	。
+}
+Predicted: {
+吉本	PROPN	吉本
+本	ADV	本
+想	AUX	想
+召集	VERB	召集
+沼田	PROPN	沼田
+一	NUM	一
+家	NOUN	家
+进行	VERB	进行
+家访	NOUN	家访
+，	PUNCT	，
+然而	ADV	然而
+关键	ADJ	关键
+人物	NOUN	人物
+茂之	PROPN	茂之
+却	ADV	却
+不肯	AUX	不肯
+露面	VERB	露面
+，	PUNCT	，
+面对	VERB	面对
+如此	NOUN	如此
+学生	NOUN	学生
+，	PUNCT	，
+吉本	PROPN	吉本
+作出	VERB	作出
+了	AUX	了
+惊人	ADJ	惊人
+之	PART	之
+举	NOUN	举
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+不肯: 肯 | 不肯
+}
+
+Expected: {
+其	PRON	其
+便当	NOUN	便当
+都是	VERB	是
+买来	VERB	买来
+的	PART	的
+，	PUNCT	，
+就算	ADP	就算
+加热	VERB	加热
+也是	ADV	也是
+由	VERB	由
+妈妈	NOUN	妈妈
+负责	VERB	负责
+（	PUNCT	（
+后来	NOUN	后来
+揭晓	VERB	揭晓
+其实	ADV	其实
+是	VERB	是
+避免	VERB	避免
+带来	VERB	带来
+厄运	NOUN	厄运
+）	PUNCT	）
+，	PUNCT	，
+父亲	NOUN	父亲
+则	ADV	则
+在	VERB	在
+电视	NOUN	电视
+台	PART	台
+上班	VERB	上班
+。	PUNCT	。
+}
+Predicted: {
+其	PRON	其
+便当	NOUN	便当
+都是	VERB	是
+买来	VERB	买来
+的	PART	的
+，	PUNCT	，
+就算	ADP	就算
+加热	VERB	加热
+也是	ADV	是
+由	VERB	由
+妈妈	NOUN	妈妈
+负责	VERB	负责
+（	PUNCT	（
+后来	NOUN	后来
+揭晓	VERB	揭晓
+其实	ADV	其实
+是	VERB	是
+避免	VERB	避免
+带来	VERB	带来
+厄运	NOUN	厄运
+）	PUNCT	）
+，	PUNCT	，
+父亲	NOUN	父亲
+则	ADV	则
+在	VERB	在
+电视	NOUN	电视
+台	PART	台
+上班	VERB	上班
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+也是: 也是 | 是
+}
+
+Expected: {
+有	VERB	有
+人	NOUN	人
+认为	VERB	为
+退化	NOUN	退化
+三	NUM	三
+角	NOUN	角
+形	PART	形
+并	ADV	并
+不能	AUX	能
+算	VERB	算
+是	AUX	是
+三	NUM	三
+角	NOUN	角
+形	PART	形
+，	PUNCT	，
+这	PRON	这
+是	VERB	是
+由于	ADP	由于
+它	PRON	它
+介乎	VERB	介乎
+于	VERB	于
+三	NUM	三
+角	NOUN	角
+不等	VERB	等
+式	PART	式
+之间	ADP	之间
+，	PUNCT	，
+在	ADP	在
+一些	ADJ	一些
+资料	NOUN	资料
+中	ADP	中
+已	ADV	已
+否定	VERB	否定
+了	AUX	了
+其中	NOUN	其中
+一	NUM	一
+条	NOUN	条
+边	NOUN	边
+等	VERB	等
+于	VERB	于
+其余	DET	其余
+两	NUM	两
+条	NOUN	条
+边	NOUN	边
+之	PART	之
+和	NOUN	和
+的	PART	的
+情况	NOUN	情况
+。	PUNCT	。
+}
+Predicted: {
+有	VERB	有
+人	NOUN	人
+认为	VERB	为
+退化	NOUN	退化
+三	NUM	三
+角	NOUN	角
+形	PART	形
+并	ADV	并
+不能	AUX	能
+算	VERB	算
+是	AUX	是
+三	NUM	三
+角	NOUN	角
+形	PART	形
+，	PUNCT	，
+这	PRON	这
+是	VERB	是
+由于	ADP	由于
+它	PRON	它
+介乎	VERB	介乎
+于	VERB	于
+三	NUM	三
+角	NOUN	角
+不等	VERB	不等
+式	PART	式
+之间	ADP	之间
+，	PUNCT	，
+在	ADP	在
+一些	ADJ	一些
+资料	NOUN	资料
+中	ADP	中
+已	ADV	已
+否定	VERB	否定
+了	AUX	了
+其中	NOUN	其中
+一	NUM	一
+条	NOUN	条
+边	NOUN	边
+等	VERB	等
+于	VERB	于
+其余	DET	其余
+两	NUM	两
+条	NOUN	条
+边	NOUN	边
+之	PART	之
+和	NOUN	和
+的	PART	的
+情况	NOUN	情况
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+不等: 等 | 不等
+}
+
+Expected: {
+大	PART	大
+部份	NOUN	部份
+学者	NOUN	学者
+都	ADV	都
+认为	VERB	为
+它们	PRON	它
+是	AUX	是
+所有	DET	所有
+现今	NOUN	现今
+啮齿	NOUN	啮齿
+目	PART	目
+的	PART	的
+基底	NOUN	基底
+，	PUNCT	，
+且是	AUX	是
+啮齿	NOUN	啮齿
+目	PART	目
+最后	NOUN	最后
+共同	ADJ	共同
+祖先	NOUN	祖先
+的	PART	的
+祖先	NOUN	祖先
+。	PUNCT	。
+}
+Predicted: {
+大	PART	大
+部份	NOUN	部份
+学者	NOUN	学者
+都	ADV	都
+认为	VERB	为
+它们	PRON	它
+是	AUX	是
+所有	DET	所有
+现今	NOUN	现今
+啮齿	NOUN	啮齿
+目	PART	目
+的	PART	的
+基底	NOUN	基底
+，	PUNCT	，
+且是	AUX	且是
+啮齿	NOUN	啮齿
+目	PART	目
+最后	NOUN	最后
+共同	ADJ	共同
+祖先	NOUN	祖先
+的	PART	的
+祖先	NOUN	祖先
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+且是: 是 | 且是
+}
+
+Expected: {
+铜锣	PROPN	铜锣
+湾	PART	湾
+每天	DET	每天
+中午	NOUN	中午
+鸣放	VERB	鸣放
+礼炮	NOUN	礼炮
+，	PUNCT	，
+亦是	ADV	亦是
+由	VERB	由
+怡和	PROPN	怡和
+负责	VERB	负责
+。	PUNCT	。
+}
+Predicted: {
+铜锣	PROPN	铜锣
+湾	PART	湾
+每天	DET	每天
+中午	NOUN	中午
+鸣放	VERB	鸣放
+礼炮	NOUN	礼炮
+，	PUNCT	，
+亦是	ADV	是
+由	VERB	由
+怡和	PROPN	怡和
+负责	VERB	负责
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+亦是: 亦是 | 是
+}
+
+Expected: {
+属名	NOUN	属名
+及	CCONJ	及
+种名	NOUN	种名
+都是	ADV	都是
+由	VERB	由
+蒙古	PROPN	蒙古
+古	PART	古
+生物	NOUN	生物
+学	PART	学
+家	PART	家
+瑞钦	PROPN	瑞钦
+·	PUNCT	·
+巴思钵	PROPN	巴思钵
+（	PUNCT	（
+rinchen	X	rinchen
+barsbold	X	barsbold
+）	PUNCT	）
+所	ADV	所
+命名	VERB	命名
+。	PUNCT	。
+}
+Predicted: {
+属名	NOUN	属名
+及	CCONJ	及
+种名	NOUN	种名
+都是	ADV	是
+由	VERB	由
+蒙古	PROPN	蒙古
+古	PART	古
+生物	NOUN	生物
+学	PART	学
+家	PART	家
+瑞钦	PROPN	瑞钦
+·	PUNCT	·
+巴思钵	PROPN	巴思钵
+（	PUNCT	（
+rinchen	X	rinchen
+barsbold	X	barsbold
+）	PUNCT	）
+所	ADV	所
+命名	VERB	命名
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+都是: 都是 | 是
+}
+
+Expected: {
+牙买加	PROPN	牙买加
+的	PART	的
+国内	NOUN	国内
+生产	NOUN	生产
+总值	NOUN	总值
+本	ADV	本
+已	ADV	已
+陷入	VERB	陷入
+经济	NOUN	经济
+增长	NOUN	增长
+放缓	VERB	放缓
+的	PART	的
+泥潭	NOUN	泥潭
+，	PUNCT	，
+这	DET	这
+次	NOUN	次
+广泛	ADJ	广泛
+的	PART	的
+风暴	NOUN	风暴
+破坏	NOUN	破坏
+更是	AUX	是
+雪上加霜	ADJ	雪上加霜
+。	PUNCT	。
+}
+Predicted: {
+牙买加	PROPN	牙买加
+的	PART	的
+国内	NOUN	国内
+生产	NOUN	生产
+总值	NOUN	总值
+本	ADV	本
+已	ADV	已
+陷入	VERB	陷入
+经济	NOUN	经济
+增长	NOUN	增长
+放缓	VERB	放缓
+的	PART	的
+泥潭	NOUN	泥潭
+，	PUNCT	，
+这	DET	这
+次	NOUN	次
+广泛	ADJ	广泛
+的	PART	的
+风暴	NOUN	风暴
+破坏	NOUN	破坏
+更是	AUX	更是
+雪上加霜	ADJ	雪上加霜
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+更是: 是 | 更是
+}
+
+Expected: {
+田	PROPN	田
+荣	PROPN	荣
+不服	VERB	服
+，	PUNCT	，
+不	ADV	不
+让	VERB	让
+田	PROPN	田
+市	PROPN	市
+离开	VERB	离开
+临淄	PROPN	临淄
+去	VERB	去
+胶东	PROPN	胶东
+。	PUNCT	。
+}
+Predicted: {
+田	PROPN	田
+荣	PROPN	荣
+不服	VERB	不服
+，	PUNCT	，
+不	ADV	不
+让	VERB	让
+田	PROPN	田
+市	PROPN	市
+离开	VERB	离开
+临淄	PROPN	临淄
+去	VERB	去
+胶东	PROPN	胶东
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+不服: 服 | 不服
+}
+
+Expected: {
+莲属	NOUN	莲属
+与	ADP	与
+睡莲	NOUN	睡莲
+属	PART	属
+外观	NOUN	外观
+相似	ADJ	相似
+，	PUNCT	，
+过去	NOUN	过去
+曾	ADV	曾
+被	AUX	被
+分类	VERB	分类
+为	VERB	为
+睡莲	NOUN	睡莲
+科	PART	科
+，	PUNCT	，
+在	VERB	在
+印度	PROPN	印度
+与	CCONJ	与
+中国	PROPN	中国
+常	ADV	常
+将	ADP	将
+这	DET	这
+二	NUM	二
+属	NOUN	属
+混为一谈	VERB	为
+，	PUNCT	，
+但	ADV	但
+莲属	NOUN	莲属
+实际	NOUN	实际
+上	ADP	上
+与	ADP	与
+整个	DET	整个
+睡莲	NOUN	睡莲
+目	PART	目
+都	ADV	都
+不	ADV	不
+亲近	ADJ	亲近
+，	PUNCT	，
+是	VERB	是
+属	VERB	属
+于	VERB	于
+山龙眼	NOUN	山龙眼
+目	PART	目
+的	PART	的
+一	NUM	一
+支	NOUN	支
+。	PUNCT	。
+}
+Predicted: {
+莲属	NOUN	莲属
+与	ADP	与
+睡莲	NOUN	睡莲
+属	PART	属
+外观	NOUN	外观
+相似	ADJ	相似
+，	PUNCT	，
+过去	NOUN	过去
+曾	ADV	曾
+被	AUX	被
+分类	VERB	分类
+为	VERB	为
+睡莲	NOUN	睡莲
+科	PART	科
+，	PUNCT	，
+在	VERB	在
+印度	PROPN	印度
+与	CCONJ	与
+中国	PROPN	中国
+常	ADV	常
+将	ADP	将
+这	DET	这
+二	NUM	二
+属	NOUN	属
+混为一谈	VERB	混为一谈
+，	PUNCT	，
+但	ADV	但
+莲属	NOUN	莲属
+实际	NOUN	实际
+上	ADP	上
+与	ADP	与
+整个	DET	整个
+睡莲	NOUN	睡莲
+目	PART	目
+都	ADV	都
+不	ADV	不
+亲近	ADJ	亲近
+，	PUNCT	，
+是	VERB	是
+属	VERB	属
+于	VERB	于
+山龙眼	NOUN	山龙眼
+目	PART	目
+的	PART	的
+一	NUM	一
+支	NOUN	支
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+混为一谈: 为 | 混为一谈
+}
+
+Expected: {
+它	PRON	它
+首先	ADV	首先
+认为	VERB	为
+“	PUNCT	“
+银河	PROPN	银河
+圣灵	NOUN	圣灵
+”	PUNCT	”
+对	ADP	对
+银河	PROPN	银河
+系	PART	系
+进行	VERB	进行
+精神	NOUN	精神
+领导	NOUN	领导
+，	PUNCT	，
+教士	NOUN	教士
+阶级	NOUN	阶级
+被	AUX	被
+教导	VERB	教导
+必须	AUX	必须
+相信	VERB	相信
+基地	NOUN	基地
+各项	DET	各项
+科学	NOUN	科学
+技术	NOUN	技术
+的	PART	的
+运行	NOUN	运行
+都是	ADV	都是
+由	VERB	由
+银河	PROPN	银河
+圣灵	NOUN	圣灵
+在	ADP	在
+冥冥	NOUN	冥冥
+中	ADP	中
+进行	VERB	进行
+操作	NOUN	操作
+。	PUNCT	。
+}
+Predicted: {
+它	PRON	它
+首先	ADV	首先
+认为	VERB	为
+“	PUNCT	“
+银河	PROPN	银河
+圣灵	NOUN	圣灵
+”	PUNCT	”
+对	ADP	对
+银河	PROPN	银河
+系	PART	系
+进行	VERB	进行
+精神	NOUN	精神
+领导	NOUN	领导
+，	PUNCT	，
+教士	NOUN	教士
+阶级	NOUN	阶级
+被	AUX	被
+教导	VERB	教导
+必须	AUX	必须
+相信	VERB	相信
+基地	NOUN	基地
+各项	DET	各项
+科学	NOUN	科学
+技术	NOUN	技术
+的	PART	的
+运行	NOUN	运行
+都是	ADV	是
+由	VERB	由
+银河	PROPN	银河
+圣灵	NOUN	圣灵
+在	ADP	在
+冥冥	NOUN	冥冥
+中	ADP	中
+进行	VERB	进行
+操作	NOUN	操作
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+都是: 都是 | 是
+}
+
+Expected: {
+他	PRON	他
+并	ADV	并
+没有	VERB	有
+什么	PRON	什么
+特殊	ADJ	特殊
+的	PART	的
+才能	NOUN	才能
+，	PUNCT	，
+有	VERB	有
+的	PART	的
+只是	AUX	是
+对	ADP	对
+“	PUNCT	“
+萌	NOUN	萌
+”	PUNCT	”
+的	PART	的
+知识	NOUN	知识
+、	PUNCT	、
+见识	NOUN	见识
+与	CCONJ	与
+直觉	NOUN	直觉
+。	PUNCT	。
+}
+Predicted: {
+他	PRON	他
+并	ADV	并
+没有	VERB	有
+什么	PRON	什么
+特殊	ADJ	特殊
+的	PART	的
+才能	NOUN	才能
+，	PUNCT	，
+有	VERB	有
+的	PART	的
+只是	AUX	只是
+对	ADP	对
+“	PUNCT	“
+萌	NOUN	萌
+”	PUNCT	”
+的	PART	的
+知识	NOUN	知识
+、	PUNCT	、
+见识	NOUN	见识
+与	CCONJ	与
+直觉	NOUN	直觉
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+只是: 是 | 只是
+}
+
+Expected: {
+中国	PROPN	中国
+国民	PROPN	国民
+党	PART	党
+中央	NOUN	中央
+电邀	VERB	电邀
+粤	PROPN	粤
+方	PART	方
+、	PUNCT	、
+沪	PROPN	沪
+方	PART	方
+中央	NOUN	中央
+委员	NOUN	委员
+来	VERB	来
+南京	PROPN	南京
+举行	VERB	举行
+中国	PROPN	中国
+国民	PROPN	国民
+党	PART	党
+四	NUM	四
+届	NOUN	届
+一中全会	PROPN	一中全会
+，	PUNCT	，
+但	ADV	但
+粤	PROPN	粤
+方	PART	方
+坚持	VERB	坚持
+蒋	PROPN	蒋
+必须	AUX	必须
+下野	VERB	下野
+，	PUNCT	，
+否则	VERB	否则
+不去	VERB	去
+南京	PROPN	南京
+参加	VERB	参加
+会议	NOUN	会议
+。	PUNCT	。
+}
+Predicted: {
+中国	PROPN	中国
+国民	PROPN	国民
+党	PART	党
+中央	NOUN	中央
+电邀	VERB	电邀
+粤	PROPN	粤
+方	PART	方
+、	PUNCT	、
+沪	PROPN	沪
+方	PART	方
+中央	NOUN	中央
+委员	NOUN	委员
+来	VERB	来
+南京	PROPN	南京
+举行	VERB	举行
+中国	PROPN	中国
+国民	PROPN	国民
+党	PART	党
+四	NUM	四
+届	NOUN	届
+一中全会	PROPN	一中全会
+，	PUNCT	，
+但	ADV	但
+粤	PROPN	粤
+方	PART	方
+坚持	VERB	坚持
+蒋	PROPN	蒋
+必须	AUX	必须
+下野	VERB	下野
+，	PUNCT	，
+否则	VERB	否则
+不去	VERB	不去
+南京	PROPN	南京
+参加	VERB	参加
+会议	NOUN	会议
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+不去: 去 | 不去
+}
+
+Expected: {
+见义勇为	VERB	为
+是	VERB	是
+指	VERB	指
+在	ADP	在
+职务	NOUN	职务
+范围	NOUN	范围
+之外	ADP	之外
+，	PUNCT	，
+制止	VERB	制止
+对	ADP	对
+他人	NOUN	他人
+的	PART	的
+人身	NOUN	人身
+、	PUNCT	、
+财产	NOUN	财产
+的	PART	的
+不法	ADJ	不法
+侵害	NOUN	侵害
+，	PUNCT	，
+或者	CCONJ	或者
+抢险	VERB	抢险
+救灾	VERB	救灾
+、	PUNCT	、
+救助	VERB	救助
+遇难	VERB	遇难
+者	PART	者
+，	PUNCT	，
+一般	ADJ	一般
+而	ADV	而
+言	VERB	言
+，	PUNCT	，
+见义勇为	VERB	为
+会	AUX	会
+使	VERB	使
+行为	VERB	为
+人	PART	人
+自己	PRON	自己
+遭受	VERB	遭受
+损害	NOUN	损害
+，	PUNCT	，
+或者	CCONJ	或者
+承担	VERB	承担
+损害	NOUN	损害
+的	PART	的
+风险	NOUN	风险
+。	PUNCT	。
+}
+Predicted: {
+见义勇为	VERB	见义勇为
+是	VERB	是
+指	VERB	指
+在	ADP	在
+职务	NOUN	职务
+范围	NOUN	范围
+之外	ADP	之外
+，	PUNCT	，
+制止	VERB	制止
+对	ADP	对
+他人	NOUN	他人
+的	PART	的
+人身	NOUN	人身
+、	PUNCT	、
+财产	NOUN	财产
+的	PART	的
+不法	ADJ	不法
+侵害	NOUN	侵害
+，	PUNCT	，
+或者	CCONJ	或者
+抢险	VERB	抢险
+救灾	VERB	救灾
+、	PUNCT	、
+救助	VERB	救助
+遇难	VERB	遇难
+者	PART	者
+，	PUNCT	，
+一般	ADJ	一般
+而	ADV	而
+言	VERB	言
+，	PUNCT	，
+见义勇为	VERB	见义勇为
+会	AUX	会
+使	VERB	使
+行为	VERB	行为
+人	PART	人
+自己	PRON	自己
+遭受	VERB	遭受
+损害	NOUN	损害
+，	PUNCT	，
+或者	CCONJ	或者
+承担	VERB	承担
+损害	NOUN	损害
+的	PART	的
+风险	NOUN	风险
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+见义勇为: 为 | 见义勇为
+见义勇为: 为 | 见义勇为
+行为: 为 | 行为
+}
+
+Expected: {
+不过	ADV	不过
+车票	PROPN	车票
+价格	PROPN	价格
+即使	ADP	即使
+按照	VERB	按照
+乌克兰	PROPN	乌克兰
+标准	NOUN	标准
+也是	ADV	也是
+非常	ADV	非常
+便宜	ADJ	便宜
+，	PUNCT	，
+例如	ADV	例如
+从	ADP	从
+利维夫	PROPN	利维夫
+到	VERB	到
+匈牙利	PROPN	匈牙利
+、	PUNCT	、
+斯洛伐克	PROPN	斯洛伐克
+边境	NOUN	边境
+有	VERB	有
+数百	NUM	数百
+千米	NOUN	千米
+的	PART	的
+距离	NOUN	距离
+，	PUNCT	，
+但	ADV	但
+票价	NOUN	票价
+只有	VERB	只有
+几	NUM	几
+欧	PROPN	欧
+元	NOUN	元
+。	PUNCT	。
+}
+Predicted: {
+不过	ADV	不过
+车票	PROPN	车票
+价格	PROPN	价格
+即使	ADP	即使
+按照	VERB	按照
+乌克兰	PROPN	乌克兰
+标准	NOUN	标准
+也是	ADV	是
+非常	ADV	非常
+便宜	ADJ	便宜
+，	PUNCT	，
+例如	ADV	例如
+从	ADP	从
+利维夫	PROPN	利维夫
+到	VERB	到
+匈牙利	PROPN	匈牙利
+、	PUNCT	、
+斯洛伐克	PROPN	斯洛伐克
+边境	NOUN	边境
+有	VERB	有
+数百	NUM	数百
+千米	NOUN	千米
+的	PART	的
+距离	NOUN	距离
+，	PUNCT	，
+但	ADV	但
+票价	NOUN	票价
+只有	VERB	只有
+几	NUM	几
+欧	PROPN	欧
+元	NOUN	元
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+也是: 也是 | 是
+}
+
+Expected: {
+而	CCONJ	而
+閣下	PRON	閣下
+的	PART	的
+工作	NOUN	工作
+亦	ADV	亦
+祇是	ADV	祇是
+主持	VERB	主持
+今	DET	今
+天	NOUN	天
+這	DET	這
+項	NOUN	項
+主席	NOUN	主席
+選舉	NOUN	選舉
+，	PUNCT	，
+所以	ADV	所以
+我	PRON	我
+希望	VERB	希望
+你	PRON	你
+不要	ADV	不要
+再	ADV	再
+浪費	VERB	浪費
+時間	NOUN	時間
+，	PUNCT	，
+直接	ADV	直接
+進入	VERB	進入
+立法會	NOUN	立法會
+主席	NOUN	主席
+選舉	NOUN	選舉
+的	PART	的
+程序	NOUN	程序
+。	PUNCT	。
+}
+Predicted: {
+而	CCONJ	而
+閣下	PRON	閣下
+的	PART	的
+工作	NOUN	工作
+亦	ADV	亦
+祇是	ADV	祇是
+主持	VERB	主持
+今	DET	今
+天	NOUN	天
+這	DET	這
+項	NOUN	項
+主席	NOUN	主席
+選舉	NOUN	選舉
+，	PUNCT	，
+所以	ADV	所以
+我	PRON	我
+希望	VERB	希望
+你	PRON	你
+不要	ADV	要
+再	ADV	再
+浪費	VERB	浪費
+時間	NOUN	時間
+，	PUNCT	，
+直接	ADV	直接
+進入	VERB	進入
+立法會	NOUN	立法會
+主席	NOUN	主席
+選舉	NOUN	選舉
+的	PART	的
+程序	NOUN	程序
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+不要: 不要 | 要
+}
+
+Expected: {
+我	PRON	我
+事後	NOUN	事後
+問	VERB	問
+她	PRON	她
+是不是	VERB	是
+明白	VERB	明白
+為	ADP	為
+什麼	PRON	什麼
+人們	NOUN	人
+會	AUX	會
+投票	VERB	投票
+給	VERB	給
+特朗普	PROPN	特朗普
+。	PUNCT	。
+}
+Predicted: {
+我	PRON	我
+事後	NOUN	事後
+問	VERB	問
+她	PRON	她
+是不是	VERB	是不是
+明白	VERB	明白
+為	ADP	為
+什麼	PRON	什麼
+人們	NOUN	人
+會	AUX	會
+投票	VERB	投票
+給	VERB	給
+特朗普	PROPN	特朗普
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+是不是: 是 | 是不是
+}
+
+Expected: {
+初期	NOUN	初期
+的	PART	的
+投票	NOUN	投票
+顯示	VERB	顯示
+這	DET	這
+次	NOUN	次
+拉丁	PROPN	拉丁
+美裔	PROPN	美裔
+美國人	PROPN	美國人
+投票	NOUN	投票
+人數	NOUN	人數
+有	VERB	有
+所	ADV	所
+增加	VERB	增加
+，	PUNCT	，
+但	ADV	但
+會不會	AUX	會
+產生	VERB	產生
+影響	NOUN	影響
+還	ADV	還
+未	ADV	未
+可	AUX	可
+知	VERB	知
+。	PUNCT	。
+}
+Predicted: {
+初期	NOUN	初期
+的	PART	的
+投票	NOUN	投票
+顯示	VERB	顯示
+這	DET	這
+次	NOUN	次
+拉丁	PROPN	拉丁
+美裔	PROPN	美裔
+美國人	PROPN	美國人
+投票	NOUN	投票
+人數	NOUN	人數
+有	VERB	有
+所	ADV	所
+增加	VERB	增加
+，	PUNCT	，
+但	ADV	但
+會不會	AUX	會不會
+產生	VERB	產生
+影響	NOUN	影響
+還	ADV	還
+未	ADV	未
+可	AUX	可
+知	VERB	知
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+會不會: 會 | 會不會
 }

@@ -1,6 +1,6 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9029982363315696
-Training-Sample-Size=30238
+Evaluation-Score=0.9030214424951267
+Training-Sample-Size=30239
 Evaluation-Sample-Size=3359
 Training-Algorithm=MAXENT
 
@@ -10,9 +10,9 @@ Component-Name=POSTaggerME
 Language=ko
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1682146650571
+Timestamp=1684652699702
 TrainerType=Event
-Training-Eventhash=3f80fc8e879cd118dd6cdf2c0cea0ae
+Training-Eventhash=b5606e1531e9b1a89bc5c806a81717b3
 factory=opennlp.tools.postag.POSTaggerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -7148,11 +7148,11 @@ Tok: Ref | Pred
 Expected: {
 1990년_NOUN 10월_NOUN 하순에는_NOUN 그_DET 얼마_NOUN 전에_ADV 착륙하면서_SCONJ 사고가_NOUN 난_VERB 공군기를_NOUN 미처_ADV 치우지_VERB 못해_SCONJ 들어온_VERB 비행기가_NOUN 돌아간_VERB 적이_NOUN 있다고_VERB 한다_VERB ._PUNCT}
 Predicted: {
-1990년_NOUN 10월_NOUN 하순에는_NOUN 그_DET 얼마_NOUN 전에_ADV 착륙하면서_CCONJ 사고가_NOUN 난_VERB 공군기를_NOUN 미처_ADV 치우지_SCONJ 못해_SCONJ 들어온_VERB 비행기가_NOUN 돌아간_VERB 적이_NOUN 있다고_VERB 한다_VERB ._PUNCT}
+1990년_NOUN 10월_NOUN 하순에는_NOUN 그_DET 얼마_NOUN 전에_ADV 착륙하면서_VERB 사고가_NOUN 난_VERB 공군기를_NOUN 미처_ADV 치우지_SCONJ 못해_SCONJ 들어온_VERB 비행기가_NOUN 돌아간_VERB 적이_NOUN 있다고_VERB 한다_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-착륙하면서: SCONJ | CCONJ
+착륙하면서: SCONJ | VERB
 치우지: VERB | SCONJ
 }
 
@@ -10691,16 +10691,6 @@ Tok: Ref | Pred
 ---------------
 서낭당과: CCONJ | NOUN
 유사하기: ADJ | VERB
-}
-
-Expected: {
-보통의_NOUN 저술에서는_NOUN 이행기를_NOUN 먼저_ADV 서술하고_CCONJ 공산주의의_NOUN 두가지_NOUN 국면을_NOUN 시간상의_NOUN 순서로_ADV 나중에_ADV 얘기하지만_SCONJ 우리는_PRON 그_DET 반대로_ADV 할_VERB 것이다_VERB ._PUNCT}
-Predicted: {
-보통의_NOUN 저술에서는_NOUN 이행기를_NOUN 먼저_ADV 서술하고_VERB 공산주의의_NOUN 두가지_NOUN 국면을_NOUN 시간상의_NOUN 순서로_ADV 나중에_ADV 얘기하지만_SCONJ 우리는_PRON 그_DET 반대로_ADV 할_VERB 것이다_VERB ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-서술하고: CCONJ | VERB
 }
 
 Expected: {

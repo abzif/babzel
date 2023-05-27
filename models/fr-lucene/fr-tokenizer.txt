@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9987772226087323
-Training-Sample-Size=21842
-Evaluation-Sample-Size=2426
+Evaluation-Score=0.9991115247926892
+Training-Sample-Size=21781
+Evaluation-Sample-Size=2420
 Training-Algorithm=MAXENT_QN
 
 === MODEL PROPERTIES ===
@@ -9,29 +9,63 @@ Component-Name=TokenizerME
 Language=fr
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1682136856246
+Timestamp=1684642814690
 TrainerType=Event
-Training-Eventhash=bfb42df7387b849e13f1423b2bdc4662
+Training-Eventhash=c73c61a8a99047936fd80aeb7a5ae08f
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
 
 === MISCLASSIFIED DETAILS ===
 Expected: {
-2000 ok67 mesure environ 160<SPLIT>km de diametre<SPLIT>.}
+fichier : gare de houdan 10.jpg | le batiment voyageurs<SPLIT>.}
 Predicted: {
-2000 ok67 mesure environ 160km de diametre<SPLIT>.}
+fichier : gare de houdan 10<SPLIT>.jpg | le batiment voyageurs<SPLIT>.}
 False positives: {
-160km
+10
+.jpg
 } False negatives: {
-160
-km
+10.jpg
 }
 
 Expected: {
-entre 1910 et 1918<SPLIT>, se manifeste un interet assez faible<SPLIT>, sous la forme de quelques publications et traductions de emmanuel regis et a. hesnard<SPLIT>.}
+le reseau artisans du monde propose des interventions dans les ecoles<SPLIT>, des formations et des outils pedagogiques (<SPLIT>accessible par la centrale d'<SPLIT>achats solidar'monde<SPLIT>) " pour permettre aux citoyens<SPLIT>, selon les termes de l'<SPLIT>association<SPLIT>, d'<SPLIT>avoir un regard critique sur les dysfonctionnements du commerce international et de devenir acteurs d'<SPLIT>une societe plus juste "<SPLIT>.}
 Predicted: {
-entre 1910 et 1918<SPLIT>, se manifeste un interet assez faible<SPLIT>, sous la forme de quelques publications et traductions de emmanuel regis et a<SPLIT>. hesnard<SPLIT>.}
+le reseau artisans du monde propose des interventions dans les ecoles<SPLIT>, des formations et des outils pedagogiques (<SPLIT>accessible par la centrale d'<SPLIT>achats solidar'<SPLIT>monde<SPLIT>) " pour permettre aux citoyens<SPLIT>, selon les termes de l'<SPLIT>association<SPLIT>, d'<SPLIT>avoir un regard critique sur les dysfonctionnements du commerce international et de devenir acteurs d'<SPLIT>une societe plus juste "<SPLIT>.}
+False positives: {
+solidar'
+monde
+} False negatives: {
+solidar'monde
+}
+
+Expected: {
+ils m'<SPLIT>ont dit que c'<SPLIT>est un systeme de securite quand tu tournes le volant au maximum<SPLIT>.... n'<SPLIT>importe quoi<SPLIT>... par contre<SPLIT>, ils sont excellent pour '<SPLIT>bullshitter<SPLIT>'<SPLIT>.}
+Predicted: {
+ils m'<SPLIT>ont dit que c'<SPLIT>est un systeme de securite quand tu tournes le volant au maximum<SPLIT>.... n'<SPLIT>importe quoi<SPLIT>... par contre<SPLIT>, ils sont excellent pour 'bullshitter'<SPLIT>.}
+False positives: {
+'bullshitter'
+} False negatives: {
+'
+bullshitter
+'
+}
+
+Expected: {
+les terrains de tennis ferment a 18h !}
+Predicted: {
+les terrains de tennis ferment a 18<SPLIT>h !}
+False positives: {
+18
+h
+} False negatives: {
+18h
+}
+
+Expected: {
+une bonne experience de la scene rock<SPLIT>, fusion et jazz<SPLIT>, il a etudie l'<SPLIT>alto des l'<SPLIT>age de 6 ans<SPLIT>, la basse au m. a. i a nancy (<SPLIT>cursus professionnel<SPLIT>) puis la contrebasse au conservatoire de metz<SPLIT>.}
+Predicted: {
+une bonne experience de la scene rock<SPLIT>, fusion et jazz<SPLIT>, il a etudie l'<SPLIT>alto des l'<SPLIT>age de 6 ans<SPLIT>, la basse au m. a<SPLIT>. i a nancy (<SPLIT>cursus professionnel<SPLIT>) puis la contrebasse au conservatoire de metz<SPLIT>.}
 False positives: {
 a
 .
@@ -40,20 +74,79 @@ a.
 }
 
 Expected: {
-sur le plan instrumental<SPLIT>, le groupe est caracterise par les entrelacs et contrepoints du bouzouki de donal lunny et de la mandoline d'<SPLIT>andy irvine<SPLIT>, en accompagnement des merveiles d'<SPLIT>o'flynn aux uilleann pipes<SPLIT>.}
+c'<SPLIT>est un animal gregaire et se mele souvent a d'<SPLIT>autres especes de bruants ou de pinsons (<SPLIT>fringilla spp<SPLIT>.<SPLIT>)}
 Predicted: {
-sur le plan instrumental<SPLIT>, le groupe est caracterise par les entrelacs et contrepoints du bouzouki de donal lunny et de la mandoline d'<SPLIT>andy irvine<SPLIT>, en accompagnement des merveiles d'<SPLIT>o'<SPLIT>flynn aux uilleann pipes<SPLIT>.}
+c'<SPLIT>est un animal gregaire et se mele souvent a d'<SPLIT>autres especes de bruants ou de pinsons (<SPLIT>fringilla spp.<SPLIT>)}
 False positives: {
-o'
-flynn
+spp.
 } False negatives: {
-o'flynn
+spp
+.
 }
 
 Expected: {
-grace a une volonte de decentralisation<SPLIT>, plusieurs films ont ete tournes dans d'<SPLIT>autres villes telles que cali<SPLIT>, medellin<SPLIT>, barranquilla<SPLIT>, etc.}
+il y a frequemment des precipitations de 200 a 300 mm en 24<SPLIT>h<SPLIT>.}
 Predicted: {
-grace a une volonte de decentralisation<SPLIT>, plusieurs films ont ete tournes dans d'<SPLIT>autres villes telles que cali<SPLIT>, medellin<SPLIT>, barranquilla<SPLIT>, etc<SPLIT>.}
+il y a frequemment des precipitations de 200 a 300 mm en 24h<SPLIT>.}
+False positives: {
+24h
+} False negatives: {
+24
+h
+}
+
+Expected: {
+synargis abaris est un papillon d'<SPLIT>une envergure d'<SPLIT>environ 30<SPLIT>mm a apex des anterieures angulaire<SPLIT>.}
+Predicted: {
+synargis abaris est un papillon d'<SPLIT>une envergure d'<SPLIT>environ 30mm a apex des anterieures angulaire<SPLIT>.}
+False positives: {
+30mm
+} False negatives: {
+30
+mm
+}
+
+Expected: {
+elle se situe par 20 o 59<SPLIT>'<SPLIT>32 "<SPLIT>de latitude sud et par 48 o 55<SPLIT>'<SPLIT>07<SPLIT>" de longitude ouest<SPLIT>, a une altitude de 555 metres<SPLIT>.}
+Predicted: {
+elle se situe par 20 o 59'<SPLIT>32 "<SPLIT>de latitude sud et par 48 o 55'07<SPLIT>" de longitude ouest<SPLIT>, a une altitude de 555 metres<SPLIT>.}
+False positives: {
+59'
+55'07
+} False negatives: {
+59
+'
+55
+'
+07
+}
+
+Expected: {
+il pourrait etre en l'<SPLIT>honneur de joseph a. devereaux<SPLIT>, le premier maitre des postes en 1914<SPLIT>, ou en l'<SPLIT>honneur de joseph devereaux<SPLIT>, un des premiers proprietaires terriens<SPLIT>.}
+Predicted: {
+il pourrait etre en l'<SPLIT>honneur de joseph a<SPLIT>. devereaux<SPLIT>, le premier maitre des postes en 1914<SPLIT>, ou en l'<SPLIT>honneur de joseph devereaux<SPLIT>, un des premiers proprietaires terriens<SPLIT>.}
+False positives: {
+a
+.
+} False negatives: {
+a.
+}
+
+Expected: {
+comment etre chic et style (<SPLIT>e<SPLIT>) en moins de 5 minutes et sans depenser beaucoup d'<SPLIT>argent ?}
+Predicted: {
+comment etre chic et style (<SPLIT>e) en moins de 5 minutes et sans depenser beaucoup d'<SPLIT>argent ?}
+False positives: {
+e)
+} False negatives: {
+e
+)
+}
+
+Expected: {
+pour cilly<SPLIT>, cela correspond a 2007<SPLIT>, 2012<SPLIT>, etc.}
+Predicted: {
+pour cilly<SPLIT>, cela correspond a 2007<SPLIT>, 2012<SPLIT>, etc<SPLIT>.}
 False positives: {
 etc
 .
@@ -62,9 +155,9 @@ etc.
 }
 
 Expected: {
-l'<SPLIT>avion pourrait aussi etre equipe avec des fusees jato lui permettant de decoller en moins de 152 m<SPLIT>.}
+brittney reese debute sa saison en plein air 2011 par une victoire obtenue au meeting golden gala de rome<SPLIT>, deuxieme etape de la ligue de diamant<SPLIT>, avec la marque de 6,94 m<SPLIT>.}
 Predicted: {
-l'<SPLIT>avion pourrait aussi etre equipe avec des fusees jato lui permettant de decoller en moins de 152 m.}
+brittney reese debute sa saison en plein air 2011 par une victoire obtenue au meeting golden gala de rome<SPLIT>, deuxieme etape de la ligue de diamant<SPLIT>, avec la marque de 6,94 m.}
 False positives: {
 m.
 } False negatives: {
@@ -73,304 +166,81 @@ m
 }
 
 Expected: {
-l'<SPLIT>universite du mit en a realise un atteignant 30 wh/kg<SPLIT>, les firmes japonaises advanced capacitor technologies et jeol annoncent avoir developpe un supercondensateur d'<SPLIT>une densite d'<SPLIT>energie de 20 wh/kg<SPLIT>.}
+de la on atteint le fond du cirque<SPLIT>, a pied<SPLIT>, en 1 heure 1<SPLIT>/<SPLIT>4 environ<SPLIT>.}
 Predicted: {
-l'<SPLIT>universite du mit en a realise un atteignant 30 wh<SPLIT>/<SPLIT>kg<SPLIT>, les firmes japonaises advanced capacitor technologies et jeol annoncent avoir developpe un supercondensateur d'<SPLIT>une densite d'<SPLIT>energie de 20 wh<SPLIT>/<SPLIT>kg<SPLIT>.}
+de la on atteint le fond du cirque<SPLIT>, a pied<SPLIT>, en 1 heure 1/4 environ<SPLIT>.}
 False positives: {
-wh
+1/4
+} False negatives: {
+1
 /
-kg
-wh
-/
-kg
-} False negatives: {
-wh/kg
-wh/kg
+4
 }
 
 Expected: {
-massimiliano guareschi et maurizio guerri analysent ainsi les reflexions de junger : " le fait qu'<SPLIT>[<SPLIT>il<SPLIT>] parle d'<SPLIT>"<SPLIT>armee du travail absolu<SPLIT>" n'<SPLIT>est pas un hasard<SPLIT>.}
+son nom complet est banksia integrifolia<SPLIT>'<SPLIT>roller coaster<SPLIT>.}
 Predicted: {
-massimiliano guareschi et maurizio guerri analysent ainsi les reflexions de junger : " le fait qu'<SPLIT>[il<SPLIT>] parle d'<SPLIT>"<SPLIT>armee du travail absolu<SPLIT>" n'<SPLIT>est pas un hasard<SPLIT>.}
+son nom complet est banksia integrifolia'roller coaster<SPLIT>.}
 False positives: {
-[il
+integrifolia'roller
 } False negatives: {
-[
-il
+integrifolia
+'
+roller
 }
 
 Expected: {
-une partie de son cours fut modifie sous napoleon iii dans la traversee de la ville basse de pontoise pour pouvoir construire la gare et son esplanade<SPLIT>, ce qui fait qu<SPLIT>elle est maintenant canalisee en souterrain sur la fin de son cours notamment sous le parc de stationnement canrobert<SPLIT>.}
+en 2010 la liaison est geree par la compagnie<SPLIT>''<SPLIT>kihnu veeted<SPLIT>''<SPLIT>.}
 Predicted: {
-une partie de son cours fut modifie sous napoleon iii dans la traversee de la ville basse de pontoise pour pouvoir construire la gare et son esplanade<SPLIT>, ce qui fait quelle est maintenant canalisee en souterrain sur la fin de son cours notamment sous le parc de stationnement canrobert<SPLIT>.}
+en 2010 la liaison est geree par la compagnie<SPLIT>'<SPLIT>'<SPLIT>kihnu veeted'<SPLIT>'<SPLIT>.}
 False positives: {
-quelle
+'
+'
+veeted'
+'
 } False negatives: {
-qu
-elle
+''
+veeted
+''
 }
 
 Expected: {
-en 1928<SPLIT>, ce sera la creation de l'<SPLIT>opera de quat'<SPLIT>sous a berlin<SPLIT>.}
+il fit ensuite construire la villa pouquette dans la presqu'ile et jean anouilh proceda de la meme facon puisque apres avoir loue la villa takis<SPLIT>, il fit construire la villa les pecheurs pres de l'<SPLIT>eglise<SPLIT>.}
 Predicted: {
-en 1928<SPLIT>, ce sera la creation de l'<SPLIT>opera de quat'sous a berlin<SPLIT>.}
+il fit ensuite construire la villa pouquette dans la presqu'<SPLIT>ile et jean anouilh proceda de la meme facon puisque apres avoir loue la villa takis<SPLIT>, il fit construire la villa les pecheurs pres de l'<SPLIT>eglise<SPLIT>.}
 False positives: {
-quat'sous
+presqu'
+ile
 } False negatives: {
-quat'
-sous
+presqu'ile
 }
 
 Expected: {
-jean froissart<SPLIT>, chroniques<SPLIT>, publiees avec les variantes des divers manuscrits par kervyn de lettenhove<SPLIT>, t. vi<SPLIT>, reimpression de l'<SPLIT>edition de 1867 - 1877<SPLIT>, osnabruck<SPLIT>, 1967<SPLIT>.}
+il faut venir y manger au moins une fois dans votre vie<SPLIT>, vous ne pourrez pas le regretter :)}
 Predicted: {
-jean froissart<SPLIT>, chroniques<SPLIT>, publiees avec les variantes des divers manuscrits par kervyn de lettenhove<SPLIT>, t<SPLIT>. vi<SPLIT>, reimpression de l'<SPLIT>edition de 1867 - 1877<SPLIT>, osnabruck<SPLIT>, 1967<SPLIT>.}
+il faut venir y manger au moins une fois dans votre vie<SPLIT>, vous ne pourrez pas le regretter :<SPLIT>)}
 False positives: {
-t
-.
-} False negatives: {
-t.
-}
-
-Expected: {
-ils jouent ensuite cette performance de 12 heures<SPLIT>, au musee d'<SPLIT>etnographie de neuchatel dans le cadre de la nuit des musee et au festival du stand'ete a moutier<SPLIT>.}
-Predicted: {
-ils jouent ensuite cette performance de 12 heures<SPLIT>, au musee d'<SPLIT>etnographie de neuchatel dans le cadre de la nuit des musee et au festival du stand'<SPLIT>ete a moutier<SPLIT>.}
-False positives: {
-stand'
-ete
-} False negatives: {
-stand'ete
-}
-
-Expected: {
-leur tout premier raid est connu sous le nom de " great habbo raid of<SPLIT>'06 " et a<SPLIT>, par la suite<SPLIT>, ete suivi du " great habbo raid of<SPLIT>'07 "<SPLIT>.}
-Predicted: {
-leur tout premier raid est connu sous le nom de " great habbo raid of'<SPLIT>06 " et a<SPLIT>, par la suite<SPLIT>, ete suivi du " great habbo raid of'<SPLIT>07 "<SPLIT>.}
-False positives: {
-of'
-06
-of'
-07
-} False negatives: {
-of
-'06
-of
-'07
-}
-
-Expected: {
-c'<SPLIT>est la ria du loc'h<SPLIT>.}
-Predicted: {
-c'<SPLIT>est la ria du loc'<SPLIT>h<SPLIT>.}
-False positives: {
-loc'
-h
-} False negatives: {
-loc'h
-}
-
-Expected: {
-pour 30<SPLIT>/<SPLIT>40 € vous pourrez imprimer votre poster en a0 en mat ou brillant a condition qu'<SPLIT>ils aient le papier en stock !}
-Predicted: {
-pour 30<SPLIT>/40 € vous pourrez imprimer votre poster en a0 en mat ou brillant a condition qu'<SPLIT>ils aient le papier en stock !}
-False positives: {
-/40
-} False negatives: {
-/
-40
-}
-
-Expected: {
-ces deux trios pour piano s'<SPLIT>inscrivent entre ceux de franz schubert (<SPLIT>et le magnifique op. 100<SPLIT>) et ceux de johannes brahms<SPLIT>, on y retrouve les memes sonorites que dans le concerto pour violon<SPLIT>, celles d'<SPLIT>un mendelssohn au sommet de son art<SPLIT>, plus profond<SPLIT>, plus romantique<SPLIT>, magnifique synthese des acquis classiques et du romantisme allemand<SPLIT>.}
-Predicted: {
-ces deux trios pour piano s'<SPLIT>inscrivent entre ceux de franz schubert (<SPLIT>et le magnifique op<SPLIT>. 100<SPLIT>) et ceux de johannes brahms<SPLIT>, on y retrouve les memes sonorites que dans le concerto pour violon<SPLIT>, celles d'<SPLIT>un mendelssohn au sommet de son art<SPLIT>, plus profond<SPLIT>, plus romantique<SPLIT>, magnifique synthese des acquis classiques et du romantisme allemand<SPLIT>.}
-False positives: {
-op
-.
-} False negatives: {
-op.
-}
-
-Expected: {
-immagini del<SPLIT>'900<SPLIT>, contenant des ecrits sur des themes varies<SPLIT>, et l'<SPLIT>anthologie trenta poesie familiari di giovanni pascoli<SPLIT>, reedite en 2002<SPLIT>, peu avant sa mort<SPLIT>.}
-Predicted: {
-immagini del'<SPLIT>900<SPLIT>, contenant des ecrits sur des themes varies<SPLIT>, et l'<SPLIT>anthologie trenta poesie familiari di giovanni pascoli<SPLIT>, reedite en 2002<SPLIT>, peu avant sa mort<SPLIT>.}
-False positives: {
-del'
-900
-} False negatives: {
-del
-'900
-}
-
-Expected: {
-(<SPLIT>36<SPLIT>) les exigences etablies dans la directive 78<SPLIT>/<SPLIT>170<SPLIT>/<SPLIT>cee du conseil du 13 fevrier 1978 portant sur la performance des generateurs de chaleur utilises pour le chauffage de locaux et la production d'<SPLIT>eau chaude dans les immeubles non industriels neufs ou existants ainsi que sur l'<SPLIT>isolation de la distribution de chaleur et d'<SPLIT>eau chaude sanitaire dans les nouveaux immeubles non industriels (<SPLIT>1<SPLIT>) ont ete remplacees par les dispositions de la directive 92<SPLIT>/<SPLIT>42<SPLIT>/<SPLIT>cee<SPLIT>, de la directive 90<SPLIT>/<SPLIT>396<SPLIT>/<SPLIT>cee du conseil du 29 juin 1990 relative au rapprochement des legislations des etats membres concernant les appareils a gaz (<SPLIT>2<SPLIT>) et de la directive 2002<SPLIT>/<SPLIT>91<SPLIT>/<SPLIT>ce du parlement europeen et du conseil du 16 decembre 2002 sur la performance energetique des batiments (<SPLIT>3<SPLIT>)<SPLIT>.}
-Predicted: {
-(<SPLIT>36<SPLIT>) les exigences etablies dans la directive 78<SPLIT>/170<SPLIT>/<SPLIT>cee du conseil du 13 fevrier 1978 portant sur la performance des generateurs de chaleur utilises pour le chauffage de locaux et la production d'<SPLIT>eau chaude dans les immeubles non industriels neufs ou existants ainsi que sur l'<SPLIT>isolation de la distribution de chaleur et d'<SPLIT>eau chaude sanitaire dans les nouveaux immeubles non industriels (<SPLIT>1<SPLIT>) ont ete remplacees par les dispositions de la directive 92<SPLIT>/<SPLIT>42<SPLIT>/<SPLIT>cee<SPLIT>, de la directive 90<SPLIT>/<SPLIT>396<SPLIT>/<SPLIT>cee du conseil du 29 juin 1990 relative au rapprochement des legislations des etats membres concernant les appareils a gaz (<SPLIT>2<SPLIT>) et de la directive 2002<SPLIT>/<SPLIT>91<SPLIT>/<SPLIT>ce du parlement europeen et du conseil du 16 decembre 2002 sur la performance energetique des batiments (<SPLIT>3<SPLIT>)<SPLIT>.}
-False positives: {
-/170
-} False negatives: {
-/
-170
-}
-
-Expected: {
-[mh<SPLIT>.]}
-Predicted: {
-[<SPLIT>mh<SPLIT>.<SPLIT>]}
-False positives: {
-[
-mh
-.
-]
-} False negatives: {
-[mh
-.]
-}
-
-Expected: {
-[vous vous entraidiez<SPLIT>, etc<SPLIT>.]}
-Predicted: {
-[vous vous entraidiez<SPLIT>, etc.<SPLIT>]}
-False positives: {
-etc.
-]
-} False negatives: {
-etc
-.]
-}
-
-Expected: {
-elle est vraiment euh pour euh pour les eleves euh~ enfin pour nous<SPLIT>, elle est le debut de tout<SPLIT>.}
-Predicted: {
-elle est vraiment euh pour euh pour les eleves euh<SPLIT>~ enfin pour nous<SPLIT>, elle est le debut de tout<SPLIT>.}
-False positives: {
-euh
-~
-} False negatives: {
-euh~
-}
-
-Expected: {
-d'<SPLIT>ou tu viens etc<SPLIT>?}
-Predicted: {
-d'<SPLIT>ou tu viens etc?}
-False positives: {
-etc?
-} False negatives: {
-etc
-?
-}
-
-Expected: {
-la dose recommandee de bivalirudine dans l'<SPLIT>etude acuity (<SPLIT>bras b et c<SPLIT>) est un bolus initial<SPLIT>, posterieur a la randomisation<SPLIT>, de 0.1 mg<SPLIT>/<SPLIT>kg suivi d'<SPLIT>une perfusion de 0.25 mg<SPLIT>/<SPLIT>kg<SPLIT>/<SPLIT>h durant l'<SPLIT>angiographie ou si cela se justifie d'<SPLIT>un point de vue clinique<SPLIT>.}
-Predicted: {
-la dose recommandee de bivalirudine dans l'<SPLIT>etude acuity (<SPLIT>bras b et c) est un bolus initial<SPLIT>, posterieur a la randomisation<SPLIT>, de 0.1 mg<SPLIT>/<SPLIT>kg suivi d'<SPLIT>une perfusion de 0.25 mg<SPLIT>/<SPLIT>kg<SPLIT>/<SPLIT>h durant l'<SPLIT>angiographie ou si cela se justifie d'<SPLIT>un point de vue clinique<SPLIT>.}
-False positives: {
-c)
-} False negatives: {
-c
+:
 )
+} False negatives: {
+:)
 }
 
 Expected: {
-ces durees ne devraient normalement pas depasser 24 heures<SPLIT>, a une temperature comprise entre 2 °c et 8 °c<SPLIT>.}
+le reste de la riviere entre ces deux points revient a benjamin a. scott<SPLIT>, un entrepreneur de chicoutimi qui gere une scierie a roberval<SPLIT>.}
 Predicted: {
-ces durees ne devraient normalement pas depasser 24 heures<SPLIT>, a une temperature comprise entre 2 °c et 8 °<SPLIT>c<SPLIT>.}
+le reste de la riviere entre ces deux points revient a benjamin a<SPLIT>. scott<SPLIT>, un entrepreneur de chicoutimi qui gere une scierie a roberval<SPLIT>.}
 False positives: {
-°
-c
-} False negatives: {
-°c
-}
-
-Expected: {
-la stabilite physicochimique du produit reconstitue a ete demontree pendant 24 heures entre 2 °c<SPLIT>- 8 °c<SPLIT>.}
-Predicted: {
-la stabilite physicochimique du produit reconstitue a ete demontree pendant 24 heures entre 2 °c<SPLIT>- 8 °<SPLIT>c<SPLIT>.}
-False positives: {
-°
-c
-} False negatives: {
-°c
-}
-
-Expected: {
-selon l'<SPLIT>accusation : "<SPLIT>l'<SPLIT>instruction n'<SPLIT>est pas parvenue a etablir formellement l'<SPLIT>implication personnelle des responsables au sein de l'<SPLIT>appareil politique du rpr<SPLIT>.<SPLIT>"}
-Predicted: {
-selon l'<SPLIT>accusation : "<SPLIT>l'<SPLIT>instruction n'<SPLIT>est pas parvenue a etablir formellement l'<SPLIT>implication personnelle des responsables au sein de l'<SPLIT>appareil politique du rpr.<SPLIT>"}
-False positives: {
-rpr.
-} False negatives: {
-rpr
+a
 .
-}
-
-Expected: {
-l'<SPLIT>alerte a ete donnee mercredi soir vers 21<SPLIT>h<SPLIT>30<SPLIT>.}
-Predicted: {
-l'<SPLIT>alerte a ete donnee mercredi soir vers 21<SPLIT>h30<SPLIT>.}
-False positives: {
-h30
 } False negatives: {
-h
-30
+a.
 }
 
 Expected: {
-emea / h/c/562}
+en ce sens<SPLIT>, je voudrais egalement aborder tres brievement les problemes des tunnels<SPLIT>, auxquels mm. rack et swoboda ont fait reference<SPLIT>, et qui<SPLIT>, dans le cas de l'<SPLIT>autriche<SPLIT>, constituent sans aucun doute un sujet tres sensible<SPLIT>, raison pour laquelle il est necessaire de faire des efforts pour voir comment accroitre leur securite<SPLIT>.}
 Predicted: {
-emea / h/c/<SPLIT>562}
-False positives: {
-h/c/
-562
-} False negatives: {
-h/c/562
-}
-
-Expected: {
-les adaptations de la dose dans cette categorie d'<SPLIT>age doivent etre basees sur la fonction renale<SPLIT>, voir rubrique 4.2<SPLIT>.}
-Predicted: {
-les adaptations de la dose dans cette categorie d'<SPLIT>age doivent etre basees sur la fonction renale<SPLIT>, voir rubrique 4.2.}
-False positives: {
-4.2.
-} False negatives: {
-4.2
-.
-}
-
-Expected: {
-en cas d'<SPLIT>utilisation non immediate<SPLIT>, les durees et conditions de conservation apres reconstitution et avant utilisation relevent de la seule responsabilite de l'<SPLIT>utilisateur et ne doivent pas depasser 24 heures entre 2 °c<SPLIT>- 8 °c<SPLIT>, sauf en cas de reconstitution<SPLIT>/<SPLIT>dilution realisee en conditions d'<SPLIT>aseptie dument controlees et validees<SPLIT>.}
-Predicted: {
-en cas d'<SPLIT>utilisation non immediate<SPLIT>, les durees et conditions de conservation apres reconstitution et avant utilisation relevent de la seule responsabilite de l'<SPLIT>utilisateur et ne doivent pas depasser 24 heures entre 2 °c<SPLIT>- 8 °<SPLIT>c<SPLIT>, sauf en cas de reconstitution<SPLIT>/<SPLIT>dilution realisee en conditions d'<SPLIT>aseptie dument controlees et validees<SPLIT>.}
-False positives: {
-°
-c
-} False negatives: {
-°c
-}
-
-Expected: {
-les effets indesirables tres frequents (<SPLIT>1/10<SPLIT>)<SPLIT>, frequents (<SPLIT>1/100<SPLIT>, < 1/10<SPLIT>)<SPLIT>, peu frequents (<SPLIT>1/1000<SPLIT>, < 1/100<SPLIT>) et rares (<SPLIT>1<SPLIT>/<SPLIT>10 000<SPLIT>, < 1<SPLIT>/<SPLIT>1 000<SPLIT>) sont presentes dans le tableau 1<SPLIT>.}
-Predicted: {
-les effets indesirables tres frequents (<SPLIT>1/10<SPLIT>)<SPLIT>, frequents (<SPLIT>1/100<SPLIT>, < 1/10<SPLIT>)<SPLIT>, peu frequents (<SPLIT>1/1000<SPLIT>, < 1/100<SPLIT>) et rares (<SPLIT>1/10 000<SPLIT>, < 1/1 000<SPLIT>) sont presentes dans le tableau 1<SPLIT>.}
-False positives: {
-1/10
-1/1
-} False negatives: {
-1
-/
-10
-1
-/
-1
-}
-
-Expected: {
-j'<SPLIT>en suis satisfait pour deux raisons<SPLIT>, tout d'<SPLIT>abord parce que la commission relie la charte des droits fondamentaux a la conference intergouvernementale -<SPLIT>et c'<SPLIT>est l'<SPLIT>objectif politique de ce parlement dans le rapport de mm. duff et voggenhuber<SPLIT>-<SPLIT>, ensuite parce qu'<SPLIT>elle va l'<SPLIT>integrer dans cette campagne<SPLIT>.}
-Predicted: {
-j'<SPLIT>en suis satisfait pour deux raisons<SPLIT>, tout d'<SPLIT>abord parce que la commission relie la charte des droits fondamentaux a la conference intergouvernementale -<SPLIT>et c'<SPLIT>est l'<SPLIT>objectif politique de ce parlement dans le rapport de mm<SPLIT>. duff et voggenhuber<SPLIT>-<SPLIT>, ensuite parce qu'<SPLIT>elle va l'<SPLIT>integrer dans cette campagne<SPLIT>.}
+en ce sens<SPLIT>, je voudrais egalement aborder tres brievement les problemes des tunnels<SPLIT>, auxquels mm<SPLIT>. rack et swoboda ont fait reference<SPLIT>, et qui<SPLIT>, dans le cas de l'<SPLIT>autriche<SPLIT>, constituent sans aucun doute un sujet tres sensible<SPLIT>, raison pour laquelle il est necessaire de faire des efforts pour voir comment accroitre leur securite<SPLIT>.}
 False positives: {
 mm
 .
@@ -379,12 +249,46 @@ mm.
 }
 
 Expected: {
-trois gendarmes du groupe de peletons de securite (<SPLIT>g.p.s<SPLIT>) reconnaissent avoir incendie volontairement la paillote sur ordre du colonel mazeres<SPLIT>.}
+et du coup<SPLIT>, euh<SPLIT>, bah<SPLIT>, j'<SPLIT>etais pas tres enthousiaste a l'<SPLIT>idee que il y ait quelqu'<SPLIT>un de nouveau<SPLIT>, parce que<SPLIT>, comme c'<SPLIT>est un petit cinema<SPLIT>, bah<SPLIT>, on travaille<SPLIT>, euh<SPLIT>, a<SPLIT>, toujours tout seul<SPLIT>, donc<SPLIT>, euh<SPLIT>, je me suis dit<SPLIT>, elle va piquer mon travail<SPLIT>.}
 Predicted: {
-trois gendarmes du groupe de peletons de securite (<SPLIT>g.p.s) reconnaissent avoir incendie volontairement la paillote sur ordre du colonel mazeres<SPLIT>.}
+et du coup<SPLIT>, euh<SPLIT>, bah<SPLIT>, j'<SPLIT>etais pas tres enthousiaste a l'<SPLIT>idee que il y ait quelqu'un de nouveau<SPLIT>, parce que<SPLIT>, comme c'<SPLIT>est un petit cinema<SPLIT>, bah<SPLIT>, on travaille<SPLIT>, euh<SPLIT>, a<SPLIT>, toujours tout seul<SPLIT>, donc<SPLIT>, euh<SPLIT>, je me suis dit<SPLIT>, elle va piquer mon travail<SPLIT>.}
 False positives: {
-g.p.s)
+quelqu'un
 } False negatives: {
-g.p.s
-)
+quelqu'
+un
+}
+
+Expected: {
+natif des forges de mezire<SPLIT>, en 1928<SPLIT>, il a frequente l'<SPLIT>ecole de morvillars jusqu'<SPLIT>au cep<SPLIT>.}
+Predicted: {
+natif des forges de mezire<SPLIT>, en 1928<SPLIT>, il a frequente l'<SPLIT>ecole de morvillars jusqu'<SPLIT>au cep.}
+False positives: {
+cep.
+} False negatives: {
+cep
+.
+}
+
+Expected: {
+il n'<SPLIT>existe pas d'<SPLIT>antidote connu pour la bivalirudine<SPLIT>, mais son effet disparait rapidement (<SPLIT>t1/2 35 a 40 minutes<SPLIT>)<SPLIT>.}
+Predicted: {
+il n'<SPLIT>existe pas d'<SPLIT>antidote connu pour la bivalirudine<SPLIT>, mais son effet disparait rapidement (<SPLIT>t1<SPLIT>/<SPLIT>2 35 a 40 minutes<SPLIT>)<SPLIT>.}
+False positives: {
+t1
+/
+2
+} False negatives: {
+t1/2
+}
+
+Expected: {
+si vous avez tant besoin de couper l'<SPLIT>herbe sous le pied de quelqu'<SPLIT>un<SPLIT>, je vous proposerais de vous en prendre a m. solana<SPLIT>.}
+Predicted: {
+si vous avez tant besoin de couper l'<SPLIT>herbe sous le pied de quelqu'un<SPLIT>, je vous proposerais de vous en prendre a m. solana<SPLIT>.}
+False positives: {
+quelqu'un
+} False negatives: {
+quelqu'
+un
 }

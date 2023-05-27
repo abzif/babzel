@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9364323718846261
+Evaluation-Score=0.9364883786054327
 Training-Sample-Size=10143
 Evaluation-Sample-Size=1126
 Training-Algorithm=MAXENT
@@ -10,9 +10,9 @@ Component-Name=POSTaggerME
 Language=sv
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1682316784962
+Timestamp=1684812799491
 TrainerType=Event
-Training-Eventhash=d01e490ebe47f54e64863a558e1a32ca
+Training-Eventhash=c3c93f2a4d3ac3dfd17b5b35731fea2c
 factory=opennlp.tools.postag.POSTaggerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -767,11 +767,10 @@ ett: PRON | SCONJ
 Expected: {
 vad_PRON värre_ADJ är_AUX ,_PUNCT det_PRON som_PRON händer_VERB vägrar_VERB att_PART lämna_VERB oss_PRON i_ADP fred_NOUN ._PUNCT}
 Predicted: {
-vad_PRON värre_ADJ är_VERB ,_PUNCT det_PRON som_PRON händer_VERB vägrar_VERB att_PART lämna_VERB oss_PRON i_ADP fred_PROPN ._PUNCT}
+vad_PRON värre_ADJ är_AUX ,_PUNCT det_PRON som_PRON händer_VERB vägrar_VERB att_PART lämna_VERB oss_PRON i_ADP fred_PROPN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-är: AUX | VERB
 fred: NOUN | PROPN
 }
 
@@ -860,15 +859,24 @@ stuga: NOUN | VERB
 }
 
 Expected: {
+han_PRON var_AUX ute_ADV och_CCONJ inspekterade_VERB vägunderhållet_NOUN ,_PUNCT sa_VERB han_PRON ._PUNCT}
+Predicted: {
+han_PRON var_VERB ute_ADV och_CCONJ inspekterade_VERB vägunderhållet_NOUN ,_PUNCT sa_VERB han_PRON ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+var: AUX | VERB
+}
+
+Expected: {
 till_ADP slut_NOUN höll_VERB jag_PRON tal_NOUN på_ADP engelska_NOUN en_DET kväll_NOUN med_ADP gester_NOUN som_PRON inte_PART var_AUX bortkastade_VERB på_ADP ett_DET enda_PRON av_ADP de_DET sexti_NOUN ögonparen_NOUN framför_ADP mig_PRON och_CCONJ morgonen_NOUN därpå_ADV fick_VERB jag_PRON mycket_ADV riktigt_ADV iväg_ADV hängmattan_NOUN som_ADP tätkolonn_NOUN ._PUNCT}
 Predicted: {
-till_ADP slut_NOUN höll_VERB jag_PRON tal_NOUN på_ADP engelska_NOUN en_DET kväll_NOUN med_ADP gester_NOUN som_PRON inte_PART var_AUX bortkastade_VERB på_ADP ett_DET enda_ADJ av_ADP de_DET sexti_NUM ögonparen_NOUN framför_ADP mig_PRON och_CCONJ morgonen_NOUN därpå_ADV fick_AUX jag_PRON mycket_ADV riktigt_ADV iväg_ADV hängmattan_NOUN som_PRON tätkolonn_VERB ._PUNCT}
+till_ADP slut_NOUN höll_VERB jag_PRON tal_NOUN på_ADP engelska_NOUN en_DET kväll_NOUN med_ADP gester_NOUN som_PRON inte_PART var_AUX bortkastade_VERB på_ADP ett_DET enda_ADJ av_ADP de_DET sexti_NUM ögonparen_NOUN framför_ADP mig_PRON och_CCONJ morgonen_NOUN därpå_ADV fick_VERB jag_PRON mycket_ADV riktigt_ADV iväg_ADV hängmattan_NOUN som_PRON tätkolonn_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 enda: PRON | ADJ
 sexti: NOUN | NUM
-fick: VERB | AUX
 som: ADP | PRON
 tätkolonn: NOUN | VERB
 }
@@ -1017,11 +1025,12 @@ på: ADV | ADP
 Expected: {
 men_CCONJ ingen_PRON tycktes_VERB ha_AUX sett_VERB till_ADV honom_PRON eller_CCONJ veta_VERB om_SCONJ han_PRON var_VERB eller_CCONJ hade_AUX varit_VERB i_ADP huvudstaden_NOUN ._PUNCT}
 Predicted: {
-men_CCONJ ingen_PRON tycktes_VERB ha_AUX sett_VERB till_ADP honom_PRON eller_CCONJ veta_VERB om_SCONJ han_PRON var_VERB eller_CCONJ hade_AUX varit_AUX i_ADP huvudstaden_NOUN ._PUNCT}
+men_CCONJ ingen_PRON tycktes_VERB ha_AUX sett_VERB till_ADP honom_PRON eller_CCONJ veta_VERB om_SCONJ han_PRON var_AUX eller_CCONJ hade_AUX varit_AUX i_ADP huvudstaden_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 till: ADV | ADP
+var: VERB | AUX
 varit: VERB | AUX
 }
 
@@ -1093,12 +1102,13 @@ ge: VERB | NOUN
 Expected: {
 men_CCONJ dobby_PROPN har_AUX kommit_VERB för_ADP att_PART skydda_VERB harry_PROPN potter_PROPN ,_PUNCT för_ADP att_PART varna_VERB honom_PRON ,_PUNCT även_SCONJ om_SCONJ dobby_PROPN blir_AUX tvungen_VERB att_PART klämma_VERB öronen_NOUN i_ADP ugnsluckan_NOUN efteråt_ADV ._PUNCT}
 Predicted: {
-men_CCONJ dobby_PROPN har_AUX kommit_VERB för_ADP att_PART skydda_VERB harry_PROPN potter_PROPN ,_PUNCT för_ADP att_PART varna_AUX honom_PRON ,_PUNCT även_ADV om_SCONJ dobby_PROPN blir_AUX tvungen_VERB att_PART klämma_VERB öronen_NOUN i_ADP ugnsluckan_NOUN efteråt_ADV ._PUNCT}
+men_CCONJ dobby_PROPN har_AUX kommit_VERB för_ADP att_PART skydda_VERB harry_PROPN potter_PROPN ,_PUNCT för_ADP att_PART varna_AUX honom_PRON ,_PUNCT även_ADV om_SCONJ dobby_PROPN blir_VERB tvungen_VERB att_PART klämma_VERB öronen_NOUN i_ADP ugnsluckan_NOUN efteråt_ADV ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 varna: VERB | AUX
 även: SCONJ | ADV
+blir: AUX | VERB
 }
 
 Expected: {
@@ -2667,16 +2677,6 @@ käpprakt: ADV | VERB
 }
 
 Expected: {
-harry_PROPN förstod_VERB ögonblickligen_ADV att_SCONJ det_PRON var_AUX samma_ADJ varelse_NOUN som_PRON hade_AUX betraktat_VERB honom_PRON från_ADP trädgårdshäcken_NOUN på_ADP morgonen_NOUN ._PUNCT}
-Predicted: {
-harry_PROPN förstod_VERB ögonblickligen_ADV att_SCONJ det_PRON var_VERB samma_ADJ varelse_NOUN som_PRON hade_AUX betraktat_VERB honom_PRON från_ADP trädgårdshäcken_NOUN på_ADP morgonen_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-var: AUX | VERB
-}
-
-Expected: {
 "_PUNCT lite_ADV magstarkt_ADV för_ADP att_PART komma_VERB från_ADP dig_PRON "_PUNCT ,_PUNCT sade_VERB harry_PROPN och_CCONJ tittade_VERB på_ADP den_DET svävande_ADJ bilen_NOUN ._PUNCT}
 Predicted: {
 "_PUNCT lite_ADV magstarkt_ADJ för_ADP att_PART komma_VERB från_ADP dig_PRON "_PUNCT ,_PUNCT sade_VERB harry_PROPN och_CCONJ tittade_VERB på_ADP den_DET svävande_ADJ bilen_NOUN ._PUNCT}
@@ -3077,12 +3077,13 @@ kronos: PROPN | NOUN
 }
 
 Expected: {
-och_CCONJ som_PRON aktris_NOUN var_AUX hon_PRON mycket_ADV bra_ADV :_PUNCT hon_PRON gick_VERB över_ADV till_ADP jiddisch_NOUN ,_PUNCT till_ADP italienska_NOUN ,_PUNCT till_ADP tyska_NOUN ,_PUNCT betonade_VERB och_CCONJ gestikulerade_VERB ,_PUNCT än_ADV förvandlade_VERB hon_PRON sig_PRON till_ADP en_DET grupp_NOUN åldrade_ADJ judar_NOUN ,_PUNCT än_ADV var_AUX hon_PRON en_DET rädd_ADJ liten_ADJ pojke_NOUN ._PUNCT}
+och_CCONJ som_ADP aktris_NOUN var_AUX hon_PRON mycket_ADV bra_ADV :_PUNCT hon_PRON gick_VERB över_ADV till_ADP jiddisch_NOUN ,_PUNCT till_ADP italienska_NOUN ,_PUNCT till_ADP tyska_NOUN ,_PUNCT betonade_VERB och_CCONJ gestikulerade_VERB ,_PUNCT än_ADV förvandlade_VERB hon_PRON sig_PRON till_ADP en_DET grupp_NOUN åldrade_ADJ judar_NOUN ,_PUNCT än_ADV var_AUX hon_PRON en_DET rädd_ADJ liten_ADJ pojke_NOUN ._PUNCT}
 Predicted: {
 och_CCONJ som_PRON aktris_NOUN var_AUX hon_PRON mycket_ADV bra_ADJ :_PUNCT hon_PRON gick_VERB över_ADV till_ADP jiddisch_NOUN ,_PUNCT till_ADP italienska_NOUN ,_PUNCT till_ADP tyska_ADJ ,_PUNCT betonade_ADJ och_CCONJ gestikulerade_ADJ ,_PUNCT än_SCONJ förvandlade_VERB hon_PRON sig_PRON till_ADP en_DET grupp_NOUN åldrade_ADJ judar_NOUN ,_PUNCT än_SCONJ var_AUX hon_PRON en_DET rädd_ADJ liten_ADJ pojke_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+som: ADP | PRON
 bra: ADV | ADJ
 tyska: NOUN | ADJ
 betonade: VERB | ADJ
@@ -3787,13 +3788,11 @@ buenos: PROPN | NOUN
 Expected: {
 '_PUNCT grunden_NOUN för_ADP vårt_PRON system_NOUN är_AUX mycket_ADV enkel_ADJ :_PUNCT att_PART göra_VERB motsatsen_NOUN mot_ADP vad_PRON vi_PRON själva_ADJ erfor_VERB eller_CCONJ lärde_VERB oss_PRON som_ADP barn_NOUN ._PUNCT '_PUNCT}
 Predicted: {
-'_PUNCT grunden_NOUN för_ADP vårt_PRON system_NOUN är_AUX mycket_ADV enkel_ADJ :_PUNCT att_PART göra_VERB motsatsen_NOUN mot_ADP vad_PRON vi_PRON själva_ADJ erfor_NOUN eller_CCONJ lärde_ADJ oss_PRON som_PRON barn_NOUN ._PUNCT '_PUNCT}
+'_PUNCT grunden_NOUN för_ADP vårt_PRON system_NOUN är_AUX mycket_ADV enkel_ADJ :_PUNCT att_PART göra_VERB motsatsen_NOUN mot_ADP vad_PRON vi_PRON själva_ADJ erfor_NOUN eller_CCONJ lärde_VERB oss_PRON som_ADP barn_NOUN ._PUNCT '_PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 erfor: VERB | NOUN
-lärde: VERB | ADJ
-som: ADP | PRON
 }
 
 Expected: {

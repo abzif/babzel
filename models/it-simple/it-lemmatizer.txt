@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9850038105071662
+Evaluation-Score=0.9850130214731463
 Training-Sample-Size=33700
 Evaluation-Sample-Size=3744
 Training-Algorithm=MAXENT
@@ -10,9 +10,9 @@ Component-Name=StatisticalLemmatizer
 Language=it
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1682139434614
+Timestamp=1684645504329
 TrainerType=Event
-Training-Eventhash=e50ae8eb706b37de302029290f7d0ecd
+Training-Eventhash=348a2570f7d5bc9468cf8f2693c98481
 factory=opennlp.tools.lemmatizer.LemmatizerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -40281,7 +40281,7 @@ si	PRON	si
 assolto	ADJ	assolvere
 qualora	SCONJ	qualora
 le	DET	il
-suddette	VERB	suddette
+suddette	VERB	suddetto
 dichiarazioni	NOUN	dichiarazione
 personali	ADJ	personale
 siano	AUX	essere
@@ -40296,7 +40296,7 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 assolto: assolto | assolvere
-suddette: suddire | suddette
+suddette: suddire | suddetto
 }
 
 Expected: {
@@ -40877,7 +40877,7 @@ quinquennale	ADJ	quinquennale
 di	ADP	di
 permanenza	NOUN	permanenza
 in le	ADP DET	in il
-suddette	VERB	suddette
+suddette	VERB	suddetto
 scuole	NOUN	scuola
 speciali	ADJ	speciale
 o	CCONJ	o
@@ -40930,7 +40930,7 @@ legge	NOUN	legge
 Errors: {
 Tok: Ref | Pred
 ---------------
-suddette: suddire | suddette
+suddette: suddire | suddetto
 }
 
 Expected: {
@@ -41045,6 +41045,102 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 svolga: svolgere | svolgare
+}
+
+Expected: {
+il	DET	il
+provveditore	PROPN	provveditore
+a	ADP	a
+gli	DET	il
+studi	NOUN	studio
+entro	ADP	entro
+il	DET	il
+5	NUM	5
+agosto	NOUN	agosto
+determina	VERB	determinare
+,	PUNCT	,
+con	ADP	con
+proprio	DET	proprio
+decreto	NOUN	decreto
+,	PUNCT	,
+le	DET	il
+graduatorie	NOUN	graduatoria
+e	CCONJ	e
+le	PRON	le
+pubblica	VERB	pubblicare
+a l'	ADP DET	a il
+albo	NOUN	albo
+di l'	ADP DET	di il
+ufficio	NOUN	ufficio
+scolastico	ADJ	scolastico
+,	PUNCT	,
+indicando	VERB	indicare
+il	DET	il
+punteggio	NOUN	punteggio
+complessivo	ADJ	complessivo
+attribuito	VERB	attribuire
+,	PUNCT	,
+nonché	CCONJ	nonché
+le	DET	il
+eventuali	ADJ	eventuale
+precedenze	PROPN	precedenze
+assolute	ADJ	assoluto
+di	ADP	di
+cui	PRON	cui
+a l'	ADP DET	a il
+art.	NOUN	articolo
+73	NUM	73
+.	PUNCT	.
+}
+Predicted: {
+il	DET	il
+provveditore	PROPN	provveditore
+a	ADP	a
+gli	DET	il
+studi	NOUN	studio
+entro	ADP	entro
+il	DET	il
+5	NUM	5
+agosto	NOUN	agosto
+determina	VERB	determinare
+,	PUNCT	,
+con	ADP	con
+proprio	DET	proprio
+decreto	NOUN	decreto
+,	PUNCT	,
+le	DET	il
+graduatorie	NOUN	graduatoria
+e	CCONJ	e
+le	PRON	le
+pubblica	VERB	pubblicare
+a l'	ADP DET	a il
+albo	NOUN	albo
+di l'	ADP DET	di il
+ufficio	NOUN	ufficio
+scolastico	ADJ	scolastico
+,	PUNCT	,
+indicando	VERB	indicare
+il	DET	il
+punteggio	NOUN	punteggio
+complessivo	ADJ	complessivo
+attribuito	VERB	attribuire
+,	PUNCT	,
+nonché	CCONJ	nonché
+le	DET	il
+eventuali	ADJ	eventuale
+precedenze	PROPN	precedenze
+assolute	ADJ	assolute
+di	ADP	di
+cui	PRON	cui
+a l'	ADP DET	a il
+art.	NOUN	articolo
+73	NUM	73
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+assolute: assoluto | assolute
 }
 
 Expected: {
@@ -41365,6 +41461,118 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 mondane: mondano | mondane
+}
+
+Expected: {
+"	PUNCT	"
+parliamo	VERB	parlare
+hip	X	hip
+hop	X	hop
+,	PUNCT	,
+la	DET	il
+lingua	NOUN	lingua
+di l'	ADP DET	di il
+università	NOUN	università
+di le	ADP DET	di il
+diversità	NOUN	diversità
+"	PUNCT	"
+dichiara	VERB	dichiarare
+energicamente	ADV	energicamente
+john	PROPN	john
+bess	PROPN	bess
+,	PUNCT	,
+a	ADP	a
+capo	NOUN	capo
+di il	ADP DET	di il
+centro	NOUN	centro
+the	PROPN	the
+valley	PROPN	valley
+,	PUNCT	,
+a	ADP	a
+harlem	PROPN	harlem
+"	PUNCT	"
+i	DET	il
+giovani	NOUN	giovane
+sono	AUX	essere
+capaci	ADJ	capace
+di	ADP	di
+fantasia	NOUN	fantasia
+e	CCONJ	e
+originalità	NOUN	originalità
+assolute	ADJ	assoluto
+e	CCONJ	e
+saranno	AUX	essere
+insieme	ADV	insieme
+per	ADP	per
+fondere	VERB	fondere
+le	DET	il
+proprie	DET	proprio
+energie	NOUN	energia
+in	ADP	in
+un'	DET	uno
+esplosione	NOUN	esplosione
+di	ADP	di
+creatività	NOUN	creatività
+"	PUNCT	"
+.	PUNCT	.
+}
+Predicted: {
+"	PUNCT	"
+parliamo	VERB	parlare
+hip	X	hip
+hop	X	hop
+,	PUNCT	,
+la	DET	il
+lingua	NOUN	lingua
+di l'	ADP DET	di il
+università	NOUN	università
+di le	ADP DET	di il
+diversità	NOUN	diversità
+"	PUNCT	"
+dichiara	VERB	dichiarare
+energicamente	ADV	energicamente
+john	PROPN	john
+bess	PROPN	bess
+,	PUNCT	,
+a	ADP	a
+capo	NOUN	capo
+di il	ADP DET	di il
+centro	NOUN	centro
+the	PROPN	the
+valley	PROPN	valley
+,	PUNCT	,
+a	ADP	a
+harlem	PROPN	harlem
+"	PUNCT	"
+i	DET	il
+giovani	NOUN	giovane
+sono	AUX	essere
+capaci	ADJ	capace
+di	ADP	di
+fantasia	NOUN	fantasia
+e	CCONJ	e
+originalità	NOUN	originalità
+assolute	ADJ	assolute
+e	CCONJ	e
+saranno	AUX	essere
+insieme	ADV	insieme
+per	ADP	per
+fondere	VERB	fondere
+le	DET	il
+proprie	DET	proprio
+energie	NOUN	energia
+in	ADP	in
+un'	DET	uno
+esplosione	NOUN	esplosione
+di	ADP	di
+creatività	NOUN	creatività
+"	PUNCT	"
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+assolute: assoluto | assolute
 }
 
 Expected: {
@@ -43669,7 +43877,8 @@ mercato	NOUN	mercato
 nipponico	ADJ	nipponico
 sino	ADP	sino
 a il	ADP DET	a il
-20%	NUM	20%
+20	NUM	20
+%	SYM	%
 .	PUNCT	.
 }
 Predicted: {
@@ -43709,7 +43918,8 @@ mercato	NOUN	mercato
 nipponico	ADJ	nipponico
 sino	ADP	sino
 a il	ADP DET	a il
-20%	NUM	20%
+20	NUM	20
+%	SYM	%
 .	PUNCT	.
 }
 Errors: {
@@ -44607,7 +44817,8 @@ fermi: fermo | fermi
 
 Expected: {
 il	DET	il
-58%	NUM	58%
+58	NUM	58
+%	SYM	%
 di i	ADP DET	di il
 titoli	NOUN	titolo
 pubblicati	ADJ	pubblicato
@@ -44626,29 +44837,34 @@ e	CCONJ	e
 windows	PROPN	windows
 ,	PUNCT	,
 il	DET	il
-22%	NUM	22%
+22	NUM	22
+%	SYM	%
 per	ADP	per
 macintosh	PROPN	macintosh
 ,	PUNCT	,
 il	DET	il
-7%	NUM	7%
+7	NUM	7
+%	SYM	%
 per	ADP	per
 cd	PROPN	cd
 i	PROPN	i
 ,	PUNCT	,
 il	DET	il
-5%	NUM	5%
+5	NUM	5
+%	SYM	%
 per	ADP	per
 tandy	PROPN	tandy
 ,	PUNCT	,
 il	DET	il
-4%	NUM	4%
+4	NUM	4
+%	SYM	%
 per	ADP	per
 cdtv	PROPN	cdtv
 e	CCONJ	e
 un	DET	uno
 altro	ADJ	altro
-4%	NUM	4%
+4	NUM	4
+%	SYM	%
 per	ADP	per
 il	DET	il
 sony	PROPN	sony
@@ -44658,7 +44874,8 @@ discman	PROPN	discman
 }
 Predicted: {
 il	DET	il
-58%	NUM	58%
+58	NUM	58
+%	SYM	%
 di i	ADP DET	di il
 titoli	NOUN	titolo
 pubblicati	ADJ	pubblicato
@@ -44677,29 +44894,34 @@ e	CCONJ	e
 windows	PROPN	windows
 ,	PUNCT	,
 il	DET	il
-22%	NUM	22%
+22	NUM	22
+%	SYM	%
 per	ADP	per
 macintosh	PROPN	macintosh
 ,	PUNCT	,
 il	DET	il
-7%	NUM	7%
+7	NUM	7
+%	SYM	%
 per	ADP	per
 cd	PROPN	cd
 i	PROPN	il
 ,	PUNCT	,
 il	DET	il
-5%	NUM	5%
+5	NUM	5
+%	SYM	%
 per	ADP	per
 tandy	PROPN	tandy
 ,	PUNCT	,
 il	DET	il
-4%	NUM	4%
+4	NUM	4
+%	SYM	%
 per	ADP	per
 cdtv	PROPN	cdtv
 e	CCONJ	e
 un	DET	uno
 altro	ADJ	altro
-4%	NUM	4%
+4	NUM	4
+%	SYM	%
 per	ADP	per
 il	DET	il
 sony	PROPN	sony
@@ -44978,14 +45200,16 @@ esportazioni	NOUN	esportazione
 stata	AUX	essere
 inferiore	ADJ	inferiore
 (	PUNCT	(
-10,3%	NUM	10,3%
+10,3	NUM	10,3
+%	SYM	%
 )	PUNCT	)
 a	ADP	a
 quella	PRON	quello
 di le	ADP DET	di il
 importazioni	NOUN	importazione
 (	PUNCT	(
-15,9%	NUM	15,9%
+15,9	NUM	15,9
+%	SYM	%
 )	PUNCT	)
 ,	PUNCT	,
 in	ADP	in
@@ -45032,14 +45256,16 @@ esportazioni	NOUN	esportazione
 stata	AUX	essere
 inferiore	ADJ	inferiore
 (	PUNCT	(
-10,3%	NUM	10,3%
+10,3	NUM	10,3
+%	SYM	%
 )	PUNCT	)
 a	ADP	a
 quella	PRON	quello
 di le	ADP DET	di il
 importazioni	NOUN	importazione
 (	PUNCT	(
-15,9%	NUM	15,9%
+15,9	NUM	15,9
+%	SYM	%
 )	PUNCT	)
 ,	PUNCT	,
 in	ADP	in
@@ -45547,7 +45773,8 @@ cobas	PROPN	cobas
 1.840	NUM	1.840
 pari	ADJ	pari
 a il	ADP DET	a il
-44,2%	NUM	44,2%
+44,2	NUM	44,2
+%	SYM	%
 (	PUNCT	(
 18	NUM	18
 seggi	NOUN	seggio
@@ -45558,7 +45785,8 @@ fiom	PROPN	fiom
 1.776	NUM	1.776
 pari	ADJ	pari
 a il	ADP DET	a il
-42,6%	NUM	42,6%
+42,6	NUM	42,6
+%	SYM	%
 circa	ADV	circa
 (	PUNCT	(
 18	NUM	18
@@ -45570,7 +45798,8 @@ fim	PROPN	fim
 285	NUM	285
 pari	ADJ	pari
 a il	ADP DET	a il
-6,85%	NUM	6,85%
+6,85	NUM	6,85
+%	SYM	%
 (	PUNCT	(
 3	NUM	3
 seggi	NOUN	seggio
@@ -45581,7 +45810,8 @@ uilm	PROPN	uilm
 262	NUM	262
 pari	ADJ	pari
 a il	ADP DET	a il
-6,29%	NUM	6,29%
+6,29	NUM	6,29
+%	SYM	%
 (	PUNCT	(
 3	NUM	3
 seggi	NOUN	seggio
@@ -45623,7 +45853,8 @@ cobas	PROPN	cobas
 1.840	NUM	1.840
 pari	ADJ	pari
 a il	ADP DET	a il
-44,2%	NUM	44,2%
+44,2	NUM	44,2
+%	SYM	%
 (	PUNCT	(
 18	NUM	18
 seggi	NOUN	seggio
@@ -45634,7 +45865,8 @@ fiom	PROPN	fiom
 1.776	NUM	1.776
 pari	ADJ	pari
 a il	ADP DET	a il
-42,6%	NUM	42,6%
+42,6	NUM	42,6
+%	SYM	%
 circa	ADV	circa
 (	PUNCT	(
 18	NUM	18
@@ -45646,7 +45878,8 @@ fim	PROPN	fim
 285	NUM	285
 pari	ADJ	pari
 a il	ADP DET	a il
-6,85%	NUM	6,85%
+6,85	NUM	6,85
+%	SYM	%
 (	PUNCT	(
 3	NUM	3
 seggi	NOUN	seggio
@@ -45657,7 +45890,8 @@ uilm	PROPN	uilm
 262	NUM	262
 pari	ADJ	pari
 a il	ADP DET	a il
-6,29%	NUM	6,29%
+6,29	NUM	6,29
+%	SYM	%
 (	PUNCT	(
 3	NUM	3
 seggi	NOUN	seggio
@@ -46761,7 +46995,8 @@ di la	ADP DET	di il
 merone	PROPN	merone
 con	ADP	con
 il	DET	il
-9,82%	NUM	9,82%
+9,82	NUM	9,82
+%	SYM	%
 e	CCONJ	e
 indiretto	ADJ	indiretto
 (	PUNCT	(
@@ -46773,7 +47008,8 @@ cesi	PROPN	cesi
 con	ADP	con
 un	DET	uno
 altro	ADJ	altro
-61,13%	NUM	61,13%
+61,13	NUM	61,13
+%	SYM	%
 .	PUNCT	.
 }
 Predicted: {
@@ -46812,7 +47048,8 @@ di la	ADP DET	di il
 merone	PROPN	merone
 con	ADP	con
 il	DET	il
-9,82%	NUM	9,82%
+9,82	NUM	9,82
+%	SYM	%
 e	CCONJ	e
 indiretto	ADJ	indiretto
 (	PUNCT	(
@@ -46824,7 +47061,8 @@ cesi	PROPN	cesi
 con	ADP	con
 un	DET	uno
 altro	ADJ	altro
-61,13%	NUM	61,13%
+61,13	NUM	61,13
+%	SYM	%
 .	PUNCT	.
 }
 Errors: {
@@ -46911,7 +47149,8 @@ avuto	VERB	avere
 un	DET	uno
 incremento	NOUN	incremento
 di il	ADP DET	di il
-4,71%	NUM	4,71%
+4,71	NUM	4,71
+%	SYM	%
 ,	PUNCT	,
 passando	VERB	passare
 da	ADP	da
@@ -46931,7 +47170,8 @@ ha	AUX	avere
 fatto	VERB	fare
 registrare	VERB	registrare
 un	DET	uno
-45,47%	NOUN	45,47%
+45,47	NOUN	45,47
+%	SYM	%
 ,	PUNCT	,
 toccando	VERB	toccare
 i	DET	il
@@ -46959,7 +47199,8 @@ avuto	VERB	avere
 un	DET	uno
 incremento	NOUN	incremento
 di il	ADP DET	di il
-4,71%	NUM	4,71%
+4,71	NUM	4,71
+%	SYM	%
 ,	PUNCT	,
 passando	VERB	passare
 da	ADP	da
@@ -46979,7 +47220,8 @@ ha	AUX	avere
 fatto	VERB	fare
 registrare	VERB	registrare
 un	DET	uno
-45,47%	NOUN	45,47%
+45,47	NOUN	45,47
+%	SYM	%
 ,	PUNCT	,
 toccando	VERB	toccare
 i	DET	il
@@ -47202,142 +47444,6 @@ tedeschi: tedeschi | tedesco
 }
 
 Expected: {
-il	DET	il
-fiore	NOUN	fiore
-a l'	ADP DET	a il
-occhiello	NOUN	occhiello
-di	ADP	di
-agip	PROPN	agip
-australia	PROPN	australia
-è	AUX	essere
-il	DET	il
-progetto	NOUN	progetto
-per	ADP	per
-lo	DET	il
-sfruttamento	NOUN	sfruttamento
-di	ADP	di
-radio	PROPN	radio
-hill	PROPN	hill
-,	PUNCT	,
-un	DET	uno
-giacimento	NOUN	giacimento
-di	ADP	di
-nickel	NOUN	nickel
-e	CCONJ	e
-rame	NOUN	rame
-in	ADP	in
-australia	PROPN	australia
-occidentale	ADJ	occidentale
-,	PUNCT	,
-in il	ADP DET	in il
-quale	PRON	quale
-la	DET	il
-società	NOUN	società
-aveva	AUX	avere
-già	ADV	già
-investito	VERB	investire
-quasi	ADV	quasi
-40	NUM	40
-milioni	NUM	milione
-di	ADP	di
-dollari	PROPN	dollari
-e	CCONJ	e
-che	PRON	che
-a	ADP	a
-regime	NOUN	regime
-dovrebbe	AUX	dovere
-produrre	VERB	produrre
-ogni	DET	ogni
-anno	NOUN	anno
-12	NUM	12
-mila	NUM	mila
-tonnellate	NOUN	tonnellata
-di	ADP	di
-metallina	NOUN	metallina
-contenente	VERB	contenente
-il	DET	il
-25%	X	25
-di	ADP	di
-nickel	NOUN	nickel
-e	CCONJ	e
-il	DET	il
-20%	NUM	20%
-di	ADP	di
-rame	NOUN	rame
-.	PUNCT	.
-}
-Predicted: {
-il	DET	il
-fiore	NOUN	fiore
-a l'	ADP DET	a il
-occhiello	NOUN	occhiello
-di	ADP	di
-agip	PROPN	agip
-australia	PROPN	australia
-è	AUX	essere
-il	DET	il
-progetto	NOUN	progetto
-per	ADP	per
-lo	DET	il
-sfruttamento	NOUN	sfruttamento
-di	ADP	di
-radio	PROPN	radio
-hill	PROPN	hill
-,	PUNCT	,
-un	DET	uno
-giacimento	NOUN	giacimento
-di	ADP	di
-nickel	NOUN	nickel
-e	CCONJ	e
-rame	NOUN	rame
-in	ADP	in
-australia	PROPN	australia
-occidentale	ADJ	occidentale
-,	PUNCT	,
-in il	ADP DET	in il
-quale	PRON	quale
-la	DET	il
-società	NOUN	società
-aveva	AUX	avere
-già	ADV	già
-investito	VERB	investire
-quasi	ADV	quasi
-40	NUM	40
-milioni	NUM	milione
-di	ADP	di
-dollari	PROPN	dollari
-e	CCONJ	e
-che	PRON	che
-a	ADP	a
-regime	NOUN	regime
-dovrebbe	AUX	dovere
-produrre	VERB	produrre
-ogni	DET	ogni
-anno	NOUN	anno
-12	NUM	12
-mila	NUM	mila
-tonnellate	NOUN	tonnellata
-di	ADP	di
-metallina	NOUN	metallina
-contenente	VERB	contenente
-il	DET	il
-25%	X	25%
-di	ADP	di
-nickel	NOUN	nickel
-e	CCONJ	e
-il	DET	il
-20%	NUM	20%
-di	ADP	di
-rame	NOUN	rame
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-25%: 25 | 25%
-}
-
-Expected: {
 ciò	PRON	ciò
 significa	VERB	significare
 che	SCONJ	che
@@ -47351,7 +47457,8 @@ programma	NOUN	programma
 di	ADP	di
 vendere	VERB	vendere
 un	DET	uno
-20%	NUM	20%
+20	NUM	20
+%	SYM	%
 di il	ADP DET	di il
 banesto	PROPN	banesto
 fino	ADV	fino
@@ -47359,7 +47466,8 @@ a	ADP	a
 rimanere	VERB	rimanere
 con	ADP	con
 il	DET	il
-40%	NUM	40%
+40	NUM	40
+%	SYM	%
 ,	PUNCT	,
 potrà	AUX	potere
 recuperare	VERB	recuperare
@@ -47397,7 +47505,8 @@ programma	NOUN	programma
 di	ADP	di
 vendere	VERB	vendere
 un	DET	uno
-20%	NUM	20%
+20	NUM	20
+%	SYM	%
 di il	ADP DET	di il
 banesto	PROPN	banesto
 fino	ADV	fino
@@ -47405,7 +47514,8 @@ a	ADP	a
 rimanere	VERB	rimanere
 con	ADP	con
 il	DET	il
-40%	NUM	40%
+40	NUM	40
+%	SYM	%
 ,	PUNCT	,
 potrà	AUX	potere
 recuperare	VERB	recuperare
@@ -49595,7 +49705,7 @@ tradizionale	ADJ	tradizionale
 clientelismo	NOUN	clientelismo
 e	CCONJ	e
 che	PRON	che
-permettessero	VERB	permettessetrore
+permettessero	VERB	permettesserere
 ,	PUNCT	,
 quindi	ADV	quindi
 ,	PUNCT	,
@@ -49611,7 +49721,7 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 rompessero: rompere | rompessere
-permettessero: permettere | permettessetrore
+permettessero: permettere | permettesserere
 }
 
 Expected: {
@@ -54370,30 +54480,6 @@ tesa: tesa | tendere
 }
 
 Expected: {
-roma	PROPN	roma
--	PUNCT	-
-vogliono	AUX	volere
-chiamar	VERB	chiamare
-lo	PRON	lo
-totoflash	NOUN	flash
-.	PUNCT	.
-}
-Predicted: {
-roma	PROPN	roma
--	PUNCT	-
-vogliono	AUX	volere
-chiamar	VERB	chiamare
-lo	PRON	lo
-totoflash	NOUN	totoflash
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-totoflash: flash | totoflash
-}
-
-Expected: {
 anche	ADV	anche
 pescante	PROPN	pescante
 ,	PUNCT	,
@@ -54788,7 +54874,8 @@ mediobanca	PROPN	mediobanca
 che	PRON	che
 ha	VERB	avere
 il	DET	il
-10%	NUM	10%
+10	NUM	10
+%	SYM	%
 ,	PUNCT	,
 gemina	PROPN	gemina
 e	CCONJ	e
@@ -54826,7 +54913,8 @@ mediobanca	PROPN	mediobanca
 che	PRON	che
 ha	VERB	avere
 il	DET	il
-10%	NUM	10%
+10	NUM	10
+%	SYM	%
 ,	PUNCT	,
 gemina	PROPN	gemina
 e	CCONJ	e

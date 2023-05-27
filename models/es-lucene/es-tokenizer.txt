@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9992389929515003
+Evaluation-Score=0.999165542685903
 Training-Sample-Size=30250
 Evaluation-Sample-Size=3361
 Training-Algorithm=MAXENT_QN
@@ -9,9 +9,9 @@ Component-Name=TokenizerME
 Language=es
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1682059672846
+Timestamp=1684564021595
 TrainerType=Event
-Training-Eventhash=bfb0b3a58aacb152a0a96006e336e3bf
+Training-Eventhash=52348ac88bf982624548fd03f6e5762e
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
@@ -67,13 +67,25 @@ te
 Expected: {
 "<SPLIT>mientras en francia exigen a la propietaria del petrolero 'erika'<SPLIT>que pague por sus responsabilidades<SPLIT>, aqui les pagamos<SPLIT>"<SPLIT>, dijo el candidato de iu a la presidencia de la junta de andalucia<SPLIT>, que se mostro "<SPLIT>asombrado por esta actitud<SPLIT>" y aseguro que la comunidad andaluza se encuentra "<SPLIT>al borde del colapso ecologico<SPLIT>"<SPLIT>.}
 Predicted: {
-"<SPLIT>mientras en francia exigen a la propietaria del petrolero '<SPLIT>erika'que pague por sus responsabilidades<SPLIT>, aqui les pagamos<SPLIT>"<SPLIT>, dijo el candidato de iu a la presidencia de la junta de andalucia<SPLIT>, que se mostro "<SPLIT>asombrado por esta actitud<SPLIT>" y aseguro que la comunidad andaluza se encuentra "<SPLIT>al borde del colapso ecologico<SPLIT>"<SPLIT>.}
+"<SPLIT>mientras en francia exigen a la propietaria del petrolero '<SPLIT>erika<SPLIT>'que pague por sus responsabilidades<SPLIT>, aqui les pagamos<SPLIT>"<SPLIT>, dijo el candidato de iu a la presidencia de la junta de andalucia<SPLIT>, que se mostro "<SPLIT>asombrado por esta actitud<SPLIT>" y aseguro que la comunidad andaluza se encuentra "<SPLIT>al borde del colapso ecologico<SPLIT>"<SPLIT>.}
 False positives: {
 '
-erika'que
+erika
+'que
 } False negatives: {
 'erika'
 que
+}
+
+Expected: {
+ante los signos externos de embriaguez que presentaba antonio munoz<SPLIT>, el conductor fue sometido a diversas pruebas de alcoholemia y en la mas fiable (<SPLIT>el analisis de sangre<SPLIT>) llego a dar un resultado positivo de 2'70 gramos de alcohol por litro de sangre<SPLIT>, cuando el nivel maximo permitido por la ley es de 0'5<SPLIT>.}
+Predicted: {
+ante los signos externos de embriaguez que presentaba antonio munoz<SPLIT>, el conductor fue sometido a diversas pruebas de alcoholemia y en la mas fiable (<SPLIT>el analisis de sangre<SPLIT>) llego a dar un resultado positivo de 2'70 gramos de alcohol por litro de sangre<SPLIT>, cuando el nivel maximo permitido por la ley es de 0'<SPLIT>5<SPLIT>.}
+False positives: {
+0'
+5
+} False negatives: {
+0'5
 }
 
 Expected: {
@@ -132,17 +144,6 @@ False positives: {
 }
 
 Expected: {
-a.p.<SPLIT>.}
-Predicted: {
-a.p..}
-False positives: {
-a.p..
-} False negatives: {
-a.p.
-.
-}
-
-Expected: {
 es por lo tanto un colectivo vegetal<SPLIT>, con el sufijo "<SPLIT>- eros &lt; - arios<SPLIT>"<SPLIT>.}
 Predicted: {
 es por lo tanto un colectivo vegetal<SPLIT>, con el sufijo "<SPLIT>- eros &lt<SPLIT>; - arios<SPLIT>"<SPLIT>.}
@@ -185,6 +186,17 @@ dime
 } False negatives: {
 di
 me
+}
+
+Expected: {
+de acuerdo a billboard<SPLIT>, "<SPLIT>i think i 'm in love with you<SPLIT>" es el sexto sencillo mas exitoso de toda la carrera de jessica simpson en la principal lista de estados unidos<SPLIT>: la billboard hot 100<SPLIT>.}
+Predicted: {
+de acuerdo a billboard<SPLIT>, "<SPLIT>i think i '<SPLIT>m in love with you<SPLIT>" es el sexto sencillo mas exitoso de toda la carrera de jessica simpson en la principal lista de estados unidos<SPLIT>: la billboard hot 100<SPLIT>.}
+False positives: {
+'
+m
+} False negatives: {
+'m
 }
 
 Expected: {
@@ -255,13 +267,27 @@ pearless
 }
 
 Expected: {
+los miembros de esta banda adoptaban seudonimos creados a partir de sus nombres<SPLIT>, sus integrantes eran<SPLIT>: drunken en las guitarras<SPLIT>, dirty von arse en el bajo<SPLIT>, dave cunt como vocalista y migg en la bateria<SPLIT>.}
+Predicted: {
+los miembros de esta banda adoptaban seudonimos creados a partir de sus nombres<SPLIT>, sus integrantes eran<SPLIT>: drunken en las guitarras<SPLIT>, dirty von ar<SPLIT>se en el bajo<SPLIT>, dave cunt como vocalista y migg en la bateria<SPLIT>.}
+False positives: {
+ar
+se
+} False negatives: {
+arse
+}
+
+Expected: {
 o'neill cree que k'tano lo envia porque sabe que no regresara con vida<SPLIT>, e intenta convencer a teal'c para que no lo haga<SPLIT>, pero sin exito<SPLIT>.}
 Predicted: {
-o'neill cree que k'tano lo envia porque sabe que no regresara con vida<SPLIT>, e intenta convencer a teal'<SPLIT>c para que no lo haga<SPLIT>, pero sin exito<SPLIT>.}
+o'neill cree que k'<SPLIT>tano lo envia porque sabe que no regresara con vida<SPLIT>, e intenta convencer a teal'<SPLIT>c para que no lo haga<SPLIT>, pero sin exito<SPLIT>.}
 False positives: {
+k'
+tano
 teal'
 c
 } False negatives: {
+k'tano
 teal'c
 }
 
@@ -299,14 +325,25 @@ dispersandose
 }
 
 Expected: {
-es hermano de los tambien jugadores profesionales campy y walker russell<SPLIT>, y tio de walker russell jr.<SPLIT>.}
+se trata de una obra conceptualmente excepcional y singular<SPLIT>, que ha sido recientemente restaurada y ha formado parte de la exposicion ``<SPLIT>las edades del hombre<SPLIT>''<SPLIT>.}
 Predicted: {
-es hermano de los tambien jugadores profesionales campy y walker russell<SPLIT>, y tio de walker russell jr..}
+se trata de una obra conceptualmente excepcional y singular<SPLIT>, que ha sido recientemente restaurada y ha formado parte de la exposicion `<SPLIT>`<SPLIT>las edades del hombre<SPLIT>''<SPLIT>.}
 False positives: {
-jr..
+`
+`
 } False negatives: {
-jr.
-.
+``
+}
+
+Expected: {
+barlas o barlis fue la tribu mongol de la que surgieron los emperadores timuridas<SPLIT>, parte del ulus chaghatay<SPLIT>.}
+Predicted: {
+bar<SPLIT>las o barlis fue la tribu mongol de la que surgieron los emperadores timuridas<SPLIT>, parte del ulus chaghatay<SPLIT>.}
+False positives: {
+bar
+las
+} False negatives: {
+barlas
 }
 
 Expected: {
@@ -318,6 +355,17 @@ daros
 } False negatives: {
 dar
 os
+}
+
+Expected: {
+fue disenado por la compania atelier de construction d'<SPLIT>issy - les - moulineaux en 1946 para cumplir con los requisitos solicitados para un vehiculo aerotransportado de apoyo a paracaidistas<SPLIT>;}
+Predicted: {
+fue disenado por la compania atelier de construction d'issy - les - moulineaux en 1946 para cumplir con los requisitos solicitados para un vehiculo aerotransportado de apoyo a paracaidistas<SPLIT>;}
+False positives: {
+d'issy
+} False negatives: {
+d'
+issy
 }
 
 Expected: {
@@ -343,14 +391,14 @@ y.
 }
 
 Expected: {
-a mitad de ano sube de categoria a kf2 (<SPLIT>ex inter - a<SPLIT>) para hacer el campeonato de espana<SPLIT>, luchando en las ultimas carreras en las posiciones de cabeza<SPLIT>.}
+'<SPLIT>habra gente que incluso lo vera en su ipad y eso es algo bueno<SPLIT>, porque podra ver<SPLIT>se en todos los soportes<SPLIT>'<SPLIT>, destaca<SPLIT>.}
 Predicted: {
-a mitad de ano sube de categoria a kf2 (<SPLIT>ex inter - a) para hacer el campeonato de espana<SPLIT>, luchando en las ultimas carreras en las posiciones de cabeza<SPLIT>.}
+'habra gente que incluso lo vera en su ipad y eso es algo bueno<SPLIT>, porque podra ver<SPLIT>se en todos los soportes<SPLIT>'<SPLIT>, destaca<SPLIT>.}
 False positives: {
-a)
+'habra
 } False negatives: {
-a
-)
+'
+habra
 }
 
 Expected: {
@@ -462,11 +510,12 @@ False positives: {
 Expected: {
 el jueves<SPLIT>, 3 de noviembre<SPLIT>, el alcalde de saint<SPLIT>-<SPLIT>gaudens (<SPLIT>en la region haute<SPLIT>-<SPLIT>garonne<SPLIT>) decidio suspender el acuerdo de desarrollo urbano con el gobierno formado en el 2014<SPLIT>.}
 Predicted: {
-el jueves<SPLIT>, 3 de noviembre<SPLIT>, el alcalde de saint<SPLIT>-gaudens (<SPLIT>en la region haute<SPLIT>-garonne<SPLIT>) decidio suspender el acuerdo de desarrollo urbano con el gobierno formado en el 2014<SPLIT>.}
+el jueves<SPLIT>, 3 de noviembre<SPLIT>, el alcalde de saint-gaudens (<SPLIT>en la region haute<SPLIT>-garonne<SPLIT>) decidio suspender el acuerdo de desarrollo urbano con el gobierno formado en el 2014<SPLIT>.}
 False positives: {
--gaudens
+saint-gaudens
 -garonne
 } False negatives: {
+saint
 -
 gaudens
 -
@@ -493,15 +542,4 @@ jr.
 } False negatives: {
 jr
 .
-}
-
-Expected: {
-pero cuando el senado le contesto definitivamente impidiendo<SPLIT>le concurrir al consulado y poniendo<SPLIT>le en la disyuntiva de licenciar a sus legiones o ser declarado enemigo publico<SPLIT>, comprendio que<SPLIT>, escogiera la alternativa que escogiera<SPLIT>, se entregaba inerme en manos de sus enemigos politicos<SPLIT>.}
-Predicted: {
-pero cuando el senado le contesto definitivamente impidiendo<SPLIT>le concurrir al consulado y poniendo<SPLIT>le en la disyuntiva de licenciar a sus legiones o ser declarado enemigo publico<SPLIT>, comprendio que<SPLIT>, escogiera la alternativa que escogiera<SPLIT>, se entregaba iner<SPLIT>me en manos de sus enemigos politicos<SPLIT>.}
-False positives: {
-iner
-me
-} False negatives: {
-inerme
 }

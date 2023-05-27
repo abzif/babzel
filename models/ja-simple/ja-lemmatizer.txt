@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9761816884427057
-Training-Sample-Size=16864
-Evaluation-Sample-Size=1873
+Evaluation-Score=0.9801748082460566
+Training-Sample-Size=16139
+Evaluation-Sample-Size=1793
 Training-Algorithm=MAXENT
 
 === MODEL PROPERTIES ===
@@ -10,9 +10,9 @@ Component-Name=StatisticalLemmatizer
 Language=ja
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1682141746968
+Timestamp=1684647826457
 TrainerType=Event
-Training-Eventhash=112756906a7ec51a1ea5ac69e8cd1829
+Training-Eventhash=6f18297e48814c6bfef5b6d1e7ced69f
 factory=opennlp.tools.lemmatizer.LemmatizerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -104,6 +104,50 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 マネジメント: マネージメント | マネジメント
+}
+
+Expected: {
+しかし	CCONJ	然し
+ながら	SCONJ	ながら
+、	PUNCT	、
+中心	NOUN	中心
+部	NOUN	部
+の	ADP	の
+温度	NOUN	温度
+は	ADP	は
+、	PUNCT	、
+約	NOUN	約
+5	NUM	5
+,	PUNCT	,
+000	NUM	000
+°c	NOUN	度
+で	AUX	だ
+ある	VERB	有る
+。	PUNCT	。
+}
+Predicted: {
+しかし	CCONJ	然し
+ながら	SCONJ	ながら
+、	PUNCT	、
+中心	NOUN	中心
+部	NOUN	部
+の	ADP	の
+温度	NOUN	温度
+は	ADP	は
+、	PUNCT	、
+約	NOUN	約
+5	NUM	5
+,	PUNCT	,
+000	NUM	000
+°c	NOUN	度
+で	AUX	で
+ある	VERB	有る
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+で: だ | で
 }
 
 Expected: {
@@ -1418,50 +1462,6 @@ Tok: Ref | Pred
 }
 
 Expected: {
-おいしい	ADJ	美味しい
-と	ADP	と
-聞い	VERB	聞く
-て	AUX	てる
-た	AUX	た
-だけ	PART	だけ
-に	ADP	に
-姉	NOUN	姉
-に	ADP	に
-は	ADP	は
-申し訳	NOUN	申し訳
-なく	ADJ	無い
-て	SCONJ	て
-ホント	NOUN	本当
-に	ADP	に
-最悪	ADJ	最悪
-です	AUX	です
-}
-Predicted: {
-おいしい	ADJ	美味しい
-と	ADP	と
-聞い	VERB	聞く
-て	AUX	て
-た	AUX	た
-だけ	PART	だけ
-に	ADP	に
-姉	NOUN	姉
-に	ADP	に
-は	ADP	は
-申し訳	NOUN	申し訳
-なく	ADJ	無い
-て	SCONJ	て
-ホント	NOUN	本当
-に	ADP	に
-最悪	ADJ	最悪
-です	AUX	です
-}
-Errors: {
-Tok: Ref | Pred
----------------
-て: てる | て
-}
-
-Expected: {
 次	NOUN	次
 の	ADP	の
 カット	NOUN	カット
@@ -1791,17 +1791,17 @@ Predicted: {
 こと	NOUN	事
 を	ADP	を
 関連	VERB	関連
-づけ	VERB	付ける
+づけ	VERB	付け
 て	SCONJ	て
 学ん	VERB	学ぶ
-だ	AUX	だ
+だ	AUX	た
 。	PUNCT	。
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
 感じる: 感ずる | 感じる
-だ: た | だ
+づけ: 付ける | 付け
 }
 
 Expected: {
@@ -2409,7 +2409,7 @@ Predicted: {
 し	VERB	為る
 たら	AUX	た
 いい	AUX	良い
-ん	SCONJ	む
+ん	SCONJ	ず
 です	AUX	です
 か	PART	か
 ?	PUNCT	?
@@ -2417,7 +2417,7 @@ Predicted: {
 Errors: {
 Tok: Ref | Pred
 ---------------
-ん: の | む
+ん: の | ず
 }
 
 Expected: {
@@ -2501,70 +2501,6 @@ Tok: Ref | Pred
 }
 
 Expected: {
-お	NOUN	御
-せわ	NOUN	世話
-整体	NOUN	整体
-院	NOUN	院
-は	ADP	は
-その	DET	其の
-行き帰り	NOUN	行き帰り
-の	ADP	の
-途中	NOUN	途中
-に	ADP	に
-あっ	VERB	有る
-て	SCONJ	て
-、	PUNCT	、
-自分	NOUN	自分
-の	ADP	の
-体	NOUN	体
-の	ADP	の
-ゆがみ	NOUN	歪み
-を	ADP	を
-もっと	ADV	もっと
-知り	VERB	知る
-たく	AUX	たい
-て	SCONJ	て
-通っ	VERB	通う
-て	AUX	てる
-ます	AUX	ます
-。	PUNCT	。
-}
-Predicted: {
-お	NOUN	御
-せわ	NOUN	世話
-整体	NOUN	整体
-院	NOUN	院
-は	ADP	は
-その	DET	其の
-行き帰り	NOUN	行き帰り
-の	ADP	の
-途中	NOUN	途中
-に	ADP	に
-あっ	VERB	有る
-て	SCONJ	て
-、	PUNCT	、
-自分	NOUN	自分
-の	ADP	の
-体	NOUN	体
-の	ADP	の
-ゆがみ	NOUN	歪み
-を	ADP	を
-もっと	ADV	もっと
-知り	VERB	知る
-たく	AUX	たい
-て	SCONJ	て
-通っ	VERB	通う
-て	AUX	て
-ます	AUX	ます
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-て: てる | て
-}
-
-Expected: {
 その	DET	其の
 傍ら	NOUN	傍ら
 タレント	NOUN	タレント
@@ -2606,84 +2542,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 サガ: サガ | 性
-}
-
-Expected: {
-この	DET	此の
-ページ	NOUN	ページ
-は	ADP	は
-香港	PROPN	香港
-版	NOUN	版
-google	PROPN	google
-に	ADP	に
-リンク	VERB	リンク
-し	AUX	為る
-て	SCONJ	て
-おり	VERB	居る
-、	PUNCT	、
-google	PROPN	google
-が	ADP	が
-中国	PROPN	中国
-国内	NOUN	国内
-で	ADP	で
-フィルタリング	NOUN	フィルタリング
-なし	NOUN	無し
-で	ADP	で
-提供	VERB	提供
-できる	AUX	出来る
-音楽	NOUN	音楽
-検索	NOUN	検索
-や	ADP	や
-翻訳	NOUN	翻訳
-機能	NOUN	機能
-など	ADP	など
-の	ADP	の
-サービス	NOUN	サービス
-も	ADP	も
-利用	VERB	利用
-できる	AUX	出来る
-。	PUNCT	。
-}
-Predicted: {
-この	DET	此の
-ページ	NOUN	ページ
-は	ADP	は
-香港	PROPN	香港
-版	NOUN	版
-google	PROPN	google
-に	ADP	に
-リンク	VERB	リンク
-し	AUX	為る
-て	SCONJ	て
-おり	VERB	居る
-、	PUNCT	、
-google	PROPN	google
-が	ADP	が
-中国	PROPN	中国
-国内	NOUN	国内
-で	ADP	で
-フィルタリング	NOUN	フィルタリング
-なし	NOUN	なし
-で	ADP	で
-提供	VERB	提供
-できる	AUX	出来る
-音楽	NOUN	音楽
-検索	NOUN	検索
-や	ADP	や
-翻訳	NOUN	翻訳
-機能	NOUN	機能
-など	ADP	など
-の	ADP	の
-サービス	NOUN	サービス
-も	ADP	も
-利用	VERB	利用
-できる	AUX	出来る
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-なし: 無し | なし
 }
 
 Expected: {
@@ -2912,7 +2770,7 @@ Predicted: {
 は	ADP	は
 疾風	NOUN	疾風
 の	ADP	の
-如く	AUX	如し
+如く	AUX	ごとし
 、	PUNCT	、
 地面	NOUN	地面
 に	ADP	に
@@ -2938,7 +2796,7 @@ Predicted: {
 素早い	ADJ	素早い
 連続	NOUN	連続
 足技	NOUN	足業
-で	AUX	だ
+で	AUX	で
 ある	VERB	有る
 。	PUNCT	。
 }
@@ -2947,8 +2805,8 @@ Tok: Ref | Pred
 ---------------
 素早: 素早い | 素早
 さ: さ | 為る
-如く: ごとし | 如し
 称さ: 称する | 称す
+で: だ | で
 }
 
 Expected: {
@@ -3265,6 +3123,54 @@ Tok: Ref | Pred
 }
 
 Expected: {
+亡くなっ	VERB	亡くなる
+た	AUX	た
+の	SCONJ	の
+は	ADP	は
+、	PUNCT	、
+宮城	PROPN	宮城
+県	NOUN	県
+石巻	PROPN	石巻
+市	NOUN	市
+の	ADP	の
+無職	NOUN	無職
+、	PUNCT	、
+中澤	PROPN	中澤
+尚	PROPN	尚
+さん	NOUN	さん
+71	NUM	71
+歳	NOUN	歳
+です	AUX	です
+。	PUNCT	。
+}
+Predicted: {
+亡くなっ	VERB	亡くなる
+た	AUX	た
+の	SCONJ	の
+は	ADP	は
+、	PUNCT	、
+宮城	PROPN	宮城
+県	NOUN	県
+石巻	PROPN	石巻
+市	NOUN	市
+の	ADP	の
+無職	NOUN	無職
+、	PUNCT	、
+中澤	PROPN	中澤
+尚	PROPN	猶
+さん	NOUN	さん
+71	NUM	71
+歳	NOUN	歳
+です	AUX	です
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+尚: 尚 | 猶
+}
+
+Expected: {
 20	NUM	20
 代	NOUN	代
 後半	NOUN	後半
@@ -3305,7 +3211,7 @@ Predicted: {
 男性	NOUN	男性
 が	ADP	が
 ,	PUNCT	,
-1人	NOUN	一人
+1人	NOUN	1人
 の	ADP	の
 男性	NOUN	男性
 を	ADP	を
@@ -3320,6 +3226,7 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 おぼしき: 思しい | 思し
+1人: 一人 | 1人
 }
 
 Expected: {
@@ -3490,6 +3397,104 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 ウェーブ: ウエーブ | ウェーブ
+}
+
+Expected: {
+社員	NOUN	社員
+証	NOUN	証
+や	ADP	や
+電子	NOUN	電子
+マネー	NOUN	マネー
+など	ADP	など
+多様	ADJ	多様
+な	AUX	だ
+決済	NOUN	決済
+方法	NOUN	方法
+に	ADP	に
+対応	VERB	対応
+し	AUX	為る
+、	PUNCT	、
+利用	NOUN	利用
+者	NOUN	者
+へ	ADP	へ
+の	ADP	の
+利便	NOUN	利便
+性	NOUN	性
+を	ADP	を
+向上	VERB	向上
+さ	AUX	為る
+せる	AUX	せる
+など	PART	など
+付加	NOUN	付加
+価値	NOUN	価値
+を	ADP	を
+高め	VERB	高める
+られ	AUX	られる
+、	PUNCT	、
+自社	NOUN	自社
+の	ADP	の
+自動	NOUN	自動
+販売	NOUN	販売
+機	NOUN	機
+の	ADP	の
+シェア	NOUN	シェア
+拡大	NOUN	拡大
+が	ADP	が
+期待	VERB	期待
+でき	AUX	出来る
+ます	AUX	ます
+。	PUNCT	。
+}
+Predicted: {
+社員	NOUN	社員
+証	NOUN	証し
+や	ADP	や
+電子	NOUN	電子
+マネー	NOUN	マネー
+など	ADP	など
+多様	ADJ	多様
+な	AUX	だ
+決済	NOUN	決済
+方法	NOUN	方法
+に	ADP	に
+対応	VERB	対応
+し	AUX	為る
+、	PUNCT	、
+利用	NOUN	利用
+者	NOUN	者
+へ	ADP	へ
+の	ADP	の
+利便	NOUN	利便
+性	NOUN	性
+を	ADP	を
+向上	VERB	向上
+さ	AUX	為る
+せる	AUX	せる
+など	PART	など
+付加	NOUN	付加
+価値	NOUN	価値
+を	ADP	を
+高め	VERB	高める
+られ	AUX	られる
+、	PUNCT	、
+自社	NOUN	自社
+の	ADP	の
+自動	NOUN	自動
+販売	NOUN	販売
+機	NOUN	機
+の	ADP	の
+シェア	NOUN	シェア
+拡大	NOUN	拡大
+が	ADP	が
+期待	VERB	期待
+でき	AUX	出来る
+ます	AUX	ます
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+証: 証 | 証し
 }
 
 Expected: {
@@ -4327,7 +4332,7 @@ Predicted: {
 樹	NOUN	樹
 の	ADP	の
 シナ	NOUN	科
-で	AUX	だ
+で	AUX	で
 、	PUNCT	、
 底	NOUN	底
 や	ADP	や
@@ -4353,6 +4358,7 @@ Predicted: {
 Errors: {
 Tok: Ref | Pred
 ---------------
+で: だ | で
 蓋: 蓋 | 衣笠
 で: だ | で
 }
@@ -4715,88 +4721,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 うち: 内 | 家
-}
-
-Expected: {
-東京	PROPN	東京
-に	ADP	に
-住ん	VERB	住む
-で	SCONJ	て
-い	VERB	居る
-た	AUX	た
-頃	NOUN	頃
-は	ADP	は
-カット	NOUN	カット
-だけ	ADP	だけ
-で	ADP	で
-1	NUM	1
-万	NUM	万
-円	NOUN	円
-と	ADP	と
-いう	VERB	言う
-ヘア	NOUN	ヘア
-スタイリスト	NOUN	スタイリスト
-さん	NOUN	さん
-に	ADP	に
-切っ	VERB	切る
-て	SCONJ	て
-もらっ	VERB	貰う
-て	AUX	てる
-まし	AUX	ます
-た	AUX	た
-が	SCONJ	が
-、	PUNCT	、
-その	DET	其の
-方	NOUN	方
-より	ADP	より
-も	ADP	も
-はるか	ADJ	遥か
-に	AUX	だ
-上手	ADJ	上手
-。	PUNCT	。
-}
-Predicted: {
-東京	PROPN	東京
-に	ADP	に
-住ん	VERB	住む
-で	SCONJ	て
-い	VERB	居る
-た	AUX	た
-頃	NOUN	頃
-は	ADP	は
-カット	NOUN	カット
-だけ	ADP	だけ
-で	ADP	で
-1	NUM	1
-万	NUM	万
-円	NOUN	円
-と	ADP	と
-いう	VERB	言う
-ヘア	NOUN	ヘア
-スタイリスト	NOUN	スタイリスト
-さん	NOUN	さん
-に	ADP	に
-切っ	VERB	切る
-て	SCONJ	て
-もらっ	VERB	貰う
-て	AUX	て
-まし	AUX	ます
-た	AUX	た
-が	SCONJ	が
-、	PUNCT	、
-その	DET	其の
-方	NOUN	方
-より	ADP	より
-も	ADP	も
-はるか	ADJ	遥か
-に	AUX	だ
-上手	ADJ	上手
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-て: てる | て
 }
 
 Expected: {
@@ -5417,136 +5341,6 @@ Tok: Ref | Pred
 }
 
 Expected: {
-その	DET	其の
-結果	NOUN	結果
-、	PUNCT	、
-ガダルカナル	PROPN	ガダルカナル
-島	NOUN	島
-の	ADP	の
-戦い	NOUN	戦い
-や	ADP	や
-インパール	PROPN	インパール
-作戦	NOUN	作戦
-で	ADP	で
-発生	VERB	発生
-し	AUX	為る
-た	AUX	た
-よう	AUX	様
-に	AUX	だ
-、	PUNCT	、
-食事	NOUN	食事
-も	ADP	も
-薬	NOUN	薬
-も	ADP	も
-無い	ADJ	無い
-状況	NOUN	状況
-で	ADP	で
-、	PUNCT	、
-麻酔	NOUN	麻酔
-なし	NOUN	無し
-で	ADP	で
-の	ADP	の
-手術	NOUN	手術
-や	ADP	や
-、	PUNCT	、
-野外	NOUN	野外
-の	ADP	の
-泥	NOUN	泥
-の	ADP	の
-中	NOUN	中
-に	ADP	に
-患者	NOUN	患者
-を	ADP	を
-放置	VERB	放置
-する	AUX	為る
-と	ADP	と
-いっ	VERB	言う
-た	AUX	た
-、	PUNCT	、
-悲惨	ADJ	悲惨
-な	AUX	だ
-状況	NOUN	状況
-が	ADP	が
-戦域	NOUN	戦域
-で	ADP	で
-展開	VERB	展開
-さ	AUX	為る
-れる	AUX	れる
-こと	NOUN	事
-も	ADP	も
-あっ	VERB	有る
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-その	DET	其の
-結果	NOUN	結果
-、	PUNCT	、
-ガダルカナル	PROPN	ガダルカナル
-島	NOUN	島
-の	ADP	の
-戦い	NOUN	戦い
-や	ADP	や
-インパール	PROPN	インパール
-作戦	NOUN	作戦
-で	ADP	で
-発生	VERB	発生
-し	AUX	為る
-た	AUX	た
-よう	AUX	様
-に	AUX	だ
-、	PUNCT	、
-食事	NOUN	食事
-も	ADP	も
-薬	NOUN	薬
-も	ADP	も
-無い	ADJ	無い
-状況	NOUN	状況
-で	ADP	で
-、	PUNCT	、
-麻酔	NOUN	麻酔
-なし	NOUN	なし
-で	ADP	で
-の	ADP	の
-手術	NOUN	手術
-や	ADP	や
-、	PUNCT	、
-野外	NOUN	野外
-の	ADP	の
-泥	NOUN	泥
-の	ADP	の
-中	NOUN	中
-に	ADP	に
-患者	NOUN	患者
-を	ADP	を
-放置	VERB	放置
-する	AUX	為る
-と	ADP	と
-いっ	VERB	言う
-た	AUX	た
-、	PUNCT	、
-悲惨	ADJ	悲惨
-な	AUX	だ
-状況	NOUN	状況
-が	ADP	が
-戦域	NOUN	戦域
-で	ADP	で
-展開	VERB	展開
-さ	AUX	為る
-れる	AUX	れる
-こと	NOUN	事
-も	ADP	も
-あっ	VERB	有る
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-なし: 無し | なし
-}
-
-Expected: {
 範忠	PROPN	範忠
 の	ADP	の
 一	NUM	一
@@ -5688,78 +5482,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 ウィングス: ウイング | ウィングス
-}
-
-Expected: {
-メディア	NOUN	メディア
-に	ADP	に
-よっ	VERB	因る
-て	SCONJ	て
-は	ADP	は
-吸血	NOUN	吸血
-鬼	NOUN	鬼
-の	ADP	の
-如く	AUX	ごとし
-、	PUNCT	、
-若い	ADJ	若い
-白人	NOUN	白人
-女性	NOUN	女性
-を	ADP	を
-生贄	NOUN	生け贄
-に	ADP	に
-霊力	NOUN	霊力
-を	ADP	を
-得	VERB	得る
-たり	PART	たり
-、	PUNCT	、
-マゾヒスト	NOUN	マゾヒスト
-の	ADP	の
-面	NOUN	面
-も	ADP	も
-持っ	VERB	持つ
-て	SCONJ	て
-い	VERB	居る
-たり	PART	たり
-する	VERB	為る
-。	PUNCT	。
-}
-Predicted: {
-メディア	NOUN	メディア
-に	ADP	に
-よっ	VERB	因る
-て	SCONJ	て
-は	ADP	は
-吸血	NOUN	吸血
-鬼	NOUN	鬼
-の	ADP	の
-如く	AUX	如し
-、	PUNCT	、
-若い	ADJ	若い
-白人	NOUN	白人
-女性	NOUN	女性
-を	ADP	を
-生贄	NOUN	生け贄
-に	ADP	に
-霊力	NOUN	霊力
-を	ADP	を
-得	VERB	得る
-たり	PART	たり
-、	PUNCT	、
-マゾヒスト	NOUN	マゾヒスト
-の	ADP	の
-面	NOUN	面
-も	ADP	も
-持っ	VERB	持つ
-て	SCONJ	て
-い	VERB	居る
-たり	PART	たり
-する	VERB	為る
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-如く: ごとし | 如し
 }
 
 Expected: {
@@ -5945,68 +5667,6 @@ Tok: Ref | Pred
 }
 
 Expected: {
-知恵	NOUN	知恵
-と	ADP	と
-アイディア	NOUN	アイディア
-を	ADP	を
-結集	VERB	結集
-さ	AUX	為る
-せ	AUX	せる
-た	AUX	た
-この	DET	此の
-「	PUNCT	「
-推し	VERB	押す
-面	NOUN	面
-メーカー	NOUN	メーカー
-」	PUNCT	」
-は	ADP	は
-、	PUNCT	、
-最初	NOUN	最初
-から	ADP	から
-公開	NOUN	公開
-予定	NOUN	予定
-だっ	AUX	だ
-た	AUX	た
-の	SCONJ	の
-だろう	AUX	だ
-か	PART	か
-。	PUNCT	。
-}
-Predicted: {
-知恵	NOUN	知恵
-と	ADP	と
-アイディア	NOUN	アイディア
-を	ADP	を
-結集	VERB	結集
-さ	AUX	為る
-せ	AUX	せる
-た	AUX	た
-この	DET	此の
-「	PUNCT	「
-推し	VERB	推す
-面	NOUN	面
-メーカー	NOUN	メーカー
-」	PUNCT	」
-は	ADP	は
-、	PUNCT	、
-最初	NOUN	最初
-から	ADP	から
-公開	NOUN	公開
-予定	NOUN	予定
-だっ	AUX	だ
-た	AUX	た
-の	SCONJ	の
-だろう	AUX	だ
-か	PART	か
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-推し: 押す | 推す
-}
-
-Expected: {
 治療	NOUN	治療
 に	ADP	に
 よる	VERB	因る
@@ -6046,14 +5706,14 @@ Predicted: {
 し	VERB	為る
 て	SCONJ	て
 くれる	VERB	呉れる
-ん	SCONJ	む
+ん	SCONJ	ず
 です	AUX	です
 。	PUNCT	。
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
-ん: の | む
+ん: の | ず
 }
 
 Expected: {
@@ -6255,7 +5915,7 @@ Predicted: {
 、	PUNCT	、
 私	PRON	私
 は	ADP	は
-只	ADV	只
+只	ADV	唯
 、	PUNCT	、
 戸惑う	VERB	戸惑う
 ばかり	PART	ばかり
@@ -6297,7 +5957,6 @@ Predicted: {
 Errors: {
 Tok: Ref | Pred
 ---------------
-只: 唯 | 只
 な: な | だ
 }
 
@@ -6626,7 +6285,7 @@ Predicted: {
 、	PUNCT	、
 1	NUM	1
 日	NOUN	日
-あたり	NOUN	当たり
+あたり	NOUN	辺り
 約	NOUN	約
 500	NUM	500
 万	NUM	万
@@ -6671,6 +6330,7 @@ Predicted: {
 Errors: {
 Tok: Ref | Pred
 ---------------
+あたり: 当たり | 辺り
 つぶやき: 呟き | つぶやき
 }
 
@@ -7431,94 +7091,6 @@ Tok: Ref | Pred
 }
 
 Expected: {
-グラクソ	PROPN	グラクソ
-・	SYM	・
-スミスクライン	PROPN	スミスクライン
-株式	NOUN	株式
-会社	NOUN	会社
-から	ADP	から
-、	PUNCT	、
-入れ歯	NOUN	入れ歯
-を	ADP	を
-清潔	ADJ	清潔
-に	AUX	だ
-保つ	VERB	保つ
-義歯	NOUN	義歯
-洗浄	NOUN	洗浄
-剤	NOUN	剤
-「	PUNCT	「
-酵素	NOUN	酵素
-入り	NOUN	入り
-ポリ	NOUN	ポリ
-デント	NOUN	デント
-」	PUNCT	」
-と	ADP	と
-「	PUNCT	「
-部分	NOUN	部分
-入れ歯	NOUN	入れ歯
-用	NOUN	用
-ポリ	NOUN	ポリ
-デント	NOUN	デント
-」	PUNCT	」
-を	ADP	を
-それぞれ	ADV	其々
-5	NUM	5
-名	NOUN	名
-様	NOUN	様
-に	ADP	に
-プレゼント	VERB	プレゼント
-し	AUX	為る
-ます	AUX	ます
-。	PUNCT	。
-}
-Predicted: {
-グラクソ	PROPN	グラクソ
-・	SYM	・
-スミスクライン	PROPN	スミスクライン
-株式	NOUN	株式
-会社	NOUN	会社
-から	ADP	から
-、	PUNCT	、
-入れ歯	NOUN	入れ歯
-を	ADP	を
-清潔	ADJ	清潔
-に	AUX	だ
-保つ	VERB	持つ
-義歯	NOUN	義歯
-洗浄	NOUN	洗浄
-剤	NOUN	剤
-「	PUNCT	「
-酵素	NOUN	酵素
-入り	NOUN	入り
-ポリ	NOUN	ポリ
-デント	NOUN	デント
-」	PUNCT	」
-と	ADP	と
-「	PUNCT	「
-部分	NOUN	部分
-入れ歯	NOUN	入れ歯
-用	NOUN	用
-ポリ	NOUN	ポリ
-デント	NOUN	デント
-」	PUNCT	」
-を	ADP	を
-それぞれ	ADV	其々
-5	NUM	5
-名	NOUN	名
-様	NOUN	様
-に	ADP	に
-プレゼント	VERB	プレゼント
-し	AUX	為る
-ます	AUX	ます
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-保つ: 保つ | 持つ
-}
-
-Expected: {
 はんにゃ	NOUN	般若
 専属	NOUN	専属
 の	ADP	の
@@ -7905,54 +7477,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 マグネ: マグネット | マグネ
-}
-
-Expected: {
-縮毛	NOUN	縮毛
-矯正	VERB	矯正
-し	AUX	為る
-て	SCONJ	て
-もらっ	VERB	貰う
-て	AUX	てる
-ます	AUX	ます
-が	SCONJ	が
-ここ	PRON	此処
-だ	AUX	だ
-と	ADP	と
-技術	NOUN	技術
-が	ADP	が
-ある	VERB	有る
-から	SCONJ	から
-仕上がり	NOUN	仕上がり
-ばっちり	ADV	ばっちり
-です	AUX	です
-。	PUNCT	。
-}
-Predicted: {
-縮毛	NOUN	縮毛
-矯正	VERB	矯正
-し	AUX	為る
-て	SCONJ	て
-もらっ	VERB	貰う
-て	AUX	て
-ます	AUX	ます
-が	SCONJ	が
-ここ	PRON	此処
-だ	AUX	だ
-と	ADP	と
-技術	NOUN	技術
-が	ADP	が
-ある	VERB	有る
-から	SCONJ	から
-仕上がり	NOUN	仕上がり
-ばっちり	ADV	ばっちり
-です	AUX	です
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-て: てる | て
 }
 
 Expected: {
@@ -8786,7 +8310,7 @@ Predicted: {
 最後	NOUN	最後
 まで	ADP	まで
 渋っ	VERB	渋る
-て	AUX	て
+て	AUX	てる
 まし	AUX	ます
 た	AUX	た
 けど	SCONJ	けれど
@@ -8798,8 +8322,8 @@ Predicted: {
 何	PRON	何
 も	ADP	も
 使っ	VERB	使う
-て	AUX	て
-ない	AUX	無い
+て	AUX	てる
+ない	AUX	ない
 の	SCONJ	の
 で	AUX	だ
 交渉	VERB	交渉
@@ -8820,9 +8344,6 @@ Predicted: {
 Errors: {
 Tok: Ref | Pred
 ---------------
-て: てる | て
-て: てる | て
-ない: ない | 無い
 貰っ: 貰う | 貰っ
 }
 
@@ -9154,7 +8675,7 @@ Predicted: {
 外国	NOUN	外国
 人	NOUN	人
 登録	NOUN	登録
-証	NOUN	証
+証	NOUN	証し
 の	ADP	の
 不正	NOUN	不正
 更新	NOUN	更新
@@ -9251,7 +8772,52 @@ Predicted: {
 Errors: {
 Tok: Ref | Pred
 ---------------
+証: 証 | 証し
 言える: 言う | 言える
+}
+
+Expected: {
+pc	NOUN	pc
+-	SYM	-
+98	NUM	98
+時代	NOUN	時代
+の	ADP	の
+ソフト	NOUN	ソフト
+を	ADP	を
+エミュレータ	NOUN	エミュレーター
+に	ADP	に
+より	VERB	因る
+windows	NOUN	windows
+上	NOUN	上
+で	ADP	で
+動かし	VERB	動かす
+て	SCONJ	て
+いる	VERB	居る
+。	PUNCT	。
+}
+Predicted: {
+pc	NOUN	pc
+-	SYM	-
+98	NUM	98
+時代	NOUN	時代
+の	ADP	の
+ソフト	NOUN	ソフト
+を	ADP	を
+エミュレータ	NOUN	エミュレーター
+に	ADP	に
+より	VERB	因る
+windows	NOUN	windows
+上	NOUN	上
+で	ADP	で
+動かし	VERB	動かしる
+て	SCONJ	て
+いる	VERB	居る
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+動かし: 動かす | 動かしる
 }
 
 Expected: {
@@ -10335,6 +9901,130 @@ Tok: Ref | Pred
 }
 
 Expected: {
+完璧	NOUN	完璧
+主義	NOUN	主義
+で	ADP	で
+絶対	NOUN	絶対
+に	ADP	に
+指示	NOUN	指示
+通り	NOUN	通り
+で	AUX	だ
+なけれ	AUX	無い
+ば	SCONJ	ば
+許さ	VERB	許す
+ない	AUX	ない
+キューブリック	PROPN	キューブリック
+も	ADP	も
+、	PUNCT	、
+本作	NOUN	本作
+で	ADP	で
+は	ADP	は
+ジャズ	NOUN	ジャズ
+の	ADP	の
+リフ	NOUN	リフ
+奏法	NOUN	奏法
+・	SYM	・
+アドリブ	NOUN	アドリブ
+奏法	NOUN	奏法
+を	ADP	を
+映画	NOUN	映画
+の	ADP	の
+演技	NOUN	演技
+と	ADP	と
+し	AUX	為る
+て	SCONJ	て
+セラーズ	PROPN	セラーズ
+に	ADP	に
+許し	VERB	許す
+、	PUNCT	、
+それ	PRON	其れ
+が	ADP	が
+成功	NOUN	成功
+の	ADP	の
+一因	NOUN	一因
+だっ	AUX	だ
+た	AUX	た
+と	ADP	と
+映画	NOUN	映画
+評論	NOUN	評論
+家	NOUN	家
+アレクサンダー	PROPN	アレクサンダー
+・	SYM	・
+ウォーカー	PROPN	ウォーカー
+は	ADP	は
+後	NOUN	後
+に	ADP	に
+語っ	VERB	語る
+て	SCONJ	て
+いる	VERB	居る
+。	PUNCT	。
+}
+Predicted: {
+完璧	NOUN	完璧
+主義	NOUN	主義
+で	ADP	で
+絶対	NOUN	絶対
+に	ADP	に
+指示	NOUN	指示
+通り	NOUN	通り
+で	AUX	だ
+なけれ	AUX	無い
+ば	SCONJ	ば
+許さ	VERB	許す
+ない	AUX	ない
+キューブリック	PROPN	キューブリック
+も	ADP	も
+、	PUNCT	、
+本作	NOUN	本作
+で	ADP	で
+は	ADP	は
+ジャズ	NOUN	ジャズ
+の	ADP	の
+リフ	NOUN	リフ
+奏法	NOUN	奏法
+・	SYM	・
+アドリブ	NOUN	アドリブ
+奏法	NOUN	奏法
+を	ADP	を
+映画	NOUN	映画
+の	ADP	の
+演技	NOUN	演技
+と	ADP	と
+し	AUX	為る
+て	SCONJ	て
+セラーズ	PROPN	セラーズ
+に	ADP	に
+許し	VERB	許し
+、	PUNCT	、
+それ	PRON	其れ
+が	ADP	が
+成功	NOUN	成功
+の	ADP	の
+一因	NOUN	一因
+だっ	AUX	だ
+た	AUX	た
+と	ADP	と
+映画	NOUN	映画
+評論	NOUN	評論
+家	NOUN	家
+アレクサンダー	PROPN	アレクサンダー
+・	SYM	・
+ウォーカー	PROPN	ウォーカー
+は	ADP	は
+後	NOUN	後
+に	ADP	に
+語っ	VERB	語る
+て	SCONJ	て
+いる	VERB	居る
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+許し: 許す | 許し
+}
+
+Expected: {
 入場	NOUN	入場
 者	NOUN	者
 数	NOUN	数
@@ -10555,164 +10245,6 @@ Tok: Ref | Pred
 悔し: 悔しい | 悔し
 ファイヴ: ファイブ | ファイヴ
 言える: 言う | 言える
-}
-
-Expected: {
-前胸	NOUN	前胸
-に	ADP	に
-は	ADP	は
-、	PUNCT	、
-中央	NOUN	中央
-より	ADP	より
-左右	NOUN	左右
-に	ADP	に
-前後	NOUN	前後
-二	NUM	二
-つ	NOUN	つ
-、	PUNCT	、
-その	DET	其の
-外側	NOUN	外側
-に	ADP	に
-一	NUM	一
-つ	NOUN	つ
-の	ADP	の
-黒斑	NOUN	黒斑
-、	PUNCT	、
-小楯	NOUN	小楯
-板	NOUN	板
-に	ADP	に
-は	ADP	は
-正中	NOUN	正中
-線	NOUN	線
-に	ADP	に
-沿っ	VERB	沿う
-て	SCONJ	て
-前胸	NOUN	前胸
-の	ADP	の
-少し	ADV	少し
-後ろ	NOUN	後ろ
-と	ADP	と
-後端	NOUN	後端
-より	ADP	より
-少し	ADV	少し
-前	NOUN	前
-に	ADP	に
-縦長	ADJ	縦長
-の	ADP	の
-黒斑	NOUN	黒斑
-、	PUNCT	、
-その	DET	其の
-両側	NOUN	両側
-中程	NOUN	中程
-に	ADP	に
-は	ADP	は
-、	PUNCT	、
-前	NOUN	前
-の	ADP	の
-黒斑	NOUN	黒斑
-の	ADP	の
-少し	ADV	少し
-後方	NOUN	後方
-と	ADP	と
-、	PUNCT	、
-後ろ	NOUN	後ろ
-の	ADP	の
-黒斑	NOUN	黒斑
-の	ADP	の
-前方	NOUN	前方
-に	ADP	に
-、	PUNCT	、
-ハ	NOUN	ハ
-の	ADP	の
-字	NOUN	字
-に	ADP	に
-並ん	VERB	並ぶ
-だ	AUX	た
-黒斑	NOUN	黒斑
-が	ADP	が
-ある	VERB	有る
-。	PUNCT	。
-}
-Predicted: {
-前胸	NOUN	前胸
-に	ADP	に
-は	ADP	は
-、	PUNCT	、
-中央	NOUN	中央
-より	ADP	より
-左右	NOUN	左右
-に	ADP	に
-前後	NOUN	前後
-二	NUM	二
-つ	NOUN	つ
-、	PUNCT	、
-その	DET	其の
-外側	NOUN	外側
-に	ADP	に
-一	NUM	一
-つ	NOUN	つ
-の	ADP	の
-黒斑	NOUN	黒斑
-、	PUNCT	、
-小楯	NOUN	小楯
-板	NOUN	板
-に	ADP	に
-は	ADP	は
-正中	NOUN	正中
-線	NOUN	線
-に	ADP	に
-沿っ	VERB	沿う
-て	SCONJ	て
-前胸	NOUN	前胸
-の	ADP	の
-少し	ADV	少し
-後ろ	NOUN	後ろ
-と	ADP	と
-後端	NOUN	後端
-より	ADP	より
-少し	ADV	少し
-前	NOUN	前
-に	ADP	に
-縦長	ADJ	縦長
-の	ADP	の
-黒斑	NOUN	黒斑
-、	PUNCT	、
-その	DET	其の
-両側	NOUN	両側
-中程	NOUN	中程
-に	ADP	に
-は	ADP	は
-、	PUNCT	、
-前	NOUN	前
-の	ADP	の
-黒斑	NOUN	黒斑
-の	ADP	の
-少し	ADV	少し
-後方	NOUN	後方
-と	ADP	と
-、	PUNCT	、
-後ろ	NOUN	後ろ
-の	ADP	の
-黒斑	NOUN	黒斑
-の	ADP	の
-前方	NOUN	前方
-に	ADP	に
-、	PUNCT	、
-ハ	NOUN	ハ
-の	ADP	の
-字	NOUN	字
-に	ADP	に
-並ん	VERB	並ぶ
-だ	AUX	だ
-黒斑	NOUN	黒斑
-が	ADP	が
-ある	VERB	有る
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-だ: た | だ
 }
 
 Expected: {
@@ -11219,7 +10751,7 @@ Predicted: {
 も	ADP	も
 肯定	NOUN	肯定
 も	ADP	も
-せ	VERB	す
+せ	VERB	する
 ず	AUX	ず
 受け流し	VERB	受け流し
 た	AUX	た
@@ -11230,7 +10762,7 @@ Predicted: {
 Errors: {
 Tok: Ref | Pred
 ---------------
-せ: 為る | す
+せ: 為る | する
 受け流し: 受け流す | 受け流し
 }
 
@@ -11725,7 +11257,7 @@ Predicted: {
 とこ	NOUN	所
 に	ADP	に
 いっ	VERB	言う
-て	AUX	て
+て	AUX	てる
 まし	AUX	ます
 た	AUX	た
 が	SCONJ	が
@@ -11747,95 +11279,6 @@ Tok: Ref | Pred
 しよう: 為る | する
 いっ: 行く | 言う
 いっ: 行く | 言う
-て: てる | て
-}
-
-Expected: {
-しかし	CCONJ	然し
-、	PUNCT	、
-菊川	PROPN	菊川
-町	NOUN	町
-対	NOUN	対
-小笠	PROPN	小笠
-町	NOUN	町
-と	ADP	と
-いう	VERB	言う
-対立	NOUN	対立
-を	ADP	を
-避け	VERB	避ける
-たい	AUX	たい
-と	ADP	と
-の	ADP	の
-意向	NOUN	意向
-を	ADP	を
-示し	VERB	示す
-、	PUNCT	、
-市長	NOUN	市長
-選挙	NOUN	選挙
-で	ADP	で
-は	ADP	は
-菊川	PROPN	菊川
-町	NOUN	町
-の	ADP	の
-町長	NOUN	町長
-太田	PROPN	太田
-順一	PROPN	順一
-を	ADP	を
-推し	VERB	押す
-、	PUNCT	、
-自ら	NOUN	自ら
-は	ADP	は
-身	NOUN	身
-を	ADP	を
-引い	VERB	引く
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-しかし	CCONJ	然し
-、	PUNCT	、
-菊川	PROPN	菊川
-町	NOUN	町
-対	NOUN	対
-小笠	PROPN	小笠
-町	NOUN	町
-と	ADP	と
-いう	VERB	言う
-対立	NOUN	対立
-を	ADP	を
-避け	VERB	避ける
-たい	AUX	たい
-と	ADP	と
-の	ADP	の
-意向	NOUN	意向
-を	ADP	を
-示し	VERB	示す
-、	PUNCT	、
-市長	NOUN	市長
-選挙	NOUN	選挙
-で	ADP	で
-は	ADP	は
-菊川	PROPN	菊川
-町	NOUN	町
-の	ADP	の
-町長	NOUN	町長
-太田	PROPN	太田
-順一	PROPN	順一
-を	ADP	を
-推し	VERB	推す
-、	PUNCT	、
-自ら	NOUN	自ら
-は	ADP	は
-身	NOUN	身
-を	ADP	を
-引い	VERB	引く
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-推し: 押す | 推す
 }
 
 Expected: {
@@ -12165,7 +11608,7 @@ Predicted: {
 の	ADP	の
 外側	NOUN	外側
 を	ADP	を
-抱きこむ	VERB	抱きこむる
+抱きこむ	VERB	抱きこむ
 よう	AUX	様
 に	AUX	だ
 走っ	VERB	走る
@@ -12185,7 +11628,7 @@ Predicted: {
 Errors: {
 Tok: Ref | Pred
 ---------------
-抱きこむ: 抱き込む | 抱きこむる
+抱きこむ: 抱き込む | 抱きこむ
 }
 
 Expected: {
@@ -14013,48 +13456,6 @@ Tok: Ref | Pred
 }
 
 Expected: {
-私	PRON	私
-は	ADP	は
-よく	ADV	良く
-通っ	VERB	通う
-て	AUX	てる
-ます	AUX	ます
-が	SCONJ	が
-、	PUNCT	、
-親切丁寧	ADJ	親切丁寧
-に	AUX	だ
-対応し	VERB	対応する
-てくださっ	AUX	てくださる
-て	SCONJ	て
-安心	ADJ	安心
-です	AUX	です
-。	PUNCT	。
-}
-Predicted: {
-私	PRON	私
-は	ADP	は
-よく	ADV	良く
-通っ	VERB	通う
-て	AUX	て
-ます	AUX	ます
-が	SCONJ	が
-、	PUNCT	、
-親切丁寧	ADJ	親切丁寧
-に	AUX	だ
-対応し	VERB	対応する
-てくださっ	AUX	てくださる
-て	SCONJ	て
-安心	ADJ	安心
-です	AUX	です
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-て: てる | て
-}
-
-Expected: {
 お医者さん	NOUN	御医者さん
 も	ADP	も
 、	PUNCT	、
@@ -14282,7 +13683,7 @@ Predicted: {
 か	ADP	か
 も	ADP	も
 売っ	VERB	売る
-て	AUX	て
+て	AUX	てる
 まし	AUX	ます
 た	AUX	た
 。	PUNCT	。
@@ -14291,7 +13692,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 かりんとう: 花梨糖 | かりんとう
-て: てる | て
 }
 
 Expected: {
@@ -14500,7 +13900,7 @@ Expected: {
 Predicted: {
 取締機	NOUN	取締機
 によって	ADP	によって
-撮影さ	VERB	撮影さ
+撮影さ	VERB	撮影する
 れる	AUX	れる
 と	SCONJ	と
 、	PUNCT	、
@@ -14526,7 +13926,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 取締機: 取り締まり機 | 取締機
-撮影さ: 撮影する | 撮影さ
 送付さ: 送付する | 送付さ
 }
 
@@ -14928,14 +14327,13 @@ Predicted: {
 文句	NOUN	文句
 の	ADP	の
 つけよう	NOUN	つけよう
-なし	NOUN	なし
+なし	NOUN	無し
 !	PUNCT	!
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
 つけよう: 付け様 | つけよう
-なし: 無し | なし
 }
 
 Expected: {
@@ -17212,7 +16610,7 @@ Predicted: {
 この	DET	此の
 水面下	NOUN	水面下
 で	AUX	だ
-いろいろあっ	VERB	いろいろあっる
+いろいろあっ	VERB	いろいろあっ
 て	SCONJ	て
 ,	PUNCT	,
 ご報告	NOUN	ご報告
@@ -17233,7 +16631,7 @@ Predicted: {
 Errors: {
 Tok: Ref | Pred
 ---------------
-いろいろあっ: 色々有る | いろいろあっる
+いろいろあっ: 色々有る | いろいろあっ
 ご報告: 御報告 | ご報告
 おかけし: 御掛けする | おかけし
 }
@@ -17908,58 +17306,6 @@ Tok: Ref | Pred
 }
 
 Expected: {
-当時	NOUN	当時
-の	ADP	の
-パニック映画	NOUN	パニック映画
-と	ADP	と
-同様	ADJ	同様
-に	AUX	だ
-、	PUNCT	、
-派手	ADJ	派手
-な	AUX	だ
-爆発シーン	NOUN	爆発シーン
-や	ADP	や
-地震	NOUN	地震
-の	ADP	の
-シーン	NOUN	シーン
-が	ADP	が
-新た	ADJ	新た
-に	AUX	だ
-撮影さ	VERB	撮影する
-れ	AUX	れる
-ている	AUX	ている
-。	PUNCT	。
-}
-Predicted: {
-当時	NOUN	当時
-の	ADP	の
-パニック映画	NOUN	パニック映画
-と	ADP	と
-同様	ADJ	同様
-に	AUX	だ
-、	PUNCT	、
-派手	ADJ	派手
-な	AUX	だ
-爆発シーン	NOUN	爆発シーン
-や	ADP	や
-地震	NOUN	地震
-の	ADP	の
-シーン	NOUN	シーン
-が	ADP	が
-新た	ADJ	新た
-に	AUX	だ
-撮影さ	VERB	撮影さ
-れ	AUX	れる
-ている	AUX	ている
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-撮影さ: 撮影する | 撮影さ
-}
-
-Expected: {
 また	CCONJ	又
 、	PUNCT	、
 今回	ADV	今回
@@ -18373,7 +17719,7 @@ Predicted: {
 や	ADP	や
 松ぼっくり	NOUN	松毬
 、	PUNCT	、
-センニチコウ	NOUN	センニチコウ
+センニチコウ	NOUN	千日紅
 など	ADP	など
 、	PUNCT	、
 同公園内	NOUN	同公園内
@@ -18396,7 +17742,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 もみ: 籾 | 樅
-センニチコウ: 千日紅 | センニチコウ
 }
 
 Expected: {
@@ -18897,70 +18242,6 @@ Tok: Ref | Pred
 }
 
 Expected: {
-ほか	NOUN	他
-の	ADP	の
-政治集会	NOUN	政治集会
-において	ADP	において
-は	ADP	は
-、	PUNCT	、
-水兵	NOUN	水兵
-に	ADP	に
-サクラ	NOUN	桜
-を	ADP	を
-しこま	VERB	仕込む
-せ	AUX	せる
-、	PUNCT	、
-軍艦内	NOUN	軍艦内
-で	ADP	で
-使用する	VERB	使用する
-ハンモック	NOUN	ハンモック
-を	ADP	を
-増やせ	VERB	増やす
-ば	SCONJ	ば
-当選できる	VERB	当選出来る
-だろう	AUX	だ
-と	ADP	と
-訴え	VERB	訴える
-させ	AUX	させる
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-ほか	NOUN	他
-の	ADP	の
-政治集会	NOUN	政治集会
-において	ADP	において
-は	ADP	は
-、	PUNCT	、
-水兵	NOUN	水兵
-に	ADP	に
-サクラ	NOUN	桜
-を	ADP	を
-しこま	VERB	仕込む
-せ	AUX	せる
-、	PUNCT	、
-軍艦内	NOUN	軍艦内
-で	ADP	で
-使用する	VERB	使用する
-ハンモック	NOUN	ハンモック
-を	ADP	を
-増やせ	VERB	増やす
-ば	SCONJ	ば
-当選できる	VERB	当選できる
-だろう	AUX	だ
-と	ADP	と
-訴え	VERB	訴える
-させ	AUX	させる
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-当選できる: 当選出来る | 当選できる
-}
-
-Expected: {
 児童ら	NOUN	児童等
 は	ADP	は
 高さ	NOUN	高さ
@@ -19027,7 +18308,7 @@ Predicted: {
 動く	VERB	動く
 様	NOUN	様
 に	AUX	だ
-思い	NOUN	思い
+思い	NOUN	思う
 を	ADP	を
 はせ	VERB	馳せる
 てい	AUX	ている
@@ -19038,6 +18319,7 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 し: する | 為る
+思い: 思い | 思う
 }
 
 Expected: {
@@ -19069,13 +18351,14 @@ Predicted: {
 土人	NOUN	土人
 と	ADP	と
 呼ん	VERB	呼ぶ
-だ	AUX	だ
+だ	AUX	た
 。	PUNCT	。
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
 者: 物 | 者
+だ: だ | た
 }
 
 Expected: {
@@ -19463,36 +18746,6 @@ Tok: Ref | Pred
 }
 
 Expected: {
-全額	NOUN	全額
-,	PUNCT	,
-サリン事件被害者	NOUN	サリン事件被害者
-に対する	ADP	に対する
-賠償金	NOUN	賠償金
-に	ADP	に
-充て	VERB	当てる
-まし	AUX	ます
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-全額	NOUN	全額
-,	PUNCT	,
-サリン事件被害者	NOUN	サリン事件被害者
-に対する	ADP	に対する
-賠償金	NOUN	賠償金
-に	ADP	に
-充て	VERB	充つ
-まし	AUX	ます
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-充て: 当てる | 充つ
-}
-
-Expected: {
 ウィル	NOUN	ウィル
 の	ADP	の
 英雄	NOUN	英雄
@@ -19778,70 +19031,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 徴収さ: 徴収する | 徴収さ
-}
-
-Expected: {
-毛先	NOUN	毛先
-の	ADP	の
-傷み	NOUN	痛み
-が	ADP	が
-気	NOUN	気
-に	ADP	に
-なっ	VERB	成る
-て	AUX	てる
-まし	AUX	ます
-た	AUX	た
-が	SCONJ	が
-、	PUNCT	、
-全て	ADV	全て
-切っ	VERB	切る
-ていただい	AUX	ていただく
-て	SCONJ	て
-あまり	ADV	余り
-長さ	NOUN	長さ
-の	ADP	の
-印象	NOUN	印象
-も	ADP	も
-変わり	VERB	変わる
-ませ	AUX	ます
-ん	AUX	ず
-でし	AUX	です
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-毛先	NOUN	毛先
-の	ADP	の
-傷み	NOUN	痛み
-が	ADP	が
-気	NOUN	気
-に	ADP	に
-なっ	VERB	成る
-て	AUX	て
-まし	AUX	ます
-た	AUX	た
-が	SCONJ	が
-、	PUNCT	、
-全て	ADV	全て
-切っ	VERB	切る
-ていただい	AUX	ていただく
-て	SCONJ	て
-あまり	ADV	余り
-長さ	NOUN	長さ
-の	ADP	の
-印象	NOUN	印象
-も	ADP	も
-変わり	VERB	変わる
-ませ	AUX	ます
-ん	AUX	ず
-でし	AUX	です
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-て: てる | て
 }
 
 Expected: {
@@ -20856,6 +20045,86 @@ Tok: Ref | Pred
 }
 
 Expected: {
+自分	NOUN	自分
+の	ADP	の
+姓	NOUN	姓
+が	ADP	が
+「	PUNCT	「
+柊	PROPN	柊
+」	PUNCT	」
+な	AUX	だ
+ので	AUX	のだ
+当然	ADJ	当然
+だ	AUX	だ
+が	SCONJ	が
+、	PUNCT	、
+柊	PROPN	柊
+を	ADP	を
+姓	NOUN	姓
+で	AUX	だ
+も	ADP	も
+フルネーム	NOUN	フルネーム
+で	AUX	だ
+も	ADP	も
+なく	ADJ	無い
+、	PUNCT	、
+「	PUNCT	「
+蓮司君	PROPN	蓮司君
+」	PUNCT	」
+と	ADP	と
+名前	NOUN	名前
+で	ADP	で
+呼ん	VERB	呼ぶ
+だ	AUX	だ
+珍しい	ADJ	珍しい
+人物	NOUN	人物
+でもある	AUX	でもある
+。	PUNCT	。
+}
+Predicted: {
+自分	NOUN	自分
+の	ADP	の
+姓	NOUN	姓
+が	ADP	が
+「	PUNCT	「
+柊	PROPN	柊
+」	PUNCT	」
+な	AUX	だ
+ので	AUX	のだ
+当然	ADJ	当然
+だ	AUX	だ
+が	SCONJ	が
+、	PUNCT	、
+柊	PROPN	柊
+を	ADP	を
+姓	NOUN	姓
+で	AUX	だ
+も	ADP	も
+フルネーム	NOUN	フルネーム
+で	AUX	だ
+も	ADP	も
+なく	ADJ	無い
+、	PUNCT	、
+「	PUNCT	「
+蓮司君	PROPN	蓮司君
+」	PUNCT	」
+と	ADP	と
+名前	NOUN	名前
+で	ADP	で
+呼ん	VERB	呼ぶ
+だ	AUX	た
+珍しい	ADJ	珍しい
+人物	NOUN	人物
+でもある	AUX	でもある
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+だ: だ | た
+}
+
+Expected: {
 宗教	NOUN	宗教
 だ	AUX	だ
 から	SCONJ	から
@@ -21459,7 +20728,7 @@ Predicted: {
 出さ	VERB	出す
 れ	AUX	れる
 て	SCONJ	て
-服用し	VERB	服用する
+服用し	VERB	服用し
 たら	AUX	た
 副作用	NOUN	副作用
 が	ADP	が
@@ -21474,15 +20743,15 @@ Predicted: {
 の	ADP	の
 一言	NOUN	一言
 も	ADP	も
-なし	NOUN	なし
+なし	NOUN	無し
 。	PUNCT	。
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
+服用し: 服用する | 服用し
 いっ: 行く | 言う
 すいません: 済みません | すいません
-なし: 無し | なし
 }
 
 Expected: {
@@ -23083,8 +22352,8 @@ Predicted: {
 メロンパンナ	PROPN	メロンパンナ
 を	ADP	を
 飛べ	VERB	飛ぶ
-なく	AUX	ない
-し	VERB	為る
+なく	AUX	無い
+し	VERB	する
 た	AUX	た
 が	SCONJ	が
 、	PUNCT	、
@@ -23102,7 +22371,7 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 飛べ: 飛べる | 飛ぶ
-し: する | 為る
+なく: ない | 無い
 }
 
 Expected: {
@@ -24269,6 +23538,56 @@ Tok: Ref | Pred
 }
 
 Expected: {
+しかしながら	CCONJ	然しながら
+行政上	NOUN	行政上
+の	ADP	の
+課題	NOUN	課題
+は	ADP	は
+この	DET	此の
+地方	NOUN	地方
+で	ADP	で
+の	ADP	の
+大きく	ADJ	大きい
+長期化し	VERB	長期化する
+、	PUNCT	、
+白熱化し	VERB	白熱化する
+た	AUX	た
+議論	NOUN	議論
+の	ADP	の
+対象	NOUN	対象
+だっ	AUX	だ
+た	AUX	た
+。	PUNCT	。
+}
+Predicted: {
+しかしながら	CCONJ	然しながら
+行政上	NOUN	行政上
+の	ADP	の
+課題	NOUN	課題
+は	ADP	は
+この	DET	此の
+地方	NOUN	地方
+で	ADP	で
+の	ADP	の
+大きく	ADJ	大きい
+長期化し	VERB	長期化し
+、	PUNCT	、
+白熱化し	VERB	白熱化する
+た	AUX	た
+議論	NOUN	議論
+の	ADP	の
+対象	NOUN	対象
+だっ	AUX	だ
+た	AUX	た
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+長期化し: 長期化する | 長期化し
+}
+
+Expected: {
 アニメ	NOUN	アニメ
 の	ADP	の
 キャラ	NOUN	キャラ
@@ -24328,7 +23647,7 @@ Predicted: {
 」	PUNCT	」
 と	ADP	と
 の	ADP	の
-出会い	NOUN	出会い
+出会い	NOUN	出会う
 を	ADP	を
 求め	VERB	求める
 て	SCONJ	て
@@ -24344,6 +23663,7 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 恋愛し: 恋愛する | 恋愛し
+出会い: 出会い | 出会う
 }
 
 Expected: {
@@ -24557,6 +23877,44 @@ Tok: Ref | Pred
 読める: 読める | 読む
 インパクトある: インパクト有る | インパクトある
 し: する | 為る
+}
+
+Expected: {
+あまり	ADJ	余り
+に	AUX	だ
+も	ADP	も
+、	PUNCT	、
+がっかりし	VERB	がっかりする
+て	SCONJ	て
+飲み物	NOUN	飲み物
+一杯	NUM	一杯
+で	ADP	で
+出	VERB	出る
+てしまい	AUX	てしまう
+まし	AUX	ます
+た	AUX	た
+。	PUNCT	。
+}
+Predicted: {
+あまり	ADJ	余り
+に	AUX	だ
+も	ADP	も
+、	PUNCT	、
+がっかりし	VERB	がっかりしる
+て	SCONJ	て
+飲み物	NOUN	飲み物
+一杯	NUM	一杯
+で	ADP	で
+出	VERB	出る
+てしまい	AUX	てしまう
+まし	AUX	ます
+た	AUX	た
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+がっかりし: がっかりする | がっかりしる
 }
 
 Expected: {
@@ -27790,6 +27148,100 @@ Tok: Ref | Pred
 }
 
 Expected: {
+完璧主義	NOUN	完璧主義
+で	ADP	で
+絶対	NOUN	絶対
+に	ADP	に
+指示通り	NOUN	指示通り
+でなけれ	AUX	でない
+ば	SCONJ	ば
+許さ	VERB	許す
+ない	AUX	ない
+キューブリック	PROPN	キューブリック
+も	ADP	も
+、	PUNCT	、
+本作	NOUN	本作
+で	ADP	で
+は	ADP	は
+ジャズ	NOUN	ジャズ
+の	ADP	の
+リフ奏法・アドリブ奏法	NOUN	リフ奏法・アドリブ奏法
+を	ADP	を
+映画	NOUN	映画
+の	ADP	の
+演技	NOUN	演技
+として	ADP	として
+セラーズ	PROPN	セラーズ
+に	ADP	に
+許し	VERB	許す
+、	PUNCT	、
+それ	PRON	其れ
+が	ADP	が
+成功	NOUN	成功
+の	ADP	の
+一因	NOUN	一因
+だっ	AUX	だ
+た	AUX	た
+と	ADP	と
+映画評論家アレクサンダー・ウォーカー	PROPN	映画評論家アレクサンダー・ウォーカー
+は	ADP	は
+後	NOUN	後
+に	ADP	に
+語っ	VERB	語る
+ている	AUX	ている
+。	PUNCT	。
+}
+Predicted: {
+完璧主義	NOUN	完璧主義
+で	ADP	で
+絶対	NOUN	絶対
+に	ADP	に
+指示通り	NOUN	指示通り
+でなけれ	AUX	でない
+ば	SCONJ	ば
+許さ	VERB	許す
+ない	AUX	ない
+キューブリック	PROPN	キューブリック
+も	ADP	も
+、	PUNCT	、
+本作	NOUN	本作
+で	ADP	で
+は	ADP	は
+ジャズ	NOUN	ジャズ
+の	ADP	の
+リフ奏法・アドリブ奏法	NOUN	リフ奏法・アドリブ奏法
+を	ADP	を
+映画	NOUN	映画
+の	ADP	の
+演技	NOUN	演技
+として	ADP	として
+セラーズ	PROPN	セラーズ
+に	ADP	に
+許し	VERB	許し
+、	PUNCT	、
+それ	PRON	其れ
+が	ADP	が
+成功	NOUN	成功
+の	ADP	の
+一因	NOUN	一因
+だっ	AUX	だ
+た	AUX	た
+と	ADP	と
+映画評論家アレクサンダー・ウォーカー	PROPN	映画評論家アレクサンダー・ウォーカー
+は	ADP	は
+後	NOUN	後
+に	ADP	に
+語っ	VERB	語る
+ている	AUX	ている
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+許し: 許す | 許し
+}
+
+Expected: {
 これ	PRON	此れ
 を	ADP	を
 買い	VERB	買う
@@ -28095,51 +27547,73 @@ Tok: Ref | Pred
 }
 
 Expected: {
-10月	NUM	10月
-13日	NUM	13日
-に	ADP	に
+fcc	NOUN	fcc
 は	ADP	は
-,	PUNCT	,
-下氏本人	NOUN	下氏本人
+志願者	NOUN	志願者
+数千人	NOUN	数千人
+を	ADP	を
+整理し	VERB	整理する
+、	PUNCT	、
+1938年	NUM	1938年
 と	ADP	と
-別	ADJ	別
+1946年	NUM	1946年
 の	ADP	の
-幹部	NOUN	幹部
-1人	NOUN	1人
-に対する	ADP	に対する
-尋問	NOUN	尋問
-が	ADP	が
-行わ	VERB	行う
-れる	AUX	れる
-予定	NOUN	予定
-です	AUX	です
+間	NOUN	間
+に	ADP	に
+置い	VERB	置く
+た	AUX	た
+技術的	ADJ	技術的
+および	CCONJ	及び
+配分基準	NOUN	配分基準
+を	ADP	を
+見直し	VERB	見直す
+ながら	SCONJ	ながら
+、	PUNCT	、
+新しい	ADJ	新しい
+局用	NOUN	局用
+の	ADP	の
+申請	NOUN	申請
+を	ADP	を
+中断し	VERB	中断する
+た	AUX	た
 。	PUNCT	。
 }
 Predicted: {
-10月	NUM	10月
-13日	NUM	13日
-に	ADP	に
+fcc	NOUN	fcc
 は	ADP	は
-,	PUNCT	,
-下氏本人	NOUN	下氏本人
+志願者	NOUN	志願者
+数千人	NOUN	数千人
+を	ADP	を
+整理し	VERB	整理する
+、	PUNCT	、
+1938年	NUM	1938年
 と	ADP	と
-別	ADJ	別
+1946年	NUM	1946年
 の	ADP	の
-幹部	NOUN	幹部
-1人	NOUN	一人
-に対する	ADP	に対する
-尋問	NOUN	尋問
-が	ADP	が
-行わ	VERB	行う
-れる	AUX	れる
-予定	NOUN	予定
-です	AUX	です
+間	NOUN	間
+に	ADP	に
+置い	VERB	置く
+た	AUX	た
+技術的	ADJ	技術的
+および	CCONJ	及び
+配分基準	NOUN	配分基準
+を	ADP	を
+見直し	VERB	見直し
+ながら	SCONJ	ながら
+、	PUNCT	、
+新しい	ADJ	新しい
+局用	NOUN	局用
+の	ADP	の
+申請	NOUN	申請
+を	ADP	を
+中断し	VERB	中断する
+た	AUX	た
 。	PUNCT	。
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
-1人: 1人 | 一人
+見直し: 見直す | 見直し
 }
 
 Expected: {
@@ -28590,7 +28064,7 @@ Predicted: {
 メッタ刺し	NOUN	メッタ刺し
 に	ADP	に
 し	VERB	為る
-てやる	AUX	てやるる
+てやる	AUX	てやる
 。	PUNCT	。
 }
 Errors: {
@@ -28599,7 +28073,6 @@ Tok: Ref | Pred
 し: する | 為る
 メッタ刺し: 滅多差し | メッタ刺し
 し: する | 為る
-てやる: てやる | てやるる
 }
 
 Expected: {
@@ -29286,6 +28759,46 @@ Tok: Ref | Pred
 }
 
 Expected: {
+大阪工業大学中退後	NOUN	大阪工業大学中退後
+は	ADP	は
+、	PUNCT	、
+不動産広告業者	NOUN	不動産広告業者
+の	ADP	の
+秘書兼運転手	NOUN	秘書兼運転手
+として	ADP	として
+働く	VERB	働く
+傍ら	NOUN	傍ら
+、	PUNCT	、
+経営	NOUN	経営
+について	ADP	について
+学ん	VERB	学ぶ
+だ	AUX	だ
+。	PUNCT	。
+}
+Predicted: {
+大阪工業大学中退後	NOUN	大阪工業大学中退後
+は	ADP	は
+、	PUNCT	、
+不動産広告業者	NOUN	不動産広告業者
+の	ADP	の
+秘書兼運転手	NOUN	秘書兼運転手
+として	ADP	として
+働く	VERB	働く
+傍ら	NOUN	傍ら
+、	PUNCT	、
+経営	NOUN	経営
+について	ADP	について
+学ん	VERB	学ぶ
+だ	AUX	た
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+だ: だ | た
+}
+
+Expected: {
 とんかつ	NOUN	豚カツ
 は	ADP	は
 、	PUNCT	、
@@ -29617,7 +29130,7 @@ Predicted: {
 1軍	NOUN	1軍
 で	ADP	で
 も	ADP	も
-活躍できる	VERB	活躍できる
+活躍できる	VERB	活躍出来る
 よう	AUX	様
 に	AUX	だ
 なっ	VERB	成る
@@ -29648,7 +29161,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 克服し: 克服する | 克服し
-活躍できる: 活躍出来る | 活躍できる
 }
 
 Expected: {
@@ -31420,7 +30932,7 @@ Predicted: {
 一皿	NUM	一皿
 だけ	ADP	だけ
 で	ADP	で
-止めよう	VERB	止めよう
+止めよう	VERB	止める
 と	ADP	と
 思っ	VERB	思う
 たら	AUX	た
@@ -31463,7 +30975,6 @@ Predicted: {
 Errors: {
 Tok: Ref | Pred
 ---------------
-止めよう: 止める | 止めよう
 真似し: 真似する | 真似し
 }
 
@@ -31519,32 +31030,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 で: で | て
-}
-
-Expected: {
-忙しい	ADJ	忙しい
-朝	NOUN	朝
-に	ADP	に
-すごく	ADJ	凄い
-助かっ	VERB	助かる
-て	AUX	てる
-ます	AUX	ます
-。	PUNCT	。
-}
-Predicted: {
-忙しい	ADJ	忙しい
-朝	NOUN	朝
-に	ADP	に
-すごく	ADJ	凄い
-助かっ	VERB	助かる
-て	AUX	て
-ます	AUX	ます
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-て: てる | て
 }
 
 Expected: {
@@ -31608,6 +31093,58 @@ Tok: Ref | Pred
 ---------------
 選べる: 選べる | 選ぶ
 密閉型インナーイヤヘッドホン: 密閉型インナーイヤーヘッドホン | 密閉型インナーイヤヘッドホン
+}
+
+Expected: {
+同党	NOUN	同党
+は	ADP	は
+前回選	NOUN	前回選
+で	ADP	で
+は	ADP	は
+、	PUNCT	、
+蒲島氏	PROPN	蒲島氏
+を	ADP	を
+全面支援し	VERB	全面支援する
+た	AUX	た
+自民党	PROPN	自民党
+に	ADP	に
+対抗し	VERB	対抗する
+、	PUNCT	、
+別	ADJ	別
+の	ADP	の
+候補	NOUN	候補
+を	ADP	を
+擁立し	VERB	擁立する
+た	AUX	た
+。	PUNCT	。
+}
+Predicted: {
+同党	NOUN	同党
+は	ADP	は
+前回選	NOUN	前回選
+で	ADP	で
+は	ADP	は
+、	PUNCT	、
+蒲島氏	PROPN	蒲島氏
+を	ADP	を
+全面支援し	VERB	全面支援し
+た	AUX	た
+自民党	PROPN	自民党
+に	ADP	に
+対抗し	VERB	対抗する
+、	PUNCT	、
+別	ADJ	別
+の	ADP	の
+候補	NOUN	候補
+を	ADP	を
+擁立し	VERB	擁立する
+た	AUX	た
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+全面支援し: 全面支援する | 全面支援し
 }
 
 Expected: {
@@ -31758,2747 +31295,765 @@ Tok: Ref | Pred
 }
 
 Expected: {
-然る	VERB	然り
-に	CCONJ	に
-退	VERB	退く
-て	SCONJ	て
-熟々	ADV	熟々
-之	PRON	之
-を	ADP	を
-考ふれ	VERB	考ふ
-ば	CCONJ	ば
-百端	NOUN	百端
-未だ	ADV	未だ
-脱垢	NOUN	脱垢
-の	ADP	の
-地	NOUN	地
-に	ADP	に
-至ら	VERB	至る
-ざる	AUX	ず
-事	NOUN	事
-のみ	ADP	のみ
-に	AUX	なり
-し	VERB	す
-て	SCONJ	て
-善政	NOUN	善政
-あれ	VERB	あり
-ども	CCONJ	ども
-民	NOUN	民
-其	PRON	其
-澤	NOUN	澤
-を	ADP	を
-蒙ら	VERB	蒙る
-ず	AUX	ず
-美擧	NOUN	美擧
-あれ	VERB	あり
-ども	CCONJ	ども
-得失	NOUN	得失
-相	NOUN	相
-償は	VERB	償ふ
-ざる	AUX	ず
-等	ADP	等
-の	ADP	の
-事	NOUN	事
-多し	ADJ	多し
-}
-Predicted: {
-然る	VERB	然り
-に	CCONJ	に
-退	VERB	退
-て	SCONJ	て
-熟々	ADV	熟々
-之	PRON	之
-を	ADP	を
-考ふれ	VERB	考ふれ
-ば	CCONJ	ば
-百端	NOUN	百端
-未だ	ADV	未だ
-脱垢	NOUN	脱垢
-の	ADP	の
-地	NOUN	地
-に	ADP	に
-至ら	VERB	至る
-ざる	AUX	ず
-事	NOUN	事
-のみ	ADP	のみ
-に	AUX	だ
-し	VERB	為る
-て	SCONJ	て
-善政	NOUN	善政
-あれ	VERB	有る
-ども	CCONJ	ども
-民	NOUN	民
-其	PRON	其
-澤	NOUN	澤
-を	ADP	を
-蒙ら	VERB	蒙ら
-ず	AUX	ず
-美擧	NOUN	美擧
-あれ	VERB	有る
-ども	CCONJ	ども
-得失	NOUN	得失
-相	NOUN	相
-償は	VERB	償は
-ざる	AUX	ず
-等	ADP	等
-の	ADP	の
-事	NOUN	事
-多し	ADJ	多し
-}
-Errors: {
-Tok: Ref | Pred
----------------
-退: 退く | 退
-考ふれ: 考ふ | 考ふれ
-に: なり | だ
-し: す | 為る
-あれ: あり | 有る
-蒙ら: 蒙る | 蒙ら
-あれ: あり | 有る
-償は: 償ふ | 償は
-}
-
-Expected: {
-今日	NOUN	今日
-交際	NOUN	交際
-上	PART	上
-にて	ADP	にて
-も	ADP	も
-苟も	ADV	苟も
-衆力	NOUN	衆力
-を	ADP	を
-合し	VERB	合す
-て	SCONJ	て
-一事	NOUN	一事
-を	ADP	を
-企て	VERB	企つ
-ん	AUX	む
-と	ADP	と
-欲する	VERB	欲す
-時	NOUN	時
-は	ADP	は
-必	ADV	必
-先づ	ADV	先づ
-此	PRON	此
-一	NUM	一
-險岨	NOUN	險岨
-の	ADP	の
-越ゆ	VERB	越ゆ
-べから	AUX	べし
-ざる	AUX	ず
-を	ADP	を
-見る	VERB	見る
-}
-Predicted: {
-今日	NOUN	今日
-交際	NOUN	交際
-上	PART	上
-にて	ADP	にて
-も	ADP	も
-苟も	ADV	苟も
-衆力	NOUN	衆力
-を	ADP	を
-合し	VERB	合す
-て	SCONJ	て
-一事	NOUN	一事
-を	ADP	を
-企て	VERB	企て
-ん	AUX	む
-と	ADP	と
-欲する	VERB	欲す
-時	NOUN	時
-は	ADP	は
-必	ADV	必
-先づ	ADV	先づ
-此	PRON	此
-一	NUM	一
-險岨	NOUN	險岨
-の	ADP	の
-越ゆ	VERB	越ゆ
-べから	AUX	べし
-ざる	AUX	ず
-を	ADP	を
-見る	VERB	見る
-}
-Errors: {
-Tok: Ref | Pred
----------------
-企て: 企つ | 企て
-}
-
-Expected: {
-然	VERB	然り
-ども	CCONJ	ども
-從事	NOUN	從事
-する	VERB	す
-所	NOUN	所
-の	ADP	の
-事業	NOUN	事業
-あら	VERB	あり
-ざれ	AUX	ず
-ば	CCONJ	ば
-恐く	ADV	恐く
-は	ADP	は
-愚暗	ADJ	愚暗
-の	ADP	の
-堅軍	NOUN	堅軍
-を	ADP	を
-破摧	NOUN	破摧
-する	VERB	す
-の	ADP	の
-大	NOUN	大
-眼目	NOUN	眼目
-を	ADP	を
-達する	VERB	達す
-ヿ	NOUN	ヿ
-能は	VERB	能ふ
-ざら	AUX	ず
-ん	AUX	む
-}
-Predicted: {
-然	VERB	然り
-ども	CCONJ	ども
-從事	NOUN	從事
-する	VERB	為る
-所	NOUN	所
-の	ADP	の
-事業	NOUN	事業
-あら	VERB	あり
-ざれ	AUX	ず
-ば	CCONJ	ば
-恐く	ADV	恐く
-は	ADP	は
-愚暗	ADJ	愚暗
-の	ADP	の
-堅軍	NOUN	堅軍
-を	ADP	を
-破摧	NOUN	破摧
-する	VERB	為る
-の	ADP	の
-大	NOUN	大
-眼目	NOUN	眼目
-を	ADP	を
-達する	VERB	達する
-ヿ	NOUN	ヿ
-能は	VERB	能ふ
-ざら	AUX	ざら
-ん	AUX	む
-}
-Errors: {
-Tok: Ref | Pred
----------------
-する: す | 為る
-する: す | 為る
-達する: 達す | 達する
-ざら: ず | ざら
-}
-
-Expected: {
-是	PRON	是
-亦	ADV	亦
-文章	NOUN	文章
-中	PART	中
-の	ADP	の
-愚	NOUN	愚
-なる	AUX	なり
-者	NOUN	者
-に	AUX	なり
-し	VERB	す
-て	SCONJ	て
-文章	NOUN	文章
-中	PART	中
-の	ADP	の
-一大	NOUN	一大
-艱險	NOUN	艱險
-なり	AUX	なり
-}
-Predicted: {
-是	PRON	是
-亦	ADV	亦
-文章	NOUN	文章
-中	PART	中
-の	ADP	の
-愚	NOUN	愚
-なる	AUX	なり
-者	NOUN	者
-に	AUX	だ
-し	VERB	為る
-て	SCONJ	て
-文章	NOUN	文章
-中	PART	中
-の	ADP	の
-一大	NOUN	一大
-艱險	NOUN	艱險
-なり	AUX	なり
-}
-Errors: {
-Tok: Ref | Pred
----------------
-に: なり | だ
-し: す | 為る
-}
-
-Expected: {
-洋教	NOUN	洋教
-必ず	ADV	必ず
-入ら	VERB	入る
-ざる	AUX	ず
-を	ADP	を
-得	VERB	得
-ず	AUX	ず
-}
-Predicted: {
-洋教	NOUN	洋教
-必ず	ADV	必ず
-入ら	VERB	入る
-ざる	AUX	ず
-を	ADP	を
-得	VERB	得る
-ず	AUX	ず
-}
-Errors: {
-Tok: Ref | Pred
----------------
-得: 得 | 得る
-}
-
-Expected: {
-人	NOUN	人
-の	ADP	の
-長	NOUN	長
-を	ADP	を
-取	VERB	取る
-て	SCONJ	て
-我が	ADJ	我が
-長	NOUN	長
-と	ADP	と
-なす	VERB	なす
-亦	CCONJ	亦
-何	PRON	何
-の	ADP	の
-憚る	VERB	憚る
-か	ADP	か
-之	PRON	之
-有	VERB	有り
-ん	AUX	む
-や	ADP	や
-}
-Predicted: {
-人	NOUN	人
-の	ADP	の
-長	NOUN	長
-を	ADP	を
-取	VERB	取る
-て	SCONJ	て
-我が	ADJ	我が
-長	NOUN	長
-と	ADP	と
-なす	VERB	成す
-亦	CCONJ	亦
-何	PRON	何
-の	ADP	の
-憚る	VERB	憚る
-か	ADP	か
-之	PRON	之
-有	VERB	有り
-ん	AUX	む
-や	ADP	や
-}
-Errors: {
-Tok: Ref | Pred
----------------
-なす: なす | 成す
-}
-
-Expected: {
-凡そ	ADV	凡そ
-此	PRON	此
-等	PART	等
-天性	NOUN	天性
-の	ADP	の
-言語	NOUN	言語
-を	ADP	を
-廢し	VERB	廢す
-他	NOUN	他
-の	ADP	の
-言語	NOUN	言語
-を	ADP	を
-用ひ	VERB	用ふ
-ん	AUX	む
-と	ADP	と
-欲する	VERB	欲す
-の	ADP	の
-蔽	NOUN	蔽
-殷鑑	NOUN	殷鑑
-的然	ADJ	的然
-たる	AUX	たり
-者	NOUN	者
-に	AUX	なり
-非	VERB	あり
-ず	AUX	ず
-乎	ADP	乎
-}
-Predicted: {
-凡そ	ADV	凡そ
-此	PRON	此
-等	PART	等
-天性	NOUN	天性
-の	ADP	の
-言語	NOUN	言語
-を	ADP	を
-廢し	VERB	廢す
-他	NOUN	他
-の	ADP	の
-言語	NOUN	言語
-を	ADP	を
-用ひ	VERB	用ふ
-ん	AUX	む
-と	ADP	と
-欲する	VERB	欲す
-の	ADP	の
-蔽	NOUN	蔽
-殷鑑	NOUN	殷鑑
-的然	ADJ	的然
-たる	AUX	たり
-者	NOUN	者
-に	AUX	だ
-非	VERB	非
-ず	AUX	ず
-乎	ADP	乎
-}
-Errors: {
-Tok: Ref | Pred
----------------
-に: なり | だ
-非: あり | 非
-}
-
-Expected: {
-害	NOUN	害
-百	NUM	百
-なら	AUX	なり
-ざれ	AUX	ず
-ば	CCONJ	ば
-法	NOUN	法
-を	ADP	を
-更め	VERB	更む
-ず	AUX	ず
-と	ADP	と
-}
-Predicted: {
-害	NOUN	害
-百	NUM	百
-なら	AUX	だ
-ざれ	AUX	ず
-ば	CCONJ	ば
-法	NOUN	法
-を	ADP	を
-更め	VERB	更め
-ず	AUX	ず
-と	ADP	と
-}
-Errors: {
-Tok: Ref | Pred
----------------
-なら: なり | だ
-更め: 更む | 更め
-}
-
-Expected: {
-言ふ	VERB	言ふ
-所	NOUN	所
-書く	VERB	書く
-所	NOUN	所
-と	ADP	と
-其	PRON	其
-法	NOUN	法
-を	ADP	を
-同う	ADJ	同じ
-す	VERB	す
-}
-Predicted: {
-言ふ	VERB	言ふ
-所	NOUN	所
-書く	VERB	書く
-所	NOUN	所
-と	ADP	と
-其	PRON	其
-法	NOUN	法
-を	ADP	を
-同う	ADJ	同う
-す	VERB	す
-}
-Errors: {
-Tok: Ref | Pred
----------------
-同う: 同じ | 同う
-}
-
-Expected: {
-此	PRON	此
-十	NUM	十
-利	NOUN	利
-あり	VERB	あり
-}
-Predicted: {
-此	PRON	此
-十	NUM	十
-利	NOUN	利
-あり	VERB	有る
-}
-Errors: {
-Tok: Ref | Pred
----------------
-あり: あり | 有る
-}
-
-Expected: {
-而て	CCONJ	而て
-洋字	NOUN	洋字
-は	ADP	は
-音語	NOUN	音語
-に	AUX	なり
-し	VERB	す
-て	SCONJ	て
-漢字	NOUN	漢字
-の	ADP	の
-畫字	NOUN	畫字
-たる	AUX	たり
-我	PRON	我
-と	ADP	と
-相	NOUN	相
-反する	VERB	反す
+最高	NOUN	最高
+一人	NOUN	一人
+あたり	NOUN	当たり
+5	NUM	5
+,	PUNCT	,
+000	NUM	000
+ドル	NOUN	ドル
 が	ADP	が
-如き	AUX	如し
-に	AUX	なり
-あら	VERB	あり
-ざる	AUX	ず
-を	PART	を
-や	ADP	や
-}
-Predicted: {
-而て	CCONJ	而て
-洋字	NOUN	洋字
-は	ADP	は
-音語	NOUN	音語
-に	AUX	だ
-し	VERB	為る
-て	SCONJ	て
-漢字	NOUN	漢字
-の	ADP	の
-畫字	NOUN	畫字
-たる	AUX	たり
-我	PRON	我
-と	ADP	と
-相	NOUN	相
-反する	VERB	反する
-が	ADP	が
-如き	AUX	如し
-に	AUX	なり
-あら	VERB	あり
-ざる	AUX	ず
-を	PART	を
-や	ADP	や
-}
-Errors: {
-Tok: Ref | Pred
----------------
-に: なり | だ
-し: す | 為る
-反する: 反す | 反する
-}
-
-Expected: {
-然れ	VERB	然り
-ども	CCONJ	ども
-是	PRON	是
-之	PRON	之
-を	ADP	を
-令する	VERB	令す
-に	AUX	なり
-あら	VERB	あり
-ず	AUX	ず
-}
-Predicted: {
-然れ	VERB	然り
-ども	CCONJ	ども
-是	PRON	是
-之	PRON	之
-を	ADP	を
-令する	VERB	令する
-に	AUX	だ
-あら	VERB	あり
-ず	AUX	ず
-}
-Errors: {
-Tok: Ref | Pred
----------------
-令する: 令す | 令する
-に: なり | だ
-}
-
-Expected: {
-誰	PRON	誰
-か	ADP	か
-之	PRON	之
-を	ADP	を
-欲せ	VERB	欲す
-ざら	AUX	ず
-ん	AUX	む
-}
-Predicted: {
-誰	PRON	誰
-か	ADP	か
-之	PRON	之
-を	ADP	を
-欲せ	VERB	欲す
-ざら	AUX	ざら
-ん	AUX	む
-}
-Errors: {
-Tok: Ref | Pred
----------------
-ざら: ず | ざら
-}
-
-Expected: {
-天子	NOUN	天子
-に	AUX	なり
-非れ	AUX	非ず
-ば	CCONJ	ば
-文	NOUN	文
-を	ADP	を
-考へ	VERB	考ふ
-ず	AUX	ず
-}
-Predicted: {
-天子	NOUN	天子
-に	AUX	だ
-非れ	AUX	非ず
-ば	CCONJ	ば
-文	NOUN	文
-を	ADP	を
-考へ	VERB	考ふ
-ず	AUX	ず
-}
-Errors: {
-Tok: Ref | Pred
----------------
-に: なり | だ
-}
-
-Expected: {
-初頭	NOUN	初頭
-要する	VERB	要す
-所	NOUN	所
-唯	ADV	唯
-是	PRON	是
-のみ	ADP	のみ
-}
-Predicted: {
-初頭	NOUN	初頭
-要する	VERB	要する
-所	NOUN	所
-唯	ADV	唯
-是	PRON	是
-のみ	ADP	のみ
-}
-Errors: {
-Tok: Ref | Pred
----------------
-要する: 要す | 要する
-}
-
-Expected: {
-天体	NOUN	天体
-の	ADP	の
-渺茫	ADJ	渺茫
-を	ADP	を
-察する	VERB	察す
-も	ADP	も
-一	NUM	一
-林檎	NOUN	林檎
-の	ADP	の
-地	NOUN	地
-に	ADP	に
-落つる	VERB	落つ
-に	ADP	に
-在り	VERB	在り
-}
-Predicted: {
-天体	NOUN	天体
-の	ADP	の
-渺茫	ADJ	渺茫
-を	ADP	を
-察する	VERB	察する
-も	ADP	も
-一	NUM	一
-林檎	NOUN	林檎
-の	ADP	の
-地	NOUN	地
-に	ADP	に
-落つる	VERB	落つる
-に	ADP	に
-在り	VERB	在り
-}
-Errors: {
-Tok: Ref | Pred
----------------
-察する: 察す | 察する
-落つる: 落つ | 落つる
-}
-
-Expected: {
-其	PRON	其
-他	NOUN	他
-語格	NOUN	語格
-の	ADP	の
-若き	AUX	若し
-は	ADP	は
-後日	NOUN	後日
-の	ADP	の
-成功	NOUN	成功
-を	ADP	を
-待つ	VERB	待つ
-べし	AUX	べし
-}
-Predicted: {
-其	PRON	其
-他	NOUN	他
-語格	NOUN	語格
-の	ADP	の
-若き	AUX	若き
-は	ADP	は
-後日	NOUN	後日
-の	ADP	の
-成功	NOUN	成功
-を	ADP	を
-待つ	VERB	待つ
-べし	AUX	べし
-}
-Errors: {
-Tok: Ref | Pred
----------------
-若き: 若し | 若き
-}
-
-Expected: {
-且	CCONJ	且
-又	CCONJ	又
-人民	NOUN	人民
-に	ADP	に
-強令	NOUN	強令
-し	VERB	す
-て	SCONJ	て
-其	PRON	其
-不好	NOUN	不好
-の	ADP	の
-宗教	NOUN	宗教
-を	ADP	を
-崇奉	NOUN	崇奉
-せ	VERB	す
-しむる	AUX	しむ
-ヿ	NOUN	ヿ
-を	ADP	を
-得	VERB	得
-べから	AUX	べし
-ず	AUX	ず
-}
-Predicted: {
-且	CCONJ	且
-又	CCONJ	又
-人民	NOUN	人民
-に	ADP	に
-強令	NOUN	強令
-し	VERB	為る
-て	SCONJ	て
-其	PRON	其
-不好	NOUN	不好
-の	ADP	の
-宗教	NOUN	宗教
-を	ADP	を
-崇奉	NOUN	崇奉
-せ	VERB	す
-しむる	AUX	しむ
-ヿ	NOUN	ヿ
-を	ADP	を
-得	VERB	得る
-べから	AUX	べし
-ず	AUX	ず
-}
-Errors: {
-Tok: Ref | Pred
----------------
-し: す | 為る
-得: 得 | 得る
-}
-
-Expected: {
-之	PRON	之
-を	ADP	を
-有せ	VERB	有す
-ざら	AUX	ず
-ん	AUX	む
-と	ADP	と
-欲す	VERB	欲す
-とも	CCONJ	とも
-國民	NOUN	國民
-明	ADJ	明
-に	AUX	なり
-之	PRON	之
-を	ADP	を
-諾する	VERB	諾す
-に	AUX	なり
-あら	VERB	あり
-ざれ	AUX	ず
-ば	CCONJ	ば
-得	VERB	得
-可ら	AUX	可し
-ず	AUX	ず
-}
-Predicted: {
-之	PRON	之
-を	ADP	を
-有せ	VERB	有す
-ざら	AUX	ざら
-ん	AUX	む
-と	ADP	と
-欲す	VERB	欲す
-とも	CCONJ	共
-國民	NOUN	國民
-明	ADJ	明
-に	AUX	だ
-之	PRON	之
-を	ADP	を
-諾する	VERB	諾する
-に	AUX	だ
-あら	VERB	あり
-ざれ	AUX	ず
-ば	CCONJ	ば
-得	VERB	得る
-可ら	AUX	可し
-ず	AUX	ず
-}
-Errors: {
-Tok: Ref | Pred
----------------
-ざら: ず | ざら
-とも: とも | 共
-に: なり | だ
-諾する: 諾す | 諾する
-に: なり | だ
-得: 得 | 得る
-}
-
-Expected: {
-然ら	VERB	然り
-ば	CCONJ	ば
-則	CCONJ	則
-支那	PROPN	支那
-國	PART	國
-の	ADP	の
-宣教	NOUN	宣教
-師	PART	師
-を	ADP	を
-驅逐	NOUN	驅逐
-する	VERB	す
-も	ADP	も
-還た	ADV	還た
-異む	VERB	異む
-に	ADP	に
-足ら	VERB	足る
-ざる	AUX	ず
-なり	AUX	なり
-}
-Predicted: {
-然ら	VERB	然り
-ば	CCONJ	ば
-則	CCONJ	則
-支那	PROPN	支那
-國	PART	國
-の	ADP	の
-宣教	NOUN	宣教
-師	PART	師
-を	ADP	を
-驅逐	NOUN	驅逐
-する	VERB	為る
-も	ADP	も
-還た	ADV	還た
-異む	VERB	異む
-に	ADP	に
-足ら	VERB	足る
-ざる	AUX	ず
-なり	AUX	なり
-}
-Errors: {
-Tok: Ref | Pred
----------------
-する: す | 為る
-}
-
-Expected: {
-○	SYM	○
-各人	NOUN	各人
-自己	NOUN	自己
-の	ADP	の
-所好	NOUN	所好
-に	ADP	に
-任せ	VERB	任す
-て	SCONJ	て
-宗教	NOUN	宗教
-を	ADP	を
-撰	VERB	撰ぶ
-は	ADP	は
-實	NOUN	實
-に	ADP	に
-緊要	NOUN	緊要
-且	CCONJ	且
-自然	ADJ	自然
-に	AUX	なり
-得る	VERB	得
-處	NOUN	處
-の	ADP	の
-自由	NOUN	自由
-に	AUX	なり
-し	VERB	す
-て	SCONJ	て
-他人	NOUN	他人
-の	ADP	の
-命令	NOUN	命令
-の	ADP	の
-及ぶ	VERB	及ぶ
-所	NOUN	所
-に	AUX	なり
-非	VERB	あり
-ず	AUX	ず
-}
-Predicted: {
-○	SYM	○
-各人	NOUN	各人
-自己	NOUN	自己
-の	ADP	の
-所好	NOUN	所好
-に	ADP	に
-任せ	VERB	任せる
-て	SCONJ	て
-宗教	NOUN	宗教
-を	ADP	を
-撰	VERB	撰
-は	ADP	は
-實	NOUN	實
-に	ADP	に
-緊要	NOUN	緊要
-且	CCONJ	且
-自然	ADJ	自然
-に	AUX	だ
-得る	VERB	得る
-處	NOUN	處
-の	ADP	の
-自由	NOUN	自由
-に	AUX	だ
-し	VERB	為る
-て	SCONJ	て
-他人	NOUN	他人
-の	ADP	の
-命令	NOUN	命令
-の	ADP	の
-及ぶ	VERB	及ぶ
-所	NOUN	所
-に	AUX	だ
-非	VERB	非
-ず	AUX	ず
-}
-Errors: {
-Tok: Ref | Pred
----------------
-任せ: 任す | 任せる
-撰: 撰ぶ | 撰
-に: なり | だ
-得る: 得 | 得る
-に: なり | だ
-し: す | 為る
-に: なり | だ
-非: あり | 非
-}
-
-Expected: {
-彼	ADJ	彼
-國	NOUN	國
-の	ADP	の
-民	NOUN	民
-此	PRON	此
-國	NOUN	國
-に	ADP	に
-來れ	VERB	來る
-ば	CCONJ	ば
-必らず	ADV	必らず
-此	PRON	此
-國	NOUN	國
-の	ADP	の
-法律	NOUN	法律
-以	VERB	以つ
-て	SCONJ	て
-之	PRON	之
-を	ADP	を
-保護	NOUN	保護
-し	VERB	す
-政令	NOUN	政令
-以	VERB	以つ
-て	SCONJ	て
-之	PRON	之
-を	ADP	を
-撫治	NOUN	撫治
-する	VERB	す
-ヿ	NOUN	ヿ
-固より	ADV	固より
-論	NOUN	論
-を	ADP	を
-竢た	VERB	竢つ
-ず	AUX	ず
-}
-Predicted: {
-彼	ADJ	彼
-國	NOUN	國
-の	ADP	の
-民	NOUN	民
-此	PRON	此
-國	NOUN	國
-に	ADP	に
-來れ	VERB	來れ
-ば	CCONJ	ば
-必らず	ADV	必らず
-此	PRON	此
-國	NOUN	國
-の	ADP	の
-法律	NOUN	法律
-以	VERB	以つ
-て	SCONJ	て
-之	PRON	之
-を	ADP	を
-保護	NOUN	保護
-し	VERB	為る
-政令	NOUN	政令
-以	VERB	以つ
-て	SCONJ	て
-之	PRON	之
-を	ADP	を
-撫治	NOUN	撫治
-する	VERB	為る
-ヿ	NOUN	ヿ
-固より	ADV	固より
-論	NOUN	論
-を	ADP	を
-竢た	VERB	竢つ
-ず	AUX	ず
-}
-Errors: {
-Tok: Ref | Pred
----------------
-來れ: 來る | 來れ
-し: す | 為る
-する: す | 為る
-}
-
-Expected: {
-民中	NOUN	民中
-より	ADP	より
-選擧	NOUN	選擧
-せ	VERB	す
-られ	AUX	らる
-て	SCONJ	て
-審理	NOUN	審理
-に	ADP	に
-參す	VERB	參す
-}
-Predicted: {
-民中	NOUN	民中
-より	ADP	より
-選擧	NOUN	選擧
-せ	VERB	す
-られ	AUX	られる
-て	SCONJ	て
-審理	NOUN	審理
-に	ADP	に
-參す	VERB	參す
-}
-Errors: {
-Tok: Ref | Pred
----------------
-られ: らる | られる
-}
-
-Expected: {
-惡人	NOUN	惡人
-の	ADP	の
-惡	NOUN	惡
-を	ADP	を
-掩ひ	VERB	掩ふ
-刑典	NOUN	刑典
-を	ADP	を
-遁れ	VERB	遁る
-ん	AUX	む
-と	ADP	と
-欲す	VERB	欲す
-}
-Predicted: {
-惡人	NOUN	惡人
-の	ADP	の
-惡	NOUN	惡
-を	ADP	を
-掩ひ	VERB	掩ふ
-刑典	NOUN	刑典
-を	ADP	を
-遁れ	VERB	遁れ
-ん	AUX	む
-と	ADP	と
-欲す	VERB	欲す
-}
-Errors: {
-Tok: Ref | Pred
----------------
-遁れ: 遁る | 遁れ
-}
-
-Expected: {
-只	CCONJ	只
-其	PRON	其
-言	NOUN	言
-を	ADP	を
-信ぜ	VERB	信ず
-ば	CCONJ	ば
-何れ	PRON	何れ
-が	ADP	が
-曲	NOUN	曲
-何れ	PRON	何れ
-が	ADP	が
-直	ADJ	直
-聽く	VERB	聽く
-者	NOUN	者
-豈	ADV	豈
-惑は	VERB	惑ふ
-ざら	AUX	ず
-ん	AUX	む
-や	ADP	や
-}
-Predicted: {
-只	CCONJ	只
-其	PRON	其
-言	NOUN	言
-を	ADP	を
-信ぜ	VERB	信ず
-ば	CCONJ	ば
-何れ	PRON	何れ
-が	ADP	が
-曲	NOUN	曲
-何れ	PRON	何れ
-が	ADP	が
-直	ADJ	直
-聽く	VERB	聽く
-者	NOUN	者
-豈	ADV	豈
-惑は	VERB	惑は
-ざら	AUX	ざら
-ん	AUX	む
-や	ADP	や
-}
-Errors: {
-Tok: Ref | Pred
----------------
-惑は: 惑ふ | 惑は
-ざら: ず | ざら
-}
-
-Expected: {
-然り	VERB	然り
-而して	CCONJ	而して
-今	NOUN	今
-我	ADJ	我
-帝國	NOUN	帝國
-に	ADP	に
-於	VERB	於く
-て	SCONJ	て
-歐米	NOUN	歐米
-各國	NOUN	各國
-と	ADP	と
-彼我	NOUN	彼我
-同權	NOUN	同權
-の	ADP	の
-條約	NOUN	條約
-を	ADP	を
-改定	NOUN	改定
-し	VERB	す
-外國	NOUN	外國
-民	PART	民
-の	ADP	の
-我	ADJ	我
-國内	NOUN	國内
-に	ADP	に
-居る	VERB	居る
-者	NOUN	者
-を	ADP	を
-し	VERB	す
-て	SCONJ	て
-我	ADJ	我
-國法	NOUN	國法
-を	ADP	を
-遵守	NOUN	遵守
-せ	VERB	す
-しめ	AUX	しむ
-ん	AUX	む
-と	ADP	と
-欲せ	VERB	欲す
-ば	CCONJ	ば
-先づ	ADV	先づ
-拷問	NOUN	拷問
-を	ADP	を
-廢す	VERB	廢す
-べし	AUX	べし
-}
-Predicted: {
-然り	VERB	然り
-而して	CCONJ	而して
-今	NOUN	今
-我	ADJ	我
-帝國	NOUN	帝國
-に	ADP	に
-於	VERB	於く
-て	SCONJ	て
-歐米	NOUN	歐米
-各國	NOUN	各國
-と	ADP	と
-彼我	NOUN	彼我
-同權	NOUN	同權
-の	ADP	の
-條約	NOUN	條約
-を	ADP	を
-改定	NOUN	改定
-し	VERB	為る
-外國	NOUN	外國
-民	PART	民
-の	ADP	の
-我	ADJ	我
-國内	NOUN	國内
-に	ADP	に
-居る	VERB	居る
-者	NOUN	者
-を	ADP	を
-し	VERB	為る
-て	SCONJ	て
-我	ADJ	我
-國法	NOUN	國法
-を	ADP	を
-遵守	NOUN	順守
-せ	VERB	せる
-しめ	AUX	しめる
-ん	AUX	む
-と	ADP	と
-欲せ	VERB	欲す
-ば	CCONJ	ば
-先づ	ADV	先づ
-拷問	NOUN	拷問
-を	ADP	を
-廢す	VERB	廢す
-べし	AUX	べし
-}
-Errors: {
-Tok: Ref | Pred
----------------
-し: す | 為る
-し: す | 為る
-遵守: 遵守 | 順守
-せ: す | せる
-しめ: しむ | しめる
-}
-
-Expected: {
-竊	ADJ	竊
-に	AUX	なり
-望む	VERB	望む
-らく	PART	らく
-は	ADP	は
-諸君	NOUN	諸君
-更に	ADV	更に
-憤發	NOUN	憤發
-努力	NOUN	努力
-し	VERB	す
-て	SCONJ	て
-速	ADJ	速
-に	AUX	なり
-我	ADJ	我
-帝國	NOUN	帝國
-至當	NOUN	至當
-の	ADP	の
-治刑	NOUN	治刑
-條例	NOUN	條例
-を	ADP	を
-草定	NOUN	草定
-奏上	NOUN	奏上
-せ	VERB	す
-ん	AUX	む
-ヿ	NOUN	ヿ
-を	ADP	を
-}
-Predicted: {
-竊	ADJ	竊
-に	AUX	だ
-望む	VERB	望む
-らく	PART	り
-は	ADP	は
-諸君	NOUN	諸君
-更に	ADV	更に
-憤發	NOUN	憤發
-努力	NOUN	努力
-し	VERB	為る
-て	SCONJ	て
-速	ADJ	速
-に	AUX	だ
-我	ADJ	我
-帝國	NOUN	帝國
-至當	NOUN	至當
-の	ADP	の
-治刑	NOUN	治刑
-條例	NOUN	條例
-を	ADP	を
-草定	NOUN	草定
-奏上	NOUN	奏上
-せ	VERB	す
-ん	AUX	ず
-ヿ	NOUN	ヿ
-を	ADP	を
-}
-Errors: {
-Tok: Ref | Pred
----------------
-に: なり | だ
-らく: らく | り
-し: す | 為る
-に: なり | だ
-ん: む | ず
-}
-
-Expected: {
-而して	CCONJ	而して
-裁成	NOUN	裁成
-輔相	NOUN	輔相
-する	VERB	す
-は	ADP	は
-人	NOUN	人
-の	ADP	の
-任	NOUN	任
-也	AUX	なり
-}
-Predicted: {
-而して	CCONJ	而して
-裁成	NOUN	裁成
-輔相	NOUN	輔相
-する	VERB	為る
-は	ADP	は
-人	NOUN	人
-の	ADP	の
-任	NOUN	任
-也	AUX	なり
-}
-Errors: {
-Tok: Ref | Pred
----------------
-する: す | 為る
-}
-
-Expected: {
-今	NOUN	今
-献白	NOUN	献白
-し	VERB	す
-て	SCONJ	て
-上	NOUN	上
-より	ADP	より
-民選	NOUN	民選
-議院	NOUN	議院
-を	ADP	を
-起す	VERB	起す
-を	ADP	を
-欲る	VERB	欲す
-に	ADP	に
-上下	NOUN	上下
-同治	NOUN	同治
-の	ADP	の
-體	NOUN	體
-を	ADP	を
-定め	VERB	定む
-ず	AUX	ず
-し	VERB	す
-て	SCONJ	て
-其	PRON	其
-事	NOUN	事
-果	VERB	果す
-て	SCONJ	て
-益	NOUN	益
-有る	VERB	有り
-や	ADP	や
-}
-Predicted: {
-今	NOUN	今
-献白	NOUN	献白
-し	VERB	為る
-て	SCONJ	て
-上	NOUN	上
-より	ADP	より
-民選	NOUN	民選
-議院	NOUN	議院
-を	ADP	を
-起す	VERB	起す
-を	ADP	を
-欲る	VERB	欲る
-に	ADP	に
-上下	NOUN	上下
-同治	NOUN	同治
-の	ADP	の
-體	NOUN	體
-を	ADP	を
-定め	VERB	定める
-ず	AUX	ず
-し	VERB	為る
-て	SCONJ	て
-其	PRON	其
-事	NOUN	事
-果	VERB	果
-て	SCONJ	て
-益	NOUN	益
-有る	VERB	有る
-や	ADP	や
-}
-Errors: {
-Tok: Ref | Pred
----------------
-し: す | 為る
-欲る: 欲す | 欲る
-定め: 定む | 定める
-し: す | 為る
-果: 果す | 果
-有る: 有り | 有る
-}
-
-Expected: {
-且	CCONJ	且
-小子	PRON	小子
-平生	NOUN	平生
-以爲く	ADV	以爲く
-今	NOUN	今
-に	ADP	に
-當	VERB	當る
-て	SCONJ	て
-皇國	NOUN	皇國
-を	ADP	を
-富強	NOUN	富強
-開明	NOUN	開明
-に	AUX	なり
-し	VERB	す
-皇統	NOUN	皇統
-を	ADP	を
-保護	NOUN	保護
-する	VERB	す
-の	ADP	の
-誠	NOUN	誠
-を	ADP	を
-致す	VERB	致す
-上下	NOUN	上下
-同治	NOUN	同治
-の	ADP	の
-政體	NOUN	政體
-を	ADP	を
-定る	VERB	定む
-の	ADP	の
-説	NOUN	説
-を	ADP	を
-進む	VERB	進む
-べし	AUX	べし
-}
-Predicted: {
-且	CCONJ	且
-小子	PRON	小子
-平生	NOUN	平生
-以爲く	ADV	以爲く
-今	NOUN	今
-に	ADP	に
-當	VERB	當る
-て	SCONJ	て
-皇國	NOUN	皇國
-を	ADP	を
-富強	NOUN	富強
-開明	NOUN	開明
-に	AUX	だ
-し	VERB	為る
-皇統	NOUN	皇統
-を	ADP	を
-保護	NOUN	保護
-する	VERB	為る
-の	ADP	の
-誠	NOUN	誠
-を	ADP	を
-致す	VERB	致す
-上下	NOUN	上下
-同治	NOUN	同治
-の	ADP	の
-政體	NOUN	政體
-を	ADP	を
-定る	VERB	定る
-の	ADP	の
-説	NOUN	説
-を	ADP	を
-進む	VERB	進む
-べし	AUX	べし
-}
-Errors: {
-Tok: Ref | Pred
----------------
-に: なり | だ
-し: す | 為る
-する: す | 為る
-定る: 定む | 定る
-}
-
-Expected: {
-明君	NOUN	明君
-復	ADV	復
-起る	VERB	起る
-も	ADP	も
-力	NOUN	力
-を	ADP	を
-回復	NOUN	回復
-に	ADP	に
-費し	VERB	費す
-漸く	ADV	漸く
-に	ADP	に
-し	VERB	す
-て	SCONJ	て
-爲す	VERB	爲す
-有	VERB	有り
-ん	AUX	む
-と	ADP	と
-すれ	VERB	す
-ば	CCONJ	ば
-年老ひ	VERB	年老ふ
-身	NOUN	身
-死す	VERB	死す
-}
-Predicted: {
-明君	NOUN	明君
-復	ADV	復
-起る	VERB	起る
-も	ADP	も
-力	NOUN	力
-を	ADP	を
-回復	NOUN	回復
-に	ADP	に
-費し	VERB	費し
-漸く	ADV	漸く
-に	ADP	に
-し	VERB	為る
-て	SCONJ	て
-爲す	VERB	爲す
-有	VERB	有り
-ん	AUX	む
-と	ADP	と
-すれ	VERB	す
-ば	CCONJ	ば
-年老ひ	VERB	年老ひ
-身	NOUN	身
-死す	VERB	死す
-}
-Errors: {
-Tok: Ref | Pred
----------------
-費し: 費す | 費し
-し: す | 為る
-年老ひ: 年老ふ | 年老ひ
-}
-
-Expected: {
-封豕	NOUN	封豕
-長蛇	NOUN	長蛇
-萬里	NOUN	萬里
-を	ADP	を
-比隣	NOUN	比隣
-と	ADP	と
-し	VERB	す
-強	NOUN	強
-を	ADP	を
-親み	VERB	親む
-弱	NOUN	弱
-を	ADP	を
-凌ぐ	VERB	凌ぐ
-各國	NOUN	各國
-の	ADP	の
-常情	NOUN	常情
-なり	AUX	なり
-}
-Predicted: {
-封豕	NOUN	封豕
-長蛇	NOUN	長蛇
-萬里	NOUN	萬里
-を	ADP	を
-比隣	NOUN	比隣
-と	ADP	と
-し	VERB	する
-強	NOUN	強
-を	ADP	を
-親み	VERB	親み
-弱	NOUN	弱
-を	ADP	を
-凌ぐ	VERB	凌ぐ
-各國	NOUN	各國
-の	ADP	の
-常情	NOUN	常情
-なり	AUX	なり
-}
-Errors: {
-Tok: Ref | Pred
----------------
-し: す | する
-親み: 親む | 親み
-}
-
-Expected: {
-特	NOUN	特
-に	AUX	なり
-民選	NOUN	民選
-議院	NOUN	議院
-の	ADP	の
-弊	NOUN	弊
-然る	VERB	然り
-のみ	ADP	のみ
-なら	AUX	なり
-ず	AUX	ず
-凡	ADV	凡
-學校	NOUN	學校
-等	PART	等
-開明	NOUN	開明
-に	ADP	に
-導く	VERB	導く
-の	ADP	の
-事	NOUN	事
-皆	NOUN	皆
-人智	NOUN	人智
-を	ADP	を
-長じ	VERB	長ず
-姦黠	NOUN	姦黠
-を	ADP	を
-進め	VERB	進む
-大亂	NOUN	大亂
-を	ADP	を
-釀し	VERB	釀す
-て	SCONJ	て
-皇統	NOUN	皇統
-を	ADP	を
-危ふ	ADJ	危し
-する	VERB	す
-の	ADP	の
-業	NOUN	業
-たら	AUX	たり
-ん	AUX	む
-か	ADP	か
-}
-Predicted: {
-特	NOUN	特
-に	AUX	だ
-民選	NOUN	民選
-議院	NOUN	議院
-の	ADP	の
-弊	NOUN	弊
-然る	VERB	然り
-のみ	ADP	のみ
-なら	AUX	だ
-ず	AUX	ず
-凡	ADV	凡
-學校	NOUN	學校
-等	PART	等
-開明	NOUN	開明
-に	ADP	に
-導く	VERB	導く
-の	ADP	の
-事	NOUN	事
-皆	NOUN	皆
-人智	NOUN	人智
-を	ADP	を
-長じ	VERB	長ず
-姦黠	NOUN	姦黠
-を	ADP	を
-進め	VERB	進める
-大亂	NOUN	大亂
-を	ADP	を
-釀し	VERB	釀し
-て	SCONJ	て
-皇統	NOUN	皇統
-を	ADP	を
-危ふ	ADJ	危ふ
-する	VERB	為る
-の	ADP	の
-業	NOUN	業
-たら	AUX	たり
-ん	AUX	む
-か	ADP	か
-}
-Errors: {
-Tok: Ref | Pred
----------------
-に: なり | だ
-なら: なり | だ
-進め: 進む | 進める
-釀し: 釀す | 釀し
-危ふ: 危し | 危ふ
-する: す | 為る
-}
-
-Expected: {
-然ら	VERB	然り
-ば	CCONJ	ば
-今日	NOUN	今日
-政體	NOUN	政體
-目的	NOUN	目的
-何如	ADV	何如
-か	ADP	か
-定	VERB	定む
-ん	AUX	む
-}
-Predicted: {
-然ら	VERB	然り
-ば	CCONJ	ば
-今日	NOUN	今日
-政體	NOUN	政體
-目的	NOUN	目的
-何如	ADV	何如
-か	ADP	か
-定	VERB	定
-ん	AUX	む
-}
-Errors: {
-Tok: Ref | Pred
----------------
-定: 定む | 定
-}
-
-Expected: {
-獨	NOUN	獨
-其	PRON	其
-長	NOUN	長
-の	ADP	の
-善	NOUN	善
-且	CCONJ	且
-美	NOUN	美
-なる	AUX	なり
-者	NOUN	者
-を	ADP	を
-掲げ	VERB	掲ぐ
-以	VERB	以つ
-て	SCONJ	て
-上下	NOUN	上下
-の	ADP	の
-大	NOUN	大
-目的	NOUN	目的
-と	ADP	と
-す	VERB	す
-べし	AUX	べし
-}
-Predicted: {
-獨	NOUN	獨
-其	PRON	其
-長	NOUN	長
-の	ADP	の
-善	NOUN	善
-且	CCONJ	且
-美	NOUN	美
-なる	AUX	なり
-者	NOUN	者
-を	ADP	を
-掲げ	VERB	掲げる
-以	VERB	以つ
-て	SCONJ	て
-上下	NOUN	上下
-の	ADP	の
-大	NOUN	大
-目的	NOUN	目的
-と	ADP	と
-す	VERB	す
-べし	AUX	べし
-}
-Errors: {
-Tok: Ref | Pred
----------------
-掲げ: 掲ぐ | 掲げる
-}
-
-Expected: {
-是	PRON	是
-敗屋	NOUN	敗屋
-傾棟	NOUN	傾棟
-の	ADP	の
-下	NOUN	下
-に	ADP	に
-坐し	VERB	坐す
-て	SCONJ	て
-修理	NOUN	修理
-を	ADP	を
-加へ	VERB	加ふ
-ず	AUX	ず
-自然	NOUN	自然
-に	ADP	に
-付する	VERB	付す
-如し	AUX	如し
-}
-Predicted: {
-是	PRON	是
-敗屋	NOUN	敗屋
-傾棟	NOUN	傾棟
-の	ADP	の
-下	NOUN	下
-に	ADP	に
-坐し	VERB	坐し
-て	SCONJ	て
-修理	NOUN	修理
-を	ADP	を
-加へ	VERB	加ふ
-ず	AUX	ず
-自然	NOUN	自然
-に	ADP	に
-付する	VERB	付す
-如し	AUX	如し
-}
-Errors: {
-Tok: Ref | Pred
----------------
-坐し: 坐す | 坐し
-}
-
-Expected: {
-姑く	ADV	姑く
-其	PRON	其
-一二	NUM	一二
-を	ADP	を
-擧げ	VERB	擧ぐ
-ば	CCONJ	ば
-先づ	ADV	先づ
-大臣	NOUN	大臣
-合論	NOUN	合論
-恊和	NOUN	恊和
-の	ADP	の
-法	NOUN	法
-を	ADP	を
-嚴齊	NOUN	嚴齊
-に	AUX	なり
-し	VERB	す
-一議	NOUN	一議
-合せ	VERB	合す
-ず	AUX	ず
-と	ADP	と
-て	SCONJ	て
-辭表	NOUN	辭表
-免職	NOUN	免職
-區々	ADJ	區々
-の	ADP	の
-痴態	NOUN	痴態
-を	ADP	を
-爲さ	VERB	爲す
-ず	AUX	ず
-反覆	NOUN	反覆
-討論	NOUN	討論
-至當	NOUN	至當
-に	AUX	なり
-歸し	VERB	歸す
-て	SCONJ	て
-而	CCONJ	而
-後	NOUN	後
-行ひ	VERB	行ふ
-以	VERB	以つ
-て	SCONJ	て
-上下	NOUN	上下
-同治	NOUN	同治
-の	ADP	の
-目的	NOUN	目的
-を	ADP	を
-正す	VERB	正す
-}
-Predicted: {
-姑く	ADV	姑く
-其	PRON	其
-一二	NUM	一二
-を	ADP	を
-擧げ	VERB	擧ぐ
-ば	CCONJ	ば
-先づ	ADV	先づ
-大臣	NOUN	大臣
-合論	NOUN	合論
-恊和	NOUN	恊和
-の	ADP	の
-法	NOUN	法
-を	ADP	を
-嚴齊	NOUN	嚴齊
-に	AUX	だ
-し	VERB	する
-一議	NOUN	一議
-合せ	VERB	合わせる
-ず	AUX	ず
-と	ADP	と
-て	SCONJ	て
-辭表	NOUN	辭表
-免職	NOUN	免職
-區々	ADJ	區々
-の	ADP	の
-痴態	NOUN	痴態
-を	ADP	を
-爲さ	VERB	爲す
-ず	AUX	ず
-反覆	NOUN	反覆
-討論	NOUN	討論
-至當	NOUN	至當
-に	AUX	だ
-歸し	VERB	歸す
-て	SCONJ	て
-而	CCONJ	而
-後	NOUN	後
-行ひ	VERB	行ふ
-以	VERB	以つ
-て	SCONJ	て
-上下	NOUN	上下
-同治	NOUN	同治
-の	ADP	の
-目的	NOUN	目的
-を	ADP	を
-正す	VERB	正す
-}
-Errors: {
-Tok: Ref | Pred
----------------
-に: なり | だ
-し: す | する
-合せ: 合す | 合わせる
-に: なり | だ
-}
-
-Expected: {
-我	PRON	我
-唯	ADV	唯
-多く	ADJ	多し
-給	NOUN	給
-を	ADP	を
-得	VERB	得
-て	SCONJ	て
-口	NOUN	口
-を	ADP	を
-糊	NOUN	糊
-すれ	VERB	す
-ば	CCONJ	ば
-足る	VERB	足る
-}
-Predicted: {
-我	PRON	我
-唯	ADV	唯
-多く	ADJ	多い
-給	NOUN	給
-を	ADP	を
-得	VERB	得る
-て	SCONJ	て
-口	NOUN	口
-を	ADP	を
-糊	NOUN	糊
-すれ	VERB	す
-ば	CCONJ	ば
-足る	VERB	足る
-}
-Errors: {
-Tok: Ref | Pred
----------------
-多く: 多し | 多い
-得: 得 | 得る
-}
-
-Expected: {
-曰く	NOUN	曰く
-保護	NOUN	保護
-法	NOUN	法
-を	ADP	を
-行へ	VERB	行ふ
-ば	CCONJ	ば
-自由	NOUN	自由
-交易	NOUN	交易
-の	ADP	の
-公道	NOUN	公道
-に	ADP	に
-背き	VERB	背く
-人民	NOUN	人民
-の	ADP	の
-權利	NOUN	權利
-を	ADP	を
-束縛	NOUN	束縛
-し	VERB	す
-益々	ADV	益々
-拙劣	NOUN	拙劣
-に	AUX	なり
-導き	VERB	導く
-大に	ADV	大に
-害	NOUN	害
-を	ADP	を
-促さ	VERB	促す
-ん	AUX	む
-と	ADP	と
-す	VERB	す
-}
-Predicted: {
-曰く	NOUN	曰く
-保護	NOUN	保護
-法	NOUN	法
-を	ADP	を
-行へ	VERB	行へ
-ば	CCONJ	ば
-自由	NOUN	自由
-交易	NOUN	交易
-の	ADP	の
-公道	NOUN	公道
-に	ADP	に
-背き	VERB	背く
-人民	NOUN	人民
-の	ADP	の
-權利	NOUN	權利
-を	ADP	を
-束縛	NOUN	束縛
-し	VERB	為る
-益々	ADV	益々
-拙劣	NOUN	拙劣
-に	AUX	だ
-導き	VERB	導き
-大に	ADV	大に
-害	NOUN	害
-を	ADP	を
-促さ	VERB	促さ
-ん	AUX	む
-と	ADP	と
-す	VERB	す
-}
-Errors: {
-Tok: Ref | Pred
----------------
-行へ: 行ふ | 行へ
-し: す | 為る
-に: なり | だ
-導き: 導く | 導き
-促さ: 促す | 促さ
-}
-
-Expected: {
-一	NUM	一
-國	PART	國
-同体	NOUN	同体
-の	ADP	の
-人民	NOUN	人民
-に	AUX	なり
-し	VERB	す
-て	SCONJ	て
-此	PRON	此
-に	ADP	に
-厚く	ADJ	厚し
-彼	PRON	彼
-に	ADP	に
-薄き	ADJ	薄し
-は	ADP	は
-公平	NOUN	公平
-に	AUX	なり
-あら	VERB	あり
-ず	AUX	ず
-}
-Predicted: {
-一	NUM	一
-國	PART	國
-同体	NOUN	同体
-の	ADP	の
-人民	NOUN	人民
-に	AUX	だ
-し	VERB	為る
-て	SCONJ	て
-此	PRON	此
-に	ADP	に
-厚く	ADJ	厚く
-彼	PRON	彼
-に	ADP	に
-薄き	ADJ	薄き
-は	ADP	は
-公平	NOUN	公平
-に	AUX	だ
-あら	VERB	あり
-ず	AUX	ず
-}
-Errors: {
-Tok: Ref | Pred
----------------
-に: なり | だ
-し: す | 為る
-厚く: 厚し | 厚く
-薄き: 薄し | 薄き
-に: なり | だ
-}
-
-Expected: {
-若し	ADV	若し
-此	PRON	此
-人	NOUN	人
-なかり	AUX	なし
-せ	AUX	き
-ば	CCONJ	ば
-百	NUM	百
-數十	NUM	數十
-年間	NOUN	年間
-其	PRON	其
-濫出	NOUN	濫出
-無限	NOUN	無限
-我	ADJ	我
-國	NOUN	國
-銅山	NOUN	銅山
-の	ADP	の
-産	NOUN	産
-を	ADP	を
-空く	ADJ	空し
-する	VERB	す
-に	ADP	に
-至る	VERB	至る
-も	ADP	も
-料る	VERB	料る
-べから	AUX	べし
-ず	AUX	ず
-}
-Predicted: {
-若し	ADV	若し
-此	PRON	此
-人	NOUN	人
-なかり	AUX	なかり
-せ	AUX	せる
-ば	CCONJ	ば
-百	NUM	百
-數十	NUM	數十
-年間	NOUN	年間
-其	PRON	其
-濫出	NOUN	濫出
-無限	NOUN	無限
-我	ADJ	我
-國	NOUN	國
-銅山	NOUN	銅山
-の	ADP	の
-産	NOUN	産
-を	ADP	を
-空く	ADJ	空く
-する	VERB	為る
-に	ADP	に
-至る	VERB	至る
-も	ADP	も
-料る	VERB	料る
-べから	AUX	べし
-ず	AUX	ず
-}
-Errors: {
-Tok: Ref | Pred
----------------
-なかり: なし | なかり
-せ: き | せる
-空く: 空し | 空く
-する: す | 為る
-}
-
-Expected: {
-又	CCONJ	又
-我	ADJ	我
-長ずる	VERB	長ず
-農	NOUN	農
-を	ADP	を
-以	VERB	以つ
-て	SCONJ	て
-西國	NOUN	西國
-の	ADP	の
-農	NOUN	農
-と	ADP	と
-其	PRON	其
-技能	NOUN	技能
-を	ADP	を
-爭は	VERB	爭ふ
-しめ	AUX	しむ
-ば	CCONJ	ば
-優劣	NOUN	優劣
-何れ	PRON	何れ
-に	ADP	に
-か	ADP	か
-在る	VERB	在り
-}
-Predicted: {
-又	CCONJ	又
-我	ADJ	我
-長ずる	VERB	長ず
-農	NOUN	農
-を	ADP	を
-以	VERB	以つ
-て	SCONJ	て
-西國	NOUN	西國
-の	ADP	の
-農	NOUN	農
-と	ADP	と
-其	PRON	其
-技能	NOUN	技能
-を	ADP	を
-爭は	VERB	爭は
-しめ	AUX	しめる
-ば	CCONJ	ば
-優劣	NOUN	優劣
-何れ	PRON	何れ
-に	ADP	に
-か	ADP	か
-在る	VERB	在り
-}
-Errors: {
-Tok: Ref | Pred
----------------
-爭は: 爭ふ | 爭は
-しめ: しむ | しめる
-}
-
-Expected: {
-米	NOUN	米
-の	ADP	の
-建國	NOUN	建國
-年	NOUN	年
-久しから	ADJ	久し
-ず	AUX	ず
-し	VERB	す
-て	SCONJ	て
-其	PRON	其
-業力	NOUN	業力
-尚	ADV	尚
-未だ	ADV	未だ
-英佛	NOUN	英佛
-等	PART	等
-に	ADP	に
-及ば	VERB	及ぶ
-ざる	AUX	ず
-所	NOUN	所
-ある	VERB	あり
-か	ADP	か
-}
-Predicted: {
-米	NOUN	米
-の	ADP	の
-建國	NOUN	建國
-年	NOUN	年
-久しから	ADJ	久しから
-ず	AUX	ず
-し	VERB	為る
-て	SCONJ	て
-其	PRON	其
-業力	NOUN	業力
-尚	ADV	尚
-未だ	ADV	未だ
-英佛	NOUN	英佛
-等	PART	等
-に	ADP	に
-及ば	VERB	及ぶ
-ざる	AUX	ず
-所	NOUN	所
-ある	VERB	有る
-か	ADP	か
-}
-Errors: {
-Tok: Ref | Pred
----------------
-久しから: 久し | 久しから
-し: す | 為る
-ある: あり | 有る
-}
-
-Expected: {
-是れ	PRON	是れ
-此	ADV	此
-の	ADP	の
-如き	AUX	如し
-人民	NOUN	人民
-を	ADP	を
-保護	NOUN	保護
-する	VERB	す
-は	ADP	は
-却て	ADV	却て
-自由	NOUN	自由
-に	AUX	なり
-其	PRON	其
-業	NOUN	業
-を	ADP	を
-營む	VERB	營む
-ヿ	NOUN	ヿ
-を	ADP	を
-妨ぐる	VERB	妨ぐ
-を	ADP	を
-以	VERB	以つ
-て	SCONJ	て
-なり	AUX	なり
-}
-Predicted: {
-是れ	PRON	是れ
-此	ADV	此
-の	ADP	の
-如き	AUX	如し
-人民	NOUN	人民
-を	ADP	を
-保護	NOUN	保護
-する	VERB	為る
-は	ADP	は
-却て	ADV	却て
-自由	NOUN	自由
-に	AUX	だ
-其	PRON	其
-業	NOUN	業
-を	ADP	を
-營む	VERB	營む
-ヿ	NOUN	ヿ
-を	ADP	を
-妨ぐる	VERB	妨ぐる
-を	ADP	を
-以	VERB	以つ
-て	SCONJ	て
-なり	AUX	なり
-}
-Errors: {
-Tok: Ref | Pred
----------------
-する: す | 為る
-に: なり | だ
-妨ぐる: 妨ぐ | 妨ぐる
-}
-
-Expected: {
-此	PRON	此
-時	NOUN	時
-に	ADP	に
-方り	VERB	方る
-て	SCONJ	て
-我	ADJ	我
-國	NOUN	國
-商賈	NOUN	商賈
-一臂	NOUN	一臂
-を	ADP	を
-出し	VERB	出す
-て	SCONJ	て
-國家	NOUN	國家
-の	ADP	の
-大計	NOUN	大計
-に	ADP	に
-任ずる	VERB	任ず
-者	NOUN	者
-を	ADP	を
-聞か	VERB	聞く
-ず	AUX	ず
-}
-Predicted: {
-此	PRON	此
-時	NOUN	時
-に	ADP	に
-方り	VERB	方る
-て	SCONJ	て
-我	ADJ	我
-國	NOUN	國
-商賈	NOUN	商賈
-一臂	NOUN	一臂
-を	ADP	を
-出し	VERB	出す
-て	SCONJ	て
-國家	NOUN	國家
-の	ADP	の
-大計	NOUN	大計
-に	ADP	に
-任ずる	VERB	任ずる
-者	NOUN	者
-を	ADP	を
-聞か	VERB	聞く
-ず	AUX	ず
-}
-Errors: {
-Tok: Ref | Pred
----------------
-任ずる: 任ず | 任ずる
-}
-
-Expected: {
-第	NOUN	第
-一	NUM	一
-因襲	NOUN	因襲
-政治	NOUN	政治
-因襲	NOUN	因襲
-政治	NOUN	政治
-は	ADP	は
 、	PUNCT	、
-いかなる	ADJ	いかなる
-政体	NOUN	政体
-を	ADP	を
-論ぜ	VERB	論ず
-ず	AUX	ず
-、	PUNCT	、
-すべて	NOUN	すべて
-其	PRON	其
-建國	NOUN	建國
-の	ADP	の
-時	NOUN	時
-の	ADP	の
-政体	NOUN	政体
-を	ADP	を
-以	VERB	以つ
+許可	VERB	許可
+さ	AUX	為る
+れ	AUX	れる
 て	SCONJ	て
-善美	NOUN	善美
-なり	AUX	なり
-と	ADP	と
-し	VERB	す
-、	PUNCT	、
-少し	ADV	少し
-も	ADP	も
-其	PRON	其
-可否	NOUN	可否
-を	ADP	を
-考へ	VERB	考ふ
-ず	AUX	ず
-、	PUNCT	、
-只管	ADV	只管
-これ	PRON	これ
-に	ADP	に
-因襲	NOUN	因襲
-し	VERB	す
-て	SCONJ	て
-政治	NOUN	政治
-を	ADP	を
-爲す	VERB	爲す
-者	NOUN	者
-なり	AUX	なり
-、	PUNCT	、
-}
-Predicted: {
-第	NOUN	第
-一	NUM	一
-因襲	NOUN	因襲
-政治	NOUN	政治
-因襲	NOUN	因襲
-政治	NOUN	政治
-は	ADP	は
-、	PUNCT	、
-いかなる	ADJ	如何なる
-政体	NOUN	政体
-を	ADP	を
-論ぜ	VERB	論ず
-ず	AUX	ず
-、	PUNCT	、
-すべて	NOUN	全て
-其	PRON	其
-建國	NOUN	建國
-の	ADP	の
-時	NOUN	時
-の	ADP	の
-政体	NOUN	政体
-を	ADP	を
-以	VERB	以つ
-て	SCONJ	て
-善美	NOUN	善美
-なり	AUX	なり
-と	ADP	と
-し	VERB	為る
-、	PUNCT	、
-少し	ADV	少し
-も	ADP	も
-其	PRON	其
-可否	NOUN	可否
-を	ADP	を
-考へ	VERB	考ふ
-ず	AUX	ず
-、	PUNCT	、
-只管	ADV	只管
-これ	PRON	此れ
-に	ADP	に
-因襲	NOUN	因襲
-し	VERB	為る
-て	SCONJ	て
-政治	NOUN	政治
-を	ADP	を
-爲す	VERB	爲す
-者	NOUN	者
-なり	AUX	なり
-、	PUNCT	、
-}
-Errors: {
-Tok: Ref | Pred
----------------
-いかなる: いかなる | 如何なる
-すべて: すべて | 全て
-し: す | 為る
-これ: これ | 此れ
-し: す | 為る
-}
-
-Expected: {
-第	NOUN	第
-三	NUM	三
-道理	NOUN	道理
-政治	NOUN	政治
-此	PRON	此
-政体	NOUN	政体
-を	ADP	を
-立る	VERB	立つ
-の	ADP	の
-國	NOUN	國
-は	ADP	は
-、	PUNCT	、
-其	PRON	其
-建國	NOUN	建國
-最も	ADV	最も
-後世	NOUN	後世
-に	AUX	なり
-し	VERB	す
-て	SCONJ	て
-民	NOUN	民
-の	ADP	の
-智識	NOUN	智識
-已に	ADV	已に
-開け	VERB	開く
-し	AUX	き
-時	NOUN	時
-に	ADP	に
-在り	VERB	在り
-、	PUNCT	、
-}
-Predicted: {
-第	NOUN	第
-三	NUM	三
-道理	NOUN	道理
-政治	NOUN	政治
-此	PRON	此
-政体	NOUN	政体
-を	ADP	を
-立る	VERB	立つ
-の	ADP	の
-國	NOUN	國
-は	ADP	は
-、	PUNCT	、
-其	PRON	其
-建國	NOUN	建國
-最も	ADV	最も
-後世	NOUN	後世
-に	AUX	だ
-し	VERB	為る
-て	SCONJ	て
-民	NOUN	民
-の	ADP	の
-智識	NOUN	智識
-已に	ADV	已に
-開け	VERB	開ける
-し	AUX	為る
-時	NOUN	時
-に	ADP	に
-在り	VERB	在り
-、	PUNCT	、
-}
-Errors: {
-Tok: Ref | Pred
----------------
-に: なり | だ
-し: す | 為る
-開け: 開く | 開ける
-し: き | 為る
-}
-
-Expected: {
-（	SYM	（
-瑞士	PROPN	瑞士
-國	PART	國
-の	ADP	の
-起り	NOUN	起り
-は	ADP	は
-中古	NOUN	中古
-史	PART	史
-の	ADP	の
-中	NOUN	中
-に	ADP	に
-在れ	VERB	在り
-ども	CCONJ	ども
-徳	PROPN	徳
-法	PROPN	法
-英	NOUN	英
-等	ADP	等
-の	ADP	の
-國	NOUN	國
-に	ADP	に
-比すれ	VERB	比す
-ば	CCONJ	ば
-大に	ADV	大に
-後る	VERB	後る
-、	PUNCT	、
-}
-Predicted: {
-（	SYM	（
-瑞士	PROPN	瑞士
-國	PART	國
-の	ADP	の
-起り	NOUN	起り
-は	ADP	は
-中古	NOUN	中古
-史	PART	史
-の	ADP	の
-中	NOUN	中
-に	ADP	に
-在れ	VERB	在れ
-ども	CCONJ	ども
-徳	PROPN	徳
-法	PROPN	法
-英	NOUN	英
-等	ADP	等
-の	ADP	の
-國	NOUN	國
-に	ADP	に
-比すれ	VERB	比す
-ば	CCONJ	ば
-大に	ADV	大に
-後る	VERB	後る
-、	PUNCT	、
-}
-Errors: {
-Tok: Ref | Pred
----------------
-在れ: 在り | 在れ
-}
-
-Expected: {
-故	NOUN	故
-に	ADP	に
-余	PRON	余
-謂へ	VERB	謂ふ
-らく	AUX	り
-道理	NOUN	道理
-政治	NOUN	政治
-は	ADP	は
-今日	NOUN	今日
-の	ADP	の
-政治	NOUN	政治
-に	AUX	なり
-非	VERB	あり
-ず	AUX	ず
-し	VERB	す
-て	SCONJ	て
-未來	NOUN	未來
-の	ADP	の
-世	NOUN	世
-の	ADP	の
-政治	NOUN	政治
-なり	AUX	なり
-、	PUNCT	、
-}
-Predicted: {
-故	NOUN	故
-に	ADP	に
-余	PRON	余
-謂へ	VERB	謂ふ
-らく	AUX	り
-道理	NOUN	道理
-政治	NOUN	政治
-は	ADP	は
-今日	NOUN	今日
-の	ADP	の
-政治	NOUN	政治
-に	AUX	だ
-非	VERB	非
-ず	AUX	ず
-し	VERB	為る
-て	SCONJ	て
-未來	NOUN	未來
-の	ADP	の
-世	NOUN	世
-の	ADP	の
-政治	NOUN	政治
-なり	AUX	なり
-、	PUNCT	、
-}
-Errors: {
-Tok: Ref | Pred
----------------
-に: なり | だ
-非: あり | 非
-し: す | 為る
-}
-
-Expected: {
-功驗	NOUN	功驗
-上	PART	上
-より	ADP	より
-論ずれ	VERB	論ず
-ば	CCONJ	ば
-、	PUNCT	、
-道理	NOUN	道理
-政治	NOUN	政治
-混合	NOUN	混合
-政治	NOUN	政治
-共	NOUN	共
-に	ADP	に
-上等	NOUN	上等
-に	AUX	なり
-し	VERB	す
-て	SCONJ	て
-優劣	NOUN	優劣
-を	ADP	を
-分た	VERB	分つ
-ず	AUX	ず
-}
-Predicted: {
-功驗	NOUN	功驗
-上	PART	上
-より	ADP	より
-論ずれ	VERB	論ず
-ば	CCONJ	ば
-、	PUNCT	、
-道理	NOUN	道理
-政治	NOUN	政治
-混合	NOUN	混合
-政治	NOUN	政治
-共	NOUN	共
-に	ADP	に
-上等	NOUN	上等
-に	AUX	だ
-し	VERB	為る
-て	SCONJ	て
-優劣	NOUN	優劣
-を	ADP	を
-分た	VERB	分た
-ず	AUX	ず
-}
-Errors: {
-Tok: Ref | Pred
----------------
-に: なり | だ
-し: す | 為る
-分た: 分つ | 分た
-}
-
-Expected: {
-深セン	PROPN	深セン
-の	ADP	の
-交通	NOUN	交通
-警察	NOUN	警察
-は	ADP	は
-以前	ADV	以前
-、	PUNCT	、
-型破り	ADJ	型破り
-な	AUX	だ
-罰則	NOUN	罰則
-を	ADP	を
-選ん	VERB	選ぶ
-だ	AUX	た
+いる	VERB	居る
 。	PUNCT	。
 }
 Predicted: {
-深セン	PROPN	深セン
-の	ADP	の
-交通	NOUN	交通
-警察	NOUN	警察
-は	ADP	は
-以前	ADV	以前
+最高	NOUN	最高
+一人	NOUN	一人
+あたり	NOUN	辺り
+5	NUM	5
+,	PUNCT	,
+000	NUM	000
+ドル	NOUN	ドル
+が	ADP	が
 、	PUNCT	、
-型破り	ADJ	型破り
+許可	VERB	許可
+さ	AUX	為る
+れ	AUX	れる
+て	SCONJ	て
+いる	VERB	居る
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+あたり: 当たり | 辺り
+}
+
+Expected: {
+幸い	ADJ	幸い
 な	AUX	だ
-罰則	NOUN	罰則
-を	ADP	を
-選ん	VERB	選ぶ
+こと	NOUN	事
+に	ADP	に
+、	PUNCT	、
+ソニー	PROPN	ソニー
+・	SYM	・
+オーストラリア	PROPN	オーストラリア
+に	ADP	に
+い	VERB	居る
+た	AUX	た
+誰	PRON	誰
+か	ADP	か
+は	ADP	は
+、	PUNCT	、
+「	PUNCT	「
+おい	INTJ	おい
+、	PUNCT	、
+ところ	CCONJ	所
+で	ADP	で
+、	PUNCT	、
+君	PRON	君
+たち	NOUN	達
+は	ADP	は
+これ	PRON	此れ
+に	ADP	に
+気づい	VERB	気付く
+た	AUX	た
+か	PART	か
+い	PART	い
+？	PUNCT	？
+」	PUNCT	」
+と	ADP	と
+いう	VERB	言う
+様子	NOUN	様子
+だっ	AUX	だ
+た	AUX	た
+、	PUNCT	、
+と	ADP	と
+ポール	PROPN	ポール
+は	ADP	は
+言っ	VERB	言う
+た	AUX	た
+。	PUNCT	。
+}
+Predicted: {
+幸い	ADJ	幸い
+な	AUX	だ
+こと	NOUN	事
+に	ADP	に
+、	PUNCT	、
+ソニー	PROPN	ソニー
+・	SYM	・
+オーストラリア	PROPN	オーストラリア
+に	ADP	に
+い	VERB	居る
+た	AUX	た
+誰	PRON	誰
+か	ADP	か
+は	ADP	は
+、	PUNCT	、
+「	PUNCT	「
+おい	INTJ	おい
+、	PUNCT	、
+ところ	CCONJ	所
+で	ADP	で
+、	PUNCT	、
+君	PRON	君
+たち	NOUN	達
+は	ADP	は
+これ	PRON	此れ
+に	ADP	に
+気づい	VERB	気付く
+た	AUX	た
+か	PART	か
+い	PART	居る
+？	PUNCT	？
+」	PUNCT	」
+と	ADP	と
+いう	VERB	言う
+様子	NOUN	様子
+だっ	AUX	だ
+た	AUX	た
+、	PUNCT	、
+と	ADP	と
+ポール	PROPN	ポール
+は	ADP	は
+言っ	VERB	言う
+た	AUX	た
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+い: い | 居る
+}
+
+Expected: {
+いくら	NOUN	幾ら
+か	ADP	か
+の	ADP	の
+男性	NOUN	男性
+は	ADP	は
+理解	VERB	理解
+し	AUX	為る
+て	SCONJ	て
+いる	VERB	居る
+し	SCONJ	し
+、	PUNCT	、
+ボノ	PROPN	ボノ
+も	ADP	も
+その	DET	其の
+一人	NOUN	一人
 だ	AUX	だ
+、	PUNCT	、
+と	ADP	と
+リーヴ	PROPN	リーヴ
+は	ADP	は
+最近	NOUN	最近
+の	ADP	の
+インタビュー	NOUN	インタビュー
+で	ADP	で
+語っ	VERB	語る
+た	AUX	た
+。	PUNCT	。
+}
+Predicted: {
+いくら	NOUN	幾ら
+か	ADP	か
+の	ADP	の
+男性	NOUN	男性
+は	ADP	は
+理解	VERB	理解
+し	AUX	為る
+て	SCONJ	て
+いる	VERB	居る
+し	SCONJ	する
+、	PUNCT	、
+ボノ	PROPN	ボノ
+も	ADP	も
+その	DET	其の
+一人	NOUN	一人
+だ	AUX	だ
+、	PUNCT	、
+と	ADP	と
+リーヴ	PROPN	リーヴ
+は	ADP	は
+最近	NOUN	最近
+の	ADP	の
+インタビュー	NOUN	インタビュー
+で	ADP	で
+語っ	VERB	語る
+た	AUX	た
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+し: し | する
+}
+
+Expected: {
+世界	NOUN	世界
+は	ADP	は
+腹立たしく	ADJ	腹立たしい
+不	NOUN	不
+合理	NOUN	合理
+で	AUX	だ
+ある	VERB	有る
+か	ADP	か
+も	ADP	も
+しれ	VERB	知れる
+ない	AUX	ない
+が	SCONJ	が
+、	PUNCT	、
+しかし	CCONJ	然し
+それ	CCONJ	其れ
+で	ADP	で
+も	ADP	も
+誰	PRON	誰
+か	ADP	か
+が	ADP	が
+その	DET	其の
+事実	NOUN	事実
+に	ADP	に
+対し	VERB	対する
+て	SCONJ	て
+抗議	NOUN	抗議
+を	ADP	を
+し	AUX	為る
+続ける	VERB	続ける
+自尊	NOUN	自尊
+心	NOUN	心
+を	ADP	を
+持っ	VERB	持つ
+て	SCONJ	て
+いる	VERB	居る
+の	SCONJ	の
+で	AUX	だ
+ある	VERB	有る
+。	PUNCT	。
+}
+Predicted: {
+世界	NOUN	世界
+は	ADP	は
+腹立たしく	ADJ	腹立たしく
+不	NOUN	不
+合理	NOUN	合理
+で	AUX	だ
+ある	VERB	有る
+か	ADP	か
+も	ADP	も
+しれ	VERB	知れる
+ない	AUX	ない
+が	SCONJ	が
+、	PUNCT	、
+しかし	CCONJ	然し
+それ	CCONJ	其れ
+で	ADP	で
+も	ADP	も
+誰	PRON	誰
+か	ADP	か
+が	ADP	が
+その	DET	其の
+事実	NOUN	事実
+に	ADP	に
+対し	VERB	対する
+て	SCONJ	て
+抗議	NOUN	抗議
+を	ADP	を
+し	AUX	為る
+続ける	VERB	続ける
+自尊	NOUN	自尊
+心	NOUN	心
+を	ADP	を
+持っ	VERB	持つ
+て	SCONJ	て
+いる	VERB	居る
+の	SCONJ	の
+で	AUX	だ
+ある	VERB	有る
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+腹立たしく: 腹立たしい | 腹立たしく
+}
+
+Expected: {
+1	NUM	1
+月	NOUN	月
+の	ADP	の
+主要	ADJ	主要
+な	AUX	だ
+レポート	NOUN	レポート
+に	ADP	に
+よる	VERB	因る
+と	SCONJ	と
+、	PUNCT	、
+世界	NOUN	世界
+の	ADP	の
+海	NOUN	海
+に	ADP	に
+注ぎ込む	VERB	注ぎ込む
+ゴミ	NOUN	塵
+を	ADP	を
+止める	VERB	止める
+ため	SCONJ	為
+に	SCONJ	に
+劇的	ADJ	劇的
+な	AUX	だ
+行動	NOUN	行動
+を	ADP	を
+取ら	VERB	取る
+ない	AUX	ない
+限り	NOUN	限り
+、	PUNCT	、
+2050	NUM	2050
+年	NOUN	年
+まで	ADP	まで
+に	ADP	に
+海	NOUN	海
+に	ADP	に
+は	ADP	は
+魚	NOUN	魚
+より	ADP	より
+も	ADP	も
+プラスチック	NOUN	プラスチック
+が	ADP	が
+多く	ADJ	多い
+含ま	VERB	含む
+れる	AUX	れる
+よう	AUX	様
+に	AUX	だ
+なる	VERB	成る
+。	PUNCT	。
+}
+Predicted: {
+1	NUM	1
+月	NOUN	月
+の	ADP	の
+主要	ADJ	主要
+な	AUX	だ
+レポート	NOUN	レポート
+に	ADP	に
+よる	VERB	因る
+と	SCONJ	と
+、	PUNCT	、
+世界	NOUN	世界
+の	ADP	の
+海	NOUN	海
+に	ADP	に
+注ぎ込む	VERB	注ぎ込む
+ゴミ	NOUN	塵
+を	ADP	を
+止める	VERB	留める
+ため	SCONJ	為
+に	SCONJ	に
+劇的	ADJ	劇的
+な	AUX	だ
+行動	NOUN	行動
+を	ADP	を
+取ら	VERB	取る
+ない	AUX	ない
+限り	NOUN	限り
+、	PUNCT	、
+2050	NUM	2050
+年	NOUN	年
+まで	ADP	まで
+に	ADP	に
+海	NOUN	海
+に	ADP	に
+は	ADP	は
+魚	NOUN	魚
+より	ADP	より
+も	ADP	も
+プラスチック	NOUN	プラスチック
+が	ADP	が
+多く	ADJ	多い
+含ま	VERB	含む
+れる	AUX	れる
+よう	AUX	様
+に	AUX	だ
+なる	VERB	成る
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+止める: 止める | 留める
+}
+
+Expected: {
+現代	NOUN	現代
+の	ADP	の
+聴衆	NOUN	聴衆
+に	ADP	に
+とっ	VERB	取る
+て	SCONJ	て
+は	ADP	は
+、	PUNCT	、
+その	DET	其の
+ほとんど	NOUN	殆ど
+が	ADP	が
+闘争	NOUN	闘争
+の	ADP	の
+前線	NOUN	前線
+に	ADP	に
+立つ	VERB	立つ
+経験	NOUN	経験
+は	ADP	は
+持た	VERB	持つ
+ない	AUX	ない
+だろう	AUX	だ
+し	SCONJ	し
+、	PUNCT	、
+ドス	PROPN	ドス
+の	ADP	の
+偉業	NOUN	偉業
+は	ADP	は
+想像	NOUN	想像
+を	ADP	を
+絶する	VERB	絶する
+ところ	NOUN	所
+に	ADP	に
+ある	VERB	有る
+。	PUNCT	。
+}
+Predicted: {
+現代	NOUN	現代
+の	ADP	の
+聴衆	NOUN	聴衆
+に	ADP	に
+とっ	VERB	取る
+て	SCONJ	て
+は	ADP	は
+、	PUNCT	、
+その	DET	其の
+ほとんど	NOUN	殆ど
+が	ADP	が
+闘争	NOUN	闘争
+の	ADP	の
+前線	NOUN	前線
+に	ADP	に
+立つ	VERB	立つ
+経験	NOUN	経験
+は	ADP	は
+持た	VERB	持つ
+ない	AUX	ない
+だろう	AUX	だ
+し	SCONJ	する
+、	PUNCT	、
+ドス	PROPN	ドス
+の	ADP	の
+偉業	NOUN	偉業
+は	ADP	は
+想像	NOUN	想像
+を	ADP	を
+絶する	VERB	絶する
+ところ	NOUN	所
+に	ADP	に
+ある	VERB	有る
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+し: し | する
+}
+
+Expected: {
+私	PRON	私
+は	ADP	は
+その	DET	其の
+エピソード	NOUN	エピソード
+の	ADP	の
+多く	NOUN	多く
+を	ADP	を
+見	VERB	見る
+て	SCONJ	て
+い	VERB	居る
+なかっ	AUX	ない
+た	AUX	た
+の	SCONJ	の
+だ	AUX	だ
+が	SCONJ	が
+、	PUNCT	、
+その	DET	其の
+時	NOUN	時
+、	PUNCT	、
+電話	NOUN	電話
+が	ADP	が
+光り	VERB	光る
+始め	VERB	始める
+た	AUX	た
+。	PUNCT	。
+}
+Predicted: {
+私	PRON	私
+は	ADP	は
+その	DET	其の
+エピソード	NOUN	エピソード
+の	ADP	の
+多く	NOUN	多く
+を	ADP	を
+見	VERB	見る
+て	SCONJ	て
+い	VERB	居る
+なかっ	AUX	ない
+た	AUX	た
+の	SCONJ	の
+だ	AUX	だ
+が	SCONJ	が
+、	PUNCT	、
+その	DET	其の
+時	NOUN	時
+、	PUNCT	、
+電話	NOUN	電話
+が	ADP	が
+光り	VERB	光り
+始め	VERB	始める
+た	AUX	た
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+光り: 光る | 光り
+}
+
+Expected: {
+最北	NOUN	最北
+の	ADP	の
+地	NOUN	地
+で	ADP	で
+は	ADP	は
+タイガ	NOUN	タイガ
+気候	NOUN	気候
+が	ADP	が
+支配	NOUN	支配
+的	PART	的
+で	AUX	だ
+あり	VERB	有る
+、	PUNCT	、
+シベリア	PROPN	シベリア
+の	ADP	の
+大	NOUN	大
+部分	NOUN	部分
+の	ADP	の
+エリア	NOUN	エリア
+を	ADP	を
+占め	VERB	占める
+て	SCONJ	て
+い	VERB	居る
+た	AUX	た
+。	PUNCT	。
+}
+Predicted: {
+最北	NOUN	最北
+の	ADP	の
+地	NOUN	地
+で	ADP	で
+は	ADP	は
+タイガ	NOUN	タイ
+気候	NOUN	気候
+が	ADP	が
+支配	NOUN	支配
+的	PART	的
+で	AUX	だ
+あり	VERB	有る
+、	PUNCT	、
+シベリア	PROPN	シベリア
+の	ADP	の
+大	NOUN	大
+部分	NOUN	部分
+の	ADP	の
+エリア	NOUN	エリア
+を	ADP	を
+占め	VERB	占める
+て	SCONJ	て
+い	VERB	居る
+た	AUX	た
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+タイガ: タイガ | タイ
+}
+
+Expected: {
+風速	NOUN	風速
+が	ADP	が
+より	ADV	より
+速い	ADJ	早い
+と	SCONJ	と
+、	PUNCT	、
+一部	NOUN	一部
+の	ADP	の
+粒子	NOUN	粒子
+は	ADP	は
+気流	NOUN	気流
+に	ADP	に
+舞い上がり	VERB	舞い上がる
+ます	AUX	ます
+。	PUNCT	。
+}
+Predicted: {
+風速	NOUN	風速
+が	ADP	が
+より	ADV	より
+速い	ADJ	早い
+と	SCONJ	と
+、	PUNCT	、
+一部	NOUN	一部
+の	ADP	の
+粒子	NOUN	粒子
+は	ADP	は
+気流	NOUN	気流
+に	ADP	に
+舞い上がり	VERB	舞い上がり
+ます	AUX	ます
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+舞い上がり: 舞い上がる | 舞い上がり
+}
+
+Expected: {
+ロメス	PROPN	ロメス
+は	ADP	は
+、	PUNCT	、
+物資	NOUN	物資
+面	NOUN	面
+の	ADP	の
+理由	NOUN	理由
+から	ADP	から
+長	NOUN	長
+期間	NOUN	期間
+の	ADP	の
+包囲	NOUN	包囲
+攻撃	NOUN	攻撃
+を	ADP	を
+行え	VERB	行う
+ず	AUX	ず
+、	PUNCT	、
+エジプト	PROPN	エジプト
+に	ADP	に
+戻り	VERB	戻る
+まし	AUX	ます
+た	AUX	た
+。	PUNCT	。
+}
+Predicted: {
+ロメス	PROPN	ロメス
+は	ADP	は
+、	PUNCT	、
+物資	NOUN	物資
+面	NOUN	面
+の	ADP	の
+理由	NOUN	理由
+から	ADP	から
+長	NOUN	長
+期間	NOUN	期間
+の	ADP	の
+包囲	NOUN	包囲
+攻撃	NOUN	攻撃
+を	ADP	を
+行え	VERB	行える
+ず	AUX	ず
+、	PUNCT	、
+エジプト	PROPN	エジプト
+に	ADP	に
+戻り	VERB	戻る
+まし	AUX	ます
+た	AUX	た
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+行え: 行う | 行える
+}
+
+Expected: {
+厳しい	ADJ	厳しい
+行動	NOUN	行動
+を	ADP	を
+取っ	VERB	取る
+た	AUX	た
+に	SCONJ	に
+も	SCONJ	も
+かかわら	SCONJ	関わる
+ず	SCONJ	ず
+、	PUNCT	、
+チャールズ	PROPN	チャールズ
+は	ADP	は
+、	PUNCT	、
+オランダ	PROPN	オランダ
+の	ADP	の
+ため	NOUN	為
+に	ADP	に
+熱意	NOUN	熱意
+を	ADP	を
+持っ	VERB	持つ
+て	SCONJ	て
+仕事	NOUN	仕事
+に	ADP	に
+取り組ん	VERB	取り組む
+だ	AUX	た
+支配	NOUN	支配
+者	NOUN	者
+と	ADP	と
+考え	VERB	考える
+られ	AUX	られる
+て	SCONJ	て
+い	VERB	居る
+まし	AUX	ます
+た	AUX	た
+。	PUNCT	。
+}
+Predicted: {
+厳しい	ADJ	厳しい
+行動	NOUN	行動
+を	ADP	を
+取っ	VERB	取る
+た	AUX	た
+に	SCONJ	に
+も	SCONJ	も
+かかわら	SCONJ	関わる
+ず	SCONJ	ず
+、	PUNCT	、
+チャールズ	PROPN	チャールズ
+は	ADP	は
+、	PUNCT	、
+オランダ	PROPN	オランダ
+の	ADP	の
+ため	NOUN	為
+に	ADP	に
+熱意	NOUN	熱意
+を	ADP	を
+持っ	VERB	持つ
+て	SCONJ	て
+仕事	NOUN	仕事
+に	ADP	に
+取り組ん	VERB	取り組む
+だ	AUX	だ
+支配	NOUN	支配
+者	NOUN	者
+と	ADP	と
+考え	VERB	考える
+られ	AUX	られる
+て	SCONJ	て
+い	VERB	居る
+まし	AUX	ます
+た	AUX	た
 。	PUNCT	。
 }
 Errors: {
@@ -34508,173 +32063,689 @@ Tok: Ref | Pred
 }
 
 Expected: {
-オンタリオ	PROPN	オンタリオ
-州	NOUN	州
-北部	NOUN	北部
-の	ADP	の
-町	NOUN	町
-の	ADP	の
-警察	NOUN	警察
-官	NOUN	官
-に	ADP	に
-よる	VERB	因る
-と	SCONJ	と
+ロシア	PROPN	ロシア
+皇帝	NOUN	皇帝
+は	ADP	は
 、	PUNCT	、
-9	NUM	9
-月	NOUN	月
-から	ADP	から
-の	ADP	の
-煽動	NOUN	扇動
-的	PART	的
-な	AUX	だ
-facebook	PROPN	facebook
-の	ADP	の
-投稿	NOUN	投稿
+第	NOUN	第
+一	NUM	一
+次	NOUN	次
+世界	NOUN	世界
+大戦	NOUN	大戦
+以前	NOUN	以前
 に	ADP	に
-つい	VERB	つく
+あっ	VERB	有る
 て	SCONJ	て
-も	ADP	も
-捜査	VERB	捜査
-し	AUX	為る
-て	SCONJ	て
-いる	VERB	居る
+、	PUNCT	、
+不	NOUN	不
+統一	NOUN	統一
+の	ADP	の
+重要	ADJ	重要
+な	AUX	だ
+きざし	NOUN	兆し
+を	ADP	を
+見せ	VERB	見せる
+た	AUX	た
+多様	ADJ	多様
+な	AUX	だ
+民族	NOUN	民族
+性	NOUN	性
+の	ADP	の
+集積	NOUN	集積
+で	AUX	だ
+あっ	VERB	有る
+た	AUX	た
 。	PUNCT	。
 }
 Predicted: {
-オンタリオ	PROPN	オンタリオ
-州	NOUN	州
-北部	NOUN	北部
-の	ADP	の
-町	NOUN	町
-の	ADP	の
-警察	NOUN	警察
-官	NOUN	官
-に	ADP	に
-よる	VERB	因る
-と	SCONJ	と
+ロシア	PROPN	ロシア
+皇帝	NOUN	皇帝
+は	ADP	は
 、	PUNCT	、
-9	NUM	9
-月	NOUN	月
-から	ADP	から
-の	ADP	の
-煽動	NOUN	煽動
-的	PART	的
-な	AUX	だ
-facebook	PROPN	facebook
-の	ADP	の
-投稿	NOUN	投稿
+第	NOUN	第
+一	NUM	一
+次	NOUN	次
+世界	NOUN	世界
+大戦	NOUN	大戦
+以前	NOUN	以前
 に	ADP	に
-つい	VERB	つく
+あっ	VERB	有る
 て	SCONJ	て
-も	ADP	も
-捜査	VERB	捜査
-し	AUX	為る
-て	SCONJ	て
-いる	VERB	居る
+、	PUNCT	、
+不	NOUN	不
+統一	NOUN	統一
+の	ADP	の
+重要	ADJ	重要
+な	AUX	だ
+きざし	NOUN	きざし
+を	ADP	を
+見せ	VERB	見せる
+た	AUX	た
+多様	ADJ	多様
+な	AUX	だ
+民族	NOUN	民族
+性	NOUN	性
+の	ADP	の
+集積	NOUN	集積
+で	AUX	だ
+あっ	VERB	有る
+た	AUX	た
 。	PUNCT	。
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
-煽動: 扇動 | 煽動
+きざし: 兆し | きざし
 }
 
 Expected: {
-「	PUNCT	「
-私	PRON	私
+古典	NOUN	古典
+学	NOUN	学
 は	ADP	は
-ワシントン	PROPN	ワシントン
-と	ADP	と
-リンカーン	PROPN	リンカーン
+道徳	NOUN	道徳
+教育	NOUN	教育
+や	ADP	や
+人間	NOUN	人間
 の	ADP	の
-政権	NOUN	政権
-中	NOUN	中
-に	ADP	に
-g.d.p.	NOUN	g.d.p.
-成長	NOUN	成長
-が	ADP	が
-いくら	NOUN	幾ら
-だっ	AUX	だ
-た	AUX	た
-か	ADP	か
-知り	VERB	知る
-ませ	AUX	ます
-ん	AUX	ず
-が	SCONJ	が
-、	PUNCT	、
-それ	PRON	其れ
-ら	NOUN	等
+行動	NOUN	行動
 の	ADP	の
-期間	NOUN	期間
-に	ADP	に
-制度	NOUN	制度
-的	PART	的
-発展	NOUN	発展
-は	ADP	は
-大	NOUN	大
-規模	NOUN	規模
-で	ADP	で
-長期	NOUN	長期
-に	ADP	に
-わたる	VERB	渡る
-影響	NOUN	影響
+広範	ADJ	広範
+な	AUX	だ
+理解	NOUN	理解
 を	ADP	を
-及ぼし	VERB	及ぼす
-まし	AUX	ます
+もたらす	VERB	齎す
+と	ADP	と
+考え	VERB	考える
+られ	AUX	られる
+て	SCONJ	て
+い	VERB	居る
+た	AUX	た
+ため	NOUN	為
+、	PUNCT	、
+ルネッサンス	NOUN	ルネサンス
+期	NOUN	期
+の	ADP	の
+教育	NOUN	教育
+は	ADP	は
+、	PUNCT	、
+古代	NOUN	古代
+文学	NOUN	文学
+と	ADP	と
+歴史	NOUN	歴史
+から	ADP	から
+主	NOUN	主
+と	ADP	と
+し	AUX	為る
+て	SCONJ	て
+成っ	VERB	成る
 た	AUX	た
 。	PUNCT	。
-」	PUNCT	」
 }
 Predicted: {
-「	PUNCT	「
-私	PRON	私
+古典	NOUN	古典
+学	NOUN	学
 は	ADP	は
-ワシントン	PROPN	ワシントン
-と	ADP	と
-リンカーン	PROPN	リンカーン
+道徳	NOUN	道徳
+教育	NOUN	教育
+や	ADP	や
+人間	NOUN	人間
 の	ADP	の
-政権	NOUN	政権
-中	NOUN	中
-に	ADP	に
-g.d.p.	NOUN	g.d.p.
-成長	NOUN	成長
-が	ADP	が
-いくら	NOUN	幾ら
-だっ	AUX	だ
-た	AUX	た
-か	ADP	か
-知り	VERB	知る
-ませ	AUX	ます
-ん	AUX	ず
-が	SCONJ	が
-、	PUNCT	、
-それ	PRON	其れ
-ら	NOUN	等
+行動	NOUN	行動
 の	ADP	の
-期間	NOUN	期間
-に	ADP	に
-制度	NOUN	制度
-的	PART	的
-発展	NOUN	発展
-は	ADP	は
-大	NOUN	大
-規模	NOUN	規模
-で	ADP	で
-長期	NOUN	長期
-に	ADP	に
-わたる	VERB	わたる
-影響	NOUN	影響
+広範	ADJ	広範
+な	AUX	だ
+理解	NOUN	理解
 を	ADP	を
-及ぼし	VERB	及ぼす
-まし	AUX	ます
+もたらす	VERB	齎す
+と	ADP	と
+考え	VERB	考える
+られ	AUX	られる
+て	SCONJ	て
+い	VERB	居る
+た	AUX	た
+ため	NOUN	為
+、	PUNCT	、
+ルネッサンス	NOUN	ルネサンス
+期	NOUN	期
+の	ADP	の
+教育	NOUN	教育
+は	ADP	は
+、	PUNCT	、
+古代	NOUN	古代
+文学	NOUN	文学
+と	ADP	と
+歴史	NOUN	歴史
+から	ADP	から
+主	NOUN	主
+と	ADP	と
+し	AUX	為る
+て	SCONJ	て
+成っ	VERB	成っ
 た	AUX	た
 。	PUNCT	。
-」	PUNCT	」
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
-わたる: 渡る | わたる
+成っ: 成る | 成っ
+}
+
+Expected: {
+ラマー	PROPN	ラマー
+は	ADP	は
+、	PUNCT	、
+マンドル	PROPN	マンドル
+が	ADP	が
+軍事	NOUN	軍事
+技術	NOUN	技術
+の	ADP	の
+科学	NOUN	科学
+者	NOUN	者
+や	ADP	や
+専門	NOUN	専門
+家	NOUN	家
+ら	NOUN	等
+と	ADP	と
+協議	NOUN	協議
+を	ADP	を
+行う	VERB	行う
+会議	NOUN	会議
+に	ADP	に
+付き添っ	VERB	付き添う
+て	SCONJ	て
+行っ	VERB	行く
+た	AUX	た
+。	PUNCT	。
+}
+Predicted: {
+ラマー	PROPN	ラマー
+は	ADP	は
+、	PUNCT	、
+マンドル	PROPN	マンドル
+が	ADP	が
+軍事	NOUN	軍事
+技術	NOUN	技術
+の	ADP	の
+科学	NOUN	科学
+者	NOUN	者
+や	ADP	や
+専門	NOUN	専門
+家	NOUN	家
+ら	NOUN	等
+と	ADP	と
+協議	NOUN	協議
+を	ADP	を
+行う	VERB	行う
+会議	NOUN	会議
+に	ADP	に
+付き添っ	VERB	付き添う
+て	SCONJ	て
+行っ	VERB	行う
+た	AUX	た
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+行っ: 行く | 行う
+}
+
+Expected: {
+少し	ADV	少し
+前	NOUN	前
+に	ADP	に
+、	PUNCT	、
+彼	PRON	彼
+は	ADP	は
+女優	NOUN	女優
+グロリア	PROPN	グロリア
+・	SYM	・
+ホールデン	PROPN	ホールデン
+に	ADP	に
+離婚	VERB	離婚
+さ	AUX	為る
+れ	AUX	れる
+た	AUX	た
+が	SCONJ	が
+、	PUNCT	、
+その	DET	其の
+後	NOUN	後
+も	ADP	も
+熱い	ADJ	熱い
+恋心	NOUN	恋心
+を	ADP	を
+抱き	VERB	抱く
+続け	VERB	続ける
+た	AUX	た
+。	PUNCT	。
+}
+Predicted: {
+少し	ADV	少し
+前	NOUN	前
+に	ADP	に
+、	PUNCT	、
+彼	PRON	彼
+は	ADP	は
+女優	NOUN	女優
+グロリア	PROPN	グロリア
+・	SYM	・
+ホールデン	PROPN	ホールデン
+に	ADP	に
+離婚	VERB	離婚
+さ	AUX	為る
+れ	AUX	れる
+た	AUX	た
+が	SCONJ	が
+、	PUNCT	、
+その	DET	其の
+後	NOUN	後
+も	ADP	も
+熱い	ADJ	熱い
+恋心	NOUN	恋心
+を	ADP	を
+抱き	VERB	抱き
+続け	VERB	続ける
+た	AUX	た
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+抱き: 抱く | 抱き
+}
+
+Expected: {
+ある	DET	或る
+スエーデン	PROPN	スエーデン
+の	ADP	の
+研究	NOUN	研究
+に	ADP	に
+よる	VERB	因る
+と	SCONJ	と
+、	PUNCT	、
+２	NUM	二
+ヶ月	NOUN	箇月
+の	ADP	の
+繁殖	NOUN	繁殖
+期	NOUN	期
+の	ADP	の
+後	NOUN	後
+、	PUNCT	、
+動物	NOUN	動物
+は	ADP	は
+ほとんど	ADV	殆ど
+上陸	VERB	上陸
+し	AUX	為る
+ない	AUX	ない
+と	ADP	と
+いう	VERB	言う
+。	PUNCT	。
+}
+Predicted: {
+ある	DET	或る
+スエーデン	PROPN	スエーデン
+の	ADP	の
+研究	NOUN	研究
+に	ADP	に
+よる	VERB	因る
+と	SCONJ	と
+、	PUNCT	、
+２	NUM	２
+ヶ月	NOUN	箇月
+の	ADP	の
+繁殖	NOUN	繁殖
+期	NOUN	期
+の	ADP	の
+後	NOUN	後
+、	PUNCT	、
+動物	NOUN	動物
+は	ADP	は
+ほとんど	ADV	殆ど
+上陸	VERB	上陸
+し	AUX	為る
+ない	AUX	ない
+と	ADP	と
+いう	VERB	言う
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+２: 二 | ２
+}
+
+Expected: {
+現在	ADV	現在
+、	PUNCT	、
+それ	PRON	其れ
+が	ADP	が
+どれ	PRON	何れ
+で	AUX	だ
+ある	VERB	有る
+か	ADP	か
+は	ADP	は
+明らか	ADJ	明らか
+で	AUX	だ
+ない	AUX	無い
+。	PUNCT	。
+}
+Predicted: {
+現在	ADV	現在
+、	PUNCT	、
+それ	PRON	其れ
+が	ADP	が
+どれ	PRON	何れ
+で	AUX	で
+ある	VERB	有る
+か	ADP	か
+は	ADP	は
+明らか	ADJ	明らか
+で	AUX	だ
+ない	AUX	無い
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+で: だ | で
+}
+
+Expected: {
+2005	NUM	2005
+年	NOUN	年
+から	ADP	から
+連邦	NOUN	連邦
+および	CCONJ	及び
+州	NOUN	州
+政府	NOUN	政府
+は	ADP	は
+合同	NOUN	合同
+協定	NOUN	協定
+の	ADP	の
+中	NOUN	中
+で	ADP	で
+自然	NOUN	自然
+遺産	NOUN	遺産
+を	ADP	を
+国家	NOUN	国家
+最	NOUN	最
+優先	NOUN	優先
+事業	NOUN	事業
+と	ADP	と
+位置	VERB	位置
+づけ	VERB	付ける
+、	PUNCT	、
+登録	NOUN	登録
+を	ADP	を
+始め	VERB	始める
+た	AUX	た
+こと	NOUN	事
+は	ADP	は
+驚く	VERB	驚く
+に	ADP	に
+は	ADP	は
+あたら	VERB	当たる
+ない	AUX	ない
+。	PUNCT	。
+}
+Predicted: {
+2005	NUM	2005
+年	NOUN	年
+から	ADP	から
+連邦	NOUN	連邦
+および	CCONJ	及び
+州	NOUN	州
+政府	NOUN	政府
+は	ADP	は
+合同	NOUN	合同
+協定	NOUN	協定
+の	ADP	の
+中	NOUN	中
+で	ADP	で
+自然	NOUN	自然
+遺産	NOUN	遺産
+を	ADP	を
+国家	NOUN	国家
+最	NOUN	最
+優先	NOUN	優先
+事業	NOUN	事業
+と	ADP	と
+位置	VERB	位置
+づけ	VERB	付け
+、	PUNCT	、
+登録	NOUN	登録
+を	ADP	を
+始め	VERB	始める
+た	AUX	た
+こと	NOUN	事
+は	ADP	は
+驚く	VERB	驚く
+に	ADP	に
+は	ADP	は
+あたら	VERB	当たる
+ない	AUX	ない
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+づけ: 付ける | 付け
+}
+
+Expected: {
+そして	CCONJ	そして
+、	PUNCT	、
+彼	PRON	彼
+ら	NOUN	等
+は	ADP	は
+美	NOUN	美
+と	ADP	と
+希望	NOUN	希望
+の	ADP	の
+新しい	ADJ	新しい
+世代	NOUN	世代
+を	ADP	を
+形づくる	VERB	形作る
+の	SCONJ	の
+だ	AUX	だ
+から	SCONJ	から
+、	PUNCT	、
+オープン	ADJ	オープン
+な	AUX	だ
+精神	NOUN	精神
+と	ADP	と
+クリア	ADJ	クリア
+な	AUX	だ
+心	NOUN	心
+で	ADP	で
+迎え	VERB	迎える
+られ	AUX	られる
+なけれ	AUX	ない
+ば	SCONJ	ば
+なら	VERB	成る
+ない	AUX	ない
+。	PUNCT	。
+}
+Predicted: {
+そして	CCONJ	そして
+、	PUNCT	、
+彼	PRON	彼
+ら	NOUN	等
+は	ADP	は
+美	NOUN	美
+と	ADP	と
+希望	NOUN	希望
+の	ADP	の
+新しい	ADJ	新しい
+世代	NOUN	世代
+を	ADP	を
+形づくる	VERB	形づくる
+の	SCONJ	の
+だ	AUX	だ
+から	SCONJ	から
+、	PUNCT	、
+オープン	ADJ	オープン
+な	AUX	だ
+精神	NOUN	精神
+と	ADP	と
+クリア	ADJ	クリア
+な	AUX	だ
+心	NOUN	心
+で	ADP	で
+迎え	VERB	迎える
+られ	AUX	られる
+なけれ	AUX	ない
+ば	SCONJ	ば
+なら	VERB	成る
+ない	AUX	ない
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+形づくる: 形作る | 形づくる
+}
+
+Expected: {
+ドレスコード	NOUN	ドレスコード
+が	ADP	が
+堅苦しすぎる	VERB	堅苦し過ぎる
+のだろう	AUX	のだ
+。	PUNCT	。
+}
+Predicted: {
+ドレスコード	NOUN	ドレスコード
+が	ADP	が
+堅苦しすぎる	VERB	堅苦しすぎる
+のだろう	AUX	のだ
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+堅苦しすぎる: 堅苦し過ぎる | 堅苦しすぎる
+}
+
+Expected: {
+しかし	CCONJ	然し
+、	PUNCT	、
+彼ら	PRON	彼等
+は	ADP	は
+、	PUNCT	、
+直接	ADV	直接
+露出さ	VERB	露出する
+れ	AUX	れる
+ない	AUX	ない
+膀胱	NOUN	膀胱
+など	ADP	など
+の	ADP	の
+組織	NOUN	組織
+で	ADP	で
+は	ADP	は
+この	DET	此の
+同じ	ADJ	同じ
+パターン	NOUN	パターン
+を	ADP	を
+見つける	VERB	見付ける
+ことができ	AUX	ことができる
+なかっ	AUX	ない
+た	AUX	た
+。	PUNCT	。
+}
+Predicted: {
+しかし	CCONJ	然し
+、	PUNCT	、
+彼ら	PRON	彼等
+は	ADP	は
+、	PUNCT	、
+直接	ADV	直接
+露出さ	VERB	露出さ
+れ	AUX	れる
+ない	AUX	ない
+膀胱	NOUN	膀胱
+など	ADP	など
+の	ADP	の
+組織	NOUN	組織
+で	ADP	で
+は	ADP	は
+この	DET	此の
+同じ	ADJ	同じ
+パターン	NOUN	パターン
+を	ADP	を
+見つける	VERB	見付ける
+ことができ	AUX	ことができる
+なかっ	AUX	ない
+た	AUX	た
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+露出さ: 露出する | 露出さ
+}
+
+Expected: {
+共和党	PROPN	共和党
+の	ADP	の
+エコノミスト	NOUN	エコノミスト
+は	ADP	は
+、	PUNCT	、
+この	DET	此の
+データ	NOUN	データ
+を	ADP	を
+彼ら	PRON	彼等
+の	ADP	の
+政党	NOUN	政党
+が	ADP	が
+経済政策	NOUN	経済政策
+で	ADP	で
+お粗末	ADJ	御粗末
+である	AUX	である
+こと	NOUN	事
+を	ADP	を
+証明する	VERB	証明する
+ために	SCONJ	ために
+使っ	VERB	使う
+ている	AUX	ている
+こと	NOUN	事
+に対して	ADP	に対して
+警告し	VERB	警告する
+ている	AUX	ている
+。	PUNCT	。
+}
+Predicted: {
+共和党	PROPN	共和党
+の	ADP	の
+エコノミスト	NOUN	エコノミスト
+は	ADP	は
+、	PUNCT	、
+この	DET	此の
+データ	NOUN	データ
+を	ADP	を
+彼ら	PRON	彼等
+の	ADP	の
+政党	NOUN	政党
+が	ADP	が
+経済政策	NOUN	経済政策
+で	ADP	で
+お粗末	ADJ	お粗末
+である	AUX	である
+こと	NOUN	事
+を	ADP	を
+証明する	VERB	証明する
+ために	SCONJ	ために
+使っ	VERB	使う
+ている	AUX	ている
+こと	NOUN	事
+に対して	ADP	に対して
+警告し	VERB	警告する
+ている	AUX	ている
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+お粗末: 御粗末 | お粗末
 }
 
 Expected: {
@@ -34683,11 +32754,8 @@ Expected: {
 それ	PRON	其れ
 に	ADP	に
 立ち向かわ	VERB	立ち向かう
-なけれ	AUX	ない
-ば	SCONJ	ば
-なら	VERB	成る
-ない	AUX	ない
-し	SCONJ	し
+なければならない	AUX	なければならない
+し	SCONJ	する
 、	PUNCT	、
 私	PRON	私
 だっ	AUX	だ
@@ -34717,10 +32785,7 @@ Predicted: {
 それ	PRON	其れ
 に	ADP	に
 立ち向かわ	VERB	立ち向かわ
-なけれ	AUX	なし
-ば	SCONJ	ば
-なら	VERB	成る
-ない	AUX	ない
+なければならない	AUX	なければならない
 し	SCONJ	する
 、	PUNCT	、
 私	PRON	私
@@ -34749,13 +32814,10 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 立ち向かわ: 立ち向かう | 立ち向かわ
-なけれ: ない | なし
-し: し | する
 }
 
 Expected: {
-芸術	NOUN	芸術
-家	NOUN	家
+芸術家	NOUN	芸術家
 は	ADP	は
 人々	NOUN	人々
 の	ADP	の
@@ -34763,26 +32825,22 @@ Expected: {
 へ	ADP	へ
 と	ADP	と
 訴えかける	VERB	訴え掛ける
-の	SCONJ	の
-だ	AUX	だ
+のだ	AUX	のだ
 が	SCONJ	が
 、	PUNCT	、
 これ	PRON	此れ
 は	ADP	は
 、	PUNCT	、
-私	PRON	私
-たち	NOUN	達
+私たち	PRON	私達
 の	ADP	の
 間	NOUN	間
 に	ADP	に
 ある	VERB	有る
-相違	NOUN	相違
-点	NOUN	点
+相違点	NOUN	相違点
 を	ADP	を
 よそ	NOUN	余所
 に	ADP	に
-一	NUM	一
-つ	NOUN	つ
+一つ	NUM	一つ
 の	ADP	の
 場所	NOUN	場所
 で	ADP	で
@@ -34794,13 +32852,11 @@ Expected: {
 唯一	NOUN	唯一
 の	ADP	の
 瞬間	NOUN	瞬間
-で	AUX	だ
-ある	VERB	有る
+である	AUX	である
 。	PUNCT	。
 }
 Predicted: {
-芸術	NOUN	芸術
-家	NOUN	家
+芸術家	NOUN	芸術家
 は	ADP	は
 人々	NOUN	人々
 の	ADP	の
@@ -34808,26 +32864,22 @@ Predicted: {
 へ	ADP	へ
 と	ADP	と
 訴えかける	VERB	訴え掛ける
-の	SCONJ	の
-だ	AUX	だ
+のだ	AUX	のだ
 が	SCONJ	が
 、	PUNCT	、
 これ	PRON	此れ
 は	ADP	は
 、	PUNCT	、
-私	PRON	私
-たち	NOUN	達
+私たち	PRON	私達
 の	ADP	の
 間	NOUN	間
 に	ADP	に
 ある	VERB	有る
-相違	NOUN	相違
-点	NOUN	点
+相違点	NOUN	相違点
 を	ADP	を
 よそ	NOUN	余所
 に	ADP	に
-一	NUM	一
-つ	NOUN	つ
+一つ	NUM	一つ
 の	ADP	の
 場所	NOUN	場所
 で	ADP	で
@@ -34839,8 +32891,7 @@ Predicted: {
 唯一	NOUN	唯一
 の	ADP	の
 瞬間	NOUN	瞬間
-で	AUX	だ
-ある	VERB	有る
+である	AUX	である
 。	PUNCT	。
 }
 Errors: {
@@ -34850,47 +32901,14 @@ Tok: Ref | Pred
 }
 
 Expected: {
-カタラーノ	PROPN	カタラーノ
-氏	NOUN	氏
+カタラーノ氏	PROPN	カタラーノ氏
 は	ADP	は
 ロンドン	PROPN	ロンドン
 、	PUNCT	、
 そして	CCONJ	そして
-グラスゴー	PROPN	グラスゴー
-美術	NOUN	美術
-学校	NOUN	学校
+グラスゴー美術学校	PROPN	グラスゴー美術学校
 で	ADP	で
-ジュエリー	NOUN	ジュエリー
-デザイン	NOUN	デザイン
-を	ADP	を
-学ん	VERB	学ぶ
-だ	AUX	た
-グラスゴー	PROPN	グラスゴー
-に	ADP	に
-住ん	VERB	住む
-だ	AUX	た
-後	NOUN	後
-、	PUNCT	、
-その	DET	其の
-地域	NOUN	地域
-に	ADP	に
-戻っ	VERB	戻る
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-カタラーノ	PROPN	カタラーノ
-氏	NOUN	氏
-は	ADP	は
-ロンドン	PROPN	ロンドン
-、	PUNCT	、
-そして	CCONJ	そして
-グラスゴー	PROPN	グラスゴー
-美術	NOUN	美術
-学校	NOUN	学校
-で	ADP	で
-ジュエリー	NOUN	ジュエリー
-デザイン	NOUN	デザイン
+ジュエリーデザイン	NOUN	ジュエリーデザイン
 を	ADP	を
 学ん	VERB	学ぶ
 だ	AUX	だ
@@ -34907,260 +32925,145 @@ Predicted: {
 た	AUX	た
 。	PUNCT	。
 }
-Errors: {
-Tok: Ref | Pred
----------------
-だ: た | だ
-だ: た | だ
-}
-
-Expected: {
-英国	PROPN	英国
-王立	NOUN	王立
-鳥類	NOUN	鳥類
-保護	NOUN	保護
-協会	NOUN	協会
-の	ADP	の
-スタンス	NOUN	スタンス
+Predicted: {
+カタラーノ氏	PROPN	カタラーノ氏
 は	ADP	は
+ロンドン	PROPN	ロンドン
 、	PUNCT	、
-請願	NOUN	請願
-書	NOUN	書
-の	ADP	の
-作成	NOUN	作成
-者	NOUN	者
-、	PUNCT	、
-マーク	PROPN	マーク
-・	SYM	・
-アヴェリー	PROPN	アヴェリー
-から	ADP	から
-、	PUNCT	、
-テレビ	NOUN	テレビ
-の	ADP	の
-司会	NOUN	司会
-者	NOUN	者
-クリス	PROPN	クリス
-・	SYM	・
-パックハム	PROPN	パックハム
-まで	ADP	まで
-、	PUNCT	、
-業界	NOUN	業界
+そして	CCONJ	そして
+グラスゴー美術学校	PROPN	グラスゴー美術学校
+で	ADP	で
+ジュエリーデザイン	NOUN	ジュエリーデザイン
 を	ADP	を
-リード	VERB	リード
-する	AUX	為る
-多く	NOUN	多く
-の	ADP	の
-自然	NOUN	自然
-保護	NOUN	保護
-論者	NOUN	論者
-と	ADP	と
-の	ADP	の
-対立	NOUN	対立
-を	ADP	を
-も	ADP	も
-持ち込ん	VERB	持ち込む
+学ん	VERB	学ぶ
 だ	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-英国	PROPN	英国
-王立	NOUN	王立
-鳥類	NOUN	鳥類
-保護	NOUN	保護
-協会	NOUN	協会
-の	ADP	の
-スタンス	NOUN	スタンス
-は	ADP	は
-、	PUNCT	、
-請願	NOUN	請願
-書	NOUN	書
-の	ADP	の
-作成	NOUN	作成
-者	NOUN	者
-、	PUNCT	、
-マーク	PROPN	マーク
-・	SYM	・
-アヴェリー	PROPN	アヴェリー
-から	ADP	から
-、	PUNCT	、
-テレビ	NOUN	テレビ
-の	ADP	の
-司会	NOUN	司会
-者	NOUN	者
-クリス	PROPN	クリス
-・	SYM	・
-パックハム	PROPN	パックハム
-まで	ADP	まで
-、	PUNCT	、
-業界	NOUN	業界
-を	ADP	を
-リード	VERB	リード
-する	AUX	為る
-多く	NOUN	多く
-の	ADP	の
-自然	NOUN	自然
-保護	NOUN	保護
-論者	NOUN	論者
-と	ADP	と
-の	ADP	の
-対立	NOUN	対立
-を	ADP	を
-も	ADP	も
-持ち込ん	VERB	持ち込む
+グラスゴー	PROPN	グラスゴー
+に	ADP	に
+住ん	VERB	住む
 だ	AUX	だ
+後	NOUN	後
+、	PUNCT	、
+その	DET	其の
+地域	NOUN	地域
+に	ADP	に
+戻っ	VERB	戻る
+た	AUX	た
 。	PUNCT	。
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
-だ: た | だ
+だ: だ | た
 }
 
 Expected: {
-あなた	PRON	貴方
+各駅	NOUN	各駅
+で	ADP	で
+、	PUNCT	、
+赤い	ADJ	赤い
+キャップ	NOUN	キャップ
+の	ADP	の
+ガード	NOUN	ガード
 が	ADP	が
-支配	VERB	支配
-し	AUX	為る
-た	AUX	た
-ゲーム	NOUN	ゲーム
-を	ADP	を
-引き分け	NOUN	引き分け
+、	PUNCT	、
+プラットフォーム	NOUN	プラットフォーム
 に	ADP	に
-する	VERB	為る
-こと	NOUN	事
-は	ADP	は
-簡単	ADJ	簡単
-だ	AUX	だ
-が	SCONJ	が
+立ち	VERB	立つ
 、	PUNCT	、
-それ	PRON	其れ
-を	ADP	を
-3	NUM	3
-回	NOUN	回
-行う	VERB	行う
-の	SCONJ	の
-は	ADP	は
+車輪点検者	NOUN	車輪点検者
+が	ADP	が
 、	PUNCT	、
-弱	ADJ	弱い
-さ	PART	さ
+ハンマー	NOUN	ハンマー
 を	ADP	を
-表し	VERB	表わす
+持っ	VERB	持つ
 て	SCONJ	て
-いる	VERB	居る
+列車	NOUN	列車
+の	ADP	の
+横	NOUN	横
+を	ADP	を
+歩き	VERB	歩く
+、	PUNCT	、
+優しく	ADJ	優しい
+車台	NOUN	車台
+を	ADP	を
+ノックし	VERB	ノックする
+てい	AUX	ている
+た	AUX	た
 。	PUNCT	。
 }
 Predicted: {
-あなた	PRON	貴方
+各駅	NOUN	各駅
+で	ADP	で
+、	PUNCT	、
+赤い	ADJ	赤い
+キャップ	NOUN	キャップ
+の	ADP	の
+ガード	NOUN	ガード
 が	ADP	が
-支配	VERB	支配
-し	AUX	為る
-た	AUX	た
-ゲーム	NOUN	ゲーム
-を	ADP	を
-引き分け	NOUN	引き分け
+、	PUNCT	、
+プラットフォーム	NOUN	プラットホーム
 に	ADP	に
-する	VERB	為る
-こと	NOUN	事
-は	ADP	は
-簡単	ADJ	簡単
-だ	AUX	だ
-が	SCONJ	が
+立ち	VERB	立つ
 、	PUNCT	、
-それ	PRON	其れ
-を	ADP	を
-3	NUM	3
-回	NOUN	回
-行う	VERB	行う
-の	SCONJ	の
-は	ADP	は
+車輪点検者	NOUN	車輪点検者
+が	ADP	が
 、	PUNCT	、
-弱	ADJ	弱
-さ	PART	為る
+ハンマー	NOUN	ハンマー
 を	ADP	を
-表し	VERB	表わす
+持っ	VERB	持つ
 て	SCONJ	て
-いる	VERB	居る
+列車	NOUN	列車
+の	ADP	の
+横	NOUN	横
+を	ADP	を
+歩き	VERB	歩く
+、	PUNCT	、
+優しく	ADJ	優しい
+車台	NOUN	車台
+を	ADP	を
+ノックし	VERB	ノックする
+てい	AUX	ている
+た	AUX	た
 。	PUNCT	。
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
-弱: 弱い | 弱
-さ: さ | 為る
+プラットフォーム: プラットフォーム | プラットホーム
 }
 
 Expected: {
-後年	ADV	後年
-、	PUNCT	、
-アウグストゥス	PROPN	アウグストゥス
-が	ADP	が
-ローマ	PROPN	ローマ
-帝国	NOUN	帝国
-を	ADP	を
-創設	VERB	創設
-し	AUX	為る
-た	AUX	た
-際	NOUN	際
-に	ADP	に
-、	PUNCT	、
-ローマ	PROPN	ローマ
-人	NOUN	人
-たち	NOUN	達
-は	ADP	は
-地中	NOUN	地中
-海	NOUN	海
-を	ADP	を
-マレ	NOUN	マーレ
-・	SYM	・
-ノストラム	NOUN	ノストラム
-（	PUNCT	（
-「	NOUN	「
-私	PRON	私
-たち	NOUN	達
+ホーム	NOUN	ホーム
 の	ADP	の
-海	NOUN	海
-」	NOUN	」
-）	PUNCT	）
-と	ADP	と
-呼び	VERB	呼ぶ
+試合	NOUN	試合
+で	ADP	で
+は	ADP	は
+6点	NUM	6点
+取っ	VERB	取る
+てい	AUX	ている
+た	AUX	た
+ので	AUX	のだ
+本当	NOUN	本当
+に	ADP	に
+がっかりし	VERB	がっかりする
 まし	AUX	ます
 た	AUX	た
 。	PUNCT	。
 }
 Predicted: {
-後年	ADV	後年
-、	PUNCT	、
-アウグストゥス	PROPN	アウグストゥス
-が	ADP	が
-ローマ	PROPN	ローマ
-帝国	NOUN	帝国
-を	ADP	を
-創設	VERB	創設
-し	AUX	為る
-た	AUX	た
-際	NOUN	際
-に	ADP	に
-、	PUNCT	、
-ローマ	PROPN	ローマ
-人	NOUN	人
-たち	NOUN	達
-は	ADP	は
-地中	NOUN	地中
-海	NOUN	海
-を	ADP	を
-マレ	NOUN	マレ
-・	SYM	・
-ノストラム	NOUN	ノストラム
-（	PUNCT	（
-「	NOUN	「
-私	PRON	私
-たち	NOUN	達
+ホーム	NOUN	ホーム
 の	ADP	の
-海	NOUN	海
-」	NOUN	」
-）	PUNCT	）
-と	ADP	と
-呼び	VERB	呼ぶ
+試合	NOUN	試合
+で	ADP	で
+は	ADP	は
+6点	NUM	6点
+取っ	VERB	取る
+てい	AUX	ている
+た	AUX	た
+ので	AUX	のだ
+本当	NOUN	本当
+に	ADP	に
+がっかりし	VERB	がっかりしる
 まし	AUX	ます
 た	AUX	た
 。	PUNCT	。
@@ -35168,2239 +33071,268 @@ Predicted: {
 Errors: {
 Tok: Ref | Pred
 ---------------
-マレ: マーレ | マレ
+がっかりし: がっかりする | がっかりしる
 }
 
 Expected: {
-ブリスベン	PROPN	ブリスベン
-が	ADP	が
-繁栄	VERB	繁栄
-する	AUX	為る
-に	SCONJ	に
-連れ	SCONJ	連れる
-て	SCONJ	て
-、	PUNCT	、
-河川	NOUN	河川
+1つ	NUM	1つ
 の	ADP	の
-状態	NOUN	状態
-は	ADP	は
-下水	NOUN	下水
-道	NOUN	道
-や	ADP	や
-ゴミ捨て	NOUN	塵捨て
-場	NOUN	場
-並	NOUN	並み
-に	ADP	に
-悪化	VERB	悪化
-し	AUX	為る
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-ブリスベン	PROPN	ブリスベン
-が	ADP	が
-繁栄	VERB	繁栄
-する	AUX	為る
-に	SCONJ	に
-連れ	SCONJ	連れる
-て	SCONJ	て
-、	PUNCT	、
-河川	NOUN	河川
-の	ADP	の
-状態	NOUN	状態
-は	ADP	は
-下水	NOUN	下水
-道	NOUN	道
-や	ADP	や
-ゴミ捨て	NOUN	ゴミ捨て
-場	NOUN	場
-並	NOUN	並み
-に	ADP	に
-悪化	VERB	悪化
-し	AUX	為る
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-ゴミ捨て: 塵捨て | ゴミ捨て
-}
-
-Expected: {
-この	DET	此の
-場所	NOUN	場所
-に	ADP	に
-今	ADV	今
-も	ADP	も
-残っ	VERB	残る
-て	SCONJ	て
-いる	VERB	居る
-祭儀	NOUN	祭儀
-は	ADP	は
-、	PUNCT	、
-10	NUM	10
-本	NOUN	本
-の	ADP	の
-大きな	ADJ	大きな
-立て	NOUN	立て
-石	NOUN	石
-が	ADP	が
-列	NOUN	列
-に	ADP	に
-なっ	VERB	成る
-て	SCONJ	て
-い	VERB	居る
-て	SCONJ	て
-、	PUNCT	、
-マスト	NOUN	マスト
-スポット	NOUN	スポット
-と	ADP	と
-し	AUX	為る
-て	SCONJ	て
-知ら	VERB	知る
-れ	AUX	れる
-て	SCONJ	て
-い	VERB	居る
-て	SCONJ	て
-南北	NOUN	南北
-に	ADP	に
-広がっ	VERB	広がる
-て	SCONJ	て
-おり	VERB	居る
-、	PUNCT	、
-高い	ADJ	高い
-もの	NOUN	物
+レベル	NOUN	レベル
 で	ADP	で
 は	ADP	は
-3	NUM	3
-メートル	NOUN	メートル
+、	PUNCT	、
+日曜日	NOUN	日曜日
 の	ADP	の
-高	ADJ	高い
-さ	PART	さ
-で	AUX	だ
-中央	NOUN	中央
-が	ADP	が
-祭壇	NOUN	祭壇
-型	NOUN	型
-の	ADP	の
-構造	NOUN	構造
-で	AUX	だ
-、	PUNCT	、
-巨大	ADJ	巨大
-で	AUX	だ
-正	NOUN	正
-方形	NOUN	方形
-の	ADP	の
-水鉢	NOUN	水鉢
-が	ADP	が
-備え付け	VERB	備え付ける
-られ	AUX	られる
-て	SCONJ	て
-いる	VERB	居る
-もの	NOUN	物
-で	AUX	だ
-あっ	VERB	有る
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-この	DET	此の
-場所	NOUN	場所
-に	ADP	に
-今	ADV	今
-も	ADP	も
-残っ	VERB	残る
-て	SCONJ	て
-いる	VERB	居る
-祭儀	NOUN	祭儀
-は	ADP	は
-、	PUNCT	、
-10	NUM	10
-本	NOUN	本
-の	ADP	の
-大きな	ADJ	大きな
-立て	NOUN	立つ
-石	NOUN	石
-が	ADP	が
-列	NOUN	列
-に	ADP	に
-なっ	VERB	成る
-て	SCONJ	て
-い	VERB	居る
-て	SCONJ	て
-、	PUNCT	、
-マスト	NOUN	マスト
-スポット	NOUN	スポット
-と	ADP	と
-し	AUX	為る
-て	SCONJ	て
-知ら	VERB	知る
-れ	AUX	れる
-て	SCONJ	て
-い	VERB	居る
-て	SCONJ	て
-南北	NOUN	南北
-に	ADP	に
-広がっ	VERB	広がる
-て	SCONJ	て
-おり	VERB	居る
-、	PUNCT	、
-高い	ADJ	高い
-もの	NOUN	物
-で	ADP	で
-は	ADP	は
-3	NUM	3
-メートル	NOUN	メートル
-の	ADP	の
-高	ADJ	高い
-さ	PART	さ
-で	AUX	だ
-中央	NOUN	中央
-が	ADP	が
-祭壇	NOUN	祭壇
-型	NOUN	型
-の	ADP	の
-構造	NOUN	構造
-で	AUX	だ
-、	PUNCT	、
-巨大	ADJ	巨大
-で	AUX	だ
-正	NOUN	正
-方形	NOUN	方形
-の	ADP	の
-水鉢	NOUN	水鉢
-が	ADP	が
-備え付け	VERB	備え付ける
-られ	AUX	られる
-て	SCONJ	て
-いる	VERB	居る
-もの	NOUN	物
-で	AUX	だ
-あっ	VERB	有る
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-立て: 立て | 立つ
-}
-
-Expected: {
-彼	PRON	彼
-の	ADP	の
-統治	NOUN	統治
-期間	NOUN	期間
-は	ADP	は
-わずか	ADV	僅か
-15	NUM	15
-年	NOUN	年
-でし	AUX	です
-た	AUX	た
-が	SCONJ	が
-、	PUNCT	、
-この	DET	此の
-統治	NOUN	統治
-期間	NOUN	期間
-の	ADP	の
-短	ADJ	短い
-さ	PART	さ
-は	ADP	は
-、	PUNCT	、
-彼	PRON	彼
-の	ADP	の
-計画	VERB	計画
-し	AUX	為る
-た	AUX	た
-建築	NOUN	建築
-物	NOUN	物
-の	ADP	の
-多く	NOUN	多く
-が	ADP	が
-未	NOUN	未
-完成	NOUN	完成
-で	AUX	だ
-あっ	VERB	有る
-た	AUX	た
-こと	NOUN	事
-から	ADP	から
-も	ADP	も
-伺え	VERB	伺う
-ます	AUX	ます
-。	PUNCT	。
-}
-Predicted: {
-彼	PRON	彼
-の	ADP	の
-統治	NOUN	統治
-期間	NOUN	期間
-は	ADP	は
-わずか	ADV	僅か
-15	NUM	15
-年	NOUN	年
-でし	AUX	です
-た	AUX	た
-が	SCONJ	が
-、	PUNCT	、
-この	DET	此の
-統治	NOUN	統治
-期間	NOUN	期間
-の	ADP	の
-短	ADJ	短
-さ	PART	為る
-は	ADP	は
-、	PUNCT	、
-彼	PRON	彼
-の	ADP	の
-計画	VERB	計画
-し	AUX	為る
-た	AUX	た
-建築	NOUN	建築
-物	NOUN	物
-の	ADP	の
-多く	NOUN	多く
-が	ADP	が
-未	NOUN	未
-完成	NOUN	完成
-で	AUX	だ
-あっ	VERB	有る
-た	AUX	た
-こと	NOUN	事
-から	ADP	から
-も	ADP	も
-伺え	VERB	伺える
-ます	AUX	ます
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-短: 短い | 短
-さ: さ | 為る
-伺え: 伺う | 伺える
-}
-
-Expected: {
-マケドニア	PROPN	マケドニア
-軍	NOUN	軍
-は	ADP	は
-ギリシャ	PROPN	ギリシャ
-を	ADP	を
-二	NUM	二
-分割	VERB	分割
-する	AUX	為る
-テルモピレー	PROPN	テルモピレー
-の	ADP	の
-山道	NOUN	山道
-まで	ADP	まで
-進ん	VERB	進む
-だ	AUX	た
-が	SCONJ	が
-、	PUNCT	、
-そこ	PRON	其処
-は	ADP	は
-アテネ	PROPN	アテネ
-、	PUNCT	、
-スパルタ	PROPN	スパルタ
-、	PUNCT	、
-アカイア	PROPN	アカイア
-の	ADP	の
-同盟	NOUN	同盟
-軍	NOUN	軍
-に	ADP	に
-より	VERB	因る
-固く	ADJ	固い
-守ら	VERB	守る
-れ	AUX	れる
-て	SCONJ	て
-い	VERB	居る
-た	AUX	た
-ため	NOUN	為
-、	PUNCT	、
-そこ	PRON	其処
-を	ADP	を
-奪取	VERB	奪取
-しよう	AUX	為る
-と	ADP	と
-は	ADP	は
-し	VERB	為る
-なかっ	AUX	ない
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-マケドニア	PROPN	マケドニア
-軍	NOUN	軍
-は	ADP	は
-ギリシャ	PROPN	ギリシャ
-を	ADP	を
-二	NUM	二
-分割	VERB	分割
-する	AUX	為る
-テルモピレー	PROPN	テルモピレー
-の	ADP	の
-山道	NOUN	山道
-まで	ADP	まで
-進ん	VERB	進む
-だ	AUX	だ
-が	SCONJ	が
-、	PUNCT	、
-そこ	PRON	其処
-は	ADP	は
-アテネ	PROPN	アテネ
-、	PUNCT	、
-スパルタ	PROPN	スパルタ
-、	PUNCT	、
-アカイア	PROPN	アカイア
-の	ADP	の
-同盟	NOUN	同盟
-軍	NOUN	軍
-に	ADP	に
-より	VERB	因る
-固く	ADJ	固く
-守ら	VERB	守る
-れ	AUX	れる
-て	SCONJ	て
-い	VERB	居る
-た	AUX	た
-ため	NOUN	為
-、	PUNCT	、
-そこ	PRON	其処
-を	ADP	を
-奪取	VERB	奪取
-しよう	AUX	為る
-と	ADP	と
-は	ADP	は
-し	VERB	為る
-なかっ	AUX	ない
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-だ: た | だ
-固く: 固い | 固く
-}
-
-Expected: {
-バナナ	NOUN	バナナ
-と	ADP	と
-オオバコ	NOUN	車前草
-は	ADP	は
-、	PUNCT	、
-東南	NOUN	東南
-アジア	PROPN	アジア
-で	ADP	で
-最初	NOUN	最初
-に	ADP	に
-栽培	VERB	栽培
-さ	AUX	為る
-れ	AUX	れる
-、	PUNCT	、
-その	DET	其の
-ほとんど	NOUN	殆ど
-が	ADP	が
-パプアニューギニア	PROPN	パプアニューギニア
-だっ	AUX	だ
-た	AUX	た
-が	SCONJ	が
-、	PUNCT	、
-5	NUM	5
-,	PUNCT	,
-000	NUM	000
-年	NOUN	年
-も	ADP	も
-前	NOUN	前
-に	ADP	に
-は	ADP	は
-おそらく	ADV	恐らく
-アフリカ	PROPN	アフリカ
-で	ADP	で
-も	ADP	も
-再	NOUN	再
-栽培	VERB	栽培
-化	NOUN	化
-さ	AUX	為る
-れ	AUX	れる
-て	SCONJ	て
-い	VERB	居る
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-バナナ	NOUN	バナナ
-と	ADP	と
-オオバコ	NOUN	オオバコ
-は	ADP	は
-、	PUNCT	、
-東南	NOUN	東南
-アジア	PROPN	アジア
-で	ADP	で
-最初	NOUN	最初
-に	ADP	に
-栽培	VERB	栽培
-さ	AUX	為る
-れ	AUX	れる
-、	PUNCT	、
-その	DET	其の
-ほとんど	NOUN	殆ど
-が	ADP	が
-パプアニューギニア	PROPN	パプアニューギニア
-だっ	AUX	だ
-た	AUX	た
-が	SCONJ	が
-、	PUNCT	、
-5	NUM	5
-,	PUNCT	,
-000	NUM	000
-年	NOUN	年
-も	ADP	も
-前	NOUN	前
-に	ADP	に
-は	ADP	は
-おそらく	ADV	恐らく
-アフリカ	PROPN	アフリカ
-で	ADP	で
-も	ADP	も
-再	NOUN	再
-栽培	VERB	栽培
-化	NOUN	化
-さ	AUX	為る
-れ	AUX	れる
-て	SCONJ	て
-い	VERB	居る
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-オオバコ: 車前草 | オオバコ
-}
-
-Expected: {
-この	DET	此の
-映画	NOUN	映画
-は	ADP	は
-、	PUNCT	、
-ヘロイン	NOUN	ヘロイン
-に	ADP	に
-溺れ	VERB	溺れる
-て	SCONJ	て
-人生	NOUN	人生
-と	ADP	と
-キャリア	NOUN	キャリア
-を	ADP	を
-台無し	NOUN	台無し
-に	ADP	に
-し	VERB	為る
-、	PUNCT	、
-人生	NOUN	人生
-の	ADP	の
-下り坂	NOUN	下り坂
-を	ADP	を
-経験	VERB	経験
-し	AUX	為る
-、	PUNCT	、
-エイズ	NOUN	ａｉｄｓ
-に	ADP	に
-よる	VERB	因る
-死	NOUN	死
-に	ADP	に
-至っ	VERB	至る
-た	AUX	た
-1980	NUM	1980
-年	NOUN	年
-代	NOUN	代
-半ば	NOUN	半ば
-頃	NOUN	頃
-の	ADP	の
-キャランジ	PROPN	キャランジ
-を	ADP	を
-描い	VERB	描く
-て	SCONJ	て
-いる	VERB	居る
-。	PUNCT	。
-}
-Predicted: {
-この	DET	此の
-映画	NOUN	映画
-は	ADP	は
-、	PUNCT	、
-ヘロイン	NOUN	ヘロイン
-に	ADP	に
-溺れ	VERB	溺れ
-て	SCONJ	て
-人生	NOUN	人生
-と	ADP	と
-キャリア	NOUN	キャリア
-を	ADP	を
-台無し	NOUN	台無し
-に	ADP	に
-し	VERB	為る
-、	PUNCT	、
-人生	NOUN	人生
-の	ADP	の
-下り坂	NOUN	下り坂
-を	ADP	を
-経験	VERB	経験
-し	AUX	為る
-、	PUNCT	、
-エイズ	NOUN	エイズ
-に	ADP	に
-よる	VERB	因る
-死	NOUN	死
-に	ADP	に
-至っ	VERB	至る
-た	AUX	た
-1980	NUM	1980
-年	NOUN	年
-代	NOUN	代
-半ば	NOUN	半ば
-頃	NOUN	頃
-の	ADP	の
-キャランジ	PROPN	キャランジ
-を	ADP	を
-描い	VERB	描く
-て	SCONJ	て
-いる	VERB	居る
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-溺れ: 溺れる | 溺れ
-エイズ: ａｉｄｓ | エイズ
-}
-
-Expected: {
-主題	NOUN	主題
-に	ADP	に
-関し	VERB	関する
-て	SCONJ	て
-は	ADP	は
-、	PUNCT	、
-ジャスミン	PROPN	ジャスミン
-は	ADP	は
-市民	NOUN	市民
-権	NOUN	権
-、	PUNCT	、
-人種	NOUN	人種
-間	NOUN	間
-の	ADP	の
-寛容	NOUN	寛容
-さ	PART	さ
-、	PUNCT	、
-社会	NOUN	社会
-階級	NOUN	階級
-だけ	ADP	だけ
-で	AUX	だ
-なく	ADJ	無い
-、	PUNCT	、
-人生	NOUN	人生
-、	PUNCT	、
-自由	NOUN	自由
-、	PUNCT	、
-幸福	NOUN	幸福
-の	ADP	の
-追及	NOUN	追及
-を	ADP	を
-表す	VERB	表わす
-代	NOUN	代
-名詞	NOUN	名詞
-と	ADP	と
-なっ	VERB	成る
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-主題	NOUN	主題
-に	ADP	に
-関し	VERB	関する
-て	SCONJ	て
-は	ADP	は
-、	PUNCT	、
-ジャスミン	PROPN	ジャスミン
-は	ADP	は
-市民	NOUN	市民
-権	NOUN	権
-、	PUNCT	、
-人種	NOUN	人種
-間	NOUN	間
-の	ADP	の
-寛容	NOUN	寛容
-さ	PART	為る
-、	PUNCT	、
-社会	NOUN	社会
-階級	NOUN	階級
-だけ	ADP	だけ
-で	AUX	だ
-なく	ADJ	無い
-、	PUNCT	、
-人生	NOUN	人生
-、	PUNCT	、
-自由	NOUN	自由
-、	PUNCT	、
-幸福	NOUN	幸福
-の	ADP	の
-追及	NOUN	追及
-を	ADP	を
-表す	VERB	表わす
-代	NOUN	代
-名詞	NOUN	名詞
-と	ADP	と
-なっ	VERB	成る
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-さ: さ | 為る
-}
-
-Expected: {
-これ	PRON	此れ
-ら	NOUN	等
-2	NUM	2
-枚	NOUN	枚
-は	ADP	は
-、	PUNCT	、
-1998	NUM	1998
-年	NOUN	年
-没	NOUN	没
-の	ADP	の
-ヒュー	PROPN	ヒュー
-・	SYM	・
-マーフィー	PROPN	マーフィー
-と	ADP	と
-組ん	VERB	組む
-で	SCONJ	て
-ラファティ	PROPN	ラファティ
-が	ADP	が
-制作	VERB	制作
-し	AUX	為る
-た	AUX	た
-最後	NOUN	最後
-の	ADP	の
-アルバム	NOUN	アルバム
-と	ADP	と
-なっ	VERB	成る
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-これ	PRON	此れ
-ら	NOUN	等
-2	NUM	2
-枚	NOUN	枚
-は	ADP	は
-、	PUNCT	、
-1998	NUM	1998
-年	NOUN	年
-没	NOUN	没
-の	ADP	の
-ヒュー	PROPN	ヒュ
-・	SYM	・
-マーフィー	PROPN	マーフィー
-と	ADP	と
-組ん	VERB	組む
-で	SCONJ	て
-ラファティ	PROPN	ラファティ
-が	ADP	が
-制作	VERB	制作
-し	AUX	為る
-た	AUX	た
-最後	NOUN	最後
-の	ADP	の
-アルバム	NOUN	アルバム
-と	ADP	と
-なっ	VERB	成る
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-ヒュー: ヒュー | ヒュ
-}
-
-Expected: {
-5	NUM	5
-月	NOUN	月
-、	PUNCT	、
-国境	NOUN	国境
-検問	NOUN	検問
-所	NOUN	所
-を	ADP	を
-経	VERB	経る
-ず	AUX	ず
-に	ADP	に
-国境	NOUN	国境
-を	ADP	を
-越え	VERB	越える
-て	SCONJ	て
-チェコスロヴァキア	PROPN	チェコスロヴァキア
-に	ADP	に
-入ろう	VERB	入る
-と	ADP	と
-し	VERB	為る
-て	SCONJ	て
-い	VERB	居る
-た	AUX	た
-2	NUM	2
-名	NOUN	名
-の	ADP	の
-ズデーテン	PROPN	ズデーテン
-地方	NOUN	地方
-の	ADP	の
-ドイツ	PROPN	ドイツ
-人	NOUN	人
-農民	NOUN	農民
-を	ADP	を
-、	PUNCT	、
-チェコ	PROPN	チェコ
-国境	NOUN	国境
-警備	NOUN	警備
-員	NOUN	員
-が	ADP	が
-銃撃	VERB	銃撃
-し	AUX	為る
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-5	NUM	5
-月	NOUN	月
-、	PUNCT	、
-国境	NOUN	国境
-検問	NOUN	検問
-所	NOUN	所
-を	ADP	を
-経	VERB	経る
-ず	AUX	ず
-に	ADP	に
-国境	NOUN	国境
-を	ADP	を
-越え	VERB	越ゆ
-て	SCONJ	て
-チェコスロヴァキア	PROPN	チェコスロヴァキア
-に	ADP	に
-入ろう	VERB	入る
-と	ADP	と
-し	VERB	為る
-て	SCONJ	て
-い	VERB	居る
-た	AUX	た
-2	NUM	2
-名	NOUN	名
-の	ADP	の
-ズデーテン	PROPN	ズデーテン
-地方	NOUN	地方
-の	ADP	の
-ドイツ	PROPN	ドイツ
-人	NOUN	人
-農民	NOUN	農民
-を	ADP	を
-、	PUNCT	、
-チェコ	PROPN	チェコ
-国境	NOUN	国境
-警備	NOUN	警備
-員	NOUN	員
-が	ADP	が
-銃撃	VERB	銃撃
-し	AUX	為る
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-越え: 越える | 越ゆ
-}
-
-Expected: {
-彼	PRON	彼
-は	ADP	は
-回復	VERB	回復
-し	AUX	為る
-て	SCONJ	て
-4	NUM	4
-月	NOUN	月
-11	NUM	11
-日	NOUN	日
-に	ADP	に
-退院	VERB	退院
-し	AUX	為る
-、	PUNCT	、
-暗殺	NOUN	暗殺
-未遂	NOUN	未遂
-に	ADP	に
-よる	VERB	因る
-銃撃	NOUN	銃撃
-後	NOUN	後
-も	ADP	も
-生き残っ	VERB	生き残る
-た	AUX	た
-最初	NOUN	最初
-の	ADP	の
-現役	NOUN	現役
-の	ADP	の
-米国	PROPN	米国
-大統領	NOUN	大統領
-と	ADP	と
-なっ	VERB	成る
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-彼	PRON	彼
-は	ADP	は
-回復	VERB	回復
-し	AUX	為る
-て	SCONJ	て
-4	NUM	4
-月	NOUN	月
-11	NUM	11
-日	NOUN	日
-に	ADP	に
-退院	VERB	退院
-し	AUX	為る
-、	PUNCT	、
-暗殺	NOUN	暗殺
-未遂	NOUN	未遂
-に	ADP	に
-よる	VERB	因る
-銃撃	NOUN	銃撃
-後	NOUN	後
-も	ADP	も
-生き残っ	VERB	生き残っ
-た	AUX	た
-最初	NOUN	最初
-の	ADP	の
-現役	NOUN	現役
-の	ADP	の
-米国	PROPN	米国
-大統領	NOUN	大統領
-と	ADP	と
-なっ	VERB	成る
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-生き残っ: 生き残る | 生き残っ
-}
-
-Expected: {
-デビッド	NOUN	デビッド
-カード	NOUN	カード
-データ	NOUN	データ
-の	ADP	の
-助け	NOUN	助け
-に	ADP	に
-より	VERB	因る
-、	PUNCT	、
-essen	PROPN	essen
-警察	NOUN	警察
-は	ADP	は
-退職	NOUN	退職
-者	NOUN	者
-が	ADP	が
-銀行	NOUN	銀行
-で	ADP	で
-死ん	VERB	死ぬ
-だ	AUX	た
-時	NOUN	時
-、	PUNCT	、
-付近	NOUN	付近
-に	ADP	に
-い	VERB	居る
-た	AUX	た
-4	NUM	4
-人	NOUN	人
-を	ADP	を
-捜査	VERB	捜査
-し	AUX	為る
-て	SCONJ	て
-いる	VERB	居る
-。	PUNCT	。
-}
-Predicted: {
-デビッド	NOUN	デビッド
-カード	NOUN	カード
-データ	NOUN	データ
-の	ADP	の
-助け	NOUN	助け
-に	ADP	に
-より	VERB	因る
-、	PUNCT	、
-essen	PROPN	essen
-警察	NOUN	警察
-は	ADP	は
-退職	NOUN	退職
-者	NOUN	者
-が	ADP	が
-銀行	NOUN	銀行
-で	ADP	で
-死ん	VERB	死ぬ
-だ	AUX	だ
-時	NOUN	時
-、	PUNCT	、
-付近	NOUN	付近
-に	ADP	に
-い	VERB	居る
-た	AUX	た
-4	NUM	4
-人	NOUN	人
-を	ADP	を
-捜査	VERB	捜査
-し	AUX	為る
-て	SCONJ	て
-いる	VERB	居る
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-だ: た | だ
-}
-
-Expected: {
-スマート	ADJ	スマート
-フォン	NOUN	フォーン
-世代	NOUN	世代
-は	ADP	は
-、	PUNCT	、
-最良	NOUN	最良
-の	ADP	の
-ケース	NOUN	ケース
-の	ADP	の
-シナリオ	NOUN	シナリオ
-で	AUX	だ
-ある	VERB	有る
-が	SCONJ	が
-、	PUNCT	、
-最も	ADV	最も
-馬鹿馬鹿しい	ADJ	馬鹿馬鹿しい
-状況	NOUN	状況
-で	ADP	で
-も	ADP	も
-何百	NUM	何百
-万	NUM	万
-も	ADP	も
-の	ADP	の
-ユーザー	NOUN	ユーザー
-を	ADP	を
-獲得	VERB	獲得
-できる	AUX	出来る
-、	PUNCT	、
-この	DET	此の
-世代	NOUN	世代
-に	ADP	に
-相応しい	ADJ	相応しい
-アプリ	NOUN	アプリ
-を	ADP	を
-受け取っ	VERB	受け取る
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-スマート	ADJ	スマート
-フォン	NOUN	フォン
-世代	NOUN	世代
-は	ADP	は
-、	PUNCT	、
-最良	NOUN	最良
-の	ADP	の
-ケース	NOUN	ケース
-の	ADP	の
-シナリオ	NOUN	シナリオ
-で	AUX	だ
-ある	VERB	有る
-が	SCONJ	が
-、	PUNCT	、
-最も	ADV	最も
-馬鹿馬鹿しい	ADJ	馬鹿馬鹿しい
-状況	NOUN	状況
-で	ADP	で
-も	ADP	も
-何百	NUM	何百
-万	NUM	万
-も	ADP	も
-の	ADP	の
-ユーザー	NOUN	ユーザー
-を	ADP	を
-獲得	VERB	獲得
-できる	AUX	出来る
-、	PUNCT	、
-この	DET	此の
-世代	NOUN	世代
-に	ADP	に
-相応しい	ADJ	相応しい
-アプリ	NOUN	アプリ
-を	ADP	を
-受け取っ	VERB	受け取る
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-フォン: フォーン | フォン
-}
-
-Expected: {
-ローマ	PROPN	ローマ
-トレ	NOUN	トレス
-大学	NOUN	大学
-の	ADP	の
-学生	NOUN	学生
-4	NUM	4
-人	NOUN	人
-は	ADP	は
-、	PUNCT	、
-運転	NOUN	運転
-者	NOUN	者
-の	ADP	の
-行動	NOUN	行動
-の	ADP	の
-予測	NOUN	予測
-を	ADP	を
-手伝う	VERB	手伝う
-こと	NOUN	事
-で	ADP	で
-「	PUNCT	「
-思考	NOUN	思考
-を	ADP	を
-読む	VERB	読む
-」	PUNCT	」
-こと	NOUN	事
-が	ADP	が
-できる	AUX	出来る
-、	PUNCT	、
-オートバイ	NOUN	オートバイ
-ヘルメット	NOUN	ヘルメット
-を	ADP	を
-開発	VERB	開発
-し	AUX	為る
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-ローマ	PROPN	ローマ
-トレ	NOUN	トレ
-大学	NOUN	大学
-の	ADP	の
-学生	NOUN	学生
-4	NUM	4
-人	NOUN	人
-は	ADP	は
-、	PUNCT	、
-運転	NOUN	運転
-者	NOUN	者
-の	ADP	の
-行動	NOUN	行動
-の	ADP	の
-予測	NOUN	予測
-を	ADP	を
-手伝う	VERB	手伝う
-こと	NOUN	事
-で	ADP	で
-「	PUNCT	「
-思考	NOUN	思考
-を	ADP	を
-読む	VERB	読む
-」	PUNCT	」
-こと	NOUN	事
-が	ADP	が
-できる	AUX	出来る
-、	PUNCT	、
-オートバイ	NOUN	オートバイ
-ヘルメット	NOUN	ヘルメット
-を	ADP	を
-開発	VERB	開発
-し	AUX	為る
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-トレ: トレス | トレ
-}
-
-Expected: {
-彼	PRON	彼
-ら	NOUN	等
-の	ADP	の
-多く	NOUN	多く
-の	ADP	の
-コラボレーション	NOUN	コラボレーション
-の	ADP	の
-間	NOUN	間
-に	ADP	に
-、	PUNCT	、
-後	NOUN	後
-に	ADP	に
-二人	NOUN	二人
-の	ADP	の
-アーティスト	NOUN	アーチスト
-の	ADP	の
-スタイル	NOUN	スタイル
-を	ADP	を
-特徴	NOUN	特徴
-付ける	VERB	付ける
-構成	NOUN	構成
-に	ADP	に
-おい	VERB	於く
-て	SCONJ	て
-、	PUNCT	、
-二人	NOUN	二人
-の	ADP	の
-うち	NOUN	内
-誰	PRON	誰
-が	ADP	が
-スタイル	NOUN	スタイル
-上	NOUN	上
-の	ADP	の
-一部	NOUN	一部
-の	ADP	の
-ソリューション	NOUN	ソリューション
-を	ADP	を
-考え	VERB	考える
-た	AUX	た
+午後	NOUN	午後
+見る	VERB	見る
 の	SCONJ	の
-か	PART	か
+に	ADP	に
+ふさわしい	ADJ	相応しい
+よう	AUX	様
+あつらえ	VERB	誂える
+られ	AUX	られる
+た	AUX	た
+人懐っこく	ADJ	人懐っこい
+、	PUNCT	、
+控えめ	ADJ	控えめ
+な	AUX	だ
+心	NOUN	心
+温まる	VERB	温まる
+作品	NOUN	作品
+と	ADP	と
+なっ	VERB	成る
+ている	AUX	ている
+。	PUNCT	。
+}
+Predicted: {
+1つ	NUM	1つ
+の	ADP	の
+レベル	NOUN	レベル
+で	ADP	で
 は	ADP	は
 、	PUNCT	、
+日曜日	NOUN	日曜日
+の	ADP	の
+午後	NOUN	午後
+見る	VERB	見る
+の	SCONJ	の
+に	ADP	に
+ふさわしい	ADJ	相応しい
+よう	AUX	様
+あつらえ	VERB	誂える
+られ	AUX	られる
+た	AUX	た
+人懐っこく	ADJ	人懐っこく
+、	PUNCT	、
+控えめ	ADJ	控えめ
+な	AUX	だ
+心	NOUN	心
+温まる	VERB	温まる
+作品	NOUN	作品
+と	ADP	と
+なっ	VERB	成る
+ている	AUX	ている
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+人懐っこく: 人懐っこい | 人懐っこく
+}
+
+Expected: {
+映画	NOUN	映画
+が	ADP	が
 明らか	ADJ	明らか
 に	AUX	だ
-なっ	VERB	成る
-て	SCONJ	て
-い	VERB	居る
-ない	AUX	ない
+し	VERB	する
+ている	AUX	ている
+よう	AUX	様
+に	AUX	だ
+、	PUNCT	、
+ラビング夫妻	NOUN	ラビング夫妻
+、	PUNCT	、
+特に	ADV	特に
+リチャード	PROPN	リチャード
+が	ADP	が
+顕著	ADJ	顕著
+だ	AUX	だ
+が	SCONJ	が
+、	PUNCT	、
+は	ADP	は
+歴史	NOUN	歴史
+に	ADP	に
+は	ADP	は
+あまり	ADV	余り
+関わり	VERB	関わる
+たく	AUX	たい
+なかっ	ADJ	無い
+た	AUX	た
+のである	AUX	のである
 。	PUNCT	。
 }
 Predicted: {
+映画	NOUN	映画
+が	ADP	が
+明らか	ADJ	明らか
+に	AUX	だ
+し	VERB	為る
+ている	AUX	ている
+よう	AUX	様
+に	AUX	だ
+、	PUNCT	、
+ラビング夫妻	NOUN	ラビング夫妻
+、	PUNCT	、
+特に	ADV	特に
+リチャード	PROPN	リチャード
+が	ADP	が
+顕著	ADJ	顕著
+だ	AUX	だ
+が	SCONJ	が
+、	PUNCT	、
+は	ADP	は
+歴史	NOUN	歴史
+に	ADP	に
+は	ADP	は
+あまり	ADV	余り
+関わり	VERB	関わる
+たく	AUX	たい
+なかっ	ADJ	無い
+た	AUX	た
+のである	AUX	のである
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+し: する | 為る
+}
+
+Expected: {
 彼	PRON	彼
-ら	NOUN	等
-の	ADP	の
-多く	NOUN	多く
-の	ADP	の
-コラボレーション	NOUN	コラボレーション
-の	ADP	の
-間	NOUN	間
-に	ADP	に
-、	PUNCT	、
-後	NOUN	後
-に	ADP	に
-二人	NOUN	二人
-の	ADP	の
-アーティスト	NOUN	アーチスト
-の	ADP	の
-スタイル	NOUN	スタイル
-を	ADP	を
-特徴	NOUN	特徴
-付ける	VERB	付ける
-構成	NOUN	構成
-に	ADP	に
-おい	VERB	於く
-て	SCONJ	て
-、	PUNCT	、
-二人	NOUN	二人
-の	ADP	の
+は	ADP	は
 うち	NOUN	家
-誰	PRON	誰
-が	ADP	が
-スタイル	NOUN	スタイル
-上	NOUN	上
 の	ADP	の
-一部	NOUN	一部
-の	ADP	の
-ソリューション	NOUN	ソリューション
+納屋	NOUN	納屋
+に	ADP	に
+現れ続け	VERB	現われ続ける
+て	SCONJ	て
+、	PUNCT	、
+私	PRON	私
+は	ADP	は
+やつ	NOUN	奴
+に	ADP	に
+、	PUNCT	、
+間違いなく	ADJ	間違い無い
+売りとばさ	VERB	売り飛ばす
+れ	AUX	れる
+たく	AUX	たい
+ない	ADJ	無い
+んだろう	AUX	のだ
+ね	PART	ね
+、	PUNCT	、
+と	ADP	と
+ジョーク	NOUN	ジョーク
 を	ADP	を
-考え	VERB	考える
+言っ	VERB	言う
 た	AUX	た
+。	PUNCT	。
+}
+Predicted: {
+彼	PRON	彼
+は	ADP	は
+うち	NOUN	家
+の	ADP	の
+納屋	NOUN	納屋
+に	ADP	に
+現れ続け	VERB	現れ続ける
+て	SCONJ	て
+、	PUNCT	、
+私	PRON	私
+は	ADP	は
+やつ	NOUN	奴
+に	ADP	に
+、	PUNCT	、
+間違いなく	ADJ	間違い無い
+売りとばさ	VERB	売り飛ばす
+れ	AUX	れる
+たく	AUX	たい
+ない	ADJ	無い
+んだろう	AUX	んだろう
+ね	PART	ね
+、	PUNCT	、
+と	ADP	と
+ジョーク	NOUN	ジョーク
+を	ADP	を
+言っ	VERB	言う
+た	AUX	た
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+現れ続け: 現われ続ける | 現れ続ける
+んだろう: のだ | んだろう
+}
+
+Expected: {
+建築家	NOUN	建築家
+は	ADP	は
+故人	NOUN	故人
+を	ADP	を
+助ける	VERB	助ける
+ことはない	AUX	ことはない
+が	SCONJ	が
+、	PUNCT	、
+生き	VERB	生きる
+ている	AUX	ている
+者たち	NOUN	者達
+の	ADP	の
+中	NOUN	中
+で	ADP	で
+の	ADP	の
+思い出	NOUN	思い出
+を	ADP	を
+生き生き	ADV	生き生き
+と	ADP	と
+保つ	VERB	持つ
 の	SCONJ	の
-か	PART	か
-は	ADP	は
-、	PUNCT	、
-明らか	ADJ	明らか
-に	AUX	だ
-なっ	VERB	成る
-て	SCONJ	て
-い	VERB	居る
-ない	AUX	ない
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-うち: 内 | 家
-}
-
-Expected: {
-新た	ADJ	新た
-な	AUX	だ
-支出	NOUN	支出
-は	ADP	は
-クリントン	PROPN	クリントン
-の	ADP	の
-巨大	ADJ	巨大
-な	AUX	だ
-銀行口座	NOUN	銀行口座
-によって	ADP	によって
-充填さ	VERB	充填する
-れ	AUX	れる
-ている	AUX	ている
-。	PUNCT	。
-}
-Predicted: {
-新た	ADJ	新た
-な	AUX	だ
-支出	NOUN	支出
-は	ADP	は
-クリントン	PROPN	クリントン
-の	ADP	の
-巨大	ADJ	巨大
-な	AUX	だ
-銀行口座	NOUN	銀行口座
-によって	ADP	によって
-充填さ	VERB	充填さ
-れ	AUX	れる
-ている	AUX	ている
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-充填さ: 充填する | 充填さ
-}
-
-Expected: {
-実現可能性調査	NOUN	実現可能性調査
-は	ADP	は
-、	PUNCT	、
-ゴンドラ	NOUN	ゴンドラ
-で	ADP	で
-ポトマック川	PROPN	ポトマック川
 を	ADP	を
-横断する	VERB	横断する
-に	ADP	に
-は	ADP	は
-約4分	NUM	約4分
-かかる	VERB	罹る
-だろう	AUX	だ
+助ける	VERB	助ける
+、	PUNCT	、
 と	ADP	と
-予測し	VERB	予測する
-ている	AUX	ている
-。	PUNCT	。
-}
-Predicted: {
-実現可能性調査	NOUN	実現可能性調査
-は	ADP	は
-、	PUNCT	、
-ゴンドラ	NOUN	ゴンドラ
-で	ADP	で
-ポトマック川	PROPN	ポトマック川
-を	ADP	を
-横断する	VERB	横断する
-に	ADP	に
-は	ADP	は
-約4分	NUM	約4分
-かかる	VERB	掛かる
-だろう	AUX	だ
-と	ADP	と
-予測し	VERB	予測する
-ている	AUX	ている
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-かかる: 罹る | 掛かる
-}
-
-Expected: {
-最初	NOUN	最初
-に	ADP	に
-ヤジディ	PROPN	ヤジディ
-の	ADP	の
-女性	NOUN	女性
-の	ADP	の
-1人	NOUN	1人
-が	ADP	が
-、	PUNCT	、
-それから	CCONJ	其れから
-彼女	PRON	彼女
-の	ADP	の
-友人	NOUN	友人
-の	ADP	の
-1人	NOUN	1人
-が	ADP	が
-泣き始め	VERB	泣き始める
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-最初	NOUN	最初
-に	ADP	に
-ヤジディ	PROPN	ヤジディ
-の	ADP	の
-女性	NOUN	女性
-の	ADP	の
-1人	NOUN	一人
-が	ADP	が
-、	PUNCT	、
-それから	CCONJ	其れから
-彼女	PRON	彼女
-の	ADP	の
-友人	NOUN	友人
-の	ADP	の
-1人	NOUN	一人
-が	ADP	が
-泣き始め	VERB	泣き始める
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-1人: 1人 | 一人
-1人: 1人 | 一人
-}
-
-Expected: {
-しかし	CCONJ	然し
-、	PUNCT	、
-ba	PROPN	ba
-および	CCONJ	及び
-iag	PROPN	iag
-が	ADP	が
-それ	PRON	其れ
-に	ADP	に
-ひび	NOUN	皹
-を	ADP	を
-入れ	VERB	入れる
-た	AUX	た
-から	SCONJ	から
-か	PART	か
-、	PUNCT	、
-何	PRON	何
-か	ADP	か
-漠然	ADJ	漠然
-と	ADP	と
-し	VERB	する
-た	AUX	た
-信頼性	NOUN	信頼性
-を	ADP	を
-提供する	VERB	提供する
-ことができ	AUX	ことができる
-ている	AUX	ている
-。	PUNCT	。
-}
-Predicted: {
-しかし	CCONJ	然し
-、	PUNCT	、
-ba	PROPN	ba
-および	CCONJ	及び
-iag	PROPN	iag
-が	ADP	が
-それ	PRON	其れ
-に	ADP	に
-ひび	NOUN	皹
-を	ADP	を
-入れ	VERB	入れる
-た	AUX	た
-から	SCONJ	から
-か	PART	か
-、	PUNCT	、
-何	PRON	何
-か	ADP	か
-漠然	ADJ	漠然
-と	ADP	と
-し	VERB	為る
-た	AUX	た
-信頼性	NOUN	信頼性
-を	ADP	を
-提供する	VERB	提供する
-ことができ	AUX	ことができる
-ている	AUX	ている
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-し: する | 為る
-}
-
-Expected: {
-研究者たち	NOUN	研究者達
-は	ADP	は
-約20年	NUM	約20年
-、	PUNCT	、
-男性ホルモン避妊薬	NOUN	男性ホルモン避妊薬
-の	ADP	の
-可能性	NOUN	可能性
-を	ADP	を
-調査し	VERB	調査する
-てき	AUX	てくる
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-研究者たち	NOUN	研究者たち
-は	ADP	は
-約20年	NUM	約20年
-、	PUNCT	、
-男性ホルモン避妊薬	NOUN	男性ホルモン避妊薬
-の	ADP	の
-可能性	NOUN	可能性
-を	ADP	を
-調査し	VERB	調査する
-てき	AUX	てくる
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-研究者たち: 研究者達 | 研究者たち
-}
-
-Expected: {
-今朝	NOUN	今朝
-の	ADP	の
-写真	NOUN	写真
-の	ADP	の
-公開	NOUN	公開
-にもかかわらず	SCONJ	にも関わらず
-、	PUNCT	、
-アボッツフォード高校	PROPN	アボッツフォード高校
-で	ADP	で
-十代	NUM	十代
-の	ADP	の
-女の子	NOUN	女の子
-を	ADP	を
-刺殺し	VERB	刺殺する
-た	AUX	た
-かど	NOUN	角
-で	ADP	で
-起訴さ	VERB	起訴する
-れ	AUX	れる
-た	AUX	た
-、	PUNCT	、
-ホームレス	NOUN	ホームレス
-と	ADP	と
-思しき	ADJ	思し
-男	NOUN	男
-について	ADP	について
-、	PUNCT	、
-b.c.警察	NOUN	b.c.警察
-は	ADP	は
-答え	NOUN	答える
-より	ADP	より
-も	ADP	も
-多く	NOUN	多く
-の	ADP	の
-疑問	NOUN	疑問
-が	ADP	が
-ある	VERB	有る
-と	ADP	と
-述べ	VERB	述べる
-ている	AUX	ている
-。	PUNCT	。
-}
-Predicted: {
-今朝	NOUN	今朝
-の	ADP	の
-写真	NOUN	写真
-の	ADP	の
-公開	NOUN	公開
-にもかかわらず	SCONJ	にも関わらず
-、	PUNCT	、
-アボッツフォード高校	PROPN	アボッツフォード高校
-で	ADP	で
-十代	NUM	十代
-の	ADP	の
-女の子	NOUN	女の子
-を	ADP	を
-刺殺し	VERB	刺殺し
-た	AUX	た
-かど	NOUN	廉
-で	ADP	で
-起訴さ	VERB	起訴する
-れ	AUX	れる
-た	AUX	た
-、	PUNCT	、
-ホームレス	NOUN	ホームレス
-と	ADP	と
-思しき	ADJ	思しい
-男	NOUN	男
-について	ADP	について
-、	PUNCT	、
-b.c.警察	NOUN	b.c.警察
-は	ADP	は
-答え	NOUN	答え
-より	ADP	より
-も	ADP	も
-多く	NOUN	多く
-の	ADP	の
-疑問	NOUN	疑問
-が	ADP	が
-ある	VERB	有る
-と	ADP	と
-述べ	VERB	述べる
-ている	AUX	ている
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-刺殺し: 刺殺する | 刺殺し
-かど: 角 | 廉
-思しき: 思し | 思しい
-答え: 答える | 答え
-}
-
-Expected: {
-一方	CCONJ	一方
-、	PUNCT	、
-クリントン	PROPN	クリントン
-と	ADP	と
-その	DET	其の
-サポーター	NOUN	サポーター
-は	ADP	は
-、	PUNCT	、
-女性	NOUN	女性
-や	ADP	や
-マイノリティ	NOUN	マイノリティ
-について	ADP	について
-の	ADP	の
-中傷コメント	NOUN	中傷コメント
-、	PUNCT	、
-および	CCONJ	及び
-トランプ	PROPN	トランプ
-の	ADP	の
-気質	NOUN	気質
-が	ADP	が
-大統領ポスト	NOUN	大統領ポスト
-に	ADP	に
-適さ	VERB	適す
-ない	AUX	ない
-という	ADP	という
-点	NOUN	点
-で	ADP	で
 彼	PRON	彼
-に	ADP	に
-、	PUNCT	、
-スポットライト	NOUN	スポットライト
-を	ADP	を
-当て続ける	VERB	当て続ける
-方法	NOUN	方法
-を	ADP	を
-探し	VERB	探す
-ている	AUX	ている
-。	PUNCT	。
-}
-Predicted: {
-一方	CCONJ	一方
-、	PUNCT	、
-クリントン	PROPN	クリントン
-と	ADP	と
-その	DET	其の
-サポーター	NOUN	サポーター
-は	ADP	は
-、	PUNCT	、
-女性	NOUN	女性
-や	ADP	や
-マイノリティ	NOUN	マイノリティ
-について	ADP	について
-の	ADP	の
-中傷コメント	NOUN	中傷コメント
-、	PUNCT	、
-および	CCONJ	及び
-トランプ	PROPN	トランプ
-の	ADP	の
-気質	NOUN	気質
-が	ADP	が
-大統領ポスト	NOUN	大統領ポスト
-に	ADP	に
-適さ	VERB	適する
-ない	AUX	ない
-という	ADP	という
-点	NOUN	点
-で	ADP	で
-彼	PRON	彼
-に	ADP	に
-、	PUNCT	、
-スポットライト	NOUN	スポットライト
-を	ADP	を
-当て続ける	VERB	当て続ける
-方法	NOUN	方法
-を	ADP	を
-探し	VERB	探す
-ている	AUX	ている
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-適さ: 適す | 適する
-}
-
-Expected: {
-連邦政府	NOUN	連邦政府
-は	ADP	は
-各部門	NOUN	各部門
-に対して	ADP	に対して
-の	ADP	の
-業績給	NOUN	業績給
-と	ADP	と
-賞与レベル	NOUN	賞与レベル
-を	ADP	を
-集約し	VERB	集約する
-、	PUNCT	、
-積極的	ADJ	積極的
-に	AUX	だ
-報告し	VERB	報告する
-ている	AUX	ている
-が	SCONJ	が
-、	PUNCT	、
-最新	NOUN	最新
-の	ADP	の
-ウェブ掲載	NOUN	ウェブ掲載
-は	ADP	は
-2013年	NUM	2013年
-から	ADP	から
-2014年	NUM	2014年
-に	ADP	に
-かけ	VERB	駆ける
-て	SCONJ	て
-の	ADP	の
-もの	NOUN	物
-であり	AUX	である
-、	PUNCT	、
-2年	NUM	2年
-遅れ	VERB	遅れる
-ている	AUX	ている
-。	PUNCT	。
-}
-Predicted: {
-連邦政府	NOUN	連邦政府
-は	ADP	は
-各部門	NOUN	各部門
-に対して	ADP	に対して
-の	ADP	の
-業績給	NOUN	業績給
-と	ADP	と
-賞与レベル	NOUN	賞与レベル
-を	ADP	を
-集約し	VERB	集約し
-、	PUNCT	、
-積極的	ADJ	積極的
-に	AUX	だ
-報告し	VERB	報告する
-ている	AUX	ている
-が	SCONJ	が
-、	PUNCT	、
-最新	NOUN	最新
-の	ADP	の
-ウェブ掲載	NOUN	ウェブ掲載
-は	ADP	は
-2013年	NUM	2013年
-から	ADP	から
-2014年	NUM	2014年
-に	ADP	に
-かけ	VERB	掛ける
-て	SCONJ	て
-の	ADP	の
-もの	NOUN	物
-であり	AUX	である
-、	PUNCT	、
-2年	NUM	2年
-遅れ	VERB	遅れる
-ている	AUX	ている
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-集約し: 集約する | 集約し
-かけ: 駆ける | 掛ける
-}
-
-Expected: {
-これら	PRON	此れ等
-の	ADP	の
-推定	NOUN	推定
-は	ADP	は
-、	PUNCT	、
-完了時	NOUN	完了時
-に	ADP	に
-レンタル市場	NOUN	レンタル市場
-へ	ADP	へ
-と	ADP	と
-参入する	VERB	参入する
-新規	ADJ	新規
-の	ADP	の
-コンドミニアム	NOUN	コンドミニアム
-の	ADP	の
-割合	NOUN	割合
-と	ADP	と
-合致し	VERB	合致する
-ており	AUX	ておる
-、	PUNCT	、
-gta	PROPN	gta
-の	ADP	の
-住宅市場	NOUN	住宅市場
-における	ADP	における
-（	PUNCT	（
-国内	NOUN	国内
-）	PUNCT	）
-投資家	NOUN	投資家
-の	ADP	の
-重要	ADJ	重要
-な	AUX	だ
-役割	NOUN	役割
-を	ADP	を
-示唆し	VERB	示唆する
-ている	AUX	ている
-。	PUNCT	。
-}
-Predicted: {
-これら	PRON	此れ等
-の	ADP	の
-推定	NOUN	推定
-は	ADP	は
-、	PUNCT	、
-完了時	NOUN	完了時
-に	ADP	に
-レンタル市場	NOUN	レンタル市場
-へ	ADP	へ
-と	ADP	と
-参入する	VERB	参入する
-新規	ADJ	新規
-の	ADP	の
-コンドミニアム	NOUN	コンドミニアム
-の	ADP	の
-割合	NOUN	割合
-と	ADP	と
-合致し	VERB	合致し
-ており	AUX	ておる
-、	PUNCT	、
-gta	PROPN	gta
-の	ADP	の
-住宅市場	NOUN	住宅市場
-における	ADP	における
-（	PUNCT	（
-国内	NOUN	国内
-）	PUNCT	）
-投資家	NOUN	投資家
-の	ADP	の
-重要	ADJ	重要
-な	AUX	だ
-役割	NOUN	役割
-を	ADP	を
-示唆し	VERB	示唆する
-ている	AUX	ている
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-合致し: 合致する | 合致し
-}
-
-Expected: {
-彼	PRON	彼
-は	ADP	は
-彼女	PRON	彼女
-を	ADP	を
-、	PUNCT	、
-彼女	PRON	彼女
-の	ADP	の
-物語	NOUN	物語
-で	AUX	だ
-、	PUNCT	、
-文学	NOUN	文学
-の	ADP	の
-世界	NOUN	世界
-に	ADP	に
-礎	NOUN	礎
-を	ADP	を
-残し	VERB	残す
-た	AUX	た
-「	PUNCT	「
-素晴らしい	ADJ	素晴らしい
-」	PUNCT	」
-「	PUNCT	「
-愛す	VERB	愛す
-べき	AUX	べし
-最高	ADJ	最高
-の	ADP	の
-」	PUNCT	」
-女性	NOUN	女性
-と	ADP	と
-称し	VERB	称する
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-彼	PRON	彼
-は	ADP	は
-彼女	PRON	彼女
-を	ADP	を
-、	PUNCT	、
-彼女	PRON	彼女
-の	ADP	の
-物語	NOUN	物語
-で	AUX	だ
-、	PUNCT	、
-文学	NOUN	文学
-の	ADP	の
-世界	NOUN	世界
-に	ADP	に
-礎	NOUN	礎
-を	ADP	を
-残し	VERB	残す
-た	AUX	た
-「	PUNCT	「
-素晴らしい	ADJ	素晴らしい
-」	PUNCT	」
-「	PUNCT	「
-愛す	VERB	愛する
-べき	AUX	べし
-最高	ADJ	最高
-の	ADP	の
-」	PUNCT	」
-女性	NOUN	女性
-と	ADP	と
-称し	VERB	称する
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-愛す: 愛す | 愛する
-}
-
-Expected: {
-世界	NOUN	世界
-の	ADP	の
-最良	NOUN	最良
-の	ADP	の
-状態	NOUN	状態
-が	ADP	が
-もはや	ADV	最早
-是認さ	VERB	是認する
-れ	AUX	れる
-てい	AUX	ている
-ない	AUX	ない
-時分	NOUN	時分
-に	ADP	に
-、	PUNCT	、
-彼ら	PRON	彼等
-の	ADP	の
-聖職者たち	NOUN	聖職者達
-は	ADP	は
-自身	NOUN	自身
-の	ADP	の
-マント	NOUN	マント
-に対して	ADP	に対して
-正しかっ	ADJ	正しい
-た	AUX	た
-か	PART	か
-？	PUNCT	？
-}
-Predicted: {
-世界	NOUN	世界
-の	ADP	の
-最良	NOUN	最良
-の	ADP	の
-状態	NOUN	状態
-が	ADP	が
-もはや	ADV	最早
-是認さ	VERB	是認さ
-れ	AUX	れる
-てい	AUX	ている
-ない	AUX	ない
-時分	NOUN	時分
-に	ADP	に
-、	PUNCT	、
-彼ら	PRON	彼等
-の	ADP	の
-聖職者たち	NOUN	聖職者たち
-は	ADP	は
-自身	NOUN	自身
-の	ADP	の
-マント	NOUN	マント
-に対して	ADP	に対して
-正しかっ	ADJ	正しい
-た	AUX	た
-か	PART	か
-？	PUNCT	？
-}
-Errors: {
-Tok: Ref | Pred
----------------
-是認さ: 是認する | 是認さ
-聖職者たち: 聖職者達 | 聖職者たち
-}
-
-Expected: {
-「	PUNCT	「
-より	ADV	より
-多く	NOUN	多く
-の	ADP	の
-人	NOUN	人
-が	ADP	が
-クレジット	NOUN	クレジット
-を	ADP	を
-使う	VERB	使う
-よう	AUX	様
-に	AUX	だ
-なっ	VERB	成る
-てき	AUX	てくる
-ている	AUX	ている
-が	SCONJ	が
-、	PUNCT	、
-その	DET	其の
-借り入れ	NOUN	借り入れ
-は	ADP	は
-今	NOUN	今
-の	ADP	の
-ところ	NOUN	所
-は	ADP	は
-管理可能	ADJ	管理可能
-かもしれない	AUX	かもしれない
-とは言え	SCONJ	とはいえ
-、	PUNCT	、
-状況	NOUN	状況
-の	ADP	の
-突然	ADV	行成
-の	ADP	の
-変化	NOUN	変化
-が	ADP	が
-債務問題	NOUN	債務問題
-を	ADP	を
-引き起こす	VERB	引き起こす
-可能性	NOUN	可能性
-が	ADP	が
-ある	VERB	有る
-。	PUNCT	。
-」	PUNCT	」
-}
-Predicted: {
-「	PUNCT	「
-より	ADV	より
-多く	NOUN	多く
-の	ADP	の
-人	NOUN	人
-が	ADP	が
-クレジット	NOUN	クレジット
-を	ADP	を
-使う	VERB	使う
-よう	AUX	様
-に	AUX	だ
-なっ	VERB	成る
-てき	AUX	てくる
-ている	AUX	ている
-が	SCONJ	が
-、	PUNCT	、
-その	DET	其の
-借り入れ	NOUN	借り入れ
-は	ADP	は
-今	NOUN	今
-の	ADP	の
-ところ	NOUN	所
-は	ADP	は
-管理可能	ADJ	管理可能
-かもしれない	AUX	かもしれない
-とは言え	SCONJ	とは言え
-、	PUNCT	、
-状況	NOUN	状況
-の	ADP	の
-突然	ADV	突然
-の	ADP	の
-変化	NOUN	変化
-が	ADP	が
-債務問題	NOUN	債務問題
-を	ADP	を
-引き起こす	VERB	引き起こす
-可能性	NOUN	可能性
-が	ADP	が
-ある	VERB	有る
-。	PUNCT	。
-」	PUNCT	」
-}
-Errors: {
-Tok: Ref | Pred
----------------
-とは言え: とはいえ | とは言え
-突然: 行成 | 突然
-}
-
-Expected: {
-世界	NOUN	世界
-は	ADP	は
-腹立たしく	ADJ	腹立たしい
-不合理	NOUN	不合理
-である	AUX	である
-かもしれない	AUX	かもしれない
-が	SCONJ	が
-、	PUNCT	、
-しかし	CCONJ	然し
-それでも	CCONJ	其れでも
-誰	PRON	誰
-か	ADP	か
-が	ADP	が
-その	DET	其の
-事実	NOUN	事実
-に対して	ADP	に対して
-抗議	NOUN	抗議
-を	ADP	を
-し続ける	VERB	し続ける
-自尊心	NOUN	自尊心
-を	ADP	を
-持っ	VERB	持つ
-ている	AUX	ている
-のである	AUX	のである
-。	PUNCT	。
-}
-Predicted: {
-世界	NOUN	世界
-は	ADP	は
-腹立たしく	ADJ	腹立たしく
-不合理	NOUN	不合理
-である	AUX	である
-かもしれない	AUX	かもしれない
-が	SCONJ	が
-、	PUNCT	、
-しかし	CCONJ	然し
-それでも	CCONJ	其れでも
-誰	PRON	誰
-か	ADP	か
-が	ADP	が
-その	DET	其の
-事実	NOUN	事実
-に対して	ADP	に対して
-抗議	NOUN	抗議
-を	ADP	を
-し続ける	VERB	し続ける
-自尊心	NOUN	自尊心
-を	ADP	を
-持っ	VERB	持つ
-ている	AUX	ている
-のである	AUX	のである
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-腹立たしく: 腹立たしい | 腹立たしく
-}
-
-Expected: {
-ウィントー自身	NOUN	ウィントー自身
-も	ADP	も
-しばし	ADV	暫し
-現れ	VERB	現われる
-、	PUNCT	、
-インタビュー	NOUN	インタビュー
-の	ADP	の
-前	NOUN	前
-に	ADP	に
-彼女	PRON	彼女
-は	ADP	は
-サングラス	NOUN	サングラス
-を	ADP	を
-かけ	VERB	駆ける
-て	SCONJ	て
-撮影さ	VERB	撮影する
-れ	AUX	れる
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-ウィントー自身	NOUN	ウィントー自身
-も	ADP	も
-しばし	ADV	暫し
-現れ	VERB	現われる
-、	PUNCT	、
-インタビュー	NOUN	インタビュー
-の	ADP	の
-前	NOUN	前
-に	ADP	に
-彼女	PRON	彼女
-は	ADP	は
-サングラス	NOUN	サングラス
-を	ADP	を
-かけ	VERB	掛ける
-て	SCONJ	て
-撮影さ	VERB	撮影さ
-れ	AUX	れる
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-かけ: 駆ける | 掛ける
-撮影さ: 撮影する | 撮影さ
-}
-
-Expected: {
-提案さ	VERB	提案する
-れ	AUX	れる
-た	AUX	た
-制限なし	NOUN	制限無し
-で	ADP	で
-は	ADP	は
-「	PUNCT	「
-ケルト海	PROPN	ケルト海
-の	ADP	の
-タラ	NOUN	鱈
-は	ADP	は
-死滅する	VERB	死滅する
-可能性	NOUN	可能性
-が	ADP	が
-ある	VERB	有る
-」	PUNCT	」
-、	PUNCT	、
-と	ADP	と
-ある	DET	或る
-eu当局者	NOUN	eu当局者
 は	ADP	は
 言う	VERB	言う
 。	PUNCT	。
 }
 Predicted: {
-提案さ	VERB	提案する
-れ	AUX	れる
-た	AUX	た
-制限なし	NOUN	制限なし
-で	ADP	で
+建築家	NOUN	建築家
 は	ADP	は
-「	PUNCT	「
-ケルト海	PROPN	ケルト海
+故人	NOUN	故人
+を	ADP	を
+助ける	VERB	助ける
+ことはない	AUX	ことはない
+が	SCONJ	が
+、	PUNCT	、
+生き	VERB	生きる
+ている	AUX	ている
+者たち	NOUN	者達
 の	ADP	の
-タラ	NOUN	鱈
-は	ADP	は
-死滅する	VERB	死滅する
-可能性	NOUN	可能性
-が	ADP	が
-ある	VERB	有る
-」	PUNCT	」
+中	NOUN	中
+で	ADP	で
+の	ADP	の
+思い出	NOUN	思い出
+を	ADP	を
+生き生き	ADV	生き生き
+と	ADP	と
+保つ	VERB	保つ
+の	SCONJ	の
+を	ADP	を
+助ける	VERB	助ける
 、	PUNCT	、
 と	ADP	と
-ある	DET	或る
-eu当局者	NOUN	eu当局者
+彼	PRON	彼
 は	ADP	は
 言う	VERB	言う
 。	PUNCT	。
@@ -37408,338 +33340,307 @@ eu当局者	NOUN	eu当局者
 Errors: {
 Tok: Ref | Pred
 ---------------
-制限なし: 制限無し | 制限なし
+保つ: 持つ | 保つ
 }
 
 Expected: {
-平均的	ADJ	平均的
-な	AUX	だ
-運勢	NOUN	運勢
+アケメネス朝	NOUN	アケメネス朝
 の	ADP	の
-投資家	NOUN	投資家
+部隊	NOUN	部隊
 は	ADP	は
 、	PUNCT	、
-債券	NOUN	債券
-10,000ポンド	NUM	一ゼロ，ゼロゼロゼロポンド
+ギリシャ	PROPN	ギリシャ
 の	ADP	の
-場合	NOUN	場合
-、	PUNCT	、
-1年ごと	NOUN	1年ごと
-に	ADP	に
-125ポンド	NUM	125ポンド
-を	ADP	を
-受け取れる	VERB	受け取れる
-と	ADP	と
-予想さ	VERB	予想する
-れる	AUX	れる
-。	PUNCT	。
-}
-Predicted: {
-平均的	ADJ	平均的
-な	AUX	だ
-運勢	NOUN	運勢
-の	ADP	の
-投資家	NOUN	投資家
-は	ADP	は
-、	PUNCT	、
-債券	NOUN	債券
-10,000ポンド	NUM	10,000ポンド
-の	ADP	の
-場合	NOUN	場合
-、	PUNCT	、
-1年ごと	NOUN	1年ごと
-に	ADP	に
-125ポンド	NUM	125ポンド
-を	ADP	を
-受け取れる	VERB	受け取る
-と	ADP	と
-予想さ	VERB	予想する
-れる	AUX	れる
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-10,000ポンド: 一ゼロ，ゼロゼロゼロポンド | 10,000ポンド
-受け取れる: 受け取れる | 受け取る
-}
-
-Expected: {
-nhs	PROPN	nhs
-が	ADP	が
-目下	ADV	目下
-「	PUNCT	「
-巨大	ADJ	巨大
-な	AUX	だ
-圧力	NOUN	圧力
-」	PUNCT	」
-の	ADP	の
-元	NOUN	元
-に	ADP	に
-あっ	VERB	有る
-た	AUX	た
-、	PUNCT	、
-という	ADP	という
-こと	NOUN	事
-を	ADP	を
-警告する	VERB	警告する
-こと	NOUN	事
-によって	ADP	によって
-、	PUNCT	、
-彼	PRON	彼
-は	ADP	は
-民衆	NOUN	民衆
-に	ADP	に
-自分自身	NOUN	自分自身
-の	ADP	の
-健康	NOUN	健康
-に	ADP	に
-は	ADP	は
-さらなる	ADJ	更なる
-責任	NOUN	責任
-を	ADP	を
-負う	VERB	負う
-よう	AUX	様
-力説し	VERB	力説する
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-nhs	PROPN	nhs
-が	ADP	が
-目下	ADV	目下
-「	PUNCT	「
-巨大	ADJ	巨大
-な	AUX	だ
-圧力	NOUN	圧力
-」	PUNCT	」
-の	ADP	の
-元	NOUN	元
-に	ADP	に
-あっ	VERB	有る
-た	AUX	た
-、	PUNCT	、
-という	ADP	という
-こと	NOUN	事
-を	ADP	を
-警告する	VERB	警告する
-こと	NOUN	事
-によって	ADP	によって
-、	PUNCT	、
-彼	PRON	彼
-は	ADP	は
-民衆	NOUN	民衆
-に	ADP	に
-自分自身	NOUN	自分自身
-の	ADP	の
-健康	NOUN	健康
-に	ADP	に
-は	ADP	は
-さらなる	ADJ	更なる
-責任	NOUN	責任
-を	ADP	を
-負う	VERB	負う
-よう	AUX	様
-力説し	VERB	力説しる
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-力説し: 力説する | 力説しる
-}
-
-Expected: {
-私以外	NOUN	私以外
-の	ADP	の
-すべて	NOUN	全て
-の	ADP	の
-医療チーム	NOUN	医療チーム
-が	ADP	が
-武装し	VERB	武装する
-てい	AUX	ている
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-私以外	NOUN	私以外
-の	ADP	の
-すべて	NOUN	全て
-の	ADP	の
-医療チーム	NOUN	医療チーム
-が	ADP	が
-武装し	VERB	武装し
-てい	AUX	ている
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-武装し: 武装する | 武装し
-}
-
-Expected: {
-投資家	NOUN	投資家
-は	ADP	は
-、	PUNCT	、
-一番	ADV	一番
-の	ADP	の
-衝撃	NOUN	衝撃
-を	ADP	を
-受け	VERB	受ける
-て	SCONJ	て
-、	PUNCT	、
-米債	NOUN	米債
+沿岸都市	NOUN	沿岸都市
+である	AUX	である
+トラキア	PROPN	トラキア
 や	ADP	や
-オーストラリア債	NOUN	オーストラリア債
-と	ADP	と
-共	NOUN	共
-に	ADP	に
 、	PUNCT	、
-国債	NOUN	国債
+パオニア人達	NOUN	パイオニア人達
 を	ADP	を
-売り払っ	VERB	売り払う
-ている	AUX	ている
+征服し	VERB	征服する
+まし	AUX	ます
+た	AUX	た
 。	PUNCT	。
 }
 Predicted: {
-投資家	NOUN	投資家
+アケメネス朝	NOUN	アケメネス朝
+の	ADP	の
+部隊	NOUN	部隊
 は	ADP	は
 、	PUNCT	、
-一番	ADV	一番
+ギリシャ	PROPN	ギリシャ
 の	ADP	の
-衝撃	NOUN	衝撃
-を	ADP	を
-受け	VERB	受ける
-て	SCONJ	て
-、	PUNCT	、
-米債	NOUN	米債
+沿岸都市	NOUN	沿岸都市
+である	AUX	である
+トラキア	PROPN	トラキア
 や	ADP	や
-オーストラリア債	NOUN	オーストラリア債
-と	ADP	と
-共	NOUN	共
-に	ADP	に
 、	PUNCT	、
-国債	NOUN	国債
+パオニア人達	NOUN	パオニア人達
 を	ADP	を
-売り払っ	VERB	売り払っ
-ている	AUX	ている
+征服し	VERB	征服する
+まし	AUX	ます
+た	AUX	た
 。	PUNCT	。
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
-売り払っ: 売り払う | 売り払っ
+パオニア人達: パイオニア人達 | パオニア人達
 }
 
 Expected: {
-ノーマン	PROPN	ノーマン
-は	ADP	は
-私	PRON	私
+また	CCONJ	又
+スウェーデン	PROPN	スウェーデン
 の	ADP	の
-良い	ADJ	良い
-相棒	NOUN	相棒
-の	ADP	の
-1人	NOUN	1人
-な	AUX	だ
-ので	AUX	のだ
+メアンキエリ語	NOUN	メアンキエリ語
+（	PUNCT	（
+meänkieli	NOUN	meänkieli
+）	PUNCT	）
 、	PUNCT	、
-その	DET	其の
-感情	NOUN	感情
+ノルウェー	PROPN	ノルウェー
 の	ADP	の
-状態	NOUN	状態
-の	ADP	の
-彼	PRON	彼
-を	ADP	を
-見	VERB	見る
-て	SCONJ	て
-完全	ADJ	完全
+クヴェン語	NOUN	クベン語
+（	PUNCT	（
+kven	NOUN	kven
+）	PUNCT	）
+として	ADP	として
+知ら	VERB	知る
+れ	AUX	れる
+ている	AUX	ている
+、	PUNCT	、
+フィンランド語	NOUN	フィンランド語
+から	ADP	から
+別々	ADJ	別々
 に	AUX	だ
-引きこま	VERB	引き込む
-れる	AUX	れる
+派生し	VERB	派生する
+た	AUX	た
+言語	NOUN	言語
+も	ADP	も
+あり	VERB	有る
+ます	AUX	ます
 。	PUNCT	。
 }
 Predicted: {
-ノーマン	PROPN	ノーマン
-は	ADP	は
-私	PRON	私
+また	CCONJ	又
+スウェーデン	PROPN	スウェーデン
 の	ADP	の
-良い	ADJ	良い
-相棒	NOUN	相棒
-の	ADP	の
-1人	NOUN	一人
-な	AUX	だ
-ので	AUX	のだ
+メアンキエリ語	NOUN	メアンキエリ語
+（	PUNCT	（
+meänkieli	NOUN	meänkieli
+）	PUNCT	）
 、	PUNCT	、
-その	DET	其の
-感情	NOUN	感情
+ノルウェー	PROPN	ノルウェー
 の	ADP	の
-状態	NOUN	状態
-の	ADP	の
-彼	PRON	彼
-を	ADP	を
-見	VERB	見る
-て	SCONJ	て
-完全	ADJ	完全
+クヴェン語	NOUN	クヴェン語
+（	PUNCT	（
+kven	NOUN	kven
+）	PUNCT	）
+として	ADP	として
+知ら	VERB	知る
+れ	AUX	れる
+ている	AUX	ている
+、	PUNCT	、
+フィンランド語	NOUN	フィンランド語
+から	ADP	から
+別々	ADJ	別々
 に	AUX	だ
-引きこま	VERB	引き込む
-れる	AUX	れる
+派生し	VERB	派生し
+た	AUX	た
+言語	NOUN	言語
+も	ADP	も
+あり	VERB	有る
+ます	AUX	ます
 。	PUNCT	。
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
-1人: 1人 | 一人
+クヴェン語: クベン語 | クヴェン語
+派生し: 派生する | 派生し
 }
 
 Expected: {
-最高	ADJ	最高
+最悪	ADJ	最悪
 の	ADP	の
-テニス	NOUN	テニス
-で	ADP	で
-ワンセットオール	NOUN	ワンセットオール
-で	ADP	で
-対戦	NOUN	対戦
-を	ADP	を
-余儀なく	ADJ	余儀無い
+児童労働形態	NOUN	児童労働形態
+に関して	ADP	に関して
+労働調査省	PROPN	労働調査省
+は	ADP	は
+、	PUNCT	、
+5歳	NUM	5歳
+から	ADP	から
+14歳	NUM	14歳
+の	ADP	の
+子供	NOUN	子供
+の	ADP	の
+56％	NUM	56％
+が	ADP	が
+就労し	VERB	就労する
+ており	AUX	ておる
+、	PUNCT	、
+また	CCONJ	又
+7歳	NUM	7歳
+から	ADP	から
+14歳	NUM	14歳
+の	ADP	の
+子供	NOUN	子供
+の	ADP	の
+約53％	NUM	約53％
+が	ADP	が
+就労し	VERB	就労する
+ながら	SCONJ	ながら
+学校	NOUN	学校
+に	ADP	に
+通っ	VERB	通う
+ている	AUX	ている
+、	PUNCT	、
+と	ADP	と
+報告し	VERB	報告する
+た	AUX	た
+。	PUNCT	。
+}
+Predicted: {
+最悪	ADJ	最悪
+の	ADP	の
+児童労働形態	NOUN	児童労働形態
+に関して	ADP	に関して
+労働調査省	PROPN	労働調査省
+は	ADP	は
+、	PUNCT	、
+5歳	NUM	5歳
+から	ADP	から
+14歳	NUM	14歳
+の	ADP	の
+子供	NOUN	子供
+の	ADP	の
+56％	NUM	56％
+が	ADP	が
+就労し	VERB	就労し
+ており	AUX	ておる
+、	PUNCT	、
+また	CCONJ	又
+7歳	NUM	7歳
+から	ADP	から
+14歳	NUM	14歳
+の	ADP	の
+子供	NOUN	子供
+の	ADP	の
+約53％	NUM	約53％
+が	ADP	が
+就労し	VERB	就労し
+ながら	SCONJ	ながら
+学校	NOUN	学校
+に	ADP	に
+通っ	VERB	通う
+ている	AUX	ている
+、	PUNCT	、
+と	ADP	と
+報告し	VERB	報告する
+た	AUX	た
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+就労し: 就労する | 就労し
+就労し: 就労する | 就労し
+}
+
+Expected: {
+1492年	NUM	1492年
+の	ADP	の
+クリストファー・コロンブス	PROPN	クリストファー・コロンブス
+による	ADP	による
+アメリカ大陸発見後	ADV	アメリカ大陸発見後
+、	PUNCT	、
+スペイン語	NOUN	スペイン語
+の	ADP	の
+「	PUNCT	「
+アンティリャス	PROPN	アンティリャス
+」	PUNCT	」
+という	ADP	という
+言葉	NOUN	言葉
+が	ADP	が
+その	DET	其の
+土地	NOUN	土地
+の	ADP	の
+名前	NOUN	名前
+と	ADP	と
 さ	VERB	する
 れ	AUX	れる
-た	AUX	た
 、	PUNCT	、
-イスナー	PROPN	イスナー
-も	ADP	も
-また	ADV	又
+この	DET	此の
+こと	NOUN	事
+から	ADP	から
+「	PUNCT	「
+シー・オブ・ジ・アンティレス	NOUN	シー・オブ・ジ・アンティレス
+」	PUNCT	」
+は	ADP	は
 、	PUNCT	、
-賛辞	NOUN	賛辞
+様々	ADJ	様々
+な	AUX	だ
+ヨーロッパ言語	NOUN	ヨーロッパ言語
+で	ADP	で
+「	PUNCT	「
+カリブ海	PROPN	カリブ海
+」	PUNCT	」
 を	ADP	を
-送っ	VERB	送る
-ている	AUX	ている
+示す	VERB	示す
+共通	ADJ	共通
+の	ADP	の
+言葉	NOUN	言葉
+に	ADP	に
+なっ	VERB	成る
+た	AUX	た
 。	PUNCT	。
 }
 Predicted: {
-最高	ADJ	最高
+1492年	NUM	1492年
 の	ADP	の
-テニス	NOUN	テニス
-で	ADP	で
-ワンセットオール	NOUN	ワンセットオール
-で	ADP	で
-対戦	NOUN	対戦
-を	ADP	を
-余儀なく	ADJ	余儀無い
+クリストファー・コロンブス	PROPN	クリストファー・コロンブス
+による	ADP	による
+アメリカ大陸発見後	ADV	アメリカ大陸発見後
+、	PUNCT	、
+スペイン語	NOUN	スペイン語
+の	ADP	の
+「	PUNCT	「
+アンティリャス	PROPN	アンティリャス
+」	PUNCT	」
+という	ADP	という
+言葉	NOUN	言葉
+が	ADP	が
+その	DET	其の
+土地	NOUN	土地
+の	ADP	の
+名前	NOUN	名前
+と	ADP	と
 さ	VERB	為る
 れ	AUX	れる
-た	AUX	た
 、	PUNCT	、
-イスナー	PROPN	イスナー
-も	ADP	も
-また	ADV	又
+この	DET	此の
+こと	NOUN	事
+から	ADP	から
+「	PUNCT	「
+シー・オブ・ジ・アンティレス	NOUN	シー・オブ・ジ・アンティレス
+」	PUNCT	」
+は	ADP	は
 、	PUNCT	、
-賛辞	NOUN	賛辞
+様々	ADJ	様々
+な	AUX	だ
+ヨーロッパ言語	NOUN	ヨーロッパ言語
+で	ADP	で
+「	PUNCT	「
+カリブ海	PROPN	カリブ海
+」	PUNCT	」
 を	ADP	を
-送っ	VERB	送る
-ている	AUX	ている
+示す	VERB	示す
+共通	ADJ	共通
+の	ADP	の
+言葉	NOUN	言葉
+に	ADP	に
+なっ	VERB	成る
+た	AUX	た
 。	PUNCT	。
 }
 Errors: {
@@ -37749,1550 +33650,822 @@ Tok: Ref | Pred
 }
 
 Expected: {
-パレード	NOUN	パレード
-の	ADP	の
-創造的	ADJ	創造的
-な	AUX	だ
-ディレクター	NOUN	ディレクター
-の	ADP	の
-1人	NOUN	1人
+確か	ADJ	確か
+に	AUX	だ
 、	PUNCT	、
-アレハンドラ・ゴンザレス・アナヤ	PROPN	アレハンドラ・ゴンザレス・アナヤ
-は	ADP	は
-、	PUNCT	、
-メキシコ	PROPN	メキシコ
+1903年	NUM	1903年
+に	ADP	に
+ジェームス・ヘンリー・ブレステッド	PROPN	ジェームス・ヘンリー・ブレステッド
 が	ADP	が
+発表し	VERB	発表する
+た	AUX	た
+、	PUNCT	、
 この	DET	此の
-よう	NOUN	様
-な	AUX	だ
-ショー	NOUN	ショー
-を	ADP	を
-今	ADV	今
-開催する	VERB	開催する
-と	ADP	と
-決定し	VERB	決定する
-た	AUX	た
-理由	NOUN	理由
-を	ADP	を
-cnn	PROPN	cnn
-に	ADP	に
-説明し	VERB	説明する
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-パレード	NOUN	パレード
+戦争	NOUN	戦争
+に関する	ADP	に関する
+初めて	ADV	初めて
 の	ADP	の
-創造的	ADJ	創造的
-な	AUX	だ
-ディレクター	NOUN	ディレクター
-の	ADP	の
-1人	NOUN	一人
-、	PUNCT	、
-アレハンドラ・ゴンザレス・アナヤ	PROPN	アレハンドラ・ゴンザレス・アナヤ
-は	ADP	は
-、	PUNCT	、
-メキシコ	PROPN	メキシコ
-が	ADP	が
-この	DET	此の
-よう	NOUN	様
-な	AUX	だ
-ショー	NOUN	ショー
-を	ADP	を
-今	ADV	今
-開催する	VERB	開催する
-と	ADP	と
-決定し	VERB	決定する
-た	AUX	た
-理由	NOUN	理由
-を	ADP	を
-cnn	PROPN	cnn
-に	ADP	に
-説明し	VERB	説明する
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-1人: 1人 | 一人
-}
-
-Expected: {
-彼女	PRON	彼女
-の	ADP	の
-経験	NOUN	経験
-について	ADP	について
-cnnスタイル	NOUN	cnnスタイル
-に	ADP	に
-話	NOUN	話
-を	ADP	を
-し	VERB	する
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-彼女	PRON	彼女
-の	ADP	の
-経験	NOUN	経験
-について	ADP	について
-cnnスタイル	NOUN	cnnスタイル
-に	ADP	に
-話	NOUN	話
-を	ADP	を
-し	VERB	為る
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-し: する | 為る
-}
-
-Expected: {
-1918年	NUM	1918年
-7月	NUM	7月
-に	ADP	に
-は	ADP	は
-、	PUNCT	、
-モナコ支配	NOUN	モナコ支配
-に関して	ADP	に関して
-フランス	PROPN	フランス
-の	ADP	の
-制限付き	NOUN	制限付き
-の	ADP	の
-保護	NOUN	保護
-を	ADP	を
-認める	VERB	認める
-形	NOUN	形
+学術報告	NOUN	学術報告
 で	ADP	で
+は	ADP	は
 、	PUNCT	、
-フランス・モナコ条約	NOUN	フランス・モナコ条約
+この	DET	此の
+戦い	NOUN	戦い
+の	ADP	の
+状況	NOUN	状況
+を	ADP	を
+正確	ADJ	正確
+に	AUX	だ
+再現する	VERB	再現する
+ために	SCONJ	ために
+役立つ	VERB	役立つ
+これら	PRON	此れ等
+の	ADP	の
+資料	NOUN	資料
+を	ADP	を
+称賛し	VERB	称賛する
+ている	AUX	ている
+。	PUNCT	。
+}
+Predicted: {
+確か	ADJ	確か
+に	AUX	だ
+、	PUNCT	、
+1903年	NUM	1903年
+に	ADP	に
+ジェームス・ヘンリー・ブレステッド	PROPN	ジェームス・ヘンリー・ブレステッド
 が	ADP	が
-調印さ	VERB	調印する
+発表し	VERB	発表する
+た	AUX	た
+、	PUNCT	、
+この	DET	此の
+戦争	NOUN	戦争
+に関する	ADP	に関する
+初めて	ADV	初めて
+の	ADP	の
+学術報告	NOUN	学術報告
+で	ADP	で
+は	ADP	は
+、	PUNCT	、
+この	DET	此の
+戦い	NOUN	戦い
+の	ADP	の
+状況	NOUN	状況
+を	ADP	を
+正確	ADJ	正確
+に	AUX	だ
+再現する	VERB	再現する
+ために	SCONJ	ために
+役立つ	VERB	役立つ
+これら	PRON	此れ等
+の	ADP	の
+資料	NOUN	資料
+を	ADP	を
+称賛し	VERB	称賛し
+ている	AUX	ている
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+称賛し: 称賛する | 称賛し
+}
+
+Expected: {
+強制さ	VERB	強制する
 れ	AUX	れる
 た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-1918年	NUM	1918年
-7月	NUM	7月
-に	ADP	に
+洗礼	NOUN	洗礼
 は	ADP	は
+カトリック教会	NOUN	カトリック教会
+の	ADP	の
+法律	NOUN	法律
+に	ADP	に
+反し	VERB	反する
+てい	AUX	ている
+た	AUX	た
+ので	AUX	のだ
 、	PUNCT	、
-モナコ支配	NOUN	モナコ支配
-に関して	ADP	に関して
-フランス	PROPN	フランス
-の	ADP	の
-制限付き	NOUN	制限付き
-の	ADP	の
-保護	NOUN	保護
+理論上	ADV	理論上
+、	PUNCT	、
+強制的	ADJ	強制的
+に	AUX	だ
+洗礼	NOUN	洗礼
 を	ADP	を
-認める	VERB	認める
-形	NOUN	形
-で	ADP	で
-、	PUNCT	、
-フランス・モナコ条約	NOUN	フランス・モナコ条約
-が	ADP	が
-調印さ	VERB	調印さ
+施さ	VERB	施す
 れ	AUX	れる
 た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-調印さ: 調印する | 調印さ
-}
-
-Expected: {
-気候	NOUN	気候
-や	ADP	や
-地質	NOUN	地質
-、	PUNCT	、
-海	NOUN	海
-へ	ADP	へ
-の	ADP	の
-アクセス	NOUN	アクセス
-を	ADP	を
-共有し	VERB	共有する
-ている	AUX	ている
-こと	NOUN	事
-から	ADP	から
-、	PUNCT	、
-地中海	PROPN	地中海
-を	ADP	を
-中心	NOUN	中心
-と	ADP	と
-し	VERB	する
-た	AUX	た
-文化	NOUN	文化
+人	NOUN	人
 は	ADP	は
-、	PUNCT	、
-複数	NOUN	複数
-の	ADP	の
-文化	NOUN	文化
-や	ADP	や
-歴史	NOUN	歴史
-が	ADP	が
-交差し	VERB	交差する
-ている	AUX	ている
-傾向	NOUN	傾向
-が	ADP	が
-あり	VERB	有る
-まし	AUX	ます
+誰	PRON	誰
+で	ADP	で
+も	ADP	も
+法律上	ADV	法律上
+ユダヤ教	NOUN	ユダヤ教
+に	ADP	に
+戻る	VERB	戻る
+ことができ	AUX	ことができる
 た	AUX	た
 。	PUNCT	。
 }
 Predicted: {
-気候	NOUN	気候
-や	ADP	や
-地質	NOUN	地質
-、	PUNCT	、
-海	NOUN	海
-へ	ADP	へ
-の	ADP	の
-アクセス	NOUN	アクセス
-を	ADP	を
-共有し	VERB	共有する
-ている	AUX	ている
-こと	NOUN	事
-から	ADP	から
-、	PUNCT	、
-地中海	PROPN	地中海
-を	ADP	を
-中心	NOUN	中心
-と	ADP	と
-し	VERB	為る
+強制さ	VERB	強制さ
+れ	AUX	れる
 た	AUX	た
-文化	NOUN	文化
+洗礼	NOUN	洗礼
 は	ADP	は
-、	PUNCT	、
-複数	NOUN	複数
+カトリック教会	NOUN	カトリック教会
 の	ADP	の
-文化	NOUN	文化
-や	ADP	や
-歴史	NOUN	歴史
-が	ADP	が
-交差し	VERB	交差し
-ている	AUX	ている
-傾向	NOUN	傾向
-が	ADP	が
-あり	VERB	有る
-まし	AUX	ます
+法律	NOUN	法律
+に	ADP	に
+反し	VERB	反する
+てい	AUX	ている
 た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-し: する | 為る
-交差し: 交差する | 交差し
-}
-
-Expected: {
-この	DET	此の
-マグマ	NOUN	マグマ
-は	ADP	は
+ので	AUX	のだ
 、	PUNCT	、
-高い	ADJ	高い
-ケイ酸含量	NOUN	珪酸含量
-による	ADP	による
-非常	ADJ	非常
+理論上	ADV	理論上
+、	PUNCT	、
+強制的	ADJ	強制的
 に	AUX	だ
-粘性	NOUN	粘性
-な	AUX	だ
-傾向	NOUN	傾向
-が	ADP	が
-ある	VERB	有る
-ため	NOUN	為
-、	PUNCT	、
-山	NOUN	山
-の	ADP	の
-表面	NOUN	表面
-まで	ADP	まで
-到達せ	VERB	到達する
-ず	AUX	ず
-に	ADP	に
-、	PUNCT	、
-深い	ADJ	深い
-場所	NOUN	場所
-で	ADP	で
-冷える	VERB	冷える
-。	PUNCT	。
-}
-Predicted: {
-この	DET	此の
-マグマ	NOUN	マグマ
+洗礼	NOUN	洗礼
+を	ADP	を
+施さ	VERB	施す
+れ	AUX	れる
+た	AUX	た
+人	NOUN	人
 は	ADP	は
-、	PUNCT	、
-高い	ADJ	高い
-ケイ酸含量	NOUN	ケイ酸含量
-による	ADP	による
-非常	ADJ	非常
-に	AUX	だ
-粘性	NOUN	粘性
-な	AUX	だ
-傾向	NOUN	傾向
-が	ADP	が
-ある	VERB	有る
-ため	NOUN	為
-、	PUNCT	、
-山	NOUN	山
-の	ADP	の
-表面	NOUN	表面
-まで	ADP	まで
-到達せ	VERB	到達せ
-ず	AUX	ず
-に	ADP	に
-、	PUNCT	、
-深い	ADJ	深い
-場所	NOUN	場所
+誰	PRON	誰
 で	ADP	で
-冷える	VERB	冷える
+も	ADP	も
+法律上	ADV	法律上
+ユダヤ教	NOUN	ユダヤ教
+に	ADP	に
+戻る	VERB	戻る
+ことができ	AUX	ことができる
+た	AUX	た
 。	PUNCT	。
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
-ケイ酸含量: 珪酸含量 | ケイ酸含量
-到達せ: 到達する | 到達せ
+強制さ: 強制する | 強制さ
 }
 
 Expected: {
-雷雨	NOUN	雷雨
-に	ADP	に
-なる	VERB	成る
-こと	NOUN	事
+ロシア皇帝	NOUN	ロシア皇帝
 は	ADP	は
-少なく	ADJ	少ない
 、	PUNCT	、
-都市	NOUN	都市
+第一次世界大戦以前	NOUN	第一次世界大戦以前
+に	ADP	に
+あっ	VERB	有る
+て	SCONJ	て
+、	PUNCT	、
+不統一	NOUN	不統一
 の	ADP	の
-報告	NOUN	報告
-によると	ADP	によると
-1年	NUM	1年
+重要	ADJ	重要
+な	AUX	だ
+きざし	NOUN	兆し
+を	ADP	を
+見せ	VERB	見せる
+た	AUX	た
+多様	ADJ	多様
+な	AUX	だ
+民族性	NOUN	民族性
 の	ADP	の
-間	NOUN	間
-で	ADP	で
-たった	ADV	たった
-7日	NUM	7日
-ほど	ADP	ほど
-しか	ADP	しか
-あり	VERB	有る
-ませ	AUX	ます
-ん	AUX	ず
+集積	NOUN	集積
+であっ	AUX	である
+た	AUX	た
 。	PUNCT	。
 }
 Predicted: {
-雷雨	NOUN	雷雨
-に	ADP	に
-なる	VERB	成る
-こと	NOUN	事
+ロシア皇帝	NOUN	ロシア皇帝
 は	ADP	は
-少なく	ADJ	少ない
 、	PUNCT	、
-都市	NOUN	都市
+第一次世界大戦以前	NOUN	第一次世界大戦以前
+に	ADP	に
+あっ	VERB	有る
+て	SCONJ	て
+、	PUNCT	、
+不統一	NOUN	不統一
 の	ADP	の
-報告	NOUN	報告
-によると	ADP	によると
-1年	NUM	1年
+重要	ADJ	重要
+な	AUX	だ
+きざし	NOUN	きざし
+を	ADP	を
+見せ	VERB	見せる
+た	AUX	た
+多様	ADJ	多様
+な	AUX	だ
+民族性	NOUN	民族性
 の	ADP	の
-間	NOUN	間
-で	ADP	で
-たった	ADV	唯
-7日	NUM	7日
-ほど	ADP	ほど
-しか	ADP	しか
-あり	VERB	有る
-ませ	AUX	ます
-ん	AUX	ず
+集積	NOUN	集積
+であっ	AUX	である
+た	AUX	た
 。	PUNCT	。
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
-たった: たった | 唯
+きざし: 兆し | きざし
 }
 
 Expected: {
-当時	ADV	当時
-、	PUNCT	、
-ヘロデ	PROPN	ヘロデ
-が	ADP	が
-エルサレム	PROPN	エルサレム
-に	ADP	に
-い	VERB	居る
-た	AUX	た
-と	ADP	と
-する	VERB	する
-と	SCONJ	と
-、	PUNCT	、
-ピラト	PROPN	ピラト
+古典学	NOUN	古典学
 は	ADP	は
-イエス	PROPN	イエス
+道徳教育	NOUN	道徳教育
+や	ADP	や
+人間	NOUN	人間
+の	ADP	の
+行動	NOUN	行動
+の	ADP	の
+広範	ADJ	広範
+な	AUX	だ
+理解	NOUN	理解
 を	ADP	を
-ヘロデ	PROPN	ヘロデ
-に	ADP	に
-送り	VERB	送る
-、	PUNCT	、
-試練	NOUN	試練
-を	ADP	を
-与える	VERB	与える
-ことにし	AUX	ことにする
-た	AUX	た
+もたらす	VERB	齎す
 と	ADP	と
 考え	VERB	考える
 られ	AUX	られる
-ます	AUX	ます
+てい	AUX	ている
+た	AUX	た
+ため	NOUN	為
+、	PUNCT	、
+ルネッサンス期	NOUN	ルネッサンス期
+の	ADP	の
+教育	NOUN	教育
+は	ADP	は
+、	PUNCT	、
+古代文学	NOUN	古代文学
+と	ADP	と
+歴史	NOUN	歴史
+から	ADP	から
+主	NOUN	主
+として	ADP	として
+成っ	VERB	成る
+た	AUX	た
 。	PUNCT	。
 }
 Predicted: {
-当時	ADV	当時
-、	PUNCT	、
-ヘロデ	PROPN	ヘロデ
-が	ADP	が
-エルサレム	PROPN	エルサレム
-に	ADP	に
-い	VERB	居る
-た	AUX	た
-と	ADP	と
-する	VERB	為る
-と	SCONJ	と
-、	PUNCT	、
-ピラト	PROPN	ピラト
+古典学	NOUN	古典学
 は	ADP	は
-イエス	PROPN	イエス
+道徳教育	NOUN	道徳教育
+や	ADP	や
+人間	NOUN	人間
+の	ADP	の
+行動	NOUN	行動
+の	ADP	の
+広範	ADJ	広範
+な	AUX	だ
+理解	NOUN	理解
 を	ADP	を
-ヘロデ	PROPN	ヘロデ
-に	ADP	に
-送り	VERB	送る
-、	PUNCT	、
-試練	NOUN	試練
-を	ADP	を
-与える	VERB	与える
-ことにし	AUX	ことにする
-た	AUX	た
+もたらす	VERB	齎す
 と	ADP	と
 考え	VERB	考える
 られ	AUX	られる
-ます	AUX	ます
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-する: する | 為る
-}
-
-Expected: {
-さらに	CCONJ	更に
-彼	PRON	彼
-は	ADP	は
-、	PUNCT	、
-東デルタ地域	NOUN	東δ地域
-に	ADP	に
-「	PUNCT	「
-支配者	NOUN	支配者
-の	ADP	の
-壁	NOUN	壁
-」	PUNCT	」
-を	ADP	を
-建設し	VERB	建設する
-、	PUNCT	、
-エジプト	PROPN	エジプト
-と	ADP	と
-アジア間	NOUN	アジア間
-の	ADP	の
-防衛	NOUN	防衛
-の	ADP	の
-強化	NOUN	強化
-に	ADP	に
-努め	VERB	努める
-まし	AUX	ます
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-さらに	CCONJ	更に
-彼	PRON	彼
-は	ADP	は
-、	PUNCT	、
-東デルタ地域	NOUN	東デルタ地域
-に	ADP	に
-「	PUNCT	「
-支配者	NOUN	支配者
-の	ADP	の
-壁	NOUN	壁
-」	PUNCT	」
-を	ADP	を
-建設し	VERB	建設する
-、	PUNCT	、
-エジプト	PROPN	エジプト
-と	ADP	と
-アジア間	NOUN	アジア間
-の	ADP	の
-防衛	NOUN	防衛
-の	ADP	の
-強化	NOUN	強化
-に	ADP	に
-努め	VERB	努める
-まし	AUX	ます
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-東デルタ地域: 東δ地域 | 東デルタ地域
-}
-
-Expected: {
-マケドニア軍	NOUN	マケドニア軍
-は	ADP	は
-ギリシャ	PROPN	ギリシャ
-を	ADP	を
-二分割する	VERB	二分割する
-テルモピレー	PROPN	テルモピレー
-の	ADP	の
-山道	NOUN	山道
-まで	ADP	まで
-進ん	VERB	進む
-だ	AUX	だ
-が	SCONJ	が
-、	PUNCT	、
-そこ	PRON	其処
-は	ADP	は
-アテネ	PROPN	アテネ
-、	PUNCT	、
-スパルタ	PROPN	スパルタ
-、	PUNCT	、
-アカイア	PROPN	アカイア
-の	ADP	の
-同盟軍	NOUN	同盟軍
-により	ADP	により
-固く	ADJ	固い
-守ら	VERB	守る
-れ	AUX	れる
 てい	AUX	ている
 た	AUX	た
 ため	NOUN	為
 、	PUNCT	、
-そこ	PRON	其処
-を	ADP	を
-奪取しよう	VERB	奪取する
-と	ADP	と
+ルネッサンス期	NOUN	ルネッサンス期
+の	ADP	の
+教育	NOUN	教育
 は	ADP	は
-し	VERB	する
-なかっ	AUX	ない
+、	PUNCT	、
+古代文学	NOUN	古代文学
+と	ADP	と
+歴史	NOUN	歴史
+から	ADP	から
+主	NOUN	主
+として	ADP	として
+成っ	VERB	成っ
+た	AUX	た
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+成っ: 成る | 成っ
+}
+
+Expected: {
+t型フォード	NOUN	t型フォード
+は	ADP	は
+、	PUNCT	、
+国際「カー・オブ・ザ・センチュリー」賞	NOUN	国際カー・オブ・ザ・センチュリー賞
+において	ADP	において
+、	PUNCT	、
+20世紀	NOUN	20世紀
+の	ADP	の
+最も	ADV	最も
+影響力	NOUN	影響力
+を	ADP	を
+持っ	VERB	持つ
+た	AUX	た
+車	NOUN	車
+と	ADP	と
+宣言さ	VERB	宣言する
+れ	AUX	れる
 た	AUX	た
 。	PUNCT	。
 }
 Predicted: {
-マケドニア軍	NOUN	マケドニア軍
+t型フォード	NOUN	t型フォード
 は	ADP	は
-ギリシャ	PROPN	ギリシャ
-を	ADP	を
-二分割する	VERB	二分割する
-テルモピレー	PROPN	テルモピレー
+、	PUNCT	、
+国際「カー・オブ・ザ・センチュリー」賞	NOUN	国際「カー・オブ・ザ・センチュリー」賞
+において	ADP	において
+、	PUNCT	、
+20世紀	NOUN	20世紀
 の	ADP	の
-山道	NOUN	山道
-まで	ADP	まで
-進ん	VERB	進む
+最も	ADV	最も
+影響力	NOUN	影響力
+を	ADP	を
+持っ	VERB	持つ
+た	AUX	た
+車	NOUN	車
+と	ADP	と
+宣言さ	VERB	宣言する
+れ	AUX	れる
+た	AUX	た
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+国際「カー・オブ・ザ・センチュリー」賞: 国際カー・オブ・ザ・センチュリー賞 | 国際「カー・オブ・ザ・センチュリー」賞
+}
+
+Expected: {
+英国	PROPN	英国
+の	ADP	の
+騎馬隊	NOUN	騎馬隊
+も	ADP	も
+、	PUNCT	、
+乗馬し	VERB	乗馬する
+た	AUX	た
+まま	NOUN	侭
+で	ADP	で
+の	ADP	の
+素晴らしい	ADJ	素晴らしい
+剣術訓練	NOUN	剣術訓練
+を	ADP	を
+受け	VERB	受ける
+た	AUX	た
+。	PUNCT	。
+}
+Predicted: {
+英国	PROPN	英国
+の	ADP	の
+騎馬隊	NOUN	騎馬隊
+も	ADP	も
+、	PUNCT	、
+乗馬し	VERB	乗馬し
+た	AUX	た
+まま	NOUN	侭
+で	ADP	で
+の	ADP	の
+素晴らしい	ADJ	素晴らしい
+剣術訓練	NOUN	剣術訓練
+を	ADP	を
+受け	VERB	受ける
+た	AUX	た
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+乗馬し: 乗馬する | 乗馬し
+}
+
+Expected: {
+ラマー	PROPN	ラマー
+は	ADP	は
+、	PUNCT	、
+マンドル	PROPN	マンドル
+が	ADP	が
+軍事技術	NOUN	軍事技術
+の	ADP	の
+科学者	NOUN	科学者
+や	ADP	や
+専門家ら	NOUN	専門家等
+と	ADP	と
+協議	NOUN	協議
+を	ADP	を
+行う	VERB	行う
+会議	NOUN	会議
+に	ADP	に
+付き添っ	VERB	付き添う
+て	SCONJ	て
+行っ	VERB	行く
+た	AUX	た
+。	PUNCT	。
+}
+Predicted: {
+ラマー	PROPN	ラマー
+は	ADP	は
+、	PUNCT	、
+マンドル	PROPN	マンドル
+が	ADP	が
+軍事技術	NOUN	軍事技術
+の	ADP	の
+科学者	NOUN	科学者
+や	ADP	や
+専門家ら	NOUN	専門家ら
+と	ADP	と
+協議	NOUN	協議
+を	ADP	を
+行う	VERB	行う
+会議	NOUN	会議
+に	ADP	に
+付き添っ	VERB	付き添う
+て	SCONJ	て
+行っ	VERB	行う
+た	AUX	た
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+専門家ら: 専門家等 | 専門家ら
+行っ: 行く | 行う
+}
+
+Expected: {
+ジョコウィ	PROPN	ジョコウィ
+は	ADP	は
+大統領	NOUN	大統領
+に	ADP	に
+就任する	VERB	就任する
+前	NOUN	前
+に	ADP	に
+、	PUNCT	、
+退任する	VERB	退任する
+ユドヨノ大統領	PROPN	ユドヨノ大統領
+に	ADP	に
+、	PUNCT	、
+補助金	NOUN	補助金
+を	ADP	を
+さらに	ADV	更に
+減額する	VERB	減額する
+こと	NOUN	事
+で	ADP	で
+燃料価格	NOUN	燃料価格
+を	ADP	を
+上昇さ	VERB	上昇する
+せる	AUX	せる
+決定	NOUN	決定
+について	ADP	について
+責任	NOUN	責任
+を	ADP	を
+とる	VERB	取る
+よう	AUX	様
+に	AUX	だ
+求め	VERB	求める
+た	AUX	た
+。	PUNCT	。
+}
+Predicted: {
+ジョコウィ	PROPN	ジョコウィ
+は	ADP	は
+大統領	NOUN	大統領
+に	ADP	に
+就任する	VERB	就任する
+前	NOUN	前
+に	ADP	に
+、	PUNCT	、
+退任する	VERB	退任する
+ユドヨノ大統領	PROPN	ユドヨノ大統領
+に	ADP	に
+、	PUNCT	、
+補助金	NOUN	補助金
+を	ADP	を
+さらに	ADV	更に
+減額する	VERB	減額する
+こと	NOUN	事
+で	ADP	で
+燃料価格	NOUN	燃料価格
+を	ADP	を
+上昇さ	VERB	上昇さ
+せる	AUX	せる
+決定	NOUN	決定
+について	ADP	について
+責任	NOUN	責任
+を	ADP	を
+とる	VERB	取る
+よう	AUX	様
+に	AUX	だ
+求め	VERB	求める
+た	AUX	た
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+上昇さ: 上昇する | 上昇さ
+}
+
+Expected: {
+グラフトン政権	NOUN	グラフトン政権
+は	ADP	は
+1770年	NUM	1770年
+に	ADP	に
+解体し	VERB	解体する
+、	PUNCT	、
+ノース卿	PROPN	ノース卿
+率いる	VERB	率いる
+トーリー党	PROPN	トーリー党
+が	ADP	が
+与党	NOUN	与党
+に	ADP	に
+復帰し	VERB	復帰する
+た	AUX	た
+。	PUNCT	。
+}
+Predicted: {
+グラフトン政権	NOUN	グラフトン政権
+は	ADP	は
+1770年	NUM	1770年
+に	ADP	に
+解体し	VERB	解体し
+、	PUNCT	、
+ノース卿	PROPN	ノース卿
+率いる	VERB	率いる
+トーリー党	PROPN	トーリー党
+が	ADP	が
+与党	NOUN	与党
+に	ADP	に
+復帰し	VERB	復帰する
+た	AUX	た
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+解体し: 解体する | 解体し
+}
+
+Expected: {
+ラファティ	PROPN	ラファティ
+は	ADP	は
+、	PUNCT	、
+1990年代	NOUN	1990年代
+に	ADP	に
+さらに	ADV	更に
+2枚	NUM	2枚
+の	ADP	の
+アルバム	NOUN	アルバム
+を	ADP	を
+リリースし	VERB	リリースする
+、	PUNCT	、
+これ	PRON	此れ
+を	ADP	を
+ミュージシャン	NOUN	ミュージシャン
+の	ADP	の
+トム・ロビンソン	PROPN	トム・ロビンソン
+は	ADP	は
+後	NOUN	後
+に	ADP	に
+「	PUNCT	「
+返り咲き	NOUN	返り咲き
+」	PUNCT	」
+と	ADP	と
+呼ん	VERB	呼ぶ
 だ	AUX	だ
-が	SCONJ	が
-、	PUNCT	、
-そこ	PRON	其処
-は	ADP	は
-アテネ	PROPN	アテネ
-、	PUNCT	、
-スパルタ	PROPN	スパルタ
-、	PUNCT	、
-アカイア	PROPN	アカイア
-の	ADP	の
-同盟軍	NOUN	同盟軍
-により	ADP	により
-固く	ADJ	固く
-守ら	VERB	守る
-れ	AUX	れる
-てい	AUX	ている
-た	AUX	た
-ため	NOUN	為
-、	PUNCT	、
-そこ	PRON	其処
-を	ADP	を
-奪取しよう	VERB	奪取しよう
-と	ADP	と
-は	ADP	は
-し	VERB	為る
-なかっ	AUX	ない
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-固く: 固い | 固く
-奪取しよう: 奪取する | 奪取しよう
-し: する | 為る
-}
-
-Expected: {
-バナナ	NOUN	バナナ
-と	ADP	と
-オオバコ	NOUN	車前草
-は	ADP	は
-、	PUNCT	、
-東南アジア	PROPN	東南アジア
-で	ADP	で
-最初	NOUN	最初
-に	ADP	に
-栽培さ	VERB	栽培する
-れ	AUX	れる
-、	PUNCT	、
-その	DET	其の
-ほとんど	NOUN	殆ど
-が	ADP	が
-パプアニューギニア	PROPN	パプアニューギニア
-だっ	AUX	だ
-た	AUX	た
-が	SCONJ	が
-、	PUNCT	、
-5,000年	NUM	五，ゼロゼロゼロ年
-も	ADP	も
-前	NOUN	前
-に	ADP	に
-は	ADP	は
-おそらく	ADV	恐らく
-アフリカ	PROPN	アフリカ
-で	ADP	で
-も	ADP	も
-再栽培化さ	VERB	再栽培化する
-れ	AUX	れる
-てい	AUX	ている
-た	AUX	た
 。	PUNCT	。
 }
 Predicted: {
-バナナ	NOUN	バナナ
-と	ADP	と
-オオバコ	NOUN	オオバコ
+ラファティ	PROPN	ラファティ
 は	ADP	は
 、	PUNCT	、
-東南アジア	PROPN	東南アジア
-で	ADP	で
-最初	NOUN	最初
+1990年代	NOUN	1990年代
 に	ADP	に
-栽培さ	VERB	栽培さ
-れ	AUX	れる
-、	PUNCT	、
-その	DET	其の
-ほとんど	NOUN	殆ど
-が	ADP	が
-パプアニューギニア	PROPN	パプアニューギニア
-だっ	AUX	だ
-た	AUX	た
-が	SCONJ	が
-、	PUNCT	、
-5,000年	NUM	5,000年
-も	ADP	も
-前	NOUN	前
-に	ADP	に
-は	ADP	は
-おそらく	ADV	恐らく
-アフリカ	PROPN	アフリカ
-で	ADP	で
-も	ADP	も
-再栽培化さ	VERB	再栽培化する
-れ	AUX	れる
-てい	AUX	ている
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-オオバコ: 車前草 | オオバコ
-栽培さ: 栽培する | 栽培さ
-5,000年: 五，ゼロゼロゼロ年 | 5,000年
-}
-
-Expected: {
-1839年	NUM	1839年
-、	PUNCT	、
-湖南	PROPN	湖南
-及び	CCONJ	及び
-湖北省	PROPN	湖北省
+さらに	ADV	更に
+2枚	NUM	2枚
 の	ADP	の
-総督	NOUN	総督
-、	PUNCT	、
-林則徐	PROPN	林則徐
-が	ADP	が
-アヘン	NOUN	阿片
-の	ADP	の
-外国貿易	NOUN	外国貿易
-を	ADP	を
-禁止し	VERB	禁止する
-た	AUX	た
-後	NOUN	後
-、	PUNCT	、
-英国	PROPN	英国
-と	ADP	と
-最初	NOUN	最初
-の	ADP	の
-アヘン戦争	NOUN	阿片戦争
-を	ADP	を
-戦う	VERB	戦う
-こととなっ	AUX	こととなる
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-1839年	NUM	1839年
-、	PUNCT	、
-湖南	PROPN	湖南
-及び	CCONJ	及び
-湖北省	PROPN	湖北省
-の	ADP	の
-総督	NOUN	総督
-、	PUNCT	、
-林則徐	PROPN	林則徐
-が	ADP	が
-アヘン	NOUN	阿片
-の	ADP	の
-外国貿易	NOUN	外国貿易
-を	ADP	を
-禁止し	VERB	禁止する
-た	AUX	た
-後	NOUN	後
-、	PUNCT	、
-英国	PROPN	英国
-と	ADP	と
-最初	NOUN	最初
-の	ADP	の
-アヘン戦争	NOUN	アヘン戦争
-を	ADP	を
-戦う	VERB	戦う
-こととなっ	AUX	こととなる
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-アヘン戦争: 阿片戦争 | アヘン戦争
-}
-
-Expected: {
-この	DET	此の
-映画	NOUN	映画
-は	ADP	は
-、	PUNCT	、
-ヘロイン	NOUN	ヘロイン
-に	ADP	に
-溺れ	VERB	溺れる
-て	SCONJ	て
-人生	NOUN	人生
-と	ADP	と
-キャリア	NOUN	キャリア
-を	ADP	を
-台無し	NOUN	台無し
-に	ADP	に
-し	VERB	する
-、	PUNCT	、
-人生	NOUN	人生
-の	ADP	の
-下り坂	NOUN	下り坂
-を	ADP	を
-経験し	VERB	経験する
-、	PUNCT	、
-エイズ	NOUN	ａｉｄｓ
-による	ADP	による
-死	NOUN	死
-に	ADP	に
-至っ	VERB	至る
-た	AUX	た
-1980年代半ば頃	NOUN	1980年代半ば頃
-の	ADP	の
-キャランジ	PROPN	キャランジ
-を	ADP	を
-描い	VERB	描く
-ている	AUX	ている
-。	PUNCT	。
-}
-Predicted: {
-この	DET	此の
-映画	NOUN	映画
-は	ADP	は
-、	PUNCT	、
-ヘロイン	NOUN	ヘロイン
-に	ADP	に
-溺れ	VERB	溺れ
-て	SCONJ	て
-人生	NOUN	人生
-と	ADP	と
-キャリア	NOUN	キャリア
-を	ADP	を
-台無し	NOUN	台無し
-に	ADP	に
-し	VERB	為る
-、	PUNCT	、
-人生	NOUN	人生
-の	ADP	の
-下り坂	NOUN	下り坂
-を	ADP	を
-経験し	VERB	経験する
-、	PUNCT	、
-エイズ	NOUN	エイズ
-による	ADP	による
-死	NOUN	死
-に	ADP	に
-至っ	VERB	至る
-た	AUX	た
-1980年代半ば頃	NOUN	1980年代半ば頃
-の	ADP	の
-キャランジ	PROPN	キャランジ
-を	ADP	を
-描い	VERB	描く
-ている	AUX	ている
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-溺れ: 溺れる | 溺れ
-し: する | 為る
-エイズ: ａｉｄｓ | エイズ
-}
-
-Expected: {
-しかしながら	CCONJ	然しながら
-、	PUNCT	、
-ポーランド	PROPN	ポーランド
-の	ADP	の
-共産主義体制	NOUN	共産主義体制
-が	ADP	が
-終焉する	VERB	終焉する
-まで	PART	まで
-、	PUNCT	、
-彼女	PRON	彼女
-の	ADP	の
-戦時中	NOUN	戦時中
-の	ADP	の
-抵抗	NOUN	抵抗
-や	ADP	や
-人道的活動	NOUN	人道的活動
-について	ADP	について
-は	ADP	は
-、	PUNCT	、
-それ以上	ADV	其れ以上
-人々	NOUN	人々
-に	ADP	に
-知ら	VERB	知る
-れる	AUX	れる
-ことはなかっ	AUX	ことはない
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-しかしながら	CCONJ	然しながら
-、	PUNCT	、
-ポーランド	PROPN	ポーランド
-の	ADP	の
-共産主義体制	NOUN	共産主義体制
-が	ADP	が
-終焉する	VERB	終焉する
-まで	PART	まで
-、	PUNCT	、
-彼女	PRON	彼女
-の	ADP	の
-戦時中	NOUN	戦時中
-の	ADP	の
-抵抗	NOUN	抵抗
-や	ADP	や
-人道的活動	NOUN	人道的活動
-について	ADP	について
-は	ADP	は
-、	PUNCT	、
-それ以上	ADV	それ以上
-人々	NOUN	人々
-に	ADP	に
-知ら	VERB	知る
-れる	AUX	れる
-ことはなかっ	AUX	ことはない
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-それ以上: 其れ以上 | それ以上
-}
-
-Expected: {
-2012年	NUM	2012年
-6月	NUM	6月
-、	PUNCT	、
-アイスランド	PROPN	アイスランド
-の	ADP	の
-バンド	NOUN	バンド
-、	PUNCT	、
-シガー・ロス	NOUN	シガー・ロス
-が	ADP	が
-楽曲	NOUN	楽曲
-『	PUNCT	『
-フョーグル・ピアノ	NOUN	ヒョーグル・ピアノ
-』	PUNCT	』
-の	ADP	の
-ビデオ	NOUN	ビデオ
+アルバム	NOUN	アルバム
 を	ADP	を
 リリースし	VERB	リリースする
-た	AUX	た
-が	SCONJ	が
 、	PUNCT	、
-その	DET	其の
-ビデオ	NOUN	ビデオ
-に	ADP	に
-は	ADP	は
-ラブーフ	PROPN	ラブーフ
-が	ADP	が
-ヌード	NOUN	ヌード
-で	ADP	で
-主演し	VERB	主演する
-てい	AUX	ている
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-2012年	NUM	2012年
-6月	NUM	6月
-、	PUNCT	、
-アイスランド	PROPN	アイスランド
-の	ADP	の
-バンド	NOUN	バンド
-、	PUNCT	、
-シガー・ロス	NOUN	シガー・ロス
-が	ADP	が
-楽曲	NOUN	楽曲
-『	PUNCT	『
-フョーグル・ピアノ	NOUN	フョーグル・ピアノ
-』	PUNCT	』
-の	ADP	の
-ビデオ	NOUN	ビデオ
+これ	PRON	此れ
 を	ADP	を
-リリースし	VERB	リリースする
-た	AUX	た
-が	SCONJ	が
-、	PUNCT	、
-その	DET	其の
-ビデオ	NOUN	ビデオ
-に	ADP	に
+ミュージシャン	NOUN	ミュージシャン
+の	ADP	の
+トム・ロビンソン	PROPN	トム・ロビンソン
 は	ADP	は
-ラブーフ	PROPN	ラブーフ
-が	ADP	が
-ヌード	NOUN	ヌード
-で	ADP	で
-主演し	VERB	主演する
-てい	AUX	ている
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-フョーグル・ピアノ: ヒョーグル・ピアノ | フョーグル・ピアノ
-}
-
-Expected: {
-ペテン地域	PROPN	ペテン地域
-や	ADP	や
-ウアシャクトゥン	PROPN	ウアシャクトゥン
-の	ADP	の
-データ	NOUN	データ
+後	NOUN	後
 に	ADP	に
-見	VERB	見る
-られる	AUX	られる
-パターン	NOUN	パターン
-により	ADP	により
-、	PUNCT	、
-これら	PRON	此れ等
-の	ADP	の
-地帯	NOUN	地帯
-が	ADP	が
-マヤ低地	PROPN	マヤ低地
-の	ADP	の
-文化的開発	NOUN	文化的開発
-に	ADP	に
-含ま	VERB	含む
-れる	AUX	れる
+「	PUNCT	「
+返り咲き	NOUN	返り咲き
+」	PUNCT	」
 と	ADP	と
-判断さ	VERB	判断する
-れ	AUX	れる
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-ペテン地域	PROPN	ペテン地域
-や	ADP	や
-ウアシャクトゥン	PROPN	ウアシャクトゥン
-の	ADP	の
-データ	NOUN	データ
-に	ADP	に
-見	VERB	見る
-られる	AUX	られる
-パターン	NOUN	パターン
-により	ADP	により
-、	PUNCT	、
-これら	PRON	此れ等
-の	ADP	の
-地帯	NOUN	地帯
-が	ADP	が
-マヤ低地	PROPN	マヤ低地
-の	ADP	の
-文化的開発	NOUN	文化的開発
-に	ADP	に
-含ま	VERB	含む
-れる	AUX	れる
-と	ADP	と
-判断さ	VERB	判断さ
-れ	AUX	れる
-た	AUX	た
+呼ん	VERB	呼ぶ
+だ	AUX	た
 。	PUNCT	。
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
-判断さ: 判断する | 判断さ
-}
-
-Expected: {
-同年	ADV	同年
-、	PUNCT	、
-彼女	PRON	彼女
-は	ADP	は
-ディズニー作品	NOUN	ディズニー作品
-『	PUNCT	『
-ザ・マペッツ	NOUN	ザ・マペット
-』	PUNCT	』
-に	ADP	に
-も	ADP	も
-ミス・ピギー	PROPN	ミス・ピギー
-の	ADP	の
-受付係	NOUN	受け付け係
-として	ADP	として
-短時間	ADV	短時間
-出演し	VERB	出演する
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-同年	ADV	同年
-、	PUNCT	、
-彼女	PRON	彼女
-は	ADP	は
-ディズニー作品	NOUN	ディズニー作品
-『	PUNCT	『
-ザ・マペッツ	NOUN	ザ・マペッツ
-』	PUNCT	』
-に	ADP	に
-も	ADP	も
-ミス・ピギー	PROPN	ミス・ピギー
-の	ADP	の
-受付係	NOUN	受付係
-として	ADP	として
-短時間	ADV	短時間
-出演し	VERB	出演する
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-ザ・マペッツ: ザ・マペット | ザ・マペッツ
-受付係: 受け付け係 | 受付係
-}
-
-Expected: {
-よって	CCONJ	因って
-、	PUNCT	、
-適切	ADJ	適切
-な	AUX	だ
-神学理論	NOUN	神学理論
-は	ADP	は
-未来	NOUN	未来
-の	ADP	の
-目的	NOUN	目的
-という	ADP	という
-観点	NOUN	観点
-から	ADP	から
-構築さ	VERB	構築する
-れる	AUX	れる
-べき	AUX	べし
-である	AUX	である
-。	PUNCT	。
-}
-Predicted: {
-よって	CCONJ	因って
-、	PUNCT	、
-適切	ADJ	適切
-な	AUX	だ
-神学理論	NOUN	神学理論
-は	ADP	は
-未来	NOUN	未来
-の	ADP	の
-目的	NOUN	目的
-という	ADP	という
-観点	NOUN	観点
-から	ADP	から
-構築さ	VERB	構築さ
-れる	AUX	れる
-べき	AUX	べし
-である	AUX	である
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-構築さ: 構築する | 構築さ
+だ: だ | た
 }
 
 Expected: {
 その	DET	其の
-代わり	NOUN	代わり
-、	PUNCT	、
-アルバニア	PROPN	アルバニア
-が	ADP	が
-オスマン帝国	PROPN	オスマン帝国
-を	ADP	を
-宗主国	NOUN	宗主国
-と	ADP	と
-し	VERB	する
-つつ	SCONJ	つつ
-自治政府	NOUN	自治政府
-を	ADP	を
-設ける	VERB	設ける
-こと	NOUN	事
-を	ADP	を
-決定し	VERB	決定する
-た	AUX	た
-。	PUNCT	。
-}
-Predicted: {
-その	DET	其の
-代わり	NOUN	代わり
-、	PUNCT	、
-アルバニア	PROPN	アルバニア
-が	ADP	が
-オスマン帝国	PROPN	オスマン帝国
-を	ADP	を
-宗主国	NOUN	宗主国
-と	ADP	と
-し	VERB	為る
-つつ	SCONJ	つつ
-自治政府	NOUN	自治政府
-を	ADP	を
-設ける	VERB	設ける
-こと	NOUN	事
-を	ADP	を
-決定し	VERB	決定する
-た	AUX	た
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-し: する | 為る
-}
-
-Expected: {
-写真	NOUN	写真
-に	ADP	に
+法律	NOUN	法律
 は	ADP	は
-、	PUNCT	、
-キーボード上方	NOUN	キーボード上方
-に	ADP	に
-噂	NOUN	噂
+充足する	VERB	充足する
+と	SCONJ	と
+契約	NOUN	契約
 の	ADP	の
-ナロータッチディスプレイバー	NOUN	ナロータッチディスプレーバー
+効果	NOUN	効果
 が	ADP	が
-はっきり	ADV	はっきり
-と	ADP	と
-写っ	VERB	写る
-ている	AUX	ている
-。	PUNCT	。
-}
-Predicted: {
-写真	NOUN	写真
-に	ADP	に
-は	ADP	は
-、	PUNCT	、
-キーボード上方	NOUN	キーボード上方
-に	ADP	に
-噂	NOUN	噂
-の	ADP	の
-ナロータッチディスプレイバー	NOUN	ナロータッチディスプレイバー
-が	ADP	が
-はっきり	ADV	はっきり
-と	ADP	と
-写っ	VERB	写る
-ている	AUX	ている
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-ナロータッチディスプレイバー: ナロータッチディスプレーバー | ナロータッチディスプレイバー
-}
-
-Expected: {
-2005年	NUM	2005年
-から	ADP	から
-連邦	NOUN	連邦
-および	CCONJ	及び
-州政府	NOUN	州政府
-は	ADP	は
-合同協定	NOUN	合同協定
-の	ADP	の
-中	NOUN	中
-で	ADP	で
-自然遺産	NOUN	自然遺産
-を	ADP	を
-国家最優先事業	NOUN	国家最優先事業
-と	ADP	と
-位置づけ	VERB	位置付ける
-、	PUNCT	、
-登録	NOUN	登録
-を	ADP	を
-始め	VERB	始める
-た	AUX	た
-こと	NOUN	事
-は	ADP	は
-驚く	VERB	驚く
-に	ADP	に
-は	ADP	は
-あたら	VERB	当たる
-ない	AUX	ない
-。	PUNCT	。
-}
-Predicted: {
-2005年	NUM	2005年
-から	ADP	から
-連邦	NOUN	連邦
-および	CCONJ	及び
-州政府	NOUN	州政府
-は	ADP	は
-合同協定	NOUN	合同協定
-の	ADP	の
-中	NOUN	中
-で	ADP	で
-自然遺産	NOUN	自然遺産
-を	ADP	を
-国家最優先事業	NOUN	国家最優先事業
-と	ADP	と
-位置づけ	VERB	位置付け
-、	PUNCT	、
-登録	NOUN	登録
-を	ADP	を
-始め	VERB	始める
-た	AUX	た
-こと	NOUN	事
-は	ADP	は
-驚く	VERB	驚く
-に	ADP	に
-は	ADP	は
-あたら	VERB	当たる
-ない	AUX	ない
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-位置づけ: 位置付ける | 位置付け
-}
-
-Expected: {
-後者	NOUN	後者
-は	ADP	は
-、	PUNCT	、
-ラチダ・ダティ	PROPN	ラチダ・ダティ
-が	ADP	が
-ニコラス・サルコジ候補	NOUN	ニコラス・サルコジ候補
-を	ADP	を
-支持する	VERB	支持する
-共和党予備選挙	NOUN	共和党予備選挙
-を	ADP	を
-監督し	VERB	監督する
-ている	AUX	ている
-。	PUNCT	。
-}
-Predicted: {
-後者	NOUN	後者
-は	ADP	は
-、	PUNCT	、
-ラチダ・ダティ	PROPN	ラチダ・ダティ
-が	ADP	が
-ニコラス・サルコジ候補	NOUN	ニコラス・サルコジ候補
-を	ADP	を
-支持する	VERB	支持する
-共和党予備選挙	NOUN	共和党予備選挙
-を	ADP	を
-監督し	VERB	監督し
-ている	AUX	ている
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-監督し: 監督する | 監督し
-}
-
-Expected: {
-上述し	VERB	上述する
-た	AUX	た
+回復する	VERB	回復する
 よう	AUX	様
-に	AUX	だ
+な	AUX	だ
+多数	NOUN	多数
+の	ADP	の
+状況	NOUN	状況
+の	ADP	の
+あらまし	NOUN	あらまし
+を	ADP	を
+説明し	VERB	説明する
+ており	AUX	ておる
 、	PUNCT	、
-この	DET	此の
-決定	NOUN	決定
+米国	PROPN	米国
 は	ADP	は
-ecb	NOUN	ecb
-の	ADP	の
-特権	NOUN	特権
-であり	AUX	である
-、	PUNCT	、
-他	NOUN	他
-の	ADP	の
-代案	NOUN	代案
-を	ADP	を
-検討する	VERB	検討する
-可能性	NOUN	可能性
-を	ADP	を
-排除する	VERB	排除する
-こと	NOUN	事
-で	ADP	で
-銀行	NOUN	銀行
-の	ADP	の
-発言	NOUN	発言
-の	ADP	の
-代わり	NOUN	代わり
+2000年以降	ADV	2000年以降
+nato	PROPN	nato
 に	ADP	に
-する	VERB	する
-こと	NOUN	事
-は	ADP	は
-不適切	ADJ	不適切
-と	ADP	と
-思わ	VERB	思う
-れる	AUX	れる
-だろう	AUX	だ
-。	PUNCT	。
-}
-Predicted: {
-上述し	VERB	上述し
+加盟し	VERB	加盟する
 た	AUX	た
-よう	AUX	様
-に	AUX	だ
-、	PUNCT	、
-この	DET	此の
-決定	NOUN	決定
-は	ADP	は
-ecb	NOUN	ecb
-の	ADP	の
-特権	NOUN	特権
-であり	AUX	である
-、	PUNCT	、
-他	NOUN	他
-の	ADP	の
-代案	NOUN	代案
+諸国	NOUN	諸国
+から	ADP	から
+軍隊	NOUN	軍隊
 を	ADP	を
-検討する	VERB	検討する
-可能性	NOUN	可能性
-を	ADP	を
-排除する	VERB	排除する
-こと	NOUN	事
-で	ADP	で
-銀行	NOUN	銀行
-の	ADP	の
-発言	NOUN	発言
-の	ADP	の
-代わり	NOUN	代わり
-に	ADP	に
-する	VERB	為る
-こと	NOUN	事
-は	ADP	は
-不適切	ADJ	不適切
-と	ADP	と
-思わ	VERB	思う
-れる	AUX	れる
-だろう	AUX	だ
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-上述し: 上述する | 上述し
-する: する | 為る
-}
-
-Expected: {
-マドリード州知事クリスティーナ・シフエンテス	PROPN	マドリード州知事クリスティーナ・シフエンテス
-は	ADP	は
-非常	ADJ	非常
-に	AUX	だ
-保守的	ADJ	保守的
-な	AUX	だ
-姿勢	NOUN	姿勢
-を	ADP	を
-示し	VERB	示す
-ている	AUX	ている
-が	SCONJ	が
-、	PUNCT	、
-ハビエル・マロート部門次官	PROPN	ハビエル・マロート部門次官
-の	ADP	の
-よう	NOUN	様
-な	AUX	だ
-政党	NOUN	政党
-の	ADP	の
-リーダーたち	NOUN	リーダー達
-は	ADP	は
-、	PUNCT	、
-最も	ADV	最も
-急進的	ADJ	急進的
-な	AUX	だ
-姿勢	NOUN	姿勢
-を	ADP	を
-示し	VERB	示す
-ている	AUX	ている
-。	PUNCT	。
-}
-Predicted: {
-マドリード州知事クリスティーナ・シフエンテス	PROPN	マドリード州知事クリスティーナ・シフエンテス
-は	ADP	は
-非常	ADJ	非常
-に	AUX	だ
-保守的	ADJ	保守的
-な	AUX	だ
-姿勢	NOUN	姿勢
-を	ADP	を
-示し	VERB	示す
-ている	AUX	ている
-が	SCONJ	が
-、	PUNCT	、
-ハビエル・マロート部門次官	PROPN	ハビエル・マロート部門次官
-の	ADP	の
-よう	NOUN	様
-な	AUX	だ
-政党	NOUN	政党
-の	ADP	の
-リーダーたち	NOUN	リーダーたち
-は	ADP	は
-、	PUNCT	、
-最も	ADV	最も
-急進的	ADJ	急進的
-な	AUX	だ
-姿勢	NOUN	姿勢
-を	ADP	を
-示し	VERB	示す
-ている	AUX	ている
-。	PUNCT	。
-}
-Errors: {
-Tok: Ref | Pred
----------------
-リーダーたち: リーダー達 | リーダーたち
-}
-
-Expected: {
-地方	NOUN	地方
-で	ADP	で
-発生し	VERB	発生する
-た	AUX	た
-革命	NOUN	革命
-の	ADP	の
-苛烈さ	NOUN	苛烈さ
-は	ADP	は
-ベルサイユ	PROPN	ベルサイユ
-の	ADP	の
-法廷	NOUN	法廷
-と	ADP	と
-下院	NOUN	下院
-を	ADP	を
-震撼さ	VERB	震撼する
+撤退さ	VERB	撤退する
 せ	AUX	せる
+、	PUNCT	、
+ロシア	PROPN	ロシア
+に対する	ADP	に対する
+すべて	NOUN	全て
+の	ADP	の
+裁定	NOUN	裁定
+を	ADP	を
+無効	ADJ	無効
+に	AUX	だ
+し	VERB	する
+、	PUNCT	、
+その	DET	其の
+裁定	NOUN	裁定
+の	ADP	の
+結果	NOUN	結果
+被っ	VERB	被る
 た	AUX	た
+費用	NOUN	費用
+を	ADP	を
+償還す	VERB	償還す
+べき	AUX	べし
+だっ	AUX	だ
+たろう	AUX	た
 。	PUNCT	。
 }
 Predicted: {
-地方	NOUN	地方
-で	ADP	で
-発生し	VERB	発生する
-た	AUX	た
-革命	NOUN	革命
-の	ADP	の
-苛烈さ	NOUN	苛烈さ
+その	DET	其の
+法律	NOUN	法律
 は	ADP	は
-ベルサイユ	PROPN	ベルサイユ
+充足する	VERB	充足する
+と	SCONJ	と
+契約	NOUN	契約
 の	ADP	の
-法廷	NOUN	法廷
-と	ADP	と
-下院	NOUN	下院
+効果	NOUN	効果
+が	ADP	が
+回復する	VERB	回復する
+よう	AUX	様
+な	AUX	だ
+多数	NOUN	多数
+の	ADP	の
+状況	NOUN	状況
+の	ADP	の
+あらまし	NOUN	あらまし
 を	ADP	を
-震撼さ	VERB	震撼さ
+説明し	VERB	説明する
+ており	AUX	ておる
+、	PUNCT	、
+米国	PROPN	米国
+は	ADP	は
+2000年以降	ADV	2000年以降
+nato	PROPN	nato
+に	ADP	に
+加盟し	VERB	加盟する
+た	AUX	た
+諸国	NOUN	諸国
+から	ADP	から
+軍隊	NOUN	軍隊
+を	ADP	を
+撤退さ	VERB	撤退さ
 せ	AUX	為る
+、	PUNCT	、
+ロシア	PROPN	ロシア
+に対する	ADP	に対する
+すべて	NOUN	全て
+の	ADP	の
+裁定	NOUN	裁定
+を	ADP	を
+無効	ADJ	無効
+に	AUX	だ
+し	VERB	為る
+、	PUNCT	、
+その	DET	其の
+裁定	NOUN	裁定
+の	ADP	の
+結果	NOUN	結果
+被っ	VERB	被る
 た	AUX	た
+費用	NOUN	費用
+を	ADP	を
+償還す	VERB	償還す
+べき	AUX	べし
+だっ	AUX	だ
+たろう	AUX	た
 。	PUNCT	。
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
-震撼さ: 震撼する | 震撼さ
+撤退さ: 撤退する | 撤退さ
 せ: せる | 為る
+し: する | 為る
 }
 
 Expected: {
-ハンガリー	PROPN	ハンガリー
-に	ADP	に
-圧力	NOUN	圧力
-を	ADP	を
-かける	VERB	書ける
-彼	PRON	彼
+その	DET	其の
+スマートフォンモデル	NOUN	スマートフォーンモデル
+の	ADP	の
+生産	NOUN	生産
+は	ADP	は
+完全	ADJ	完全
+に	AUX	だ
+終了し	VERB	終了する
+た	AUX	た
+。	PUNCT	。
+}
+Predicted: {
+その	DET	其の
+スマートフォンモデル	NOUN	スマートフォンーモデル
+の	ADP	の
+生産	NOUN	生産
+は	ADP	は
+完全	ADJ	完全
+に	AUX	だ
+終了し	VERB	終了する
+た	AUX	た
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+スマートフォンモデル: スマートフォーンモデル | スマートフォンーモデル
+}
+
+Expected: {
+キリスト教徒	NOUN	キリスト教徒
+が	ADP	が
+信じる	VERB	信じる
+ところ	NOUN	所
+によれば	ADP	によれば
+、	PUNCT	、
+石灰石	NOUN	石灰石
+の	ADP	の
+墓	NOUN	墓
+は	ADP	は
+キリスト	PROPN	キリスト
 の	ADP	の
 最後	NOUN	最後
 の	ADP	の
-手段	NOUN	手段
+休息	NOUN	休息
 の	ADP	の
-一つ	NUM	一つ
-は	ADP	は
-、	PUNCT	、
-普通自由選挙	NOUN	普通自由選挙
-を	ADP	を
-課す	VERB	課す
-という	ADP	という
-脅し	NOUN	脅し
+場	NOUN	場
 であっ	AUX	である
 た	AUX	た
 。	PUNCT	。
 }
 Predicted: {
-ハンガリー	PROPN	ハンガリー
-に	ADP	に
-圧力	NOUN	圧力
-を	ADP	を
-かける	VERB	掛ける
-彼	PRON	彼
+キリスト教徒	NOUN	キリスト教徒
+が	ADP	が
+信じる	VERB	信ずる
+ところ	NOUN	所
+によれば	ADP	によれば
+、	PUNCT	、
+石灰石	NOUN	石灰石
+の	ADP	の
+墓	NOUN	墓
+は	ADP	は
+キリスト	PROPN	キリスト
 の	ADP	の
 最後	NOUN	最後
 の	ADP	の
-手段	NOUN	手段
+休息	NOUN	休息
 の	ADP	の
-一つ	NUM	一つ
-は	ADP	は
-、	PUNCT	、
-普通自由選挙	NOUN	普通自由選挙
-を	ADP	を
-課す	VERB	課する
-という	ADP	という
-脅し	NOUN	脅し
+場	NOUN	場
 であっ	AUX	である
 た	AUX	た
 。	PUNCT	。
@@ -39300,136 +34473,409 @@ Predicted: {
 Errors: {
 Tok: Ref | Pred
 ---------------
-かける: 書ける | 掛ける
-課す: 課す | 課する
+信じる: 信じる | 信ずる
 }
 
 Expected: {
-しかし	CCONJ	然し
+国際再生可能エネルギー機関	NOUN	国際再生可能エネルギー機関
+（	PUNCT	（
+irena	PROPN	irena
+）	PUNCT	）
+総裁	NOUN	総裁
 、	PUNCT	、
-ピュロス	PROPN	ピュロス
+z.amin	PROPN	z.amin
+は	ADP	は
+「	PUNCT	「
+洋上風力発電	NOUN	洋上風力発電
+は	ADP	は
+世界経済	NOUN	世界経済
+において	ADP	において
+石炭エネルギー	NOUN	石炭エネルギー
+に	ADP	に
+依存し	VERB	依存する
+ない	AUX	ない
+最大	NOUN	最大
+の	ADP	の
+発電手段	NOUN	発電手段
+と	ADP	と
+なりうる	VERB	成り得る
+」	PUNCT	」
+と	ADP	と
+確信し	VERB	確信する
+ている	AUX	ている
+。	PUNCT	。
+}
+Predicted: {
+国際再生可能エネルギー機関	NOUN	国際再生可能エネルギー機関
+（	PUNCT	（
+irena	PROPN	irena
+）	PUNCT	）
+総裁	NOUN	総裁
+、	PUNCT	、
+z.amin	PROPN	z.amin
+は	ADP	は
+「	PUNCT	「
+洋上風力発電	NOUN	洋上風力発電
+は	ADP	は
+世界経済	NOUN	世界経済
+において	ADP	において
+石炭エネルギー	NOUN	石炭エネルギー
+に	ADP	に
+依存し	VERB	依存する
+ない	AUX	ない
+最大	NOUN	最大
+の	ADP	の
+発電手段	NOUN	発電手段
+と	ADP	と
+なりうる	VERB	なりうる
+」	PUNCT	」
+と	ADP	と
+確信し	VERB	確信する
+ている	AUX	ている
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+なりうる: 成り得る | なりうる
+}
+
+Expected: {
+1925年	NUM	1925年
+に	ADP	に
+万人	NOUN	万人
+の	ADP	の
+気晴らし用	NOUN	気晴らし用
+に	ADP	に
+設立さ	VERB	設立する
+れ	AUX	れる
+た	AUX	た
+野外劇場	NOUN	野外劇場
 は	ADP	は
 、	PUNCT	、
-南イタリア	PROPN	南イタリア
-で	ADP	で
+聖ミヒャエル大聖堂前	NOUN	聖ミヒャエル大聖堂前
 の	ADP	の
-事業	NOUN	事業
-の	ADP	の
-ため	NOUN	為
+大階段	NOUN	大階段
 に	ADP	に
-シチリア	PROPN	シチリア
+あり	VERB	有る
+、	PUNCT	、
+今	NOUN	今
+で	ADP	で
+も	ADP	も
+多様	ADJ	多様
+な	AUX	だ
+人々	NOUN	人々
 を	ADP	を
-離れる	VERB	離れる
-こと	NOUN	事
-を	ADP	を
-余儀なく	ADJ	余儀無い
-さ	VERB	する
+魅了し	VERB	魅了する
+ている	AUX	ている
+。	PUNCT	。
+}
+Predicted: {
+1925年	NUM	1925年
+に	ADP	に
+万人	NOUN	万人
+の	ADP	の
+気晴らし用	NOUN	気晴らし用
+に	ADP	に
+設立さ	VERB	設立する
 れ	AUX	れる
+た	AUX	た
+野外劇場	NOUN	野外劇場
+は	ADP	は
+、	PUNCT	、
+聖ミヒャエル大聖堂前	NOUN	聖ミヒャエル大聖堂前
+の	ADP	の
+大階段	NOUN	大階段
+に	ADP	に
+あり	VERB	有る
+、	PUNCT	、
+今	NOUN	今
+で	ADP	で
+も	ADP	も
+多様	ADJ	多様
+な	AUX	だ
+人々	NOUN	人々
+を	ADP	を
+魅了し	VERB	魅了し
+ている	AUX	ている
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+魅了し: 魅了する | 魅了し
+}
+
+Expected: {
+その	DET	其の
+場	NOUN	場
+を	ADP	を
+追わ	VERB	追う
+れ	AUX	れる
+た	AUX	た
+修道女たち	NOUN	修道女達
+は	ADP	は
+アイビンゲン修道院	NOUN	アイビンゲン修道院
+に	ADP	に
+移っ	VERB	移る
 た	AUX	た
 。	PUNCT	。
 }
 Predicted: {
-しかし	CCONJ	然し
-、	PUNCT	、
-ピュロス	PROPN	ピュロス
-は	ADP	は
-、	PUNCT	、
-南イタリア	PROPN	南イタリア
-で	ADP	で
-の	ADP	の
-事業	NOUN	事業
-の	ADP	の
-ため	NOUN	為
-に	ADP	に
-シチリア	PROPN	シチリア
+その	DET	其の
+場	NOUN	場
 を	ADP	を
-離れる	VERB	離れる
-こと	NOUN	事
-を	ADP	を
-余儀なく	ADJ	余儀無い
-さ	VERB	為る
+追わ	VERB	追う
 れ	AUX	れる
+た	AUX	た
+修道女たち	NOUN	修道女たち
+は	ADP	は
+アイビンゲン修道院	NOUN	アイビンゲン修道院
+に	ADP	に
+移っ	VERB	移る
 た	AUX	た
 。	PUNCT	。
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
-さ: する | 為る
+修道女たち: 修道女達 | 修道女たち
 }
 
 Expected: {
-プリュヴィオーズ年	NOUN	プリュビオーズ年
-第iii期	NUM	第iii期
-（	PUNCT	（
-1794年	NUM	1794年
-1月	NUM	1月
-〜	SYM	から
-2月	NUM	2月
-）	PUNCT	）
-に	ADP	に
+紀元前	NOUN	紀元前
+8世紀頃	NOUN	8世紀頃
+から	ADP	から
 、	PUNCT	、
-彼	PRON	彼
-は	ADP	は
-「	PUNCT	「
-恐怖統治	NOUN	恐怖統治
-」	PUNCT	」
+小規模	NOUN	小規模
 の	ADP	の
-圧力	NOUN	圧力
+自治体制	NOUN	自治体制
 を	ADP	を
-緩和する	VERB	緩和する
-べく	AUX	べし
-、	PUNCT	、
-容疑者たち	NOUN	容疑者達
-を	ADP	を
-釈放する	VERB	釈放する
-ための	ADP	ための
-様々	ADJ	様々
-な	AUX	だ
-措置	NOUN	措置
-を	ADP	を
-とっ	VERB	取る
+持つ	VERB	持つ
+小さな	ADJ	小さな
+自治区域	NOUN	自治区域
+である	AUX	である
+都市国家	NOUN	都市国家
+が	ADP	が
+現れ始め	VERB	現われ始める
 た	AUX	た
 。	PUNCT	。
 }
 Predicted: {
-プリュヴィオーズ年	NOUN	プリュヴィオーズ年
-第iii期	NUM	第iii期
-（	PUNCT	（
-1794年	NUM	1794年
-1月	NUM	1月
-〜	SYM	〜
-2月	NUM	2月
-）	PUNCT	）
-に	ADP	に
+紀元前	NOUN	紀元前
+8世紀頃	NOUN	8世紀頃
+から	ADP	から
 、	PUNCT	、
-彼	PRON	彼
-は	ADP	は
-「	PUNCT	「
-恐怖統治	NOUN	恐怖統治
-」	PUNCT	」
+小規模	NOUN	小規模
 の	ADP	の
-圧力	NOUN	圧力
+自治体制	NOUN	自治体制
 を	ADP	を
-緩和する	VERB	緩和する
-べく	AUX	べし
-、	PUNCT	、
-容疑者たち	NOUN	容疑者たち
-を	ADP	を
-釈放する	VERB	釈放する
-ための	ADP	ための
-様々	ADJ	様々
-な	AUX	だ
-措置	NOUN	措置
-を	ADP	を
-とっ	VERB	取る
+持つ	VERB	持つ
+小さな	ADJ	小さな
+自治区域	NOUN	自治区域
+である	AUX	である
+都市国家	NOUN	都市国家
+が	ADP	が
+現れ始め	VERB	現れ始める
 た	AUX	た
 。	PUNCT	。
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
-プリュヴィオーズ年: プリュビオーズ年 | プリュヴィオーズ年
-〜: から | 〜
-容疑者たち: 容疑者達 | 容疑者たち
+現れ始め: 現われ始める | 現れ始める
+}
+
+Expected: {
+1948年	NUM	1948年
+の	ADP	の
+春	NOUN	春
+、	PUNCT	、
+ティンティン	PROPN	ティンティン
+を	ADP	を
+映画	NOUN	映画
+に	ADP	に
+起用さ	VERB	起用する
+せ	AUX	せる
+たい	AUX	たい
+と	ADP	と
+の	ADP	の
+希望	NOUN	希望
+を	ADP	を
+抱い	VERB	抱く
+て	SCONJ	て
+、	PUNCT	、
+その	DET	其の
+ベルギー	PROPN	ベルギー
+の	ADP	の
+アーティスト	NOUN	アーティスト
+は	ADP	は
+、	PUNCT	、
+ウォルト・ディズニー	PROPN	ウォルト・ディズニー
+に	ADP	に
+サポート	NOUN	サポート
+を	ADP	を
+依頼する	VERB	依頼する
+手紙	NOUN	手紙
+を	ADP	を
+書い	VERB	書く
+た	AUX	た
+が	SCONJ	が
+、	PUNCT	、
+実ら	VERB	実る
+なかっ	AUX	ない
+た	AUX	た
+。	PUNCT	。
+}
+Predicted: {
+1948年	NUM	1948年
+の	ADP	の
+春	NOUN	春
+、	PUNCT	、
+ティンティン	PROPN	ティンティン
+を	ADP	を
+映画	NOUN	映画
+に	ADP	に
+起用さ	VERB	起用する
+せ	AUX	せる
+たい	AUX	たい
+と	ADP	と
+の	ADP	の
+希望	NOUN	希望
+を	ADP	を
+抱い	VERB	抱く
+て	SCONJ	て
+、	PUNCT	、
+その	DET	其の
+ベルギー	PROPN	ベルギー
+の	ADP	の
+アーティスト	NOUN	アーチスト
+は	ADP	は
+、	PUNCT	、
+ウォルト・ディズニー	PROPN	ウォルト・ディズニー
+に	ADP	に
+サポート	NOUN	サポート
+を	ADP	を
+依頼する	VERB	依頼する
+手紙	NOUN	手紙
+を	ADP	を
+書い	VERB	書く
+た	AUX	た
+が	SCONJ	が
+、	PUNCT	、
+実ら	VERB	実る
+なかっ	AUX	ない
+た	AUX	た
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+アーティスト: アーティスト | アーチスト
+}
+
+Expected: {
+硬貨	NOUN	硬貨
+の	ADP	の
+発行	NOUN	発行
+は	ADP	は
+、	PUNCT	、
+主に	ADV	主に
+コレクター	NOUN	コレクター
+へ	ADP	へ
+の	ADP	の
+販売	NOUN	販売
+を	ADP	を
+目的	NOUN	目的
+と	ADP	と
+し	VERB	する
+てい	AUX	ている
+て	SCONJ	て
+、	PUNCT	、
+本質的	ADJ	本質的
+に	AUX	だ
+貨幣	NOUN	貨幣
+を	ADP	を
+重視する	VERB	重視する
+もの	NOUN	物
+である	AUX	である
+。	PUNCT	。
+}
+Predicted: {
+硬貨	NOUN	硬貨
+の	ADP	の
+発行	NOUN	発行
+は	ADP	は
+、	PUNCT	、
+主に	ADV	主に
+コレクター	NOUN	コレクター
+へ	ADP	へ
+の	ADP	の
+販売	NOUN	販売
+を	ADP	を
+目的	NOUN	目的
+と	ADP	と
+し	VERB	為る
+てい	AUX	ている
+て	SCONJ	て
+、	PUNCT	、
+本質的	ADJ	本質的
+に	AUX	だ
+貨幣	NOUN	貨幣
+を	ADP	を
+重視する	VERB	重視する
+もの	NOUN	物
+である	AUX	である
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+し: する | 為る
+}
+
+Expected: {
+この	DET	此の
+遠征	NOUN	遠征
+は	ADP	は
+オールバニ	PROPN	オールバニ
+へ	ADP	へ
+の	ADP	の
+到着	NOUN	到着
+を	ADP	を
+目的	NOUN	目的
+と	ADP	と
+し	VERB	する
+てい	AUX	ている
+た	AUX	た
+ジョン・バーゴイン将軍	PROPN	ジョン・バーゴイン将軍
+が	ADP	が
+率い	VERB	率いる
+た	AUX	た
+。	PUNCT	。
+}
+Predicted: {
+この	DET	此の
+遠征	NOUN	遠征
+は	ADP	は
+オールバニ	PROPN	オールバニ
+へ	ADP	へ
+の	ADP	の
+到着	NOUN	到着
+を	ADP	を
+目的	NOUN	目的
+と	ADP	と
+し	VERB	為る
+てい	AUX	ている
+た	AUX	た
+ジョン・バーゴイン将軍	PROPN	ジョン・バーゴイン将軍
+が	ADP	が
+率い	VERB	率いる
+た	AUX	た
+。	PUNCT	。
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+し: する | 為る
 }

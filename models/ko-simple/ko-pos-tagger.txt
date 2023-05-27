@@ -1,6 +1,6 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9022788452613014
-Training-Sample-Size=30238
+Evaluation-Score=0.9022556390977443
+Training-Sample-Size=30239
 Evaluation-Sample-Size=3359
 Training-Algorithm=MAXENT
 
@@ -10,9 +10,9 @@ Component-Name=POSTaggerME
 Language=ko
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1682143131057
+Timestamp=1684649275016
 TrainerType=Event
-Training-Eventhash=150e2529431aedd5655f5bde858ee56a
+Training-Eventhash=e1b82fe13378a182038685a8b965a079
 factory=opennlp.tools.postag.POSTaggerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -2826,11 +2826,12 @@ xx가는: VERB | NOUN
 Expected: {
 서천군은_NOUN 16일_NOUN 지난해까지_ADV 한산모시문화제를_NOUN 금요일부터_ADV 나흘간_ADV 했으나_VERB 마지막_NOUN 축제일이_NOUN 월요일인_VERB 관계로_ADV 행사장을_NOUN 찾는_VERB 관광객과_NOUN 주민들이_NOUN 크게_ADV 줄어_VERB 올해는_ADV 일요일까지만_ADV 연다고_VERB 밝혔다_VERB ._PUNCT}
 Predicted: {
-서천군은_NOUN 16일_NOUN 지난해까지_ADV 한산모시문화제를_NOUN 금요일부터_ADV 나흘간_NOUN 했으나_VERB 마지막_NOUN 축제일이_NOUN 월요일인_VERB 관계로_ADV 행사장을_NOUN 찾는_VERB 관광객과_NOUN 주민들이_NOUN 크게_SCONJ 줄어_VERB 올해는_NOUN 일요일까지만_ADV 연다고_VERB 밝혔다_VERB ._PUNCT}
+서천군은_NOUN 16일_NOUN 지난해까지_ADV 한산모시문화제를_NOUN 금요일부터_ADV 나흘간_NOUN 했으나_AUX 마지막_NOUN 축제일이_NOUN 월요일인_VERB 관계로_ADV 행사장을_NOUN 찾는_VERB 관광객과_NOUN 주민들이_NOUN 크게_SCONJ 줄어_VERB 올해는_NOUN 일요일까지만_ADV 연다고_VERB 밝혔다_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 나흘간: ADV | NOUN
+했으나: VERB | AUX
 크게: ADV | SCONJ
 올해는: ADV | NOUN
 }
@@ -7325,11 +7326,11 @@ Tok: Ref | Pred
 Expected: {
 황제펭귄_NOUN ,_PUNCT 임금펭귄에_ADV 이어서_SCONJ 세번째로_ADV 커서_SCONJ 60센티미터가_NUM 넘는다고_VERB 하나_SCONJ 대개는_NOUN 50센티미터_NOUN 정도이다_VERB ._PUNCT}
 Predicted: {
-황제펭귄_NOUN ,_PUNCT 임금펭귄에_ADV 이어서_SCONJ 세번째로_ADV 커서_SCONJ 60센티미터가_NUM 넘는다고_VERB 하나_AUX 대개는_NOUN 50센티미터_NOUN 정도이다_VERB ._PUNCT}
+황제펭귄_NOUN ,_PUNCT 임금펭귄에_ADV 이어서_SCONJ 세번째로_ADV 커서_SCONJ 60센티미터가_NUM 넘는다고_VERB 하나_NUM 대개는_NOUN 50센티미터_NOUN 정도이다_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-하나: SCONJ | AUX
+하나: SCONJ | NUM
 }
 
 Expected: {
@@ -11988,6 +11989,16 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 했다: VERB | AUX
+}
+
+Expected: {
+그_DET 후_NOUN 귀하는_PRON 움직이지도_ADV 못할_VERB 정도로_ADV 피로와_CCONJ 몸살이_NOUN 겹쳐_SCONJ 드러눕고_VERB 말았다_VERB ._PUNCT}
+Predicted: {
+그_DET 후_NOUN 귀하는_PRON 움직이지도_ADV 못할_VERB 정도로_ADV 피로와_SCONJ 몸살이_NOUN 겹쳐_SCONJ 드러눕고_VERB 말았다_VERB ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+피로와: CCONJ | SCONJ
 }
 
 Expected: {
@@ -17875,7 +17886,7 @@ Tok: Ref | Pred
 Expected: {
 그러나_CCONJ 동물이라면_SCONJ 아무리_ADV 거기에_ADV 에베레스트산이_PROPN 우뚝_ADV 솟아_VERB 있더라도_AUX 올라_SCONJ 가지_VERB 않는다_AUX ._PUNCT}
 Predicted: {
-그러나_CCONJ 동물이라면_VERB 아무리_ADV 거기에_ADV 에베레스트산이_NOUN 우뚝_ADV 솟아_SCONJ 있더라도_ADV 올라_SCONJ 가지_NOUN 않는다_VERB ._PUNCT}
+그러나_CCONJ 동물이라면_VERB 아무리_ADV 거기에_ADV 에베레스트산이_NOUN 우뚝_ADV 솟아_SCONJ 있더라도_ADV 올라_SCONJ 가지_NOUN 않는다_AUX ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -17884,7 +17895,6 @@ Tok: Ref | Pred
 솟아: VERB | SCONJ
 있더라도: AUX | ADV
 가지: VERB | NOUN
-않는다: AUX | VERB
 }
 
 Expected: {

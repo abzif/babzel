@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9547533003908842
+Evaluation-Score=0.9547688074296103
 Training-Sample-Size=33700
 Evaluation-Sample-Size=3744
 Training-Algorithm=MAXENT
@@ -10,9 +10,9 @@ Component-Name=POSTaggerME
 Language=it
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1682138703058
+Timestamp=1684644743281
 TrainerType=Event
-Training-Eventhash=8e388614105bb1dd014aba053fa26654
+Training-Eventhash=c96ba2da519f347244f89a29b77c191
 factory=opennlp.tools.postag.POSTaggerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -1206,7 +1206,7 @@ botticelli: PROPN | NOUN
 Expected: {
 la_DET top_ADJ ten_NOUN prosegue_VERB con_ADP 10_NUM chilometri_NOUN di_ADP coda_NOUN ,_PUNCT sempre_ADV in il_ADP DET veronese_PROPN ,_PUNCT fra_ADP peschiera_PROPN e_CCONJ sommacampagna_PROPN e_CCONJ altrettanti_PRON in l'_ADP DET innesto_NOUN tra_ADP l'_DET a_PROPN /_PUNCT 1_PROPN e_CCONJ l'_DET a_PROPN /_PUNCT 4_PROPN in il_ADP DET bolognese_PROPN ._PUNCT}
 Predicted: {
-la_DET top_NOUN ten_NOUN prosegue_VERB con_ADP 10_NUM chilometri_NOUN di_ADP coda_NOUN ,_PUNCT sempre_ADV in il_ADP DET veronese_ADJ ,_PUNCT fra_ADP peschiera_NOUN e_CCONJ sommacampagna_NOUN e_CCONJ altrettanti_ADJ in l'_ADP DET innesto_NOUN tra_ADP l'_DET a_NOUN /_PUNCT 1_NUM e_CCONJ l'_DET a_NOUN /_PUNCT 4_NUM in il_ADP DET bolognese_PROPN ._PUNCT}
+la_DET top_NOUN ten_NOUN prosegue_VERB con_ADP 10_NUM chilometri_NOUN di_ADP coda_NOUN ,_PUNCT sempre_ADV in il_ADP DET veronese_ADJ ,_PUNCT fra_ADP peschiera_NOUN e_CCONJ sommacampagna_NOUN e_CCONJ altrettanti_ADJ in l'_ADP DET innesto_NOUN tra_ADP l'_DET a_NOUN /_PUNCT 1_NUM e_CCONJ l'_DET a_NOUN /_PUNCT 4_NUM in il_ADP DET bolognese_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -1219,6 +1219,7 @@ a: PROPN | NOUN
 1: PROPN | NUM
 a: PROPN | NOUN
 4: PROPN | NUM
+bolognese: PROPN | ADJ
 }
 
 Expected: {
@@ -1328,13 +1329,14 @@ scaltro: ADJ | PROPN
 }
 
 Expected: {
-c'_PRON è_VERB sicuramente_ADV una_DET maggioranza_NOUN favorevole_ADJ in_ADP parlamento_PROPN ,_PUNCT però_ADV questa_DET minoranza_NOUN viscerale_ADJ potrebbe_AUX cercare_VERB in_ADP qualche_DET modo_NOUN di_ADP fermare_VERB la_DET riforma_NOUN "_PUNCT ._PUNCT}
+c'_PRON è_VERB sicuramente_ADV una_DET maggioranza_NOUN favorevole_ADJ in_ADP parlamento_PROPN ,_PUNCT però_CCONJ questa_DET minoranza_NOUN viscerale_ADJ potrebbe_AUX cercare_VERB in_ADP qualche_DET modo_NOUN di_ADP fermare_VERB la_DET riforma_NOUN "_PUNCT ._PUNCT}
 Predicted: {
 c'_PRON è_VERB sicuramente_ADV una_DET maggioranza_NOUN favorevole_ADJ in_ADP parlamento_NOUN ,_PUNCT però_ADV questa_DET minoranza_NOUN viscerale_ADJ potrebbe_AUX cercare_VERB in_ADP qualche_DET modo_NOUN di_ADP fermare_VERB la_DET riforma_NOUN "_PUNCT ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 parlamento: PROPN | NOUN
+però: CCONJ | ADV
 }
 
 Expected: {
@@ -2414,16 +2416,6 @@ prima: ADJ | ADV
 }
 
 Expected: {
-"_PUNCT l'_PRON hanno_AUX costretta_VERB "_PUNCT ,_PUNCT dicono_VERB gli_DET altri_PRON ._PUNCT}
-Predicted: {
-"_PUNCT l'_PRON hanno_AUX costretta_VERB "_PUNCT ,_PUNCT dicono_VERB gli_DET altri_ADJ ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-altri: PRON | ADJ
-}
-
-Expected: {
 pensi_VERB prima_ADV di_ADP tutto_PRON a il_ADP DET fatto_NOUN che_SCONJ in_ADP questo_DET momento_NOUN la_DET vedova_NOUN hortensia_PROPN bussi_PROPN sta_VERB in_ADP argentina_PROPN a_ADP perorare_VERB la_DET causa_NOUN di la_ADP DET riunificazione_NOUN tra_ADP opposizione_NOUN di_ADP sinistra_NOUN e_CCONJ opposizione_NOUN moderata_ADJ ;_PUNCT}
 Predicted: {
 pensi_VERB prima_ADV di_ADP tutto_PRON a il_ADP DET fatto_NOUN che_SCONJ in_ADP questo_DET momento_NOUN la_DET vedova_NOUN hortensia_PROPN bussi_PROPN sta_AUX in_ADP argentina_PROPN a_ADP perorare_VERB la_DET causa_NOUN di la_ADP DET riunificazione_NOUN tra_ADP opposizione_NOUN di_ADP sinistra_NOUN e_CCONJ opposizione_NOUN moderata_ADJ ;_PUNCT}
@@ -2467,10 +2459,11 @@ cui: DET | PRON
 Expected: {
 gli_DET assassini_NOUN di le_ADP DET b.r._NOUN e_CCONJ di le_ADP DET loro_DET filiali_NOUN ,_PUNCT uccidevano_VERB con_ADP la_DET stessa_ADJ insensatezza_NOUN di il_ADP DET macellaio_NOUN di l'_ADP DET arkansas_PROPN ,_PUNCT ma_CCONJ in la_ADP DET loro_DET testa_NOUN erano_AUX convinti_ADJ di_ADP far_VERB lo_PRON per_ADP un_DET ideale_NOUN politico_ADJ ._PUNCT}
 Predicted: {
-gli_DET assassini_NOUN di le_ADP DET b.r._NOUN e_CCONJ di le_ADP DET loro_DET filiali_NOUN ,_PUNCT uccidevano_VERB con_ADP la_DET stessa_ADJ insensatezza_NOUN di il_ADP DET macellaio_NOUN di l'_ADP DET arkansas_PROPN ,_PUNCT ma_CCONJ in la_ADP DET loro_DET testa_NOUN erano_AUX convinti_VERB di_ADP far_VERB lo_PRON per_ADP un_DET ideale_NOUN politico_ADJ ._PUNCT}
+gli_DET assassini_NOUN di le_ADP DET b.r._PROPN e_CCONJ di le_ADP DET loro_DET filiali_NOUN ,_PUNCT uccidevano_VERB con_ADP la_DET stessa_ADJ insensatezza_NOUN di il_ADP DET macellaio_NOUN di l'_ADP DET arkansas_PROPN ,_PUNCT ma_CCONJ in la_ADP DET loro_DET testa_NOUN erano_AUX convinti_VERB di_ADP far_VERB lo_PRON per_ADP un_DET ideale_NOUN politico_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+b.r.: NOUN | PROPN
 convinti: ADJ | VERB
 }
 
@@ -2671,7 +2664,7 @@ innesto: NOUN | VERB
 Expected: {
 il_DET comproprietario_NOUN di_ADP un_DET muro_NOUN comune_ADJ può_AUX fabbricare_VERB appoggiando_VERB vi_ADV (_PUNCT 1_NUM )_PUNCT le_DET sue_DET costruzioni_NOUN e_CCONJ può_AUX immetter_VERB vi_ADV travi_NOUN ,_PUNCT purché_SCONJ le_PRON mantenga_VERB a_ADP distanza_NOUN di_ADP cinque_NUM centimetri_NOUN da la_ADP DET superficie_NOUN opposta_ADJ ,_PUNCT salvo_ADJ il_DET diritto_NOUN di l'_ADP DET altro_ADJ comproprietario_NOUN di_ADP fare_VERB accorciare_VERB la_DET trave_NOUN fino_ADP a la_ADP DET metà_NOUN di il_ADP DET muro_NOUN ,_PUNCT in il_ADP DET caso_NOUN in_ADP cui_PRON egli_PRON voglia_AUX collocare_VERB una_DET trave_NOUN in lo_ADP DET stesso_ADJ luogo_NOUN ,_PUNCT aprir_VERB vi_ADV un_DET incavo_NOUN o_CCONJ appoggiar_VERB vi_ADV un_DET camino_NOUN ._PUNCT}
 Predicted: {
-il_DET comproprietario_NOUN di_ADP un_DET muro_NOUN comune_ADJ può_AUX fabbricare_VERB appoggiando_VERB vi_PRON (_PUNCT 1_NUM )_PUNCT le_DET sue_DET costruzioni_NOUN e_CCONJ può_AUX immetter_VERB vi_PRON travi_ADJ ,_PUNCT purché_SCONJ le_DET mantenga_NOUN a_ADP distanza_NOUN di_ADP cinque_NUM centimetri_NOUN da la_ADP DET superficie_NOUN opposta_ADJ ,_PUNCT salvo_ADJ il_DET diritto_NOUN di l'_ADP DET altro_ADJ comproprietario_NOUN di_ADP fare_VERB accorciare_VERB la_DET trave_NOUN fino_ADP a la_ADP DET metà_NOUN di il_ADP DET muro_NOUN ,_PUNCT in il_ADP DET caso_NOUN in_ADP cui_PRON egli_PRON voglia_AUX collocare_VERB una_DET trave_NOUN in lo_ADP DET stesso_ADJ luogo_NOUN ,_PUNCT aprir_VERB vi_PRON un_DET incavo_NOUN o_CCONJ appoggiar_VERB vi_PRON un_DET camino_NOUN ._PUNCT}
+il_DET comproprietario_NOUN di_ADP un_DET muro_NOUN comune_ADJ può_AUX fabbricare_VERB appoggiando_VERB vi_PRON (_PUNCT 1_NUM )_PUNCT le_DET sue_DET costruzioni_NOUN e_CCONJ può_AUX immetter_VERB vi_PRON travi_ADJ ,_PUNCT purché_SCONJ le_DET mantenga_NOUN a_ADP distanza_NOUN di_ADP cinque_NUM centimetri_NOUN da la_ADP DET superficie_NOUN opposta_ADJ ,_PUNCT salvo_ADJ il_DET diritto_NOUN di l'_ADP DET altro_ADJ comproprietario_NOUN di_ADP fare_VERB accorciare_VERB la_DET trave_NOUN fino_ADV a la_ADP DET metà_NOUN di il_ADP DET muro_NOUN ,_PUNCT in il_ADP DET caso_NOUN in_ADP cui_PRON egli_PRON voglia_AUX collocare_VERB una_DET trave_NOUN in lo_ADP DET stesso_ADJ luogo_NOUN ,_PUNCT aprir_VERB vi_PRON un_DET incavo_NOUN o_CCONJ appoggiar_VERB vi_PRON un_DET camino_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -2680,6 +2673,7 @@ vi: ADV | PRON
 travi: NOUN | ADJ
 le: PRON | DET
 mantenga: VERB | NOUN
+fino: ADP | ADV
 vi: ADV | PRON
 vi: ADV | PRON
 }
@@ -3511,11 +3505,11 @@ rimasti: VERB | NOUN
 Expected: {
 l'_DET agricoltura_NOUN ,_PUNCT in la_ADP DET quale_PRON è_AUX impegnato_VERB ancora_ADV il_DET 50_NUM %_SYM di la_ADP DET popolazione_NOUN attiva_ADJ ,_PUNCT boccheggia_VERB nonostante_ADP le_DET riforme_NOUN e_CCONJ oggi_ADV tirana_PROPN ,_PUNCT che_PRON una_DET volta_NOUN vantava_VERB l'_DET autosufficienza_NOUN alimentare_ADJ ,_PUNCT è_AUX costretta_VERB a_ADP importare_VERB il_DET grano_NOUN perchè_SCONJ le_DET colture_NOUN intensive_ADJ sono_AUX praticamente_ADV azzerate_VERB da la_ADP DET frammentazione_NOUN di le_ADP DET terre_NOUN ._PUNCT}
 Predicted: {
-l'_DET agricoltura_NOUN ,_PUNCT in la_ADP DET quale_PRON è_AUX impegnato_VERB ancora_ADV il_DET 50_NUM %_SYM di la_ADP DET popolazione_NOUN attiva_ADJ ,_PUNCT boccheggia_ADV nonostante_ADP le_DET riforme_NOUN e_CCONJ oggi_ADV tirana_PROPN ,_PUNCT che_PRON una_DET volta_NOUN vantava_VERB l'_DET autosufficienza_NOUN alimentare_ADJ ,_PUNCT è_AUX costretta_VERB a_ADP importare_VERB il_DET grano_NOUN perchè_SCONJ le_DET colture_NOUN intensive_ADJ sono_AUX praticamente_ADV azzerate_VERB da la_ADP DET frammentazione_NOUN di le_ADP DET terre_NOUN ._PUNCT}
+l'_DET agricoltura_NOUN ,_PUNCT in la_ADP DET quale_PRON è_AUX impegnato_VERB ancora_ADV il_DET 50_NUM %_SYM di la_ADP DET popolazione_NOUN attiva_ADJ ,_PUNCT boccheggia_NOUN nonostante_ADP le_DET riforme_NOUN e_CCONJ oggi_ADV tirana_PROPN ,_PUNCT che_PRON una_DET volta_NOUN vantava_VERB l'_DET autosufficienza_NOUN alimentare_ADJ ,_PUNCT è_AUX costretta_VERB a_ADP importare_VERB il_DET grano_NOUN perchè_SCONJ le_DET colture_NOUN intensive_ADJ sono_AUX praticamente_ADV azzerate_VERB da la_ADP DET frammentazione_NOUN di le_ADP DET terre_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-boccheggia: VERB | ADV
+boccheggia: VERB | NOUN
 }
 
 Expected: {
@@ -3820,7 +3814,7 @@ confessa: VERB | NOUN
 Expected: {
 come_SCONJ la_PRON vide_VERB venire_VERB ,_PUNCT risoluta_ADJ ,_PUNCT in_ADP mezzo_NOUN a le_ADP DET macchie_NOUN fitte_ADJ ,_PUNCT in il_ADP DET fosco_ADJ chiarore_NOUN di l'_ADP DET alba_NOUN ,_PUNCT ci_PRON pensò_VERB un_DET momento_NOUN ,_PUNCT se_SCONJ dovesse_AUX lasciar_VERB partire_VERB il_DET colpo_NOUN ._PUNCT}
 Predicted: {
-come_ADP la_DET vide_NOUN venire_VERB ,_PUNCT risoluta_VERB ,_PUNCT in_ADP mezzo_NOUN a le_ADP DET macchie_NOUN fitte_ADJ ,_PUNCT in il_ADP DET fosco_NOUN chiarore_NOUN di l'_ADP DET alba_NOUN ,_PUNCT ci_PRON pensò_VERB un_DET momento_NOUN ,_PUNCT se_SCONJ dovesse_AUX lasciar_VERB partire_VERB il_DET colpo_NOUN ._PUNCT}
+come_ADP la_DET vide_NOUN venire_VERB ,_PUNCT risoluta_VERB ,_PUNCT in_ADP mezzo_NOUN a le_ADP DET macchie_NOUN fitte_ADJ ,_PUNCT in il_ADP DET fosco_NOUN chiarore_ADJ di l'_ADP DET alba_NOUN ,_PUNCT ci_PRON pensò_VERB un_DET momento_NOUN ,_PUNCT se_SCONJ dovesse_AUX lasciar_VERB partire_VERB il_DET colpo_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -3829,6 +3823,7 @@ la: PRON | DET
 vide: VERB | NOUN
 risoluta: ADJ | VERB
 fosco: ADJ | NOUN
+chiarore: NOUN | ADJ
 }
 
 Expected: {
@@ -4488,6 +4483,16 @@ nafta: PROPN | NOUN
 }
 
 Expected: {
+chi_PRON era_AUX il_DET presidente_NOUN di la_ADP DET corea_PROPN di il_ADP DET nord_PROPN prima_ADV di il_ADP DET 1994_NUM ?_PUNCT}
+Predicted: {
+chi_PRON era_AUX il_DET presidente_NOUN di la_ADP DET corea_PROPN di il_ADP DET nord_PROPN prima_ADJ di il_ADP DET 1994_NUM ?_PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+prima: ADV | ADJ
+}
+
+Expected: {
 come_ADV si_PRON progetta_VERB di_ADP portar_VERB avanti_ADV la_DET pianificazione_NOUN familiare_ADJ in_ADP perù_PROPN ?_PUNCT}
 Predicted: {
 come_ADV si_PRON progetta_VERB di_ADP portar_VERB avanti_ADV la_DET pianificazione_NOUN familiare_ADJ in_ADP perù_NOUN ?_PUNCT}
@@ -4823,11 +4828,11 @@ delaware: PROPN | NOUN
 Expected: {
 chi_PRON dipinse_VERB i_DET "_PUNCT girasoli_PROPN "_PUNCT ?_PUNCT}
 Predicted: {
-chi_PRON dipinse_VERB i_DET "_PUNCT girasoli_NOUN "_PUNCT ?_PUNCT}
+chi_PRON dipinse_VERB i_DET "_PUNCT girasoli_ADJ "_PUNCT ?_PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-girasoli: PROPN | NOUN
+girasoli: PROPN | ADJ
 }
 
 Expected: {
@@ -6253,6 +6258,16 @@ pesto: VERB | NOUN
 }
 
 Expected: {
+se_SCONJ il_DET passato_NOUN diventa_VERB troppo_ADV duro_ADJ ,_PUNCT posso_AUX aggiungere_VERB un_DET po'_PRON di_ADP latte_NOUN ._PUNCT}
+Predicted: {
+se_SCONJ il_DET passato_NOUN diventa_VERB troppo_ADV duro_ADJ ,_PUNCT posso_AUX aggiungere_VERB un_DET po'_ADV di_ADP latte_NOUN ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+po': PRON | ADV
+}
+
+Expected: {
 la_DET francia_PROPN ha_AUX giocato_VERB per_ADP prima_ADJ perché_SCONJ è_AUX la_DET squadra_NOUN che_PRON ha_AUX vinto_VERB gli_DET ultimi_ADJ mondiali_NOUN in il_ADP DET 1998_NUM ._PUNCT}
 Predicted: {
 la_DET francia_PROPN ha_AUX giocato_VERB per_ADP prima_ADV perché_SCONJ è_AUX la_DET squadra_NOUN che_PRON ha_AUX vinto_VERB gli_DET ultimi_ADJ mondiali_PROPN in il_ADP DET 1998_NUM ._PUNCT}
@@ -6527,11 +6542,10 @@ ulcera: NOUN | ADJ
 Expected: {
 ormai_ADV in la_ADP DET maggior_ADJ parte_NOUN di_ADP questi_DET spettacoli_NOUN televisivi_ADJ è_AUX diventata_VERB proprio_ADV la_DET musica_NOUN l'_DET elemento_NOUN essenziale_ADJ che_PRON non_ADV deve_AUX mancare_VERB ,_PUNCT basti_VERB pensare_VERB a_ADP gli_DET annuali_ADJ oscar_PROPN di la_ADP DET musica_NOUN o_CCONJ mtv_PROPN europe_PROPN music_PROPN awards_PROPN ,_PUNCT oppure_CCONJ a_ADP sanremo_PROPN e_CCONJ a il_ADP DET festival_PROPN bar_PROPN o_CCONJ ancora_ADV a_ADP quella_DET serie_NOUN infinita_ADJ di_ADP spettacoli_NOUN musicali_ADJ estivi_ADJ tutti_DET molto_ADV simili_ADJ ._PUNCT}
 Predicted: {
-ormai_ADV in la_ADP DET maggior_ADJ parte_NOUN di_ADP questi_DET spettacoli_NOUN televisivi_ADJ è_AUX diventata_VERB proprio_ADV la_DET musica_NOUN l'_DET elemento_NOUN essenziale_ADJ che_PRON non_ADV deve_AUX mancare_VERB ,_PUNCT basti_VERB pensare_VERB a_ADP gli_DET annuali_ADJ oscar_NOUN di la_ADP DET musica_NOUN o_CCONJ mtv_PROPN europe_PROPN music_PROPN awards_PROPN ,_PUNCT oppure_CCONJ a_ADP sanremo_PROPN e_CCONJ a il_ADP DET festival_NOUN bar_NOUN o_CCONJ ancora_ADV a_ADP quella_DET serie_NOUN infinita_ADJ di_ADP spettacoli_NOUN musicali_ADJ estivi_ADJ tutti_PRON molto_ADV simili_ADJ ._PUNCT}
+ormai_ADV in la_ADP DET maggior_ADJ parte_NOUN di_ADP questi_DET spettacoli_NOUN televisivi_ADJ è_AUX diventata_VERB proprio_ADV la_DET musica_NOUN l'_DET elemento_NOUN essenziale_ADJ che_PRON non_ADV deve_AUX mancare_VERB ,_PUNCT basti_VERB pensare_VERB a_ADP gli_DET annuali_ADJ oscar_PROPN di la_ADP DET musica_NOUN o_CCONJ mtv_PROPN europe_PROPN music_PROPN awards_PROPN ,_PUNCT oppure_CCONJ a_ADP sanremo_PROPN e_CCONJ a il_ADP DET festival_NOUN bar_NOUN o_CCONJ ancora_ADV a_ADP quella_DET serie_NOUN infinita_ADJ di_ADP spettacoli_NOUN musicali_ADJ estivi_ADJ tutti_PRON molto_ADV simili_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-oscar: PROPN | NOUN
 festival: PROPN | NOUN
 bar: PROPN | NOUN
 tutti: DET | PRON
@@ -6733,13 +6747,14 @@ che: SCONJ | PRON
 Expected: {
 che_SCONJ vi_PRON sia_VERB vita_NOUN ,_PUNCT da_ADP qualche_DET parte_NOUN in l'_ADP DET universo_NOUN ,_PUNCT possiamo_AUX presuppor_VERB lo_PRON ,_PUNCT ma_CCONJ la_DET probabilità_NOUN che_SCONJ tutti_DET i_DET fattori_NOUN (_PUNCT nascita_NOUN e_CCONJ sviluppo_NOUN di la_ADP DET vita_NOUN su_ADP un_DET altro_ADJ pianeta_NOUN ,_PUNCT vicinanza_NOUN con_ADP il_DET nostro_PRON ,_PUNCT evoluzione_NOUN di_ADP una_DET specie_NOUN intelligente_ADJ ,_PUNCT tecnologie_NOUN necessarie_ADJ ,_PUNCT …_PUNCT )_PUNCT siano_AUX positivi_ADJ affinché_SCONJ ci_PRON possa_AUX essere_VERB un_DET contatto_NOUN è_AUX bassissima_ADJ ._PUNCT}
 Predicted: {
-che_PRON vi_PRON sia_VERB vita_NOUN ,_PUNCT da_ADP qualche_DET parte_NOUN in l'_ADP DET universo_NOUN ,_PUNCT possiamo_AUX presuppor_VERB lo_PRON ,_PUNCT ma_CCONJ la_DET probabilità_NOUN che_SCONJ tutti_PRON i_VERB fattori_NOUN (_PUNCT nascita_NOUN e_CCONJ sviluppo_NOUN di la_ADP DET vita_NOUN su_ADP un_DET altro_ADJ pianeta_NOUN ,_PUNCT vicinanza_NOUN con_ADP il_DET nostro_PRON ,_PUNCT evoluzione_NOUN di_ADP una_DET specie_NOUN intelligente_ADJ ,_PUNCT tecnologie_NOUN necessarie_ADJ ,_PUNCT …_PUNCT )_PUNCT siano_AUX positivi_ADJ affinché_SCONJ ci_PRON possa_AUX essere_AUX un_DET contatto_NOUN è_AUX bassissima_ADJ ._PUNCT}
+che_PRON vi_PRON sia_VERB vita_NOUN ,_PUNCT da_ADP qualche_DET parte_NOUN in l'_ADP DET universo_NOUN ,_PUNCT possiamo_AUX presuppor_VERB lo_PRON ,_PUNCT ma_CCONJ la_DET probabilità_NOUN che_SCONJ tutti_PRON i_VERB fattori_NOUN (_PUNCT nascita_NOUN e_CCONJ sviluppo_NOUN di la_ADP DET vita_NOUN su_ADP un_DET altro_ADJ pianeta_NOUN ,_PUNCT vicinanza_NOUN con_ADP il_DET nostro_DET ,_PUNCT evoluzione_NOUN di_ADP una_DET specie_NOUN intelligente_ADJ ,_PUNCT tecnologie_NOUN necessarie_ADJ ,_PUNCT …_PUNCT )_PUNCT siano_AUX positivi_ADJ affinché_SCONJ ci_PRON possa_AUX essere_AUX un_DET contatto_NOUN è_AUX bassissima_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 che: SCONJ | PRON
 tutti: DET | PRON
 i: DET | VERB
+nostro: PRON | DET
 essere: VERB | AUX
 }
 
@@ -6811,10 +6826,11 @@ riconoscere: NOUN | VERB
 Expected: {
 a_ADP conferma_NOUN di_ADP ciò_PRON è_AUX il_DET fatto_NOUN che_SCONJ a_ADP gli_DET mtv_PROPN europe_PROPN music_PROPN award_PROPN di_ADP stoccolma_PROPN ,_PUNCT grande_ADJ evento_NOUN musicale_ADJ internazionale_ADJ che_PRON è_AUX stato_AUX seguito_VERB e_CCONJ documentato_VERB da_ADP il_DET corriere_PROPN di la_ADP DET sera_NOUN ,_PUNCT hanno_AUX riscosso_VERB grande_ADJ successo_NOUN sia_SCONJ madonna_PROPN che_SCONJ eminem_PROPN ,_PUNCT due_NUM personaggi_NOUN di il_ADP DET tutto_NOUN diversi_ADJ ,_PUNCT soprattutto_ADV per_ADP quanto_PRON riguarda_VERB la_DET loro_DET musica_NOUN ._PUNCT}
 Predicted: {
-a_ADP conferma_NOUN di_ADP ciò_PRON è_AUX il_DET fatto_NOUN che_SCONJ a_ADP gli_DET mtv_PROPN europe_PROPN music_PROPN award_PROPN di_ADP stoccolma_PROPN ,_PUNCT grande_ADJ evento_NOUN musicale_ADJ internazionale_ADJ che_PRON è_AUX stato_AUX seguito_VERB e_CCONJ documentato_VERB da_ADP il_DET corriere_PROPN di la_ADP DET sera_PROPN ,_PUNCT hanno_AUX riscosso_VERB grande_ADJ successo_NOUN sia_AUX madonna_PROPN che_PRON eminem_PROPN ,_PUNCT due_NUM personaggi_NOUN di il_ADP DET tutto_DET diversi_ADJ ,_PUNCT soprattutto_ADV per_ADP quanto_PRON riguarda_VERB la_DET loro_DET musica_NOUN ._PUNCT}
+a_ADP conferma_VERB di_ADP ciò_PRON è_AUX il_DET fatto_NOUN che_SCONJ a_ADP gli_DET mtv_PROPN europe_PROPN music_PROPN award_PROPN di_ADP stoccolma_PROPN ,_PUNCT grande_ADJ evento_NOUN musicale_ADJ internazionale_ADJ che_PRON è_AUX stato_AUX seguito_VERB e_CCONJ documentato_VERB da_ADP il_DET corriere_PROPN di la_ADP DET sera_PROPN ,_PUNCT hanno_AUX riscosso_VERB grande_ADJ successo_NOUN sia_AUX madonna_PROPN che_PRON eminem_PROPN ,_PUNCT due_NUM personaggi_NOUN di il_ADP DET tutto_DET diversi_ADJ ,_PUNCT soprattutto_ADV per_ADP quanto_PRON riguarda_VERB la_DET loro_DET musica_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+conferma: NOUN | VERB
 sera: NOUN | PROPN
 sia: SCONJ | AUX
 che: SCONJ | PRON
@@ -7608,12 +7624,12 @@ che: PRON | SCONJ
 Expected: {
 trudeau_PROPN estenderà_VERB l'_DET invito_NOUN a il_ADP DET 45esimo_ADJ presidente_NOUN di gli_ADP DET stati_PROPN uniti_PROPN ,_PUNCT chiunque_PRON sia_AUX eletto_VERB ._PUNCT}
 Predicted: {
-trudeau_NOUN estenderà_VERB l'_DET invito_NOUN a il_ADP DET 45esimo_DET presidente_NOUN di gli_ADP DET stati_PROPN uniti_PROPN ,_PUNCT chiunque_PRON sia_AUX eletto_VERB ._PUNCT}
+trudeau_NOUN estenderà_VERB l'_DET invito_NOUN a il_ADP DET 45esimo_NUM presidente_NOUN di gli_ADP DET stati_PROPN uniti_PROPN ,_PUNCT chiunque_PRON sia_AUX eletto_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 trudeau: PROPN | NOUN
-45esimo: ADJ | DET
+45esimo: ADJ | NUM
 }
 
 Expected: {
@@ -7914,11 +7930,12 @@ nord: NOUN | PROPN
 Expected: {
 cristoforo_PROPN colombo_PROPN attraversò_VERB l'_DET oceano_PROPN atlantico_PROPN per_ADP arrivare_VERB in le_ADP DET indie_PROPN occidentali_PROPN in il_ADP DET 1492_NUM ,_PUNCT dando_VERB vita_NOUN a il_ADP DET periodo_NOUN di l'_ADP DET esplorazione_NOUN europea_ADJ di le_ADP DET americhe_PROPN ._PUNCT}
 Predicted: {
-cristoforo_PROPN colombo_PROPN attraversò_VERB l'_DET oceano_NOUN atlantico_PROPN per_ADP arrivare_VERB in le_ADP DET indie_PROPN occidentali_ADJ in il_ADP DET 1492_NUM ,_PUNCT dando_VERB vita_NOUN a il_ADP DET periodo_NOUN di l'_ADP DET esplorazione_NOUN europea_ADJ di le_ADP DET americhe_NOUN ._PUNCT}
+cristoforo_PROPN colombo_PROPN attraversò_VERB l'_DET oceano_NOUN atlantico_PROPN per_ADP arrivare_VERB in le_ADP DET indie_NOUN occidentali_ADJ in il_ADP DET 1492_NUM ,_PUNCT dando_VERB vita_NOUN a il_ADP DET periodo_NOUN di l'_ADP DET esplorazione_NOUN europea_ADJ di le_ADP DET americhe_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 oceano: PROPN | NOUN
+indie: PROPN | NOUN
 occidentali: PROPN | ADJ
 americhe: PROPN | NOUN
 }
@@ -9546,23 +9563,23 @@ che: PRON | SCONJ
 Expected: {
 quanto_ADV a l'_ADP DET area_NOUN trattamentale_ADJ ,_PUNCT ho_AUX previsto_VERB un_DET numero_NOUN di_ADP protocolli_NOUN di_ADP lavoro_NOUN che_PRON non_ADV ha_VERB precedenti_ADJ ,_PUNCT senza_ADP considerare_VERB gli_DET investimenti_NOUN di l'_ADP DET ultima_ADJ legge_NOUN di_ADP bilancio_NOUN ,_PUNCT che_PRON rafforzano_VERB enormemente_ADV il_DET profilo_NOUN di la_ADP DET rieducazione_NOUN ._PUNCT}
 Predicted: {
-quanto_ADV a l'_ADP DET area_NOUN trattamentale_ADJ ,_PUNCT ho_AUX previsto_VERB un_DET numero_NOUN di_ADP protocolli_NOUN di_ADP lavoro_NOUN che_PRON non_ADV ha_VERB precedenti_NOUN ,_PUNCT senza_ADP considerare_VERB gli_DET investimenti_NOUN di l'_ADP DET ultima_ADJ legge_NOUN di_ADP bilancio_NOUN ,_PUNCT che_PRON rafforzano_VERB enormemente_ADV il_DET profilo_NOUN di la_ADP DET rieducazione_NOUN ._PUNCT}
+quanto_PRON a l'_ADP DET area_NOUN trattamentale_ADJ ,_PUNCT ho_AUX previsto_VERB un_DET numero_NOUN di_ADP protocolli_NOUN di_ADP lavoro_NOUN che_PRON non_ADV ha_VERB precedenti_NOUN ,_PUNCT senza_ADP considerare_VERB gli_DET investimenti_NOUN di l'_ADP DET ultima_ADJ legge_NOUN di_ADP bilancio_NOUN ,_PUNCT che_PRON rafforzano_VERB enormemente_ADV il_DET profilo_NOUN di la_ADP DET rieducazione_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+quanto: ADV | PRON
 precedenti: ADJ | NOUN
 }
 
 Expected: {
 sleale_ADJ perché_SCONJ la_DET stessa_ADJ tipologia_NOUN di i_ADP DET disordini_NOUN e_CCONJ le_DET morti_NOUN che_PRON sono_AUX purtroppo_ADV avvenute_VERB in_ADP queste_DET circostanze_NOUN ,_PUNCT alcune_PRON di le_ADP DET quali_PRON ormai_ADV acclarate_VERB e_CCONJ collegate_VERB a_ADP un_DET uso_NOUN di_ADP metadone_NOUN e_CCONJ di_ADP sostanze_NOUN stupefacenti_ADJ assunte_VERB in gli_ADP DET assalti_NOUN a le_ADP DET infermerie_NOUN e_CCONJ a le_ADP DET strutture_NOUN sanitarie_ADJ ,_PUNCT ci_PRON confermano_VERB ancora_ADV una_DET volta_NOUN che_SCONJ c'_PRON è_VERB una_DET spirale_NOUN tra_ADP l'_DET approvvigionamento_NOUN di le_ADP DET sostanze_NOUN stupefacenti_ADJ ,_PUNCT i_DET colloqui_NOUN con_ADP i_DET familiari_NOUN ,_PUNCT la_DET permanenza_NOUN in_ADP carcere_NOUN e_CCONJ il_DET sovraffollamento_NOUN ._PUNCT}
 Predicted: {
-sleale_ADJ perché_SCONJ la_DET stessa_ADJ tipologia_NOUN di i_ADP DET disordini_NOUN e_CCONJ le_DET morti_NOUN che_PRON sono_AUX purtroppo_ADV avvenute_VERB in_ADP queste_DET circostanze_NOUN ,_PUNCT alcune_PRON di le_ADP DET quali_PRON ormai_ADV acclarate_ADJ e_CCONJ collegate_ADJ a_ADP un_DET uso_NOUN di_ADP metadone_NOUN e_CCONJ di_ADP sostanze_NOUN stupefacenti_ADJ assunte_VERB in gli_ADP DET assalti_NOUN a le_ADP DET infermerie_NOUN e_CCONJ a le_ADP DET strutture_NOUN sanitarie_ADJ ,_PUNCT ci_PRON confermano_VERB ancora_ADV una_DET volta_NOUN che_PRON c'_PRON è_VERB una_DET spirale_NOUN tra_ADP l'_DET approvvigionamento_NOUN di le_ADP DET sostanze_NOUN stupefacenti_ADJ ,_PUNCT i_DET colloqui_NOUN con_ADP i_DET familiari_NOUN ,_PUNCT la_DET permanenza_NOUN in_ADP carcere_NOUN e_CCONJ il_DET sovraffollamento_NOUN ._PUNCT}
+sleale_ADJ perché_SCONJ la_DET stessa_ADJ tipologia_NOUN di i_ADP DET disordini_NOUN e_CCONJ le_DET morti_NOUN che_PRON sono_AUX purtroppo_ADV avvenute_VERB in_ADP queste_DET circostanze_NOUN ,_PUNCT alcune_PRON di le_ADP DET quali_PRON ormai_ADV acclarate_ADJ e_CCONJ collegate_ADJ a_ADP un_DET uso_NOUN di_ADP metadone_NOUN e_CCONJ di_ADP sostanze_NOUN stupefacenti_ADJ assunte_VERB in gli_ADP DET assalti_NOUN a le_ADP DET infermerie_NOUN e_CCONJ a le_ADP DET strutture_NOUN sanitarie_ADJ ,_PUNCT ci_PRON confermano_VERB ancora_ADV una_DET volta_NOUN che_SCONJ c'_PRON è_VERB una_DET spirale_NOUN tra_ADP l'_DET approvvigionamento_NOUN di le_ADP DET sostanze_NOUN stupefacenti_ADJ ,_PUNCT i_DET colloqui_NOUN con_ADP i_DET familiari_NOUN ,_PUNCT la_DET permanenza_NOUN in_ADP carcere_NOUN e_CCONJ il_DET sovraffollamento_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 acclarate: VERB | ADJ
 collegate: VERB | ADJ
-che: SCONJ | PRON
 }
 
 Expected: {
@@ -9642,13 +9659,13 @@ euro: PROPN | NOUN
 Expected: {
 “_PUNCT altro_PRON che_SCONJ messaggi_NOUN ._PUNCT io_PRON correrei_VERB verso_ADP casa_NOUN tua_DET anche_ADV adesso_ADV ._PUNCT “_PUNCT -_PUNCT (_PUNCT via_ADP vogliosolamentete_X )_PUNCT http://t.co/8laeaof3iu_SYM}
 Predicted: {
-“_PUNCT altro_PRON che_PRON messaggi_PRON ._PUNCT io_PRON correrei_VERB verso_ADP casa_NOUN tua_DET anche_ADV adesso_ADV ._PUNCT “_PUNCT -_PUNCT (_PUNCT via_ADV vogliosolamentete_NOUN )_PUNCT http://t.co/8laeaof3iu_SYM}
+“_PUNCT altro_PRON che_PRON messaggi_PRON ._PUNCT io_PRON correrei_VERB verso_ADP casa_NOUN tua_DET anche_ADV adesso_ADV ._PUNCT “_PUNCT -_PUNCT (_PUNCT via_NOUN vogliosolamentete_NOUN )_PUNCT http://t.co/8laeaof3iu_SYM}
 Errors: {
 Tok: Ref | Pred
 ---------------
 che: SCONJ | PRON
 messaggi: NOUN | PRON
-via: ADP | ADV
+via: ADP | NOUN
 vogliosolamentete: X | NOUN
 }
 
@@ -10148,16 +10165,6 @@ fea: X | PROPN
 }
 
 Expected: {
-ipr_PROPN marketing_PROPN :_PUNCT la_DET fiducia_NOUN in il_ADP DET #governo_SYM #monti_SYM torna_VERB a_ADP salire_VERB e_CCONJ si_PRON attesta_VERB a il_ADP DET 57_NUM %_SYM ,_PUNCT +_SYM 4_NUM %_SYM da il_ADP DET 7_NUM gennaio_NOUN ._PUNCT http://t.co/pagt5gpj_SYM}
-Predicted: {
-ipr_PROPN marketing_PROPN :_PUNCT la_DET fiducia_NOUN in il_ADP DET #governo_SYM #monti_SYM torna_VERB a_ADP salire_VERB e_CCONJ si_PRON attesta_VERB a il_ADP DET 57_NUM %_SYM ,_PUNCT +_SYM 4_NUM %_PUNCT da il_ADP DET 7_NUM gennaio_NOUN ._PUNCT http://t.co/pagt5gpj_SYM}
-Errors: {
-Tok: Ref | Pred
----------------
-%: SYM | PUNCT
-}
-
-Expected: {
 @user_SYM #grillo_SYM non_ADV ha_VERB bisogno_NOUN di la_ADP DET tv_NOUN ne_CCONJ di i_ADP DET "_PUNCT giornalisti_NOUN "_PUNCT ,_PUNCT se_SCONJ vuoi_AUX fare_VERB le_DET domande_NOUN vai_VERB in_ADP piazza_NOUN come_ADP tutti_PRON ;)_SYM}
 Predicted: {
 @user_SYM #grillo_SYM non_ADV ha_VERB bisogno_NOUN di la_ADP DET tv_NOUN ne_PRON di i_PUNCT "_PUNCT giornalisti_NOUN "_PUNCT ,_PUNCT se_SCONJ vuoi_AUX fare_VERB le_DET domande_NOUN vai_VERB in_ADP piazza_NOUN come_ADP tutti_PRON ;)_SYM}
@@ -10203,12 +10210,11 @@ pil: PROPN | NOUN
 Expected: {
 sono_AUX a_ADP cell_NOUN da_ADP 3_NUM ore_NOUN nonostante_ADP ripetuti_ADJ tentativi_NOUN di_ADP chiudere_VERB la_DET telefonata_NOUN ,_PUNCT come_ADV fanno_VERB le_DET persone_NOUN a_ADP non_ADV render_VERB si_PRON conto_NOUN che_SCONJ ..._PUNCT “_PUNCT basta_VERB !_PUNCT “_PUNCT ?_PUNCT}
 Predicted: {
-sono_AUX a_ADP cell_NOUN da_ADP 3_NUM ore_NOUN nonostante_ADP ripetuti_NOUN tentativi_ADJ di_ADP chiudere_VERB la_DET telefonata_NOUN ,_PUNCT come_ADV fanno_VERB le_DET persone_NOUN a_ADP non_ADV render_VERB si_PRON conto_NOUN che_SCONJ ..._PUNCT “_PUNCT basta_VERB !_PUNCT “_PUNCT ?_PUNCT}
+sono_AUX a_ADP cell_NOUN da_ADP 3_NUM ore_NOUN nonostante_ADP ripetuti_NOUN tentativi_NOUN di_ADP chiudere_VERB la_DET telefonata_NOUN ,_PUNCT come_ADV fanno_VERB le_DET persone_NOUN a_ADP non_ADV render_VERB si_PRON conto_NOUN che_SCONJ ..._PUNCT “_PUNCT basta_VERB !_PUNCT “_PUNCT ?_PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 ripetuti: ADJ | NOUN
-tentativi: NOUN | ADJ
 }
 
 Expected: {
@@ -10290,6 +10296,16 @@ comunità: NOUN | PROPN
 xxiii: PROPN | ADJ
 premier: PROPN | NOUN
 sen.: PROPN | PUNCT
+}
+
+Expected: {
+ora_ADV @user_SYM è_AUX stupefatto_ADJ di la_ADP DET debolezza_NOUN di il_ADP DET governo_NOUN #monti_SYM ._PUNCT ora_ADV ..._PUNCT http://t.co/2ffkxhqw_SYM}
+Predicted: {
+ora_NOUN @user_SYM è_AUX stupefatto_ADJ di la_ADP DET debolezza_NOUN di il_ADP DET governo_NOUN #monti_SYM ._PUNCT ora_ADV ..._PUNCT http://t.co/2ffkxhqw_SYM}
+Errors: {
+Tok: Ref | Pred
+---------------
+ora: ADV | NOUN
 }
 
 Expected: {
@@ -10815,12 +10831,13 @@ ok: ADV | VERB
 Expected: {
 oltre_ADP 1000_NUM occhiali_NOUN da_ADP vista_NOUN con_ADP lenti_NOUN personalizzate_ADJ ._PUNCT sconti_NOUN fino_ADV a il_ADP DET 70_NUM %_SYM con_ADP garanzia_NOUN 100_NUM %_SYM soddisfatti_VERB o_CCONJ rimborsati_VERB ._PUNCT http://t.co/ejac0g2yo5_SYM}
 Predicted: {
-oltre_ADV 1000_NUM occhiali_NOUN da_ADP vista_NOUN con_ADP lenti_NOUN personalizzate_ADJ ._PUNCT sconti_NOUN fino_ADP a il_ADP DET 70_NUM %_SYM con_ADP garanzia_NOUN 100_NUM %_SYM soddisfatti_VERB o_CCONJ rimborsati_VERB ._PUNCT http://t.co/ejac0g2yo5_SYM}
+oltre_ADV 1000_NUM occhiali_NOUN da_ADP vista_NOUN con_ADP lenti_NOUN personalizzate_ADJ ._PUNCT sconti_NOUN fino_ADP a il_ADP DET 70_NUM %_SYM con_ADP garanzia_NOUN 100_NUM %_SYM soddisfatti_ADJ o_CCONJ rimborsati_VERB ._PUNCT http://t.co/ejac0g2yo5_SYM}
 Errors: {
 Tok: Ref | Pred
 ---------------
 oltre: ADP | ADV
 fino: ADV | ADP
+soddisfatti: VERB | ADJ
 }
 
 Expected: {
@@ -11628,13 +11645,11 @@ visco: PROPN | ADJ
 Expected: {
 governo_NOUN :_PUNCT monti_PROPN ,_PUNCT profondo_ADJ rispetto_NOUN per_ADP partiti_NOUN e_CCONJ parlamento_PROPN :_PUNCT roma_PROPN ,_PUNCT 13_NUM nov._NOUN (_PUNCT adnkronos_PROPN )_PUNCT ?_PUNCT "_PUNCT mi_PRON accingo_VERB a_ADP questo_DET com..._X http://t.co/soxqoc7g_SYM}
 Predicted: {
-governo_NOUN :_PUNCT monti_PROPN ,_PUNCT profondo_ADJ rispetto_ADV per_ADP partiti_NOUN e_CCONJ parlamento_NOUN :_PUNCT roma_PROPN ,_PUNCT 13_NUM nov._PUNCT (_PUNCT adnkronos_PROPN )_PUNCT ?_PUNCT "_PUNCT mi_PRON accingo_VERB a_ADP questo_DET com..._NOUN http://t.co/soxqoc7g_SYM}
+governo_NOUN :_PUNCT monti_PROPN ,_PUNCT profondo_ADJ rispetto_NOUN per_ADP partiti_NOUN e_CCONJ parlamento_NOUN :_PUNCT roma_PROPN ,_PUNCT 13_NUM nov._NOUN (_PUNCT adnkronos_PROPN )_PUNCT ?_PUNCT "_PUNCT mi_PRON accingo_VERB a_ADP questo_DET com..._NOUN http://t.co/soxqoc7g_SYM}
 Errors: {
 Tok: Ref | Pred
 ---------------
-rispetto: NOUN | ADV
 parlamento: PROPN | NOUN
-nov.: NOUN | PUNCT
 com...: X | NOUN
 }
 
@@ -12147,16 +12162,6 @@ Tok: Ref | Pred
 orobica: PROPN | NOUN
 cf: PROPN | ADP
 asperti: PROPN | VERB
-}
-
-Expected: {
-@user_SYM aggiungo_VERB :_PUNCT multe_NOUN a_ADP tutto_DET spiano_NOUN !_PUNCT andremo_VERB a_ADP pile_NOUN ,_PUNCT a_ADP meno_ADV che_SCONJ #super_SYM #mario_SYM #monti_SYM non_ADV decida_VERB di_ADP tassare_VERB anche_ADV quelle_PRON !_PUNCT}
-Predicted: {
-@user_SYM aggiungo_VERB :_PUNCT multe_NOUN a_ADP tutto_DET spiano_NOUN !_PUNCT andremo_VERB a_ADP pile_PROPN ,_PUNCT a_ADP meno_ADV che_SCONJ #super_SYM #mario_SYM #monti_SYM non_ADV decida_VERB di_ADP tassare_VERB anche_ADV quelle_PRON !_PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-pile: NOUN | PROPN
 }
 
 Expected: {
@@ -12924,13 +12929,13 @@ antiquariato: PROPN | ADJ
 Expected: {
 rt_SYM @user_SYM :_PUNCT #rt_SYM segui_VERB mi_PRON e_CCONJ ti_PRON seguo_VERB in_ADP più_ADV ti_PRON voto_VERB il_DET profilo_NOUN in_ADP :_PUNCT 🌕_SYM perfetto_ADJ 🌔_SYM bellissimo_ADJ 🌓_SYM bello_ADJ 🌒_SYM carino_ADJ 🌑_SYM consiglio_NOUN :_PUNCT cambia_VERB lo_PRON x7_NUM}
 Predicted: {
-rt_SYM @user_SYM :_PUNCT #rt_SYM segui_VERB mi_PRON e_CCONJ ti_PRON seguo_VERB in_ADP più_ADV ti_PRON voto_VERB il_DET profilo_NOUN in_ADP :_PUNCT 🌕_SYM perfetto_ADJ 🌔_SYM bellissimo_ADJ 🌓_SYM bello_ADJ 🌒_SYM carino_INTJ 🌑_SYM consiglio_NOUN :_PUNCT cambia_VERB lo_DET x7_SYM}
+rt_SYM @user_SYM :_PUNCT #rt_SYM segui_VERB mi_PRON e_CCONJ ti_PRON seguo_VERB in_ADP più_ADV ti_PRON voto_VERB il_DET profilo_NOUN in_ADP :_PUNCT 🌕_SYM perfetto_ADJ 🌔_SYM bellissimo_ADJ 🌓_SYM bello_ADJ 🌒_SYM carino_INTJ 🌑_SYM consiglio_NOUN :_PUNCT cambia_VERB lo_DET x7_PRON}
 Errors: {
 Tok: Ref | Pred
 ---------------
 carino: ADJ | INTJ
 lo: PRON | DET
-x7: NUM | SYM
+x7: NUM | PRON
 }
 
 Expected: {
@@ -13498,6 +13503,16 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 scherzo: VERB | NOUN
+}
+
+Expected: {
+@user1_SYM @user2_SYM ma_CCONJ dove_ADV sono_AUX 20_NUM e_CCONJ la_DET signora_NOUN ?_PUNCT non_ADV vengono_VERB su_ADP twitter_PROPN}
+Predicted: {
+@user1_SYM @user2_SYM ma_CCONJ dove_PRON sono_AUX 20_NUM e_CCONJ la_DET signora_NOUN ?_PUNCT non_ADV vengono_VERB su_ADP twitter_PROPN}
+Errors: {
+Tok: Ref | Pred
+---------------
+dove: ADV | PRON
 }
 
 Expected: {
@@ -14137,6 +14152,16 @@ festeggiano: ADJ | VERB
 }
 
 Expected: {
+@user_SYM ti_PRON prego_VERB dim_VERB mi_PRON che_SCONJ sarai_AUX a la_ADP DET #festadellunità_SYM di_ADP #bologna_SYM ho_AUX lasciato_VERB le_DET uova_NOUN fuori_ADP frigo_NOUN ._PUNCT #labuonascuola_SYM #mavaffanculo_SYM}
+Predicted: {
+@user_SYM ti_PRON prego_VERB dim_VERB mi_PRON che_SCONJ sarai_AUX a la_ADP DET #festadellunità_SYM di_ADP #bologna_SYM ho_AUX lasciato_VERB le_DET uova_NOUN fuori_ADV frigo_NOUN ._PUNCT #labuonascuola_SYM #mavaffanculo_SYM}
+Errors: {
+Tok: Ref | Pred
+---------------
+fuori: ADP | ADV
+}
+
+Expected: {
 primo_ADJ giorno_NOUN di_ADP #scuola_SYM ,_PUNCT ogni_DET ministro_NOUN entra_VERB in il_ADP DET mondo_NOUN di i_ADP DET bimbi_NOUN visitando_VERB una_DET scuola_NOUN diversa_ADJ :_PUNCT si_PRON chiama_VERB vaccino_NOUN #labuonascuolauncazzo_SYM}
 Predicted: {
 primo_ADJ giorno_NOUN di_ADP #scuola_SYM ,_PUNCT ogni_DET ministro_NOUN entra_VERB in il_ADP DET mondo_NOUN di i_ADP DET bimbi_NOUN visitando_VERB una_DET scuola_NOUN diversa_ADJ :_PUNCT si_PRON chiama_VERB vaccino_PROPN #labuonascuolauncazzo_SYM}
@@ -14235,10 +14260,11 @@ una: PRON | DET
 Expected: {
 #leggestabilità_SYM :_PUNCT 300_NUM milioni_NOUN a la_ADP DET #ricerca_SYM ,_PUNCT 500_NUM per_ADP assumere_VERB 150_NUM mila_NUM docenti_NOUN ._PUNCT libro_NOUN di i_ADP DET sogni_NOUN ?_PUNCT #labuonascuola_SYM (_PUNCT leggi_VERB :_PUNCT http://t.co/72jdrruj9u_SYM )_PUNCT}
 Predicted: {
-#leggestabilità_SYM :_PUNCT 300_NUM milioni_NOUN a la_ADP DET #ricerca_SYM ,_PUNCT 500_NUM per_ADP assumere_VERB 150_NUM mila_NUM docenti_NOUN ._PUNCT libro_NOUN di i_ADP DET sogni_NOUN ?_PUNCT #labuonascuola_SYM (_PUNCT leggi_NOUN :_PUNCT http://t.co/72jdrruj9u_SYM )_PUNCT}
+#leggestabilità_SYM :_PUNCT 300_NUM milioni_NOUN a la_ADP DET #ricerca_SYM ,_PUNCT 500_NUM per_ADP assumere_VERB 150_NUM mila_NOUN docenti_NOUN ._PUNCT libro_NOUN di i_ADP DET sogni_NOUN ?_PUNCT #labuonascuola_SYM (_PUNCT leggi_NOUN :_PUNCT http://t.co/72jdrruj9u_SYM )_PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+mila: NUM | NOUN
 leggi: VERB | NOUN
 }
 
@@ -14409,16 +14435,6 @@ che: SCONJ | PRON
 }
 
 Expected: {
-charleston_PROPN ,_PUNCT uccide_VERB nove_NUM persone_NOUN durante_ADP la_DET lettura_NOUN di la_ADP DET bibbia_PROPN ._PUNCT si_PRON era_AUX immedesimato_VERB un_DET po'_ADV troppo_ADV ._PUNCT [_PUNCT @user_SYM ]_PUNCT}
-Predicted: {
-charleston_PROPN ,_PUNCT uccide_VERB nove_NUM persone_NOUN durante_ADP la_DET lettura_NOUN di la_ADP DET bibbia_NOUN ._PUNCT si_PRON era_AUX immedesimato_VERB un_DET po'_ADV troppo_ADV ._PUNCT [_PUNCT @user_SYM ]_PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-bibbia: PROPN | NOUN
-}
-
-Expected: {
 piano_NOUN scuola_PROPN ,_PUNCT esulta_VERB l'_DET ex_ADJ ministro_PROPN gelmini_PROPN http://t.co/zijri2l63d_SYM #labuonascuola_SYM è_AUX di_ADP destra_NOUN con_ADP tanto_DET merito_NOUN e_CCONJ talento_NOUN}
 Predicted: {
 piano_NOUN scuola_NOUN ,_PUNCT esulta_VERB l'_DET ex_ADJ ministro_NOUN gelmini_PROPN http://t.co/zijri2l63d_SYM #labuonascuola_SYM è_AUX di_ADP destra_NOUN con_ADP tanto_DET merito_NOUN e_CCONJ talento_NOUN}
@@ -14430,9 +14446,9 @@ ministro: PROPN | NOUN
 }
 
 Expected: {
-@user_SYM ragazzi_NOUN calma_NOUN ,_PUNCT il_DET prof_NOUN ._PUNCT mario_PROPN monti_PROPN se_PRON la_PRON cava_VERB da_ADP solo_ADJ :_PUNCT e'_AUX bocconiano_ADJ ,_PUNCT mica_ADV bocchiniano_ADJ !_PUNCT ;)_SYM by_ADP rao_PROPN}
+@user_SYM ragazzi_NOUN calma_NOUN ,_PUNCT il_DET prof._NOUN mario_PROPN monti_PROPN se_PRON la_PRON cava_VERB da_ADP solo_ADJ :_PUNCT e'_AUX bocconiano_ADJ ,_PUNCT mica_ADV bocchiniano_ADJ !_PUNCT ;)_SYM by_ADP rao_PROPN}
 Predicted: {
-@user_SYM ragazzi_NOUN calma_NOUN ,_PUNCT il_DET prof_NOUN ._PUNCT mario_PROPN monti_PROPN se_SCONJ la_DET cava_NOUN da_ADP solo_ADV :_PUNCT e'_AUX bocconiano_ADJ ,_PUNCT mica_ADV bocchiniano_ADJ !_PUNCT ;)_SYM by_ADP rao_PROPN}
+@user_SYM ragazzi_NOUN calma_NOUN ,_PUNCT il_DET prof._NOUN mario_PROPN monti_PROPN se_SCONJ la_DET cava_NOUN da_ADP solo_ADV :_PUNCT e'_AUX bocconiano_ADJ ,_PUNCT mica_ADV bocchiniano_ADJ !_PUNCT ;)_SYM by_ADP rao_PROPN}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -15331,13 +15347,12 @@ quotidiano: ADJ | NOUN
 Expected: {
 assicura_VERB il_DET sindaco_NOUN costantino_PROPN federico_PROPN (_PUNCT e_CCONJ c'_PRON è_VERB da_ADP creder_VERB gli_PRON )_PUNCT che_SCONJ in_ADP piazzetta_NOUN si_PRON vede_VERB sempre_ADV un_DET bel_ADJ pò_PRON di_ADP gente_NOUN e_CCONJ via_PROPN krupp_PROPN ,_PUNCT resa_VERB più_ADV agibile_ADJ dopo_ADP il_DET restauro_NOUN ,_PUNCT è_AUX frequentata_VERB come_ADP mai_ADV ._PUNCT}
 Predicted: {
-assicura_VERB il_DET sindaco_NOUN costantino_VERB federico_PROPN (_PUNCT e_CCONJ c'_PRON è_VERB da_ADP creder_VERB gli_PRON )_PUNCT che_PRON in_ADP piazzetta_NOUN si_PRON vede_VERB sempre_ADV un_DET bel_ADJ pò_ADV di_ADP gente_NOUN e_CCONJ via_NOUN krupp_PROPN ,_PUNCT resa_VERB più_ADV agibile_ADJ dopo_ADP il_DET restauro_NOUN ,_PUNCT è_AUX frequentata_VERB come_ADP mai_ADV ._PUNCT}
+assicura_VERB il_DET sindaco_NOUN costantino_VERB federico_PROPN (_PUNCT e_CCONJ c'_PRON è_VERB da_ADP creder_VERB gli_PRON )_PUNCT che_PRON in_ADP piazzetta_NOUN si_PRON vede_VERB sempre_ADV un_DET bel_ADJ pò_PRON di_ADP gente_NOUN e_CCONJ via_NOUN krupp_PROPN ,_PUNCT resa_VERB più_ADV agibile_ADJ dopo_ADP il_DET restauro_NOUN ,_PUNCT è_AUX frequentata_VERB come_ADP mai_ADV ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 costantino: PROPN | VERB
 che: SCONJ | PRON
-pò: PRON | ADV
 via: PROPN | NOUN
 }
 
@@ -15630,11 +15645,10 @@ art: PROPN | NOUN
 Expected: {
 e_CCONJ tutto_DET il_DET lavoro_PROPN che_PRON ho_AUX fatto_VERB ,_PUNCT non_ADV solo_ADV io_PRON ma_CCONJ tanti_DET altri_PRON in il_ADP DET nostro_DET campo_NOUN ,_PUNCT va_VERB sempre_ADV sotto_ADP silenzio_NOUN ,_PUNCT non_ADV si_PRON trova_VERB nemmeno_ADV un_DET trafiletto_NOUN ._PUNCT}
 Predicted: {
-e_CCONJ tutto_PRON il_DET lavoro_NOUN che_PRON ho_AUX fatto_VERB ,_PUNCT non_ADV solo_ADV io_PRON ma_CCONJ tanti_DET altri_ADJ in il_ADP DET nostro_DET campo_NOUN ,_PUNCT va_AUX sempre_ADV sotto_ADP silenzio_NOUN ,_PUNCT non_ADV si_PRON trova_VERB nemmeno_ADV un_DET trafiletto_NOUN ._PUNCT}
+e_CCONJ tutto_DET il_DET lavoro_NOUN che_PRON ho_AUX fatto_VERB ,_PUNCT non_ADV solo_ADV io_PRON ma_CCONJ tanti_DET altri_ADJ in il_ADP DET nostro_DET campo_NOUN ,_PUNCT va_AUX sempre_ADV sotto_ADP silenzio_NOUN ,_PUNCT non_ADV si_PRON trova_VERB nemmeno_ADV un_DET trafiletto_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-tutto: DET | PRON
 lavoro: PROPN | NOUN
 altri: PRON | ADJ
 va: VERB | AUX
@@ -15751,7 +15765,7 @@ democrito: PROPN | VERB
 Expected: {
 gli_DET esperti_NOUN di il_ADP DET gruppo_NOUN "_PUNCT insula_PROPN "_PUNCT ,_PUNCT che_PRON si_PRON occupa_VERB di la_ADP DET sistemazione_NOUN di i_ADP DET canali_NOUN veneziani_ADJ attraverso_ADP un_DET "_PUNCT progetto_NOUN integrato_ADJ rii_NOUN "_PUNCT confezionato_VERB d'_ADP intesa_NOUN tra_ADP il_DET comune_NOUN ,_PUNCT la_DET regione_NOUN e_CCONJ il_DET ministero_PROPN di l'_ADP DET ambiente_PROPN ,_PUNCT hanno_AUX scavato_VERB ,_PUNCT sino_ADP a la_ADP DET fine_NOUN di l'_ADP DET anno_NOUN scorso_ADJ ,_PUNCT 295mila_NUM metri_NOUN cubi_NOUN di_ADP sedimenti_NOUN ,_PUNCT pari_ADJ a l'_ADP DET 87_NUM per_ADP cento_NUM di il_ADP DET totale_NOUN ,_PUNCT e_CCONJ vi_PRON hanno_AUX trovato_VERB la_DET presenza_NOUN di_ADP ben_ADV 11_NUM veleni_NOUN diversi_ADJ :_PUNCT 8.737_NUM chili_NOUN di_ADP nichel_NOUN ,_PUNCT 7.496_NUM di_ADP cromo_NOUN ,_PUNCT 4.040_NUM di_ADP arsenico_NOUN ,_PUNCT 1.606_NUM di_ADP cadmio_NOUN ._PUNCT}
 Predicted: {
-gli_DET esperti_NOUN di il_ADP DET gruppo_NOUN "_PUNCT insula_NOUN "_PUNCT ,_PUNCT che_PRON si_PRON occupa_VERB di la_ADP DET sistemazione_NOUN di i_ADP DET canali_NOUN veneziani_ADJ attraverso_ADP un_DET "_PUNCT progetto_NOUN integrato_VERB rii_NOUN "_PUNCT confezionato_VERB d'_ADP intesa_NOUN tra_ADP il_DET comune_NOUN ,_PUNCT la_DET regione_NOUN e_CCONJ il_DET ministero_NOUN di l'_ADP DET ambiente_NOUN ,_PUNCT hanno_AUX scavato_VERB ,_PUNCT sino_ADV a la_ADP DET fine_NOUN di l'_ADP DET anno_NOUN scorso_ADJ ,_PUNCT 295mila_NUM metri_NOUN cubi_NOUN di_ADP sedimenti_NOUN ,_PUNCT pari_ADJ a l'_ADP DET 87_NUM per_ADP cento_NUM di il_ADP DET totale_NOUN ,_PUNCT e_CCONJ vi_PRON hanno_VERB trovato_VERB la_DET presenza_NOUN di_ADP ben_ADV 11_NUM veleni_NOUN diversi_ADJ :_PUNCT 8.737_NUM chili_NOUN di_ADP nichel_PROPN ,_PUNCT 7.496_NUM di_ADP cromo_PROPN ,_PUNCT 4.040_NUM di_ADP arsenico_NOUN ,_PUNCT 1.606_NUM di_ADP cadmio_NOUN ._PUNCT}
+gli_DET esperti_NOUN di il_ADP DET gruppo_NOUN "_PUNCT insula_NOUN "_PUNCT ,_PUNCT che_PRON si_PRON occupa_VERB di la_ADP DET sistemazione_NOUN di i_ADP DET canali_NOUN veneziani_ADJ attraverso_ADP un_DET "_PUNCT progetto_NOUN integrato_VERB rii_NOUN "_PUNCT confezionato_VERB d'_ADP intesa_NOUN tra_ADP il_DET comune_NOUN ,_PUNCT la_DET regione_NOUN e_CCONJ il_DET ministero_NOUN di l'_ADP DET ambiente_NOUN ,_PUNCT hanno_AUX scavato_VERB ,_PUNCT sino_ADV a la_ADP DET fine_NOUN di l'_ADP DET anno_NOUN scorso_ADJ ,_PUNCT 295mila_NUM metri_NOUN cubi_NOUN di_ADP sedimenti_NOUN ,_PUNCT pari_ADJ a l'_ADP DET 87_NUM per_ADP cento_NUM di il_ADP DET totale_NOUN ,_PUNCT e_CCONJ vi_PRON hanno_VERB trovato_VERB la_DET presenza_NOUN di_ADP ben_ADV 11_NUM veleni_NOUN diversi_ADJ :_PUNCT 8.737_NUM chili_NOUN di_ADP nichel_PROPN ,_PUNCT 7.496_NUM di_ADP cromo_PROPN ,_PUNCT 4.040_NUM di_ADP arsenico_PROPN ,_PUNCT 1.606_NUM di_ADP cadmio_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -15763,6 +15777,7 @@ sino: ADP | ADV
 hanno: AUX | VERB
 nichel: NOUN | PROPN
 cromo: NOUN | PROPN
+arsenico: NOUN | PROPN
 }
 
 Expected: {
@@ -15875,14 +15890,13 @@ questi: PRON | DET
 }
 
 Expected: {
-in il_ADP DET bimestre_NOUN aprile_NOUN -_PUNCT maggio_NOUN la_DET produzione_NOUN industriale_ADJ è_AUX su_ADP livelli_NOUN di lo_ADP DET 0,6%_NUM superiori_ADJ a_ADP quelli_PRON di il_ADP DET bimestre_NOUN precedente_ADJ e_CCONJ di l'_ADP DET 1,1%_NUM più_ADV alti_ADJ rispetto_ADV a l'_ADP DET analogo_ADJ periodo_NOUN di il_ADP DET 1993_NUM ._PUNCT}
+in il_ADP DET bimestre_NOUN aprile_NOUN -_PUNCT maggio_NOUN la_DET produzione_NOUN industriale_ADJ è_AUX su_ADP livelli_NOUN di lo_ADP DET 0,6_NUM %_SYM superiori_ADJ a_ADP quelli_PRON di il_ADP DET bimestre_NOUN precedente_ADJ e_CCONJ di l'_ADP DET 1,1_NUM %_SYM più_ADV alti_ADJ rispetto_ADV a l'_ADP DET analogo_ADJ periodo_NOUN di il_ADP DET 1993_NUM ._PUNCT}
 Predicted: {
-in il_ADP DET bimestre_NOUN aprile_ADJ -_PUNCT maggio_NOUN la_DET produzione_NOUN industriale_ADJ è_AUX su_ADP livelli_NOUN di lo_ADP DET 0,6%_NUM superiori_NOUN a_ADP quelli_PRON di il_ADP DET bimestre_NOUN precedente_ADJ e_CCONJ di l'_ADP DET 1,1%_NUM più_ADV alti_ADJ rispetto_ADV a l'_ADP DET analogo_ADJ periodo_NOUN di il_ADP DET 1993_NUM ._PUNCT}
+in il_ADP DET bimestre_NOUN aprile_ADJ -_PUNCT maggio_NOUN la_DET produzione_NOUN industriale_ADJ è_AUX su_ADP livelli_NOUN di lo_ADP DET 0,6_NUM %_SYM superiori_ADJ a_ADP quelli_PRON di il_ADP DET bimestre_NOUN precedente_ADJ e_CCONJ di l'_ADP DET 1,1_NUM %_SYM più_ADV alti_ADJ rispetto_ADV a l'_ADP DET analogo_ADJ periodo_NOUN di il_ADP DET 1993_NUM ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 aprile: NOUN | ADJ
-superiori: ADJ | NOUN
 }
 
 Expected: {
@@ -16151,26 +16165,26 @@ tuttavia: CCONJ | ADV
 }
 
 Expected: {
-un_DET esempio_NOUN di_ADP questo_DET tipo_NOUN di_ADP accordo_NOUN è_AUX quello_PRON siglato_VERB in il_ADP DET 1990_NUM su_ADP i_DET semiconduttori_NOUN ,_PUNCT che_PRON fissava_VERB come_ADP obiettivo_NOUN un_DET aumento_NOUN di la_ADP DET quota_NOUN di_ADP mercato_NOUN di i_ADP DET "_PUNCT microchip_NOUN "_PUNCT esteri_ADJ su il_ADP DET mercato_NOUN nipponico_ADJ sino_ADP a il_ADP DET 20%_NUM ._PUNCT}
+un_DET esempio_NOUN di_ADP questo_DET tipo_NOUN di_ADP accordo_NOUN è_AUX quello_PRON siglato_VERB in il_ADP DET 1990_NUM su_ADP i_DET semiconduttori_NOUN ,_PUNCT che_PRON fissava_VERB come_ADP obiettivo_NOUN un_DET aumento_NOUN di la_ADP DET quota_NOUN di_ADP mercato_NOUN di i_ADP DET "_PUNCT microchip_NOUN "_PUNCT esteri_ADJ su il_ADP DET mercato_NOUN nipponico_ADJ sino_ADP a il_ADP DET 20_NUM %_SYM ._PUNCT}
 Predicted: {
-un_DET esempio_NOUN di_ADP questo_DET tipo_NOUN di_ADP accordo_NOUN è_AUX quello_PRON siglato_VERB in il_ADP DET 1990_NUM su_ADP i_DET semiconduttori_NOUN ,_PUNCT che_PRON fissava_VERB come_ADP obiettivo_NOUN un_DET aumento_NOUN di la_ADP DET quota_NOUN di_ADP mercato_NOUN di i_ADP DET "_PUNCT microchip_NOUN "_PUNCT esteri_NOUN su il_ADP DET mercato_NOUN nipponico_ADJ sino_PRON a il_ADP DET 20%_NUM ._PUNCT}
+un_DET esempio_NOUN di_ADP questo_DET tipo_NOUN di_ADP accordo_NOUN è_AUX quello_PRON siglato_VERB in il_ADP DET 1990_NUM su_ADP i_DET semiconduttori_NOUN ,_PUNCT che_PRON fissava_VERB come_ADP obiettivo_NOUN un_DET aumento_NOUN di la_ADP DET quota_NOUN di_ADP mercato_NOUN di i_ADP DET "_PUNCT microchip_NOUN "_PUNCT esteri_NOUN su il_ADP DET mercato_NOUN nipponico_ADJ sino_ADV a il_ADP DET 20_NUM %_SYM ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 esteri: ADJ | NOUN
-sino: ADP | PRON
+sino: ADP | ADV
 }
 
 Expected: {
 forte_ADJ di_ADP un_DET rapporto_NOUN di_ADP 163_NUM pagine_NOUN ,_PUNCT corredato_VERB da_ADP numerosi_ADJ grafici_NOUN e_CCONJ tabelle_NOUN ,_PUNCT il_DET ministro_NOUN di l'_ADP DET industria_NOUN e_CCONJ commercio_NOUN ,_PUNCT michael_PROPN heseltine_PROPN ,_PUNCT affiancato_VERB da_ADP quello_PRON di il_ADP DET lavoro_NOUN ,_PUNCT david_PROPN hunt_PROPN ,_PUNCT e_CCONJ di l'_ADP DET istruzione_NOUN ,_PUNCT john_PROPN patten_PROPN ,_PUNCT ha_AUX lanciato_VERB ieri_ADV in_ADP parlamento_NOUN un_DET vero_ADJ e_CCONJ proprio_ADJ manifesto_NOUN che_PRON si_PRON baserà_VERB su_ADP un_DET miglioramento_NOUN di l'_ADP DET educazione_NOUN scolastica_ADJ ,_PUNCT di l'_ADP DET avviamento_NOUN e_CCONJ riqualificazione_NOUN professionale_ADJ e_CCONJ di gli_ADP DET incentivi_NOUN e_CCONJ facilitazioni_NOUN a le_ADP DET imprese_NOUN ._PUNCT}
 Predicted: {
-forte_ADJ di_ADP un_DET rapporto_NOUN di_ADP 163_NUM pagine_NOUN ,_PUNCT corredato_VERB da_ADP numerosi_DET grafici_NOUN e_CCONJ tabelle_NOUN ,_PUNCT il_DET ministro_NOUN di l'_ADP DET industria_PROPN e_CCONJ commercio_NOUN ,_PUNCT michael_PROPN heseltine_PROPN ,_PUNCT affiancato_VERB da_ADP quello_PRON di il_ADP DET lavoro_NOUN ,_PUNCT david_PROPN hunt_PROPN ,_PUNCT e_CCONJ di l'_ADP DET istruzione_NOUN ,_PUNCT john_PROPN patten_PROPN ,_PUNCT ha_AUX lanciato_VERB ieri_ADV in_ADP parlamento_NOUN un_DET vero_ADJ e_CCONJ proprio_ADV manifesto_NOUN che_PRON si_PRON baserà_VERB su_ADP un_DET miglioramento_NOUN di l'_ADP DET educazione_NOUN scolastica_ADJ ,_PUNCT di l'_ADP DET avviamento_NOUN e_CCONJ riqualificazione_NOUN professionale_ADJ e_CCONJ di gli_ADP DET incentivi_NOUN e_CCONJ facilitazioni_NOUN a le_ADP DET imprese_NOUN ._PUNCT}
+forte_ADJ di_ADP un_DET rapporto_NOUN di_ADP 163_NUM pagine_NOUN ,_PUNCT corredato_VERB da_ADP numerosi_DET grafici_NOUN e_CCONJ tabelle_NOUN ,_PUNCT il_DET ministro_NOUN di l'_ADP DET industria_PROPN e_CCONJ commercio_NOUN ,_PUNCT michael_PROPN heseltine_PROPN ,_PUNCT affiancato_VERB da_ADP quello_PRON di il_ADP DET lavoro_NOUN ,_PUNCT david_PROPN hunt_PROPN ,_PUNCT e_CCONJ di l'_ADP DET istruzione_NOUN ,_PUNCT john_PROPN patten_PROPN ,_PUNCT ha_AUX lanciato_VERB ieri_ADV in_ADP parlamento_NOUN un_DET vero_ADJ e_CCONJ proprio_DET manifesto_NOUN che_PRON si_PRON baserà_VERB su_ADP un_DET miglioramento_NOUN di l'_ADP DET educazione_NOUN scolastica_ADJ ,_PUNCT di l'_ADP DET avviamento_NOUN e_CCONJ riqualificazione_NOUN professionale_ADJ e_CCONJ di gli_ADP DET incentivi_NOUN e_CCONJ facilitazioni_NOUN a le_ADP DET imprese_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 numerosi: ADJ | DET
 industria: NOUN | PROPN
-proprio: ADJ | ADV
+proprio: ADJ | DET
 }
 
 Expected: {
@@ -16279,9 +16293,9 @@ improvvise: ADJ | VERB
 }
 
 Expected: {
-il_DET meccanismo_PROPN di i_ADP DET collegi_NOUN uninominali_ADJ ,_PUNCT nonostante_ADP la_DET compresenza_NOUN di la_ADP DET quota_NOUN proporzionale_ADJ di il_ADP DET 25%_NUM ,_PUNCT ha_AUX operato_VERB in_ADP modo_NOUN tale_ADJ da_ADP trasformare_VERB una_DET maggioranza_NOUN relativa_ADJ (_PUNCT quella_PRON espressa_VERB in_ADP termini_NOUN di_ADP voti_NOUN di_ADP lista_NOUN )_PUNCT in_ADP maggioranza_NOUN assoluta_ADJ (_PUNCT quella_PRON espressa_VERB in_ADP termini_NOUN di_ADP seggi_NOUN )_PUNCT ._PUNCT}
+il_DET meccanismo_PROPN di i_ADP DET collegi_NOUN uninominali_ADJ ,_PUNCT nonostante_ADP la_DET compresenza_NOUN di la_ADP DET quota_NOUN proporzionale_ADJ di il_ADP DET 25_NUM %_SYM ,_PUNCT ha_AUX operato_VERB in_ADP modo_NOUN tale_ADJ da_ADP trasformare_VERB una_DET maggioranza_NOUN relativa_ADJ (_PUNCT quella_PRON espressa_VERB in_ADP termini_NOUN di_ADP voti_NOUN di_ADP lista_NOUN )_PUNCT in_ADP maggioranza_NOUN assoluta_ADJ (_PUNCT quella_PRON espressa_VERB in_ADP termini_NOUN di_ADP seggi_NOUN )_PUNCT ._PUNCT}
 Predicted: {
-il_DET meccanismo_NOUN di i_ADP DET collegi_NOUN uninominali_ADJ ,_PUNCT nonostante_ADP la_DET compresenza_NOUN di la_ADP DET quota_NOUN proporzionale_ADJ di il_ADP DET 25%_NUM ,_PUNCT ha_AUX operato_VERB in_ADP modo_NOUN tale_ADJ da_ADP trasformare_VERB una_DET maggioranza_NOUN relativa_ADJ (_PUNCT quella_PRON espressa_VERB in_ADP termini_NOUN di_ADP voti_NOUN di_ADP lista_NOUN )_PUNCT in_ADP maggioranza_NOUN assoluta_ADJ (_PUNCT quella_PRON espressa_VERB in_ADP termini_NOUN di_ADP seggi_NOUN )_PUNCT ._PUNCT}
+il_DET meccanismo_NOUN di i_ADP DET collegi_NOUN uninominali_ADJ ,_PUNCT nonostante_ADP la_DET compresenza_NOUN di la_ADP DET quota_NOUN proporzionale_ADJ di il_ADP DET 25_NUM %_SYM ,_PUNCT ha_AUX operato_VERB in_ADP modo_NOUN tale_ADJ da_ADP trasformare_VERB una_DET maggioranza_NOUN relativa_ADJ (_PUNCT quella_PRON espressa_VERB in_ADP termini_NOUN di_ADP voti_NOUN di_ADP lista_NOUN )_PUNCT in_ADP maggioranza_NOUN assoluta_ADJ (_PUNCT quella_PRON espressa_VERB in_ADP termini_NOUN di_ADP seggi_NOUN )_PUNCT ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -16307,16 +16321,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 un: NUM | DET
-}
-
-Expected: {
-a_ADP esempio_NOUN ,_PUNCT le_DET <_PUNCT autostrade_NOUN informatiche_ADJ >_PUNCT determineranno_VERB in gli_ADP DET stati_PROPN uniti_PROPN una_DET riduzione_NOUN in i_ADP DET trasporti_NOUN di_ADP circa_ADV il_DET 20%_NUM ,_PUNCT con_ADP conseguente_ADJ riduzione_NOUN di l'_ADP DET inquinamento_NOUN ._PUNCT}
-Predicted: {
-a_ADP esempio_NOUN ,_PUNCT le_DET <_PUNCT autostrade_NOUN informatiche_ADJ >_PUNCT determineranno_VERB in gli_ADP DET stati_PROPN uniti_PROPN una_DET riduzione_NOUN in i_ADP DET trasporti_NOUN di_ADP circa_PRON il_DET 20%_NUM ,_PUNCT con_ADP conseguente_ADJ riduzione_NOUN di l'_ADP DET inquinamento_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-circa: ADV | PRON
 }
 
 Expected: {
@@ -16405,14 +16409,14 @@ paramount: PROPN | NOUN
 }
 
 Expected: {
-per_ADP la_DET fininvest_PROPN :_PUNCT 18%_NUM orario_ADJ e_CCONJ 15%_NUM giornaliero_ADJ per_ADP ciascuna_DET rete_NOUN ._PUNCT}
+per_ADP la_DET fininvest_PROPN :_PUNCT 18_NUM %_SYM orario_ADJ e_CCONJ 15_NUM %_SYM giornaliero_ADJ per_ADP ciascuna_DET rete_NOUN ._PUNCT}
 Predicted: {
-per_ADP la_DET fininvest_PROPN :_PUNCT 18%_NUM orario_NOUN e_CCONJ 15%_NUM giornaliero_NOUN per_ADP ciascuna_DET rete_NOUN ._PUNCT}
+per_ADP la_DET fininvest_PROPN :_PUNCT 18_NUM %_SYM orario_NOUN e_CCONJ 15_NUM %_SYM giornaliero_PROPN per_ADP ciascuna_DET rete_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 orario: ADJ | NOUN
-giornaliero: ADJ | NOUN
+giornaliero: ADJ | PROPN
 }
 
 Expected: {
@@ -16437,15 +16441,16 @@ mammì: PROPN | INTJ
 }
 
 Expected: {
-il_DET 58%_NUM di i_ADP DET titoli_NOUN pubblicati_ADJ -_PUNCT ci_PRON dice_VERB il_DET rapporto_NOUN anee_PROPN -_PUNCT sono_AUX per_ADP il_DET dos_PROPN e_CCONJ windows_PROPN ,_PUNCT il_DET 22%_NUM per_ADP macintosh_PROPN ,_PUNCT il_DET 7%_NUM per_ADP cd_PROPN i_PROPN ,_PUNCT il_DET 5%_NUM per_ADP tandy_PROPN ,_PUNCT il_DET 4%_NUM per_ADP cdtv_PROPN e_CCONJ un_DET altro_ADJ 4%_NUM per_ADP il_DET sony_PROPN data_PROPN discman_PROPN ._PUNCT}
+il_DET 58_NUM %_SYM di i_ADP DET titoli_NOUN pubblicati_ADJ -_PUNCT ci_PRON dice_VERB il_DET rapporto_NOUN anee_PROPN -_PUNCT sono_AUX per_ADP il_DET dos_PROPN e_CCONJ windows_PROPN ,_PUNCT il_DET 22_NUM %_SYM per_ADP macintosh_PROPN ,_PUNCT il_DET 7_NUM %_SYM per_ADP cd_PROPN i_PROPN ,_PUNCT il_DET 5_NUM %_SYM per_ADP tandy_PROPN ,_PUNCT il_DET 4_NUM %_SYM per_ADP cdtv_PROPN e_CCONJ un_DET altro_ADJ 4_NUM %_SYM per_ADP il_DET sony_PROPN data_PROPN discman_PROPN ._PUNCT}
 Predicted: {
-il_DET 58%_NUM di i_ADP DET titoli_NOUN pubblicati_VERB -_PUNCT ci_PRON dice_VERB il_DET rapporto_NOUN anee_PROPN -_PUNCT sono_AUX per_ADP il_DET dos_NOUN e_CCONJ windows_PROPN ,_PUNCT il_DET 22%_NUM per_ADP macintosh_PROPN ,_PUNCT il_DET 7%_NUM per_ADP cd_NOUN i_PROPN ,_PUNCT il_DET 5%_NUM per_ADP tandy_PROPN ,_PUNCT il_DET 4%_NUM per_ADP cdtv_PROPN e_CCONJ un_DET altro_ADJ 4%_NUM per_ADP il_DET sony_PROPN data_VERB discman_NOUN ._PUNCT}
+il_DET 58_NUM %_SYM di i_ADP DET titoli_NOUN pubblicati_VERB -_PUNCT ci_PRON dice_VERB il_DET rapporto_NOUN anee_PROPN -_PUNCT sono_AUX per_ADP il_DET dos_NOUN e_CCONJ windows_PROPN ,_PUNCT il_DET 22_NUM %_SYM per_ADP macintosh_PROPN ,_PUNCT il_DET 7_NUM %_SYM per_ADP cd_X i_PROPN ,_PUNCT il_DET 5_NUM %_SYM per_ADP tandy_PROPN ,_PUNCT il_DET 4_NUM %_SYM per_ADP cdtv_NOUN e_CCONJ un_DET altro_ADJ 4_NUM %_SYM per_ADP il_DET sony_PROPN data_VERB discman_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 pubblicati: ADJ | VERB
 dos: PROPN | NOUN
-cd: PROPN | NOUN
+cd: PROPN | X
+cdtv: PROPN | NOUN
 data: PROPN | VERB
 discman: PROPN | NOUN
 }
@@ -16517,11 +16522,12 @@ ferroviaria: ADJ | PROPN
 Expected: {
 il_DET bollettino_PROPN in_ADP questione_NOUN ,_PUNCT ovviamente_ADV ,_PUNCT è_AUX quello_PRON su le_ADP DET quote_NOUN latte_NOUN ,_PUNCT che_PRON l'_DET eima_PROPN (_PUNCT ex_ADJ aima_PROPN )_PUNCT ha_AUX distribuito_VERB a_ADP gli_DET interessati_NOUN su la_ADP DET base_NOUN di i_ADP DET controlli_NOUN a_ADP tappeto_NOUN ,_PUNCT azienda_NOUN per_ADP azienda_NOUN ._PUNCT}
 Predicted: {
-il_DET bollettino_NOUN in_ADP questione_NOUN ,_PUNCT ovviamente_ADV ,_PUNCT è_AUX quello_PRON su le_ADP DET quote_NOUN latte_NOUN ,_PUNCT che_PRON l'_DET eima_PROPN (_PUNCT ex_ADJ aima_NOUN )_PUNCT ha_AUX distribuito_VERB a_ADP gli_DET interessati_NOUN su la_ADP DET base_NOUN di i_ADP DET controlli_NOUN a_ADP tappeto_NOUN ,_PUNCT azienda_NOUN per_ADP azienda_NOUN ._PUNCT}
+il_DET bollettino_NOUN in_ADP questione_NOUN ,_PUNCT ovviamente_ADV ,_PUNCT è_AUX quello_PRON su le_ADP DET quote_NOUN latte_ADJ ,_PUNCT che_PRON l'_DET eima_PROPN (_PUNCT ex_ADJ aima_NOUN )_PUNCT ha_AUX distribuito_VERB a_ADP gli_DET interessati_NOUN su la_ADP DET base_NOUN di i_ADP DET controlli_NOUN a_ADP tappeto_NOUN ,_PUNCT azienda_NOUN per_ADP azienda_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 bollettino: PROPN | NOUN
+latte: NOUN | ADJ
 aima: PROPN | NOUN
 }
 
@@ -16536,9 +16542,9 @@ norcia: PROPN | NOUN
 }
 
 Expected: {
-secondo_ADP i_DET dati_NOUN diffusi_VERB ieri_ADV a_ADP milano_PROPN da l'_ADP DET expo_PROPN cts_PROPN ,_PUNCT i_DET "_PUNCT viaggi_PROPN di lo_ADP DET spirito_NOUN "_PUNCT ,_PUNCT nonostante_ADP le_DET difficoltà_NOUN economiche_ADJ in_ADP cui_PRON tutti_DET i_DET paesi_NOUN si_PRON sono_AUX venuti_VERB a_ADP trovare_VERB in gli_ADP DET ultimi_ADJ anni_NOUN ,_PUNCT hanno_AUX registrato_VERB in il_ADP DET novantatre_NUM una_DET crescita_NOUN in_ADP italia_PROPN di il_ADP DET 5%_NUM ,_PUNCT con_ADP oltre_ADV 33,6_NUM milioni_NOUN di_ADP viaggiatori_NOUN ,_PUNCT per_ADP un_DET giro_NOUN d'_ADP affari_NOUN globale_ADJ che_PRON ha_AUX raggiunto_VERB i_DET 4_NUM mila_NOUN miliardi_NOUN ._PUNCT}
+secondo_ADP i_DET dati_NOUN diffusi_VERB ieri_ADV a_ADP milano_PROPN da l'_ADP DET expo_PROPN cts_PROPN ,_PUNCT i_DET "_PUNCT viaggi_PROPN di lo_ADP DET spirito_NOUN "_PUNCT ,_PUNCT nonostante_ADP le_DET difficoltà_NOUN economiche_ADJ in_ADP cui_PRON tutti_DET i_DET paesi_NOUN si_PRON sono_AUX venuti_VERB a_ADP trovare_VERB in gli_ADP DET ultimi_ADJ anni_NOUN ,_PUNCT hanno_AUX registrato_VERB in il_ADP DET novantatre_NUM una_DET crescita_NOUN in_ADP italia_PROPN di il_ADP DET 5_NUM %_SYM ,_PUNCT con_ADP oltre_ADV 33,6_NUM milioni_NOUN di_ADP viaggiatori_NOUN ,_PUNCT per_ADP un_DET giro_NOUN d'_ADP affari_NOUN globale_ADJ che_PRON ha_AUX raggiunto_VERB i_DET 4_NUM mila_NOUN miliardi_NOUN ._PUNCT}
 Predicted: {
-secondo_ADP i_DET dati_NOUN diffusi_VERB ieri_ADV a_ADP milano_PROPN da l'_ADP DET expo_NOUN cts_PROPN ,_PUNCT i_DET "_PUNCT viaggi_NOUN di lo_ADP DET spirito_NOUN "_PUNCT ,_PUNCT nonostante_ADP le_DET difficoltà_NOUN economiche_ADJ in_ADP cui_PRON tutti_DET i_DET paesi_NOUN si_PRON sono_AUX venuti_VERB a_ADP trovare_VERB in gli_ADP DET ultimi_ADJ anni_NOUN ,_PUNCT hanno_AUX registrato_VERB in il_ADP DET novantatre_NUM una_DET crescita_NOUN in_ADP italia_PROPN di il_ADP DET 5%_NUM ,_PUNCT con_ADP oltre_ADV 33,6_NUM milioni_NOUN di_ADP viaggiatori_NOUN ,_PUNCT per_ADP un_DET giro_NOUN d'_ADP affari_NOUN globale_ADJ che_PRON ha_AUX raggiunto_VERB i_DET 4_NUM mila_NUM miliardi_NOUN ._PUNCT}
+secondo_ADP i_DET dati_NOUN diffusi_VERB ieri_ADV a_ADP milano_PROPN da l'_ADP DET expo_NOUN cts_PROPN ,_PUNCT i_DET "_PUNCT viaggi_NOUN di lo_ADP DET spirito_NOUN "_PUNCT ,_PUNCT nonostante_ADP le_DET difficoltà_NOUN economiche_ADJ in_ADP cui_PRON tutti_DET i_DET paesi_NOUN si_PRON sono_AUX venuti_VERB a_ADP trovare_VERB in gli_ADP DET ultimi_ADJ anni_NOUN ,_PUNCT hanno_AUX registrato_VERB in il_ADP DET novantatre_NUM una_DET crescita_NOUN in_ADP italia_PROPN di il_ADP DET 5_NUM %_SYM ,_PUNCT con_ADP oltre_ADV 33,6_NUM milioni_NOUN di_ADP viaggiatori_NOUN ,_PUNCT per_ADP un_DET giro_NOUN d'_ADP affari_NOUN globale_ADJ che_PRON ha_AUX raggiunto_VERB i_DET 4_NUM mila_NUM miliardi_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -16559,9 +16565,9 @@ tutto: ADV | PRON
 }
 
 Expected: {
-in_ADP rosso_NOUN anche_ADV alimentari_NOUN (_PUNCT min0,8%_NUM )_PUNCT e_CCONJ chimica_NOUN e_CCONJ fibre_NOUN artificiali_ADJ (_PUNCT min0,4%_NUM )_PUNCT ._PUNCT}
+in_ADP rosso_NOUN anche_ADV alimentari_NOUN (_PUNCT min0,8_NUM %_SYM )_PUNCT e_CCONJ chimica_NOUN e_CCONJ fibre_NOUN artificiali_ADJ (_PUNCT min0,4_NUM %_SYM )_PUNCT ._PUNCT}
 Predicted: {
-in_ADP rosso_NOUN anche_ADV alimentari_ADJ (_PUNCT min0,8%_NUM )_PUNCT e_CCONJ chimica_ADJ e_CCONJ fibre_NOUN artificiali_ADJ (_PUNCT min0,4%_NUM )_PUNCT ._PUNCT}
+in_ADP rosso_NOUN anche_ADV alimentari_ADJ (_PUNCT min0,8_NUM %_SYM )_PUNCT e_CCONJ chimica_ADJ e_CCONJ fibre_NOUN artificiali_ADJ (_PUNCT min0,4_NUM %_SYM )_PUNCT ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -16580,9 +16586,9 @@ commercio: PROPN | NOUN
 }
 
 Expected: {
-indicazioni_PROPN leggermente_ADV contrastanti_ADJ ,_PUNCT seppure_CCONJ sempre_ADV contraddistinte_VERB da il_ADP DET segno_NOUN positivo_ADJ ,_PUNCT vengono_VERB da le_ADP DET cifre_NOUN relative_ADJ a il_ADP DET bimestre_NOUN gennaio_NOUN -_PUNCT febbraio_NOUN ,_PUNCT in il_ADP DET senso_NOUN che_SCONJ la_DET crescita_NOUN di le_ADP DET esportazioni_NOUN è_AUX stata_AUX inferiore_ADJ (_PUNCT 10,3%_NUM )_PUNCT a_ADP quella_PRON di le_ADP DET importazioni_NOUN (_PUNCT 15,9%_NUM )_PUNCT ,_PUNCT in_ADP linea_NOUN con_ADP quanto_PRON si_PRON era_AUX verificato_VERB in_ADP gennaio_NOUN ._PUNCT}
+indicazioni_PROPN leggermente_ADV contrastanti_ADJ ,_PUNCT seppure_CCONJ sempre_ADV contraddistinte_VERB da il_ADP DET segno_NOUN positivo_ADJ ,_PUNCT vengono_VERB da le_ADP DET cifre_NOUN relative_ADJ a il_ADP DET bimestre_NOUN gennaio_NOUN -_PUNCT febbraio_NOUN ,_PUNCT in il_ADP DET senso_NOUN che_SCONJ la_DET crescita_NOUN di le_ADP DET esportazioni_NOUN è_AUX stata_AUX inferiore_ADJ (_PUNCT 10,3_NUM %_SYM )_PUNCT a_ADP quella_PRON di le_ADP DET importazioni_NOUN (_PUNCT 15,9_NUM %_SYM )_PUNCT ,_PUNCT in_ADP linea_NOUN con_ADP quanto_PRON si_PRON era_AUX verificato_VERB in_ADP gennaio_NOUN ._PUNCT}
 Predicted: {
-indicazioni_NOUN leggermente_ADV contrastanti_ADJ ,_PUNCT seppure_SCONJ sempre_ADV contraddistinte_VERB da il_ADP DET segno_NOUN positivo_ADJ ,_PUNCT vengono_VERB da le_ADP DET cifre_NOUN relative_ADJ a il_ADP DET bimestre_NOUN gennaio_NOUN -_PUNCT febbraio_NOUN ,_PUNCT in il_ADP DET senso_NOUN che_SCONJ la_DET crescita_NOUN di le_ADP DET esportazioni_NOUN è_AUX stata_AUX inferiore_ADJ (_PUNCT 10,3%_NUM )_PUNCT a_ADP quella_PRON di le_ADP DET importazioni_NOUN (_PUNCT 15,9%_NUM )_PUNCT ,_PUNCT in_ADP linea_NOUN con_ADP quanto_PRON si_PRON era_AUX verificato_VERB in_ADP gennaio_NOUN ._PUNCT}
+indicazioni_NOUN leggermente_ADV contrastanti_ADJ ,_PUNCT seppure_SCONJ sempre_ADV contraddistinte_VERB da il_ADP DET segno_NOUN positivo_ADJ ,_PUNCT vengono_VERB da le_ADP DET cifre_NOUN relative_ADJ a il_ADP DET bimestre_NOUN gennaio_NOUN -_PUNCT febbraio_NOUN ,_PUNCT in il_ADP DET senso_NOUN che_SCONJ la_DET crescita_NOUN di le_ADP DET esportazioni_NOUN è_AUX stata_AUX inferiore_ADJ (_PUNCT 10,3_NUM %_SYM )_PUNCT a_ADP quella_PRON di le_ADP DET importazioni_NOUN (_PUNCT 15,9_NUM %_SYM )_PUNCT ,_PUNCT in_ADP linea_NOUN con_ADP quanto_PRON si_PRON era_AUX verificato_VERB in_ADP gennaio_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -16593,12 +16599,12 @@ seppure: CCONJ | SCONJ
 Expected: {
 il_DET presidente_NOUN di l'_ADP DET adf_PROPN elettronica_PROPN ,_PUNCT rocco_PROPN briscese_PROPN ,_PUNCT ha_AUX commentato_VERB la_DET joint_X venture_X spiegando_VERB che_SCONJ ,_PUNCT dopo_ADP aver_AUX avuto_VERB contatti_NOUN anche_ADV con_ADP società_NOUN di lo_ADP DET stato_NOUN ,_PUNCT <_PUNCT abbiamo_AUX concluso_VERB l'_DET accordo_NOUN con_ADP questa_DET società_NOUN privata_ADJ perché_SCONJ in l'_ADP DET elettronica_NOUN gli_DET affari_NOUN vanno_AUX gestiti_VERB in_ADP maniera_NOUN molto_ADV dinamica_ADJ e_CCONJ una_DET società_NOUN privata_ADJ risponde_VERB meglio_ADV a_ADP questa_DET esigenza_NOUN di_ADP flessibilità_NOUN ._PUNCT}
 Predicted: {
-il_DET presidente_NOUN di l'_ADP DET adf_PROPN elettronica_PROPN ,_PUNCT rocco_PROPN briscese_PROPN ,_PUNCT ha_AUX commentato_VERB la_DET joint_X venture_X spiegando_VERB che_SCONJ ,_PUNCT dopo_SCONJ aver_AUX avuto_VERB contatti_NOUN anche_ADV con_ADP società_NOUN di lo_ADP DET stato_NOUN ,_PUNCT <_PUNCT abbiamo_AUX concluso_VERB l'_DET accordo_NOUN con_ADP questa_DET società_NOUN privata_ADJ perché_PRON in l'_ADP DET elettronica_NOUN gli_DET affari_NOUN vanno_AUX gestiti_VERB in_ADP maniera_NOUN molto_ADV dinamica_ADJ e_CCONJ una_DET società_NOUN privata_ADJ risponde_VERB meglio_ADV a_ADP questa_DET esigenza_NOUN di_ADP flessibilità_NOUN ._PUNCT}
+il_DET presidente_NOUN di l'_ADP DET adf_PROPN elettronica_PROPN ,_PUNCT rocco_PROPN briscese_PROPN ,_PUNCT ha_AUX commentato_VERB la_DET joint_X venture_X spiegando_VERB che_SCONJ ,_PUNCT dopo_SCONJ aver_AUX avuto_VERB contatti_NOUN anche_ADV con_ADP società_NOUN di lo_ADP DET stato_NOUN ,_PUNCT <_PUNCT abbiamo_AUX concluso_VERB l'_DET accordo_NOUN con_ADP questa_DET società_NOUN privata_ADJ perché_ADV in l'_ADP DET elettronica_NOUN gli_DET affari_NOUN vanno_AUX gestiti_VERB in_ADP maniera_NOUN molto_ADV dinamica_ADJ e_CCONJ una_DET società_NOUN privata_ADJ risponde_VERB meglio_ADV a_ADP questa_DET esigenza_NOUN di_ADP flessibilità_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 dopo: ADP | SCONJ
-perché: SCONJ | PRON
+perché: SCONJ | ADV
 }
 
 Expected: {
@@ -16662,9 +16668,9 @@ quest': PRON | DET
 }
 
 Expected: {
-l'_DET indicatore_NOUN di_ADP benessere_NOUN economico_ADJ fornisce_VERB un_DET risultato_NOUN superiore_ADJ di il_ADP DET 24%_NUM a la_ADP DET media_NOUN meridionale_ADJ ,_PUNCT sintesi_NOUN di_ADP una_DET performance_NOUN positiva_ADJ in_ADP termini_NOUN di_ADP disoccupazione_NOUN e_CCONJ numero_NOUN di_ADP fallimenti_NOUN ,_PUNCT e_CCONJ di_ADP un_DET reddito_NOUN disponibile_ADJ di_ADP poco_ADV a il_ADP DET di_ADP sotto_ADV di la_ADP DET media_NOUN mezzogiorno_NOUN ._PUNCT}
+l'_DET indicatore_NOUN di_ADP benessere_NOUN economico_ADJ fornisce_VERB un_DET risultato_NOUN superiore_ADJ di il_ADP DET 24_NUM %_SYM a la_ADP DET media_NOUN meridionale_ADJ ,_PUNCT sintesi_NOUN di_ADP una_DET performance_NOUN positiva_ADJ in_ADP termini_NOUN di_ADP disoccupazione_NOUN e_CCONJ numero_NOUN di_ADP fallimenti_NOUN ,_PUNCT e_CCONJ di_ADP un_DET reddito_NOUN disponibile_ADJ di_ADP poco_ADV a il_ADP DET di_ADP sotto_ADV di la_ADP DET media_NOUN mezzogiorno_NOUN ._PUNCT}
 Predicted: {
-l'_DET indicatore_NOUN di_ADP benessere_NOUN economico_ADJ fornisce_VERB un_DET risultato_NOUN superiore_ADJ di il_ADP DET 24%_NUM a la_ADP DET media_NOUN meridionale_ADJ ,_PUNCT sintesi_PRON di_ADP una_DET performance_NOUN positiva_ADJ in_ADP termini_NOUN di_ADP disoccupazione_NOUN e_CCONJ numero_NOUN di_ADP fallimenti_NOUN ,_PUNCT e_CCONJ di_ADP un_DET reddito_NOUN disponibile_ADJ di_ADP poco_ADV a il_ADP DET di_ADP sotto_ADV di la_ADP DET media_NOUN mezzogiorno_ADJ ._PUNCT}
+l'_DET indicatore_NOUN di_ADP benessere_NOUN economico_ADJ fornisce_VERB un_DET risultato_NOUN superiore_ADJ di il_ADP DET 24_NUM %_SYM a la_ADP DET media_NOUN meridionale_ADJ ,_PUNCT sintesi_PRON di_ADP una_DET performance_NOUN positiva_ADJ in_ADP termini_NOUN di_ADP disoccupazione_NOUN e_CCONJ numero_NOUN di_ADP fallimenti_NOUN ,_PUNCT e_CCONJ di_ADP un_DET reddito_NOUN disponibile_ADJ di_ADP poco_ADV a il_ADP DET di_ADP sotto_ADV di la_ADP DET media_NOUN mezzogiorno_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -16737,18 +16743,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 uno: NUM | PRON
-}
-
-Expected: {
-di i_ADP DET circa_ADV 9_NUM mila_NUM dipendenti_NOUN (_PUNCT 2.850_NUM in_ADP cassa_NOUN integrazione_NOUN )_PUNCT aventi_VERB diritto_NOUN ,_PUNCT hanno_AUX partecipato_VERB a il_ADP DET voto_NOUN 4.163_NUM lavoratori_NOUN e_CCONJ le_DET preferenze_NOUN si_PRON sono_AUX così_ADV ripartite_VERB :_PUNCT a_ADP i_DET cobas_PROPN 1.840_NUM pari_ADJ a il_ADP DET 44,2%_NUM (_PUNCT 18_NUM seggi_NOUN )_PUNCT ,_PUNCT a la_ADP DET fiom_PROPN 1.776_NUM pari_ADJ a il_ADP DET 42,6%_NUM circa_ADV (_PUNCT 18_NUM seggi_NOUN )_PUNCT ,_PUNCT a la_ADP DET fim_PROPN 285_NUM pari_ADJ a il_ADP DET 6,85%_NUM (_PUNCT 3_NUM seggi_NOUN )_PUNCT ,_PUNCT a la_ADP DET uilm_PROPN 262_NUM pari_ADJ a il_ADP DET 6,29%_NUM (_PUNCT 3_NUM seggi_NOUN )_PUNCT ._PUNCT}
-Predicted: {
-di i_ADP DET circa_ADV 9_NUM mila_NUM dipendenti_NOUN (_PUNCT 2.850_NUM in_ADP cassa_NOUN integrazione_NOUN )_PUNCT aventi_VERB diritto_NOUN ,_PUNCT hanno_AUX partecipato_VERB a il_ADP DET voto_NOUN 4.163_NUM lavoratori_NOUN e_CCONJ le_DET preferenze_NOUN si_PRON sono_AUX così_ADV ripartite_VERB :_PUNCT a_ADP i_DET cobas_PROPN 1.840_NUM pari_ADJ a il_ADP DET 44,2%_NUM (_PUNCT 18_NUM seggi_NOUN )_PUNCT ,_PUNCT a la_ADP DET fiom_PROPN 1.776_PUNCT pari_ADJ a il_ADP DET 42,6%_NUM circa_ADV (_PUNCT 18_NUM seggi_NOUN )_PUNCT ,_PUNCT a la_ADP DET fim_PROPN 285_PUNCT pari_ADJ a il_ADP DET 6,85%_NUM (_PUNCT 3_NUM seggi_NOUN )_PUNCT ,_PUNCT a la_ADP DET uilm_PROPN 262_PUNCT pari_ADJ a il_ADP DET 6,29%_NUM (_PUNCT 3_NUM seggi_NOUN )_PUNCT ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-1.776: NUM | PUNCT
-285: NUM | PUNCT
-262: NUM | PUNCT
 }
 
 Expected: {
@@ -16988,9 +16982,9 @@ mesto: ADJ | NOUN
 }
 
 Expected: {
-fasce_NOUN di_ADP età_NOUN (_PUNCT da_ADP i_DET 30_NUM a_ADP i_DET 70_NUM anni_NOUN )_PUNCT ,_PUNCT professioni_NOUN (_PUNCT insegnanti_NOUN ,_PUNCT impiegati_NOUN ,_PUNCT commercianti_NOUN )_PUNCT ed_CCONJ estrazione_NOUN sociale_ADJ sono_AUX tutte_PRON ben_ADV rappresentate_VERB e_CCONJ anche_ADV su il_ADP DET sesso_NOUN non_ADV ci_PRON sono_VERB sperequazioni_NOUN :_PUNCT il_DET 45%_NUM di i_ADP DET giudici_NOUN sono_AUX donne_NOUN ._PUNCT}
+fasce_NOUN di_ADP età_NOUN (_PUNCT da_ADP i_DET 30_NUM a_ADP i_DET 70_NUM anni_NOUN )_PUNCT ,_PUNCT professioni_NOUN (_PUNCT insegnanti_NOUN ,_PUNCT impiegati_NOUN ,_PUNCT commercianti_NOUN )_PUNCT ed_CCONJ estrazione_NOUN sociale_ADJ sono_AUX tutte_PRON ben_ADV rappresentate_VERB e_CCONJ anche_ADV su il_ADP DET sesso_NOUN non_ADV ci_PRON sono_VERB sperequazioni_NOUN :_PUNCT il_DET 45_NUM %_SYM di i_ADP DET giudici_NOUN sono_AUX donne_NOUN ._PUNCT}
 Predicted: {
-fasce_NOUN di_ADP età_NOUN (_PUNCT da_ADP i_DET 30_NUM a_ADP i_DET 70_NUM anni_NOUN )_PUNCT ,_PUNCT professioni_NOUN (_PUNCT insegnanti_NOUN ,_PUNCT impiegati_NOUN ,_PUNCT commercianti_NOUN )_PUNCT ed_CCONJ estrazione_NOUN sociale_ADJ sono_AUX tutte_DET ben_ADV rappresentate_VERB e_CCONJ anche_ADV su il_ADP DET sesso_NOUN non_ADV ci_PRON sono_AUX sperequazioni_NOUN :_PUNCT il_DET 45%_NUM di i_ADP DET giudici_NOUN sono_AUX donne_NOUN ._PUNCT}
+fasce_NOUN di_ADP età_NOUN (_PUNCT da_ADP i_DET 30_NUM a_ADP i_DET 70_NUM anni_NOUN )_PUNCT ,_PUNCT professioni_NOUN (_PUNCT insegnanti_NOUN ,_PUNCT impiegati_NOUN ,_PUNCT commercianti_NOUN )_PUNCT ed_CCONJ estrazione_NOUN sociale_ADJ sono_AUX tutte_DET ben_ADV rappresentate_VERB e_CCONJ anche_ADV su il_ADP DET sesso_NOUN non_ADV ci_PRON sono_AUX sperequazioni_NOUN :_PUNCT il_DET 45_NUM %_SYM di i_ADP DET giudici_NOUN sono_AUX donne_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -17112,9 +17106,9 @@ attivo: ADJ | NOUN
 }
 
 Expected: {
-questo_PRON perché_SCONJ oggetto_NOUN di la_ADP DET transazione_NOUN è_AUX una_DET finanziaria_NOUN svizzera_ADJ ,_PUNCT la_DET bih_PROPN ,_PUNCT cui_PRON fanno_VERB capo_NOUN a_ADP cascata_NOUN una_DET serie_NOUN di_ADP attività_NOUN che_PRON ruotano_VERB intorno_ADV a_ADP ciments_PROPN portland_PROPN ,_PUNCT azionista_NOUN diretto_ADJ di la_ADP DET merone_PROPN con_ADP il_DET 9,82%_NUM e_CCONJ indiretto_ADJ (_PUNCT attraverso_ADP l'_DET elvetica_ADJ cesi_PROPN )_PUNCT con_ADP un_DET altro_ADJ 61,13%_NUM ._PUNCT}
+questo_PRON perché_SCONJ oggetto_NOUN di la_ADP DET transazione_NOUN è_AUX una_DET finanziaria_NOUN svizzera_ADJ ,_PUNCT la_DET bih_PROPN ,_PUNCT cui_PRON fanno_VERB capo_NOUN a_ADP cascata_NOUN una_DET serie_NOUN di_ADP attività_NOUN che_PRON ruotano_VERB intorno_ADV a_ADP ciments_PROPN portland_PROPN ,_PUNCT azionista_NOUN diretto_ADJ di la_ADP DET merone_PROPN con_ADP il_DET 9,82_NUM %_SYM e_CCONJ indiretto_ADJ (_PUNCT attraverso_ADP l'_DET elvetica_ADJ cesi_PROPN )_PUNCT con_ADP un_DET altro_ADJ 61,13_NUM %_SYM ._PUNCT}
 Predicted: {
-questo_PRON perché_SCONJ oggetto_NOUN di la_ADP DET transazione_NOUN è_AUX una_DET finanziaria_NOUN svizzera_ADJ ,_PUNCT la_DET bih_PROPN ,_PUNCT cui_PRON fanno_VERB capo_NOUN a_ADP cascata_VERB una_DET serie_NOUN di_ADP attività_NOUN che_PRON ruotano_VERB intorno_ADV a_ADP ciments_PROPN portland_PROPN ,_PUNCT azionista_NOUN diretto_ADJ di la_ADP DET merone_PROPN con_ADP il_DET 9,82%_NUM e_CCONJ indiretto_ADJ (_PUNCT attraverso_ADP l'_DET elvetica_NOUN cesi_PROPN )_PUNCT con_ADP un_DET altro_ADJ 61,13%_NUM ._PUNCT}
+questo_PRON perché_SCONJ oggetto_NOUN di la_ADP DET transazione_NOUN è_AUX una_DET finanziaria_NOUN svizzera_ADJ ,_PUNCT la_DET bih_PROPN ,_PUNCT cui_PRON fanno_VERB capo_NOUN a_ADP cascata_VERB una_DET serie_NOUN di_ADP attività_NOUN che_PRON ruotano_VERB intorno_ADV a_ADP ciments_PROPN portland_PROPN ,_PUNCT azionista_NOUN diretto_ADJ di la_ADP DET merone_PROPN con_ADP il_DET 9,82_NUM %_SYM e_CCONJ indiretto_ADJ (_PUNCT attraverso_ADP l'_DET elvetica_NOUN cesi_PROPN )_PUNCT con_ADP un_DET altro_ADJ 61,13_NUM %_SYM ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -17213,9 +17207,9 @@ raddoppiato: ADJ | VERB
 }
 
 Expected: {
-(_PUNCT nostro_DET servizio_NOUN )_PUNCT città_PROPN di_ADP castello_PROPN (_PUNCT perugia_PROPN )_PUNCT -_PUNCT la_DET ricapitalizzazione_NOUN per_ADP 30_NUM miliardi_NOUN effettuata_VERB in il_ADP DET corso_NOUN di il_ADP DET novantatre_NUM da la_ADP DET banca_NOUN crt_PROPN ,_PUNCT sollecitata_VERB da la_ADP DET banca_NOUN d'_ADP italia_PROPN che_PRON aveva_AUX elevato_VERB la_DET quota_NOUN di_ADP partecipazione_NOUN in la_ADP DET cassa_NOUN di_ADP risparmio_NOUN di_ADP città_PROPN di_ADP castello_PROPN spa_PROPN da il_ADP DET 40,5_NUM a il_ADP DET 59,5%_NUM ,_PUNCT e_CCONJ successivamente_ADV ceduta_VERB a la_ADP DET cariplo_PROPN in il_ADP DET quadro_NOUN di l'_ADP DET operazione_NOUN icri_PROPN ,_PUNCT non_ADV è_AUX servita_VERB a_ADP sanare_VERB definitivamente_ADV una_DET situazione_NOUN ritenuta_VERB pesante_ADJ da il_ADP DET lato_NOUN di le_ADP DET sofferenze_NOUN da la_ADP DET vigilanza_NOUN di_ADP via_PROPN nazionale_PROPN ._PUNCT}
+(_PUNCT nostro_DET servizio_NOUN )_PUNCT città_PROPN di_ADP castello_PROPN (_PUNCT perugia_PROPN )_PUNCT -_PUNCT la_DET ricapitalizzazione_NOUN per_ADP 30_NUM miliardi_NOUN effettuata_VERB in il_ADP DET corso_NOUN di il_ADP DET novantatre_NUM da la_ADP DET banca_NOUN crt_PROPN ,_PUNCT sollecitata_VERB da la_ADP DET banca_NOUN d'_ADP italia_PROPN che_PRON aveva_AUX elevato_VERB la_DET quota_NOUN di_ADP partecipazione_NOUN in la_ADP DET cassa_NOUN di_ADP risparmio_NOUN di_ADP città_PROPN di_ADP castello_PROPN spa_PROPN da il_ADP DET 40,5_NUM a il_ADP DET 59,5_NUM %_SYM ,_PUNCT e_CCONJ successivamente_ADV ceduta_VERB a la_ADP DET cariplo_PROPN in il_ADP DET quadro_NOUN di l'_ADP DET operazione_NOUN icri_PROPN ,_PUNCT non_ADV è_AUX servita_VERB a_ADP sanare_VERB definitivamente_ADV una_DET situazione_NOUN ritenuta_VERB pesante_ADJ da il_ADP DET lato_NOUN di le_ADP DET sofferenze_NOUN da la_ADP DET vigilanza_NOUN di_ADP via_PROPN nazionale_PROPN ._PUNCT}
 Predicted: {
-(_PUNCT nostro_DET servizio_NOUN )_PUNCT città_NOUN di_ADP castello_PROPN (_PUNCT perugia_PROPN )_PUNCT -_PUNCT la_DET ricapitalizzazione_NOUN per_ADP 30_NUM miliardi_NOUN effettuata_VERB in il_ADP DET corso_NOUN di il_ADP DET novantatre_NUM da la_ADP DET banca_NOUN crt_PROPN ,_PUNCT sollecitata_VERB da la_ADP DET banca_NOUN d'_ADP italia_PROPN che_PRON aveva_AUX elevato_VERB la_DET quota_NOUN di_ADP partecipazione_NOUN in la_ADP DET cassa_NOUN di_ADP risparmio_NOUN di_ADP città_PROPN di_ADP castello_PROPN spa_PROPN da il_ADP DET 40,5_NUM a il_ADP DET 59,5%_NUM ,_PUNCT e_CCONJ successivamente_ADV ceduta_VERB a la_ADP DET cariplo_PROPN in il_ADP DET quadro_NOUN di l'_ADP DET operazione_NOUN icri_PROPN ,_PUNCT non_ADV è_AUX servita_VERB a_ADP sanare_VERB definitivamente_ADV una_DET situazione_NOUN ritenuta_VERB pesante_ADJ da il_ADP DET lato_NOUN di le_ADP DET sofferenze_NOUN da la_ADP DET vigilanza_NOUN di_ADP via_PROPN nazionale_PROPN ._PUNCT}
+(_PUNCT nostro_DET servizio_NOUN )_PUNCT città_NOUN di_ADP castello_PROPN (_PUNCT perugia_PROPN )_PUNCT -_PUNCT la_DET ricapitalizzazione_NOUN per_ADP 30_NUM miliardi_NOUN effettuata_VERB in il_ADP DET corso_NOUN di il_ADP DET novantatre_NUM da la_ADP DET banca_NOUN crt_PROPN ,_PUNCT sollecitata_VERB da la_ADP DET banca_NOUN d'_ADP italia_PROPN che_PRON aveva_AUX elevato_VERB la_DET quota_NOUN di_ADP partecipazione_NOUN in la_ADP DET cassa_NOUN di_ADP risparmio_NOUN di_ADP città_PROPN di_ADP castello_PROPN spa_PROPN da il_ADP DET 40,5_NUM a il_ADP DET 59,5_NUM %_SYM ,_PUNCT e_CCONJ successivamente_ADV ceduta_VERB a la_ADP DET cariplo_PROPN in il_ADP DET quadro_NOUN di l'_ADP DET operazione_NOUN icri_PROPN ,_PUNCT non_ADV è_AUX servita_VERB a_ADP sanare_VERB definitivamente_ADV una_DET situazione_NOUN ritenuta_VERB pesante_ADJ da il_ADP DET lato_NOUN di le_ADP DET sofferenze_NOUN da la_ADP DET vigilanza_NOUN di_ADP via_PROPN nazionale_PROPN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -17223,14 +17217,14 @@ città: PROPN | NOUN
 }
 
 Expected: {
-aumentata_VERB invece_ADV la_DET raccolta_NOUN globale_ADJ :_PUNCT quella_PRON diretta_ADJ ha_AUX avuto_VERB un_DET incremento_NOUN di il_ADP DET 4,71%_NUM ,_PUNCT passando_VERB da_ADP i_DET 1.380_NUM miliardi_NOUN di il_ADP DET novantadue_NUM a_ADP gli_DET attuali_ADJ 2.648_NUM ;_PUNCT l'_DET indiretta_ADJ ha_AUX fatto_VERB registrare_VERB un_DET 45,47%_NOUN ,_PUNCT toccando_VERB i_DET 1.203_NUM miliardi_NOUN contro_ADP gli_DET 827_NUM di lo_ADP DET scorso_ADJ anno_NOUN ._PUNCT}
+aumentata_VERB invece_ADV la_DET raccolta_NOUN globale_ADJ :_PUNCT quella_PRON diretta_ADJ ha_AUX avuto_VERB un_DET incremento_NOUN di il_ADP DET 4,71_NUM %_SYM ,_PUNCT passando_VERB da_ADP i_DET 1.380_NUM miliardi_NOUN di il_ADP DET novantadue_NUM a_ADP gli_DET attuali_ADJ 2.648_NUM ;_PUNCT l'_DET indiretta_ADJ ha_AUX fatto_VERB registrare_VERB un_DET 45,47_NOUN %_SYM ,_PUNCT toccando_VERB i_DET 1.203_NUM miliardi_NOUN contro_ADP gli_DET 827_NUM di lo_ADP DET scorso_ADJ anno_NOUN ._PUNCT}
 Predicted: {
-aumentata_VERB invece_ADV la_DET raccolta_NOUN globale_ADJ :_PUNCT quella_PRON diretta_ADJ ha_AUX avuto_VERB un_DET incremento_NOUN di il_ADP DET 4,71%_NUM ,_PUNCT passando_VERB da_ADP i_DET 1.380_NUM miliardi_NOUN di il_ADP DET novantadue_NUM a_ADP gli_DET attuali_ADJ 2.648_NUM ;_PUNCT l'_DET indiretta_NOUN ha_AUX fatto_VERB registrare_VERB un_DET 45,47%_NUM ,_PUNCT toccando_VERB i_DET 1.203_NUM miliardi_NOUN contro_ADP gli_DET 827_NUM di lo_ADP DET scorso_ADJ anno_NOUN ._PUNCT}
+aumentata_VERB invece_ADV la_DET raccolta_NOUN globale_ADJ :_PUNCT quella_PRON diretta_ADJ ha_AUX avuto_VERB un_DET incremento_NOUN di il_ADP DET 4,71_NUM %_SYM ,_PUNCT passando_VERB da_ADP i_DET 1.380_NUM miliardi_NOUN di il_ADP DET novantadue_NUM a_ADP gli_DET attuali_ADJ 2.648_NUM ;_PUNCT l'_DET indiretta_NOUN ha_AUX fatto_VERB registrare_VERB un_DET 45,47_NUM %_SYM ,_PUNCT toccando_VERB i_DET 1.203_NUM miliardi_NOUN contro_ADP gli_DET 827_NUM di lo_ADP DET scorso_ADJ anno_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 indiretta: ADJ | NOUN
-45,47%: NOUN | NUM
+45,47: NOUN | NUM
 }
 
 Expected: {
@@ -17279,9 +17273,9 @@ stessa: PRON | ADJ
 }
 
 Expected: {
-il_DET fiore_NOUN a l'_ADP DET occhiello_NOUN di_ADP agip_PROPN australia_PROPN è_AUX il_DET progetto_NOUN per_ADP lo_DET sfruttamento_NOUN di_ADP radio_PROPN hill_PROPN ,_PUNCT un_DET giacimento_NOUN di_ADP nickel_NOUN e_CCONJ rame_NOUN in_ADP australia_PROPN occidentale_ADJ ,_PUNCT in il_ADP DET quale_PRON la_DET società_NOUN aveva_AUX già_ADV investito_VERB quasi_ADV 40_NUM milioni_NUM di_ADP dollari_PROPN e_CCONJ che_PRON a_ADP regime_NOUN dovrebbe_AUX produrre_VERB ogni_DET anno_NOUN 12_NUM mila_NUM tonnellate_NOUN di_ADP metallina_NOUN contenente_VERB il_DET 25%_X di_ADP nickel_NOUN e_CCONJ il_DET 20%_NUM di_ADP rame_NOUN ._PUNCT}
+il_DET fiore_NOUN a l'_ADP DET occhiello_NOUN di_ADP agip_PROPN australia_PROPN è_AUX il_DET progetto_NOUN per_ADP lo_DET sfruttamento_NOUN di_ADP radio_PROPN hill_PROPN ,_PUNCT un_DET giacimento_NOUN di_ADP nickel_NOUN e_CCONJ rame_NOUN in_ADP australia_PROPN occidentale_ADJ ,_PUNCT in il_ADP DET quale_PRON la_DET società_NOUN aveva_AUX già_ADV investito_VERB quasi_ADV 40_NUM milioni_NUM di_ADP dollari_PROPN e_CCONJ che_PRON a_ADP regime_NOUN dovrebbe_AUX produrre_VERB ogni_DET anno_NOUN 12_NUM mila_NUM tonnellate_NOUN di_ADP metallina_NOUN contenente_VERB il_DET 25_NUM %_SYM di_ADP nickel_NOUN e_CCONJ il_DET 20_NUM %_SYM di_ADP rame_NOUN ._PUNCT}
 Predicted: {
-il_DET fiore_NOUN a l'_ADP DET occhiello_NOUN di_ADP agip_PROPN australia_PROPN è_AUX il_DET progetto_NOUN per_ADP lo_DET sfruttamento_NOUN di_ADP radio_PROPN hill_PROPN ,_PUNCT un_DET giacimento_NOUN di_ADP nickel_PROPN e_CCONJ rame_PROPN in_ADP australia_PROPN occidentale_ADJ ,_PUNCT in il_ADP DET quale_PRON la_DET società_NOUN aveva_AUX già_ADV investito_VERB quasi_ADV 40_NUM milioni_NOUN di_ADP dollari_NOUN e_CCONJ che_PRON a_ADP regime_NOUN dovrebbe_AUX produrre_VERB ogni_DET anno_NOUN 12_NUM mila_NOUN tonnellate_NOUN di_ADP metallina_NOUN contenente_ADJ il_DET 25%_NUM di_ADP nickel_NOUN e_CCONJ il_DET 20%_NUM di_ADP rame_PROPN ._PUNCT}
+il_DET fiore_NOUN a l'_ADP DET occhiello_NOUN di_ADP agip_PROPN australia_PROPN è_AUX il_DET progetto_NOUN per_ADP lo_DET sfruttamento_NOUN di_ADP radio_PROPN hill_PROPN ,_PUNCT un_DET giacimento_NOUN di_ADP nickel_PROPN e_CCONJ rame_PROPN in_ADP australia_PROPN occidentale_ADJ ,_PUNCT in il_ADP DET quale_PRON la_DET società_NOUN aveva_AUX già_ADV investito_VERB quasi_ADV 40_NUM milioni_NOUN di_ADP dollari_NOUN e_CCONJ che_PRON a_ADP regime_NOUN dovrebbe_AUX produrre_VERB ogni_DET anno_NOUN 12_NUM mila_NOUN tonnellate_NOUN di_ADP metallina_NOUN contenente_ADJ il_DET 25_NUM %_SYM di_ADP nickel_NOUN e_CCONJ il_DET 20_NUM %_SYM di_ADP rame_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -17291,14 +17285,12 @@ milioni: NUM | NOUN
 dollari: PROPN | NOUN
 mila: NUM | NOUN
 contenente: VERB | ADJ
-25%: X | NUM
-rame: NOUN | PROPN
 }
 
 Expected: {
-ciò_PRON significa_VERB che_SCONJ il_DET santander_PROPN ,_PUNCT che_PRON ha_VERB in_ADP programma_NOUN di_ADP vendere_VERB un_DET 20%_NUM di il_ADP DET banesto_PROPN fino_ADV a_ADP rimanere_VERB con_ADP il_DET 40%_NUM ,_PUNCT potrà_AUX recuperare_VERB almeno_ADV cento_NUM miliardi_NOUN di_ADP pesetas_PROPN rispetto_ADV a il_ADP DET prezzo_NOUN pagato_ADJ ,_PUNCT nonostante_ADP il_DET prezzo_NOUN di_ADP favore_NOUN per_ADP alcuni_DET pacchetti_NOUN ._PUNCT}
+ciò_PRON significa_VERB che_SCONJ il_DET santander_PROPN ,_PUNCT che_PRON ha_VERB in_ADP programma_NOUN di_ADP vendere_VERB un_DET 20_NUM %_SYM di il_ADP DET banesto_PROPN fino_ADV a_ADP rimanere_VERB con_ADP il_DET 40_NUM %_SYM ,_PUNCT potrà_AUX recuperare_VERB almeno_ADV cento_NUM miliardi_NOUN di_ADP pesetas_PROPN rispetto_ADV a il_ADP DET prezzo_NOUN pagato_ADJ ,_PUNCT nonostante_ADP il_DET prezzo_NOUN di_ADP favore_NOUN per_ADP alcuni_DET pacchetti_NOUN ._PUNCT}
 Predicted: {
-ciò_PRON significa_VERB che_SCONJ il_DET santander_PROPN ,_PUNCT che_PRON ha_VERB in_ADP programma_NOUN di_ADP vendere_VERB un_DET 20%_NUM di il_ADP DET banesto_PROPN fino_ADV a_ADP rimanere_VERB con_ADP il_DET 40%_NUM ,_PUNCT potrà_AUX recuperare_VERB almeno_ADV cento_NUM miliardi_NOUN di_ADP pesetas_PROPN rispetto_ADV a il_ADP DET prezzo_NOUN pagato_VERB ,_PUNCT nonostante_ADP il_DET prezzo_NOUN di_ADP favore_NOUN per_ADP alcuni_DET pacchetti_NOUN ._PUNCT}
+ciò_PRON significa_VERB che_SCONJ il_DET santander_PROPN ,_PUNCT che_PRON ha_VERB in_ADP programma_NOUN di_ADP vendere_VERB un_DET 20_NUM %_SYM di il_ADP DET banesto_PROPN fino_ADV a_ADP rimanere_VERB con_ADP il_DET 40_NUM %_SYM ,_PUNCT potrà_AUX recuperare_VERB almeno_ADV cento_NUM miliardi_NOUN di_ADP pesetas_PROPN rispetto_ADV a il_ADP DET prezzo_NOUN pagato_VERB ,_PUNCT nonostante_ADP il_DET prezzo_NOUN di_ADP favore_NOUN per_ADP alcuni_DET pacchetti_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -17317,9 +17309,9 @@ assicurativa: ADJ | VERB
 }
 
 Expected: {
-gli_DET impegni_NOUN tecnici_ADJ netti_ADJ sono_AUX intanto_CCONJ saliti_VERB a_ADP 581_NUM miliardi_NOUN (_PUNCT +11,8%_NUM )_PUNCT ._PUNCT}
+gli_DET impegni_NOUN tecnici_ADJ netti_ADJ sono_AUX intanto_CCONJ saliti_VERB a_ADP 581_NUM miliardi_NOUN (_PUNCT +11,8_NUM %_SYM )_PUNCT ._PUNCT}
 Predicted: {
-gli_DET impegni_NOUN tecnici_ADJ netti_ADJ sono_AUX intanto_ADV saliti_VERB a_ADP 581_NUM miliardi_NOUN (_PUNCT +11,8%_NUM )_PUNCT ._PUNCT}
+gli_DET impegni_NOUN tecnici_ADJ netti_ADJ sono_AUX intanto_ADV saliti_VERB a_ADP 581_NUM miliardi_NOUN (_PUNCT +11,8_NUM %_SYM )_PUNCT ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -17349,9 +17341,9 @@ intesa: PROPN | NOUN
 }
 
 Expected: {
-il_DET conto_PROPN economico_ADJ ,_PUNCT ricordano_VERB gli_DET amministratori_NOUN ,_PUNCT si_PRON chiude_VERB con_ADP una_DET perdita_NOUN di_ADP 25_NUM miliardi_NOUN (_PUNCT rispetto_ADV a il_ADP DET rosso_NOUN di_ADP 41_NUM miliardi_NOUN di il_ADP DET novantadue_NUM )_PUNCT ,_PUNCT dopo_ADP aver_AUX iscritto_VERB oneri_NOUN finanziari_ADJ netti_ADJ per_ADP 23_NUM miliardi_NOUN (_PUNCT 70%_NUM )_PUNCT e_CCONJ aver_AUX spesato_VERB componenti_NOUN straordinarie_ADJ per_ADP 28_NUM miliardi_NOUN (_PUNCT 15%_NUM )_PUNCT ._PUNCT}
+il_DET conto_PROPN economico_ADJ ,_PUNCT ricordano_VERB gli_DET amministratori_NOUN ,_PUNCT si_PRON chiude_VERB con_ADP una_DET perdita_NOUN di_ADP 25_NUM miliardi_NOUN (_PUNCT rispetto_ADV a il_ADP DET rosso_NOUN di_ADP 41_NUM miliardi_NOUN di il_ADP DET novantadue_NUM )_PUNCT ,_PUNCT dopo_ADP aver_AUX iscritto_VERB oneri_NOUN finanziari_ADJ netti_ADJ per_ADP 23_NUM miliardi_NOUN (_PUNCT 70_NUM %_SYM )_PUNCT e_CCONJ aver_AUX spesato_VERB componenti_NOUN straordinarie_ADJ per_ADP 28_NUM miliardi_NOUN (_PUNCT 15_NUM %_SYM )_PUNCT ._PUNCT}
 Predicted: {
-il_DET conto_NOUN economico_ADJ ,_PUNCT ricordano_VERB gli_DET amministratori_NOUN ,_PUNCT si_PRON chiude_VERB con_ADP una_DET perdita_NOUN di_ADP 25_NUM miliardi_NOUN (_PUNCT rispetto_ADV a il_ADP DET rosso_NOUN di_ADP 41_NUM miliardi_NOUN di il_ADP DET novantadue_NUM )_PUNCT ,_PUNCT dopo_ADP aver_AUX iscritto_VERB oneri_NOUN finanziari_ADJ netti_ADJ per_ADP 23_NUM miliardi_NOUN (_PUNCT 70%_NUM )_PUNCT e_CCONJ aver_AUX spesato_VERB componenti_NOUN straordinarie_ADJ per_ADP 28_NUM miliardi_NOUN (_PUNCT 15%_NUM )_PUNCT ._PUNCT}
+il_DET conto_NOUN economico_ADJ ,_PUNCT ricordano_VERB gli_DET amministratori_NOUN ,_PUNCT si_PRON chiude_VERB con_ADP una_DET perdita_NOUN di_ADP 25_NUM miliardi_NOUN (_PUNCT rispetto_ADV a il_ADP DET rosso_NOUN di_ADP 41_NUM miliardi_NOUN di il_ADP DET novantadue_NUM )_PUNCT ,_PUNCT dopo_ADP aver_AUX iscritto_VERB oneri_NOUN finanziari_ADJ netti_ADJ per_ADP 23_NUM miliardi_NOUN (_PUNCT 70_NUM %_SYM )_PUNCT e_CCONJ aver_AUX spesato_VERB componenti_NOUN straordinarie_ADJ per_ADP 28_NUM miliardi_NOUN (_PUNCT 15_NUM %_SYM )_PUNCT ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -17359,9 +17351,9 @@ conto: PROPN | NOUN
 }
 
 Expected: {
-intesa_NOUN che_PRON dovrebbe_AUX diventare_VERB operativa_ADJ a l'_ADP DET inizio_NOUN di_ADP luglio_NOUN e_CCONJ che_PRON consentirà_VERB di_ADP raddoppiare_VERB a il_ADP DET 20%_NUM la_DET quota_NOUN di_ADP mercato_NOUN in_ADP europa_PROPN ._PUNCT}
+intesa_NOUN che_PRON dovrebbe_AUX diventare_VERB operativa_ADJ a l'_ADP DET inizio_NOUN di_ADP luglio_NOUN e_CCONJ che_PRON consentirà_VERB di_ADP raddoppiare_VERB a il_ADP DET 20_NUM %_SYM la_DET quota_NOUN di_ADP mercato_NOUN in_ADP europa_PROPN ._PUNCT}
 Predicted: {
-intesa_NOUN che_PRON dovrebbe_AUX diventare_VERB operativa_ADJ a l'_ADP DET inizio_NOUN di_ADP luglio_NOUN e_CCONJ che_SCONJ consentirà_VERB di_ADP raddoppiare_VERB a il_ADP DET 20%_NUM la_DET quota_NOUN di_ADP mercato_NOUN in_ADP europa_PROPN ._PUNCT}
+intesa_NOUN che_PRON dovrebbe_AUX diventare_VERB operativa_ADJ a l'_ADP DET inizio_NOUN di_ADP luglio_NOUN e_CCONJ che_SCONJ consentirà_VERB di_ADP raddoppiare_VERB a il_ADP DET 20_NUM %_SYM la_DET quota_NOUN di_ADP mercato_NOUN in_ADP europa_PROPN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -17371,17 +17363,18 @@ che: PRON | SCONJ
 Expected: {
 in_ADP ripresa_NOUN netta_ADJ anche_ADV lo_DET zucchero_NOUN ,_PUNCT con_ADP il_DET raffinato_ADJ spot_NOUN a_ADP i_DET massimi_ADJ da l'_ADP DET agosto_NOUN novanta_NUM ._PUNCT}
 Predicted: {
-in_ADP ripresa_NOUN netta_ADJ anche_ADV lo_DET zucchero_NOUN ,_PUNCT con_ADP il_DET raffinato_NOUN spot_NOUN a_ADP i_DET massimi_ADJ da l'_ADP DET agosto_NOUN novanta_NUM ._PUNCT}
+in_ADP ripresa_NOUN netta_ADJ anche_ADV lo_DET zucchero_NOUN ,_PUNCT con_ADP il_DET raffinato_NOUN spot_SYM a_ADP i_DET massimi_ADJ da l'_ADP DET agosto_NOUN novanta_NUM ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 raffinato: ADJ | NOUN
+spot: NOUN | SYM
 }
 
 Expected: {
-londra_PROPN -_PUNCT la_DET febbre_NOUN speculativa_ADJ ha_AUX alzato_VERB ancora_ADV il_DET termometro_NOUN di i_ADP DET prezzi_NOUN a il_ADP DET london_PROPN metal_PROPN ,_PUNCT dove_PRON il_DET rame_NOUN ha_AUX raggiunto_VERB i_DET nuovi_ADJ massimi_NOUN da il_ADP DET febbraio_NOUN novantatre_NUM con_ADP un_DET settlement_X a_ADP 2320,5_NUM dollari_NOUN per_ADP tonnellata_NOUN ,_PUNCT che_PRON rappresenta_VERB un_DET guadagno_NOUN di_ADP oltre_ADV il_DET 22%_NUM rispetto_ADV a l'_ADP DET inizio_NOUN di il_ADP DET mese_NOUN ._PUNCT}
+londra_PROPN -_PUNCT la_DET febbre_NOUN speculativa_ADJ ha_AUX alzato_VERB ancora_ADV il_DET termometro_NOUN di i_ADP DET prezzi_NOUN a il_ADP DET london_PROPN metal_PROPN ,_PUNCT dove_PRON il_DET rame_NOUN ha_AUX raggiunto_VERB i_DET nuovi_ADJ massimi_NOUN da il_ADP DET febbraio_NOUN novantatre_NUM con_ADP un_DET settlement_X a_ADP 2320,5_NUM dollari_NOUN per_ADP tonnellata_NOUN ,_PUNCT che_PRON rappresenta_VERB un_DET guadagno_NOUN di_ADP oltre_ADV il_DET 22_NUM %_SYM rispetto_ADV a l'_ADP DET inizio_NOUN di il_ADP DET mese_NOUN ._PUNCT}
 Predicted: {
-londra_PROPN -_PUNCT la_DET febbre_NOUN speculativa_ADJ ha_AUX alzato_VERB ancora_ADV il_DET termometro_NOUN di i_ADP DET prezzi_NOUN a il_ADP DET london_PROPN metal_PROPN ,_PUNCT dove_ADV il_DET rame_NOUN ha_AUX raggiunto_VERB i_DET nuovi_ADJ massimi_NOUN da il_ADP DET febbraio_NOUN novantatre_NUM con_ADP un_DET settlement_NOUN a_ADP 2320,5_NUM dollari_NOUN per_ADP tonnellata_NOUN ,_PUNCT che_PRON rappresenta_VERB un_DET guadagno_NOUN di_ADP oltre_ADV il_DET 22%_NUM rispetto_ADV a l'_ADP DET inizio_NOUN di il_ADP DET mese_NOUN ._PUNCT}
+londra_PROPN -_PUNCT la_DET febbre_NOUN speculativa_ADJ ha_AUX alzato_VERB ancora_ADV il_DET termometro_NOUN di i_ADP DET prezzi_NOUN a il_ADP DET london_PROPN metal_PROPN ,_PUNCT dove_ADV il_DET rame_NOUN ha_AUX raggiunto_VERB i_DET nuovi_ADJ massimi_NOUN da il_ADP DET febbraio_NOUN novantatre_NUM con_ADP un_DET settlement_NOUN a_ADP 2320,5_NUM dollari_NOUN per_ADP tonnellata_NOUN ,_PUNCT che_PRON rappresenta_VERB un_DET guadagno_NOUN di_ADP oltre_ADV il_DET 22_NUM %_SYM rispetto_ADV a l'_ADP DET inizio_NOUN di il_ADP DET mese_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -17612,16 +17605,6 @@ cruscami: NOUN | PRON
 }
 
 Expected: {
-londra_PROPN (_PUNCT min0,62%_NUM )_PUNCT ._PUNCT}
-Predicted: {
-londra_PROPN (_PUNCT min0,62%_PROPN )_PUNCT ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-min0,62%: NUM | PROPN
-}
-
-Expected: {
 seduta_NOUN fiacca_ADJ e_CCONJ senza_ADP orientamento_NOUN per_ADP il_DET listino_NOUN olandese_ADJ che_PRON scivola_VERB su la_ADP DET scia_NOUN di le_ADP DET maggiori_ADJ piazze_NOUN europee_ADJ ._PUNCT}
 Predicted: {
 seduta_NOUN fiacca_PROPN e_CCONJ senza_ADP orientamento_NOUN per_ADP il_DET listino_NOUN olandese_ADJ che_PRON scivola_VERB su la_ADP DET scia_NOUN di le_ADP DET maggiori_ADJ piazze_NOUN europee_ADJ ._PUNCT}
@@ -17632,9 +17615,9 @@ fiacca: ADJ | PROPN
 }
 
 Expected: {
-solo_ADV il_DET 15,7%_NUM di la_ADP DET popolazione_NOUN ha_VERB meno_ADV di_ADP 15_NUM anni_NOUN ,_PUNCT la_DET percentuale_NOUN più_ADV bassa_ADJ tra_ADP i_DET dodici_NUM paesi_NOUN di l'_ADP DET unione_PROPN europea_PROPN ._PUNCT}
+solo_ADV il_DET 15,7_NUM %_SYM di la_ADP DET popolazione_NOUN ha_VERB meno_ADV di_ADP 15_NUM anni_NOUN ,_PUNCT la_DET percentuale_NOUN più_ADV bassa_ADJ tra_ADP i_DET dodici_NUM paesi_NOUN di l'_ADP DET unione_PROPN europea_PROPN ._PUNCT}
 Predicted: {
-solo_ADV il_DET 15,7%_NUM di la_ADP DET popolazione_NOUN ha_CCONJ meno_ADV di_ADP 15_NUM anni_NOUN ,_PUNCT la_DET percentuale_NOUN più_ADV bassa_ADJ tra_ADP i_DET dodici_NUM paesi_NOUN di l'_ADP DET unione_PROPN europea_PROPN ._PUNCT}
+solo_ADV il_DET 15,7_NUM %_SYM di la_ADP DET popolazione_NOUN ha_CCONJ meno_ADV di_ADP 15_NUM anni_NOUN ,_PUNCT la_DET percentuale_NOUN più_ADV bassa_ADJ tra_ADP i_DET dodici_NUM paesi_NOUN di l'_ADP DET unione_PROPN europea_PROPN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -17792,11 +17775,11 @@ perché: PRON | SCONJ
 Expected: {
 "_PUNCT perché_PRON "_PUNCT ?_PUNCT}
 Predicted: {
-"_PUNCT perché_ADV "_PUNCT ?_PUNCT}
+"_PUNCT perché_SCONJ "_PUNCT ?_PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-perché: PRON | ADV
+perché: PRON | SCONJ
 }
 
 Expected: {
@@ -19199,10 +19182,11 @@ quale: PRON | DET
 Expected: {
 r_PROPN v_PROPN 28_NUM anni_NOUN ,_PUNCT che_PRON abita_VERB su la_ADP DET tuscolana_NOUN ,_PUNCT era_AUX andata_VERB a_ADP casa_NOUN di_ADP amici_NOUN ,_PUNCT in la_ADP DET zona_NOUN di l'_ADP DET ardeatina_NOUN ,_PUNCT con_ADP i_DET figli_NOUN e_CCONJ il_DET marito_NOUN ._PUNCT}
 Predicted: {
-r_PROPN v_ADJ 28_NUM anni_NOUN ,_PUNCT che_PRON abita_VERB su la_ADP DET tuscolana_NOUN ,_PUNCT era_AUX andata_VERB a_ADP casa_NOUN di_ADP amici_NOUN ,_PUNCT in la_ADP DET zona_NOUN di l'_ADP DET ardeatina_PROPN ,_PUNCT con_ADP i_DET figli_NOUN e_CCONJ il_DET marito_NOUN ._PUNCT}
+r_NOUN v_ADJ 28_NUM anni_NOUN ,_PUNCT che_PRON abita_VERB su la_ADP DET tuscolana_NOUN ,_PUNCT era_AUX andata_VERB a_ADP casa_NOUN di_ADP amici_NOUN ,_PUNCT in la_ADP DET zona_NOUN di l'_ADP DET ardeatina_PROPN ,_PUNCT con_ADP i_DET figli_NOUN e_CCONJ il_DET marito_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+r: PROPN | NOUN
 v: PROPN | ADJ
 ardeatina: NOUN | PROPN
 }
@@ -19826,14 +19810,13 @@ di: ADV | ADP
 }
 
 Expected: {
-gli_DET altri_ADJ soci_NOUN di la_ADP DET pirellina_PROPN sono_AUX mediobanca_PROPN ,_PUNCT che_PRON ha_VERB il_DET 10%_NUM ,_PUNCT gemina_PROPN e_CCONJ sai_PROPN ,_PUNCT quindi_CCONJ le_DET compagnie_NOUN assicurative_ADJ generali_ADJ e_CCONJ ras_PROPN che_PRON hanno_AUX comprato_VERB le_DET quote_NOUN messe_VERB in_ADP vendita_NOUN da il_ADP DET gruppo_NOUN orlando_PROPN ._PUNCT}
+gli_DET altri_ADJ soci_NOUN di la_ADP DET pirellina_PROPN sono_AUX mediobanca_PROPN ,_PUNCT che_PRON ha_VERB il_DET 10_NUM %_SYM ,_PUNCT gemina_PROPN e_CCONJ sai_PROPN ,_PUNCT quindi_CCONJ le_DET compagnie_NOUN assicurative_ADJ generali_ADJ e_CCONJ ras_PROPN che_PRON hanno_AUX comprato_VERB le_DET quote_NOUN messe_VERB in_ADP vendita_NOUN da il_ADP DET gruppo_NOUN orlando_PROPN ._PUNCT}
 Predicted: {
-gli_DET altri_ADJ soci_NOUN di la_ADP DET pirellina_PROPN sono_AUX mediobanca_ADJ ,_PUNCT che_PRON ha_AUX il_DET 10%_NUM ,_PUNCT gemina_PROPN e_CCONJ sai_VERB ,_PUNCT quindi_ADV le_DET compagnie_NOUN assicurative_ADJ generali_ADJ e_CCONJ ras_NOUN che_PRON hanno_AUX comprato_VERB le_DET quote_NOUN messe_VERB in_ADP vendita_NOUN da il_ADP DET gruppo_NOUN orlando_PROPN ._PUNCT}
+gli_DET altri_ADJ soci_NOUN di la_ADP DET pirellina_PROPN sono_AUX mediobanca_ADJ ,_PUNCT che_PRON ha_VERB il_DET 10_NUM %_SYM ,_PUNCT gemina_PROPN e_CCONJ sai_VERB ,_PUNCT quindi_ADV le_DET compagnie_NOUN assicurative_ADJ generali_ADJ e_CCONJ ras_NOUN che_PRON hanno_AUX comprato_VERB le_DET quote_NOUN messe_VERB in_ADP vendita_NOUN da il_ADP DET gruppo_NOUN orlando_PROPN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 mediobanca: PROPN | ADJ
-ha: VERB | AUX
 sai: PROPN | VERB
 quindi: CCONJ | ADV
 ras: PROPN | NOUN

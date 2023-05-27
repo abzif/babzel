@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9989351835949575
+Evaluation-Score=0.9989328790726818
 Training-Sample-Size=61992
 Evaluation-Sample-Size=6888
 Training-Algorithm=MAXENT_QN
@@ -9,9 +9,9 @@ Component-Name=TokenizerME
 Language=de
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1682056251277
+Timestamp=1684560436060
 TrainerType=Event
-Training-Eventhash=51dfb0af8f94da47fe37b5448067cb10
+Training-Eventhash=de8307e7dcb9977804551b2dc14d5498
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
@@ -54,6 +54,17 @@ besser
 }
 
 Expected: {
+achtung da macht wohl jemand auf die kosten der patienten seine ganz eigene politik oder besser gesagt show<SPLIT>!<SPLIT>!}
+Predicted: {
+achtung da macht wohl jemand auf die kosten der patienten seine ganz eigene politik oder besser gesagt show!<SPLIT>!}
+False positives: {
+show!
+} False negatives: {
+show
+!
+}
+
+Expected: {
 ab ca<SPLIT>. 1 uhr war das waschbecken aus unersichtlichem grund verstopft<SPLIT>.}
 Predicted: {
 ab ca. 1 uhr war das waschbecken aus unersichtlichem grund verstopft<SPLIT>.}
@@ -65,9 +76,9 @@ ca
 }
 
 Expected: {
-nach ca<SPLIT>. 15 minuten bin ich gegangen und uberlege nun wo ich wohl am besten mein geld lasse<SPLIT>.}
+nach ca<SPLIT>. einer stunde war mein reifen geflickt (<SPLIT>heiss vulkanisiert<SPLIT>) und das rad wurde auch wieder montiert<SPLIT>.}
 Predicted: {
-nach ca. 15 minuten bin ich gegangen und uberlege nun wo ich wohl am besten mein geld lasse<SPLIT>.}
+nach ca. einer stunde war mein reifen geflickt (<SPLIT>heiss vulkanisiert<SPLIT>) und das rad wurde auch wieder montiert<SPLIT>.}
 False positives: {
 ca.
 } False negatives: {
@@ -76,119 +87,56 @@ ca
 }
 
 Expected: {
-der nationalpark mae wa (<SPLIT>thai<SPLIT>:<SPLIT>) ist ein nationalpark in thailand<SPLIT>.}
+,<SPLIT>wer weniger isst<SPLIT>, produziert mehr melatonin und bleibt langer gesund<SPLIT>''<SPLIT>, meint der gottinger experte<SPLIT>.}
 Predicted: {
-der nationalpark mae wa (<SPLIT>thai:<SPLIT>) ist ein nationalpark in thailand<SPLIT>.}
+,wer weniger isst<SPLIT>, produziert mehr melatonin und bleibt langer gesund<SPLIT>''<SPLIT>, meint der gottinger experte<SPLIT>.}
 False positives: {
-thai:
+,wer
 } False negatives: {
-thai
-:
+,
+wer
 }
 
 Expected: {
-sein debut in der ersten elf gab er schon zwei wochen nach seinem 18<SPLIT>.}
+ihr einzugsgebiet von 19.000 km2 ist teil des gesamt<SPLIT>-<SPLIT>einzugsgebiets von 42.500 km2<SPLIT>.}
 Predicted: {
-sein debut in der ersten elf gab er schon zwei wochen nach seinem 18.}
+ihr einzugsgebiet von 19.000 km<SPLIT>2 ist teil des gesamt<SPLIT>-<SPLIT>einzugsgebiets von 42.500 km<SPLIT>2<SPLIT>.}
 False positives: {
-18.
+km
+2
+km
+2
 } False negatives: {
-18
+km2
+km2
+}
+
+Expected: {
+durch die kriegsereignisse verzogerte sich die fertigstellung bis 1926<SPLIT>.}
+Predicted: {
+durch die kriegsereignisse verzogerte sich die fertigstellung bis 1926.}
+False positives: {
+1926.
+} False negatives: {
+1926
 .
 }
 
 Expected: {
-tatsachlich liegt langeness allerdings naher am 9<SPLIT>.}
+die geburtige niederlanderin zog 1999 in den andorranischen ort l'<SPLIT>aldosa<SPLIT>, wo sie ein hotel eroffnete<SPLIT>.}
 Predicted: {
-tatsachlich liegt langeness allerdings naher am 9.}
+die geburtige niederlanderin zog 1999 in den andorranischen ort l'aldosa<SPLIT>, wo sie ein hotel eroffnete<SPLIT>.}
 False positives: {
-9.
+l'aldosa
 } False negatives: {
-9
-.
+l'
+aldosa
 }
 
 Expected: {
-das zugungluck gilt als das schwerste in der geschichte der ddr<SPLIT>.}
+das bataillon erhielt die bezeichnung no 3<SPLIT>.}
 Predicted: {
-das zugungluck gilt als das schwerste in der geschichte der ddr.}
-False positives: {
-ddr.
-} False negatives: {
-ddr
-.
-}
-
-Expected: {
-anfang 2008 teilte varig mit<SPLIT>, die fluge nach london per 1<SPLIT>.}
-Predicted: {
-anfang 2008 teilte varig mit<SPLIT>, die fluge nach london per 1.}
-False positives: {
-1.
-} False negatives: {
-1
-.
-}
-
-Expected: {
-in abhangigkeit vom standort der handelstatigkeit ist der stationare handel vom ambulanten handel und vom elektronischen handel (<SPLIT>bzw. e - commerce<SPLIT>) zu unterscheiden<SPLIT>.}
-Predicted: {
-in abhangigkeit vom standort der handelstatigkeit ist der stationare handel vom ambulanten handel und vom elektronischen handel (<SPLIT>bzw<SPLIT>. e - commerce<SPLIT>) zu unterscheiden<SPLIT>.}
-False positives: {
-bzw
-.
-} False negatives: {
-bzw.
-}
-
-Expected: {
-anfangs bestand der tribut an die krone nur aus zobeln<SPLIT>, spater kamen noch andere fellarten hinzu.s<SPLIT>.}
-Predicted: {
-anfangs bestand der tribut an die krone nur aus zobeln<SPLIT>, spater kamen noch andere fellarten hinzu.s.}
-False positives: {
-hinzu.s.
-} False negatives: {
-hinzu.s
-.
-}
-
-Expected: {
-im oktober 1927 betrug der preis ab 24.500 franc<SPLIT>.}
-Predicted: {
-im oktober 1927 betrug der preis ab 24.500 franc.}
-False positives: {
-franc.
-} False negatives: {
-franc
-.
-}
-
-Expected: {
-haschem (<SPLIT>hebr. השם<SPLIT>) ist eine im judentum gangige bezeichnung fur gott<SPLIT>.}
-Predicted: {
-haschem (<SPLIT>hebr<SPLIT>. השם<SPLIT>) ist eine im judentum gangige bezeichnung fur gott<SPLIT>.}
-False positives: {
-hebr
-.
-} False negatives: {
-hebr.
-}
-
-Expected: {
-wegen des kurzen achsstandes von nur 5 metern (<SPLIT>lange 9,24 m<SPLIT>) und des geringen gewichtes (<SPLIT>10 t<SPLIT>) wurde das zugpersonal bei schneller fahrt im aufenthaltsraum und am beobachtungsposten regelrecht durchgeschuttelt<SPLIT>.}
-Predicted: {
-wegen des kurzen achsstandes von nur 5 metern (<SPLIT>lange 9,24 m<SPLIT>) und des geringen gewichtes (<SPLIT>10 t) wurde das zugpersonal bei schneller fahrt im aufenthaltsraum und am beobachtungsposten regelrecht durchgeschuttelt<SPLIT>.}
-False positives: {
-t)
-} False negatives: {
-t
-)
-}
-
-Expected: {
-fur die gestaltung griffen sie hierbei auf die landschaftlich gepragten bauglieder der dorischen und der ionischen ordnung zuruck<SPLIT>, zu denen ab dem spaten 3<SPLIT>.}
-Predicted: {
-fur die gestaltung griffen sie hierbei auf die landschaftlich gepragten bauglieder der dorischen und der ionischen ordnung zuruck<SPLIT>, zu denen ab dem spaten 3.}
+das bataillon erhielt die bezeichnung no 3.}
 False positives: {
 3.
 } False negatives: {
@@ -197,20 +145,113 @@ False positives: {
 }
 
 Expected: {
-im mai 2006 erfolgte auf der funften parteiversammlung die umbenennung in tvarka ir teisingumas<SPLIT>, nachdem bereits zu den parlamentswahlen 2004 eine wahlliste unter dem namen rolando pakso koalicija "<SPLIT>uz tvarka ir teisinguma<SPLIT>"<SPLIT>(<SPLIT>rolandas<SPLIT>'<SPLIT>paksas<SPLIT>' koalition<SPLIT>"<SPLIT>fur ordnung und gerechtigkeit<SPLIT>"<SPLIT>) unter der fuhrung der ldp angetreten war<SPLIT>.}
+diese melodie entstand aus einem weltlichen lied<SPLIT>, das der melodie monica ahnelt<SPLIT>, die in europa vom 16<SPLIT>.}
 Predicted: {
-im mai 2006 erfolgte auf der funften parteiversammlung die umbenennung in tvarka ir teisingumas<SPLIT>, nachdem bereits zu den parlamentswahlen 2004 eine wahlliste unter dem namen rolando pakso koalicija "<SPLIT>uz tvarka ir teisinguma<SPLIT>"<SPLIT>(<SPLIT>rolandas<SPLIT>'<SPLIT>paksas' koalition<SPLIT>"<SPLIT>fur ordnung und gerechtigkeit<SPLIT>"<SPLIT>) unter der fuhrung der ldp angetreten war<SPLIT>.}
+diese melodie entstand aus einem weltlichen lied<SPLIT>, das der melodie monica ahnelt<SPLIT>, die in europa vom 16.}
 False positives: {
-paksas'
+16.
 } False negatives: {
-paksas
-'
+16
+.
 }
 
 Expected: {
-der entscheidende unterschied ist allerdings<SPLIT>, dass in nordamerika jede liga eine eigene geschlossene organisation ist<SPLIT>, wahrend in europa die nationalen ligen aufeinander aufbauen von der 1<SPLIT>.}
+entertainment weekly bezeichnete die serie als "<SPLIT>eine der interessantesten shows im herbst [<SPLIT>2007<SPLIT>]<SPLIT>"<SPLIT>.}
 Predicted: {
-der entscheidende unterschied ist allerdings<SPLIT>, dass in nordamerika jede liga eine eigene geschlossene organisation ist<SPLIT>, wahrend in europa die nationalen ligen aufeinander aufbauen von der 1.}
+entertainment weekly bezeichnete die serie als "<SPLIT>eine der interessantesten shows im herbst [2007<SPLIT>]<SPLIT>"<SPLIT>.}
+False positives: {
+[2007
+} False negatives: {
+[
+2007
+}
+
+Expected: {
+ein schachbrett besteht aus 64 feldern<SPLIT>, also 8 mal 8<SPLIT>.}
+Predicted: {
+ein schachbrett besteht aus 64 feldern<SPLIT>, also 8 mal 8.}
+False positives: {
+8.
+} False negatives: {
+8
+.
+}
+
+Expected: {
+danach war die stumme gottin eine nymphe mit namen lara<SPLIT>, wegen ihrer lasterhaften geschwatzigkeit unter verdoppelung der silbe "<SPLIT>la<SPLIT>"<SPLIT>ursprunglich lala genannt (<SPLIT>griech. λαλα<SPLIT>"<SPLIT>die geschwatzige<SPLIT>, gesprachige<SPLIT>"<SPLIT>)<SPLIT>, und war eine tochter des flussgottes alma<SPLIT>, eines nebenflusses des tibers<SPLIT>.}
+Predicted: {
+danach war die stumme gottin eine nymphe mit namen lara<SPLIT>, wegen ihrer lasterhaften geschwatzigkeit unter verdoppelung der silbe "<SPLIT>la<SPLIT>"<SPLIT>ursprunglich lala genannt (<SPLIT>griech<SPLIT>. λαλα<SPLIT>"<SPLIT>die geschwatzige<SPLIT>, gesprachige<SPLIT>"<SPLIT>)<SPLIT>, und war eine tochter des flussgottes alma<SPLIT>, eines nebenflusses des tibers<SPLIT>.}
+False positives: {
+griech
+.
+} False negatives: {
+griech.
+}
+
+Expected: {
+1679 erfolgte die verlegung in das freihaus der familie schonlebe in der kirchgasse 11<SPLIT>.}
+Predicted: {
+1679 erfolgte die verlegung in das freihaus der familie schonlebe in der kirchgasse 11.}
+False positives: {
+11.
+} False negatives: {
+11
+.
+}
+
+Expected: {
+sie wurde von gerald m. edelman in den 80er jahren des 20<SPLIT>.}
+Predicted: {
+sie wurde von gerald m. edelman in den 80er jahren des 20.}
+False positives: {
+20.
+} False negatives: {
+20
+.
+}
+
+Expected: {
+john eliot gardiner bewundert besonders den vierstimmigen satz des zwolfzeiligen schlusschorals fur seine tonmalerei zu den herbstlichen worten "<SPLIT>gleichwie das gras vom rechen<SPLIT>, ein blum und fallendes laub<SPLIT>, der wind nur druber wehet<SPLIT>"<SPLIT>, und vergleicht ihn mit dem zentralen satz der motette singet dem herrn ein neues lied<SPLIT>, bwv 225<SPLIT>.}
+Predicted: {
+john eliot gardiner bewundert besonders den vierstimmigen satz des zwolfzeiligen schlusschorals fur seine tonmalerei zu den herbstlichen worten "<SPLIT>gleichwie das gras vom rechen<SPLIT>, ein blum und fallendes laub<SPLIT>, der wind nur druber wehet<SPLIT>"<SPLIT>, und vergleicht ihn mit dem zentralen satz der motette singet dem herrn ein neues lied<SPLIT>, bwv 225.}
+False positives: {
+225.
+} False negatives: {
+225
+.
+}
+
+Expected: {
+komnenos (<SPLIT>griechisch<SPLIT>???????<SPLIT>?<SPLIT>???a?<SPLIT>??μ?????<SPLIT>;}
+Predicted: {
+komnenos (<SPLIT>griechisch<SPLIT>?<SPLIT>??????????a?<SPLIT>??μ?<SPLIT>????<SPLIT>;}
+False positives: {
+?
+??????????a?
+??μ?
+????
+} False negatives: {
+???????
+?
+???a?
+??μ?????
+}
+
+Expected: {
+er ist ein grosser "<SPLIT>akte x<SPLIT>"<SPLIT>- fan<SPLIT>, obwohl er die meisten folgen der serie als<SPLIT>"<SPLIT>etwas zu ausserirdisch<SPLIT>" abtut<SPLIT>.}
+Predicted: {
+er ist ein grosser "<SPLIT>akte x"<SPLIT>- fan<SPLIT>, obwohl er die meisten folgen der serie als<SPLIT>"<SPLIT>etwas zu ausserirdisch<SPLIT>" abtut<SPLIT>.}
+False positives: {
+x"
+} False negatives: {
+x
+"
+}
+
+Expected: {
+er erhielt fur seinen einsatz in frankreich das eiserne kreuz 1<SPLIT>.}
+Predicted: {
+er erhielt fur seinen einsatz in frankreich das eiserne kreuz 1.}
 False positives: {
 1.
 } False negatives: {
@@ -219,199 +260,227 @@ False positives: {
 }
 
 Expected: {
-chr<SPLIT>.}
+ihre dritte single let<SPLIT>'s make history stammt aus der feder von team3<SPLIT>.}
 Predicted: {
-chr.}
+ihre dritte single let's make history stammt aus der feder von team3<SPLIT>.}
 False positives: {
-chr.
+let's
 } False negatives: {
-chr
+let
+'s
+}
+
+Expected: {
+es folgten die militar - skiweltmeisterschaften 2010 in cogne<SPLIT>, bei denen oksanen uber 10 - kilometer - freistil 18<SPLIT>.}
+Predicted: {
+es folgten die militar - skiweltmeisterschaften 2010 in cogne<SPLIT>, bei denen oksanen uber 10 - kilometer - freistil 18.}
+False positives: {
+18.
+} False negatives: {
+18
 .
 }
 
 Expected: {
-aufgetreten ist dieses raumliche migrationsphanomen in (<SPLIT>west<SPLIT>) - deutschland wahrend der 1960er - und 1970er - jahren<SPLIT>, als viele menschen sich mit dem geld des wirtschaftswunders ein eigenheim ausserhalb der grossen stadte bauten (<SPLIT>vgl. suburbanisierung<SPLIT>)<SPLIT>.}
+letztlich wurde das album zuerst am 30<SPLIT>.}
 Predicted: {
-aufgetreten ist dieses raumliche migrationsphanomen in (<SPLIT>west<SPLIT>) - deutschland wahrend der 1960er - und 1970er - jahren<SPLIT>, als viele menschen sich mit dem geld des wirtschaftswunders ein eigenheim ausserhalb der grossen stadte bauten (<SPLIT>vgl<SPLIT>. suburbanisierung<SPLIT>)<SPLIT>.}
+letztlich wurde das album zuerst am 30.}
 False positives: {
-vgl
-.
+30.
 } False negatives: {
-vgl.
-}
-
-Expected: {
-reap the wild wind konnte sich als einzige single der band in den us - amerikanischen billboard hot 100 platzieren (<SPLIT>71.<SPLIT>)}
-Predicted: {
-reap the wild wind konnte sich als einzige single der band in den us - amerikanischen billboard hot 100 platzieren (<SPLIT>71<SPLIT>.<SPLIT>)}
-False positives: {
-71
-.
-} False negatives: {
-71.
-}
-
-Expected: {
-ninja gaiden black beinhaltet das originalspiel und die erweiterungen ninja gaiden hurricane pack sowie ninja gaiden hurricane pack<SPLIT>: volume 2<SPLIT>.}
-Predicted: {
-ninja gaiden black beinhaltet das originalspiel und die erweiterungen ninja gaiden hurricane pack sowie ninja gaiden hurricane pack<SPLIT>: volume 2.}
-False positives: {
-2.
-} False negatives: {
-2
+30
 .
 }
 
 Expected: {
-helmut schon<SPLIT>, der verantwortliche dfb - trainer fur die deutsche fussballnationalmannschaft der amateure<SPLIT>, berief den ex - oberligaakteur herbert bayer in den kader fur die zwei deutsch - deutschen olympiaausscheidungsspiele im september 1963 in karl - marx - stadt und hannover gegen die ddr<SPLIT>.}
+an weltbildern vorbei<SPLIT>, die vielleicht mehr geistiges gluck hatten bereiten konnen als unser metromanes der<SPLIT>'<SPLIT>uberflussigen notwendigkeiten<SPLIT>.<SPLIT>'}
 Predicted: {
-helmut schon<SPLIT>, der verantwortliche dfb - trainer fur die deutsche fussballnationalmannschaft der amateure<SPLIT>, berief den ex - oberligaakteur herbert bayer in den kader fur die zwei deutsch - deutschen olympiaausscheidungsspiele im september 1963 in karl - marx - stadt und hannover gegen die ddr.}
+an weltbildern vorbei<SPLIT>, die vielleicht mehr geistiges gluck hatten bereiten konnen als unser metromanes der<SPLIT>'<SPLIT>uberflussigen notwendigkeiten<SPLIT>.'}
 False positives: {
-ddr.
+.'
 } False negatives: {
-ddr
 .
-}
-
-Expected: {
-napoleon<SPLIT>, der uber zu wenig kavallerie fur die aufklarung verfugte<SPLIT>, vermutete die hauptkrafte der verbundeten bei leipzig und ruckte am 2<SPLIT>.}
-Predicted: {
-napoleon<SPLIT>, der uber zu wenig kavallerie fur die aufklarung verfugte<SPLIT>, vermutete die hauptkrafte der verbundeten bei leipzig und ruckte am 2.}
-False positives: {
-2.
-} False negatives: {
-2
-.
-}
-
-Expected: {
-alle anderen wohnungen tragen als teil der adresse einen buchstaben von a (<SPLIT>"<SPLIT>the mansion<SPLIT>"<SPLIT>) bis l (<SPLIT>j ist ausgenommen<SPLIT>) gefolgt von einer ziffer von 1 bis 6<SPLIT>, also von a 1 bis l 6<SPLIT>.}
-Predicted: {
-alle anderen wohnungen tragen als teil der adresse einen buchstaben von a (<SPLIT>"<SPLIT>the mansion<SPLIT>"<SPLIT>) bis l (<SPLIT>j ist ausgenommen<SPLIT>) gefolgt von einer ziffer von 1 bis 6<SPLIT>, also von a 1 bis l 6.}
-False positives: {
-6.
-} False negatives: {
-6
-.
-}
-
-Expected: {
-ethische fragen spielen in marx<SPLIT>'<SPLIT>denken nur eine sehr untergeordnete rolle<SPLIT>.}
-Predicted: {
-ethische fragen spielen in marx'<SPLIT>denken nur eine sehr untergeordnete rolle<SPLIT>.}
-False positives: {
-marx'
-} False negatives: {
-marx
 '
 }
 
 Expected: {
-die auszeichnung der preistrager 2009 fand am tag des landerspiels der deutschen nationalmannschaft gegen aserbaidschan am 9<SPLIT>.}
+das wort steht damit parallel zu bezirk (<SPLIT>altertumlich zirkel<SPLIT>,<SPLIT>, kreis<SPLIT>'<SPLIT>, vergl<SPLIT>.}
 Predicted: {
-die auszeichnung der preistrager 2009 fand am tag des landerspiels der deutschen nationalmannschaft gegen aserbaidschan am 9.}
+das wort steht damit parallel zu bezirk (<SPLIT>altertumlich zirkel,<SPLIT>, kreis<SPLIT>'<SPLIT>, vergl<SPLIT>.}
 False positives: {
-9.
+zirkel,
 } False negatives: {
-9
+zirkel
+,
+}
+
+Expected: {
+nach dem rucktritt von alexandre millerand ubernahm er vom 11<SPLIT>.}
+Predicted: {
+nach dem rucktritt von alexandre millerand ubernahm er vom 11.}
+False positives: {
+11.
+} False negatives: {
+11
 .
 }
 
 Expected: {
-es steigerte den erfolg der band<SPLIT>, erreichte die englischen charts und schaffte es in schweden bis auf platz 27<SPLIT>.}
+grundlage der verkehrsprognose fur die a 14 ist die im auftrag des bundesministeriums fur verkehr<SPLIT>, bau und stadtentwicklung erstellte verflechtungsprognose 2025<SPLIT>.}
 Predicted: {
-es steigerte den erfolg der band<SPLIT>, erreichte die englischen charts und schaffte es in schweden bis auf platz 27.}
+grundlage der verkehrsprognose fur die a 14 ist die im auftrag des bundesministeriums fur verkehr<SPLIT>, bau und stadtentwicklung erstellte verflechtungsprognose 2025.}
 False positives: {
-27.
+2025.
 } False negatives: {
-27
+2025
 .
 }
 
 Expected: {
-die strecke beginnt am knotenpunkt hauptbahnhof (<SPLIT>u<SPLIT>) und unterquert in einer kurve den zentralen omnibusbahnhof und den kaiserplatz<SPLIT>.}
+im selben jahr<SPLIT>, beim finale der fussball - europameisterschaft 2004 am 4<SPLIT>.}
 Predicted: {
-die strecke beginnt am knotenpunkt hauptbahnhof (<SPLIT>u) und unterquert in einer kurve den zentralen omnibusbahnhof und den kaiserplatz<SPLIT>.}
+im selben jahr<SPLIT>, beim finale der fussball - europameisterschaft 2004 am 4.}
 False positives: {
-u)
+4.
 } False negatives: {
-u
-)
-}
-
-Expected: {
-jet grind radio future<SPLIT>, panzer dragoon und sega gt 2<SPLIT>.}
-Predicted: {
-jet grind radio future<SPLIT>, panzer dragoon und sega gt 2.}
-False positives: {
-2.
-} False negatives: {
-2
+4
 .
 }
 
 Expected: {
-damit liege deutschland im europaischen vergleich auf platz 12<SPLIT>.}
+bei den wahlen des jahres 1982 wurde er dann aber im sechsten wahlbezirk von indiana in das us - reprasentantenhaus in washington d.c. gewahlt<SPLIT>, wo er am 3<SPLIT>.}
 Predicted: {
-damit liege deutschland im europaischen vergleich auf platz 12.}
+bei den wahlen des jahres 1982 wurde er dann aber im sechsten wahlbezirk von indiana in das us - reprasentantenhaus in washington d.c. gewahlt<SPLIT>, wo er am 3.}
 False positives: {
-12.
+3.
 } False negatives: {
-12
+3
 .
 }
 
 Expected: {
-beitrage existieren - in der damals in der wissenschaft ublichen franzosischen sprache - unter anderem von d'alembert<SPLIT>, euler und friedrich ii<SPLIT>.}
+kleszczele {<SPLIT>{<SPLIT>ipa | klest sele<SPLIT>}<SPLIT>} ist eine stadt in polen in der wojewodschaft podlachien<SPLIT>.}
 Predicted: {
-beitrage existieren - in der damals in der wissenschaft ublichen franzosischen sprache - unter anderem von d'<SPLIT>alembert<SPLIT>, euler und friedrich ii<SPLIT>.}
+kleszczele {<SPLIT>{ipa | klest sele<SPLIT>}<SPLIT>} ist eine stadt in polen in der wojewodschaft podlachien<SPLIT>.}
 False positives: {
-d'
-alembert
+{ipa
 } False negatives: {
-d'alembert
+{
+ipa
 }
 
 Expected: {
-entwarnung gibt es hingegen fur netscape 6<SPLIT>.}
+bislang arbeitet yahoo! mit arcor zusammen<SPLIT>.}
 Predicted: {
-entwarnung gibt es hingegen fur netscape 6.}
+bislang arbeitet yahoo<SPLIT>! mit arcor zusammen<SPLIT>.}
 False positives: {
-6.
+yahoo
+!
 } False negatives: {
-6
-.
+yahoo!
 }
 
 Expected: {
-oracle<SPLIT>:<SPLIT>.now statt<SPLIT>.net}
+" als betreff:angebotsverlangerung<SPLIT>!!!!}
 Predicted: {
-oracle<SPLIT>:.now statt.net}
+" als betreff<SPLIT>:angebotsverlangerung<SPLIT>!<SPLIT>!<SPLIT>!<SPLIT>!}
 False positives: {
-:.now
-statt.net
+betreff
+:angebotsverlangerung
+!
+!
+!
+!
 } False negatives: {
-:
-.now
-statt
+betreff:angebotsverlangerung
+!!!!
+}
+
+Expected: {
+it's not a trick - it<SPLIT>'s aol}
+Predicted: {
+it's not a trick - it's aol}
+False positives: {
+it's
+} False negatives: {
+it
+'s
+}
+
+Expected: {
+visualstudio<SPLIT>.net kann man uber dieselbe adresse auf cd bestellen<SPLIT>.}
+Predicted: {
+visualstudio.net kann man uber dieselbe adresse auf cd bestellen<SPLIT>.}
+False positives: {
+visualstudio.net
+} False negatives: {
+visualstudio
 .net
 }
 
 Expected: {
-im moment gibt es von directx 8.0 gerade einmal die beta 2<SPLIT>.}
+visual studio<SPLIT>.net fur studenten}
 Predicted: {
-im moment gibt es von directx 8.0 gerade einmal die beta 2.}
+visual studio.net fur studenten}
 False positives: {
-2.
+studio.net
 } False negatives: {
-2
+studio
+.net
+}
+
+Expected: {
+was unter "<SPLIT>usw.<SPLIT>" zu verstehen ist<SPLIT>, ist bisher allerdings nicht bekannt<SPLIT>.}
+Predicted: {
+was unter "<SPLIT>usw<SPLIT>.<SPLIT>" zu verstehen ist<SPLIT>, ist bisher allerdings nicht bekannt<SPLIT>.}
+False positives: {
+usw
+.
+} False negatives: {
+usw.
+}
+
+Expected: {
+wurde in der auktion auf der insel runde 30 erst neun tage nach beginn erreicht<SPLIT>, sind die deutschen schon am dritten tag bei runde 30<SPLIT>.}
+Predicted: {
+wurde in der auktion auf der insel runde 30 erst neun tage nach beginn erreicht<SPLIT>, sind die deutschen schon am dritten tag bei runde 30.}
+False positives: {
+30.
+} False negatives: {
+30
 .
 }
 
 Expected: {
-die beiden waren teil eines konsortiums<SPLIT>, das der belgischen firma kredite von mehr als 470 mio. euro gewahrte<SPLIT>, um dictaphone aufzukaufen<SPLIT>.}
+yahoo! profitabler als erwartet}
 Predicted: {
-die beiden waren teil eines konsortiums<SPLIT>, das der belgischen firma kredite von mehr als 470 mio<SPLIT>. euro gewahrte<SPLIT>, um dictaphone aufzukaufen<SPLIT>.}
+yahoo<SPLIT>! profitabler als erwartet}
+False positives: {
+yahoo
+!
+} False negatives: {
+yahoo!
+}
+
+Expected: {
+die formel "<SPLIT>=summe(umsatz)<SPLIT>" in b2 liefert danach korrekterweise die summe aller werte von spalte a<SPLIT>.}
+Predicted: {
+die formel "<SPLIT>=summe(<SPLIT>umsatz<SPLIT>)<SPLIT>" in b2 liefert danach korrekterweise die summe aller werte von spalte a.}
+False positives: {
+=summe(
+umsatz
+)
+a.
+} False negatives: {
+=summe(umsatz)
+a
+.
+}
+
+Expected: {
+der erlos habe 170 millionen euro (<SPLIT>340 mio. mark<SPLIT>) betragen<SPLIT>, teilte das unternehmen am gestrigen freitag mit<SPLIT>.}
+Predicted: {
+der erlos habe 170 millionen euro (<SPLIT>340 mio<SPLIT>. mark<SPLIT>) betragen<SPLIT>, teilte das unternehmen am gestrigen freitag mit<SPLIT>.}
 False positives: {
 mio
 .
@@ -420,360 +489,236 @@ mio.
 }
 
 Expected: {
-microsofts<SPLIT>.net<SPLIT>:}
+gundolf s. freyermuth<SPLIT>, "<SPLIT>die besteigung des mount evernet<SPLIT>"<SPLIT>, c't 6/2001<SPLIT>, seite 158 ff.}
 Predicted: {
-microsofts.net<SPLIT>:}
+gundolf s. freyermuth<SPLIT>, "<SPLIT>die besteigung des mount evernet<SPLIT>"<SPLIT>, c't 6/2001<SPLIT>, seite 158 ff<SPLIT>.}
 False positives: {
-microsofts.net
+ff
+.
 } False negatives: {
-microsofts
-.net
+ff.
 }
 
 Expected: {
-benchmarks zeigt die aktuelle ausgabe 14/2001 der c't auf seite 19<SPLIT>.}
+der virus durchsucht die festplatte nach dateien mit der endung<SPLIT>.doc<SPLIT>,<SPLIT>.c<SPLIT>,<SPLIT>.cpp<SPLIT>,<SPLIT>.h<SPLIT>,<SPLIT>.asm<SPLIT>,<SPLIT>.xls sowie<SPLIT>.ppt und loscht deren inhalt<SPLIT>.}
 Predicted: {
-benchmarks zeigt die aktuelle ausgabe 14/2001 der c't auf seite 19.}
+der virus durchsucht die festplatte nach dateien mit der endung.doc<SPLIT>,<SPLIT>.c,<SPLIT>.cpp<SPLIT>,<SPLIT>.h,<SPLIT>.asm<SPLIT>,<SPLIT>.xls sowie.ppt und loscht deren inhalt<SPLIT>.}
 False positives: {
-19.
+endung.doc
+.c,
+.h,
+sowie.ppt
 } False negatives: {
-19
+endung
+.doc
+.c
+,
+.h
+,
+sowie
+.ppt
+}
+
+Expected: {
+yahoo! und msn<SPLIT>.}
+Predicted: {
+yahoo<SPLIT>! und msn<SPLIT>.}
+False positives: {
+yahoo
+!
+} False negatives: {
+yahoo!
+}
+
+Expected: {
+microsoft hatte behauptet<SPLIT>, der vorschlag fur den 59. zug von krush sei zu spat eingetroffen<SPLIT>.}
+Predicted: {
+microsoft hatte behauptet<SPLIT>, der vorschlag fur den 59<SPLIT>. zug von krush sei zu spat eingetroffen<SPLIT>.}
+False positives: {
+59
+.
+} False negatives: {
+59.
+}
+
+Expected: {
+so ging "<SPLIT>deutschland.info<SPLIT>" an einen britischen interessenten oder "<SPLIT>muenchen.info<SPLIT>" - ganz unbayrisch - an einen kunden in sachsen<SPLIT>.}
+Predicted: {
+so ging "<SPLIT>deutschland.info<SPLIT>" an einen britischen interessenten oder "<SPLIT>muenchen<SPLIT>.info<SPLIT>" - ganz unbayrisch - an einen kunden in sachsen<SPLIT>.}
+False positives: {
+muenchen
+.info
+} False negatives: {
+muenchen.info
+}
+
+Expected: {
+ebenso verlangt<SPLIT>.pro von den anvisierten medizinern<SPLIT>, juristen und wirtschaftsprufern einen nachweis ihrer beruflichen qualifikation<SPLIT>.}
+Predicted: {
+ebenso verlangt.pro von den anvisierten medizinern<SPLIT>, juristen und wirtschaftsprufern einen nachweis ihrer beruflichen qualifikation<SPLIT>.}
+False positives: {
+verlangt.pro
+} False negatives: {
+verlangt
+.pro
+}
+
+Expected: {
+____________________________}
+Predicted: {
+___________________________<SPLIT>_}
+False positives: {
+___________________________
+_
+} False negatives: {
+____________________________
+}
+
+Expected: {
+"<SPLIT>i'm a poor lonesome cowboy<SPLIT>, i'm a long<SPLIT>, long way from home<SPLIT>.<SPLIT>"}
+Predicted: {
+"<SPLIT>i<SPLIT>'m a poor lonesome cowboy<SPLIT>, i'm a long<SPLIT>, long way from home<SPLIT>.<SPLIT>"}
+False positives: {
+i
+'m
+} False negatives: {
+i'm
+}
+
+Expected: {
+damit positioniert amd den neuen prozessor als direkten konkurrenten gegen den intel pentium 4<SPLIT>.}
+Predicted: {
+damit positioniert amd den neuen prozessor als direkten konkurrenten gegen den intel pentium 4.}
+False positives: {
+4.
+} False negatives: {
+4
 .
 }
 
 Expected: {
-twinmos stellt aus in halle 9<SPLIT>.}
+das modell mk2109maf ist 6,35 mm dick und wiegt knapp 100 g<SPLIT>.}
 Predicted: {
-twinmos stellt aus in halle 9.}
+das modell mk2109maf ist 6,35 mm dick und wiegt knapp 100 g.}
 False positives: {
-9.
+g.
 } False negatives: {
-9
+g
 .
 }
 
 Expected: {
-aol meldete fur das zweite quartal des geschaftsjahres (<SPLIT>31. 12.<SPLIT>) einen nettogewinn von 271 millionen dollar oder 10 cent je anteil (<SPLIT>vorjahr funf cent<SPLIT>)<SPLIT>.}
+das gerat soll 230 gramm wiegen<SPLIT>, was immer noch doppelt so schwer ist wie ein palm v<SPLIT>.}
 Predicted: {
-aol meldete fur das zweite quartal des geschaftsjahres (<SPLIT>31<SPLIT>. 12.<SPLIT>) einen nettogewinn von 271 millionen dollar oder 10 cent je anteil (<SPLIT>vorjahr funf cent<SPLIT>)<SPLIT>.}
+das gerat soll 230 gramm wiegen<SPLIT>, was immer noch doppelt so schwer ist wie ein palm v.}
 False positives: {
-31
-.
+v.
 } False negatives: {
-31.
-}
-
-Expected: {
-demnachst will jorg zellmann seine domains opelaner.de/.com/.net/.ch/.org und opelforyou.de verkaufen<SPLIT>.}
-Predicted: {
-demnachst will jorg zellmann seine domains opelaner.de/<SPLIT>.com/<SPLIT>.net/<SPLIT>.ch/<SPLIT>.org und opelforyou.de verkaufen<SPLIT>.}
-False positives: {
-opelaner.de/
-.com/
-.net/
-.ch/
-.org
-} False negatives: {
-opelaner.de/.com/.net/.ch/.org
-}
-
-Expected: {
-das computerspiel feiert seinen 40. geburtstag<SPLIT>.}
-Predicted: {
-das computerspiel feiert seinen 40<SPLIT>. geburtstag<SPLIT>.}
-False positives: {
-40
-.
-} False negatives: {
-40.
-}
-
-Expected: {
-nach rethemeyers angaben sollen den vorwurfen zufolge bei b u. w. auftrage mit weniger mitarbeitern als zunachst zugesichert bearbeitet worden sein<SPLIT>.}
-Predicted: {
-nach rethemeyers angaben sollen den vorwurfen zufolge bei b u<SPLIT>. w. auftrage mit weniger mitarbeitern als zunachst zugesichert bearbeitet worden sein<SPLIT>.}
-False positives: {
-u
-.
-} False negatives: {
-u.
-}
-
-Expected: {
-die deutschen bruder theo & karl albrecht belegen mit einem vermogen von 13,6 milliarden dollar platz 9<SPLIT>.}
-Predicted: {
-die deutschen bruder theo & karl albrecht belegen mit einem vermogen von 13,6 milliarden dollar platz 9.}
-False positives: {
-9.
-} False negatives: {
-9
+v
 .
 }
 
 Expected: {
-das lasst etwa die identifizierung der gene leichter werden<SPLIT>, die eine krankheit (mit)verursachen<SPLIT>.}
+wer viel geist hat<SPLIT>, macht viel aus seinem<SPLIT>leben<SPLIT>.}
 Predicted: {
-das lasst etwa die identifizierung der gene leichter werden<SPLIT>, die eine krankheit (<SPLIT>mit<SPLIT>)verursachen<SPLIT>.}
+wer viel geist hat<SPLIT>, macht viel aus seinemleben<SPLIT>.}
 False positives: {
-(
-mit
-)verursachen
+seinemleben
 } False negatives: {
-(mit)verursachen
+seinem
+leben
 }
 
 Expected: {
-so hat beispielsweise die antarktis die cctld<SPLIT>.ac oder heard island und mcdonald islands<SPLIT>, die zu australien gehoren<SPLIT>, besitzen die domain<SPLIT>.hm<SPLIT>.}
+es ist irreligion<SPLIT>, wenn ich gar keinen mittler annehme; und in so fern ist aberglaube und gotzendienst<SPLIT>, und unglaube oder theismus<SPLIT>, den man auch altern judaism nennen kann<SPLIT>, beydes irreligion<SPLIT>.}
 Predicted: {
-so hat beispielsweise die antarktis die cctld.ac oder heard island und mcdonald islands<SPLIT>, die zu australien gehoren<SPLIT>, besitzen die domain<SPLIT>.hm<SPLIT>.}
+es ist irreligion<SPLIT>, wenn ich gar keinen mittler annehme<SPLIT>; und in so fern ist aberglaube und gotzendienst<SPLIT>, und unglaube oder theismus<SPLIT>, den man auch altern judaism nennen kann<SPLIT>, beydes irreligion<SPLIT>.}
 False positives: {
-cctld.ac
-} False negatives: {
-cctld
-.ac
-}
-
-Expected: {
-die nebel lichten sich und staroffice lebt als<SPLIT>.com office weiter<SPLIT>:}
-Predicted: {
-die nebel lichten sich und staroffice lebt als.com office weiter<SPLIT>:}
-False positives: {
-als.com
-} False negatives: {
-als
-.com
-}
-
-Expected: {
-icann sichert marktbeherrschende stellung von nsi bei<SPLIT>.com}
-Predicted: {
-icann sichert marktbeherrschende stellung von nsi bei.com}
-False positives: {
-bei.com
-} False negatives: {
-bei
-.com
-}
-
-Expected: {
-novell hatte gerne die gtld<SPLIT>.dir<SPLIT>.}
-Predicted: {
-novell hatte gerne die gtld.dir<SPLIT>.}
-False positives: {
-gtld.dir
-} False negatives: {
-gtld
-.dir
-}
-
-Expected: {
-probleme - wie der zusammenbruch des netzes zum start und eine ausgabe mit dem datum 32. januar statt 1. februar - gehorten der vergangenheit an<SPLIT>.}
-Predicted: {
-probleme - wie der zusammenbruch des netzes zum start und eine ausgabe mit dem datum 32<SPLIT>. januar statt 1. februar - gehorten der vergangenheit an<SPLIT>.}
-False positives: {
-32
-.
-} False negatives: {
-32.
-}
-
-Expected: {
-nach der 142. runde lag dagegen mannesmann mobilfunk vorne<SPLIT>:}
-Predicted: {
-nach der 142<SPLIT>. runde lag dagegen mannesmann mobilfunk vorne<SPLIT>:}
-False positives: {
-142
-.
-} False negatives: {
-142.
-}
-
-Expected: {
-die ausstellung ist anschliessend noch in hamburg (<SPLIT>22. 3. bis 17. 6.<SPLIT>)<SPLIT>, berlin (<SPLIT>19. 7. bis 7. 10.<SPLIT>) und nurnberg (<SPLIT>29. 11. bis 24. 2. 2002<SPLIT>) zu sehen<SPLIT>.}
-Predicted: {
-die ausstellung ist anschliessend noch in hamburg (<SPLIT>22<SPLIT>. 3. bis 17. 6.<SPLIT>)<SPLIT>, berlin (<SPLIT>19<SPLIT>. 7. bis 7. 10.<SPLIT>) und nurnberg (<SPLIT>29. 11. bis 24. 2. 2002<SPLIT>) zu sehen<SPLIT>.}
-False positives: {
-22
-.
-19
-.
-} False negatives: {
-22.
-19.
-}
-
-Expected: {
-amd freut<SPLIT>'s<SPLIT>, intel begutachtet es mit verwunderung<SPLIT>.}
-Predicted: {
-amd freut's<SPLIT>, intel begutachtet es mit verwunderung<SPLIT>.}
-False positives: {
-freut's
-} False negatives: {
-freut
-'s
-}
-
-Expected: {
-der dritte bug betrifft nur den internet explorer 5<SPLIT>.}
-Predicted: {
-der dritte bug betrifft nur den internet explorer 5.}
-False positives: {
-5.
-} False negatives: {
-5
-.
-}
-
-Expected: {
-fast ubersieht man den kleinen tisch mit dem unscheinbaren lesegerat auf microsofts stand in halle 2<SPLIT>.}
-Predicted: {
-fast ubersieht man den kleinen tisch mit dem unscheinbaren lesegerat auf microsofts stand in halle 2.}
-False positives: {
-2.
-} False negatives: {
-2
-.
-}
-
-Expected: {
-weitere informationen<SPLIT>: http://www.research.att.com/~bs/<SPLIT>.}
-Predicted: {
-weitere informationen<SPLIT>: http://www.research.att.com/<SPLIT>~bs/<SPLIT>.}
-False positives: {
-http://www.research.att.com/
-~bs/
-} False negatives: {
-http://www.research.att.com/~bs/
-}
-
-Expected: {
-sie ist die freieste aller lizenzen<SPLIT>, denn durch sie setzt man sich uber sich selbst weg; und doch auch die gesetzlichste<SPLIT>, denn sie ist unbedingt notwendig<SPLIT>.}
-Predicted: {
-sie ist die freieste aller lizenzen<SPLIT>, denn durch sie setzt man sich uber sich selbst weg<SPLIT>; und doch auch die gesetzlichste<SPLIT>, denn sie ist unbedingt notwendig<SPLIT>.}
-False positives: {
-weg
+annehme
 ;
 } False negatives: {
-weg;
+annehme;
 }
 
 Expected: {
-- nach innen geht der geheimni?<SPLIT>volle weg<SPLIT>.}
+charakterlose schonheit lasst sich nicht denken<SPLIT>: sie wird<SPLIT>, wenn auch keinen ethischen<SPLIT>, doch allezeit einen physischen charakter haben<SPLIT>, d<SPLIT>.}
 Predicted: {
-- nach innen geht der geheimni?volle weg<SPLIT>.}
+charakterlose schonheit lasst sich nicht denken<SPLIT>: sie wird<SPLIT>, wenn auch keinen ethischen<SPLIT>, doch allezeit einen physischen charakter haben<SPLIT>, d.}
 False positives: {
-geheimni?volle
+d.
 } False negatives: {
-geheimni?
-volle
-}
-
-Expected: {
-soll dieser unterschied nicht gelten<SPLIT>, so ist<SPLIT>s sehr ungerecht einige narren einzusperren<SPLIT>, wahrend man andre ihr gluck machen lasst<SPLIT>.}
-Predicted: {
-soll dieser unterschied nicht gelten<SPLIT>, so ists sehr ungerecht einige narren einzusperren<SPLIT>, wahrend man andre ihr gluck machen lasst<SPLIT>.}
-False positives: {
-ists
-} False negatives: {
-ist
-s
-}
-
-Expected: {
-s<SPLIT>.}
-Predicted: {
-s.}
-False positives: {
-s.
-} False negatives: {
-s
+d
 .
 }
 
 Expected: {
-5) ehre die eigentumlichkeit und die willkur deiner kinder<SPLIT>, auf dass es ihnen wohlgehe<SPLIT>, und sie kraftig leben auf erden<SPLIT>.}
+3) du sollst von den heiligtumern der liebe auch nicht das kleinste missbrauchen<SPLIT>: denn die wird ihr zartes gefuhl verlieren<SPLIT>, die ihre gunst entweiht und sich hingibt fur geschenke und gaben<SPLIT>, oder um nur in ruhe und frieden mutter zu werden<SPLIT>.}
 Predicted: {
-5<SPLIT>) ehre die eigentumlichkeit und die willkur deiner kinder<SPLIT>, auf dass es ihnen wohlgehe<SPLIT>, und sie kraftig leben auf erden<SPLIT>.}
+3<SPLIT>) du sollst von den heiligtumern der liebe auch nicht das kleinste missbrauchen<SPLIT>: denn die wird ihr zartes gefuhl verlieren<SPLIT>, die ihre gunst entweiht und sich hingibt fur geschenke und gaben<SPLIT>, oder um nur in ruhe und frieden mutter zu werden<SPLIT>.}
 False positives: {
-5
+3
 )
 } False negatives: {
-5)
+3)
 }
 
 Expected: {
-doch ist<SPLIT>s so besser<SPLIT>.}
+2) ich glaube<SPLIT>, dass ich nicht lebe<SPLIT>, um zu gehorchen oder um mich zu zerstreuen<SPLIT>, sondern um zu sein und zu werden<SPLIT>; und ich glaube an die macht des willens und der bildung<SPLIT>, mich dem unendlichen wieder zu nahern<SPLIT>, mich aus den fesseln der missbildung zu erlosen<SPLIT>, und mich von den schranken des geschlechts unabhangig zu machen<SPLIT>.}
 Predicted: {
-doch ists so besser<SPLIT>.}
+2<SPLIT>) ich glaube<SPLIT>, dass ich nicht lebe<SPLIT>, um zu gehorchen oder um mich zu zerstreuen<SPLIT>, sondern um zu sein und zu werden<SPLIT>; und ich glaube an die macht des willens und der bildung<SPLIT>, mich dem unendlichen wieder zu nahern<SPLIT>, mich aus den fesseln der missbildung zu erlosen<SPLIT>, und mich von den schranken des geschlechts unabhangig zu machen<SPLIT>.}
 False positives: {
-ists
+2
+)
 } False negatives: {
-ist
-s
+2)
 }
 
 Expected: {
-ms pugh wurde im papworth<SPLIT>- und im addenbrooke's<SPLIT>-<SPLIT>krankenhaus in cambridgeshire behandelt<SPLIT>.}
+ein astronomisches observatorium aus der bronzezeit wurde hier um 1900 v. chr. errichtet und wurde von der ansassigen gemeinde genutzt<SPLIT>, die hier bis etwa 700 v. chr. lebte<SPLIT>.}
 Predicted: {
-ms pugh wurde im papworth<SPLIT>- und im addenbrooke<SPLIT>'s<SPLIT>-<SPLIT>krankenhaus in cambridgeshire behandelt<SPLIT>.}
+ein astronomisches observatorium aus der bronzezeit wurde hier um 1900 v. chr<SPLIT>. errichtet und wurde von der ansassigen gemeinde genutzt<SPLIT>, die hier bis etwa 700 v. chr<SPLIT>. lebte<SPLIT>.}
 False positives: {
-addenbrooke
-'s
-} False negatives: {
-addenbrooke's
-}
-
-Expected: {
-caplan halt nichts von retrospektivem wahlen und zitiert zwei gelehrte<SPLIT>, die sagen<SPLIT>, es sei "<SPLIT>genau so vernunftig wie den pharao zu toten<SPLIT>, wenn der nil nicht uber die ufer tritt.<SPLIT>"}
-Predicted: {
-caplan halt nichts von retrospektivem wahlen und zitiert zwei gelehrte<SPLIT>, die sagen<SPLIT>, es sei "<SPLIT>genau so vernunftig wie den pharao zu toten<SPLIT>, wenn der nil nicht uber die ufer tritt<SPLIT>.<SPLIT>"}
-False positives: {
-tritt
+chr
+.
+chr
 .
 } False negatives: {
-tritt.
+chr.
+chr.
 }
 
 Expected: {
-daraus wurde im jahr 833 n<SPLIT>. chr. durch die eroberung des furstentums nitra (<SPLIT>heutige slowakei<SPLIT>) der staat grossmahren<SPLIT>.}
+adnan z. amin<SPLIT>, der generaldirektor der internationalen organisation fur erneuerbare energien (<SPLIT>irena<SPLIT>)<SPLIT>, ist sich sicher<SPLIT>: "<SPLIT>offshore<SPLIT>-<SPLIT>windkraft kann die nummer eins bei der stromerzeugung in einer kohlestrom<SPLIT>-<SPLIT>freien weltwirtschaft werden.<SPLIT>"}
 Predicted: {
-daraus wurde im jahr 833 n. chr. durch die eroberung des furstentums nitra (<SPLIT>heutige slowakei<SPLIT>) der staat grossmahren<SPLIT>.}
+adnan z<SPLIT>. amin<SPLIT>, der generaldirektor der internationalen organisation fur erneuerbare energien (<SPLIT>irena<SPLIT>)<SPLIT>, ist sich sicher<SPLIT>: "<SPLIT>offshore<SPLIT>-<SPLIT>windkraft kann die nummer eins bei der stromerzeugung in einer kohlestrom<SPLIT>-<SPLIT>freien weltwirtschaft werden<SPLIT>.<SPLIT>"}
 False positives: {
-n.
-} False negatives: {
-n
+z
 .
-}
-
-Expected: {
-rafferty nahm auf dem album "<SPLIT>over my head<SPLIT>" von 1994 eine neue version des humblebums<SPLIT>-<SPLIT>songs "<SPLIT>her fahter didn'<SPLIT>t like me anyway<SPLIT>" auf<SPLIT>.}
-Predicted: {
-rafferty nahm auf dem album "<SPLIT>over my head<SPLIT>" von 1994 eine neue version des humblebums<SPLIT>-<SPLIT>songs "<SPLIT>her fahter didn't like me anyway<SPLIT>" auf<SPLIT>.}
-False positives: {
-didn't
-} False negatives: {
-didn'
-t
-}
-
-Expected: {
-tina anselmi wurde am 25<SPLIT>. marz 1927 in castelfranco veneto geboren<SPLIT>; sie wuchs in einer antifaschistischen katholischen familie auf<SPLIT>, die von der verfolgung ihres militant sozialistischen vaters gezeichnet war<SPLIT>.}
-Predicted: {
-tina anselmi wurde am 25. marz 1927 in castelfranco veneto geboren<SPLIT>; sie wuchs in einer antifaschistischen katholischen familie auf<SPLIT>, die von der verfolgung ihres militant sozialistischen vaters gezeichnet war<SPLIT>.}
-False positives: {
-25.
-} False negatives: {
-25
+werden
 .
+} False negatives: {
+z.
+werden.
 }
 
 Expected: {
-die neuesten zahlen sind vom 24<SPLIT>. oktober letzten jahres und geben einen dieselpreis von 1,335 € pro liter an<SPLIT>, im gegensatz zum durchschnittswert in der eurozone<SPLIT>, der 1,165 € betragt<SPLIT>.}
+etwa seit dem 8. jahrhundert n. chr. bildeten sich die ersten stadtstaaten<SPLIT>: kleine eigenstandige territorien mit ihren eigenen politischen systemen<SPLIT>.}
 Predicted: {
-die neuesten zahlen sind vom 24. oktober letzten jahres und geben einen dieselpreis von 1,335 € pro liter an<SPLIT>, im gegensatz zum durchschnittswert in der eurozone<SPLIT>, der 1,165 € betragt<SPLIT>.}
+etwa seit dem 8. jahrhundert n. chr<SPLIT>. bildeten sich die ersten stadtstaaten<SPLIT>: kleine eigenstandige territorien mit ihren eigenen politischen systemen<SPLIT>.}
 False positives: {
-24.
-} False negatives: {
-24
+chr
 .
+} False negatives: {
+chr.
+}
+
+Expected: {
+am 1. januar 49 v. chr. verlas marcus antionius die erklarung von casar<SPLIT>, in der der statthalter sich selbst zum freund des friedens erklarte<SPLIT>.}
+Predicted: {
+am 1. januar 49 v. chr<SPLIT>. verlas marcus antionius die erklarung von casar<SPLIT>, in der der statthalter sich selbst zum freund des friedens erklarte<SPLIT>.}
+False positives: {
+chr
+.
+} False negatives: {
+chr.
 }

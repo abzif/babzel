@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9853312418813265
+Evaluation-Score=0.9853391470494575
 Training-Sample-Size=33696
 Evaluation-Sample-Size=3743
 Training-Algorithm=MAXENT
@@ -10,9 +10,9 @@ Component-Name=StatisticalLemmatizer
 Language=it
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1682140630027
+Timestamp=1684646774925
 TrainerType=Event
-Training-Eventhash=b9047d5e24492a625621fb94cd0e1c21
+Training-Eventhash=4cbee9388de2a7b5c50f3122a8730cc3
 factory=opennlp.tools.lemmatizer.LemmatizerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -35080,8 +35080,7 @@ Expected: {
 da	ADP	da
 vespa	PROPN	vespa
 il	DET	il
-prof	NOUN	professore
-.	PUNCT	.
+prof.	NOUN	professore
 de	PROPN	de
 vincenti	PROPN	vincenti
 ,	PUNCT	,
@@ -35105,8 +35104,7 @@ Predicted: {
 da	ADP	da
 vespa	PROPN	vespa
 il	DET	il
-prof	NOUN	professore
-.	PUNCT	.
+prof.	NOUN	professore
 de	PROPN	de
 vincenti	PROPN	vincenti
 ,	PUNCT	,
@@ -37596,6 +37594,64 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 possib.: possibile | possib.
+}
+
+Expected: {
+il	DET	il
+mio	DET	mio
+appello	NOUN	appello
+a il	ADP DET	a il
+dr.	PROPN	dr.
+luccisano	PROPN	luccisano
+di	ADP	di
+venire	VERB	venire
+a	ADP	a
+discutere	VERB	discutere
+de	ADP	de
+#labuonascuola	SYM	#labuonascuola
+in la	ADP DET	in il
+mia	DET	mio
+scuola	NOUN	scuola
+non	ADV	non
+e	AUX	essere
+ancora	ADV	ancora
+stato	AUX	essere
+accolto	VERB	accogliere
+.	PUNCT	.
+troppo	ADV	troppo
+impegnato	VERB	impegnare
+?	PUNCT	?
+}
+Predicted: {
+il	DET	il
+mio	DET	mio
+appello	NOUN	appello
+a il	ADP DET	a il
+dr.	PROPN	dottore
+luccisano	PROPN	luccisano
+di	ADP	di
+venire	VERB	venire
+a	ADP	a
+discutere	VERB	discutere
+de	ADP	de
+#labuonascuola	SYM	#labuonascuola
+in la	ADP DET	in il
+mia	DET	mio
+scuola	NOUN	scuola
+non	ADV	non
+e	AUX	essere
+ancora	ADV	ancora
+stato	AUX	essere
+accolto	VERB	accogliere
+.	PUNCT	.
+troppo	ADV	troppo
+impegnato	VERB	impegnare
+?	PUNCT	?
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+dr.: dr. | dottore
 }
 
 Expected: {
@@ -44719,7 +44775,8 @@ azienda	NOUN	azienda
 che	PRON	che
 detengono	VERB	detenere
 il	DET	il
-10,95%	NUM	10,95%
+10,95	NUM	10,95
+%	SYM	%
 di i	ADP DET	di il
 diritti	NOUN	diritto
 di	ADP	di
@@ -44762,7 +44819,8 @@ azienda	NOUN	azienda
 che	PRON	che
 detengono	VERB	detenere
 il	DET	il
-10,95%	NUM	10,95%
+10,95	NUM	10,95
+%	SYM	%
 di i	ADP DET	di il
 diritti	NOUN	diritto
 di	ADP	di
@@ -45380,7 +45438,8 @@ con	ADP	con
 una	DET	uno
 quota	NOUN	quota
 di il	ADP DET	di il
-27%	NUM	27%
+27	NUM	27
+%	SYM	%
 in i	ADP DET	in il
 prodotti	NOUN	prodotto
 a	ADP	a
@@ -45402,7 +45461,8 @@ terzo	ADJ	terzo
 operatore	NOUN	operatore
 con	ADP	con
 il	DET	il
-15%	NUM	15%
+15	NUM	15
+%	SYM	%
 circa	ADV	circa
 .	PUNCT	.
 }
@@ -45424,7 +45484,8 @@ con	ADP	con
 una	DET	uno
 quota	NOUN	quota
 di il	ADP DET	di il
-27%	NUM	27%
+27	NUM	27
+%	SYM	%
 in i	ADP DET	in il
 prodotti	NOUN	prodotto
 a	ADP	a
@@ -45446,7 +45507,8 @@ terzo	ADJ	terzo
 operatore	NOUN	operatore
 con	ADP	con
 il	DET	il
-15%	NUM	15%
+15	NUM	15
+%	SYM	%
 circa	ADV	circa
 .	PUNCT	.
 }
@@ -46751,7 +46813,8 @@ mibtel	PROPN	mibtel
 cedeva	VERB	cedere
 oltre	ADP	oltre
 l'	DET	il
-1,5%	NUM	1,5%
+1,5	NUM	1,5
+%	SYM	%
 )	PUNCT	)
 ,	PUNCT	,
 dopo	ADP	dopo
@@ -46805,7 +46868,8 @@ mibtel	PROPN	mibtel
 cedeva	VERB	cedere
 oltre	ADP	oltre
 l'	DET	il
-1,5%	NUM	1,5%
+1,5	NUM	1,5
+%	SYM	%
 )	PUNCT	)
 ,	PUNCT	,
 dopo	ADP	dopo
@@ -51044,122 +51108,6 @@ libraccio: libro | libraccio
 }
 
 Expected: {
-ma	CCONJ	ma
-qui	ADV	qui
-,	PUNCT	,
-con	ADP	con
-la	DET	il
-collaborazione	NOUN	collaborazione
-di	ADP	di
-christopher	PROPN	christopher
-nickens	PROPN	nickens
-,	PUNCT	,
-autore	NOUN	autore
-di	ADP	di
-quattro	NUM	quattro
-biografie	NOUN	biografia
-di	ADP	di
-grandi	ADJ	grande
-star	NOUN	star
-,	PUNCT	,
-rievoca	VERB	rievocare
-con	ADP	con
-sufficiente	ADJ	sufficiente
-candore	NOUN	candore
-e	CCONJ	e
-una	DET	uno
-conoscenza	NOUN	conoscenza
-di	ADP	di
-prima	NUM	prima
-mano	NOUN	mano
-le	DET	il
-vicende	NOUN	vicenda
-"	PUNCT	"
-dietro	ADP	dietro
-le	DET	il
-scene	NOUN	scena
-"	PUNCT	"
-di	ADP	di
-un	DET	uno
-film	NOUN	film
-diventato	VERB	diventare
-un	DET	uno
-classico	NOUN	classico
-nonostante	ADP	nonostante
-le	DET	il
-premesse	NOUN	premessa
-(	PUNCT	(
-un	DET	un
-po	ADV	po
-come	SCONJ	come
-successe	VERB	succedere
-a	ADP	a
-casablanca	PROPN	casablanca
-)	PUNCT	)
-.	PUNCT	.
-}
-Predicted: {
-ma	CCONJ	ma
-qui	ADV	qui
-,	PUNCT	,
-con	ADP	con
-la	DET	il
-collaborazione	NOUN	collaborazione
-di	ADP	di
-christopher	PROPN	christopher
-nickens	PROPN	nickens
-,	PUNCT	,
-autore	NOUN	autore
-di	ADP	di
-quattro	NUM	quattro
-biografie	NOUN	biografia
-di	ADP	di
-grandi	ADJ	grande
-star	NOUN	star
-,	PUNCT	,
-rievoca	VERB	rievocare
-con	ADP	con
-sufficiente	ADJ	sufficiente
-candore	NOUN	candore
-e	CCONJ	e
-una	DET	uno
-conoscenza	NOUN	conoscenza
-di	ADP	di
-prima	NUM	prima
-mano	NOUN	mano
-le	DET	il
-vicende	NOUN	vicenda
-"	PUNCT	"
-dietro	ADP	dietro
-le	DET	il
-scene	NOUN	scena
-"	PUNCT	"
-di	ADP	di
-un	DET	uno
-film	NOUN	film
-diventato	VERB	diventare
-un	DET	uno
-classico	NOUN	classico
-nonostante	ADP	nonostante
-le	DET	il
-premesse	NOUN	premessa
-(	PUNCT	(
-un	DET	uno
-po	ADV	po
-come	SCONJ	come
-successe	VERB	succedere
-a	ADP	a
-casablanca	PROPN	casablanca
-)	PUNCT	)
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-un: un | uno
-}
-
-Expected: {
 il	DET	il
 regista	NOUN	regista
 si	PRON	si
@@ -53764,7 +53712,8 @@ placement	X	placement
 acquistando	VERB	acquistare
 ciascuna	PRON	ciascuno
 l'	DET	il
-1%	NUM	1%
+1	NUM	1
+%	SYM	%
 ,	PUNCT	,
 e	CCONJ	e
 raggiungendo	VERB	raggiungere
@@ -53776,7 +53725,8 @@ immediatamente	ADV	immediatamente
 successiva	ADJ	successivo
 ,	PUNCT	,
 il	DET	il
-2,52%	NUM	2,52%
+2,52	NUM	2,52
+%	SYM	%
 di il	ADP DET	di il
 capitale	NOUN	capitale
 .	PUNCT	.
@@ -53808,7 +53758,8 @@ placement	X	placement
 acquistando	VERB	acquistare
 ciascuna	PRON	ciascuno
 l'	DET	il
-1%	NUM	1%
+1	NUM	1
+%	SYM	%
 ,	PUNCT	,
 e	CCONJ	e
 raggiungendo	VERB	raggiungere
@@ -53820,7 +53771,8 @@ immediatamente	ADV	immediatamente
 successiva	ADJ	successivo
 ,	PUNCT	,
 il	DET	il
-2,52%	NUM	2,52%
+2,52	NUM	2,52
+%	SYM	%
 di il	ADP DET	di il
 capitale	NOUN	capitale
 .	PUNCT	.

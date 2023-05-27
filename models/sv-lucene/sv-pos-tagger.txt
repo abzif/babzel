@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9299355922710725
+Evaluation-Score=0.9300476057126855
 Training-Sample-Size=10143
 Evaluation-Sample-Size=1126
 Training-Algorithm=MAXENT
@@ -10,9 +10,9 @@ Component-Name=POSTaggerME
 Language=sv
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1682317040959
+Timestamp=1684813008816
 TrainerType=Event
-Training-Eventhash=c82d982f804fe6ce86907d98224719e4
+Training-Eventhash=68d8ab9168cdca79b20571120d71cd5e
 factory=opennlp.tools.postag.POSTaggerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -387,12 +387,11 @@ anda: NOUN | ADV
 Expected: {
 vad_PRON det_PRON egentligen_ADV var_AUX kunde_AUX de_PRON aldrig_ADV komma_VERB till_ADP klarhet_NOUN om_ADP ;_PUNCT det_PRON var_AUX vaxtlivets_NOUN egen_ADJ lukt_NOUN hade_AUX de_PRON for_ADP lange_ADV sedan_ADP stannat_VERB for_ADP ,_PUNCT i_ADP gala_PROPN ,_PUNCT forruttnelsens_NOUN och_CCONJ panyttfodelsens_NOUN processer_NOUN som_PRON hade_AUX paskyndats_VERB till_ADP den_DET grad_NOUN ,_PUNCT kommit_VERB sa_ADV tatt_ADV inpa_ADP varandra_PRON att_SCONJ de_PRON hade_AUX resulterat_VERB i_ADP en_DET dunst_NOUN av_ADP bade_CCONJ dod_NOUN och_CCONJ liv_NOUN pa_ADP en_DET gang_NOUN ._PUNCT}
 Predicted: {
-vad_PRON det_PRON egentligen_ADV var_AUX kunde_AUX de_PRON aldrig_ADV komma_VERB till_ADP klarhet_NOUN om_SCONJ ;_PUNCT det_PRON var_AUX vaxtlivets_VERB egen_ADJ lukt_NOUN hade_AUX de_PRON for_ADP lange_ADV sedan_ADP stannat_NOUN for_ADP ,_PUNCT i_ADP gala_PROPN ,_PUNCT forruttnelsens_NOUN och_CCONJ panyttfodelsens_NOUN processer_NOUN som_PRON hade_AUX paskyndats_VERB till_ADP den_DET grad_NOUN ,_PUNCT kommit_VERB sa_ADV tatt_ADV inpa_ADP varandra_PRON att_SCONJ de_PRON hade_AUX resulterat_VERB i_ADP en_DET dunst_NOUN av_ADP bade_CCONJ dod_NOUN och_CCONJ liv_NOUN pa_ADP en_DET gang_NOUN ._PUNCT}
+vad_PRON det_PRON egentligen_ADV var_AUX kunde_AUX de_PRON aldrig_ADV komma_VERB till_ADP klarhet_NOUN om_SCONJ ;_PUNCT det_PRON var_AUX vaxtlivets_NOUN egen_ADJ lukt_NOUN hade_AUX de_PRON for_ADP lange_ADV sedan_ADP stannat_NOUN for_ADP ,_PUNCT i_ADP gala_PROPN ,_PUNCT forruttnelsens_NOUN och_CCONJ panyttfodelsens_NOUN processer_NOUN som_PRON hade_AUX paskyndats_VERB till_ADP den_DET grad_NOUN ,_PUNCT kommit_VERB sa_ADV tatt_ADV inpa_ADP varandra_PRON att_SCONJ de_PRON hade_AUX resulterat_VERB i_ADP en_DET dunst_NOUN av_ADP bade_CCONJ dod_NOUN och_CCONJ liv_NOUN pa_ADP en_DET gang_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 om: ADP | SCONJ
-vaxtlivets: NOUN | VERB
 stannat: VERB | NOUN
 }
 
@@ -685,16 +684,6 @@ igenom: ADV | ADP
 }
 
 Expected: {
-det_PRON ser_VERB inte_PART sa_ADV dumt_ADJ ut_ADV pa_ADP papperet_NOUN ,_PUNCT men_CCONJ vad_PRON har_VERB de_PRON egentligen_ADV ?_PUNCT}
-Predicted: {
-det_PRON ser_VERB inte_PART sa_ADV dumt_ADJ ut_ADV pa_ADP papperet_NOUN ,_PUNCT men_CCONJ vad_PRON har_AUX de_PRON egentligen_ADV ?_PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-har: VERB | AUX
-}
-
-Expected: {
 han_PRON kunde_AUX omojligt_ADV forklara_VERB for_ADP sig_PRON sjalv_ADJ varfor_ADV han_PRON kande_VERB sig_PRON sa_ADV tilltalad_ADJ av_ADP just_ADV det_DET blocket_NOUN ._PUNCT}
 Predicted: {
 han_PRON kunde_AUX omojligt_ADJ forklara_VERB for_ADP sig_PRON sjalv_ADJ varfor_ADV han_PRON kande_VERB sig_PRON sa_ADV tilltalad_VERB av_ADP just_ADV det_PRON blocket_NOUN ._PUNCT}
@@ -716,16 +705,6 @@ Tok: Ref | Pred
 var: VERB | AUX
 osedd: VERB | ADJ
 bakom: ADV | ADP
-}
-
-Expected: {
-han_PRON hade_AUX ju_ADV inte_PART forlorat_VERB sig_PRON sjalv_ADJ pa_ADP riktigt_ADV ,_PUNCT han_PRON latsades_VERB bara_ADV ,_PUNCT och_CCONJ han_PRON kunde_AUX bli_VERB quinn_PROPN igen_ADV precis_ADV nar_SCONJ han_PRON ville_AUX ._PUNCT}
-Predicted: {
-han_PRON hade_AUX ju_ADV inte_PART forlorat_VERB sig_PRON sjalv_ADJ pa_ADP riktigt_ADV ,_PUNCT han_PRON latsades_VERB bara_ADV ,_PUNCT och_CCONJ han_PRON kunde_AUX bli_VERB quinn_PROPN igen_ADV precis_ADV nar_SCONJ han_PRON ville_VERB ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-ville: AUX | VERB
 }
 
 Expected: {
@@ -905,6 +884,16 @@ bara: VERB | ADV
 sa: PART | ADV
 att: SCONJ | PART
 stuga: NOUN | VERB
+}
+
+Expected: {
+han_PRON var_AUX ute_ADV och_CCONJ inspekterade_VERB vagunderhallet_NOUN ,_PUNCT sa_VERB han_PRON ._PUNCT}
+Predicted: {
+han_PRON var_VERB ute_ADV och_CCONJ inspekterade_VERB vagunderhallet_NOUN ,_PUNCT sa_VERB han_PRON ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+var: AUX | VERB
 }
 
 Expected: {
@@ -3254,12 +3243,13 @@ kronos: PROPN | NOUN
 }
 
 Expected: {
-och_CCONJ som_PRON aktris_NOUN var_AUX hon_PRON mycket_ADV bra_ADV :_PUNCT hon_PRON gick_VERB over_ADV till_ADP jiddisch_NOUN ,_PUNCT till_ADP italienska_NOUN ,_PUNCT till_ADP tyska_NOUN ,_PUNCT betonade_VERB och_CCONJ gestikulerade_VERB ,_PUNCT an_ADV forvandlade_VERB hon_PRON sig_PRON till_ADP en_DET grupp_NOUN aldrade_ADJ judar_NOUN ,_PUNCT an_ADV var_AUX hon_PRON en_DET radd_ADJ liten_ADJ pojke_NOUN ._PUNCT}
+och_CCONJ som_ADP aktris_NOUN var_AUX hon_PRON mycket_ADV bra_ADV :_PUNCT hon_PRON gick_VERB over_ADV till_ADP jiddisch_NOUN ,_PUNCT till_ADP italienska_NOUN ,_PUNCT till_ADP tyska_NOUN ,_PUNCT betonade_VERB och_CCONJ gestikulerade_VERB ,_PUNCT an_ADV forvandlade_VERB hon_PRON sig_PRON till_ADP en_DET grupp_NOUN aldrade_ADJ judar_NOUN ,_PUNCT an_ADV var_AUX hon_PRON en_DET radd_ADJ liten_ADJ pojke_NOUN ._PUNCT}
 Predicted: {
 och_CCONJ som_PRON aktris_NOUN var_AUX hon_PRON mycket_ADV bra_ADJ :_PUNCT hon_PRON gick_VERB over_ADV till_ADP jiddisch_NOUN ,_PUNCT till_ADP italienska_NOUN ,_PUNCT till_ADP tyska_ADJ ,_PUNCT betonade_ADJ och_CCONJ gestikulerade_ADJ ,_PUNCT an_SCONJ forvandlade_VERB hon_PRON sig_PRON till_ADP en_DET grupp_NOUN aldrade_ADJ judar_NOUN ,_PUNCT an_SCONJ var_AUX hon_PRON en_DET radd_ADJ liten_ADJ pojke_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+som: ADP | PRON
 bra: ADV | ADJ
 tyska: NOUN | ADJ
 betonade: VERB | ADJ
@@ -5422,13 +5412,12 @@ val: NOUN | ADV
 Expected: {
 bostadsbandet_NOUN vid_ADP val_NOUN till_ADP riksdagen_NOUN har_AUX slopats_VERB ,_PUNCT vilket_PRON betyder_VERB att_SCONJ man_PRON kan_AUX bli_AUX vald_VERB i_ADP en_DET annan_ADJ valkrets_NOUN an_SCONJ den_PRON man_PRON bor_VERB i_ADP ._PUNCT}
 Predicted: {
-bostadsbandet_NOUN vid_ADP val_NOUN till_ADP riksdagen_NOUN har_VERB slopats_NOUN ,_PUNCT vilket_PRON betyder_VERB att_SCONJ man_PRON kan_AUX bli_AUX vald_VERB i_ADP en_DET annan_ADJ valkrets_NOUN an_SCONJ den_PRON man_PRON bor_AUX i_ADP ._PUNCT}
+bostadsbandet_NOUN vid_ADP val_NOUN till_ADP riksdagen_NOUN har_VERB slopats_NOUN ,_PUNCT vilket_PRON betyder_VERB att_SCONJ man_PRON kan_AUX bli_AUX vald_VERB i_ADP en_DET annan_ADJ valkrets_NOUN an_SCONJ den_PRON man_PRON bor_VERB i_ADP ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 har: AUX | VERB
 slopats: VERB | NOUN
-bor: VERB | AUX
 }
 
 Expected: {

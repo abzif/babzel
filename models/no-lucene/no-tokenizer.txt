@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9988194409803629
-Training-Sample-Size=35155
-Evaluation-Sample-Size=3906
+Evaluation-Score=0.9988541496153217
+Training-Sample-Size=30768
+Evaluation-Sample-Size=3418
 Training-Algorithm=MAXENT_QN
 
 === MODEL PROPERTIES ===
@@ -9,9 +9,9 @@ Component-Name=TokenizerME
 Language=no
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1682218106769
+Timestamp=1684723360292
 TrainerType=Event
-Training-Eventhash=168e1b8c0ecc39161c4e6d22b97f3225
+Training-Eventhash=299146da05f679dcaa5eaa8e55257356
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
@@ -70,17 +70,6 @@ False positives: {
 } False negatives: {
 24
 .
-}
-
-Expected: {
-da snakker vi selvsagt kun naermeste kompiser (<SPLIT>som alle gar likt kledd<SPLIT>; ralph lauren og hva som helst fra volt<SPLIT>) som kan " wingman'e " hverandre slik de alle far seg noe fremmed kjott pa kjottet denne kvelden ogsa<SPLIT>.}
-Predicted: {
-da snakker vi selvsagt kun naermeste kompiser (<SPLIT>som alle gar likt kledd<SPLIT>; ralph lauren og hva som helst fra volt<SPLIT>) som kan " wingman<SPLIT>'e " hverandre slik de alle far seg noe fremmed kjott pa kjottet denne kvelden ogsa<SPLIT>.}
-False positives: {
-wingman
-'e
-} False negatives: {
-wingman'e
 }
 
 Expected: {
@@ -150,17 +139,6 @@ False positives: {
 }
 
 Expected: {
-martine vik magnussen ble funnet kvalt i en kjeller i london den 16. mars i 2008<SPLIT>.}
-Predicted: {
-martine vik magnussen ble funnet kvalt i en kjeller i london den 16<SPLIT>. mars i 2008<SPLIT>.}
-False positives: {
-16
-.
-} False negatives: {
-16.
-}
-
-Expected: {
 og i hans litteraere bagasje inngar ogsa kritikerroste tolkninger av den greske poeten k.<SPLIT>p. kavafis samtlige dikt (<SPLIT>2009<SPLIT>)<SPLIT>.}
 Predicted: {
 og i hans litteraere bagasje inngar ogsa kritikerroste tolkninger av den greske poeten k.p. kavafis samtlige dikt (<SPLIT>2009<SPLIT>)<SPLIT>.}
@@ -169,28 +147,6 @@ k.p.
 } False negatives: {
 k.
 p.
-}
-
-Expected: {
-apner pc'en igjen<SPLIT>, sjekker twitter og facebook<SPLIT>.}
-Predicted: {
-apner pc<SPLIT>'en igjen<SPLIT>, sjekker twitter og facebook<SPLIT>.}
-False positives: {
-pc
-'en
-} False negatives: {
-pc'en
-}
-
-Expected: {
-offeret har ogsa fortalt sin historie i detalj pa honestthinking.org<SPLIT>.}
-Predicted: {
-offeret har ogsa fortalt sin historie i detalj pa honestthinking<SPLIT>.org<SPLIT>.}
-False positives: {
-honestthinking
-.org
-} False negatives: {
-honestthinking.org
 }
 
 Expected: {
@@ -214,17 +170,6 @@ senators
 '
 } False negatives: {
 senators'
-}
-
-Expected: {
-sa tar jeg med meg mac'en min<SPLIT>, der jeg har alt av tekster<SPLIT>, noter og ideer<SPLIT>.}
-Predicted: {
-sa tar jeg med meg mac<SPLIT>'en min<SPLIT>, der jeg har alt av tekster<SPLIT>, noter og ideer<SPLIT>.}
-False positives: {
-mac
-'en
-} False negatives: {
-mac'en
 }
 
 Expected: {
@@ -316,17 +261,6 @@ pst
 }
 
 Expected: {
-"<SPLIT>peak oil<SPLIT>"<SPLIT>, omgrepet har ikkje nokor god norsk omsetjing<SPLIT>, men det tyder noko slikt som "<SPLIT>oljetoppteorien<SPLIT>"<SPLIT>.}
-Predicted: {
-"<SPLIT>peak oil<SPLIT>"<SPLIT>, omgrepet har ikkje nokor god norsk omsetjing<SPLIT>, men det tyder noko slikt som "oljetoppteorien<SPLIT>"<SPLIT>.}
-False positives: {
-"oljetoppteorien
-} False negatives: {
-"
-oljetoppteorien
-}
-
-Expected: {
 av dei var redaktor johs. nesse i aftenposten den fremste<SPLIT>.}
 Predicted: {
 av dei var redaktor johs<SPLIT>. nesse i aftenposten den fremste<SPLIT>.}
@@ -340,14 +274,20 @@ johs.
 Expected: {
 16<SPLIT>. i iveren etter a finna so mange tydingar til ordet fly som rad hev dei teke med " skjer " (<SPLIT>s. 12<SPLIT>/<SPLIT>80<SPLIT>)<SPLIT>, men da hev dei blanda saman med<SPLIT>(<SPLIT>ei<SPLIT>) flu "<SPLIT>(<SPLIT>flatt<SPLIT>) skjer el. grunne som er under vatn i flod sjo<SPLIT>" (<SPLIT>nynorskordboka<SPLIT>)<SPLIT>.}
 Predicted: {
-16<SPLIT>. i iveren etter a finna so mange tydingar til ordet fly som rad hev dei teke med " skjer " (<SPLIT>s. 12<SPLIT>/80<SPLIT>)<SPLIT>, men da hev dei blanda saman med<SPLIT>(<SPLIT>ei<SPLIT>) flu "<SPLIT>(<SPLIT>flatt<SPLIT>) skjer el<SPLIT>. grunne som er under vatn i flod sjo<SPLIT>" (<SPLIT>nynorskordboka<SPLIT>)<SPLIT>.}
+16. i iveren etter a finna so mange tydingar til ordet fly som rad hev dei teke med " skjer " (<SPLIT>s. 12<SPLIT>/80<SPLIT>)<SPLIT>, men da hev dei blanda saman med(<SPLIT>ei<SPLIT>) flu "<SPLIT>(<SPLIT>flatt<SPLIT>) skjer el<SPLIT>. grunne som er under vatn i flod sjo<SPLIT>" (<SPLIT>nynorskordboka<SPLIT>)<SPLIT>.}
 False positives: {
+16.
 /80
+med(
 el
 .
 } False negatives: {
+16
+.
 /
 80
+med
+(
 el.
 }
 
@@ -363,14 +303,14 @@ False positives: {
 }
 
 Expected: {
-forslaga til ny strategiplan skal no ut pa hoyring<SPLIT>, og hoyringsfristen er sett til 19. april<SPLIT>.}
+programmet heitte "<SPLIT>en kul katts kroniker<SPLIT>" og den kule katta heiter olav angell<SPLIT>, han med th.a stiftelse<SPLIT>, stuer og hus og angelltroa (<SPLIT>der alle bur i sildrapevegen<SPLIT>)<SPLIT>.}
 Predicted: {
-forslaga til ny strategiplan skal no ut pa hoyring<SPLIT>, og hoyringsfristen er sett til 19<SPLIT>. april<SPLIT>.}
+programmet heitte "<SPLIT>en kul katts kroniker<SPLIT>" og den kule katta heiter olav angell<SPLIT>, han med th.<SPLIT>a stiftelse<SPLIT>, stuer og hus og angelltroa (<SPLIT>der alle bur i sildrapevegen<SPLIT>)<SPLIT>.}
 False positives: {
-19
-.
+th.
+a
 } False negatives: {
-19.
+th.a
 }
 
 Expected: {
@@ -505,16 +445,4 @@ False positives: {
 .
 } False negatives: {
 10.
-}
-
-Expected: {
-det er kort og godt e "goyna" .}
-Predicted: {
-det er kort og godt e "<SPLIT>goyna<SPLIT>" .}
-False positives: {
-"
-goyna
-"
-} False negatives: {
-"goyna"
 }

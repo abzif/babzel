@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.8618235531086343
-Training-Sample-Size=3517
-Evaluation-Sample-Size=390
+Evaluation-Score=0.8402659656718726
+Training-Sample-Size=3078
+Evaluation-Sample-Size=341
 Training-Algorithm=MAXENT_QN
 
 === MODEL PROPERTIES ===
@@ -9,9 +9,9 @@ Component-Name=SentenceDetectorME
 Language=no
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1682217992343
+Timestamp=1684723256436
 TrainerType=Event
-Training-Eventhash=2c6a786b967e1682da97980e11d7855f
+Training-Eventhash=c886c806c307ef494aaa84056e869ffb
 eosCharacters=.?!
 factory=opennlp.tools.sentdetect.SentenceDetectorFactory
 useTokenEnd=true
@@ -2491,14 +2491,16 @@ det viser noe av det som bor i han.
 far han na bukt med " energilekkasjene " sine, skal det bli skikkelig spennende, avslutter erik brakstad.
 innbytterne avgjorde for aafk i 70 minutter kunne man se et kollektivt kjempegjesp blant tilskuerene pa kramyra, for sa kjedelig var kampen mellom aafk og stranda frem til da.
 men heldigvis - anfort av innbytterne viste heimelaget litt av hva de er gode for i de siste 20 minuttene .
-og det var nok til a vinne 3 - 0.
-gjestene fra stranda var tydeligvis ikke ute etter a skaffe seg nye fotballvenner under besoket pa kramyra sondag.
+og det var nok til a vinne 3 - 0. gjestene fra stranda var tydeligvis ikke ute etter a skaffe seg nye fotballvenner under besoket pa kramyra sondag.
 }
 False positives: {
 innbytterne avgjorde for aafk i 70 minutter kunne man se et kollektivt kjempegjesp blant tilskuerene pa kramyra, for sa kjedelig var kampen mellom aafk og stranda frem til da.
+og det var nok til a vinne 3 - 0. gjestene fra stranda var tydeligvis ikke ute etter a skaffe seg nye fotballvenner under besoket pa kramyra sondag.
 } False negatives: {
 innbytterne avgjorde for aafk
 i 70 minutter kunne man se et kollektivt kjempegjesp blant tilskuerene pa kramyra, for sa kjedelig var kampen mellom aafk og stranda frem til da.
+og det var nok til a vinne 3 - 0.
+gjestene fra stranda var tydeligvis ikke ute etter a skaffe seg nye fotballvenner under besoket pa kramyra sondag.
 }
 
 Expected: {
@@ -4482,7 +4484,8 @@ den nynorske formi vi kann ikkje forast attende pa ver (nokon ljodyvergang fra e
 det hover og heilt med det yverleverte millomnorske tilfanget, der formi vi kjem upp fyrst i kongebrev og andre stormannsbrev.
 med andre ord er formi me eldre i norsk enn vi.
 31. uttydingi forfattarane gjev av ordlaget "a ga i baret", at det skal tyda "a vase seg bort" i "kvist, greiner og rask" (s. 65/120), er ikkje yvertydande.
-det kann vera rett at ordet bar her er det same som i t.d. granbar, men da lyt bakgrunnen snarare vera fanging av dyr i graver i bakken der dei lagde greiner og kvister yver; nett som bjornen kunde "ganga i baret", kunde so folk - reint metaforisk - fara likeins.
+det kann vera rett at ordet bar her er det same som i t.d.
+granbar, men da lyt bakgrunnen snarare vera fanging av dyr i graver i bakken der dei lagde greiner og kvister yver; nett som bjornen kunde "ganga i baret", kunde so folk - reint metaforisk - fara likeins.
 32.
 forfattarane opererer med eit skil millom a disputere og a doktorere der ein doktorerer pa eit emne, men disputerer pa ei avhandling (s. 68/123).
 etter bokmalsordboka tyder doktorere beint fram a "ta doktorgrad", og det gjer ein som kjent bade pa bakgrunn av eit emne og ei avhandling.
@@ -4493,12 +4496,15 @@ dei tyder ut ordet (ein) gode med "[o]fferprest i heidensk tid i noreg" (s. 71/1
 sprak er ikkje einfelt, og det er lett a misfota seg, serleg nar mengdi av upplysningar vert so stor som i quizleis.
 }
 False positives: {
+det kann vera rett at ordet bar her er det same som i t.d.
+granbar, men da lyt bakgrunnen snarare vera fanging av dyr i graver i bakken der dei lagde greiner og kvister yver; nett som bjornen kunde "ganga i baret", kunde so folk - reint metaforisk - fara likeins.
 32.
 forfattarane opererer med eit skil millom a disputere og a doktorere der ein doktorerer pa eit emne, men disputerer pa ei avhandling (s. 68/123).
 33.
 dei tyder ut ordet (ein) gode med "[o]fferprest i heidensk tid i noreg" (s. 71/126), men nemner ikkje den andre tydingi, som er vel so kjend, d.e.
 'hovding pa island i fristattida'.
 } False negatives: {
+det kann vera rett at ordet bar her er det same som i t.d. granbar, men da lyt bakgrunnen snarare vera fanging av dyr i graver i bakken der dei lagde greiner og kvister yver; nett som bjornen kunde "ganga i baret", kunde so folk - reint metaforisk - fara likeins.
 32. forfattarane opererer med eit skil millom a disputere og a doktorere der ein doktorerer pa eit emne, men disputerer pa ei avhandling (s. 68/123).
 33. dei tyder ut ordet (ein) gode med "[o]fferprest i heidensk tid i noreg" (s. 71/126), men nemner ikkje den andre tydingi, som er vel so kjend, d.e. 'hovding pa island i fristattida'.
 }
@@ -6168,7 +6174,8 @@ i tillegg er det ei rekkje andre foresegner om sprakbruk i undervisning, medium 
 Predicted: {
 rapporten konkluderer pa dette grunnlaget med at ein litt ironisk kan seia at noreg har ein malpolitikk som vernar nynorsk og minoritetsspraka, men ikkje ein sprakpolitikk som vernar norsk.
 3.4.3.2
-nasjonal spraklovgjeving i nokre andre land ei loysing i trad med formuleringa fra norsk i hundre! om a lovfesta norsk som nasjonalsprak kan i utgangspunktet minna om den foresegna som finst i den finske grunnlova.
+nasjonal spraklovgjeving i nokre andre land ei loysing i trad med formuleringa fra norsk i hundre!
+om a lovfesta norsk som nasjonalsprak kan i utgangspunktet minna om den foresegna som finst i den finske grunnlova.
 her heiter det at "finlands nationalsprak ar finska och svenska".
 men den viktigaste funksjonen ved denne foresegna er kanskje understrekinga av at finland har to nasjonalsprak, bade finsk og svensk.
 slik sett fungerer dette forst og fremst som eit vern om det minste av dei to nasjonalspraka i landet, altsa svensk.
@@ -6179,7 +6186,8 @@ i tillegg er det ei rekkje andre foresegner om sprakbruk i undervisning, medium 
 }
 False positives: {
 3.4.3.2
-nasjonal spraklovgjeving i nokre andre land ei loysing i trad med formuleringa fra norsk i hundre! om a lovfesta norsk som nasjonalsprak kan i utgangspunktet minna om den foresegna som finst i den finske grunnlova.
+nasjonal spraklovgjeving i nokre andre land ei loysing i trad med formuleringa fra norsk i hundre!
+om a lovfesta norsk som nasjonalsprak kan i utgangspunktet minna om den foresegna som finst i den finske grunnlova.
 } False negatives: {
 3.4.3.2 nasjonal spraklovgjeving i nokre andre land
 ei loysing i trad med formuleringa fra norsk i hundre! om a lovfesta norsk som nasjonalsprak kan i utgangspunktet minna om den foresegna som finst i den finske grunnlova.
@@ -6399,36 +6407,4 @@ eposten var sendt fra ein server i nederland, og ordren var kort: this will prov
 } False negatives: {
 eposten var sendt fra ein server i nederland, og ordren var kort:
 this will prove a very expensive error!
-}
-
-Expected: {
-eg kallar det for aer .
-og er det ein del av - .
-em # det er her ein del av .
-og - .
-og den ligg nedi fjoresteinane og e # plaskar og svommer og # sa far han ungar da .
-om varen # sa svommer den na da langsmed strendene her med # store # ungeflokkar .
-atti vegen etter seg .
-er det nokon plass spesielt her der e der e denne her fuglen e legg reir? eller har reir ?
-det er ma det na vel vere men e # det er vanskeleg a a finne desse reira .
-sa e # er veit ikkje eigentleg # kor dei legg reira sine .
-}
-Predicted: {
-eg kallar det for aer .
-og er det ein del av - .
-em # det er her ein del av .
-og - .
-og den ligg nedi fjoresteinane og e # plaskar og svommer og # sa far han ungar da .
-om varen # sa svommer den na da langsmed strendene her med # store # ungeflokkar .
-atti vegen etter seg .
-er det nokon plass spesielt her der e der e denne her fuglen e legg reir?
-eller har reir ?
-det er ma det na vel vere men e # det er vanskeleg a a finne desse reira .
-sa e # er veit ikkje eigentleg # kor dei legg reira sine .
-}
-False positives: {
-er det nokon plass spesielt her der e der e denne her fuglen e legg reir?
-eller har reir ?
-} False negatives: {
-er det nokon plass spesielt her der e der e denne her fuglen e legg reir? eller har reir ?
 }

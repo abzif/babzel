@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9990444012149757
-Training-Sample-Size=35159
-Evaluation-Sample-Size=3906
+Evaluation-Score=0.9990259469187456
+Training-Sample-Size=30771
+Evaluation-Sample-Size=3419
 Training-Algorithm=MAXENT_QN
 
 === MODEL PROPERTIES ===
@@ -9,9 +9,9 @@ Component-Name=TokenizerME
 Language=no
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1682217301143
+Timestamp=1684722698940
 TrainerType=Event
-Training-Eventhash=5494bab8d0d7b25328b47a0a13dc4a33
+Training-Eventhash=f4bd456df7b7672d49a797a06687940f
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
@@ -62,17 +62,6 @@ de
 }
 
 Expected: {
-karita bekkemellem orheims innlegg i sunnmørsposten 19. august bekrefter nok en gang at arbeiderpartiet ikke har noen politikk for de sentrale utfordringene i norsk skole<SPLIT>.}
-Predicted: {
-karita bekkemellem orheims innlegg i sunnmørsposten 19<SPLIT>. august bekrefter nok en gang at arbeiderpartiet ikke har noen politikk for de sentrale utfordringene i norsk skole<SPLIT>.}
-False positives: {
-19
-.
-} False negatives: {
-19.
-}
-
-Expected: {
 i høst ca. 1000<SPLIT>- 1500 kr. per natt for rommet inkl. frokost<SPLIT>.}
 Predicted: {
 i høst ca. 1000<SPLIT>- 1500 kr<SPLIT>. per natt for rommet inkl. frokost<SPLIT>.}
@@ -108,15 +97,12 @@ False positives: {
 Expected: {
 *<SPLIT>hold hodet kaldt<SPLIT>, halvor<SPLIT>, du må få utløp for de vonde opplevelsene dine<SPLIT>*}
 Predicted: {
-*hold hodet kaldt<SPLIT>, halvor<SPLIT>, du må få utløp for de vonde opplevelsene dine*}
+*hold hodet kaldt<SPLIT>, halvor<SPLIT>, du må få utløp for de vonde opplevelsene dine<SPLIT>*}
 False positives: {
 *hold
-dine*
 } False negatives: {
 *
 hold
-dine
-*
 }
 
 Expected: {
@@ -131,14 +117,14 @@ False positives: {
 }
 
 Expected: {
-verdensbanken og imf<SPLIT>, begge med hovedsete i washington<SPLIT>, har siden opprettelsen i 1944<SPLIT>/<SPLIT>45 symbolisert den økonomiske verdensorden som vokste frem på ruinene av den annen verdenskrig<SPLIT>, dominert av usa og europa<SPLIT>.}
+helge krog skrev sitt teaterstykke allerede i 1917<SPLIT>.}
 Predicted: {
-verdensbanken og imf<SPLIT>, begge med hovedsete i washington<SPLIT>, har siden opprettelsen i 1944<SPLIT>/45 symbolisert den økonomiske verdensorden som vokste frem på ruinene av den annen verdenskrig<SPLIT>, dominert av usa og europa<SPLIT>.}
+helge krog skrev sitt teaterstykke allerede i 1917.}
 False positives: {
-/45
+1917.
 } False negatives: {
-/
-45
+1917
+.
 }
 
 Expected: {
@@ -150,17 +136,6 @@ False positives: {
 } False negatives: {
 22
 .
-}
-
-Expected: {
-send innspill til spillelisten til helge.svela@bt.no<SPLIT>.}
-Predicted: {
-send innspill til spillelisten til helge<SPLIT>.svela@bt.no<SPLIT>.}
-False positives: {
-helge
-.svela@bt.no
-} False negatives: {
-helge.svela@bt.no
 }
 
 Expected: {
@@ -384,6 +359,17 @@ False positives: {
 }
 
 Expected: {
+politiet fekk meldinga om ulykka klokka 21.23<SPLIT>.}
+Predicted: {
+politiet fekk meldinga om ulykka klokka 21.23.}
+False positives: {
+21.23.
+} False negatives: {
+21.23
+.
+}
+
+Expected: {
 2<SPLIT>.}
 Predicted: {
 2.}
@@ -395,6 +381,17 @@ False positives: {
 }
 
 Expected: {
+partiet meiner også at kommunen manglar ressursar både fagleg og økonomisk til å oppretthalde helse<SPLIT>,<SPLIT>- sosial og skuletilbodet til asylsøkjarane<SPLIT>.}
+Predicted: {
+partiet meiner også at kommunen manglar ressursar både fagleg og økonomisk til å oppretthalde helse,<SPLIT>- sosial og skuletilbodet til asylsøkjarane<SPLIT>.}
+False positives: {
+helse,
+} False negatives: {
+helse
+,
+}
+
+Expected: {
 nytt opprykk for fyresdal ...<SPLIT>men ikkje sikkert dei har lag neste år}
 Predicted: {
 nytt opprykk for fyresdal ...men ikkje sikkert dei har lag neste år}
@@ -403,16 +400,4 @@ False positives: {
 } False negatives: {
 ...
 men
-}
-
-Expected: {
-det syntest han var e eit bra namn # "olehansaberetmaria" .}
-Predicted: {
-det syntest han var e eit bra namn # "<SPLIT>olehansaberetmaria<SPLIT>" .}
-False positives: {
-"
-olehansaberetmaria
-"
-} False negatives: {
-"olehansaberetmaria"
 }

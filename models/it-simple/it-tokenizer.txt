@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9978915202444614
+Evaluation-Score=0.9982103044925634
 Training-Sample-Size=33721
 Evaluation-Sample-Size=3746
 Training-Algorithm=MAXENT_QN
@@ -9,9 +9,9 @@ Component-Name=TokenizerME
 Language=it
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1682138479895
+Timestamp=1684644500550
 TrainerType=Event
-Training-Eventhash=7d992251ea6cfc7d345bc122e99f85f6
+Training-Eventhash=93ffc0b8694401b1aca1efe154435926
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
@@ -26,6 +26,17 @@ ecosiste
 mi
 } False negatives: {
 ecosistemi
+}
+
+Expected: {
+il termine decorre dal giorno in cui si è cessato di esercitar<SPLIT>la<SPLIT>;}
+Predicted: {
+il termine decorre dal giorno in cui si è cessato di esercitarla<SPLIT>;}
+False positives: {
+esercitarla
+} False negatives: {
+esercitar
+la
 }
 
 Expected: {
@@ -75,11 +86,12 @@ rivolgetevi
 Expected: {
 didoni si aspettava una gara in progressione di velocità e così è stato<SPLIT>, con passaggi di 20'01''<SPLIT>a<SPLIT>i 5 km<SPLIT>, 40'31''<SPLIT>a<SPLIT>i 10 km e quindi il primo salto di velocità fino al 15 chilometro transitato nel tempo di 1.00'16''<SPLIT>.}
 Predicted: {
-didoni si aspettava una gara in progressione di velocità e così è stato<SPLIT>, con passaggi di 20'01''<SPLIT>ai 5 km<SPLIT>, 40'31''<SPLIT>ai 10 km e quindi il primo salto di velocità fino al 15 chilometro transitato nel tempo di 1.00'16'<SPLIT>'<SPLIT>.}
+didoni si aspettava una gara in progressione di velocità e così è stato<SPLIT>, con passaggi di 20'01''<SPLIT>ai 5 km<SPLIT>, 40'31''<SPLIT>ai 10 km e quindi il primo salto di velocità fino al 15 chilometro transitato nel tempo di 1.00'<SPLIT>16'<SPLIT>'<SPLIT>.}
 False positives: {
 ai
 ai
-1.00'16'
+1.00'
+16'
 '
 } False negatives: {
 a
@@ -98,20 +110,6 @@ pensaci
 } False negatives: {
 pensa
 ci
-}
-
-Expected: {
-le donne in italia che hanno una tessera di partito sono il 7<SPLIT>% l'<SPLIT>8,4<SPLIT>% partecipa a manifestazioni e dibattiti come vengono giudicate le donne candidate dalle elettrici<SPLIT>.}
-Predicted: {
-le donne in italia che hanno una tessera di partito sono il 7% l'<SPLIT>8,4% partecipa a manifestazioni e dibattiti come vengono giudicate le donne candidate dalle elettrici<SPLIT>.}
-False positives: {
-7%
-8,4%
-} False negatives: {
-7
-%
-8,4
-%
 }
 
 Expected: {
@@ -148,28 +146,6 @@ le
 }
 
 Expected: {
-(<SPLIT>36<SPLIT>) le disposizioni della direttiva 78<SPLIT>/<SPLIT>170<SPLIT>/<SPLIT>cee del consiglio<SPLIT>, del 13 febbraio 1978<SPLIT>, concernente la resa dei generatori di calore impiegati per il riscaldamento di locali e la produzione di acqua calda negli edifici non industriali nuovi o già esistenti<SPLIT>, nonché l'<SPLIT>isolamento della distribuzione del calore e di acqua calda per usi igienici nei nuovi edifici non industriali [<SPLIT>16<SPLIT>]<SPLIT>, sono state sostituite dalle disposizioni della direttiva 92<SPLIT>/<SPLIT>42<SPLIT>/<SPLIT>cee<SPLIT>, della direttiva 90<SPLIT>/<SPLIT>396<SPLIT>/<SPLIT>cee del consiglio<SPLIT>, del 29 giugno 1990<SPLIT>, concernente il ravvicinamento delle legislazioni degli stati membri in materia di apparecchi a gas [<SPLIT>17<SPLIT>]<SPLIT>, e della direttiva 2002<SPLIT>/<SPLIT>91<SPLIT>/<SPLIT>ce del parlamento europeo e del consiglio<SPLIT>, del 16 dicembre 2002<SPLIT>, sul rendimento energetico nell'<SPLIT>edilizia [<SPLIT>18<SPLIT>]<SPLIT>.}
-Predicted: {
-(<SPLIT>36<SPLIT>) le disposizioni della direttiva 78<SPLIT>/<SPLIT>170<SPLIT>/<SPLIT>cee del consiglio<SPLIT>, del 13 febbraio 1978<SPLIT>, concernente la resa dei generatori di calore impiegati per il riscaldamento di locali e la produzione di acqua calda negli edifici non industriali nuovi o già esistenti<SPLIT>, nonché l'<SPLIT>isolamento della distribuzione del calore e di acqua calda per usi igienici nei nuovi edifici non industriali [<SPLIT>16<SPLIT>]<SPLIT>, sono state sostituite dalle disposizioni della direttiva 92<SPLIT>/<SPLIT>42<SPLIT>/<SPLIT>cee<SPLIT>, della direttiva 90/<SPLIT>396<SPLIT>/<SPLIT>cee del consiglio<SPLIT>, del 29 giugno 1990<SPLIT>, concernente il ravvicinamento delle legislazioni degli stati membri in materia di apparecchi a gas [<SPLIT>17<SPLIT>]<SPLIT>, e della direttiva 2002<SPLIT>/<SPLIT>91<SPLIT>/<SPLIT>ce del parlamento europeo e del consiglio<SPLIT>, del 16 dicembre 2002<SPLIT>, sul rendimento energetico nell'<SPLIT>edilizia [<SPLIT>18<SPLIT>]<SPLIT>.}
-False positives: {
-90/
-} False negatives: {
-90
-/
-}
-
-Expected: {
-il primo progetto del programma pericle è stato quindi realizzato soltanto nell'<SPLIT>ottobre 2002 e l'<SPLIT>importo impegnato nel 2002 è stato di poco inferiore al 40<SPLIT>% della dotazione iniziale (<SPLIT>lo stanziamento è stato ridotto nel corso dell'<SPLIT>anno<SPLIT>)<SPLIT>.}
-Predicted: {
-il primo progetto del programma pericle è stato quindi realizzato soltanto nell'<SPLIT>ottobre 2002 e l'<SPLIT>importo impegnato nel 2002 è stato di poco inferiore al 40% della dotazione iniziale (<SPLIT>lo stanziamento è stato ridotto nel corso dell'<SPLIT>anno<SPLIT>)<SPLIT>.}
-False positives: {
-40%
-} False negatives: {
-40
-%
-}
-
-Expected: {
 - fornire formazione<SPLIT>/<SPLIT>informazioni al personale di nuova assunzione ed estendere la formazione anche a<SPLIT>i settori che hanno meno fruito del programma pericle (<SPLIT>agenti finanziari<SPLIT>, pubblici ministeri e personale tecnico<SPLIT>)<SPLIT>;}
 Predicted: {
 - fornire formazione<SPLIT>/informazioni al personale di nuova assunzione ed estendere la formazione anche a<SPLIT>i settori che hanno meno fruito del programma pericle (<SPLIT>agenti finanziari<SPLIT>, pubblici ministeri e personale tecnico<SPLIT>)<SPLIT>;}
@@ -183,25 +159,24 @@ informazioni
 Expected: {
 ciò avverrà nel rispetto dei criteri enunciati nella direttiva sulle norme fondamentali di sicurezza (<SPLIT>direttiva 96<SPLIT>/<SPLIT>29<SPLIT>/<SPLIT>euratom<SPLIT>)<SPLIT>.}
 Predicted: {
-ciò avverrà nel rispetto dei criteri enunciati nella direttiva sulle norme fondamentali di sicurezza (<SPLIT>direttiva 96<SPLIT>/29/euratom<SPLIT>)<SPLIT>.}
+ciò avverrà nel rispetto dei criteri enunciati nella direttiva sulle norme fondamentali di sicurezza (<SPLIT>direttiva 96<SPLIT>/29/<SPLIT>euratom<SPLIT>)<SPLIT>.}
 False positives: {
-/29/euratom
+/29/
 } False negatives: {
 /
 29
 /
-euratom
 }
 
 Expected: {
-ed ecco<SPLIT>lo l'<SPLIT>esercito<SPLIT>.}
+e nell'<SPLIT>italia meridionale<SPLIT>, dove erano fiorite numerose colonie albanesi<SPLIT>, nel 1903 fu fondato un '<SPLIT>comitato albanese<SPLIT>' la cui presidenza fu affidata al generale ricciotti garibaldi sulla base del programma '<SPLIT>l'<SPLIT>albania a<SPLIT>gli albanesi<SPLIT>'<SPLIT>.}
 Predicted: {
-ed eccolo l'<SPLIT>esercito<SPLIT>.}
+e nell'<SPLIT>italia meridionale<SPLIT>, dove erano fiorite numerose colonie albanesi<SPLIT>, nel 1903 fu fondato un '<SPLIT>comitato albanese<SPLIT>' la cui presidenza fu affidata al generale ricciotti garibaldi sulla base del programma '<SPLIT>l'<SPLIT>albania a<SPLIT>gli albanesi'<SPLIT>.}
 False positives: {
-eccolo
+albanesi'
 } False negatives: {
-ecco
-lo
+albanesi
+'
 }
 
 Expected: {
@@ -252,42 +227,14 @@ si
 }
 
 Expected: {
-le campagne pubblicitarie standard di ana ottengono in media un tasso di clic ricevuti compreso tra l'<SPLIT>8 e il 12<SPLIT>%<SPLIT>.}
+tra il 1585 e il 1592<SPLIT>, iniziò una carriera di successo a londra come attore<SPLIT>, scrittore<SPLIT>, comproprietario di una compagnia teatrale chiamata the lord chamberlain<SPLIT>'s men<SPLIT>, poi denominata the king<SPLIT>'s men<SPLIT>.}
 Predicted: {
-le campagne pubblicitarie standard di ana ottengono in media un tasso di clic ricevuti compreso tra l'<SPLIT>8 e il 12%<SPLIT>.}
+tra il 1585 e il 1592<SPLIT>, iniziò una carriera di successo a londra come attore<SPLIT>, scrittore<SPLIT>, comproprietario di una compagnia teatrale chiamata the lord chamberlain<SPLIT>'s men<SPLIT>, poi denominata the king's men<SPLIT>.}
 False positives: {
-12%
+king's
 } False negatives: {
-12
-%
-}
-
-Expected: {
-al momento<SPLIT>, l'<SPLIT>india attira solo il 2,7<SPLIT>% della spesa totale sulla ricerca e lo sviluppo<SPLIT>, al contrario della cina che<SPLIT>, con un sistema di diritti di proprietà intellettuale più solido<SPLIT>, ne attira circa il 18<SPLIT>%<SPLIT>, mentre gli stati uniti ne immettono il 31<SPLIT>%<SPLIT>.}
-Predicted: {
-al momento<SPLIT>, l'<SPLIT>india attira solo il 2,7% della spesa totale sulla ricerca e lo sviluppo<SPLIT>, al contrario della cina che<SPLIT>, con un sistema di diritti di proprietà intellettuale più solido<SPLIT>, ne attira circa il 18%<SPLIT>, mentre gli stati uniti ne immettono il 31%<SPLIT>.}
-False positives: {
-2,7%
-18%
-31%
-} False negatives: {
-2,7
-%
-18
-%
-31
-%
-}
-
-Expected: {
-il tasso di partecipazione alla forza lavoro maschile<SPLIT>, invece<SPLIT>, si aggira intorno al 77<SPLIT>%<SPLIT>, quasi uguagliando la media ocse del 79<SPLIT>%<SPLIT>.}
-Predicted: {
-il tasso di partecipazione alla forza lavoro maschile<SPLIT>, invece<SPLIT>, si aggira intorno al 77%<SPLIT>, quasi uguagliando la media ocse del 79<SPLIT>%<SPLIT>.}
-False positives: {
-77%
-} False negatives: {
-77
-%
+king
+'s
 }
 
 Expected: {
@@ -332,17 +279,6 @@ a
 .
 } False negatives: {
 a.
-}
-
-Expected: {
-tale tasso del 3<SPLIT>% si applica anche a<SPLIT>i titolari della carta nectar che desiderano un prestito da £<SPLIT>15.001 a £<SPLIT>19.999 in un periodo compreso tra i due e i tre anni<SPLIT>.}
-Predicted: {
-tale tasso del 3% si applica anche a<SPLIT>i titolari della carta nectar che desiderano un prestito da £<SPLIT>15.001 a £<SPLIT>19.999 in un periodo compreso tra i due e i tre anni<SPLIT>.}
-False positives: {
-3%
-} False negatives: {
-3
-%
 }
 
 Expected: {
@@ -416,39 +352,15 @@ si
 }
 
 Expected: {
-le campagne pubblicitarie standard di ana ottengono in media un tasso di clic ricevuti compreso tra l'<SPLIT>8 e il 12<SPLIT>%<SPLIT>.}
-Predicted: {
-le campagne pubblicitarie standard di ana ottengono in media un tasso di clic ricevuti compreso tra l'<SPLIT>8 e il 12%<SPLIT>.}
-False positives: {
-12%
-} False negatives: {
-12
-%
-}
-
-Expected: {
 conformemente all'<SPLIT>articolo 13 della decisione n.<SPLIT>2001<SPLIT>/<SPLIT>923<SPLIT>/<SPLIT>ce del consiglio<SPLIT>, del 17 dicembre 2001<SPLIT>, che istituisce un programma di azione in materia di scambi<SPLIT>, assistenza e formazione per la protezione dell'<SPLIT>euro contro la contraffazione monetaria (<SPLIT>programma "<SPLIT>pericle<SPLIT>"<SPLIT>) e sulla base della relazione di valutazione del programma pericle del 30 novembre 2004<SPLIT>, si propone che la decisione del consiglio sia estesa e modificata<SPLIT>.}
 Predicted: {
-conformemente all'<SPLIT>articolo 13 della decisione n.<SPLIT>2001/<SPLIT>923<SPLIT>/<SPLIT>ce del consiglio<SPLIT>, del 17 dicembre 2001<SPLIT>, che istituisce un programma di azione in materia di scambi<SPLIT>, assistenza e formazione per la protezione dell'<SPLIT>euro contro la contraffazione monetaria (<SPLIT>programma "<SPLIT>pericle<SPLIT>"<SPLIT>) e sulla base della relazione di valutazione del programma pericle del 30 novembre 2004<SPLIT>, si propone che la decisione del consiglio sia estesa e modificata<SPLIT>.}
+conformemente all'<SPLIT>articolo 13 della decisione n.<SPLIT>2001/923<SPLIT>/<SPLIT>ce del consiglio<SPLIT>, del 17 dicembre 2001<SPLIT>, che istituisce un programma di azione in materia di scambi<SPLIT>, assistenza e formazione per la protezione dell'<SPLIT>euro contro la contraffazione monetaria (<SPLIT>programma "<SPLIT>pericle<SPLIT>"<SPLIT>) e sulla base della relazione di valutazione del programma pericle del 30 novembre 2004<SPLIT>, si propone che la decisione del consiglio sia estesa e modificata<SPLIT>.}
 False positives: {
-2001/
+2001/923
 } False negatives: {
 2001
 /
-}
-
-Expected: {
-in "<SPLIT>la crescita della finanza moderna<SPLIT>"<SPLIT>, robin greenwood e david scharfstein della harvard business school dimostrano che la quota di finanza nel pil americano è quasi raddoppiata tra il 1980 e il 2006<SPLIT>, poco prima dello scoppio della crisi finanziaria<SPLIT>, passando dal 4,9<SPLIT>% all'<SPLIT>8,3<SPLIT>%<SPLIT>.}
-Predicted: {
-in "<SPLIT>la crescita della finanza moderna<SPLIT>"<SPLIT>, robin greenwood e david scharfstein della harvard business school dimostrano che la quota di finanza nel pil americano è quasi raddoppiata tra il 1980 e il 2006<SPLIT>, poco prima dello scoppio della crisi finanziaria<SPLIT>, passando dal 4,9% all'<SPLIT>8,3%<SPLIT>.}
-False positives: {
-4,9%
-8,3%
-} False negatives: {
-4,9
-%
-8,3
-%
+923
 }
 
 Expected: {
@@ -474,17 +386,6 @@ chamberlain's
 }
 
 Expected: {
-nel 1623 john heminges e henry condell<SPLIT>, due degli amici di shakespeare che facevano parte dei king's men<SPLIT>, pubblicarono il first folio<SPLIT>, un'<SPLIT>edizione completa delle opere di shakespeare<SPLIT>.}
-Predicted: {
-nel 1623 john heminges e henry condell<SPLIT>, due degli amici di shakespeare che facevano parte dei king<SPLIT>'s men<SPLIT>, pubblicarono il first folio<SPLIT>, un'<SPLIT>edizione completa delle opere di shakespeare<SPLIT>.}
-False positives: {
-king
-'s
-} False negatives: {
-king's
-}
-
-Expected: {
 la conferenza dei presidenti dei gruppi parlamentari<SPLIT>, riunita<SPLIT>si oggi<SPLIT>, con la presenza dei vice presidenti del senato e con l'<SPLIT>intervento del rappresentante del governo<SPLIT>, ha adottato - a<SPLIT>i sensi dell'<SPLIT>articolo 53 del regolamento - il calendario dei lavori fino al 25 marzo 2020<SPLIT>:}
 Predicted: {
 la conferenza dei presidenti dei gruppi parlamentari<SPLIT>, riunitasi oggi<SPLIT>, con la presenza dei vice presidenti del senato e con l'<SPLIT>intervento del rappresentante del governo<SPLIT>, ha adottato - a<SPLIT>i sensi dell'<SPLIT>articolo 53 del regolamento - il calendario dei lavori fino al 25 marzo 2020<SPLIT>:}
@@ -507,6 +408,17 @@ lo
 }
 
 Expected: {
+piuttosto che aprire tavoli di discussione su mario monti ... sosteniamo<SPLIT>lo ... è una grande opportunità ... per l'<SPLIT>italia e per l'<SPLIT>europa}
+Predicted: {
+piuttosto che aprire tavoli di discussione su mario monti ... sosteniamolo ... è una grande opportunità ... per l'<SPLIT>italia e per l'<SPLIT>europa}
+False positives: {
+sosteniamolo
+} False negatives: {
+sosteniamo
+lo
+}
+
+Expected: {
 con il governo monti e la nuova manovra sono scomparsi gli indignati ... #farsa}
 Predicted: {
 con il governo monti e la nuova manovra sono scompar<SPLIT>si gli indignati ... #farsa}
@@ -515,17 +427,6 @@ scompar
 si
 } False negatives: {
 scomparsi
-}
-
-Expected: {
-crisi<SPLIT>: rehn<SPLIT>, monti<SPLIT>? un amico ed ex collega molto competente<SPLIT>: bruxelles<SPLIT>, 10 nov<SPLIT>.<SPLIT>? (<SPLIT>adnkronos<SPLIT>)<SPLIT>? " mario monti e' ... http://t.co/3f90abcn}
-Predicted: {
-crisi<SPLIT>: rehn<SPLIT>, monti<SPLIT>? un amico ed ex collega molto competente<SPLIT>: bruxelles<SPLIT>, 10 nov.<SPLIT>? (<SPLIT>adnkronos<SPLIT>)<SPLIT>? " mario monti e' ... http://t.co/3f90abcn}
-False positives: {
-nov.
-} False negatives: {
-nov
-.
 }
 
 Expected: {
@@ -542,10 +443,13 @@ zapatero
 Expected: {
 @user hey ciao anche se non ti conosco .... se hai bisogno io ci sono<SPLIT>. sappi che ti sono vicina<SPLIT>. <3 =) fat<SPLIT>ti forza<SPLIT>.}
 Predicted: {
-@user hey ciao anche se non ti conosco .... se hai bisogno io ci sono<SPLIT>. sappi che ti sono vicina<SPLIT>. <3 =) fatti forza<SPLIT>.}
+@user hey ciao anche se non ti conosco .... se hai bisogno io ci sono<SPLIT>. sappi che ti sono vicina<SPLIT>. <3 =<SPLIT>) fatti forza<SPLIT>.}
 False positives: {
+=
+)
 fatti
 } False negatives: {
+=)
 fat
 ti
 }
@@ -559,6 +463,17 @@ elo
 } False negatives: {
 e
 lo
+}
+
+Expected: {
+@user se avessi i soldi<SPLIT>, sì xd xd ;_;}
+Predicted: {
+@user se avessi i soldi<SPLIT>, sì xd xd ;_<SPLIT>;}
+False positives: {
+;_
+;
+} False negatives: {
+;_;
 }
 
 Expected: {
@@ -656,6 +571,17 @@ mi
 }
 
 Expected: {
+sto aspettando mamma fuori scuola ✨✨ http://t.co/nz7cprjpjl}
+Predicted: {
+sto aspettando mamma fuori scuola ✨<SPLIT>✨ http://t.co/nz7cprjpjl}
+False positives: {
+✨
+✨
+} False negatives: {
+✨✨
+}
+
+Expected: {
 @user sbraitava e capisco che si tratta della persona che ha vinto l'<SPLIT>ultimo sanremo<SPLIT>. ti rendi conto<SPLIT>? xchè è<SPLIT>stata<SPLIT>premiata<SPLIT>una " cosa " cosi !?}
 Predicted: {
 @user sbraitava e capisco che si tratta della persona che ha vinto l'<SPLIT>ultimo sanremo<SPLIT>. ti rendi conto<SPLIT>? xchè èstatapremiatauna " cosa " cosi !?}
@@ -680,36 +606,17 @@ ti
 }
 
 Expected: {
-@user scusate ma vedendo il vostro sito tmw ho notato che eto'o andrà quasi sicuramente alla samp<SPLIT>. vorrei sapere quanto c'<SPLIT>e di vero<SPLIT>?}
-Predicted: {
-@user scusate ma vedendo il vostro sito tmw ho notato che eto'<SPLIT>o andrà quasi sicuramente alla samp<SPLIT>. vorrei sapere quanto c'<SPLIT>e di vero<SPLIT>?}
-False positives: {
-eto'
-o
-} False negatives: {
-eto'o
-}
-
-Expected: {
 @user ciao ☺️ se hai posti liberi nel gruppo sull'<SPLIT>app di braccialetti rossi puoi aggiunger<SPLIT>mi<SPLIT>? myriam baldi<SPLIT>, posizione 14 grazie ❤️}
 Predicted: {
-@user ciao ☺️ se hai posti liberi nel gruppo sull'<SPLIT>app di braccialetti rossi puoi aggiungermi<SPLIT>? myriam baldi<SPLIT>, posizione 14 grazie ❤️}
+@user ciao ☺<SPLIT>️ se hai posti liberi nel gruppo sull'<SPLIT>app di braccialetti rossi puoi aggiungermi<SPLIT>? myriam baldi<SPLIT>, posizione 14 grazie ❤️}
 False positives: {
+☺
+️
 aggiungermi
 } False negatives: {
+☺️
 aggiunger
 mi
-}
-
-Expected: {
-del governo #monti il 31<SPLIT>% apprezza che decida in tempi brevi<SPLIT>: ci sono anche io<SPLIT>!}
-Predicted: {
-del governo #monti il 31% apprezza che decida in tempi brevi<SPLIT>: ci sono anche io<SPLIT>!}
-False positives: {
-31%
-} False negatives: {
-31
-%
 }
 
 Expected: {
@@ -757,6 +664,17 @@ r
 }
 
 Expected: {
+alessandra mussolini<SPLIT>: " il governo monti tragedia dell'<SPLIT>italia<SPLIT>, sfiduciamo<SPLIT>lo "<SPLIT>: #alessandro mussolini #mario monti ... http://t.co/ml0qxkzn}
+Predicted: {
+alessandra mussolini<SPLIT>: " il governo monti tragedia dell'<SPLIT>italia<SPLIT>, sfiduciamolo "<SPLIT>: #alessandro mussolini #mario monti ... http://t.co/ml0qxkzn}
+False positives: {
+sfiduciamolo
+} False negatives: {
+sfiduciamo
+lo
+}
+
+Expected: {
 @user anche lui è casta<SPLIT>. d'alema ci ha azzeccato quando dice che #grillo è il sunto fra #bossi e il #gabibbo #serviziopubblico}
 Predicted: {
 @user anche lui è casta<SPLIT>. d'<SPLIT>alema ci ha azzeccato quando dice che #grillo è il sunto fra #bossi e il #gabibbo #serviziopubblico}
@@ -768,17 +686,42 @@ d'alema
 }
 
 Expected: {
+vi siete sciroppati di buon grado un governo di pulcinella e ballerine e ora fate le pulci al governo monti ?! ma ripijate<SPLIT>ve<SPLIT>! #rimontiamo}
+Predicted: {
+vi siete sciroppati di buon grado un governo di pulcinella e ballerine e ora fate le pulci al governo monti ?! ma ripijateve<SPLIT>! #rimontiamo}
+False positives: {
+ripijateve
+} False negatives: {
+ripijate
+ve
+}
+
+Expected: {
+" potevo star<SPLIT>me<SPLIT>ne nella mia villa a guardare l'<SPLIT>italia andare allo sfracello<SPLIT>, non ho preso rimborsi elettorali io " #grillo #serviziopubblico}
+Predicted: {
+" potevo star<SPLIT>mene nella mia villa a guardare l'<SPLIT>italia andare allo sfracello<SPLIT>, non ho preso rimborsi elettorali io " #grillo #serviziopubblico}
+False positives: {
+mene
+} False negatives: {
+me
+ne
+}
+
+Expected: {
 @user sms niall " fal<SPLIT>le una foto<SPLIT>! ahaha magari sbava anche<SPLIT>. lol ah okay<SPLIT>, tranquilla<SPLIT>. (: magari a cena<SPLIT>? invito anche gli altri (c)}
 Predicted: {
-@user sms niall " falle una foto<SPLIT>! ahaha magari sbava anche<SPLIT>. lol ah okay<SPLIT>, tranquilla<SPLIT>. (: magari a cena<SPLIT>? invito anche gli altri (<SPLIT>c<SPLIT>)}
+@user sms niall " falle una foto<SPLIT>! ahaha magari sbava anche<SPLIT>. lol ah okay<SPLIT>, tranquilla<SPLIT>. (<SPLIT>: magari a cena<SPLIT>? invito anche gli altri (<SPLIT>c<SPLIT>)}
 False positives: {
 falle
+(
+:
 (
 c
 )
 } False negatives: {
 fal
 le
+(:
 (c)
 }
 
@@ -816,17 +759,6 @@ guardami
 } False negatives: {
 guarda
 mi
-}
-
-Expected: {
-mai un partito di sinistra era arrivato al 40<SPLIT>%<SPLIT>. e neanche adesso<SPLIT>. [<SPLIT>@user<SPLIT>]}
-Predicted: {
-mai un partito di sinistra era arrivato al 40%<SPLIT>. e neanche adesso<SPLIT>. [<SPLIT>@user<SPLIT>]}
-False positives: {
-40%
-} False negatives: {
-40
-%
 }
 
 Expected: {
@@ -885,25 +817,12 @@ gentlemen
 }
 
 Expected: {
-#renzie promette di investire su #labuonascuola<SPLIT>, ma vuole tagliare il 3<SPLIT>% di spesa da tutti ministeri (<SPLIT>anche miur<SPLIT>) #effettosottozerocongelato}
-Predicted: {
-#renzie promette di investire su #labuonascuola<SPLIT>, ma vuole tagliare il 3% di spesa da tutti ministeri (<SPLIT>anche miur<SPLIT>) #effettosottozerocongelato}
-False positives: {
-3%
-} False negatives: {
-3
-%
-}
-
-Expected: {
 gli insegnanti di cui al presente articolo possono chiedere l'<SPLIT>assegnazione provvisoria compilando il modulo domanda solo nelle sezioni a<SPLIT>)<SPLIT>, b<SPLIT>)<SPLIT>, c<SPLIT>) quest'<SPLIT>ultima solo per parte relativa alle esigenze di famiglia<SPLIT>, d<SPLIT>) solo per le voci 15/17/18/19/20/21/22/29 e le sezioni e<SPLIT>) ed f<SPLIT>) secondo le modalità di cui a<SPLIT>i precedenti articoli in quanto applicabili<SPLIT>.}
 Predicted: {
-gli insegnanti di cui al presente articolo possono chiedere l'<SPLIT>assegnazione provvisoria compilando il modulo domanda solo nelle sezioni a<SPLIT>)<SPLIT>, b<SPLIT>)<SPLIT>, c<SPLIT>) quest'<SPLIT>ultima solo per parte relativa alle esigenze di famiglia<SPLIT>, d<SPLIT>) solo per le voci 15/17/<SPLIT>18/19/20/<SPLIT>21/<SPLIT>22<SPLIT>/29 e le sezioni e<SPLIT>) ed f<SPLIT>) secondo le modalità di cui a<SPLIT>i precedenti articoli in quanto applicabili<SPLIT>.}
+gli insegnanti di cui al presente articolo possono chiedere l'<SPLIT>assegnazione provvisoria compilando il modulo domanda solo nelle sezioni a<SPLIT>)<SPLIT>, b<SPLIT>)<SPLIT>, c<SPLIT>) quest'<SPLIT>ultima solo per parte relativa alle esigenze di famiglia<SPLIT>, d<SPLIT>) solo per le voci 15/17/18/19/20/<SPLIT>21/22<SPLIT>/29 e le sezioni e<SPLIT>) ed f<SPLIT>) secondo le modalità di cui a<SPLIT>i precedenti articoli in quanto applicabili<SPLIT>.}
 False positives: {
-15/17/
-18/19/20/
-21/
-22
+15/17/18/19/20/
+21/22
 /29
 } False negatives: {
 15/17/18/19/20/21/22/29
@@ -918,6 +837,17 @@ d'aquino
 } False negatives: {
 d'
 aquino
+}
+
+Expected: {
+questo mettiamo<SPLIT>lo bene in sodo<SPLIT>, se no niente di maraviglioso potrà scaturire dalla storia che son per narrar<SPLIT>vi<SPLIT>.}
+Predicted: {
+questo mettiamolo bene in sodo<SPLIT>, se no niente di maraviglioso potrà scaturire dalla storia che son per narrar<SPLIT>vi<SPLIT>.}
+False positives: {
+mettiamolo
+} False negatives: {
+mettiamo
+lo
 }
 
 Expected: {
@@ -943,17 +873,6 @@ sistemi
 }
 
 Expected: {
-il settore impianti fissi ferrotranviari del gruppo sasib comprende l'<SPLIT>omonima società di bologna (<SPLIT>divisione segnalamento ferroviario e tlc<SPLIT>)<SPLIT>, la luzi di roma (<SPLIT>elettrificazione<SPLIT>)<SPLIT>, la general railway signal (<SPLIT>usa<SPLIT>)<SPLIT>, la sasib hellas (<SPLIT>grecia<SPLIT>)<SPLIT>, la algemene seln industrie (<SPLIT>olanda<SPLIT>) e casco (<SPLIT>cina<SPLIT>)<SPLIT>.}
-Predicted: {
-il settore impianti fissi ferrotranviari del gruppo sasib comprende l'<SPLIT>omonima società di bologna (<SPLIT>divisione segnalamento ferroviario e tlc<SPLIT>)<SPLIT>, la luzi di roma (<SPLIT>elettrificazione<SPLIT>)<SPLIT>, la general railway signal (<SPLIT>usa<SPLIT>)<SPLIT>, la sasib hellas (<SPLIT>grecia<SPLIT>)<SPLIT>, la algeme<SPLIT>ne seln industrie (<SPLIT>olanda<SPLIT>) e casco (<SPLIT>cina<SPLIT>)<SPLIT>.}
-False positives: {
-algeme
-ne
-} False negatives: {
-algemene
-}
-
-Expected: {
 - n.<SPLIT>b. i dati si riferiscono solo alle singole società e non a<SPLIT>i consolidati di gruppo<SPLIT>.}
 Predicted: {
 - n.b. i dati si riferiscono solo alle singole società e non a<SPLIT>i consolidati di gruppo<SPLIT>.}
@@ -962,17 +881,6 @@ n.b.
 } False negatives: {
 n.
 b.
-}
-
-Expected: {
-su ricorsi di numerosi proprietari di immobili<SPLIT>, assistiti da confedilizia e assoedilizia<SPLIT>, il tar umbria e quattro commissioni tributarie hanno sospettato di incostituzionalità le regole per determinare l'<SPLIT>ici e le tariffe d'<SPLIT>estimo valide fino a tutto il 1993 (<SPLIT>ma con riflessi anche sul novantaquattro<SPLIT>) dettate dalla legge 421/1992<SPLIT>, dal decreto legislativo 504/1992<SPLIT>, da una serie di decreti legge<SPLIT>, l'<SPLIT>ultimo dei quali<SPLIT>, il 16/1993<SPLIT>, è stato convertito nella legge 75/1993<SPLIT>.}
-Predicted: {
-su ricorsi di numerosi proprietari di immobili<SPLIT>, assistiti da confedilizia e assoedilizia<SPLIT>, il tar umbria e quattro commissioni tributarie hanno sospettato di incostituzionalità le regole per determinare l'<SPLIT>ici e le tariffe d'<SPLIT>estimo valide fino a tutto il 1993 (<SPLIT>ma con riflessi anche sul novantaquattro<SPLIT>) dettate dalla legge 421/1992<SPLIT>, dal decreto legislativo 504/1992<SPLIT>, da una serie di decreti legge<SPLIT>, l'<SPLIT>ultimo dei quali<SPLIT>, il 16/1993<SPLIT>, è stato convertito nella legge 75<SPLIT>/1993<SPLIT>.}
-False positives: {
-75
-/1993
-} False negatives: {
-75/1993
 }
 
 Expected: {
@@ -987,53 +895,6 @@ formatisi
 }
 
 Expected: {
-in base al programma di privatizzazione<SPLIT>, un terzo della quota del 50% che la sni detiene nella distrigaz verrà trasferito a una joint venture<SPLIT>, posseduta al 51% dalla holding belga per l'<SPLIT>energia tractebel (<SPLIT>che ha già il 33% della distrigaz<SPLIT>) e per il restante 49% da<SPLIT>i governi regionali<SPLIT>.}
-Predicted: {
-in base al programma di privatizzazione<SPLIT>, un terzo della quota del 50<SPLIT>% che la sni detiene nella distrigaz verrà trasferito a una joint venture<SPLIT>, posseduta al 51% dalla holding belga per l'<SPLIT>energia tractebel (<SPLIT>che ha già il 33<SPLIT>% della distrigaz<SPLIT>) e per il restante 49% da<SPLIT>i governi regionali<SPLIT>.}
-False positives: {
-50
-%
-33
-%
-} False negatives: {
-50%
-33%
-}
-
-Expected: {
-tra queste figura appunto il 60% della cesi e quindi<SPLIT>, indirettamente<SPLIT>, il controllo della merone<SPLIT>.}
-Predicted: {
-tra queste figura appunto il 60<SPLIT>% della cesi e quindi<SPLIT>, indirettamente<SPLIT>, il controllo della merone<SPLIT>.}
-False positives: {
-60
-%
-} False negatives: {
-60%
-}
-
-Expected: {
-più in particolare<SPLIT>, al lordo delle operazioni infragruppo per 25 miliardi<SPLIT>, l'<SPLIT>area chimica presenta un progresso del 5% a 339 miliardi<SPLIT>, mentre l'<SPLIT>area materiali registra un balzo del 21% a 382 miliardi<SPLIT>.}
-Predicted: {
-più in particolare<SPLIT>, al lordo delle operazioni infragruppo per 25 miliardi<SPLIT>, l'<SPLIT>area chimica presenta un progresso del 5% a 339 miliardi<SPLIT>, mentre l'<SPLIT>area materiali registra un balzo del 21<SPLIT>% a 382 miliardi<SPLIT>.}
-False positives: {
-21
-%
-} False negatives: {
-21%
-}
-
-Expected: {
-la borsa svizzera chiude in calo di oltre l'<SPLIT>1% anche se sopra i minimi della seduta grazie a qualche acquisto finale<SPLIT>.}
-Predicted: {
-la borsa svizzera chiude in calo di oltre l'<SPLIT>1<SPLIT>% anche se sopra i minimi della seduta grazie a qualche acquisto finale<SPLIT>.}
-False positives: {
-1
-%
-} False negatives: {
-1%
-}
-
-Expected: {
 aveva appena ventidue anni stefano<SPLIT>, quando<SPLIT>, salutati gli amici della città e licenziato<SPLIT>si dall'<SPLIT>impiego<SPLIT>, tornò alla città natale e comunicò alla mamma la ferma intenzione di seguire il mestiere paterno<SPLIT>.}
 Predicted: {
 aveva appena ventidue anni stefano<SPLIT>, quando<SPLIT>, salutati gli amici della città e licenziatosi dall'<SPLIT>impiego<SPLIT>, tornò alla città natale e comunicò alla mamma la ferma intenzione di seguire il mestiere paterno<SPLIT>.}
@@ -1045,6 +906,17 @@ si
 }
 
 Expected: {
+"<SPLIT>uh<SPLIT>" mugolò con voce supplichevole il colombre "<SPLIT>che lunga strada per trovar<SPLIT>ti<SPLIT>.}
+Predicted: {
+"<SPLIT>uh<SPLIT>" mugolò con voce supplichevole il colombre "<SPLIT>che lunga strada per trovarti<SPLIT>.}
+False positives: {
+trovarti
+} False negatives: {
+trovar
+ti
+}
+
+Expected: {
 qui<SPLIT>, fra due giganteschi macigni<SPLIT>, dal sacco da montagna trassi la giacca infame<SPLIT>, la cosparsi di petrolio e diedi fuoco<SPLIT>.}
 Predicted: {
 qui<SPLIT>, fra due giganteschi macigni<SPLIT>, dal sacco da montagna trassi la giacca infame<SPLIT>, la cospar<SPLIT>si di petrolio e diedi fuoco<SPLIT>.}
@@ -1053,28 +925,6 @@ cospar
 si
 } False negatives: {
 cosparsi
-}
-
-Expected: {
-l'<SPLIT>aggio è determinato in valore percentuale di tutte le entrate affidate in riscossione all'<SPLIT>esattore e la sua misura<SPLIT>, da fissar<SPLIT>si all'<SPLIT>atto del conferimento dell'<SPLIT>esattoria<SPLIT>, non può essere inferiore allo 0,60% né superiore al 6,72% delle somme riscosse mediante ruoli<SPLIT>.}
-Predicted: {
-l'<SPLIT>aggio è determinato in valore percentuale di tutte le entrate affidate in riscossione all'<SPLIT>esattore e la sua misura<SPLIT>, da fissar<SPLIT>si all'<SPLIT>atto del conferimento dell'<SPLIT>esattoria<SPLIT>, non può essere inferiore allo 0,60<SPLIT>% né superiore al 6,72% delle somme riscosse mediante ruoli<SPLIT>.}
-False positives: {
-0,60
-%
-} False negatives: {
-0,60%
-}
-
-Expected: {
-se l'<SPLIT>azienda o istituto di credito abbia assunto anche il servizio di ricevitoria provinciale la cauzione può essere ridotta fino al 75%<SPLIT>.}
-Predicted: {
-se l'<SPLIT>azienda o istituto di credito abbia assunto anche il servizio di ricevitoria provinciale la cauzione può essere ridotta fino al 75<SPLIT>%<SPLIT>.}
-False positives: {
-75
-%
-} False negatives: {
-75%
 }
 
 Expected: {
@@ -1119,28 +969,6 @@ permetter
 mi
 } False negatives: {
 permettermi
-}
-
-Expected: {
-in seguito a due aumenti di capitale (<SPLIT>il primo con conferimento di azioni<SPLIT>, il secondo fino a un massimo di 125 miliardi<SPLIT>, decisi entrambi dall'<SPLIT>assemblea del 2 e 3 giugno scorso<SPLIT>)<SPLIT>, la camfim di tronchetti provera controllerà la fin p con il 64% del capitale<SPLIT>.}
-Predicted: {
-in seguito a due aumenti di capitale (<SPLIT>il primo con conferimento di azioni<SPLIT>, il secondo fino a un massimo di 125 miliardi<SPLIT>, decisi entrambi dall'<SPLIT>assemblea del 2 e 3 giugno scorso<SPLIT>)<SPLIT>, la camfim di tronchetti provera controllerà la fin p con il 64<SPLIT>% del capitale<SPLIT>.}
-False positives: {
-64
-%
-} False negatives: {
-64%
-}
-
-Expected: {
-anche i presentatori della seconda lista<SPLIT>, le casse di risparmio di firenze e di bologna<SPLIT>, hanno partecipato al private placement<SPLIT>, acquistando ciascuna l'<SPLIT>1%<SPLIT>, e raggiungendo così<SPLIT>, nella fase immediatamente successiva<SPLIT>, il 2,52% del capitale<SPLIT>.}
-Predicted: {
-anche i presentatori della seconda lista<SPLIT>, le casse di risparmio di firenze e di bologna<SPLIT>, hanno partecipato al private placement<SPLIT>, acquistando ciascuna l'<SPLIT>1<SPLIT>%<SPLIT>, e raggiungendo così<SPLIT>, nella fase immediatamente successiva<SPLIT>, il 2,52% del capitale<SPLIT>.}
-False positives: {
-1
-%
-} False negatives: {
-1%
 }
 
 Expected: {
