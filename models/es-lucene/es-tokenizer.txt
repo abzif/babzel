@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.999165542685903
+Evaluation-Score=0.9992865162055253
 Training-Sample-Size=30250
 Evaluation-Sample-Size=3361
 Training-Algorithm=MAXENT_QN
@@ -9,9 +9,9 @@ Component-Name=TokenizerME
 Language=es
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1697782691610
+Timestamp=1700456819249
 TrainerType=Event
-Training-Eventhash=52348ac88bf982624548fd03f6e5762e
+Training-Eventhash=60edc443eae87846d6ad6cd92ae92c35
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
@@ -67,11 +67,10 @@ te
 Expected: {
 "<SPLIT>mientras en francia exigen a la propietaria del petrolero 'erika'<SPLIT>que pague por sus responsabilidades<SPLIT>, aqui les pagamos<SPLIT>"<SPLIT>, dijo el candidato de iu a la presidencia de la junta de andalucia<SPLIT>, que se mostro "<SPLIT>asombrado por esta actitud<SPLIT>" y aseguro que la comunidad andaluza se encuentra "<SPLIT>al borde del colapso ecologico<SPLIT>"<SPLIT>.}
 Predicted: {
-"<SPLIT>mientras en francia exigen a la propietaria del petrolero '<SPLIT>erika<SPLIT>'que pague por sus responsabilidades<SPLIT>, aqui les pagamos<SPLIT>"<SPLIT>, dijo el candidato de iu a la presidencia de la junta de andalucia<SPLIT>, que se mostro "<SPLIT>asombrado por esta actitud<SPLIT>" y aseguro que la comunidad andaluza se encuentra "<SPLIT>al borde del colapso ecologico<SPLIT>"<SPLIT>.}
+"<SPLIT>mientras en francia exigen a la propietaria del petrolero '<SPLIT>erika'que pague por sus responsabilidades<SPLIT>, aqui les pagamos<SPLIT>"<SPLIT>, dijo el candidato de iu a la presidencia de la junta de andalucia<SPLIT>, que se mostro "<SPLIT>asombrado por esta actitud<SPLIT>" y aseguro que la comunidad andaluza se encuentra "<SPLIT>al borde del colapso ecologico<SPLIT>"<SPLIT>.}
 False positives: {
 '
-erika
-'que
+erika'que
 } False negatives: {
 'erika'
 que
@@ -178,6 +177,17 @@ pa��s
 }
 
 Expected: {
+en 1942<SPLIT>, cofundo en la clandestinidad el partito d'<SPLIT>azione y se encargo de la edicion de su diario<SPLIT>, l'<SPLIT>italia libera<SPLIT>.}
+Predicted: {
+en 1942<SPLIT>, cofundo en la clandestinidad el partito d'azione y se encargo de la edicion de su diario<SPLIT>, l'<SPLIT>italia libera<SPLIT>.}
+False positives: {
+d'azione
+} False negatives: {
+d'
+azione
+}
+
+Expected: {
 di<SPLIT>me que perro tienes y te dire que cazador eres<SPLIT>'<SPLIT>.}
 Predicted: {
 dime que perro tienes y te dire que cazador eres<SPLIT>'<SPLIT>.}
@@ -186,17 +196,6 @@ dime
 } False negatives: {
 di
 me
-}
-
-Expected: {
-de acuerdo a billboard<SPLIT>, "<SPLIT>i think i 'm in love with you<SPLIT>" es el sexto sencillo mas exitoso de toda la carrera de jessica simpson en la principal lista de estados unidos<SPLIT>: la billboard hot 100<SPLIT>.}
-Predicted: {
-de acuerdo a billboard<SPLIT>, "<SPLIT>i think i '<SPLIT>m in love with you<SPLIT>" es el sexto sencillo mas exitoso de toda la carrera de jessica simpson en la principal lista de estados unidos<SPLIT>: la billboard hot 100<SPLIT>.}
-False positives: {
-'
-m
-} False negatives: {
-'m
 }
 
 Expected: {
@@ -278,16 +277,24 @@ arse
 }
 
 Expected: {
+hernan baeza herreros de chile<SPLIT>, cuyo fin fue ensenar las bases y difundir el kenpo del<SPLIT>fundador del sistema american kenpo<SPLIT>.}
+Predicted: {
+hernan baeza herreros de chile<SPLIT>, cuyo fin fue ensenar las bases y difundir el kenpo delfundador del sistema american kenpo<SPLIT>.}
+False positives: {
+delfundador
+} False negatives: {
+del
+fundador
+}
+
+Expected: {
 o'neill cree que k'tano lo envia porque sabe que no regresara con vida<SPLIT>, e intenta convencer a teal'c para que no lo haga<SPLIT>, pero sin exito<SPLIT>.}
 Predicted: {
-o'neill cree que k'<SPLIT>tano lo envia porque sabe que no regresara con vida<SPLIT>, e intenta convencer a teal'<SPLIT>c para que no lo haga<SPLIT>, pero sin exito<SPLIT>.}
+o'neill cree que k'tano lo envia porque sabe que no regresara con vida<SPLIT>, e intenta convencer a teal'<SPLIT>c para que no lo haga<SPLIT>, pero sin exito<SPLIT>.}
 False positives: {
-k'
-tano
 teal'
 c
 } False negatives: {
-k'tano
 teal'c
 }
 
@@ -325,25 +332,14 @@ dispersandose
 }
 
 Expected: {
-se trata de una obra conceptualmente excepcional y singular<SPLIT>, que ha sido recientemente restaurada y ha formado parte de la exposicion ``<SPLIT>las edades del hombre<SPLIT>''<SPLIT>.}
+es hermano de los tambien jugadores profesionales campy y walker russell<SPLIT>, y tio de walker russell jr.<SPLIT>.}
 Predicted: {
-se trata de una obra conceptualmente excepcional y singular<SPLIT>, que ha sido recientemente restaurada y ha formado parte de la exposicion `<SPLIT>`<SPLIT>las edades del hombre<SPLIT>''<SPLIT>.}
+es hermano de los tambien jugadores profesionales campy y walker russell<SPLIT>, y tio de walker russell jr..}
 False positives: {
-`
-`
+jr..
 } False negatives: {
-``
-}
-
-Expected: {
-barlas o barlis fue la tribu mongol de la que surgieron los emperadores timuridas<SPLIT>, parte del ulus chaghatay<SPLIT>.}
-Predicted: {
-bar<SPLIT>las o barlis fue la tribu mongol de la que surgieron los emperadores timuridas<SPLIT>, parte del ulus chaghatay<SPLIT>.}
-False positives: {
-bar
-las
-} False negatives: {
-barlas
+jr.
+.
 }
 
 Expected: {
@@ -391,14 +387,14 @@ y.
 }
 
 Expected: {
-'<SPLIT>habra gente que incluso lo vera en su ipad y eso es algo bueno<SPLIT>, porque podra ver<SPLIT>se en todos los soportes<SPLIT>'<SPLIT>, destaca<SPLIT>.}
+a mitad de ano sube de categoria a kf2 (<SPLIT>ex inter - a<SPLIT>) para hacer el campeonato de espana<SPLIT>, luchando en las ultimas carreras en las posiciones de cabeza<SPLIT>.}
 Predicted: {
-'habra gente que incluso lo vera en su ipad y eso es algo bueno<SPLIT>, porque podra ver<SPLIT>se en todos los soportes<SPLIT>'<SPLIT>, destaca<SPLIT>.}
+a mitad de ano sube de categoria a kf2 (<SPLIT>ex inter - a) para hacer el campeonato de espana<SPLIT>, luchando en las ultimas carreras en las posiciones de cabeza<SPLIT>.}
 False positives: {
-'habra
+a)
 } False negatives: {
-'
-habra
+a
+)
 }
 
 Expected: {
@@ -446,17 +442,6 @@ c
 }
 
 Expected: {
-esa tasa del 3<SPLIT>% tambien se aplica a los titulares de una tarjeta nectar que quieran tomar prestadas entre 15.001 y 19.999 libras durante un periodo de entre dos y tres anos<SPLIT>.}
-Predicted: {
-esa tasa del 3% tambien se aplica a los titulares de una tarjeta nectar que quieran tomar prestadas entre 15.001 y 19.999 libras durante un periodo de entre dos y tres anos<SPLIT>.}
-False positives: {
-3%
-} False negatives: {
-3
-%
-}
-
-Expected: {
 fue seguido por los fondos de renta y multi<SPLIT>-<SPLIT>estrategia con un objetivo de rentabilidad para inversores de aviva<SPLIT>, en los que los inversores depositaron 2 mil millones y 1,4 mil millones de libras respectivamente<SPLIT>.}
 Predicted: {
 fue seguido por los fondos de renta y multi<SPLIT>-estrategia con un objetivo de rentabilidad para inversores de aviva<SPLIT>, en los que los inversores depositaron 2 mil millones y 1,4 mil millones de libras respectivamente<SPLIT>.}
@@ -480,57 +465,14 @@ sade
 }
 
 Expected: {
-los hallazgos del ministerio de trabajo sobre las peores formas de trabajo infantil indicaban que un 56<SPLIT>% de los ninos con edades entre 5 y 14 anos estaban trabajando y que casi un 53<SPLIT>% de los ninos con edades entre 7 y 14 anos compaginaban trabajar con ir al colegio<SPLIT>.}
-Predicted: {
-los hallazgos del ministerio de trabajo sobre las peores formas de trabajo infantil indicaban que un 56% de los ninos con edades entre 5 y 14 anos estaban trabajando y que casi un 53% de los ninos con edades entre 7 y 14 anos compaginaban trabajar con ir al colegio<SPLIT>.}
-False positives: {
-56%
-53%
-} False negatives: {
-56
-%
-53
-%
-}
-
-Expected: {
-aunque el area es solo un 11<SPLIT>% de la superficie de europa<SPLIT>, los alpes proporcionan mas de 90<SPLIT>% del agua a las tierras bajas de europa<SPLIT>, particularmente a las areas aridas y durante los meses de verano<SPLIT>.}
-Predicted: {
-aunque el area es solo un 11% de la superficie de europa<SPLIT>, los alpes proporcionan mas de 90% del agua a las tierras bajas de europa<SPLIT>, particularmente a las areas aridas y durante los meses de verano<SPLIT>.}
-False positives: {
-11%
-90%
-} False negatives: {
-11
-%
-90
-%
-}
-
-Expected: {
 el jueves<SPLIT>, 3 de noviembre<SPLIT>, el alcalde de saint<SPLIT>-<SPLIT>gaudens (<SPLIT>en la region haute<SPLIT>-<SPLIT>garonne<SPLIT>) decidio suspender el acuerdo de desarrollo urbano con el gobierno formado en el 2014<SPLIT>.}
 Predicted: {
-el jueves<SPLIT>, 3 de noviembre<SPLIT>, el alcalde de saint-gaudens (<SPLIT>en la region haute<SPLIT>-garonne<SPLIT>) decidio suspender el acuerdo de desarrollo urbano con el gobierno formado en el 2014<SPLIT>.}
+el jueves<SPLIT>, 3 de noviembre<SPLIT>, el alcalde de saint<SPLIT>-gaudens (<SPLIT>en la region haute<SPLIT>-<SPLIT>garonne<SPLIT>) decidio suspender el acuerdo de desarrollo urbano con el gobierno formado en el 2014<SPLIT>.}
 False positives: {
-saint-gaudens
--garonne
+-gaudens
 } False negatives: {
-saint
 -
 gaudens
--
-garonne
-}
-
-Expected: {
-es<SPLIT>, aseguran las fuentes consultadas<SPLIT>, "<SPLIT>100<SPLIT>% cospedal<SPLIT>"<SPLIT>.}
-Predicted: {
-es<SPLIT>, aseguran las fuentes consultadas<SPLIT>, "<SPLIT>100% cospedal<SPLIT>"<SPLIT>.}
-False positives: {
-100%
-} False negatives: {
-100
-%
 }
 
 Expected: {
@@ -542,4 +484,15 @@ jr.
 } False negatives: {
 jr
 .
+}
+
+Expected: {
+pero cuando el senado le contesto definitivamente impidiendo<SPLIT>le concurrir al consulado y poniendo<SPLIT>le en la disyuntiva de licenciar a sus legiones o ser declarado enemigo publico<SPLIT>, comprendio que<SPLIT>, escogiera la alternativa que escogiera<SPLIT>, se entregaba inerme en manos de sus enemigos politicos<SPLIT>.}
+Predicted: {
+pero cuando el senado le contesto definitivamente impidiendo<SPLIT>le concurrir al consulado y poniendo<SPLIT>le en la disyuntiva de licenciar a sus legiones o ser declarado enemigo publico<SPLIT>, comprendio que<SPLIT>, escogiera la alternativa que escogiera<SPLIT>, se entregaba iner<SPLIT>me en manos de sus enemigos politicos<SPLIT>.}
+False positives: {
+iner
+me
+} False negatives: {
+inerme
 }

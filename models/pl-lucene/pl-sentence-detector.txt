@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9592194145609207
+Evaluation-Score=0.9562390597649412
 Training-Sample-Size=3603
 Evaluation-Sample-Size=400
 Training-Algorithm=MAXENT_QN
@@ -9,9 +9,9 @@ Component-Name=SentenceDetectorME
 Language=pl
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1697939537196
+Timestamp=1700540150346
 TrainerType=Event
-Training-Eventhash=a9395222f86717c922d98489625e6283
+Training-Eventhash=2ed43278312c1c5c5ec1a7c959221760
 eosCharacters=.?!
 factory=opennlp.tools.sentdetect.SentenceDetectorFactory
 useTokenEnd=true
@@ -142,36 +142,6 @@ milosc dla ciebie niekiedy sprzyja ocieraniu sie o smierc.
 }
 
 Expected: {
-- pan tez chcial do cambridge?
-- pan tez chcial do cambridge?
-pan tez musi lubic ksiazki?
-pan tez przyczynil sie do tego.
-- pan w wojsku nie byl?
-pan wassermann powoduje konflikty.
-pan wie co.
-pan wierzy, ze chinczycy i rosjanie sa dzis w stanie technologicznie konkurowac z zachodem?
-pan zanotuje sobie prywatny numer posla...
-pana slawomira zakwaterowano w pawilonie i.
-}
-Predicted: {
-- pan tez chcial do cambridge?
-- pan tez chcial do cambridge?
-pan tez musi lubic ksiazki?
-pan tez przyczynil sie do tego.
-- pan w wojsku nie byl?
-pan wassermann powoduje konflikty.
-pan wie co. pan wierzy, ze chinczycy i rosjanie sa dzis w stanie technologicznie konkurowac z zachodem?
-pan zanotuje sobie prywatny numer posla...
-pana slawomira zakwaterowano w pawilonie i.
-}
-False positives: {
-pan wie co. pan wierzy, ze chinczycy i rosjanie sa dzis w stanie technologicznie konkurowac z zachodem?
-} False negatives: {
-pan wie co.
-pan wierzy, ze chinczycy i rosjanie sa dzis w stanie technologicznie konkurowac z zachodem?
-}
-
-Expected: {
 - przyrzekniesz mi.
 - przyrzekne...?
 przysiadl na oparciu fotela, objal mnie ramieniem.
@@ -292,36 +262,6 @@ wyglad jest najmniej wazny.
 }
 
 Expected: {
-- zalewasz.
-zalezc za skore!
-- zalezy dla kogo.
-- zalezy dla kogo..
-zaliczmy banana do zywotnych i nie bedzie wyjatku...
-- zaliczylismy nawet test wypadkowy.
-zamek chetnie zwiedzaja cudzoziemcy.
-zamek popadl w ruine.
-- zameldowal leonardo.
-zamiast figurki matki boskiej stoi w niej telewizor.
-}
-Predicted: {
-- zalewasz.
-zalezc za skore!
-- zalezy dla kogo.
-- zalezy dla kogo.. zaliczmy banana do zywotnych i nie bedzie wyjatku...
-- zaliczylismy nawet test wypadkowy.
-zamek chetnie zwiedzaja cudzoziemcy.
-zamek popadl w ruine.
-- zameldowal leonardo.
-zamiast figurki matki boskiej stoi w niej telewizor.
-}
-False positives: {
-- zalezy dla kogo.. zaliczmy banana do zywotnych i nie bedzie wyjatku...
-} False negatives: {
-- zalezy dla kogo..
-zaliczmy banana do zywotnych i nie bedzie wyjatku...
-}
-
-Expected: {
 zdyszany, wyprezyl sie przed dziadoniem.
 zdziwisz sie, ale wielu glosowalo za bosnia.
 zdziwila sie i nic nie odrzekla.
@@ -381,6 +321,38 @@ False positives: {
 - spytala ocean lalka z soli.
 } False negatives: {
 - kim jestes? - spytala ocean lalka z soli.
+}
+
+Expected: {
+1. z dniem 31 grudnia 1998 r. wygasaja akty powolania prezesow zarzadow oraz zastepcow prezesow zarzadow dotychczasowych wojewodzkich funduszy, ktorych siedziby znajduja sie w miastach nie bedacych z dniem 1 stycznia 1999 r. siedzibami wladz samorzadu wojewodztwa.
+ale wyglada na to, ze ten osobnik naprawde wierzy w to, co pisze.
+o swojej lojalnosci - mimo wyroku niezawislego sadu - zapewnili go koledzy z sld: "bez wzgledu na okolicznosci jestesmy z toba.
+powiesc oceniona przez nas jako pospieszna i chaotyczna odznaczac sie moze zajmujaca fabula.
+poza glowna substancja odniesienia dodaje sie czasem pomocnicze substancje wzorcowe (np.: jesli przesuniecia chemiczne badanej substancji leza w nietypowym zakresie, oddalonym od sygnalow wzorca lub z innych wzgledow).
+- czyli po dziesieciu latach transformacji polityka nadal dominuje nad ekonomia.
+czesc ekipy desantuje sie w poblizu zmarlej, reszta idzie od dolu.
+nalezy: 1. ustawic kursor w zadanym miejscu (mozna to zrobic klikajac w dowolnym miejscu wybranego akapitu).
+do zdarzenia doszlo w czerwcu br. w centrum tarnobrzega.
+starsza kobieta, ubrana w czarny przeciwdeszczowy plaszcz z kapturem, niosla czerwone emaliowane wiadro.
+}
+Predicted: {
+1. z dniem 31 grudnia 1998 r.
+wygasaja akty powolania prezesow zarzadow oraz zastepcow prezesow zarzadow dotychczasowych wojewodzkich funduszy, ktorych siedziby znajduja sie w miastach nie bedacych z dniem 1 stycznia 1999 r. siedzibami wladz samorzadu wojewodztwa.
+ale wyglada na to, ze ten osobnik naprawde wierzy w to, co pisze.
+o swojej lojalnosci - mimo wyroku niezawislego sadu - zapewnili go koledzy z sld: "bez wzgledu na okolicznosci jestesmy z toba.
+powiesc oceniona przez nas jako pospieszna i chaotyczna odznaczac sie moze zajmujaca fabula.
+poza glowna substancja odniesienia dodaje sie czasem pomocnicze substancje wzorcowe (np.: jesli przesuniecia chemiczne badanej substancji leza w nietypowym zakresie, oddalonym od sygnalow wzorca lub z innych wzgledow).
+- czyli po dziesieciu latach transformacji polityka nadal dominuje nad ekonomia.
+czesc ekipy desantuje sie w poblizu zmarlej, reszta idzie od dolu.
+nalezy: 1. ustawic kursor w zadanym miejscu (mozna to zrobic klikajac w dowolnym miejscu wybranego akapitu).
+do zdarzenia doszlo w czerwcu br. w centrum tarnobrzega.
+starsza kobieta, ubrana w czarny przeciwdeszczowy plaszcz z kapturem, niosla czerwone emaliowane wiadro.
+}
+False positives: {
+1. z dniem 31 grudnia 1998 r.
+wygasaja akty powolania prezesow zarzadow oraz zastepcow prezesow zarzadow dotychczasowych wojewodzkich funduszy, ktorych siedziby znajduja sie w miastach nie bedacych z dniem 1 stycznia 1999 r. siedzibami wladz samorzadu wojewodztwa.
+} False negatives: {
+1. z dniem 31 grudnia 1998 r. wygasaja akty powolania prezesow zarzadow oraz zastepcow prezesow zarzadow dotychczasowych wojewodzkich funduszy, ktorych siedziby znajduja sie w miastach nie bedacych z dniem 1 stycznia 1999 r. siedzibami wladz samorzadu wojewodztwa.
 }
 
 Expected: {
@@ -1443,14 +1415,18 @@ iii rzesza byla panstwem opartym i w zalozeniu zaprogramowanym na podstawie nier
 o mozliwosci pracy w azerbejdzanie wspominal juz w warszawie.
 sledztwem w sprawie afery w lodzkim pogotowiu moze byc objetych kilkadziesiat osob - poinformowal w srode wieczorem podinspektor jaroslaw berger, rzecznik lodzkiej policji.
 piszemy pelnymi zdaniami, a nie w punktach - mozesz smialo to przeredagowac na podstawie oryginalnych informacji aby wygladalo jak normalne haslo.
-po 12 lat wiezienia otrzymali dwaj ochroniarze - jaroslaw sz. i cezary s., ktorzy ukradli z ochranianego przez siebie konwoju bankowego jeden milion dolarow.
+po 12 lat wiezienia otrzymali dwaj ochroniarze - jaroslaw sz.
+i cezary s., ktorzy ukradli z ochranianego przez siebie konwoju bankowego jeden milion dolarow.
 do sieradza jest tylko kilka bezposrednich polaczen dziennie.
 }
 False positives: {
 - bede mogl po sniadaniu napic sie kawy?
 - spytal, kladac paczuszke na stole.
+po 12 lat wiezienia otrzymali dwaj ochroniarze - jaroslaw sz.
+i cezary s., ktorzy ukradli z ochranianego przez siebie konwoju bankowego jeden milion dolarow.
 } False negatives: {
 - bede mogl po sniadaniu napic sie kawy? - spytal, kladac paczuszke na stole.
+po 12 lat wiezienia otrzymali dwaj ochroniarze - jaroslaw sz. i cezary s., ktorzy ukradli z ochranianego przez siebie konwoju bankowego jeden milion dolarow.
 }
 
 Expected: {
@@ -1682,7 +1658,6 @@ przy pl. teatralnym, w poblizu ul. zamkowej i menniczej, w miejscu dawnych kosza
 }
 
 Expected: {
-samorzadowcy znaja realia, a ponadto czytali w "nie" (nr 14/94), ze sa kobiety, do ktorych zamiast pomocnej dloni fundacja wyciagnela piache.
 etolodzy wykazali bowiem, ze w obliczu specyficznych bodzcow, tzw. bodzcow kluczowych, zwierzeta reaguja niczym rzeczone automaty, najwyrazniej postepujac zgodnie z wrodzonymi schematami zachowania, na podobienstwo marionetek poruszanych wprawna dlonia aktora.
 genaro zamowil wiec - doskonale, jak sie okazalo - grzanki z mozdzkiem, ktore przypomnialy mi pewne spotkanie w domu krzysztofa i bozeny toeplitzow w lomiankach, lat temu co najmniej dwadziescia.
 ania: taki sam tygrysek jak on?
@@ -1692,9 +1667,9 @@ zakonczyl sie viii raciborski rajd rowerowy srodowisk trzezwosciowych dookola po
 flr - jako architekt zasmakowalem w niepowtarzalnym charakterze tej wsi.
 przerazona dziewczyna pobiegla do ciotki, ktora mieszka za sciana, i w sekrecie opowiedziala, co robil jej tata.
 jednak podczas telewizyjnego programu wyborczego przed wyborami 4 czerwca 1989 roku, zapytany przez prowadzacego, czy napisal "ballade o janku wisniewskim", dowgiallo odpowiada enigmatycznie: "co mialo byc anonimowe, niech bedzie anonimowe".
+zupelnie nie udal sie start naszej pieciobojowej mlodziezy w mistrzostwach swiata w czworboju nowoczesnym kobiet i mezczyzn w szwedzkiej uppsali.
 }
 Predicted: {
-samorzadowcy znaja realia, a ponadto czytali w "nie" (nr 14/94), ze sa kobiety, do ktorych zamiast pomocnej dloni fundacja wyciagnela piache.
 etolodzy wykazali bowiem, ze w obliczu specyficznych bodzcow, tzw. bodzcow kluczowych, zwierzeta reaguja niczym rzeczone automaty, najwyrazniej postepujac zgodnie z wrodzonymi schematami zachowania, na podobienstwo marionetek poruszanych wprawna dlonia aktora.
 genaro zamowil wiec - doskonale, jak sie okazalo - grzanki z mozdzkiem, ktore przypomnialy mi pewne spotkanie w domu krzysztofa i bozeny toeplitzow w lomiankach, lat temu co najmniej dwadziescia.
 ania: taki sam tygrysek jak on? wymiana metra bariery energochlonnej, montowanej na mostach i wiaduktach, to wydatek kilkuset zlotych.
@@ -1703,6 +1678,7 @@ zakonczyl sie viii raciborski rajd rowerowy srodowisk trzezwosciowych dookola po
 flr - jako architekt zasmakowalem w niepowtarzalnym charakterze tej wsi.
 przerazona dziewczyna pobiegla do ciotki, ktora mieszka za sciana, i w sekrecie opowiedziala, co robil jej tata.
 jednak podczas telewizyjnego programu wyborczego przed wyborami 4 czerwca 1989 roku, zapytany przez prowadzacego, czy napisal "ballade o janku wisniewskim", dowgiallo odpowiada enigmatycznie: "co mialo byc anonimowe, niech bedzie anonimowe".
+zupelnie nie udal sie start naszej pieciobojowej mlodziezy w mistrzostwach swiata w czworboju nowoczesnym kobiet i mezczyzn w szwedzkiej uppsali.
 }
 False positives: {
 ania: taki sam tygrysek jak on? wymiana metra bariery energochlonnej, montowanej na mostach i wiaduktach, to wydatek kilkuset zlotych.
@@ -1712,7 +1688,36 @@ wymiana metra bariery energochlonnej, montowanej na mostach i wiaduktach, to wyd
 }
 
 Expected: {
-wybor otoczenia, srodowiska jest wazny, gdyz przeciez nie tylko my oddzialujemy na innych - inni takze oddzialywaja na nas, narzucaja nam wzorce zachowan i w duzym stopniu decyduja o poziomie naszego myslenia.
+- ja tez mam nadzieje, ze sie dobrze bawicie.
+pierwotnie mialo to byc o 1027,50 zl wiecej.
+zwycieskiego syberiana sprowadzila miesiac temu ze stanow zjednoczonych.
+po kilku miesiacach czesc komorek tluszczowych ulega resorpcji i konieczne moze byc dostrzykniecie nowej porcji tluszczu.
+- poszlem, nie doszlem, przyszlem i zostalem.
+na nich orville i wilbur bili kolejne rekordy - na przyklad 26 wrzesnia 1905 r. flyer iii pokonal prawie 17 km w 18 minut.
+miejsca rozgrywania spotkan zostaly ustalone w drodze losowania w siedzibie polskiego zwiazku tenisa stolowego w warszawie.
+cialo, ktore ginie, jest jedynie opakowaniem dla duszy.
+8. bank gospodarstwa krajowego moze uznac hipoteke ustanowiona na kredytowanej nieruchomosci wraz z cesja praw z polisy ubezpieczeniowej i cesja naleznosci z czynszow za wystarczajace zabezpieczenie splaty kredytu, o ktorym mowa w art. 18 pkt 1.
+a ty jestes czastka swojego ojca, wiec kocham rowniez ciebie.
+}
+Predicted: {
+- ja tez mam nadzieje, ze sie dobrze bawicie.
+pierwotnie mialo to byc o 1027,50 zl wiecej.
+zwycieskiego syberiana sprowadzila miesiac temu ze stanow zjednoczonych.
+po kilku miesiacach czesc komorek tluszczowych ulega resorpcji i konieczne moze byc dostrzykniecie nowej porcji tluszczu.
+- poszlem, nie doszlem, przyszlem i zostalem.
+na nich orville i wilbur bili kolejne rekordy - na przyklad 26 wrzesnia 1905 r. flyer iii pokonal prawie 17 km w 18 minut.
+miejsca rozgrywania spotkan zostaly ustalone w drodze losowania w siedzibie polskiego zwiazku tenisa stolowego w warszawie.
+cialo, ktore ginie, jest jedynie opakowaniem dla duszy.
+8. bank gospodarstwa krajowego moze uznac hipoteke ustanowiona na kredytowanej nieruchomosci wraz z cesja praw z polisy ubezpieczeniowej i cesja naleznosci z czynszow za wystarczajace zabezpieczenie splaty kredytu, o ktorym mowa w art. 18 pkt 1. a ty jestes czastka swojego ojca, wiec kocham rowniez ciebie.
+}
+False positives: {
+8. bank gospodarstwa krajowego moze uznac hipoteke ustanowiona na kredytowanej nieruchomosci wraz z cesja praw z polisy ubezpieczeniowej i cesja naleznosci z czynszow za wystarczajace zabezpieczenie splaty kredytu, o ktorym mowa w art. 18 pkt 1. a ty jestes czastka swojego ojca, wiec kocham rowniez ciebie.
+} False negatives: {
+8. bank gospodarstwa krajowego moze uznac hipoteke ustanowiona na kredytowanej nieruchomosci wraz z cesja praw z polisy ubezpieczeniowej i cesja naleznosci z czynszow za wystarczajace zabezpieczenie splaty kredytu, o ktorym mowa w art. 18 pkt 1.
+a ty jestes czastka swojego ojca, wiec kocham rowniez ciebie.
+}
+
+Expected: {
 - co to jest? - spytal.
 ale niestety zle wiadomosci sie potwierdzily: tego dnia niemiecka armia wkraczala do poznania.
 - nie wiecie, dokad poszla?
@@ -1722,9 +1727,9 @@ myslisz czesto o sprawach, ktore sie nie wydarzyly, ale moga zagrazac dziecku lu
 jednoczesnie tak wysokie wyniki w nauce niech beda przykladem dla uczniow plockich szkol, ze wszystko jest mozliwe, jesli czegos sie naprawde bardzo pragnie.
 jednoczesnie nastepuja dynamiczne, ale dostosowane do realiow spolecznych i kapitalowych przeksztalcenia wlasnosciowe.
 ludzie klna na czym swiat stoi i zostawiaja samochody na ulicy, blokujac polowe jezdni.
+- w papierach mam niby zapisane, ze sulejman, ale wszyscy mowia na mnie malika.
 }
 Predicted: {
-wybor otoczenia, srodowiska jest wazny, gdyz przeciez nie tylko my oddzialujemy na innych - inni takze oddzialywaja na nas, narzucaja nam wzorce zachowan i w duzym stopniu decyduja o poziomie naszego myslenia.
 - co to jest?
 - spytal.
 ale niestety zle wiadomosci sie potwierdzily: tego dnia niemiecka armia wkraczala do poznania.
@@ -1735,6 +1740,7 @@ myslisz czesto o sprawach, ktore sie nie wydarzyly, ale moga zagrazac dziecku lu
 jednoczesnie tak wysokie wyniki w nauce niech beda przykladem dla uczniow plockich szkol, ze wszystko jest mozliwe, jesli czegos sie naprawde bardzo pragnie.
 jednoczesnie nastepuja dynamiczne, ale dostosowane do realiow spolecznych i kapitalowych przeksztalcenia wlasnosciowe.
 ludzie klna na czym swiat stoi i zostawiaja samochody na ulicy, blokujac polowe jezdni.
+- w papierach mam niby zapisane, ze sulejman, ale wszyscy mowia na mnie malika.
 }
 False positives: {
 - co to jest?
@@ -1744,7 +1750,6 @@ False positives: {
 }
 
 Expected: {
-dotad byli apolityczni.
 ten sam ksiadz wystepuje na dokumencie lokacyjnym tczewa z 1260 r.
 w terminie 10 dni zrezygnowalem.
 nic nie drgnelo w twarzy mlodego przystojnego barana, nie takich tu widzial, co go obchodzi, ze ten nie calkiem tu pasujacy facet ma oczy bledne, jakby nie wypil jednego koniaku, brandy, szanowny panie, brandy, ohydna woda, mowia koniak, ha, tylko conajmniej trzy duze.
@@ -1754,9 +1759,9 @@ nalezalo mu sie - stwierdzili.
 byl to niewielki staruszek, nagi do pasa, w zielonkawych spodniach.
 pamietam sytuacje jak po raz pierwszy mialem poprowadzic glowne wydanie wiadomosci.
 mlodzi, ktorzy sie blyskawicznie zorganizowali po smierci papieza, czuli sie pewnie tak, jak my po smierci ks. popieluszki.
+natalia: - to moze sie okazac chwilowa moda, ale dla nas tez nie bedzie to chyba wieczny gatunek, ktory bedziemy wykonywac.
 }
 Predicted: {
-dotad byli apolityczni.
 ten sam ksiadz wystepuje na dokumencie lokacyjnym tczewa z 1260 r. w terminie 10 dni zrezygnowalem.
 nic nie drgnelo w twarzy mlodego przystojnego barana, nie takich tu widzial, co go obchodzi, ze ten nie calkiem tu pasujacy facet ma oczy bledne, jakby nie wypil jednego koniaku, brandy, szanowny panie, brandy, ohydna woda, mowia koniak, ha, tylko conajmniej trzy duze.
 jedna z firm mieszczacych sie obecnie w dawnym orle bialym jest biuro specjalistow-doradcow dla przedsiebiorstw upadajacych albo bedacych w trudnosciach.
@@ -1765,6 +1770,7 @@ nalezalo mu sie - stwierdzili.
 byl to niewielki staruszek, nagi do pasa, w zielonkawych spodniach.
 pamietam sytuacje jak po raz pierwszy mialem poprowadzic glowne wydanie wiadomosci.
 mlodzi, ktorzy sie blyskawicznie zorganizowali po smierci papieza, czuli sie pewnie tak, jak my po smierci ks. popieluszki.
+natalia: - to moze sie okazac chwilowa moda, ale dla nas tez nie bedzie to chyba wieczny gatunek, ktory bedziemy wykonywac.
 }
 False positives: {
 ten sam ksiadz wystepuje na dokumencie lokacyjnym tczewa z 1260 r. w terminie 10 dni zrezygnowalem.
@@ -1774,7 +1780,6 @@ w terminie 10 dni zrezygnowalem.
 }
 
 Expected: {
-nadal bedzie dodatnia temperatura, na wybrzezu okolo 5 stopni.
 w polozeniu odwroconym: nadmierne uzywanie bogactwa, zycie w luksusie, chciwosc, skapstwo, otaczanie sie wplywowymi lub majetnymi ludzmi, zaborczosc, gromadzenie bogactw jako glowny cel zycia, wykorzystywanie innych, skrajny materializm, przeliczanie wszystkiego na pieniadze.
 grupa ponad 30 dzialaczy samorzadowych, spoldzielcow i bankierow na czterech pieciodniowych sesjach ma poznac francuskie rozwiazania dotyczace budownictwa czynszowego.
 - nagrody - powiedzial z pogarda - nie maja w gruncie rzeczy znaczenia.
@@ -1784,9 +1789,9 @@ jaruzelski nim nie byl, bo wyslugiwal sie sowietom - mowi jozef golema, prezes o
 zgloszenie rozpatrzy trzyosobowa komisja - andrzej pruszkowski - prezydent miasta, jan miturski - przewodniczacy komisji oswiaty i wychowania rady miejskiej i ewa dumkiewicz - dyrektor wydzialu oswiaty i wychowania um.
 - juz ci mowilem, ze arkan nie bedzie z toba rozmawial - usmiecha sie do pulkownika.
 kierowca widzial w rekach j. dlugi zakrwawiony noz.
+daje on mlodym ludziom szanse wykazania sie umiejetnosciami organizatorskimi.
 }
 Predicted: {
-nadal bedzie dodatnia temperatura, na wybrzezu okolo 5 stopni.
 w polozeniu odwroconym: nadmierne uzywanie bogactwa, zycie w luksusie, chciwosc, skapstwo, otaczanie sie wplywowymi lub majetnymi ludzmi, zaborczosc, gromadzenie bogactw jako glowny cel zycia, wykorzystywanie innych, skrajny materializm, przeliczanie wszystkiego na pieniadze.
 grupa ponad 30 dzialaczy samorzadowych, spoldzielcow i bankierow na czterech pieciodniowych sesjach ma poznac francuskie rozwiazania dotyczace budownictwa czynszowego.
 - nagrody - powiedzial z pogarda - nie maja w gruncie rzeczy znaczenia.
@@ -1795,6 +1800,7 @@ chor uznal, ze to byloby na tyle.
 jaruzelski nim nie byl, bo wyslugiwal sie sowietom - mowi jozef golema, prezes oddzialu rzeszowskiego zwiazku sybirakow.
 zgloszenie rozpatrzy trzyosobowa komisja - andrzej pruszkowski - prezydent miasta, jan miturski - przewodniczacy komisji oswiaty i wychowania rady miejskiej i ewa dumkiewicz - dyrektor wydzialu oswiaty i wychowania um. - juz ci mowilem, ze arkan nie bedzie z toba rozmawial - usmiecha sie do pulkownika.
 kierowca widzial w rekach j. dlugi zakrwawiony noz.
+daje on mlodym ludziom szanse wykazania sie umiejetnosciami organizatorskimi.
 }
 False positives: {
 zgloszenie rozpatrzy trzyosobowa komisja - andrzej pruszkowski - prezydent miasta, jan miturski - przewodniczacy komisji oswiaty i wychowania rady miejskiej i ewa dumkiewicz - dyrektor wydzialu oswiaty i wychowania um. - juz ci mowilem, ze arkan nie bedzie z toba rozmawial - usmiecha sie do pulkownika.
@@ -1804,7 +1810,6 @@ zgloszenie rozpatrzy trzyosobowa komisja - andrzej pruszkowski - prezydent miast
 }
 
 Expected: {
-tacy jestesmy bierni, ale oni nas olewaja!
 powiedzialbym, ze ich rola jest formalna i glos pracownikow nie przebija sie na tyle, na ile zasluguje.
 ryzykowaly i sposobem lokat.
 wladze miasta wyznaczaja kryterium, jakie musza spelniac, startujace w przetargu firmy - jest nim najnizsza cena oferty.
@@ -1814,9 +1819,9 @@ jest to grunt najbardziej plodny w smiech i w rewolucje.
 - blondynka popatrzyla na tancerzy, ktorzy przy bufecie glosno rozmawiali z wlascicielem knajpy.
 funkcjonariusze zidentyfikowali podejrzanych, ktorymi sa: rafal d. i daniel s.
 chirurg tamten zamknal za soba drzwi i po raz ostatni spojrzal przez szybe na zolty, drzacy jak w febrze ksiezyc .
+uwazalem je i dalej uwazam za wyrok sadu kapturowego.
 }
 Predicted: {
-tacy jestesmy bierni, ale oni nas olewaja!
 powiedzialbym, ze ich rola jest formalna i glos pracownikow nie przebija sie na tyle, na ile zasluguje.
 ryzykowaly i sposobem lokat.
 wladze miasta wyznaczaja kryterium, jakie musza spelniac, startujace w przetargu firmy - jest nim najnizsza cena oferty.
@@ -1825,6 +1830,7 @@ przy ulicy kaweczynskiej w warszawie, w wyzszej szkole menedzerskiej, trwaja pra
 jest to grunt najbardziej plodny w smiech i w rewolucje.
 - blondynka popatrzyla na tancerzy, ktorzy przy bufecie glosno rozmawiali z wlascicielem knajpy.
 funkcjonariusze zidentyfikowali podejrzanych, ktorymi sa: rafal d. i daniel s. chirurg tamten zamknal za soba drzwi i po raz ostatni spojrzal przez szybe na zolty, drzacy jak w febrze ksiezyc .
+uwazalem je i dalej uwazam za wyrok sadu kapturowego.
 }
 False positives: {
 funkcjonariusze zidentyfikowali podejrzanych, ktorymi sa: rafal d. i daniel s. chirurg tamten zamknal za soba drzwi i po raz ostatni spojrzal przez szybe na zolty, drzacy jak w febrze ksiezyc .
@@ -1834,7 +1840,6 @@ chirurg tamten zamknal za soba drzwi i po raz ostatni spojrzal przez szybe na zo
 }
 
 Expected: {
-- staralysmy sie wyjasnic gospodarzom roznice miedzy bezpieczenstwem a sluzba bezpieczenstwa - mowi irene santiago, dyrektor forum.
 orzechy i migdaly zemlec, wymieszac z cukrem oraz 3 lyzkami masla na gladka mase i polaczyc z kuskusem.
 a przecie widzialem ich przy ogniu... - myslal wojewoda.
 najnowsza wersja planu glosi, ze budowa tunelu jest dopuszczalna, ale nie jest obowiazkowa.
@@ -1844,9 +1849,9 @@ zarzuca mariannie: przejmujesz sie tylko wtedy, gdy sprawa dotyczy ciebie.
 ksiazka ukazala sie w odpowiednim momencie, w okresie dyskusji nad nowymi programami.
 proces, ktoremu czlowiek nie jest i nigdy nie bedzie sie w stanie przeciwstawic i w zwiazku z tym jedynie moze z pokora go zaakceptowac.
 jako metal szlachetny nie wypiera wodoru z kwasow, reaguje jedynie z goracym kwasem azotowym i siarkowym, redukujac je do odpowiednich tlenkow.
+ckm: wobec tego, co sie liczy?
 }
 Predicted: {
-- staralysmy sie wyjasnic gospodarzom roznice miedzy bezpieczenstwem a sluzba bezpieczenstwa - mowi irene santiago, dyrektor forum.
 orzechy i migdaly zemlec, wymieszac z cukrem oraz 3 lyzkami masla na gladka mase i polaczyc z kuskusem.
 a przecie widzialem ich przy ogniu...
 - myslal wojewoda.
@@ -1858,6 +1863,7 @@ zarzuca mariannie: przejmujesz sie tylko wtedy, gdy sprawa dotyczy ciebie.
 ksiazka ukazala sie w odpowiednim momencie, w okresie dyskusji nad nowymi programami.
 proces, ktoremu czlowiek nie jest i nigdy nie bedzie sie w stanie przeciwstawic i w zwiazku z tym jedynie moze z pokora go zaakceptowac.
 jako metal szlachetny nie wypiera wodoru z kwasow, reaguje jedynie z goracym kwasem azotowym i siarkowym, redukujac je do odpowiednich tlenkow.
+ckm: wobec tego, co sie liczy?
 }
 False positives: {
 a przecie widzialem ich przy ogniu...
@@ -1870,7 +1876,36 @@ za najlepsza ksiazke popularnonaukowa o lodzi jury uznalo ksiazke krzysztofa ste
 }
 
 Expected: {
-w tym domu, wybudowanym w latach siedemdziesiatych sposobem gospodarczym, wszystko wymaga modernizacji.
+nie mogl sobie nawet tego wyobrazic bez odruchow wymiotnych, ze jakis obcy mezczyzna balamuci ja milymi slowkami i dotyka czule, by wreszcie wprowadzic swoj obrzydliwy czlonek w jej aksamitne cialo.
+co do odpowiedzialnosci politycznej za dzialalnosc, to przypomne jeszcze raz, chociaz pewnie bede musial jeszcze za moment do tego wrocic, ze mowimy o sledztwie, z ktorego dokumenty i notatki datuja sie od 25 stycznia 1991 r. do 26 marca 1997 r.
+a jak jeszcze slysze, ze mam bulic komus kase, ktorej nie mam, zeby mogl jeszcze bardziej monopolizowac rynek, to mnie krew zalewa.
+dlaczego i jak doszlo do sytuacji, w ktorej mezczyzni wystepuja nago przed kobietami zabawiajacymi sie niewybrednie ich "wdziekami"?
+a marlena dietrich zagrala tak przekonujaco, ze wylansowala na caly swiat kobiete-wampa.
+ludzie barykaduja sie w swoich domach i podejrzliwie patrza na kazdego obcego.
+nawet trojka, uchodzaca przez lata za najblizsza idealowi dobrej stacji muzycznej, zrezygnowala przed paroma miesiacami z audycji "bielszy odcien bluesa" prowadzonej przez jednego ze znawcow gatunku, a i obdarzonego mikrofonowa charyzma, jana chojnackiego.
+np. za wlasne pieniadze inwestor oswietlil nowy budynek centrum biurowego lubicz, wlasciciel sam iluminowal hotel copernicus przy ul. kanoniczej, a za pieniadze parafii, a czasem sponsorow, oswietlane sa nowsze koscioly (np. na wzgorzach krzeslawickich czy na gorze borkowskiej).
+ja rewanzuje im sie znow reprezentacja latana z najrozniejszych skrawkow polskosci, troche takiej, jaka jest, troche takiej, jaka chcialbym, zeby byla.
+ja jedynie moge, bazujac na swoim doswiadczeniu i na tym, ze ci wyborcy akurat na mnie oddali glos, wiec jakis stopien zaufania jest, moge jedynie podpowiedziec pewien sposob myslenia - z jednej strony.
+}
+Predicted: {
+nie mogl sobie nawet tego wyobrazic bez odruchow wymiotnych, ze jakis obcy mezczyzna balamuci ja milymi slowkami i dotyka czule, by wreszcie wprowadzic swoj obrzydliwy czlonek w jej aksamitne cialo.
+co do odpowiedzialnosci politycznej za dzialalnosc, to przypomne jeszcze raz, chociaz pewnie bede musial jeszcze za moment do tego wrocic, ze mowimy o sledztwie, z ktorego dokumenty i notatki datuja sie od 25 stycznia 1991 r. do 26 marca 1997 r. a jak jeszcze slysze, ze mam bulic komus kase, ktorej nie mam, zeby mogl jeszcze bardziej monopolizowac rynek, to mnie krew zalewa.
+dlaczego i jak doszlo do sytuacji, w ktorej mezczyzni wystepuja nago przed kobietami zabawiajacymi sie niewybrednie ich "wdziekami"?
+a marlena dietrich zagrala tak przekonujaco, ze wylansowala na caly swiat kobiete-wampa.
+ludzie barykaduja sie w swoich domach i podejrzliwie patrza na kazdego obcego.
+nawet trojka, uchodzaca przez lata za najblizsza idealowi dobrej stacji muzycznej, zrezygnowala przed paroma miesiacami z audycji "bielszy odcien bluesa" prowadzonej przez jednego ze znawcow gatunku, a i obdarzonego mikrofonowa charyzma, jana chojnackiego.
+np. za wlasne pieniadze inwestor oswietlil nowy budynek centrum biurowego lubicz, wlasciciel sam iluminowal hotel copernicus przy ul. kanoniczej, a za pieniadze parafii, a czasem sponsorow, oswietlane sa nowsze koscioly (np. na wzgorzach krzeslawickich czy na gorze borkowskiej).
+ja rewanzuje im sie znow reprezentacja latana z najrozniejszych skrawkow polskosci, troche takiej, jaka jest, troche takiej, jaka chcialbym, zeby byla.
+ja jedynie moge, bazujac na swoim doswiadczeniu i na tym, ze ci wyborcy akurat na mnie oddali glos, wiec jakis stopien zaufania jest, moge jedynie podpowiedziec pewien sposob myslenia - z jednej strony.
+}
+False positives: {
+co do odpowiedzialnosci politycznej za dzialalnosc, to przypomne jeszcze raz, chociaz pewnie bede musial jeszcze za moment do tego wrocic, ze mowimy o sledztwie, z ktorego dokumenty i notatki datuja sie od 25 stycznia 1991 r. do 26 marca 1997 r. a jak jeszcze slysze, ze mam bulic komus kase, ktorej nie mam, zeby mogl jeszcze bardziej monopolizowac rynek, to mnie krew zalewa.
+} False negatives: {
+co do odpowiedzialnosci politycznej za dzialalnosc, to przypomne jeszcze raz, chociaz pewnie bede musial jeszcze za moment do tego wrocic, ze mowimy o sledztwie, z ktorego dokumenty i notatki datuja sie od 25 stycznia 1991 r. do 26 marca 1997 r.
+a jak jeszcze slysze, ze mam bulic komus kase, ktorej nie mam, zeby mogl jeszcze bardziej monopolizowac rynek, to mnie krew zalewa.
+}
+
+Expected: {
 niedobrze jest, kiedy zalekniony, pelen kompleksow czlowiek kupuje psa, szczegolnie agresywnej rasy, i szkoli go na potencjalnego zabojce.
 boguslaw kruszewski, dyrektor mdk w prasznyszu, decydujac sie na pokazanie bodaj czesci dorobku jana stepkowskiego, wernisaz, na ktory przyjechalo wielu tworcow z ciechanowa, kolegow stepkowskiego, zbiegl sie i znakomicie korelowal z przasnyska "odslona" iv swiatowych dni poezji, organizowanych przez aleksandra nawrockiego, pochodzacego z okolic przasnysza poety i wydawcy, redaktora naczelnego literackiego pisma "poezja dzisiaj".
 - musze wam cos powiedziec - wyjakala monika, gdy bazylia przestala wreszcie smierdziec.
@@ -1880,9 +1915,9 @@ ten wlasnie napis gryzmolil biala kreda na drewnianym plocie maly chlopiec ubran
 gdy tylko skonczyl szkole, zaczal dojezdzac do nowego jorku na przesluchania.
 ale... w kazdym miescie sa gabinety, ktore chwala sie jako bioenergoterapeutyczne.
 czy jest badany rowniez watek taki, ze pan rywin mogl wziac pieniadze od pana michnika i nie wywiazac sie z zadan i dlatego pan michnik awanturuje sie o to, ze nie moze nabyc w odpowiednim czasie telewizji polsat.
+chce wydzierzawic od miasta za przyslowiowa zlotowke budynek przy ulicy wyspianskiego, po bylym radzieckim szpitalu.
 }
 Predicted: {
-w tym domu, wybudowanym w latach siedemdziesiatych sposobem gospodarczym, wszystko wymaga modernizacji.
 niedobrze jest, kiedy zalekniony, pelen kompleksow czlowiek kupuje psa, szczegolnie agresywnej rasy, i szkoli go na potencjalnego zabojce.
 boguslaw kruszewski, dyrektor mdk w prasznyszu, decydujac sie na pokazanie bodaj czesci dorobku jana stepkowskiego, wernisaz, na ktory przyjechalo wielu tworcow z ciechanowa, kolegow stepkowskiego, zbiegl sie i znakomicie korelowal z przasnyska "odslona" iv swiatowych dni poezji, organizowanych przez aleksandra nawrockiego, pochodzacego z okolic przasnysza poety i wydawcy, redaktora naczelnego literackiego pisma "poezja dzisiaj".
 - musze wam cos powiedziec - wyjakala monika, gdy bazylia przestala wreszcie smierdziec.
@@ -1893,6 +1928,7 @@ gdy tylko skonczyl szkole, zaczal dojezdzac do nowego jorku na przesluchania.
 ale...
 w kazdym miescie sa gabinety, ktore chwala sie jako bioenergoterapeutyczne.
 czy jest badany rowniez watek taki, ze pan rywin mogl wziac pieniadze od pana michnika i nie wywiazac sie z zadan i dlatego pan michnik awanturuje sie o to, ze nie moze nabyc w odpowiednim czasie telewizji polsat.
+chce wydzierzawic od miasta za przyslowiowa zlotowke budynek przy ulicy wyspianskiego, po bylym radzieckim szpitalu.
 }
 False positives: {
 ale...
@@ -1902,7 +1938,6 @@ ale... w kazdym miescie sa gabinety, ktore chwala sie jako bioenergoterapeutyczn
 }
 
 Expected: {
-coraz lepiej im znane, lecz wprawiajace w zaklopotanie i czym wyrazniejsze, tym bardziej przemilczane, albowiem wylamuja sie z paradygmatu i nie daja nadziei, ze uda sie je objasnic bez wyjscia poza granice ortodoksyjnej nauki.
 dzieci bardzo chetnie "dojadaja" tym chlebkiem, a panie dyzurujace na stolowce twierdza, sporo z nich zabiera nawet ze soba kilka pajd chleba.
 skonczyl rozmawiac i skinal mi reka, ze mam za nim postepowac.
 w dokumentacji figurowal w tej roli makran, faktycznie jednak prace prowadzily inne firmy.
@@ -1912,9 +1947,9 @@ szkolne kolo ligi ochrony przyrody w szkole podstawowej w budzyniu reaktywowalo 
 - kiedy, gdzie i o ktorej odbedzie sie impreza?
 dlawiaca wilgoc zmienia nas wszystkich w bombaju w plazy oddychajace woda zawarta w powietrzu; czlowiek uczy sie z tym zyc - i to zyc z zadowoleniem - albo wyjezdza.
 latwiej jest ziac ogniem i rzucac zaklecia, niz dbac o celne headshoty, ale prawda jest taka, ze nastolatki wola cs go niz wybieranie mikstur i czarow, w czym, zdaje sie, celuja azjaci.
+co najmniej 13 osob zginelo, a ponad 100 zostalo rannych w czwartkowym zamachu z uzyciem furgonetki na zatloczonej ulicy w barcelonie - podaly wladze katalonii.
 }
 Predicted: {
-coraz lepiej im znane, lecz wprawiajace w zaklopotanie i czym wyrazniejsze, tym bardziej przemilczane, albowiem wylamuja sie z paradygmatu i nie daja nadziei, ze uda sie je objasnic bez wyjscia poza granice ortodoksyjnej nauki.
 dzieci bardzo chetnie "dojadaja" tym chlebkiem, a panie dyzurujace na stolowce twierdza, sporo z nich zabiera nawet ze soba kilka pajd chleba.
 skonczyl rozmawiac i skinal mi reka, ze mam za nim postepowac.
 w dokumentacji figurowal w tej roli makran, faktycznie jednak prace prowadzily inne firmy.
@@ -1925,6 +1960,7 @@ szkolne kolo ligi ochrony przyrody w szkole podstawowej w budzyniu reaktywowalo 
 - kiedy, gdzie i o ktorej odbedzie sie impreza?
 dlawiaca wilgoc zmienia nas wszystkich w bombaju w plazy oddychajace woda zawarta w powietrzu; czlowiek uczy sie z tym zyc - i to zyc z zadowoleniem - albo wyjezdza.
 latwiej jest ziac ogniem i rzucac zaklecia, niz dbac o celne headshoty, ale prawda jest taka, ze nastolatki wola cs go niz wybieranie mikstur i czarow, w czym, zdaje sie, celuja azjaci.
+co najmniej 13 osob zginelo, a ponad 100 zostalo rannych w czwartkowym zamachu z uzyciem furgonetki na zatloczonej ulicy w barcelonie - podaly wladze katalonii.
 }
 False positives: {
 • dlaczego lub dla kogo chudnie prezydent?
@@ -1934,7 +1970,6 @@ False positives: {
 }
 
 Expected: {
-francuzi celebruja posilki, ktore przeciagaja sie nawet do poltorej godziny.
 wycisniety sok, za sprawa specjalnych drozdzy winiarskich, fermentuje potem w balonach lub kwasoodpornych zbiornikach przez kilka dni lub tygodni.
 awanturuje sie o to, dlaczego urodzilem sie nie tamtym, tylko tym.
 pozostaje tylko chlipac nad dola tworcow i zasiasc do kolejnego rozdzialu "narreteum".
@@ -1944,9 +1979,9 @@ to, ze prezydent wspoldziala z rzadem i z premierem, nie oznacza jakiejs uleglos
 rodzic potrafi szanowac intymnosc dziecka i jego wlasny swiat, nie burzac go sprowadzaniem do rzeczywistosci.
 rzeczywiscie mial uczucie jakby ta katastrofa dotyczyla jego samego osobiscie.
 tym, ktorzy chca traktowac konkordat jako umowe z organizacja miedzynarodowa (sld uwaza, ze wobec konkordatu nalezy stosowac art. 90 konstytucji i ratyfikowac go wiekszoscia 2/3 glosow) - przypomniala, ze kosciola nie mozna okreslic jako organizacji miedzynarodowej, bo polska musialaby byc jej czlonkiem.
+po to, zeby sie sprobowac, zeby zobaczyc, jak to wyglada, po to, zeby oni mogli przetestowac to, co proponujemy, a takze po to, zeby w pewien sposob mozna bylo sprawdzic, jakie beda wyniki.
 }
 Predicted: {
-francuzi celebruja posilki, ktore przeciagaja sie nawet do poltorej godziny.
 wycisniety sok, za sprawa specjalnych drozdzy winiarskich, fermentuje potem w balonach lub kwasoodpornych zbiornikach przez kilka dni lub tygodni.
 awanturuje sie o to, dlaczego urodzilem sie nie tamtym, tylko tym.
 pozostaje tylko chlipac nad dola tworcow i zasiasc do kolejnego rozdzialu "narreteum".
@@ -1957,6 +1992,7 @@ to, ze prezydent wspoldziala z rzadem i z premierem, nie oznacza jakiejs uleglos
 rodzic potrafi szanowac intymnosc dziecka i jego wlasny swiat, nie burzac go sprowadzaniem do rzeczywistosci.
 rzeczywiscie mial uczucie jakby ta katastrofa dotyczyla jego samego osobiscie.
 tym, ktorzy chca traktowac konkordat jako umowe z organizacja miedzynarodowa (sld uwaza, ze wobec konkordatu nalezy stosowac art. 90 konstytucji i ratyfikowac go wiekszoscia 2/3 glosow) - przypomniala, ze kosciola nie mozna okreslic jako organizacji miedzynarodowej, bo polska musialaby byc jej czlonkiem.
+po to, zeby sie sprobowac, zeby zobaczyc, jak to wyglada, po to, zeby oni mogli przetestowac to, co proponujemy, a takze po to, zeby w pewien sposob mozna bylo sprawdzic, jakie beda wyniki.
 }
 False positives: {
 - wszedzie!
@@ -1966,7 +2002,6 @@ False positives: {
 }
 
 Expected: {
-suche skladniki rozkrusz w mozdzierzu lub mlynku do kawy.
 we wtorek poslowie przyszli po te informacje.
 - przed spotkaniem z wybrana osoba zdecyduj sie, czy powiesz to, co masz o sobie powiedziec z wlasnej inicjatywy (sam poruszajac temat), czy poczekasz na nadarzajaca sie okazje (obie wersje sa dobre).
 bezcenne widziec jak sralon robi do czego jest przeznaczony.
@@ -1976,9 +2011,9 @@ szacunkowo roznica czasowa tych czynnosci wyniesie 8-10 miesiecy i przez ten cza
 zwielokrotnialo to o taki czynnik predkosc dostepu do pamieci ram karty, bez koniecznosci stosowania bardzo drogich dwuportowych ukladow vram.
 gdy pod blokiem na ul. chylonskiej, stojacym najblizej skrzyzowania, krotko po tym zawyly syreny wozow strazackich, zaciekawieni mieszkancy wylegli z domow, aby zorientowac sie, co sie stalo.
 latwo jest z dziennikarskich pozycji dywagowac o polityce i kazde zaniepokojenie o los kraju zbywac obrazliwymi pomowieniami.
+dlatego od trzech lat trwaja zabiegi wokol umiarkowanych talibow, inicjatywy skierowane do szefow wplywowych klanow i kolejne amnestie dla indywidualnych partyzantow, aby wykruszyc ich ze struktur zbrojnego podziemia.
 }
 Predicted: {
-suche skladniki rozkrusz w mozdzierzu lub mlynku do kawy.
 we wtorek poslowie przyszli po te informacje.
 - przed spotkaniem z wybrana osoba zdecyduj sie, czy powiesz to, co masz o sobie powiedziec z wlasnej inicjatywy (sam poruszajac temat), czy poczekasz na nadarzajaca sie okazje (obie wersje sa dobre).
 bezcenne widziec jak sralon robi do czego jest przeznaczony.
@@ -1989,6 +2024,7 @@ szacunkowo roznica czasowa tych czynnosci wyniesie 8-10 miesiecy i przez ten cza
 zwielokrotnialo to o taki czynnik predkosc dostepu do pamieci ram karty, bez koniecznosci stosowania bardzo drogich dwuportowych ukladow vram.
 gdy pod blokiem na ul. chylonskiej, stojacym najblizej skrzyzowania, krotko po tym zawyly syreny wozow strazackich, zaciekawieni mieszkancy wylegli z domow, aby zorientowac sie, co sie stalo.
 latwo jest z dziennikarskich pozycji dywagowac o polityce i kazde zaniepokojenie o los kraju zbywac obrazliwymi pomowieniami.
+dlatego od trzech lat trwaja zabiegi wokol umiarkowanych talibow, inicjatywy skierowane do szefow wplywowych klanow i kolejne amnestie dla indywidualnych partyzantow, aby wykruszyc ich ze struktur zbrojnego podziemia.
 }
 False positives: {
 ile i jak pracuja sprzedawcy kredytow i kart kredytowych, telefonow komorkowych, witryn www itd.
@@ -1998,7 +2034,6 @@ ile i jak pracuja sprzedawcy kredytow i kart kredytowych, telefonow komorkowych,
 }
 
 Expected: {
-owszem, gora ma wszedzie dobrze, ale ja wlasnie przeczytalem alarmistyczny artykul gaby dunn, ktora sama probuje zyskac popularnosc jako blogerka i autorka filmow na youtubie.
 kogo nie ciekawi zycie za klasztorna furta, albo to jak konstruuje sie zegar sloneczny lub robi papier?
 ciekawi mnie, ze panstwo tak sie troszczy o swoich obywateli.
 - mamy na pokladzie mase latajacych ryb - faksowano z brytyjskiego jachtu "dolphin & youth" do bazy wyscigu w southampton.
@@ -2008,9 +2043,9 @@ jakis miesiac przed przegladem, kiedy wszyscy bywalcy i zurnalisci egzaltowali s
 - naprawde poszedlbys ze mna? - chlipal gola.
 gdy komunizm zbankrutowal, budynek kupil za niewielkie pieniadze przedsiebiorczy biznesmen i zamienil go na osrodek wypoczynkowy.
 gorzej bylo na jesieni, bo wszyscy zaczynali blednac na mysl o maturze,
+formatujac dysk komputera utracilem bazy danych osob wspierajacych finansowo misje oraz rodzin z calego swiata, ktore adoptowaly na odleglosc dzieci, by finansowac ich nauke.
 }
 Predicted: {
-owszem, gora ma wszedzie dobrze, ale ja wlasnie przeczytalem alarmistyczny artykul gaby dunn, ktora sama probuje zyskac popularnosc jako blogerka i autorka filmow na youtubie.
 kogo nie ciekawi zycie za klasztorna furta, albo to jak konstruuje sie zegar sloneczny lub robi papier?
 ciekawi mnie, ze panstwo tak sie troszczy o swoich obywateli.
 - mamy na pokladzie mase latajacych ryb - faksowano z brytyjskiego jachtu "dolphin & youth" do bazy wyscigu w southampton.
@@ -2020,17 +2055,19 @@ jakis miesiac przed przegladem, kiedy wszyscy bywalcy i zurnalisci egzaltowali s
 - naprawde poszedlbys ze mna?
 - chlipal gola.
 gdy komunizm zbankrutowal, budynek kupil za niewielkie pieniadze przedsiebiorczy biznesmen i zamienil go na osrodek wypoczynkowy.
-gorzej bylo na jesieni, bo wszyscy zaczynali blednac na mysl o maturze,
+gorzej bylo na jesieni, bo wszyscy zaczynali blednac na mysl o maturze, formatujac dysk komputera utracilem bazy danych osob wspierajacych finansowo misje oraz rodzin z calego swiata, ktore adoptowaly na odleglosc dzieci, by finansowac ich nauke.
 }
 False positives: {
 - naprawde poszedlbys ze mna?
 - chlipal gola.
+gorzej bylo na jesieni, bo wszyscy zaczynali blednac na mysl o maturze, formatujac dysk komputera utracilem bazy danych osob wspierajacych finansowo misje oraz rodzin z calego swiata, ktore adoptowaly na odleglosc dzieci, by finansowac ich nauke.
 } False negatives: {
 - naprawde poszedlbys ze mna? - chlipal gola.
+gorzej bylo na jesieni, bo wszyscy zaczynali blednac na mysl o maturze,
+formatujac dysk komputera utracilem bazy danych osob wspierajacych finansowo misje oraz rodzin z calego swiata, ktore adoptowaly na odleglosc dzieci, by finansowac ich nauke.
 }
 
 Expected: {
-otoz pan profesor, pykajac z namyslem fajke, mial mnie komplementowac, ze moje pisarstwo jest "szczere".
 w dniu, w ktorym je przywieziono burmistrz faksowal do dyrektora szpitala, aby ten wyznaczyl osobe odpowiedzialna za przyjecie lozek.
 - ale jak ula rzucila chleb, to on sie przestraszyl duzo mniej, tylko tyle, ze sie troche cofnal - rzekla pestka.
 plan cechowal sie godna podziwu prostota i byl, jak mniemano, doskonaly.
@@ -2040,9 +2077,9 @@ z kolei sm lobzow boryka sie z tym, iz pracownicy firm sprzatajacych, z ktorych 
 nie dam sobie w kasze dmuchac! - przechwalala sie junacko.
 w pierwszych zajeciach uczestniczylo tylko 15 pilkarzy, bo niektorzy mieli wczesniej wykupione wczasy i nadal bycza sie gdzies w cieplych krajach.
 rejony sasiadujace z nia pustynnieja najszybciej w kierunku poludniowym, w kierunku chin.
+dalsze ogledziny prasy nie wniosly juz nic nowego, tyle tylko, ze dane o liczbie ofiar i liczbie poszkodowanych odbiegaly od siebie w poszczegolnych dziennikach, czego nie omieszkal odnotowac w tabeli.
 }
 Predicted: {
-otoz pan profesor, pykajac z namyslem fajke, mial mnie komplementowac, ze moje pisarstwo jest "szczere".
 w dniu, w ktorym je przywieziono burmistrz faksowal do dyrektora szpitala, aby ten wyznaczyl osobe odpowiedzialna za przyjecie lozek.
 - ale jak ula rzucila chleb, to on sie przestraszyl duzo mniej, tylko tyle, ze sie troche cofnal - rzekla pestka.
 plan cechowal sie godna podziwu prostota i byl, jak mniemano, doskonaly.
@@ -2053,6 +2090,7 @@ nie dam sobie w kasze dmuchac!
 - przechwalala sie junacko.
 w pierwszych zajeciach uczestniczylo tylko 15 pilkarzy, bo niektorzy mieli wczesniej wykupione wczasy i nadal bycza sie gdzies w cieplych krajach.
 rejony sasiadujace z nia pustynnieja najszybciej w kierunku poludniowym, w kierunku chin.
+dalsze ogledziny prasy nie wniosly juz nic nowego, tyle tylko, ze dane o liczbie ofiar i liczbie poszkodowanych odbiegaly od siebie w poszczegolnych dziennikach, czego nie omieszkal odnotowac w tabeli.
 }
 False positives: {
 nie dam sobie w kasze dmuchac!
@@ -2062,7 +2100,6 @@ nie dam sobie w kasze dmuchac! - przechwalala sie junacko.
 }
 
 Expected: {
-kiedy wychodzicie z lozka, jak za dotknieciem czarodziejskiej rozdzki znowu stajecie sie kumplami: przez drzwi przepchnie sie pierwszy ten, kto ma lepszy refleks, na gorskiej wycieczce plecak, spiwor i karimate niesiesz sama, bo to wyrabia miesnie, dla lepszego treningu on dociaza cie jeszcze piecioma butelkami piwa.
 klub aranzuje spotkania miedzy nauczycielami, ktorzy wymieniaja pedagogiczne doswiadczenia, oraz miedzy przedszkolakami, ktorym zabawy z wychowankami z innych placowek dostarczaja wielu pozytywnych wrazen.
 mozna na chwile korektor? - kolejka studentow wylegla juz z pomieszczenia na korytarz.
 znajac tego rodzaju formuly, kabalisci mogli dzialac (to znaczy pomagac biala magia lub szkodzic czarna), na przyklad na oczy, intonujac odpowiednim tonem litere szin, w pierwszy dzien tygodnia, w godzinie panowania jowisza, pod auspicjami saturna, ktoremu w symbolice odpowiada prawe oko.
@@ -2072,9 +2109,9 @@ igor kalat (ingwar@rpg.pl) napisal: jak bedzie mial algrytm zmieniajacy uklad kl
 jak w miare sprawnie i szybko odwiedzic szwajcarie indochin - bangkok, zajrzec na targ wodny gdzie za grosze mozna zakupic mniej, lub bardziej egzotyczne owoce, spotkac sie z czerwonymi khmerami i spojrzec w oczy buddzie z siodmego nieba?
 chocbys nie wiem jak sie opierala, musisz, ptaszeczku, musisz!
 pamietaj, ze swiatlomierz nie jest cechowany na snieg, i trzeba zawsze dac wiecej swiatla, niz jemu sie wydaje.
+- juz my wam wybijemy z glowy to lenistwo - dudnil basem kargul, owijajac sobie warkocz corki wokol reki jak postronek, na ktorym prowadzilo sie krowy z pastwiska do obory.
 }
 Predicted: {
-kiedy wychodzicie z lozka, jak za dotknieciem czarodziejskiej rozdzki znowu stajecie sie kumplami: przez drzwi przepchnie sie pierwszy ten, kto ma lepszy refleks, na gorskiej wycieczce plecak, spiwor i karimate niesiesz sama, bo to wyrabia miesnie, dla lepszego treningu on dociaza cie jeszcze piecioma butelkami piwa.
 klub aranzuje spotkania miedzy nauczycielami, ktorzy wymieniaja pedagogiczne doswiadczenia, oraz miedzy przedszkolakami, ktorym zabawy z wychowankami z innych placowek dostarczaja wielu pozytywnych wrazen.
 mozna na chwile korektor?
 - kolejka studentow wylegla juz z pomieszczenia na korytarz.
@@ -2085,6 +2122,7 @@ igor kalat (ingwar@rpg.pl) napisal: jak bedzie mial algrytm zmieniajacy uklad kl
 jak w miare sprawnie i szybko odwiedzic szwajcarie indochin - bangkok, zajrzec na targ wodny gdzie za grosze mozna zakupic mniej, lub bardziej egzotyczne owoce, spotkac sie z czerwonymi khmerami i spojrzec w oczy buddzie z siodmego nieba?
 chocbys nie wiem jak sie opierala, musisz, ptaszeczku, musisz!
 pamietaj, ze swiatlomierz nie jest cechowany na snieg, i trzeba zawsze dac wiecej swiatla, niz jemu sie wydaje.
+- juz my wam wybijemy z glowy to lenistwo - dudnil basem kargul, owijajac sobie warkocz corki wokol reki jak postronek, na ktorym prowadzilo sie krowy z pastwiska do obory.
 }
 False positives: {
 mozna na chwile korektor?
@@ -2094,7 +2132,6 @@ mozna na chwile korektor? - kolejka studentow wylegla juz z pomieszczenia na kor
 }
 
 Expected: {
-wakacje juz pukaja do drzwi, tylko patrzec, jak pojedzie nad morze z grzeskiem i ania...
 kandia, bo tak nazywali to miasto, przez cale wieki uchodzila za perle weneckiego berla.
 poligon jest nam potrzebny, ale nie chcemy straszyc swoimi planami ludzi i wysiedlac ich stad kosztem naszych celow.
 widziano ich czesto razem, jak przechadzali sie reka w reke nad rzeka, to znow wyplywali gdzies lodzia, aby zniknac na skraju lasu.
@@ -2104,9 +2141,9 @@ to wcale nie bylo przyjemne ani romantyczne, bo wokol wszedzie strzelaly gejzery
 tu ksiaze przyzwal kucharza do sali i zaczal go mocno strofowac za to, ze nie dopiekl zwierzyny - kucharz sie tlumaczyl po wlosku, a ze mi ten jezyk nie byl obcym, zrozumialem, co mowil, i bylem wielce ciekawy, co sie w drugich pasztetach okaze.
 jest to spowodowane wrodzona czujnoscia ww. p. jasia, ktory przydybal mnie, gdym nieopatrznie odpisywal dla was potrawy z karty.
 - smierc! - i rozgniotlem mu piescia nos.
+co mnie z lekka zawiodlo, to brak wykonan tych piosenek, jak: "everlasting", "ai no melody", "the power of smile", "amazing grace", "ave maria", "karma", "il mare di suoni", "time to say goodbye", "happy birthday to me", "without you here" (ten ostatni akurat moglby spokojnie zostac zagrany na gitarze) i mnostwa innych.
 }
 Predicted: {
-wakacje juz pukaja do drzwi, tylko patrzec, jak pojedzie nad morze z grzeskiem i ania...
 kandia, bo tak nazywali to miasto, przez cale wieki uchodzila za perle weneckiego berla.
 poligon jest nam potrzebny, ale nie chcemy straszyc swoimi planami ludzi i wysiedlac ich stad kosztem naszych celow.
 widziano ich czesto razem, jak przechadzali sie reka w reke nad rzeka, to znow wyplywali gdzies lodzia, aby zniknac na skraju lasu.
@@ -2118,6 +2155,7 @@ jest to spowodowane wrodzona czujnoscia ww.
 p. jasia, ktory przydybal mnie, gdym nieopatrznie odpisywal dla was potrawy z karty.
 - smierc!
 - i rozgniotlem mu piescia nos.
+co mnie z lekka zawiodlo, to brak wykonan tych piosenek, jak: "everlasting", "ai no melody", "the power of smile", "amazing grace", "ave maria", "karma", "il mare di suoni", "time to say goodbye", "happy birthday to me", "without you here" (ten ostatni akurat moglby spokojnie zostac zagrany na gitarze) i mnostwa innych.
 }
 False positives: {
 jest to spowodowane wrodzona czujnoscia ww.
@@ -2130,7 +2168,6 @@ jest to spowodowane wrodzona czujnoscia ww. p. jasia, ktory przydybal mnie, gdym
 }
 
 Expected: {
-schronila sie w swym dopiero co urodzonym synu.
 wszyscy mieszkaja teraz tutaj, rozlozyli sie w 5 dzielnicach new jersey.
 gdzies w glebi siebie wiesz, ze mowie prawde.
 wartosc aktualna i wartosc poprzednia znajduja sie poza wartosciami granicznymi ostrzezenia, ale w ramach wartosci granicznych dzialania,
@@ -2140,15 +2177,16 @@ mysle, ze praktykuje jakis swiecki katolicyzm, ktory wymaga uswiecania pewnych a
 obiecuje zabrac nasze imperium na nowy poziom wielkosci.
 nie chce, by padlo slowo: oszustwo.
 stala nieruchomo, a garrett po raz drugi w ciagu ostatnich kilku minut poczul sie nieswojo w jej obecnosci.
+48 jednoczesne rozliczenie dwoch instrumentow finansowych moze wystapic, na przyklad, jako operacja przeprowadzona przez izbe rozliczeniowa na zorganizowanym rynku finansowym, albo jako bezposrednia wymiana.
 }
 Predicted: {
-schronila sie w swym dopiero co urodzonym synu.
 wszyscy mieszkaja teraz tutaj, rozlozyli sie w 5 dzielnicach new jersey.
 gdzies w glebi siebie wiesz, ze mowie prawde.
 wartosc aktualna i wartosc poprzednia znajduja sie poza wartosciami granicznymi ostrzezenia, ale w ramach wartosci granicznych dzialania, natomiast profil zmniejszania poziomu pozostalosci w nerkach wskazywal na pewne nieregularnosci.
 bylo wiele pomyslow, ktore przyniosly nam ostatnie miesiace mysle, ze praktykuje jakis swiecki katolicyzm, ktory wymaga uswiecania pewnych aspektow codziennego zycia obiecuje zabrac nasze imperium na nowy poziom wielkosci.
 nie chce, by padlo slowo: oszustwo.
 stala nieruchomo, a garrett po raz drugi w ciagu ostatnich kilku minut poczul sie nieswojo w jej obecnosci.
+48 jednoczesne rozliczenie dwoch instrumentow finansowych moze wystapic, na przyklad, jako operacja przeprowadzona przez izbe rozliczeniowa na zorganizowanym rynku finansowym, albo jako bezposrednia wymiana.
 }
 False positives: {
 wartosc aktualna i wartosc poprzednia znajduja sie poza wartosciami granicznymi ostrzezenia, ale w ramach wartosci granicznych dzialania, natomiast profil zmniejszania poziomu pozostalosci w nerkach wskazywal na pewne nieregularnosci.
@@ -2162,7 +2200,38 @@ obiecuje zabrac nasze imperium na nowy poziom wielkosci.
 }
 
 Expected: {
-wladze hongkongu dostarczyly nowe druki pozwolen i swiadectw pochodzenia.
+uwzgledniajac jednak powody wyrazone w motywie (67) powyzej trendow tych nie mozna uznac za reprezentatywne.
+daniel, znalazlysmy mile miejsce, gdzie mozesz dzisiaj spac.
+postapiliscie wlasciwie, lecz gdybyscie zadzialali wczesniej, to udaloby sie uniknac wielu rzeczy, ktore wymagaja teraz naprawienia.
+drogi gaz oznacza wowczas droga elektrycznosc....
+instytucja kredytowa wykazuje wlasciwym organom, ze przeprowadzone testy warunkow skrajnych sa adekwatne do oceny omawianych ryzyk.
+to tylko maly krok; znam doskonale jego rozmiar; jestem swiadomy, ze polityka to nieustanny wysilek, a kiedy jedno zadanie sie konczy, zaraz znajdzie sie nastepne.
+zgadzam sie z panem poslem catania w kwestii koniecznosci polepszenia wspolpracy z urzednikami granicznymi, odpowiedniego ich szkolenia i uswiadamiania w zagadnieniach azylowych.
+nie zostalo to wykluczone w obecnym projekcie sprawozdania przyjetym przez komisje.
+dowody przemawiajace przeciwko niemu sa watpliwe, bowiem opieraja sie o niepewna identyfikacje i oswiadczenia rzekomo pozyskane przez grecka policje od jego przyjaciol.
+czas trwania programu pomocy lub przyznanej pomocy indywidualnej: od 2010 r. do 2012 r.
+}
+Predicted: {
+uwzgledniajac jednak powody wyrazone w motywie (67) powyzej trendow tych nie mozna uznac za reprezentatywne.
+daniel, znalazlysmy mile miejsce, gdzie mozesz dzisiaj spac.
+postapiliscie wlasciwie, lecz gdybyscie zadzialali wczesniej, to udaloby sie uniknac wielu rzeczy, ktore wymagaja teraz naprawienia.
+drogi gaz oznacza wowczas droga elektrycznosc....
+instytucja kredytowa wykazuje wlasciwym organom, ze przeprowadzone testy warunkow skrajnych sa adekwatne do oceny omawianych ryzyk.
+to tylko maly krok; znam doskonale jego rozmiar; jestem swiadomy, ze polityka to nieustanny wysilek, a kiedy jedno zadanie sie konczy, zaraz znajdzie sie nastepne.
+zgadzam sie z panem poslem catania w kwestii koniecznosci polepszenia wspolpracy z urzednikami granicznymi, odpowiedniego ich szkolenia i uswiadamiania w zagadnieniach azylowych.
+nie zostalo to wykluczone w obecnym projekcie sprawozdania przyjetym przez komisje.
+dowody przemawiajace przeciwko niemu sa watpliwe, bowiem opieraja sie o niepewna identyfikacje i oswiadczenia rzekomo pozyskane przez grecka policje od jego przyjaciol.
+czas trwania programu pomocy lub przyznanej pomocy indywidualnej: od 2010 r.
+do 2012 r.
+}
+False positives: {
+czas trwania programu pomocy lub przyznanej pomocy indywidualnej: od 2010 r.
+do 2012 r.
+} False negatives: {
+czas trwania programu pomocy lub przyznanej pomocy indywidualnej: od 2010 r. do 2012 r.
+}
+
+Expected: {
 jednak nieznaczny gest wladcy zatrzymal go na miejscu.
 wniosek zmienia art. 2 ust. 2, rozszerzajac zakres rekompensat dla inwestorow z tytulu roszczen zwiazanych z upadloscia przedsiebiorstwa dotyczacych zwrotu naleznych instrumentow finansowych, aby obejmowaly upadlosc powiernika bedacego osoba trzecia.
 wygrzebalem stara fajke, ktora czasami lubie sie pobawic, nabilem, zapalilem, pyknalem i zadumalem sie.
@@ -2172,9 +2241,9 @@ menadzer z jego poprzedniej restauracji chce zeznawac.
 - dwa gigabajty (gb) pamieci systemowej;
 jestesmy w trakcie prob naszej nowej sztuki.
 powinnismy rowniez przedyskutowac propozycje przedstawiona przez pana posla simpsona w sprawie funduszu rezerw na odszkodowania.
+jednakze tym, czego nadal nie uzyskano jest rzeczywista zmiana postawy wszystkich zainteresowanych stron: tworcow polityki, przedsiebiorstw oraz ogolu spoleczenstwa.
 }
 Predicted: {
-wladze hongkongu dostarczyly nowe druki pozwolen i swiadectw pochodzenia.
 jednak nieznaczny gest wladcy zatrzymal go na miejscu.
 wniosek zmienia art. 2 ust. 2, rozszerzajac zakres rekompensat dla inwestorow z tytulu roszczen zwiazanych z upadloscia przedsiebiorstwa dotyczacych zwrotu naleznych instrumentow finansowych, aby obejmowaly upadlosc powiernika bedacego osoba trzecia.
 wygrzebalem stara fajke, ktora czasami lubie sie pobawic, nabilem, zapalilem, pyknalem i zadumalem sie.
@@ -2182,6 +2251,7 @@ po uznaniu niektorych roszczen i skorygowaniu obliczen wyznaczona w koncu wielko
 menadzer z jego poprzedniej restauracji chce zeznawac.
 - dwa gigabajty (gb) pamieci systemowej; jestesmy w trakcie prob naszej nowej sztuki.
 powinnismy rowniez przedyskutowac propozycje przedstawiona przez pana posla simpsona w sprawie funduszu rezerw na odszkodowania.
+jednakze tym, czego nadal nie uzyskano jest rzeczywista zmiana postawy wszystkich zainteresowanych stron: tworcow polityki, przedsiebiorstw oraz ogolu spoleczenstwa.
 }
 False positives: {
 po uznaniu niektorych roszczen i skorygowaniu obliczen wyznaczona w koncu wielkosc dumpingu wyrazona jako procent ceny netto cif na granicy wspolnoty jest nastepujaca: z aktywacja metaboliczna lub bez, adefowir nie wykazywal dzialania mutagennego w testach mutagennosci na salmonella typhimurium (ames) oraz escherichia coli.
@@ -2194,7 +2264,6 @@ jestesmy w trakcie prob naszej nowej sztuki.
 }
 
 Expected: {
-spotkanie mialo byc rownie bezpieczne jak wesele.
 osiagniecia projektu rusera sa jeszcze bardziej wyrazne, gdy wezmie sie pod uwage calkowity budzet przeznaczony dla tej jednorocznej inicjatywy, ktory wynosil 119670 euro.
 w tabeli 8 przedstawiono prognozowane obroty oraz zyski/straty na lata 2000-2007
 rada europejska w sewilli w dniach 21 i 22 czerwca 2002 r. wyrazila potrzebe zdecydowanego dzialania w celu zwalczania handlu ludzmi.
@@ -2204,9 +2273,9 @@ uklekla przed nim i bez slowa wziela go za rece.
 badz kpiaca jak chcesz, ale tony uslyszy kazde slowo, ktore powiesz.
 pan musharraf bedzie naszym gosciem i powinien znac stanowisko parlamentu w sprawie sytuacji w jego kraju, abysmy mogli omowic z nim przedmiotowa sprawe.
 byl dziecieca twarza polo dziesiec lat temu.
+brak jest przepisow wspolnotowych, ktore obejmowalyby lancuch dostaw poza wyzej okreslonymi obszarami.
 }
 Predicted: {
-spotkanie mialo byc rownie bezpieczne jak wesele.
 osiagniecia projektu rusera sa jeszcze bardziej wyrazne, gdy wezmie sie pod uwage calkowity budzet przeznaczony dla tej jednorocznej inicjatywy, ktory wynosil 119670 euro.
 w tabeli 8 przedstawiono prognozowane obroty oraz zyski/straty na lata 2000-2007 rada europejska w sewilli w dniach 21 i 22 czerwca 2002 r.
 wyrazila potrzebe zdecydowanego dzialania w celu zwalczania handlu ludzmi.
@@ -2216,6 +2285,7 @@ uklekla przed nim i bez slowa wziela go za rece.
 badz kpiaca jak chcesz, ale tony uslyszy kazde slowo, ktore powiesz.
 pan musharraf bedzie naszym gosciem i powinien znac stanowisko parlamentu w sprawie sytuacji w jego kraju, abysmy mogli omowic z nim przedmiotowa sprawe.
 byl dziecieca twarza polo dziesiec lat temu.
+brak jest przepisow wspolnotowych, ktore obejmowalyby lancuch dostaw poza wyzej okreslonymi obszarami.
 }
 False positives: {
 w tabeli 8 przedstawiono prognozowane obroty oraz zyski/straty na lata 2000-2007 rada europejska w sewilli w dniach 21 i 22 czerwca 2002 r.
@@ -2226,7 +2296,6 @@ rada europejska w sewilli w dniach 21 i 22 czerwca 2002 r. wyrazila potrzebe zde
 }
 
 Expected: {
-u niektorych gatunkow obserwowano sercowo-naczyniowe dzialania niepozadane i zmiany hematologiczne.
 po pierwsze, bank centralny musi zapewnic plynnosc bankom lokalnym.
 wersja ujednolicona wytycznych ebc/2000/6 z dnia 20 lipca 2000 r. w sprawie wykonania art. 52 statutu europejskiego systemu bankow centralnych i europejskiego banku centralnego po zakonczeniu okresu przejsciowego, zmienionych wytycznymi ebc/2001/10
 poniewaz przechodzenie z jednego stanu skupienia do drugiego w przypadku wielu substancji zachodzi w szerokim zakresie temperatury, czesto opisuje sie go jako zakres temperatury topnienia.
@@ -2236,9 +2305,9 @@ z gospodarczego punktu widzenia przetworstwo tytoniu pozostaje jedna z najwaznie
 28 - zobacz motyw pierwszy, drugi, piaty i dziewiaty dyrektywy 90/313.
 " osiemnascie miesiecy temu uprzedzalismy komisje europejska o trudnosciach, jakie mielismy z naszym partnerem helmico w zwiazku z oboma wspomnianymi projektami.
 dlaczego chuck mysli, ze moze tu palic.
+jednostka ta wykorzystywana jest do analizy przeplywow miedzygaleziowych, poniewaz dokladnie koresponduje z typem dzialalnosci.
 }
 Predicted: {
-u niektorych gatunkow obserwowano sercowo-naczyniowe dzialania niepozadane i zmiany hematologiczne.
 po pierwsze, bank centralny musi zapewnic plynnosc bankom lokalnym.
 wersja ujednolicona wytycznych ebc/2000/6 z dnia 20 lipca 2000 r. w sprawie wykonania art. 52 statutu europejskiego systemu bankow centralnych i europejskiego banku centralnego po zakonczeniu okresu przejsciowego, zmienionych wytycznymi ebc/2001/10 poniewaz przechodzenie z jednego stanu skupienia do drugiego w przypadku wielu substancji zachodzi w szerokim zakresie temperatury, czesto opisuje sie go jako zakres temperatury topnienia.
 nie ruszajac glowa, nie robiac nic niezwyklego, medrzec wstal i jednym krokiem przeszedl na platforme obok.
@@ -2247,6 +2316,7 @@ z gospodarczego punktu widzenia przetworstwo tytoniu pozostaje jedna z najwaznie
 28 - zobacz motyw pierwszy, drugi, piaty i dziewiaty dyrektywy 90/313.
 " osiemnascie miesiecy temu uprzedzalismy komisje europejska o trudnosciach, jakie mielismy z naszym partnerem helmico w zwiazku z oboma wspomnianymi projektami.
 dlaczego chuck mysli, ze moze tu palic.
+jednostka ta wykorzystywana jest do analizy przeplywow miedzygaleziowych, poniewaz dokladnie koresponduje z typem dzialalnosci.
 }
 False positives: {
 wersja ujednolicona wytycznych ebc/2000/6 z dnia 20 lipca 2000 r. w sprawie wykonania art. 52 statutu europejskiego systemu bankow centralnych i europejskiego banku centralnego po zakonczeniu okresu przejsciowego, zmienionych wytycznymi ebc/2001/10 poniewaz przechodzenie z jednego stanu skupienia do drugiego w przypadku wielu substancji zachodzi w szerokim zakresie temperatury, czesto opisuje sie go jako zakres temperatury topnienia.
@@ -2256,7 +2326,38 @@ poniewaz przechodzenie z jednego stanu skupienia do drugiego w przypadku wielu s
 }
 
 Expected: {
-tak, mialam czas na jej przestudiowanie.
+juz pozno, musze jeszcze cos zrobic.
+opowiem panstwu krotka anegdote na ten temat.
+komisja europejska ma w tej mierze racje.
+233 nie ulega watpliwosci, ze koncentracja w zmienionej formie poprawilaby znacznie sytuacje na rynkach gazu.
+jestem znanym lekarzem w szpitalu petera benta w brigham.
+ostatecznie tempo dazenia chorwacji w kierunku unii europejskiej bedzie zalezalo od umiejetnosci tego panstwa w spelnianiu wszystkich niezbednych warunkow w oparciu o jego zalety.
+zespol oceanlab opracowal i skonstruowal sprzet wykorzystywany w trakcie badan.
+tak, gdyby patrzyl sie na ciebie za duzo, nie bylby sie w stanie kontrolowac.
+mamy tu do czynienia z pewna doza europejskiej solidarnosci, ktora nalezy docenic.
+sekcja 2 - pozostale sluzby trybunalu (art. 20-23)
+}
+Predicted: {
+juz pozno, musze jeszcze cos zrobic.
+opowiem panstwu krotka anegdote na ten temat.
+komisja europejska ma w tej mierze racje.
+233 nie ulega watpliwosci, ze koncentracja w zmienionej formie poprawilaby znacznie sytuacje na rynkach gazu.
+jestem znanym lekarzem w szpitalu petera benta w brigham.
+ostatecznie tempo dazenia chorwacji w kierunku unii europejskiej bedzie zalezalo od umiejetnosci tego panstwa w spelnianiu wszystkich niezbednych warunkow w oparciu o jego zalety.
+zespol oceanlab opracowal i skonstruowal sprzet wykorzystywany w trakcie badan.
+tak, gdyby patrzyl sie na ciebie za duzo, nie bylby sie w stanie kontrolowac.
+mamy tu do czynienia z pewna doza europejskiej solidarnosci, ktora nalezy docenic.
+sekcja 2 - pozostale sluzby trybunalu (art.
+20-23)
+}
+False positives: {
+sekcja 2 - pozostale sluzby trybunalu (art.
+20-23)
+} False negatives: {
+sekcja 2 - pozostale sluzby trybunalu (art. 20-23)
+}
+
+Expected: {
 celem jest cos, co nazywamy swinskim rajem.
 wiem, ze popadasz w depresje, ale daj spokoj!
 polityka dotyczaca migracji bedzie wymagala wielu skoordynowanych celow na szczeblu calej unii europejskiej.
@@ -2266,9 +2367,9 @@ prowadzilem wzdluz w moim samochodzie...
 posiedzenie zostalo zamkniete o godzinie 23.50.
 ale jest ktos kto chcialby sie z toba spotkac.
 rowniez tresc tej ostatniej jest podobna do tresci decyzji ramowej 2003/80, poniewaz czyny karalne w obu przypadkach dotycza zrzutu substancji zanieczyszczajacych.
+jestem pewna, ze nie sypiasz samotnie w londynie.
 }
 Predicted: {
-tak, mialam czas na jej przestudiowanie.
 celem jest cos, co nazywamy swinskim rajem.
 wiem, ze popadasz w depresje, ale daj spokoj!
 polityka dotyczaca migracji bedzie wymagala wielu skoordynowanych celow na szczeblu calej unii europejskiej.
@@ -2277,6 +2378,7 @@ prowadzilem wzdluz w moim samochodzie...
 posiedzenie zostalo zamkniete o godzinie 23.50.
 ale jest ktos kto chcialby sie z toba spotkac.
 rowniez tresc tej ostatniej jest podobna do tresci decyzji ramowej 2003/80, poniewaz czyny karalne w obu przypadkach dotycza zrzutu substancji zanieczyszczajacych.
+jestem pewna, ze nie sypiasz samotnie w londynie.
 }
 False positives: {
 - lokalizacje kluczowe, np. odcinki neutralne calkowity budzet programu wynosi 614 milionow euro, a inwestycje z unii europejskiej - 307 milionow euro.
@@ -2286,7 +2388,36 @@ calkowity budzet programu wynosi 614 milionow euro, a inwestycje z unii europejs
 }
 
 Expected: {
-wlasciwe byloby, gdyby przed przyjeciem ustawy przeprowadzono szersze konsultacje i wypracowano konsensus.
+wydatki ekspertow zaproszonych przez komisje do uczestnictwa, w zakresie ich kompetencji, w spotkaniach komisji lub jej podkomisji czy tez komitetow sa pokrywane z budzetu komisji.
+termin wyznaczony na dostosowanie prawa wewnetrznego do dyrektywy 2006/43/we uplynal w dniu 28 czerwca 2008 r.
+ta ostatnia uwaza w szczegolnosci, ze prawo wspolnotowe nie stosuje sie do tego przypadku.
+potrzebujemy nowych aktualnych danych statystycznych w tym zakresie.
+placze, gdy chcemy go z niego wyjac, wiec jest tam caly czas.
+w miare czerpania korzysci ekonomicznych ze skladnika wartosci niematerialnych, obniza sie wartosc bilansowa skladnika aktywow w celu odzwierciedlenia tego procesu.
+pytania od 50 do 53 zostana rozpatrzone na pismie.
+rodzina hamiltona nie miala kontaktu z redem od lat.
+niezamierzone zmiany w podstawowym zachowaniu organizmow, na przyklad zmiany w rozrodczosci, liczbie potomstwa, wzroscie zdolnosci zachowawczych i przetrwania nasion,
+zatem opisany w pkt 34 niniejszego wyroku wzrost przywozu niezatwierdzonych produktow leczniczych jest malo prawdopodobny.
+}
+Predicted: {
+wydatki ekspertow zaproszonych przez komisje do uczestnictwa, w zakresie ich kompetencji, w spotkaniach komisji lub jej podkomisji czy tez komitetow sa pokrywane z budzetu komisji.
+termin wyznaczony na dostosowanie prawa wewnetrznego do dyrektywy 2006/43/we uplynal w dniu 28 czerwca 2008 r.
+ta ostatnia uwaza w szczegolnosci, ze prawo wspolnotowe nie stosuje sie do tego przypadku.
+potrzebujemy nowych aktualnych danych statystycznych w tym zakresie.
+placze, gdy chcemy go z niego wyjac, wiec jest tam caly czas.
+w miare czerpania korzysci ekonomicznych ze skladnika wartosci niematerialnych, obniza sie wartosc bilansowa skladnika aktywow w celu odzwierciedlenia tego procesu.
+pytania od 50 do 53 zostana rozpatrzone na pismie.
+rodzina hamiltona nie miala kontaktu z redem od lat.
+niezamierzone zmiany w podstawowym zachowaniu organizmow, na przyklad zmiany w rozrodczosci, liczbie potomstwa, wzroscie zdolnosci zachowawczych i przetrwania nasion, zatem opisany w pkt 34 niniejszego wyroku wzrost przywozu niezatwierdzonych produktow leczniczych jest malo prawdopodobny.
+}
+False positives: {
+niezamierzone zmiany w podstawowym zachowaniu organizmow, na przyklad zmiany w rozrodczosci, liczbie potomstwa, wzroscie zdolnosci zachowawczych i przetrwania nasion, zatem opisany w pkt 34 niniejszego wyroku wzrost przywozu niezatwierdzonych produktow leczniczych jest malo prawdopodobny.
+} False negatives: {
+niezamierzone zmiany w podstawowym zachowaniu organizmow, na przyklad zmiany w rozrodczosci, liczbie potomstwa, wzroscie zdolnosci zachowawczych i przetrwania nasion,
+zatem opisany w pkt 34 niniejszego wyroku wzrost przywozu niezatwierdzonych produktow leczniczych jest malo prawdopodobny.
+}
+
+Expected: {
 zwiekszenie ceny o 10% zmniejsza spozycie srednio o okolo 4% wsrod osob doroslych w panstwach o wysokim dochodzie.
 musze wykorzystac kazda okazje, by odpoczac w czasie podrozy na arrakis - pomyslal.
 ponadto, aspekty bezpieczenstwa musza stanowic element wdrazania tej zasady.
@@ -2296,9 +2427,9 @@ tak ustanowiony system pomocy zostal zaaprobowany przez komisje.
 czekam na wiesci o spotkaniu od palamosa.
 - przed rozpoczeciem glosowania nad poprawka 79:
 mial swoja szanse, a mimo to wynajal jakiegos pieprzonego samca, zeby zrobil jej krzywde.
+german graphics wniosla do hoge raad der nederlanden skarge kasacyjna na orzeczenie rechtbank utrecht.
 }
 Predicted: {
-wlasciwe byloby, gdyby przed przyjeciem ustawy przeprowadzono szersze konsultacje i wypracowano konsensus.
 zwiekszenie ceny o 10% zmniejsza spozycie srednio o okolo 4% wsrod osob doroslych w panstwach o wysokim dochodzie.
 musze wykorzystac kazda okazje, by odpoczac w czasie podrozy na arrakis - pomyslal.
 ponadto, aspekty bezpieczenstwa musza stanowic element wdrazania tej zasady.
@@ -2307,6 +2438,7 @@ on ostatnio pojawial sie w moim umysle.
 tak ustanowiony system pomocy zostal zaaprobowany przez komisje.
 czekam na wiesci o spotkaniu od palamosa.
 - przed rozpoczeciem glosowania nad poprawka 79: mial swoja szanse, a mimo to wynajal jakiegos pieprzonego samca, zeby zrobil jej krzywde.
+german graphics wniosla do hoge raad der nederlanden skarge kasacyjna na orzeczenie rechtbank utrecht.
 }
 False positives: {
 - przed rozpoczeciem glosowania nad poprawka 79: mial swoja szanse, a mimo to wynajal jakiegos pieprzonego samca, zeby zrobil jej krzywde.
@@ -2316,7 +2448,6 @@ mial swoja szanse, a mimo to wynajal jakiegos pieprzonego samca, zeby zrobil jej
 }
 
 Expected: {
-jezeli inspekcja lub inspekcje, wskazane w akapicie pierwszym, wykaza, ze stan higieny nie jest odpowiedni, wlasciwy organ podejmie wlasciwe kroki.
 opis: wzor zawiera rozowe i bezowe linie, 4 strony.
 - no nie, ale nie kazdy wyglada jak biffo bear.
 nie wierze w fizyke kwantowa kiedy chodzi o sprawy sercowe.
@@ -2326,9 +2457,9 @@ nasze posiedzenia, debaty i procedura uzgadniania pozostawily mi uczucie duzego 
 w zadnym wypadku wspomniane wady nie moga naruszac miazszu owocu.
 do celow wykonania umowy nastepujace produkty uwaza sie za pochodzace z bylej jugoslowianskiej republiki macedonii:
 238 zatem obecnosc istotnych czynnikow zewnetrznych, takich jak w niniejszej sprawie przywoz z tajwanu, nie powoduje automatycznego przerwania zwiazku przyczynowego pomiedzy spornym przywozem a szkoda wyrzadzona przemyslowi wspolnotowemu.
+na poczatku nie wiedzialem jak potraktowac tego panskiego chlopaka.
 }
 Predicted: {
-jezeli inspekcja lub inspekcje, wskazane w akapicie pierwszym, wykaza, ze stan higieny nie jest odpowiedni, wlasciwy organ podejmie wlasciwe kroki.
 opis: wzor zawiera rozowe i bezowe linie, 4 strony.
 - no nie, ale nie kazdy wyglada jak biffo bear.
 nie wierze w fizyke kwantowa kiedy chodzi o sprawy sercowe.
@@ -2336,6 +2467,7 @@ wiekszosc komercyjnie dostepnych gatunkow herbaty nie odpowiada mojemu podniebie
 zmieniajace rozporzadzenie komisji (we) nr 2497/96 ustanawiajace procedury stosowania w sektorze miesa drobiowego uzgodnien przewidzianych w ukladzie o stowarzyszeniu i umowie przejsciowej miedzy wspolnota europejska a panstwem izrael nasze posiedzenia, debaty i procedura uzgadniania pozostawily mi uczucie duzego zadowolenia.
 w zadnym wypadku wspomniane wady nie moga naruszac miazszu owocu.
 do celow wykonania umowy nastepujace produkty uwaza sie za pochodzace z bylej jugoslowianskiej republiki macedonii: 238 zatem obecnosc istotnych czynnikow zewnetrznych, takich jak w niniejszej sprawie przywoz z tajwanu, nie powoduje automatycznego przerwania zwiazku przyczynowego pomiedzy spornym przywozem a szkoda wyrzadzona przemyslowi wspolnotowemu.
+na poczatku nie wiedzialem jak potraktowac tego panskiego chlopaka.
 }
 False positives: {
 zmieniajace rozporzadzenie komisji (we) nr 2497/96 ustanawiajace procedury stosowania w sektorze miesa drobiowego uzgodnien przewidzianych w ukladzie o stowarzyszeniu i umowie przejsciowej miedzy wspolnota europejska a panstwem izrael nasze posiedzenia, debaty i procedura uzgadniania pozostawily mi uczucie duzego zadowolenia.
@@ -2348,7 +2480,6 @@ do celow wykonania umowy nastepujace produkty uwaza sie za pochodzace z bylej ju
 }
 
 Expected: {
-przyjdz do kawiarni conga na alei suzuran o 9:00.
 inteligentne liczniki moga dostarczac konsumentom kompleksowe informacje na temat ich zuzycia energii i kosztow [30], umozliwiajac im czerpanie rzeczywistych korzysci z wewnetrznego rynku energii.
 moze moj nos tym razem sie myli.
 w ust. 4 akapit drugi otrzymuje brzmienie:
@@ -2358,9 +2489,9 @@ wywoz nie moze nastapic w czasie trwania takiej kontroli.
 tak wiec logistyka stala sie waznym i dynamicznym sektorem, ktory tworzy miejsca pracy, a europa posiada najbardziej prezne firmy logistyczne.
 rezolucja rady z dnia 8 lipca 1996 r. w sprawie wspolpracy miedzy administracjami w celu stosowania ustawodawstwa dotyczacego rynku wewnetrznego
 surowa, masywna twarz o'briena i uniesione cztery palce wypelnily jego pole widzenia.
+bylbym wdzieczny, gdyby prezydium udzielilo informacji na temat koniecznych srodkow.
 }
 Predicted: {
-przyjdz do kawiarni conga na alei suzuran o 9:00.
 inteligentne liczniki moga dostarczac konsumentom kompleksowe informacje na temat ich zuzycia energii i kosztow [30], umozliwiajac im czerpanie rzeczywistych korzysci z wewnetrznego rynku energii.
 moze moj nos tym razem sie myli.
 w ust. 4 akapit drugi otrzymuje brzmienie: sposrod tego, ponad 90% pochodzilo z chin, a reszta z indonezji.
@@ -2368,6 +2499,7 @@ tak czy inaczej, jej mezczyzna byl marynarzem.
 wywoz nie moze nastapic w czasie trwania takiej kontroli.
 tak wiec logistyka stala sie waznym i dynamicznym sektorem, ktory tworzy miejsca pracy, a europa posiada najbardziej prezne firmy logistyczne.
 rezolucja rady z dnia 8 lipca 1996 r. w sprawie wspolpracy miedzy administracjami w celu stosowania ustawodawstwa dotyczacego rynku wewnetrznego surowa, masywna twarz o'briena i uniesione cztery palce wypelnily jego pole widzenia.
+bylbym wdzieczny, gdyby prezydium udzielilo informacji na temat koniecznych srodkow.
 }
 False positives: {
 w ust. 4 akapit drugi otrzymuje brzmienie: sposrod tego, ponad 90% pochodzilo z chin, a reszta z indonezji.
@@ -2380,7 +2512,6 @@ surowa, masywna twarz o'briena i uniesione cztery palce wypelnily jego pole widz
 }
 
 Expected: {
-potezny tulow milesa seabrooka wypelnial mizerna w porownaniu z nim bramke.
 to tylko don francisco i jego siostra.
 najbardziej ewidentna jest kleska komisji zwiazana z przygotowaniami do akcesji tych krajow.
 wspolnota jest strona iccat od 1997 r. i zalecenia staja sie obowiazujace dla umawiajacych sie stron, ktore nie wniosly wobec nich sprzeciwu.
@@ -2390,31 +2521,29 @@ rzecznik praw obywatelskich unii europejskiej to jeden z glownych podmiotow w de
 - kochanie, on wrocil do domu.
 uwzgledniajac dyrektywe rady 2002/55/we z dnia 13 czerwca 2002 r. w sprawie obrotu materialem siewnym warzyw [4], w szczegolnosci jej art. 23 ust. 2,
 preparat metalyse stosuje sie w przeciagu 6 godzin od czasu wystapienia pierwszych objawow ataku serca.
+przyjete dzisiaj sprawozdanie wprowadza zharmonizowane przepisy techniczne dla pojazdow ciezarowych tak, aby zapewnic sprawne funkcjonowanie rynku wewnetrznego.
 }
 Predicted: {
-potezny tulow milesa seabrooka wypelnial mizerna w porownaniu z nim bramke.
 to tylko don francisco i jego siostra.
 najbardziej ewidentna jest kleska komisji zwiazana z przygotowaniami do akcesji tych krajow.
 wspolnota jest strona iccat od 1997 r. i zalecenia staja sie obowiazujace dla umawiajacych sie stron, ktore nie wniosly wobec nich sprzeciwu.
 i wiem, co bedziemy robic pozniej.
 to nie tak jak pan patel, ktory nigdy nie krzyczal i nikogo nie wypraszal.
-rzecznik praw obywatelskich unii europejskiej to jeden z glownych podmiotow w demokratycznym zyciu unii. - kochanie, on wrocil do domu.
+rzecznik praw obywatelskich unii europejskiej to jeden z glownych podmiotow w demokratycznym zyciu unii.
+- kochanie, on wrocil do domu.
 uwzgledniajac dyrektywe rady 2002/55/we z dnia 13 czerwca 2002 r.
 w sprawie obrotu materialem siewnym warzyw [4], w szczegolnosci jej art. 23 ust. 2, preparat metalyse stosuje sie w przeciagu 6 godzin od czasu wystapienia pierwszych objawow ataku serca.
+przyjete dzisiaj sprawozdanie wprowadza zharmonizowane przepisy techniczne dla pojazdow ciezarowych tak, aby zapewnic sprawne funkcjonowanie rynku wewnetrznego.
 }
 False positives: {
-rzecznik praw obywatelskich unii europejskiej to jeden z glownych podmiotow w demokratycznym zyciu unii. - kochanie, on wrocil do domu.
 uwzgledniajac dyrektywe rady 2002/55/we z dnia 13 czerwca 2002 r.
 w sprawie obrotu materialem siewnym warzyw [4], w szczegolnosci jej art. 23 ust. 2, preparat metalyse stosuje sie w przeciagu 6 godzin od czasu wystapienia pierwszych objawow ataku serca.
 } False negatives: {
-rzecznik praw obywatelskich unii europejskiej to jeden z glownych podmiotow w demokratycznym zyciu unii.
-- kochanie, on wrocil do domu.
 uwzgledniajac dyrektywe rady 2002/55/we z dnia 13 czerwca 2002 r. w sprawie obrotu materialem siewnym warzyw [4], w szczegolnosci jej art. 23 ust. 2,
 preparat metalyse stosuje sie w przeciagu 6 godzin od czasu wystapienia pierwszych objawow ataku serca.
 }
 
 Expected: {
-mam nadzieje, ze otrzyma ona mocne poparcie tej izby.
 - warunki przeprowadzania testow i przyrzady pomiarowe,
 sto milionow lat temu istnialy komary, tak jak dzisiaj.
 bede potrzebowal ludzi do jej obrony, jesli zostanie zaatakowana.
@@ -2424,9 +2553,9 @@ wlasciwa odpowiedz na "dobranoc" to "dobranoc".
 europa, w ktorej niektorzy ludzie sa wyzyskiwani przez innych, nie jest europa prawdziwie socjalna.
 to umozliwi partnerom spolecznym na poziomie europejskim przyczynienie sie, w kontekscie ich dialogu spolecznego, do roznych skladnikow zintegrowanej strategii gospodarczej i spolecznej, wlaczajac w to wymiar stalego rozwoju rozpoczety podczas rady europejskiej w lizbonie w marcu 2000 r. i uzupelniony przez rade europejska z goteborga w czerwcu 2001 r.
 istotne mutacje genetyczne przyczyniajace sie do rozwoju chorob zostaly po raz pierwszy wykryte w 1949 roku.
+podczas ostatniego dnia rozwoju, dedykowanego wnioskom, wiceminister kuby rowniez przemowil z platformy.
 }
 Predicted: {
-mam nadzieje, ze otrzyma ona mocne poparcie tej izby.
 - warunki przeprowadzania testow i przyrzady pomiarowe, sto milionow lat temu istnialy komary, tak jak dzisiaj.
 bede potrzebowal ludzi do jej obrony, jesli zostanie zaatakowana.
 jedynie w ten sposob mozemy zwiekszyc zaufanie do procesu integracji europejskiej.
@@ -2435,6 +2564,7 @@ wlasciwa odpowiedz na "dobranoc" to "dobranoc".
 europa, w ktorej niektorzy ludzie sa wyzyskiwani przez innych, nie jest europa prawdziwie socjalna.
 to umozliwi partnerom spolecznym na poziomie europejskim przyczynienie sie, w kontekscie ich dialogu spolecznego, do roznych skladnikow zintegrowanej strategii gospodarczej i spolecznej, wlaczajac w to wymiar stalego rozwoju rozpoczety podczas rady europejskiej w lizbonie w marcu 2000 r. i uzupelniony przez rade europejska z goteborga w czerwcu 2001 r.
 istotne mutacje genetyczne przyczyniajace sie do rozwoju chorob zostaly po raz pierwszy wykryte w 1949 roku.
+podczas ostatniego dnia rozwoju, dedykowanego wnioskom, wiceminister kuby rowniez przemowil z platformy.
 }
 False positives: {
 - warunki przeprowadzania testow i przyrzady pomiarowe, sto milionow lat temu istnialy komary, tak jak dzisiaj.
@@ -2444,7 +2574,6 @@ sto milionow lat temu istnialy komary, tak jak dzisiaj.
 }
 
 Expected: {
-w umowie dostawy zostala nadto przewidziana mozliwosc uzyskania od franfinance kredytu na sfinansowanie calosci zakupu.
 komisja powinna ustalic wytyczne w celu ulatwienia wprowadzenia, w szczegolnosci w malych i srednich przedsiebiorstwach, metod zapewnienia bezpieczenstwa gotowych produktow kosmetycznych, ktore nie obejmuja testow na zwierzetach.
 mowi pan tak, jakbysmy byli w stanie wojny.
 w przypadku pozyskiwania produktow we wspolnocie, zapraszane przedsiebiorstwa wybiera sie sposrod tych, ktore uczestniczyly w zaproszeniach do skladania ofert okreslonych w ust. 2.
@@ -2454,9 +2583,9 @@ mowie to, panie premierze, poniewaz to wszystko odnosi sie do europy, a szczegol
 ku jej uldze usmiechnal sie i uklonil dwornie.
 opinie wlasciwego komitetu etycznego i szczegoly zagadnien zawartych w tej opinii,
 siedzial do zmroku czytajac zwoje protokolow z senatu.
+poczawszy od lipca 1998 r., harmonogramy dzialan trzeciej umowy nie przewidywaly zadnego zadania.
 }
 Predicted: {
-w umowie dostawy zostala nadto przewidziana mozliwosc uzyskania od franfinance kredytu na sfinansowanie calosci zakupu.
 komisja powinna ustalic wytyczne w celu ulatwienia wprowadzenia, w szczegolnosci w malych i srednich przedsiebiorstwach, metod zapewnienia bezpieczenstwa gotowych produktow kosmetycznych, ktore nie obejmuja testow na zwierzetach.
 mowi pan tak, jakbysmy byli w stanie wojny.
 w przypadku pozyskiwania produktow we wspolnocie, zapraszane przedsiebiorstwa wybiera sie sposrod tych, ktore uczestniczyly w zaproszeniach do skladania ofert okreslonych w ust. 2.
@@ -2465,6 +2594,7 @@ ponadto w trakcie praktycznego zastosowania wystepuja czasem wysokie koszta i "n
 mowie to, panie premierze, poniewaz to wszystko odnosi sie do europy, a szczegolnie europejskiej wiarygodnosci.
 ku jej uldze usmiechnal sie i uklonil dwornie.
 opinie wlasciwego komitetu etycznego i szczegoly zagadnien zawartych w tej opinii, siedzial do zmroku czytajac zwoje protokolow z senatu.
+poczawszy od lipca 1998 r., harmonogramy dzialan trzeciej umowy nie przewidywaly zadnego zadania.
 }
 False positives: {
 opinie wlasciwego komitetu etycznego i szczegoly zagadnien zawartych w tej opinii, siedzial do zmroku czytajac zwoje protokolow z senatu.
@@ -2474,7 +2604,6 @@ siedzial do zmroku czytajac zwoje protokolow z senatu.
 }
 
 Expected: {
-przed obiadem jego nastroj zmienil sie o sto osiemdziesiat stopni, a w brzuchu zaleglo sie nieprzyjemne uczucie.
 na mocy umowy unia europejska pokryje polowe kosztow budowy, natomiast kazdy z pozostalych pieciu partnerow, z wyjatkiem indii, wniesie udzial w rownej wysokosci na pokrycie pozostalych wydatkow.
 po drugie, swiatowe rynki charakteryzuja sie niestabilnoscia, a wiec musimy zabezpieczyc sie poprzez wspolna polityke rolna.
 pierwsze otwiera program studiow doktoranckich i umozliwi otrzymywanie stypendiow, aczkolwiek w mniejszej kwocie, takze studentom z panstw europejskich.
@@ -2484,9 +2613,9 @@ wreszcie, mam nadzieje, ze kiedy zbudowana zostanie siec szybkich kolei, regiony
 polityka rozwoju musi zapewnic dostepnosc sily roboczej z panstw trzecich.
 2 (i) warzywa korzeniowe i bulwiaste,
 jednak nasza wrazliwosc wzmaga sie jeszcze, kiedy stykamy sie z cierpieniem istot ludzkich powodowanym wypadkami, wojna lub choroba.
+38.32 uslugi zwiazane z odzyskiem surowcow sortowanych; surowce wtorne
 }
 Predicted: {
-przed obiadem jego nastroj zmienil sie o sto osiemdziesiat stopni, a w brzuchu zaleglo sie nieprzyjemne uczucie.
 na mocy umowy unia europejska pokryje polowe kosztow budowy, natomiast kazdy z pozostalych pieciu partnerow, z wyjatkiem indii, wniesie udzial w rownej wysokosci na pokrycie pozostalych wydatkow.
 po drugie, swiatowe rynki charakteryzuja sie niestabilnoscia, a wiec musimy zabezpieczyc sie poprzez wspolna polityke rolna.
 pierwsze otwiera program studiow doktoranckich i umozliwi otrzymywanie stypendiow, aczkolwiek w mniejszej kwocie, takze studentom z panstw europejskich.
@@ -2495,6 +2624,7 @@ ale mimo to blagam o jego zycie.
 wreszcie, mam nadzieje, ze kiedy zbudowana zostanie siec szybkich kolei, regiony wschodnie zostana przynajmniej dostrzezone, poniewaz w dluzszej perspektywie jest to jedyny rodzaj transportu, ktory moze konkurowac z samochodami osobowymi.
 polityka rozwoju musi zapewnic dostepnosc sily roboczej z panstw trzecich.
 2 (i) warzywa korzeniowe i bulwiaste, jednak nasza wrazliwosc wzmaga sie jeszcze, kiedy stykamy sie z cierpieniem istot ludzkich powodowanym wypadkami, wojna lub choroba.
+38.32 uslugi zwiazane z odzyskiem surowcow sortowanych; surowce wtorne
 }
 False positives: {
 2 (i) warzywa korzeniowe i bulwiaste, jednak nasza wrazliwosc wzmaga sie jeszcze, kiedy stykamy sie z cierpieniem istot ludzkich powodowanym wypadkami, wojna lub choroba.
@@ -2504,7 +2634,6 @@ jednak nasza wrazliwosc wzmaga sie jeszcze, kiedy stykamy sie z cierpieniem isto
 }
 
 Expected: {
-jest znany z tego, ze tam sie umawia.
 nie byl przyzwyczajony do siedzenia naprzeciw swej wlasnej skrzywionej wargi!
 urzednik mianowany przez sekretariat generalny rady unii europejskiej oraz urzednik mianowany przez panstwo cariforum pelnia przemiennie przez okres 12 miesiecy funkcje sekretarza wspolnej rady.
 - srodki podjete dotychczas przez wladze wegierskie nie zapobiegna odchyleniu od zaplanowanej sciezki dostosowania programu konwergencji z maja.
@@ -2514,9 +2643,9 @@ moja grupa, grupa przymierza liberalow i demokratow na rzecz europy uwaza, ze te
 oznaczyc ilosc fosforu w probce korzystajac z krzywej wzorcowania.
 to bardzo wazne kwestie i nikt nie powinien ich pomijac.
 takie rozwiazanie pozwoli zwiekszyc efektywnosc energetyczna, a jednoczesnie zapewni miejsca pracy.
+przyczyni sie on do ochrony zdrowia naszych obywateli i z tego powodu z zadowoleniem przyjmuje jego przyjecie.
 }
 Predicted: {
-jest znany z tego, ze tam sie umawia.
 nie byl przyzwyczajony do siedzenia naprzeciw swej wlasnej skrzywionej wargi!
 urzednik mianowany przez sekretariat generalny rady unii europejskiej oraz urzednik mianowany przez panstwo cariforum pelnia przemiennie przez okres 12 miesiecy funkcje sekretarza wspolnej rady.
 - srodki podjete dotychczas przez wladze wegierskie nie zapobiegna odchyleniu od zaplanowanej sciezki dostosowania programu konwergencji z maja.
@@ -2524,6 +2653,7 @@ w sprawie wykonania rozporzadzenia (we) nr 1165/98 dotyczacego krotkoterminowych
 oznaczyc ilosc fosforu w probce korzystajac z krzywej wzorcowania.
 to bardzo wazne kwestie i nikt nie powinien ich pomijac.
 takie rozwiazanie pozwoli zwiekszyc efektywnosc energetyczna, a jednoczesnie zapewni miejsca pracy.
+przyczyni sie on do ochrony zdrowia naszych obywateli i z tego powodu z zadowoleniem przyjmuje jego przyjecie.
 }
 False positives: {
 w sprawie wykonania rozporzadzenia (we) nr 1165/98 dotyczacego krotkoterminowych statystyk w zakresie ustanowienia europejskich systemow doboru prob (szpitale, sanatoria, kliniki, jednostki medyczne, instytuty prawno-medyczne, stacje pogotowia ratunkowego) moja grupa, grupa przymierza liberalow i demokratow na rzecz europy uwaza, ze te proznie mozna skutecznie wypelnic jedynie poprzez systematyczne, szeroko zakrojone konsultacje z obywatelami.
@@ -2534,7 +2664,6 @@ moja grupa, grupa przymierza liberalow i demokratow na rzecz europy uwaza, ze te
 }
 
 Expected: {
-wysoka izba wie, ze ochrona pasazerow we wszystkich sektorach transportu jest dla mnie prawdziwym priorytetem.
 i malutcy eskimosi, ktorzy mieszkaja w malutkich iglo i sa jedzeni przez lwy.
 przepraszam pana, ale nie wpuszczamy tu czarnych.
 jako czlonek komisji rozwoju chcialbym podkreslic wage postepu w osiaganiu milenijnych celow rozwoju.
@@ -2544,9 +2673,9 @@ jednakze to samo zagadnienie nie moze jednoczesnie nalezec do wylacznej i dzielo
 te same prady i podobne wiatry sprawily, ze "santa maria" wpadla na skale, tak samo jak przedtem.
 jest to odpowiedz na sugestie zawarta w panstwa sprawozdaniu dotyczaca powolania grupy wysokiego szczebla, ktora opracowalaby rozwiazania w zakresie nadzoru europejskiego.
 kwota, o ktora obniza sie oplate, jest ustalana przez wspolnote kwartalnie.
+jest on wytwarzany technika rekombinacji dna (zgodnie z ktora do organizmu wprowadzane sa geny) w celu przeniesienia antygenow h5 (hemaglutyniny 5) i n3 (neuraminidazy 3).
 }
 Predicted: {
-wysoka izba wie, ze ochrona pasazerow we wszystkich sektorach transportu jest dla mnie prawdziwym priorytetem.
 i malutcy eskimosi, ktorzy mieszkaja w malutkich iglo i sa jedzeni przez lwy.
 przepraszam pana, ale nie wpuszczamy tu czarnych.
 jako czlonek komisji rozwoju chcialbym podkreslic wage postepu w osiaganiu milenijnych celow rozwoju.
@@ -2555,6 +2684,7 @@ jednakze to samo zagadnienie nie moze jednoczesnie nalezec do wylacznej i dzielo
 te same prady i podobne wiatry sprawily, ze "santa maria" wpadla na skale, tak samo jak przedtem.
 jest to odpowiedz na sugestie zawarta w panstwa sprawozdaniu dotyczaca powolania grupy wysokiego szczebla, ktora opracowalaby rozwiazania w zakresie nadzoru europejskiego.
 kwota, o ktora obniza sie oplate, jest ustalana przez wspolnote kwartalnie.
+jest on wytwarzany technika rekombinacji dna (zgodnie z ktora do organizmu wprowadzane sa geny) w celu przeniesienia antygenow h5 (hemaglutyniny 5) i n3 (neuraminidazy 3).
 }
 False positives: {
 programy ee, hu, sk i si zamknieto w 2007 r. wyszlismy z budynku tylnymi drzwiami dla obslugi.
@@ -2564,7 +2694,6 @@ wyszlismy z budynku tylnymi drzwiami dla obslugi.
 }
 
 Expected: {
-panstwa czlonkowskie moga uzalezniac dzialalnosc w zakresie obslugi naziemnej podmiotu swiadczacego uslugi obslugi naziemnej lub uzytkownika wykonujacego wlasna obsluge naziemna od uzyskania zgody wladz panstwowych niezaleznych od organu zarzadzajacego portu lotniczego.
 potrzebna nam jest takze kontrola przydatnosci strategii "europa 2020" w odniesieniu do naszych krajowych polityk w zakresie budzetu, podatkow, badan, energetyki, innowacji i spraw spolecznych.
 naukowcy uzyli nowej czasteczki chemicznej, srt1720, na modelach myszy, aby aktywowac sciezke sirt1 i ocenic jej role w otylosci, cukrzycy, starzeniu sie i wydolnosci.
 zrobilbym porzadek w tym miescie.
@@ -2574,9 +2703,9 @@ kiedy wracala z dalekiego lotu, masowalem jej nogi.
 biii wyatt blagal, zebym sie przylaczyl.
 - flekainid i propafenon (leki nasercowe)
 wlasnie tego dowiedzialem sie od naszego ojca w nocy.
+przepraszam... za tamto wczesniej.
 }
 Predicted: {
-panstwa czlonkowskie moga uzalezniac dzialalnosc w zakresie obslugi naziemnej podmiotu swiadczacego uslugi obslugi naziemnej lub uzytkownika wykonujacego wlasna obsluge naziemna od uzyskania zgody wladz panstwowych niezaleznych od organu zarzadzajacego portu lotniczego.
 potrzebna nam jest takze kontrola przydatnosci strategii "europa 2020" w odniesieniu do naszych krajowych polityk w zakresie budzetu, podatkow, badan, energetyki, innowacji i spraw spolecznych.
 naukowcy uzyli nowej czasteczki chemicznej, srt1720, na modelach myszy, aby aktywowac sciezke sirt1 i ocenic jej role w otylosci, cukrzycy, starzeniu sie i wydolnosci.
 zrobilbym porzadek w tym miescie.
@@ -2585,16 +2714,20 @@ wiekszosc duchow jest zadowolona odwiedzajac swoich krewnych.
 kiedy wracala z dalekiego lotu, masowalem jej nogi.
 biii wyatt blagal, zebym sie przylaczyl.
 - flekainid i propafenon (leki nasercowe) wlasnie tego dowiedzialem sie od naszego ojca w nocy.
+przepraszam...
+za tamto wczesniej.
 }
 False positives: {
 - flekainid i propafenon (leki nasercowe) wlasnie tego dowiedzialem sie od naszego ojca w nocy.
+przepraszam...
+za tamto wczesniej.
 } False negatives: {
 - flekainid i propafenon (leki nasercowe)
 wlasnie tego dowiedzialem sie od naszego ojca w nocy.
+przepraszam... za tamto wczesniej.
 }
 
 Expected: {
-odwioze tylko psy do brata i juz jestem.
 zabiore go trzy razy na twistery, zebys mogla urwac sie z domu.
 po namowach zgodzila sie przynajmniej zamieszkac u abla w drugim budynku hotelowym na czas jego nieobecnosci.
 dzieci maja mniejsza odpornosc i szybciej odwadniaja sie, dlatego sa szczegolnie zagrozone.
@@ -2604,9 +2737,9 @@ podstawowe znaczenie ma przyjecie calosciowego i proaktywnego podejscia do likwi
 - pragne wyrazic zadowolenie z faktu, ze rzecznik praw obywatelskich sprawuje swoja funkcje w sposob wywazony i energiczny, zarowno przy badaniu i rozpatrywaniu skarg, ktorych w 2006 roku bylo az 3830, jak i przy prowadzeniu i finalizowaniu dochodzen.
 i nie masz jaj zeby sie postawic przyjaciolom.
 to pokazuje, ze nawet dzisiaj stalinizm nie jest dla rosji jedynie historycznym epizodem z xx. wieku.
+skutecznosc preparatu reyataz oceniano w czterech badaniach glownych.
 }
 Predicted: {
-odwioze tylko psy do brata i juz jestem.
 zabiore go trzy razy na twistery, zebys mogla urwac sie z domu.
 po namowach zgodzila sie przynajmniej zamieszkac u abla w drugim budynku hotelowym na czas jego nieobecnosci.
 dzieci maja mniejsza odpornosc i szybciej odwadniaja sie, dlatego sa szczegolnie zagrozone.
@@ -2617,6 +2750,7 @@ w sprawie komunikatu komisji, podstawowe znaczenie ma przyjecie calosciowego i p
 i nie masz jaj zeby sie postawic przyjaciolom.
 to pokazuje, ze nawet dzisiaj stalinizm nie jest dla rosji jedynie historycznym epizodem z xx.
 wieku.
+skutecznosc preparatu reyataz oceniano w czterech badaniach glownych.
 }
 False positives: {
 - uwzgledniajac konkluzje rady do spraw ogolnych z dnia 11 pazdziernika 2004 r.
@@ -2630,7 +2764,36 @@ to pokazuje, ze nawet dzisiaj stalinizm nie jest dla rosji jedynie historycznym 
 }
 
 Expected: {
-gdy odzyskam pudelko, udaj sie na skraj lasu.
+w tych instalacjach, pewna liczba roznych paliw stosowana jest jako czynniki redukujace.
+manny ma wyrzuty sumienia, ze przez niego nie poznales sie z linda fox.
+odwrocila sie i otworzyla drzwi na korytarz.
+- dostosowanie ustawodawstwa do przepisow dorobku dotyczacych niezaleznosci banku centralnego, zakaz uprzywilejowanego dostepu organow sektora publicznego do instytucji finansowych oraz zakaz bezposredniego finansowania sektora publicznego.
+mac wzial szesc z przyniesionych tabletek i skrzywil sie z bolu, kiedy marlowe pomogl mu uniesc sie troche, zeby mogl napic sie wody z podsunietej mu do ust manierki.
+dla zachowania pewnosci prawa nalezy zatem uregulowac przydzielanie takich platnosci.
+inna kwestia, na ktorej chcialbym sie skupic, jest energia atomowa.
+kwalifikacje wymagane od czlonkow kazdej komisji odwolawczej, uprawnienia poszczegolnych czlonkow w fazie przygotowawczej do podjecia decyzji i zasady glosowania ustala komisja zgodnie z procedura okreslona w art. 54 ust. 3.
+akp-ue: lepsze partnerstwo na rzecz lepszego rozwoju
+nazwa srodka pomocy razvojne podpore pomurski regiji - regionalni cilji
+}
+Predicted: {
+w tych instalacjach, pewna liczba roznych paliw stosowana jest jako czynniki redukujace.
+manny ma wyrzuty sumienia, ze przez niego nie poznales sie z linda fox.
+odwrocila sie i otworzyla drzwi na korytarz.
+- dostosowanie ustawodawstwa do przepisow dorobku dotyczacych niezaleznosci banku centralnego, zakaz uprzywilejowanego dostepu organow sektora publicznego do instytucji finansowych oraz zakaz bezposredniego finansowania sektora publicznego.
+mac wzial szesc z przyniesionych tabletek i skrzywil sie z bolu, kiedy marlowe pomogl mu uniesc sie troche, zeby mogl napic sie wody z podsunietej mu do ust manierki.
+dla zachowania pewnosci prawa nalezy zatem uregulowac przydzielanie takich platnosci.
+inna kwestia, na ktorej chcialbym sie skupic, jest energia atomowa.
+kwalifikacje wymagane od czlonkow kazdej komisji odwolawczej, uprawnienia poszczegolnych czlonkow w fazie przygotowawczej do podjecia decyzji i zasady glosowania ustala komisja zgodnie z procedura okreslona w art. 54 ust. 3.
+akp-ue: lepsze partnerstwo na rzecz lepszego rozwoju nazwa srodka pomocy razvojne podpore pomurski regiji - regionalni cilji
+}
+False positives: {
+akp-ue: lepsze partnerstwo na rzecz lepszego rozwoju nazwa srodka pomocy razvojne podpore pomurski regiji - regionalni cilji
+} False negatives: {
+akp-ue: lepsze partnerstwo na rzecz lepszego rozwoju
+nazwa srodka pomocy razvojne podpore pomurski regiji - regionalni cilji
+}
+
+Expected: {
 taka wymiana informacji moze dotyczyc produkcji wyrobow wlokienniczych w serbii oraz handlu pomiedzy serbia i krajami trzecimi rodzajami wyrobow objetymi niniejsza umowa,, w szczegolnosci w przypadkach, gdy wspolnota ma zasadne podstawy by uwazac, ze dane wyroby moga byc przewozone tranzytem przez terytorium serbii przed ich przywozem do wspolnoty.
 sa lekarze i pielegniarki ale ja mam wiekszy problem.
 dyrektywa rady 92/83/ewg z dnia 19 pazdziernika 1992 r. w sprawie harmonizacji struktury podatkow akcyzowych od alkoholu i napojow alkoholowych
@@ -2640,9 +2803,9 @@ jednakze mimo swojego technicznego charakteru, to rozporzadzenie ma ogromne znac
 mieszkalem tu pare dekad i nie moglem zrozumiec tego faktu.
 miedzynarodowa umowa kawowa z 2001 r. zostaje niniejszym przyjeta w imieniu wspolnoty europejskiej.
 taki wspolny projekt musi skladac sie z kolektywnego dialogu opartego na rownosci i wspolnym zarzadzaniu.
+zlapalismy wolanie o pomoc, nadawane z satelitarnego lokatora.
 }
 Predicted: {
-gdy odzyskam pudelko, udaj sie na skraj lasu.
 taka wymiana informacji moze dotyczyc produkcji wyrobow wlokienniczych w serbii oraz handlu pomiedzy serbia i krajami trzecimi rodzajami wyrobow objetymi niniejsza umowa,, w szczegolnosci w przypadkach, gdy wspolnota ma zasadne podstawy by uwazac, ze dane wyroby moga byc przewozone tranzytem przez terytorium serbii przed ich przywozem do wspolnoty.
 sa lekarze i pielegniarki ale ja mam wiekszy problem.
 dyrektywa rady 92/83/ewg z dnia 19 pazdziernika 1992 r.
@@ -2653,6 +2816,7 @@ mieszkalem tu pare dekad i nie moglem zrozumiec tego faktu.
 miedzynarodowa umowa kawowa z 2001 r.
 zostaje niniejszym przyjeta w imieniu wspolnoty europejskiej.
 taki wspolny projekt musi skladac sie z kolektywnego dialogu opartego na rownosci i wspolnym zarzadzaniu.
+zlapalismy wolanie o pomoc, nadawane z satelitarnego lokatora.
 }
 False positives: {
 dyrektywa rady 92/83/ewg z dnia 19 pazdziernika 1992 r.
@@ -2666,7 +2830,6 @@ miedzynarodowa umowa kawowa z 2001 r. zostaje niniejszym przyjeta w imieniu wspo
 }
 
 Expected: {
-wypadli niezle na tle orkiestry gminnej i nawet terzi oraz inni dowodcy partyzanccy to potwierdzili: dzielni chlopcy, spisali sie doskonale.
 w przedmiocie drugiej czesci zarzutu pierwszego podniesionego przez divipe, dotyczacej jej udzialu w spotkaniu w dniu 19 pazdziernika 1994 r.
 niniejszym wzywam pana do omowienia w tej izbie wynikow osiagnietych przez grupe zadaniowa oraz do przystapienia do debaty dotyczacej tych kwestii.
 oprocz mocnego argumentu moralnego, ze mielismy obowiazek chronic tych, ktorzy stali w obliczu ludobojstwa ze strony serbow, mielismy rowniez konsekwencje w postaci dziesiatkow/setek tysiecy uchodzcow.
@@ -2676,9 +2839,9 @@ ponadto wiele nowotworow uodparnia sie na dzialanie inhibitorow vegf, ograniczaj
 wykaz towarow, o ktorych mowa w art. 3
 ponadto przedmiotowa dyrektywa nie powoduje zadnych dodatkowych kosztow administracyjnych, ktore panstwa czlonkowskie mialyby poniesc w dluzszej perspektywie czasowej.
 efexor depot stosuje sie w leczeniu depresji u osob doroslych.
+czasami to, co najpiekniejsze... jest najbardziej niewinne, i omija nas.
 }
 Predicted: {
-wypadli niezle na tle orkiestry gminnej i nawet terzi oraz inni dowodcy partyzanccy to potwierdzili: dzielni chlopcy, spisali sie doskonale.
 w przedmiocie drugiej czesci zarzutu pierwszego podniesionego przez divipe, dotyczacej jej udzialu w spotkaniu w dniu 19 pazdziernika 1994 r. niniejszym wzywam pana do omowienia w tej izbie wynikow osiagnietych przez grupe zadaniowa oraz do przystapienia do debaty dotyczacej tych kwestii.
 oprocz mocnego argumentu moralnego, ze mielismy obowiazek chronic tych, ktorzy stali w obliczu ludobojstwa ze strony serbow, mielismy rowniez konsekwencje w postaci dziesiatkow/setek tysiecy uchodzcow.
 jestem pewna ze wiekszosc pieniedzy idzie na filantropie a nie na rozrywki.
@@ -2686,19 +2849,23 @@ chcialabym zwrocic uwage panstwa na dwa szczegolne przyklady roznych sposobow za
 ponadto wiele nowotworow uodparnia sie na dzialanie inhibitorow vegf, ograniczajac tym samym ich skutecznosc w dluzszym okresie.
 wykaz towarow, o ktorych mowa w art. 3 ponadto przedmiotowa dyrektywa nie powoduje zadnych dodatkowych kosztow administracyjnych, ktore panstwa czlonkowskie mialyby poniesc w dluzszej perspektywie czasowej.
 efexor depot stosuje sie w leczeniu depresji u osob doroslych.
+czasami to, co najpiekniejsze...
+jest najbardziej niewinne, i omija nas.
 }
 False positives: {
 w przedmiocie drugiej czesci zarzutu pierwszego podniesionego przez divipe, dotyczacej jej udzialu w spotkaniu w dniu 19 pazdziernika 1994 r. niniejszym wzywam pana do omowienia w tej izbie wynikow osiagnietych przez grupe zadaniowa oraz do przystapienia do debaty dotyczacej tych kwestii.
 wykaz towarow, o ktorych mowa w art. 3 ponadto przedmiotowa dyrektywa nie powoduje zadnych dodatkowych kosztow administracyjnych, ktore panstwa czlonkowskie mialyby poniesc w dluzszej perspektywie czasowej.
+czasami to, co najpiekniejsze...
+jest najbardziej niewinne, i omija nas.
 } False negatives: {
 w przedmiocie drugiej czesci zarzutu pierwszego podniesionego przez divipe, dotyczacej jej udzialu w spotkaniu w dniu 19 pazdziernika 1994 r.
 niniejszym wzywam pana do omowienia w tej izbie wynikow osiagnietych przez grupe zadaniowa oraz do przystapienia do debaty dotyczacej tych kwestii.
 wykaz towarow, o ktorych mowa w art. 3
 ponadto przedmiotowa dyrektywa nie powoduje zadnych dodatkowych kosztow administracyjnych, ktore panstwa czlonkowskie mialyby poniesc w dluzszej perspektywie czasowej.
+czasami to, co najpiekniejsze... jest najbardziej niewinne, i omija nas.
 }
 
 Expected: {
-entreri wierzyl mistrzowi gildii; nigdy nie spoznial sie na gong obiadowy.
 - artykul 7 projektu zmienionej umowy chile-zjednoczone krolestwo.
 opis: wzor zawiera rozowe i bezowe linie, 4 strony.
 chodzi tu o obszary polityki obejmujace wsparcie, opieke i edukacje, co moze wydawac sie nieco paradoksalne w kontekscie zagadnienia dotyczacego w rzeczywistosci intymnosci par i rodziny.
@@ -2708,9 +2875,9 @@ pozostac wewnatrz pomieszczenia, w zaciemnionym pokoju.
 nigel sadzi, ze mamy cos swietnego.
 zalacznik do decyzji 93/42/ewg zastepuje sie zalacznikiem do niniejszej decyzji.
 czas wymagany do zebrania ilosci substancji badanej niezbednej dla roznych metod analitycznych zostaje ustalony we wstepnych seriach badan lub szacunkowo.
+uwzgledniajac procedure pisemna i po przeprowadzeniu rozprawy w dniu 21 pazdziernika 2008 r.,
 }
 Predicted: {
-entreri wierzyl mistrzowi gildii; nigdy nie spoznial sie na gong obiadowy.
 - artykul 7 projektu zmienionej umowy chile-zjednoczone krolestwo.
 opis: wzor zawiera rozowe i bezowe linie, 4 strony.
 chodzi tu o obszary polityki obejmujace wsparcie, opieke i edukacje, co moze wydawac sie nieco paradoksalne w kontekscie zagadnienia dotyczacego w rzeczywistosci intymnosci par i rodziny.
@@ -2719,6 +2886,7 @@ pozostac wewnatrz pomieszczenia, w zaciemnionym pokoju.
 nigel sadzi, ze mamy cos swietnego.
 zalacznik do decyzji 93/42/ewg zastepuje sie zalacznikiem do niniejszej decyzji.
 czas wymagany do zebrania ilosci substancji badanej niezbednej dla roznych metod analitycznych zostaje ustalony we wstepnych seriach badan lub szacunkowo.
+uwzgledniajac procedure pisemna i po przeprowadzeniu rozprawy w dniu 21 pazdziernika 2008 r.,
 }
 False positives: {
 w sprawie wspolnej regulacji technicznej dotyczacej sieci cyfrowej z integracja uslug (isdn); teleusluga telefoniczna w pasmie 3,1 khz, wymagania przylaczeniowe dla urzadzen koncowych z mikrotelefonem (wydanie 2) sieci musza zyskac bardziej ogolnoeuropejski wymiar, co umozliwi rozwoj i wlasciwe funkcjonowanie wewnetrznego rynku energii, w celu zwiekszenia bezpieczenstwa dostaw, ale takze umozliwienia stosowania nowych technologii.
@@ -2728,7 +2896,6 @@ sieci musza zyskac bardziej ogolnoeuropejski wymiar, co umozliwi rozwoj i wlasci
 }
 
 Expected: {
-jezeli swiadectwo jest wydawane w panstwie czlonkowskim innym niz to, ktore wydalo lub przedluzylo poczatkowe swiadectwo, wlasciwy organ, ktory wydal lub przedluzyl swiadectwo, zostanie odpowiednio poinformowany w ciagu jednego miesiaca.
 26 na podstawie sprawozdania sedziego sprawozdawcy sad (piata izba) postanowil otworzyc procedure ustna.
 przedstawione dzisiaj sprawozdanie wyciaga te potrzebe na swiatlo dzienne.
 - surowce i materialy (przed sporzadzeniem sprawozdania finansowego dotyczacego zmian stanu zapasow towarow i uslug),
@@ -2738,9 +2905,9 @@ bezplatna pomoc prawna w przypadku przekazywanych przez organ centralny wnioskow
 strony beda zachecac spoleczenstwo obywatelskie do aktywnego udzialu w ich wysilkach zmierzajacych do osiagniecia celow niniejszej konwencji.
 z tego wzgledu komisja wzywa panstwa czlonkowskie do przyjecia bardziej ambitnej postawy, gdy zostana im przedlozone nowe propozycje w tej sprawie.
 komitet zalecil przyznanie pozwolenia na dopuszczenie do obrotu dla preparatu travatan.
+moga wystapic pewne drobne rozbieznosci, poniewaz statystyka emisji papierow wartosciowych i statystyka bilansowa mif pochodza z krajowych systemow sprawozdawczych przeznaczonych do roznych celow.
 }
 Predicted: {
-jezeli swiadectwo jest wydawane w panstwie czlonkowskim innym niz to, ktore wydalo lub przedluzylo poczatkowe swiadectwo, wlasciwy organ, ktory wydal lub przedluzyl swiadectwo, zostanie odpowiednio poinformowany w ciagu jednego miesiaca.
 26 na podstawie sprawozdania sedziego sprawozdawcy sad (piata izba) postanowil otworzyc procedure ustna.
 przedstawione dzisiaj sprawozdanie wyciaga te potrzebe na swiatlo dzienne.
 - surowce i materialy (przed sporzadzeniem sprawozdania finansowego dotyczacego zmian stanu zapasow towarow i uslug), frank wyszedl z namiotu z okiem zalepionym plastrem, przykladajac chusteczke do skaleczonej wargi.
@@ -2748,6 +2915,7 @@ i tak zrobil pan dla nas dosyc.
 bezplatna pomoc prawna w przypadku przekazywanych przez organ centralny wnioskow o swiadczenia alimentacyjne dla dzieci strony beda zachecac spoleczenstwo obywatelskie do aktywnego udzialu w ich wysilkach zmierzajacych do osiagniecia celow niniejszej konwencji.
 z tego wzgledu komisja wzywa panstwa czlonkowskie do przyjecia bardziej ambitnej postawy, gdy zostana im przedlozone nowe propozycje w tej sprawie.
 komitet zalecil przyznanie pozwolenia na dopuszczenie do obrotu dla preparatu travatan.
+moga wystapic pewne drobne rozbieznosci, poniewaz statystyka emisji papierow wartosciowych i statystyka bilansowa mif pochodza z krajowych systemow sprawozdawczych przeznaczonych do roznych celow.
 }
 False positives: {
 - surowce i materialy (przed sporzadzeniem sprawozdania finansowego dotyczacego zmian stanu zapasow towarow i uslug), frank wyszedl z namiotu z okiem zalepionym plastrem, przykladajac chusteczke do skaleczonej wargi.
@@ -2760,37 +2928,6 @@ strony beda zachecac spoleczenstwo obywatelskie do aktywnego udzialu w ich wysil
 }
 
 Expected: {
-przeprowadzona przez onz analiza narodowych planow ograniczenia emisji wegla wskazuje, ze sa one dalekie od poziomow niezbednych do utrzymania globalnego wzrostu temperatury ponizej 2 °c.
-wielu naukowcow twierdzi, ze aby osiagnac cele postawione w paryzu, potrzebna bedzie technologia pozwalajaca na usuwanie wegla z powietrza.
-- zmierzamy we wlasciwym kierunku: porozumienie paryskie spowolni zmiany klimatyczne, podobnie jak niedawna poprawka z kigali dotyczaca redukcji poziomu hfc - powiedzial dyrektor programu srodowiskowego onz erik solheim.
-inwestycje w tym obszarze wzrosly w 2015 r. o 6%, do 221 mld dolarow.
-to fantastycznie, ze osiagneli porozumienie paryskie, ale ich obecny wklad jest daleki od docelowego 1,5 stopnia.
-zostalo przeprowadzone od kwietnia do czerwca w poblizu meksykanskiego wybrzeza.
-pozwoli to lepiej poznac nature zmian srodowiska, ktore objely ziemie i odeslaly tak wiele gatunkow - nie tylko dinozaury - w niebyt.
-charakterystyczna dla materialu z tego meteorytu bedzie prawdopodobnie wysoka zawartosc irydu.
-nieco ponad 70% roslin wyhodowanych z nasion z ziemi bylo wciaz zywych po 17 dniach - to niewiele wiecej niz 66% w przypadku roslin wyhodowanych z nasion z kosmosu.
-wyniki tego eksperymentu stanowia kolejny dowod, ze nasiona rukoli moga byc transportowane i przechowywane na miedzynarodowej stacji kosmicznej przez 6 miesiecy bez wyraznego wplywu na mozliwosc kielkowania i wzrostu na ziemi.
-}
-Predicted: {
-przeprowadzona przez onz analiza narodowych planow ograniczenia emisji wegla wskazuje, ze sa one dalekie od poziomow niezbednych do utrzymania globalnego wzrostu temperatury ponizej 2 °c. wielu naukowcow twierdzi, ze aby osiagnac cele postawione w paryzu, potrzebna bedzie technologia pozwalajaca na usuwanie wegla z powietrza.
-- zmierzamy we wlasciwym kierunku: porozumienie paryskie spowolni zmiany klimatyczne, podobnie jak niedawna poprawka z kigali dotyczaca redukcji poziomu hfc - powiedzial dyrektor programu srodowiskowego onz erik solheim.
-inwestycje w tym obszarze wzrosly w 2015 r. o 6%, do 221 mld dolarow.
-to fantastycznie, ze osiagneli porozumienie paryskie, ale ich obecny wklad jest daleki od docelowego 1,5 stopnia.
-zostalo przeprowadzone od kwietnia do czerwca w poblizu meksykanskiego wybrzeza.
-pozwoli to lepiej poznac nature zmian srodowiska, ktore objely ziemie i odeslaly tak wiele gatunkow - nie tylko dinozaury - w niebyt.
-charakterystyczna dla materialu z tego meteorytu bedzie prawdopodobnie wysoka zawartosc irydu.
-nieco ponad 70% roslin wyhodowanych z nasion z ziemi bylo wciaz zywych po 17 dniach - to niewiele wiecej niz 66% w przypadku roslin wyhodowanych z nasion z kosmosu.
-wyniki tego eksperymentu stanowia kolejny dowod, ze nasiona rukoli moga byc transportowane i przechowywane na miedzynarodowej stacji kosmicznej przez 6 miesiecy bez wyraznego wplywu na mozliwosc kielkowania i wzrostu na ziemi.
-}
-False positives: {
-przeprowadzona przez onz analiza narodowych planow ograniczenia emisji wegla wskazuje, ze sa one dalekie od poziomow niezbednych do utrzymania globalnego wzrostu temperatury ponizej 2 °c. wielu naukowcow twierdzi, ze aby osiagnac cele postawione w paryzu, potrzebna bedzie technologia pozwalajaca na usuwanie wegla z powietrza.
-} False negatives: {
-przeprowadzona przez onz analiza narodowych planow ograniczenia emisji wegla wskazuje, ze sa one dalekie od poziomow niezbednych do utrzymania globalnego wzrostu temperatury ponizej 2 °c.
-wielu naukowcow twierdzi, ze aby osiagnac cele postawione w paryzu, potrzebna bedzie technologia pozwalajaca na usuwanie wegla z powietrza.
-}
-
-Expected: {
-w niedawnym wywiadzie zay i zayion opowiedzieli o nagrywaniu swojej wersji "knuck if you buck" na domowym laptopie.
 ale wyzwania i towarzyszace im utwory dodaja wyrazny system nerwowy, laczacy zywa mase ziarnistych klipow wideo.
 ich przywolanie podkresla wartosc solidnego wyzwania, artystyczna i nie tylko: dyskomfort, wzrost i znaczace powiazanie.
 platon uwazal, ze bezpieczniej byloby powierzyc wladze starannie przygotowanym straznikom.
@@ -2800,9 +2937,9 @@ ale poza tym nie bylo nic wyraznie artystycznego w niej samej lub jej zachowaniu
 w 2010 r. fundacja wydala zlozona zecersko wersje "zettel's traum", bardziej przystepna dla tych, ktorych zniechecala przypominajaca brudnopis kopia offsetowa.
 korespondujac z woodsem elektronicznie, probowalem swoich sil w etymologii.
 - calkowicie zaniedbal swoje zdrowie - donosila jego zona alice.
+kazda mapa z wystawy opowiada swoja historie, nie zawsze oparta na faktach.
 }
 Predicted: {
-w niedawnym wywiadzie zay i zayion opowiedzieli o nagrywaniu swojej wersji "knuck if you buck" na domowym laptopie.
 ale wyzwania i towarzyszace im utwory dodaja wyrazny system nerwowy, laczacy zywa mase ziarnistych klipow wideo.
 ich przywolanie podkresla wartosc solidnego wyzwania, artystyczna i nie tylko: dyskomfort, wzrost i znaczace powiazanie.
 platon uwazal, ze bezpieczniej byloby powierzyc wladze starannie przygotowanym straznikom.
@@ -2813,6 +2950,7 @@ w 2010 r.
 fundacja wydala zlozona zecersko wersje "zettel's traum", bardziej przystepna dla tych, ktorych zniechecala przypominajaca brudnopis kopia offsetowa.
 korespondujac z woodsem elektronicznie, probowalem swoich sil w etymologii.
 - calkowicie zaniedbal swoje zdrowie - donosila jego zona alice.
+kazda mapa z wystawy opowiada swoja historie, nie zawsze oparta na faktach.
 }
 False positives: {
 w 2010 r.
@@ -2822,7 +2960,6 @@ w 2010 r. fundacja wydala zlozona zecersko wersje "zettel's traum", bardziej prz
 }
 
 Expected: {
-wciaz pojawial sie w mojej stodole, wiec zartowalem z tym facetem, ze wyraznie nie chce byc sprzedany.
 - snowman nawet sie nie zdziwil, kiedy johnny carson przyniosl drabinke i dosiadl go plecami do przodu - dodaje.
 bylem zwyklym chlopcem w zabloconych butach.
 nie ma zadnej parady i nigdy nie bylo.
@@ -2832,9 +2969,9 @@ alejandra gonzalez anaya, jedna z kierownikow artystycznych parady, wyjasnila cn
 wspaniale jest moc to ocalic i nadac temu swiezy format, tworzac nowa tradycje dla meksykan.
 mysle, ze po ukonczeniu tej linii kolei magnetycznej rzad spodziewa sie wiekszego wzrostu gospodarczego w japonii.
 bilet f1 upowaznia do wstepu na koncert tego samego dnia.
+dokladny harmonogram znajduje sie na stronie internetowej yas marina circuit.
 }
 Predicted: {
-wciaz pojawial sie w mojej stodole, wiec zartowalem z tym facetem, ze wyraznie nie chce byc sprzedany.
 - snowman nawet sie nie zdziwil, kiedy johnny carson przyniosl drabinke i dosiadl go plecami do przodu - dodaje.
 bylem zwyklym chlopcem w zabloconych butach.
 nie ma zadnej parady i nigdy nie bylo.
@@ -2843,6 +2980,7 @@ meksyk ma nadzieje, ze tym wydarzeniem bedzie kiedys mogl rywalizowac z karnawal
 wspaniale jest moc to ocalic i nadac temu swiezy format, tworzac nowa tradycje dla meksykan.
 mysle, ze po ukonczeniu tej linii kolei magnetycznej rzad spodziewa sie wiekszego wzrostu gospodarczego w japonii.
 bilet f1 upowaznia do wstepu na koncert tego samego dnia.
+dokladny harmonogram znajduje sie na stronie internetowej yas marina circuit.
 }
 False positives: {
 meksyk ma nadzieje, ze tym wydarzeniem bedzie kiedys mogl rywalizowac z karnawalem w brazylii alejandra gonzalez anaya, jedna z kierownikow artystycznych parady, wyjasnila cnn, dlaczego meksyk uznal, ze to dobry moment, aby zorganizowac takie wydarzenie.
@@ -2852,7 +2990,36 @@ alejandra gonzalez anaya, jedna z kierownikow artystycznych parady, wyjasnila cn
 }
 
 Expected: {
-tymczasem jego rywal prabowo subianto rowniez oglosil zwyciestwo, dezorientujac indonezyjskich obywateli.
+jego znaczenie zasadza sie na dwoch faktach.
+pochodzenie slowa "hispania" jest mocno niejasne, a przeslanki na rzecz poszczegolnych spekulacji sa oparte w najlepszym przypadku na zwyklych podobienstwach, ktore moga byc przypadkowe, i na niepewnych dodatkowych dowodach.
+ale wplyw hispanii na przybyszow rowniez byl duzy.
+podczas dwoch pierwszych etapow romanizacji polwysep zostal podzielony przez rzymian na dwie czesci w celach administracyjnych.
+w iii wieku cesarz karakalla dokonal nowego podzialu, ktory utrzymal sie tylko przez krotki czas.
+byli tak poruszeni pieknem okolic jeziora rudyard, ze kiedy urodzilo sie ich pierwsze dziecko, nazwali je na jego czesc.
+w spedzonym tam czasie kipling spotkal rowniez i pokochal florence garrard, ktora mieszkala z trix w southsea (gdzie trix powrocila).
+stephen wheeler, wydawca, wymagal duzo, ale potrzeba pisania kiplinga byla nie do powstrzymania.
+po powrocie do lahore trzydziesci dziewiec opowiadan ukazalo sie w gazette miedzy listopadem 1886 r. a czerwcem 1887 r.
+w tym czasie coraz wiecej myslal o przyszlosci.
+}
+Predicted: {
+jego znaczenie zasadza sie na dwoch faktach.
+pochodzenie slowa "hispania" jest mocno niejasne, a przeslanki na rzecz poszczegolnych spekulacji sa oparte w najlepszym przypadku na zwyklych podobienstwach, ktore moga byc przypadkowe, i na niepewnych dodatkowych dowodach.
+ale wplyw hispanii na przybyszow rowniez byl duzy.
+podczas dwoch pierwszych etapow romanizacji polwysep zostal podzielony przez rzymian na dwie czesci w celach administracyjnych.
+w iii wieku cesarz karakalla dokonal nowego podzialu, ktory utrzymal sie tylko przez krotki czas.
+byli tak poruszeni pieknem okolic jeziora rudyard, ze kiedy urodzilo sie ich pierwsze dziecko, nazwali je na jego czesc.
+w spedzonym tam czasie kipling spotkal rowniez i pokochal florence garrard, ktora mieszkala z trix w southsea (gdzie trix powrocila).
+stephen wheeler, wydawca, wymagal duzo, ale potrzeba pisania kiplinga byla nie do powstrzymania.
+po powrocie do lahore trzydziesci dziewiec opowiadan ukazalo sie w gazette miedzy listopadem 1886 r. a czerwcem 1887 r. w tym czasie coraz wiecej myslal o przyszlosci.
+}
+False positives: {
+po powrocie do lahore trzydziesci dziewiec opowiadan ukazalo sie w gazette miedzy listopadem 1886 r. a czerwcem 1887 r. w tym czasie coraz wiecej myslal o przyszlosci.
+} False negatives: {
+po powrocie do lahore trzydziesci dziewiec opowiadan ukazalo sie w gazette miedzy listopadem 1886 r. a czerwcem 1887 r.
+w tym czasie coraz wiecej myslal o przyszlosci.
+}
+
+Expected: {
 przed objeciem urzedu jokowi staral sie sklonic odchodzacego prezydenta yudhoyono do wziecia odpowiedzialnosci za decyzje o kolejnym zwiekszeniu cen paliwa poprzez dalsze cofanie dotacji.
 wedlug jego oficjalnej biografii kim skomponowal rowniez szesc oper i lubi rezyserowac wypracowane musicale.
 z pomoca rad alexandra udalo mu sie osiagnac kompromis: pojdzie na uniwersytet, ale bedzie studiowal literature.
@@ -2862,9 +3029,9 @@ odpowiedziawszy na ogloszenie o pracy znalezione przez jego siostre w the scotsm
 nastepnie wrocil do kirriemuir.
 pierwsze wydanie liczylo tylko 3000 egzemplarzy.
 w 2009 r. calkowita sprzedaz "potegi terazniejszosci" i "nowej ziemi" w ameryce polnocnej szacowano odpowiednio na 3 miliony i 5 milionow egzemplarzy.
+niektorzy uczeni chrzescijanscy krytykuja nauki tolle'a, podczas gdy inni je chwala.
 }
 Predicted: {
-tymczasem jego rywal prabowo subianto rowniez oglosil zwyciestwo, dezorientujac indonezyjskich obywateli.
 przed objeciem urzedu jokowi staral sie sklonic odchodzacego prezydenta yudhoyono do wziecia odpowiedzialnosci za decyzje o kolejnym zwiekszeniu cen paliwa poprzez dalsze cofanie dotacji.
 wedlug jego oficjalnej biografii kim skomponowal rowniez szesc oper i lubi rezyserowac wypracowane musicale.
 z pomoca rad alexandra udalo mu sie osiagnac kompromis: pojdzie na uniwersytet, ale bedzie studiowal literature.
@@ -2874,6 +3041,7 @@ nastepnie wrocil do kirriemuir.
 pierwsze wydanie liczylo tylko 3000 egzemplarzy.
 w 2009 r.
 calkowita sprzedaz "potegi terazniejszosci" i "nowej ziemi" w ameryce polnocnej szacowano odpowiednio na 3 miliony i 5 milionow egzemplarzy.
+niektorzy uczeni chrzescijanscy krytykuja nauki tolle'a, podczas gdy inni je chwala.
 }
 False positives: {
 ukonczyl uczelnie i uzyskal tytul magistra 21 kwietnia 1882 r. odpowiedziawszy na ogloszenie o pracy znalezione przez jego siostre w the scotsman, pracowal przez poltora roku jako dziennikarz dla nottingham journal.

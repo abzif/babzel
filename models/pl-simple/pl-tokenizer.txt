@@ -1,6 +1,6 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9989901771780043
-Training-Sample-Size=36022
+Evaluation-Score=0.9986442461401486
+Training-Sample-Size=36021
 Evaluation-Sample-Size=4002
 Training-Algorithm=MAXENT_QN
 
@@ -9,9 +9,9 @@ Component-Name=TokenizerME
 Language=pl
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1697870753421
+Timestamp=1700539065401
 TrainerType=Event
-Training-Eventhash=14c767a3968391041c65926c0def2019
+Training-Eventhash=3cd094115a787065069d1560e156315f
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
@@ -195,6 +195,28 @@ kropidłem
 }
 
 Expected: {
+gdy przyjmiemy<SPLIT>, że tp s.a. jako własność państwa udostępnia "<SPLIT>coś<SPLIT>" np<SPLIT>.<SPLIT>: rozmowę telefoniczną<SPLIT>, to identycznie musi za określoną opłatą udostępnić wszystkie zasoby sieci<SPLIT>, obojętnie czy podoba się to komuś<SPLIT>, czy też nie<SPLIT>.}
+Predicted: {
+gdy przyjmiemy<SPLIT>, że tp s.a<SPLIT>. jako własność państwa udostępnia "<SPLIT>coś<SPLIT>" np<SPLIT>.<SPLIT>: rozmowę telefoniczną<SPLIT>, to identycznie musi za określoną opłatą udostępnić wszystkie zasoby sieci<SPLIT>, obojętnie czy podoba się to komuś<SPLIT>, czy też nie<SPLIT>.}
+False positives: {
+s.a
+.
+} False negatives: {
+s.a.
+}
+
+Expected: {
+wspomniane nachylenie dolnych części studni<SPLIT>, chociaż dyskusyjne (<SPLIT>hooke<SPLIT>, 1989<SPLIT>)<SPLIT>, pozwala wyobrazić sobie łagodne połączenie z kanałem podlodowcowym<SPLIT>.}
+Predicted: {
+wspomniane nachylenie dolnych części studni<SPLIT>, chociaż dyskusyjne (<SPLIT>hooke<SPLIT>, 1989<SPLIT>)<SPLIT>, pozwala wyobrazić sobie łagodne połączenie z kanał<SPLIT>em podlodowcowym<SPLIT>.}
+False positives: {
+kanał
+em
+} False negatives: {
+kanałem
+}
+
+Expected: {
 nie pójdę do szamockiego i nie powiem<SPLIT>, co że<SPLIT>ście kombinowali<SPLIT>, bo kogo jak kogo<SPLIT>, ale ciebie może spokojnie kropnąć<SPLIT>.}
 Predicted: {
 nie pójdę do szamockiego i nie powiem<SPLIT>, co żeście kombinowali<SPLIT>, bo kogo jak kogo<SPLIT>, ale ciebie może spokojnie kropnąć<SPLIT>.}
@@ -254,14 +276,14 @@ miejsce
 }
 
 Expected: {
-pamiętam<SPLIT>, że stawali<SPLIT>śmy o 3.15 nad ranem<SPLIT>, udając się do zakładu samochodów małolitrażowych<SPLIT>.}
+nie stanowi ona jednak po prostu kolekcji żywotów<SPLIT>, lecz - w krytycznym spojrzeniu współczesnym<SPLIT>, ocierającym się być może niekiedy o blasfemię czy libertynizm - próbuje odsłonić świętość jako radykalne wydarzenie antropologiczne<SPLIT>: jako dramat człowieka<SPLIT>, jako dramat jego duszy i ciała<SPLIT>, gęsty nieraz od porażających wypadków i paradoksów<SPLIT>, od niebywałych zdarzeń i dziejowych zawikłań<SPLIT>, które trwają i całe stulecia<SPLIT>, angażując kolejne pokolenia (<SPLIT>różnych zresztą narodów i wyznań<SPLIT>)<SPLIT>.}
 Predicted: {
-pamiętam<SPLIT>, że stawali<SPLIT>śmy o 3<SPLIT>.15 nad ranem<SPLIT>, udając się do zakładu samochodów małolitrażowych<SPLIT>.}
+nie stanowi ona jednak po prostu kolekcji żywotów<SPLIT>, lecz - w krytycznym spojrzeniu współczesnym<SPLIT>, ocierającym się być może niekiedy o blasfemię czy libertynizm - próbuje odsłonić świętość jako radykalne wydarzenie antropologiczne<SPLIT>: jako dramat człowieka<SPLIT>, jako dramat jego duszy i ciała<SPLIT>, gęsty nieraz od porażających wypadków i paradoksów<SPLIT>, od niebywałych zdarzeń i dziejowych zawikła<SPLIT>ń<SPLIT>, które trwają i całe stulecia<SPLIT>, angażując kolejne pokolenia (<SPLIT>różnych zresztą narodów i wyznań<SPLIT>)<SPLIT>.}
 False positives: {
-3
-.15
+zawikła
+ń
 } False negatives: {
-3.15
+zawikłań
 }
 
 Expected: {
@@ -309,57 +331,142 @@ a
 }
 
 Expected: {
-większość 3/5 w obu głosowaniach wynosiła 267<SPLIT>.}
+samorządowcy znają realia<SPLIT>, a ponadto czytali w "<SPLIT>nie<SPLIT>" (<SPLIT>nr 14<SPLIT>/<SPLIT>94<SPLIT>)<SPLIT>, że są kobiety<SPLIT>, do których zamiast pomocnej dłoni fundacja wyciągnęła piąchę<SPLIT>.}
 Predicted: {
-większość 3/<SPLIT>5 w obu głosowaniach wynosiła 267<SPLIT>.}
+samorządowcy znają realia<SPLIT>, a ponadto czytali w "<SPLIT>nie<SPLIT>" (<SPLIT>nr 14/94<SPLIT>)<SPLIT>, że są kobiety<SPLIT>, do których zamiast pomocnej dłoni fundacja wyciągnęła piąchę<SPLIT>.}
 False positives: {
-3/
-5
+14/94
 } False negatives: {
-3/5
-}
-
-Expected: {
-jest to spowodowane wrodzoną czujnością ww<SPLIT>. p<SPLIT>. jasia<SPLIT>, który przydybał mnie<SPLIT>, gdy<SPLIT>m nieopatrznie odpisywał dla was potrawy z karty<SPLIT>.}
-Predicted: {
-jest to spowodowane wrodzoną czujnością ww<SPLIT>. p<SPLIT>. jasia<SPLIT>, który przydybał mnie<SPLIT>, gdym nieopatrznie odpisywał dla was potrawy z karty<SPLIT>.}
-False positives: {
-gdym
-} False negatives: {
-gdy
-m
-}
-
-Expected: {
-nie stosować leku nutropinaq po upływie terminu ważności zamieszczonego na etykiecie (<SPLIT>exp<SPLIT>/<SPLIT>termin ważności<SPLIT>)<SPLIT>.}
-Predicted: {
-nie stosować leku nutropinaq po upływie terminu ważności zamieszczonego na etykiecie (<SPLIT>exp/termin ważności<SPLIT>)<SPLIT>.}
-False positives: {
-exp/termin
-} False negatives: {
-exp
+14
 /
-termin
+94
 }
 
 Expected: {
-uwzględniając dyrektywę rady 2002/55/we z dnia 13 czerwca 2002 r<SPLIT>. w sprawie obrotu materiałem siewnym warzyw [<SPLIT>4<SPLIT>]<SPLIT>, w szczególności jej art<SPLIT>. 23 ust<SPLIT>. 2<SPLIT>,}
+co prawda<SPLIT>: istniały próby narzucenia światu yiddish jako języka uniwersalnego (<SPLIT>tzw<SPLIT>. rząd polski w białymstoku 1920 r<SPLIT>. uznawał język polski jako ,<SPLIT>,<SPLIT>język mniejszości<SPLIT>"<SPLIT>!<SPLIT>!<SPLIT>)<SPLIT>.}
 Predicted: {
-uwzględniając dyrektywę rady 2002<SPLIT>/55/we z dnia 13 czerwca 2002 r<SPLIT>. w sprawie obrotu materiałem siewnym warzyw [<SPLIT>4<SPLIT>]<SPLIT>, w szczególności jej art<SPLIT>. 23 ust<SPLIT>. 2<SPLIT>,}
+co prawda<SPLIT>: istniały próby narzucenia światu yiddish jako języka uniwersalnego (<SPLIT>tzw<SPLIT>. rząd polski w białymstoku 1920 r<SPLIT>. uznawał język polski jako ,<SPLIT>,język mniejszości<SPLIT>"<SPLIT>!<SPLIT>!<SPLIT>)<SPLIT>.}
 False positives: {
-2002
-/55/we
+,język
 } False negatives: {
-2002/55/we
+,
+język
 }
 
 Expected: {
-substancja czynna preparatu cholestagel<SPLIT>, kolesewelam<SPLIT>, nie jest wchłaniana przez organizm<SPLIT>, ale pozostaje w jelitach<SPLIT>, gdzie wiąże się z substancjami zwanymi kwasami żółciowymi i wspomaga ich usuwanie z organizmu razem z kałem<SPLIT>.}
+2<SPLIT>. ja nie pisał<SPLIT>em w odpowiedzi panu o mojej wypowiedzi w tym temacie tylko wiele wczesniejszych nt<SPLIT>. polityki gospodarczej i społecznej d***kratycznych rządów w stosunku do których pańska wypowiedź jest właśnie przysłowiowym "<SPLIT>filipem z konopii<SPLIT>"<SPLIT>.}
 Predicted: {
-substancja czynna preparatu cholestagel<SPLIT>, kolesewelam<SPLIT>, nie jest wchłaniana przez organizm<SPLIT>, ale pozostaje w jelitach<SPLIT>, gdzie wiąże się z substancjami zwanymi kwasami żółciowymi i wspomaga ich usuwanie z organizmu razem z kał<SPLIT>em<SPLIT>.}
+2<SPLIT>. ja nie pisał<SPLIT>em w odpowiedzi panu o mojej wypowiedzi w tym temacie tylko wiele wczesniejszych nt<SPLIT>. polityki gospodarczej i społecznej d*<SPLIT>*<SPLIT>*kratycznych rządów w stosunku do których pańska wypowiedź jest właśnie przysłowiowym "<SPLIT>filipem z konopii<SPLIT>"<SPLIT>.}
 False positives: {
-kał
+d*
+*
+*kratycznych
+} False negatives: {
+d***kratycznych
+}
+
+Expected: {
+jeżeli by ktoś wiedział proszę o informacje<SPLIT>: bburski@friko6.onet.pl}
+Predicted: {
+jeżeli by ktoś wiedział proszę o informacje<SPLIT>: bburski@friko6<SPLIT>.onet<SPLIT>.pl}
+False positives: {
+bburski@friko6
+.onet
+.pl
+} False negatives: {
+bburski@friko6.onet.pl
+}
+
+Expected: {
+oficjalna część obchodów rozpoczęła się już mszą świętą w intencji zachodniopomorskiej policji<SPLIT>, która celebrowana jest w kościele p<SPLIT>.<SPLIT>w<SPLIT>. św<SPLIT>. katarzyny<SPLIT>, uroczysta gala<SPLIT>, której gośćmi specjalnymi będą wiceminister spraw wewnętrznych i administracji adam rapacki oraz zastępca komendanta głównego policji nadinsp<SPLIT>. arkadiusz pawełczyk<SPLIT>, odbędzie się po niej<SPLIT>.}
+Predicted: {
+oficjalna część obchodów rozpoczęła się już mszą świętą w intencji zachodniopomorskiej policji<SPLIT>, która celebrowana jest w kościele p.w<SPLIT>. św<SPLIT>. katarzyny<SPLIT>, uroczysta gala<SPLIT>, której gośćmi specjalnymi będą wiceminister spraw wewnętrznych i administracji adam rapacki oraz zastępca komendanta głównego policji nadinsp<SPLIT>. arkadiusz pawełczyk<SPLIT>, odbędzie się po niej<SPLIT>.}
+False positives: {
+p.w
+} False negatives: {
+p
+.
+w
+}
+
+Expected: {
+zwał jak zwał<SPLIT>, ale człowieka<SPLIT>, którego skroją z komórki<SPLIT>/<SPLIT>pobiją wygoleni osobnicy typu 4x4 nie będzie obchodziło do jakiej grupy się zaliczają<SPLIT>.}
+Predicted: {
+zwał jak zwał<SPLIT>, ale człowieka<SPLIT>, którego skroją z komórki/<SPLIT>pobiją wygoleni osobnicy typu 4x4 nie będzie obchodziło do jakiej grupy się zaliczają<SPLIT>.}
+False positives: {
+komórki/
+} False negatives: {
+komórki
+/
+}
+
+Expected: {
+gdzie<SPLIT>, kiedy i który z przywódców byłego zsrr spotkał się z janem pawłem ii<SPLIT>?}
+Predicted: {
+gdzie<SPLIT>, kiedy i który z przywódców byłego zsrr spotkał się z janem pawł<SPLIT>em ii<SPLIT>?}
+False positives: {
+pawł
 em
 } False negatives: {
-kałem
+pawłem
+}
+
+Expected: {
+18 lipca prezydent depeszował do ignacego paderewskiego<SPLIT>, że w związku z memoriałem sikorskiego z 19 czerwca współpraca z dotychczasowym prezesem rady ministrów "<SPLIT>stała się niemożliwa<SPLIT>"<SPLIT>.}
+Predicted: {
+18 lipca prezydent depeszował do ignacego paderewskiego<SPLIT>, że w związku z memoriał<SPLIT>em sikorskiego z 19 czerwca współpraca z dotychczasowym prezesem rady ministrów "<SPLIT>stała się niemożliwa<SPLIT>"<SPLIT>.}
+False positives: {
+memoriał
+em
+} False negatives: {
+memoriałem
+}
+
+Expected: {
+przy samym brzegu czekają przycumowane łańcuchami tratwy (<SPLIT>5 zł<SPLIT>/<SPLIT>godzina<SPLIT>) i łódki (<SPLIT>10 zł<SPLIT>)<SPLIT>.}
+Predicted: {
+przy samym brzegu czekają przycumowane łańcuchami tratwy (<SPLIT>5 zł/<SPLIT>godzina<SPLIT>) i łódki (<SPLIT>10 zł<SPLIT>)<SPLIT>.}
+False positives: {
+zł/
+} False negatives: {
+zł
+/
+}
+
+Expected: {
+– śmierć<SPLIT>! – i rozgniotł<SPLIT>em mu pięścią nos<SPLIT>.}
+Predicted: {
+– śmierć<SPLIT>! – i rozgniotłem mu pięścią nos<SPLIT>.}
+False positives: {
+rozgniotłem
+} False negatives: {
+rozgniotł
+em
+}
+
+Expected: {
+wpisy<SPLIT>, o których mowa w art<SPLIT>. 4 lit<SPLIT>. d<SPLIT>)}
+Predicted: {
+wpisy<SPLIT>, o których mowa w art<SPLIT>. 4 lit<SPLIT>. d)}
+False positives: {
+d)
+} False negatives: {
+d
+)
+}
+
+Expected: {
+w leczeniu hiperkalcemii spowodowanej chorobą nowotworową preparat bondronat jest podawany we wlewie dożylnym w dawce wynoszącej 2 lub 4 mg<SPLIT>, w zależności od stopnia nasilenia hiperkalcemii (<SPLIT>umiarkowana - poniżej 3 mmol<SPLIT>/<SPLIT>l lub ciężka - powyżej 3 mmol<SPLIT>/<SPLIT>l<SPLIT>)<SPLIT>.}
+Predicted: {
+w leczeniu hiperkalcemii spowodowanej chorobą nowotworową preparat bondronat jest podawany we wlewie dożylnym w dawce wynoszącej 2 lub 4 mg<SPLIT>, w zależności od stopnia nasilenia hiperkalcemii (<SPLIT>umiarkowana - poniżej 3 mmol/<SPLIT>l lub ciężka - powyżej 3 mmol/l)<SPLIT>.}
+False positives: {
+mmol/
+mmol/l)
+} False negatives: {
+mmol
+/
+mmol
+/
+l
+)
 }

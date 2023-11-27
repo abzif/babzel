@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9842297944241059
+Evaluation-Score=0.9841202791076066
 Training-Sample-Size=36876
 Evaluation-Sample-Size=4097
 Training-Algorithm=MAXENT
@@ -10,9 +10,9 @@ Component-Name=StatisticalLemmatizer
 Language=en
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1697781554567
+Timestamp=1700455992844
 TrainerType=Event
-Training-Eventhash=624be8b6bdfbf0547059d0bfb69d05df
+Training-Eventhash=81f4d1600e6452dba96cd6cb848ce0d2
 factory=opennlp.tools.lemmatizer.LemmatizerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -4197,7 +4197,7 @@ screenshots	NOUN	screenshot
 of	ADP	of
 two	NUM	two
 beheading	NOUN	beheading
-video's	NOUN	video'
+video's	NOUN	video
 .	PUNCT	.
 }
 Predicted: {
@@ -4218,7 +4218,7 @@ video's	NOUN	video's
 Errors: {
 Tok: Ref | Pred
 ---------------
-video's: video' | video's
+video's: video | video's
 }
 
 Expected: {
@@ -5311,7 +5311,7 @@ what	PRON	what
 it	PRON	it
 used	VERB	use
 to	PART	to
-be	VERB	be
+be	AUX	be
 .	PUNCT	.
 }
 Predicted: {
@@ -5327,7 +5327,7 @@ what	PRON	what
 it	PRON	it
 used	VERB	use
 to	PART	to
-be	VERB	be
+be	AUX	be
 .	PUNCT	.
 }
 Errors: {
@@ -6590,6 +6590,44 @@ Tok: Ref | Pred
 }
 
 Expected: {
+i	PRON	i
+think	VERB	think
+compared	VERB	compare
+to	ADP	to
+my	PRON	my
+house	NOUN	house
+,	PUNCT	,
+he	PRON	he
+'s	AUX	be
+embarrased	ADJ	embarrassed
+about	ADP	about
+his	PRON	his
+apartment	NOUN	apartment
+.	PUNCT	.
+}
+Predicted: {
+i	PRON	i
+think	VERB	think
+compared	VERB	compare
+to	ADP	to
+my	PRON	my
+house	NOUN	house
+,	PUNCT	,
+he	PRON	he
+'s	AUX	be
+embarrased	ADJ	embarrased
+about	ADP	about
+his	PRON	his
+apartment	NOUN	apartment
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+embarrased: embarrassed | embarrased
+}
+
+Expected: {
 anyway	INTJ	anyway
 ,	PUNCT	,
 i	PRON	i
@@ -7059,7 +7097,7 @@ chance	NOUN	chance
 to	PART	to
 find	VERB	find
 those	DET	that
-gtc's	NOUN	gtc'
+gtc's	NOUN	gtc
 for	ADP	for
 ena	NOUN	ena
 that	PRON	that
@@ -7093,7 +7131,7 @@ way	NOUN	way
 Errors: {
 Tok: Ref | Pred
 ---------------
-gtc's: gtc' | gtc's
+gtc's: gtc | gtc's
 }
 
 Expected: {
@@ -7876,7 +7914,7 @@ should	AUX	should
 like	VERB	like
 your	PRON	your
 steer	NOUN	steer
-are	VERB	be
+are	AUX	be
 :	PUNCT	:
 (	PUNCT	(
 a	NUM	a
@@ -7912,7 +7950,7 @@ should	AUX	should
 like	VERB	like
 your	PRON	your
 steer	NOUN	steer
-are	VERB	be
+are	AUX	be
 :	PUNCT	:
 (	PUNCT	(
 a	NUM	a
@@ -8874,7 +8912,7 @@ nation	NOUN	nation
 whose	PRON	whose
 king	NOUN	king
 enrique	PROPN	enrique
-viii	PROPN	viii
+viii	NUM	viii
 adulterated	VERB	adulterate
 the	DET	the
 bible	PROPN	bible
@@ -8944,7 +8982,7 @@ nation	NOUN	nation
 whose	PRON	whose
 king	NOUN	king
 enrique	PROPN	enrique
-viii	PROPN	eigth
+viii	NUM	eigth
 adulterated	VERB	adulterate
 the	DET	the
 bible	PROPN	bible
@@ -9954,10 +9992,10 @@ fight	NOUN	fight
 right	ADV	right
 there	ADV	there
 ,	PUNCT	,
-were	ADV	were
+were	ADV	where
 the	DET	the
 baby	NOUN	baby
-was	VERB	be
+was	AUX	be
 too	ADV	too
 .	PUNCT	.
 }
@@ -9998,14 +10036,14 @@ there	ADV	there
 were	ADV	be
 the	DET	the
 baby	NOUN	baby
-was	VERB	be
+was	AUX	be
 too	ADV	too
 .	PUNCT	.
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
-were: were | be
+were: where | be
 }
 
 Expected: {
@@ -10173,6 +10211,44 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 propping: prop | propping
+}
+
+Expected: {
+1	NUM	1
+)	PUNCT	)
+what	PRON	what
+thes	DET	the
+difference	NOUN	difference
+between	ADP	between
+a	DET	a
+modern	ADJ	modern
+m16	NOUN	m16
+and	CCONJ	and
+vietnam	PROPN	vietnam
+m	NOUN	m
+16	NUM	16
+?	PUNCT	?
+}
+Predicted: {
+1	NUM	1
+)	PUNCT	)
+what	PRON	what
+thes	DET	thes
+difference	NOUN	difference
+between	ADP	between
+a	DET	a
+modern	ADJ	modern
+m16	NOUN	m16
+and	CCONJ	and
+vietnam	PROPN	vietnam
+m	NOUN	m
+16	NUM	16
+?	PUNCT	?
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+thes: the | thes
 }
 
 Expected: {
@@ -11690,6 +11766,78 @@ groceries: grocery | grocerie
 
 Expected: {
 i	PRON	i
+was	AUX	be
+very	ADV	very
+happy	ADJ	happy
+with	ADP	with
+the	DET	the
+customer	NOUN	customer
+service	NOUN	service
+and	CCONJ	and
+even	ADV	even
+more	ADV	more
+please	ADJ	pleased
+with	ADP	with
+the	DET	the
+portion	NOUN	portion
+size	NOUN	size
+,	PUNCT	,
+to	PART	to
+go	VERB	go
+box	NOUN	box
+set	NOUN	set
+up	NOUN	up
+and	CCONJ	and
+quality	NOUN	quality
+of	ADP	of
+the	DET	the
+food	NOUN	food
+for	ADP	for
+the	DET	the
+price	NOUN	price
+.	PUNCT	.
+}
+Predicted: {
+i	PRON	i
+was	AUX	be
+very	ADV	very
+happy	ADJ	happy
+with	ADP	with
+the	DET	the
+customer	NOUN	customer
+service	NOUN	service
+and	CCONJ	and
+even	ADV	even
+more	ADV	more
+please	ADJ	please
+with	ADP	with
+the	DET	the
+portion	NOUN	portion
+size	NOUN	size
+,	PUNCT	,
+to	PART	to
+go	VERB	go
+box	NOUN	box
+set	NOUN	set
+up	NOUN	up
+and	CCONJ	and
+quality	NOUN	quality
+of	ADP	of
+the	DET	the
+food	NOUN	food
+for	ADP	for
+the	DET	the
+price	NOUN	price
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+please: pleased | please
+}
+
+Expected: {
+i	PRON	i
 have	AUX	have
 been	AUX	be
 here	ADV	here
@@ -12227,7 +12375,7 @@ farms	NOUN	farm
 i	PRON	i
 have	AUX	have
 ever	ADV	ever
-been	VERB	be
+been	AUX	be
 too	ADP	to
 .	PUNCT	.
 }
@@ -12242,7 +12390,7 @@ farms	NOUN	farm
 i	PRON	i
 have	AUX	have
 ever	ADV	ever
-been	VERB	be
+been	AUX	be
 too	ADP	too
 .	PUNCT	.
 }
@@ -13402,7 +13550,7 @@ the	DET	the
 dresses	NOUN	dress
 themselves	PRON	themselves
 (	PUNCT	(
-ie	ADV	ie
+ie	ADV	i.e.
 stealing	VERB	steal
 other	ADJ	other
 designers	NOUN	designer
@@ -13479,6 +13627,7 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 b: b | billion
+ie: i.e. | ie
 }
 
 Expected: {
@@ -14282,7 +14431,7 @@ forgotten: forgotten | forget
 Expected: {
 this	PRON	this
 it	PRON	it
-is	VERB	be
+is	AUX	be
 and	CCONJ	and
 nothing	PRON	nothing
 more	ADJ	more
@@ -14292,7 +14441,7 @@ more	ADJ	more
 Predicted: {
 this	PRON	this
 it	PRON	it
-is	VERB	be
+is	AUX	be
 and	CCONJ	and
 nothing	PRON	nothing
 more	ADJ	more
@@ -15495,123 +15644,6 @@ clisthenes: clisthenes | clisthene
 }
 
 Expected: {
-by	ADP	by
-the	DET	the
-late	ADJ	late
-1980s	NOUN	1980s
-and	CCONJ	and
-early	ADJ	early
-1990s	NOUN	1990s
-,	PUNCT	,
-the	DET	the
-city	NOUN	city
-'s	PART	's
-reality	NOUN	reality
-led	VERB	lead
-to	ADP	to
-a	DET	a
-rude	ADJ	rude
-awakening	NOUN	awakening
-among	ADP	among
-local	ADJ	local
-and	CCONJ	and
-national	ADJ	national
-officials	NOUN	official
-and	CCONJ	and
-,	PUNCT	,
-coupled	VERB	couple
-with	ADP	with
-the	DET	the
-country	NOUN	country
-'s	PART	's
-new	ADV	new
-found	VERB	find
-remarkable	ADJ	remarkable
-prosperity	NOUN	prosperity
-,	PUNCT	,
-large	ADJ	large
-scale	NOUN	scale
-projects	NOUN	project
-began	VERB	begin
-to	PART	to
-slowly	ADV	slowly
-regenerate	VERB	regenerate
-the	DET	the
-city	NOUN	city
-and	CCONJ	and
-undo	VERB	undo
-some	DET	some
-of	ADP	of
-the	DET	the
-damages	NOUN	damage
-of	ADP	of
-recent	ADJ	recent
-decades	NOUN	decade
-.	PUNCT	.
-}
-Predicted: {
-by	ADP	by
-the	DET	the
-late	ADJ	late
-1980s	NOUN	1980
-and	CCONJ	and
-early	ADJ	early
-1990s	NOUN	1990
-,	PUNCT	,
-the	DET	the
-city	NOUN	city
-'s	PART	's
-reality	NOUN	reality
-led	VERB	lead
-to	ADP	to
-a	DET	a
-rude	ADJ	rude
-awakening	NOUN	awakening
-among	ADP	among
-local	ADJ	local
-and	CCONJ	and
-national	ADJ	national
-officials	NOUN	official
-and	CCONJ	and
-,	PUNCT	,
-coupled	VERB	couple
-with	ADP	with
-the	DET	the
-country	NOUN	country
-'s	PART	's
-new	ADV	new
-found	VERB	find
-remarkable	ADJ	remarkable
-prosperity	NOUN	prosperity
-,	PUNCT	,
-large	ADJ	large
-scale	NOUN	scale
-projects	NOUN	project
-began	VERB	begin
-to	PART	to
-slowly	ADV	slowly
-regenerate	VERB	regenerate
-the	DET	the
-city	NOUN	city
-and	CCONJ	and
-undo	VERB	undo
-some	DET	some
-of	ADP	of
-the	DET	the
-damages	NOUN	damage
-of	ADP	of
-recent	ADJ	recent
-decades	NOUN	decade
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-1980s: 1980s | 1980
-1990s: 1990s | 1990
-}
-
-Expected: {
 barracuda	PROPN	barracuda
 and	CCONJ	and
 kayangan	PROPN	kayangan
@@ -15946,7 +15978,7 @@ ought	AUX	ought
 a	PART	to
 call	VERB	call
 ,	PUNCT	,
-at	ADV	at
+at	ADP	at
 least	ADJ	least
 reg	PROPN	reg
 barr	PROPN	barr
@@ -15971,7 +16003,7 @@ ought	AUX	ought
 a	PART	a
 call	VERB	call
 ,	PUNCT	,
-at	ADV	at
+at	ADP	at
 least	ADJ	least
 reg	PROPN	reg
 barr	PROPN	barr
@@ -16011,7 +16043,7 @@ hat	NOUN	hat
 ,	PUNCT	,
 and	CCONJ	and
 it	PRON	it
-'s	VERB	be
+'s	AUX	be
 like	ADP	like
 an	DET	a
 essay	NOUN	essay
@@ -16067,7 +16099,7 @@ hat	NOUN	hat
 ,	PUNCT	,
 and	CCONJ	and
 it	PRON	it
-'s	VERB	be
+'s	AUX	be
 like	ADP	like
 an	DET	a
 essay	NOUN	essay
@@ -16592,7 +16624,7 @@ well	ADV	well
 -	PUNCT	-
 food	VERB	food
 indoor	ADJ	indoor
-kitties	NOUN	kittie
+kitties	NOUN	kitties
 might	AUX	might
 just	ADV	just
 see	VERB	see
@@ -16619,7 +16651,7 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 food: feed | food
-kitties: kitty | kittie
+kitties: kitty | kitties
 }
 
 Expected: {
@@ -16925,7 +16957,7 @@ wavenumber	NOUN	wavenumber
 is	AUX	be
 required	VERB	require
 not	PART	not
-only	CCONJ	only
+only	ADV	only
 for	ADP	for
 sea	NOUN	sea
 surface	NOUN	surface
@@ -16970,7 +17002,7 @@ wavenumber	NOUN	wavenumber
 is	AUX	be
 required	VERB	require
 not	PART	not
-only	CCONJ	only
+only	ADV	only
 for	ADP	for
 sea	NOUN	sea
 surface	NOUN	surface
@@ -20050,10 +20082,10 @@ Tok: Ref | Pred
 }
 
 Expected: {
-of	ADV	of
+of	ADP	of
 course	NOUN	course
 you	PRON	you
-do	VERB	do
+do	AUX	do
 ,	PUNCT	,
 you	PRON	you
 're	AUX	be
@@ -20063,7 +20095,7 @@ fan	NOUN	fan
 caught	VERB	catch
 in	ADP	in
 a	DET	a
-do	VERB	do
+do	AUX	do
 -	PUNCT	-
 or	CCONJ	or
 -	PUNCT	-
@@ -20076,10 +20108,10 @@ at	ADP	at
 shea	PROPN	shea
 }
 Predicted: {
-of	ADV	of
+of	ADP	of
 course	NOUN	course
 you	PRON	you
-do	VERB	do
+do	AUX	do
 ,	PUNCT	,
 you	PRON	you
 're	AUX	be
@@ -20089,7 +20121,7 @@ fan	NOUN	fan
 caught	VERB	catch
 in	ADP	in
 a	DET	a
-do	VERB	do
+do	AUX	do
 -	PUNCT	-
 or	CCONJ	or
 -	PUNCT	-
@@ -20162,7 +20194,7 @@ events	NOUN	event
 is	AUX	be
 today	NOUN	today
 important	ADJ	important
-such	SCONJ	such
+such	ADJ	such
 as	ADP	as
 how	ADV	how
 many	ADJ	many
@@ -20189,7 +20221,7 @@ events	NOUN	event
 is	AUX	be
 today	NOUN	today
 important	ADJ	important
-such	SCONJ	such
+such	ADJ	such
 as	ADP	as
 how	ADV	how
 many	ADJ	many
@@ -22103,7 +22135,7 @@ human	ADJ	human
 behaviors	NOUN	behavior
 -	PUNCT	-
 that	PRON	that
-is	VERB	be
+is	AUX	be
 ,	PUNCT	,
 behaviors	NOUN	behavior
 that	PRON	that
@@ -22125,7 +22157,7 @@ human	ADJ	human
 behaviors	NOUN	behavior
 -	PUNCT	-
 that	PRON	that
-is	VERB	be
+is	AUX	be
 ,	PUNCT	,
 behaviors	NOUN	behavior
 that	PRON	that
@@ -22813,7 +22845,7 @@ which	PRON	which
 tells	VERB	tell
 where	ADV	where
 you	PRON	you
-are	VERB	be
+are	AUX	be
 in	ADP	in
 the	DET	the
 up	ADV	up
@@ -22836,7 +22868,7 @@ which	PRON	which
 tells	VERB	tell
 where	ADV	where
 you	PRON	you
-are	VERB	be
+are	AUX	be
 in	ADP	in
 the	DET	the
 forward	ADV	forward
@@ -22885,7 +22917,7 @@ which	PRON	which
 tells	VERB	tell
 where	ADV	where
 you	PRON	you
-are	VERB	be
+are	AUX	be
 in	ADP	in
 the	DET	the
 up	ADV	up
@@ -22908,7 +22940,7 @@ which	PRON	which
 tells	VERB	tell
 where	ADV	where
 you	PRON	you
-are	VERB	be
+are	AUX	be
 in	ADP	in
 the	DET	the
 forward	ADV	forward
@@ -23023,7 +23055,7 @@ Expected: {
 when	ADV	when
 a	DET	a
 data	NOUN	datum
-set	VERB	set
+set	NOUN	set
 has	VERB	have
 an	DET	a
 odd	ADJ	odd
@@ -23054,7 +23086,7 @@ Predicted: {
 when	ADV	when
 a	DET	a
 data	NOUN	data
-set	VERB	set
+set	NOUN	set
 has	VERB	have
 an	DET	a
 odd	ADJ	odd
@@ -23289,7 +23321,7 @@ closed	VERB	close
 by	ADP	by
 the	DET	the
 time	NOUN	time
-that	SCONJ	that
+that	PRON	that
 she	PRON	she
 had	AUX	have
 gotten	VERB	get
@@ -23314,7 +23346,7 @@ closed	VERB	close
 by	ADP	by
 the	DET	the
 time	NOUN	time
-that	SCONJ	that
+that	PRON	that
 she	PRON	she
 had	AUX	have
 gotten	VERB	get
@@ -23384,7 +23416,7 @@ you	PRON	you
 guys	NOUN	guy
 already	ADV	already
 know	VERB	know
-that	ADP	that
+that	SCONJ	that
 -	PUNCT	-
 if	SCONJ	if
 you	PRON	you
@@ -23421,7 +23453,7 @@ you	PRON	you
 guys	NOUN	guy
 already	ADV	already
 know	VERB	know
-that	ADP	that
+that	SCONJ	that
 -	PUNCT	-
 if	SCONJ	if
 you	PRON	you
@@ -24520,7 +24552,7 @@ ground	NOUN	ground
 30	NUM	30
 cm	NOUN	centimeter
 )	PUNCT	)
-long	ADV	long
+long	ADJ	long
 .	PUNCT	.
 }
 Predicted: {
@@ -24546,7 +24578,7 @@ ground	NOUN	ground
 30	NUM	30
 cm	NOUN	cm
 )	PUNCT	)
-long	ADV	long
+long	ADJ	long
 .	PUNCT	.
 }
 Errors: {
@@ -27744,7 +27776,7 @@ dorothy	PROPN	dorothy
 says	VERB	say
 her	PRON	she
 secretary	NOUN	secretary
-'s	AUX	be
+'s	AUX	have
 been	AUX	be
 trying	VERB	try
 to	PART	to
@@ -27774,6 +27806,57 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 her: she | her
+'s: have | be
+}
+
+Expected: {
+well	INTJ	well
+,	PUNCT	,
+they	PRON	they
+'ve	AUX	have
+been	AUX	be
+clamouring	VERB	clamour
+away	ADV	away
+,	PUNCT	,
+of	ADV	of
+course	ADV	course
+,	PUNCT	,
+but	CCONJ	but
+he	PRON	he
+'s	AUX	have
+refused	VERB	refuse
+to	PART	to
+touch	VERB	touch
+the	DET	the
+army	NOUN	army
+.	PUNCT	.
+}
+Predicted: {
+well	INTJ	well
+,	PUNCT	,
+they	PRON	they
+'ve	AUX	have
+been	AUX	be
+clamouring	VERB	clamour
+away	ADV	away
+,	PUNCT	,
+of	ADV	of
+course	ADV	course
+,	PUNCT	,
+but	CCONJ	but
+he	PRON	he
+'s	AUX	be
+refused	VERB	refuse
+to	PART	to
+touch	VERB	touch
+the	DET	the
+army	NOUN	army
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+'s: have | be
 }
 
 Expected: {
@@ -28870,6 +28953,34 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 more: very | more
+}
+
+Expected: {
+he	PRON	he
+'s	AUX	have
+been	AUX	be
+frantic	ADJ	frantic
+,	PUNCT	,
+the	DET	the
+woman	NOUN	woman
+explained	VERB	explain
+.	PUNCT	.
+}
+Predicted: {
+he	PRON	he
+'s	AUX	be
+been	AUX	be
+frantic	ADJ	frantic
+,	PUNCT	,
+the	DET	the
+woman	NOUN	woman
+explained	VERB	explain
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+'s: have | be
 }
 
 Expected: {
@@ -35023,6 +35134,78 @@ her: she | her
 }
 
 Expected: {
+i	PRON	i
+looked	VERB	look
+at	ADP	at
+motocross	NOUN	motocross
+and	CCONJ	and
+the	DET	the
+more	ADV	more
+i	PRON	i
+looked	VERB	look
+,	PUNCT	,
+this	DET	this
+one	NUM	one
+woman	NOUN	woman
+'s	PART	's
+face	NOUN	face
+kept	VERB	keep
+coming	VERB	come
+up	ADP	up
+,	PUNCT	,
+in	ADP	in
+photographs	NOUN	photograph
+that	PRON	that
+looked	VERB	look
+as	SCONJ	as
+if	SCONJ	if
+they	PRON	they
+were	AUX	be
+from	ADP	from
+the	DET	the
+1970s	NOUN	1970
+.	PUNCT	.
+}
+Predicted: {
+i	PRON	i
+looked	VERB	look
+at	ADP	at
+motocross	NOUN	motocross
+and	CCONJ	and
+the	DET	the
+more	ADV	more
+i	PRON	i
+looked	VERB	look
+,	PUNCT	,
+this	DET	this
+one	NUM	one
+woman	NOUN	woman
+'s	PART	's
+face	NOUN	face
+kept	VERB	keep
+coming	VERB	come
+up	ADP	up
+,	PUNCT	,
+in	ADP	in
+photographs	NOUN	photograph
+that	PRON	that
+looked	VERB	look
+as	SCONJ	as
+if	SCONJ	if
+they	PRON	they
+were	AUX	be
+from	ADP	from
+the	DET	the
+1970s	NOUN	1970s
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+1970s: 1970 | 1970s
+}
+
+Expected: {
 but	CCONJ	but
 big	ADJ	big
 reductions	NOUN	reduction
@@ -35650,7 +35833,7 @@ egyptian	ADJ	egyptian
 pharaoh	NOUN	pharaoh
 thus	ADV	thus
 found	VERB	find
-himself	PRON	himself
+himself	PRON	he
 in	ADP	in
 northern	ADJ	northern
 amurru	PROPN	amurru
@@ -35684,6 +35867,7 @@ earlier	ADJ	early
 Errors: {
 Tok: Ref | Pred
 ---------------
+himself: himself | he
 earlier: earlier | early
 }
 

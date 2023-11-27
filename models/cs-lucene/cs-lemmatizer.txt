@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.979270768799432
-Training-Sample-Size=114655
-Evaluation-Sample-Size=12739
+Evaluation-Score=0.9791270492172643
+Training-Sample-Size=114922
+Evaluation-Sample-Size=12769
 Training-Algorithm=MAXENT
 
 === MODEL PROPERTIES ===
@@ -10,9 +10,9 @@ Component-Name=StatisticalLemmatizer
 Language=cs
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1697776940280
+Timestamp=1700452710086
 TrainerType=Event
-Training-Eventhash=8a6bdb2b5f22211ee0bd41fdacb3bc2a
+Training-Eventhash=375da8a34964031d69c009866e410931
 factory=opennlp.tools.lemmatizer.LemmatizerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -1283,80 +1283,6 @@ pihy: piha | pih
 }
 
 Expected: {
-vrasky	NOUN	vraska
-a	CCONJ	a
-zahyby	NOUN	zahyb
-kuze	NOUN	kuze
-,	PUNCT	,
-zejmena	ADV	zejmena
-pri	ADP	pri
-zevnim	ADJ	zevni
-koutku	NOUN	koutek
-oka	NOUN	oko
-,	PUNCT	,
-pusobi	VERB	pusobit
-stala	ADJ	staly
-cinnost	NOUN	cinnost
-mimickeho	ADJ	mimicky
-svalstva	NOUN	svalstvo
-ve	ADP	v
-stari	NOUN	stari
-se	PRON	se
-vsak	CCONJ	vsak
-prohlubuji	VERB	prohlubovat
-vinou	NOUN	vina
-popsanych	ADJ	popsany
-zmen	NOUN	zmena
-v	ADP	v
-koznim	ADJ	kozni
-vazivu	NOUN	vazivo
-a	CCONJ	a
-ubyvajiciho	ADJ	ubyvajici
-podkozniho	ADJ	podkozni
-tuku	NOUN	tuk
-.	PUNCT	.
-}
-Predicted: {
-vrasky	NOUN	vraska
-a	CCONJ	a
-zahyby	NOUN	zahyb
-kuze	NOUN	kuze
-,	PUNCT	,
-zejmena	ADV	zejmena
-pri	ADP	pri
-zevnim	ADJ	zevni
-koutku	NOUN	koutek
-oka	NOUN	oko
-,	PUNCT	,
-pusobi	VERB	pusobit
-stala	ADJ	staly
-cinnost	NOUN	cinnost
-mimickeho	ADJ	mimicky
-svalstva	NOUN	svalstvo
-ve	ADP	v
-stari	NOUN	stari
-se	PRON	se
-vsak	CCONJ	vsak
-prohlubuji	VERB	prohlubovat
-vinou	NOUN	vina
-popsanych	ADJ	popsany
-zmen	NOUN	zmena
-v	ADP	v
-koznim	ADJ	kozni
-vazivu	NOUN	vazivu
-a	CCONJ	a
-ubyvajiciho	ADJ	ubyvajici
-podkozniho	ADJ	podkozni
-tuku	NOUN	tuk
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-vazivu: vazivo | vazivu
-}
-
-Expected: {
 postihuji	VERB	postihovat
 casteji	ADV	casto
 muze	NOUN	muz
@@ -1404,7 +1330,7 @@ masku	NOUN	maska
 vlaznou	ADJ	vlazny
 vodou	NOUN	voda
 nebo	CCONJ	nebo
-sejmeme	VERB	sejmeme
+sejmeme	VERB	sejme
 pomoci	ADP	pomoci
 teplych	ADJ	teply
 obkladu	NOUN	obklad
@@ -1416,7 +1342,7 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 omyjeme: omyt | omyjeme
-sejmeme: sejmout | sejmeme
+sejmeme: sejmout | sejme
 }
 
 Expected: {
@@ -6685,7 +6611,7 @@ rada	NOUN	rada
 *	SYM	&cwildcard;
 jsou	AUX	byt
 elektricke	ADJ	elektricky
-virive	ADJ	virivy
+virive	ADJ	virive
 pracky	NOUN	pracka
 pro	ADP	pro
 domacnost	NOUN	domacnost
@@ -6695,6 +6621,7 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 typova: typovy | typova
+virive: virivy | virive
 }
 
 Expected: {
@@ -6749,6 +6676,36 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 hedvabnych: hedvabny | hedvabnych
+}
+
+Expected: {
+kombi	PROPN	kombi
+a	CCONJ	a
+*	SYM	&cwildcard;
+jsou	AUX	byt
+elektricke	ADJ	elektricky
+virive	ADJ	virivy
+pracky	NOUN	pracka
+s	ADP	s
+odstredivkou	NOUN	odstredivka
+.	PUNCT	.
+}
+Predicted: {
+kombi	PROPN	kombi
+a	CCONJ	a
+*	SYM	&cwildcard;
+jsou	AUX	byt
+elektricke	ADJ	elektricky
+virive	ADJ	virive
+pracky	NOUN	pracka
+s	ADP	s
+odstredivkou	NOUN	odstredivka
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+virive: virivy | virive
 }
 
 Expected: {
@@ -13931,7 +13888,7 @@ vzorove	ADJ	vzorovy
 kreace	NOUN	kreace
 kostelnicky	NOUN	kostelnicky
 nadezdy	PROPN	nadezdy
-kniplove	PROPN	kniplove
+kniplove	PROPN	kniplova
 a	CCONJ	a
 laca	PROPN	laca
 vilema	PROPN	vilem
@@ -13947,7 +13904,6 @@ nejlepsi: dobry | lepsi
 jenufy: jenufa | jenufy
 kostelnicky: kostelnicka | kostelnicky
 nadezdy: nadezda | nadezdy
-kniplove: kniplova | kniplove
 laca: laco | laca
 }
 
@@ -15494,7 +15450,7 @@ jako	SCONJ	jako
 ve	ADP	v
 skrivanech	PROPN	skrivany
 ,	PUNCT	,
-smiradech	PROPN	smirady
+smiradech	PROPN	smiradech
 ,	PUNCT	,
 nechanicich	PROPN	nechanice
 ,	PUNCT	,
@@ -15518,6 +15474,7 @@ libcany	PROPN	libcany
 Errors: {
 Tok: Ref | Pred
 ---------------
+smiradech: smirady | smiradech
 vsestarech: vsestary | vsestarech
 luzci: luzec | luzci
 klamosi: klamos | klamosi
@@ -15903,7 +15860,7 @@ fanousu	PROPN	fanous
 ,	PUNCT	,
 jenicku	PROPN	jenicka
 ,	PUNCT	,
-jiricku	PROPN	jiricku
+jiricku	PROPN	jiricko
 ,	PUNCT	,
 jarousku	PROPN	jarousko
 stavaji	VERB	stavat
@@ -15925,7 +15882,7 @@ Tok: Ref | Pred
 ---------------
 kaju: kaja | kaju
 jenicku: jenicek | jenicka
-jiricku: jiricek | jiricku
+jiricku: jiricek | jiricko
 jarousku: jarousek | jarousko
 karlove: karel | karlov
 frantove: franta | frantova
@@ -16724,7 +16681,7 @@ letech	NOUN	leta
 tohoto	DET	tento
 stoleti	NOUN	stoleti
 na	ADP	na
-rosicku	PROPN	rosicku
+rosicku	PROPN	rosicka
 -	PUNCT	-
 oslavansku	PROPN	oslavansko
 vzali	VERB	vzit
@@ -16751,7 +16708,7 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 letech: rok | leta
-rosicku: rosicko | rosicku
+rosicku: rosicko | rosicka
 }
 
 Expected: {
@@ -24657,7 +24614,7 @@ lisnice	PROPN	lisnice
 ,	PUNCT	,
 svratka	PROPN	svratka
 a	CCONJ	a
-dal	ADV	dal
+dal	ADV	daleko
 uz	ADV	uz
 moc	ADV	moc
 ne	PART	ne
@@ -24667,7 +24624,7 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 nas: ja | my
-dal: dale | dal
+dal: dale | daleko
 }
 
 Expected: {
@@ -25357,7 +25314,7 @@ dalibor	PROPN	dalibor
 .	PUNCT	.
 }
 Predicted: {
-ty	PRON	ten
+ty	PRON	ty
 si	PRON	se
 to	DET	ten
 umis	VERB	umet
@@ -25375,7 +25332,6 @@ dalibor	PROPN	dalibor
 Errors: {
 Tok: Ref | Pred
 ---------------
-ty: ty | ten
 dolarovej: dolarovy | dolarovej
 }
 
@@ -30975,7 +30931,7 @@ s	ADP	s
 vetsim	ADJ	velky
 nebo	CCONJ	nebo
 mensim	ADJ	maly
-dvorkem	NOUN	dvorek
+dvorkem	NOUN	dvork
 jako	SCONJ	jako
 vybehem	NOUN	vybehem
 .	PUNCT	.
@@ -30983,6 +30939,7 @@ vybehem	NOUN	vybehem
 Errors: {
 Tok: Ref | Pred
 ---------------
+dvorkem: dvorek | dvork
 vybehem: vybeh | vybehem
 }
 
@@ -32319,7 +32276,7 @@ presne	ADV	presne
 .	PUNCT	.
 }
 Predicted: {
-nepisu	VERB	pis
+nepisu	VERB	nepis
 si	PRON	se
 to	DET	ten
 ,	PUNCT	,
@@ -32331,7 +32288,7 @@ presne	ADV	presne
 Errors: {
 Tok: Ref | Pred
 ---------------
-nepisu: psat | pis
+nepisu: psat | nepis
 }
 
 Expected: {
@@ -42363,7 +42320,7 @@ vymene	NOUN	vymena
 taborist	NOUN	taboriste
 lze	VERB	lze
 spatrovat	VERB	spatrovat
-dal	ADV	dal
+dal	ADV	daleko
 do	ADP	do
 budoucna	NOUN	budoucno
 jeden	NUM	jeden
@@ -42385,7 +42342,7 @@ taborist	NOUN	taboriste
 Errors: {
 Tok: Ref | Pred
 ---------------
-dal: dale | dal
+dal: dale | daleko
 }
 
 Expected: {
@@ -42468,7 +42425,7 @@ chemizovanych	ADJ	chemizovany
 a	CCONJ	a
 temer	ADV	temer
 mrtvych	ADJ	mrtvy
-vodoteci	NOUN	vodoteci
+vodoteci	NOUN	vodotec
 i	CCONJ	i
 znecistenych	ADJ	znecisteny
 chovnych	ADJ	chovny
@@ -42517,7 +42474,6 @@ osvezenim	NOUN	osvezeni
 Errors: {
 Tok: Ref | Pred
 ---------------
-vodoteci: vodotec | vodoteci
 nezkazenych: zkazeny | nezkazeny
 }
 
@@ -44134,7 +44090,7 @@ ditete	NOUN	dite
 pomineme	VERB	pominout
 -	PUNCT	-
 li	PART	li
-dal	ADV	dal
+dal	ADV	daleko
 casto	ADV	casto
 v	ADP	v
 pochybnost	NOUN	pochybnost
@@ -44201,7 +44157,7 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 rekne: reknout | rici
-dal: dale | dal
+dal: dale | daleko
 niz: nizko | jenz
 nevyskytuji: vyskytovat | evyskytuat
 }
@@ -51170,7 +51126,7 @@ se	PRON	se
 zobak	NOUN	zobak
 zveda	VERB	zvedat
 a	CCONJ	a
-sklani	VERB	sklani
+sklani	VERB	sklanet
 jako	SCONJ	jako
 v	ADP	v
 kloubu	NOUN	kloub
@@ -51181,7 +51137,6 @@ Tok: Ref | Pred
 ---------------
 koreni: koren | koreni
 ryhu: ryha | ryhu
-sklani: sklanet | sklani
 }
 
 Expected: {
@@ -53418,7 +53373,7 @@ musi	VERB	muset
 se	PRON	se
 zakryt	VERB	zakryt
 nepromokavou	ADJ	npromokav
-plachtou	NOUN	plachta
+plachtou	NOUN	plachtou
 ,	PUNCT	,
 lepenkou	NOUN	lepenka
 nebo	CCONJ	nebo
@@ -53429,6 +53384,7 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 nepromokavou: promokavy | npromokav
+plachtou: plachta | plachtou
 }
 
 Expected: {
@@ -59609,28 +59565,6 @@ kdykoliv: kdykoli | kdykoliv
 }
 
 Expected: {
-ty	PRON	ty
-uz	ADV	uz
-jsi	AUX	byt
-zdrava	ADJ	zdravy
-?	PUNCT	?
-"	PUNCT	"
-}
-Predicted: {
-ty	PRON	ten
-uz	ADV	uz
-jsi	AUX	byt
-zdrava	ADJ	zdravy
-?	PUNCT	?
-"	PUNCT	"
-}
-Errors: {
-Tok: Ref | Pred
----------------
-ty: ty | ten
-}
-
-Expected: {
 hlavni	ADJ	hlavni
 sestra	NOUN	sestra
 ,	PUNCT	,
@@ -60173,6 +60107,86 @@ Tok: Ref | Pred
 vyhaslyma: vyhasly | vyhaslymat
 modryma: modry | modryma
 ocekavaje: ocekavat | ocekavajet
+}
+
+Expected: {
+"	PUNCT	"
+fyzicka	NOUN	fyzicka
+,	PUNCT	,
+fyzicka	NOUN	fyzicka
+,	PUNCT	,
+"	PUNCT	"
+vysmival	VERB	vysmivat
+se	PRON	se
+jim	PRON	on
+treti	ADJ	treti
+starik	NOUN	starik
+,	PUNCT	,
+ten	DET	ten
+s	ADP	s
+pomnenkovyma	ADJ	pomnenkovy
+ocima	NOUN	oko
+,	PUNCT	,
+co	PRON	co
+havlenu	PROPN	havlena
+ke	ADP	k
+stolu	NOUN	stul
+privedl	VERB	privest
+,	PUNCT	,
+"	PUNCT	"
+tu	DET	ten
+si	PRON	se
+muzou	VERB	moci
+nalozit	VERB	nalozit
+,	PUNCT	,
+kdyz	SCONJ	kdyz
+neumeji	VERB	umet
+strilet	VERB	strilet
+goly	NOUN	gol
+!	PUNCT	!
+"	PUNCT	"
+}
+Predicted: {
+"	PUNCT	"
+fyzicka	NOUN	fyzicka
+,	PUNCT	,
+fyzicka	NOUN	fyzicka
+,	PUNCT	,
+"	PUNCT	"
+vysmival	VERB	vysmivat
+se	PRON	se
+jim	PRON	on
+treti	ADJ	treti
+starik	NOUN	starik
+,	PUNCT	,
+ten	DET	ten
+s	ADP	s
+pomnenkovyma	ADJ	pomnenkovymat
+ocima	NOUN	oko
+,	PUNCT	,
+co	PRON	co
+havlenu	PROPN	havlena
+ke	ADP	k
+stolu	NOUN	stul
+privedl	VERB	privest
+,	PUNCT	,
+"	PUNCT	"
+tu	DET	ten
+si	PRON	se
+muzou	VERB	moci
+nalozit	VERB	nalozit
+,	PUNCT	,
+kdyz	SCONJ	kdyz
+neumeji	VERB	umet
+strilet	VERB	strilet
+goly	NOUN	gol
+!	PUNCT	!
+"	PUNCT	"
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+pomnenkovyma: pomnenkovy | pomnenkovymat
 }
 
 Expected: {
@@ -60810,7 +60824,7 @@ velice	ADV	velice
 obdivovali	VERB	obdivovat
 francouzske	ADJ	francouzsky
 dekadenty	NOUN	dekadent
-baudelaira	PROPN	baudelaira
+baudelaira	PROPN	baudelaire
 ,	PUNCT	,
 rimbauda	PROPN	rimbaud
 a	CCONJ	a
@@ -60830,7 +60844,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 borovcem: borovec | borovce
-baudelaira: baudelaire | baudelaira
 nasimi: muj | nas
 netajili: tajit | netajili
 }
@@ -61053,7 +61066,7 @@ co	PRON	co
 z	ADP	z
 ni	PRON	on
 dela	VERB	delat
-kohosi	PRON	kohosi
+kohosi	PRON	kohose
 ciziho	ADJ	cizi
 ,	PUNCT	,
 ale	CCONJ	ale
@@ -61094,7 +61107,7 @@ odpor	NOUN	odpor
 Errors: {
 Tok: Ref | Pred
 ---------------
-kohosi: kdosi | kohosi
+kohosi: kdosi | kohose
 nechutne: chutne | chutny
 }
 
@@ -62571,74 +62584,6 @@ spouste: spousta | spoust
 }
 
 Expected: {
-pak	ADV	pak
-si	PRON	se
-predstavte	VERB	predstavit
-,	PUNCT	,
-ze	SCONJ	ze
-byste	AUX	byt
-se	PRON	se
-museli	VERB	muset
-vzdat	VERB	vzdat
-druhe	ADJ	druhy
-jistoty	NOUN	jistota
-,	PUNCT	,
-druhe	ADJ	druhy
-hodnoty	NOUN	hodnota
-,	PUNCT	,
-vyjmete	VERB	vyjmout
-ji	PRON	on
-z	ADP	z
-ostatnich	ADJ	ostatni
-a	CCONJ	a
-uvazujte	VERB	uvazovat
-,	PUNCT	,
-jak	ADV	jak
-byste	AUX	byt
-se	PRON	se
-bez	ADP	bez
-ni	PRON	on
-obesli	VERB	obejit
-.	PUNCT	.
-}
-Predicted: {
-pak	ADV	pak
-si	PRON	se
-predstavte	VERB	predstavit
-,	PUNCT	,
-ze	SCONJ	ze
-byste	AUX	byt
-se	PRON	se
-museli	VERB	muset
-vzdat	VERB	vzdat
-druhe	ADJ	druhy
-jistoty	NOUN	jistota
-,	PUNCT	,
-druhe	ADJ	druhy
-hodnoty	NOUN	hodnota
-,	PUNCT	,
-vyjmete	VERB	vyjmety
-ji	PRON	on
-z	ADP	z
-ostatnich	ADJ	ostatni
-a	CCONJ	a
-uvazujte	VERB	uvazovat
-,	PUNCT	,
-jak	ADV	jak
-byste	AUX	byt
-se	PRON	se
-bez	ADP	bez
-ni	PRON	on
-obesli	VERB	obejit
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-vyjmete: vyjmout | vyjmety
-}
-
-Expected: {
 "	PUNCT	"
 maminko	NOUN	maminka
 ,	PUNCT	,
@@ -63053,36 +62998,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 nenapadnem: napadny | nenapadny
-}
-
-Expected: {
-od	ADP	od
-te	DET	ten
-doby	NOUN	doba
-jsem	AUX	byt
-si	PRON	se
-navykla	VERB	navyknout
-za	ADP	za
-ni	PRON	on
-chodit	VERB	chodit
-.	PUNCT	.
-}
-Predicted: {
-od	ADP	od
-te	DET	ten
-doby	NOUN	doba
-jsem	AUX	byt
-si	PRON	se
-navykla	VERB	navykla
-za	ADP	za
-ni	PRON	on
-chodit	VERB	chodit
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-navykla: navyknout | navykla
 }
 
 Expected: {
@@ -63769,14 +63684,13 @@ se	PRON	se
 nerozcilim	VERB	nerozcilet
 a	CCONJ	a
 jeste	ADV	jeste
-pobavim	VERB	pobavim
+pobavim	VERB	pobavit
 .	PUNCT	.
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
 nerozcilim: rozcilit | nerozcilet
-pobavim: pobavit | pobavim
 }
 
 Expected: {
@@ -64670,66 +64584,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 bzucicich: bzucici | bzucicicht
-}
-
-Expected: {
-mozna	PART	mozna
-proto	ADV	proto
-vidim	VERB	videt
-kolem	ADP	kolem
-sebe	PRON	se
-malo	DET	malo
-stastnych	ADJ	stastny
-usmevu	NOUN	usmev
-,	PUNCT	,
-takovych	DET	takovy
-,	PUNCT	,
-jako	SCONJ	jako
-jsem	AUX	byt
-videl	VERB	videt
-tehdy	ADV	tehdy
-ve	ADP	v
-vysce	NOUN	vyska
-nad	ADP	nad
-obzory	NOUN	obzor
-na	ADP	na
-tvari	NOUN	tvar
-sveho	DET	svuj
-prozpevujiciho	ADJ	prozpevujici
-mistra	NOUN	mistr
-.	PUNCT	.
-}
-Predicted: {
-mozna	PART	mozna
-proto	ADV	proto
-vidim	VERB	videt
-kolem	ADP	kolem
-sebe	PRON	se
-malo	DET	malo
-stastnych	ADJ	stastny
-usmevu	NOUN	usmev
-,	PUNCT	,
-takovych	DET	takovy
-,	PUNCT	,
-jako	SCONJ	jako
-jsem	AUX	byt
-videl	VERB	videt
-tehdy	ADV	tehdy
-ve	ADP	v
-vysce	NOUN	vyska
-nad	ADP	nad
-obzory	NOUN	obzora
-na	ADP	na
-tvari	NOUN	tvar
-sveho	DET	svuj
-prozpevujiciho	ADJ	prozpevujici
-mistra	NOUN	mistr
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-obzory: obzor | obzora
 }
 
 Expected: {
@@ -65677,7 +65531,7 @@ na	ADP	na
 lidi	NOUN	lide
 zvykly	ADJ	zvykly
 a	CCONJ	a
-dal	ADV	dal
+dal	ADV	daleko
 si	PRON	se
 cpal	VERB	cpat
 hubu	NOUN	huba
@@ -65689,7 +65543,7 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 lidi: clovek | lide
-dal: dale | dal
+dal: dale | daleko
 }
 
 Expected: {
@@ -65737,7 +65591,7 @@ jsem	AUX	byt
 hral	VERB	hrat
 harpagona	PROPN	harpagona
 nebo	CCONJ	nebo
-hadriana	PROPN	hadrian
+hadriana	PROPN	hadriana
 ,	PUNCT	,
 musel	VERB	muset
 jsem	AUX	byt
@@ -65774,6 +65628,7 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 harpagona: harpagon | harpagona
+hadriana: hadrian | hadriana
 }
 
 Expected: {
@@ -66865,7 +66720,7 @@ molierove	ADJ	molierovy
 lakomci	NOUN	lakomci
 ,	PUNCT	,
 jako	SCONJ	jako
-hadriana	PROPN	hadrian
+hadriana	PROPN	hadriana
 v	ADP	v
 klicperove	ADJ	klicperovy
 hre	NOUN	hra
@@ -66881,6 +66736,7 @@ gogolove: gogoluv | gogolovy
 harpagona: harpagon | harpagona
 molierove: molieruv | molierovy
 lakomci: lakomec | lakomci
+hadriana: hadrian | hadriana
 klicperove: klicperuv | klicperovy
 rimsu: rimsy | rimsu
 }
@@ -68278,7 +68134,7 @@ a	CCONJ	a
 v	ADP	v
 zivote	NOUN	zivot
 takovou	DET	takovy
-nadheru	NOUN	nadher
+nadheru	NOUN	nadhera
 nevideli	VERB	videt
 .	PUNCT	.
 }
@@ -68286,7 +68142,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 soudcove: soudce | soudcuv
-nadheru: nadhera | nadher
 }
 
 Expected: {
@@ -68591,7 +68446,7 @@ konstatoval	VERB	konstatovat
 ,	PUNCT	,
 ze	SCONJ	ze
 jeji	DET	jeho
-polibky	NOUN	polibka
+polibky	NOUN	polibek
 ,	PUNCT	,
 kdysi	ADV	kdysi
 tak	ADV	tak
@@ -68608,7 +68463,6 @@ zhoroucnely	VERB	zhoroucnet
 Errors: {
 Tok: Ref | Pred
 ---------------
-polibky: polibek | polibka
 zvlhly: zvlhnout | zvlhly
 }
 
@@ -70112,6 +69966,44 @@ nedobyva: dobyvat | nedobyvat
 }
 
 Expected: {
+zatahl	VERB	zatahnout
+jeste	ADV	jeste
+jednou	ADV	jednou
+z	ADP	z
+cigarety	NOUN	cigareta
+,	PUNCT	,
+vyfoukl	VERB	vyfouknout
+dym	NOUN	dym
+a	CCONJ	a
+dival	VERB	divat
+se	PRON	se
+na	ADP	na
+oblohu	NOUN	obloha
+.	PUNCT	.
+}
+Predicted: {
+zatahl	VERB	zatahnout
+jeste	ADV	jeste
+jednou	ADV	jednou
+z	ADP	z
+cigarety	NOUN	cigareta
+,	PUNCT	,
+vyfoukl	VERB	vyfoukl
+dym	NOUN	dym
+a	CCONJ	a
+dival	VERB	divat
+se	PRON	se
+na	ADP	na
+oblohu	NOUN	obloha
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+vyfoukl: vyfouknout | vyfoukl
+}
+
+Expected: {
 ostatne	PART	ostatne
 nechci	VERB	chtit
 v	ADP	v
@@ -70565,8 +70457,8 @@ prece	ADV	prece
 jen	PART	jen
 dost	ADV	dost
 pletek	NOUN	pletek
-se	ADP	s
-zenskyma	NOUN	zensky
+se	ADP	se
+zenskyma	NOUN	zenskyma
 ,	PUNCT	,
 a	CCONJ	a
 to	DET	ten
@@ -70585,7 +70477,8 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 pletek: pletky | pletek
-zenskyma: zenska | zensky
+se: s | se
+zenskyma: zenska | zenskyma
 }
 
 Expected: {
@@ -71660,6 +71553,30 @@ vam: ty | vy
 }
 
 Expected: {
+"	PUNCT	"
+zcela	ADV	zcela
+spravne	ADV	spravne
+,	PUNCT	,
+magdo	PROPN	magda
+.	PUNCT	.
+"	PUNCT	"
+}
+Predicted: {
+"	PUNCT	"
+zcela	ADV	zcela
+spravne	ADV	spravne
+,	PUNCT	,
+magdo	PROPN	magdo
+.	PUNCT	.
+"	PUNCT	"
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+magdo: magda | magdo
+}
+
+Expected: {
 co	PRON	co
 tady	ADV	tady
 delaji	VERB	delat
@@ -72325,28 +72242,6 @@ nepostrehla: postrehnout | nepostrehnout
 }
 
 Expected: {
-mas	VERB	mit
-ty	PRON	ty
-vubec	PART	vubec
-nejakou	DET	nejaky
-zodpovednost	NOUN	zodpovednost
-?	PUNCT	?
-}
-Predicted: {
-mas	VERB	mit
-ty	PRON	ten
-vubec	PART	vubec
-nejakou	DET	nejaky
-zodpovednost	NOUN	zodpovednost
-?	PUNCT	?
-}
-Errors: {
-Tok: Ref | Pred
----------------
-ty: ty | ten
-}
-
-Expected: {
 okolo	ADP	okolo
 krku	NOUN	krk
 se	PRON	se
@@ -72874,40 +72769,6 @@ potuchy: potucha | potuchy
 }
 
 Expected: {
-divka	NOUN	divka
-lezi	VERB	lezet
-na	ADP	na
-operacnim	ADJ	operacni
-stole	NOUN	stul
-,	PUNCT	,
-bleda	ADJ	bledy
-,	PUNCT	,
-zarouskovana	ADJ	zarouskovany
-a	CCONJ	a
-ztuhla	ADJ	ztuhly
-.	PUNCT	.
-}
-Predicted: {
-divka	NOUN	divka
-lezi	VERB	lezet
-na	ADP	na
-operacnim	ADJ	operacni
-stole	NOUN	stul
-,	PUNCT	,
-bleda	ADJ	bledy
-,	PUNCT	,
-zarouskovana	ADJ	zarouskovany
-a	CCONJ	a
-ztuhla	ADJ	ztuhnout
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-ztuhla: ztuhly | ztuhnout
-}
-
-Expected: {
 aby bych	SCONJ AUX	aby byt
 nevlit	VERB	vlitnout
 do	ADP	do
@@ -73001,34 +72862,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 profesorova: profesoruv | profesorovy
-}
-
-Expected: {
-barva	NOUN	barva
-obzoru	NOUN	obzor
-se	PRON	se
-menila	VERB	menit
-,	PUNCT	,
-bledla	VERB	blednout
-a	CCONJ	a
-svetlala	VERB	svetlat
-.	PUNCT	.
-}
-Predicted: {
-barva	NOUN	barva
-obzoru	NOUN	obzor
-se	PRON	se
-menila	VERB	menit
-,	PUNCT	,
-bledla	VERB	bledly
-a	CCONJ	a
-svetlala	VERB	svetlat
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-bledla: blednout | bledly
 }
 
 Expected: {
@@ -73169,30 +73002,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 patera: pater | patera
-}
-
-Expected: {
-vsak	CCONJ	vsak
-se	PRON	se
-nakonec	PART	nakonec
-stejne	PART	stejne
-vsechno	DET	vsechen
-dovi	VERB	dovedet
-.	PUNCT	.
-}
-Predicted: {
-vsak	CCONJ	vsak
-se	PRON	se
-nakonec	PART	nakonec
-stejne	PART	stejne
-vsechno	DET	vsechen
-dovi	VERB	dovy
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-dovi: dovedet | dovy
 }
 
 Expected: {
@@ -74957,7 +74766,7 @@ vlastnictvim	NOUN	vlastnictvi
 .	PUNCT	.
 }
 Predicted: {
-ty	PRON	ten
+ty	PRON	ty
 chces	VERB	chtit
 moje	DET	muj
 fazole	NOUN	fazole
@@ -74978,7 +74787,6 @@ vlastnictvim	NOUN	vlastnictvi
 Errors: {
 Tok: Ref | Pred
 ---------------
-ty: ty | ten
 nazyvas: nazyvat | nazyvas
 }
 
@@ -77252,32 +77060,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 beztrestne: beztrestny | beztrestne
-}
-
-Expected: {
-formy	NOUN	forma
-koupani	NOUN	koupani
-jsou	AUX	byt
-ruzne	ADJ	ruzny
-a	CCONJ	a
-ruzne	ADV	ruzne
-dlouhe	ADJ	dlouhy
-.	PUNCT	.
-}
-Predicted: {
-formy	NOUN	forma
-koupani	NOUN	koupani
-jsou	AUX	byt
-ruzne	ADJ	ruzny
-a	CCONJ	a
-ruzne	ADV	ruzny
-dlouhe	ADJ	dlouhy
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-ruzne: ruzne | ruzny
 }
 
 Expected: {
@@ -81762,7 +81544,7 @@ gioacchina	PROPN	gioacchino
 pennina	PROPN	pennina
 ,	PUNCT	,
 ktery	DET	ktery
-kotvil	VERB	kotvilt
+kotvil	VERB	kotvil
 dvacet	NUM	dvacet
 let	NOUN	leta
 jednou	NUM	jednou
@@ -81811,7 +81593,7 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 pennina: pennino | pennina
-kotvil: kotvit | kotvilt
+kotvil: kotvit | kotvil
 jednou: jeden | jednou
 mannina: mannino | mannin
 inzerilla: inzerillo | inzerill
@@ -82469,7 +82251,7 @@ davky	NOUN	davka
 }
 Predicted: {
 s	ADP	s
-brachou	NOUN	brachou
+brachou	NOUN	bracha
 petrem	PROPN	petr
 (	PUNCT	(
 nyni	ADV	nyni
@@ -82494,7 +82276,6 @@ davky	NOUN	davka
 Errors: {
 Tok: Ref | Pred
 ---------------
-brachou: bracha | brachou
 aut: autor | auto
 }
 
@@ -83383,28 +83164,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 nepochopitelne: pochopitelne | nepochopitee
-}
-
-Expected: {
-cesta	NOUN	cesta
-do	ADP	do
-pekel	NOUN	peklo
-vede	VERB	vest
-zadluzenim	NOUN	zadluzeni
-.	PUNCT	.
-}
-Predicted: {
-cesta	NOUN	cesta
-do	ADP	do
-pekel	NOUN	pekel
-vede	VERB	vest
-zadluzenim	NOUN	zadluzeni
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-pekel: peklo | pekel
 }
 
 Expected: {
@@ -88341,7 +88100,7 @@ mezemi	NOUN	meze
 s	ADP	s
 roklinami	NOUN	roklina
 a	CCONJ	a
-uvozy	NOUN	uvoz
+uvozy	NOUN	uvoza
 plnymi	ADJ	plny
 trnek	NOUN	trnek
 a	CCONJ	a
@@ -88385,6 +88144,7 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 mezemi: mez | meze
+uvozy: uvoz | uvoza
 trnek: trnka | trnek
 mokriny: mokrina | mokriny
 rakosim: rakosi | rakosim
@@ -90288,6 +90048,60 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 ctvrtfinalem: ctvrtfinale | ctvrtfinal
+}
+
+Expected: {
+"	PUNCT	"
+kdyz	SCONJ	kdyz
+si	PRON	se
+na	ADP	na
+nasi	DET	nas
+subtilni	ADJ	subtilni
+ctverici	NOUN	ctverice
+hruska	PROPN	hruska
+,	PUNCT	,
+kafka	PROPN	kafka
+,	PUNCT	,
+weber	PROPN	weber
+,	PUNCT	,
+pavelka	PROPN	pavelka
+nekdo	PRON	nekdo
+trochu	ADV	trochu
+vyslapne	VERB	vyslapnout
+,	PUNCT	,
+nevi	VERB	vedet
+jak	ADV	jak
+dal	ADV	dal
+.	PUNCT	.
+}
+Predicted: {
+"	PUNCT	"
+kdyz	SCONJ	kdyz
+si	PRON	se
+na	ADP	na
+nasi	DET	nas
+subtilni	ADJ	subtilni
+ctverici	NOUN	ctverice
+hruska	PROPN	hruska
+,	PUNCT	,
+kafka	PROPN	kafka
+,	PUNCT	,
+weber	PROPN	weber
+,	PUNCT	,
+pavelka	PROPN	pavelka
+nekdo	PRON	nekdo
+trochu	ADV	trochu
+vyslapne	VERB	vyslapnout
+,	PUNCT	,
+nevi	VERB	vedet
+jak	ADV	jak
+dal	ADV	daleko
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+dal: dal | daleko
 }
 
 Expected: {
@@ -94132,44 +93946,6 @@ chybis: chybet | chybis
 }
 
 Expected: {
-tyto	DET	tento
-druhy	NOUN	druh
-predstavuji	VERB	predstavovat
-tzv	ADJ	takzvany
-.	PUNCT	.
-big	X	big
-five	X	five
-,	PUNCT	,
-velkou	ADJ	velky
-petku	NOUN	petka
-,	PUNCT	,
-pychu	NOUN	pycha
-keni	PROPN	kena
-.	PUNCT	.
-}
-Predicted: {
-tyto	DET	tento
-druhy	NOUN	druh
-predstavuji	VERB	predstavovat
-tzv	ADJ	takzvany
-.	PUNCT	.
-big	X	big
-five	X	five
-,	PUNCT	,
-velkou	ADJ	velky
-petku	NOUN	petka
-,	PUNCT	,
-pychu	NOUN	pych
-keni	PROPN	kena
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-pychu: pycha | pych
-}
-
-Expected: {
 matka	NOUN	matka
 joggovala	VERB	joggovat
 v	ADP	v
@@ -97040,56 +96816,6 @@ r: r | rok
 }
 
 Expected: {
-obavam	VERB	obavat
-se	PRON	se
-,	PUNCT	,
-ze	SCONJ	ze
-to	DET	ten
-porad	ADV	porad
-jeste	ADV	jeste
-nezadrzi	VERB	zadrzet
-ucitele	NOUN	ucitel
-,	PUNCT	,
-kteri	DET	ktery
-chteji	VERB	chtit
-a	CCONJ	a
-hlavne	ADV	hlavne
-maji	VERB	mit
-moznost	NOUN	moznost
-odejit	VERB	odejit
-za	ADP	za
-lepsim	ADJ	lepsi
-.	PUNCT	.
-}
-Predicted: {
-obavam	VERB	obavat
-se	PRON	se
-,	PUNCT	,
-ze	SCONJ	ze
-to	DET	ten
-porad	ADV	porad
-jeste	ADV	jeste
-nezadrzi	VERB	nadrzi
-ucitele	NOUN	ucitel
-,	PUNCT	,
-kteri	DET	ktery
-chteji	VERB	chtit
-a	CCONJ	a
-hlavne	ADV	hlavne
-maji	VERB	mit
-moznost	NOUN	moznost
-odejit	VERB	odejit
-za	ADP	za
-lepsim	ADJ	lepsi
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-nezadrzi: zadrzet | nadrzi
-}
-
-Expected: {
 ve	ADP	v
 ctyrech	NUM	ctyri
 tridach	NOUN	trida
@@ -99795,7 +99521,7 @@ homeostaticky	ADJ	homeostaticky
 mechanismus	NOUN	mechanismus
 ,	PUNCT	,
 "	PUNCT	"
-nezivou	ADJ	neziva
+nezivou	ADJ	nezivy
 "	PUNCT	"
 gaiu	PROPN	gaiu
 ,	PUNCT	,
@@ -99816,7 +99542,7 @@ let	NOUN	leta
 Errors: {
 Tok: Ref | Pred
 ---------------
-nezivou: zivy | neziva
+nezivou: zivy | nezivy
 gaiu: gaia | gaiu
 }
 
@@ -101680,7 +101406,7 @@ soucasnost	NOUN	soucasnost
 Predicted: {
 cas	NOUN	cas
 je	AUX	byt
-udan	ADJ	uda
+udan	ADJ	udan
 v	ADP	v
 miliardach	DET	miliarda
 let	NOUN	leta
@@ -101696,7 +101422,7 @@ soucasnost	NOUN	soucasnost
 Errors: {
 Tok: Ref | Pred
 ---------------
-udan: udany | uda
+udan: udany | udan
 }
 
 Expected: {
@@ -103267,7 +102993,7 @@ expertizu	NOUN	expertiza
 zda	SCONJ	zda
 z	ADP	z
 komina	NOUN	komin
-neodchazeji	VERB	ndchazet
+neodchazeji	VERB	neodchaz
 zdravi	NOUN	zdravi
 skodlive	ADJ	skodlivy
 latky	NOUN	latka
@@ -103276,7 +103002,7 @@ latky	NOUN	latka
 Errors: {
 Tok: Ref | Pred
 ---------------
-neodchazeji: odchazet | ndchazet
+neodchazeji: odchazet | neodchaz
 }
 
 Expected: {
@@ -103917,54 +103643,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 dale: daleko | dale
-}
-
-Expected: {
-podobne	ADV	podobne
-je	AUX	byt
-treba	ADV	treba
-jednorazove	ADV	jednorazove
-zvysit	VERB	zvysit
-zasoby	NOUN	zasoba
-pred	ADP	pred
-vanoci	NOUN	vanoce
-,	PUNCT	,
-aby by	SCONJ AUX	aby byt
-byl	AUX	byt
-dostatecny	ADJ	dostatecny
-vyber	NOUN	vyber
-darku	NOUN	darek
-a	CCONJ	a
-zimniho	ADJ	zimni
-sportovniho	ADJ	sportovni
-vybaveni	NOUN	vybaveni
-.	PUNCT	.
-}
-Predicted: {
-podobne	ADV	podobne
-je	AUX	byt
-treba	ADV	treba
-jednorazove	ADV	jednorazove
-zvysit	VERB	zvysit
-zasoby	NOUN	zasoba
-pred	ADP	pred
-vanoci	NOUN	vanoci
-,	PUNCT	,
-aby by	SCONJ AUX	aby byt
-byl	AUX	byt
-dostatecny	ADJ	dostatecny
-vyber	NOUN	vyber
-darku	NOUN	darek
-a	CCONJ	a
-zimniho	ADJ	zimni
-sportovniho	ADJ	sportovni
-vybaveni	NOUN	vybaveni
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-vanoci: vanoce | vanoci
 }
 
 Expected: {
@@ -106808,8 +106486,8 @@ vystavach	NOUN	vystava
 .	PUNCT	.
 }
 Predicted: {
-poradi	VERB	poradit
-se	ADP	se
+poradi	VERB	poradi
+se	ADP	s
 zakony	NOUN	zakon
 ,	PUNCT	,
 sazebniky	NOUN	sazebnik
@@ -106829,7 +106507,7 @@ vystavach	NOUN	vystava
 Errors: {
 Tok: Ref | Pred
 ---------------
-se: s | se
+poradi: poradit | poradi
 }
 
 Expected: {
@@ -111907,58 +111585,6 @@ sirtu: sirt | sirtu
 }
 
 Expected: {
-tento	DET	tento
-tyden	NOUN	tyden
-bylo	AUX	byt
-nalezeno	ADJ	nalezeny
-telo	NOUN	telo
-dalsiho	ADJ	dalsi
-americkeho	ADJ	americky
-rukojmiho	NOUN	rukojmi
-williama	PROPN	william
-higginse	PROPN	higgins
-,	PUNCT	,
-ktery	DET	ktery
-byl	AUX	byt
-zajat	ADJ	zajaty
-v	ADP	v
-unoru	NOUN	unor
-1988	NUM	1988
-v	ADP	v
-jiznim	ADJ	jizni
-libanonu	PROPN	libanon
-.	PUNCT	.
-}
-Predicted: {
-tento	DET	tento
-tyden	NOUN	tyden
-bylo	AUX	byt
-nalezeno	ADJ	nalezeny
-telo	NOUN	telo
-dalsiho	ADJ	dalsi
-americkeho	ADJ	americky
-rukojmiho	NOUN	rukojmi
-williama	PROPN	william
-higginse	PROPN	higgins
-,	PUNCT	,
-ktery	DET	ktery
-byl	AUX	byt
-zajat	ADJ	zajat
-v	ADP	v
-unoru	NOUN	unor
-1988	NUM	1988
-v	ADP	v
-jiznim	ADJ	jizni
-libanonu	PROPN	libanon
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-zajat: zajaty | zajat
-}
-
-Expected: {
 pokouseni	NOUN	pokouseni
 je	AUX	byt
 variaci	NOUN	variace
@@ -112542,52 +112168,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 prostitutek: prostitutka | prostitutek
-}
-
-Expected: {
-osm	NUM	osm
-a	CCONJ	a
-pul	NUM	pul
-milionu	DET	milion
-lahvi	NOUN	lahev
-sektu	NOUN	sekt
-a	CCONJ	a
-sumivych	ADJ	sumivy
-napoju	NOUN	napoj
-naplnily	VERB	naplnit
-letos	ADV	letos
-vinarske	ADJ	vinarsky
-zavody	NOUN	zavod
-stary	ADJ	stary
-plzenec	PROPN	plzenec
-u	ADP	u
-plzne	NOUN	plzen
-.	PUNCT	.
-}
-Predicted: {
-osm	NUM	osm
-a	CCONJ	a
-pul	NUM	pul
-milionu	DET	milion
-lahvi	NOUN	lahev
-sektu	NOUN	sekt
-a	CCONJ	a
-sumivych	ADJ	sumivych
-napoju	NOUN	napoj
-naplnily	VERB	naplnit
-letos	ADV	letos
-vinarske	ADJ	vinarsky
-zavody	NOUN	zavod
-stary	ADJ	stary
-plzenec	PROPN	plzenec
-u	ADP	u
-plzne	NOUN	plzen
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-sumivych: sumivy | sumivych
 }
 
 Expected: {
@@ -114516,24 +114096,6 @@ r: ruceni | rok
 }
 
 Expected: {
-obchod	NOUN	obchod
-se	ADP	s
-slovenskem	PROPN	slovensko
-pritvrdi	VERB	pritvrdit
-}
-Predicted: {
-obchod	NOUN	obchod
-se	ADP	s
-slovenskem	PROPN	slovensko
-pritvrdi	VERB	pritvrdi
-}
-Errors: {
-Tok: Ref | Pred
----------------
-pritvrdi: pritvrdit | pritvrdi
-}
-
-Expected: {
 v	ADP	v
 oficialnich	ADJ	oficialni
 vyrocich	NOUN	vyrok
@@ -114997,7 +114559,7 @@ detailu	NOUN	detail
 ,	PUNCT	,
 a	CCONJ	a
 na	ADP	na
-trojhlasem	ADJ	trojhlasem
+trojhlasem	ADJ	trojhlasy
 vzorovem	ADJ	vzorovy
 vokalu	NOUN	vokal
 s	ADP	s
@@ -115010,7 +114572,6 @@ Tok: Ref | Pred
 ---------------
 vrestal: vrestal | vrestat
 perkusi: perkuse | perkusi
-trojhlasem: trojhlasy | trojhlasem
 nezamenitelnym: zamenitelny | nezamenitel
 }
 
@@ -116764,7 +116325,7 @@ jsem	AUX	byt
 musel	VERB	muset
 zaplatit	VERB	zaplatit
 ,	PUNCT	,
-nemaje	VERB	nemaje
+nemaje	VERB	nemat
 dosud	ADV	dosud
 kyzeneho	ADJ	kyzeny
 souhlasu	NOUN	souhlas
@@ -116779,7 +116340,7 @@ Tok: Ref | Pred
 ---------------
 nepouzitelne: pouzitelny | nepouzitey
 uplynuly: uplynout | uplynuly
-nemaje: mit | nemaje
+nemaje: mit | nemat
 }
 
 Expected: {
@@ -117985,6 +117546,36 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 jhem: jho | jh
+}
+
+Expected: {
+jihoafricka	ADJ	jihoafricky
+volebni	ADJ	volebni
+realita	NOUN	realita
+videna	ADJ	videny
+ocima	NOUN	oko
+kreslire	NOUN	kreslir
+francouzskeho	ADJ	francouzsky
+listu	NOUN	list
+le	X	le
+monde	X	monde
+}
+Predicted: {
+jihoafricka	ADJ	jihoafricky
+volebni	ADJ	volebni
+realita	NOUN	realita
+videna	ADJ	videny
+ocima	NOUN	oko
+kreslire	NOUN	kreslire
+francouzskeho	ADJ	francouzsky
+listu	NOUN	list
+le	X	le
+monde	X	monde
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+kreslire: kreslir | kreslire
 }
 
 Expected: {
@@ -125937,7 +125528,7 @@ zaujmout	VERB	zaujmout
 misto	NOUN	misto
 hvezdy	NOUN	hvezda
 tucnaku	NOUN	tucnak
-maria	PROPN	marie
+maria	PROPN	maria
 lemieuxe	PROPN	lemieuxe
 ,	PUNCT	,
 ktery	DET	ktery
@@ -125955,7 +125546,7 @@ problemy	NOUN	problem
 Errors: {
 Tok: Ref | Pred
 ---------------
-maria: mario | marie
+maria: mario | maria
 lemieuxe: lemieux | lemieuxe
 se: s | se
 }
@@ -133240,7 +132831,7 @@ twin	X	twin
 peaks	X	peaks
 )	PUNCT	)
 ,	PUNCT	,
-svudna	ADJ	svudny
+svudna	ADJ	svudna
 sekretarka	NOUN	sekretarka
 s	ADP	s
 priznacnym	ADJ	priznacny
@@ -133294,6 +132885,7 @@ karikatury	NOUN	karikatura
 Errors: {
 Tok: Ref | Pred
 ---------------
+svudna: svudny | svudna
 hrdinova: hrdinuv | hrdinovy
 }
 
@@ -139449,7 +139041,7 @@ predchazet	VERB	predchazet
 Predicted: {
 a	CCONJ	a
 kdyz	SCONJ	kdyz
-porozumim	VERB	porozumiomt
+porozumim	VERB	porozumim
 predem	ADV	predem
 ,	PUNCT	,
 tak	ADV	tak
@@ -139461,7 +139053,7 @@ predchazet	VERB	predchazet
 Errors: {
 Tok: Ref | Pred
 ---------------
-porozumim: porozumet | porozumiomt
+porozumim: porozumet | porozumim
 }
 
 Expected: {
@@ -145796,7 +145388,7 @@ integritu	NOUN	integrita
 ?	PUNCT	?
 }
 Predicted: {
-volite	VERB	volita
+volite	VERB	volity
 radeji	ADV	rad
 politiku	NOUN	politika
 pera	NOUN	pero
@@ -145812,7 +145404,7 @@ integritu	NOUN	integrita
 Errors: {
 Tok: Ref | Pred
 ---------------
-volite: volit | volita
+volite: volit | volity
 }
 
 Expected: {
@@ -148317,70 +147909,6 @@ nineru: ninera | niner
 }
 
 Expected: {
-prvni	ADJ	prvni
-rocnik	NOUN	rocnik
-vcera	ADV	vcera
-uzavreneho	ADJ	uzavreny
-tridenniho	ADJ	tridenni
-festivalu	NOUN	festival
-ortenova	ADJ	ortenuv
-kutna	PROPN	kutna
-hora	NOUN	hora
-nejen	ADV	nejen
-uctil	VERB	uctit
-basnikovo	ADJ	basnikuv
-petasedmdesate	ADJ	petasedmdesaty
-vyroci	NOUN	vyroci
-narozeni	NOUN	narozeni
-,	PUNCT	,
-ale	CCONJ	ale
-zalozil	VERB	zalozit
-ve	ADP	v
-starobylem	ADJ	starobyly
-hornim	ADJ	horni
-meste	NOUN	mesto
-nad	ADP	nad
-vrchlici	PROPN	vrchlice
-uzitecnou	ADJ	uzitecny
-tradici	NOUN	tradice
-.	PUNCT	.
-}
-Predicted: {
-prvni	ADJ	prvni
-rocnik	NOUN	rocnik
-vcera	ADV	vcera
-uzavreneho	ADJ	uzavreny
-tridenniho	ADJ	tridenni
-festivalu	NOUN	festival
-ortenova	ADJ	ortenuv
-kutna	PROPN	kutna
-hora	NOUN	hora
-nejen	ADV	nejen
-uctil	VERB	ucti
-basnikovo	ADJ	basnikuv
-petasedmdesate	ADJ	petasedmdesaty
-vyroci	NOUN	vyroci
-narozeni	NOUN	narozeni
-,	PUNCT	,
-ale	CCONJ	ale
-zalozil	VERB	zalozit
-ve	ADP	v
-starobylem	ADJ	starobyly
-hornim	ADJ	horni
-meste	NOUN	mesto
-nad	ADP	nad
-vrchlici	PROPN	vrchlice
-uzitecnou	ADJ	uzitecny
-tradici	NOUN	tradice
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-uctil: uctit | ucti
-}
-
-Expected: {
 odvazny	ADJ	odvazny
 nakladatel	NOUN	nakladatel
 vaclav	PROPN	vaclav
@@ -149426,7 +148954,7 @@ pivo	NOUN	pivo
 Predicted: {
 bohous	PROPN	bohous
 si	PRON	se
-dal	ADV	dale
+dal	ADV	dat
 muze	VERB	moci
 porucit	VERB	porucit
 ceske	ADJ	cesky
@@ -149436,7 +148964,7 @@ pivo	NOUN	pivo
 Errors: {
 Tok: Ref | Pred
 ---------------
-dal: dal | dale
+dal: dal | dat
 }
 
 Expected: {
@@ -151067,6 +150595,46 @@ nejzdevastovanejsi: zdevastovany | nejzdeastova
 }
 
 Expected: {
+hasici	NOUN	hasic
+odebrali	VERB	odebrat
+vzorky	NOUN	vzorek
+vody	NOUN	voda
+a	CCONJ	a
+proverili	VERB	proverit
+vsechny	DET	vsechen
+pritoky	NOUN	pritok
+reky	NOUN	reka
+svatavy	PROPN	svatava
+i	CCONJ	i
+na	ADP	na
+nemeckem	ADJ	nemecky
+uzemi	NOUN	uzemi
+.	PUNCT	.
+}
+Predicted: {
+hasici	NOUN	hasic
+odebrali	VERB	odebrat
+vzorky	NOUN	vzorek
+vody	NOUN	voda
+a	CCONJ	a
+proverili	VERB	proverit
+vsechny	DET	vsechen
+pritoky	NOUN	pritok
+reky	NOUN	reka
+svatavy	PROPN	svatavy
+i	CCONJ	i
+na	ADP	na
+nemeckem	ADJ	nemecky
+uzemi	NOUN	uzemi
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+svatavy: svatava | svatavy
+}
+
+Expected: {
 neni	AUX	byt
 pravdou	NOUN	pravda
 ,	PUNCT	,
@@ -151709,13 +151277,13 @@ ceho	PRON	co
 vyspely	ADJ	vyspely
 svet	NOUN	svet
 nikdy	ADV	nikdy
-nedozeneme	VERB	nozenemet
+nedozeneme	VERB	nedozeneme
 ?	PUNCT	?
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
-nedozeneme: dohnat | nozenemet
+nedozeneme: dohnat | nedozeneme
 }
 
 Expected: {
@@ -154118,7 +153686,7 @@ irove	PROPN	ir
 davaji	VERB	davat
 prednost	NOUN	prednost
 spis	PART	spis
-svetlemu	ADJ	svetlem
+svetlemu	ADJ	svetly
 )	PUNCT	)
 studena	ADJ	studeny
 i	CCONJ	i
@@ -154138,7 +153706,6 @@ kava	NOUN	kava
 Errors: {
 Tok: Ref | Pred
 ---------------
-svetlemu: svetly | svetlem
 likery: liker | likera
 }
 
@@ -160866,6 +160433,92 @@ poradi: poradit | poradi
 }
 
 Expected: {
+trener	NOUN	trener
+beranek	PROPN	beranek
+nesetril	VERB	setrit
+superlativy	NOUN	superlativ
+:	PUNCT	:
+"	PUNCT	"
+byl	AUX	byt
+to	DET	ten
+skvely	ADJ	skvely
+zapas	NOUN	zapas
+s	ADP	s
+vybornymi	ADJ	vyborny
+osobnimi	ADJ	osobni
+souboji	NOUN	souboj
+a	CCONJ	a
+se	ADP	s
+stastnejsim	ADJ	stastny
+koncem	NOUN	konec
+pro	ADP	pro
+nas	PRON	my
+,	PUNCT	,
+"	PUNCT	"
+vychrlil	VERB	vychrlit
+ze	ADP	z
+sebe	PRON	se
+a	CCONJ	a
+dodal	VERB	dodat
+,	PUNCT	,
+ze	SCONJ	ze
+ted	ADV	ted
+uz	ADV	uz
+slavii	PROPN	slavie
+nezbyva	VERB	zbyvat
+nez	SCONJ	nez
+bojovat	VERB	bojovat
+o	ADP	o
+titul	NOUN	titul
+.	PUNCT	.
+}
+Predicted: {
+trener	NOUN	trener
+beranek	PROPN	beranek
+nesetril	VERB	setrit
+superlativy	NOUN	superlativa
+:	PUNCT	:
+"	PUNCT	"
+byl	AUX	byt
+to	DET	ten
+skvely	ADJ	skvely
+zapas	NOUN	zapas
+s	ADP	s
+vybornymi	ADJ	vyborny
+osobnimi	ADJ	osobni
+souboji	NOUN	souboj
+a	CCONJ	a
+se	ADP	s
+stastnejsim	ADJ	stastny
+koncem	NOUN	konec
+pro	ADP	pro
+nas	PRON	my
+,	PUNCT	,
+"	PUNCT	"
+vychrlil	VERB	vychrlit
+ze	ADP	z
+sebe	PRON	se
+a	CCONJ	a
+dodal	VERB	dodat
+,	PUNCT	,
+ze	SCONJ	ze
+ted	ADV	ted
+uz	ADV	uz
+slavii	PROPN	slavie
+nezbyva	VERB	zbyvat
+nez	SCONJ	nez
+bojovat	VERB	bojovat
+o	ADP	o
+titul	NOUN	titul
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+superlativy: superlativ | superlativa
+}
+
+Expected: {
 pripad	NOUN	pripad
 vlastislava	PROPN	vlastislav
 chalupy	PROPN	chalupa
@@ -161248,50 +160901,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 postupne: postupny | postupne
-}
-
-Expected: {
-pujde	VERB	jit
--	PUNCT	-
-li	SCONJ	li
-to	DET	ten
-takto	ADV	takto
-dal	ADV	daleko
-,	PUNCT	,
-maji	VERB	mit
-dobrou	ADJ	dobry
-sanci	NOUN	sance
-ziskat	VERB	ziskat
-definitivne	ADV	definitivne
-image	NOUN	image
-odkladiste	NOUN	odkladiste
-ztracene	ADJ	ztraceny
-generace	NOUN	generace
-.	PUNCT	.
-}
-Predicted: {
-pujde	VERB	jit
--	PUNCT	-
-li	SCONJ	li
-to	DET	ten
-takto	ADV	takto
-dal	ADV	dal
-,	PUNCT	,
-maji	VERB	mit
-dobrou	ADJ	dobry
-sanci	NOUN	sance
-ziskat	VERB	ziskat
-definitivne	ADV	definitivne
-image	NOUN	image
-odkladiste	NOUN	odkladiste
-ztracene	ADJ	ztraceny
-generace	NOUN	generace
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-dal: daleko | dal
 }
 
 Expected: {
@@ -163819,7 +163428,7 @@ ohen	NOUN	ohen
 dostal	VERB	dostat
 az	PART	az
 k	ADP	k
-vrcholkum	NOUN	vrcholk
+vrcholkum	NOUN	vrcholkum
 hor	NOUN	hora
 ,	PUNCT	,
 museli	VERB	muset
@@ -163833,7 +163442,7 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 vazce: vazec | vazce
-vrcholkum: vrcholek | vrcholk
+vrcholkum: vrcholek | vrcholkum
 }
 
 Expected: {
@@ -164905,7 +164514,7 @@ nehode	NOUN	nehoda
 doslo	VERB	dojit
 v	ADP	v
 mirne	ADV	mirne
-klesave	ADJ	klesave
+klesave	ADJ	klesavy
 levotocive	ADJ	levotocivy
 zatacce	NOUN	zatacka
 ,	PUNCT	,
@@ -164925,7 +164534,6 @@ hodine	NOUN	hodina
 Errors: {
 Tok: Ref | Pred
 ---------------
-klesave: klesavy | klesave
 mokra: mokro | mokra
 }
 
@@ -173598,7 +173206,7 @@ bedne	NOUN	bedna
 Predicted: {
 nutno	ADJ	nutny
 ho	PRON	on
-opraviti	VERB	opraviti
+opraviti	VERB	opravitit
 ,	PUNCT	,
 k	ADP	k
 cemuz	PRON	coz
@@ -173633,7 +173241,7 @@ bedne	NOUN	bedna
 Errors: {
 Tok: Ref | Pred
 ---------------
-opraviti: opravit | opraviti
+opraviti: opravit | opravitit
 }
 
 Expected: {
@@ -174030,50 +173638,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 studia: studio | studium
-}
-
-Expected: {
-"	PUNCT	"
-talent	NOUN	talent
-je	AUX	byt
-urcity	ADJ	urcity
-druh	NOUN	druh
-energie	NOUN	energie
-,	PUNCT	,
-ktera	DET	ktery
-se	PRON	se
-za	ADP	za
-idealnich	ADJ	idealni
-podminek	NOUN	podminka
-muze	VERB	moci
-dokonce	ADV	dokonce
-sama	DET	samy
-zahubit	VERB	zahubit
-.	PUNCT	.
-}
-Predicted: {
-"	PUNCT	"
-talent	NOUN	talent
-je	AUX	byt
-urcity	ADJ	urcity
-druh	NOUN	druh
-energie	NOUN	energie
-,	PUNCT	,
-ktera	DET	ktery
-se	PRON	se
-za	ADP	za
-idealnich	ADJ	idealni
-podminek	NOUN	podminka
-muze	VERB	moci
-dokonce	ADV	dokonce
-sama	DET	samy
-zahubit	VERB	zahubitt
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-zahubit: zahubit | zahubitt
 }
 
 Expected: {
@@ -174891,36 +174455,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 nevracenych: vraceny | nevraceny
-}
-
-Expected: {
-o	ADP	o
-kus	NOUN	kus
-dal	ADV	daleko
-se	PRON	se
-ozyvala	VERB	ozyvat
-strelba	NOUN	strelba
-a	CCONJ	a
-zoufaly	ADJ	zoufaly
-krik	NOUN	krik
-.	PUNCT	.
-}
-Predicted: {
-o	ADP	o
-kus	NOUN	kus
-dal	ADV	dal
-se	PRON	se
-ozyvala	VERB	ozyvat
-strelba	NOUN	strelba
-a	CCONJ	a
-zoufaly	ADJ	zoufaly
-krik	NOUN	krik
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-dal: daleko | dal
 }
 
 Expected: {
@@ -180567,7 +180101,7 @@ holuba	PROPN	holub
 vystihuje	VERB	vystihovat
 "	PUNCT	"
 teorii	NOUN	teorie
-byti	NOUN	byt
+byti	NOUN	byti
 "	PUNCT	"
 george	PROPN	george
 berkeleyho	PROPN	berkeley
@@ -180583,7 +180117,6 @@ Tok: Ref | Pred
 ---------------
 ronalda: ronald | ronaldo
 desatera: desatero | desatera
-byti: byti | byt
 }
 
 Expected: {
@@ -186670,6 +186203,110 @@ sekunde: sekunda | sekunde
 }
 
 Expected: {
+takze	SCONJ	takze
+tasme	VERB	tasit
+,	PUNCT	,
+ale	CCONJ	ale
+uvedomme	VERB	uvedomit
+si	PRON	se
+s	ADP	s
+jakou	DET	jaky
+pravdepodobnosti	NOUN	pravdepodobnost
+a	CCONJ	a
+odkud	ADV	odkud
+a	CCONJ	a
+kdy	ADV	kdy
+muze	VERB	moci
+uder	NOUN	uder
+prijit	VERB	prijit
+,	PUNCT	,
+zda	SCONJ	zda
+budeme	AUX	byt
+za	ADP	za
+nejakych	DET	nejaky
+dvacet	NUM	dvacet
+,	PUNCT	,
+padesat	NUM	padesat
+ci	CCONJ	ci
+dve	NUM	dva
+stovky	NOUN	stovka
+let	NOUN	leta
+natolik	ADV	natolik
+zdravi	ADJ	zdravy
+,	PUNCT	,
+aby by	SCONJ AUX	aby byt
+se	PRON	se
+nam	PRON	my
+dostavalo	VERB	dostavat
+sil	NOUN	sila
+a	CCONJ	a
+zejmena	PART	zejmena
+chuti	NOUN	chut
+na	ADP	na
+to	DET	ten
+aby bychom	SCONJ AUX	aby byt
+tu	DET	ten
+rozrusenou	ADJ	rozruseny
+planetu	NOUN	planeta
+chranili	VERB	chranit
+.	PUNCT	.
+}
+Predicted: {
+takze	SCONJ	takze
+tasme	VERB	tasit
+,	PUNCT	,
+ale	CCONJ	ale
+uvedomme	VERB	uvedomit
+si	PRON	se
+s	ADP	s
+jakou	DET	jaky
+pravdepodobnosti	NOUN	pravdepodobnost
+a	CCONJ	a
+odkud	ADV	odkud
+a	CCONJ	a
+kdy	ADV	kdy
+muze	VERB	moci
+uder	NOUN	uder
+prijit	VERB	prijit
+,	PUNCT	,
+zda	SCONJ	zda
+budeme	AUX	byt
+za	ADP	za
+nejakych	DET	nejaky
+dvacet	NUM	dvacet
+,	PUNCT	,
+padesat	NUM	padesat
+ci	CCONJ	ci
+dve	NUM	dva
+stovky	NOUN	stovka
+let	NOUN	leta
+natolik	ADV	natolik
+zdravi	ADJ	zdravy
+,	PUNCT	,
+aby by	SCONJ AUX	aby byt
+se	PRON	se
+nam	PRON	my
+dostavalo	VERB	dostavat
+sil	NOUN	sila
+a	CCONJ	a
+zejmena	PART	zejmena
+chuti	NOUN	chut
+na	ADP	na
+to	DET	ten
+aby bychom	SCONJ AUX	aby byt
+tu	DET	tu
+rozrusenou	ADJ	rozruseny
+planetu	NOUN	planeta
+chranili	VERB	chranit
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+tu: ten | tu
+}
+
+Expected: {
 funkcni	ADJ	funkcni
 specializace	NOUN	specializace
 leve	ADJ	levy
@@ -187249,7 +186886,7 @@ oltarnikem	NOUN	oltarnik
 ,	PUNCT	,
 zustalo	VERB	zustat
 telo	NOUN	telo
-netknuto	ADJ	netknuto
+netknuto	ADJ	nknuto
 323	NUM	323
 let	NOUN	leta
 .	PUNCT	.
@@ -187258,7 +186895,7 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 kuru: kur | kura
-netknuto: netknuty | netknuto
+netknuto: netknuty | nknuto
 }
 
 Expected: {
@@ -189606,6 +189243,56 @@ vlastni: vlastnit | vlastni
 }
 
 Expected: {
+kdyz	SCONJ	kdyz
+pristavaji	VERB	pristavat
+,	PUNCT	,
+narazeji	VERB	narazet
+do	ADP	do
+jinych	ADJ	jiny
+castic	NOUN	castice
+,	PUNCT	,
+ktere	DET	ktery
+tim	DET	ten
+take	ADV	take
+vymrsti	VERB	vymrstit
+do	ADP	do
+vzduchu	NOUN	vzduch
+a	CCONJ	a
+zahaji	VERB	zahajit
+tak	ADV	tak
+retezovou	ADJ	retezovy
+reakci	NOUN	reakce
+.	PUNCT	.
+}
+Predicted: {
+kdyz	SCONJ	kdyz
+pristavaji	VERB	pristavat
+,	PUNCT	,
+narazeji	VERB	narazet
+do	ADP	do
+jinych	ADJ	jiny
+castic	NOUN	castice
+,	PUNCT	,
+ktere	DET	ktery
+tim	DET	ten
+take	ADV	take
+vymrsti	VERB	vymrsti
+do	ADP	do
+vzduchu	NOUN	vzduch
+a	CCONJ	a
+zahaji	VERB	zahajit
+tak	ADV	tak
+retezovou	ADJ	retezovy
+reakci	NOUN	reakce
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+vymrsti: vymrstit | vymrsti
+}
+
+Expected: {
 karibske	ADJ	karibsky
 more	NOUN	more
 bylo	AUX	byt
@@ -189651,7 +189338,7 @@ do	ADP	do
 karibskych	ADJ	karibsky
 vod	NOUN	voda
 poprve	ADV	poprve
-vplul	VERB	vplult
+vplul	VERB	vplout
 krystof	PROPN	krystof
 kolumbus	PROPN	kolumbus
 se	ADP	s
@@ -189667,7 +189354,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 populacim: populace | populaci
-vplul: vplout | vplult
 }
 
 Expected: {
@@ -190050,13 +189736,14 @@ pres	ADP	pres
 babicku	NOUN	babicka
 primym	ADJ	primy
 potomkem	NOUN	potomek
-iejasu	PROPN	iejasu
+iejasu	PROPN	iejas
 tokugawy	PROPN	tokugawy
 .	PUNCT	.
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
+iejasu: iejasu | iejas
 tokugawy: tokugawa | tokugawy
 }
 
@@ -190623,4 +190310,1647 @@ Tok: Ref | Pred
 ---------------
 neopravnene: opravnene | eopravnee
 caesarovi: caesaruv | caesarovy
+}
+
+Expected: {
+ze	SCONJ	ze
+vsak	CCONJ	vsak
+sam	DET	samy
+hned	ADV	hned
+neumiral	VERB	umirat
+,	PUNCT	,
+ba	PART	ba
+z	ADP	z
+zpevneho	ADJ	zpevny
+ziti	NOUN	ziti
+tesil	VERB	tesit
+,	PUNCT	,
+musel	VERB	muset
+sam	DET	samy
+si	PRON	se
+hrob	NOUN	hrob
+svuj	DET	svuj
+kopat	VERB	kopat
+,	PUNCT	,
+-	PUNCT	-
+musel	VERB	muset
+:	PUNCT	:
+-	PUNCT	-
+ant	SCONJ	ant
+,	PUNCT	,
+ze	SCONJ	ze
+ziv	ADJ	zivy
+,	PUNCT	,
+tim	DET	ten
+zhresil	VERB	zhresit
+!	PUNCT	!
+}
+Predicted: {
+ze	SCONJ	ze
+vsak	CCONJ	vsak
+sam	DET	samy
+hned	ADV	hned
+neumiral	VERB	neumiral
+,	PUNCT	,
+ba	PART	ba
+z	ADP	z
+zpevneho	ADJ	zpevny
+ziti	NOUN	ziti
+tesil	VERB	tesit
+,	PUNCT	,
+musel	VERB	muset
+sam	DET	samy
+si	PRON	se
+hrob	NOUN	hrob
+svuj	DET	svuj
+kopat	VERB	kopat
+,	PUNCT	,
+-	PUNCT	-
+musel	VERB	muset
+:	PUNCT	:
+-	PUNCT	-
+ant	SCONJ	ant
+,	PUNCT	,
+ze	SCONJ	ze
+ziv	ADJ	zivy
+,	PUNCT	,
+tim	DET	ten
+zhresil	VERB	zhresit
+!	PUNCT	!
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+neumiral: umirat | neumiral
+}
+
+Expected: {
+vzdy	ADV	vzdy
+verni	ADJ	verny
+sobe	PRON	se
+,	PUNCT	,
+verni	ADJ	verny
+bohu	NOUN	buh
+a	CCONJ	a
+verni	ADJ	verny
+otcu	NOUN	otec
+dedictvi	NOUN	dedictvi
+zde	ADV	zde
+jako	SCONJ	jako
+chrabri	ADJ	chrabry
+chodovaci	PROPN	chodovak
+chcem	VERB	chtit
+vyckavat	VERB	vyckavat
+dne	NOUN	den
+vitezstvi	NOUN	vitezstvi
+.	PUNCT	.
+}
+Predicted: {
+vzdy	ADV	vzdy
+verni	ADJ	verny
+sobe	PRON	se
+,	PUNCT	,
+verni	ADJ	verny
+bohu	NOUN	buh
+a	CCONJ	a
+verni	ADJ	verny
+otcu	NOUN	otec
+dedictvi	NOUN	dedictvi
+zde	ADV	zde
+jako	SCONJ	jako
+chrabri	ADJ	chrabri
+chodovaci	PROPN	chodovaci
+chcem	VERB	chtit
+vyckavat	VERB	vyckavat
+dne	NOUN	den
+vitezstvi	NOUN	vitezstvi
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+chrabri: chrabry | chrabri
+chodovaci: chodovak | chodovaci
+}
+
+Expected: {
+na	ADP	na
+horu	NOUN	hora
+sloz	VERB	slozit
+me	PRON	ja
+zelenou	ADJ	zeleny
+,	PUNCT	,
+kde	ADV	kde
+bile	ADJ	bily
+mracky	NOUN	mracek
+nebem	NOUN	nebe
+jdou	VERB	jit
+,	PUNCT	,
+kde	ADV	kde
+videt	VERB	videt
+v	ADP	v
+dalky	NOUN	dalka
+kolkolem	ADV	kolkolem
+,	PUNCT	,
+co	PRON	co
+v	ADP	v
+nebi	NOUN	nebe
+je	AUX	byt
+,	PUNCT	,
+co	PRON	co
+dela	VERB	delat
+zem	NOUN	zeme
+-	PUNCT	-
+kde	ADV	kde
+s	ADP	s
+vyse	NOUN	vyse
+slunna	ADJ	slunny
+,	PUNCT	,
+zariva	ADJ	zarivy
+se	PRON	se
+tvoje	DET	tvuj
+tvare	NOUN	tvar
+usmiva	VERB	usmivat
+,	PUNCT	,
+kde	ADV	kde
+videt	VERB	videt
+svetu	NOUN	svet
+,	PUNCT	,
+veku	NOUN	vek
+beh	NOUN	beh
+-	PUNCT	-
+tam	ADV	tam
+spocinout	VERB	spocinout
+me	PRON	ja
+chvili	NOUN	chvile
+nech	VERB	nechat
+-	PUNCT	-
+a	CCONJ	a
+az	SCONJ	az
+se	PRON	se
+zpiju	VERB	zpit
+zazraky	NOUN	zazrak
+,	PUNCT	,
+zas	ADV	zas
+,	PUNCT	,
+boze	NOUN	buh
+,	PUNCT	,
+pust	VERB	pustit
+me	PRON	ja
+-	PUNCT	-
+na	ADP	na
+draky	NOUN	drak
+.	PUNCT	.
+}
+Predicted: {
+na	ADP	na
+horu	NOUN	hora
+sloz	VERB	sloz
+me	PRON	ja
+zelenou	ADJ	zeleny
+,	PUNCT	,
+kde	ADV	kde
+bile	ADJ	bily
+mracky	NOUN	mracky
+nebem	NOUN	nebe
+jdou	VERB	jit
+,	PUNCT	,
+kde	ADV	kde
+videt	VERB	videt
+v	ADP	v
+dalky	NOUN	dalka
+kolkolem	ADV	kolkolem
+,	PUNCT	,
+co	PRON	co
+v	ADP	v
+nebi	NOUN	nebe
+je	AUX	byt
+,	PUNCT	,
+co	PRON	co
+dela	VERB	delat
+zem	NOUN	zeme
+-	PUNCT	-
+kde	ADV	kde
+s	ADP	s
+vyse	NOUN	vyse
+slunna	ADJ	slunna
+,	PUNCT	,
+zariva	ADJ	zarivy
+se	PRON	se
+tvoje	DET	tvuj
+tvare	NOUN	tvar
+usmiva	VERB	usmivat
+,	PUNCT	,
+kde	ADV	kde
+videt	VERB	videt
+svetu	NOUN	svet
+,	PUNCT	,
+veku	NOUN	vek
+beh	NOUN	beh
+-	PUNCT	-
+tam	ADV	tam
+spocinout	VERB	spocinout
+me	PRON	ja
+chvili	NOUN	chvile
+nech	VERB	nechat
+-	PUNCT	-
+a	CCONJ	a
+az	SCONJ	az
+se	PRON	se
+zpiju	VERB	zpiju
+zazraky	NOUN	zazrak
+,	PUNCT	,
+zas	ADV	zas
+,	PUNCT	,
+boze	NOUN	buh
+,	PUNCT	,
+pust	VERB	pustit
+me	PRON	ja
+-	PUNCT	-
+na	ADP	na
+draky	NOUN	drak
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+sloz: slozit | sloz
+mracky: mracek | mracky
+slunna: slunny | slunna
+zpiju: zpit | zpiju
+}
+
+Expected: {
+praporu	NOUN	prapor
+tolik	DET	tolik
+,	PUNCT	,
+tolik	DET	tolik
+videl	VERB	videt
+jsem	AUX	byt
+na	ADP	na
+zerdich	NOUN	zerd
+tolika	DET	tolik
+.	PUNCT	.
+}
+Predicted: {
+praporu	NOUN	prapor
+tolik	DET	tolik
+,	PUNCT	,
+tolik	DET	tolik
+videl	VERB	videt
+jsem	AUX	byt
+na	ADP	na
+zerdich	NOUN	zerdi
+tolika	DET	tolik
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+zerdich: zerd | zerdi
+}
+
+Expected: {
+a	CCONJ	a
+v	ADP	v
+tucnem	ADJ	tucny
+kanci	NOUN	kanec
+,	PUNCT	,
+modrem	ADJ	modry
+herlikanu	PROPN	herlikan
+,	PUNCT	,
+ctil	VERB	ctit
+kalmik	PROPN	kalmik
+sveho	DET	svuj
+boha	NOUN	buh
+,	PUNCT	,
+pana	NOUN	pan
+panu	NOUN	pan
+.	PUNCT	.
+}
+Predicted: {
+a	CCONJ	a
+v	ADP	v
+tucnem	ADJ	tucny
+kanci	NOUN	kance
+,	PUNCT	,
+modrem	ADJ	modry
+herlikanu	PROPN	herlikan
+,	PUNCT	,
+ctil	VERB	ctit
+kalmik	PROPN	kalmik
+sveho	DET	svuj
+boha	NOUN	buh
+,	PUNCT	,
+pana	NOUN	pan
+panu	NOUN	pan
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+kanci: kanec | kance
+}
+
+Expected: {
+mel	VERB	mit
+jsem	AUX	byt
+dite	NOUN	dite
+dcerku	NOUN	dcerka
+zlatou	ADJ	zlaty
+,	PUNCT	,
+krasnou	ADJ	krasny
+jako	SCONJ	jako
+zoru	NOUN	zora
+,	PUNCT	,
+s	ADP	s
+ruznym	ADJ	ruzny
+lickem	NOUN	licko
+,	PUNCT	,
+s	ADP	s
+rusou	ADJ	rusy
+hlavou	NOUN	hlava
+,	PUNCT	,
+jako	SCONJ	jako
+knezku	NOUN	knezka
+usmevavou	ADJ	usmevavy
+vil	NOUN	vila
+belostnych	ADJ	belostny
+carovneho	ADJ	carovny
+sboru	NOUN	sbor
+.	PUNCT	.
+}
+Predicted: {
+mel	VERB	mit
+jsem	AUX	byt
+dite	NOUN	dite
+dcerku	NOUN	dcerka
+zlatou	ADJ	zlaty
+,	PUNCT	,
+krasnou	ADJ	krasny
+jako	SCONJ	jako
+zoru	NOUN	zora
+,	PUNCT	,
+s	ADP	s
+ruznym	ADJ	ruzny
+lickem	NOUN	licek
+,	PUNCT	,
+s	ADP	s
+rusou	ADJ	rusou
+hlavou	NOUN	hlava
+,	PUNCT	,
+jako	SCONJ	jako
+knezku	NOUN	knezka
+usmevavou	ADJ	usmevavy
+vil	NOUN	vila
+belostnych	ADJ	belostny
+carovneho	ADJ	carovny
+sboru	NOUN	sbor
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+lickem: licko | licek
+rusou: rusy | rusou
+}
+
+Expected: {
+ty	DET	ten
+mluvi	VERB	mluvit
+o	ADP	o
+jinem	ADJ	jiny
+:	PUNCT	:
+o	ADP	o
+sate	NOUN	sat
+nahle	ADV	nahle
+odervanem	ADJ	odervany
+a	CCONJ	a
+o	ADP	o
+nahote	NOUN	nahota
+s	ADP	s
+vuni	NOUN	vune
+kminu	NOUN	kmin
+drazdivou	ADJ	drazdivy
+,	PUNCT	,
+o	ADP	o
+smyslnosti	NOUN	smyslnost
+vytryskle	ADJ	vytryskly
+jak	SCONJ	jak
+purpurovy	ADJ	purpurovy
+ohen	NOUN	ohen
+perversnich	ADJ	perverzni
+kvetu	NOUN	kvet
+,	PUNCT	,
+ktere	DET	ktery
+rychle	ADV	rychle
+schnou	VERB	schnout
+.	PUNCT	.
+}
+Predicted: {
+ty	DET	ten
+mluvi	VERB	mluvit
+o	ADP	o
+jinem	ADJ	jiny
+:	PUNCT	:
+o	ADP	o
+sate	NOUN	sat
+nahle	ADV	nahle
+odervanem	ADJ	odervany
+a	CCONJ	a
+o	ADP	o
+nahote	NOUN	nahota
+s	ADP	s
+vuni	NOUN	vune
+kminu	NOUN	kmin
+drazdivou	ADJ	drazdivy
+,	PUNCT	,
+o	ADP	o
+smyslnosti	NOUN	smyslnost
+vytryskle	ADJ	vytryskle
+jak	SCONJ	jak
+purpurovy	ADJ	purpurovy
+ohen	NOUN	ohen
+perversnich	ADJ	perversni
+kvetu	NOUN	kvet
+,	PUNCT	,
+ktere	DET	ktery
+rychle	ADV	rychle
+schnou	VERB	schnout
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+vytryskle: vytryskly | vytryskle
+perversnich: perverzni | perversni
+}
+
+Expected: {
+stary	ADJ	stary
+cisar	NOUN	cisar
+galba	PROPN	galba
+vsed	VERB	vsednout
+v	ADP	v
+zlata	ADJ	zlaty
+nositka	NOUN	nositka
+sva	DET	svuj
+,	PUNCT	,
+vere	VERB	verit
+,	PUNCT	,
+ze	SCONJ	ze
+reci	NOUN	rec
+,	PUNCT	,
+slibem	NOUN	slib
+rozbojniky	NOUN	rozbojnik
+zkroti	VERB	zkrotit
+,	PUNCT	,
+a	CCONJ	a
+dal	VERB	dat
+se	PRON	se
+nesti	VERB	nest
+primo	ADV	primo
+v	ADP	v
+tabor	NOUN	tabor
+jejich	DET	jeho
+.	PUNCT	.
+}
+Predicted: {
+stary	ADJ	stary
+cisar	NOUN	cisar
+galba	PROPN	galba
+vsed	VERB	vsed
+v	ADP	v
+zlata	ADJ	zlaty
+nositka	NOUN	nositka
+sva	DET	svuj
+,	PUNCT	,
+vere	VERB	vere
+,	PUNCT	,
+ze	SCONJ	ze
+reci	NOUN	rec
+,	PUNCT	,
+slibem	NOUN	slib
+rozbojniky	NOUN	rozbojnik
+zkroti	VERB	zkroti
+,	PUNCT	,
+a	CCONJ	a
+dal	VERB	dat
+se	PRON	se
+nesti	VERB	nesti
+primo	ADV	primo
+v	ADP	v
+tabor	NOUN	tabor
+jejich	DET	jeho
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+vsed: vsednout | vsed
+vere: verit | vere
+zkroti: zkrotit | zkroti
+nesti: nest | nesti
+}
+
+Expected: {
+dosel jsi	VERB AUX	dojit byt
+nahoru	ADV	nahoru
+a	CCONJ	a
+kolem	ADP	kolem
+hory	NOUN	hora
+.	PUNCT	.
+}
+Predicted: {
+dosel jsi	VERB AUX	dosel jsi
+nahoru	ADV	nahoru
+a	CCONJ	a
+kolem	ADP	kolem
+hory	NOUN	hora
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+dosel jsi: dojit byt | dosel jsi
+}
+
+Expected: {
+jakby	SCONJ	jakby
+si	PRON	se
+stiskli	VERB	stisknout
+zapad	NOUN	zapad
+kdys	ADV	kdys
+a	CCONJ	a
+vychod	NOUN	vychod
+sve	DET	svuj
+pravice	NOUN	pravice
+v	ADP	v
+nas	PRON	ja
+ku	ADP	k
+vecnemu	ADJ	vecny
+spolku	NOUN	spolek
+,	PUNCT	,
+a	CCONJ	a
+nechali	VERB	nechat
+v	ADP	v
+nas	PRON	ja
+kus	NOUN	kus
+svych	DET	svuj
+sympatii	NOUN	sympatie
+a	CCONJ	a
+nechali	VERB	nechat
+v	ADP	v
+nas	PRON	ja
+neco	PRON	neco
+ze	ADP	z
+svych	DET	svuj
+povah	NOUN	povaha
+-	PUNCT	-
+my	PRON	ja
+lehkovznetni	ADJ	lehkovznetni
+rychle	ADV	rychle
+zaplaneme	VERB	zaplanout
+pro	ADP	pro
+mnohou	ADJ	mnohy
+,	PUNCT	,
+treba	ADV	treba
+ilusorni	ADJ	ilusorni
+krasu	NOUN	krasa
+,	PUNCT	,
+pro	ADP	pro
+mnohe	ADJ	mnohy
+,	PUNCT	,
+treba	ADV	treba
+vybajene	ADJ	vybajeny
+dobro	NOUN	dobro
+,	PUNCT	,
+pro	ADP	pro
+mnohe	ADJ	mnohy
+,	PUNCT	,
+prave	ADV	prave
+narozene	ADJ	narozeny
+cile	NOUN	cil
+,	PUNCT	,
+(	PUNCT	(
+v	ADP	v
+jichz	DET	jejichz
+hledani	NOUN	hledani
+jsme	AUX	byt
+pravi	ADJ	pravy
+kolumbove	PROPN	kolumbus
+)	PUNCT	)
+,	PUNCT	,
+pro	ADP	pro
+radu	NOUN	rada
+velikych	ADJ	veliky
+a	CCONJ	a
+smelych	ADJ	smely
+reform	NOUN	reforma
+,	PUNCT	,
+v	ADP	v
+nez	PRON	jenz
+chceme	VERB	chtit
+oblect	VERB	oblect
+celou	ADJ	cely
+polokouli	NOUN	polokoule
+-	PUNCT	-
+vsak	CCONJ	vsak
+razem	ADV	razem
+klesne	VERB	klesnout
+odkuds	ADV	odkudsi
+ruska	ADJ	rusky
+mlha	NOUN	mlha
+,	PUNCT	,
+a	CCONJ	a
+zapadame	VERB	zapadat
+v	ADP	v
+tupou	ADJ	tupy
+resignaci	NOUN	resignace
+a	CCONJ	a
+nemame	VERB	mit
+nez	SCONJ	nez
+trpkou	ADJ	trpky
+svoji	DET	svuj
+dumu	NOUN	duma
+a	CCONJ	a
+zalne	ADJ	zalny
+stesky	NOUN	stesk
+,	PUNCT	,
+elegicke	ADJ	elegicky
+tvare	NOUN	tvar
+.	PUNCT	.
+.	PUNCT	.
+.	PUNCT	.
+}
+Predicted: {
+jakby	SCONJ	jakby
+si	PRON	se
+stiskli	VERB	stisknout
+zapad	NOUN	zapad
+kdys	ADV	kdysi
+a	CCONJ	a
+vychod	NOUN	vychod
+sve	DET	svuj
+pravice	NOUN	pravice
+v	ADP	v
+nas	PRON	my
+ku	ADP	k
+vecnemu	ADJ	vecny
+spolku	NOUN	spolek
+,	PUNCT	,
+a	CCONJ	a
+nechali	VERB	nechat
+v	ADP	v
+nas	PRON	my
+kus	NOUN	kus
+svych	DET	svuj
+sympatii	NOUN	sympatium
+a	CCONJ	a
+nechali	VERB	nechat
+v	ADP	v
+nas	PRON	my
+neco	PRON	neco
+ze	ADP	z
+svych	DET	svuj
+povah	NOUN	povaha
+-	PUNCT	-
+my	PRON	my
+lehkovznetni	ADJ	lehkovznetni
+rychle	ADV	rychle
+zaplaneme	VERB	zaplaneme
+pro	ADP	pro
+mnohou	ADJ	mnohy
+,	PUNCT	,
+treba	ADV	treba
+ilusorni	ADJ	ilusorni
+krasu	NOUN	krasa
+,	PUNCT	,
+pro	ADP	pro
+mnohe	ADJ	mnohy
+,	PUNCT	,
+treba	ADV	treba
+vybajene	ADJ	vybajeny
+dobro	NOUN	dobro
+,	PUNCT	,
+pro	ADP	pro
+mnohe	ADJ	mnohy
+,	PUNCT	,
+prave	ADV	prave
+narozene	ADJ	narozeny
+cile	NOUN	cil
+,	PUNCT	,
+(	PUNCT	(
+v	ADP	v
+jichz	DET	jenz
+hledani	NOUN	hledani
+jsme	AUX	byt
+pravi	ADJ	pravy
+kolumbove	PROPN	kolumbus
+)	PUNCT	)
+,	PUNCT	,
+pro	ADP	pro
+radu	NOUN	rada
+velikych	ADJ	veliky
+a	CCONJ	a
+smelych	ADJ	smely
+reform	NOUN	reform
+,	PUNCT	,
+v	ADP	v
+nez	PRON	jenz
+chceme	VERB	chtit
+oblect	VERB	oblect
+celou	ADJ	cely
+polokouli	NOUN	polokoule
+-	PUNCT	-
+vsak	CCONJ	vsak
+razem	ADV	razem
+klesne	VERB	klesnout
+odkuds	ADV	odkuds
+ruska	ADJ	rusky
+mlha	NOUN	mlha
+,	PUNCT	,
+a	CCONJ	a
+zapadame	VERB	zapadat
+v	ADP	v
+tupou	ADJ	tupy
+resignaci	NOUN	resignace
+a	CCONJ	a
+nemame	VERB	mit
+nez	SCONJ	nez
+trpkou	ADJ	trpky
+svoji	DET	svuj
+dumu	NOUN	duma
+a	CCONJ	a
+zalne	ADJ	zalne
+stesky	NOUN	stesk
+,	PUNCT	,
+elegicke	ADJ	elegicky
+tvare	NOUN	tvar
+.	PUNCT	.
+.	PUNCT	.
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+kdys: kdys | kdysi
+nas: ja | my
+nas: ja | my
+sympatii: sympatie | sympatium
+nas: ja | my
+my: ja | my
+zaplaneme: zaplanout | zaplaneme
+jichz: jejichz | jenz
+reform: reforma | reform
+odkuds: odkudsi | odkuds
+zalne: zalny | zalne
+}
+
+Expected: {
+cerna	ADJ	cerny
+kotev	NOUN	kotva
+jiz	ADV	jiz
+se	PRON	se
+zveda	VERB	zvedat
+v	ADP	v
+tmavych	ADJ	tmavy
+plachet	NOUN	placheta
+zaseru	NOUN	zaser
+,	PUNCT	,
+na	ADP	na
+dalekem	ADJ	daleky
+nebi	NOUN	nebe
+bleda	ADJ	bledy
+chvi	VERB	chvet
+se	PRON	se
+hvezda	NOUN	hvezda
+-	PUNCT	-
+severu	NOUN	sever
+.	PUNCT	.
+}
+Predicted: {
+cerna	ADJ	cerny
+kotev	NOUN	kotev
+jiz	ADV	jiz
+se	PRON	se
+zveda	VERB	zvedat
+v	ADP	v
+tmavych	ADJ	tmavy
+plachet	NOUN	plachta
+zaseru	NOUN	zaser
+,	PUNCT	,
+na	ADP	na
+dalekem	ADJ	daleky
+nebi	NOUN	nebe
+bleda	ADJ	bledy
+chvi	VERB	chvi
+se	PRON	se
+hvezda	NOUN	hvezda
+-	PUNCT	-
+severu	NOUN	sever
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+kotev: kotva | kotev
+plachet: placheta | plachta
+chvi: chvet | chvi
+}
+
+Expected: {
+-	PUNCT	-
+"	PUNCT	"
+pozdni	ADJ	pozdni
+vecer	NOUN	vecer
+;	PUNCT	;
+plaminek	NOUN	plaminek
+se	PRON	se
+miha	VERB	mihat
+na	ADP	na
+krbu	NOUN	krb
+,	PUNCT	,
+v	ADP	v
+svetnici	NOUN	svetnice
+stiny	NOUN	stin
+rodi	VERB	rodit
+v	ADP	v
+spolku	NOUN	spolek
+s	ADP	s
+lunou	PROPN	luna
+;	PUNCT	;
+-	PUNCT	-
+-	PUNCT	-
+venku	ADV	venku
+hluk	NOUN	hluk
+se	PRON	se
+zdviha	VERB	zdvihat
+,	PUNCT	,
+mlada	ADJ	mlady
+chasa	NOUN	chasa
+hlucne	ADJ	hlucny
+zerty	NOUN	zert
+plodi	VERB	plodit
+,	PUNCT	,
+nebo	CCONJ	nebo
+cas	NOUN	cas
+jest	AUX	byt
+,	PUNCT	,
+kde	ADV	kde
+se	PRON	se
+k	ADP	k
+prastve	NOUN	prastva
+sbiha	VERB	sbihat
+.	PUNCT	.
+}
+Predicted: {
+-	PUNCT	-
+"	PUNCT	"
+pozdni	ADJ	pozdni
+vecer	NOUN	vecer
+;	PUNCT	;
+plaminek	NOUN	plaminek
+se	PRON	se
+miha	VERB	miha
+na	ADP	na
+krbu	NOUN	krb
+,	PUNCT	,
+v	ADP	v
+svetnici	NOUN	svetnice
+stiny	NOUN	stin
+rodi	VERB	rodit
+v	ADP	v
+spolku	NOUN	spolek
+s	ADP	s
+lunou	PROPN	lunou
+;	PUNCT	;
+-	PUNCT	-
+-	PUNCT	-
+venku	ADV	venku
+hluk	NOUN	hluk
+se	PRON	se
+zdviha	VERB	zdviha
+,	PUNCT	,
+mlada	ADJ	mlady
+chasa	NOUN	chasa
+hlucne	ADJ	hlucny
+zerty	NOUN	zert
+plodi	VERB	plodit
+,	PUNCT	,
+nebo	CCONJ	nebo
+cas	NOUN	cas
+jest	AUX	byt
+,	PUNCT	,
+kde	ADV	kde
+se	PRON	se
+k	ADP	k
+prastve	NOUN	prastve
+sbiha	VERB	sbihat
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+miha: mihat | miha
+lunou: luna | lunou
+zdviha: zdvihat | zdviha
+prastve: prastva | prastve
+}
+
+Expected: {
+a	CCONJ	a
+jine	ADJ	jiny
+zeny	NOUN	zena
+jsou	AUX	byt
+a	CCONJ	a
+jini	ADJ	jiny
+muzi	NOUN	muz
+,	PUNCT	,
+z	ADP	z
+kralovstvi	NOUN	kralovstvi
+bidy	NOUN	bida
+smutni	ADJ	smutny
+poddani	NOUN	poddany
+,	PUNCT	,
+jimz	PRON	jenz
+masky	NOUN	maska
+dusi	NOUN	duse
+zivot	NOUN	zivot
+z	ADP	z
+vosku	NOUN	vosk
+modeloval	VERB	modelovat
+a	CCONJ	a
+kazdy	DET	kazdy
+den	NOUN	den
+se	PRON	se
+rydlem	NOUN	rydlo
+poznamena	VERB	poznamenat
+v	ADP	v
+tvar	NOUN	tvar
+jim	PRON	on
+,	PUNCT	,
+kde	ADV	kde
+stopy	NOUN	stopa
+krve	NOUN	krev
+zustaly	VERB	zustat
+po	ADP	po
+dlanich	NOUN	dlan
+,	PUNCT	,
+v	ADP	v
+nez	PRON	jenz
+mdloba	NOUN	mdloba
+sklani	VERB	sklanet
+je	PRON	on
+.	PUNCT	.
+}
+Predicted: {
+a	CCONJ	a
+jine	ADJ	jiny
+zeny	NOUN	zena
+jsou	AUX	byt
+a	CCONJ	a
+jini	ADJ	jiny
+muzi	NOUN	muz
+,	PUNCT	,
+z	ADP	z
+kralovstvi	NOUN	kralovstvi
+bidy	NOUN	bida
+smutni	ADJ	smutny
+poddani	NOUN	poddani
+,	PUNCT	,
+jimz	PRON	jenz
+masky	NOUN	maska
+dusi	NOUN	duse
+zivot	NOUN	zivot
+z	ADP	z
+vosku	NOUN	vosk
+modeloval	VERB	modelovat
+a	CCONJ	a
+kazdy	DET	kazdy
+den	NOUN	den
+se	PRON	se
+rydlem	NOUN	rydlo
+poznamena	VERB	poznamenat
+v	ADP	v
+tvar	NOUN	tvar
+jim	PRON	on
+,	PUNCT	,
+kde	ADV	kde
+stopy	NOUN	stopa
+krve	NOUN	krev
+zustaly	VERB	zustat
+po	ADP	po
+dlanich	NOUN	dlan
+,	PUNCT	,
+v	ADP	v
+nez	PRON	jenz
+mdloba	NOUN	mdloba
+sklani	VERB	sklanet
+je	PRON	on
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+poddani: poddany | poddani
+}
+
+Expected: {
+rozhucela	VERB	rozhucet
+se	PRON	se
+svitava	PROPN	svitava
+kalna	ADJ	kalny
+a	CCONJ	a
+rozvodnena	ADJ	rozvodneny
+,	PUNCT	,
+ze	SCONJ	ze
+brehy	NOUN	breh
+nestaci	VERB	stacit
+nikterak	ADV	nikterak
+spinave	ADV	spinave
+hnedemu	ADJ	hnedy
+proudu	NOUN	proud
+.	PUNCT	.
+}
+Predicted: {
+rozhucela	VERB	rozhucet
+se	PRON	se
+svitava	PROPN	svitava
+kalna	ADJ	kalny
+a	CCONJ	a
+rozvodnena	ADJ	rozvodneny
+,	PUNCT	,
+ze	SCONJ	ze
+brehy	NOUN	breh
+nestaci	VERB	stacit
+nikterak	ADV	nikterak
+spinave	ADV	spinave
+hnedemu	ADJ	hnedem
+proudu	NOUN	proud
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+hnedemu: hnedy | hnedem
+}
+
+Expected: {
+jenom	PART	jenom
+chvilku	NOUN	chvilka
+mam	VERB	mit
+tu	ADV	tady
+stani	NOUN	stani
+,	PUNCT	,
+nevim	VERB	vedet
+ani	CCONJ	ani
+,	PUNCT	,
+proc	ADV	proc
+jsem	AUX	byt
+prisel	VERB	prijit
+,	PUNCT	,
+ale	CCONJ	ale
+pod	ADP	pod
+mou	DET	muj
+horkou	ADJ	horky
+skrani	NOUN	skran
+jest	AUX	byt
+mi	PRON	ja
+,	PUNCT	,
+jak	ADV	jak
+bych	AUX	byt
+dole	ADV	dole
+slysel	VERB	slyset
+to	DET	ten
+tve	DET	tvuj
+klidne	ADJ	klidny
+oddychani	NOUN	oddychani
+.	PUNCT	.
+}
+Predicted: {
+jenom	PART	jenom
+chvilku	NOUN	chvilka
+mam	VERB	mit
+tu	ADV	tu
+stani	NOUN	stani
+,	PUNCT	,
+nevim	VERB	vedet
+ani	CCONJ	ani
+,	PUNCT	,
+proc	ADV	proc
+jsem	AUX	byt
+prisel	VERB	prijit
+,	PUNCT	,
+ale	CCONJ	ale
+pod	ADP	pod
+mou	DET	muj
+horkou	ADJ	horky
+skrani	NOUN	skran
+jest	AUX	byt
+mi	PRON	ja
+,	PUNCT	,
+jak	ADV	jak
+bych	AUX	byt
+dole	ADV	dole
+slysel	VERB	slyset
+to	DET	ten
+tve	DET	tvuj
+klidne	ADJ	klidny
+oddychani	NOUN	oddychani
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+tu: tady | tu
+}
+
+Expected: {
+u	ADP	u
+babylonskych	ADJ	babylonsky
+vod	NOUN	voda
+jsme	AUX	byt
+truchle	ADV	truchlive
+sedavali	VERB	sedavat
+a	CCONJ	a
+temny	ADJ	temny
+doprovod	NOUN	doprovod
+k	ADP	k
+uderum	NOUN	uder
+srdce	NOUN	srdce
+hrali	VERB	hrat
+.	PUNCT	.
+}
+Predicted: {
+u	ADP	u
+babylonskych	ADJ	babylonsky
+vod	NOUN	voda
+jsme	AUX	byt
+truchle	ADV	truchlivy
+sedavali	VERB	sedavat
+a	CCONJ	a
+temny	ADJ	temny
+doprovod	NOUN	doprovod
+k	ADP	k
+uderum	NOUN	uderum
+srdce	NOUN	srdce
+hrali	VERB	hrat
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+truchle: truchlive | truchlivy
+uderum: uder | uderum
+}
+
+Expected: {
+pulden	NOUN	pulden
+byl	AUX	byt
+,	PUNCT	,
+a	CCONJ	a
+z	ADP	z
+hor	NOUN	hora
+se	PRON	se
+nevyhrnul	VERB	vyhrnout
+vetrik	NOUN	vetrik
+,	PUNCT	,
+na	ADP	na
+strome	NOUN	strom
+se	PRON	se
+nehnul	VERB	hnout
+listek	NOUN	listek
+,	PUNCT	,
+jak	ADV	jak
+by	AUX	byt
+pred	ADP	pred
+cims	PRON	cos
+nepoznanym	ADJ	poznany
+trnul	VERB	trnout
+,	PUNCT	,
+zmlk	VERB	zmlknout
+i	CCONJ	i
+bzukot	NOUN	bzukot
+vcel	NOUN	vcela
+i	CCONJ	i
+kazdy	DET	kazdy
+svistek	NOUN	svistek
+.	PUNCT	.
+}
+Predicted: {
+pulden	NOUN	pulden
+byl	AUX	byt
+,	PUNCT	,
+a	CCONJ	a
+z	ADP	z
+hor	NOUN	hora
+se	PRON	se
+nevyhrnul	VERB	nevyhrnula
+vetrik	NOUN	vetrik
+,	PUNCT	,
+na	ADP	na
+strome	NOUN	strom
+se	PRON	se
+nehnul	VERB	hnout
+listek	NOUN	listek
+,	PUNCT	,
+jak	ADV	jak
+by	AUX	byt
+pred	ADP	pred
+cims	PRON	cims
+nepoznanym	ADJ	nepoznany
+trnul	VERB	trnul
+,	PUNCT	,
+zmlk	VERB	zmlk
+i	CCONJ	i
+bzukot	NOUN	bzukot
+vcel	NOUN	vcela
+i	CCONJ	i
+kazdy	DET	kazdy
+svistek	NOUN	svistek
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+nevyhrnul: vyhrnout | nevyhrnula
+cims: cos | cims
+nepoznanym: poznany | nepoznany
+trnul: trnout | trnul
+zmlk: zmlknout | zmlk
+}
+
+Expected: {
+z	ADP	z
+tve	DET	tvuj
+cise	NOUN	cise
+,	PUNCT	,
+poesie	NOUN	poesie
+,	PUNCT	,
+musim	VERB	muset
+piti	VERB	pit
+.	PUNCT	.
+}
+Predicted: {
+z	ADP	z
+tve	DET	tvuj
+cise	NOUN	cise
+,	PUNCT	,
+poesie	NOUN	poesie
+,	PUNCT	,
+musim	VERB	muset
+piti	VERB	piti
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+piti: pit | piti
+}
+
+Expected: {
+tak	ADV	tak
+znate	VERB	znat
+nas	PRON	ja
+,	PUNCT	,
+nuz	PART	nuz
+,	PUNCT	,
+modlam	NOUN	modla
+dejte	VERB	dat
+cizim	ADJ	cizi
+jiz	ADV	jiz
+vyhost	NOUN	vyhost
+u	ADP	u
+labe	PROPN	labe
+i	CCONJ	i
+u	ADP	u
+vltavy	PROPN	vltava
+,	PUNCT	,
+na	ADP	na
+sion	PROPN	sion
+zapomente	VERB	zapomenout
+,	PUNCT	,
+na	ADP	na
+garizim	PROPN	garizim
+;	PUNCT	;
+vlast	NOUN	vlast
+vsady	ADV	vsady
+je	AUX	byt
+,	PUNCT	,
+kde	ADV	kde
+dyse	VERB	dychat
+clovek	NOUN	clovek
+pravy	ADJ	pravy
+.	PUNCT	.
+}
+Predicted: {
+tak	ADV	tak
+znate	VERB	znat
+nas	PRON	ja
+,	PUNCT	,
+nuz	PART	nuz
+,	PUNCT	,
+modlam	NOUN	modlam
+dejte	VERB	dat
+cizim	ADJ	cizi
+jiz	ADV	jiz
+vyhost	NOUN	vyhost
+u	ADP	u
+labe	PROPN	labe
+i	CCONJ	i
+u	ADP	u
+vltavy	PROPN	vltava
+,	PUNCT	,
+na	ADP	na
+sion	PROPN	sion
+zapomente	VERB	zapomenout
+,	PUNCT	,
+na	ADP	na
+garizim	PROPN	garizim
+;	PUNCT	;
+vlast	NOUN	vlast
+vsady	ADV	vsady
+je	AUX	byt
+,	PUNCT	,
+kde	ADV	kde
+dyse	VERB	dys
+clovek	NOUN	clovek
+pravy	ADJ	pravy
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+modlam: modla | modlam
+dyse: dychat | dys
+}
+
+Expected: {
+jak	ADV	jak
+chce	VERB	chtit
+se	PRON	se
+tvarit	VERB	tvarit
+silnou	ADJ	silny
+,	PUNCT	,
+vaznou	ADJ	vazny
+,	PUNCT	,
+chladnou	ADJ	chladny
+!	PUNCT	!
+-	PUNCT	-
+ze	SCONJ	ze
+nejsem	AUX	byt
+v	ADP	v
+teto	DET	tento
+chvili	NOUN	chvile
+malirem	NOUN	malir
+!	PUNCT	!
+-	PUNCT	-
+a	CCONJ	a
+sny	NOUN	sen
+,	PUNCT	,
+jez	PRON	jenz
+obletuji	VERB	obletovat
+tvar	NOUN	tvar
+ji	PRON	on
+vnadnou	ADJ	vnadny
+,	PUNCT	,
+odhani	VERB	odhanet
+pryc	ADV	pryc
+ras	NOUN	rasa
+pruznym	ADJ	pruzny
+vejirem	NOUN	vejir
+.	PUNCT	.
+}
+Predicted: {
+jak	ADV	jak
+chce	VERB	chtit
+se	PRON	se
+tvarit	VERB	tvarit
+silnou	ADJ	silny
+,	PUNCT	,
+vaznou	ADJ	vazny
+,	PUNCT	,
+chladnou	ADJ	chladny
+!	PUNCT	!
+-	PUNCT	-
+ze	SCONJ	ze
+nejsem	AUX	byt
+v	ADP	v
+teto	DET	tento
+chvili	NOUN	chvile
+malirem	NOUN	malir
+!	PUNCT	!
+-	PUNCT	-
+a	CCONJ	a
+sny	NOUN	sen
+,	PUNCT	,
+jez	PRON	jenz
+obletuji	VERB	obletovat
+tvar	NOUN	tvar
+ji	PRON	on
+vnadnou	ADJ	vnadny
+,	PUNCT	,
+odhani	VERB	odhanet
+pryc	ADV	pryc
+ras	NOUN	rasa
+pruznym	ADJ	pruzny
+vejirem	NOUN	vejire
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+vejirem: vejir | vejire
+}
+
+Expected: {
+blaze	ADV	blaze
+tobe	PRON	ty
+,	PUNCT	,
+nevinnatko	NOUN	nevinatko
+,	PUNCT	,
+ze	SCONJ	ze
+tvuj	DET	tvuj
+outly	ADJ	utly
+zvadnul	VERB	zvadnout
+kvet	NOUN	kvet
+;	PUNCT	;
+}
+Predicted: {
+blaze	ADV	blaze
+tobe	PRON	ty
+,	PUNCT	,
+nevinnatko	NOUN	nevinnatko
+,	PUNCT	,
+ze	SCONJ	ze
+tvuj	DET	tvuj
+outly	ADJ	outly
+zvadnul	VERB	zvadnulout
+kvet	NOUN	kvet
+;	PUNCT	;
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+nevinnatko: nevinatko | nevinnatko
+outly: utly | outly
+zvadnul: zvadnout | zvadnulout
+}
+
+Expected: {
+taz	VERB	tazat
+se	PRON	se
+o	ADP	o
+tom	DET	ten
+ctneho	ADJ	ctny
+kmeta	NOUN	kmet
+,	PUNCT	,
+rekne	VERB	rici
+:	PUNCT	:
+-	PUNCT	-
+vse	DET	vsechen
+jest	AUX	byt
+nicemnost	NOUN	nicemnost
+.	PUNCT	.
+}
+Predicted: {
+taz	VERB	tyz
+se	PRON	se
+o	ADP	o
+tom	DET	ten
+ctneho	ADJ	ctneho
+kmeta	NOUN	kmeta
+,	PUNCT	,
+rekne	VERB	rici
+:	PUNCT	:
+-	PUNCT	-
+vse	DET	vsechen
+jest	AUX	byt
+nicemnost	NOUN	nicemnost
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+taz: tazat | tyz
+ctneho: ctny | ctneho
+kmeta: kmet | kmeta
+}
+
+Expected: {
+az	SCONJ	az
+dnes	ADV	dnes
+usnes	VERB	usnout
+v	ADP	v
+loktech	NOUN	lokt
+mych	DET	muj
+,	PUNCT	,
+bude	AUX	byt
+se	PRON	se
+ti	PRON	ty
+zdat	VERB	zdat
+,	PUNCT	,
+ze	SCONJ	ze
+spis	VERB	spat
+se	ADP	s
+mnou	PRON	ja
+v	ADP	v
+liliich	NOUN	lilie
+a	CCONJ	a
+ze	SCONJ	ze
+te	PRON	ty
+mam	VERB	mit
+rad	ADJ	rad
+,	PUNCT	,
+ze	SCONJ	ze
+se	PRON	se
+k	ADP	k
+tobe	PRON	ty
+nezne	ADV	nezne
+shybam	VERB	shybat
+,	PUNCT	,
+ze	SCONJ	ze
+te	PRON	ty
+hladim	VERB	hladit
+,	PUNCT	,
+ze	SCONJ	ze
+te	PRON	ty
+libam	VERB	libat
+,	PUNCT	,
+jak	SCONJ	jako
+bych	AUX	byt
+ti	PRON	ty
+chtel	VERB	chtit
+dusi	NOUN	duse
+z	ADP	z
+tela	NOUN	telo
+na	ADP	na
+vzdy	ADV	vzdy
+vylibat	VERB	vylibat
+.	PUNCT	.
+}
+Predicted: {
+az	SCONJ	az
+dnes	ADV	dnes
+usnes	VERB	usnes
+v	ADP	v
+loktech	NOUN	lokt
+mych	DET	muj
+,	PUNCT	,
+bude	AUX	byt
+se	PRON	se
+ti	PRON	ty
+zdat	VERB	zdat
+,	PUNCT	,
+ze	SCONJ	ze
+spis	VERB	spat
+se	ADP	se
+mnou	PRON	ja
+v	ADP	v
+liliich	NOUN	liliich
+a	CCONJ	a
+ze	SCONJ	ze
+te	PRON	ten
+mam	VERB	mit
+rad	ADJ	rad
+,	PUNCT	,
+ze	SCONJ	ze
+se	PRON	se
+k	ADP	k
+tobe	PRON	ty
+nezne	ADV	nezne
+shybam	VERB	shybat
+,	PUNCT	,
+ze	SCONJ	ze
+te	PRON	ten
+hladim	VERB	hladi
+,	PUNCT	,
+ze	SCONJ	ze
+te	PRON	ten
+libam	VERB	libat
+,	PUNCT	,
+jak	SCONJ	jak
+bych	AUX	byt
+ti	PRON	ty
+chtel	VERB	chtit
+dusi	NOUN	duse
+z	ADP	z
+tela	NOUN	telo
+na	ADP	na
+vzdy	ADV	vzdy
+vylibat	VERB	vylibat
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+usnes: usnout | usnes
+se: s | se
+liliich: lilie | liliich
+te: ty | ten
+te: ty | ten
+hladim: hladit | hladi
+te: ty | ten
+jak: jako | jak
 }

@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.8519130650359473
-Training-Sample-Size=11466
-Evaluation-Sample-Size=1274
+Evaluation-Score=0.8517113402061856
+Training-Sample-Size=11493
+Evaluation-Sample-Size=1277
 Training-Algorithm=MAXENT_QN
 
 === MODEL PROPERTIES ===
@@ -9,9 +9,9 @@ Component-Name=SentenceDetectorME
 Language=cs
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1697771838618
+Timestamp=1700448982879
 TrainerType=Event
-Training-Eventhash=8e478c6c86820f5f14bcd39ac421df87
+Training-Eventhash=f3f9a00a32dd920789e679e8d86de8ff
 eosCharacters=.?!
 factory=opennlp.tools.sentdetect.SentenceDetectorFactory
 useTokenEnd=true
@@ -148,36 +148,6 @@ budiceeek.
 }
 
 Expected: {
-kdo byl v prvni zemi socialismu, kdo ji a jeji obcany nepoznal z rychliku, ten vi, jaky uprimny a internacionalni vztah k nasi zemi maji sovetsti lide.
-reknete, soudruhu, co vsechno je jeste treba konkretne delat, aby nase vzajemne pratelstvi bylo silnejsi, bohatsi, uzitecnejsi pro obe strany, pro vsechny obcany v nasich zemich?
-co myslite, ze bych mel udelat konkretne ja, nase komsomolska organizace, aby pratelstvi mezi nasimi zememi, nasimi lidmi nebylo jenom veci citu, ale hlavne veci rozumu, skutku.
-tahle slova arama kublukjana, predsedy komsomolske organizace v jerevanskem strojirenskem zavode vitezny rijen, bych rad dal jako predznamenani ke smlouve o pratelstvi, spolupraci a vzajemne pomoci mezi cssr a sssr, jejiz treti vyroci si # kvetna pripominame.
-lubos prave opravoval v dilne postarsiho opla, kdyz za nim kluci prisli.
-lubo, mistr ma narozeniny.
-kolik das?
-a das to v dolarech.
-nemam na jalove vtipky cas.
-kolik se tak dava.
-}
-Predicted: {
-kdo byl v prvni zemi socialismu, kdo ji a jeji obcany nepoznal z rychliku, ten vi, jaky uprimny a internacionalni vztah k nasi zemi maji sovetsti lide.
-reknete, soudruhu, co vsechno je jeste treba konkretne delat, aby nase vzajemne pratelstvi bylo silnejsi, bohatsi, uzitecnejsi pro obe strany, pro vsechny obcany v nasich zemich?
-co myslite, ze bych mel udelat konkretne ja, nase komsomolska organizace, aby pratelstvi mezi nasimi zememi, nasimi lidmi nebylo jenom veci citu, ale hlavne veci rozumu, skutku.
-tahle slova arama kublukjana, predsedy komsomolske organizace v jerevanskem strojirenskem zavode vitezny rijen, bych rad dal jako predznamenani ke smlouve o pratelstvi, spolupraci a vzajemne pomoci mezi cssr a sssr, jejiz treti vyroci si # kvetna pripominame.
-lubos prave opravoval v dilne postarsiho opla, kdyz za nim kluci prisli.
-lubo, mistr ma narozeniny.
-kolik das? a das to v dolarech.
-nemam na jalove vtipky cas.
-kolik se tak dava.
-}
-False positives: {
-kolik das? a das to v dolarech.
-} False negatives: {
-kolik das?
-a das to v dolarech.
-}
-
-Expected: {
 je pravdepodobne, ze prikop vymezujici a opevnujici kruhovou ci mirne ovalnou *
 etnografie delnictva, uef csav se pocatkem roku # ujalo plneni celoustavniho zavazku vypracovat etnograficke dilo o kulture a zpusobu zivota prazskeho delnictva.
 pro tento ukol bylo treba v prve rade vyjasnit si zakladni teoreticke pristupy k danemu tematu a specifikovat ekonomicke, historicke a demograficke podminky, za nichz se v historickem procesu vytvarely specificke rysy v kulture a zpusobu zivota prazskeho proletariatu.
@@ -1058,6 +1028,36 @@ spravedlnost
 }
 
 Expected: {
+"a ten sam, jakou ma barvu?"
+chvilicku bylo ticho.
+zrejme ticho venovane zkoumani one barvy.
+"hezkou," rekla dcera.
+a zase pokracovala ve vypraveni, co ona a ostatni deti dnes na piskovisti provadely, jakou bitvu mezi dvema hrady svedly...
+a tak jsem se zase nedozvedela, jestli sam je ten cernousek.
+radsi jsem se uz neptala.
+"ale je tady jedna moznost: predtim, nez se rozhodnes, predstavis si, ze bys jednala tak, jak nechces.
+a domyslis si tohle svoje jednani co nejdal, jak to jen jde."
+odmlcela se.
+}
+Predicted: {
+"a ten sam, jakou ma barvu?" chvilicku bylo ticho.
+zrejme ticho venovane zkoumani one barvy.
+"hezkou," rekla dcera.
+a zase pokracovala ve vypraveni, co ona a ostatni deti dnes na piskovisti provadely, jakou bitvu mezi dvema hrady svedly...
+a tak jsem se zase nedozvedela, jestli sam je ten cernousek.
+radsi jsem se uz neptala.
+"ale je tady jedna moznost: predtim, nez se rozhodnes, predstavis si, ze bys jednala tak, jak nechces.
+a domyslis si tohle svoje jednani co nejdal, jak to jen jde."
+odmlcela se.
+}
+False positives: {
+"a ten sam, jakou ma barvu?" chvilicku bylo ticho.
+} False negatives: {
+"a ten sam, jakou ma barvu?"
+chvilicku bylo ticho.
+}
+
+Expected: {
 divam se na dceru, ktera mi vyklada radostnym hlaskem, co zase samuel a co andrejka, a ja si rikam, kez by ji tenhle pohled vydrzel, a uvazuji, jak dlouho ji asi vydrzi.
 barvy jsou hezke.
 jak je to prirozene.
@@ -1876,8 +1876,7 @@ rozparek mas az buhvi kam.
 Predicted: {
 "my zadnej od tebe nechceme.
 nech nas na pokoji!"
-"ale tyno!"
-zbledla jsem.
+"ale tyno!" zbledla jsem.
 "co jsem provedla?
 ja se jen snazim ti pomoct!"
 "to neni pravda!"
@@ -1888,12 +1887,9 @@ natrasas se tady v minisuknich, ktere uz se pro tebe davno nehodi.
 rozparek mas az buhvi kam.
 }
 False positives: {
-"ale tyno!"
-zbledla jsem.
 "to neni pravda!"
 zavrestela jako smyslu zbavena.
 } False negatives: {
-"ale tyno!" zbledla jsem.
 "to neni pravda!" zavrestela jako smyslu zbavena.
 }
 
@@ -2060,6 +2056,36 @@ nevericne jsem civela a premyslela, jestli dite ceka s filipem.
 }
 
 Expected: {
+okamzik ho pozoruji.
+postupne se meni v carodejnici s rozevlatymi vlasy.
+ty se prodluzuji, az dostanou vzhled dlouhych rohliku.
+rukou si promnu unavene oci.
+hlava mi tresti a utroby se mi sviraji hnusem i strachem.
+myslim na valentynu.
+jak se asi zachova, az se dozvi, ze se jeji matka zabila?
+bude smutna, nebo se ji ulevi?
+"podivejte, prsi vam stesti!"
+opravdu.
+}
+Predicted: {
+okamzik ho pozoruji.
+postupne se meni v carodejnici s rozevlatymi vlasy.
+ty se prodluzuji, az dostanou vzhled dlouhych rohliku.
+rukou si promnu unavene oci.
+hlava mi tresti a utroby se mi sviraji hnusem i strachem.
+myslim na valentynu.
+jak se asi zachova, az se dozvi, ze se jeji matka zabila?
+bude smutna, nebo se ji ulevi?
+"podivejte, prsi vam stesti!" opravdu.
+}
+False positives: {
+"podivejte, prsi vam stesti!" opravdu.
+} False negatives: {
+"podivejte, prsi vam stesti!"
+opravdu.
+}
+
+Expected: {
 "ne.
 dalkove.
 jezdi se kazdy ctvrtek na cely den.
@@ -2229,8 +2255,7 @@ Predicted: {
 favorit se vysplhal uklouzanym snehem az k chalupe.
 ucitelka vsechno vidi, ale zatim nic nerika.
 teprve kdyz masa rozevre listecek a zacte se, ozve se od tabule: "maso, ihned to sem prines!
-ano, ten papirek, co ti poslal!
-rekla jsem ihned!"
+ano, ten papirek, co ti poslal! rekla jsem ihned!"
 dava znat, ze veskera legrace skoncila.
 lada hledi k mase vydesene, boji se, co bude.
 vypada v tu chvili jako vyplaseny kralicek, zaskoceny liskou.
@@ -2238,9 +2263,12 @@ masa nerozhodne vstava a ocima hleda ladu, streta se s nim, na okamzik, na krati
 }
 False positives: {
 teprve kdyz masa rozevre listecek a zacte se, ozve se od tabule: "maso, ihned to sem prines!
+ano, ten papirek, co ti poslal! rekla jsem ihned!"
 } False negatives: {
 teprve kdyz masa rozevre listecek a zacte se, ozve se od tabule:
 "maso, ihned to sem prines!
+ano, ten papirek, co ti poslal!
+rekla jsem ihned!"
 }
 
 Expected: {
@@ -3628,6 +3656,38 @@ nezvykle ticho bylo v prostorach kolem saten hokejistu slavie po nerozhodnem zap
 }
 
 Expected: {
+nicmene oba byvali poslanci ln sdelili, ze se jedna o neuplne prohlaseni a navic stare vice nez tri roky.
+rekli, ze pri nataceni nebyli vubec pritomni a o cele veci byli informovani z televize.
+takze nemohli a nemohou potvrdit ani vyvratit, zda slo skutecne o svazek jana kavana.
+otazka zni: meli nebo nemeli poslanci v cele se stanislavem devatym v dobe nataceni svazek k dispozici?
+kdyz ano, vyzradili americkemu novinari statni tajemstvi?
+nastesti je ministerstvo vnitra urad, a proto zde existuje jednaci protokol o pohybech osobnich svazku.
+co z techto protokolu vyplyva?
+dvacateho unora 1991 byl "komisi 17. listopadu"" pujcen osobni spis jana kavana s krycim nazvem kato.
+vracen byl sesteho listopadu 1991.
+americky novinar zabery natacel az ctvrteho prosince 1991.
+}
+Predicted: {
+nicmene oba byvali poslanci ln sdelili, ze se jedna o neuplne prohlaseni a navic stare vice nez tri roky.
+rekli, ze pri nataceni nebyli vubec pritomni a o cele veci byli informovani z televize.
+takze nemohli a nemohou potvrdit ani vyvratit, zda slo skutecne o svazek jana kavana.
+otazka zni: meli nebo nemeli poslanci v cele se stanislavem devatym v dobe nataceni svazek k dispozici?
+kdyz ano, vyzradili americkemu novinari statni tajemstvi?
+nastesti je ministerstvo vnitra urad, a proto zde existuje jednaci protokol o pohybech osobnich svazku.
+co z techto protokolu vyplyva?
+dvacateho unora 1991 byl "komisi 17.
+listopadu"" pujcen osobni spis jana kavana s krycim nazvem kato.
+vracen byl sesteho listopadu 1991.
+americky novinar zabery natacel az ctvrteho prosince 1991.
+}
+False positives: {
+dvacateho unora 1991 byl "komisi 17.
+listopadu"" pujcen osobni spis jana kavana s krycim nazvem kato.
+} False negatives: {
+dvacateho unora 1991 byl "komisi 17. listopadu"" pujcen osobni spis jana kavana s krycim nazvem kato.
+}
+
+Expected: {
 v platnost vstupuje i novy dostihovy rad, ktery podle svych tvurcu sice neprinasi prevratne zmeny, ale resi napriklad nektere sporne veci dotykajici se sazkoveho provozu.
 zasadni opatreni prijala cka ohledne vyplaceni dotaci, ktere by melo probihat ihned po skonceni dostihoveho dne v hotovosti.
 prestoze klusacky sport u nas dosahuje pri srovnani zahranicnich startu daleko vetsi uspesnost nez cvalovy provoz, stal pro temer neexistujici propagaci na okraji zajmu dostihove verejnosti.
@@ -4084,15 +4144,17 @@ nasledujici graf ukazuje mozne varianty vyuziti nemovitosti pana kouby, ktere se
 nenechat nahodu nahode pri zvazovani moznosti prodeje ma mnoho lidi nerealnou predstavu horentnich castek za prodej nemovitosti.
 s vyjimkou superatraktivnich realit v zajimavych lokalitach to vsak jsou jen sny.
 objekt naseho ctenare ani parametry ani polohou prilis optimismu pri stanoveni prodejni ceny nevyvolava.
-podle informaci o nemovitosti, jak nam je sdelil nas ctenar, jedna prazska (prvni vinohradska realitni kancelar) a dve jihlavske realitni agentury (real, janecek a vetchy) stanovily rozpeti pro prodejni cenu takto: 400-800 tis., 300-600 tis., maximalne 800 tis.
-pro nase dalsi uvahy budeme tedy 500 tis. kc povazovat za cenu, za niz by mel pan kouba nadeji nemovitost prodat.
+podle informaci o nemovitosti, jak nam je sdelil nas ctenar, jedna prazska (prvni vinohradska realitni kancelar) a dve jihlavske realitni agentury (real, janecek a vetchy) stanovily rozpeti pro prodejni cenu takto: 400-800 tis., 300-600 tis., maximalne 800 tis. pro nase dalsi uvahy budeme tedy 500 tis. kc povazovat za cenu, za niz by mel pan kouba nadeji nemovitost prodat.
 zde vsak, mozna vice nez jinde, hraje roli nahoda, zda se najde vhodny kupec.
 }
 False positives: {
 nenechat nahodu nahode pri zvazovani moznosti prodeje ma mnoho lidi nerealnou predstavu horentnich castek za prodej nemovitosti.
+podle informaci o nemovitosti, jak nam je sdelil nas ctenar, jedna prazska (prvni vinohradska realitni kancelar) a dve jihlavske realitni agentury (real, janecek a vetchy) stanovily rozpeti pro prodejni cenu takto: 400-800 tis., 300-600 tis., maximalne 800 tis. pro nase dalsi uvahy budeme tedy 500 tis. kc povazovat za cenu, za niz by mel pan kouba nadeji nemovitost prodat.
 } False negatives: {
 nenechat nahodu nahode
 pri zvazovani moznosti prodeje ma mnoho lidi nerealnou predstavu horentnich castek za prodej nemovitosti.
+podle informaci o nemovitosti, jak nam je sdelil nas ctenar, jedna prazska (prvni vinohradska realitni kancelar) a dve jihlavske realitni agentury (real, janecek a vetchy) stanovily rozpeti pro prodejni cenu takto: 400-800 tis., 300-600 tis., maximalne 800 tis.
+pro nase dalsi uvahy budeme tedy 500 tis. kc povazovat za cenu, za niz by mel pan kouba nadeji nemovitost prodat.
 }
 
 Expected: {
@@ -4402,15 +4464,19 @@ na zminenem jednani doslo take k jakesi gentlemanske dohode, ze chyby lekaru hom
 uverejnenym rozhovorem profesor klener ukazal, co si o podobnych zaverech mysli.
 lekare-homeopaty strcil do jednoho pytle s leciteli, posteskl si nad skutecnosti, ze ceska lekarska spolecnost vubec homeopatii akceptovala a ze ji lekarska komora dosud nezakazala.
 soucasne podal definici homeopatie, ktera nenechava nikoho na pochybach, ze je to neucinna lecba urcena k tomu, aby tahala pacientum penize z kapsy.
-na zasedani ceske lekarske spolecnosti j. e. purkyne byla dne 30. 1. t. r. vetsinou hlasu ze stovky delegatu - reprezentantu prakticky vsech lekarskych odbornosti - homeopaticka spolecnost uznana jako radny clen cls jep.
+na zasedani ceske lekarske spolecnosti j. e. purkyne byla dne 30. 1. t. r.
+vetsinou hlasu ze stovky delegatu - reprezentantu prakticky vsech lekarskych odbornosti - homeopaticka spolecnost uznana jako radny clen cls jep.
 samotna ceska lekarska komora homeopatii uznala za radnou metodu lecby jiz drive, podobne jako to ucinilo ministerstvo zdravotnictvi cr.
 homeopatie je dnes celosvetove uznavanou lekarskou disciplinou, ktera se i u nas zacala vyucovat napriklad na farmaceutickych fakultach jako radny vyukovy predmet.
 hopper bude v praze jezdit na harleyi osmapadesatilety americky herec, reziser a scenarista dennis hopper 2. brezna v prazskem kine u hradeb osobne uvede obnovenou premieru sve slavne rezijni prvotiny bezstarostna jizda (1969).
 vypraveni o putovani dvou motorkaru (hrali je dennis hopper a peter fonda, v uloze jejich docasneho kumpana na sebe poprve vyrazne upozornil jack nicholson) se zaradilo mezi kultovni dila sve doby a stalo se jednim z generacnich manifestu konce let sedesatych.
 }
 False positives: {
+na zasedani ceske lekarske spolecnosti j. e. purkyne byla dne 30. 1. t. r.
+vetsinou hlasu ze stovky delegatu - reprezentantu prakticky vsech lekarskych odbornosti - homeopaticka spolecnost uznana jako radny clen cls jep.
 hopper bude v praze jezdit na harleyi osmapadesatilety americky herec, reziser a scenarista dennis hopper 2. brezna v prazskem kine u hradeb osobne uvede obnovenou premieru sve slavne rezijni prvotiny bezstarostna jizda (1969).
 } False negatives: {
+na zasedani ceske lekarske spolecnosti j. e. purkyne byla dne 30. 1. t. r. vetsinou hlasu ze stovky delegatu - reprezentantu prakticky vsech lekarskych odbornosti - homeopaticka spolecnost uznana jako radny clen cls jep.
 hopper bude v praze jezdit na harleyi
 osmapadesatilety americky herec, reziser a scenarista dennis hopper 2. brezna v prazskem kine u hradeb osobne uvede obnovenou premieru sve slavne rezijni prvotiny bezstarostna jizda (1969).
 }
@@ -5299,8 +5365,7 @@ britsky denik the times ohlasil na dnesek primeri ira v ulsteru
 }
 Predicted: {
 podle udaju ceskeho ministerstva zemedelstvi bylo k 9 .
-srpnu na slovenskou zemedelskou a potravinarskou inspekci podano celkem 2173 zadosti o udeleni certifikatu pro potravinarske zbozi z cr .
-1400 zadosti bylo kladne vyrizeno , 72 zamitnuto a 741 zadosti na vyrizeni dosud ceka .
+srpnu na slovenskou zemedelskou a potravinarskou inspekci podano celkem 2173 zadosti o udeleni certifikatu pro potravinarske zbozi z cr . 1400 zadosti bylo kladne vyrizeno , 72 zamitnuto a 741 zadosti na vyrizeni dosud ceka .
 pravdepodobne nejvice byli slovenskymi obchodnimi barierami postizeni vyvozci ceskych cigaret .
 export tohoto zbozi poklesl o 98.1 procenta ( zatimco v 1 .
 pololeti 1993 bylo do sr vyvezeno nasich cigaret za 422 mil . kc , letos ve stejnem obdobi jen za 7 mil . kc ) .
@@ -5313,13 +5378,14 @@ pololeti roku 1994 v porovnani se stejnym obdobim roku 1993 britsky denik the ti
 }
 False positives: {
 podle udaju ceskeho ministerstva zemedelstvi bylo k 9 .
-srpnu na slovenskou zemedelskou a potravinarskou inspekci podano celkem 2173 zadosti o udeleni certifikatu pro potravinarske zbozi z cr .
+srpnu na slovenskou zemedelskou a potravinarskou inspekci podano celkem 2173 zadosti o udeleni certifikatu pro potravinarske zbozi z cr . 1400 zadosti bylo kladne vyrizeno , 72 zamitnuto a 741 zadosti na vyrizeni dosud ceka .
 export tohoto zbozi poklesl o 98.1 procenta ( zatimco v 1 .
 pololeti 1993 bylo do sr vyvezeno nasich cigaret za 422 mil . kc , letos ve stejnem obdobi jen za 7 mil . kc ) .
 potravinarsky obchod ( v tis . kc ) mezi cr a sr za 1 .
 pololeti roku 1994 v porovnani se stejnym obdobim roku 1993 britsky denik the times ohlasil na dnesek primeri ira v ulsteru
 } False negatives: {
 podle udaju ceskeho ministerstva zemedelstvi bylo k 9 . srpnu na slovenskou zemedelskou a potravinarskou inspekci podano celkem 2173 zadosti o udeleni certifikatu pro potravinarske zbozi z cr .
+1400 zadosti bylo kladne vyrizeno , 72 zamitnuto a 741 zadosti na vyrizeni dosud ceka .
 export tohoto zbozi poklesl o 98.1 procenta ( zatimco v 1 . pololeti 1993 bylo do sr vyvezeno nasich cigaret za 422 mil . kc , letos ve stejnem obdobi jen za 7 mil . kc ) .
 potravinarsky obchod ( v tis . kc ) mezi cr a sr za 1 . pololeti roku 1994 v porovnani se stejnym obdobim roku 1993
 britsky denik the times ohlasil na dnesek primeri ira v ulsteru
@@ -6016,11 +6082,14 @@ nocni teploty 12 az 8, denni 20 az 24. stribrny bachleda na ms v zavodech horsky
 prvenstvi na 28 km dlouhe trati ziskal osguthorp z usa (2:30:38) a treti skoncil dan rasmussen (2:36:37).
 dalsi vysledky, sjezd muzi ( 3.35 km): 1. cullinan (usa) 4:28 min, 2. deaton (oba usa) 4:33, 3. taillefer (fr.) 4: 33.7.
 vitkovice odhodily zatez z atletiky newcastle - ms v pulmaratonu, zeny: mccolganova (brit.)...
-17. peterkova, druzstva: japonsko.
+17.
+peterkova, druzstva: japonsko.
 }
 False positives: {
 nocni teploty 12 az 8, denni 20 az 24. stribrny bachleda na ms v zavodech horskych kol v kanadskem bromontu vybojoval cs. reprezentant vojtech bachleda (2:34:43) v krosu junioru stribrnou medaili.
 vitkovice odhodily zatez z atletiky newcastle - ms v pulmaratonu, zeny: mccolganova (brit.)...
+17.
+peterkova, druzstva: japonsko.
 } False negatives: {
 nocni teploty 12 az 8, denni 20 az 24.
 stribrny bachleda
@@ -6029,6 +6098,7 @@ vitkovice odhodily zatez
 z atletiky
 newcastle -
 ms v pulmaratonu, zeny: mccolganova (brit.)...
+17. peterkova, druzstva: japonsko.
 }
 
 Expected: {
@@ -7239,14 +7309,12 @@ zjistene nalomeni akromialniho vybezku prave lopatky na strane privracene do ram
 s velkou pravdepodobnosti muzeme tento nalez dat do vztahu s nahlym a prudkym vykloubenim v ramennim kloubu, vzniklem pri zaveseni vyslychaneho za svazane ruce na zadech pri tzv. stosovani.
 nahore vlevo: relikvie v suchem stavu v pouzdre nahore vpravo: zvlhcena relikvie po vyjmuti z pouzdra.
 tmavy pruh predstavuje organickou hmotu vlevo dole: dekomponovana mozkova tkan z lebky knizete vratislava (+ 921).
-snimky z archivu autora "jazyk" sv.
-jana z nepomuku hmota vlastni relikvie byla v 18. stoleti vymodelovana pro svou plasticitu do tvaru jazyka v pouzdre o velikosti 6.3 x 3.4 cm a o tloustce 6 az 12 mm.
+snimky z archivu autora "jazyk" sv. jana z nepomuku hmota vlastni relikvie byla v 18. stoleti vymodelovana pro svou plasticitu do tvaru jazyka v pouzdre o velikosti 6.3 x 3.4 cm a o tloustce 6 az 12 mm.
 }
 False positives: {
 nahore vlevo: relikvie v suchem stavu v pouzdre nahore vpravo: zvlhcena relikvie po vyjmuti z pouzdra.
 tmavy pruh predstavuje organickou hmotu vlevo dole: dekomponovana mozkova tkan z lebky knizete vratislava (+ 921).
-snimky z archivu autora "jazyk" sv.
-jana z nepomuku hmota vlastni relikvie byla v 18. stoleti vymodelovana pro svou plasticitu do tvaru jazyka v pouzdre o velikosti 6.3 x 3.4 cm a o tloustce 6 az 12 mm.
+snimky z archivu autora "jazyk" sv. jana z nepomuku hmota vlastni relikvie byla v 18. stoleti vymodelovana pro svou plasticitu do tvaru jazyka v pouzdre o velikosti 6.3 x 3.4 cm a o tloustce 6 az 12 mm.
 } False negatives: {
 nahore vlevo: relikvie v suchem stavu v pouzdre
 nahore vpravo: zvlhcena relikvie po vyjmuti z pouzdra.
@@ -7291,6 +7359,36 @@ h. heinrich, quat.
 g. bond a spol., nature 360, 245-249, 1992
 48
 jiri john (19?? - 19 ??) studoval u prof. xy, text alespon na dva radky!
+}
+
+Expected: {
+dukaz.
+budte p, a, b ruzne body takove, ze usecky pa, pb jsou stejne dlouhe a uhel apb ma velikost 2 (viz obr. 22).
+bud a soubezka primky pb ve smeru od bodu p k bodu b vedena bodem a.
+bud primka b soumerna s primkou a podle osy q uhlu apb.
+zrejme b je soubezka primky pa ve smeru bodu p k bodu a.
+bud c primka, ktera prochazi bodem a a puli ten uhel primek pa, a, v nemz nelezi primka ab.
+bud d primka soumerna k primce c podle osy q.
+zrejme primka d puli odpovidajici uhel primek pb, b.
+primky pb, a sviraji na te strane primky pa, na niz lezi bod b, s primkou pa vnitrni uhly, jejichz soucet je mensi nez dva uhly prave.
+odtud snadno nahledneme, ze primky c,d sviraji na te strane primky ab, na niz nelezi bod p, s primkou ab vnitrni uhly, jejichz soucet je mensi nez dva prave uhly.
+}
+Predicted: {
+dukaz.
+budte p, a, b ruzne body takove, ze usecky pa, pb jsou stejne dlouhe a uhel apb ma velikost 2 (viz obr. 22).
+bud a soubezka primky pb ve smeru od bodu p k bodu b vedena bodem a.
+bud primka b soumerna s primkou a podle osy q uhlu apb.
+zrejme b je soubezka primky pa ve smeru bodu p k bodu a.
+bud c primka, ktera prochazi bodem a a puli ten uhel primek pa, a, v nemz nelezi primka ab.
+bud d primka soumerna k primce c podle osy q.
+zrejme primka d puli odpovidajici uhel primek pb, b. primky pb, a sviraji na te strane primky pa, na niz lezi bod b, s primkou pa vnitrni uhly, jejichz soucet je mensi nez dva uhly prave.
+odtud snadno nahledneme, ze primky c,d sviraji na te strane primky ab, na niz nelezi bod p, s primkou ab vnitrni uhly, jejichz soucet je mensi nez dva prave uhly.
+}
+False positives: {
+zrejme primka d puli odpovidajici uhel primek pb, b. primky pb, a sviraji na te strane primky pa, na niz lezi bod b, s primkou pa vnitrni uhly, jejichz soucet je mensi nez dva uhly prave.
+} False negatives: {
+zrejme primka d puli odpovidajici uhel primek pb, b.
+primky pb, a sviraji na te strane primky pa, na niz lezi bod b, s primkou pa vnitrni uhly, jejichz soucet je mensi nez dva uhly prave.
 }
 
 Expected: {
@@ -10460,6 +10558,38 @@ frantisek vorlicek, trener litvinova: "byli jsme v uvodu utkani krecoviti, pak s
 }
 
 Expected: {
+jestlize zdenek r. opakovane napadl spoluvezne a dokonce ho porezal ziletkou, je zcela pochopitelne, ze bylo obusku a pout pouzito.
+ale nechme jiz zdenka r., kteremu ze srdce preji, aby na svobode dokazal, ze je normalnim obcanem, a vratme se zpet do "nelidskych libkovic".
+dle clanku nestastny a trpici vezen vyslechl rady protrelych veznu.
+proc vsak nedal na rady odbornych pracovniku - psychologa, pedagoga, odbornych mistru a vychovatelu?
+v libkovicich meli mladistvi i jedinecnou sanci ziskat vyucni list ve skolskem vzdelavacim stredisku.
+za devet let sveho trvani si svs ziskalo slavu mezi nvu, staci jen nahlednout do statistik a podivat se, kolik vyucnich listu vydalo.
+pracovali jsme s kazdym, bez ohledu na druh trestne cinnosti.
+do uciliste dochazeli na kontrolu civilni inspektori z odboru skolstvi, zaverecnym zkouskam byl pritomen pracovnik sou v litvinove, ktery se vzdy podivoval nad kvalitni pripravou nasich ucnu.
+ucitele meli za ukol pusobit i jinde, starali se o telesnou vychovu, obcanskou nauku, o specialni prednasky z oblasti literatury, hudby, dejepisu.
+nezapomenutelna jsou divadelni predstaveni jason a drson na motivy a la cimrman ci videostop.
+}
+Predicted: {
+jestlize zdenek r.
+opakovane napadl spoluvezne a dokonce ho porezal ziletkou, je zcela pochopitelne, ze bylo obusku a pout pouzito.
+ale nechme jiz zdenka r., kteremu ze srdce preji, aby na svobode dokazal, ze je normalnim obcanem, a vratme se zpet do "nelidskych libkovic".
+dle clanku nestastny a trpici vezen vyslechl rady protrelych veznu.
+proc vsak nedal na rady odbornych pracovniku - psychologa, pedagoga, odbornych mistru a vychovatelu?
+v libkovicich meli mladistvi i jedinecnou sanci ziskat vyucni list ve skolskem vzdelavacim stredisku.
+za devet let sveho trvani si svs ziskalo slavu mezi nvu, staci jen nahlednout do statistik a podivat se, kolik vyucnich listu vydalo.
+pracovali jsme s kazdym, bez ohledu na druh trestne cinnosti.
+do uciliste dochazeli na kontrolu civilni inspektori z odboru skolstvi, zaverecnym zkouskam byl pritomen pracovnik sou v litvinove, ktery se vzdy podivoval nad kvalitni pripravou nasich ucnu.
+ucitele meli za ukol pusobit i jinde, starali se o telesnou vychovu, obcanskou nauku, o specialni prednasky z oblasti literatury, hudby, dejepisu.
+nezapomenutelna jsou divadelni predstaveni jason a drson na motivy a la cimrman ci videostop.
+}
+False positives: {
+jestlize zdenek r.
+opakovane napadl spoluvezne a dokonce ho porezal ziletkou, je zcela pochopitelne, ze bylo obusku a pout pouzito.
+} False negatives: {
+jestlize zdenek r. opakovane napadl spoluvezne a dokonce ho porezal ziletkou, je zcela pochopitelne, ze bylo obusku a pout pouzito.
+}
+
+Expected: {
 jubilejni rok zalozeni svatovitske katedraly vyvolal zajem odborne i laicke verejnosti o historicke osudy jedne z nejvyznamnejsich staveb v nasi zemi.
 svedci o tom take rada televiznich poradu a vice ci mene odbornych publikaci.
 k tem druhym bohuzel patri i katedrala vehlasneho publicisty zdenka mahlera (1928), vydana nakladatelstvim primus.
@@ -12279,38 +12409,6 @@ evropska unie se snazi zachranit bronzove sochy pred korozi specialni potah bron
 } False negatives: {
 evropska unie se snazi zachranit bronzove sochy pred korozi
 specialni potah bronzovych soch, ktere jsou vlivem ovzdusi silne poskozovany, pripravuji pod hlavickou evropske unie jiz nekolik let odbornici na korozi kovu z renomovanych pracovist v nemecku, dansku, velke britanii, svedsku a take rumunsku.
-}
-
-Expected: {
-na poloprazdnem stadionu bylo ticho jako v kostele.
-ve 25. minute si nafilmovanym padem pres petrousovy nohy pokusil vymodlit penaltu jansson a z protiutoku malem prisel trest - moc nechybelo, aby poborsky vypichl mic brankari erikssonovi.
-kdyz se viktorii nepodarilo dat rychle gol, jako by vyprchalo jeji nadseni.
-zcistajasna si na anderssonuv lob nabehl ve 36. minute za zizkovskou obranu bergort a jeho stoprocentni golova sance skoncila strelou nad branu.
-bergort se pritom srazil s brankarem parizkem, ktery skoncil na nositkach se zlomenou nohou.
-mezi tyce musel nahradnik zitka, jenz kapituloval po peti minutach.
-viktoria nechala pri rozehranem trestnem kopu volneho hanssona a ten z uhlu na hranici sestnactky nedal tocenou bombou zitkovi nadeji.
-gol severany rozehral a moc nechybelo, aby sandstrom zvysil.
-do druhe pule sla viktoria s cilem pomstit tezce zraneneho parizka a behem 13 minut otocila skore na 2:1 ve svuj prospech.
-svedsky golman byl v palbe strel a stacil jim odolavat do 52. minuty, kdy stridajici krejcik vybojoval mic, holota ho odcentroval na osamoceneho trvala, ktery lysou hlavou skoroval.
-}
-Predicted: {
-na poloprazdnem stadionu bylo ticho jako v kostele.
-ve 25. minute si nafilmovanym padem pres petrousovy nohy pokusil vymodlit penaltu jansson a z protiutoku malem prisel trest - moc nechybelo, aby poborsky vypichl mic brankari erikssonovi.
-kdyz se viktorii nepodarilo dat rychle gol, jako by vyprchalo jeji nadseni.
-zcistajasna si na anderssonuv lob nabehl ve 36. minute za zizkovskou obranu bergort a jeho stoprocentni golova sance skoncila strelou nad branu.
-bergort se pritom srazil s brankarem parizkem, ktery skoncil na nositkach se zlomenou nohou.
-mezi tyce musel nahradnik zitka, jenz kapituloval po peti minutach.
-viktoria nechala pri rozehranem trestnem kopu volneho hanssona a ten z uhlu na hranici sestnactky nedal tocenou bombou zitkovi nadeji.
-gol severany rozehral a moc nechybelo, aby sandstrom zvysil.
-do druhe pule sla viktoria s cilem pomstit tezce zraneneho parizka a behem 13 minut otocila skore na 2:1 ve svuj prospech.
-svedsky golman byl v palbe strel a stacil jim odolavat do 52.
-minuty, kdy stridajici krejcik vybojoval mic, holota ho odcentroval na osamoceneho trvala, ktery lysou hlavou skoroval.
-}
-False positives: {
-svedsky golman byl v palbe strel a stacil jim odolavat do 52.
-minuty, kdy stridajici krejcik vybojoval mic, holota ho odcentroval na osamoceneho trvala, ktery lysou hlavou skoroval.
-} False negatives: {
-svedsky golman byl v palbe strel a stacil jim odolavat do 52. minuty, kdy stridajici krejcik vybojoval mic, holota ho odcentroval na osamoceneho trvala, ktery lysou hlavou skoroval.
 }
 
 Expected: {
@@ -18064,13 +18162,15 @@ prvni cenu, zajezd do skotska pro dve osoby, vyhrava m. zdrahal z olomouce, galo
 televize f 1 8.00
 trh, obchod, finance 8.30
 udalosti, komentare 9.00
-minuty dne 9.05 seznamte se, prosim 9.45 zpovedi 10.35 pod cestou koreny 11.05 rhytmick
+minuty dne 9.05
+seznamte se, prosim 9.45 zpovedi 10.35 pod cestou koreny 11.05 rhytmick
 }
 False positives: {
 televize f 1 8.00
 trh, obchod, finance 8.30
 udalosti, komentare 9.00
-minuty dne 9.05 seznamte se, prosim 9.45 zpovedi 10.35 pod cestou koreny 11.05 rhytmick
+minuty dne 9.05
+seznamte se, prosim 9.45 zpovedi 10.35 pod cestou koreny 11.05 rhytmick
 } False negatives: {
 televize
 f 1
@@ -19281,7 +19381,8 @@ Predicted: {
 19.20
 nejlepsi z moravy 20.05 hry bez hranic, zabavne soutezni klani druzstev 21.30
 denik plus, pocasi 22.05
-cesta za duhou (6.) 23.45 mc 1 0.45 trikrat s wildou, othello 1.25 par vzpominek pri kytare 1.50
+cesta za duhou (6.) 23.45
+mc 1 0.45 trikrat s wildou, othello 1.25 par vzpominek pri kytare 1.50
 servis ckp ct 3 0.00
 headline news update
 }
@@ -19289,7 +19390,8 @@ False positives: {
 19.20
 nejlepsi z moravy 20.05 hry bez hranic, zabavne soutezni klani druzstev 21.30
 denik plus, pocasi 22.05
-cesta za duhou (6.) 23.45 mc 1 0.45 trikrat s wildou, othello 1.25 par vzpominek pri kytare 1.50
+cesta za duhou (6.) 23.45
+mc 1 0.45 trikrat s wildou, othello 1.25 par vzpominek pri kytare 1.50
 servis ckp ct 3 0.00
 headline news update
 } False negatives: {
@@ -20417,7 +20519,8 @@ Predicted: {
 a na druhe strane se uziva slova stred v beznem jazyce casto prenesene, jak to zname z ustalenych obratu jako uvitat nekoho ve svem stredu, nebo ho odtud vyloucit, octnout se ve stredu udalosti, byt stredem pozornosti.
 patri sem vlastne i onen stred evropy, v nemz se naleza ceskoslovensko.
 tento vyraz lze sice chapat neobrazne, tedy ve smyslu "uprostred", v jeji stredni casti, coz je nepochybne pravda, protoze more (tedy okraj evropy) je od nas pekny kousek.
-ale casto tu prisuzujeme slovu stred vyznamovy rys zavaznosti, historicke dulezitosti, jde tu o jiste hodnoceni polohy nasi zeme, spojene s pocitem hrdosti apod. vsak se take jindy mluvi, s jistou davkou emoce, ze jsme v srdci evropy - jako by tu ozivala ona prastara souvislost slova stred s latinskym a reckym nazvem srdce.
+ale casto tu prisuzujeme slovu stred vyznamovy rys zavaznosti, historicke dulezitosti, jde tu o jiste hodnoceni polohy nasi zeme, spojene s pocitem hrdosti apod.
+vsak se take jindy mluvi, s jistou davkou emoce, ze jsme v srdci evropy - jako by tu ozivala ona prastara souvislost slova stred s latinskym a reckym nazvem srdce.
 to, ze odbornici zehravaji na to, ze se jejich terminy uzivaji v neterminologickem smyslu, jsem se presvedcil uz jako gymnazista.
 nas hodny matematik a fyzik se pohorsoval nad znamymi nerudovymi versi "bude-li kazdy z nas z kremene, je cely narod z kvadru".
 vzdyt pry to nedava smysl: kvadr je prece "mnohosten ohraniceny sesti obdelniky, z nichz protilehle jsou shodne" (a ani ten kremen s tim kvadrem k sobe nejak nejdou).
@@ -20426,12 +20529,9 @@ mohutneho a s kladnym citovym postojem, to dovedeme jiste zcela dobre pochopit, 
 a do tretice dalsi priklad: jsou pavouci hmyz, anebo ne?
 }
 False positives: {
-ale casto tu prisuzujeme slovu stred vyznamovy rys zavaznosti, historicke dulezitosti, jde tu o jiste hodnoceni polohy nasi zeme, spojene s pocitem hrdosti apod. vsak se take jindy mluvi, s jistou davkou emoce, ze jsme v srdci evropy - jako by tu ozivala ona prastara souvislost slova stred s latinskym a reckym nazvem srdce.
 priznavam se sice, ze semanticka interpretace techto versu se zda ponekud obtizna, snad i problematicka, ale ta skutecnost, ze tu pro nerudu nebylo vychodiskem ono geometricke pojeti slova kvadr , nybrz jeho vyznam "vetsi kus kamene se stranami pritesanymi pravouhle", spojeny s predstavou neceho pevneho, odolneho, poprip.
 mohutneho a s kladnym citovym postojem, to dovedeme jiste zcela dobre pochopit, stejne tak jako u slova kremen jeho prenesene uziti o necem tvrdem, pevnem.
 } False negatives: {
-ale casto tu prisuzujeme slovu stred vyznamovy rys zavaznosti, historicke dulezitosti, jde tu o jiste hodnoceni polohy nasi zeme, spojene s pocitem hrdosti apod.
-vsak se take jindy mluvi, s jistou davkou emoce, ze jsme v srdci evropy - jako by tu ozivala ona prastara souvislost slova stred s latinskym a reckym nazvem srdce.
 priznavam se sice, ze semanticka interpretace techto versu se zda ponekud obtizna, snad i problematicka, ale ta skutecnost, ze tu pro nerudu nebylo vychodiskem ono geometricke pojeti slova kvadr , nybrz jeho vyznam "vetsi kus kamene se stranami pritesanymi pravouhle", spojeny s predstavou neceho pevneho, odolneho, poprip. mohutneho a s kladnym citovym postojem, to dovedeme jiste zcela dobre pochopit, stejne tak jako u slova kremen jeho prenesene uziti o necem tvrdem, pevnem.
 }
 
@@ -20735,8 +20835,7 @@ to by bylo prilis jednoduche.
 }
 Predicted: {
 podmetem vety je sice dr. n., ktery je totozny s autorem prednasky - odtud ono puvodni uziti z. zvr. sve .
-jde vsak o konstrukci pasivni (dr.
-n. neni puvodcem deje prisudkoveho slovesa "napomenut"), takze do popredi vystupuje napominajici predseda - odtud tendence dat tu prednost z. nezvratnemu jeho .
+jde vsak o konstrukci pasivni (dr. n. neni puvodcem deje prisudkoveho slovesa "napomenut"), takze do popredi vystupuje napominajici predseda - odtud tendence dat tu prednost z. nezvratnemu jeho .
 dodejme jeste, ze kdybychom misto adjektivizovaneho pricesti pouzite uzili vedlejsi vety vztazne "ktere pouzil...", pak by bylo na miste z. zvratne sve vzhledem k zretelnemu podmetu teto vedlejsi vety (dr.
 n.).
 tak to vidite, jak je ten jazyk slozity!
@@ -20747,13 +20846,10 @@ svet ale neni rizen z jedine centraly plne tlacitek a hejbatek s cedulkami: "sta
 to by bylo prilis jednoduche.
 }
 False positives: {
-jde vsak o konstrukci pasivni (dr.
-n. neni puvodcem deje prisudkoveho slovesa "napomenut"), takze do popredi vystupuje napominajici predseda - odtud tendence dat tu prednost z. nezvratnemu jeho .
 dodejme jeste, ze kdybychom misto adjektivizovaneho pricesti pouzite uzili vedlejsi vety vztazne "ktere pouzil...", pak by bylo na miste z. zvratne sve vzhledem k zretelnemu podmetu teto vedlejsi vety (dr.
 n.).
 49-76 z odpovedi studentu na anketu vesmiru z cisla 8/92: jak by se k reseni problemu soucasneho sveta mohla pripojit veda vychova a vzdelavani?
 } False negatives: {
-jde vsak o konstrukci pasivni (dr. n. neni puvodcem deje prisudkoveho slovesa "napomenut"), takze do popredi vystupuje napominajici predseda - odtud tendence dat tu prednost z. nezvratnemu jeho .
 dodejme jeste, ze kdybychom misto adjektivizovaneho pricesti pouzite uzili vedlejsi vety vztazne "ktere pouzil...", pak by bylo na miste z. zvratne sve vzhledem k zretelnemu podmetu teto vedlejsi vety (dr. n.).
 49-76
 z odpovedi studentu na anketu vesmiru z cisla 8/92: jak by se k reseni problemu soucasneho sveta mohla pripojit veda vychova a vzdelavani?
@@ -21254,8 +21350,7 @@ se jmenem jan z pomuku se setkavame az r. 1370.
 Predicted: {
 emanuel vlcek jan z pomuku se narodil v osade pomuk (dnes nepomuk) v jihozapadnich cechach na jiznim svahu zelene hory.
 misto narozeni se klade do domku s freskou.
-dnes na jeho miste stoji kostel sv. jana, v jehoz lodi se na oltari sv.
-jana nepomuckeho ukazuje napis, kde stala jeho kolebka.
+dnes na jeho miste stoji kostel sv. jana, v jehoz lodi se na oltari sv. jana nepomuckeho ukazuje napis, kde stala jeho kolebka.
 jeho narozeni se klade mezi leta 1340 - 1346.
 januv otec volfin z pomuku byl sousedem s polnim hospodarstvim a v letech 1355-1367 byl i rychtarem obce.
 rodem byl nemec, ale podle narozeni bohemus, tedy narozeny v cechach.
@@ -21265,12 +21360,9 @@ se jmenem jan z pomuku se setkavame az r. 1370.
 }
 False positives: {
 emanuel vlcek jan z pomuku se narodil v osade pomuk (dnes nepomuk) v jihozapadnich cechach na jiznim svahu zelene hory.
-dnes na jeho miste stoji kostel sv. jana, v jehoz lodi se na oltari sv.
-jana nepomuckeho ukazuje napis, kde stala jeho kolebka.
 } False negatives: {
 emanuel vlcek
 jan z pomuku se narodil v osade pomuk (dnes nepomuk) v jihozapadnich cechach na jiznim svahu zelene hory.
-dnes na jeho miste stoji kostel sv. jana, v jehoz lodi se na oltari sv. jana nepomuckeho ukazuje napis, kde stala jeho kolebka.
 }
 
 Expected: {
@@ -21318,12 +21410,12 @@ o moci mytu
 a dobrem doktoru johankovi 158
 }
 Predicted: {
-telesne pozustatky sv.
-jana nepomuckeho emanuel vlcek 156 k popperove filozofii vedy jaroslav feda 164 z dopisu redakci 124 poznamky a glosy k historickym a psychologickym korenum pojmu mimikry 138 o moci mytu a dobrem doktoru johankovi 158
+telesne pozustatky sv. jana nepomuckeho emanuel vlcek 156 k popperove filozofii vedy jaroslav feda 164 z dopisu redakci 124 poznamky a glosy k historickym a psychologickym korenum pojmu mimikry 138 o moci mytu a dobrem doktoru johankovi 158
 }
 False positives: {
-jana nepomuckeho emanuel vlcek 156 k popperove filozofii vedy jaroslav feda 164 z dopisu redakci 124 poznamky a glosy k historickym a psychologickym korenum pojmu mimikry 138 o moci mytu a dobrem doktoru johankovi 158
+telesne pozustatky sv. jana nepomuckeho emanuel vlcek 156 k popperove filozofii vedy jaroslav feda 164 z dopisu redakci 124 poznamky a glosy k historickym a psychologickym korenum pojmu mimikry 138 o moci mytu a dobrem doktoru johankovi 158
 } False negatives: {
+telesne pozustatky sv.
 jana nepomuckeho
 emanuel vlcek 156
 k popperove filozofii vedy
@@ -21351,13 +21443,15 @@ Predicted: {
 (*1939), ktery vystudoval matematicko-fyzikalni fakultu karlovy univerzity v praze a pracuje ve fyzikalnim ustavu av cr v praze, kde se zabyva makroskopickymi vlastnostmi dielektrik se strukturnimi fazovymi prechody.
 1) dila i a ii teto rady nebyla a nemohou byt publikovana z duvodu, jejichz vysvetleni znacne presahuje povoleny rozsah tohoto clanku.
 2) nestudovali jsme implikace dalsi pribuzne zminky tehoz autora.
-pri popise utoku horalu z polsko-slovenskeho pomezi na svedsky oddil (potopa) zazniva povel: "s cakany na ty psi syny!"
-otazku, zda by se vztah k teto zbrani mohl projevit vyjimecnymi vysledky v dosud nezavedenem sportu (napr. ping-pong provozovany bez micku, palkami s dlouhou nasadou) tato prace neresi.
+pri popise utoku horalu z polsko-slovenskeho pomezi na svedsky oddil (potopa) zazniva povel: "s cakany na ty psi syny!" otazku, zda by se vztah k teto zbrani mohl projevit vyjimecnymi vysledky v dosud nezavedenem sportu (napr. ping-pong provozovany bez micku, palkami s dlouhou nasadou) tato prace neresi.
 vybrali jsme z casopisu science nature veda ve svobodne spolecnosti ...
 }
 False positives: {
+pri popise utoku horalu z polsko-slovenskeho pomezi na svedsky oddil (potopa) zazniva povel: "s cakany na ty psi syny!" otazku, zda by se vztah k teto zbrani mohl projevit vyjimecnymi vysledky v dosud nezavedenem sportu (napr. ping-pong provozovany bez micku, palkami s dlouhou nasadou) tato prace neresi.
 vybrali jsme z casopisu science nature veda ve svobodne spolecnosti ...
 } False negatives: {
+pri popise utoku horalu z polsko-slovenskeho pomezi na svedsky oddil (potopa) zazniva povel: "s cakany na ty psi syny!"
+otazku, zda by se vztah k teto zbrani mohl projevit vyjimecnymi vysledky v dosud nezavedenem sportu (napr. ping-pong provozovany bez micku, palkami s dlouhou nasadou) tato prace neresi.
 vybrali jsme z casopisu
 science
 nature
@@ -21395,38 +21489,6 @@ trudeau takto pozve 45.
 prezidenta spojenych statu, at jim bude kdokoliv.
 } False negatives: {
 trudeau takto pozve 45. prezidenta spojenych statu, at jim bude kdokoliv.
-}
-
-Expected: {
-nejuspesnejsim filmem roku 2007 byl el greco rezirovany yannisem smaragdisem.
-v cervenci roku 1918 byla podepsana francouzsko-monacka smlouva, ktera francii zajistovala smluvni protektorat nad monakem.
-vykonna slozka se sklada z premiera, ktery v cele vlady predseda peticlenne rade vlady.
-jeho policie ma zvlastni jednotku, jez pouziva strazni a hlidaci cluny.
-soucasne projekty na ziskavani pudy z more zahrnuji okres fontvieille.
-nicmene mezi severnim irskem na jedne strane a anglii a walesem na druhe strane jsou dulezite rozdily v zakonech a jejich uplatnovani.
-nejrozsirenejsi klasifikaci vzduchove hmoty je bergeronova klasifikace.
-zatimco identifikace vzduchove hmoty byla puvodne pouzivana v predpovedich pocasi uz v padesatych letech dvacateho stoleti, klimatologove zacali tento napad pouzivat ve vyzkumnych otazkach synopticke klimatologie v roce 1973.
-monzun je vytrvaly sezonni vitr, jenz trva nekolik mesicu a prinasi regionalni obdobi destu.
-nez v sestem stoleti n.l. slovane ustavili svuj prvni statni utvar, prehnalo se behem stehovani narodu moravou mnozstvi germanskych a vyznamnejsich slovanskych kmenu.
-}
-Predicted: {
-nejuspesnejsim filmem roku 2007 byl el greco rezirovany yannisem smaragdisem.
-v cervenci roku 1918 byla podepsana francouzsko-monacka smlouva, ktera francii zajistovala smluvni protektorat nad monakem.
-vykonna slozka se sklada z premiera, ktery v cele vlady predseda peticlenne rade vlady.
-jeho policie ma zvlastni jednotku, jez pouziva strazni a hlidaci cluny.
-soucasne projekty na ziskavani pudy z more zahrnuji okres fontvieille.
-nicmene mezi severnim irskem na jedne strane a anglii a walesem na druhe strane jsou dulezite rozdily v zakonech a jejich uplatnovani.
-nejrozsirenejsi klasifikaci vzduchove hmoty je bergeronova klasifikace.
-zatimco identifikace vzduchove hmoty byla puvodne pouzivana v predpovedich pocasi uz v padesatych letech dvacateho stoleti, klimatologove zacali tento napad pouzivat ve vyzkumnych otazkach synopticke klimatologie v roce 1973.
-monzun je vytrvaly sezonni vitr, jenz trva nekolik mesicu a prinasi regionalni obdobi destu.
-nez v sestem stoleti n.l.
-slovane ustavili svuj prvni statni utvar, prehnalo se behem stehovani narodu moravou mnozstvi germanskych a vyznamnejsich slovanskych kmenu.
-}
-False positives: {
-nez v sestem stoleti n.l.
-slovane ustavili svuj prvni statni utvar, prehnalo se behem stehovani narodu moravou mnozstvi germanskych a vyznamnejsich slovanskych kmenu.
-} False negatives: {
-nez v sestem stoleti n.l. slovane ustavili svuj prvni statni utvar, prehnalo se behem stehovani narodu moravou mnozstvi germanskych a vyznamnejsich slovanskych kmenu.
 }
 
 Expected: {

@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9895722126966667
+Evaluation-Score=0.9897391679241215
 Training-Sample-Size=29399
 Evaluation-Sample-Size=3266
 Training-Algorithm=MAXENT
@@ -10,9 +10,9 @@ Component-Name=StatisticalLemmatizer
 Language=es
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1697783331907
+Timestamp=1700457279468
 TrainerType=Event
-Training-Eventhash=3a37cc13c0999008302bd40306699cb3
+Training-Eventhash=97955423bf67d509c15782f086c73389
 factory=opennlp.tools.lemmatizer.LemmatizerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -1552,7 +1552,8 @@ cuota	NOUN	cuota
 de	ADP	de
 mercado	NOUN	mercado
 de el	ADP DET	de el
-22,42%	SYM	22.42/100
+22,42	NUM	22,42
+%	SYM	%
 lo	PRON	el
 que	PRON	que
 le	PRON	el
@@ -1576,7 +1577,8 @@ cuota	NOUN	cuota
 de	ADP	de
 mercado	NOUN	mercado
 de el	ADP DET	de el
-22,42%	SYM	22,42%
+22,42	NUM	2,42
+%	SYM	%
 lo	PRON	el
 que	PRON	que
 le	PRON	el
@@ -1592,7 +1594,7 @@ sector	NOUN	sector
 Errors: {
 Tok: Ref | Pred
 ---------------
-22,42%: 22.42/100 | 22,42%
+22,42: 22,42 | 2,42
 }
 
 Expected: {
@@ -2092,7 +2094,8 @@ incremento	NOUN	incremento
 de	ADP	de
 unicamente	ADV	unicamente
 el	DET	el
-1,4%	SYM	1.4/100
+1,4	NUM	1,4
+%	SYM	%
 ,	PUNCT	,
 hasta	ADP	hasta
 situar	VERB	situar
@@ -2118,7 +2121,8 @@ incremento	NOUN	incremento
 de	ADP	de
 unicamente	ADV	unicamente
 el	DET	el
-1,4%	SYM	1.4/100
+1,4	NUM	1.4
+%	SYM	%
 ,	PUNCT	,
 hasta	ADP	hasta
 situar	VERB	situar
@@ -2133,6 +2137,7 @@ unidades	NOUN	unidad
 Errors: {
 Tok: Ref | Pred
 ---------------
+1,4: 1,4 | 1.4
 61,9: 61.9 | 61,9
 }
 
@@ -2469,58 +2474,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 vacila: vacilar | vacila
-}
-
-Expected: {
-uno	PRON	uno
-de	ADP	de
-sus	DET	su
-principales	ADJ	principal
-accionistas	NOUN	accionista
-es	AUX	ser
-la	DET	el
-caixa	PROPN	caixa
-,	PUNCT	,
-que	PRON	que
-posee	VERB	poseer
-el	DET	el
-4,03%	SYM	4.03/100
-de el	ADP DET	de el
-capital	NOUN	capital
-de	ADP	de
-la	DET	el
-institucion	NOUN	institucion
-financiera	ADJ	financiero
-alemana	ADJ	aleman
-.	PUNCT	.
-}
-Predicted: {
-uno	PRON	uno
-de	ADP	de
-sus	DET	su
-principales	ADJ	principal
-accionistas	NOUN	accionista
-es	AUX	ser
-la	DET	el
-caixa	PROPN	caixa
-,	PUNCT	,
-que	PRON	que
-posee	VERB	poseer
-el	DET	el
-4,03%	SYM	4,03%
-de el	ADP DET	de el
-capital	NOUN	capital
-de	ADP	de
-la	DET	el
-institucion	NOUN	institucion
-financiera	ADJ	financiero
-alemana	ADJ	aleman
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-4,03%: 4.03/100 | 4,03%
 }
 
 Expected: {
@@ -3855,6 +3808,80 @@ enferma: enfermo | enferma
 }
 
 Expected: {
+asimismo	ADV	asimismo
+,	PUNCT	,
+las	DET	el
+remuneraciones	NOUN	remuneracion
+por	ADP	por
+hora	NOUN	hora
+crecieron	VERB	crecer
+6	NUM	6
+centavos	NOUN	centavo
+de	ADP	de
+dolar	NOUN	dolar
+,	PUNCT	,
+o	CCONJ	o
+un	DET	uno
+0,4	NUM	0,4
+por	ADP	por
+ciento	NUM	ciento
+,	PUNCT	,
+a	ADP	a
+13,5	NUM	13.5
+dolares	NOUN	dolar
+;	PUNCT	;
+alza	NOUN	alza
+que	PRON	que
+tambien	ADV	tambien
+supera	VERB	superar
+las	DET	el
+expectativas	NOUN	expectativa
+de	ADP	de
+los	DET	el
+analistas	NOUN	analista
+.	PUNCT	.
+}
+Predicted: {
+asimismo	ADV	asimismo
+,	PUNCT	,
+las	DET	el
+remuneraciones	NOUN	remuneracion
+por	ADP	por
+hora	NOUN	hora
+crecieron	VERB	crecer
+6	NUM	6
+centavos	NOUN	centavo
+de	ADP	de
+dolar	NOUN	dolar
+,	PUNCT	,
+o	CCONJ	o
+un	DET	uno
+0,4	NUM	0,4
+por	ADP	por
+ciento	NUM	ciento
+,	PUNCT	,
+a	ADP	a
+13,5	NUM	13,5
+dolares	NOUN	dolar
+;	PUNCT	;
+alza	NOUN	alza
+que	PRON	que
+tambien	ADV	tambien
+supera	VERB	superar
+las	DET	el
+expectativas	NOUN	expectativa
+de	ADP	de
+los	DET	el
+analistas	NOUN	analista
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+13,5: 13.5 | 13,5
+}
+
+Expected: {
 "	PUNCT	"
 el	DET	el
 colombiano	PROPN	colombiano
@@ -4376,7 +4403,7 @@ porteria	NOUN	porteria
 de	ADP	de
 nuno	PROPN	nuno
 (	PUNCT	(
-m.85	NUM	.85
+m.85	SYM	.85
 )	PUNCT	)
 .	PUNCT	.
 }
@@ -4413,7 +4440,7 @@ porteria	NOUN	porteria
 de	ADP	de
 nuno	PROPN	nuno
 (	PUNCT	(
-m.85	NUM	m.85
+m.85	SYM	m.85
 )	PUNCT	)
 .	PUNCT	.
 }
@@ -4680,7 +4707,8 @@ alcanzo	VERB	alcanzar
 en	ADP	en
 marzo	NOUN	marzo
 el	DET	el
-4,8%	SYM	4.8/100
+4,8	NUM	4,8
+%	SYM	%
 ,	PUNCT	,
 la	DET	el
 cota	NOUN	cota
@@ -4718,7 +4746,8 @@ alcanzo	VERB	alcanzar
 en	ADP	en
 marzo	NOUN	marzo
 el	DET	el
-4,8%	SYM	4.8
+4,8	NUM	4.8
+%	SYM	%
 ,	PUNCT	,
 la	DET	el
 cota	NOUN	cota
@@ -4742,7 +4771,7 @@ mundial	ADJ	mundial
 Errors: {
 Tok: Ref | Pred
 ---------------
-4,8%: 4.8/100 | 4.8
+4,8: 4,8 | 4.8
 }
 
 Expected: {
@@ -4829,7 +4858,7 @@ jueves	NOUN	jueves
 por	ADP	por
 mas	ADV	mas
 de	ADP	de
-cinco	NUM	5
+cinco	NUM	cinco
 millones	NOUN	millon
 de	ADP	de
 pesetas	NOUN	peseta
@@ -4886,7 +4915,6 @@ york	PROPN	york
 Errors: {
 Tok: Ref | Pred
 ---------------
-cinco: 5 | cinco
 sotheby's: sotheby | sotheby's
 }
 
@@ -5061,7 +5089,8 @@ margen	NOUN	margen
 ordinario	ADJ	ordinario
 crecio	VERB	crecer
 el	DET	el
-12,3%	SYM	12.3/100
+12,3	NUM	12,3
+%	SYM	%
 y	CCONJ	y
 los	DET	el
 ingresos	NOUN	ingreso
@@ -5074,7 +5103,8 @@ de	ADP	de
 inversion	NOUN	inversion
 subieron	VERB	subir
 el	DET	el
-32%	SYM	32/100
+32	NUM	32
+%	SYM	%
 .	PUNCT	.
 }
 Predicted: {
@@ -5083,7 +5113,8 @@ margen	NOUN	margen
 ordinario	ADJ	ordinario
 crecio	VERB	crecer
 el	DET	el
-12,3%	SYM	12,3%
+12,3	NUM	12.3
+%	SYM	%
 y	CCONJ	y
 los	DET	el
 ingresos	NOUN	ingreso
@@ -5096,13 +5127,14 @@ de	ADP	de
 inversion	NOUN	inversion
 subieron	VERB	subir
 el	DET	el
-32%	SYM	32/100
+32	NUM	32
+%	SYM	%
 .	PUNCT	.
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
-12,3%: 12.3/100 | 12,3%
+12,3: 12,3 | 12.3
 }
 
 Expected: {
@@ -5668,7 +5700,7 @@ ciento	NUM	ciento
 ,	PUNCT	,
 hasta	ADP	hasta
 los	DET	el
-44.350	NUM	44350
+44.350	NUM	44.350
 millones	NOUN	millon
 de	ADP	de
 pesetas	NOUN	peseta
@@ -5684,6 +5716,7 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 2.054: 2054 | 2.054
+44.350: 44350 | 44.350
 266,54: 266.54 | 266,54
 }
 
@@ -10647,90 +10680,6 @@ elija: elegir | elijar
 }
 
 Expected: {
-en	ADP	en
-1999	NOUN	1999
-,	PUNCT	,
-eeuu	PROPN	eeuu
-tuvo	VERB	tener
-una	DET	uno
-inflacion	NOUN	inflacion
-acumulada	ADJ	acumulado
-de el	ADP DET	de el
-2,7	NUM	2,7
-por	ADP	por
-ciento	NUM	ciento
-;	PUNCT	;
-en	ADP	en
-cambio	NOUN	cambio
-,	PUNCT	,
-en	ADP	en
-argentina	PROPN	argentina
-,	PUNCT	,
-en	ADP	en
-vez	NOUN	vez
-de	ADP	de
-subir	VERB	subir
-,	PUNCT	,
-los	DET	el
-precios	NOUN	precio
-a el	ADP DET	a el
-consumo	NOUN	consumo
-bajaron	VERB	bajar
-(	PUNCT	(
-deflacion	NOUN	deflacion
-)	PUNCT	)
-un	DET	uno
-1,8	NUM	1,8
-por	ADP	por
-ciento	NUM	ciento
-.	PUNCT	.
-}
-Predicted: {
-en	ADP	en
-1999	NOUN	1999
-,	PUNCT	,
-eeuu	PROPN	eeuu
-tuvo	VERB	tener
-una	DET	uno
-inflacion	NOUN	inflacion
-acumulada	ADJ	acumulado
-de el	ADP DET	de el
-2,7	NUM	2,7
-por	ADP	por
-ciento	NUM	ciento
-;	PUNCT	;
-en	ADP	en
-cambio	NOUN	cambio
-,	PUNCT	,
-en	ADP	en
-argentina	PROPN	argentina
-,	PUNCT	,
-en	ADP	en
-vez	NOUN	vez
-de	ADP	de
-subir	VERB	subir
-,	PUNCT	,
-los	DET	el
-precios	NOUN	precio
-a el	ADP DET	a el
-consumo	NOUN	consumo
-bajaron	VERB	bajar
-(	PUNCT	(
-deflacion	NOUN	deflacion
-)	PUNCT	)
-un	DET	uno
-1,8	NUM	1.8
-por	ADP	por
-ciento	NUM	ciento
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-1,8: 1,8 | 1.8
-}
-
-Expected: {
 a	ADP	a
 finales	NOUN	finales
 de el	ADP DET	de el
@@ -14785,7 +14734,7 @@ ciento	NUM	ciento
 ,	PUNCT	,
 suiza	PROPN	suiza
 (	PUNCT	(
-2,8	NUM	2.8
+2,8	NUM	2,8
 por	ADP	por
 ciento	NUM	ciento
 )	PUNCT	)
@@ -14812,7 +14761,6 @@ Tok: Ref | Pred
 checa: checa | checo
 1,4: 1,4 | 1.4
 1,7: 1,7 | 1.7
-2,8: 2,8 | 2.8
 }
 
 Expected: {
@@ -16633,7 +16581,7 @@ margenes	NOUN	margen
 de	ADP	de
 fluctuacion	NOUN	fluctuacion
 de el	ADP DET	de el
-2,5	NUM	2.5
+2,5	NUM	2,5
 por	ADP	por
 ciento	NUM	ciento
 por	ADP	por
@@ -16651,7 +16599,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 liga: ligar | liga
-2,5: 2,5 | 2.5
 }
 
 Expected: {
@@ -18140,218 +18087,6 @@ Tok: Ref | Pred
 
 Expected: {
 la	DET	el
-policia	NOUN	policia
-autonomica	ADJ	autonomico
-ha	AUX	haber
-firmado	VERB	firmar
-convenios	NOUN	convenio
-de	ADP	de
-colaboracion	NOUN	colaboracion
-con	ADP	con
-el	DET	el
-90%	SYM	90/100
-de	ADP	de
-los	DET	el
-cuerpos	NOUN	cuerpo
-de	ADP	de
-policia	NOUN	policia
-municipal	ADJ	municipal
-de	ADP	de
-las	DET	el
-comarcas	NOUN	comarca
-de	ADP	de
-girona	PROPN	girona
-.	PUNCT	.
-}
-Predicted: {
-la	DET	el
-policia	NOUN	policia
-autonomica	ADJ	autonomico
-ha	AUX	haber
-firmado	VERB	firmar
-convenios	NOUN	convenio
-de	ADP	de
-colaboracion	NOUN	colaboracion
-con	ADP	con
-el	DET	el
-90%	SYM	90
-de	ADP	de
-los	DET	el
-cuerpos	NOUN	cuerpo
-de	ADP	de
-policia	NOUN	policia
-municipal	ADJ	municipal
-de	ADP	de
-las	DET	el
-comarcas	NOUN	comarca
-de	ADP	de
-girona	PROPN	girona
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-90%: 90/100 | 90
-}
-
-Expected: {
-segun	ADP	segun
-la	DET	el
-prensa	NOUN	prensa
-britanica	ADJ	britanico
-,	PUNCT	,
-la	DET	el
-operacion	NOUN	operacion
-podria	AUX	poder
-tener	VERB	tener
-algunas	DET	alguno
-dificultades	NOUN	dificultad
-ante	ADP	ante
-las	DET	el
-autoridades	NOUN	autoridad
-de	ADP	de
-la	DET	el
-competencia	NOUN	competencia
-tanto	ADV	tanto
-en	ADP	en
-bruselas	PROPN	bruselas
--	PUNCT	-
--	PUNCT	-
-edf	PROPN	edf
-es	AUX	ser
-ya	ADV	ya
-el	DET	el
-mayor	ADJ	mayor
-productor	NOUN	productor
-y	CCONJ	y
-proveedor	NOUN	proveedor
-europeo	ADJ	europeo
-de	ADP	de
-electricidad	NOUN	electricidad
--	PUNCT	-
--	PUNCT	-
-como	SCONJ	como
-en	ADP	en
-el	DET	el
-reino	PROPN	reino
-unido	PROPN	unido
-,	PUNCT	,
-donde	ADV	donde
-la	DET	el
-firma	NOUN	firma
-francesa	ADJ	frances
-proporciona	VERB	proporcionar
-el	DET	el
-6%	SYM	6
-de	ADP	de
-la	DET	el
-electricidad	NOUN	electricidad
-,	PUNCT	,
-con	ADP	con
-gran	ADJ	gran
-perjuicio	NOUN	perjuicio
-para	ADP	para
-la	DET	el
-industria	NOUN	industria
-minera	ADJ	minero
-,	PUNCT	,
-que	PRON	que
-se	PRON	el
-queja	VERB	quejar
-de	ADP	de
-una	DET	uno
-competencia	NOUN	competencia
-desleal	ADJ	desleal
-para	ADP	para
-las	DET	el
-centrales	NOUN	central
-de	ADP	de
-carbon	NOUN	carbon
-.	PUNCT	.
-}
-Predicted: {
-segun	ADP	segun
-la	DET	el
-prensa	NOUN	prensa
-britanica	ADJ	britanico
-,	PUNCT	,
-la	DET	el
-operacion	NOUN	operacion
-podria	AUX	poder
-tener	VERB	tener
-algunas	DET	alguno
-dificultades	NOUN	dificultad
-ante	ADP	ante
-las	DET	el
-autoridades	NOUN	autoridad
-de	ADP	de
-la	DET	el
-competencia	NOUN	competencia
-tanto	ADV	tanto
-en	ADP	en
-bruselas	PROPN	bruselas
--	PUNCT	-
--	PUNCT	-
-edf	PROPN	edf
-es	AUX	ser
-ya	ADV	ya
-el	DET	el
-mayor	ADJ	mayor
-productor	NOUN	productor
-y	CCONJ	y
-proveedor	NOUN	proveedor
-europeo	ADJ	europeo
-de	ADP	de
-electricidad	NOUN	electricidad
--	PUNCT	-
--	PUNCT	-
-como	SCONJ	como
-en	ADP	en
-el	DET	el
-reino	PROPN	reino
-unido	PROPN	unido
-,	PUNCT	,
-donde	ADV	donde
-la	DET	el
-firma	NOUN	firma
-francesa	ADJ	frances
-proporciona	VERB	proporcionar
-el	DET	el
-6%	SYM	6/100
-de	ADP	de
-la	DET	el
-electricidad	NOUN	electricidad
-,	PUNCT	,
-con	ADP	con
-gran	ADJ	gran
-perjuicio	NOUN	perjuicio
-para	ADP	para
-la	DET	el
-industria	NOUN	industria
-minera	ADJ	minero
-,	PUNCT	,
-que	PRON	que
-se	PRON	el
-queja	VERB	quejar
-de	ADP	de
-una	DET	uno
-competencia	NOUN	competencia
-desleal	ADJ	desleal
-para	ADP	para
-las	DET	el
-centrales	NOUN	central
-de	ADP	de
-carbon	NOUN	carbon
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-6%: 6 | 6/100
-}
-
-Expected: {
-la	DET	el
 valoracion	NOUN	valoracion
 de	ADP	de
 jordi	PROPN	jordi
@@ -18467,76 +18202,6 @@ Tok: Ref | Pred
 ---------------
 todos: todos | todo
 modos: modos | modo
-}
-
-Expected: {
-rodada	ADJ	rodado
-en	ADP	en
-nueva	PROPN	nueva
-york	PROPN	york
-y	CCONJ	y
-en	ADP	en
-ingles	NOUN	ingles
-con	ADP	con
-actores	NOUN	actor
-norteamericanos	ADJ	norteamericano
-y	CCONJ	y
-un	DET	uno
-catalan	NOUN	catalan
-,	PUNCT	,
-la	DET	el
-pelicula	NOUN	pelicula
-se	PRON	el
-filmo	VERB	filmar
-en	ADP	en
-dos	NUM	dos
-etapas	NOUN	etapa
-con	ADP	con
-un	DET	uno
-presupuesto	NOUN	presupuesto
-de	ADP	de
-tres	NUM	3
-millones	NOUN	millon
-de	ADP	de
-pesetas	NOUN	peseta
-.	PUNCT	.
-}
-Predicted: {
-rodada	ADJ	rodado
-en	ADP	en
-nueva	PROPN	nueva
-york	PROPN	york
-y	CCONJ	y
-en	ADP	en
-ingles	NOUN	ingles
-con	ADP	con
-actores	NOUN	actor
-norteamericanos	ADJ	norteamericano
-y	CCONJ	y
-un	DET	uno
-catalan	NOUN	catalan
-,	PUNCT	,
-la	DET	el
-pelicula	NOUN	pelicula
-se	PRON	el
-filmo	VERB	filmar
-en	ADP	en
-dos	NUM	dos
-etapas	NOUN	etapa
-con	ADP	con
-un	DET	uno
-presupuesto	NOUN	presupuesto
-de	ADP	de
-tres	NUM	tres
-millones	NOUN	millon
-de	ADP	de
-pesetas	NOUN	peseta
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-tres: 3 | tres
 }
 
 Expected: {
@@ -18935,168 +18600,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 escenica: escenico | escenica
-}
-
-Expected: {
-el	DET	el
-60%	SYM	60/100
-de	ADP	de
-los	DET	el
-encuestados	NOUN	encuestado
-responsabiliza	VERB	responsabilizar
-a el	ADP DET	a el
-gobierno	PROPN	gobierno
-de	ADP	de
-la	DET	el
-inestabilidad	NOUN	inestabilidad
-economica	ADJ	economico
-y	CCONJ	y
-el	DET	el
-59%	SYM	59/100
-opina	VERB	opinar
-que	SCONJ	que
-cardoso	PROPN	cardoso
-"	PUNCT	"
-engano	VERB	enganar
-a	ADP	a
-sus	DET	su
-electores	NOUN	elector
-"	PUNCT	"
-a el	ADP DET	a el
-afirmar	VERB	afirmar
-que	SCONJ	que
-mantendria	VERB	mantener
-la	DET	el
-estabilidad	NOUN	estabilidad
-de el	ADP DET	de el
-real	NOUN	real
-.	PUNCT	.
-}
-Predicted: {
-el	DET	el
-60%	SYM	60/100
-de	ADP	de
-los	DET	el
-encuestados	NOUN	encuestado
-responsabiliza	VERB	responsabilizar
-a el	ADP DET	a el
-gobierno	PROPN	gobierno
-de	ADP	de
-la	DET	el
-inestabilidad	NOUN	inestabilidad
-economica	ADJ	economico
-y	CCONJ	y
-el	DET	el
-59%	SYM	59%
-opina	VERB	opinar
-que	SCONJ	que
-cardoso	PROPN	cardoso
-"	PUNCT	"
-engano	VERB	enganar
-a	ADP	a
-sus	DET	su
-electores	NOUN	elector
-"	PUNCT	"
-a el	ADP DET	a el
-afirmar	VERB	afirmar
-que	SCONJ	que
-mantendria	VERB	mantener
-la	DET	el
-estabilidad	NOUN	estabilidad
-de el	ADP DET	de el
-real	NOUN	real
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-59%: 59/100 | 59%
-}
-
-Expected: {
-desde	ADP	desde
-el	DET	el
-13	NUM	13
-de	ADP	de
-enero	NOUN	enero
-,	PUNCT	,
-el	DET	el
-real	NOUN	real
-se	PRON	el
-habia	AUX	haber
-devaluado	VERB	devaluar
-mas	ADV	mas
-de	ADP	de
-un	PRON	uno
-50%	SYM	50
-y	CCONJ	y
-la	DET	el
-fuga	NOUN	fuga
-de	ADP	de
-dolares	NOUN	dolar
-supera	VERB	superar
-los	DET	el
-25.000	NUM	25000
-millones	NOUN	millon
-(	PUNCT	(
-mas	ADV	mas
-de	ADP	de
-3,6	NUM	3.6
-billones	NOUN	billon
-de	ADP	de
-pesetas	NOUN	peseta
-)	PUNCT	)
-en	ADP	en
-los	DET	el
-ultimos	ADJ	ultimo
-cinco	NUM	cinco
-meses	NOUN	mes
-.	PUNCT	.
-}
-Predicted: {
-desde	ADP	desde
-el	DET	el
-13	NUM	13
-de	ADP	de
-enero	NOUN	enero
-,	PUNCT	,
-el	DET	el
-real	NOUN	real
-se	PRON	el
-habia	AUX	haber
-devaluado	VERB	devaluar
-mas	ADV	mas
-de	ADP	de
-un	PRON	uno
-50%	SYM	50/100
-y	CCONJ	y
-la	DET	el
-fuga	NOUN	fuga
-de	ADP	de
-dolares	NOUN	dolar
-supera	VERB	superar
-los	DET	el
-25.000	NUM	25000
-millones	NOUN	millon
-(	PUNCT	(
-mas	ADV	mas
-de	ADP	de
-3,6	NUM	3.6
-billones	NOUN	billon
-de	ADP	de
-pesetas	NOUN	peseta
-)	PUNCT	)
-en	ADP	en
-los	DET	el
-ultimos	ADJ	ultimo
-cinco	NUM	cinco
-meses	NOUN	mes
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-50%: 50 | 50/100
 }
 
 Expected: {
@@ -19520,7 +19023,8 @@ produccion	NOUN	produccion
 industrial	ADJ	industrial
 bajo	VERB	bajar
 el	DET	el
-0,7%	SYM	0.7
+0,7	NUM	0,7
+%	SYM	%
 en	ADP	en
 la	DET	el
 zona	NOUN	zona
@@ -19541,7 +19045,8 @@ produccion	NOUN	produccion
 industrial	ADJ	industrial
 bajo	VERB	bajo
 el	DET	el
-0,7%	SYM	0.7/100
+0,7	NUM	0.7
+%	SYM	%
 en	ADP	en
 la	DET	el
 zona	NOUN	zona
@@ -19560,7 +19065,7 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 bajo: bajar | bajo
-0,7%: 0.7 | 0.7/100
+0,7: 0,7 | 0.7
 }
 
 Expected: {
@@ -19629,98 +19134,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 enlazara: enlazar | enlazarar
-}
-
-Expected: {
-los	DET	el
-principales	ADJ	principal
-destinos	NOUN	destino
-turisticos	ADJ	turistico
-de	ADP	de
-catalunya	PROPN	catalunya
-cuentan	VERB	contar
-con	ADP	con
-un	DET	uno
-lleno	NOUN	lleno
-casi	ADV	casi
-absoluto	ADJ	absoluto
-en	ADP	en
-el	DET	el
-mes	NOUN	mes
-de	ADP	de
-agosto	NOUN	agosto
-,	PUNCT	,
-y	CCONJ	y
-entre	ADP	entre
-un	DET	uno
-80%	SYM	80/100
-y	CCONJ	y
-un	DET	uno
-99%	SYM	99/100
-de	ADP	de
-ocupacion	NOUN	ocupacion
-hotelera	ADJ	hotelero
-en	ADP	en
-el	DET	el
-mes	NOUN	mes
-de	ADP	de
-julio	NOUN	julio
-,	PUNCT	,
-segun	ADP	segun
-las	DET	el
-previsiones	NOUN	prevision
-de	ADP	de
-la	DET	el
-generalitat	PROPN	generalitat
-.	PUNCT	.
-}
-Predicted: {
-los	DET	el
-principales	ADJ	principal
-destinos	NOUN	destino
-turisticos	ADJ	turistico
-de	ADP	de
-catalunya	PROPN	catalunya
-cuentan	VERB	contar
-con	ADP	con
-un	DET	uno
-lleno	NOUN	lleno
-casi	ADV	casi
-absoluto	ADJ	absoluto
-en	ADP	en
-el	DET	el
-mes	NOUN	mes
-de	ADP	de
-agosto	NOUN	agosto
-,	PUNCT	,
-y	CCONJ	y
-entre	ADP	entre
-un	DET	uno
-80%	SYM	80/100
-y	CCONJ	y
-un	DET	uno
-99%	SYM	99%
-de	ADP	de
-ocupacion	NOUN	ocupacion
-hotelera	ADJ	hotelero
-en	ADP	en
-el	DET	el
-mes	NOUN	mes
-de	ADP	de
-julio	NOUN	julio
-,	PUNCT	,
-segun	ADP	segun
-las	DET	el
-previsiones	NOUN	prevision
-de	ADP	de
-la	DET	el
-generalitat	PROPN	generalitat
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-99%: 99/100 | 99%
 }
 
 Expected: {
@@ -20344,6 +19757,82 @@ arroja: arrojar | arroja
 }
 
 Expected: {
+con	ADP	con
+estas	DET	este
+actuaciones	NOUN	actuacion
+,	PUNCT	,
+d'alema	PROPN	d'alema
+pretende	VERB	pretender
+reactivar	VERB	reactivar
+la	DET	el
+ralentizada	ADJ	ralentizado
+economia	NOUN	economia
+italiana	ADJ	italiano
+,	PUNCT	,
+promover	VERB	promover
+el	DET	el
+crecimiento	NOUN	crecimiento
+de el	ADP DET	de el
+empleo	NOUN	empleo
+y	CCONJ	y
+reducir	VERB	reducir
+el	DET	el
+deficit	NOUN	deficit
+publico	ADJ	publico
+a el	ADP DET	a el
+1,5	NUM	1,5
+%	SYM	%
+de el	ADP DET	de el
+producto	NOUN	producto
+interior	ADJ	interior
+bruto	ADJ	bruto
+(	PUNCT	(
+pib	PROPN	pib
+)	PUNCT	)
+.	PUNCT	.
+}
+Predicted: {
+con	ADP	con
+estas	DET	este
+actuaciones	NOUN	actuacion
+,	PUNCT	,
+d'alema	PROPN	d'alema
+pretende	VERB	pretender
+reactivar	VERB	reactivar
+la	DET	el
+ralentizada	ADJ	ralentizado
+economia	NOUN	economia
+italiana	ADJ	italiano
+,	PUNCT	,
+promover	VERB	promover
+el	DET	el
+crecimiento	NOUN	crecimiento
+de el	ADP DET	de el
+empleo	NOUN	empleo
+y	CCONJ	y
+reducir	VERB	reducir
+el	DET	el
+deficit	NOUN	deficit
+publico	ADJ	publico
+a el	ADP DET	a el
+1,5	NUM	1.5
+%	SYM	%
+de el	ADP DET	de el
+producto	NOUN	producto
+interior	ADJ	interior
+bruto	ADJ	bruto
+(	PUNCT	(
+pib	PROPN	pib
+)	PUNCT	)
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+1,5: 1,5 | 1.5
+}
+
+Expected: {
 entre	ADP	entre
 1987	NOUN	1987
 y	CCONJ	y
@@ -20359,11 +19848,13 @@ de	ADP	de
 crecimiento	NOUN	crecimiento
 acumulado	ADJ	acumulado
 de el	ADP DET	de el
-5,1%	SYM	5.1/100
+5,1	NUM	5,1
+%	SYM	%
 ,	PUNCT	,
 frente	NOUN	frente
 a el	ADP DET	a el
-12,3%	SYM	12.3/100
+12,3	NUM	12,3
+%	SYM	%
 de el	ADP DET	de el
 sector	NOUN	sector
 comercial	ADJ	comercial
@@ -20385,11 +19876,13 @@ de	ADP	de
 crecimiento	NOUN	crecimiento
 acumulado	ADJ	acumulado
 de el	ADP DET	de el
-5,1%	SYM	5.1/100
+5,1	NUM	5,1
+%	SYM	%
 ,	PUNCT	,
 frente	NOUN	frente
 a el	ADP DET	a el
-12,3%	SYM	12,3%
+12,3	NUM	12.3
+%	SYM	%
 de el	ADP DET	de el
 sector	NOUN	sector
 comercial	ADJ	comercial
@@ -20398,7 +19891,7 @@ comercial	ADJ	comercial
 Errors: {
 Tok: Ref | Pred
 ---------------
-12,3%: 12.3/100 | 12,3%
+12,3: 12,3 | 12.3
 }
 
 Expected: {
@@ -21578,80 +21071,6 @@ inmigrantes: inmigrantes | inmigrante
 }
 
 Expected: {
-segun	SCONJ	segun
-explico	VERB	explicar
-el	DET	el
-coordinador	NOUN	coordinador
-de el	ADP DET	de el
-area	NOUN	area
-publica	ADJ	publico
-de	ADP	de
-ccoo	PROPN	ccoo
-,	PUNCT	,
-juan	PROPN	juan
-carles	PROPN	carles
-gallego	PROPN	gallego
-,	PUNCT	,
-la	DET	el
-oferta	NOUN	oferta
-de	ADP	de
-la	DET	el
-generalitat	PROPN	generalitat
-preve	VERB	prever
-ademas	ADV	ademas
-incrementar	VERB	incrementar
-un	DET	uno
-0,6%	SYM	0.6/100
-el	DET	el
-sueldo	NOUN	sueldo
-en	ADP	en
-los	DET	el
-proximos	ADJ	proximo
-tres	NUM	tres
-anos	NOUN	ano
-.	PUNCT	.
-}
-Predicted: {
-segun	SCONJ	segun
-explico	VERB	explicar
-el	DET	el
-coordinador	NOUN	coordinador
-de el	ADP DET	de el
-area	NOUN	area
-publica	ADJ	publico
-de	ADP	de
-ccoo	PROPN	ccoo
-,	PUNCT	,
-juan	PROPN	juan
-carles	PROPN	carles
-gallego	PROPN	gallego
-,	PUNCT	,
-la	DET	el
-oferta	NOUN	oferta
-de	ADP	de
-la	DET	el
-generalitat	PROPN	generalitat
-preve	VERB	prever
-ademas	ADV	ademas
-incrementar	VERB	incrementar
-un	DET	uno
-0,6%	SYM	0,6
-el	DET	el
-sueldo	NOUN	sueldo
-en	ADP	en
-los	DET	el
-proximos	ADJ	proximo
-tres	NUM	tres
-anos	NOUN	ano
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-0,6%: 0.6/100 | 0,6
-}
-
-Expected: {
 es	AUX	ser
 cierto	ADJ	cierto
 que	SCONJ	que
@@ -22162,6 +21581,66 @@ ilesas: ileso | ilesa
 }
 
 Expected: {
+las	DET	el
+mujeres	NOUN	mujer
+mantienen	VERB	mantener
+su	DET	su
+tasa	NOUN	tasa
+en	ADP	en
+el	DET	el
+4,5	NUM	4,5
+%	SYM	%
+,	PUNCT	,
+ya	ADV	ya
+que	SCONJ	que
+se	PRON	el
+ven	VERB	ver
+beneficiadas	ADJ	beneficiado
+por	ADP	por
+el	DET	el
+crecimiento	NOUN	crecimiento
+de	ADP	de
+la	DET	el
+contratacion	NOUN	contratacion
+a	ADP	a
+tiempo	NOUN	tiempo
+parcial	ADJ	parcial
+.	PUNCT	.
+}
+Predicted: {
+las	DET	el
+mujeres	NOUN	mujer
+mantienen	VERB	mantener
+su	DET	su
+tasa	NOUN	tasa
+en	ADP	en
+el	DET	el
+4,5	NUM	4.5
+%	SYM	%
+,	PUNCT	,
+ya	ADV	ya
+que	SCONJ	que
+se	PRON	el
+ven	VERB	ver
+beneficiadas	ADJ	beneficiado
+por	ADP	por
+el	DET	el
+crecimiento	NOUN	crecimiento
+de	ADP	de
+la	DET	el
+contratacion	NOUN	contratacion
+a	ADP	a
+tiempo	NOUN	tiempo
+parcial	ADJ	parcial
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+4,5: 4,5 | 4.5
+}
+
+Expected: {
 afirma	VERB	afirmar
 que	SCONJ	que
 el	DET	el
@@ -22482,7 +21961,8 @@ windows	PROPN	windows
 que	PRON	que
 usan	VERB	usar
 el	DET	el
-95%	SYM	95
+95	NUM	95
+%	SYM	%
 de	ADP	de
 los	DET	el
 ordenadores	NOUN	ordenador
@@ -22516,7 +21996,8 @@ windows	PROPN	windows
 que	PRON	que
 usan	VERB	usar
 el	DET	el
-95%	SYM	95
+95	NUM	95
+%	SYM	%
 de	ADP	de
 los	DET	el
 ordenadores	NOUN	ordenador
@@ -23002,54 +22483,6 @@ despidieran: despedir | despidierar
 }
 
 Expected: {
-en	ADP	en
-la	DET	el
-ultima	ADJ	ultimo
-sesion	NOUN	sesion
-bursatil	ADJ	bursatil
-de el	ADP DET	de el
-primer	ADJ	primero
-semestre	NOUN	semestre
-de el	ADP DET	de el
-ano	NOUN	ano
-,	PUNCT	,
-fcc	PROPN	fcc
-se	PRON	el
-anoto	VERB	anotar
-una	DET	uno
-alza	NOUN	alza
-de el	ADP DET	de el
-4,76%	SYM	4.76
-.	PUNCT	.
-}
-Predicted: {
-en	ADP	en
-la	DET	el
-ultima	ADJ	ultimo
-sesion	NOUN	sesion
-bursatil	ADJ	bursatil
-de el	ADP DET	de el
-primer	ADJ	primero
-semestre	NOUN	semestre
-de el	ADP DET	de el
-ano	NOUN	ano
-,	PUNCT	,
-fcc	PROPN	fcc
-se	PRON	el
-anoto	VERB	anotar
-una	DET	uno
-alza	NOUN	alza
-de el	ADP DET	de el
-4,76%	SYM	4,76%
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-4,76%: 4.76 | 4,76%
-}
-
-Expected: {
 ademas	ADV	ademas
 de	ADP	de
 estar	AUX	estar
@@ -23060,7 +22493,7 @@ progresos	NOUN	progreso
 tecnologicos	ADJ	tecnologico
 ,	PUNCT	,
 pio	PROPN	pio
-ix	PROPN	ix
+ix	NUM	ix
 empezo	VERB	empezar
 su	DET	su
 pontificado	NOUN	pontificado
@@ -23096,7 +22529,7 @@ progresos	NOUN	progreso
 tecnologicos	ADJ	tecnologico
 ,	PUNCT	,
 pio	PROPN	pio
-ix	PROPN	ix
+ix	NUM	ix
 empezo	VERB	empezar
 su	DET	su
 pontificado	NOUN	pontificado
@@ -23445,9 +22878,9 @@ caballo	NOUN	caballo
 entre	ADP	entre
 los	DET	el
 siglos	NOUN	siglo
-xix	NOUN	xix
+xix	NUM	xix
 y	CCONJ	y
-xx	NOUN	xx
+xx	NUM	xx
 sigmund	PROPN	sigmund
 freud	PROPN	freud
 creaba	VERB	crear
@@ -23514,9 +22947,9 @@ caballo	NOUN	caballo
 entre	ADP	entre
 los	DET	el
 siglos	NOUN	siglo
-xix	NOUN	xix
+xix	NUM	xix
 y	CCONJ	y
-xx	NOUN	xx
+xx	NUM	xx
 sigmund	PROPN	sigmund
 freud	PROPN	freud
 creaba	VERB	crear
@@ -23784,51 +23217,6 @@ rectifique: rectificar | rectifique
 }
 
 Expected: {
-francfort	PROPN	francfort
-subio	VERB	subir
-el	DET	el
-0,48%	SYM	0.48/100
-y	CCONJ	y
-paris	PROPN	paris
-,	PUNCT	,
-el	DET	el
-1,37%	SYM	1.37/100
-,	PUNCT	,
-si	SCONJ	si
-bien	ADV	bien
-londres	PROPN	londres
-perdio	VERB	perder
-el	DET	el
-0,58%	SYM	0.58/100
-.	PUNCT	.
-}
-Predicted: {
-francfort	PROPN	francfort
-subio	VERB	subir
-el	DET	el
-0,48%	SYM	0.48/100
-y	CCONJ	y
-paris	PROPN	paris
-,	PUNCT	,
-el	DET	el
-1,37%	SYM	1,37%
-,	PUNCT	,
-si	SCONJ	si
-bien	ADV	bien
-londres	PROPN	londres
-perdio	VERB	perder
-el	DET	el
-0,58%	SYM	0,58%
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-1,37%: 1.37/100 | 1,37%
-0,58%: 0.58/100 | 0,58%
-}
-
-Expected: {
 aparcar	VERB	aparcar
 pasara	VERB	pasar
 de	ADP	de
@@ -23859,7 +23247,8 @@ de el	ADP DET	de el
 vehiculo	NOUN	vehiculo
 en	ADP	en
 un	DET	uno
-20%	SYM	20
+20	NUM	20
+%	SYM	%
 ,	PUNCT	,
 con	ADP	con
 lo	PRON	el
@@ -23910,7 +23299,8 @@ de el	ADP DET	de el
 vehiculo	NOUN	vehiculo
 en	ADP	en
 un	DET	uno
-20%	SYM	20/100
+20	NUM	20
+%	SYM	%
 ,	PUNCT	,
 con	ADP	con
 lo	PRON	el
@@ -23934,7 +23324,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 prospera: prosperar | prospera
-20%: 20 | 20/100
 }
 
 Expected: {
@@ -26219,104 +25608,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 prohiba: prohibir | prohib
-}
-
-Expected: {
-munoz	PROPN	munoz
-apunto	VERB	apuntar
-que	SCONJ	que
-un	DET	uno
-20%	SYM	20
-cree	VERB	creer
-que	SCONJ	que
-nunca	ADV	nunca
-deberia	AUX	deber
-penalizar	VERB	penalizar
-se	PRON	el
-su	DET	su
-consumo	NOUN	consumo
-y	CCONJ	y
-que	SCONJ	que
-la	DET	el
-actitud	NOUN	actitud
-intolerante	ADJ	intolerante
-mayoritaria	ADJ	mayoritario
-hacia	ADP	hacia
-el	DET	el
-consumo	NOUN	consumo
-de	ADP	de
-drogas	NOUN	droga
-puede	AUX	poder
-estar	AUX	estar
-relacionada	ADJ	relacionado
-con	ADP	con
-la	DET	el
-percepcion	NOUN	percepcion
-de	ADP	de
-que	SCONJ	que
-las	DET	el
-drogas	NOUN	droga
-constituyen	VERB	constituir
-uno	PRON	uno
-de	ADP	de
-los	DET	el
-principales	ADJ	principal
-problemas	NOUN	problema
-de	ADP	de
-la	DET	el
-sociedad	NOUN	sociedad
-.	PUNCT	.
-}
-Predicted: {
-munoz	PROPN	munoz
-apunto	VERB	apuntar
-que	SCONJ	que
-un	DET	uno
-20%	SYM	20/100
-cree	VERB	creer
-que	SCONJ	que
-nunca	ADV	nunca
-deberia	AUX	deber
-penalizar	VERB	penalizar
-se	PRON	el
-su	DET	su
-consumo	NOUN	consumo
-y	CCONJ	y
-que	SCONJ	que
-la	DET	el
-actitud	NOUN	actitud
-intolerante	ADJ	intolerante
-mayoritaria	ADJ	mayoritario
-hacia	ADP	hacia
-el	DET	el
-consumo	NOUN	consumo
-de	ADP	de
-drogas	NOUN	droga
-puede	AUX	poder
-estar	AUX	estar
-relacionada	ADJ	relacionado
-con	ADP	con
-la	DET	el
-percepcion	NOUN	percepcion
-de	ADP	de
-que	SCONJ	que
-las	DET	el
-drogas	NOUN	droga
-constituyen	VERB	constituir
-uno	PRON	uno
-de	ADP	de
-los	DET	el
-principales	ADJ	principal
-problemas	NOUN	problema
-de	ADP	de
-la	DET	el
-sociedad	NOUN	sociedad
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-20%: 20 | 20/100
 }
 
 Expected: {
@@ -29956,70 +29247,6 @@ doctrina: doctrino | doctrina
 }
 
 Expected: {
-tony	PROPN	tony
-bedard	PROPN	bedard
-se	PRON	el
-volvia	VERB	volver
-el	DET	el
-nuevo	ADJ	nuevo
-escritor	NOUN	escritor
-durante	ADP	durante
-seis	NUM	6
-numeros	NOUN	numero
-(	PUNCT	(
-del	ADP	del
-31	NUM	31
-a el	ADP DET	a el
-36	NUM	36
-)	PUNCT	)
-concluyendo	VERB	concluir
-estos	NOUN	este
-con	ADP	con
-el	DET	el
-regreso	NOUN	regreso
-de	ADP	de
-supergirl	PROPN	supergirl
-a el	ADP DET	a el
-siglo	NOUN	siglo
-xxi	NUM	xxi
-.	PUNCT	.
-}
-Predicted: {
-tony	PROPN	tony
-bedard	PROPN	bedard
-se	PRON	el
-volvia	VERB	volver
-el	DET	el
-nuevo	ADJ	nuevo
-escritor	NOUN	escritor
-durante	ADP	durante
-seis	NUM	seis
-numeros	NOUN	numero
-(	PUNCT	(
-del	ADP	del
-31	NUM	31
-a el	ADP DET	a el
-36	NUM	36
-)	PUNCT	)
-concluyendo	VERB	concluir
-estos	NOUN	este
-con	ADP	con
-el	DET	el
-regreso	NOUN	regreso
-de	ADP	de
-supergirl	PROPN	supergirl
-a el	ADP DET	a el
-siglo	NOUN	siglo
-xxi	NUM	xxi
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-seis: 6 | seis
-}
-
-Expected: {
 el	DET	el
 citado	ADJ	citado
 castillejo	NOUN	castillejo
@@ -30125,6 +29352,56 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 intermedia: intermedio | intermedia
+}
+
+Expected: {
+la	DET	el
+temperatura	NOUN	temperatura
+media	ADJ	medio
+de	ADP	de
+enero	PROPN	enero
+va	VERB	ir
+de	ADP	de
+1,6	NUM	1.6
+°	SYM	°
+c	NOUN	c
+en	ADP	en
+la	DET	el
+costa	NOUN	costa
+y	CCONJ	y
+2,1	NUM	2.1
+°	SYM	°
+c	NOUN	c
+en	ADP	en
+vilna	PROPN	vilna
+;	PUNCT	;
+}
+Predicted: {
+la	DET	el
+temperatura	NOUN	temperatura
+media	ADJ	medio
+de	ADP	de
+enero	PROPN	enero
+va	VERB	ir
+de	ADP	de
+1,6	NUM	1.6
+°	SYM	°
+c	NOUN	c
+en	ADP	en
+la	DET	el
+costa	NOUN	costa
+y	CCONJ	y
+2,1	NUM	2,1
+°	SYM	°
+c	NOUN	c
+en	ADP	en
+vilna	PROPN	vilna
+;	PUNCT	;
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+2,1: 2.1 | 2,1
 }
 
 Expected: {
@@ -30785,7 +30062,7 @@ cajastur	PROPN	cajastur
 se	PRON	el
 valora	VERB	valorar
 en	ADP	en
-1.759,7	NUM	1.79,7
+1.759,7	NUM	1.759,7
 millones	NOUN	millon
 de	ADP	de
 euros	NOUN	euro
@@ -30851,6 +30128,7 @@ euros	NOUN	euro
 Errors: {
 Tok: Ref | Pred
 ---------------
+1.759,7: 1.79,7 | 1.759,7
 967,7: 967.7 | 967,7
 457,4: 47,4 | 457,4
 217,8: 217.8 | 217,8
@@ -42116,62 +41394,6 @@ mixtas: mixta | mixto
 
 Expected: {
 el	DET	el
-redwood	PROPN	redwood
-road	PROPN	road
-(	PUNCT	(
-re	PROPN	re
-68	NUM	68
-)	PUNCT	)
-,	PUNCT	,
-una	DET	uno
-carretera	NOUN	carretera
-de	ADP	de
-seis	NUM	6
-carriles	NOUN	carril
-,	PUNCT	,
-corre	VERB	correr
-traves	NOUN	traves
-de el	ADP DET	de el
-parte	NOUN	parte
-oriental	ADJ	oriental
-de	ADP	de
-la	DET	el
-ciudad	NOUN	ciudad
-.	PUNCT	.
-}
-Predicted: {
-el	DET	el
-redwood	PROPN	redwood
-road	PROPN	road
-(	PUNCT	(
-re	PROPN	re
-68	NUM	68
-)	PUNCT	)
-,	PUNCT	,
-una	DET	uno
-carretera	NOUN	carretera
-de	ADP	de
-seis	NUM	seis
-carriles	NOUN	carril
-,	PUNCT	,
-corre	VERB	correr
-traves	NOUN	traves
-de el	ADP DET	de el
-parte	NOUN	parte
-oriental	ADJ	oriental
-de	ADP	de
-la	DET	el
-ciudad	NOUN	ciudad
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-seis: 6 | seis
-}
-
-Expected: {
-el	DET	el
 antecedente	NOUN	antecedente
 historico	ADJ	historico
 de	ADP	de
@@ -43790,84 +43012,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 georgias: georgias | georgia
-}
-
-Expected: {
-estas	DET	este
-alegaciones	NOUN	alegacion
-han	AUX	haber
-sido	AUX	ser
-presentadas	VERB	presentar
-mayoritariamente	ADV	mayoritariamente
-por	ADP	por
-agentes	NOUN	agente
-sociales	ADJ	social
-,	PUNCT	,
-que	SCONJ	que
-han	AUX	haber
-aportado	VERB	aportar
-siete	NUM	siete
-,	PUNCT	,
-seguidas	VERB	seguir
-de	ADP	de
-las	DET	el
-seis	NUM	6
-de	ADP	de
-asociaciones	NOUN	asociacion
-de	ADP	de
-regantes	NOUN	regante
-,	PUNCT	,
-el	DET	el
-mismo	ADJ	mismo
-numero	NOUN	numero
-que	CCONJ	que
-las	PRON	el
-presentadas	VERB	presentar
-por	ADP	por
-las	DET	el
-administraciones	NOUN	administracion
-.	PUNCT	.
-}
-Predicted: {
-estas	DET	este
-alegaciones	NOUN	alegacion
-han	AUX	haber
-sido	AUX	ser
-presentadas	VERB	presentar
-mayoritariamente	ADV	mayoritariamente
-por	ADP	por
-agentes	NOUN	agente
-sociales	ADJ	social
-,	PUNCT	,
-que	SCONJ	que
-han	AUX	haber
-aportado	VERB	aportar
-siete	NUM	siete
-,	PUNCT	,
-seguidas	VERB	seguir
-de	ADP	de
-las	DET	el
-seis	NUM	seis
-de	ADP	de
-asociaciones	NOUN	asociacion
-de	ADP	de
-regantes	NOUN	regante
-,	PUNCT	,
-el	DET	el
-mismo	ADJ	mismo
-numero	NOUN	numero
-que	CCONJ	que
-las	PRON	el
-presentadas	VERB	presentar
-por	ADP	por
-las	DET	el
-administraciones	NOUN	administracion
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-seis: 6 | seis
 }
 
 Expected: {
@@ -48181,7 +47325,7 @@ los	DET	el
 guaranies	NOUN	guaranies
 ,	PUNCT	,
 de	ADP	de
-quienes	NOUN	quien
+quienes	PRON	quien
 se	PRON	el
 originarian	VERB	originar
 los	DET	el
@@ -48200,7 +47344,7 @@ los	DET	el
 guaranies	NOUN	guarani
 ,	PUNCT	,
 de	ADP	de
-quienes	NOUN	quien
+quienes	PRON	quien
 se	PRON	el
 originarian	VERB	originar
 los	DET	el
@@ -51254,98 +50398,6 @@ Tok: Ref | Pred
 ---------------
 clara: claro | clara
 ejecutiva: ejecutiva | ejecutivo
-}
-
-Expected: {
-ademas	ADV	ademas
-,	PUNCT	,
-el	DET	el
-lider	NOUN	lider
-sindical	ADJ	sindical
-agradecio	VERB	agradecer
-el	DET	el
-apoyo	NOUN	apoyo
-que	SCONJ	que
-ha	AUX	haber
-mostrado	VERB	mostrar
-la	DET	el
-ciudadania	NOUN	ciudadania
-malaguena	ADJ	malagueno
-y	CCONJ	y
-el	DET	el
-hecho	NOUN	hecho
-de	ADP	de
-que	SCONJ	que
-en	ADP	en
-tan	ADV	tanto
-solo	ADV	solo
-dos	NUM	dos
-meses	NOUN	mes
-se	PRON	el
-ha	AUX	haber
-conseguido	VERB	conseguir
-recabar	VERB	recabar
-mas	ADV	mas
-de	ADP	de
-40.000	NUM	40000
-firmas	NOUN	firma
-,	PUNCT	,
-cuando	SCONJ	cuando
-el	DET	el
-plazo	NOUN	plazo
-establecido	VERB	establecer
-era	VERB	ser
-de	ADP	de
-seis	NUM	6
-.	PUNCT	.
-}
-Predicted: {
-ademas	ADV	ademas
-,	PUNCT	,
-el	DET	el
-lider	NOUN	lider
-sindical	ADJ	sindical
-agradecio	VERB	agradecer
-el	DET	el
-apoyo	NOUN	apoyo
-que	SCONJ	que
-ha	AUX	haber
-mostrado	VERB	mostrar
-la	DET	el
-ciudadania	NOUN	ciudadania
-malaguena	ADJ	malagueno
-y	CCONJ	y
-el	DET	el
-hecho	NOUN	hecho
-de	ADP	de
-que	SCONJ	que
-en	ADP	en
-tan	ADV	tanto
-solo	ADV	solo
-dos	NUM	dos
-meses	NOUN	mes
-se	PRON	el
-ha	AUX	haber
-conseguido	VERB	conseguir
-recabar	VERB	recabar
-mas	ADV	mas
-de	ADP	de
-40.000	NUM	40000
-firmas	NOUN	firma
-,	PUNCT	,
-cuando	SCONJ	cuando
-el	DET	el
-plazo	NOUN	plazo
-establecido	VERB	establecer
-era	VERB	ser
-de	ADP	de
-seis	NUM	seis
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-seis: 6 | seis
 }
 
 Expected: {
@@ -55111,54 +54163,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 am: be | am
-}
-
-Expected: {
-los	DET	el
-equipos	NOUN	equipo
-participantes	ADJ	participante
-se	PRON	el
-iran	VERB	ir
-clasificando	VERB	clasificar
-a	ADP	a
-lo	PRON	el
-largo	NOUN	largo
-de el	ADP DET	de el
-ano	NOUN	ano
-a	ADP	a
-traves	NOUN	traves
-de	ADP	de
-las	DET	el
-seis	NUM	6
-mayores	ADJ	mayor
-competiciones	NOUN	competicion
-continentales	ADJ	continental
-}
-Predicted: {
-los	DET	el
-equipos	NOUN	equipo
-participantes	ADJ	participante
-se	PRON	el
-iran	VERB	ir
-clasificando	VERB	clasificar
-a	ADP	a
-lo	PRON	el
-largo	NOUN	largo
-de el	ADP DET	de el
-ano	NOUN	ano
-a	ADP	a
-traves	NOUN	traves
-de	ADP	de
-las	DET	el
-seis	NUM	seis
-mayores	ADJ	mayor
-competiciones	NOUN	competicion
-continentales	ADJ	continental
-}
-Errors: {
-Tok: Ref | Pred
----------------
-seis: 6 | seis
 }
 
 Expected: {

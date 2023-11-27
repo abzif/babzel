@@ -1,17 +1,17 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9963611030823161
+Evaluation-Score=0.9956574579084656
 Training-Sample-Size=39084
 Evaluation-Sample-Size=4342
-Training-Algorithm=MAXENT_QN
+Training-Algorithm=MAXENT
 
 === MODEL PROPERTIES ===
 Component-Name=TokenizerME
 Language=en
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1697781126597
+Timestamp=1700455666153
 TrainerType=Event
-Training-Eventhash=17c2259b9bf425ba6af5bbcf434d1a1e
+Training-Eventhash=741eef8793f02de70bd0b4766b42e2fb
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
@@ -54,6 +54,28 @@ duns
 }
 
 Expected: {
+visit capt. spastic<SPLIT>'s joke list for all the information and options<SPLIT>: <<SPLIT>>}
+Predicted: {
+visit capt<SPLIT>. spastic<SPLIT>'s joke list for all the information and options<SPLIT>: <<SPLIT>>}
+False positives: {
+capt
+.
+} False negatives: {
+capt.
+}
+
+Expected: {
+[<SPLIT>http://seattlepi.nwsource.com/national/apmideast_story.asp?category=1107&slug=palestinians%20abbas<SPLIT>]}
+Predicted: {
+[<SPLIT>http://seattlepi.nwsource.com/national/apmideast_story.asp?category=1107&slug=palestinians<SPLIT>%20abbas<SPLIT>]}
+False positives: {
+http://seattlepi.nwsource.com/national/apmideast_story.asp?category=1107&slug=palestinians
+%20abbas
+} False negatives: {
+http://seattlepi.nwsource.com/national/apmideast_story.asp?category=1107&slug=palestinians%20abbas
+}
+
+Expected: {
 because i have read that there are times it<SPLIT>s not available<SPLIT>.}
 Predicted: {
 because i have read that there are times its not available<SPLIT>.}
@@ -73,6 +95,17 @@ ive
 } False negatives: {
 i
 ve
+}
+
+Expected: {
+different<SPLIT>...<SPLIT>one was in the jungle<SPLIT>, the other is in the high mountain deserts<SPLIT>.}
+Predicted: {
+different<SPLIT>...one was in the jungle<SPLIT>, the other is in the high mountain deserts<SPLIT>.}
+False positives: {
+...one
+} False negatives: {
+...
+one
 }
 
 Expected: {
@@ -126,6 +159,28 @@ s
 }
 
 Expected: {
+http://cambridgefoodfrivolity.blogspot.com/}
+Predicted: {
+http://cambridgefoodfrivolity<SPLIT>.blogspot.com/}
+False positives: {
+http://cambridgefoodfrivolity
+.blogspot.com/
+} False negatives: {
+http://cambridgefoodfrivolity.blogspot.com/
+}
+
+Expected: {
+the atmosphere is your typical indie outfit with old movie posters and memorabilia from the 70's and 80's<SPLIT>.}
+Predicted: {
+the atmosphere is your typical indie outfit with old movie posters and memorabilia from the 70<SPLIT>'s and 80's<SPLIT>.}
+False positives: {
+70
+'s
+} False negatives: {
+70's
+}
+
+Expected: {
 john donovan from argghhh! has put out a excellent slide show on what was actually found and fought for in fallujah<SPLIT>.}
 Predicted: {
 john donovan from argghhh<SPLIT>! has put out a excellent slide show on what was actually found and fought for in fallujah<SPLIT>.}
@@ -134,6 +189,17 @@ argghhh
 !
 } False negatives: {
 argghhh!
+}
+
+Expected: {
+as we have discussed<SPLIT>....<SPLIT>effective sep 13th<SPLIT>, anita will make the adjustments to enron<SPLIT>'s inventory and pad gas to reflect the february 26th results<SPLIT>.}
+Predicted: {
+as we have discussed<SPLIT>....effective sep 13th<SPLIT>, anita will make the adjustments to enron<SPLIT>'s inventory and pad gas to reflect the february 26th results<SPLIT>.}
+False positives: {
+....effective
+} False negatives: {
+....
+effective
 }
 
 Expected: {
@@ -148,23 +214,38 @@ id's
 }
 
 Expected: {
-we have started a new forum for an interactive and absorbing discussion on astrology & palmistry and everything in between including gemology<SPLIT>, feng shui<SPLIT>/<SPLIT>vaastu shastra<SPLIT>.}
+*<SPLIT>washington<SPLIT>, d.c.<SPLIT>-<SPLIT>*}
 Predicted: {
-we have started a new forum for an interactive and absorbing discussion on astrology & palmistry and everything in between including gemology<SPLIT>, feng shui/<SPLIT>vaastu shastra<SPLIT>.}
+*washington<SPLIT>, d.c.<SPLIT>-<SPLIT>*}
 False positives: {
-shui/
+*washington
 } False negatives: {
-shui
-/
+*
+washington
+}
+
+Expected: {
+** disclaimer **}
+Predicted: {
+*<SPLIT>* disclaimer *<SPLIT>*}
+False positives: {
+*
+*
+*
+*
+} False negatives: {
+**
+**
 }
 
 Expected: {
 [<SPLIT>http://www.space.com/astronotes/astronotes.html<SPLIT>]}
 Predicted: {
-[<SPLIT>http://www.space.com/astronotes<SPLIT>/astronotes.html<SPLIT>]}
+[<SPLIT>http://www.space.com/astronotes<SPLIT>/<SPLIT>astronotes.html<SPLIT>]}
 False positives: {
 http://www.space.com/astronotes
-/astronotes.html
+/
+astronotes.html
 } False negatives: {
 http://www.space.com/astronotes/astronotes.html
 }
@@ -183,9 +264,10 @@ s
 Expected: {
 why will hav to pay customs if it is a gift<SPLIT>...<SPLIT>??}
 Predicted: {
-why will hav to pay customs if it is a gift<SPLIT>...??}
+why will hav to pay customs if it is a gift<SPLIT>...?<SPLIT>?}
 False positives: {
-...??
+...?
+?
 } False negatives: {
 ...
 ??
@@ -206,14 +288,14 @@ s
 }
 
 Expected: {
-you live in nz and you eat mcdonald<SPLIT>s ice cream<SPLIT>?}
+but since in my country it lasts for minimum 6 years<SPLIT>,<SPLIT>and i want to go aground the world<SPLIT>,<SPLIT>what do you think<SPLIT>,<SPLIT>should i do it before or after medical school<SPLIT>?}
 Predicted: {
-you live in nz and you eat mcdonalds ice cream<SPLIT>?}
+but since in my country it lasts for minimum 6 years<SPLIT>,<SPLIT>and i want to go aground the world<SPLIT>,<SPLIT>what do you think<SPLIT>,should i do it before or after medical school<SPLIT>?}
 False positives: {
-mcdonalds
+,should
 } False negatives: {
-mcdonald
-s
+,
+should
 }
 
 Expected: {
@@ -274,6 +356,17 @@ http://www.ibiblio.org/expo/soviet.exhibit/chernobyl.html
 }
 
 Expected: {
+http://youtube.com/watch?v=d46_ctqdmi4}
+Predicted: {
+http://youtube.com/watch<SPLIT>?v=d46_ctqdmi4}
+False positives: {
+http://youtube.com/watch
+?v=d46_ctqdmi4
+} False negatives: {
+http://youtube.com/watch?v=d46_ctqdmi4
+}
+
+Expected: {
 we need to be more '<SPLIT>rigorous<SPLIT>' about how we perceive these people<SPLIT>.}
 Predicted: {
 we need to be more 'rigorous<SPLIT>' about how we perceive these people<SPLIT>.}
@@ -307,6 +400,17 @@ why
 }
 
 Expected: {
+according to a report prepared by a committee of arab intellectuals and published under the auspices of the u.n.<SPLIT>, the number of books translated by the entire arab world is much smaller than what little greece alone translates<SPLIT>.}
+Predicted: {
+according to a report prepared by a committee of arab intellectuals and published under the auspices of the u.n<SPLIT>.<SPLIT>, the number of books translated by the entire arab world is much smaller than what little greece alone translates<SPLIT>.}
+False positives: {
+u.n
+.
+} False negatives: {
+u.n.
+}
+
+Expected: {
 i<SPLIT>'m at x<SPLIT>if you have any questions<SPLIT>.}
 Predicted: {
 i<SPLIT>'m at xif you have any questions<SPLIT>.}
@@ -320,12 +424,12 @@ if
 Expected: {
 business case<SPLIT>: if we offered dean 55<SPLIT>k or 60<SPLIT>k it would still constitute a over a $<SPLIT>10,000 increase (<SPLIT>approximately 25<SPLIT>%<SPLIT>) and taking into consideration he was rated as satisfactory at the specialist level<SPLIT>.}
 Predicted: {
-business case<SPLIT>: if we offered dean 55<SPLIT>k or 60<SPLIT>k it would still constitute a over a $<SPLIT>10,000 increase (<SPLIT>approximately 25%<SPLIT>) and taking into consideration he was rated as satisfactory at the specialist level<SPLIT>.}
+business case<SPLIT>: if we offered dean 55k or 60<SPLIT>k it would still constitute a over a $<SPLIT>10,000 increase (<SPLIT>approximately 25<SPLIT>%<SPLIT>) and taking into consideration he was rated as satisfactory at the specialist level<SPLIT>.}
 False positives: {
-25%
+55k
 } False negatives: {
-25
-%
+55
+k
 }
 
 Expected: {
@@ -340,6 +444,17 @@ she
 }
 
 Expected: {
+ms. walters approached one of the women and said<SPLIT>, "<SPLIT>this is marvelous<SPLIT>.}
+Predicted: {
+ms<SPLIT>. walters approached one of the women and said<SPLIT>, "<SPLIT>this is marvelous<SPLIT>.}
+False positives: {
+ms
+.
+} False negatives: {
+ms.
+}
+
+Expected: {
 a few things regading the poa<SPLIT>/ cargill line<SPLIT>..}
 Predicted: {
 a few things regading the poa/ cargill line<SPLIT>..}
@@ -351,57 +466,69 @@ poa
 }
 
 Expected: {
-floating amount = (<SPLIT>notional quantity per calculation period x floating price<SPLIT>) - usd<SPLIT>[<SPLIT>38,000<SPLIT>?<SPLIT>]}
-Predicted: {
-floating amount = (<SPLIT>notional quantity per calculation period x floating price<SPLIT>) - usd[<SPLIT>38,000<SPLIT>?<SPLIT>]}
-False positives: {
-usd[
-} False negatives: {
-usd
-[
-}
-
-Expected: {
-recently charles miller and david dewhurst sent you an invitation to a reception which they are hosting on wed. 6/14 at 5:00 pm to be held at the houston petroleum club<SPLIT>.}
-Predicted: {
-recently charles miller and david dewhurst sent you an invitation to a reception which they are hosting on wed<SPLIT>. 6/14 at 5:00 pm to be held at the houston petroleum club<SPLIT>.}
-False positives: {
-wed
-.
-} False negatives: {
-wed.
-}
-
-Expected: {
 i<SPLIT>'m planning on dragging him to at least one of the u.t. games<SPLIT>, i just have to find out when he wants to go (<SPLIT>as well as properly prepare him for the scott<SPLIT>/<SPLIT>kelley<SPLIT>/<SPLIT>parks<SPLIT>/<SPLIT>wild card gang and the full<SPLIT>-<SPLIT>day affair that is a u.t. game<SPLIT>)<SPLIT>.}
 Predicted: {
-i<SPLIT>'m planning on dragging him to at least one of the u.t. games<SPLIT>, i just have to find out when he wants to go (<SPLIT>as well as properly prepare him for the scott/<SPLIT>kelley<SPLIT>/<SPLIT>parks<SPLIT>/wild card gang and the full<SPLIT>-<SPLIT>day affair that is a u.t. game<SPLIT>)<SPLIT>.}
+i<SPLIT>'m planning on dragging him to at least one of the u.t<SPLIT>. games<SPLIT>, i just have to find out when he wants to go (<SPLIT>as well as properly prepare him for the scott/kelley<SPLIT>/<SPLIT>parks<SPLIT>/wild card gang and the full<SPLIT>-<SPLIT>day affair that is a u.t<SPLIT>. game<SPLIT>)<SPLIT>.}
 False positives: {
-scott/
+u.t
+.
+scott/kelley
 /wild
+u.t
+.
 } False negatives: {
+u.t.
 scott
 /
+kelley
 /
 wild
+u.t.
+}
+
+Expected: {
+do you yahoo!<SPLIT>?}
+Predicted: {
+do you yahoo!?}
+False positives: {
+yahoo!?
+} False negatives: {
+yahoo!
+?
+}
+
+Expected: {
+sat. sept. 30 - paris}
+Predicted: {
+sat. sept<SPLIT>. 30 - paris}
+False positives: {
+sept
+.
+} False negatives: {
+sept.
 }
 
 Expected: {
 having spoken with dennis goldmann<SPLIT>, i am advised that there are currently 2 guaranties in place in the sum of $<SPLIT>8<SPLIT>m each<SPLIT>: one by niagara mohawk holdings inc f<SPLIT>/<SPLIT>b<SPLIT>/<SPLIT>o enron<SPLIT>, and one by enron inc. f<SPLIT>/<SPLIT>b<SPLIT>/<SPLIT>o niagara mohawk energy marketing<SPLIT>.}
 Predicted: {
-having spoken with dennis goldmann<SPLIT>, i am advised that there are currently 2 guaranties in place in the sum of $<SPLIT>8<SPLIT>m each<SPLIT>: one by niagara mohawk holdings inc f/b/<SPLIT>o enron<SPLIT>, and one by enron inc. f/b/<SPLIT>o niagara mohawk energy marketing<SPLIT>.}
+having spoken with dennis goldmann<SPLIT>, i am advised that there are currently 2 guaranties in place in the sum of $<SPLIT>8m each<SPLIT>: one by niagara mohawk holdings inc f/b/o enron<SPLIT>, and one by enron inc. f/b/o niagara mohawk energy marketing<SPLIT>.}
 False positives: {
-f/b/
-f/b/
+8m
+f/b/o
+f/b/o
 } False negatives: {
+8
+m
 f
 /
 b
 /
+o
 f
 /
 b
 /
+o
 }
 
 Expected: {
@@ -417,17 +544,6 @@ c
 }
 
 Expected: {
-middle office have instigated a new daily working capital report process tracking cash settlement<SPLIT>/ funding data to working capital components for all metals businesses<SPLIT>.}
-Predicted: {
-middle office have instigated a new daily working capital report process tracking cash settlement/ funding data to working capital components for all metals businesses<SPLIT>.}
-False positives: {
-settlement/
-} False negatives: {
-settlement
-/
-}
-
-Expected: {
 we envision a format that would provide a brief summary and analysis of the order<SPLIT>, filing<SPLIT>, etc. with a link to the source document as well for those who would like more detailed information<SPLIT>.}
 Predicted: {
 we envision a format that would provide a brief summary and analysis of the order<SPLIT>, filing<SPLIT>, etc<SPLIT>. with a link to the source document as well for those who would like more detailed information<SPLIT>.}
@@ -436,6 +552,17 @@ etc
 .
 } False negatives: {
 etc.
+}
+
+Expected: {
+danny_jones%enron@eott.com on 04/30/2001 01:39:56 pm}
+Predicted: {
+danny_jones<SPLIT>%enron@eott.com on 04/30/2001 01:39:56 pm}
+False positives: {
+danny_jones
+%enron@eott.com
+} False negatives: {
+danny_jones%enron@eott.com
 }
 
 Expected: {
@@ -452,12 +579,24 @@ plt
 Expected: {
 <<<SPLIT>1%p701!.doc<SPLIT>>>}
 Predicted: {
-<<<SPLIT>1%p701<SPLIT>!.doc<SPLIT>>>}
+<<<SPLIT>1<SPLIT>%p701<SPLIT>!.doc<SPLIT>>>}
 False positives: {
-1%p701
+1
+%p701
 !.doc
 } False negatives: {
 1%p701!.doc
+}
+
+Expected: {
+pretty strange<SPLIT>...<SPLIT>aye<SPLIT>.}
+Predicted: {
+pretty strange<SPLIT>...aye<SPLIT>.}
+False positives: {
+...aye
+} False negatives: {
+...
+aye
 }
 
 Expected: {
@@ -470,17 +609,6 @@ credit/billing
 credit
 /
 billing
-}
-
-Expected: {
-also<SPLIT>, you will notice this interconnect may not be subject to the ciac tax gross up<SPLIT>, but to protect ourselves<SPLIT>, we have added language in para 3.<SPLIT>that protects us financially if the irs ever comes back to determine that this interconnect is subject to the ciac tax<SPLIT>.}
-Predicted: {
-also<SPLIT>, you will notice this interconnect may not be subject to the ciac tax gross up<SPLIT>, but to protect ourselves<SPLIT>, we have added language in para 3.that protects us financially if the irs ever comes back to determine that this interconnect is subject to the ciac tax<SPLIT>.}
-False positives: {
-3.that
-} False negatives: {
-3.
-that
 }
 
 Expected: {
@@ -515,6 +643,17 @@ lets
 } False negatives: {
 let
 s
+}
+
+Expected: {
+both mr. parenteau and ms. doyon<SPLIT>, however<SPLIT>, were bleeding badly<SPLIT>.}
+Predicted: {
+both mr. parenteau and ms<SPLIT>. doyon<SPLIT>, however<SPLIT>, were bleeding badly<SPLIT>.}
+False positives: {
+ms
+.
+} False negatives: {
+ms.
 }
 
 Expected: {
@@ -556,23 +695,40 @@ sonny
 Expected: {
 and a good reason for starting this group<SPLIT>....<SPLIT>company firewalls lol ;)}
 Predicted: {
-and a good reason for starting this group<SPLIT>....company firewalls lol ;)}
+and a good reason for starting this group<SPLIT>....company firewalls lol ;<SPLIT>)}
 False positives: {
 ....company
+;
+)
 } False negatives: {
 ....
 company
+;)
 }
 
 Expected: {
 an annotated text of the bill<SPLIT>, read the article by d. singmaster in "<SPLIT>the mathematical intelligencer<SPLIT>" v<SPLIT>7 #<SPLIT>2<SPLIT>, pp 69<SPLIT>-<SPLIT>72<SPLIT>.}
 Predicted: {
-an annotated text of the bill<SPLIT>, read the article by d. singmaster in "<SPLIT>the mathematical intelligencer<SPLIT>" v7 #<SPLIT>2<SPLIT>, pp 69<SPLIT>-<SPLIT>72<SPLIT>.}
+an annotated text of the bill<SPLIT>, read the article by d<SPLIT>. singmaster in "<SPLIT>the mathematical intelligencer<SPLIT>" v7 #<SPLIT>2<SPLIT>, pp 69<SPLIT>-<SPLIT>72<SPLIT>.}
 False positives: {
+d
+.
 v7
 } False negatives: {
+d.
 v
 7
+}
+
+Expected: {
+><SPLIT>from the shameful history of slavery in america<SPLIT>, the injustice of forbidding people to marry is evident as a denial of a basic human right<SPLIT>.}
+Predicted: {
+>from the shameful history of slavery in america<SPLIT>, the injustice of forbidding people to marry is evident as a denial of a basic human right<SPLIT>.}
+False positives: {
+>from
+} False negatives: {
+>
+from
 }
 
 Expected: {
@@ -590,25 +746,25 @@ a.
 }
 
 Expected: {
-if you have any doubts<SPLIT>, refer to title 18 sec. 1302 & 1341 of the postal lottery laws<SPLIT>.}
+it is oct. 6<SPLIT>, and not one family member has been located<SPLIT>.}
 Predicted: {
-if you have any doubts<SPLIT>, refer to title 18 sec<SPLIT>. 1302 & 1341 of the postal lottery laws<SPLIT>.}
+it is oct<SPLIT>. 6<SPLIT>, and not one family member has been located<SPLIT>.}
 False positives: {
-sec
+oct
 .
 } False negatives: {
-sec.
+oct.
 }
 
 Expected: {
-[<SPLIT>mfm act 3<SPLIT>, sc. 2<SPLIT>]<SPLIT>}}
+<<<SPLIT>he could do little during the day<SPLIT>, for murillo took every precaution and never went out save with his satellite lucas<SPLIT>, or lopez as he was known in the days of his greatness<SPLIT>.}
 Predicted: {
-[<SPLIT>mfm act 3<SPLIT>, sc<SPLIT>. 2<SPLIT>]<SPLIT>}}
+<<he could do little during the day<SPLIT>, for murillo took every precaution and never went out save with his satellite lucas<SPLIT>, or lopez as he was known in the days of his greatness<SPLIT>.}
 False positives: {
-sc
-.
+<<he
 } False negatives: {
-sc.
+<<
+he
 }
 
 Expected: {
@@ -623,6 +779,17 @@ b
 }
 
 Expected: {
+$<SPLIT>10.9<SPLIT>m - average wealth of the members of bush<SPLIT>'s original 16<SPLIT>-<SPLIT>person cabinet<SPLIT>.}
+Predicted: {
+$<SPLIT>10.9m - average wealth of the members of bush<SPLIT>'s original 16<SPLIT>-<SPLIT>person cabinet<SPLIT>.}
+False positives: {
+10.9m
+} False negatives: {
+10.9
+m
+}
+
+Expected: {
 2.4<SPLIT>m - number of americans who lost their health insurance during bush<SPLIT>'s first year in office<SPLIT>.}
 Predicted: {
 2.4m - number of americans who lost their health insurance during bush<SPLIT>'s first year in office<SPLIT>.}
@@ -631,17 +798,6 @@ False positives: {
 } False negatives: {
 2.4
 m
-}
-
-Expected: {
-mcdonald<SPLIT>s}
-Predicted: {
-mcdonalds}
-False positives: {
-mcdonalds
-} False negatives: {
-mcdonald
-s
 }
 
 Expected: {
@@ -656,17 +812,6 @@ False positives: {
 }
 
 Expected: {
-bit of a stupid question but do the spikes<SPLIT>/<SPLIT>spines (<SPLIT>whatever you call them<SPLIT>) on their side and face area ever go hard<SPLIT>.}
-Predicted: {
-bit of a stupid question but do the spikes/<SPLIT>spines (<SPLIT>whatever you call them<SPLIT>) on their side and face area ever go hard<SPLIT>.}
-False positives: {
-spikes/
-} False negatives: {
-spikes
-/
-}
-
-Expected: {
 but right now it<SPLIT>s the most convenient thing to do<SPLIT>.}
 Predicted: {
 but right now its the most convenient thing to do<SPLIT>.}
@@ -678,17 +823,6 @@ s
 }
 
 Expected: {
-change there to the metro 4 line going toward "<SPLIT>porte d'<SPLIT>orleans<SPLIT>"<SPLIT>.}
-Predicted: {
-change there to the metro 4 line going toward "<SPLIT>porte d'orleans<SPLIT>"<SPLIT>.}
-False positives: {
-d'orleans
-} False negatives: {
-d'
-orleans
-}
-
-Expected: {
 when you read the label it<SPLIT>s easy to understand why<SPLIT>.}
 Predicted: {
 when you read the label its easy to understand why<SPLIT>.}
@@ -697,6 +831,17 @@ its
 } False negatives: {
 it
 s
+}
+
+Expected: {
+unless the tank has a built in overflow box (<SPLIT>which i<SPLIT>'m certain it does<SPLIT>n't<SPLIT>) then you have to get one of those hang on back overflow boxes so that you can install a sump<SPLIT>.}
+Predicted: {
+unless the tank has a built in overflow box (<SPLIT>which i<SPLIT>'m certain it doesn't<SPLIT>) then you have to get one of those hang on back overflow boxes so that you can install a sump<SPLIT>.}
+False positives: {
+doesn't
+} False negatives: {
+does
+n't
 }
 
 Expected: {
@@ -727,14 +872,25 @@ n
 }
 
 Expected: {
-only in comic books and sci<SPLIT>-<SPLIT>fi tv shows<SPLIT>/<SPLIT>movies<SPLIT>... :d}
+i think 2012 is going to be a great year for fujairah as we have a<SPLIT>lot of projects to be done by 2012<SPLIT>.}
 Predicted: {
-only in comic books and sci<SPLIT>-<SPLIT>fi tv shows/<SPLIT>movies<SPLIT>... :d}
+i think 2012 is going to be a great year for fujairah as we have alot of projects to be done by 2012<SPLIT>.}
 False positives: {
-shows/
+alot
 } False negatives: {
-shows
-/
+a
+lot
+}
+
+Expected: {
+according to a couple sources<SPLIT>, the world record for the oldest cat was a cat in devon<SPLIT>, england who reportedly live to the age of 36<SPLIT>.}
+Predicted: {
+according to a couple sources<SPLIT>, the world record for the oldest cat was a cat in devon<SPLIT>, england who reportedly live to the age of 36.}
+False positives: {
+36.
+} False negatives: {
+36
+.
 }
 
 Expected: {
@@ -779,11 +935,11 @@ days
 Expected: {
 if so<SPLIT>, then does that mean that if you watched a scary movie and your dog<SPLIT>/<SPLIT>cat<SPLIT>/<SPLIT>parrot was in the same room as you they will also get scared<SPLIT>?}
 Predicted: {
-if so<SPLIT>, then does that mean that if you watched a scary movie and your dog<SPLIT>/cat<SPLIT>/parrot was in the same room as you they will also get scared<SPLIT>?}
+if so<SPLIT>, then does that mean that if you watched a scary movie and your dog/cat/parrot was in the same room as you they will also get scared<SPLIT>?}
 False positives: {
-/cat
-/parrot
+dog/cat/parrot
 } False negatives: {
+dog
 /
 cat
 /
@@ -814,6 +970,28 @@ insured
 }
 
 Expected: {
+http://www.cic.gc.ca/english/immigrate/index.asp}
+Predicted: {
+http://www.cic.gc.ca<SPLIT>/english/immigrate/index.asp}
+False positives: {
+http://www.cic.gc.ca
+/english/immigrate/index.asp
+} False negatives: {
+http://www.cic.gc.ca/english/immigrate/index.asp
+}
+
+Expected: {
+whatever you do ...............<SPLIT>do not try to come here with out legal permission<SPLIT>.}
+Predicted: {
+whatever you do ...............do not try to come here with out legal permission<SPLIT>.}
+False positives: {
+...............do
+} False negatives: {
+...............
+do
+}
+
+Expected: {
 there would be four of us so we would probably be looking at 2 twin rooms for rs<SPLIT>1000<SPLIT>, close to the centre of these cities<SPLIT>.}
 Predicted: {
 there would be four of us so we would probably be looking at 2 twin rooms for rs1000<SPLIT>, close to the centre of these cities<SPLIT>.}
@@ -833,17 +1011,6 @@ its
 } False negatives: {
 it
 s
-}
-
-Expected: {
-that help alot with your thigh muscles (<SPLIT>bareback though<SPLIT>)}
-Predicted: {
-that help a<SPLIT>lot with your thigh muscles (<SPLIT>bareback though<SPLIT>)}
-False positives: {
-a
-lot
-} False negatives: {
-alot
 }
 
 Expected: {
@@ -871,10 +1038,11 @@ you're
 Expected: {
 *<SPLIT>gasps<SPLIT>* so i would<SPLIT>n't make a good prostitute<SPLIT>?}
 Predicted: {
-*<SPLIT>gasps* so i would<SPLIT>n't make a good prostitute<SPLIT>?}
+*gasps* so i would<SPLIT>n't make a good prostitute<SPLIT>?}
 False positives: {
-gasps*
+*gasps*
 } False negatives: {
+*
 gasps
 *
 }
@@ -888,6 +1056,17 @@ bachelors
 } False negatives: {
 bachelor
 s
+}
+
+Expected: {
+in the end nixon kept his promise for "<SPLIT>...<SPLIT>peace with honor<SPLIT>....<SPLIT>"}
+Predicted: {
+in the end nixon kept his promise for "<SPLIT>...peace with honor<SPLIT>....<SPLIT>"}
+False positives: {
+...peace
+} False negatives: {
+...
+peace
 }
 
 Expected: {
@@ -960,13 +1139,23 @@ ta
 Expected: {
 also after seeing a handful of bullfights<SPLIT>, i can say that they<SPLIT>'re a lot more enjoyable if you<SPLIT>'re smashed (<SPLIT>bac<SPLIT>>= .15<SPLIT>)<SPLIT>.}
 Predicted: {
-also after seeing a handful of bullfights<SPLIT>, i can say that they<SPLIT>'re a lot more enjoyable if you<SPLIT>'re smashed (<SPLIT>bac><SPLIT>= .15<SPLIT>)<SPLIT>.}
+also after seeing a handful of bullfights<SPLIT>, i can say that they<SPLIT>'re a lot more enjoyable if you<SPLIT>'re smashed (<SPLIT>bac>= .15<SPLIT>)<SPLIT>.}
 False positives: {
-bac>
-=
+bac>=
 } False negatives: {
 bac
 >=
+}
+
+Expected: {
+esp. the mole<SPLIT>, tortilla soup<SPLIT>, and guacamole<SPLIT>.}
+Predicted: {
+esp<SPLIT>. the mole<SPLIT>, tortilla soup<SPLIT>, and guacamole<SPLIT>.}
+False positives: {
+esp
+.
+} False negatives: {
+esp.
 }
 
 Expected: {
@@ -982,36 +1171,26 @@ at
 }
 
 Expected: {
-boutique stores dealing in children<SPLIT>'s clothing<SPLIT>/<SPLIT>gifts are often outrageously priced (<SPLIT>who wants to pay 40 dollars for a newborn onesie<SPLIT>?<SPLIT>)}
+the chili relleno<SPLIT>..<SPLIT>had no batter on it<SPLIT>.}
 Predicted: {
-boutique stores dealing in children<SPLIT>'s clothing<SPLIT>/gifts are often outrageously priced (<SPLIT>who wants to pay 40 dollars for a newborn onesie<SPLIT>?<SPLIT>)}
+the chili relleno<SPLIT>..had no batter on it<SPLIT>.}
 False positives: {
-/gifts
+..had
 } False negatives: {
-/
-gifts
+..
+had
 }
 
 Expected: {
 had to keep in mind that the a<SPLIT>/<SPLIT>c broke<SPLIT>, i feel bad it was their opening<SPLIT>!}
 Predicted: {
-had to keep in mind that the a/<SPLIT>c broke<SPLIT>, i feel bad it was their opening<SPLIT>!}
+had to keep in mind that the a/c broke<SPLIT>, i feel bad it was their opening<SPLIT>!}
 False positives: {
-a/
+a/c
 } False negatives: {
 a
 /
-}
-
-Expected: {
-we love t<SPLIT>'s cafe<SPLIT>!}
-Predicted: {
-we love t's cafe<SPLIT>!}
-False positives: {
-t's
-} False negatives: {
-t
-'s
+c
 }
 
 Expected: {
@@ -1039,12 +1218,24 @@ b&b
 Expected: {
 the next day i took it to 2 auto shops and they both told me the same thing<SPLIT>,<SPLIT>engine is junk<SPLIT>.}
 Predicted: {
-the next day i took it to 2 auto shops and they both told me the same thing<SPLIT>,engine is junk<SPLIT>.}
+the next day i took it to 2 auto shops and they both told me the same thing,engine is junk<SPLIT>.}
 False positives: {
-,engine
+thing,engine
 } False negatives: {
+thing
 ,
 engine
+}
+
+Expected: {
+the craziest part is that they are<SPLIT>n't even based locally at the city i<SPLIT>'m in<SPLIT>- they just have '<SPLIT>teams<SPLIT>' in areas through the country<SPLIT>.}
+Predicted: {
+the craziest part is that they are<SPLIT>n't even based locally at the city i<SPLIT>'m in<SPLIT>- they just have 'teams<SPLIT>' in areas through the country<SPLIT>.}
+False positives: {
+'teams
+} False negatives: {
+'
+teams
 }
 
 Expected: {
@@ -1092,23 +1283,24 @@ r
 }
 
 Expected: {
-finally a chambermaid stuck her head around the corner from the top of the stairs and told us sternly that we could not be accommodated until 3<SPLIT>m<SPLIT>, no exceptions<SPLIT>.}
+after happily visiting sear's automotives in the past<SPLIT>, i was shocked at the horrible service received at their greensboro location<SPLIT>.}
 Predicted: {
-finally a chambermaid stuck her head around the corner from the top of the stairs and told us sternly that we could not be accommodated until 3m<SPLIT>, no exceptions<SPLIT>.}
+after happily visiting sear<SPLIT>'s automotives in the past<SPLIT>, i was shocked at the horrible service received at their greensboro location<SPLIT>.}
 False positives: {
-3m
+sear
+'s
 } False negatives: {
-3
-m
+sear's
 }
 
 Expected: {
 (b) the district court correctly refused injunctive<SPLIT>, but erred in granting declaratory<SPLIT>, relief to hallford<SPLIT>, who alleged no federally protected right not assertable as a defense against the good faith state prosecutions pending against him<SPLIT>.}
 Predicted: {
-(<SPLIT>b) the district court correctly refused injunctive<SPLIT>, but erred in granting declaratory<SPLIT>, relief to hallford<SPLIT>, who alleged no federally protected right not assertable as a defense against the good faith state prosecutions pending against him<SPLIT>.}
+(<SPLIT>b<SPLIT>) the district court correctly refused injunctive<SPLIT>, but erred in granting declaratory<SPLIT>, relief to hallford<SPLIT>, who alleged no federally protected right not assertable as a defense against the good faith state prosecutions pending against him<SPLIT>.}
 False positives: {
 (
-b)
+b
+)
 } False negatives: {
 (b)
 }
@@ -1116,10 +1308,11 @@ b)
 Expected: {
 (b) for the stage subsequent to approximately the end of the first trimester<SPLIT>, the state<SPLIT>, in promoting its interest in the health of the mother<SPLIT>, may<SPLIT>, if it chooses<SPLIT>, regulate the abortion procedure in ways that are reasonably related to maternal health<SPLIT>.}
 Predicted: {
-(<SPLIT>b) for the stage subsequent to approximately the end of the first trimester<SPLIT>, the state<SPLIT>, in promoting its interest in the health of the mother<SPLIT>, may<SPLIT>, if it chooses<SPLIT>, regulate the abortion procedure in ways that are reasonably related to maternal health<SPLIT>.}
+(<SPLIT>b<SPLIT>) for the stage subsequent to approximately the end of the first trimester<SPLIT>, the state<SPLIT>, in promoting its interest in the health of the mother<SPLIT>, may<SPLIT>, if it chooses<SPLIT>, regulate the abortion procedure in ways that are reasonably related to maternal health<SPLIT>.}
 False positives: {
 (
-b)
+b
+)
 } False negatives: {
 (b)
 }
@@ -1127,22 +1320,33 @@ b)
 Expected: {
 (iii) escrow agent fees charged to the company or its affiliates by third<SPLIT>-<SPLIT>party escrow agents<SPLIT>.}
 Predicted: {
-(<SPLIT>iii) escrow agent fees charged to the company or its affiliates by third<SPLIT>-<SPLIT>party escrow agents<SPLIT>.}
+(<SPLIT>iii<SPLIT>) escrow agent fees charged to the company or its affiliates by third<SPLIT>-<SPLIT>party escrow agents<SPLIT>.}
 False positives: {
 (
-iii)
+iii
+)
 } False negatives: {
 (iii)
 }
 
 Expected: {
+ii) any statement<SPLIT>, representation or warranty of the other party is untrue or misleading in any material respect or omits material information<SPLIT>;}
+Predicted: {
+ii<SPLIT>) any statement<SPLIT>, representation or warranty of the other party is untrue or misleading in any material respect or omits material information<SPLIT>;}
+False positives: {
+ii
+)
+} False negatives: {
+ii)
+}
+
+Expected: {
 assessment<SPLIT>/<SPLIT>plan<SPLIT>:}
 Predicted: {
-assessment/plan<SPLIT>:}
+assessment<SPLIT>/plan<SPLIT>:}
 False positives: {
-assessment/plan
+/plan
 } False negatives: {
-assessment
 /
 plan
 }
@@ -1159,14 +1363,25 @@ False positives: {
 }
 
 Expected: {
-so this is our induction hypothesis<SPLIT>: gr can be assigned a proper vertex k - coloring such that k ≤ 5<SPLIT>.}
+5. hypertension<SPLIT>.}
 Predicted: {
-so this is our induction hypothesis<SPLIT>: gr can be assigned a proper vertex k - coloring such that k ≤ 5.}
+5<SPLIT>. hypertension<SPLIT>.}
 False positives: {
-5.
-} False negatives: {
 5
 .
+} False negatives: {
+5.
+}
+
+Expected: {
+'t<SPLIT>is the wind and nothing more<SPLIT>.<SPLIT>"}
+Predicted: {
+'tis the wind and nothing more<SPLIT>.<SPLIT>"}
+False positives: {
+'tis
+} False negatives: {
+'t
+is
 }
 
 Expected: {
@@ -1350,6 +1565,17 @@ $
 }
 
 Expected: {
+for example<SPLIT>, a referendum or proposed law might be placed on the ballot for citizens to vote on directly during state or local elections instead of leaving the matter in the hands of the state legislature<SPLIT>.}
+Predicted: {
+for example<SPLIT>, a referendum or proposed law might be placed on the bal<SPLIT>lot for citizens to vote on directly during state or local elections instead of leaving the matter in the hands of the state legislature<SPLIT>.}
+False positives: {
+bal
+lot
+} False negatives: {
+ballot
+}
+
+Expected: {
 first<SPLIT>, age is a continuous measure created by subtracting the year of the respondents<SPLIT>' birth (<SPLIT>obtained from wave 1<SPLIT>) from the year of the interview at wave 4<SPLIT>.}
 Predicted: {
 first<SPLIT>, age is a continuous measure created by subtracting the year of the respondents<SPLIT>' birth (<SPLIT>obtained from wave 1<SPLIT>) from the year of the interview at wave 4.}
@@ -1397,12 +1623,24 @@ False positives: {
 Expected: {
 salinity is one of the most important marine parameters<SPLIT>, which controls many processes such as physical circulations<SPLIT>, biogeochemistry dynamics from regional to global ocean [<SPLIT>1<SPLIT>,<SPLIT>2<SPLIT>]<SPLIT>.}
 Predicted: {
-salinity is one of the most important marine parameters<SPLIT>, which controls many processes such as physical circulations<SPLIT>, biogeochemistry dynamics from regional to global ocean [<SPLIT>1,<SPLIT>2<SPLIT>]<SPLIT>.}
+salinity is one of the most important marine parameters<SPLIT>, which controls many processes such as physical circulations<SPLIT>, biogeochemistry dynamics from regional to global ocean [<SPLIT>1,2<SPLIT>]<SPLIT>.}
 False positives: {
-1,
+1,2
 } False negatives: {
 1
 ,
+2
+}
+
+Expected: {
+but do y'<SPLIT>all have to do that<SPLIT>, um<SPLIT>, you have to like<SPLIT>, have it where you do that<SPLIT>, there<SPLIT>'s no<SPLIT>, um<SPLIT>.}
+Predicted: {
+but do y'all have to do that<SPLIT>, um<SPLIT>, you have to like<SPLIT>, have it where you do that<SPLIT>, there<SPLIT>'s no<SPLIT>, um<SPLIT>.}
+False positives: {
+y'all
+} False negatives: {
+y'
+all
 }
 
 Expected: {
@@ -1414,6 +1652,17 @@ m.sc
 .
 } False negatives: {
 m.sc.
+}
+
+Expected: {
+pacific standard owner<SPLIT>, jonathan m. stan<SPLIT>, displays the santorum cocktail drink as a finished product at the bar<SPLIT>. (<SPLIT>2012<SPLIT>)<SPLIT>.}
+Predicted: {
+pacific standard owner<SPLIT>, jonathan m<SPLIT>. stan<SPLIT>, displays the santorum cocktail drink as a finished product at the bar<SPLIT>. (<SPLIT>2012<SPLIT>)<SPLIT>.}
+False positives: {
+m
+.
+} False negatives: {
+m.
 }
 
 Expected: {
@@ -1476,17 +1725,6 @@ False positives: {
 }
 
 Expected: {
-you<SPLIT>ll find world<SPLIT>-<SPLIT>class museums and cultural events<SPLIT>, professional sports and amusement parks<SPLIT>, and the most golf courses per capita in the united states<SPLIT>.}
-Predicted: {
-youll find world<SPLIT>-<SPLIT>class museums and cultural events<SPLIT>, professional sports and amusement parks<SPLIT>, and the most golf courses per capita in the united states<SPLIT>.}
-False positives: {
-youll
-} False negatives: {
-you
-ll
-}
-
-Expected: {
 it's persian gardens is one of nine inscribed on the unesco world heritage list<SPLIT>.}
 Predicted: {
 it<SPLIT>'s persian gardens is one of nine inscribed on the unesco world heritage list<SPLIT>.}
@@ -1509,14 +1747,14 @@ False positives: {
 }
 
 Expected: {
-when s/he responds<SPLIT>, add your own comments or ask follow<SPLIT>-<SPLIT>up questions and proceed from there<SPLIT>!}
+usually fill each paper cupcake holder with about 1/4 cup of batter<SPLIT>.}
 Predicted: {
-when s/<SPLIT>he responds<SPLIT>, add your own comments or ask follow<SPLIT>-<SPLIT>up questions and proceed from there<SPLIT>!}
+usually fill each paper cupcake holder with about 1/<SPLIT>4 cup of batter<SPLIT>.}
 False positives: {
-s/
-he
+1/
+4
 } False negatives: {
-s/he
+1/4
 }
 
 Expected: {
@@ -1528,6 +1766,17 @@ False positives: {
 } False negatives: {
 '
 victory
+}
+
+Expected: {
+for example<SPLIT>, in my made up language<SPLIT>, '<SPLIT>vogelaviatiolap<SPLIT>' means bird<SPLIT>.}
+Predicted: {
+for example<SPLIT>, in my made up language<SPLIT>, 'vogelaviatiolap<SPLIT>' means bird<SPLIT>.}
+False positives: {
+'vogelaviatiolap
+} False negatives: {
+'
+vogelaviatiolap
 }
 
 Expected: {
@@ -1567,17 +1816,6 @@ can't
 }
 
 Expected: {
-annexes i to ix and the appendices thereto shall form an integral part of this protocol<SPLIT>.}
-Predicted: {
-annexes i to ix and the appendices there<SPLIT>to shall form an integral part of this protocol<SPLIT>.}
-False positives: {
-there
-to
-} False negatives: {
-thereto
-}
-
-Expected: {
 if you don't have a facebook account<SPLIT>, you can sign up for one in a few easy steps<SPLIT>.}
 Predicted: {
 if you do<SPLIT>n't have a facebook account<SPLIT>, you can sign up for one in a few easy steps<SPLIT>.}
@@ -1597,6 +1835,39 @@ groundsof
 } False negatives: {
 grounds
 of
+}
+
+Expected: {
+in the pharmaceutical sector - which is particularly vulnerable to ip infringement - a stronger ip regime could increase fdi inflows from $<SPLIT>1.5 billion this year to $<SPLIT>8.3 billion in 2020<SPLIT>, with pharmaceutical r&d doubling to $<SPLIT>1.3 billion over the same period<SPLIT>.}
+Predicted: {
+in the pharmaceutical sector - which is particularly vulnerable to ip infringement - a stronger ip regime could increase fdi inflows from $<SPLIT>1.5 billion this year to $<SPLIT>8.3 billion in 2020<SPLIT>, with pharmaceutical r&<SPLIT>d doubling to $<SPLIT>1.3 billion over the same period<SPLIT>.}
+False positives: {
+r&
+d
+} False negatives: {
+r&d
+}
+
+Expected: {
+what ukraine needs is a sharp reduction in corruption<SPLIT>, as well as real legitimacy (<SPLIT>through the ballot box<SPLIT>) for people who want to rein in the influence of oligarchs - a group that has sapped the economy through plunder and incompetence over the past two decades<SPLIT>.}
+Predicted: {
+what ukraine needs is a sharp reduction in corruption<SPLIT>, as well as real legitimacy (<SPLIT>through the bal<SPLIT>lot box<SPLIT>) for people who want to rein in the influence of oligarchs - a group that has sapped the economy through plunder and incompetence over the past two decades<SPLIT>.}
+False positives: {
+bal
+lot
+} False negatives: {
+ballot
+}
+
+Expected: {
+putin<SPLIT>'s gambit is akin to the infamous yalta conference in 1945<SPLIT>, where joseph stalin made winston churchill and franklin d. roosevelt complicit in a division of europe that enslaved half of the continent for almost a half<SPLIT>-<SPLIT>century<SPLIT>.}
+Predicted: {
+putin<SPLIT>'s gambit is akin to the infamous yalta conference in 1945<SPLIT>, where joseph stalin made winston churchill and franklin d<SPLIT>. roosevelt complicit in a division of europe that enslaved half of the continent for almost a half<SPLIT>-<SPLIT>century<SPLIT>.}
+False positives: {
+d
+.
+} False negatives: {
+d.
 }
 
 Expected: {

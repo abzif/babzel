@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9990771328194641
+Evaluation-Score=0.9990617415962972
 Training-Sample-Size=30252
 Evaluation-Sample-Size=3361
 Training-Algorithm=MAXENT_QN
@@ -9,9 +9,9 @@ Component-Name=TokenizerME
 Language=es
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1697781747166
+Timestamp=1700456142624
 TrainerType=Event
-Training-Eventhash=f06528104e17672b09dd7f078d827f1f
+Training-Eventhash=58eefdfba2729d7397f77c3df0fc2818
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
@@ -162,6 +162,17 @@ False positives: {
 } False negatives: {
 ...
 .
+}
+
+Expected: {
+el museu d'història de catalunya recibió el pasado año la visita de 160.000 personas<SPLIT>, una cifra que<SPLIT>, según su nuevo director<SPLIT>, jaume sobrequés<SPLIT>, "<SPLIT>debería aumentar una media anual de 50.000 visitantes<SPLIT>"<SPLIT>.}
+Predicted: {
+el museu d'<SPLIT>història de catalunya recibió el pasado año la visita de 160.000 personas<SPLIT>, una cifra que<SPLIT>, según su nuevo director<SPLIT>, jaume sobrequés<SPLIT>, "<SPLIT>debería aumentar una media anual de 50.000 visitantes<SPLIT>"<SPLIT>.}
+False positives: {
+d'
+història
+} False negatives: {
+d'història
 }
 
 Expected: {
@@ -411,6 +422,17 @@ igualar.
 }
 
 Expected: {
+según las estimaciones del<SPLIT>'' instituto valenciano de estadística<SPLIT>''<SPLIT>, para el año 2012 la población de la ciudad alcanzaría los 799.415 habitantes<SPLIT>.}
+Predicted: {
+según las estimaciones del<SPLIT>'<SPLIT>' instituto valenciano de estadística<SPLIT>''<SPLIT>, para el año 2012 la población de la ciudad alcanzaría los 799.415 habitantes<SPLIT>.}
+False positives: {
+'
+'
+} False negatives: {
+''
+}
+
+Expected: {
 probad<SPLIT>lo<SPLIT>!}
 Predicted: {
 probadlo<SPLIT>!}
@@ -446,13 +468,10 @@ me
 Expected: {
 un buen sitio para tomar<SPLIT>te una cerveza bien fresquita y para comer<SPLIT>te algunas tapas<SPLIT>, recomiendo las que son de "<SPLIT>pasado<SPLIT>" cordobes<SPLIT>, en particular el salmorejo<SPLIT>, aunque todo lo que probamos estaba bueno<SPLIT>.}
 Predicted: {
-un buen sitio para tomarte una cerveza bien fresquita y para comerte algunas tapas<SPLIT>, recomiendo las que son de "<SPLIT>pasado<SPLIT>" cordobes<SPLIT>, en particular el salmorejo<SPLIT>, aunque todo lo que probamos estaba bueno<SPLIT>.}
+un buen sitio para tomar<SPLIT>te una cerveza bien fresquita y para comerte algunas tapas<SPLIT>, recomiendo las que son de "<SPLIT>pasado<SPLIT>" cordobes<SPLIT>, en particular el salmorejo<SPLIT>, aunque todo lo que probamos estaba bueno<SPLIT>.}
 False positives: {
-tomarte
 comerte
 } False negatives: {
-tomar
-te
 comer
 te
 }
@@ -477,6 +496,17 @@ kilopar
 secs
 } False negatives: {
 kiloparsecs
+}
+
+Expected: {
+"<SPLIT>d2b<SPLIT>" fue una de las bandas más populares en tailandia<SPLIT>.}
+Predicted: {
+"d2b<SPLIT>" fue una de las bandas más populares en tailandia<SPLIT>.}
+False positives: {
+"d2b
+} False negatives: {
+"
+d2b
 }
 
 Expected: {
@@ -557,17 +587,6 @@ permitiéndoles
 } False negatives: {
 permitiéndo
 les
-}
-
-Expected: {
-mientras tanto<SPLIT>, los clientes del bank of scotland ganan el 3<SPLIT>% sobre saldos de 3.000 a 5.000 libras al añadir la opción gratuita vantage a su cuenta<SPLIT>.}
-Predicted: {
-mientras tanto<SPLIT>, los clientes del bank of scotland ganan el 3% sobre saldos de 3.000 a 5.000 libras al añadir la opción gratuita vantage a su cuenta<SPLIT>.}
-False positives: {
-3%
-} False negatives: {
-3
-%
 }
 
 Expected: {

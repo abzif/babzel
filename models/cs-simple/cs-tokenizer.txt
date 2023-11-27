@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9994504960234455
-Training-Sample-Size=114655
-Evaluation-Sample-Size=12739
+Evaluation-Score=0.9994276340102575
+Training-Sample-Size=114922
+Evaluation-Sample-Size=12769
 Training-Algorithm=MAXENT_QN
 
 === MODEL PROPERTIES ===
@@ -9,9 +9,9 @@ Component-Name=TokenizerME
 Language=cs
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1697765597809
+Timestamp=1700444494852
 TrainerType=Event
-Training-Eventhash=1ed53d9a9ab53bafae62b1d193f10db4
+Training-Eventhash=c1a45729e4434eb551ce9eb74ce41d6a
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
@@ -168,18 +168,26 @@ b.
 Expected: {
 (5) položka „<SPLIT>c.iii.4. pohledávky za společníky, členy družstva a za účastníky sdružení<SPLIT>“ obsahuje kromě titulů uvedených v položce „<SPLIT>c.ii.4. pohledávky za společníky, členy družstva a za účastníky sdružení<SPLIT>“ zejména krátkodobé půjčky společníkům<SPLIT>, členům družstva a převod nákladů a výnosů mezi účastníky sdružení<SPLIT>, které není právnickou osobou<SPLIT>.}
 Predicted: {
-(5) položka „<SPLIT>c.iii.4. pohledávky za společníky<SPLIT>, členy družstva a za účastníky sdružení<SPLIT>“ obsahuje kromě titulů uvedených v položce „<SPLIT>c.ii.4. pohledávky za společníky<SPLIT>, členy družstva a za účastníky sdružení<SPLIT>“ zejména krátkodobé půjčky společníkům, členům družstva a převod nákladů a výnosů mezi účastníky sdružení<SPLIT>, které není právnickou osobou<SPLIT>.}
+(5) položka „<SPLIT>c.iii.4. pohledávky za společníky<SPLIT>, členy družstva a za účastníky sdružení<SPLIT>“ obsahuje kromě titulů uvedených v položce „<SPLIT>c.ii.4. pohledávky za společníky<SPLIT>, členy družstva a za účastníky sdružení<SPLIT>“ zejména krátkodobé půjčky společníkům<SPLIT>, členům družstva a převod nákladů a výnosů mezi účastníky sdružení<SPLIT>, které není právnickou osobou<SPLIT>.}
 False positives: {
 společníky
 ,
 společníky
 ,
-společníkům,
 } False negatives: {
 společníky,
 společníky,
-společníkům
-,
+}
+
+Expected: {
+(3) položka „<SPLIT>c.iv.3. krátkodobé cenné papíry a podíly<SPLIT>“ obsahuje zejména cenné papíry<SPLIT>, které účetní jednotka určila k obchodování s cílem dosahovat zisk z cenových rozdílů v krátkodobém horizontu<SPLIT>, nejvýše dvanáct měsíců<SPLIT>, dluhové cenné papíry se splatností jeden rok a kratší<SPLIT>, u nichž má účetní jednotka úmysl a schopnost držet je do splatnosti<SPLIT>, a ostatní krátkodobé cenné papíry a podíly<SPLIT>, u nichž zpravidla v okamžiku pořízení není znám záměr účetní jednotky<SPLIT>.}
+Predicted: {
+(3) položka „<SPLIT>c.iv.3<SPLIT>. krátkodobé cenné papíry a podíly<SPLIT>“ obsahuje zejména cenné papíry<SPLIT>, které účetní jednotka určila k obchodování s cílem dosahovat zisk z cenových rozdílů v krátkodobém horizontu<SPLIT>, nejvýše dvanáct měsíců<SPLIT>, dluhové cenné papíry se splatností jeden rok a kratší<SPLIT>, u nichž má účetní jednotka úmysl a schopnost držet je do splatnosti<SPLIT>, a ostatní krátkodobé cenné papíry a podíly<SPLIT>, u nichž zpravidla v okamžiku pořízení není znám záměr účetní jednotky<SPLIT>.}
+False positives: {
+c.iv.3
+.
+} False negatives: {
+c.iv.3.
 }
 
 Expected: {
@@ -221,10 +229,11 @@ iii.
 Expected: {
 (12) v další části přílohy uvede účetní jednotka počet a jmenovitou hodnotu nebo ocenění podle §_25_zákona vydaných akcií během účetního období<SPLIT>, u každého druhu akcií zvlášť<SPLIT>; obdobně se postupuje u změn podílů<SPLIT>.}
 Predicted: {
-(<SPLIT>12) v další části přílohy uvede účetní jednotka počet a jmenovitou hodnotu nebo ocenění podle §_25_zákona vydaných akcií během účetního období<SPLIT>, u každého druhu akcií zvlášť<SPLIT>; obdobně se postupuje u změn podílů<SPLIT>.}
+(<SPLIT>12<SPLIT>) v další části přílohy uvede účetní jednotka počet a jmenovitou hodnotu nebo ocenění podle §_25_zákona vydaných akcií během účetního období<SPLIT>, u každého druhu akcií zvlášť<SPLIT>; obdobně se postupuje u změn podílů<SPLIT>.}
 False positives: {
 (
-12)
+12
+)
 } False negatives: {
 (12)
 }
@@ -311,6 +320,28 @@ False positives: {
 (
 5
 )
+}
+
+Expected: {
+dosavadní trasu e<SPLIT>55<SPLIT>, která koliduje s chráněnými krajinnými oblastmi<SPLIT>, je proto třeba posunout na západ<SPLIT>.}
+Predicted: {
+dosavadní trasu e55<SPLIT>, která koliduje s chráněnými krajinnými oblastmi<SPLIT>, je proto třeba posunout na západ<SPLIT>.}
+False positives: {
+e55
+} False negatives: {
+e
+55
+}
+
+Expected: {
+současná 11<SPLIT>procentní nezaměstnanost se má v příštím roce vyšplhat na 17 až 20 procent<SPLIT>.}
+Predicted: {
+současná 11procentní nezaměstnanost se má v příštím roce vyšplhat na 17 až 20 procent<SPLIT>.}
+False positives: {
+11procentní
+} False negatives: {
+11
+procentní
 }
 
 Expected: {
@@ -655,6 +686,17 @@ kilometrový
 }
 
 Expected: {
+ve 43<SPLIT>členných štafetách si odběhlo svůj kilometrový úsek víc než 14000 dětí<SPLIT>.}
+Predicted: {
+ve 43členných štafetách si odběhlo svůj kilometrový úsek víc než 14000 dětí<SPLIT>.}
+False positives: {
+43členných
+} False negatives: {
+43
+členných
+}
+
+Expected: {
 umožní jim nadýchat se pralesa včetně 35<SPLIT>stupňového vedra a 90<SPLIT>procentní vlhkosti<SPLIT>.}
 Predicted: {
 umožní jim nadýchat se pralesa včetně 35stupňového vedra a 90<SPLIT>procentní vlhkosti<SPLIT>.}
@@ -756,10 +798,11 @@ v
 Expected: {
 podle le figaro by tento vládní plán mohl uvolnit 42 milionů eur<SPLIT>, z toho 15,5 milionů by šlo na bezpečnost<SPLIT>.}
 Predicted: {
-podle le figaro by tento vládní plán mohl uvolnit 42 milionů eur<SPLIT>, z toho 15<SPLIT>,5 milionů by šlo na bezpečnost<SPLIT>.}
+podle le figaro by tento vládní plán mohl uvolnit 42 milionů eur<SPLIT>, z toho 15<SPLIT>,<SPLIT>5 milionů by šlo na bezpečnost<SPLIT>.}
 False positives: {
 15
-,5
+,
+5
 } False negatives: {
 15,5
 }

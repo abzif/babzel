@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.947738824449368
+Evaluation-Score=0.9478877697305952
 Training-Sample-Size=30771
 Evaluation-Sample-Size=3418
 Training-Algorithm=MAXENT
@@ -10,9 +10,9 @@ Component-Name=POSTaggerME
 Language=no
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1697869678728
+Timestamp=1700538261190
 TrainerType=Event
-Training-Eventhash=51b2c7a9ca2e9a661dc9d59616471ce1
+Training-Eventhash=898e45dbc212f35fa4187f46b180d877
 factory=opennlp.tools.postag.POSTaggerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -51,11 +51,10 @@ sallabanda: PROPN | NOUN
 Expected: {
 de_DET taktiske_ADJ begrunnelser_NOUN for_ADP å_PART være_AUX tilbakeholden_ADJ med_ADP plan_NOUN b_NOUN er_AUX åpenbare_ADJ ._PUNCT}
 Predicted: {
-de_PRON taktiske_ADJ begrunnelser_NOUN for_ADP å_PART være_AUX tilbakeholden_NOUN med_ADP plan_NOUN b_NOUN er_AUX åpenbare_ADJ ._PUNCT}
+de_DET taktiske_ADJ begrunnelser_NOUN for_ADP å_PART være_AUX tilbakeholden_NOUN med_ADP plan_NOUN b_NOUN er_AUX åpenbare_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-de: DET | PRON
 tilbakeholden: ADJ | NOUN
 }
 
@@ -93,11 +92,11 @@ av: ADV | ADP
 Expected: {
 å_PART være_AUX lillebror_NOUN sammen_ADV med_ADP frp_PROPN er_AUX noe_DET ganske_ADV annet_DET enn_ADP å_PART være_AUX storebror_NOUN i_ADP en_DET høyre_ADJ /_SYM sentrumskoalisjon_NOUN ._PUNCT}
 Predicted: {
-å_PART være_AUX lillebror_VERB sammen_ADV med_ADP frp_PROPN er_AUX noe_DET ganske_ADV annet_DET enn_ADP å_PART være_AUX storebror_NOUN i_ADP en_DET høyre_NOUN /_SYM sentrumskoalisjon_NOUN ._PUNCT}
+å_PART være_AUX lillebror_ADJ sammen_ADV med_ADP frp_PROPN er_AUX noe_DET ganske_ADV annet_DET enn_ADP å_PART være_AUX storebror_NOUN i_ADP en_DET høyre_NOUN /_SYM sentrumskoalisjon_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-lillebror: NOUN | VERB
+lillebror: NOUN | ADJ
 høyre: ADJ | NOUN
 }
 
@@ -921,16 +920,6 @@ kunnskapsløftet: PROPN | NOUN
 }
 
 Expected: {
-det_PRON er_VERB to_NUM grunner_NOUN til_ADP det_PRON ._PUNCT}
-Predicted: {
-det_PRON er_AUX to_NUM grunner_NOUN til_ADP det_PRON ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-er: VERB | AUX
-}
-
-Expected: {
 hun_PRON var_AUX familiekjær_ADJ og_CCONJ en_DET dugende_ADJ og_CCONJ stolt_ADJ husmor_NOUN ved_ADP siden_NOUN av_ADP arbeid_NOUN og_CCONJ politikk_NOUN ._PUNCT}
 Predicted: {
 hun_PRON var_AUX familiekjær_NOUN og_CCONJ en_DET dugende_ADJ og_CCONJ stolt_ADJ husmor_NOUN ved_ADP siden_NOUN av_ADP arbeid_NOUN og_CCONJ politikk_NOUN ._PUNCT}
@@ -1191,6 +1180,16 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 godkjent: VERB | ADJ
+}
+
+Expected: {
+slik_DET kontroll_NOUN bør_AUX også_ADV omfatte_VERB kjemisk_ADJ analyse_NOUN ,_PUNCT sa_VERB rådgiver_NOUN anne_PROPN kristi_PROPN sommer_PROPN i_ADP mattilsynet_PROPN i_ADP mai_NOUN i_ADP fjor_NOUN ,_PUNCT da_SCONJ den_DET endelige_ADJ rapporten_NOUN fra_ADP undersøkelsen_NOUN ble_AUX lagt_VERB frem_ADV ._PUNCT}
+Predicted: {
+slik_ADV kontroll_NOUN bør_AUX også_ADV omfatte_VERB kjemisk_ADJ analyse_NOUN ,_PUNCT sa_VERB rådgiver_NOUN anne_PROPN kristi_PROPN sommer_PROPN i_ADP mattilsynet_PROPN i_ADP mai_NOUN i_ADP fjor_NOUN ,_PUNCT da_SCONJ den_DET endelige_ADJ rapporten_NOUN fra_ADP undersøkelsen_NOUN ble_AUX lagt_VERB frem_ADV ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+slik: DET | ADV
 }
 
 Expected: {
@@ -1525,16 +1524,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 matglad: ADJ | NOUN
-}
-
-Expected: {
-så_CCONJ det_PRON er_AUX ikke_PART bare_ADV skrot_NOUN jeg_PRON kjøper_VERB ._PUNCT}
-Predicted: {
-så_ADV det_PRON er_AUX ikke_PART bare_ADV skrot_NOUN jeg_PRON kjøper_VERB ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-så: CCONJ | ADV
 }
 
 Expected: {
@@ -2031,16 +2020,6 @@ Tok: Ref | Pred
 som: ADP | SCONJ
 selv: DET | ADV
 så: VERB | ADV
-}
-
-Expected: {
-de_DET avslørende_ADJ partybildene_NOUN ._PUNCT}
-Predicted: {
-de_PRON avslørende_ADJ partybildene_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-de: DET | PRON
 }
 
 Expected: {
@@ -2596,12 +2575,11 @@ g20: PROPN | VERB
 Expected: {
 dette_PRON skjer_VERB på_ADP tross_ADP av_ADP at_SCONJ imf_PROPN av_ADP mange_ADJ oppfattes_VERB som_ADP en_DET slags_NOUN ideologisk_ADJ fanebærer_NOUN for_ADP deregulerte_ADJ ,_PUNCT globale_ADJ markeder_NOUN og_CCONJ tilhenger_NOUN av_ADP en_DET forholdsvis_ADV passiv_ADJ stat_NOUN ._PUNCT}
 Predicted: {
-dette_PRON skjer_VERB på_ADP tross_ADP av_ADP at_SCONJ imf_PROPN av_ADP mange_ADJ oppfattes_NOUN som_ADP en_DET slags_NOUN ideologisk_ADJ fanebærer_VERB for_ADP deregulerte_PRON ,_PUNCT globale_ADJ markeder_NOUN og_CCONJ tilhenger_NOUN av_ADP en_DET forholdsvis_NOUN passiv_ADJ stat_NOUN ._PUNCT}
+dette_PRON skjer_VERB på_ADP tross_ADP av_ADP at_SCONJ imf_PROPN av_ADP mange_ADJ oppfattes_NOUN som_ADP en_DET slags_NOUN ideologisk_ADJ fanebærer_NOUN for_ADP deregulerte_PRON ,_PUNCT globale_ADJ markeder_NOUN og_CCONJ tilhenger_NOUN av_ADP en_DET forholdsvis_NOUN passiv_ADJ stat_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 oppfattes: VERB | NOUN
-fanebærer: NOUN | VERB
 deregulerte: ADJ | PRON
 forholdsvis: ADV | NOUN
 }
@@ -2624,6 +2602,16 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 august: PROPN | NOUN
+}
+
+Expected: {
+det_PRON er_AUX absolutt_ADJ ikke_PART noe_DET nytt_ADJ at_SCONJ komiteen_NOUN forsøker_VERB å_PART påvirke_VERB politiske_ADJ prosesser_NOUN som_SCONJ er_AUX under_ADP full_ADJ utvikling_NOUN ._PUNCT}
+Predicted: {
+det_PRON er_AUX absolutt_ADJ ikke_PART noe_PRON nytt_ADJ at_SCONJ komiteen_NOUN forsøker_VERB å_PART påvirke_VERB politiske_ADJ prosesser_NOUN som_SCONJ er_AUX under_ADP full_ADJ utvikling_NOUN ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+noe: DET | PRON
 }
 
 Expected: {
@@ -3222,6 +3210,16 @@ ruglet: ADJ | NOUN
 }
 
 Expected: {
+knapt_ADJ i_ADP noe_DET annet_DET land_NOUN kan_AUX det_PRON oppleves_VERB at_SCONJ en_DET privatperson_NOUN ,_PUNCT milliardær_NOUN eller_CCONJ ikke_PART ,_PUNCT blinkes_VERB ut_ADV som_ADP den_DET sittende_ADJ regjerings_NOUN yndlingsobjekt_NOUN for_ADP alminnelig_ADJ latterliggjørelse_NOUN ._PUNCT}
+Predicted: {
+knapt_ADJ i_ADP noe_DET annet_DET land_NOUN kan_AUX det_PRON oppleves_VERB at_SCONJ en_DET privatperson_NOUN ,_PUNCT milliardær_NOUN eller_CCONJ ikke_PART ,_PUNCT blinkes_VERB ut_ADV som_ADP den_DET sittende_ADJ regjerings_NOUN yndlingsobjekt_VERB for_ADP alminnelig_ADJ latterliggjørelse_NOUN ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+yndlingsobjekt: NOUN | VERB
+}
+
+Expected: {
 skatteflyktning_NOUN er_AUX et_DET belastet_ADJ begrep_NOUN i_ADP norge_PROPN ._PUNCT}
 Predicted: {
 skatteflyktning_NOUN er_AUX et_DET belastet_NOUN begrep_NOUN i_ADP norge_PROPN ._PUNCT}
@@ -3285,10 +3283,11 @@ prydet: VERB | PROPN
 Expected: {
 når_SCONJ informasjonslederen_NOUN i_ADP misjonssambandet_PROPN i_ADP sin_PRON nye_ADJ bok_NOUN nå_ADV gjengir_VERB de_DET dypt_ADJ personlige_ADJ historiene_NOUN til_ADP sine_PRON syv_NUM venner_NOUN med_ADP homofile_ADJ følelser_NOUN som_SCONJ ikke_PART lar_VERB disse_DET få_VERB utløp_NOUN ,_PUNCT vil_AUX hans_PRON meningsmotstandere_NOUN derfor_ADV søke_VERB å_PART svekke_VERB bokens_NOUN legitimitet_NOUN ved_ADP å_PART påpeke_VERB ottosens_PROPN bibeltro_ADJ bakgrunn_NOUN ._PUNCT}
 Predicted: {
-når_SCONJ informasjonslederen_NOUN i_ADP misjonssambandet_PROPN i_ADP sin_PRON nye_ADJ bok_NOUN nå_ADV gjengir_VERB de_PRON dypt_ADJ personlige_ADJ historiene_NOUN til_ADP sine_PRON syv_NUM venner_NOUN med_ADP homofile_ADJ følelser_NOUN som_SCONJ ikke_PART lar_VERB disse_DET få_ADJ utløp_NOUN ,_PUNCT vil_AUX hans_PRON meningsmotstandere_NOUN derfor_ADV søke_VERB å_PART svekke_VERB bokens_NOUN legitimitet_NOUN ved_ADP å_PART påpeke_VERB ottosens_PROPN bibeltro_PROPN bakgrunn_NOUN ._PUNCT}
+når_SCONJ informasjonslederen_NOUN i_ADP misjonssambandet_PROPN i_ADP sin_DET nye_ADJ bok_NOUN nå_ADV gjengir_VERB de_PRON dypt_ADJ personlige_ADJ historiene_NOUN til_ADP sine_PRON syv_NUM venner_NOUN med_ADP homofile_ADJ følelser_NOUN som_SCONJ ikke_PART lar_VERB disse_DET få_ADJ utløp_NOUN ,_PUNCT vil_AUX hans_PRON meningsmotstandere_NOUN derfor_ADV søke_VERB å_PART svekke_VERB bokens_NOUN legitimitet_NOUN ved_ADP å_PART påpeke_VERB ottosens_PROPN bibeltro_PROPN bakgrunn_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+sin: PRON | DET
 de: DET | PRON
 få: VERB | ADJ
 bibeltro: ADJ | PROPN
@@ -3462,6 +3461,16 @@ Tok: Ref | Pred
 ---------------
 rett: NOUN | ADJ
 rett: NOUN | ADJ
+}
+
+Expected: {
+ikke_PART alle_DET obamas_PROPN partifeller_NOUN stiller_VERB lydig_ADJ opp_ADV ,_PUNCT og_CCONJ han_PRON må_AUX derfor_ADV søke_VERB støtte_NOUN hos_ADP republikanere_NOUN ._PUNCT}
+Predicted: {
+ikke_PART alle_DET obamas_NOUN partifeller_NOUN stiller_VERB lydig_ADJ opp_ADV ,_PUNCT og_CCONJ han_PRON må_AUX derfor_ADV søke_VERB støtte_NOUN hos_ADP republikanere_NOUN ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+obamas: PROPN | NOUN
 }
 
 Expected: {
@@ -4004,7 +4013,7 @@ om: SCONJ | ADP
 Expected: {
 hvis_SCONJ du_PRON har_VERB data_NOUN fra_ADP 2_NUM land_NOUN ,_PUNCT der_SCONJ land_NOUN a_NOUN har_AUX målt_VERB inn_ADV vegene_NOUN sine_PRON med_ADP millimeterpresisjon_NOUN ,_PUNCT mens_SCONJ land_NOUN b_NOUN har_AUX digitalisert_VERB sine_PRON gamle_ADJ papirkart_NOUN ,_PUNCT er_AUX sjansen_NOUN stor_ADJ for_ADP at_SCONJ ikke_PART europavegen_NOUN vil_AUX treffe_VERB korrekt_ADJ på_ADP grensen_NOUN ._PUNCT}
 Predicted: {
-hvis_SCONJ du_PRON har_VERB data_NOUN fra_ADP 2_NUM land_NOUN ,_PUNCT der_SCONJ land_NOUN a_PROPN har_VERB målt_NOUN inn_ADP vegene_NOUN sine_PRON med_ADP millimeterpresisjon_NOUN ,_PUNCT mens_SCONJ land_NOUN b_PROPN har_AUX digitalisert_VERB sine_PRON gamle_ADJ papirkart_NOUN ,_PUNCT er_AUX sjansen_NOUN stor_ADJ for_ADP at_SCONJ ikke_PART europavegen_PROPN vil_AUX treffe_VERB korrekt_ADJ på_ADP grensen_NOUN ._PUNCT}
+hvis_SCONJ du_PRON har_VERB data_NOUN fra_ADP 2_NUM land_NOUN ,_PUNCT der_SCONJ land_NOUN a_PROPN har_VERB målt_NOUN inn_ADP vegene_NOUN sine_PRON med_ADP millimeterpresisjon_NOUN ,_PUNCT mens_SCONJ land_NOUN b_PROPN har_AUX digitalisert_VERB sine_PRON gamle_ADJ papirkart_NOUN ,_PUNCT er_AUX sjansen_NOUN stor_ADJ for_ADP at_SCONJ ikke_PART europavegen_NOUN vil_AUX treffe_VERB korrekt_ADJ på_ADP grensen_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -4013,7 +4022,6 @@ har: AUX | VERB
 målt: VERB | NOUN
 inn: ADV | ADP
 b: NOUN | PROPN
-europavegen: NOUN | PROPN
 }
 
 Expected: {
@@ -4029,21 +4037,12 @@ giddalaushet: NOUN | VERB
 Expected: {
 sovner_VERB med_ADP boka_NOUN i_ADP hendene_NOUN ,_PUNCT og_CCONJ våkner_VERB 02.30_NUM for_ADP å_PART skru_VERB av_ADV lyset_NOUN ._PUNCT}
 Predicted: {
-sovner_VERB med_ADP boka_NOUN i_ADP hendene_NOUN ,_PUNCT og_CCONJ våkner_VERB 02.30_NUM for_ADP å_PART skru_VERB av_ADP lyset_NOUN ._PUNCT}
+sovner_VERB med_ADP boka_NOUN i_ADP hendene_NOUN ,_PUNCT og_CCONJ våkner_VERB 02.30_ADV for_ADP å_PART skru_VERB av_ADP lyset_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+02.30: NUM | ADV
 av: ADV | ADP
-}
-
-Expected: {
-du_PRON rekker_VERB å_PART ringe_VERB til_ADP moren_NOUN din_PRON og_CCONJ ønske_VERB henne_PRON til_ADP lykke_NOUN med_ADP morsdagen_NOUN ._PUNCT}
-Predicted: {
-du_PRON rekker_VERB å_PART ringe_VERB til_ADP moren_NOUN din_PRON og_CCONJ ønske_NOUN henne_PRON til_ADP lykke_NOUN med_ADP morsdagen_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-ønske: VERB | NOUN
 }
 
 Expected: {
@@ -4382,12 +4381,11 @@ sjekkested: NOUN | PROPN
 Expected: {
 obama_PROPN lover_VERB at_SCONJ usa_PROPN skal_AUX være_AUX en_DET nasjon_NOUN der_SCONJ alle_PRON ,_PUNCT uavhengig_ADJ av_ADP hudfarge_NOUN ,_PUNCT etnisitet_NOUN ,_PUNCT seksuell_ADJ legning_NOUN eller_CCONJ annen_DET bakgrunn_NOUN kan_AUX kunne_AUX få_VERB drømme_NOUN oppfylt_ADJ gjennom_ADP hardt_ADJ arbeid_NOUN ._PUNCT}
 Predicted: {
-obama_PROPN lover_VERB at_SCONJ usa_PROPN skal_AUX være_AUX en_DET nasjon_NOUN der_SCONJ alle_PRON ,_PUNCT uavhengig_ADJ av_ADP hudfarge_NOUN ,_PUNCT etnisitet_NOUN ,_PUNCT seksuell_ADJ legning_NOUN eller_CCONJ annen_DET bakgrunn_NOUN kan_AUX kunne_AUX få_AUX drømme_VERB oppfylt_ADJ gjennom_ADP hardt_ADJ arbeid_NOUN ._PUNCT}
+obama_PROPN lover_VERB at_SCONJ usa_PROPN skal_AUX være_AUX en_DET nasjon_NOUN der_SCONJ alle_PRON ,_PUNCT uavhengig_ADJ av_ADP hudfarge_NOUN ,_PUNCT etnisitet_NOUN ,_PUNCT seksuell_ADJ legning_NOUN eller_CCONJ annen_DET bakgrunn_NOUN kan_AUX kunne_AUX få_VERB drømme_NOUN oppfylt_VERB gjennom_ADP hardt_ADJ arbeid_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-få: VERB | AUX
-drømme: NOUN | VERB
+oppfylt: ADJ | VERB
 }
 
 Expected: {
@@ -5553,12 +5551,13 @@ hadde: VERB | AUX
 Expected: {
 -_PUNCT familien_NOUN min_PRON lever_VERB seg_PRON så_ADV med_ADP i_ADP det_PRON jeg_PRON gjør_VERB ,_PUNCT at_SCONJ når_SCONJ filmen_NOUN endelig_ADJ er_AUX ferdig_ADJ og_CCONJ applausen_NOUN kommer_VERB ,_PUNCT ville_AUX det_PRON være_AUX rått_ADJ parti_NOUN om_SCONJ ikke_PART den_DET applausen_NOUN også_ADV skulle_AUX gjelde_VERB dem_PRON ._PUNCT}
 Predicted: {
--_PUNCT familien_NOUN min_PRON lever_VERB seg_PRON så_ADV med_ADP i_ADP det_DET jeg_PRON gjør_VERB ,_PUNCT at_SCONJ når_SCONJ filmen_NOUN endelig_ADJ er_AUX ferdig_ADJ og_CCONJ applausen_NOUN kommer_VERB ,_PUNCT ville_AUX det_PRON være_AUX rått_ADJ parti_NOUN om_ADP ikke_PART den_DET applausen_NOUN også_ADV skulle_AUX gjelde_VERB dem_PRON ._PUNCT}
+-_PUNCT familien_NOUN min_PRON lever_VERB seg_PRON så_ADV med_ADP i_ADP det_DET jeg_PRON gjør_VERB ,_PUNCT at_SCONJ når_SCONJ filmen_NOUN endelig_ADJ er_AUX ferdig_ADJ og_CCONJ applausen_NOUN kommer_VERB ,_PUNCT ville_AUX det_PRON være_AUX rått_ADJ parti_NOUN om_ADP ikke_PART den_PRON applausen_NOUN også_ADV skulle_AUX gjelde_VERB dem_PRON ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 det: PRON | DET
 om: SCONJ | ADP
+den: DET | PRON
 }
 
 Expected: {
@@ -6024,11 +6023,12 @@ fatso: PROPN | NOUN
 Expected: {
 -_PUNCT jo_INTJ ,_PUNCT men_CCONJ jeg_PRON tror_VERB at_SCONJ hun_PRON må_AUX gjøre_VERB det_PRON for_ADP å_PART komme_VERB ut_ADP av_ADP det_PRON ,_PUNCT slik_ADV at_SCONJ hun_PRON skjønner_VERB det_PRON og_CCONJ finner_VERB mot_NOUN ._PUNCT}
 Predicted: {
--_PUNCT jo_INTJ ,_PUNCT men_CCONJ jeg_PRON tror_VERB at_SCONJ hun_PRON må_AUX gjøre_VERB det_PRON for_ADP å_PART komme_VERB ut_ADV av_ADP det_PRON ,_PUNCT slik_ADV at_SCONJ hun_PRON skjønner_VERB det_PRON og_CCONJ finner_VERB mot_NOUN ._PUNCT}
+-_PUNCT jo_INTJ ,_PUNCT men_CCONJ jeg_PRON tror_VERB at_SCONJ hun_PRON må_AUX gjøre_VERB det_PRON for_ADP å_PART komme_VERB ut_ADV av_ADP det_PRON ,_PUNCT slik_ADV at_SCONJ hun_PRON skjønner_VERB det_PRON og_CCONJ finner_VERB mot_ADV ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 ut: ADP | ADV
+mot: NOUN | ADV
 }
 
 Expected: {
@@ -7289,12 +7289,12 @@ som: ADP | SCONJ
 Expected: {
 i_ADP dette_PRON ligger_VERB både_CCONJ en_DET rett_NOUN til_ADP tankefrihet_NOUN og_CCONJ til_ADP åpent_ADJ å_PART kunne_AUX utøve_VERB sin_PRON tro_NOUN eller_CCONJ ikketro_NOUN ._PUNCT}
 Predicted: {
-i_ADP dette_PRON ligger_VERB både_CCONJ en_DET rett_ADJ til_ADP tankefrihet_NOUN og_CCONJ til_ADP åpent_ADJ å_PART kunne_AUX utøve_VERB sin_PRON tro_NOUN eller_CCONJ ikketro_ADV ._PUNCT}
+i_ADP dette_PRON ligger_VERB både_CCONJ en_DET rett_ADJ til_ADP tankefrihet_NOUN og_CCONJ til_ADP åpent_ADJ å_PART kunne_AUX utøve_VERB sin_PRON tro_NOUN eller_CCONJ ikketro_PART ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 rett: NOUN | ADJ
-ikketro: NOUN | ADV
+ikketro: NOUN | PART
 }
 
 Expected: {
@@ -7409,16 +7409,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 som: SCONJ | ADP
-}
-
-Expected: {
-ferdsel_NOUN i_ADP miljøsammenheng_NOUN ,_PUNCT herunder_ADP forskriftsarbeid_NOUN og_CCONJ behandling_NOUN av_ADP klager_NOUN på_ADP vedtak_NOUN fattet_VERB av_ADP sysselmannen_NOUN ._PUNCT}
-Predicted: {
-ferdsel_NOUN i_ADP miljøsammenheng_NOUN ,_PUNCT herunder_ADV forskriftsarbeid_NOUN og_CCONJ behandling_NOUN av_ADP klager_NOUN på_ADP vedtak_NOUN fattet_VERB av_ADP sysselmannen_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-herunder: ADP | ADV
 }
 
 Expected: {
@@ -7825,12 +7815,11 @@ noe: DET | PRON
 Expected: {
 vil_AUX finansministeren_NOUN si_VERB noe_PRON om_ADP når_SCONJ oppfølgingen_NOUN når_SCONJ det_PRON gjelder_VERB flatere_ADJ skatt_NOUN kommer_VERB ,_PUNCT og_CCONJ om_SCONJ formuesskatten_NOUN da_ADV også_ADV vil_AUX bli_AUX behandlet_VERB ?_PUNCT}
 Predicted: {
-vil_AUX finansministeren_NOUN si_VERB noe_PRON om_ADP når_SCONJ oppfølgingen_NOUN når_SCONJ det_PRON gjelder_VERB flatere_ADJ skatt_NOUN kommer_VERB ,_PUNCT og_CCONJ om_ADP formuesskatten_NOUN da_SCONJ også_ADV vil_AUX bli_VERB behandlet_NOUN ?_PUNCT}
+vil_AUX finansministeren_NOUN si_VERB noe_PRON om_ADP når_SCONJ oppfølgingen_NOUN når_SCONJ det_PRON gjelder_VERB flatere_ADJ skatt_NOUN kommer_VERB ,_PUNCT og_CCONJ om_ADP formuesskatten_NOUN da_ADV også_ADV vil_AUX bli_VERB behandlet_NOUN ?_PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 om: SCONJ | ADP
-da: ADV | SCONJ
 bli: AUX | VERB
 behandlet: VERB | NOUN
 }
@@ -8125,16 +8114,6 @@ Tok: Ref | Pred
 ---------------
 det: PROPN | DET
 den: PROPN | DET
-}
-
-Expected: {
-men_CCONJ jeg_PRON tror_VERB det_PRON blir_VERB for_ADV tøft_ADJ å_PART ta_VERB medalje_NOUN i_ADP år_NOUN ,_PUNCT sa_VERB morten_PROPN fevang_PROPN ._PUNCT}
-Predicted: {
-men_CCONJ jeg_PRON tror_VERB det_PRON blir_VERB for_ADP tøft_ADJ å_PART ta_VERB medalje_NOUN i_ADP år_NOUN ,_PUNCT sa_VERB morten_PROPN fevang_PROPN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-for: ADV | ADP
 }
 
 Expected: {
@@ -8558,12 +8537,11 @@ mana: VERB | PROPN
 Expected: {
 mellom_ADP føredragshaldarane_NOUN opp_ADP gjennom_ADP åra_NOUN finn_VERB me_PRON sterke_ADJ kvinner_NOUN som_ADP gina_PROPN krog_PROPN ,_PUNCT betzy_PROPN kjeldsberg_PROPN ,_PUNCT hulda_PROPN garborg_PROPN ,_PUNCT ella_PROPN ancher_PROPN og_CCONJ halldis_PROPN moren_PROPN vesaas_PROPN ._PUNCT}
 Predicted: {
-mellom_ADP føredragshaldarane_NOUN opp_ADP gjennom_ADP åra_NOUN finn_PROPN me_PROPN sterke_ADJ kvinner_NOUN som_SCONJ gina_VERB krog_PROPN ,_PUNCT betzy_ADJ kjeldsberg_PROPN ,_PUNCT hulda_PROPN garborg_PROPN ,_PUNCT ella_PROPN ancher_PROPN og_CCONJ halldis_PROPN moren_NOUN vesaas_PROPN ._PUNCT}
+mellom_ADP føredragshaldarane_NOUN opp_ADP gjennom_ADP åra_NOUN finn_PROPN me_PRON sterke_ADJ kvinner_NOUN som_SCONJ gina_VERB krog_PROPN ,_PUNCT betzy_ADJ kjeldsberg_PROPN ,_PUNCT hulda_PROPN garborg_PROPN ,_PUNCT ella_PROPN ancher_PROPN og_CCONJ halldis_PROPN moren_NOUN vesaas_PROPN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 finn: VERB | PROPN
-me: PRON | PROPN
 som: ADP | SCONJ
 gina: PROPN | VERB
 betzy: PROPN | ADJ
@@ -8607,9 +8585,9 @@ inn: ADP | ADV
 }
 
 Expected: {
--_PUNCT representantane_NOUN har_AUX som_ADP regel_NOUN ikkje_ADV hatt_VERB tid_NOUN til_ADP å_PART lese_VERB saksdokumenta_NOUN ._PUNCT}
+-_PUNCT representantane_NOUN har_AUX som_ADP regel_NOUN ikkje_PART hatt_VERB tid_NOUN til_ADP å_PART lese_VERB saksdokumenta_NOUN ._PUNCT}
 Predicted: {
--_PUNCT representantane_NOUN har_VERB som_ADP regel_NOUN ikkje_ADV hatt_VERB tid_NOUN til_ADP å_PART lese_VERB saksdokumenta_NOUN ._PUNCT}
+-_PUNCT representantane_NOUN har_VERB som_ADP regel_NOUN ikkje_PART hatt_VERB tid_NOUN til_ADP å_PART lese_VERB saksdokumenta_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -8649,9 +8627,9 @@ høyrest: VERB | ADJ
 }
 
 Expected: {
--_PUNCT eg_PRON likar_VERB ikkje_ADV termen_NOUN «_PUNCT sunne_ADJ ideal_NOUN »_PUNCT ,_PUNCT men_CCONJ eg_PRON oppfattar_VERB den_DET stoiske_ADJ ideen_NOUN om_ADP sjølvskaping_NOUN som_ADP mindre_ADJ idiotisk_ADJ enn_ADP ideen_NOUN om_ADP ein_DET marknad_NOUN for_ADP identitet_NOUN og_CCONJ ideen_NOUN om_ADP sjølvet_NOUN som_ADP ei_DET merkevare_NOUN ._PUNCT}
+-_PUNCT eg_PRON likar_VERB ikkje_PART termen_NOUN «_PUNCT sunne_ADJ ideal_NOUN »_PUNCT ,_PUNCT men_CCONJ eg_PRON oppfattar_VERB den_DET stoiske_ADJ ideen_NOUN om_ADP sjølvskaping_NOUN som_ADP mindre_ADJ idiotisk_ADJ enn_ADP ideen_NOUN om_ADP ein_DET marknad_NOUN for_ADP identitet_NOUN og_CCONJ ideen_NOUN om_ADP sjølvet_NOUN som_ADP ei_DET merkevare_NOUN ._PUNCT}
 Predicted: {
--_PUNCT eg_PRON likar_VERB ikkje_ADV termen_NOUN «_PUNCT sunne_ADJ ideal_NOUN »_PUNCT ,_PUNCT men_CCONJ eg_PRON oppfattar_VERB den_DET stoiske_ADJ ideen_NOUN om_ADP sjølvskaping_NOUN som_SCONJ mindre_ADJ idiotisk_ADJ enn_ADP ideen_NOUN om_ADP ein_DET marknad_NOUN for_ADP identitet_NOUN og_CCONJ ideen_NOUN om_ADP sjølvet_NOUN som_ADP ei_DET merkevare_ADJ ._PUNCT}
+-_PUNCT eg_PRON likar_VERB ikkje_PART termen_NOUN «_PUNCT sunne_ADJ ideal_NOUN »_PUNCT ,_PUNCT men_CCONJ eg_PRON oppfattar_VERB den_DET stoiske_ADJ ideen_NOUN om_ADP sjølvskaping_NOUN som_SCONJ mindre_ADJ idiotisk_ADJ enn_ADP ideen_NOUN om_ADP ein_DET marknad_NOUN for_ADP identitet_NOUN og_CCONJ ideen_NOUN om_ADP sjølvet_NOUN som_ADP ei_DET merkevare_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -8806,9 +8784,9 @@ vil: VERB | AUX
 }
 
 Expected: {
-og_CCONJ var_AUX dei_PRON ikkje_ADV overtydde_ADJ om_ADP dette_PRON ,_PUNCT ville_AUX dei_PRON tape_VERB motivasjonen_NOUN sin_PRON ._PUNCT}
+og_CCONJ var_AUX dei_PRON ikkje_PART overtydde_ADJ om_ADP dette_PRON ,_PUNCT ville_AUX dei_PRON tape_VERB motivasjonen_NOUN sin_PRON ._PUNCT}
 Predicted: {
-og_CCONJ var_AUX dei_PRON ikkje_ADV overtydde_VERB om_ADP dette_PRON ,_PUNCT ville_AUX dei_PRON tape_VERB motivasjonen_NOUN sin_PRON ._PUNCT}
+og_CCONJ var_AUX dei_PRON ikkje_PART overtydde_VERB om_ADP dette_PRON ,_PUNCT ville_AUX dei_PRON tape_VERB motivasjonen_NOUN sin_PRON ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -8826,9 +8804,9 @@ ut: ADP | ADV
 }
 
 Expected: {
-heller_ADV ikkje_ADV ser_VERB ein_PRON at_SCONJ det_PRON ein_PRON påstår_VERB om_ADP studieobjekta_NOUN sine_PRON kan_AUX slå_VERB tilbake_ADP på_ADP det_DET teoretiserande_ADJ subjektet_NOUN sjølv_DET ._PUNCT}
+heller_ADV ikkje_PART ser_VERB ein_PRON at_SCONJ det_PRON ein_PRON påstår_VERB om_ADP studieobjekta_NOUN sine_PRON kan_AUX slå_VERB tilbake_ADP på_ADP det_DET teoretiserande_ADJ subjektet_NOUN sjølv_DET ._PUNCT}
 Predicted: {
-heller_ADV ikkje_ADV ser_VERB ein_PRON at_SCONJ det_PRON ein_DET påstår_VERB om_ADP studieobjekta_NOUN sine_PRON kan_AUX slå_VERB tilbake_ADV på_ADP det_DET teoretiserande_ADJ subjektet_NOUN sjølv_ADV ._PUNCT}
+heller_ADV ikkje_PART ser_VERB ein_PRON at_SCONJ det_PRON ein_DET påstår_VERB om_ADP studieobjekta_NOUN sine_PRON kan_AUX slå_VERB tilbake_ADV på_ADP det_DET teoretiserande_ADJ subjektet_NOUN sjølv_ADV ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -8849,9 +8827,9 @@ framstilt: ADJ | VERB
 }
 
 Expected: {
-i_ADP framstillinga_NOUN hans_PRON er_AUX ikkje_ADV vitskap_NOUN først_ADJ og_CCONJ fremst_ADJ etablert_ADJ kunnskap_NOUN (_PUNCT «_PUNCT a_X body_X of_X knowledge_X »_PUNCT )_PUNCT ,_PUNCT men_CCONJ eit_DET sosialt_ADJ fenomen_NOUN ,_PUNCT ein_DET pågåande_ADJ aktivitet_NOUN innanfor_ADP eit_DET fellesskap_NOUN av_ADP likestilte_ADJ -_PUNCT «_PUNCT a_X community_X of_X investigators_X »_PUNCT ._PUNCT}
+i_ADP framstillinga_NOUN hans_PRON er_AUX ikkje_PART vitskap_NOUN først_ADJ og_CCONJ fremst_ADJ etablert_ADJ kunnskap_NOUN (_PUNCT «_PUNCT a_X body_X of_X knowledge_X »_PUNCT )_PUNCT ,_PUNCT men_CCONJ eit_DET sosialt_ADJ fenomen_NOUN ,_PUNCT ein_DET pågåande_ADJ aktivitet_NOUN innanfor_ADP eit_DET fellesskap_NOUN av_ADP likestilte_ADJ -_PUNCT «_PUNCT a_X community_X of_X investigators_X »_PUNCT ._PUNCT}
 Predicted: {
-i_ADP framstillinga_NOUN hans_PRON er_AUX ikkje_ADV vitskap_NOUN først_ADV og_CCONJ fremst_ADJ etablert_ADJ kunnskap_NOUN (_PUNCT «_PUNCT a_X body_X of_X knowledge_X »_PUNCT )_PUNCT ,_PUNCT men_CCONJ eit_DET sosialt_ADJ fenomen_NOUN ,_PUNCT ein_PRON pågåande_ADJ aktivitet_NOUN innanfor_ADP eit_DET fellesskap_NOUN av_ADP likestilte_ADJ -_PUNCT «_PUNCT a_PROPN community_PROPN of_X investigators_X »_PUNCT ._PUNCT}
+i_ADP framstillinga_NOUN hans_PRON er_AUX ikkje_PART vitskap_NOUN først_ADV og_CCONJ fremst_ADJ etablert_ADJ kunnskap_NOUN (_PUNCT «_PUNCT a_X body_X of_X knowledge_X »_PUNCT )_PUNCT ,_PUNCT men_CCONJ eit_DET sosialt_ADJ fenomen_NOUN ,_PUNCT ein_PRON pågåande_ADJ aktivitet_NOUN innanfor_ADP eit_DET fellesskap_NOUN av_ADP likestilte_ADJ -_PUNCT «_PUNCT a_PROPN community_PROPN of_X investigators_X »_PUNCT ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -8894,9 +8872,9 @@ elvis: PROPN | NOUN
 }
 
 Expected: {
-eg_PRON trur_VERB at_SCONJ eminem_PROPN er_AUX i_ADP ferd_NOUN med_ADP å_PART innsjå_VERB at_SCONJ han_PRON ikkje_ADV lenger_ADJ kan_AUX velja_VERB bort_ADV å_PART vera_AUX rollemodell_NOUN ,_PUNCT noko_PRON han_PRON har_AUX harselert_VERB mykje_ADJ over_ADV ._PUNCT}
+eg_PRON trur_VERB at_SCONJ eminem_PROPN er_AUX i_ADP ferd_NOUN med_ADP å_PART innsjå_VERB at_SCONJ han_PRON ikkje_PART lenger_ADJ kan_AUX velja_VERB bort_ADV å_PART vera_AUX rollemodell_NOUN ,_PUNCT noko_PRON han_PRON har_AUX harselert_VERB mykje_ADJ over_ADV ._PUNCT}
 Predicted: {
-eg_PRON trur_VERB at_SCONJ eminem_PROPN er_AUX i_ADP ferd_NOUN med_ADP å_PART innsjå_VERB at_SCONJ han_PRON ikkje_ADV lenger_ADJ kan_AUX velja_VERB bort_ADP å_PART vera_AUX rollemodell_NOUN ,_PUNCT noko_PRON han_PRON har_VERB harselert_VERB mykje_ADJ over_ADP ._PUNCT}
+eg_PRON trur_VERB at_SCONJ eminem_PROPN er_AUX i_ADP ferd_NOUN med_ADP å_PART innsjå_VERB at_SCONJ han_PRON ikkje_PART lenger_ADJ kan_AUX velja_VERB bort_ADP å_PART vera_AUX rollemodell_NOUN ,_PUNCT noko_PRON han_PRON har_VERB harselert_VERB mykje_ADJ over_ADP ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -8977,9 +8955,9 @@ ergo: ADV | PRON
 }
 
 Expected: {
-med_ADP rundt_ADV rekna_VERB ti_NUM års_NOUN mellomrom_NOUN har_AUX vi_PRON dermed_ADV fått_AUX sjå_VERB maskinane_NOUN gjera_VERB tidsreisa_NOUN to_NUM gonger_NOUN til_ADV ,_PUNCT fyrst_ADV i_ADP 1991_NUM (_PUNCT eller_CCONJ 1997_NUM i_ADP fiksjonkronologien_NOUN )_PUNCT for_ADP å_PART ta_VERB livet_NOUN av_ADP den_DET freidige_ADJ tenåringen_NOUN john_PROPN connor_PROPN ,_PUNCT og_CCONJ no_ADV altså_ADV for_ADP å_PART «_PUNCT terminera_VERB »_PUNCT den_DET knapt_ADJ 20_NUM år_NOUN gamle_ADJ ,_PUNCT lett_ADJ paranoide_ADJ mannen_NOUN john_PROPN connor_PROPN ,_PUNCT som_SCONJ enno_ADV ikkje_ADV ser_VERB seg_PRON sjølv_DET som_ADP nokon_DET framtidshelt_NOUN ._PUNCT}
+med_ADP rundt_ADV rekna_VERB ti_NUM års_NOUN mellomrom_NOUN har_AUX vi_PRON dermed_ADV fått_AUX sjå_VERB maskinane_NOUN gjera_VERB tidsreisa_NOUN to_NUM gonger_NOUN til_ADV ,_PUNCT fyrst_ADV i_ADP 1991_NUM (_PUNCT eller_CCONJ 1997_NUM i_ADP fiksjonkronologien_NOUN )_PUNCT for_ADP å_PART ta_VERB livet_NOUN av_ADP den_DET freidige_ADJ tenåringen_NOUN john_PROPN connor_PROPN ,_PUNCT og_CCONJ no_ADV altså_ADV for_ADP å_PART «_PUNCT terminera_VERB »_PUNCT den_DET knapt_ADJ 20_NUM år_NOUN gamle_ADJ ,_PUNCT lett_ADJ paranoide_ADJ mannen_NOUN john_PROPN connor_PROPN ,_PUNCT som_SCONJ enno_ADV ikkje_PART ser_VERB seg_PRON sjølv_DET som_ADP nokon_DET framtidshelt_NOUN ._PUNCT}
 Predicted: {
-med_ADP rundt_ADP rekna_VERB ti_NUM års_NOUN mellomrom_NOUN har_AUX vi_PRON dermed_ADV fått_VERB sjå_VERB maskinane_NOUN gjera_VERB tidsreisa_NOUN to_NUM gonger_NOUN til_ADV ,_PUNCT fyrst_ADV i_ADP 1991_NUM (_PUNCT eller_CCONJ 1997_NUM i_ADP fiksjonkronologien_NOUN )_PUNCT for_ADP å_PART ta_VERB livet_NOUN av_ADP den_DET freidige_ADJ tenåringen_NOUN john_PROPN connor_PROPN ,_PUNCT og_CCONJ no_ADV altså_ADV for_ADP å_PART «_PUNCT terminera_VERB »_PUNCT den_PRON knapt_ADJ 20_NUM år_NOUN gamle_ADJ ,_PUNCT lett_ADJ paranoide_ADJ mannen_NOUN john_PROPN connor_PROPN ,_PUNCT som_SCONJ enno_ADV ikkje_ADV ser_VERB seg_PRON sjølv_ADV som_SCONJ nokon_DET framtidshelt_NOUN ._PUNCT}
+med_ADP rundt_ADP rekna_VERB ti_NUM års_NOUN mellomrom_NOUN har_AUX vi_PRON dermed_ADV fått_VERB sjå_VERB maskinane_NOUN gjera_VERB tidsreisa_NOUN to_NUM gonger_NOUN til_ADV ,_PUNCT fyrst_ADV i_ADP 1991_NUM (_PUNCT eller_CCONJ 1997_NUM i_ADP fiksjonkronologien_NOUN )_PUNCT for_ADP å_PART ta_VERB livet_NOUN av_ADP den_DET freidige_ADJ tenåringen_NOUN john_PROPN connor_PROPN ,_PUNCT og_CCONJ no_ADV altså_ADV for_ADP å_PART «_PUNCT terminera_VERB »_PUNCT den_PRON knapt_ADJ 20_NUM år_NOUN gamle_ADJ ,_PUNCT lett_ADJ paranoide_ADJ mannen_NOUN john_PROPN connor_PROPN ,_PUNCT som_SCONJ enno_ADV ikkje_PART ser_VERB seg_PRON sjølv_ADV som_SCONJ nokon_DET framtidshelt_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -9036,9 +9014,9 @@ kongen: PROPN | NOUN
 }
 
 Expected: {
-ikkje_ADV minst_ADJ hadde_AUX den_DET uavhengige_ADJ organisasjonsgjennomgangen_NOUN vist_VERB at_SCONJ omdanninga_NOUN av_ADP norsk_PROPN språkråd_NOUN ville_AUX innebera_VERB så_ADV store_ADJ utfordringar_NOUN av_ADP ulik_ADJ art_NOUN at_SCONJ det_PRON ikkje_ADV var_AUX tilrådeleg_ADJ i_ADP utgangspunktet_NOUN å_PART utvida_VERB ansvarsrammene_NOUN slik_ADV som_ADP antyda_ADJ i_ADP prosjektskissa_NOUN ._PUNCT}
+ikkje_PART minst_ADJ hadde_AUX den_DET uavhengige_ADJ organisasjonsgjennomgangen_NOUN vist_VERB at_SCONJ omdanninga_NOUN av_ADP norsk_PROPN språkråd_NOUN ville_AUX innebera_VERB så_ADV store_ADJ utfordringar_NOUN av_ADP ulik_ADJ art_NOUN at_SCONJ det_PRON ikkje_PART var_AUX tilrådeleg_ADJ i_ADP utgangspunktet_NOUN å_PART utvida_VERB ansvarsrammene_NOUN slik_ADV som_ADP antyda_ADJ i_ADP prosjektskissa_NOUN ._PUNCT}
 Predicted: {
-ikkje_ADV minst_ADJ hadde_AUX den_DET uavhengige_ADJ organisasjonsgjennomgangen_NOUN vist_ADJ at_SCONJ omdanninga_NOUN av_ADP norsk_PROPN språkråd_NOUN ville_AUX innebera_VERB så_ADV store_ADJ utfordringar_NOUN av_ADP ulik_ADJ art_NOUN at_SCONJ det_PRON ikkje_ADV var_AUX tilrådeleg_ADJ i_ADP utgangspunktet_NOUN å_PART utvida_VERB ansvarsrammene_NOUN slik_ADV som_SCONJ antyda_VERB i_ADP prosjektskissa_NOUN ._PUNCT}
+ikkje_PART minst_ADJ hadde_AUX den_DET uavhengige_ADJ organisasjonsgjennomgangen_NOUN vist_ADJ at_SCONJ omdanninga_NOUN av_ADP norsk_PROPN språkråd_NOUN ville_AUX innebera_VERB så_ADV store_ADJ utfordringar_NOUN av_ADP ulik_ADJ art_NOUN at_SCONJ det_PRON ikkje_PART var_AUX tilrådeleg_ADJ i_ADP utgangspunktet_NOUN å_PART utvida_VERB ansvarsrammene_NOUN slik_ADV som_SCONJ antyda_VERB i_ADP prosjektskissa_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -9079,9 +9057,9 @@ er: VERB | AUX
 }
 
 Expected: {
-ein_PRON kan_AUX ikkje_ADV kjefta_VERB på_ADP regjering_NOUN og_CCONJ storting_NOUN når_SCONJ ein_PRON sjølv_DET er_AUX med_ADP på_ADP å_PART leggja_VERB premissane_NOUN i_ADP budsjettet_NOUN ._PUNCT}
+ein_PRON kan_AUX ikkje_PART kjefta_VERB på_ADP regjering_NOUN og_CCONJ storting_NOUN når_SCONJ ein_PRON sjølv_DET er_AUX med_ADP på_ADP å_PART leggja_VERB premissane_NOUN i_ADP budsjettet_NOUN ._PUNCT}
 Predicted: {
-ein_PRON kan_AUX ikkje_ADV kjefta_VERB på_ADP regjering_NOUN og_CCONJ storting_NOUN når_SCONJ ein_PRON sjølv_ADV er_AUX med_ADP på_ADP å_PART leggja_VERB premissane_NOUN i_ADP budsjettet_NOUN ._PUNCT}
+ein_PRON kan_AUX ikkje_PART kjefta_VERB på_ADP regjering_NOUN og_CCONJ storting_NOUN når_SCONJ ein_PRON sjølv_ADV er_AUX med_ADP på_ADP å_PART leggja_VERB premissane_NOUN i_ADP budsjettet_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -9161,9 +9139,9 @@ er: VERB | AUX
 }
 
 Expected: {
--_PUNCT eg_PRON gjev_VERB meg_PRON ikkje_ADV enno_ADV ,_PUNCT for_CCONJ besøkstenesta_NOUN gjev_VERB meg_PRON så_ADV mykje_ADJ ,_PUNCT avsluttar_VERB ho_PRON ._PUNCT}
+-_PUNCT eg_PRON gjev_VERB meg_PRON ikkje_PART enno_ADV ,_PUNCT for_CCONJ besøkstenesta_NOUN gjev_VERB meg_PRON så_ADV mykje_ADJ ,_PUNCT avsluttar_VERB ho_PRON ._PUNCT}
 Predicted: {
--_PUNCT eg_PRON gjev_VERB meg_PRON ikkje_ADV enno_ADV ,_PUNCT for_ADP besøkstenesta_NOUN gjev_VERB meg_PRON så_ADV mykje_ADJ ,_PUNCT avsluttar_VERB ho_PRON ._PUNCT}
+-_PUNCT eg_PRON gjev_VERB meg_PRON ikkje_PART enno_ADV ,_PUNCT for_ADP besøkstenesta_NOUN gjev_VERB meg_PRON så_ADV mykje_ADJ ,_PUNCT avsluttar_VERB ho_PRON ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -9223,9 +9201,9 @@ for: ADV | ADP
 }
 
 Expected: {
-skjevesland_PROPN framheva_VERB at_SCONJ han_PRON ville_VERB at_SCONJ kyrkja_NOUN skulle_AUX viglast_VERB ved_ADP å_PART bli_AUX teken_ADJ i_ADP bruk_NOUN ,_PUNCT ikkje_ADV ved_ADP «_PUNCT å_PART skvette_VERB vievatn_NOUN i_ADP krokane_NOUN »_PUNCT ._PUNCT}
+skjevesland_PROPN framheva_VERB at_SCONJ han_PRON ville_VERB at_SCONJ kyrkja_NOUN skulle_AUX viglast_VERB ved_ADP å_PART bli_AUX teken_ADJ i_ADP bruk_NOUN ,_PUNCT ikkje_PART ved_ADP «_PUNCT å_PART skvette_VERB vievatn_NOUN i_ADP krokane_NOUN »_PUNCT ._PUNCT}
 Predicted: {
-skjevesland_PROPN framheva_VERB at_SCONJ han_PRON ville_AUX at_SCONJ kyrkja_NOUN skulle_AUX viglast_VERB ved_ADP å_PART bli_AUX teken_ADJ i_ADP bruk_NOUN ,_PUNCT ikkje_ADV ved_ADP «_PUNCT å_PART skvette_VERB vievatn_NOUN i_ADP krokane_NOUN »_PUNCT ._PUNCT}
+skjevesland_PROPN framheva_VERB at_SCONJ han_PRON ville_AUX at_SCONJ kyrkja_NOUN skulle_AUX viglast_VERB ved_ADP å_PART bli_AUX teken_ADJ i_ADP bruk_NOUN ,_PUNCT ikkje_PART ved_ADP «_PUNCT å_PART skvette_VERB vievatn_NOUN i_ADP krokane_NOUN »_PUNCT ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -9328,9 +9306,9 @@ rettvis: ADJ | NOUN
 }
 
 Expected: {
-det_PRON er_AUX elles_ADV nok_ADV berre_ADV å_PART kasta_VERB eit_DET blikk_NOUN på_ADP det_DET enorme_ADJ lovverket_NOUN rundt_ADP jakt_NOUN for_ADP å_PART skjøna_VERB at_SCONJ vi_PRON engelskmenn_NOUN ikkje_ADV er_AUX heilt_ADJ kloke_ADJ når_SCONJ det_PRON gjeld_VERB dyrerett_NOUN ._PUNCT}
+det_PRON er_AUX elles_ADV nok_ADV berre_ADV å_PART kasta_VERB eit_DET blikk_NOUN på_ADP det_DET enorme_ADJ lovverket_NOUN rundt_ADP jakt_NOUN for_ADP å_PART skjøna_VERB at_SCONJ vi_PRON engelskmenn_NOUN ikkje_PART er_AUX heilt_ADJ kloke_ADJ når_SCONJ det_PRON gjeld_VERB dyrerett_NOUN ._PUNCT}
 Predicted: {
-det_PRON er_AUX elles_ADV nok_ADV berre_ADV å_PART kasta_VERB eit_DET blikk_NOUN på_ADP det_DET enorme_ADJ lovverket_NOUN rundt_ADP jakt_NOUN for_ADP å_PART skjøna_VERB at_SCONJ vi_PRON engelskmenn_ADV ikkje_ADV er_AUX heilt_ADJ kloke_ADJ når_SCONJ det_PRON gjeld_VERB dyrerett_NOUN ._PUNCT}
+det_PRON er_AUX elles_ADV nok_ADV berre_ADV å_PART kasta_VERB eit_DET blikk_NOUN på_ADP det_DET enorme_ADJ lovverket_NOUN rundt_ADP jakt_NOUN for_ADP å_PART skjøna_VERB at_SCONJ vi_PRON engelskmenn_ADV ikkje_PART er_AUX heilt_ADJ kloke_ADJ når_SCONJ det_PRON gjeld_VERB dyrerett_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -9381,9 +9359,9 @@ horn: PROPN | NOUN
 }
 
 Expected: {
-korleis_ADV skulle_AUX dei_PRON gjera_VERB det_PRON ,_PUNCT når_SCONJ vi_PRON forskarar_NOUN ikkje_ADV går_VERB ope_ADJ ut_ADV og_CCONJ fortel_VERB om_ADP alt_DET det_DET gode_ADJ som_SCONJ skjer_VERB med_ADP grunn_NOUN i_ADP dyreforsøk_NOUN ?_PUNCT}
+korleis_ADV skulle_AUX dei_PRON gjera_VERB det_PRON ,_PUNCT når_SCONJ vi_PRON forskarar_NOUN ikkje_PART går_VERB ope_ADJ ut_ADV og_CCONJ fortel_VERB om_ADP alt_DET det_DET gode_ADJ som_SCONJ skjer_VERB med_ADP grunn_NOUN i_ADP dyreforsøk_NOUN ?_PUNCT}
 Predicted: {
-korleis_ADV skulle_AUX dei_PRON gjera_VERB det_PRON ,_PUNCT når_SCONJ vi_PRON forskarar_VERB ikkje_ADV går_VERB ope_ADJ ut_ADV og_CCONJ fortel_VERB om_ADP alt_PRON det_DET gode_ADJ som_SCONJ skjer_VERB med_ADP grunn_NOUN i_ADP dyreforsøk_NOUN ?_PUNCT}
+korleis_ADV skulle_AUX dei_PRON gjera_VERB det_PRON ,_PUNCT når_SCONJ vi_PRON forskarar_VERB ikkje_PART går_VERB ope_ADJ ut_ADV og_CCONJ fortel_VERB om_ADP alt_PRON det_DET gode_ADJ som_SCONJ skjer_VERB med_ADP grunn_NOUN i_ADP dyreforsøk_NOUN ?_PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -9392,9 +9370,9 @@ alt: DET | PRON
 }
 
 Expected: {
-det_PRON er_AUX ikkje_ADV meir_ADJ enn_ADP eit_DET par_NOUN år_NOUN sidan_SCONJ iea_PROPN avviste_VERB alt_DET snakk_NOUN om_ADP nokon_DET topp_NOUN i_ADP oljeutvinninga_NOUN før_ADP bortimot_ADP 2030_NUM ._PUNCT}
+det_PRON er_AUX ikkje_PART meir_ADJ enn_ADP eit_DET par_NOUN år_NOUN sidan_SCONJ iea_PROPN avviste_VERB alt_DET snakk_NOUN om_ADP nokon_DET topp_NOUN i_ADP oljeutvinninga_NOUN før_ADP bortimot_ADP 2030_NUM ._PUNCT}
 Predicted: {
-det_PRON er_AUX ikkje_ADV meir_ADJ enn_ADP eit_DET par_NOUN år_NOUN sidan_ADV iea_PROPN avviste_VERB alt_PRON snakk_NOUN om_ADP nokon_DET topp_NOUN i_ADP oljeutvinninga_NOUN før_ADP bortimot_ADP 2030_NUM ._PUNCT}
+det_PRON er_AUX ikkje_PART meir_ADJ enn_ADP eit_DET par_NOUN år_NOUN sidan_ADV iea_PROPN avviste_VERB alt_PRON snakk_NOUN om_ADP nokon_DET topp_NOUN i_ADP oljeutvinninga_NOUN før_ADP bortimot_ADP 2030_NUM ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -9403,9 +9381,9 @@ alt: DET | PRON
 }
 
 Expected: {
-sjølv_DET det_DET optimistiske_ADJ oljedirektoratet_PROPN har_VERB ikkje_ADV anna_DET å_PART by_VERB enn_ADP kurver_NOUN som_SCONJ peikar_VERB bratt_ADJ nedover_ADV ._PUNCT}
+sjølv_DET det_DET optimistiske_ADJ oljedirektoratet_PROPN har_VERB ikkje_PART anna_DET å_PART by_VERB enn_ADP kurver_NOUN som_SCONJ peikar_VERB bratt_ADJ nedover_ADV ._PUNCT}
 Predicted: {
-sjølv_DET det_DET optimistiske_ADJ oljedirektoratet_NOUN har_AUX ikkje_ADV anna_DET å_PART by_VERB enn_ADP kurver_NOUN som_SCONJ peikar_VERB bratt_ADJ nedover_ADV ._PUNCT}
+sjølv_DET det_DET optimistiske_ADJ oljedirektoratet_NOUN har_AUX ikkje_PART anna_DET å_PART by_VERB enn_ADP kurver_NOUN som_SCONJ peikar_VERB bratt_ADJ nedover_ADV ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -9414,14 +9392,15 @@ har: VERB | AUX
 }
 
 Expected: {
-som_ADP stasjonær_ADJ drivkraft_NOUN er_AUX mange_ADJ energiformer_NOUN brukande_ADJ ,_PUNCT men_CCONJ til_ADP dagens_NOUN tempo_NOUN og_CCONJ volum_NOUN i_ADP transporten_NOUN av_ADP varer_NOUN og_CCONJ personar_NOUN har_VERB vi_PRON i_ADP realiteten_NOUN ikkje_ADV noko_DET alternativ_NOUN til_ADP olje_NOUN ._PUNCT}
+som_ADP stasjonær_ADJ drivkraft_NOUN er_AUX mange_ADJ energiformer_NOUN brukande_ADJ ,_PUNCT men_CCONJ til_ADP dagens_NOUN tempo_NOUN og_CCONJ volum_NOUN i_ADP transporten_NOUN av_ADP varer_NOUN og_CCONJ personar_NOUN har_VERB vi_PRON i_ADP realiteten_NOUN ikkje_PART noko_DET alternativ_NOUN til_ADP olje_NOUN ._PUNCT}
 Predicted: {
-som_SCONJ stasjonær_ADJ drivkraft_NOUN er_AUX mange_ADJ energiformer_NOUN brukande_ADJ ,_PUNCT men_CCONJ til_ADP dagens_NOUN tempo_NOUN og_CCONJ volum_NOUN i_ADP transporten_NOUN av_ADP varer_NOUN og_CCONJ personar_NOUN har_AUX vi_PRON i_ADP realiteten_NOUN ikkje_ADV noko_DET alternativ_NOUN til_ADP olje_NOUN ._PUNCT}
+som_SCONJ stasjonær_ADJ drivkraft_NOUN er_AUX mange_ADJ energiformer_NOUN brukande_ADJ ,_PUNCT men_CCONJ til_ADP dagens_NOUN tempo_NOUN og_CCONJ volum_NOUN i_ADP transporten_NOUN av_ADP varer_NOUN og_CCONJ personar_NOUN har_AUX vi_PRON i_ADP realiteten_NOUN ikkje_PART noko_NUM alternativ_NOUN til_ADP olje_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 som: ADP | SCONJ
 har: VERB | AUX
+noko: DET | NUM
 }
 
 Expected: {
@@ -9446,9 +9425,9 @@ undermåls: ADJ | NOUN
 }
 
 Expected: {
-carl_PROPN i._PROPN hagen_PROPN fekk_AUX snudd_VERB om_ADV på_ADP kva_PRON som_SCONJ er_AUX tillate_ADJ og_CCONJ ikkje_ADV tillate_ADJ i_ADP det_DET politiske_ADJ ordskiftet_NOUN ,_PUNCT og_CCONJ kva_PRON for_ADP meiningar_NOUN som_SCONJ det_PRON er_AUX mogeleg_ADJ å_PART hevda_VERB utan_ADP å_PART setja_VERB seg_PRON sjølv_DET utanfor_ADV ._PUNCT}
+carl_PROPN i._PROPN hagen_PROPN fekk_AUX snudd_VERB om_ADV på_ADP kva_PRON som_SCONJ er_AUX tillate_ADJ og_CCONJ ikkje_PART tillate_ADJ i_ADP det_DET politiske_ADJ ordskiftet_NOUN ,_PUNCT og_CCONJ kva_PRON for_ADP meiningar_NOUN som_SCONJ det_PRON er_AUX mogeleg_ADJ å_PART hevda_VERB utan_ADP å_PART setja_VERB seg_PRON sjølv_DET utanfor_ADV ._PUNCT}
 Predicted: {
-carl_PROPN i._PROPN hagen_PROPN fekk_AUX snudd_VERB om_ADP på_ADP kva_PRON som_SCONJ er_AUX tillate_VERB og_CCONJ ikkje_ADV tillate_VERB i_ADP det_DET politiske_ADJ ordskiftet_NOUN ,_PUNCT og_CCONJ kva_PRON for_ADP meiningar_NOUN som_SCONJ det_PRON er_AUX mogeleg_ADJ å_PART hevda_VERB utan_ADP å_PART setja_VERB seg_PRON sjølv_DET utanfor_ADV ._PUNCT}
+carl_PROPN i._PROPN hagen_PROPN fekk_AUX snudd_VERB om_ADP på_ADP kva_PRON som_SCONJ er_AUX tillate_VERB og_CCONJ ikkje_PART tillate_VERB i_ADP det_DET politiske_ADJ ordskiftet_NOUN ,_PUNCT og_CCONJ kva_PRON for_ADP meiningar_NOUN som_SCONJ det_PRON er_AUX mogeleg_ADJ å_PART hevda_VERB utan_ADP å_PART setja_VERB seg_PRON sjølv_DET utanfor_ADV ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -9527,9 +9506,9 @@ lærdalstunnelen: PROPN | NOUN
 }
 
 Expected: {
--_PUNCT det_PRON er_VERB ikkje_ADV noko_PRON å_PART fiska_VERB etter_ADV}
+-_PUNCT det_PRON er_VERB ikkje_PART noko_PRON å_PART fiska_VERB etter_ADV}
 Predicted: {
--_PUNCT det_PRON er_AUX ikkje_ADV noko_PRON å_PART fiska_VERB etter_ADP}
+-_PUNCT det_PRON er_AUX ikkje_PART noko_PRON å_PART fiska_VERB etter_ADP}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -9729,9 +9708,9 @@ som: ADP | SCONJ
 }
 
 Expected: {
-det_PRON er_AUX på_ADP det_DET siste_ADJ punktet_NOUN det_PRON kan_AUX spørjast_VERB om_SCONJ ikkje_ADV historikarmiljøet_NOUN har_AUX gjort_VERB det_PRON for_ADV enkelt_ADJ for_ADP seg_PRON ._PUNCT}
+det_PRON er_AUX på_ADP det_DET siste_ADJ punktet_NOUN det_PRON kan_AUX spørjast_VERB om_SCONJ ikkje_PART historikarmiljøet_NOUN har_AUX gjort_VERB det_PRON for_ADV enkelt_ADJ for_ADP seg_PRON ._PUNCT}
 Predicted: {
-det_PRON er_AUX på_ADP det_DET siste_ADJ punktet_NOUN det_PRON kan_AUX spørjast_VERB om_SCONJ ikkje_ADV historikarmiljøet_NOUN har_AUX gjort_VERB det_PRON for_ADP enkelt_ADJ for_ADP seg_PRON ._PUNCT}
+det_PRON er_AUX på_ADP det_DET siste_ADJ punktet_NOUN det_PRON kan_AUX spørjast_VERB om_SCONJ ikkje_PART historikarmiljøet_NOUN har_AUX gjort_VERB det_PRON for_ADP enkelt_ADJ for_ADP seg_PRON ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -9989,9 +9968,9 @@ og: ADV | CCONJ
 }
 
 Expected: {
-alle_DET maktene_NOUN og_CCONJ myndigheitene_NOUN er_AUX "_PUNCT skapt_ADJ av_ADV ,_PUNCT ved_ADP ,_PUNCT til_ADP kristus_PROPN ,_PUNCT "_PUNCT altså_ADV vert_AUX dei_PRON "_PUNCT sett_ADJ på_ADP sin_PRON rette_ADJ stad_NOUN "_PUNCT (_PUNCT ikkje_ADV ulikt_ADJ rom_PROPN 13_NUM ,_PUNCT der_SCONJ paulus_PROPN understrekar_VERB at_SCONJ myndigheiter_NOUN er_AUX "_PUNCT guds_PROPN tenarar_NOUN "_PUNCT )_PUNCT ._PUNCT}
+alle_DET maktene_NOUN og_CCONJ myndigheitene_NOUN er_AUX "_PUNCT skapt_ADJ av_ADV ,_PUNCT ved_ADP ,_PUNCT til_ADP kristus_PROPN ,_PUNCT "_PUNCT altså_ADV vert_AUX dei_PRON "_PUNCT sett_ADJ på_ADP sin_PRON rette_ADJ stad_NOUN "_PUNCT (_PUNCT ikkje_PART ulikt_ADJ rom_PROPN 13_NUM ,_PUNCT der_SCONJ paulus_PROPN understrekar_VERB at_SCONJ myndigheiter_NOUN er_AUX "_PUNCT guds_PROPN tenarar_NOUN "_PUNCT )_PUNCT ._PUNCT}
 Predicted: {
-alle_DET maktene_NOUN og_CCONJ myndigheitene_NOUN er_AUX "_PUNCT skapt_ADJ av_ADV ,_PUNCT ved_ADP ,_PUNCT til_ADP kristus_PROPN ,_PUNCT "_PUNCT altså_ADV vert_VERB dei_PRON "_PUNCT sett_VERB på_ADP sin_PRON rette_ADJ stad_NOUN "_PUNCT (_PUNCT ikkje_ADV ulikt_ADJ rom_NOUN 13_NUM ,_PUNCT der_SCONJ paulus_PROPN understrekar_VERB at_SCONJ myndigheiter_NOUN er_AUX "_PUNCT guds_PROPN tenarar_NOUN "_PUNCT )_PUNCT ._PUNCT}
+alle_DET maktene_NOUN og_CCONJ myndigheitene_NOUN er_AUX "_PUNCT skapt_ADJ av_ADV ,_PUNCT ved_ADP ,_PUNCT til_ADP kristus_PROPN ,_PUNCT "_PUNCT altså_ADV vert_VERB dei_PRON "_PUNCT sett_VERB på_ADP sin_PRON rette_ADJ stad_NOUN "_PUNCT (_PUNCT ikkje_PART ulikt_ADJ rom_NOUN 13_NUM ,_PUNCT der_SCONJ paulus_PROPN understrekar_VERB at_SCONJ myndigheiter_NOUN er_AUX "_PUNCT guds_PROPN tenarar_NOUN "_PUNCT )_PUNCT ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -10023,9 +10002,9 @@ kor: PROPN | ADV
 }
 
 Expected: {
-og_CCONJ også_ADV kor_ADV problematisk_ADJ det_PRON er_AUX å_PART ville_AUX avvise_VERB forfattarskapet_NOUN til_ADP visse_ADJ av_ADP hans_PRON brev_NOUN ,_PUNCT på_ADP basis_NOUN av_ADP språkanalysar_NOUN ,_PUNCT av_ADP typen_NOUN "_PUNCT her_ADV er_VERB visse_ADJ ord_NOUN som_SCONJ paulus_PROPN ikkje_ADV brukar_VERB andre_DET stader_NOUN "_PUNCT etc_ADV}
+og_CCONJ også_ADV kor_ADV problematisk_ADJ det_PRON er_AUX å_PART ville_AUX avvise_VERB forfattarskapet_NOUN til_ADP visse_ADJ av_ADP hans_PRON brev_NOUN ,_PUNCT på_ADP basis_NOUN av_ADP språkanalysar_NOUN ,_PUNCT av_ADP typen_NOUN "_PUNCT her_ADV er_VERB visse_ADJ ord_NOUN som_SCONJ paulus_PROPN ikkje_PART brukar_VERB andre_DET stader_NOUN "_PUNCT etc_ADV}
 Predicted: {
-og_CCONJ også_ADV kor_ADV problematisk_ADJ det_PRON er_AUX å_PART ville_AUX avvise_VERB forfattarskapet_NOUN til_ADP visse_ADJ av_ADP hans_PRON brev_NOUN ,_PUNCT på_ADP basis_NOUN av_ADP språkanalysar_NOUN ,_PUNCT av_ADP typen_NOUN "_PUNCT her_ADV er_AUX visse_ADJ ord_NOUN som_SCONJ paulus_PROPN ikkje_ADV brukar_VERB andre_DET stader_NOUN "_PUNCT etc_ADV}
+og_CCONJ også_ADV kor_ADV problematisk_ADJ det_PRON er_AUX å_PART ville_AUX avvise_VERB forfattarskapet_NOUN til_ADP visse_ADJ av_ADP hans_PRON brev_NOUN ,_PUNCT på_ADP basis_NOUN av_ADP språkanalysar_NOUN ,_PUNCT av_ADP typen_NOUN "_PUNCT her_ADV er_AUX visse_ADJ ord_NOUN som_SCONJ paulus_PROPN ikkje_PART brukar_VERB andre_DET stader_NOUN "_PUNCT etc_ADV}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -10033,9 +10012,19 @@ er: VERB | AUX
 }
 
 Expected: {
-det_PRON er_AUX ikkje_ADV alltid_ADV så_ADV lett_ADJ å_PART tenke_VERB seg_PRON inn_ADP i_ADP korleis_ADV ein_PRON tenkte_VERB før_ADV ,_PUNCT då_SCONJ ein_PRON ikkje_ADV hadde_AUX lært_VERB så_ADV mykje_ADJ som_SCONJ ein_PRON kan_VERB no_ADV ._PUNCT}
+men_CCONJ tykkjer_VERB ikkje_PART de_PRON også_ADV at_SCONJ dette_PRON er_AUX veldig_ADJ interessant_ADJ ?_PUNCT ?_PUNCT}
 Predicted: {
-det_PRON er_AUX ikkje_ADV alltid_ADV så_ADV lett_ADJ å_PART tenke_VERB seg_PRON inn_ADV i_ADP korleis_ADV ein_DET tenkte_ADJ før_ADV ,_PUNCT då_SCONJ ein_PRON ikkje_ADV hadde_AUX lært_VERB så_ADV mykje_ADJ som_ADP ein_PRON kan_AUX no_ADV ._PUNCT}
+men_CCONJ tykkjer_VERB ikkje_PART de_VERB også_ADV at_SCONJ dette_PRON er_AUX veldig_ADJ interessant_ADJ ?_PUNCT ?_PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+de: PRON | VERB
+}
+
+Expected: {
+det_PRON er_AUX ikkje_PART alltid_ADV så_ADV lett_ADJ å_PART tenke_VERB seg_PRON inn_ADP i_ADP korleis_ADV ein_PRON tenkte_VERB før_ADV ,_PUNCT då_SCONJ ein_PRON ikkje_PART hadde_AUX lært_VERB så_ADV mykje_ADJ som_SCONJ ein_PRON kan_VERB no_ADV ._PUNCT}
+Predicted: {
+det_PRON er_AUX ikkje_PART alltid_ADV så_ADV lett_ADJ å_PART tenke_VERB seg_PRON inn_ADV i_ADP korleis_ADV ein_DET tenkte_ADJ før_ADV ,_PUNCT då_SCONJ ein_PRON ikkje_PART hadde_AUX lært_VERB så_ADV mykje_ADJ som_ADP ein_PRON kan_AUX no_ADV ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -10047,9 +10036,9 @@ kan: VERB | AUX
 }
 
 Expected: {
-løysinga_NOUN er_AUX naturlegvis_ADV at_SCONJ rettferdiggjeringa_NOUN og_CCONJ fornyinga_NOUN ikkje_ADV kan_AUX lausrivast_VERB frå_ADP kvarandre_PRON ,_PUNCT siden_SCONJ den_DET mest_ADJ fundamentale_ADJ kategorien_NOUN hjå_ADP paulus_PROPN (_PUNCT arguably_ADV )_PUNCT er_AUX å_PART vere_VERB "_PUNCT i_ADP kristus_PROPN ,_PUNCT "_PUNCT og_CCONJ denne_PRON omfattar_VERB både_CCONJ rettferdiggjering_NOUN og_CCONJ helging_NOUN ,_PUNCT for_ADP å_PART seie_VERB det_PRON litt_ADJ grovt_ADJ ._PUNCT}
+løysinga_NOUN er_AUX naturlegvis_ADV at_SCONJ rettferdiggjeringa_NOUN og_CCONJ fornyinga_NOUN ikkje_PART kan_AUX lausrivast_VERB frå_ADP kvarandre_PRON ,_PUNCT siden_SCONJ den_DET mest_ADJ fundamentale_ADJ kategorien_NOUN hjå_ADP paulus_PROPN (_PUNCT arguably_ADV )_PUNCT er_AUX å_PART vere_VERB "_PUNCT i_ADP kristus_PROPN ,_PUNCT "_PUNCT og_CCONJ denne_PRON omfattar_VERB både_CCONJ rettferdiggjering_NOUN og_CCONJ helging_NOUN ,_PUNCT for_ADP å_PART seie_VERB det_PRON litt_ADJ grovt_ADJ ._PUNCT}
 Predicted: {
-løysinga_NOUN er_AUX naturlegvis_ADV at_SCONJ rettferdiggjeringa_NOUN og_CCONJ fornyinga_NOUN ikkje_ADV kan_AUX lausrivast_VERB frå_ADP kvarandre_PRON ,_PUNCT siden_SCONJ den_DET mest_ADJ fundamentale_ADJ kategorien_NOUN hjå_ADP paulus_PROPN (_PUNCT arguably_PROPN )_PUNCT er_AUX å_PART vere_AUX "_PUNCT i_ADP kristus_PROPN ,_PUNCT "_PUNCT og_CCONJ denne_DET omfattar_NOUN både_CCONJ rettferdiggjering_NOUN og_CCONJ helging_NOUN ,_PUNCT for_ADP å_PART seie_VERB det_PRON litt_ADJ grovt_ADJ ._PUNCT}
+løysinga_NOUN er_AUX naturlegvis_ADV at_SCONJ rettferdiggjeringa_NOUN og_CCONJ fornyinga_NOUN ikkje_PART kan_AUX lausrivast_VERB frå_ADP kvarandre_PRON ,_PUNCT siden_SCONJ den_DET mest_ADJ fundamentale_ADJ kategorien_NOUN hjå_ADP paulus_PROPN (_PUNCT arguably_PROPN )_PUNCT er_AUX å_PART vere_AUX "_PUNCT i_ADP kristus_PROPN ,_PUNCT "_PUNCT og_CCONJ denne_DET omfattar_NOUN både_CCONJ rettferdiggjering_NOUN og_CCONJ helging_NOUN ,_PUNCT for_ADP å_PART seie_VERB det_PRON litt_ADJ grovt_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -10095,11 +10084,11 @@ gresk: NOUN | ADJ
 Expected: {
 men_CCONJ jobben_NOUN treng_VERB å_PART bli_AUX gjort_ADJ ._PUNCT}
 Predicted: {
-men_CCONJ jobben_NOUN treng_VERB å_PART bli_VERB gjort_ADJ ._PUNCT}
+men_CCONJ jobben_NOUN treng_VERB å_PART bli_AUX gjort_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-bli: AUX | VERB
+gjort: ADJ | VERB
 }
 
 Expected: {
@@ -10148,9 +10137,9 @@ annakvar: NUM | DET
 }
 
 Expected: {
-vi_PRON kom_VERB på_ADP ein_DET ganske_ADV smal_ADJ veg_NOUN ,_PUNCT og_CCONJ to_NUM syklistar_NOUN dreiv_VERB og_CCONJ virra_VERB på_ADP høgre_ADJ side_NOUN ,_PUNCT så_CCONJ min_PRON kjære_NOUN køyrde_VERB forsiktig_ADJ og_CCONJ med_ADP god_ADJ margin_NOUN utanom_ADP for_ADP ikkje_ADV å_PART køyre_VERB på_ADP dei_PRON ._PUNCT}
+vi_PRON kom_VERB på_ADP ein_DET ganske_ADV smal_ADJ veg_NOUN ,_PUNCT og_CCONJ to_NUM syklistar_NOUN dreiv_VERB og_CCONJ virra_VERB på_ADP høgre_ADJ side_NOUN ,_PUNCT så_CCONJ min_PRON kjære_NOUN køyrde_VERB forsiktig_ADJ og_CCONJ med_ADP god_ADJ margin_NOUN utanom_ADP for_ADP ikkje_PART å_PART køyre_VERB på_ADP dei_PRON ._PUNCT}
 Predicted: {
-vi_PRON kom_VERB på_ADP ein_DET ganske_ADV smal_ADJ veg_NOUN ,_PUNCT og_CCONJ to_NUM syklistar_NOUN dreiv_VERB og_CCONJ virra_VERB på_ADP høgre_PROPN side_NOUN ,_PUNCT så_CCONJ min_PRON kjære_ADJ køyrde_VERB forsiktig_ADJ og_CCONJ med_ADP god_ADJ margin_NOUN utanom_ADP for_ADP ikkje_ADV å_PART køyre_VERB på_ADP dei_PRON ._PUNCT}
+vi_PRON kom_VERB på_ADP ein_DET ganske_ADV smal_ADJ veg_NOUN ,_PUNCT og_CCONJ to_NUM syklistar_NOUN dreiv_VERB og_CCONJ virra_VERB på_ADP høgre_PROPN side_NOUN ,_PUNCT så_CCONJ min_PRON kjære_ADJ køyrde_VERB forsiktig_ADJ og_CCONJ med_ADP god_ADJ margin_NOUN utanom_ADP for_ADP ikkje_PART å_PART køyre_VERB på_ADP dei_PRON ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -10238,9 +10227,9 @@ fordi: SCONJ | ADP
 }
 
 Expected: {
-og_CCONJ eg_PRON må_AUX ikkje_ADV på_ADP død_NOUN og_CCONJ liv_NOUN gå_VERB under_ADP stigar_NOUN eller_CCONJ trakke_VERB på_ADP kumlokk_NOUN eller_CCONJ knuse_VERB speglar_NOUN i_ADP hytt_NOUN og_CCONJ pine_NOUN ._PUNCT}
+og_CCONJ eg_PRON må_AUX ikkje_PART på_ADP død_NOUN og_CCONJ liv_NOUN gå_VERB under_ADP stigar_NOUN eller_CCONJ trakke_VERB på_ADP kumlokk_NOUN eller_CCONJ knuse_VERB speglar_NOUN i_ADP hytt_NOUN og_CCONJ pine_NOUN ._PUNCT}
 Predicted: {
-og_CCONJ eg_PRON må_AUX ikkje_ADV på_ADP død_NOUN og_CCONJ liv_NOUN gå_VERB under_ADP stigar_NOUN eller_CCONJ trakke_NOUN på_ADP kumlokk_NOUN eller_CCONJ knuse_VERB speglar_NOUN i_ADP hytt_NOUN og_CCONJ pine_NOUN ._PUNCT}
+og_CCONJ eg_PRON må_AUX ikkje_PART på_ADP død_NOUN og_CCONJ liv_NOUN gå_VERB under_ADP stigar_NOUN eller_CCONJ trakke_NOUN på_ADP kumlokk_NOUN eller_CCONJ knuse_VERB speglar_NOUN i_ADP hytt_NOUN og_CCONJ pine_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -10259,9 +10248,9 @@ ein: PRON | DET
 }
 
 Expected: {
-i_ADP læresamtalane_NOUN drøftar_VERB ein_PRON ikkje_ADV kyrkjefedre_NOUN ._PUNCT}
+i_ADP læresamtalane_NOUN drøftar_VERB ein_PRON ikkje_PART kyrkjefedre_NOUN ._PUNCT}
 Predicted: {
-i_ADP læresamtalane_NOUN drøftar_VERB ein_PRON ikkje_ADV kyrkjefedre_ADJ ._PUNCT}
+i_ADP læresamtalane_NOUN drøftar_VERB ein_PRON ikkje_PART kyrkjefedre_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -10269,9 +10258,9 @@ kyrkjefedre: NOUN | ADJ
 }
 
 Expected: {
--_PUNCT eg_PRON vil_AUX ikkje_ADV gje_VERB inntrykket_NOUN av_ADP at_SCONJ protestantisk_ADJ kristendom_NOUN er_VERB "_PUNCT all_ADV bad_ADV ,_PUNCT "_PUNCT det_PRON er_AUX det_PRON sjølvsagt_ADJ ikkje_ADV !_PUNCT}
+-_PUNCT eg_PRON vil_AUX ikkje_PART gje_VERB inntrykket_NOUN av_ADP at_SCONJ protestantisk_ADJ kristendom_NOUN er_VERB "_PUNCT all_ADV bad_ADV ,_PUNCT "_PUNCT det_PRON er_AUX det_PRON sjølvsagt_ADJ ikkje_PART !_PUNCT}
 Predicted: {
--_PUNCT eg_PRON vil_AUX ikkje_ADV gje_VERB inntrykket_NOUN av_ADP at_SCONJ protestantisk_ADJ kristendom_NOUN er_AUX "_PUNCT all_DET bad_NOUN ,_PUNCT "_PUNCT det_PRON er_AUX det_PRON sjølvsagt_ADJ ikkje_ADV !_PUNCT}
+-_PUNCT eg_PRON vil_AUX ikkje_PART gje_VERB inntrykket_NOUN av_ADP at_SCONJ protestantisk_ADJ kristendom_NOUN er_AUX "_PUNCT all_DET bad_NOUN ,_PUNCT "_PUNCT det_PRON er_AUX det_PRON sjølvsagt_ADJ ikkje_PART !_PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -10291,9 +10280,9 @@ var: VERB | AUX
 }
 
 Expected: {
-difor_ADV er_AUX ikkje_ADV økumenikkens_NOUN arbeidsmåte_NOUN i_ADP utgangspunktet_NOUN gale_ADJ ,_PUNCT sjølv_ADV om_SCONJ ein_PRON ofte_ADJ i_ADP praksis_NOUN har_AUX teke_VERB for_ADV lett_ADJ på_ADP lære_NOUN og_CCONJ sanning_NOUN ._PUNCT}
+difor_ADV er_AUX ikkje_PART økumenikkens_NOUN arbeidsmåte_NOUN i_ADP utgangspunktet_NOUN gale_ADJ ,_PUNCT sjølv_ADV om_SCONJ ein_PRON ofte_ADJ i_ADP praksis_NOUN har_AUX teke_VERB for_ADV lett_ADJ på_ADP lære_NOUN og_CCONJ sanning_NOUN ._PUNCT}
 Predicted: {
-difor_ADV er_AUX ikkje_ADV økumenikkens_NOUN arbeidsmåte_NOUN i_ADP utgangspunktet_NOUN gale_ADJ ,_PUNCT sjølv_ADV om_SCONJ ein_DET ofte_ADJ i_ADP praksis_NOUN har_AUX teke_VERB for_ADV lett_ADJ på_ADP lære_NOUN og_CCONJ sanning_NOUN ._PUNCT}
+difor_ADV er_AUX ikkje_PART økumenikkens_NOUN arbeidsmåte_NOUN i_ADP utgangspunktet_NOUN gale_ADJ ,_PUNCT sjølv_ADV om_SCONJ ein_DET ofte_ADJ i_ADP praksis_NOUN har_AUX teke_VERB for_ADV lett_ADJ på_ADP lære_NOUN og_CCONJ sanning_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -10301,9 +10290,9 @@ ein: PRON | DET
 }
 
 Expected: {
-ein_PRON er_AUX fullstendig_ADJ frelst_ADJ ,_PUNCT tilgjeven_ADJ ,_PUNCT rettferdiggjort_ADJ ,_PUNCT frikjent_ADJ etc._ADV ved_ADP trua_NOUN ,_PUNCT og_CCONJ kan_AUX ikkje_ADV bidra_VERB med_ADP noko_PRON sjølv_ADV til_ADP dette_PRON ._PUNCT}
+ein_PRON er_AUX fullstendig_ADJ frelst_ADJ ,_PUNCT tilgjeven_ADJ ,_PUNCT rettferdiggjort_ADJ ,_PUNCT frikjent_ADJ etc._ADV ved_ADP trua_NOUN ,_PUNCT og_CCONJ kan_AUX ikkje_PART bidra_VERB med_ADP noko_PRON sjølv_ADV til_ADP dette_PRON ._PUNCT}
 Predicted: {
-ein_PRON er_AUX fullstendig_ADJ frelst_ADJ ,_PUNCT tilgjeven_ADJ ,_PUNCT rettferdiggjort_ADJ ,_PUNCT frikjent_ADJ etc._ADV ved_ADP trua_NOUN ,_PUNCT og_CCONJ kan_AUX ikkje_ADV bidra_VERB med_ADP noko_DET sjølv_DET til_ADP dette_PRON ._PUNCT}
+ein_PRON er_AUX fullstendig_ADJ frelst_ADJ ,_PUNCT tilgjeven_ADJ ,_PUNCT rettferdiggjort_ADJ ,_PUNCT frikjent_ADJ etc._ADV ved_ADP trua_NOUN ,_PUNCT og_CCONJ kan_AUX ikkje_PART bidra_VERB med_ADP noko_DET sjølv_DET til_ADP dette_PRON ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -10312,9 +10301,9 @@ sjølv: ADV | DET
 }
 
 Expected: {
-det_PRON var_VERB åpenbart_ADJ ting_NOUN som_SCONJ ikkje_ADV hang_VERB saman_ADV -_PUNCT eller_CCONJ i_ADP det_DET minste_ADJ var_AUX veldig_ADJ uklart_ADJ -_PUNCT i_ADP måten_NOUN ein_PRON pdes._ADV påberopte_VERB seg_PRON den_DET historiske_ADJ bibelen_PROPN som_ADP grunnlag_NOUN for_ADP kristendomen_NOUN ,_PUNCT og_CCONJ pdas._ADV kva_DET lære_NOUN og_CCONJ praksis_NOUN som_SCONJ hadde_AUX utvikla_VERB seg_PRON ._PUNCT}
+det_PRON var_VERB åpenbart_ADJ ting_NOUN som_SCONJ ikkje_PART hang_VERB saman_ADV -_PUNCT eller_CCONJ i_ADP det_DET minste_ADJ var_AUX veldig_ADJ uklart_ADJ -_PUNCT i_ADP måten_NOUN ein_PRON pdes._ADV påberopte_VERB seg_PRON den_DET historiske_ADJ bibelen_PROPN som_ADP grunnlag_NOUN for_ADP kristendomen_NOUN ,_PUNCT og_CCONJ pdas._ADV kva_DET lære_NOUN og_CCONJ praksis_NOUN som_SCONJ hadde_AUX utvikla_VERB seg_PRON ._PUNCT}
 Predicted: {
-det_PRON var_AUX åpenbart_ADJ ting_NOUN som_SCONJ ikkje_ADV hang_VERB saman_ADV -_PUNCT eller_CCONJ i_ADP det_DET minste_ADJ var_AUX veldig_ADJ uklart_ADJ -_PUNCT i_ADP måten_NOUN ein_DET pdes._NOUN påberopte_VERB seg_PRON den_DET historiske_ADJ bibelen_NOUN som_ADP grunnlag_NOUN for_ADP kristendomen_NOUN ,_PUNCT og_CCONJ pdas._AUX kva_PRON lære_VERB og_CCONJ praksis_NOUN som_SCONJ hadde_AUX utvikla_VERB seg_PRON ._PUNCT}
+det_PRON var_AUX åpenbart_ADJ ting_NOUN som_SCONJ ikkje_PART hang_VERB saman_ADV -_PUNCT eller_CCONJ i_ADP det_DET minste_ADJ var_AUX veldig_ADJ uklart_ADJ -_PUNCT i_ADP måten_NOUN ein_DET pdes._NOUN påberopte_VERB seg_PRON den_DET historiske_ADJ bibelen_NOUN som_ADP grunnlag_NOUN for_ADP kristendomen_NOUN ,_PUNCT og_CCONJ pdas._AUX kva_PRON lære_VERB og_CCONJ praksis_NOUN som_SCONJ hadde_AUX utvikla_VERB seg_PRON ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -10328,9 +10317,9 @@ lære: NOUN | VERB
 }
 
 Expected: {
-vel_ADV -_PUNCT einkvar_DET som_SCONJ vil_AUX meine_VERB at_SCONJ tankar_NOUN ,_PUNCT kjensler_NOUN o._CCONJ l._ADJ anten_CCONJ ikkje_ADV eksisterer_VERB ,_PUNCT eller_CCONJ at_SCONJ det_PRON er_AUX heilt_ADJ identisk_ADJ med_ADP nevron_NOUN ,_PUNCT seier_VERB eigentleg_ADJ noko_DET ganske_ADV absurd_ADJ ,_PUNCT vil_AUX han_PRON meine_VERB ._PUNCT}
+vel_ADV -_PUNCT einkvar_DET som_SCONJ vil_AUX meine_VERB at_SCONJ tankar_NOUN ,_PUNCT kjensler_NOUN o._CCONJ l._ADJ anten_CCONJ ikkje_PART eksisterer_VERB ,_PUNCT eller_CCONJ at_SCONJ det_PRON er_AUX heilt_ADJ identisk_ADJ med_ADP nevron_NOUN ,_PUNCT seier_VERB eigentleg_ADJ noko_DET ganske_ADV absurd_ADJ ,_PUNCT vil_AUX han_PRON meine_VERB ._PUNCT}
 Predicted: {
-vel_ADV -_PUNCT einkvar_DET som_SCONJ vil_AUX meine_VERB at_SCONJ tankar_NOUN ,_PUNCT kjensler_NOUN o._PUNCT l._PUNCT anten_CCONJ ikkje_ADV eksisterer_VERB ,_PUNCT eller_CCONJ at_SCONJ det_PRON er_AUX heilt_ADJ identisk_ADJ med_ADP nevron_NOUN ,_PUNCT seier_VERB eigentleg_ADJ noko_DET ganske_ADV absurd_ADJ ,_PUNCT vil_AUX han_PRON meine_VERB ._PUNCT}
+vel_ADV -_PUNCT einkvar_DET som_SCONJ vil_AUX meine_VERB at_SCONJ tankar_NOUN ,_PUNCT kjensler_NOUN o._PUNCT l._PUNCT anten_CCONJ ikkje_PART eksisterer_VERB ,_PUNCT eller_CCONJ at_SCONJ det_PRON er_AUX heilt_ADJ identisk_ADJ med_ADP nevron_NOUN ,_PUNCT seier_VERB eigentleg_ADJ noko_DET ganske_ADV absurd_ADJ ,_PUNCT vil_AUX han_PRON meine_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -10393,9 +10382,9 @@ verd: ADJ | NOUN
 }
 
 Expected: {
-diplomaten_NOUN solz_PROPN zu_PROPN trott_PROPN ,_PUNCT feltmarskalk_NOUN witzleben_PROPN og_CCONJ alle_DET dei_DET andre_DET framstod_VERB med_ADP byrgskap_NOUN og_CCONJ verdigheit_NOUN -_PUNCT filmen_NOUN kunne_AUX ikkje_ADV brukast_VERB som_ADP propagandatriumf_NOUN ._PUNCT}
+diplomaten_NOUN solz_PROPN zu_PROPN trott_PROPN ,_PUNCT feltmarskalk_NOUN witzleben_PROPN og_CCONJ alle_DET dei_DET andre_DET framstod_VERB med_ADP byrgskap_NOUN og_CCONJ verdigheit_NOUN -_PUNCT filmen_NOUN kunne_AUX ikkje_PART brukast_VERB som_ADP propagandatriumf_NOUN ._PUNCT}
 Predicted: {
-diplomaten_NOUN solz_PROPN zu_PROPN trott_PROPN ,_PUNCT feltmarskalk_PROPN witzleben_PROPN og_CCONJ alle_DET dei_DET andre_DET framstod_VERB med_ADP byrgskap_NOUN og_CCONJ verdigheit_NOUN -_PUNCT filmen_NOUN kunne_AUX ikkje_ADV brukast_VERB som_ADP propagandatriumf_NOUN ._PUNCT}
+diplomaten_NOUN solz_PROPN zu_PROPN trott_PROPN ,_PUNCT feltmarskalk_PROPN witzleben_PROPN og_CCONJ alle_DET dei_DET andre_DET framstod_VERB med_ADP byrgskap_NOUN og_CCONJ verdigheit_NOUN -_PUNCT filmen_NOUN kunne_AUX ikkje_PART brukast_VERB som_ADP propagandatriumf_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -10468,16 +10457,6 @@ som: SCONJ | ADP
 }
 
 Expected: {
-i_ADP det_DET kraftige_ADJ lyset_NOUN frå_ADP frontlyktene_NOUN er_AUX andletet_NOUN heilt_ADJ kvitt_ADJ ._PUNCT}
-Predicted: {
-i_ADP det_PRON kraftige_ADJ lyset_NOUN frå_ADP frontlyktene_NOUN er_AUX andletet_NOUN heilt_ADJ kvitt_ADJ ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-det: DET | PRON
-}
-
-Expected: {
 «_PUNCT nine_X one_X one_X ._PUNCT what_X is_X your_X emergency_X ?_PUNCT »_PUNCT}
 Predicted: {
 «_PUNCT nine_PROPN one_PROPN one_PROPN ._PUNCT what_X is_X your_X emergency_X ?_PUNCT »_PUNCT}
@@ -10499,16 +10478,6 @@ Tok: Ref | Pred
 byes: PROPN | VERB
 takka: VERB | NOUN
 som: SCONJ | ADP
-}
-
-Expected: {
-alternativa_NOUN er_AUX verre_ADJ enn_ADP at_SCONJ hellas_PROPN framleis_ADV er_AUX med_ADP ._PUNCT}
-Predicted: {
-alternativa_NOUN er_AUX verre_ADJ enn_ADP at_SCONJ hellas_PROPN framleis_ADV er_AUX med_ADV ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-med: ADP | ADV
 }
 
 Expected: {
@@ -10751,12 +10720,11 @@ for: CCONJ | ADP
 Expected: {
 så_ADV vi_PRON har_AUX alt_ADV fått_VERB svar_NOUN på_ADP eit_DET første_ADJ spørsmål_NOUN :_PUNCT}
 Predicted: {
-så_CCONJ vi_PRON har_AUX alt_PRON fått_VERB svar_NOUN på_ADP eit_DET første_ADJ spørsmål_NOUN :_PUNCT}
+så_CCONJ vi_PRON har_AUX alt_ADV fått_VERB svar_NOUN på_ADP eit_DET første_ADJ spørsmål_NOUN :_PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 så: ADV | CCONJ
-alt: ADV | PRON
 }
 
 Expected: {
@@ -10838,12 +10806,10 @@ som: ADP | SCONJ
 Expected: {
 den_DET fyrste_ADJ boka_NOUN ,_PUNCT potemkin_PROPN og_CCONJ katarina_PROPN den_DET store_ADJ ,_PUNCT vart_VERB ein_DET kjempesuksess_NOUN ,_PUNCT slik_ADV alle_DET bøkene_NOUN hans_PRON har_AUX vorte_VERB til_ADP no_ADV ._PUNCT}
 Predicted: {
-den_DET fyrste_ADJ boka_NOUN ,_PUNCT potemkin_NOUN og_CCONJ katarina_NOUN den_DET store_ADJ ,_PUNCT vart_AUX ein_DET kjempesuksess_NOUN ,_PUNCT slik_ADV alle_PRON bøkene_NOUN hans_PRON har_AUX vorte_VERB til_ADP no_ADV ._PUNCT}
+den_DET fyrste_ADJ boka_NOUN ,_PUNCT potemkin_PROPN og_CCONJ katarina_PROPN den_DET store_ADJ ,_PUNCT vart_AUX ein_DET kjempesuksess_NOUN ,_PUNCT slik_ADV alle_PRON bøkene_NOUN hans_PRON har_AUX vorte_VERB til_ADP no_ADV ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-potemkin: PROPN | NOUN
-katarina: PROPN | NOUN
 vart: VERB | AUX
 alle: DET | PRON
 }
@@ -10912,13 +10878,14 @@ sendebod: NOUN | VERB
 }
 
 Expected: {
-for_CCONJ ikkje_ADV berre_ADV har_AUX bankdirektørane_NOUN og_CCONJ finansmeklarane_NOUN soge_VERB opp_ADP i_ADP seg_PRON skattepengane_NOUN som_SCONJ vart_AUX brukte_ADJ til_ADP å_PART berga_VERB dei_DET skakkøyrde_ADJ bankane_NOUN ._PUNCT}
+for_CCONJ ikkje_PART berre_ADV har_AUX bankdirektørane_NOUN og_CCONJ finansmeklarane_NOUN soge_VERB opp_ADP i_ADP seg_PRON skattepengane_NOUN som_SCONJ vart_AUX brukte_ADJ til_ADP å_PART berga_VERB dei_DET skakkøyrde_ADJ bankane_NOUN ._PUNCT}
 Predicted: {
-for_ADV ikkje_ADV berre_ADV har_AUX bankdirektørane_NOUN og_CCONJ finansmeklarane_NOUN soge_VERB opp_ADV i_ADP seg_PRON skattepengane_NOUN som_SCONJ vart_AUX brukte_ADJ til_ADP å_PART berga_VERB dei_PRON skakkøyrde_VERB bankane_NOUN ._PUNCT}
+for_ADV ikkje_PART berre_ADV har_VERB bankdirektørane_NOUN og_CCONJ finansmeklarane_NOUN soge_VERB opp_ADV i_ADP seg_PRON skattepengane_NOUN som_SCONJ vart_AUX brukte_ADJ til_ADP å_PART berga_VERB dei_PRON skakkøyrde_VERB bankane_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 for: CCONJ | ADV
+har: AUX | VERB
 opp: ADP | ADV
 dei: DET | PRON
 skakkøyrde: ADJ | VERB
@@ -10947,9 +10914,9 @@ skriveføre: ADJ | NOUN
 }
 
 Expected: {
-vel_ADV ,_PUNCT framleis_ADV er_VERB det_PRON ikkje_ADV nokon_PRON som_SCONJ maktar_VERB å_PART krevja_VERB inn_ADV vernepengar_NOUN av_ADP butikkeigarar_NOUN i_ADP oslo_PROPN ,_PUNCT framleis_ADV er_AUX det_PRON slik_ADV at_SCONJ byggjenæringa_NOUN vert_AUX kontrollert_ADJ av_ADP statsbygg_PROPN og_CCONJ selvaag_PROPN ,_PUNCT og_CCONJ framleis_ADV er_AUX det_PRON slik_ADV at_SCONJ oslo_PROPN indre_ADJ by_NOUN ikkje_ADV vert_AUX kontrollert_ADJ av_ADP menn_NOUN i_ADP dobbeltspente_ADJ dressar_NOUN som_SCONJ sender_VERB døtrene_NOUN våre_PRON ut_ADV i_ADP prostitusjon_NOUN ._PUNCT}
+vel_ADV ,_PUNCT framleis_ADV er_VERB det_PRON ikkje_PART nokon_PRON som_SCONJ maktar_VERB å_PART krevja_VERB inn_ADV vernepengar_NOUN av_ADP butikkeigarar_NOUN i_ADP oslo_PROPN ,_PUNCT framleis_ADV er_AUX det_PRON slik_ADV at_SCONJ byggjenæringa_NOUN vert_AUX kontrollert_ADJ av_ADP statsbygg_PROPN og_CCONJ selvaag_PROPN ,_PUNCT og_CCONJ framleis_ADV er_AUX det_PRON slik_ADV at_SCONJ oslo_PROPN indre_ADJ by_NOUN ikkje_PART vert_AUX kontrollert_ADJ av_ADP menn_NOUN i_ADP dobbeltspente_ADJ dressar_NOUN som_SCONJ sender_VERB døtrene_NOUN våre_PRON ut_ADV i_ADP prostitusjon_NOUN ._PUNCT}
 Predicted: {
-vel_ADV ,_PUNCT framleis_ADV er_AUX det_PRON ikkje_ADV nokon_PRON som_SCONJ maktar_VERB å_PART krevja_VERB inn_ADV vernepengar_NOUN av_ADP butikkeigarar_NOUN i_ADP oslo_PROPN ,_PUNCT framleis_ADV er_AUX det_PRON slik_ADV at_SCONJ byggjenæringa_NOUN vert_AUX kontrollert_ADJ av_ADP statsbygg_NOUN og_CCONJ selvaag_NOUN ,_PUNCT og_CCONJ framleis_ADV er_AUX det_PRON slik_ADV at_SCONJ oslo_PROPN indre_ADJ by_NOUN ikkje_ADV vert_AUX kontrollert_ADJ av_ADP menn_NOUN i_ADP dobbeltspente_ADJ dressar_NOUN som_SCONJ sender_VERB døtrene_NOUN våre_PRON ut_ADV i_ADP prostitusjon_NOUN ._PUNCT}
+vel_ADV ,_PUNCT framleis_ADV er_AUX det_PRON ikkje_PART nokon_PRON som_SCONJ maktar_VERB å_PART krevja_VERB inn_ADV vernepengar_NOUN av_ADP butikkeigarar_NOUN i_ADP oslo_PROPN ,_PUNCT framleis_ADV er_AUX det_PRON slik_ADV at_SCONJ byggjenæringa_NOUN vert_AUX kontrollert_ADJ av_ADP statsbygg_NOUN og_CCONJ selvaag_NOUN ,_PUNCT og_CCONJ framleis_ADV er_AUX det_PRON slik_ADV at_SCONJ oslo_PROPN indre_ADJ by_NOUN ikkje_PART vert_AUX kontrollert_ADJ av_ADP menn_NOUN i_ADP dobbeltspente_ADJ dressar_NOUN som_SCONJ sender_VERB døtrene_NOUN våre_PRON ut_ADV i_ADP prostitusjon_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -10970,9 +10937,9 @@ utvida: VERB | ADJ
 }
 
 Expected: {
-mafiosane_NOUN som_SCONJ endar_VERB opp_ADV på_ADP ein_DET ny_ADJ stad_NOUN ,_PUNCT flytte_VERB ikkje_ADV på_ADP seg_PRON av_ADV di_SCONJ dei_PRON ynskte_VERB det_PRON ,_PUNCT men_CCONJ av_ADV di_SCONJ dei_PRON har_AUX vorte_VERB tvinga_ADJ til_ADP å_PART flytta_VERB etter_ADP ordre_NOUN frå_ADP ein_DET rettsinstans_NOUN ,_PUNCT av_ADV di_SCONJ dei_PRON måtte_AUX røma_VERB frå_ADP lova_NOUN eller_CCONJ frå_ADP mafiakrigar_NOUN ._PUNCT}
+mafiosane_NOUN som_SCONJ endar_VERB opp_ADV på_ADP ein_DET ny_ADJ stad_NOUN ,_PUNCT flytte_VERB ikkje_PART på_ADP seg_PRON av_ADV di_SCONJ dei_PRON ynskte_VERB det_PRON ,_PUNCT men_CCONJ av_ADV di_SCONJ dei_PRON har_AUX vorte_VERB tvinga_ADJ til_ADP å_PART flytta_VERB etter_ADP ordre_NOUN frå_ADP ein_DET rettsinstans_NOUN ,_PUNCT av_ADV di_SCONJ dei_PRON måtte_AUX røma_VERB frå_ADP lova_NOUN eller_CCONJ frå_ADP mafiakrigar_NOUN ._PUNCT}
 Predicted: {
-mafiosane_NOUN som_SCONJ endar_VERB opp_ADV på_ADP ein_DET ny_ADJ stad_NOUN ,_PUNCT flytte_VERB ikkje_ADV på_ADP seg_PRON av_ADP di_SCONJ dei_PRON ynskte_VERB det_PRON ,_PUNCT men_CCONJ av_ADP di_SCONJ dei_PRON har_AUX vorte_AUX tvinga_ADJ til_ADP å_PART flytta_VERB etter_ADP ordre_NOUN frå_ADP ein_DET rettsinstans_NOUN ,_PUNCT av_ADP di_SCONJ dei_PRON måtte_AUX røma_VERB frå_ADP lova_NOUN eller_CCONJ frå_ADP mafiakrigar_NOUN ._PUNCT}
+mafiosane_NOUN som_SCONJ endar_VERB opp_ADV på_ADP ein_DET ny_ADJ stad_NOUN ,_PUNCT flytte_VERB ikkje_PART på_ADP seg_PRON av_ADP di_SCONJ dei_PRON ynskte_VERB det_PRON ,_PUNCT men_CCONJ av_ADP di_SCONJ dei_PRON har_AUX vorte_AUX tvinga_ADJ til_ADP å_PART flytta_VERB etter_ADP ordre_NOUN frå_ADP ein_DET rettsinstans_NOUN ,_PUNCT av_ADP di_SCONJ dei_PRON måtte_AUX røma_VERB frå_ADP lova_NOUN eller_CCONJ frå_ADP mafiakrigar_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -11039,9 +11006,9 @@ vart: VERB | AUX
 }
 
 Expected: {
-ikkje_ADV dekning_NOUN ,_PUNCT stod_VERB det_PRON ,_PUNCT seier_VERB hilde_PROPN k._PROPN kjøs_PROPN med_ADP eit_DET skeivt_ADJ smil_NOUN -_PUNCT utan_ADP å_PART forklara_VERB korleis_ADV dokumentarfilmskaparane_NOUN skal_AUX overleva_VERB til_SCONJ nye_ADJ prosjekt_NOUN er_AUX finansierte_ADJ ._PUNCT}
+ikkje_PART dekning_NOUN ,_PUNCT stod_VERB det_PRON ,_PUNCT seier_VERB hilde_PROPN k._PROPN kjøs_PROPN med_ADP eit_DET skeivt_ADJ smil_NOUN -_PUNCT utan_ADP å_PART forklara_VERB korleis_ADV dokumentarfilmskaparane_NOUN skal_AUX overleva_VERB til_SCONJ nye_ADJ prosjekt_NOUN er_AUX finansierte_ADJ ._PUNCT}
 Predicted: {
-ikkje_ADV dekning_NOUN ,_PUNCT stod_VERB det_PRON ,_PUNCT seier_VERB hilde_PROPN k._PROPN kjøs_PROPN med_ADP eit_DET skeivt_ADJ smil_NOUN -_PUNCT utan_ADP å_PART forklara_VERB korleis_ADV dokumentarfilmskaparane_NOUN skal_AUX overleva_VERB til_ADP nye_ADJ prosjekt_NOUN er_AUX finansierte_ADJ ._PUNCT}
+ikkje_PART dekning_NOUN ,_PUNCT stod_VERB det_PRON ,_PUNCT seier_VERB hilde_PROPN k._PROPN kjøs_PROPN med_ADP eit_DET skeivt_ADJ smil_NOUN -_PUNCT utan_ADP å_PART forklara_VERB korleis_ADV dokumentarfilmskaparane_NOUN skal_AUX overleva_VERB til_ADP nye_ADJ prosjekt_NOUN er_AUX finansierte_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -11081,16 +11048,6 @@ om: ADV | ADP
 }
 
 Expected: {
-altså_ADV må_AUX ein_PRON jobbe_VERB med_ADP tekniske_ADJ forskrifter_NOUN og_CCONJ energikrav_NOUN som_SCONJ fører_VERB til_ADP utbetring_NOUN av_ADP eksisterande_ADJ byggmasse_NOUN ._PUNCT}
-Predicted: {
-altså_ADV må_AUX ein_DET jobbe_VERB med_ADP tekniske_ADJ forskrifter_NOUN og_CCONJ energikrav_NOUN som_SCONJ fører_VERB til_ADP utbetring_NOUN av_ADP eksisterande_ADJ byggmasse_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-ein: PRON | DET
-}
-
-Expected: {
 christopher_PROPN hals_PROPN gylseth_PROPN har_AUX skrive_VERB ein_DET biografi_NOUN om_ADP den_DET gamle_ADJ dagbladredaktøren_NOUN arve_PROPN solstad_PROPN ,_PUNCT med_ADP tilnamnet_NOUN storoksen_PROPN ,_PUNCT og_CCONJ tilhøvet_NOUN hans_PRON til_ADP dagbladet_PROPN ._PUNCT}
 Predicted: {
 christopher_PROPN hals_NOUN gylseth_PROPN har_AUX skrive_VERB ein_DET biografi_NOUN om_ADP den_DET gamle_ADJ dagbladredaktøren_NOUN arve_PROPN solstad_PROPN ,_PUNCT med_ADP tilnamnet_NOUN storoksen_PROPN ,_PUNCT og_CCONJ tilhøvet_NOUN hans_PRON til_ADP dagbladet_PROPN ._PUNCT}
@@ -11111,9 +11068,9 @@ var: VERB | NOUN
 }
 
 Expected: {
-side_NOUN opp_ADP og_CCONJ side_NOUN ned_ADP om_ADP interne_ADJ maktkampar_NOUN og_CCONJ intrigar_NOUN ,_PUNCT ikkje_ADV minst_ADJ i_ADP samband_NOUN med_ADP langdryge_ADJ tilsetjingsprosedyrar_NOUN ._PUNCT}
+side_NOUN opp_ADP og_CCONJ side_NOUN ned_ADP om_ADP interne_ADJ maktkampar_NOUN og_CCONJ intrigar_NOUN ,_PUNCT ikkje_PART minst_ADJ i_ADP samband_NOUN med_ADP langdryge_ADJ tilsetjingsprosedyrar_NOUN ._PUNCT}
 Predicted: {
-side_NOUN opp_ADV og_CCONJ side_NOUN ned_ADP om_ADP interne_ADJ maktkampar_NOUN og_CCONJ intrigar_NOUN ,_PUNCT ikkje_ADV minst_ADJ i_ADP samband_NOUN med_ADP langdryge_ADJ tilsetjingsprosedyrar_NOUN ._PUNCT}
+side_NOUN opp_ADV og_CCONJ side_NOUN ned_ADP om_ADP interne_ADJ maktkampar_NOUN og_CCONJ intrigar_NOUN ,_PUNCT ikkje_PART minst_ADJ i_ADP samband_NOUN med_ADP langdryge_ADJ tilsetjingsprosedyrar_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -11131,9 +11088,9 @@ til: ADV | ADP
 }
 
 Expected: {
-noko_PRON ungdomsskulelærarane_NOUN ikkje_ADV kan_AUX svara_VERB for_ADV ,_PUNCT er_AUX korleis_ADV dei_DET elevane_NOUN som_SCONJ kjem_VERB inn_ADV ,_PUNCT er_AUX førebudde_ADJ ._PUNCT}
+noko_PRON ungdomsskulelærarane_NOUN ikkje_PART kan_AUX svara_VERB for_ADV ,_PUNCT er_AUX korleis_ADV dei_DET elevane_NOUN som_SCONJ kjem_VERB inn_ADV ,_PUNCT er_AUX førebudde_ADJ ._PUNCT}
 Predicted: {
-noko_PRON ungdomsskulelærarane_NOUN ikkje_ADV kan_AUX svara_VERB for_ADP ,_PUNCT er_AUX korleis_ADV dei_DET elevane_NOUN som_SCONJ kjem_VERB inn_ADV ,_PUNCT er_AUX førebudde_ADJ ._PUNCT}
+noko_PRON ungdomsskulelærarane_NOUN ikkje_PART kan_AUX svara_VERB for_ADP ,_PUNCT er_AUX korleis_ADV dei_DET elevane_NOUN som_SCONJ kjem_VERB inn_ADV ,_PUNCT er_AUX førebudde_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -11141,9 +11098,9 @@ for: ADV | ADP
 }
 
 Expected: {
-langt_ADJ dei_DET fleste_ADJ landa_NOUN i_ADP oecd_PROPN lèt_VERB born_NOUN som_SCONJ ikkje_ADV har_AUX lært_VERB seg_PRON det_PRON dei_PRON skulle_VERB ,_PUNCT gå_VERB skuleklassar_NOUN opp_ADV att_ADV ._PUNCT}
+langt_ADJ dei_DET fleste_ADJ landa_NOUN i_ADP oecd_PROPN lèt_VERB born_NOUN som_SCONJ ikkje_PART har_AUX lært_VERB seg_PRON det_PRON dei_PRON skulle_VERB ,_PUNCT gå_VERB skuleklassar_NOUN opp_ADV att_ADV ._PUNCT}
 Predicted: {
-langt_ADJ dei_DET fleste_ADJ landa_NOUN i_ADP oecd_PROPN lèt_VERB born_NOUN som_SCONJ ikkje_ADV har_AUX lært_VERB seg_PRON det_PRON dei_PRON skulle_AUX ,_PUNCT gå_VERB skuleklassar_NOUN opp_ADV att_ADV ._PUNCT}
+langt_ADJ dei_DET fleste_ADJ landa_NOUN i_ADP oecd_PROPN lèt_VERB born_NOUN som_SCONJ ikkje_PART har_AUX lært_VERB seg_PRON det_PRON dei_PRON skulle_AUX ,_PUNCT gå_VERB skuleklassar_NOUN opp_ADV att_ADV ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -11232,9 +11189,9 @@ sjølv: ADV | DET
 }
 
 Expected: {
-dermed_ADV bort_ADP med_ADP det_DET alderdomlege_ADJ «_PUNCT fader_PROPN »_PUNCT (_PUNCT mest_ADJ ikkje_ADV brukt_ADJ av_ADP nokon_PRON i_ADP kvardagstale_NOUN anna_DET enn_ADV som_ADP bannord_NOUN )_PUNCT i_ADP fadervåret_PROPN ,_PUNCT no_ADV ber_VERB ein_PRON både_CCONJ på_ADP bokmål_NOUN og_CCONJ nynorsk_NOUN til_ADP «_PUNCT vår_PRON far_NOUN i_ADP himmelen_NOUN »_PUNCT ._PUNCT}
+dermed_ADV bort_ADP med_ADP det_DET alderdomlege_ADJ «_PUNCT fader_PROPN »_PUNCT (_PUNCT mest_ADJ ikkje_PART brukt_ADJ av_ADP nokon_PRON i_ADP kvardagstale_NOUN anna_DET enn_ADV som_ADP bannord_NOUN )_PUNCT i_ADP fadervåret_PROPN ,_PUNCT no_ADV ber_VERB ein_PRON både_CCONJ på_ADP bokmål_NOUN og_CCONJ nynorsk_NOUN til_ADP «_PUNCT vår_PRON far_NOUN i_ADP himmelen_NOUN »_PUNCT ._PUNCT}
 Predicted: {
-dermed_ADV bort_ADV med_ADP det_DET alderdomlege_ADJ «_PUNCT fader_PROPN »_PUNCT (_PUNCT mest_ADJ ikkje_ADV brukt_VERB av_ADP nokon_PRON i_ADP kvardagstale_DET anna_DET enn_NOUN som_ADP bannord_NOUN )_PUNCT i_ADP fadervåret_PROPN ,_PUNCT no_ADV ber_VERB ein_PRON både_CCONJ på_ADP bokmål_NOUN og_CCONJ nynorsk_NOUN til_ADP «_PUNCT vår_PRON far_NOUN i_ADP himmelen_NOUN »_PUNCT ._PUNCT}
+dermed_ADV bort_ADV med_ADP det_DET alderdomlege_ADJ «_PUNCT fader_PROPN »_PUNCT (_PUNCT mest_ADJ ikkje_PART brukt_VERB av_ADP nokon_PRON i_ADP kvardagstale_DET anna_DET enn_NOUN som_ADP bannord_NOUN )_PUNCT i_ADP fadervåret_PROPN ,_PUNCT no_ADV ber_VERB ein_PRON både_CCONJ på_ADP bokmål_NOUN og_CCONJ nynorsk_NOUN til_ADP «_PUNCT vår_PRON far_NOUN i_ADP himmelen_NOUN »_PUNCT ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -11301,9 +11258,9 @@ denver: PROPN | NOUN
 }
 
 Expected: {
-shells_PROPN produksjonsmåte_NOUN gjer_VERB at_SCONJ ein_PRON ikkje_ADV treng_VERB opna_VERB opp_ADV bakken_NOUN ,_PUNCT noko_PRON alle_PRON kan_AUX sjå_VERB med_ADP sjølvsyn_NOUN ,_PUNCT men_CCONJ shell_PROPN hevdar_VERB òg_ADV at_SCONJ metoden_NOUN deira_PRON ,_PUNCT som_SCONJ mellom_ADP anna_DET «_PUNCT fryseisolerer_VERB »_PUNCT reservoar_NOUN inn_ADP bak_ADP vegger_NOUN av_ADP is_NOUN ,_PUNCT hindrar_VERB ureining_NOUN av_ADP grunnvatnet_NOUN ._PUNCT}
+shells_PROPN produksjonsmåte_NOUN gjer_VERB at_SCONJ ein_PRON ikkje_PART treng_VERB opna_VERB opp_ADV bakken_NOUN ,_PUNCT noko_PRON alle_PRON kan_AUX sjå_VERB med_ADP sjølvsyn_NOUN ,_PUNCT men_CCONJ shell_PROPN hevdar_VERB òg_ADV at_SCONJ metoden_NOUN deira_PRON ,_PUNCT som_SCONJ mellom_ADP anna_DET «_PUNCT fryseisolerer_VERB »_PUNCT reservoar_NOUN inn_ADP bak_ADP vegger_NOUN av_ADP is_NOUN ,_PUNCT hindrar_VERB ureining_NOUN av_ADP grunnvatnet_NOUN ._PUNCT}
 Predicted: {
-shells_PROPN produksjonsmåte_NOUN gjer_VERB at_SCONJ ein_PRON ikkje_ADV treng_VERB opna_ADJ opp_ADP bakken_NOUN ,_PUNCT noko_CCONJ alle_PRON kan_AUX sjå_VERB med_ADP sjølvsyn_NOUN ,_PUNCT men_CCONJ shell_PROPN hevdar_VERB òg_ADV at_SCONJ metoden_NOUN deira_PRON ,_PUNCT som_SCONJ mellom_ADP anna_DET «_PUNCT fryseisolerer_VERB »_PUNCT reservoar_VERB inn_ADP bak_ADP vegger_NOUN av_ADP is_NOUN ,_PUNCT hindrar_VERB ureining_NOUN av_ADP grunnvatnet_NOUN ._PUNCT}
+shells_PROPN produksjonsmåte_NOUN gjer_VERB at_SCONJ ein_PRON ikkje_PART treng_VERB opna_ADJ opp_ADP bakken_NOUN ,_PUNCT noko_CCONJ alle_PRON kan_AUX sjå_VERB med_ADP sjølvsyn_NOUN ,_PUNCT men_CCONJ shell_PROPN hevdar_VERB òg_ADV at_SCONJ metoden_NOUN deira_PRON ,_PUNCT som_SCONJ mellom_ADP anna_DET «_PUNCT fryseisolerer_VERB »_PUNCT reservoar_VERB inn_ADP bak_ADP vegger_NOUN av_ADP is_NOUN ,_PUNCT hindrar_VERB ureining_NOUN av_ADP grunnvatnet_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -11433,9 +11390,9 @@ er: VERB | PUNCT
 }
 
 Expected: {
-han_PRON er_AUX skikkeleg_ADJ sjuk_ADJ ,_PUNCT og_CCONJ det_PRON er_AUX ikkje_ADV berre_ADV halsen_NOUN som_SCONJ har_AUX tjukna_VERB ._PUNCT}
+han_PRON er_AUX skikkeleg_ADJ sjuk_ADJ ,_PUNCT og_CCONJ det_PRON er_AUX ikkje_PART berre_ADV halsen_NOUN som_SCONJ har_AUX tjukna_VERB ._PUNCT}
 Predicted: {
-han_PRON er_AUX skikkeleg_ADJ sjuk_ADJ ,_PUNCT og_CCONJ det_PRON er_AUX ikkje_ADV berre_ADV halsen_NOUN som_SCONJ har_AUX tjukna_ADJ ._PUNCT}
+han_PRON er_AUX skikkeleg_ADJ sjuk_ADJ ,_PUNCT og_CCONJ det_PRON er_AUX ikkje_PART berre_ADV halsen_NOUN som_SCONJ har_AUX tjukna_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -11498,9 +11455,9 @@ pine: NOUN | ADJ
 }
 
 Expected: {
-det_DET kristne_ADJ utgangspunktet_NOUN er_AUX at_SCONJ du_PRON ikkje_ADV skal_AUX misbruke_VERB eller_CCONJ spotte_VERB herren_PROPN din_PRON guds_PROPN namn_NOUN ._PUNCT}
+det_DET kristne_ADJ utgangspunktet_NOUN er_AUX at_SCONJ du_PRON ikkje_PART skal_AUX misbruke_VERB eller_CCONJ spotte_VERB herren_PROPN din_PRON guds_PROPN namn_NOUN ._PUNCT}
 Predicted: {
-det_DET kristne_ADJ utgangspunktet_NOUN er_AUX at_SCONJ du_PRON ikkje_ADV skal_AUX misbruke_VERB eller_CCONJ spotte_VERB herren_NOUN din_PRON guds_PROPN namn_NOUN ._PUNCT}
+det_DET kristne_ADJ utgangspunktet_NOUN er_AUX at_SCONJ du_PRON ikkje_PART skal_AUX misbruke_VERB eller_CCONJ spotte_VERB herren_NOUN din_PRON guds_PROPN namn_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -11518,13 +11475,23 @@ sør: ADV | ADP
 }
 
 Expected: {
-heidi_PROPN hjorteland_PROPN kjem_VERB opphavleg_ADJ frå_ADP ein_DET fjellgard_NOUN i_ADP suldal_PROPN ,_PUNCT men_CCONJ der_ADV bur_VERB ho_PRON ikkje_ADV lenger_ADJ ._PUNCT}
+heidi_PROPN hjorteland_PROPN kjem_VERB opphavleg_ADJ frå_ADP ein_DET fjellgard_NOUN i_ADP suldal_PROPN ,_PUNCT men_CCONJ der_ADV bur_VERB ho_PRON ikkje_PART lenger_ADJ ._PUNCT}
 Predicted: {
-heidi_PROPN hjorteland_PROPN kjem_VERB opphavleg_ADJ frå_ADP ein_DET fjellgard_ADJ i_ADP suldal_PROPN ,_PUNCT men_CCONJ der_ADV bur_VERB ho_PRON ikkje_ADV lenger_ADJ ._PUNCT}
+heidi_PROPN hjorteland_PROPN kjem_VERB opphavleg_ADJ frå_ADP ein_DET fjellgard_ADJ i_ADP suldal_PROPN ,_PUNCT men_CCONJ der_ADV bur_VERB ho_PRON ikkje_PART lenger_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 fjellgard: NOUN | ADJ
+}
+
+Expected: {
+eg_PRON kunne_AUX aldri_ADV tenkt_VERB meg_PRON å_PART vera_AUX kjendisjournalist_NOUN ._PUNCT}
+Predicted: {
+eg_PRON kunne_AUX aldri_ADV tenkt_VERB meg_PRON å_PART vera_AUX kjendisjournalist_ADJ ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+kjendisjournalist: NOUN | ADJ
 }
 
 Expected: {
@@ -11562,16 +11529,6 @@ så: ADV | VERB
 }
 
 Expected: {
-no_ADV gjer_VERB ikkje_ADV enzensberger_PROPN noko_DET større_ADJ poeng_NOUN ut_ADP av_ADP dette_PRON enn_ADP det_PRON det_PRON er_VERB ._PUNCT}
-Predicted: {
-no_ADV gjer_VERB ikkje_ADV enzensberger_PROPN noko_DET større_ADJ poeng_NOUN ut_ADP av_ADP dette_DET enn_ADP det_PRON det_PRON er_VERB ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-dette: PRON | DET
-}
-
-Expected: {
 kveler_VERB demokratiet_NOUN ved_ADP å_PART fortelja_VERB oss_PRON umyndige_ADJ veljarar_NOUN kva_PRON som_SCONJ er_AUX best_ADJ for_ADP oss_PRON ._PUNCT}
 Predicted: {
 kveler_NOUN demokratiet_NOUN ved_ADP å_PART fortelja_VERB oss_PRON umyndige_ADJ veljarar_NOUN kva_PRON som_SCONJ er_AUX best_ADJ for_ADP oss_PRON ._PUNCT}
@@ -11582,9 +11539,9 @@ kveler: VERB | NOUN
 }
 
 Expected: {
-dei_PRON som_SCONJ ikkje_ADV fyller_VERB dette_DET kravet_NOUN ,_PUNCT er_AUX gratispassasjerar_NOUN som_SCONJ treng_VERB hjelp_NOUN frå_ADP unionen_PROPN -_PUNCT og_CCONJ vil_AUX difor_ADV verta_VERB verande_ADJ gratispassasjerar_NOUN i_ADP all_DET æve_NOUN ._PUNCT}
+dei_PRON som_SCONJ ikkje_PART fyller_VERB dette_DET kravet_NOUN ,_PUNCT er_AUX gratispassasjerar_NOUN som_SCONJ treng_VERB hjelp_NOUN frå_ADP unionen_PROPN -_PUNCT og_CCONJ vil_AUX difor_ADV verta_VERB verande_ADJ gratispassasjerar_NOUN i_ADP all_DET æve_NOUN ._PUNCT}
 Predicted: {
-dei_PRON som_SCONJ ikkje_ADV fyller_VERB dette_DET kravet_NOUN ,_PUNCT er_AUX gratispassasjerar_NOUN som_SCONJ treng_VERB hjelp_NOUN frå_ADP unionen_NOUN -_PUNCT og_CCONJ vil_AUX difor_ADV verta_VERB verande_ADJ gratispassasjerar_NOUN i_ADP all_DET æve_NOUN ._PUNCT}
+dei_PRON som_SCONJ ikkje_PART fyller_VERB dette_DET kravet_NOUN ,_PUNCT er_AUX gratispassasjerar_NOUN som_SCONJ treng_VERB hjelp_NOUN frå_ADP unionen_NOUN -_PUNCT og_CCONJ vil_AUX difor_ADV verta_VERB verande_ADJ gratispassasjerar_NOUN i_ADP all_DET æve_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -11602,9 +11559,9 @@ kva: PRON | DET
 }
 
 Expected: {
-i_ADP 1935_NUM hadde_AUX ikkje_ADV hitler_PROPN synt_VERB heilt_ADJ ut_ADV kven_PRON han_PRON var_AUX og_CCONJ kva_PRON rørsla_NOUN hans_PRON stod_VERB for_ADP så_ADV ope_ADJ som_ADP til_ADP dømes_NOUN etter_ADP krystallnatta_NOUN i_ADP november_NOUN 1938_NUM ._PUNCT}
+i_ADP 1935_NUM hadde_AUX ikkje_PART hitler_PROPN synt_VERB heilt_ADJ ut_ADV kven_PRON han_PRON var_AUX og_CCONJ kva_PRON rørsla_NOUN hans_PRON stod_VERB for_ADP så_ADV ope_ADJ som_ADP til_ADP dømes_NOUN etter_ADP krystallnatta_NOUN i_ADP november_NOUN 1938_NUM ._PUNCT}
 Predicted: {
-i_ADP 1935_NUM hadde_VERB ikkje_ADV hitler_PROPN synt_VERB heilt_ADJ ut_ADP kven_PRON han_PRON var_VERB og_CCONJ kva_PRON rørsla_NOUN hans_PRON stod_VERB for_ADP så_ADV ope_ADJ som_ADP til_ADP dømes_NOUN etter_ADP krystallnatta_NOUN i_ADP november_NOUN 1938_NUM ._PUNCT}
+i_ADP 1935_NUM hadde_VERB ikkje_PART hitler_PROPN synt_VERB heilt_ADJ ut_ADP kven_PRON han_PRON var_VERB og_CCONJ kva_PRON rørsla_NOUN hans_PRON stod_VERB for_ADP så_ADV ope_ADJ som_ADP til_ADP dømes_NOUN etter_ADP krystallnatta_NOUN i_ADP november_NOUN 1938_NUM ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -11634,9 +11591,9 @@ det: PRON | DET
 }
 
 Expected: {
-det_PRON var_VERB ikkje_ADV så_ADV reint_ADJ få_ADJ som_SCONJ ope_ADJ sa_VERB frå_ADV at_SCONJ dei_PRON var_AUX meir_ADJ stemde_ADJ for_ADP eit_DET brunt_ADJ diktatur_NOUN enn_ADP eit_DET raudt_NOUN ._PUNCT}
+det_PRON var_VERB ikkje_PART så_ADV reint_ADJ få_ADJ som_SCONJ ope_ADJ sa_VERB frå_ADV at_SCONJ dei_PRON var_AUX meir_ADJ stemde_ADJ for_ADP eit_DET brunt_ADJ diktatur_NOUN enn_ADP eit_DET raudt_NOUN ._PUNCT}
 Predicted: {
-det_PRON var_AUX ikkje_ADV så_ADV reint_ADJ få_ADJ som_SCONJ ope_ADJ sa_VERB frå_ADP at_SCONJ dei_PRON var_AUX meir_ADJ stemde_ADJ for_ADP eit_DET brunt_ADJ diktatur_NOUN enn_ADP eit_DET raudt_ADJ ._PUNCT}
+det_PRON var_AUX ikkje_PART så_ADV reint_ADJ få_ADJ som_SCONJ ope_ADJ sa_VERB frå_ADP at_SCONJ dei_PRON var_AUX meir_ADJ stemde_ADJ for_ADP eit_DET brunt_ADJ diktatur_NOUN enn_ADP eit_DET raudt_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -11668,9 +11625,9 @@ ein: DET | PRON
 }
 
 Expected: {
-men_CCONJ dei_PRON kjenner_VERB ikkje_ADV at_SCONJ dei_PRON har_VERB befolkninga_NOUN med_ADP seg_PRON ._PUNCT}
+men_CCONJ dei_PRON kjenner_VERB ikkje_PART at_SCONJ dei_PRON har_VERB befolkninga_NOUN med_ADP seg_PRON ._PUNCT}
 Predicted: {
-men_CCONJ dei_PRON kjenner_VERB ikkje_ADV at_SCONJ dei_PRON har_AUX befolkninga_NOUN med_ADP seg_PRON ._PUNCT}
+men_CCONJ dei_PRON kjenner_VERB ikkje_PART at_SCONJ dei_PRON har_AUX befolkninga_NOUN med_ADP seg_PRON ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -11688,9 +11645,9 @@ har: AUX | VERB
 }
 
 Expected: {
-og_CCONJ det_PRON er_AUX liksompolitikk_NOUN når_SCONJ statsministeren_NOUN seier_VERB at_SCONJ noko_PRON er_AUX verdas_NOUN største_ADJ problem_NOUN ,_PUNCT medan_SCONJ det_PRON ikkje_ADV blir_AUX gjort_ADJ noko_PRON som_SCONJ tilseier_VERB at_SCONJ dette_PRON faktisk_ADJ er_AUX viktig_ADJ ._PUNCT}
+og_CCONJ det_PRON er_AUX liksompolitikk_NOUN når_SCONJ statsministeren_NOUN seier_VERB at_SCONJ noko_PRON er_AUX verdas_NOUN største_ADJ problem_NOUN ,_PUNCT medan_SCONJ det_PRON ikkje_PART blir_AUX gjort_ADJ noko_PRON som_SCONJ tilseier_VERB at_SCONJ dette_PRON faktisk_ADJ er_AUX viktig_ADJ ._PUNCT}
 Predicted: {
-og_CCONJ det_PRON er_AUX liksompolitikk_ADV når_SCONJ statsministeren_NOUN seier_VERB at_SCONJ noko_PRON er_AUX verdas_NOUN største_ADJ problem_NOUN ,_PUNCT medan_SCONJ det_PRON ikkje_ADV blir_VERB gjort_ADJ noko_PRON som_SCONJ tilseier_VERB at_SCONJ dette_PRON faktisk_ADJ er_AUX viktig_ADJ ._PUNCT}
+og_CCONJ det_PRON er_AUX liksompolitikk_ADV når_SCONJ statsministeren_NOUN seier_VERB at_SCONJ noko_PRON er_AUX verdas_NOUN største_ADJ problem_NOUN ,_PUNCT medan_SCONJ det_PRON ikkje_PART blir_VERB gjort_ADJ noko_PRON som_SCONJ tilseier_VERB at_SCONJ dette_PRON faktisk_ADJ er_AUX viktig_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -11887,9 +11844,9 @@ tilbake: ADP | ADV
 }
 
 Expected: {
-lukas_PROPN bulin_PROPN ,_PUNCT som_SCONJ er_AUX ein_DET av_ADP produsentane_NOUN for_ADP den_DET nye_ADJ filmen_NOUN som_SCONJ skal_AUX starte_VERB opptaka_NOUN neste_DET vår_NOUN ,_PUNCT var_AUX ikkje_ADV eingong_ADV fødd_ADJ då_SCONJ den_DET gamle_ADJ politiserien_NOUN starta_VERB i_ADP 1975_NUM ._PUNCT}
+lukas_PROPN bulin_PROPN ,_PUNCT som_SCONJ er_AUX ein_DET av_ADP produsentane_NOUN for_ADP den_DET nye_ADJ filmen_NOUN som_SCONJ skal_AUX starte_VERB opptaka_NOUN neste_DET vår_NOUN ,_PUNCT var_AUX ikkje_PART eingong_ADV fødd_ADJ då_SCONJ den_DET gamle_ADJ politiserien_NOUN starta_VERB i_ADP 1975_NUM ._PUNCT}
 Predicted: {
-lukas_PROPN bulin_PROPN ,_PUNCT som_SCONJ er_AUX ein_DET av_ADP produsentane_NOUN for_ADP den_DET nye_ADJ filmen_NOUN som_SCONJ skal_AUX starte_VERB opptaka_NOUN neste_DET vår_NOUN ,_PUNCT var_AUX ikkje_ADV eingong_ADV fødd_ADJ då_ADV den_DET gamle_ADJ politiserien_NOUN starta_VERB i_ADP 1975_NUM ._PUNCT}
+lukas_PROPN bulin_PROPN ,_PUNCT som_SCONJ er_AUX ein_DET av_ADP produsentane_NOUN for_ADP den_DET nye_ADJ filmen_NOUN som_SCONJ skal_AUX starte_VERB opptaka_NOUN neste_DET vår_NOUN ,_PUNCT var_AUX ikkje_PART eingong_ADV fødd_ADJ då_ADV den_DET gamle_ADJ politiserien_NOUN starta_VERB i_ADP 1975_NUM ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -11985,9 +11942,19 @@ lacoste: PROPN | ADJ
 }
 
 Expected: {
-men_CCONJ dette_DET forvaltingsregimet_NOUN spring_VERB ikkje_ADV ut_ADP or_ADP noka_DET tydeleg_ADJ sosial_ADJ gruppe_NOUN ._PUNCT}
+ei_DET av_ADP dei_DET bitraste_ADJ og_CCONJ mest_ADJ kjensleladde_ADJ konfliktlinene_NOUN i_ADP det_DET norske_ADJ samfunnet_NOUN er_AUX mest_ADJ ikkje_PART omtala_ADJ ._PUNCT}
 Predicted: {
-men_CCONJ dette_PRON forvaltingsregimet_VERB spring_NOUN ikkje_ADV ut_ADV or_VERB noka_DET tydeleg_ADJ sosial_ADJ gruppe_NOUN ._PUNCT}
+ei_DET av_ADP dei_DET bitraste_ADJ og_CCONJ mest_ADJ kjensleladde_ADJ konfliktlinene_NOUN i_ADP det_DET norske_ADJ samfunnet_NOUN er_AUX mest_ADJ ikkje_PART omtala_VERB ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+omtala: ADJ | VERB
+}
+
+Expected: {
+men_CCONJ dette_DET forvaltingsregimet_NOUN spring_VERB ikkje_PART ut_ADP or_ADP noka_DET tydeleg_ADJ sosial_ADJ gruppe_NOUN ._PUNCT}
+Predicted: {
+men_CCONJ dette_PRON forvaltingsregimet_VERB spring_NOUN ikkje_PART ut_ADV or_VERB noka_DET tydeleg_ADJ sosial_ADJ gruppe_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -12118,9 +12085,9 @@ kartlaust: ADJ | NOUN
 }
 
 Expected: {
-det_PRON er_VERB vel_ADV ingen_PRON som_SCONJ held_VERB quizleis_PROPN for_ADP å_PART vera_AUX ei_DET uppslagsbok_NOUN ,_PUNCT men_CCONJ i_ADP ei_DET spyrjebok_NOUN ventar_VERB ein_PRON å_PART finna_VERB klåre_ADJ og_CCONJ utvitydige_ADJ spursmål_NOUN ,_PUNCT og_CCONJ presise_ADJ ,_PUNCT fullstendige_ADJ og_CCONJ ikkje_ADV minst_ADJ rette_ADJ svar_NOUN ._PUNCT}
+det_PRON er_VERB vel_ADV ingen_PRON som_SCONJ held_VERB quizleis_PROPN for_ADP å_PART vera_AUX ei_DET uppslagsbok_NOUN ,_PUNCT men_CCONJ i_ADP ei_DET spyrjebok_NOUN ventar_VERB ein_PRON å_PART finna_VERB klåre_ADJ og_CCONJ utvitydige_ADJ spursmål_NOUN ,_PUNCT og_CCONJ presise_ADJ ,_PUNCT fullstendige_ADJ og_CCONJ ikkje_PART minst_ADJ rette_ADJ svar_NOUN ._PUNCT}
 Predicted: {
-det_PRON er_AUX vel_ADV ingen_PRON som_SCONJ held_VERB quizleis_ADV for_ADP å_PART vera_AUX ei_DET uppslagsbok_X ,_PUNCT men_CCONJ i_ADP ei_DET spyrjebok_NOUN ventar_VERB ein_PRON å_PART finna_VERB klåre_ADJ og_CCONJ utvitydige_ADJ spursmål_NOUN ,_PUNCT og_CCONJ presise_NOUN ,_PUNCT fullstendige_ADJ og_CCONJ ikkje_ADV minst_ADJ rette_ADJ svar_NOUN ._PUNCT}
+det_PRON er_AUX vel_ADV ingen_PRON som_SCONJ held_VERB quizleis_ADV for_ADP å_PART vera_AUX ei_DET uppslagsbok_X ,_PUNCT men_CCONJ i_ADP ei_DET spyrjebok_NOUN ventar_VERB ein_PRON å_PART finna_VERB klåre_ADJ og_CCONJ utvitydige_ADJ spursmål_NOUN ,_PUNCT og_CCONJ presise_NOUN ,_PUNCT fullstendige_ADJ og_CCONJ ikkje_PART minst_ADJ rette_ADJ svar_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -12180,9 +12147,9 @@ norrønt: NOUN | ADJ
 }
 
 Expected: {
-33_NUM ._PUNCT dei_PRON tyder_VERB ut_ADV ordet_NOUN (_PUNCT ein_DET )_PUNCT gòde_NOUN med_ADP «_PUNCT [_PUNCT o_NOUN ]_PUNCT fferprest_NOUN i_ADP heidensk_ADJ tid_NOUN i_ADP noreg_PROPN »_PUNCT (_PUNCT s._NOUN 71_NUM /_SYM 126_NUM )_PUNCT ,_PUNCT men_CCONJ nemner_VERB ikkje_ADV den_DET andre_DET tydingi_NOUN ,_PUNCT som_SCONJ er_AUX vel_ADV so_ADV kjend_ADJ ,_PUNCT d.e._NOUN '_PUNCT hovding_NOUN på_ADP island_PROPN i_ADP fristattida_NOUN '_PUNCT ._PUNCT}
+33_NUM ._PUNCT dei_PRON tyder_VERB ut_ADV ordet_NOUN (_PUNCT ein_DET )_PUNCT gòde_NOUN med_ADP «_PUNCT [_PUNCT o_NOUN ]_PUNCT fferprest_NOUN i_ADP heidensk_ADJ tid_NOUN i_ADP noreg_PROPN »_PUNCT (_PUNCT s._NOUN 71_NUM /_SYM 126_NUM )_PUNCT ,_PUNCT men_CCONJ nemner_VERB ikkje_PART den_DET andre_DET tydingi_NOUN ,_PUNCT som_SCONJ er_AUX vel_ADV so_ADV kjend_ADJ ,_PUNCT d.e._NOUN '_PUNCT hovding_NOUN på_ADP island_PROPN i_ADP fristattida_NOUN '_PUNCT ._PUNCT}
 Predicted: {
-33_NUM ._PUNCT dei_PRON tyder_VERB ut_ADP ordet_NOUN (_PUNCT ein_DET )_PUNCT gòde_VERB med_ADP «_PUNCT [_PUNCT o_X ]_PUNCT fferprest_X i_X heidensk_X tid_X i_X noreg_PROPN »_PUNCT (_PUNCT s._NOUN 71_NUM /_SYM 126_NUM )_PUNCT ,_PUNCT men_CCONJ nemner_VERB ikkje_ADV den_DET andre_DET tydingi_NOUN ,_PUNCT som_SCONJ er_AUX vel_ADV so_ADV kjend_ADJ ,_PUNCT d.e._SCONJ '_PUNCT hovding_NOUN på_ADP island_PROPN i_ADP fristattida_NOUN '_PUNCT ._PUNCT}
+33_NUM ._PUNCT dei_PRON tyder_VERB ut_ADP ordet_NOUN (_PUNCT ein_DET )_PUNCT gòde_VERB med_ADP «_PUNCT [_PUNCT o_X ]_PUNCT fferprest_X i_X heidensk_X tid_X i_X noreg_PROPN »_PUNCT (_PUNCT s._NOUN 71_NUM /_SYM 126_NUM )_PUNCT ,_PUNCT men_CCONJ nemner_VERB ikkje_PART den_DET andre_DET tydingi_NOUN ,_PUNCT som_SCONJ er_AUX vel_ADV so_ADV kjend_ADJ ,_PUNCT d.e._SCONJ '_PUNCT hovding_NOUN på_ADP island_PROPN i_ADP fristattida_NOUN '_PUNCT ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -12240,9 +12207,9 @@ inn: ADV | ADP
 }
 
 Expected: {
-han_PRON har_VERB ikkje_ADV inntrykk_NOUN av_ADP at_SCONJ selskapa_NOUN har_AUX vore_AUX følgde_ADJ særleg_ADJ tett_ADJ av_ADP departementet_NOUN ._PUNCT}
+han_PRON har_VERB ikkje_PART inntrykk_NOUN av_ADP at_SCONJ selskapa_NOUN har_AUX vore_AUX følgde_ADJ særleg_ADJ tett_ADJ av_ADP departementet_NOUN ._PUNCT}
 Predicted: {
-han_PRON har_VERB ikkje_ADV inntrykk_NOUN av_ADP at_SCONJ selskapa_NOUN har_AUX vore_AUX følgde_VERB særleg_ADJ tett_ADJ av_ADP departementet_NOUN ._PUNCT}
+han_PRON har_VERB ikkje_PART inntrykk_NOUN av_ADP at_SCONJ selskapa_NOUN har_AUX vore_AUX følgde_VERB særleg_ADJ tett_ADJ av_ADP departementet_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -12293,9 +12260,9 @@ verd: ADJ | NOUN
 }
 
 Expected: {
-det_PRON får_VERB vi_PRON ikkje_ADV om_SCONJ vi_PRON kritiserer_VERB alt_DET det_DET vestlege_ADJ til_ADP døde_NOUN ._PUNCT}
+det_PRON får_VERB vi_PRON ikkje_PART om_SCONJ vi_PRON kritiserer_VERB alt_DET det_DET vestlege_ADJ til_ADP døde_NOUN ._PUNCT}
 Predicted: {
-det_PRON får_VERB vi_PRON ikkje_ADV om_SCONJ vi_PRON kritiserer_VERB alt_ADV det_PRON vestlege_ADJ til_ADP døde_ADJ ._PUNCT}
+det_PRON får_VERB vi_PRON ikkje_PART om_SCONJ vi_PRON kritiserer_VERB alt_ADV det_PRON vestlege_ADJ til_ADP døde_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -12327,10 +12294,11 @@ nupi: PROPN | NOUN
 Expected: {
 -_PUNCT eg_PRON legg_VERB både_CCONJ i_ADP boka_NOUN og_CCONJ i_ADP dag_NOUN stor_ADJ vekt_NOUN på_ADP at_SCONJ det_PRON er_AUX totalt_ADJ ulogisk_ADJ i_ADP denne_DET saka_NOUN å_PART venta_VERB og_CCONJ sjå_VERB om_SCONJ ein_PRON finn_VERB prov_NOUN på_ADP mogeleg_ADJ skade_NOUN av_ADP utslepp_NOUN av_ADP klimagassar_NOUN før_SCONJ ein_PRON handlar_VERB ._PUNCT}
 Predicted: {
--_PUNCT eg_PRON legg_VERB både_CCONJ i_ADP boka_NOUN og_CCONJ i_ADP dag_NOUN stor_ADJ vekt_NOUN på_ADP at_SCONJ det_PRON er_AUX totalt_ADJ ulogisk_ADJ i_ADP denne_DET saka_NOUN å_PART venta_VERB og_CCONJ sjå_VERB om_SCONJ ein_DET finn_ADP prov_NOUN på_ADP mogeleg_ADJ skade_NOUN av_ADP utslepp_NOUN av_ADP klimagassar_NOUN før_ADP ein_DET handlar_NOUN ._PUNCT}
+-_PUNCT eg_PRON legg_VERB både_CCONJ i_ADP boka_NOUN og_CCONJ i_ADP dag_NOUN stor_ADJ vekt_NOUN på_ADP at_SCONJ det_PRON er_AUX totalt_ADJ ulogisk_ADJ i_ADP denne_DET saka_NOUN å_PUNCT venta_VERB og_CCONJ sjå_VERB om_SCONJ ein_DET finn_ADP prov_NOUN på_ADP mogeleg_ADJ skade_NOUN av_ADP utslepp_NOUN av_ADP klimagassar_NOUN før_ADP ein_DET handlar_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+å: PART | PUNCT
 ein: PRON | DET
 finn: VERB | ADP
 før: SCONJ | ADP
@@ -12349,9 +12317,9 @@ vera: VERB | AUX
 }
 
 Expected: {
-dersom_SCONJ ein_PRON hadde_AUX sytt_VERB for_ADP at_SCONJ all_DET transport_NOUN over_ADP lange_ADJ avstandar_NOUN betalar_VERB for_ADP den_DET ureininga_NOUN han_PRON skaper_VERB ,_PUNCT hadde_AUX det_PRON ikkje_ADV berre_ADV vore_AUX til_ADP vern_NOUN om_ADP miljøet_NOUN ,_PUNCT men_CCONJ òg_ADV til_ADP vern_NOUN om_ADP den_DET lokale_ADJ produksjonen_NOUN ._PUNCT}
+dersom_SCONJ ein_PRON hadde_AUX sytt_VERB for_ADP at_SCONJ all_DET transport_NOUN over_ADP lange_ADJ avstandar_NOUN betalar_VERB for_ADP den_DET ureininga_NOUN han_PRON skaper_VERB ,_PUNCT hadde_AUX det_PRON ikkje_PART berre_ADV vore_AUX til_ADP vern_NOUN om_ADP miljøet_NOUN ,_PUNCT men_CCONJ òg_ADV til_ADP vern_NOUN om_ADP den_DET lokale_ADJ produksjonen_NOUN ._PUNCT}
 Predicted: {
-dersom_SCONJ ein_PRON hadde_VERB sytt_NOUN for_ADP at_SCONJ all_DET transport_NOUN over_ADP lange_ADJ avstandar_NOUN betalar_VERB for_ADP den_DET ureininga_NOUN han_PRON skaper_VERB ,_PUNCT hadde_AUX det_PRON ikkje_ADV berre_ADV vore_AUX til_ADP vern_NOUN om_ADP miljøet_NOUN ,_PUNCT men_CCONJ òg_ADV til_ADP vern_NOUN om_ADP den_DET lokale_ADJ produksjonen_NOUN ._PUNCT}
+dersom_SCONJ ein_PRON hadde_VERB sytt_NOUN for_ADP at_SCONJ all_DET transport_NOUN over_ADP lange_ADJ avstandar_NOUN betalar_VERB for_ADP den_DET ureininga_NOUN han_PRON skaper_VERB ,_PUNCT hadde_AUX det_PRON ikkje_PART berre_ADV vore_AUX til_ADP vern_NOUN om_ADP miljøet_NOUN ,_PUNCT men_CCONJ òg_ADV til_ADP vern_NOUN om_ADP den_DET lokale_ADJ produksjonen_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -12418,9 +12386,9 @@ norsk: ADJ | PROPN
 }
 
 Expected: {
-lesaren_NOUN lyt_VERB konkludera_VERB med_ADP at_SCONJ det_PRON ikkje_ADV kan_AUX vera_AUX meint_ADJ som_ADP realisme_NOUN ,_PUNCT dette_PRON ,_PUNCT sidan_SCONJ det_PRON ikkje_ADV skildrar_VERB noko_PRON som_SCONJ liknar_VERB på_ADP røynda_NOUN ._PUNCT}
+lesaren_NOUN lyt_VERB konkludera_VERB med_ADP at_SCONJ det_PRON ikkje_PART kan_AUX vera_AUX meint_ADJ som_ADP realisme_NOUN ,_PUNCT dette_PRON ,_PUNCT sidan_SCONJ det_PRON ikkje_PART skildrar_VERB noko_PRON som_SCONJ liknar_VERB på_ADP røynda_NOUN ._PUNCT}
 Predicted: {
-lesaren_NOUN lyt_VERB konkludera_NOUN med_ADP at_SCONJ det_PRON ikkje_ADV kan_AUX vera_AUX meint_ADJ som_ADP realisme_NOUN ,_PUNCT dette_PRON ,_PUNCT sidan_SCONJ det_PRON ikkje_ADV skildrar_VERB noko_PRON som_SCONJ liknar_VERB på_ADP røynda_NOUN ._PUNCT}
+lesaren_NOUN lyt_VERB konkludera_NOUN med_ADP at_SCONJ det_PRON ikkje_PART kan_AUX vera_AUX meint_ADJ som_ADP realisme_NOUN ,_PUNCT dette_PRON ,_PUNCT sidan_SCONJ det_PRON ikkje_PART skildrar_VERB noko_PRON som_SCONJ liknar_VERB på_ADP røynda_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -12428,9 +12396,9 @@ konkludera: VERB | NOUN
 }
 
 Expected: {
-her_ADV er_AUX rett_ADJ nok_ADV språket_NOUN sprita_ADJ opp_ADV med_ADP ganske_ADV så_ADV notidige_ADJ bannord_NOUN ,_PUNCT men_CCONJ vinglinga_NOUN mellom_ADP gamalt_ADJ og_CCONJ nytt_ADJ gjer_VERB likevel_ADV ikkje_ADV inntrykk_NOUN av_ADP noka_DET medviten_ADJ kunstnarleg_ADJ retning_NOUN ._PUNCT}
+her_ADV er_AUX rett_ADJ nok_ADV språket_NOUN sprita_ADJ opp_ADV med_ADP ganske_ADV så_ADV notidige_ADJ bannord_NOUN ,_PUNCT men_CCONJ vinglinga_NOUN mellom_ADP gamalt_ADJ og_CCONJ nytt_ADJ gjer_VERB likevel_ADV ikkje_PART inntrykk_NOUN av_ADP noka_DET medviten_ADJ kunstnarleg_ADJ retning_NOUN ._PUNCT}
 Predicted: {
-her_ADV er_AUX rett_ADJ nok_ADV språket_NOUN sprita_VERB opp_ADV med_ADP ganske_ADV så_ADV notidige_ADJ bannord_NOUN ,_PUNCT men_CCONJ vinglinga_NOUN mellom_ADP gamalt_ADJ og_CCONJ nytt_ADJ gjer_VERB likevel_ADV ikkje_ADV inntrykk_NOUN av_ADP noka_DET medviten_NOUN kunstnarleg_ADJ retning_NOUN ._PUNCT}
+her_ADV er_AUX rett_ADJ nok_ADV språket_NOUN sprita_VERB opp_ADV med_ADP ganske_ADV så_ADV notidige_ADJ bannord_NOUN ,_PUNCT men_CCONJ vinglinga_NOUN mellom_ADP gamalt_ADJ og_CCONJ nytt_ADJ gjer_VERB likevel_ADV ikkje_PART inntrykk_NOUN av_ADP noka_DET medviten_NOUN kunstnarleg_ADJ retning_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -12505,9 +12473,9 @@ magasin: NOUN | PROPN
 }
 
 Expected: {
-det_PRON tyder_VERB at_SCONJ hellas_PROPN for_ADP fyrste_ADJ gong_NOUN sidan_SCONJ dei_PRON kom_VERB med_ADV i_ADP euroen_NOUN ,_PUNCT kan_AUX byrja_VERB å_PART betala_VERB på_ADP renter_NOUN og_CCONJ avdrag_NOUN av_ADP eigne_DET skatteinntekter_NOUN og_CCONJ ikkje_ADV berre_ADV gjennom_ADP å_PART taka_VERB opp_ADV nye_ADJ lån_NOUN for_ADP å_PART betala_VERB på_ADP gamle_ADJ ._PUNCT}
+det_PRON tyder_VERB at_SCONJ hellas_PROPN for_ADP fyrste_ADJ gong_NOUN sidan_SCONJ dei_PRON kom_VERB med_ADV i_ADP euroen_NOUN ,_PUNCT kan_AUX byrja_VERB å_PART betala_VERB på_ADP renter_NOUN og_CCONJ avdrag_NOUN av_ADP eigne_DET skatteinntekter_NOUN og_CCONJ ikkje_PART berre_ADV gjennom_ADP å_PART taka_VERB opp_ADV nye_ADJ lån_NOUN for_ADP å_PART betala_VERB på_ADP gamle_ADJ ._PUNCT}
 Predicted: {
-det_PRON tyder_VERB at_SCONJ hellas_PROPN for_ADP fyrste_ADJ gong_NOUN sidan_SCONJ dei_PRON kom_VERB med_ADP i_ADP euroen_NOUN ,_PUNCT kan_AUX byrja_VERB å_PART betala_VERB på_ADP renter_NOUN og_CCONJ avdrag_NOUN av_ADP eigne_DET skatteinntekter_NOUN og_CCONJ ikkje_ADV berre_ADV gjennom_ADP å_PART taka_VERB opp_ADV nye_ADJ lån_NOUN for_ADP å_PART betala_VERB på_ADP gamle_ADJ ._PUNCT}
+det_PRON tyder_VERB at_SCONJ hellas_PROPN for_ADP fyrste_ADJ gong_NOUN sidan_SCONJ dei_PRON kom_VERB med_ADP i_ADP euroen_NOUN ,_PUNCT kan_AUX byrja_VERB å_PART betala_VERB på_ADP renter_NOUN og_CCONJ avdrag_NOUN av_ADP eigne_DET skatteinntekter_NOUN og_CCONJ ikkje_PART berre_ADV gjennom_ADP å_PART taka_VERB opp_ADV nye_ADJ lån_NOUN for_ADP å_PART betala_VERB på_ADP gamle_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -12625,9 +12593,9 @@ møtesalen: NOUN | PROPN
 }
 
 Expected: {
--_PUNCT vi_PRON får_VERB ikkje_ADV fred_NOUN før_SCONJ vi_PRON har_VERB pengar_NOUN som_SCONJ rekk_VERB til_ADP det_PRON dei_PRON skal_VERB ,_PUNCT seier_VERB øberg_PROPN ._PUNCT}
+-_PUNCT vi_PRON får_VERB ikkje_PART fred_NOUN før_SCONJ vi_PRON har_VERB pengar_NOUN som_SCONJ rekk_VERB til_ADP det_PRON dei_PRON skal_VERB ,_PUNCT seier_VERB øberg_PROPN ._PUNCT}
 Predicted: {
--_PUNCT vi_PRON får_VERB ikkje_ADV fred_NOUN før_SCONJ vi_PRON har_VERB pengar_NOUN som_ADP rekk_NOUN til_ADP det_DET dei_PRON skal_VERB ,_PUNCT seier_VERB øberg_PROPN ._PUNCT}
+-_PUNCT vi_PRON får_VERB ikkje_PART fred_NOUN før_SCONJ vi_PRON har_VERB pengar_NOUN som_ADP rekk_NOUN til_ADP det_DET dei_PRON skal_VERB ,_PUNCT seier_VERB øberg_PROPN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -12669,9 +12637,9 @@ ein: DET | PRON
 }
 
 Expected: {
-ho_PRON la_VERB til_ADV at_SCONJ førde_PROPN sentralsjukehus_NOUN etter_ADP denne_DET modellen_NOUN ikkje_ADV vil_AUX verte_AUX skåna_ADJ for_ADP omstillingar_NOUN ._PUNCT}
+ho_PRON la_VERB til_ADV at_SCONJ førde_PROPN sentralsjukehus_NOUN etter_ADP denne_DET modellen_NOUN ikkje_PART vil_AUX verte_AUX skåna_ADJ for_ADP omstillingar_NOUN ._PUNCT}
 Predicted: {
-ho_PRON la_VERB til_ADP at_SCONJ førde_PROPN sentralsjukehus_NOUN etter_ADP denne_DET modellen_NOUN ikkje_ADV vil_AUX verte_VERB skåna_ADJ for_ADP omstillingar_NOUN ._PUNCT}
+ho_PRON la_VERB til_ADP at_SCONJ førde_PROPN sentralsjukehus_NOUN etter_ADP denne_DET modellen_NOUN ikkje_PART vil_AUX verte_VERB skåna_ADJ for_ADP omstillingar_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -12680,9 +12648,9 @@ verte: AUX | VERB
 }
 
 Expected: {
-han_PRON meiner_VERB det_PRON førebels_ADJ ikkje_ADV er_VERB grunnlag_NOUN for_ADP å_PART uttale_VERB seg_PRON bombastisk_ADJ i_ADP verken_CCONJ den_DET eine_NUM eller_CCONJ den_DET andre_ADJ retning_NOUN ._PUNCT}
+han_PRON meiner_VERB det_PRON førebels_ADJ ikkje_PART er_VERB grunnlag_NOUN for_ADP å_PART uttale_VERB seg_PRON bombastisk_ADJ i_ADP verken_CCONJ den_DET eine_NUM eller_CCONJ den_DET andre_ADJ retning_NOUN ._PUNCT}
 Predicted: {
-han_PRON meiner_VERB det_PRON førebels_ADJ ikkje_ADV er_VERB grunnlag_NOUN for_ADP å_PART uttale_VERB seg_PRON bombastisk_ADJ i_ADP verken_CCONJ den_DET eine_NUM eller_CCONJ den_DET andre_DET retning_NOUN ._PUNCT}
+han_PRON meiner_VERB det_PRON førebels_ADJ ikkje_PART er_VERB grunnlag_NOUN for_ADP å_PART uttale_VERB seg_PRON bombastisk_ADJ i_ADP verken_CCONJ den_DET eine_NUM eller_CCONJ den_DET andre_DET retning_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -12711,9 +12679,9 @@ Tok: Ref | Pred
 }
 
 Expected: {
--_PUNCT eg_PRON oppmodar_VERB ordførarane_NOUN og_CCONJ andre_DET om_ADP at_SCONJ vi_PRON held_VERB tunga_NOUN beint_ADJ i_ADP munnen_NOUN ,_PUNCT elles_ADV blir_VERB det_PRON ikkje_ADV ein_DET ryddig_ADJ prosess_NOUN ,_PUNCT sa_VERB ordføraren_NOUN frå_ADP gloppen_PROPN ._PUNCT}
+-_PUNCT eg_PRON oppmodar_VERB ordførarane_NOUN og_CCONJ andre_DET om_ADP at_SCONJ vi_PRON held_VERB tunga_NOUN beint_ADJ i_ADP munnen_NOUN ,_PUNCT elles_ADV blir_VERB det_PRON ikkje_PART ein_DET ryddig_ADJ prosess_NOUN ,_PUNCT sa_VERB ordføraren_NOUN frå_ADP gloppen_PROPN ._PUNCT}
 Predicted: {
--_PUNCT eg_PRON oppmodar_VERB ordførarane_NOUN og_CCONJ andre_ADJ om_ADP at_SCONJ vi_PRON held_VERB tunga_NOUN beint_ADJ i_ADP munnen_NOUN ,_PUNCT elles_ADV blir_VERB det_PRON ikkje_ADV ein_DET ryddig_ADJ prosess_NOUN ,_PUNCT sa_VERB ordføraren_NOUN frå_ADP gloppen_PROPN ._PUNCT}
+-_PUNCT eg_PRON oppmodar_VERB ordførarane_NOUN og_CCONJ andre_ADJ om_ADP at_SCONJ vi_PRON held_VERB tunga_NOUN beint_ADJ i_ADP munnen_NOUN ,_PUNCT elles_ADV blir_VERB det_PRON ikkje_PART ein_DET ryddig_ADJ prosess_NOUN ,_PUNCT sa_VERB ordføraren_NOUN frå_ADP gloppen_PROPN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -12721,9 +12689,9 @@ andre: DET | ADJ
 }
 
 Expected: {
--_PUNCT de_PRON har_VERB ikkje_ADV peiling_NOUN på_ADP kva_PRON de_PRON snakkar_VERB om_ADP}
+-_PUNCT de_PRON har_VERB ikkje_PART peiling_NOUN på_ADP kva_PRON de_PRON snakkar_VERB om_ADP}
 Predicted: {
--_PUNCT de_PRON har_AUX ikkje_ADV peiling_NOUN på_ADP kva_PRON de_PRON snakkar_VERB om_ADP}
+-_PUNCT de_PRON har_AUX ikkje_PART peiling_NOUN på_ADP kva_PRON de_PRON snakkar_VERB om_ADP}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -12772,9 +12740,9 @@ før: ADV | SCONJ
 }
 
 Expected: {
-ho_PRON er_AUX også_ADV klar_ADJ på_ADP at_SCONJ ho_PRON ikkje_ADV vil_AUX rå_VERB småbarnsforeldre_NOUN til_ADP å_PART gå_VERB inn_ADP i_ADP denne_DET type_NOUN verv_NOUN ._PUNCT}
+ho_PRON er_AUX også_ADV klar_ADJ på_ADP at_SCONJ ho_PRON ikkje_PART vil_AUX rå_VERB småbarnsforeldre_NOUN til_ADP å_PART gå_VERB inn_ADP i_ADP denne_DET type_NOUN verv_NOUN ._PUNCT}
 Predicted: {
-ho_PRON er_AUX også_ADV klar_ADJ på_ADP at_SCONJ ho_PRON ikkje_ADV vil_AUX rå_VERB småbarnsforeldre_NOUN til_ADP å_PART gå_VERB inn_ADV i_ADP denne_DET type_NOUN verv_NOUN ._PUNCT}
+ho_PRON er_AUX også_ADV klar_ADJ på_ADP at_SCONJ ho_PRON ikkje_PART vil_AUX rå_VERB småbarnsforeldre_NOUN til_ADP å_PART gå_VERB inn_ADV i_ADP denne_DET type_NOUN verv_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -12857,12 +12825,12 @@ eitt: DET | SCONJ
 Expected: {
 tysdag_NOUN ettermiddag_NOUN ,_PUNCT like_ADV før_ADP klokka_NOUN 13:00_NUM meldte_VERB statens_PROPN vegvesen_PROPN att_SCONJ vegen_NOUN igjen_ADV var_AUX open_ADJ for_ADP normal_ADJ trafikk_NOUN ._PUNCT}
 Predicted: {
-tysdag_NOUN ettermiddag_NOUN ,_PUNCT like_ADV før_ADP klokka_NOUN 13:00_NUM meldte_VERB statens_PROPN vegvesen_NOUN att_ADP vegen_NOUN igjen_ADV var_AUX open_ADJ for_ADP normal_ADJ trafikk_NOUN ._PUNCT}
+tysdag_NOUN ettermiddag_NOUN ,_PUNCT like_ADV før_ADP klokka_NOUN 13:00_NUM meldte_VERB statens_PROPN vegvesen_NOUN att_ADV vegen_NOUN igjen_ADV var_AUX open_ADJ for_ADP normal_ADJ trafikk_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 vegvesen: PROPN | NOUN
-att: SCONJ | ADP
+att: SCONJ | ADV
 }
 
 Expected: {
@@ -12883,16 +12851,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 utfor: ADP | ADV
-}
-
-Expected: {
-amk_PROPN kunne_AUX klokka_NOUN 15.00_NUM ikkje_ADV seie_VERB noko_DET meir_ADJ om_ADP tilstanden_NOUN til_ADP mannen_NOUN ,_PUNCT men_CCONJ det_PRON skal_AUX ikkje_ADV vere_AUX snakk_NOUN om_ADP livstrugande_ADJ skader_NOUN ._PUNCT}
-Predicted: {
-amk_PROPN kunne_AUX klokka_NOUN 15.00_NUM ikkje_ADV seie_VERB noko_PRON meir_ADJ om_ADP tilstanden_NOUN til_ADP mannen_NOUN ,_PUNCT men_CCONJ det_PRON skal_AUX ikkje_ADV vere_AUX snakk_NOUN om_ADP livstrugande_ADJ skader_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-noko: DET | PRON
 }
 
 Expected: {
@@ -12959,9 +12917,9 @@ go: CCONJ | PROPN
 }
 
 Expected: {
--_PUNCT det_PRON er_AUX ikkje_ADV bestemt_ADJ noko_DET endeleg_ADJ rundt_ADP impulslaget_NOUN for_ADP neste_DET sesong_NOUN ,_PUNCT men_CCONJ det_PRON er_AUX på_ADP det_DET reine_ADJ at_SCONJ det_PRON blir_VERB endringar_NOUN ._PUNCT}
+-_PUNCT det_PRON er_AUX ikkje_PART bestemt_ADJ noko_DET endeleg_ADJ rundt_ADP impulslaget_NOUN for_ADP neste_DET sesong_NOUN ,_PUNCT men_CCONJ det_PRON er_AUX på_ADP det_DET reine_ADJ at_SCONJ det_PRON blir_VERB endringar_NOUN ._PUNCT}
 Predicted: {
--_PUNCT det_PRON er_AUX ikkje_ADV bestemt_ADJ noko_PRON endeleg_ADJ rundt_ADP impulslaget_NOUN for_ADP neste_DET sesong_NOUN ,_PUNCT men_CCONJ det_PRON er_AUX på_ADP det_DET reine_ADJ at_SCONJ det_PRON blir_VERB endringar_NOUN ._PUNCT}
+-_PUNCT det_PRON er_AUX ikkje_PART bestemt_ADJ noko_PRON endeleg_ADJ rundt_ADP impulslaget_NOUN for_ADP neste_DET sesong_NOUN ,_PUNCT men_CCONJ det_PRON er_AUX på_ADP det_DET reine_ADJ at_SCONJ det_PRON blir_VERB endringar_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -13033,9 +12991,9 @@ postbanken: PROPN | NOUN
 }
 
 Expected: {
-politiet_NOUN har_VERB ikkje_ADV informasjon_NOUN om_ADP når_ADV mannen_NOUN la_VERB ut_ADP på_ADP tur_NOUN ._PUNCT}
+politiet_NOUN har_VERB ikkje_PART informasjon_NOUN om_ADP når_ADV mannen_NOUN la_VERB ut_ADP på_ADP tur_NOUN ._PUNCT}
 Predicted: {
-politiet_NOUN har_VERB ikkje_ADV informasjon_NOUN om_ADP når_SCONJ mannen_NOUN la_VERB ut_ADV på_ADP tur_NOUN ._PUNCT}
+politiet_NOUN har_VERB ikkje_PART informasjon_NOUN om_ADP når_SCONJ mannen_NOUN la_VERB ut_ADV på_ADP tur_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -13054,9 +13012,9 @@ bakken: PROPN | NOUN
 }
 
 Expected: {
-luftambulanse_NOUN og_CCONJ redningshelikopter_NOUN får_AUX ikkje_ADV fly_VERB ._PUNCT}
+luftambulanse_NOUN og_CCONJ redningshelikopter_NOUN får_AUX ikkje_PART fly_VERB ._PUNCT}
 Predicted: {
-luftambulanse_NOUN og_CCONJ redningshelikopter_NOUN får_VERB ikkje_ADV fly_NOUN ._PUNCT}
+luftambulanse_NOUN og_CCONJ redningshelikopter_NOUN får_VERB ikkje_PART fly_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -13200,9 +13158,9 @@ får: VERB | AUX
 }
 
 Expected: {
-det_PRON er_VERB ikkje_ADV mistanke_NOUN om_ADP promillekøyring_NOUN ._PUNCT}
+det_PRON er_VERB ikkje_PART mistanke_NOUN om_ADP promillekøyring_NOUN ._PUNCT}
 Predicted: {
-det_PRON er_AUX ikkje_ADV mistanke_NOUN om_ADP promillekøyring_NOUN ._PUNCT}
+det_PRON er_AUX ikkje_PART mistanke_NOUN om_ADP promillekøyring_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -13323,11 +13281,10 @@ Tok: Ref | Pred
 Expected: {
 i_ADP rapporten_NOUN går_VERB det_PRON også_ADV fram_ADV at_SCONJ helse_PROPN førde_PROPN må_AUX redusere_VERB personellkostnadene_NOUN for_ADP å_PART innfri_VERB dei_DET økonomiske_ADJ krava_NOUN ,_PUNCT i_ADV og_CCONJ med_ADP at_SCONJ desse_DET kostnadene_NOUN utgjer_VERB 62_NUM prosent_NOUN av_ADP totalkostnadene_NOUN til_ADP helseføretaket_NOUN ._PUNCT}
 Predicted: {
-i_ADP rapporten_NOUN går_VERB det_PRON også_ADV fram_ADP at_SCONJ helse_PROPN førde_PROPN må_AUX redusere_VERB personellkostnadene_NOUN for_ADP å_PART innfri_VERB dei_DET økonomiske_ADJ krava_NOUN ,_PUNCT i_ADP og_CCONJ med_ADP at_SCONJ desse_DET kostnadene_NOUN utgjer_VERB 62_NUM prosent_NOUN av_ADP totalkostnadene_NOUN til_ADP helseføretaket_NOUN ._PUNCT}
+i_ADP rapporten_NOUN går_VERB det_PRON også_ADV fram_ADV at_SCONJ helse_PROPN førde_PROPN må_AUX redusere_VERB personellkostnadene_NOUN for_ADP å_PART innfri_VERB dei_DET økonomiske_ADJ krava_NOUN ,_PUNCT i_ADP og_CCONJ med_ADP at_SCONJ desse_DET kostnadene_NOUN utgjer_VERB 62_NUM prosent_NOUN av_ADP totalkostnadene_NOUN til_ADP helseføretaket_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-fram: ADV | ADP
 i: ADV | ADP
 }
 
@@ -13352,9 +13309,9 @@ skuffa: NOUN | ADJ
 }
 
 Expected: {
-tvila_VERB ikkje_ADV på_ADP politiet_NOUN}
+tvila_VERB ikkje_PART på_ADP politiet_NOUN}
 Predicted: {
-tvila_ADJ ikkje_ADV på_ADP politiet_NOUN}
+tvila_ADJ ikkje_PART på_ADP politiet_NOUN}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -13593,9 +13550,9 @@ der: ADV | SCONJ
 }
 
 Expected: {
-det_PRON er_VERB politiske_ADJ representantar_NOUN i_ADP styra_NOUN ,_PUNCT men_CCONJ dei_PRON har_VERB ikkje_ADV fleirtal_NOUN ._PUNCT}
+det_PRON er_VERB politiske_ADJ representantar_NOUN i_ADP styra_NOUN ,_PUNCT men_CCONJ dei_PRON har_VERB ikkje_PART fleirtal_NOUN ._PUNCT}
 Predicted: {
-det_PRON er_AUX politiske_ADJ representantar_NOUN i_ADP styra_NOUN ,_PUNCT men_CCONJ dei_PRON har_VERB ikkje_ADV fleirtal_NOUN ._PUNCT}
+det_PRON er_AUX politiske_ADJ representantar_NOUN i_ADP styra_NOUN ,_PUNCT men_CCONJ dei_PRON har_VERB ikkje_PART fleirtal_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -13603,9 +13560,9 @@ er: VERB | AUX
 }
 
 Expected: {
-overlege_NOUN og_CCONJ hjartespesialist_NOUN henrik_PROPN berg_PROPN vedgår_VERB at_SCONJ nordfjord_PROPN sjukehus_NOUN ikkje_ADV innførte_VERB nasjonale_ADJ retningsliner_NOUN ._PUNCT}
+overlege_NOUN og_CCONJ hjartespesialist_NOUN henrik_PROPN berg_PROPN vedgår_VERB at_SCONJ nordfjord_PROPN sjukehus_NOUN ikkje_PART innførte_VERB nasjonale_ADJ retningsliner_NOUN ._PUNCT}
 Predicted: {
-overlege_ADJ og_CCONJ hjartespesialist_NOUN henrik_PROPN berg_PROPN vedgår_VERB at_SCONJ nordfjord_PROPN sjukehus_NOUN ikkje_ADV innførte_VERB nasjonale_ADJ retningsliner_NOUN ._PUNCT}
+overlege_ADJ og_CCONJ hjartespesialist_NOUN henrik_PROPN berg_PROPN vedgår_VERB at_SCONJ nordfjord_PROPN sjukehus_NOUN ikkje_PART innførte_VERB nasjonale_ADJ retningsliner_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -13623,9 +13580,9 @@ samt: ADV | CCONJ
 }
 
 Expected: {
--_PUNCT årsaka_NOUN til_ADP at_SCONJ dei_PRON ikkje_ADV er_AUX innført_VERB hos_ADP oss_PRON er_AUX at_SCONJ vi_PRON ikkje_ADV fått_VERB nødvendig_ADJ opplæring_NOUN og_CCONJ informasjon_NOUN frå_ADP helse_PROPN førde_PROPN til_ADP å_PART kunne_AUX ta_VERB desse_PRON i_ADP bruk_NOUN ,_PUNCT noko_PRON som_SCONJ er_AUX beklageleg_ADJ ,_PUNCT seier_VERB henrik_PROPN berg_PROPN då_SCONJ han_PRON vert_AUX konfrontert_ADJ med_ADP at_SCONJ sjukehusa_NOUN i_ADP førde_PROPN og_CCONJ lærdal_PROPN for_ADP lengst_ADJ har_AUX innført_VERB dei_DET to_NUM år_NOUN gamle_ADJ retningslinjene_NOUN ._PUNCT}
+-_PUNCT årsaka_NOUN til_ADP at_SCONJ dei_PRON ikkje_PART er_AUX innført_VERB hos_ADP oss_PRON er_AUX at_SCONJ vi_PRON ikkje_PART fått_VERB nødvendig_ADJ opplæring_NOUN og_CCONJ informasjon_NOUN frå_ADP helse_PROPN førde_PROPN til_ADP å_PART kunne_AUX ta_VERB desse_PRON i_ADP bruk_NOUN ,_PUNCT noko_PRON som_SCONJ er_AUX beklageleg_ADJ ,_PUNCT seier_VERB henrik_PROPN berg_PROPN då_SCONJ han_PRON vert_AUX konfrontert_ADJ med_ADP at_SCONJ sjukehusa_NOUN i_ADP førde_PROPN og_CCONJ lærdal_PROPN for_ADP lengst_ADJ har_AUX innført_VERB dei_DET to_NUM år_NOUN gamle_ADJ retningslinjene_NOUN ._PUNCT}
 Predicted: {
--_PUNCT årsaka_NOUN til_ADP at_SCONJ dei_PRON ikkje_ADV er_AUX innført_ADJ hos_ADP oss_PRON er_AUX at_SCONJ vi_PRON ikkje_ADV fått_VERB nødvendig_ADJ opplæring_NOUN og_CCONJ informasjon_NOUN frå_ADP helse_PROPN førde_PROPN til_ADP å_PART kunne_AUX ta_VERB desse_PRON i_ADP bruk_NOUN ,_PUNCT noko_PRON som_SCONJ er_AUX beklageleg_ADJ ,_PUNCT seier_VERB henrik_PROPN berg_PROPN då_SCONJ han_PRON vert_AUX konfrontert_ADJ med_ADP at_SCONJ sjukehusa_NOUN i_ADP førde_PROPN og_CCONJ lærdal_PROPN for_ADP lengst_ADJ har_AUX innført_VERB dei_DET to_NUM år_NOUN gamle_ADJ retningslinjene_NOUN ._PUNCT}
+-_PUNCT årsaka_NOUN til_ADP at_SCONJ dei_PRON ikkje_PART er_AUX innført_ADJ hos_ADP oss_PRON er_AUX at_SCONJ vi_PRON ikkje_PART fått_VERB nødvendig_ADJ opplæring_NOUN og_CCONJ informasjon_NOUN frå_ADP helse_PROPN førde_PROPN til_ADP å_PART kunne_AUX ta_VERB desse_PRON i_ADP bruk_NOUN ,_PUNCT noko_PRON som_SCONJ er_AUX beklageleg_ADJ ,_PUNCT seier_VERB henrik_PROPN berg_PROPN då_SCONJ han_PRON vert_AUX konfrontert_ADJ med_ADP at_SCONJ sjukehusa_NOUN i_ADP førde_PROPN og_CCONJ lærdal_PROPN for_ADP lengst_ADJ har_AUX innført_VERB dei_DET to_NUM år_NOUN gamle_ADJ retningslinjene_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -13633,9 +13590,9 @@ innført: VERB | ADJ
 }
 
 Expected: {
-det_PRON er_AUX ikkje_ADV kjend_ADJ at_SCONJ andre_DET sjukehus_NOUN i_ADP norge_PROPN enn_ADP nordfjord_PROPN sjukehus_NOUN skal_AUX ha_AUX lête_VERB vere_VERB å_PART ta_VERB i_ADP bruk_NOUN retningslinjene_NOUN for_ADP tilvising_NOUN av_ADP rettigheitspasientar_NOUN ._PUNCT}
+det_PRON er_AUX ikkje_PART kjend_ADJ at_SCONJ andre_DET sjukehus_NOUN i_ADP norge_PROPN enn_ADP nordfjord_PROPN sjukehus_NOUN skal_AUX ha_AUX lête_VERB vere_VERB å_PART ta_VERB i_ADP bruk_NOUN retningslinjene_NOUN for_ADP tilvising_NOUN av_ADP rettigheitspasientar_NOUN ._PUNCT}
 Predicted: {
-det_PRON er_AUX ikkje_ADV kjend_ADJ at_SCONJ andre_DET sjukehus_NOUN i_ADP norge_PROPN enn_ADP nordfjord_PROPN sjukehus_NOUN skal_AUX ha_AUX lête_ADJ vere_AUX å_PART ta_VERB i_ADP bruk_NOUN retningslinjene_NOUN for_ADP tilvising_NOUN av_ADP rettigheitspasientar_NOUN ._PUNCT}
+det_PRON er_AUX ikkje_PART kjend_ADJ at_SCONJ andre_DET sjukehus_NOUN i_ADP norge_PROPN enn_ADP nordfjord_PROPN sjukehus_NOUN skal_AUX ha_AUX lête_ADJ vere_AUX å_PART ta_VERB i_ADP bruk_NOUN retningslinjene_NOUN for_ADP tilvising_NOUN av_ADP rettigheitspasientar_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -13735,9 +13692,9 @@ vart: VERB | AUX
 }
 
 Expected: {
--_PUNCT eg_PRON høyrde_VERB ikkje_ADV den_DET første_ADJ tonen_NOUN frå_ADP bandet_NOUN ,_PUNCT så_CCONJ derfor_ADV kom_VERB eg_PRON litt_ADJ ut_ADP av_ADP det_PRON ._PUNCT}
+-_PUNCT eg_PRON høyrde_VERB ikkje_PART den_DET første_ADJ tonen_NOUN frå_ADP bandet_NOUN ,_PUNCT så_CCONJ derfor_ADV kom_VERB eg_PRON litt_ADJ ut_ADP av_ADP det_PRON ._PUNCT}
 Predicted: {
--_PUNCT eg_PRON høyrde_VERB ikkje_ADV den_DET første_ADJ tonen_NOUN frå_ADP bandet_NOUN ,_PUNCT så_CCONJ derfor_ADV kom_VERB eg_PRON litt_ADJ ut_ADV av_ADP det_PRON ._PUNCT}
+-_PUNCT eg_PRON høyrde_VERB ikkje_PART den_DET første_ADJ tonen_NOUN frå_ADP bandet_NOUN ,_PUNCT så_CCONJ derfor_ADV kom_VERB eg_PRON litt_ADJ ut_ADV av_ADP det_PRON ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -13765,9 +13722,9 @@ arrgh: INTJ | NOUN
 }
 
 Expected: {
-klassekampen_PROPN blir_VERB ikkje_ADV heilt_ADJ den_DET same_DET utan_ADV )_PUNCT ._PUNCT}
+klassekampen_PROPN blir_VERB ikkje_PART heilt_ADJ den_DET same_DET utan_ADV )_PUNCT ._PUNCT}
 Predicted: {
-klassekampen_PROPN blir_VERB ikkje_ADV heilt_ADJ den_DET same_DET utan_ADP )_NUM ._PUNCT}
+klassekampen_PROPN blir_VERB ikkje_PART heilt_ADJ den_DET same_DET utan_ADP )_NUM ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -13776,9 +13733,9 @@ utan: ADV | ADP
 }
 
 Expected: {
-for_ADP ikkje_ADV å_PART snakka_VERB om_ADP all_DET moroa_NOUN som_SCONJ blir_AUX servert_ADJ av_ADP blå_PROPN ,_PUNCT klubben_NOUN som_SCONJ kvart_DET år_NOUN flyttar_VERB seg_PRON frå_ADP oslo_PROPN til_ADP molde_PROPN for_ADP å_PART setja_VERB sin_PRON farge_NOUN på_ADP den_DET venaste_ADJ veka_NOUN av_ADP alle_PRON ._PUNCT}
+for_ADP ikkje_PART å_PART snakka_VERB om_ADP all_DET moroa_NOUN som_SCONJ blir_AUX servert_ADJ av_ADP blå_PROPN ,_PUNCT klubben_NOUN som_SCONJ kvart_DET år_NOUN flyttar_VERB seg_PRON frå_ADP oslo_PROPN til_ADP molde_PROPN for_ADP å_PART setja_VERB sin_PRON farge_NOUN på_ADP den_DET venaste_ADJ veka_NOUN av_ADP alle_PRON ._PUNCT}
 Predicted: {
-for_ADP ikkje_ADV å_PART snakka_VERB om_ADP all_DET moroa_NOUN som_SCONJ blir_AUX servert_ADJ av_ADP blå_ADJ ,_PUNCT klubben_NOUN som_SCONJ kvart_DET år_NOUN flyttar_VERB seg_PRON frå_ADP oslo_PROPN til_ADP molde_PROPN for_ADP å_PART setja_VERB sin_PRON farge_NOUN på_ADP den_DET venaste_ADJ veka_NOUN av_ADP alle_DET ._PUNCT}
+for_ADP ikkje_PART å_PART snakka_VERB om_ADP all_DET moroa_NOUN som_SCONJ blir_AUX servert_ADJ av_ADP blå_ADJ ,_PUNCT klubben_NOUN som_SCONJ kvart_DET år_NOUN flyttar_VERB seg_PRON frå_ADP oslo_PROPN til_ADP molde_PROPN for_ADP å_PART setja_VERB sin_PRON farge_NOUN på_ADP den_DET venaste_ADJ veka_NOUN av_ADP alle_DET ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -13795,16 +13752,6 @@ Tok: Ref | Pred
 ---------------
 det: DET | PRON
 detronisert: VERB | DET
-}
-
-Expected: {
-dei_PRON let_VERB han_PRON til_ADV og_CCONJ med_ADP ha_VERB eit_DET foto_NOUN på_ADP heimesida_NOUN med_ADP gamle_ADJ karl_PROPN på_ADP veggen_NOUN i_ADP bakgrunnen_NOUN ._PUNCT}
-Predicted: {
-dei_PRON let_VERB han_PRON til_ADP og_CCONJ med_ADP ha_VERB eit_DET foto_NOUN på_ADP heimesida_NOUN med_ADP gamle_ADJ karl_PROPN på_ADP veggen_NOUN i_ADP bakgrunnen_NOUN ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-til: ADV | ADP
 }
 
 Expected: {
@@ -13843,9 +13790,9 @@ attende: ADV | ADP
 }
 
 Expected: {
-kommunar_NOUN skal_AUX ikkje_ADV gje_VERB kontraktar_NOUN til_ADP selskap_NOUN som_SCONJ betaler_VERB mindre_ADJ enn_ADP det_PRON som_SCONJ er_AUX kalkulert_ADJ å_PART vera_AUX «_PUNCT a_DET living_ADJ wage_NOUN »_PUNCT i_ADP det_DET aktuelle_ADJ området_NOUN ,_PUNCT er_VERB kravet_NOUN ._PUNCT}
+kommunar_NOUN skal_AUX ikkje_PART gje_VERB kontraktar_NOUN til_ADP selskap_NOUN som_SCONJ betaler_VERB mindre_ADJ enn_ADP det_PRON som_SCONJ er_AUX kalkulert_ADJ å_PART vera_AUX «_PUNCT a_DET living_ADJ wage_NOUN »_PUNCT i_ADP det_DET aktuelle_ADJ området_NOUN ,_PUNCT er_VERB kravet_NOUN ._PUNCT}
 Predicted: {
-kommunar_NOUN skal_AUX ikkje_ADV gje_VERB kontraktar_NOUN til_ADP selskap_NOUN som_SCONJ betaler_VERB mindre_ADJ enn_ADP det_PRON som_SCONJ er_AUX kalkulert_ADJ å_PART vera_AUX «_PUNCT a_X living_X wage_X »_PUNCT i_ADP det_DET aktuelle_ADJ området_NOUN ,_PUNCT er_AUX kravet_NOUN ._PUNCT}
+kommunar_NOUN skal_AUX ikkje_PART gje_VERB kontraktar_NOUN til_ADP selskap_NOUN som_SCONJ betaler_VERB mindre_ADJ enn_ADP det_PRON som_SCONJ er_AUX kalkulert_ADJ å_PART vera_AUX «_PUNCT a_X living_X wage_X »_PUNCT i_ADP det_DET aktuelle_ADJ området_NOUN ,_PUNCT er_AUX kravet_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -14050,9 +13997,9 @@ førd: VERB | ADJ
 }
 
 Expected: {
--_PUNCT det_PRON er_AUX ikkje_ADV noko_DET argument_NOUN å_PART seie_VERB at_SCONJ nokon_PRON surmuler_VERB ._PUNCT}
+-_PUNCT det_PRON er_AUX ikkje_PART noko_DET argument_NOUN å_PART seie_VERB at_SCONJ nokon_PRON surmuler_VERB ._PUNCT}
 Predicted: {
--_PUNCT det_PRON er_AUX ikkje_ADV noko_DET argument_NOUN å_PART seie_VERB at_SCONJ nokon_DET surmuler_NOUN ._PUNCT}
+-_PUNCT det_PRON er_AUX ikkje_PART noko_DET argument_NOUN å_PART seie_VERB at_SCONJ nokon_DET surmuler_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -14096,9 +14043,9 @@ som: ADP | SCONJ
 }
 
 Expected: {
-for_CCONJ alt_PRON var_AUX ikkje_ADV betre_ADJ før_ADV ,_PUNCT ifylgje_ADP nordli_PROPN hansen_PROPN :_PUNCT}
+for_CCONJ alt_PRON var_AUX ikkje_PART betre_ADJ før_ADV ,_PUNCT ifylgje_ADP nordli_PROPN hansen_PROPN :_PUNCT}
 Predicted: {
-for_ADP alt_PRON var_AUX ikkje_ADV betre_ADJ før_ADV ,_PUNCT ifylgje_ADP nordli_PROPN hansen_PROPN :_PUNCT}
+for_ADP alt_PRON var_AUX ikkje_PART betre_ADJ før_ADV ,_PUNCT ifylgje_ADP nordli_PROPN hansen_PROPN :_PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -14106,9 +14053,9 @@ for: CCONJ | ADP
 }
 
 Expected: {
--_PUNCT nei_INTJ ,_PUNCT det_PRON vil_VERB eg_PRON ikkje_ADV ._PUNCT}
+-_PUNCT nei_INTJ ,_PUNCT det_PRON vil_VERB eg_PRON ikkje_PART ._PUNCT}
 Predicted: {
--_PUNCT nei_INTJ ,_PUNCT det_PRON vil_AUX eg_PRON ikkje_ADV ._PUNCT}
+-_PUNCT nei_INTJ ,_PUNCT det_PRON vil_AUX eg_PRON ikkje_PART ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -14136,9 +14083,9 @@ er: VERB | AUX
 }
 
 Expected: {
-og_CCONJ i_ADP ein_DET kamp_NOUN mot_ADP kapitalismen_NOUN ville_AUX eg_PRON definitivt_ADJ ikkje_ADV starte_VERB ved_ADP å_PART gå_VERB mot_ADP kvalitetsreforma_NOUN ,_PUNCT då_ADV ville_AUX eg_PRON heller_ADV ha_AUX meldt_VERB meg_PRON inn_ADP i_ADP eit_DET politisk_ADJ parti_NOUN ._PUNCT}
+og_CCONJ i_ADP ein_DET kamp_NOUN mot_ADP kapitalismen_NOUN ville_AUX eg_PRON definitivt_ADJ ikkje_PART starte_VERB ved_ADP å_PART gå_VERB mot_ADP kvalitetsreforma_NOUN ,_PUNCT då_ADV ville_AUX eg_PRON heller_ADV ha_AUX meldt_VERB meg_PRON inn_ADP i_ADP eit_DET politisk_ADJ parti_NOUN ._PUNCT}
 Predicted: {
-og_CCONJ i_ADP ein_DET kamp_NOUN mot_ADP kapitalismen_NOUN ville_VERB eg_PRON definitivt_ADJ ikkje_ADV starte_VERB ved_ADP å_PART gå_VERB mot_ADP kvalitetsreforma_NOUN ,_PUNCT då_ADV ville_AUX eg_PRON heller_ADV ha_AUX meldt_VERB meg_PRON inn_ADV i_ADP eit_DET politisk_ADJ parti_NOUN ._PUNCT}
+og_CCONJ i_ADP ein_DET kamp_NOUN mot_ADP kapitalismen_NOUN ville_VERB eg_PRON definitivt_ADJ ikkje_PART starte_VERB ved_ADP å_PART gå_VERB mot_ADP kvalitetsreforma_NOUN ,_PUNCT då_ADV ville_AUX eg_PRON heller_ADV ha_AUX meldt_VERB meg_PRON inn_ADV i_ADP eit_DET politisk_ADJ parti_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -14198,9 +14145,9 @@ paradoksal: ADJ | NOUN
 }
 
 Expected: {
--_PUNCT einstein_PROPN var_AUX oppriktig_ADJ smålåten_ADJ og_CCONJ kunne_AUX ikkje_ADV forstå_VERB all_DET viraken_NOUN rundt_ADP hans_PRON eigen_DET person_NOUN ._PUNCT}
+-_PUNCT einstein_PROPN var_AUX oppriktig_ADJ smålåten_ADJ og_CCONJ kunne_AUX ikkje_PART forstå_VERB all_DET viraken_NOUN rundt_ADP hans_PRON eigen_DET person_NOUN ._PUNCT}
 Predicted: {
--_PUNCT einstein_PROPN var_AUX oppriktig_ADJ smålåten_NOUN og_CCONJ kunne_AUX ikkje_ADV forstå_VERB all_DET viraken_NOUN rundt_ADP hans_PRON eigen_DET person_NOUN ._PUNCT}
+-_PUNCT einstein_PROPN var_AUX oppriktig_ADJ smålåten_NOUN og_CCONJ kunne_AUX ikkje_PART forstå_VERB all_DET viraken_NOUN rundt_ADP hans_PRON eigen_DET person_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -14241,11 +14188,11 @@ som: ADP | SCONJ
 Expected: {
 forfattaren_NOUN bak_ADP -_PUNCT h._PROPN g._PROPN wells_PROPN -_PUNCT var_AUX meir_ADJ redd_ADJ for_ADP kva_PRON menneskeætta_NOUN gjer_VERB med_ADP jorda_PROPN enn_ADP eventuelle_ADJ trugsmål_NOUN frå_ADP mars_PROPN ._PUNCT}
 Predicted: {
-forfattaren_NOUN bak_PROPN -_PUNCT h._PROPN g._PROPN wells_PROPN -_PUNCT var_AUX meir_ADJ redd_ADJ for_ADP kva_DET menneskeætta_NOUN gjer_VERB med_ADP jorda_NOUN enn_ADP eventuelle_ADJ trugsmål_NOUN frå_ADP mars_NOUN ._PUNCT}
+forfattaren_NOUN bak_ADV -_PUNCT h._PROPN g._PROPN wells_PROPN -_PUNCT var_AUX meir_ADJ redd_ADJ for_ADP kva_DET menneskeætta_NOUN gjer_VERB med_ADP jorda_NOUN enn_ADP eventuelle_ADJ trugsmål_NOUN frå_ADP mars_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-bak: ADP | PROPN
+bak: ADP | ADV
 kva: PRON | DET
 jorda: PROPN | NOUN
 mars: PROPN | NOUN
@@ -14321,9 +14268,9 @@ fyrer: NOUN | VERB
 }
 
 Expected: {
-kritikken_NOUN har_AUX ikkje_ADV blitt_VERB mindre_ADJ med_ADP åra_NOUN ,_PUNCT og_CCONJ har_AUX hatt_VERB mykje_ADJ av_ADP same_DET innhald_NOUN som_ADP i_ADP sverige_PROPN :_PUNCT}
+kritikken_NOUN har_AUX ikkje_PART blitt_VERB mindre_ADJ med_ADP åra_NOUN ,_PUNCT og_CCONJ har_AUX hatt_VERB mykje_ADJ av_ADP same_DET innhald_NOUN som_ADP i_ADP sverige_PROPN :_PUNCT}
 Predicted: {
-kritikken_NOUN har_AUX ikkje_ADV blitt_VERB mindre_ADJ med_ADP åra_NOUN ,_PUNCT og_CCONJ har_AUX hatt_VERB mykje_ADJ av_ADP same_DET innhald_NOUN som_SCONJ i_ADP sverige_PROPN :_PUNCT}
+kritikken_NOUN har_AUX ikkje_PART blitt_VERB mindre_ADJ med_ADP åra_NOUN ,_PUNCT og_CCONJ har_AUX hatt_VERB mykje_ADJ av_ADP same_DET innhald_NOUN som_SCONJ i_ADP sverige_PROPN :_PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -14331,9 +14278,9 @@ som: ADP | SCONJ
 }
 
 Expected: {
-det_PRON ville_AUX ikkje_ADV vore_VERB til_ADP å_PART leva_VERB med_ADV ,_PUNCT seier_VERB humlen_PROPN ._PUNCT}
+det_PRON ville_AUX ikkje_PART vore_VERB til_ADP å_PART leva_VERB med_ADV ,_PUNCT seier_VERB humlen_PROPN ._PUNCT}
 Predicted: {
-det_PRON ville_AUX ikkje_ADV vore_AUX til_ADP å_PART leva_VERB med_ADP ,_PUNCT seier_VERB humlen_PROPN ._PUNCT}
+det_PRON ville_AUX ikkje_PART vore_AUX til_ADP å_PART leva_VERB med_ADP ,_PUNCT seier_VERB humlen_PROPN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -14342,9 +14289,9 @@ med: ADV | ADP
 }
 
 Expected: {
--_PUNCT vi_PRON meiner_VERB det_PRON er_VERB ei_DET rekkje_NOUN ting_NOUN som_SCONJ kan_AUX forbetrast_VERB med_ADP une_NOUN ,_PUNCT men_CCONJ trur_VERB ikkje_ADV dette_PRON blir_VERB betre_ADJ med_ADP domstolsbehandling_NOUN ._PUNCT}
+-_PUNCT vi_PRON meiner_VERB det_PRON er_VERB ei_DET rekkje_NOUN ting_NOUN som_SCONJ kan_AUX forbetrast_VERB med_ADP une_NOUN ,_PUNCT men_CCONJ trur_VERB ikkje_PART dette_PRON blir_VERB betre_ADJ med_ADP domstolsbehandling_NOUN ._PUNCT}
 Predicted: {
--_PUNCT vi_PRON meiner_VERB det_PRON er_AUX ei_DET rekkje_NOUN ting_NOUN som_SCONJ kan_AUX forbetrast_VERB med_ADP une_NOUN ,_PUNCT men_CCONJ trur_VERB ikkje_ADV dette_PRON blir_VERB betre_ADJ med_ADP domstolsbehandling_NOUN ._PUNCT}
+-_PUNCT vi_PRON meiner_VERB det_PRON er_AUX ei_DET rekkje_NOUN ting_NOUN som_SCONJ kan_AUX forbetrast_VERB med_ADP une_NOUN ,_PUNCT men_CCONJ trur_VERB ikkje_PART dette_PRON blir_VERB betre_ADJ med_ADP domstolsbehandling_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -14386,9 +14333,9 @@ etterlyste: VERB | ADP
 }
 
 Expected: {
-det_PRON kom_VERB kanskje_ADV ikkje_ADV som_ADP ei_DET stor_ADJ overrasking_NOUN ,_PUNCT sidan_SCONJ departementet_NOUN for_ADP fire_NUM månader_NOUN sidan_ADV greip_VERB inn_ADV og_CCONJ stansa_VERB normeringsarbeidet_NOUN med_ADP nynorsken_NOUN som_SCONJ språkrådet_PROPN sette_VERB i_ADP gang_NOUN i_ADP fjor_NOUN haust_NOUN ,_PUNCT og_CCONJ bad_VERB dei_PRON venta_VERB til_ADP etter_ADP at_SCONJ språkmeldinga_PROPN var_AUX vedteke_ADJ i_ADP stortinget_PROPN ._PUNCT}
+det_PRON kom_VERB kanskje_ADV ikkje_PART som_ADP ei_DET stor_ADJ overrasking_NOUN ,_PUNCT sidan_SCONJ departementet_NOUN for_ADP fire_NUM månader_NOUN sidan_ADV greip_VERB inn_ADV og_CCONJ stansa_VERB normeringsarbeidet_NOUN med_ADP nynorsken_NOUN som_SCONJ språkrådet_PROPN sette_VERB i_ADP gang_NOUN i_ADP fjor_NOUN haust_NOUN ,_PUNCT og_CCONJ bad_VERB dei_PRON venta_VERB til_ADP etter_ADP at_SCONJ språkmeldinga_PROPN var_AUX vedteke_ADJ i_ADP stortinget_PROPN ._PUNCT}
 Predicted: {
-det_PRON kom_VERB kanskje_ADV ikkje_ADV som_ADP ei_DET stor_ADJ overrasking_NOUN ,_PUNCT sidan_SCONJ departementet_NOUN for_ADP fire_NUM månader_NOUN sidan_ADV greip_VERB inn_ADV og_CCONJ stansa_VERB normeringsarbeidet_NOUN med_ADP nynorsken_NOUN som_SCONJ språkrådet_PROPN sette_VERB i_ADP gang_NOUN i_ADP fjor_NOUN haust_NOUN ,_PUNCT og_CCONJ bad_VERB dei_PRON venta_VERB til_ADP etter_ADP at_SCONJ språkmeldinga_NOUN var_AUX vedteke_ADJ i_ADP stortinget_PROPN ._PUNCT}
+det_PRON kom_VERB kanskje_ADV ikkje_PART som_ADP ei_DET stor_ADJ overrasking_NOUN ,_PUNCT sidan_SCONJ departementet_NOUN for_ADP fire_NUM månader_NOUN sidan_ADV greip_VERB inn_ADV og_CCONJ stansa_VERB normeringsarbeidet_NOUN med_ADP nynorsken_NOUN som_SCONJ språkrådet_PROPN sette_VERB i_ADP gang_NOUN i_ADP fjor_NOUN haust_NOUN ,_PUNCT og_CCONJ bad_VERB dei_PRON venta_VERB til_ADP etter_ADP at_SCONJ språkmeldinga_NOUN var_AUX vedteke_ADJ i_ADP stortinget_PROPN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -14433,9 +14380,9 @@ som: ADP | SCONJ
 }
 
 Expected: {
-alle_PRON er_AUX samde_ADJ om_ADP at_SCONJ jensen_PROPN ikkje_ADV markerte_VERB seg_PRON som_ADP nokon_DET stor_ADJ islamfiende_NOUN i_ADP hebron_PROPN ,_PUNCT sjølv_ADV om_SCONJ han_PRON seinare_ADJ skulle_AUX verte_VERB ei_DET leiestjerne_NOUN for_ADP det_DET internasjonale_ADJ ,_PUNCT islamofobe_ADJ bloggarmiljøet_NOUN ._PUNCT}
+alle_PRON er_AUX samde_ADJ om_ADP at_SCONJ jensen_PROPN ikkje_PART markerte_VERB seg_PRON som_ADP nokon_DET stor_ADJ islamfiende_NOUN i_ADP hebron_PROPN ,_PUNCT sjølv_ADV om_SCONJ han_PRON seinare_ADJ skulle_AUX verte_VERB ei_DET leiestjerne_NOUN for_ADP det_DET internasjonale_ADJ ,_PUNCT islamofobe_ADJ bloggarmiljøet_NOUN ._PUNCT}
 Predicted: {
-alle_PRON er_AUX samde_ADJ om_ADP at_SCONJ jensen_PROPN ikkje_ADV markerte_VERB seg_PRON som_SCONJ nokon_DET stor_ADJ islamfiende_ADJ i_ADP hebron_PROPN ,_PUNCT sjølv_ADV om_SCONJ han_PRON seinare_ADJ skulle_AUX verte_VERB ei_DET leiestjerne_NOUN for_ADP det_DET internasjonale_ADJ ,_PUNCT islamofobe_ADJ bloggarmiljøet_NOUN ._PUNCT}
+alle_PRON er_AUX samde_ADJ om_ADP at_SCONJ jensen_PROPN ikkje_PART markerte_VERB seg_PRON som_SCONJ nokon_DET stor_ADJ islamfiende_ADJ i_ADP hebron_PROPN ,_PUNCT sjølv_ADV om_SCONJ han_PRON seinare_ADJ skulle_AUX verte_VERB ei_DET leiestjerne_NOUN for_ADP det_DET internasjonale_ADJ ,_PUNCT islamofobe_ADJ bloggarmiljøet_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -14692,9 +14639,9 @@ dei: DET | PRON
 }
 
 Expected: {
-ut_ADP frå_ADP politiforklaringar_NOUN og_CCONJ det_DET såkalla_ADJ «_PUNCT manifestet_NOUN »_PUNCT hans_NOUN får_VERB ein_PRON nærast_ADJ inntrykk_NOUN av_ADP at_SCONJ han_PRON gjekk_VERB berserk_NOUN mot_ADP barn_NOUN ,_PUNCT unge_ADJ og_CCONJ tilfeldige_ADJ sivile_ADJ fordi_SCONJ han_PRON ikkje_ADV fekk_VERB inn_ADV krigsretorikken_NOUN sin_PRON som_ADP innlegg_NOUN i_ADP avisene_NOUN ._PUNCT}
+ut_ADP frå_ADP politiforklaringar_NOUN og_CCONJ det_DET såkalla_ADJ «_PUNCT manifestet_NOUN »_PUNCT hans_NOUN får_VERB ein_PRON nærast_ADJ inntrykk_NOUN av_ADP at_SCONJ han_PRON gjekk_VERB berserk_NOUN mot_ADP barn_NOUN ,_PUNCT unge_ADJ og_CCONJ tilfeldige_ADJ sivile_ADJ fordi_SCONJ han_PRON ikkje_PART fekk_VERB inn_ADV krigsretorikken_NOUN sin_PRON som_ADP innlegg_NOUN i_ADP avisene_NOUN ._PUNCT}
 Predicted: {
-ut_ADP frå_ADP politiforklaringar_NOUN og_CCONJ det_DET såkalla_ADJ «_PUNCT manifestet_NOUN »_PUNCT hans_PRON får_VERB ein_DET nærast_ADJ inntrykk_NOUN av_ADP at_SCONJ han_PRON gjekk_VERB berserk_NOUN mot_ADP barn_NOUN ,_PUNCT unge_ADJ og_CCONJ tilfeldige_ADJ sivile_ADJ fordi_SCONJ han_PRON ikkje_ADV fekk_VERB inn_ADV krigsretorikken_NOUN sin_PRON som_ADP innlegg_NOUN i_ADP avisene_NOUN ._PUNCT}
+ut_ADP frå_ADP politiforklaringar_NOUN og_CCONJ det_DET såkalla_ADJ «_PUNCT manifestet_NOUN »_PUNCT hans_PRON får_VERB ein_DET nærast_ADJ inntrykk_NOUN av_ADP at_SCONJ han_PRON gjekk_VERB berserk_NOUN mot_ADP barn_NOUN ,_PUNCT unge_ADJ og_CCONJ tilfeldige_ADJ sivile_ADJ fordi_SCONJ han_PRON ikkje_PART fekk_VERB inn_ADV krigsretorikken_NOUN sin_PRON som_ADP innlegg_NOUN i_ADP avisene_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -14717,9 +14664,9 @@ bane: VERB | NOUN
 }
 
 Expected: {
-clemet_PROPN meiner_VERB det_PRON er_AUX merkeleg_ADJ at_SCONJ bjurstrøm_PROPN ikkje_ADV har_VERB betre_ADJ forståing_NOUN for_ADP «_PUNCT den_DET spesialisering_NOUN og_CCONJ arbeidsdeling_NOUN som_SCONJ er_AUX en_DET helt_ADV naturlig_ADJ del_NOUN av_ADP vår_PRON velstandsutvikling_NOUN »_PUNCT ._PUNCT}
+clemet_PROPN meiner_VERB det_PRON er_AUX merkeleg_ADJ at_SCONJ bjurstrøm_PROPN ikkje_PART har_VERB betre_ADJ forståing_NOUN for_ADP «_PUNCT den_DET spesialisering_NOUN og_CCONJ arbeidsdeling_NOUN som_SCONJ er_AUX en_DET helt_ADV naturlig_ADJ del_NOUN av_ADP vår_PRON velstandsutvikling_NOUN »_PUNCT ._PUNCT}
 Predicted: {
-clemet_PROPN meiner_VERB det_PRON er_AUX merkeleg_ADJ at_SCONJ bjurstrøm_PROPN ikkje_ADV har_VERB betre_ADJ forståing_NOUN for_ADP «_PUNCT den_DET spesialisering_NOUN og_CCONJ arbeidsdeling_NOUN som_SCONJ er_AUX en_DET helt_ADJ naturlig_ADJ del_NOUN av_ADP vår_PRON velstandsutvikling_NOUN »_PUNCT ._PUNCT}
+clemet_PROPN meiner_VERB det_PRON er_AUX merkeleg_ADJ at_SCONJ bjurstrøm_PROPN ikkje_PART har_VERB betre_ADJ forståing_NOUN for_ADP «_PUNCT den_DET spesialisering_NOUN og_CCONJ arbeidsdeling_NOUN som_SCONJ er_AUX en_DET helt_ADJ naturlig_ADJ del_NOUN av_ADP vår_PRON velstandsutvikling_NOUN »_PUNCT ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -14738,9 +14685,9 @@ for: ADV | ADP
 }
 
 Expected: {
-siktemålet_NOUN må_AUX vere_AUX ei_DET politisk_ADJ løysing_NOUN ,_PUNCT ikkje_ADV ei_DET militær_ADJ ei_DET ._PUNCT}
+siktemålet_NOUN må_AUX vere_AUX ei_DET politisk_ADJ løysing_NOUN ,_PUNCT ikkje_PART ei_DET militær_ADJ ei_DET ._PUNCT}
 Predicted: {
-siktemålet_NOUN må_AUX vere_AUX ei_DET politisk_ADJ løysing_NOUN ,_PUNCT ikkje_ADV ei_DET militær_ADJ ei_NOUN ._PUNCT}
+siktemålet_NOUN må_AUX vere_AUX ei_DET politisk_ADJ løysing_NOUN ,_PUNCT ikkje_PART ei_DET militær_ADJ ei_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -14748,9 +14695,9 @@ ei: DET | NOUN
 }
 
 Expected: {
-gry_PROPN larsen_PROPN i_ADP utanriksdepartementet_PROPN meiner_VERB ikkje_ADV det_PRON er_VERB noko_NUM motsetnad_NOUN mellom_ADP at_SCONJ noreg_PROPN skal_AUX verje_VERB sivile_ADJ og_CCONJ samstundes_ADV ikkje_ADV straks_ADV rettar_VERB seg_PRON etter_ADP fns_PROPN bøn_NOUN om_ADP våpenkvile_NOUN ._PUNCT}
+gry_PROPN larsen_PROPN i_ADP utanriksdepartementet_PROPN meiner_VERB ikkje_PART det_PRON er_VERB noko_NUM motsetnad_NOUN mellom_ADP at_SCONJ noreg_PROPN skal_AUX verje_VERB sivile_ADJ og_CCONJ samstundes_ADV ikkje_PART straks_ADV rettar_VERB seg_PRON etter_ADP fns_PROPN bøn_NOUN om_ADP våpenkvile_NOUN ._PUNCT}
 Predicted: {
-gry_PROPN larsen_PROPN i_ADP utanriksdepartementet_PROPN meiner_VERB ikkje_ADV det_PRON er_VERB noko_DET motsetnad_NOUN mellom_ADP at_SCONJ noreg_PROPN skal_AUX verje_VERB sivile_ADJ og_CCONJ samstundes_ADV ikkje_ADV straks_ADV rettar_VERB seg_PRON etter_ADP fns_PROPN bøn_NOUN om_ADP våpenkvile_NOUN ._PUNCT}
+gry_PROPN larsen_PROPN i_ADP utanriksdepartementet_PROPN meiner_VERB ikkje_PART det_PRON er_VERB noko_DET motsetnad_NOUN mellom_ADP at_SCONJ noreg_PROPN skal_AUX verje_VERB sivile_ADJ og_CCONJ samstundes_ADV ikkje_PART straks_ADV rettar_VERB seg_PRON etter_ADP fns_PROPN bøn_NOUN om_ADP våpenkvile_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -14758,13 +14705,12 @@ noko: NUM | DET
 }
 
 Expected: {
--_PUNCT om_SCONJ det_PRON berre_ADV var_AUX slik_ADV at_SCONJ sv_PROPN ikkje_ADV hadde_AUX greidd_VERB å_PART styre_VERB landet_NOUN i_ADP riktig_ADJ retning_NOUN raskt_ADJ nok_ADV ,_PUNCT kunne_AUX eg_PRON synt_VERB «_PUNCT revolusjonært_ADJ tålmod_NOUN »_PUNCT ._PUNCT}
+-_PUNCT om_SCONJ det_PRON berre_ADV var_AUX slik_ADV at_SCONJ sv_PROPN ikkje_PART hadde_AUX greidd_VERB å_PART styre_VERB landet_NOUN i_ADP riktig_ADJ retning_NOUN raskt_ADJ nok_ADV ,_PUNCT kunne_AUX eg_PRON synt_VERB «_PUNCT revolusjonært_ADJ tålmod_NOUN »_PUNCT ._PUNCT}
 Predicted: {
--_PUNCT om_SCONJ det_PRON berre_ADV var_AUX slik_ADV at_SCONJ sv_PROPN ikkje_ADV hadde_VERB greidd_ADJ å_PART styre_VERB landet_NOUN i_ADP riktig_ADJ retning_NOUN raskt_ADJ nok_ADV ,_PUNCT kunne_AUX eg_PRON synt_VERB «_PUNCT revolusjonært_ADJ tålmod_NOUN »_PUNCT ._PUNCT}
+-_PUNCT om_SCONJ det_PRON berre_ADV var_AUX slik_ADV at_SCONJ sv_PROPN ikkje_PART hadde_AUX greidd_ADJ å_PART styre_VERB landet_NOUN i_ADP riktig_ADJ retning_NOUN raskt_ADJ nok_ADV ,_PUNCT kunne_AUX eg_PRON synt_VERB «_PUNCT revolusjonært_ADJ tålmod_NOUN »_PUNCT ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-hadde: AUX | VERB
 greidd: VERB | ADJ
 }
 
@@ -14843,9 +14789,9 @@ vart: AUX | VERB
 }
 
 Expected: {
-eg_PRON må_AUX innrømme_VERB at_SCONJ eg_PRON ikkje_ADV synest_VERB dette_PRON er_AUX noko_PRON å_PART le_VERB av_ADV ,_PUNCT og_CCONJ at_SCONJ sympatien_NOUN min_PRON så_ADV langt_ADJ heilt_ADJ klart_ADJ ligg_VERB hos_ADP den_DET stakkars_ADJ utledde_ADJ torben_PROPN hansen_PROPN ,_PUNCT som_SCONJ han_PRON heiter_VERB ,_PUNCT og_CCONJ som_SCONJ seinare_ADJ skal_AUX bli_AUX gjort_ADJ narr_NOUN av_ADP med_ADP karikaturteikningar_NOUN på_ADP egg_NOUN og_CCONJ ballongar_NOUN ._PUNCT}
+eg_PRON må_AUX innrømme_VERB at_SCONJ eg_PRON ikkje_PART synest_VERB dette_PRON er_AUX noko_PRON å_PART le_VERB av_ADV ,_PUNCT og_CCONJ at_SCONJ sympatien_NOUN min_PRON så_ADV langt_ADJ heilt_ADJ klart_ADJ ligg_VERB hos_ADP den_DET stakkars_ADJ utledde_ADJ torben_PROPN hansen_PROPN ,_PUNCT som_SCONJ han_PRON heiter_VERB ,_PUNCT og_CCONJ som_SCONJ seinare_ADJ skal_AUX bli_AUX gjort_ADJ narr_NOUN av_ADP med_ADP karikaturteikningar_NOUN på_ADP egg_NOUN og_CCONJ ballongar_NOUN ._PUNCT}
 Predicted: {
-eg_PRON må_AUX innrømme_VERB at_SCONJ eg_PRON ikkje_ADV synest_VERB dette_PRON er_AUX noko_PRON å_PART le_VERB av_ADV ,_PUNCT og_CCONJ at_SCONJ sympatien_NOUN min_PRON så_ADV langt_ADJ heilt_ADJ klart_ADJ ligg_VERB hos_ADP den_DET stakkars_ADJ utledde_ADJ torben_PROPN hansen_PROPN ,_PUNCT som_SCONJ han_PRON heiter_VERB ,_PUNCT og_CCONJ som_SCONJ seinare_ADJ skal_AUX bli_AUX gjort_VERB narr_NOUN av_ADV med_ADP karikaturteikningar_NOUN på_ADP egg_NOUN og_CCONJ ballongar_NOUN ._PUNCT}
+eg_PRON må_AUX innrømme_VERB at_SCONJ eg_PRON ikkje_PART synest_VERB dette_PRON er_AUX noko_PRON å_PART le_VERB av_ADV ,_PUNCT og_CCONJ at_SCONJ sympatien_NOUN min_PRON så_ADV langt_ADJ heilt_ADJ klart_ADJ ligg_VERB hos_ADP den_DET stakkars_ADJ utledde_ADJ torben_PROPN hansen_PROPN ,_PUNCT som_SCONJ han_PRON heiter_VERB ,_PUNCT og_CCONJ som_SCONJ seinare_ADJ skal_AUX bli_AUX gjort_VERB narr_NOUN av_ADV med_ADP karikaturteikningar_NOUN på_ADP egg_NOUN og_CCONJ ballongar_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -14904,9 +14850,9 @@ er: VERB | AUX
 }
 
 Expected: {
--_PUNCT vi_PRON hadde_VERB heller_ADV ikkje_ADV noko_DET ønske_NOUN om_ADP å_PART driva_VERB ein_DET privatskole_NOUN ,_PUNCT vi_PRON hadde_AUX sjølvsagt_ADJ håpa_VERB at_SCONJ kommunen_NOUN ville_AUX driva_VERB skolen_NOUN vidare_ADJ som_ADP ein_DET offentleg_ADJ skole_NOUN ._PUNCT}
+-_PUNCT vi_PRON hadde_VERB heller_ADV ikkje_PART noko_DET ønske_NOUN om_ADP å_PART driva_VERB ein_DET privatskole_NOUN ,_PUNCT vi_PRON hadde_AUX sjølvsagt_ADJ håpa_VERB at_SCONJ kommunen_NOUN ville_AUX driva_VERB skolen_NOUN vidare_ADJ som_ADP ein_DET offentleg_ADJ skole_NOUN ._PUNCT}
 Predicted: {
--_PUNCT vi_PRON hadde_AUX heller_ADV ikkje_ADV noko_DET ønske_NOUN om_ADP å_PART driva_VERB ein_DET privatskole_NOUN ,_PUNCT vi_PRON hadde_AUX sjølvsagt_ADJ håpa_VERB at_SCONJ kommunen_NOUN ville_AUX driva_VERB skolen_NOUN vidare_ADJ som_SCONJ ein_DET offentleg_ADJ skole_NOUN ._PUNCT}
+-_PUNCT vi_PRON hadde_AUX heller_ADV ikkje_PART noko_DET ønske_NOUN om_ADP å_PART driva_VERB ein_DET privatskole_NOUN ,_PUNCT vi_PRON hadde_AUX sjølvsagt_ADJ håpa_VERB at_SCONJ kommunen_NOUN ville_AUX driva_VERB skolen_NOUN vidare_ADJ som_SCONJ ein_DET offentleg_ADJ skole_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -14938,9 +14884,9 @@ andre: ADJ | DET
 }
 
 Expected: {
-ein_DET stor_ADJ skole_NOUN må_AUX ha_VERB eit_DET system_NOUN for_ADP planlegging_NOUN som_SCONJ gjer_VERB at_SCONJ det_PRON ikkje_ADV er_AUX lett_ADJ å_PART kasta_VERB om_ADV på_ADP planane_NOUN ._PUNCT}
+ein_DET stor_ADJ skole_NOUN må_AUX ha_VERB eit_DET system_NOUN for_ADP planlegging_NOUN som_SCONJ gjer_VERB at_SCONJ det_PRON ikkje_PART er_AUX lett_ADJ å_PART kasta_VERB om_ADV på_ADP planane_NOUN ._PUNCT}
 Predicted: {
-ein_DET stor_ADJ skole_NOUN må_AUX ha_VERB eit_DET system_NOUN for_ADP planlegging_NOUN som_SCONJ gjer_VERB at_SCONJ det_PRON ikkje_ADV er_AUX lett_ADJ å_PART kasta_VERB om_ADP på_ADP planane_NOUN ._PUNCT}
+ein_DET stor_ADJ skole_NOUN må_AUX ha_VERB eit_DET system_NOUN for_ADP planlegging_NOUN som_SCONJ gjer_VERB at_SCONJ det_PRON ikkje_PART er_AUX lett_ADJ å_PART kasta_VERB om_ADP på_ADP planane_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -14970,12 +14916,11 @@ regjeringa: NOUN | PROPN
 Expected: {
 den_DET språkopplæringspolitikken_NOUN som_SCONJ der_ADV er_AUX skissert_ADJ ,_PUNCT og_CCONJ som_SCONJ kunnskapsdepartementet_PROPN har_VERB ansvaret_NOUN for_ADP ,_PUNCT inngår_VERB som_ADP ein_DET del_NOUN av_ADP den_DET heilskaplege_ADJ språkpolitikken_NOUN som_SCONJ elles_ADV blir_AUX skissert_ADJ i_ADP meldinga_NOUN her_ADV ._PUNCT}
 Predicted: {
-den_DET språkopplæringspolitikken_NOUN som_SCONJ der_ADV er_AUX skissert_ADJ ,_PUNCT og_CCONJ som_SCONJ kunnskapsdepartementet_PROPN har_VERB ansvaret_NOUN for_ADV ,_PUNCT inngår_VERB som_ADP ein_DET del_NOUN av_ADP den_DET heilskaplege_ADJ språkpolitikken_NOUN som_SCONJ elles_ADV blir_VERB skissert_ADJ i_ADP meldinga_NOUN her_ADV ._PUNCT}
+den_DET språkopplæringspolitikken_NOUN som_SCONJ der_ADV er_AUX skissert_ADJ ,_PUNCT og_CCONJ som_SCONJ kunnskapsdepartementet_PROPN har_VERB ansvaret_NOUN for_ADV ,_PUNCT inngår_VERB som_ADP ein_DET del_NOUN av_ADP den_DET heilskaplege_ADJ språkpolitikken_NOUN som_SCONJ elles_ADV blir_AUX skissert_ADJ i_ADP meldinga_NOUN her_ADV ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 for: ADP | ADV
-blir: AUX | VERB
 }
 
 Expected: {
@@ -14990,9 +14935,9 @@ samepolitikken: PROPN | NOUN
 }
 
 Expected: {
-at_SCONJ vi_PRON i_ADP noreg_PROPN gjer_VERB det_PRON vi_PRON kan_VERB for_ADP å_PART halda_VERB ved_ADP like_ADJ og_CCONJ utvikla_VERB den_DET gjensidige_ADJ språkforståinga_NOUN i_ADP norden_NOUN ,_PUNCT er_AUX ikkje_ADV berre_ADV med_ADP på_ADP å_PART utvida_VERB den_DET direkte_ADJ språklege_ADJ og_CCONJ kulturelle_ADJ horisonten_NOUN vår_PRON og_CCONJ stimulera_VERB all_DET mellommenneskeleg_ADJ kontakt_NOUN internt_ADJ i_ADP norden_NOUN ._PUNCT}
+at_SCONJ vi_PRON i_ADP noreg_PROPN gjer_VERB det_PRON vi_PRON kan_VERB for_ADP å_PART halda_VERB ved_ADP like_ADJ og_CCONJ utvikla_VERB den_DET gjensidige_ADJ språkforståinga_NOUN i_ADP norden_NOUN ,_PUNCT er_AUX ikkje_PART berre_ADV med_ADP på_ADP å_PART utvida_VERB den_DET direkte_ADJ språklege_ADJ og_CCONJ kulturelle_ADJ horisonten_NOUN vår_PRON og_CCONJ stimulera_VERB all_DET mellommenneskeleg_ADJ kontakt_NOUN internt_ADJ i_ADP norden_NOUN ._PUNCT}
 Predicted: {
-at_SCONJ vi_PRON i_ADP noreg_PROPN gjer_VERB det_PRON vi_PRON kan_AUX for_ADP å_PART halda_VERB ved_ADP like_ADV og_CCONJ utvikla_VERB den_DET gjensidige_ADJ språkforståinga_NOUN i_ADP norden_PROPN ,_PUNCT er_AUX ikkje_ADV berre_ADV med_ADP på_ADP å_PART utvida_VERB den_DET direkte_ADJ språklege_ADJ og_CCONJ kulturelle_ADJ horisonten_NOUN vår_PRON og_CCONJ stimulera_VERB all_DET mellommenneskeleg_ADJ kontakt_NOUN internt_ADJ i_ADP norden_NOUN ._PUNCT}
+at_SCONJ vi_PRON i_ADP noreg_PROPN gjer_VERB det_PRON vi_PRON kan_AUX for_ADP å_PART halda_VERB ved_ADP like_ADV og_CCONJ utvikla_VERB den_DET gjensidige_ADJ språkforståinga_NOUN i_ADP norden_PROPN ,_PUNCT er_AUX ikkje_PART berre_ADV med_ADP på_ADP å_PART utvida_VERB den_DET direkte_ADJ språklege_ADJ og_CCONJ kulturelle_ADJ horisonten_NOUN vår_PRON og_CCONJ stimulera_VERB all_DET mellommenneskeleg_ADJ kontakt_NOUN internt_ADJ i_ADP norden_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -15056,9 +15001,9 @@ til: ADV | ADP
 }
 
 Expected: {
-ikkje_ADV minst_ADJ i_ADP dei_DET nordiske_ADJ nabolanda_NOUN våre_PRON har_AUX det_PRON skjedd_VERB ei_DET interessant_ADJ språkpolitisk_ADJ oppvakning_NOUN dei_DET siste_ADJ åra_NOUN ,_PUNCT og_CCONJ på_ADP visse_ADJ måtar_NOUN kan_AUX det_PRON sjå_VERB ut_ADV som_SCONJ vi_PRON her_ADV i_ADP landet_NOUN er_AUX i_ADP ferd_NOUN med_ADP å_PART bli_AUX forbigått_ADJ av_ADP dei_DET næraste_ADJ grannelanda_NOUN våre_PRON når_SCONJ det_PRON gjeld_VERB språkpolitisk_ADJ medvit_NOUN og_CCONJ interesse_NOUN ._PUNCT}
+ikkje_PART minst_ADJ i_ADP dei_DET nordiske_ADJ nabolanda_NOUN våre_PRON har_AUX det_PRON skjedd_VERB ei_DET interessant_ADJ språkpolitisk_ADJ oppvakning_NOUN dei_DET siste_ADJ åra_NOUN ,_PUNCT og_CCONJ på_ADP visse_ADJ måtar_NOUN kan_AUX det_PRON sjå_VERB ut_ADV som_SCONJ vi_PRON her_ADV i_ADP landet_NOUN er_AUX i_ADP ferd_NOUN med_ADP å_PART bli_AUX forbigått_ADJ av_ADP dei_DET næraste_ADJ grannelanda_NOUN våre_PRON når_SCONJ det_PRON gjeld_VERB språkpolitisk_ADJ medvit_NOUN og_CCONJ interesse_NOUN ._PUNCT}
 Predicted: {
-ikkje_ADV minst_ADJ i_ADP dei_DET nordiske_ADJ nabolanda_NOUN våre_PRON har_AUX det_PRON skjedd_VERB ei_DET interessant_ADJ språkpolitisk_ADJ oppvakning_NOUN dei_DET siste_ADJ åra_NOUN ,_PUNCT og_CCONJ på_ADP visse_ADJ måtar_NOUN kan_AUX det_PRON sjå_VERB ut_ADV som_SCONJ vi_PRON her_ADV i_ADP landet_NOUN er_AUX i_ADP ferd_NOUN med_ADP å_PART bli_VERB forbigått_ADJ av_ADP dei_DET næraste_ADJ grannelanda_NOUN våre_PRON når_SCONJ det_PRON gjeld_VERB språkpolitisk_ADJ medvit_NOUN og_CCONJ interesse_NOUN ._PUNCT}
+ikkje_PART minst_ADJ i_ADP dei_DET nordiske_ADJ nabolanda_NOUN våre_PRON har_AUX det_PRON skjedd_VERB ei_DET interessant_ADJ språkpolitisk_ADJ oppvakning_NOUN dei_DET siste_ADJ åra_NOUN ,_PUNCT og_CCONJ på_ADP visse_ADJ måtar_NOUN kan_AUX det_PRON sjå_VERB ut_ADV som_SCONJ vi_PRON her_ADV i_ADP landet_NOUN er_AUX i_ADP ferd_NOUN med_ADP å_PART bli_VERB forbigått_ADJ av_ADP dei_DET næraste_ADJ grannelanda_NOUN våre_PRON når_SCONJ det_PRON gjeld_VERB språkpolitisk_ADJ medvit_NOUN og_CCONJ interesse_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -15221,9 +15166,9 @@ med: ADV | ADP
 }
 
 Expected: {
-ikkje_ADV berre_ADV situasjonen_NOUN for_ADP norsk_NOUN generelt_ADJ ,_PUNCT men_CCONJ også_ADV bruken_NOUN av_ADP nynorsk_NOUN spesielt_ADJ bør_AUX kunna_AUX målast_VERB på_ADP denne_DET måten_NOUN ._PUNCT}
+ikkje_PART berre_ADV situasjonen_NOUN for_ADP norsk_NOUN generelt_ADJ ,_PUNCT men_CCONJ også_ADV bruken_NOUN av_ADP nynorsk_NOUN spesielt_ADJ bør_AUX kunna_AUX målast_VERB på_ADP denne_DET måten_NOUN ._PUNCT}
 Predicted: {
-ikkje_ADV berre_ADV situasjonen_NOUN for_ADP norsk_ADJ generelt_ADJ ,_PUNCT men_CCONJ også_ADV bruken_NOUN av_ADP nynorsk_NOUN spesielt_ADJ bør_AUX kunna_AUX målast_VERB på_ADP denne_DET måten_NOUN ._PUNCT}
+ikkje_PART berre_ADV situasjonen_NOUN for_ADP norsk_ADJ generelt_ADJ ,_PUNCT men_CCONJ også_ADV bruken_NOUN av_ADP nynorsk_NOUN spesielt_ADJ bør_AUX kunna_AUX målast_VERB på_ADP denne_DET måten_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -15261,9 +15206,9 @@ utkast: NOUN | VERB
 }
 
 Expected: {
-i_ADP tråd_NOUN med_ADP dette_PRON er_AUX det_PRON i_ADP norsk_PROPN i_ADP hundre_NUM !_PUNCT reist_ADJ spørsmålet_NOUN om_SCONJ ikkje_ADV den_DET auka_ADJ bruken_NOUN av_ADP engelsk_NOUN i_ADP det_DET norske_ADJ samfunnet_NOUN gjer_VERB at_SCONJ tida_NOUN no_ADV er_AUX inne_ADP til_ADP «_PUNCT å_PART lovfesta_VERB norsk_NOUN som_ADP nasjonalspråk_NOUN »_PUNCT ._PUNCT}
+i_ADP tråd_NOUN med_ADP dette_PRON er_AUX det_PRON i_ADP norsk_PROPN i_ADP hundre_NUM !_PUNCT reist_ADJ spørsmålet_NOUN om_SCONJ ikkje_PART den_DET auka_ADJ bruken_NOUN av_ADP engelsk_NOUN i_ADP det_DET norske_ADJ samfunnet_NOUN gjer_VERB at_SCONJ tida_NOUN no_ADV er_AUX inne_ADP til_ADP «_PUNCT å_PART lovfesta_VERB norsk_NOUN som_ADP nasjonalspråk_NOUN »_PUNCT ._PUNCT}
 Predicted: {
-i_ADP tråd_NOUN med_ADP dette_PRON er_AUX det_PRON i_ADP norsk_NOUN i_ADP hundre_NUM !_PUNCT reist_ADJ spørsmålet_NOUN om_ADP ikkje_ADV den_DET auka_ADJ bruken_NOUN av_ADP engelsk_NOUN i_ADP det_DET norske_ADJ samfunnet_NOUN gjer_VERB at_SCONJ tida_NOUN no_ADV er_AUX inne_ADP til_ADP «_PUNCT å_PART lovfesta_VERB norsk_NOUN som_ADP nasjonalspråk_NOUN »_PUNCT ._PUNCT}
+i_ADP tråd_NOUN med_ADP dette_PRON er_AUX det_PRON i_ADP norsk_NOUN i_ADP hundre_NUM !_PUNCT reist_ADJ spørsmålet_NOUN om_ADP ikkje_PART den_DET auka_ADJ bruken_NOUN av_ADP engelsk_NOUN i_ADP det_DET norske_ADJ samfunnet_NOUN gjer_VERB at_SCONJ tida_NOUN no_ADV er_AUX inne_ADP til_ADP «_PUNCT å_PART lovfesta_VERB norsk_NOUN som_ADP nasjonalspråk_NOUN »_PUNCT ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -15272,9 +15217,9 @@ om: SCONJ | ADP
 }
 
 Expected: {
-jamvel_ADV om_SCONJ formålet_NOUN var_AUX å_PART fremja_VERB bruk_NOUN av_ADP det_DET nasjonale_ADJ språket_NOUN ,_PUNCT vart_AUX ikkje_ADV dette_PRON vurdert_ADJ som_ADP ei_DET lovleg_ADJ grunngjeving_NOUN for_ADP å_PART ha_VERB lågare_ADJ momssatsar_NOUN på_ADP islandsspråkleg_ADJ litteratur_NOUN ._PUNCT}
+jamvel_ADV om_SCONJ formålet_NOUN var_AUX å_PART fremja_VERB bruk_NOUN av_ADP det_DET nasjonale_ADJ språket_NOUN ,_PUNCT vart_AUX ikkje_PART dette_PRON vurdert_ADJ som_ADP ei_DET lovleg_ADJ grunngjeving_NOUN for_ADP å_PART ha_VERB lågare_ADJ momssatsar_NOUN på_ADP islandsspråkleg_ADJ litteratur_NOUN ._PUNCT}
 Predicted: {
-jamvel_ADV om_SCONJ formålet_NOUN var_AUX å_PART fremja_VERB bruk_NOUN av_ADP det_DET nasjonale_ADJ språket_NOUN ,_PUNCT vart_AUX ikkje_ADV dette_DET vurdert_ADJ som_ADP ei_DET lovleg_ADJ grunngjeving_NOUN for_ADP å_PART ha_VERB lågare_ADJ momssatsar_NOUN på_ADP islandsspråkleg_ADJ litteratur_NOUN ._PUNCT}
+jamvel_ADV om_SCONJ formålet_NOUN var_AUX å_PART fremja_VERB bruk_NOUN av_ADP det_DET nasjonale_ADJ språket_NOUN ,_PUNCT vart_AUX ikkje_PART dette_DET vurdert_ADJ som_ADP ei_DET lovleg_ADJ grunngjeving_NOUN for_ADP å_PART ha_VERB lågare_ADJ momssatsar_NOUN på_ADP islandsspråkleg_ADJ litteratur_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -15308,9 +15253,9 @@ samtale: X | NOUN
 }
 
 Expected: {
-når_SCONJ det_PRON derimot_ADV er_VERB tale_NOUN om_ADP allment_ADJ informasjonstilfang_NOUN ,_PUNCT er_VERB det_PRON ikkje_ADV noko_PRON i_ADP mållova_NOUN som_SCONJ kan_AUX tolkast_VERB slik_ADV at_SCONJ eit_DET statsorgan_NOUN må_AUX bruka_VERB norsk_NOUN ._PUNCT}
+når_SCONJ det_PRON derimot_ADV er_VERB tale_NOUN om_ADP allment_ADJ informasjonstilfang_NOUN ,_PUNCT er_VERB det_PRON ikkje_PART noko_PRON i_ADP mållova_NOUN som_SCONJ kan_AUX tolkast_VERB slik_ADV at_SCONJ eit_DET statsorgan_NOUN må_AUX bruka_VERB norsk_NOUN ._PUNCT}
 Predicted: {
-når_SCONJ det_PRON derimot_ADV er_VERB tale_NOUN om_ADP allment_ADJ informasjonstilfang_NOUN ,_PUNCT er_AUX det_PRON ikkje_ADV noko_PRON i_ADP mållova_NOUN som_SCONJ kan_AUX tolkast_VERB slik_ADV at_SCONJ eit_DET statsorgan_NOUN må_AUX bruka_VERB norsk_NOUN ._PUNCT}
+når_SCONJ det_PRON derimot_ADV er_VERB tale_NOUN om_ADP allment_ADJ informasjonstilfang_NOUN ,_PUNCT er_AUX det_PRON ikkje_PART noko_PRON i_ADP mållova_NOUN som_SCONJ kan_AUX tolkast_VERB slik_ADV at_SCONJ eit_DET statsorgan_NOUN må_AUX bruka_VERB norsk_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -15318,9 +15263,9 @@ er: VERB | AUX
 }
 
 Expected: {
-det_PRON heitte_VERB vidare_ADJ at_SCONJ lova_NOUN skulle_AUX ta_VERB klart_ADJ sikte_NOUN på_ADP å_PART motverka_VERB at_SCONJ dansk_NOUN lir_VERB domenetap_NOUN ,_PUNCT dvs._ADV at_SCONJ det_DET danske_ADJ språket_NOUN ikkje_ADV vik_VERB for_ADP engelsk_NOUN innanfor_ADP vitskap_NOUN ,_PUNCT høgare_ADJ utdanning_NOUN ,_PUNCT næringsliv_NOUN og_CCONJ offentleg_ADJ forvaltning_NOUN ._PUNCT}
+det_PRON heitte_VERB vidare_ADJ at_SCONJ lova_NOUN skulle_AUX ta_VERB klart_ADJ sikte_NOUN på_ADP å_PART motverka_VERB at_SCONJ dansk_NOUN lir_VERB domenetap_NOUN ,_PUNCT dvs._ADV at_SCONJ det_DET danske_ADJ språket_NOUN ikkje_PART vik_VERB for_ADP engelsk_NOUN innanfor_ADP vitskap_NOUN ,_PUNCT høgare_ADJ utdanning_NOUN ,_PUNCT næringsliv_NOUN og_CCONJ offentleg_ADJ forvaltning_NOUN ._PUNCT}
 Predicted: {
-det_PRON heitte_VERB vidare_ADJ at_SCONJ lova_NOUN skulle_AUX ta_VERB klart_ADJ sikte_NOUN på_ADP å_PART motverka_VERB at_SCONJ dansk_ADJ lir_VERB domenetap_NOUN ,_PUNCT dvs._ADV at_SCONJ det_DET danske_ADJ språket_NOUN ikkje_ADV vik_VERB for_ADP engelsk_NOUN innanfor_ADP vitskap_NOUN ,_PUNCT høgare_ADJ utdanning_NOUN ,_PUNCT næringsliv_NOUN og_CCONJ offentleg_ADJ forvaltning_NOUN ._PUNCT}
+det_PRON heitte_VERB vidare_ADJ at_SCONJ lova_NOUN skulle_AUX ta_VERB klart_ADJ sikte_NOUN på_ADP å_PART motverka_VERB at_SCONJ dansk_ADJ lir_VERB domenetap_NOUN ,_PUNCT dvs._ADV at_SCONJ det_DET danske_ADJ språket_NOUN ikkje_PART vik_VERB for_ADP engelsk_NOUN innanfor_ADP vitskap_NOUN ,_PUNCT høgare_ADJ utdanning_NOUN ,_PUNCT næringsliv_NOUN og_CCONJ offentleg_ADJ forvaltning_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -15328,9 +15273,9 @@ dansk: NOUN | ADJ
 }
 
 Expected: {
-vi_PRON kan_AUX ikkje_ADV ta_VERB bruken_NOUN av_ADP norsk_ADJ språk_NOUN ,_PUNCT verdien_NOUN av_ADP godt_ADJ norsk_ADJ språk_NOUN og_CCONJ behovet_NOUN for_ADP ei_DET god_ADJ norskopplæring_NOUN for_ADP alle_PRON som_ADP noko_DET sjølvsagt_ADJ ._PUNCT}
+vi_PRON kan_AUX ikkje_PART ta_VERB bruken_NOUN av_ADP norsk_ADJ språk_NOUN ,_PUNCT verdien_NOUN av_ADP godt_ADJ norsk_ADJ språk_NOUN og_CCONJ behovet_NOUN for_ADP ei_DET god_ADJ norskopplæring_NOUN for_ADP alle_PRON som_ADP noko_DET sjølvsagt_ADJ ._PUNCT}
 Predicted: {
-vi_PRON kan_AUX ikkje_ADV ta_VERB bruken_NOUN av_ADP norsk_ADJ språk_NOUN ,_PUNCT verdien_NOUN av_ADP godt_ADJ norsk_ADJ språk_NOUN og_CCONJ behovet_NOUN for_ADP ei_DET god_ADJ norskopplæring_NOUN for_ADP alle_PRON som_SCONJ noko_PRON sjølvsagt_ADJ ._PUNCT}
+vi_PRON kan_AUX ikkje_PART ta_VERB bruken_NOUN av_ADP norsk_ADJ språk_NOUN ,_PUNCT verdien_NOUN av_ADP godt_ADJ norsk_ADJ språk_NOUN og_CCONJ behovet_NOUN for_ADP ei_DET god_ADJ norskopplæring_NOUN for_ADP alle_PRON som_SCONJ noko_PRON sjølvsagt_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -15463,9 +15408,9 @@ har: AUX | VERB
 }
 
 Expected: {
-løftet_NOUN om_ADP ti_NUM veker_NOUN foreldrekvote_NOUN har_AUX vi_PRON ikkje_ADV sett_VERB snurten_NOUN av_ADP så_ADV langt_ADJ ,_PUNCT heller_ADV ikkje_ADV løftet_NOUN om_ADP å_PART gje_VERB fedrar_NOUN sjølvstendige_ADJ oppteningsrettar_NOUN er_AUX innfritt_ADJ ._PUNCT}
+løftet_NOUN om_ADP ti_NUM veker_NOUN foreldrekvote_NOUN har_AUX vi_PRON ikkje_PART sett_VERB snurten_NOUN av_ADP så_ADV langt_ADJ ,_PUNCT heller_ADV ikkje_PART løftet_NOUN om_ADP å_PART gje_VERB fedrar_NOUN sjølvstendige_ADJ oppteningsrettar_NOUN er_AUX innfritt_ADJ ._PUNCT}
 Predicted: {
-løftet_NOUN om_ADP ti_NUM veker_NOUN foreldrekvote_NOUN har_AUX vi_PRON ikkje_ADV sett_VERB snurten_NOUN av_ADP så_ADV langt_ADJ ,_PUNCT heller_ADV ikkje_ADV løftet_VERB om_ADP å_PART gje_VERB fedrar_NOUN sjølvstendige_ADJ oppteningsrettar_NOUN er_AUX innfritt_ADJ ._PUNCT}
+løftet_NOUN om_ADP ti_NUM veker_NOUN foreldrekvote_NOUN har_AUX vi_PRON ikkje_PART sett_VERB snurten_NOUN av_ADP så_ADV langt_ADJ ,_PUNCT heller_ADV ikkje_PART løftet_VERB om_ADP å_PART gje_VERB fedrar_NOUN sjølvstendige_ADJ oppteningsrettar_NOUN er_AUX innfritt_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -15473,9 +15418,9 @@ løftet: NOUN | VERB
 }
 
 Expected: {
-om_SCONJ det_PRON er_AUX slik_ADV at_SCONJ kristeleg_PROPN folkeparti_PROPN no_ADV er_AUX blant_ADP dei_DET partia_NOUN som_SCONJ meiner_VERB at_SCONJ det_PRON skjer_VERB for_ADV lite_ADJ på_ADP dette_DET området_NOUN ,_PUNCT synest_VERB eg_PRON det_PRON er_AUX ei_DET veldig_ADJ positiv_ADJ utvikling_NOUN ,_PUNCT for_CCONJ dessverre_ADV har_AUX kristeleg_PROPN folkeparti_PROPN ikkje_ADV vore_AUX blant_ADP dei_DET sterkaste_ADJ pådrivarane_NOUN for_ADP å_PART byggja_VERB barnehagar_NOUN ._PUNCT}
+om_SCONJ det_PRON er_AUX slik_ADV at_SCONJ kristeleg_PROPN folkeparti_PROPN no_ADV er_AUX blant_ADP dei_DET partia_NOUN som_SCONJ meiner_VERB at_SCONJ det_PRON skjer_VERB for_ADV lite_ADJ på_ADP dette_DET området_NOUN ,_PUNCT synest_VERB eg_PRON det_PRON er_AUX ei_DET veldig_ADJ positiv_ADJ utvikling_NOUN ,_PUNCT for_CCONJ dessverre_ADV har_AUX kristeleg_PROPN folkeparti_PROPN ikkje_PART vore_AUX blant_ADP dei_DET sterkaste_ADJ pådrivarane_NOUN for_ADP å_PART byggja_VERB barnehagar_NOUN ._PUNCT}
 Predicted: {
-om_SCONJ det_PRON er_AUX slik_ADV at_SCONJ kristeleg_PROPN folkeparti_PROPN no_ADV er_AUX blant_ADP dei_DET partia_NOUN som_SCONJ meiner_VERB at_SCONJ det_PRON skjer_VERB for_ADV lite_ADJ på_ADP dette_DET området_NOUN ,_PUNCT synest_VERB eg_PRON det_PRON er_AUX ei_DET veldig_ADJ positiv_ADJ utvikling_NOUN ,_PUNCT for_ADP dessverre_ADV har_AUX kristeleg_PROPN folkeparti_PROPN ikkje_ADV vore_AUX blant_ADP dei_DET sterkaste_ADJ pådrivarane_NOUN for_ADP å_PART byggja_VERB barnehagar_NOUN ._PUNCT}
+om_SCONJ det_PRON er_AUX slik_ADV at_SCONJ kristeleg_PROPN folkeparti_PROPN no_ADV er_AUX blant_ADP dei_DET partia_NOUN som_SCONJ meiner_VERB at_SCONJ det_PRON skjer_VERB for_ADV lite_ADJ på_ADP dette_DET området_NOUN ,_PUNCT synest_VERB eg_PRON det_PRON er_AUX ei_DET veldig_ADJ positiv_ADJ utvikling_NOUN ,_PUNCT for_ADP dessverre_ADV har_AUX kristeleg_PROPN folkeparti_PROPN ikkje_PART vore_AUX blant_ADP dei_DET sterkaste_ADJ pådrivarane_NOUN for_ADP å_PART byggja_VERB barnehagar_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -15493,9 +15438,9 @@ var: VERB | AUX
 }
 
 Expected: {
-han_PRON meiner_VERB at_SCONJ finanskrisa_NOUN har_VERB si_PRON årsak_NOUN i_ADP for_ADV mykje_ADJ ,_PUNCT ikkje_ADV for_ADV lite_ADJ ,_PUNCT styring_NOUN med_ADP dei_DET elleville_ADJ finansmarknadene_NOUN ._PUNCT}
+han_PRON meiner_VERB at_SCONJ finanskrisa_NOUN har_VERB si_PRON årsak_NOUN i_ADP for_ADV mykje_ADJ ,_PUNCT ikkje_PART for_ADV lite_ADJ ,_PUNCT styring_NOUN med_ADP dei_DET elleville_ADJ finansmarknadene_NOUN ._PUNCT}
 Predicted: {
-han_PRON meiner_VERB at_SCONJ finanskrisa_NOUN har_AUX si_PRON årsak_NOUN i_ADP for_ADP mykje_ADJ ,_PUNCT ikkje_ADV for_ADV lite_ADJ ,_PUNCT styring_NOUN med_ADP dei_DET elleville_ADJ finansmarknadene_NOUN ._PUNCT}
+han_PRON meiner_VERB at_SCONJ finanskrisa_NOUN har_AUX si_PRON årsak_NOUN i_ADP for_ADP mykje_ADJ ,_PUNCT ikkje_PART for_ADV lite_ADJ ,_PUNCT styring_NOUN med_ADP dei_DET elleville_ADJ finansmarknadene_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -15511,16 +15456,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 erstatta: ADJ | VERB
-}
-
-Expected: {
-så_CCONJ det_PRON er_AUX nødvendig_ADJ å_PART ha_VERB gode_ADJ ordningar_NOUN for_ADP å_PART sikre_VERB forsking_NOUN der_ADV òg_ADV ._PUNCT}
-Predicted: {
-så_ADV det_PRON er_AUX nødvendig_ADJ å_PART ha_VERB gode_ADJ ordningar_NOUN for_ADP å_PART sikre_VERB forsking_NOUN der_ADV òg_ADV ._PUNCT}
-Errors: {
-Tok: Ref | Pred
----------------
-så: CCONJ | ADV
 }
 
 Expected: {
@@ -15640,9 +15575,9 @@ kartverket: PROPN | NOUN
 }
 
 Expected: {
-men_CCONJ det_PRON er_AUX ikkje_ADV det_PRON regjeringa_PROPN prioriterer_VERB ._PUNCT}
+men_CCONJ det_PRON er_AUX ikkje_PART det_PRON regjeringa_PROPN prioriterer_VERB ._PUNCT}
 Predicted: {
-men_CCONJ det_PRON er_AUX ikkje_ADV det_DET regjeringa_NOUN prioriterer_VERB ._PUNCT}
+men_CCONJ det_PRON er_AUX ikkje_PART det_DET regjeringa_NOUN prioriterer_VERB ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -15705,9 +15640,9 @@ om: ADV | ADP
 }
 
 Expected: {
-sjølv_ADV har_AUX eg_PRON aldri_ADV vore_VERB innom_ADP fredheim_PROPN og_CCONJ betel_PROPN ,_PUNCT og_CCONJ eg_PRON er_AUX slett_ADJ ikkje_ADV stolt_ADJ av_ADP det_PRON ._PUNCT}
+sjølv_ADV har_AUX eg_PRON aldri_ADV vore_VERB innom_ADP fredheim_PROPN og_CCONJ betel_PROPN ,_PUNCT og_CCONJ eg_PRON er_AUX slett_ADJ ikkje_PART stolt_ADJ av_ADP det_PRON ._PUNCT}
 Predicted: {
-sjølv_ADV har_AUX eg_PRON aldri_ADV vore_AUX innom_ADP fredheim_PROPN og_CCONJ betel_NOUN ,_PUNCT og_CCONJ eg_PRON er_AUX slett_ADJ ikkje_ADV stolt_ADJ av_ADP det_PRON ._PUNCT}
+sjølv_ADV har_AUX eg_PRON aldri_ADV vore_AUX innom_ADP fredheim_PROPN og_CCONJ betel_NOUN ,_PUNCT og_CCONJ eg_PRON er_AUX slett_ADJ ikkje_PART stolt_ADJ av_ADP det_PRON ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -15767,9 +15702,9 @@ frimot: NOUN | ADV
 }
 
 Expected: {
-og_CCONJ at_SCONJ joli_NOUN er_AUX eit_DET einaste_NUM kav_NOUN ,_PUNCT vil_AUX kviteseids_PROPN geistlege_ADJ representant_NOUN i_ADP england_PROPN ikkje_ADV vere_AUX med_ADP på_ADP ._PUNCT}
+og_CCONJ at_SCONJ joli_NOUN er_AUX eit_DET einaste_NUM kav_NOUN ,_PUNCT vil_AUX kviteseids_PROPN geistlege_ADJ representant_NOUN i_ADP england_PROPN ikkje_PART vere_AUX med_ADP på_ADP ._PUNCT}
 Predicted: {
-og_CCONJ at_SCONJ joli_PROPN er_AUX eit_DET einaste_NUM kav_NOUN ,_PUNCT vil_AUX kviteseids_PROPN geistlege_ADJ representant_NOUN i_ADP england_PROPN ikkje_ADV vere_AUX med_ADP på_ADP ._PUNCT}
+og_CCONJ at_SCONJ joli_PROPN er_AUX eit_DET einaste_NUM kav_NOUN ,_PUNCT vil_AUX kviteseids_PROPN geistlege_ADJ representant_NOUN i_ADP england_PROPN ikkje_PART vere_AUX med_ADP på_ADP ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -15809,9 +15744,9 @@ ingeniørnivå: NOUN | PRON
 }
 
 Expected: {
-det_PRON var_AUX ikkje_ADV berre_ADV statkraft_PROPN og_CCONJ tilsette_ADJ der_ADV som_SCONJ fekk_AUX møte_VERB statsministeren_NOUN tysdag_NOUN ._PUNCT}
+det_PRON var_AUX ikkje_PART berre_ADV statkraft_PROPN og_CCONJ tilsette_ADJ der_ADV som_SCONJ fekk_AUX møte_VERB statsministeren_NOUN tysdag_NOUN ._PUNCT}
 Predicted: {
-det_PRON var_AUX ikkje_ADV berre_ADV statkraft_PROPN og_CCONJ tilsette_ADJ der_PUNCT som_SCONJ fekk_VERB møte_NOUN statsministeren_NOUN tysdag_NOUN ._PUNCT}
+det_PRON var_AUX ikkje_PART berre_ADV statkraft_PROPN og_CCONJ tilsette_ADJ der_PUNCT som_SCONJ fekk_VERB møte_NOUN statsministeren_NOUN tysdag_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -15831,9 +15766,9 @@ ført: ADJ | VERB
 }
 
 Expected: {
-han_PRON trudde_VERB heller_ADV ikkje_ADV at_SCONJ driftsutgiftene_NOUN kom_VERB til_ADP å_PART bli_VERB eit_DET problem_NOUN dersom_SCONJ aktiviteten_NOUN i_ADP fleirbrukshuset_NOUN blir_VERB god_ADJ ._PUNCT}
+han_PRON trudde_VERB heller_ADV ikkje_PART at_SCONJ driftsutgiftene_NOUN kom_VERB til_ADP å_PART bli_VERB eit_DET problem_NOUN dersom_SCONJ aktiviteten_NOUN i_ADP fleirbrukshuset_NOUN blir_VERB god_ADJ ._PUNCT}
 Predicted: {
-han_PRON trudde_VERB heller_ADV ikkje_ADV at_SCONJ driftsutgiftene_NOUN kom_VERB til_ADP å_PART bli_VERB eit_DET problem_NOUN dersom_SCONJ aktiviteten_NOUN i_ADP fleirbrukshuset_ADJ blir_VERB god_ADJ ._PUNCT}
+han_PRON trudde_VERB heller_ADV ikkje_PART at_SCONJ driftsutgiftene_NOUN kom_VERB til_ADP å_PART bli_VERB eit_DET problem_NOUN dersom_SCONJ aktiviteten_NOUN i_ADP fleirbrukshuset_ADJ blir_VERB god_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -15864,12 +15799,14 @@ dei: PRON | DET
 Expected: {
 det_DET synet_NOUN blei_AUX røysta_ADJ ned_ADV av_ADP dei_DET andre_DET politikarane_NOUN ._PUNCT}
 Predicted: {
-det_PRON synet_NOUN blei_AUX røysta_ADJ ned_ADP av_ADP dei_DET andre_DET politikarane_NOUN ._PUNCT}
+det_PRON synet_NOUN blei_AUX røysta_X ned_X av_X dei_DET andre_DET politikarane_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 det: DET | PRON
-ned: ADV | ADP
+røysta: ADJ | X
+ned: ADV | X
+av: ADP | X
 }
 
 Expected: {
@@ -15997,9 +15934,9 @@ elektriske: PROPN | ADJ
 }
 
 Expected: {
-av_ADP tredje_ADJ generasjon_NOUN tufte_PROPN er_AUX det_PRON berre_ADV anne_PROPN som_SCONJ ikkje_ADV er_AUX tilsett_ADJ i_ADP seljord_PROPN elektriske_PROPN ._PUNCT}
+av_ADP tredje_ADJ generasjon_NOUN tufte_PROPN er_AUX det_PRON berre_ADV anne_PROPN som_SCONJ ikkje_PART er_AUX tilsett_ADJ i_ADP seljord_PROPN elektriske_PROPN ._PUNCT}
 Predicted: {
-av_ADP tredje_ADJ generasjon_NOUN tufte_ADJ er_AUX det_PRON berre_ADV anne_PROPN som_SCONJ ikkje_ADV er_AUX tilsett_ADJ i_ADP seljord_PROPN elektriske_PROPN ._PUNCT}
+av_ADP tredje_ADJ generasjon_NOUN tufte_ADJ er_AUX det_PRON berre_ADV anne_PROPN som_SCONJ ikkje_PART er_AUX tilsett_ADJ i_ADP seljord_PROPN elektriske_PROPN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -16030,9 +15967,9 @@ planlagt: ADJ | VERB
 }
 
 Expected: {
--_PUNCT desse_DET elevane_NOUN har_VERB nok_ADV med_ADP å_PART meistre_VERB skulekvardagen_NOUN om_SCONJ dei_PRON også_ADV ikkje_ADV må_AUX pendle_VERB til_ADV og_CCONJ frå_ADP skulen_NOUN kvar_DET dag_NOUN ,_PUNCT påpeikar_VERB ho_PRON ._PUNCT}
+-_PUNCT desse_DET elevane_NOUN har_VERB nok_ADV med_ADP å_PART meistre_VERB skulekvardagen_NOUN om_SCONJ dei_PRON også_ADV ikkje_PART må_AUX pendle_VERB til_ADV og_CCONJ frå_ADP skulen_NOUN kvar_DET dag_NOUN ,_PUNCT påpeikar_VERB ho_PRON ._PUNCT}
 Predicted: {
--_PUNCT desse_DET elevane_NOUN har_AUX nok_ADV med_ADP å_PART meistre_VERB skulekvardagen_NOUN om_ADP dei_PRON også_ADV ikkje_ADV må_AUX pendle_VERB til_ADV og_CCONJ frå_ADP skulen_NOUN kvar_DET dag_NOUN ,_PUNCT påpeikar_VERB ho_PRON ._PUNCT}
+-_PUNCT desse_DET elevane_NOUN har_AUX nok_ADV med_ADP å_PART meistre_VERB skulekvardagen_NOUN om_ADP dei_PRON også_ADV ikkje_PART må_AUX pendle_VERB til_ADV og_CCONJ frå_ADP skulen_NOUN kvar_DET dag_NOUN ,_PUNCT påpeikar_VERB ho_PRON ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -16169,9 +16106,9 @@ ein: PRON | DET
 }
 
 Expected: {
--_PUNCT no_ADV ligg_VERB ballen_NOUN i_ADP kommunestyret_NOUN att_ADV ,_PUNCT og_CCONJ me_PRON må_AUX ta_VERB ei_DET avgjerd_NOUN om_SCONJ ramma_NOUN skal_AUX bli_AUX utvida_ADJ eller_CCONJ ikkje_ADV ,_PUNCT sa_VERB heggtveit_PROPN som_SCONJ elles_ADV opplyste_VERB at_SCONJ fylkeskommunen_NOUN har_AUX nedprioritert_VERB tippemidlar_NOUN til_ADP symjehallen_NOUN på_ADP dalen_PROPN ._PUNCT}
+-_PUNCT no_ADV ligg_VERB ballen_NOUN i_ADP kommunestyret_NOUN att_ADV ,_PUNCT og_CCONJ me_PRON må_AUX ta_VERB ei_DET avgjerd_NOUN om_SCONJ ramma_NOUN skal_AUX bli_AUX utvida_ADJ eller_CCONJ ikkje_PART ,_PUNCT sa_VERB heggtveit_PROPN som_SCONJ elles_ADV opplyste_VERB at_SCONJ fylkeskommunen_NOUN har_AUX nedprioritert_VERB tippemidlar_NOUN til_ADP symjehallen_NOUN på_ADP dalen_PROPN ._PUNCT}
 Predicted: {
--_PUNCT no_ADV ligg_VERB ballen_NOUN i_ADP kommunestyret_NOUN att_ADV ,_PUNCT og_CCONJ me_PRON må_AUX ta_VERB ei_DET avgjerd_NOUN om_ADP ramma_NOUN skal_AUX bli_AUX utvida_ADJ eller_CCONJ ikkje_ADV ,_PUNCT sa_VERB heggtveit_PROPN som_SCONJ elles_ADV opplyste_VERB at_SCONJ fylkeskommunen_NOUN har_VERB nedprioritert_ADJ tippemidlar_NOUN til_ADP symjehallen_NOUN på_ADP dalen_PROPN ._PUNCT}
+-_PUNCT no_ADV ligg_VERB ballen_NOUN i_ADP kommunestyret_NOUN att_ADV ,_PUNCT og_CCONJ me_PRON må_AUX ta_VERB ei_DET avgjerd_NOUN om_ADP ramma_NOUN skal_AUX bli_AUX utvida_ADJ eller_CCONJ ikkje_PART ,_PUNCT sa_VERB heggtveit_PROPN som_SCONJ elles_ADV opplyste_VERB at_SCONJ fylkeskommunen_NOUN har_VERB nedprioritert_ADJ tippemidlar_NOUN til_ADP symjehallen_NOUN på_ADP dalen_PROPN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -16181,9 +16118,9 @@ nedprioritert: VERB | ADJ
 }
 
 Expected: {
-likevel_ADV våga_VERB ho_PRON ikkje_ADV å_PART støtte_VERB framlegget_NOUN til_ADP felland_PROPN om_ADP å_PART satse_VERB moglegvis_ADV 70_NUM millionar_NOUN kroner_NOUN ._PUNCT}
+likevel_ADV våga_VERB ho_PRON ikkje_PART å_PART støtte_VERB framlegget_NOUN til_ADP felland_PROPN om_ADP å_PART satse_VERB moglegvis_ADV 70_NUM millionar_NOUN kroner_NOUN ._PUNCT}
 Predicted: {
-likevel_ADV våga_VERB ho_PRON ikkje_ADV å_PART støtte_VERB framlegget_NOUN til_ADP felland_NOUN om_ADP å_PART satse_VERB moglegvis_ADV 70_NUM millionar_NOUN kroner_NOUN ._PUNCT}
+likevel_ADV våga_VERB ho_PRON ikkje_PART å_PART støtte_VERB framlegget_NOUN til_ADP felland_NOUN om_ADP å_PART satse_VERB moglegvis_ADV 70_NUM millionar_NOUN kroner_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -16212,9 +16149,9 @@ løvebakken: PROPN | NOUN
 }
 
 Expected: {
-ho_PRON ynskjer_VERB på_ADP sikt_NOUN å_PART utforme_VERB eit_DET norsk_ADJ bøneteppe_NOUN til_ADP dagleg_ADJ bruk_NOUN ,_PUNCT men_CCONJ understrekar_VERB at_SCONJ det_PRON ikkje_ADV blir_VERB snakk_NOUN om_ADP noko_NUM etterlikning_NOUN av_ADP det_DET muslimske_ADJ teppet_NOUN ._PUNCT}
+ho_PRON ynskjer_VERB på_ADP sikt_NOUN å_PART utforme_VERB eit_DET norsk_ADJ bøneteppe_NOUN til_ADP dagleg_ADJ bruk_NOUN ,_PUNCT men_CCONJ understrekar_VERB at_SCONJ det_PRON ikkje_PART blir_VERB snakk_NOUN om_ADP noko_NUM etterlikning_NOUN av_ADP det_DET muslimske_ADJ teppet_NOUN ._PUNCT}
 Predicted: {
-ho_PRON ynskjer_VERB på_ADP sikt_NOUN å_PART utforme_VERB eit_DET norsk_ADJ bøneteppe_NOUN til_ADP dagleg_ADJ bruk_NOUN ,_PUNCT men_CCONJ understrekar_VERB at_SCONJ det_PRON ikkje_ADV blir_VERB snakk_NOUN om_ADP noko_DET etterlikning_NOUN av_ADP det_DET muslimske_ADJ teppet_NOUN ._PUNCT}
+ho_PRON ynskjer_VERB på_ADP sikt_NOUN å_PART utforme_VERB eit_DET norsk_ADJ bøneteppe_NOUN til_ADP dagleg_ADJ bruk_NOUN ,_PUNCT men_CCONJ understrekar_VERB at_SCONJ det_PRON ikkje_PART blir_VERB snakk_NOUN om_ADP noko_DET etterlikning_NOUN av_ADP det_DET muslimske_ADJ teppet_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -16496,13 +16433,23 @@ silkeseilas: NOUN | PROPN
 }
 
 Expected: {
-kanskje_ADV litt_ADJ meir_ADJ idyllisk_ADJ ,_PUNCT men_CCONJ ikkje_ADV like_ADV rått_ADJ og_CCONJ brutalt_ADJ som_ADP kanalen_NOUN der_ADV heime_ADP ._PUNCT}
+kanskje_ADV litt_ADJ meir_ADJ idyllisk_ADJ ,_PUNCT men_CCONJ ikkje_PART like_ADV rått_ADJ og_CCONJ brutalt_ADJ som_ADP kanalen_NOUN der_ADV heime_ADP ._PUNCT}
 Predicted: {
-kanskje_ADV litt_ADJ meir_ADJ idyllisk_ADJ ,_PUNCT men_CCONJ ikkje_ADV like_ADV rått_ADJ og_CCONJ brutalt_ADJ som_SCONJ kanalen_NOUN der_ADV heime_ADP ._PUNCT}
+kanskje_ADV litt_ADJ meir_ADJ idyllisk_ADJ ,_PUNCT men_CCONJ ikkje_PART like_ADV rått_ADJ og_CCONJ brutalt_ADJ som_SCONJ kanalen_NOUN der_ADV heime_ADP ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 som: ADP | SCONJ
+}
+
+Expected: {
+mat_NOUN er_AUX eit_DET svært_ADJ viktig_ADJ element_NOUN ombord_ADP og_CCONJ ei_DET stor_ADJ utfordring_NOUN for_ADP den_PRON som_SCONJ skal_AUX lage_VERB den_PRON ._PUNCT}
+Predicted: {
+mat_NOUN er_AUX eit_DET svært_ADJ viktig_ADJ element_NOUN ombord_NOUN og_CCONJ ei_DET stor_ADJ utfordring_NOUN for_ADP den_PRON som_SCONJ skal_AUX lage_VERB den_PRON ._PUNCT}
+Errors: {
+Tok: Ref | Pred
+---------------
+ombord: ADP | NOUN
 }
 
 Expected: {
@@ -16571,9 +16518,9 @@ på: ADP | ADV
 }
 
 Expected: {
--_PUNCT blir_VERB samarbeidet_NOUN positivt_ADJ vil_AUX eg_PRON vil_VERB ikkje_ADV utelukke_VERB at_SCONJ det_PRON kan_AUX ende_VERB med_ADP samanslåing_NOUN ,_PUNCT svara_VERB felle_PROPN ._PUNCT}
+-_PUNCT blir_VERB samarbeidet_NOUN positivt_ADJ vil_AUX eg_PRON vil_VERB ikkje_PART utelukke_VERB at_SCONJ det_PRON kan_AUX ende_VERB med_ADP samanslåing_NOUN ,_PUNCT svara_VERB felle_PROPN ._PUNCT}
 Predicted: {
--_PUNCT blir_AUX samarbeidet_NOUN positivt_ADJ vil_AUX eg_PRON vil_AUX ikkje_ADV utelukke_VERB at_SCONJ det_PRON kan_AUX ende_VERB med_ADP samanslåing_NOUN ,_PUNCT svara_VERB felle_PROPN ._PUNCT}
+-_PUNCT blir_AUX samarbeidet_NOUN positivt_ADJ vil_AUX eg_PRON vil_AUX ikkje_PART utelukke_VERB at_SCONJ det_PRON kan_AUX ende_VERB med_ADP samanslåing_NOUN ,_PUNCT svara_VERB felle_PROPN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -16602,9 +16549,9 @@ bruka: ADJ | VERB
 }
 
 Expected: {
-han_PRON vedgjekk_VERB at_SCONJ støy_NOUN kan_AUX vera_VERB til_ADP sjenanse_NOUN ,_PUNCT men_CCONJ kunngjorde_VERB òg_ADV mange_ADJ tilbakemeldingar_NOUN om_ADP at_SCONJ støyen_NOUN ikkje_ADV er_AUX sjenerande_ADJ ._PUNCT}
+han_PRON vedgjekk_VERB at_SCONJ støy_NOUN kan_AUX vera_VERB til_ADP sjenanse_NOUN ,_PUNCT men_CCONJ kunngjorde_VERB òg_ADV mange_ADJ tilbakemeldingar_NOUN om_ADP at_SCONJ støyen_NOUN ikkje_PART er_AUX sjenerande_ADJ ._PUNCT}
 Predicted: {
-han_PRON vedgjekk_VERB at_SCONJ støy_NOUN kan_AUX vera_AUX til_ADP sjenanse_NOUN ,_PUNCT men_CCONJ kunngjorde_VERB òg_ADV mange_ADJ tilbakemeldingar_NOUN om_ADP at_SCONJ støyen_NOUN ikkje_ADV er_AUX sjenerande_ADJ ._PUNCT}
+han_PRON vedgjekk_VERB at_SCONJ støy_NOUN kan_AUX vera_AUX til_ADP sjenanse_NOUN ,_PUNCT men_CCONJ kunngjorde_VERB òg_ADV mange_ADJ tilbakemeldingar_NOUN om_ADP at_SCONJ støyen_NOUN ikkje_PART er_AUX sjenerande_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -16644,9 +16591,9 @@ minna: ADJ | NOUN
 }
 
 Expected: {
--_PUNCT telemark_PROPN fylke_NOUN har_VERB ikkje_ADV konkrete_ADJ handlingar_NOUN og_CCONJ vedtak_NOUN om_ADP vegvedlikehald_NOUN som_SCONJ det_PRON ligg_VERB nok_ADV kraft_NOUN bak_ADV ._PUNCT}
+-_PUNCT telemark_PROPN fylke_NOUN har_VERB ikkje_PART konkrete_ADJ handlingar_NOUN og_CCONJ vedtak_NOUN om_ADP vegvedlikehald_NOUN som_SCONJ det_PRON ligg_VERB nok_ADV kraft_NOUN bak_ADV ._PUNCT}
 Predicted: {
--_PUNCT telemark_PROPN fylke_NOUN har_AUX ikkje_ADV konkrete_ADJ handlingar_NOUN og_CCONJ vedtak_NOUN om_ADP vegvedlikehald_NOUN som_SCONJ det_PRON ligg_VERB nok_ADV kraft_NOUN bak_ADP ._PUNCT}
+-_PUNCT telemark_PROPN fylke_NOUN har_AUX ikkje_PART konkrete_ADJ handlingar_NOUN og_CCONJ vedtak_NOUN om_ADP vegvedlikehald_NOUN som_SCONJ det_PRON ligg_VERB nok_ADV kraft_NOUN bak_ADP ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -16690,9 +16637,9 @@ omgang: NOUN | X
 }
 
 Expected: {
-fyresdal_PROPN har_VERB ikkje_ADV nok_ADV spelarar_NOUN ,_PUNCT og_CCONJ må_AUX nok_ADV ha_VERB fire_NUM nye_ADJ utanfrå_ADV ._PUNCT}
+fyresdal_PROPN har_VERB ikkje_PART nok_ADV spelarar_NOUN ,_PUNCT og_CCONJ må_AUX nok_ADV ha_VERB fire_NUM nye_ADJ utanfrå_ADV ._PUNCT}
 Predicted: {
-fyresdal_PROPN har_AUX ikkje_ADV nok_ADV spelarar_NOUN ,_PUNCT og_CCONJ må_AUX nok_ADV ha_VERB fire_NUM nye_ADJ utanfrå_ADP ._PUNCT}
+fyresdal_PROPN har_AUX ikkje_PART nok_ADV spelarar_NOUN ,_PUNCT og_CCONJ må_AUX nok_ADV ha_VERB fire_NUM nye_ADJ utanfrå_ADP ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -16701,9 +16648,9 @@ utanfrå: ADV | ADP
 }
 
 Expected: {
-medan_SCONJ krf_PROPN i_ADP eit_DET brev_NOUN kunngjorde_VERB at_SCONJ dei_PRON ikkje_ADV kunne_AUX møte_VERB ,_PUNCT men_CCONJ støtta_VERB eit_DET opprør_NOUN for_ADP distrikta_NOUN ,_PUNCT hadde_AUX ap_PROPN og_CCONJ h_PROPN bestemt_ADJ takka_VERB nei_NOUN til_ADP møtet_NOUN ._PUNCT}
+medan_SCONJ krf_PROPN i_ADP eit_DET brev_NOUN kunngjorde_VERB at_SCONJ dei_PRON ikkje_PART kunne_AUX møte_VERB ,_PUNCT men_CCONJ støtta_VERB eit_DET opprør_NOUN for_ADP distrikta_NOUN ,_PUNCT hadde_AUX ap_PROPN og_CCONJ h_PROPN bestemt_ADJ takka_VERB nei_NOUN til_ADP møtet_NOUN ._PUNCT}
 Predicted: {
-medan_SCONJ krf_PROPN i_ADP eit_DET brev_NOUN kunngjorde_VERB at_SCONJ dei_PRON ikkje_ADV kunne_AUX møte_VERB ,_PUNCT men_CCONJ støtta_VERB eit_DET opprør_NOUN for_ADP distrikta_NOUN ,_PUNCT hadde_AUX ap_PROPN og_CCONJ h_PROPN bestemt_VERB takka_ADJ nei_NOUN til_ADP møtet_NOUN ._PUNCT}
+medan_SCONJ krf_PROPN i_ADP eit_DET brev_NOUN kunngjorde_VERB at_SCONJ dei_PRON ikkje_PART kunne_AUX møte_VERB ,_PUNCT men_CCONJ støtta_VERB eit_DET opprør_NOUN for_ADP distrikta_NOUN ,_PUNCT hadde_AUX ap_PROPN og_CCONJ h_PROPN bestemt_VERB takka_ADJ nei_NOUN til_ADP møtet_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -16753,9 +16700,9 @@ venstre: ADJ | PROPN
 }
 
 Expected: {
-dei_PRON ville_AUX ikkje_ADV røpe_VERB den_DET nye_ADJ taktikken_NOUN ,_PUNCT sidan_SCONJ det_PRON svinsa_VERB nokre_DET seljordingar_NOUN farleg_ADJ nære_ADV ._PUNCT}
+dei_PRON ville_AUX ikkje_PART røpe_VERB den_DET nye_ADJ taktikken_NOUN ,_PUNCT sidan_SCONJ det_PRON svinsa_VERB nokre_DET seljordingar_NOUN farleg_ADJ nære_ADV ._PUNCT}
 Predicted: {
-dei_PRON ville_AUX ikkje_ADV røpe_VERB den_DET nye_ADJ taktikken_NOUN ,_PUNCT sidan_SCONJ det_PRON svinsa_VERB nokre_DET seljordingar_NOUN farleg_ADJ nære_ADJ ._PUNCT}
+dei_PRON ville_AUX ikkje_PART røpe_VERB den_DET nye_ADJ taktikken_NOUN ,_PUNCT sidan_SCONJ det_PRON svinsa_VERB nokre_DET seljordingar_NOUN farleg_ADJ nære_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
@@ -16783,9 +16730,9 @@ kyrkjehamaren: PROPN | NOUN
 }
 
 Expected: {
-ordførar_NOUN i_ADP kviteseid_PROPN ,_PUNCT karin_PROPN maria_PROPN larsen_PROPN (_PUNCT ap_PROPN )_PUNCT ,_PUNCT presiserer_VERB at_SCONJ måten_NOUN denne_DET saka_NOUN kom_VERB opp_ADV på_ADV var_AUX ikkje_ADV meint_ADJ som_ADP eit_DET kupp_NOUN mot_ADP kommunestyret_NOUN ._PUNCT}
+ordførar_NOUN i_ADP kviteseid_PROPN ,_PUNCT karin_PROPN maria_PROPN larsen_PROPN (_PUNCT ap_PROPN )_PUNCT ,_PUNCT presiserer_VERB at_SCONJ måten_NOUN denne_DET saka_NOUN kom_VERB opp_ADV på_ADV var_AUX ikkje_PART meint_ADJ som_ADP eit_DET kupp_NOUN mot_ADP kommunestyret_NOUN ._PUNCT}
 Predicted: {
-ordførar_NOUN i_ADP kviteseid_PROPN ,_PUNCT karin_PROPN maria_PROPN larsen_PROPN (_PUNCT ap_PROPN )_PUNCT ,_PUNCT presiserer_VERB at_SCONJ måten_NOUN denne_DET saka_NOUN kom_VERB opp_ADV på_ADP var_NOUN ikkje_ADV meint_ADJ som_ADP eit_DET kupp_NOUN mot_ADP kommunestyret_NOUN ._PUNCT}
+ordførar_NOUN i_ADP kviteseid_PROPN ,_PUNCT karin_PROPN maria_PROPN larsen_PROPN (_PUNCT ap_PROPN )_PUNCT ,_PUNCT presiserer_VERB at_SCONJ måten_NOUN denne_DET saka_NOUN kom_VERB opp_ADV på_ADP var_NOUN ikkje_PART meint_ADJ som_ADP eit_DET kupp_NOUN mot_ADP kommunestyret_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------

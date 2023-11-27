@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9300476057126855
+Evaluation-Score=0.9301596191542986
 Training-Sample-Size=10143
 Evaluation-Sample-Size=1126
 Training-Algorithm=MAXENT
@@ -10,9 +10,9 @@ Component-Name=POSTaggerME
 Language=sv
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1698031475145
+Timestamp=1700622720713
 TrainerType=Event
-Training-Eventhash=68d8ab9168cdca79b20571120d71cd5e
+Training-Eventhash=ccaf34bc209579384e7fa1aa18f6be2a
 factory=opennlp.tools.postag.POSTaggerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -1001,12 +1001,12 @@ andrad: VERB | ADJ
 Expected: {
 a_INTJ ,_PUNCT det_PRON ar_AUX ingen_DET fara_NOUN ,_PUNCT an_ADV sa_ADV lange_ADV ar_AUX det_PRON inte_PART new_PROPN york_PROPN eller_CCONJ london_PROPN ._PUNCT}
 Predicted: {
-a_INTJ ,_PUNCT det_PRON ar_AUX ingen_DET fara_NOUN ,_PUNCT an_SCONJ sa_ADV lange_ADV ar_AUX det_PRON inte_PART new_VERB york_PROPN eller_CCONJ london_PROPN ._PUNCT}
+a_INTJ ,_PUNCT det_PRON ar_AUX ingen_DET fara_NOUN ,_PUNCT an_SCONJ sa_ADV lange_ADV ar_AUX det_PRON inte_PART new_ADJ york_PROPN eller_CCONJ london_PROPN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 an: ADV | SCONJ
-new: PROPN | VERB
+new: PROPN | ADJ
 }
 
 Expected: {
@@ -1851,11 +1851,10 @@ sa: VERB | ADV
 Expected: {
 endast_ADV morkret_NOUN som_PRON ruvade_VERB hogre_ADJ upp_ADV i_ADP farleden_NOUN ,_PUNCT i_ADP vast_NOUN ,_PUNCT djupnade_VERB med_ADP var_DET minut_NOUN ,_PUNCT som_SCONJ om_SCONJ det_PRON vredgats_VERB over_ADP solens_NOUN narmande_NOUN ._PUNCT}
 Predicted: {
-endast_ADV morkret_NOUN som_PRON ruvade_VERB hogre_ADJ upp_ADV i_ADP farleden_NOUN ,_PUNCT i_ADP vast_NOUN ,_PUNCT djupnade_ADJ med_ADP var_PRON minut_NOUN ,_PUNCT som_PRON om_ADP det_PRON vredgats_VERB over_ADP solens_NOUN narmande_ADJ ._PUNCT}
+endast_ADV morkret_NOUN som_PRON ruvade_VERB hogre_ADJ upp_ADV i_ADP farleden_NOUN ,_PUNCT i_ADP vast_NOUN ,_PUNCT djupnade_VERB med_ADP var_PRON minut_NOUN ,_PUNCT som_PRON om_ADP det_PRON vredgats_VERB over_ADP solens_NOUN narmande_ADJ ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
-djupnade: VERB | ADJ
 var: DET | PRON
 som: SCONJ | PRON
 om: SCONJ | ADP
@@ -6869,13 +6868,12 @@ unge: NOUN | ADJ
 Expected: {
 han_PRON anvander_VERB detta_PRON som_SCONJ ett_DET argument_NOUN mot_ADP en_DET konsekvent_ADJ tudelning_NOUN av_ADP barnavarden_NOUN som_PRON han_PRON sager_VERB inte_PART far_AUX bli_VERB '_PUNCT ett_DET sjalvandamal_NOUN ,_PUNCT dar_ADV barnet_NOUN blir_VERB ett_DET slagtra_NOUN i_ADP emancipationsstriden_NOUN '_PUNCT ._PUNCT}
 Predicted: {
-han_PRON anvander_VERB detta_PRON som_ADP ett_DET argument_NOUN mot_ADP en_DET konsekvent_NOUN tudelning_NOUN av_ADP barnavarden_NOUN som_PRON han_PRON sager_VERB inte_PART far_AUX bli_VERB '_PUNCT ett_DET sjalvandamal_ADJ ,_PUNCT dar_ADV barnet_NOUN blir_VERB ett_DET slagtra_ADJ i_ADP emancipationsstriden_NOUN '_PUNCT ._PUNCT}
+han_PRON anvander_VERB detta_PRON som_ADP ett_DET argument_NOUN mot_ADP en_DET konsekvent_NOUN tudelning_NOUN av_ADP barnavarden_NOUN som_PRON han_PRON sager_VERB inte_PART far_AUX bli_VERB '_PUNCT ett_DET sjalvandamal_NOUN ,_PUNCT dar_ADV barnet_NOUN blir_VERB ett_DET slagtra_ADJ i_ADP emancipationsstriden_NOUN '_PUNCT ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 som: SCONJ | ADP
 konsekvent: ADJ | NOUN
-sjalvandamal: NOUN | ADJ
 slagtra: NOUN | ADJ
 }
 

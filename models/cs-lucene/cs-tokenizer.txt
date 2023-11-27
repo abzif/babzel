@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9993916986081431
-Training-Sample-Size=114655
-Evaluation-Sample-Size=12739
+Evaluation-Score=0.9993712945248542
+Training-Sample-Size=114922
+Evaluation-Sample-Size=12769
 Training-Algorithm=MAXENT_QN
 
 === MODEL PROPERTIES ===
@@ -9,9 +9,9 @@ Component-Name=TokenizerME
 Language=cs
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1697772313172
+Timestamp=1700449324310
 TrainerType=Event
-Training-Eventhash=aa8a60793c107b1d73812ac0883240a0
+Training-Eventhash=7b645ca7a82b3cb0be79b8d0e471bd86
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
@@ -40,6 +40,17 @@ filozoficky
 celoustavni
 metodologicky
 seminar
+}
+
+Expected: {
+popularni je posilujici malcao s obsahem kakaa<SPLIT>, vajec<SPLIT>, sladoveho vytazku a nekterych vitaminovych doplnku<SPLIT>.}
+Predicted: {
+popularni je posilujici malcao s obsahem kaka<SPLIT>a<SPLIT>, vajec<SPLIT>, sladoveho vytazku a nekterych vitaminovych doplnku<SPLIT>.}
+False positives: {
+kaka
+a
+} False negatives: {
+kakaa
 }
 
 Expected: {
@@ -178,6 +189,17 @@ False positives: {
 }
 
 Expected: {
+(3) z ucetnich jednotek podle §_1_odst._2_pism._a)_a_b) mohou vest ucetnictvi ve zjednodusenem rozsahu a) obcanska sdruzeni<SPLIT>, jejich organizacni jednotky<SPLIT>, ktere maji pravni subjektivitu<SPLIT>, cirkve a nabozenske spolecnosti nebo cirkevni instituce<SPLIT>, ktere jsou pravnickou osobou evidovanou podle zakona upravujiciho postaveni cirkvi a nabozenskych spolecnosti<SPLIT>, obecne prospesne spolecnosti<SPLIT>, honebni spolecenstva<SPLIT>, nadacni fondy a spolecenstvi vlastniku jednotek<SPLIT>, b) bytova druzstva<SPLIT>, ktera nemaji povinnost mit ucetni zaverku overenu auditorem<SPLIT>, a druzstva<SPLIT>, ktera jsou zalozena vyhradne za ucelem zajistovani hospodarskych<SPLIT>, socialnich anebo jinych potreb svych clenu<SPLIT>, c) prispevkove organizace<SPLIT>, ktere nejsou konsolidovanou ucetni jednotkou podle tohoto zakona<SPLIT>, u nichz o tom rozhodne jejich zrizovatel<SPLIT>, d) ostatni ucetni jednotky<SPLIT>, o nichz to stanovi zvlastni zakon<SPLIT>.}
+Predicted: {
+(3) z ucetnich jednotek podle §_1_odst._2_pism._a)_a_b) mohou vest ucetnictvi ve zjednodusenem rozsahu a) obcanska sdruzeni<SPLIT>, jejich organizacni jednotky<SPLIT>, ktere maji pravni subjektivitu<SPLIT>, cirkve a nabozenske spolecnosti nebo cirkevni instituce<SPLIT>, ktere jsou pravnickou osobou evidovanou podle zakona upravujiciho postaveni cirkvi a nabozenskych spolecnosti<SPLIT>, obecne prospesne spolecnosti<SPLIT>, honebni spolecenstva<SPLIT>, nadacni fondy a spolecenstvi vlastniku jednotek<SPLIT>, b) bytova druzstva<SPLIT>, ktera nemaji povinnost mit ucetni zaverku overenu auditorem<SPLIT>, a druzstva<SPLIT>, ktera jsou zalozena vyhradne za ucelem zajistovani hospodarskych<SPLIT>, socialnich anebo jinych potreb svych clenu<SPLIT>, c) prispevkove organizace<SPLIT>, ktere nejsou konsolidovanou ucetni jednotkou podle tohoto zakona<SPLIT>, u nichz o tom rozhodne jejich zrizovatel<SPLIT>, d<SPLIT>) ostatni ucetni jednotky<SPLIT>, o nichz to stanovi zvlastni zakon<SPLIT>.}
+False positives: {
+d
+)
+} False negatives: {
+d)
+}
+
+Expected: {
 (6) polozka "<SPLIT>b.ii.6. jiny dlouhodoby hmotny majetek<SPLIT>" obsahuje bez ohledu na vysi oceneni a) loziska nevyhrazeneho nerostu nebo jejich casti koupene nebo nabyte vkladem jako soucast pozemku po 1<SPLIT>. lednu 1997 v rozsahu vymezenem geologickym pruzkumem a za podminky stanovene v §_56_odst._2_pism._d)_a_odst._4<SPLIT>, b) umelecka dila<SPLIT>, ktera nejsou soucasti stavby<SPLIT>, sbirky<SPLIT>, movite kulturni pamatky<SPLIT>, predmety kulturni hodnoty a obdobne movite veci stanovene zvlastnimi pravnimi predpisy<SPLIT>, popripade jejich soubory<SPLIT>.}
 Predicted: {
 (6) polozka "<SPLIT>b.ii.6<SPLIT>. jiny dlouhodoby hmotny majetek<SPLIT>" obsahuje bez ohledu na vysi oceneni a) loziska nevyhrazeneho nerostu nebo jejich casti koupene nebo nabyte vkladem jako soucast pozemku po 1<SPLIT>. lednu 1997 v rozsahu vymezenem geologickym pruzkumem a za podminky stanovene v §_56_odst._2_pism._d)_a_odst._4<SPLIT>, b) umelecka dila<SPLIT>, ktera nejsou soucasti stavby<SPLIT>, sbirky<SPLIT>, movite kulturni pamatky<SPLIT>, predmety kulturni hodnoty a obdobne movite veci stanovene zvlastnimi pravnimi predpisy<SPLIT>, popripade jejich soubory<SPLIT>.}
@@ -202,18 +224,23 @@ b.
 Expected: {
 (5) polozka "<SPLIT>c.iii.4. pohledavky za spolecniky, cleny druzstva a za ucastniky sdruzeni<SPLIT>" obsahuje krome titulu uvedenych v polozce "<SPLIT>c.ii.4. pohledavky za spolecniky, cleny druzstva a za ucastniky sdruzeni<SPLIT>" zejmena kratkodobe pujcky spolecnikum<SPLIT>, clenum druzstva a prevod nakladu a vynosu mezi ucastniky sdruzeni<SPLIT>, ktere neni pravnickou osobou<SPLIT>.}
 Predicted: {
-(5) polozka "<SPLIT>c.iii.4. pohledavky za spolecniky<SPLIT>, cleny druzstva a za ucastniky sdruzeni<SPLIT>" obsahuje krome titulu uvedenych v polozce "<SPLIT>c.ii.4. pohledavky za spolecniky<SPLIT>, cleny druzstva a za ucastniky sdruzeni<SPLIT>" zejmena kratkodobe pujcky spolecnikum, clenum druzstva a prevod nakladu a vynosu mezi ucastniky sdruzeni<SPLIT>, ktere neni pravnickou osobou<SPLIT>.}
+(5) polozka "<SPLIT>c.iii.4. pohledavky za spolecniky, cleny druzstva a za ucastniky sdruzeni<SPLIT>" obsahuje krome titulu uvedenych v polozce "<SPLIT>c.ii.4. pohledavky za spolecniky, cleny druzstva a za ucastniky sdruzeni<SPLIT>" zejmena kratkodobe pujcky spolecnikum, clenum druzstva a prevod nakladu a vynosu mezi ucastniky sdruzeni<SPLIT>, ktere neni pravnickou osobou<SPLIT>.}
 False positives: {
-spolecniky
-,
-spolecniky
-,
 spolecnikum,
 } False negatives: {
-spolecniky,
-spolecniky,
 spolecnikum
 ,
+}
+
+Expected: {
+(3) polozka "<SPLIT>c.iv.3. kratkodobe cenne papiry a podily<SPLIT>" obsahuje zejmena cenne papiry<SPLIT>, ktere ucetni jednotka urcila k obchodovani s cilem dosahovat zisk z cenovych rozdilu v kratkodobem horizontu<SPLIT>, nejvyse dvanact mesicu<SPLIT>, dluhove cenne papiry se splatnosti jeden rok a kratsi<SPLIT>, u nichz ma ucetni jednotka umysl a schopnost drzet je do splatnosti<SPLIT>, a ostatni kratkodobe cenne papiry a podily<SPLIT>, u nichz zpravidla v okamziku porizeni neni znam zamer ucetni jednotky<SPLIT>.}
+Predicted: {
+(3) polozka "<SPLIT>c.iv.3<SPLIT>. kratkodobe cenne papiry a podily<SPLIT>" obsahuje zejmena cenne papiry<SPLIT>, ktere ucetni jednotka urcila k obchodovani s cilem dosahovat zisk z cenovych rozdilu v kratkodobem horizontu<SPLIT>, nejvyse dvanact mesicu<SPLIT>, dluhove cenne papiry se splatnosti jeden rok a kratsi<SPLIT>, u nichz ma ucetni jednotka umysl a schopnost drzet je do splatnosti<SPLIT>, a ostatni kratkodobe cenne papiry a podily<SPLIT>, u nichz zpravidla v okamziku porizeni neni znam zamer ucetni jednotky<SPLIT>.}
+False positives: {
+c.iv.3
+.
+} False negatives: {
+c.iv.3.
 }
 
 Expected: {
@@ -255,11 +282,10 @@ iii.
 Expected: {
 (12) v dalsi casti prilohy uvede ucetni jednotka pocet a jmenovitou hodnotu nebo oceneni podle §_25_zakona vydanych akcii behem ucetniho obdobi<SPLIT>, u kazdeho druhu akcii zvlast<SPLIT>; obdobne se postupuje u zmen podilu<SPLIT>.}
 Predicted: {
-(<SPLIT>12<SPLIT>) v dalsi casti prilohy uvede ucetni jednotka pocet a jmenovitou hodnotu nebo oceneni podle §_25_zakona vydanych akcii behem ucetniho obdobi<SPLIT>, u kazdeho druhu akcii zvlast<SPLIT>; obdobne se postupuje u zmen podilu<SPLIT>.}
+(<SPLIT>12) v dalsi casti prilohy uvede ucetni jednotka pocet a jmenovitou hodnotu nebo oceneni podle §_25_zakona vydanych akcii behem ucetniho obdobi<SPLIT>, u kazdeho druhu akcii zvlast<SPLIT>; obdobne se postupuje u zmen podilu<SPLIT>.}
 False positives: {
 (
-12
-)
+12)
 } False negatives: {
 (12)
 }
@@ -274,6 +300,17 @@ zakona_c._563
 1991_sb.
 } False negatives: {
 zakona_c._563/1991_sb.
+}
+
+Expected: {
+nic nerikaji<SPLIT>,<SPLIT>informoval jsem sefa<SPLIT>.}
+Predicted: {
+nic nerikaji<SPLIT>,informoval jsem sefa<SPLIT>.}
+False positives: {
+,informoval
+} False negatives: {
+,
+informoval
 }
 
 Expected: {
@@ -327,17 +364,6 @@ False positives: {
 }
 
 Expected: {
-cina si privlastnuje<SPLIT>;<SPLIT>organy popravenych}
-Predicted: {
-cina si privlastnuje<SPLIT>;organy popravenych}
-False positives: {
-;organy
-} False negatives: {
-;
-organy
-}
-
-Expected: {
 minuly tyden prijela asi 60<SPLIT>hlava tlupa cikanska do kromerize na 12 vozich se 40 konmi<SPLIT>.}
 Predicted: {
 minuly tyden prijela asi 60hlava tlupa cikanska do kromerize na 12 vozich se 40 konmi<SPLIT>.}
@@ -361,6 +387,17 @@ False positives: {
 }
 
 Expected: {
+samozrejme nas trh neni jeste dostatecne kvalitni<SPLIT>, neni to '<SPLIT>strong market<SPLIT>' neboli silny trh<SPLIT>.}
+Predicted: {
+samozrejme nas trh neni jeste dostatecne kvalitni<SPLIT>, neni to '<SPLIT>strong market' neboli silny trh<SPLIT>.}
+False positives: {
+market'
+} False negatives: {
+market
+'
+}
+
+Expected: {
 soucasna 11<SPLIT>procentni nezamestnanost se ma v pristim roce vysplhat na 17 az 20 procent<SPLIT>.}
 Predicted: {
 soucasna 11procentni nezamestnanost se ma v pristim roce vysplhat na 17 az 20 procent<SPLIT>.}
@@ -374,16 +411,14 @@ procentni
 Expected: {
 glonek (<SPLIT>3<SPLIT>) - novotny (<SPLIT>5<SPLIT>)<SPLIT>, suchoparek (<SPLIT>2<SPLIT>) - hapal (<SPLIT>8<SPLIT>)<SPLIT>, mistr (<SPLIT>4<SPLIT>)<SPLIT>, nemecek (<SPLIT>6<SPLIT>)<SPLIT>, nemec (<SPLIT>7<SPLIT>)<SPLIT>, moravcik (<SPLIT>11<SPLIT>)<SPLIT>, dubovsky (<SPLIT>10<SPLIT>) - kuka (<SPLIT>9<SPLIT>)<SPLIT>;}
 Predicted: {
-glonek (3) - novotny (<SPLIT>5<SPLIT>)<SPLIT>, suchoparek (2) - hapal (8<SPLIT>)<SPLIT>, mistr (<SPLIT>4)<SPLIT>, nemecek (<SPLIT>6)<SPLIT>, nemec (7)<SPLIT>, moravcik (<SPLIT>11<SPLIT>)<SPLIT>, dubovsky (10) - kuka (9<SPLIT>)<SPLIT>;}
+glonek (3) - novotny (<SPLIT>5<SPLIT>)<SPLIT>, suchoparek (2) - hapal (<SPLIT>8<SPLIT>)<SPLIT>, mistr (<SPLIT>4)<SPLIT>, nemecek (<SPLIT>6<SPLIT>)<SPLIT>, nemec (7<SPLIT>)<SPLIT>, moravcik (<SPLIT>11<SPLIT>)<SPLIT>, dubovsky (10) - kuka (9)<SPLIT>;}
 False positives: {
 (3)
 (2)
-(8
 4)
-6)
-(7)
+(7
 (10)
-(9
+(9)
 } False negatives: {
 (
 3
@@ -391,20 +426,16 @@ False positives: {
 (
 2
 )
-(
-8
 4
-)
-6
 )
 (
 7
-)
 (
 10
 )
 (
 9
+)
 }
 
 Expected: {
@@ -418,6 +449,17 @@ False positives: {
 .
 2
 .
+}
+
+Expected: {
+kontakt<SPLIT>: j<SPLIT>. seidl & spol<SPLIT>.<SPLIT>, s<SPLIT>.<SPLIT>r<SPLIT>.<SPLIT>o<SPLIT>.<SPLIT>, technicka kancelar praha<SPLIT>, jihozapadni v<SPLIT>.<SPLIT>/<SPLIT>985<SPLIT>/<SPLIT>2<SPLIT>, 141 00 praha 4<SPLIT>, tel<SPLIT>. + fax<SPLIT>: (<SPLIT>02<SPLIT>) 761212<SPLIT>.}
+Predicted: {
+kontakt<SPLIT>: j<SPLIT>. seidl & spol<SPLIT>.<SPLIT>, s<SPLIT>.<SPLIT>r<SPLIT>.<SPLIT>o<SPLIT>.<SPLIT>, technicka kancelar praha<SPLIT>, jihozapadni v<SPLIT>.<SPLIT>/<SPLIT>985/<SPLIT>2<SPLIT>, 141 00 praha 4<SPLIT>, tel<SPLIT>. + fax<SPLIT>: (<SPLIT>02<SPLIT>) 761212<SPLIT>.}
+False positives: {
+985/
+} False negatives: {
+985
+/
 }
 
 Expected: {
@@ -535,6 +577,17 @@ robert
 }
 
 Expected: {
+vedouci predstavitele stran italske pravicove koalice ukoncili v noci na vcerejsek nekolikahodinove jednani o obsazeni mist v pristi vlade bez znamek roztrzky<SPLIT>, ktera hrozila v dusledku nalehani ligy severu na obsazeni kresla ministra vnitra<SPLIT>.}
+Predicted: {
+vedouci predstavitele stran italske pravicove koalice ukoncili v noci na vcerejsek nekolika<SPLIT>hodinove jednani o obsazeni mist v pristi vlade bez znamek roztrzky<SPLIT>, ktera hrozila v dusledku nalehani ligy severu na obsazeni kresla ministra vnitra<SPLIT>.}
+False positives: {
+nekolika
+hodinove
+} False negatives: {
+nekolikahodinove
+}
+
+Expected: {
 pokud pominu moznost<SPLIT>, ze primo z kuloarovych drbu<SPLIT>, zda se<SPLIT>, ze mohl vychazet uz jen z uvodnich vet clanku m<SPLIT>. bokove v predlonskem sad (<SPLIT>herci v grossmanove kafkovi<SPLIT>, 1<SPLIT>/<SPLIT>93<SPLIT>)<SPLIT>, ktere jsem se ovsem tamtez (<SPLIT>3<SPLIT>/<SPLIT>93<SPLIT>) pokusila jako ocity svedek posledni grossmanovy prace uvest na pravou miru tim<SPLIT>, ze jsem zverejnila konkretni fakta o osudech dolicne hry v divadle na zabradli i o grossmanove vztahu k ni - na tento svuj text si dovoluji odkazat i pripadne zajemce z rad ctenaru ln<SPLIT>.}
 Predicted: {
 pokud pominu moznost<SPLIT>, ze primo z kuloarovych drbu<SPLIT>, zda se<SPLIT>, ze mohl vychazet uz jen z uvodnich vet clanku m<SPLIT>. bokove v predlonskem sad (<SPLIT>herci v grossmanove kafkovi<SPLIT>, 1<SPLIT>/<SPLIT>93<SPLIT>)<SPLIT>, ktere jsem se ovsem tamtez (<SPLIT>3/<SPLIT>93<SPLIT>) pokusila jako ocity svedek posledni grossmanovy prace uvest na pravou miru tim<SPLIT>, ze jsem zverejnila konkretni fakta o osudech dolicne hry v divadle na zabradli i o grossmanove vztahu k ni - na tento svuj text si dovoluji odkazat i pripadne zajemce z rad ctenaru ln<SPLIT>.}
@@ -587,6 +640,17 @@ letehok
 } False negatives: {
 leteho
 k
+}
+
+Expected: {
+v depu zastavila ctverice faresin<SPLIT>, della santa<SPLIT>, podenzana a jeden z velkych favoritu pantani<SPLIT>, druhy z giro d<SPLIT>'<SPLIT>italia a treti z tour de france<SPLIT>.}
+Predicted: {
+v depu zastavila ctverice faresin<SPLIT>, della santa<SPLIT>, podenzana a jeden z velkych favoritu pantani<SPLIT>, druhy z giro d<SPLIT>'italia a treti z tour de france<SPLIT>.}
+False positives: {
+'italia
+} False negatives: {
+'
+italia
 }
 
 Expected: {
@@ -647,17 +711,6 @@ False positives: {
 }
 
 Expected: {
-ve sve cinnosti uzce spolupracuje s ceskymi firmami aktis<SPLIT>, d<SPLIT>- data a h<SPLIT>& j<SPLIT>- komplexni reseni<SPLIT>.}
-Predicted: {
-ve sve cinnosti uzce spolupracuje s ceskymi firmami aktis<SPLIT>, d<SPLIT>- data a h& j<SPLIT>- komplexni reseni<SPLIT>.}
-False positives: {
-h&
-} False negatives: {
-h
-&
-}
-
-Expected: {
 ministr zdravotnictvi ludek rubas (<SPLIT>ods<SPLIT>) je presvedcen<SPLIT>, ze jim navrhovane zavedeni 55<SPLIT>korunoveho poplatku za denni pobyt v nemocnici najde podporu nejen u stran vladni koalice<SPLIT>, ale i u siroke verejnosti<SPLIT>.}
 Predicted: {
 ministr zdravotnictvi ludek rubas (<SPLIT>ods<SPLIT>) je presvedcen<SPLIT>, ze jim navrhovane zavedeni 55korunoveho poplatku za denni pobyt v nemocnici najde podporu nejen u stran vladni koalice<SPLIT>, ale i u siroke verejnosti<SPLIT>.}
@@ -681,6 +734,17 @@ ze'ev
 }
 
 Expected: {
+jarabuv doslov k tomuto souboru ( druhou sadu carverovych povidek nazvanou bud<SPLIT>, prosim te zticha<SPLIT>! by melo opet v hrubeho garanci vydat v lete argo<SPLIT>) zname prostrednictvim "<SPLIT>suplujicich dejin<SPLIT>" promen americke literatury od poea k postmodernismu ( vydal odeon s h and h<SPLIT>) nejmene o rok dele nez konvolut sam<SPLIT>.}
+Predicted: {
+jarabuv doslov k tomuto souboru ( druhou sadu carverovych povidek nazvanou bud<SPLIT>, prosim te zticha<SPLIT>! by melo opet v hrubeho garanci vydat v lete argo<SPLIT>) zname prostrednictvim "<SPLIT>suplujicich dejin<SPLIT>" promen americke literatury od poea k postmodernismu ( vydal odeon s h and h) nejmene o rok dele nez konvolut sam<SPLIT>.}
+False positives: {
+h)
+} False negatives: {
+h
+)
+}
+
+Expected: {
 posledni jemnost<SPLIT>, bily pesce h<SPLIT>5 ziska a h<SPLIT>4 mu zustane<SPLIT>.}
 Predicted: {
 posledni jemnost<SPLIT>, bily pesce h5 ziska a h4 mu zustane<SPLIT>.}
@@ -692,6 +756,28 @@ h
 5
 h
 4
+}
+
+Expected: {
+stovky demonstrantu pozadujicich demisi tadzickeho prezidenta nabijeva vcera po nekolikahodinove blokade zautocily na prezidentsky palac<SPLIT>.}
+Predicted: {
+stovky demonstrantu pozadujicich demisi tadzickeho prezidenta nabijeva vcera po nekolika<SPLIT>hodinove blokade zautocily na prezidentsky palac<SPLIT>.}
+False positives: {
+nekolika
+hodinove
+} False negatives: {
+nekolikahodinove
+}
+
+Expected: {
+chude irsko naopak dostava sestinasobek za kazdou libru<SPLIT>, kterou do spolecne pokladny odvede<SPLIT>.}
+Predicted: {
+chude irsko naopak dostava sesti<SPLIT>nasobek za kazdou libru<SPLIT>, kterou do spolecne pokladny odvede<SPLIT>.}
+False positives: {
+sesti
+nasobek
+} False negatives: {
+sestinasobek
 }
 
 Expected: {
@@ -824,16 +910,4 @@ v3
 } False negatives: {
 v
 3
-}
-
-Expected: {
-podle le figaro by tento vladni plan mohl uvolnit 42 milionu eur<SPLIT>, z toho 15,5 milionu by slo na bezpecnost<SPLIT>.}
-Predicted: {
-podle le figaro by tento vladni plan mohl uvolnit 42 milionu eur<SPLIT>, z toho 15<SPLIT>,<SPLIT>5 milionu by slo na bezpecnost<SPLIT>.}
-False positives: {
-15
-,
-5
-} False negatives: {
-15,5
 }

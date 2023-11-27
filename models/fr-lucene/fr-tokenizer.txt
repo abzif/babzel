@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9991115247926892
+Evaluation-Score=0.9990480824149092
 Training-Sample-Size=21781
 Evaluation-Sample-Size=2420
 Training-Algorithm=MAXENT_QN
@@ -9,9 +9,9 @@ Component-Name=TokenizerME
 Language=fr
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1697858995375
+Timestamp=1700463145582
 TrainerType=Event
-Training-Eventhash=c73c61a8a99047936fd80aeb7a5ae08f
+Training-Eventhash=bd3a3e78ae35d58d3eef8354f44b2132
 alphaNumericPattern=^[A-Za-z0-9]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
@@ -37,6 +37,17 @@ solidar'
 monde
 } False negatives: {
 solidar'monde
+}
+
+Expected: {
+comme chaque soir a 18h40<SPLIT>, il tranche<SPLIT>, malmene et detourne l'<SPLIT>actualite<SPLIT>.}
+Predicted: {
+comme chaque soir a 18<SPLIT>h40<SPLIT>, il tranche<SPLIT>, malmene et detourne l'<SPLIT>actualite<SPLIT>.}
+False positives: {
+18
+h40
+} False negatives: {
+18h40
 }
 
 Expected: {
@@ -202,6 +213,17 @@ veeted'
 ''
 veeted
 ''
+}
+
+Expected: {
+l'<SPLIT>adoption de cette dkg<SPLIT>, permet a la m3 coupe de gagner 2 dixiemes de seconde sur le 0<SPLIT>-<SPLIT>100 km/h pour se contenter de 4,6 secondes<SPLIT>.}
+Predicted: {
+l'<SPLIT>adoption de cette dkg<SPLIT>, permet a la m3 coupe de gagner 2 dixiemes de seconde sur le 0<SPLIT>-<SPLIT>100 km/<SPLIT>h pour se contenter de 4,6 secondes<SPLIT>.}
+False positives: {
+km/
+h
+} False negatives: {
+km/h
 }
 
 Expected: {

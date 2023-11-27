@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9423571166319912
+Evaluation-Score=0.9423163219516175
 Training-Sample-Size=8879
 Evaluation-Sample-Size=986
 Training-Algorithm=MAXENT
@@ -10,9 +10,9 @@ Component-Name=POSTaggerME
 Language=he
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1697859917053
+Timestamp=1700463802734
 TrainerType=Event
-Training-Eventhash=69a973db062dd7dfc293bd55c9fcfc4
+Training-Eventhash=8af6a3209ccb8b596822280378699e89
 factory=opennlp.tools.postag.POSTaggerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -4519,10 +4519,11 @@ Tok: Ref | Pred
 Expected: {
 מצרים_PROPN ,_PUNCT אשר_SCONJ פלשה_VERB מ_ADP דרום_NOUN ,_PUNCT כבשה_VERB את_ADP הרי_NOUN חברון_PROPN ו_ADP יהודה_PROPN ו_CCONJ הגיעה_VERB ל_ADP ירושלים_PROPN מ_ADP דרום_NOUN ._PUNCT}
 Predicted: {
-מצרים_PROPN ,_PUNCT אשר_SCONJ פלשה_VERB מ_ADP דרום_NOUN ,_PUNCT כבשה_VERB את_ADP הרי_NOUN חברון_PROPN ו_CCONJ יהודה_PROPN ו_CCONJ הגיעה_VERB ל_ADP ירושלים_PROPN מ_ADP דרום_NOUN ._PUNCT}
+מצרים_PROPN ,_PUNCT אשר_SCONJ פלשה_VERB מ_ADP דרום_NOUN ,_PUNCT כבשה_VERB את_ADP הרי_ADV חברון_PROPN ו_CCONJ יהודה_PROPN ו_CCONJ הגיעה_VERB ל_ADP ירושלים_PROPN מ_ADP דרום_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
+הרי: NOUN | ADV
 ו: ADP | CCONJ
 }
 

@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9839303030769467
+Evaluation-Score=0.9840380500869672
 Training-Sample-Size=36877
 Evaluation-Sample-Size=4097
 Training-Algorithm=MAXENT
@@ -10,9 +10,9 @@ Component-Name=StatisticalLemmatizer
 Language=en
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1697780984071
+Timestamp=1700455615719
 TrainerType=Event
-Training-Eventhash=6c6a36c274b6fa1dbfaec7948d754b1
+Training-Eventhash=284437c8ae99c88e542720ca738e4960
 factory=opennlp.tools.lemmatizer.LemmatizerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -3510,12 +3510,12 @@ Expected: {
 gt	PROPN	gt
 }
 Predicted: {
-gt	PROPN	g
+gt	PROPN	_
 }
 Errors: {
 Tok: Ref | Pred
 ---------------
-gt: gt | g
+gt: gt | _
 }
 
 Expected: {
@@ -4153,7 +4153,7 @@ screenshots	NOUN	screenshot
 of	ADP	of
 two	NUM	two
 beheading	NOUN	beheading
-video's	NOUN	video'
+video's	NOUN	video
 .	PUNCT	.
 }
 Predicted: {
@@ -4174,7 +4174,7 @@ video's	NOUN	video's
 Errors: {
 Tok: Ref | Pred
 ---------------
-video's: video' | video's
+video's: video | video's
 }
 
 Expected: {
@@ -4538,7 +4538,7 @@ well	INTJ	well
 ,	PUNCT	,
 i	PRON	i
 'm	AUX	be
-about	ADV	about
+about	ADJ	about
 to	PART	to
 graduate	VERB	graduate
 in	ADP	in
@@ -4562,7 +4562,7 @@ well	INTJ	well
 ,	PUNCT	,
 i	PRON	i
 'm	AUX	be
-about	ADV	about
+about	ADJ	about
 to	PART	to
 graduate	VERB	graduate
 in	ADP	in
@@ -7235,120 +7235,6 @@ misc.consumers: misc.consumers | misc.consumer
 }
 
 Expected: {
-in	ADP	in
-the	DET	the
-decade	NOUN	decade
-of	ADP	of
-the	DET	the
-nineteen	NUM	nineteen
--	PUNCT	-
-eighties	NOUN	eighty
-,	PUNCT	,
-my	PRON	my
-father	NOUN	father
-,	PUNCT	,
-then	ADV	then
-vice	NOUN	vice
--	PUNCT	-
-president	NOUN	president
-of	ADP	of
-the	DET	the
-united	ADJ	united
-states	PROPN	state
-of	ADP	of
-america	PROPN	america
-,	PUNCT	,
-sought	VERB	seek
-to	PART	to
-work	VERB	work
-with	ADP	with
-the	DET	the
-good	ADJ	good
-offices	NOUN	office
-of	ADP	of
-the	DET	the
-president	PROPN	president
-of	ADP	of
-the	DET	the
-republic	PROPN	republic
-of	ADP	of
-iraq	PROPN	iraq
-to	PART	to
-regain	VERB	regain
-lost	VERB	lose
-oil	NOUN	oil
-revenue	NOUN	revenue
-sources	NOUN	source
-in	ADP	in
-the	DET	the
-neighboring	VERB	neighbor
-islamic	ADJ	islamic
-republic	PROPN	republic
-of	ADP	of
-iran	PROPN	iran
-.	PUNCT	.
-}
-Predicted: {
-in	ADP	in
-the	DET	the
-decade	NOUN	decade
-of	ADP	of
-the	DET	the
-nineteen	NUM	nineteen
--	PUNCT	-
-eighties	NOUN	eighties
-,	PUNCT	,
-my	PRON	my
-father	NOUN	father
-,	PUNCT	,
-then	ADV	then
-vice	NOUN	vice
--	PUNCT	-
-president	NOUN	president
-of	ADP	of
-the	DET	the
-united	ADJ	united
-states	PROPN	state
-of	ADP	of
-america	PROPN	america
-,	PUNCT	,
-sought	VERB	seek
-to	PART	to
-work	VERB	work
-with	ADP	with
-the	DET	the
-good	ADJ	good
-offices	NOUN	office
-of	ADP	of
-the	DET	the
-president	PROPN	president
-of	ADP	of
-the	DET	the
-republic	PROPN	republic
-of	ADP	of
-iraq	PROPN	iraq
-to	PART	to
-regain	VERB	regain
-lost	VERB	lose
-oil	NOUN	oil
-revenue	NOUN	revenue
-sources	NOUN	source
-in	ADP	in
-the	DET	the
-neighboring	VERB	neighbor
-islamic	ADJ	islamic
-republic	PROPN	republic
-of	ADP	of
-iran	PROPN	iran
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-eighties: eighty | eighties
-}
-
-Expected: {
 i	PRON	i
 propose	VERB	propose
 that	SCONJ	that
@@ -7659,72 +7545,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 v.: v. | versus
-}
-
-Expected: {
-in	ADP	in
-the	DET	the
-1960s	NOUN	1960
-,	PUNCT	,
-a	DET	a
-group	NOUN	group
-shooting	VERB	shoot
-a	DET	a
-movie	NOUN	movie
-in	ADP	in
-the	DET	the
-wyoming	PROPN	wyoming
-park	NOUN	park
-reportedly	ADV	reportedly
-imported	VERB	import
-some	DET	some
-captive	ADJ	captive
-wolves	NOUN	wolf
-,	PUNCT	,
-then	ADV	then
-released	VERB	release
-them	PRON	they
-when	ADV	when
-their	PRON	their
-shooting	NOUN	shooting
-was	AUX	be
-done	ADJ	done
-.	PUNCT	.
-}
-Predicted: {
-in	ADP	in
-the	DET	the
-1960s	NOUN	1960s
-,	PUNCT	,
-a	DET	a
-group	NOUN	group
-shooting	VERB	shoot
-a	DET	a
-movie	NOUN	movie
-in	ADP	in
-the	DET	the
-wyoming	PROPN	wyoming
-park	NOUN	park
-reportedly	ADV	reportedly
-imported	VERB	import
-some	DET	some
-captive	ADJ	captive
-wolves	NOUN	wolf
-,	PUNCT	,
-then	ADV	then
-released	VERB	release
-them	PRON	they
-when	ADV	when
-their	PRON	their
-shooting	NOUN	shooting
-was	AUX	be
-done	ADJ	done
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-1960s: 1960 | 1960s
 }
 
 Expected: {
@@ -8416,6 +8236,52 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 gelatos: gelato | gelatos
+}
+
+Expected: {
+hearing	NOUN	hear
+is	AUX	be
+a	DET	a
+dog	NOUN	dog
+’s	PART	's
+secondary	ADJ	secondary
+sense	NOUN	sense
+,	PUNCT	,
+and	CCONJ	and
+i	PRON	i
+will	AUX	will
+discuss	VERB	discuss
+that	PRON	that
+in	ADP	in
+another	DET	another
+blog	NOUN	blog
+entery	NOUN	entery
+.	PUNCT	.
+}
+Predicted: {
+hearing	NOUN	hearing
+is	AUX	be
+a	DET	a
+dog	NOUN	dog
+’s	PART	's
+secondary	ADJ	secondary
+sense	NOUN	sense
+,	PUNCT	,
+and	CCONJ	and
+i	PRON	i
+will	AUX	will
+discuss	VERB	discuss
+that	PRON	that
+in	ADP	in
+another	DET	another
+blog	NOUN	blog
+entery	NOUN	entery
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+hearing: hear | hearing
 }
 
 Expected: {
@@ -11403,48 +11269,6 @@ Tok: Ref | Pred
 }
 
 Expected: {
-said	VERB	say
-it	PRON	it
-once	ADV	once
-,	PUNCT	,
-it	PRON	it
-surprised	VERB	surprise
-you	PRON	you
-to	PART	to
-use	VERB	use
-that	DET	that
-same	ADJ	same
-tactic	NOUN	tactic
-you	PRON	you
-'ve	AUX	be
-seen	VERB	see
-.	PUNCT	.
-}
-Predicted: {
-said	VERB	say
-it	PRON	it
-once	ADV	once
-,	PUNCT	,
-it	PRON	it
-surprised	VERB	surprise
-you	PRON	you
-to	PART	to
-use	VERB	use
-that	DET	that
-same	ADJ	same
-tactic	NOUN	tactic
-you	PRON	you
-'ve	AUX	have
-seen	VERB	see
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-'ve: be | have
-}
-
-Expected: {
 a	DET	a
 pregnant	ADJ	pregnant
 single	ADJ	single
@@ -11539,44 +11363,6 @@ procuring: procure | procuring
 }
 
 Expected: {
-2.	X	2.
-roe	PROPN	roe
-has	VERB	have
-standing	NOUN	standing
-to	PART	to
-sue	VERB	sue
-;	PUNCT	;
-the	DET	the
-does	PROPN	doe
-and	CCONJ	and
-hallford	PROPN	hallford
-do	VERB	do
-not	PART	not
-.	PUNCT	.
-}
-Predicted: {
-2.	X	2.
-roe	PROPN	roe
-has	VERB	have
-standing	NOUN	standing
-to	PART	to
-sue	VERB	sue
-;	PUNCT	;
-the	DET	the
-does	PROPN	does
-and	CCONJ	and
-hallford	PROPN	hallford
-do	VERB	do
-not	PART	not
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-does: doe | does
-}
-
-Expected: {
 3.	X	3.
 state	NOUN	state
 criminal	ADJ	criminal
@@ -11588,7 +11374,7 @@ those	PRON	this
 involved	VERB	involve
 here	ADV	here
 ,	PUNCT	,
-that	ADP	that
+that	SCONJ	that
 except	ADP	except
 from	ADP	from
 criminality	NOUN	criminality
@@ -11659,7 +11445,7 @@ those	PRON	that
 involved	VERB	involve
 here	ADV	here
 ,	PUNCT	,
-that	ADP	that
+that	SCONJ	that
 except	ADP	except
 from	ADP	from
 criminality	NOUN	criminality
@@ -12959,7 +12745,7 @@ political	ADJ	political
 power	NOUN	power
 as	SCONJ	as
 they	PRON	they
-do	VERB	do
+do	AUX	do
 in	ADP	in
 the	DET	the
 united	VERB	unite
@@ -12991,7 +12777,7 @@ political	ADJ	political
 power	NOUN	power
 as	SCONJ	as
 they	PRON	they
-do	VERB	do
+do	AUX	do
 in	ADP	in
 the	DET	the
 united	VERB	unite
@@ -13002,148 +12788,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 people: person | people
-}
-
-Expected: {
-with	ADP	with
-the	DET	the
-onset	NOUN	onset
-of	ADP	of
-the	DET	the
-automobile	NOUN	automobile
-,	PUNCT	,
-public	ADJ	public
-officials	NOUN	official
-reduced	VERB	reduce
-the	DET	the
-city	NOUN	city
-'s	PART	's
-public	ADJ	public
-transportation	NOUN	transportation
-services	NOUN	service
-without	SCONJ	without
-foreseeing	VERB	foresee
-the	DET	the
-traffic	NOUN	traffic
-gridlock	NOUN	gridlock
-and	CCONJ	and
-smog	NOUN	smog
-that	PRON	that
-would	AUX	would
-menace	VERB	menace
-the	DET	the
-city	NOUN	city
-by	ADP	by
-the	DET	the
-1980s	NOUN	1980s
-.	PUNCT	.
-}
-Predicted: {
-with	ADP	with
-the	DET	the
-onset	NOUN	onset
-of	ADP	of
-the	DET	the
-automobile	NOUN	automobile
-,	PUNCT	,
-public	ADJ	public
-officials	NOUN	official
-reduced	VERB	reduce
-the	DET	the
-city	NOUN	city
-'s	PART	's
-public	ADJ	public
-transportation	NOUN	transportation
-services	NOUN	service
-without	SCONJ	without
-foreseeing	VERB	foresee
-the	DET	the
-traffic	NOUN	traffic
-gridlock	NOUN	gridlock
-and	CCONJ	and
-smog	NOUN	smog
-that	PRON	that
-would	AUX	would
-menace	VERB	menace
-the	DET	the
-city	NOUN	city
-by	ADP	by
-the	DET	the
-1980s	NOUN	1980
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-1980s: 1980s | 1980
-}
-
-Expected: {
-the	DET	the
-government	NOUN	government
-'s	PART	's
-ban	NOUN	ban
-on	ADP	on
-diesel	NOUN	diesel
-vehicles	NOUN	vehicle
-within	ADP	within
-athens	PROPN	athens
-and	CCONJ	and
-the	DET	the
-early	ADJ	early
-1990s	NOUN	1990s
-initiatives	NOUN	initiative
-to	PART	to
-improve	VERB	improve
-car	NOUN	car
-emissions	NOUN	emission
-have	AUX	have
-greatly	ADV	greatly
-contributed	VERB	contribute
-to	ADP	to
-better	ADJ	good
-atmospheric	ADJ	atmospheric
-conditions	NOUN	condition
-in	ADP	in
-the	DET	the
-basin	NOUN	basin
-.	PUNCT	.
-}
-Predicted: {
-the	DET	the
-government	NOUN	government
-'s	PART	's
-ban	NOUN	ban
-on	ADP	on
-diesel	NOUN	diesel
-vehicles	NOUN	vehicle
-within	ADP	within
-athens	PROPN	athens
-and	CCONJ	and
-the	DET	the
-early	ADJ	early
-1990s	NOUN	1990
-initiatives	NOUN	initiative
-to	PART	to
-improve	VERB	improve
-car	NOUN	car
-emissions	NOUN	emission
-have	AUX	have
-greatly	ADV	greatly
-contributed	VERB	contribute
-to	ADP	to
-better	ADJ	good
-atmospheric	ADJ	atmospheric
-conditions	NOUN	condition
-in	ADP	in
-the	DET	the
-basin	NOUN	basin
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-1990s: 1990s | 1990
 }
 
 Expected: {
@@ -14185,7 +13829,7 @@ flourishing	ADJ	flourishing
 metascience	NOUN	metascience
 ,	PUNCT	,
 that	PRON	that
-is	VERB	be
+is	AUX	be
 ,	PUNCT	,
 the	DET	the
 scientific	ADJ	scientific
@@ -14246,7 +13890,7 @@ flourishing	ADJ	flourishing
 metascience	NOUN	metascience
 ,	PUNCT	,
 that	PRON	that
-is	VERB	be
+is	AUX	be
 ,	PUNCT	,
 the	DET	the
 scientific	ADJ	scientific
@@ -14327,7 +13971,7 @@ insight	NOUN	insight
 that	PRON	that
 contributes	VERB	contribute
 not	PART	not
-only	CCONJ	only
+only	ADV	only
 to	ADP	to
 practitioners	NOUN	practitioner
 and	CCONJ	and
@@ -14388,7 +14032,7 @@ insight	NOUN	insight
 that	PRON	that
 contributes	VERB	contribute
 not	PART	not
-only	CCONJ	only
+only	ADV	only
 to	ADP	to
 practitioners	NOUN	practitioner
 and	CCONJ	and
@@ -15075,7 +14719,7 @@ and	CCONJ	and
 ,	PUNCT	,
 by	ADP	by
 her	PRON	she
-20s	NOUN	20
+20s	NOUN	20s
 ,	PUNCT	,
 was	AUX	be
 already	ADV	already
@@ -15097,7 +14741,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 her: her | she
-20s: 20s | 20
 }
 
 Expected: {
@@ -15777,6 +15420,36 @@ Tok: Ref | Pred
 }
 
 Expected: {
+now	ADV	now
+it	PRON	it
+'s	AUX	have
+gotten	VERB	get
+back	ADV	back
+to	ADP	to
+eight	NUM	eight
+,	PUNCT	,
+hunh	INTJ	hunh
+?	PUNCT	?
+}
+Predicted: {
+now	ADV	now
+it	PRON	it
+'s	AUX	be
+gotten	VERB	get
+back	ADV	back
+to	ADP	to
+eight	NUM	eight
+,	PUNCT	,
+hunh	INTJ	hunh
+?	PUNCT	?
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+'s: have | be
+}
+
+Expected: {
 well	INTJ	well
 ,	PUNCT	,
 what	PRON	what
@@ -15993,7 +15666,7 @@ neither	CCONJ	neither
 explosions	NOUN	explosion
 nor	CCONJ	nor
 lawsuits	NOUN	lawsuit
-nipping	VERB	nipping
+nipping	VERB	nip
 at	ADP	at
 your	PRON	your
 heels	NOUN	heel
@@ -16003,7 +15676,6 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 oneself: oneself | one
-nipping: nip | nipping
 }
 
 Expected: {
@@ -18883,7 +18555,7 @@ past	ADJ	past
 30	NUM	30
 days	NOUN	day
 it	PRON	it
-s	AUX	have
+'s	AUX	have
 been	AUX	be
 #	SYM	#
 3	NUM	3
@@ -18936,7 +18608,7 @@ past	ADJ	past
 30	NUM	30
 days	NOUN	day
 it	PRON	it
-s	AUX	be
+'s	AUX	be
 been	AUX	be
 #	SYM	#
 3	NUM	3
@@ -18959,7 +18631,7 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 ": '' | "
-s: have | be
+'s: have | be
 }
 
 Expected: {
@@ -19996,7 +19668,7 @@ structure	NOUN	structure
 of	ADP	of
 peace	NOUN	peace
 so	SCONJ	so
-that	ADP	that
+that	SCONJ	that
 it	PRON	it
 will	AUX	will
 be	AUX	be
@@ -20018,7 +19690,7 @@ all	DET	all
 nations	NOUN	nation
 ,	PUNCT	,
 not	PART	not
-only	CCONJ	only
+only	ADV	only
 that	SCONJ	that
 we	PRON	we
 ended	VERB	end
@@ -20041,7 +19713,7 @@ structure	NOUN	structure
 of	ADP	of
 peace	NOUN	peace
 so	SCONJ	so
-that	ADP	that
+that	SCONJ	that
 it	PRON	it
 will	AUX	will
 be	AUX	be
@@ -20063,7 +19735,7 @@ all	DET	all
 nations	NOUN	nation
 ,	PUNCT	,
 not	PART	not
-only	CCONJ	only
+only	ADV	only
 that	SCONJ	that
 we	PRON	we
 ended	VERB	end
@@ -21199,7 +20871,7 @@ Tok: Ref | Pred
 Expected: {
 so	ADV	so
 it	PRON	it
-'s	VERB	be
+'s	AUX	be
 just	ADV	just
 ,	PUNCT	,
 it	PRON	it
@@ -21211,7 +20883,7 @@ rough	ADJ	rough
 Predicted: {
 so	ADV	so
 it	PRON	it
-'s	VERB	be
+'s	AUX	be
 just	ADV	just
 ,	PUNCT	,
 it	PRON	it
@@ -25020,8 +24692,8 @@ the	DET	the
 water	NOUN	water
 changed	VERB	change
 into	ADP	into
-each	PRON	each
-other	PRON	other
+each	DET	each
+other	ADJ	other
 .	PUNCT	.
 }
 Predicted: {
@@ -25069,8 +24741,8 @@ the	DET	the
 water	NOUN	water
 changed	VERB	change
 into	ADP	into
-each	PRON	each
-other	PRON	other
+each	DET	each
+other	ADJ	other
 .	PUNCT	.
 }
 Errors: {
@@ -26885,6 +26557,50 @@ Errors: {
 Tok: Ref | Pred
 ---------------
 most: much | most
+}
+
+Expected: {
+he	PRON	he
+'s	AUX	have
+never	ADV	never
+been	AUX	be
+sent	VERB	send
+anywhere	ADV	anywhere
+where	ADV	where
+there	PRON	there
+was	AUX	be
+anything	PRON	anything
+left	VERB	leave
+to	PART	to
+do	VERB	do
+,	PUNCT	,
+he	PRON	he
+said	VERB	say
+.	PUNCT	.
+}
+Predicted: {
+he	PRON	he
+'s	AUX	be
+never	ADV	never
+been	AUX	be
+sent	VERB	send
+anywhere	ADV	anywhere
+where	ADV	where
+there	PRON	there
+was	AUX	be
+anything	PRON	anything
+left	VERB	leave
+to	PART	to
+do	VERB	do
+,	PUNCT	,
+he	PRON	he
+said	VERB	say
+.	PUNCT	.
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+'s: have | be
 }
 
 Expected: {
@@ -32129,8 +31845,8 @@ of	ADP	of
 the	DET	the
 journey	NOUN	journey
 ignored	VERB	ignore
-each	PRON	each
-other	PRON	other
+each	DET	each
+other	ADJ	other
 .	PUNCT	.
 }
 Predicted: {
@@ -32151,8 +31867,8 @@ of	ADP	of
 the	DET	the
 journey	NOUN	journey
 ignored	VERB	ignore
-each	PRON	each
-other	PRON	other
+each	DET	each
+other	ADJ	other
 .	PUNCT	.
 }
 Errors: {
@@ -32603,6 +32319,42 @@ your: you | your
 }
 
 Expected: {
+and	CCONJ	and
+which	DET	which
+one	PRON	one
+of	ADP	of
+us	PRON	we
+'s	AUX	have
+been	AUX	be
+taking	VERB	take
+rebecca	PROPN	rebecca
+to	ADP	to
+the	DET	the
+sputnik	PROPN	sputnik
+?	PUNCT	?
+}
+Predicted: {
+and	CCONJ	and
+which	DET	which
+one	PRON	one
+of	ADP	of
+us	PRON	we
+'s	AUX	be
+been	AUX	be
+taking	VERB	take
+rebecca	PROPN	rebecca
+to	ADP	to
+the	DET	the
+sputnik	PROPN	sputnik
+?	PUNCT	?
+}
+Errors: {
+Tok: Ref | Pred
+---------------
+'s: have | be
+}
+
+Expected: {
 they	PRON	they
 stopped	VERB	stop
 somewhere	ADV	somewhere
@@ -32791,7 +32543,7 @@ slipped	VERB	slip
 through	ADP	through
 voldemort	PROPN	voldemort
 's	PART	's
-clutches	NOUN	clutche
+clutches	NOUN	clutch
 for	ADP	for
 a	DET	a
 second	ADJ	second
@@ -32845,7 +32597,6 @@ eyes	NOUN	eye
 Errors: {
 Tok: Ref | Pred
 ---------------
-clutches: clutch | clutche
 his: he | his
 his: he | his
 }
@@ -34399,40 +34150,6 @@ my: i | my
 }
 
 Expected: {
-the	DET	the
-new	ADJ	new
-spending	NOUN	spending
-is	AUX	be
-fueled	VERB	fuel
-by	ADP	by
-clinton	PROPN	clinton
-’s	PART	’s
-large	ADJ	large
-bank	NOUN	bank
-account	NOUN	account
-.	PUNCT	.
-}
-Predicted: {
-the	DET	the
-new	ADJ	new
-spending	NOUN	spending
-is	AUX	be
-fueled	VERB	fuel
-by	ADP	by
-clinton	PROPN	clinton
-’s	PART	's
-large	ADJ	large
-bank	NOUN	bank
-account	NOUN	account
-.	PUNCT	.
-}
-Errors: {
-Tok: Ref | Pred
----------------
-’s: ’s | 's
-}
-
-Expected: {
 analysis	NOUN	analysis
 revealed	VERB	reveal
 that	SCONJ	that
@@ -34882,7 +34599,7 @@ mantle	NOUN	mantle
 as	ADP	as
 the	DET	the
 world	NOUN	world
-’s	PART	’s
+’s	PART	's
 best	ADJ	best
 no	ADV	no
 longer	ADV	longer
@@ -34910,7 +34627,6 @@ warranted	VERB	warrant
 Errors: {
 Tok: Ref | Pred
 ---------------
-’s: ’s | 's
 best: best | good
 longer: longer | long
 }
@@ -36515,7 +36231,7 @@ had	AUX	have
 existed	VERB	exist
 under	ADP	under
 henry	PROPN	henry
-i	PROPN	i
+i	NUM	i
 and	CCONJ	and
 these	PRON	these
 had	AUX	have
@@ -36537,7 +36253,7 @@ had	AUX	have
 existed	VERB	exist
 under	ADP	under
 henry	PROPN	henry
-i	PROPN	i
+i	NUM	i
 and	CCONJ	and
 these	PRON	this
 had	AUX	have

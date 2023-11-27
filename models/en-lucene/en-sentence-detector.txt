@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.7521323997453851
+Evaluation-Score=0.7520040717648556
 Training-Sample-Size=3909
 Evaluation-Sample-Size=434
 Training-Algorithm=MAXENT_QN
@@ -9,9 +9,9 @@ Component-Name=SentenceDetectorME
 Language=en
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1697781016718
+Timestamp=1700455639534
 TrainerType=Event
-Training-Eventhash=96ef9f2c101a030e410249294459ed11
+Training-Eventhash=440f2e26eb7a0bc84fda9df553de470b
 eosCharacters=.?!
 factory=opennlp.tools.sentdetect.SentenceDetectorFactory
 useTokenEnd=true
@@ -2116,7 +2116,9 @@ attached file: crudestocks.pdf)
 attached file: paddiistockscl.pdf)(see
 attached file: paddistocksho.pdf)(see
 attached file: paddistockshu.pdf)(see
-attached file: api.pdf) - unleadedstocks.pdf - crudestocks.pdf - heatingoilstocks.pdf - paddiistockscl.pdf - paddistocksho.pdf - paddistockshu.pdf - api.pdf
+attached file: api.pdf) - unleadedstocks.pdf - crudestocks.pdf - heatingoilstocks.pdf - paddiistockscl.pdf - paddistocksho.pdf
+- paddistockshu.pdf
+- api.pdf
 }
 False positives: {
 (see attached file: unleadedstocks.pdf)(see
@@ -2125,7 +2127,7 @@ attached file: crudestocks.pdf)
 attached file: paddiistockscl.pdf)(see
 attached file: paddistocksho.pdf)(see
 attached file: paddistockshu.pdf)(see
-attached file: api.pdf) - unleadedstocks.pdf - crudestocks.pdf - heatingoilstocks.pdf - paddiistockscl.pdf - paddistocksho.pdf - paddistockshu.pdf - api.pdf
+attached file: api.pdf) - unleadedstocks.pdf - crudestocks.pdf - heatingoilstocks.pdf - paddiistockscl.pdf - paddistocksho.pdf
 } False negatives: {
 (see attached file: unleadedstocks.pdf)(see attached file: crudestocks.pdf) (see attached file: heatingoilstocks.pdf)(see attached file: paddiistockscl.pdf)(see attached file: paddistocksho.pdf)(see attached file: paddistockshu.pdf)(see attached file: api.pdf)
 - unleadedstocks.pdf
@@ -2133,8 +2135,6 @@ attached file: api.pdf) - unleadedstocks.pdf - crudestocks.pdf - heatingoilstock
 - heatingoilstocks.pdf
 - paddiistockscl.pdf
 - paddistocksho.pdf
-- paddistockshu.pdf
-- api.pdf
 }
 
 Expected: {
@@ -5115,6 +5115,40 @@ a least your going.!
 enjoy those 2 days it better then not going at all.!
 and it will be fun 2 days cause you will busy going to a lot of beautiful places, i can afford to go so be happy you have the money to go. :d
 well, i mean, you don't have to be mad about it.
+}
+
+Expected: {
+itinerary both ships go to caribbean islands like jamaica, grand cayman, cozumel, st. thomas, the bahamas and st. martin / st. maarten.
+the liberty also visited its private island half moon cay, puerto rico, and grand turk.
+the mariner of the seas traveled to its private island coco cay and labadee (the north coast of haiti).
+we loved most of the locations that both of the ships visited and don't believe that this should be a distinguishing factor on deciding between the cruise lines.
+shows each night there are a variety of shows.
+usually you have the main show and some type of entertainment before and perhaps afterward.
+we felt that the main shows on the mariner of the seas were better.
+on the liberty we liked the comedian and juggling act.
+if you love seeing the shows, royal caribbean was better for the main shows and carnival was slightly better for the comedians.
+dining room we enjoyed the atmosphere of both dining rooms on the liberty and mariner of the seas.
+}
+Predicted: {
+itinerary both ships go to caribbean islands like jamaica, grand cayman, cozumel, st.
+thomas, the bahamas and st.
+martin / st. maarten.
+the liberty also visited its private island half moon cay, puerto rico, and grand turk.
+the mariner of the seas traveled to its private island coco cay and labadee (the north coast of haiti).
+we loved most of the locations that both of the ships visited and don't believe that this should be a distinguishing factor on deciding between the cruise lines.
+shows each night there are a variety of shows.
+usually you have the main show and some type of entertainment before and perhaps afterward.
+we felt that the main shows on the mariner of the seas were better.
+on the liberty we liked the comedian and juggling act.
+if you love seeing the shows, royal caribbean was better for the main shows and carnival was slightly better for the comedians.
+dining room we enjoyed the atmosphere of both dining rooms on the liberty and mariner of the seas.
+}
+False positives: {
+itinerary both ships go to caribbean islands like jamaica, grand cayman, cozumel, st.
+thomas, the bahamas and st.
+martin / st. maarten.
+} False negatives: {
+itinerary both ships go to caribbean islands like jamaica, grand cayman, cozumel, st. thomas, the bahamas and st. martin / st. maarten.
 }
 
 Expected: {

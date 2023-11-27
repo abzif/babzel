@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9942826718050783
-Training-Sample-Size=46539
-Evaluation-Sample-Size=5170
+Evaluation-Score=0.9963328090515786
+Training-Sample-Size=63843
+Evaluation-Sample-Size=7093
 Training-Algorithm=MAXENT_QN
 
 === MODEL PROPERTIES ===
@@ -9,9 +9,9 @@ Component-Name=TokenizerME
 Language=pt
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1697942392028
+Timestamp=1700542695950
 TrainerType=Event
-Training-Eventhash=7271fd82447ffa6bc6900c7e1b322a6f
+Training-Eventhash=5375b55f4ef8b971778923f1f4faf52b
 alphaNumericPattern=^[0-9a-záãâàéêíóõôúüçA-ZÁÃÂÀÉÊÍÓÕÔÚÜÇ]+$
 factory=opennlp.tools.tokenize.TokenizerFactory
 useAlphaNumericOptimization=false
@@ -29,14 +29,14 @@ m.
 }
 
 Expected: {
-trata-se<SPLIT>, segundo o projectista martins de oliveira<SPLIT>, que concebeu o molde<SPLIT>, de uma conduta visitavel<SPLIT>, capaz de reduzir "<SPLIT>a<SPLIT>o limite maximo<SPLIT>" todos os inconvenientes produzidos pelas permanente operacoes de manutencao levadas a cabo pela camara municipal<SPLIT>, edp<SPLIT>, telecom e tlp<SPLIT>.}
+e<SPLIT>, no auge da campanha eleitoral<SPLIT>, foi visto a gritar e cantar<SPLIT>, a correr e a dancar o "<SPLIT>twist<SPLIT>" e o "<SPLIT>rock'n roll<SPLIT>"<SPLIT>.}
 Predicted: {
-trata-se<SPLIT>, segundo o projectista martins de oliveira<SPLIT>, que concebeu o molde<SPLIT>, de uma conduta visitavel<SPLIT>, capaz de reduzir "<SPLIT>ao limite maximo<SPLIT>" todos os inconvenientes produzidos pelas permanente operacoes de manutencao levadas a cabo pela camara municipal<SPLIT>, edp<SPLIT>, telecom e tlp<SPLIT>.}
+e<SPLIT>, no auge da campanha eleitoral<SPLIT>, foi visto a gritar e cantar<SPLIT>, a correr e a dancar o "<SPLIT>twist<SPLIT>" e o "<SPLIT>rock'<SPLIT>n roll<SPLIT>"<SPLIT>.}
 False positives: {
-ao
+rock'
+n
 } False negatives: {
-a
-o
+rock'n
 }
 
 Expected: {
@@ -48,17 +48,6 @@ False positives: {
 } False negatives: {
 (
 ...
-}
-
-Expected: {
-paulo cesar<SPLIT>, cobrando falta na cabeca da area<SPLIT>, fechou o marcador a<SPLIT>os 43<SPLIT>min<SPLIT>, sem chances de defesa para o goleiro silvio<SPLIT>, do santo andre<SPLIT>.}
-Predicted: {
-paulo cesar<SPLIT>, cobrando falta na cabeca da area<SPLIT>, fechou o marcador a<SPLIT>os 43min<SPLIT>, sem chances de defesa para o goleiro silvio<SPLIT>, do santo andre<SPLIT>.}
-False positives: {
-43min
-} False negatives: {
-43
-min
 }
 
 Expected: {
@@ -75,35 +64,29 @@ art.
 Expected: {
 "<SPLIT>adeus america<SPLIT>" de jan schutte<SPLIT>, "<SPLIT>o casamento de muriel<SPLIT>" de p.j. hogan<SPLIT>, "<SPLIT>71 fragmentos da cronologia de um acaso<SPLIT>"<SPLIT>, de michael haneke<SPLIT>, "<SPLIT>fresh<SPLIT>" de boaz yakin<SPLIT>, "<SPLIT>venus de neve<SPLIT>" de sotiris gortisas<SPLIT>, "<SPLIT>costas as costas , cara a cara<SPLIT>" de huang jianxin<SPLIT>, "<SPLIT>rainha bandida<SPLIT>" de shekkar kapur<SPLIT>, "<SPLIT>sem pele<SPLIT>" de alessandro d'<SPLIT>allatri<SPLIT>, "<SPLIT>wrony<SPLIT>" de dorota kedzierzawska<SPLIT>, "<SPLIT>tres palmeiras<SPLIT>" de joao botelho<SPLIT>, "<SPLIT>katia ismailova<SPLIT>" de valeri todorovski<SPLIT>, "<SPLIT>os silencios do palacio<SPLIT>" de moufida tiati e o filme coletivo "<SPLIT>homem, deus e monstro<SPLIT>"<SPLIT>.}
 Predicted: {
-"<SPLIT>adeus america<SPLIT>" de jan schutte<SPLIT>, "<SPLIT>o casamento de muriel<SPLIT>" de p.j. hogan<SPLIT>, "<SPLIT>71 fragmentos da cronologia de um acaso<SPLIT>"<SPLIT>, de michael haneke<SPLIT>, "<SPLIT>fresh<SPLIT>" de boaz yakin<SPLIT>, "<SPLIT>venus de neve<SPLIT>" de sotiris gortisas<SPLIT>, "<SPLIT>costas as costas , cara a cara<SPLIT>" de huang jianxin<SPLIT>, "<SPLIT>rainha bandida<SPLIT>" de shekkar kapur<SPLIT>, "<SPLIT>sem pele<SPLIT>" de alessandro d'allatri<SPLIT>, "<SPLIT>wrony<SPLIT>" de dorota kedzierzawska<SPLIT>, "<SPLIT>tres palmeiras<SPLIT>" de joao botelho<SPLIT>, "<SPLIT>katia ismailova<SPLIT>" de valeri todorovski<SPLIT>, "<SPLIT>os silencios do palacio<SPLIT>" de moufida tiati e o filme coletivo "<SPLIT>homem<SPLIT>, deus e monstro<SPLIT>"<SPLIT>.}
+"<SPLIT>adeus america<SPLIT>" de jan schutte<SPLIT>, "<SPLIT>o casamento de muriel<SPLIT>" de p.j. hogan<SPLIT>, "<SPLIT>71 fragmentos da cronologia de um acaso<SPLIT>"<SPLIT>, de michael haneke<SPLIT>, "<SPLIT>fresh<SPLIT>" de boaz yakin<SPLIT>, "<SPLIT>venus de neve<SPLIT>" de sotiris gortisas<SPLIT>, "<SPLIT>costas as costas , cara a cara<SPLIT>" de huang jianxin<SPLIT>, "<SPLIT>rainha bandida<SPLIT>" de shekkar kapur<SPLIT>, "<SPLIT>sem pele<SPLIT>" de alessandro d'<SPLIT>allatri<SPLIT>, "<SPLIT>wrony<SPLIT>" de dorota kedzierzawska<SPLIT>, "<SPLIT>tres palmeiras<SPLIT>" de joao botelho<SPLIT>, "<SPLIT>katia ismailova<SPLIT>" de valeri todorovski<SPLIT>, "<SPLIT>os silencios do palacio<SPLIT>" de moufida tiati e o filme coletivo "<SPLIT>homem<SPLIT>, deus e monstro<SPLIT>"<SPLIT>.}
 False positives: {
-d'allatri
 homem
 ,
 } False negatives: {
-d'
-allatri
 homem,
 }
 
 Expected: {
 montoro disse que sobre esses us$ 15 bilhoes o governo deixa de pagar us$ 1,5 bilhao<SPLIT>/<SPLIT>ano de juros anuais<SPLIT>, mais us$ 1,5 bilhao<SPLIT>/<SPLIT>ano em amortizacoes de dividas e mais us$ 2 bilhoes<SPLIT>/<SPLIT>ano em aportes de capitais as empresas<SPLIT>.}
 Predicted: {
-montoro disse que sobre esses us$ 15 bilhoes o governo deixa de pagar us$ 1,5 bilhao/ano de juros anuais<SPLIT>, mais us$ 1,5 bilhao/ano em amortizacoes de dividas e mais us$ 2 bilhoes/ano em aportes de capitais as empresas<SPLIT>.}
+montoro disse que sobre esses us$ 15 bilhoes o governo deixa de pagar us$ 1,5 bilhao/<SPLIT>ano de juros anuais<SPLIT>, mais us$ 1,5 bilhao/<SPLIT>ano em amortizacoes de dividas e mais us$ 2 bilhoes/<SPLIT>ano em aportes de capitais as empresas<SPLIT>.}
 False positives: {
-bilhao/ano
-bilhao/ano
-bilhoes/ano
+bilhao/
+bilhao/
+bilhoes/
 } False negatives: {
 bilhao
 /
-ano
 bilhao
 /
-ano
 bilhoes
 /
-ano
 }
 
 Expected: {
@@ -198,17 +181,6 @@ silvia
 }
 
 Expected: {
-contactados pelo publico<SPLIT>, os lideres das concelhias do pp<SPLIT>, do psd<SPLIT>- com a maioria da assembleia municipal<SPLIT>-<SPLIT>, do ps e o deputado municipal da cdu sao unanimes em considerar que o documento mandado elaborar pela associacao de municipios da alta estremadura (<SPLIT>amae<SPLIT>) carece de um importanle debate publico<SPLIT>, havendo mesmo quem nao ihe reconheca o estatuto de "<SPLIT>plano estrategico<SPLIT>"<SPLIT>.}
-Predicted: {
-contactados pelo publico<SPLIT>, os lideres das concelhias do pp<SPLIT>, do psd- com a maioria da assembleia municipal<SPLIT>-<SPLIT>, do ps e o deputado municipal da cdu sao unanimes em considerar que o documento mandado elaborar pela associacao de municipios da alta estremadura (<SPLIT>amae<SPLIT>) carece de um importanle debate publico<SPLIT>, havendo mesmo quem nao ihe reconheca o estatuto de "<SPLIT>plano estrategico<SPLIT>"<SPLIT>.}
-False positives: {
-psd-
-} False negatives: {
-psd
--
-}
-
-Expected: {
 o alverca foi feliz e conseguiu o golo logo a<SPLIT>os 4'<SPLIT>.}
 Predicted: {
 o alverca foi feliz e conseguiu o golo logo a<SPLIT>os 4<SPLIT>'<SPLIT>.}
@@ -222,15 +194,12 @@ False positives: {
 Expected: {
 o decreto regulamentar 19/91 (b) descobriu que a factura e a guia de remessa permitem controlar o efectivo caracter<SPLIT>, publico ou particular<SPLIT>, do transporte<SPLIT>, pelo que acabou com a guia de transporte<SPLIT>.}
 Predicted: {
-o decreto regulamentar 19<SPLIT>/91 (<SPLIT>b<SPLIT>) descobriu que a factura e a guia de remessa permitem controlar o efectivo caracter<SPLIT>, publico ou particular<SPLIT>, do transporte<SPLIT>, pelo que acabou com a guia de transporte<SPLIT>.}
+o decreto regulamentar 19/91 (<SPLIT>b<SPLIT>) descobriu que a factura e a guia de remessa permitem controlar o efectivo caracter<SPLIT>, publico ou particular<SPLIT>, do transporte<SPLIT>, pelo que acabou com a guia de transporte<SPLIT>.}
 False positives: {
-19
-/91
 (
 b
 )
 } False negatives: {
-19/91
 (b)
 }
 
@@ -266,6 +235,17 @@ dan&cake
 dan
 &
 cake
+}
+
+Expected: {
+"<SPLIT>depois de ouvirmos o depoimento do eng. pedro rodrigues ficamos com algumas duvidas relativas a<SPLIT>os concursos publicos e penso que ha aqui algumas questoes que o proprio governo nao conhecia<SPLIT>"<SPLIT>, afirmou carlos duarte a<SPLIT>o publico ha duas semanas<SPLIT>.}
+Predicted: {
+"<SPLIT>depois de ouvirmos o depoimento do eng<SPLIT>. pedro rodrigues ficamos com algumas duvidas relativas a<SPLIT>os concursos publicos e penso que ha aqui algumas questoes que o proprio governo nao conhecia<SPLIT>"<SPLIT>, afirmou carlos duarte a<SPLIT>o publico ha duas semanas<SPLIT>.}
+False positives: {
+eng
+.
+} False negatives: {
+eng.
 }
 
 Expected: {
@@ -1593,6 +1573,17 @@ aos
 }
 
 Expected: {
+isso tambem inclui , obviamente , o likud e a plataforma do likud. '}
+Predicted: {
+isso tambem inclui , obviamente , o likud e a plataforma do likud<SPLIT>. '}
+False positives: {
+likud
+.
+} False negatives: {
+likud.
+}
+
+Expected: {
 cidades medias unidas na critica ao pronorte}
 Predicted: {
 cidades medias unidas na critica a<SPLIT>o pronorte}
@@ -2397,184 +2388,361 @@ ao
 }
 
 Expected: {
-os executivos tambem receberam a chamada "<SPLIT>remuneracao por desempenho<SPLIT>" por corresponderem ou superarem as expectativas<SPLIT>, dividindo uma quantia de $<SPLIT>1,5 milhoes entre eles<SPLIT>, ou em media<SPLIT>, $<SPLIT>15.000 para cada um deles<SPLIT>.}
+apesar dos numeros<SPLIT>, o cientista politico e professor da puc<SPLIT>-<SPLIT>rj ricardo ismael acredita que ainda e cedo para afirmar se o psol ocupara o lugar que cabia a<SPLIT>o pt<SPLIT>.}
 Predicted: {
-os executivos tambem receberam a chamada "<SPLIT>remuneracao por desempenho<SPLIT>" por corresponderem ou superarem as expectativas<SPLIT>, dividindo uma quantia de $<SPLIT>1,5 milhoes entre eles<SPLIT>, ou em media<SPLIT>, $15.000 para cada um deles<SPLIT>.}
+apesar dos numeros<SPLIT>, o cientista politico e professor da puc-rj ricardo ismael acredita que ainda e cedo para afirmar se o psol ocupara o lugar que cabia a<SPLIT>o pt<SPLIT>.}
 False positives: {
-$15.000
+puc-rj
 } False negatives: {
-$
-15.000
-}
-
-Expected: {
-isso tambem abriu a vw para reivindicacoes e acoes legais imensas<SPLIT>, e viu elas levarem mais que €<SPLIT>16 bilhoes de provisoes<SPLIT>.}
-Predicted: {
-isso tambem abriu a vw para reivindicacoes e acoes legais imensas<SPLIT>, e viu elas levarem mais que €16 bilhoes de provisoes<SPLIT>.}
-False positives: {
-€16
-} False negatives: {
-€
-16
-}
-
-Expected: {
-do ponto de vista do realizador<SPLIT>, o filme e um ato precario<SPLIT>, balancando<SPLIT>-<SPLIT>se entre comedias familiares e dramas sociais profundos<SPLIT>.}
-Predicted: {
-do ponto de vista do realizador<SPLIT>, o filme e um ato precario<SPLIT>, balancando-se entre comedias familiares e dramas sociais profundos<SPLIT>.}
-False positives: {
-balancando-se
-} False negatives: {
-balancando
+puc
 -
-se
+rj
 }
 
 Expected: {
-a votacao<SPLIT>, no vernaculo do terror<SPLIT>, torna<SPLIT>-<SPLIT>se o novo alvo facil<SPLIT>.}
+os vencedores serao retratados na revista pequenas empresas &amp; grandes negocios de dezembro de 2012 e no site do movimento empreenda<SPLIT>.}
 Predicted: {
-a votacao<SPLIT>, no vernaculo do terror<SPLIT>, torna-se o novo alvo facil<SPLIT>.}
+os vencedores serao retratados na revista pequenas empresas &<SPLIT>amp<SPLIT>; grandes negocios de dezembro de 2012 e no site do movimento empreenda<SPLIT>.}
 False positives: {
-torna-se
-} False negatives: {
-torna
--
-se
-}
-
-Expected: {
-esta e tambem a unica regiao do alasca em que a temperatura media maxima diurna esta acima de 0<SPLIT>°<SPLIT>c durante os meses de inverno<SPLIT>.}
-Predicted: {
-esta e tambem a unica regiao do alasca em que a temperatura media maxima diurna esta acima de 0<SPLIT>°c durante os meses de inverno<SPLIT>.}
-False positives: {
-°c
-} False negatives: {
-°
-c
-}
-
-Expected: {
-dirigindo<SPLIT>-<SPLIT>se a<SPLIT>o gabinete pouco depois de as forcas alemas terem cruzado a fronteira<SPLIT>, chamberlain culpou a alemanha e a austria<SPLIT>.}
-Predicted: {
-dirigindo-se a<SPLIT>o gabinete pouco depois de as forcas alemas terem cruzado a fronteira<SPLIT>, chamberlain culpou a alemanha e a austria<SPLIT>.}
-False positives: {
-dirigindo-se
-} False negatives: {
-dirigindo
--
-se
-}
-
-Expected: {
-e alem disso<SPLIT>, um fluido de bingham nao flui ate uma tensao de cisalhamento<SPLIT>, τ<SPLIT>, exercer um valor minimo<SPLIT>, τl<SPLIT>.}
-Predicted: {
-e alem disso<SPLIT>, um fluido de bingham nao flui ate uma tensao de cisalhamento<SPLIT>, τ<SPLIT>, exercer um valor minimo<SPLIT>, τ<SPLIT>l<SPLIT>.}
-False positives: {
-τ
-l
-} False negatives: {
-τl
-}
-
-Expected: {
-as figuras que mostram o comportamento tixotropico do fluido para as demais concentracoes estao no anexo b. fonte : autor<SPLIT>.}
-Predicted: {
-as figuras que mostram o comportamento tixotropico do fluido para as demais concentracoes estao no anexo b<SPLIT>. fonte : autor<SPLIT>.}
-False positives: {
-b
-.
-} False negatives: {
-b.
-}
-
-Expected: {
-chilingar g. v.<SPLIT>; chilingarian g. v.; vorabutr<SPLIT>, p. drilling and drilling fluids<SPLIT>.}
-Predicted: {
-chilingar g. v.; chilingarian g. v.; vorabutr<SPLIT>, p. drilling and drilling fluids<SPLIT>.}
-False positives: {
-v.;
-} False negatives: {
-v.
+&
+amp
 ;
+} False negatives: {
+&amp;
 }
 
 Expected: {
-matematicamente<SPLIT>, os fluidos newtonianos sao definidos pela equacao 2.3<SPLIT>, e seu comportamento e dado pela curva a. a inclinacao da reta que intercepta a origem e dada pela viscosidade absoluta do fluido<SPLIT>.}
+bessette nasceu em saint - gregoire - le - grand - de - monnoir<SPLIT>, atual saint - gregoire d'<SPLIT>iberville<SPLIT>, quebec<SPLIT>, uma pequena cidade situada 40 quilometros a leste de montreal<SPLIT>.}
 Predicted: {
-matematicamente<SPLIT>, os fluidos newtonianos sao definidos pela equacao 2.3<SPLIT>, e seu comportamento e dado pela curva a<SPLIT>. a inclinacao da reta que intercepta a origem e dada pela viscosidade absoluta do fluido<SPLIT>.}
+bessette nasceu em saint - gregoire - le - grand - de - monnoir<SPLIT>, atual saint - gregoire d'iberville<SPLIT>, quebec<SPLIT>, uma pequena cidade situada 40 quilometros a leste de montreal<SPLIT>.}
+False positives: {
+d'iberville
+} False negatives: {
+d'
+iberville
+}
+
+Expected: {
+ainda no roteiro estao incluidas visitas a victoria and albert museum (<SPLIT>v &amp; a museum<SPLIT>)<SPLIT>, universidade de ravensbourne<SPLIT>, fashion and textile museum e design museum<SPLIT>.}
+Predicted: {
+ainda no roteiro estao incluidas visitas a victoria and albert museum (<SPLIT>v &<SPLIT>amp<SPLIT>; a museum<SPLIT>)<SPLIT>, universidade de ravensbourne<SPLIT>, fashion and textile museum e design museum<SPLIT>.}
+False positives: {
+&
+amp
+;
+} False negatives: {
+&amp;
+}
+
+Expected: {
+para 72 % os prazos de 2012 sao iguais aos do ano passado<SPLIT>.}
+Predicted: {
+para 72 % os prazos de 2012 sao iguais a<SPLIT>os do ano passado<SPLIT>.}
 False positives: {
 a
-.
+os
 } False negatives: {
-a.
+aos
 }
 
 Expected: {
-masikewich & bennion , 1999 , apud civan , 2007 , classificam os esforcos necessarios para testes de fluido em seis etapas : 1. - identificacao das caracteristicas da rocha e do fluido ; 2. - especulacao sobre os potenciais mecanismos de dano de formacao ; 3. - verificacao e quantificacao , atraves de varios testes , dos mecanismos que dizem respeito a<SPLIT>o dano de formacao ; 4. - investigacao de tecnicas de atenuacao do potencial de dano ; 3 ; 5. - desenvolvimento de sistemas de reboco efetivos para minimizar e/ou evitar a invasao de fluidos e finos para dentro do meio poroso ; 6. - teste de fluidos candidatos para uma selecao otima .}
+analistas esperavam receita de us $ 13,56 bilhoes para o segundo trimestre e de us $ 14,6 bilhoes para o trimestre atual<SPLIT>, de acordo com a thomson reuters i / b / e / s<SPLIT>.}
 Predicted: {
-masikewich & bennion , 1999 , apud civan , 2007 , classificam os esforcos necessarios para testes de fluido em seis etapas : 1<SPLIT>. - identificacao das caracteristicas da rocha e do fluido ; 2<SPLIT>. - especulacao sobre os potenciais mecanismos de dano de formacao ; 3<SPLIT>. - verificacao e quantificacao , atraves de varios testes , dos mecanismos que dizem respeito a<SPLIT>o dano de formacao ; 4<SPLIT>. - investigacao de tecnicas de atenuacao do potencial de dano ; 3 ; 5<SPLIT>. - desenvolvimento de sistemas de reboco efetivos para minimizar e/ou evitar a invasao de fluidos e finos para dentro do meio poroso ; 6<SPLIT>. - teste de fluidos candidatos para uma selecao otima .}
+analistas esperavam receita de us $ 13,56 bilhoes para o segundo trimestre e de us $ 14,6 bilhoes para o trimestre atual<SPLIT>, de acordo com a thomson reuters i / b / e / s.}
 False positives: {
-1
+s.
+} False negatives: {
+s
 .
+}
+
+Expected: {
+os turcos visitaram primeiramente o estadio municipal dr<SPLIT>.}
+Predicted: {
+os turcos visitaram primeiramente o estadio municipal dr.}
+False positives: {
+dr.
+} False negatives: {
+dr
+.
+}
+
+Expected: {
+enquanto isso<SPLIT>, webber anotou um bom tempo<SPLIT>, 1m25s327<SPLIT>.}
+Predicted: {
+enquanto isso<SPLIT>, webber anotou um bom tempo<SPLIT>, 1m<SPLIT>25s327<SPLIT>.}
+False positives: {
+1m
+25s327
+} False negatives: {
+1m25s327
+}
+
+Expected: {
+no vacuo<SPLIT>, \kappa vale 1 e \epsilon=\epsilon_{0}<SPLIT>, e a equacao acima se torna a mesma da encontrada para a densidade de energia no vacuo<SPLIT>.}
+Predicted: {
+no vacuo<SPLIT>, \kappa vale 1 e \epsilon=\epsilon_{0<SPLIT>}<SPLIT>, e a equacao acima se torna a mesma da encontrada para a densidade de energia no vacuo<SPLIT>.}
+False positives: {
+\epsilon=\epsilon_{0
+}
+} False negatives: {
+\epsilon=\epsilon_{0}
+}
+
+Expected: {
+"<SPLIT>a<SPLIT>o contrario do que foi publicado nesta quarta - feira<SPLIT>, 9 de janeiro<SPLIT>, pelo jornal o estado de sao paulo<SPLIT>, a secretaria de comunicacao do ministerio publico federal informa que o procurador - geral da republica ainda nao iniciou a analise do depoimento de marcos valerio<SPLIT>, pois aguardava o termino do julgamento da ap [<SPLIT>acao penal] 470 [<SPLIT>o processo do mensalao<SPLIT>]<SPLIT>"<SPLIT>, diz trecho da nota<SPLIT>.}
+Predicted: {
+"<SPLIT>a<SPLIT>o contrario do que foi publicado nesta quarta - feira<SPLIT>, 9 de janeiro<SPLIT>, pelo jornal o estado de sao paulo<SPLIT>, a secretaria de comunicacao do ministerio publico federal informa que o procurador - geral da republica ainda nao iniciou a analise do depoimento de marcos valerio<SPLIT>, pois aguardava o termino do julgamento da ap [<SPLIT>acao penal<SPLIT>] 470 [<SPLIT>o processo do mensalao<SPLIT>]<SPLIT>"<SPLIT>, diz trecho da nota<SPLIT>.}
+False positives: {
+penal
+]
+} False negatives: {
+penal]
+}
+
+Expected: {
+"<SPLIT>it 's a long way to the top (<SPLIT>if you wanna rock 'n' roll<SPLIT>)<SPLIT>" e a primeira musica do album t.n.t. da banda de rock australiana ac / dc<SPLIT>.}
+Predicted: {
+"<SPLIT>it 's a long way to the top (<SPLIT>if you wanna rock '<SPLIT>n<SPLIT>' roll<SPLIT>)<SPLIT>" e a primeira musica do album t.n.t. da banda de rock australiana ac / dc<SPLIT>.}
+False positives: {
+'
+n
+'
+} False negatives: {
+'n'
+}
+
+Expected: {
+mas fiquei sabendo pelo sampaio (<SPLIT>cesar<SPLIT>, gerente de futebol<SPLIT>)<SPLIT>, que ele conversara primeiro co<SPLIT>nosco<SPLIT>"<SPLIT>.}
+Predicted: {
+mas fiquei sabendo pelo sampaio (<SPLIT>cesar<SPLIT>, gerente de futebol<SPLIT>)<SPLIT>, que ele conversara primeiro conosco<SPLIT>"<SPLIT>.}
+False positives: {
+conosco
+} False negatives: {
+co
+nosco
+}
+
+Expected: {
+bebericando um dr<SPLIT>.}
+Predicted: {
+bebericando um dr.}
+False positives: {
+dr.
+} False negatives: {
+dr
+.
+}
+
+Expected: {
+vasari descreve nas vite a encomenda a baccio d'<SPLIT>agnolo dum novo palacio<SPLIT>, edificado sobre um pre - existente edificio senhorial da mesma familia documentado<SPLIT>, pelo menos<SPLIT>, desde 1435<SPLIT>.}
+Predicted: {
+vasari descreve nas vite a encomenda a baccio d'agnolo dum novo palacio<SPLIT>, edificado sobre um pre - existente edificio senhorial da mesma familia documentado<SPLIT>, pelo menos<SPLIT>, desde 1435<SPLIT>.}
+False positives: {
+d'agnolo
+} False negatives: {
+d'
+agnolo
+}
+
+Expected: {
+a<SPLIT>o todo<SPLIT>, 6 apostas acertaram 19 dezenas e devem levar<SPLIT>, cada uma<SPLIT>, r<SPLIT>$ 43.524,42 (<SPLIT>quarenta e tres mil<SPLIT>, quinhentos e vinte e quatro reais e quarenta e dois centavos<SPLIT>)<SPLIT>.}
+Predicted: {
+a<SPLIT>o todo<SPLIT>, 6 apostas acertaram 19 dezenas e devem levar<SPLIT>, cada uma<SPLIT>, r$ 43.524,42 (<SPLIT>quarenta e tres mil<SPLIT>, quinhentos e vinte e quatro reais e quarenta e dois centavos<SPLIT>)<SPLIT>.}
+False positives: {
+r$
+} False negatives: {
+r
+$
+}
+
+Expected: {
+a medida que o xadrez se espalhava pelo restante da europa<SPLIT>, a espanha contribuiu com as principais literaturas sobre o xadrez do periodo<SPLIT>, culminando com o libro de los juegos (<SPLIT>1283<SPLIT>)<SPLIT>, encomendado por no<SPLIT>.}
+Predicted: {
+a medida que o xadrez se espalhava pelo restante da europa<SPLIT>, a espanha contribuiu com as principais literaturas sobre o xadrez do periodo<SPLIT>, culminando com o libro de los juegos (<SPLIT>1283<SPLIT>)<SPLIT>, encomendado por no.}
+False positives: {
+no.
+} False negatives: {
+no
+.
+}
+
+Expected: {
+por comparacao<SPLIT>, custou $<SPLIT>103.7 milhoes construir o interior da estacao de metro do noma<SPLIT>, que abriu em 2004<SPLIT>.}
+Predicted: {
+por comparacao<SPLIT>, custou $103.7 milhoes construir o interior da estacao de metro do noma<SPLIT>, que abriu em 2004<SPLIT>.}
+False positives: {
+$103.7
+} False negatives: {
+$
+103.7
+}
+
+Expected: {
+mais tarde<SPLIT>, eu perguntei<SPLIT>-<SPLIT>lhe se ela entendeu por que e que as pessoas poderiam votar em trump<SPLIT>.}
+Predicted: {
+mais tarde<SPLIT>, eu perguntei-lhe se ela entendeu por que e que as pessoas poderiam votar em trump<SPLIT>.}
+False positives: {
+perguntei-lhe
+} False negatives: {
+perguntei
+-
+lhe
+}
+
+Expected: {
+em dinamarques<SPLIT>, a palavra pode ate aplicar<SPLIT>-<SPLIT>se a lagoas de pouca profundidade<SPLIT>.}
+Predicted: {
+em dinamarques<SPLIT>, a palavra pode ate aplicar-se a lagoas de pouca profundidade<SPLIT>.}
+False positives: {
+aplicar-se
+} False negatives: {
+aplicar
+-
+se
+}
+
+Expected: {
+ela protagonizou o filme de 2012<SPLIT>, cinco anos de noivado (<SPLIT>the five<SPLIT>-<SPLIT>year engagement<SPLIT>)<SPLIT>, realizado por nicholas stoller e coprotagonizado por jason segel<SPLIT>.}
+Predicted: {
+ela protagonizou o filme de 2012<SPLIT>, cinco anos de noivado (<SPLIT>the five-year engagement<SPLIT>)<SPLIT>, realizado por nicholas stoller e coprotagonizado por jason segel<SPLIT>.}
+False positives: {
+five-year
+} False negatives: {
+five
+-
+year
+}
+
+Expected: {
+ganhando reconhecimento como perita na area<SPLIT>, ela levou essas capacidades de volta para o instituto curie<SPLIT>, juntamente com um pequeno disco<SPLIT>de polonio<SPLIT>.}
+Predicted: {
+ganhando reconhecimento como perita na area<SPLIT>, ela levou essas capacidades de volta para o instituto curie<SPLIT>, juntamente com um pequeno discode polonio<SPLIT>.}
+False positives: {
+discode
+} False negatives: {
+disco
+de
+}
+
+Expected: {
+adnan z. amin<SPLIT>, diretor geral da agencia internacional de energias renovaveis (<SPLIT>irena<SPLIT>) esta seguro<SPLIT>: "<SPLIT>energia eolica offshore pode se tornar a maior geradora de energia<SPLIT>, em uma economia global<SPLIT>, que e livre de energia a base de carvao<SPLIT>.<SPLIT>"}
+Predicted: {
+adnan z<SPLIT>. amin<SPLIT>, diretor geral da agencia internacional de energias renovaveis (<SPLIT>irena<SPLIT>) esta seguro<SPLIT>: "<SPLIT>energia eolica offshore pode se tornar a maior geradora de energia<SPLIT>, em uma economia global<SPLIT>, que e livre de energia a base de carvao<SPLIT>.<SPLIT>"}
+False positives: {
+z
+.
+} False negatives: {
+z.
+}
+
+Expected: {
+o intemperismo pode elevar a densidade/<SPLIT>viscosidade de um oleo e<SPLIT>, a<SPLIT>o mesmo tempo<SPLIT>, reduzir sua toxicidade (<SPLIT>devids<SPLIT>, 2008<SPLIT>)<SPLIT>.}
+Predicted: {
+o intemperismo pode elevar a densidade<SPLIT>/<SPLIT>viscosidade de um oleo e<SPLIT>, a<SPLIT>o mesmo tempo<SPLIT>, reduzir sua toxicidade (<SPLIT>devids<SPLIT>, 2008<SPLIT>)<SPLIT>.}
+False positives: {
+densidade
+/
+} False negatives: {
+densidade/
+}
+
+Expected: {
+v. redutores de perda de fluido}
+Predicted: {
+v<SPLIT>. redutores de perda de fluido}
+False positives: {
+v
+.
+} False negatives: {
+v.
+}
+
+Expected: {
+sendo<SPLIT>: v - volume do fluido obtido<SPLIT>; ρ<SPLIT>baritin<SPLIT>a - massa especifica da baritina<SPLIT>; vbaritina - volume necessario de baritina<SPLIT>; ρf - peso especifico desejado do fluido<SPLIT>; vf - volume do fluido (<SPLIT>v+vbaritina<SPLIT>)<SPLIT>.}
+Predicted: {
+sendo<SPLIT>: v - volume do fluido obtido<SPLIT>; ρbaritina - massa especifica da baritina<SPLIT>; vbaritina - volume necessario de baritina<SPLIT>; ρf - peso especifico desejado do fluido<SPLIT>; vf - volume do fluido (<SPLIT>v+vbaritina<SPLIT>)<SPLIT>.}
+False positives: {
+ρbaritina
+} False negatives: {
+ρ
+baritin
+a
+}
+
+Expected: {
+isso deve-se a<SPLIT>o fato da atapulgita ser uma argila mais adequada a<SPLIT>o fluido salino , pois nao tem suas propriedades reologicas alteradas pela presenca de sal. .}
+Predicted: {
+isso deve-se a<SPLIT>o fato da atapulgita ser uma argila mais adequada a<SPLIT>o fluido salino , pois nao tem suas propriedades reologicas alteradas pela presenca de sal<SPLIT>. .}
+False positives: {
+sal
+.
+} False negatives: {
+sal.
+}
+
+Expected: {
+a equacao matematica que define o fluido de bingham e expressa conforme equacao 2.6<SPLIT>: (<SPLIT>2.6<SPLIT>) τ τ μ ! onde μ p e τ<SPLIT>l sao os parametros reologicos deste tipo de fluido denominados<SPLIT>, respectivamente<SPLIT>, de viscosidade plastica e limite de escoamento<SPLIT>.}
+Predicted: {
+a equacao matematica que define o fluido de bingham e expressa conforme equacao 2.6<SPLIT>: (<SPLIT>2.6<SPLIT>) τ τ μ ! onde μ p e τl sao os parametros reologicos deste tipo de fluido denominados<SPLIT>, respectivamente<SPLIT>, de viscosidade plastica e limite de escoamento<SPLIT>.}
+False positives: {
+τl
+} False negatives: {
+τ
+l
+}
+
+Expected: {
+as duas propriedades mais comumente medidas sao<SPLIT>: porosidade<SPLIT>, φ<SPLIT>, e permeabilidade absoluta<SPLIT>, k<SPLIT>.}
+Predicted: {
+as duas propriedades mais comumente medidas sao<SPLIT>: porosidade<SPLIT>, φ<SPLIT>, e permeabilidade absoluta<SPLIT>, k.}
+False positives: {
+k.
+} False negatives: {
+k
+.
+}
+
+Expected: {
+yeager et al.<SPLIT>, 1997<SPLIT>, apud civan<SPLIT>, 2007<SPLIT>, recomendam uma abordagem de tres estagios<SPLIT>: 1<SPLIT>. - quantificar a gravidade do dano existente<SPLIT>; 2. - diagnosticar os mecanismos de dano existentes no fundo do poco<SPLIT>; 3. - realizar estudos em laboratorio para aumentar o conhecimento sobre mecanismos especificos<SPLIT>.}
+Predicted: {
+yeager et al.<SPLIT>, 1997<SPLIT>, apud civan<SPLIT>, 2007<SPLIT>, recomendam uma abordagem de tres estagios<SPLIT>: 1<SPLIT>. - quantificar a gravidade do dano existente<SPLIT>; 2<SPLIT>. - diagnosticar os mecanismos de dano existentes no fundo do poco<SPLIT>; 3<SPLIT>. - realizar estudos em laboratorio para aumentar o conhecimento sobre mecanismos especificos<SPLIT>.}
+False positives: {
 2
 .
 3
 .
-4
-.
-5
-.
-6
-.
 } False negatives: {
-1.
 2.
 3.
-4.
-5.
-6.
 }
 
 Expected: {
-o diametro da bolhas produzidas e inferior a 102<SPLIT>μ<SPLIT>m<SPLIT>.}
+na figura 4.30(b<SPLIT>) tem-se a comparacao entre os resultados obtidos tanto para fluidos preparados com phpa como para gx<SPLIT>.}
 Predicted: {
-o diametro da bolhas produzidas e inferior a 102<SPLIT>μm<SPLIT>.}
+na figura 4.30(<SPLIT>b<SPLIT>) tem-se a comparacao entre os resultados obtidos tanto para fluidos preparados com phpa como para gx<SPLIT>.}
 False positives: {
-μm
+4.30(
+b
 } False negatives: {
-μ
-m
+4.30(b
 }
 
 Expected: {
-equipamentos utilizados na realizacao dos experimentos<SPLIT>: o oleo utilizado para preparacao das emulsoes sinteticas foi cedido por uma empresa que atua em campos de producao proximos a cidade de mossoro<SPLIT>, cuja densidade e de 0,85g<SPLIT>/<SPLIT>cm<SPLIT>3<SPLIT>.}
+a area de estudo se estende do sul do estado de sao paulo a<SPLIT>o norte do rio grande do sul na porcao emersa e a bacia de pelotas na regiao offshore<SPLIT>, perfazendo um total de 440 530 km2<SPLIT>, destes 278 048 km2 estao localizados na porcao continental e 162 482 km<SPLIT>2 na parte offshore (<SPLIT>figura 2<SPLIT>)<SPLIT>.}
 Predicted: {
-equipamentos utilizados na realizacao dos experimentos<SPLIT>: o oleo utilizado para preparacao das emulsoes sinteticas foi cedido por uma empresa que atua em campos de producao proximos a cidade de mossoro<SPLIT>, cuja densidade e de 0,85g/<SPLIT>cm3<SPLIT>.}
+a area de estudo se estende do sul do estado de sao paulo a<SPLIT>o norte do rio grande do sul na porcao emersa e a bacia de pelotas na regiao offshore<SPLIT>, perfazendo um total de 440 530 km2<SPLIT>, destes 278 048 km2 estao localizados na porcao continental e 162 482 km2 na parte offshore (<SPLIT>figura 2<SPLIT>)<SPLIT>.}
 False positives: {
-0,85g/
-cm3
+km2
 } False negatives: {
-0,85g
-/
-cm
-3
+km
+2
 }
 
 Expected: {
-grafico 4.9<SPLIT>: 2° filtracao com extracao na faixa granulometrica de (<SPLIT>-<SPLIT>16+8 mesh<SPLIT>)<SPLIT>.}
+o programa utilizado nesta etapa foi o ermapper para mosaicar as 9 imagens srtm 90<SPLIT>m que completavam toda a porcao sul da regiao sudeste do brasil<SPLIT>, em seguida foram selecionadas apenas as imagens da area estudada<SPLIT>.}
 Predicted: {
-grafico 4.9<SPLIT>: 2° filtracao com extracao na faixa granulometrica de (<SPLIT>-16+8 mesh<SPLIT>)<SPLIT>.}
-False positives: {
--16+8
-} False negatives: {
--
-16+8
-}
-
-Expected: {
-para a caracterizacao estrutural da area continental foram utilizadas imagens de satelite srtm 90<SPLIT>m sendo identificados o lineamento tibagi descrito por hasui et al. (<SPLIT>2012<SPLIT>) e "<SPLIT>sinclinal<SPLIT>" de torres caracterizado por vitorello e padilha (<SPLIT>2000<SPLIT>)<SPLIT>, alem de mapa gravimetrico e aeromagnetometrico<SPLIT>.}
-Predicted: {
-para a caracterizacao estrutural da area continental foram utilizadas imagens de satelite srtm 90m sendo identificados o lineamento tibagi descrito por hasui et al. (<SPLIT>2012<SPLIT>) e "<SPLIT>sinclinal<SPLIT>" de torres caracterizado por vitorello e padilha (<SPLIT>2000<SPLIT>)<SPLIT>, alem de mapa gravimetrico e aeromagnetometrico<SPLIT>.}
+o programa utilizado nesta etapa foi o ermapper para mosaicar as 9 imagens srtm 90m que completavam toda a porcao sul da regiao sudeste do brasil<SPLIT>, em seguida foram selecionadas apenas as imagens da area estudada<SPLIT>.}
 False positives: {
 90m
 } False negatives: {
@@ -2583,434 +2751,291 @@ m
 }
 
 Expected: {
-atraves de dados do perfil composto foi obtida a espessura da lamina d'agua de 1755<SPLIT>m<SPLIT>, a velocidade adotada para esta lamina foi 1500 m/s<SPLIT>, apos a substituicao destes dados na formula acima<SPLIT>, foi obtido o tempo simples que em seguida foi convertido para tempo duplo em milissegundos<SPLIT>.}
+para uma particula de forma cubica<SPLIT>, de densidade d e lado l<SPLIT>, a area especifica ae e dada pela relacao<SPLIT>: ae<SPLIT>= 6/<SPLIT>dl<SPLIT>.}
 Predicted: {
-atraves de dados do perfil composto foi obtida a espessura da lamina d'agua de 1755<SPLIT>m<SPLIT>, a velocidade adotada para esta lamina foi 1500 m/<SPLIT>s<SPLIT>, apos a substituicao destes dados na formula acima<SPLIT>, foi obtido o tempo simples que em seguida foi convertido para tempo duplo em milissegundos<SPLIT>.}
+para uma particula de forma cubica<SPLIT>, de densidade d e lado l<SPLIT>, a area especifica ae e dada pela relacao<SPLIT>: ae= 6/dl<SPLIT>.}
 False positives: {
-m/
-s
+ae=
+6/dl
 } False negatives: {
-m/s
+ae
+=
+6/
+dl
 }
 
 Expected: {
-o equipamento indicado para a realizacao deste ensaio e um potenciometro com eletrodos de referencia<SPLIT>, de vidro<SPLIT>, do tipo platina<SPLIT>/<SPLIT>calomelano<SPLIT>/<SPLIT>solucao aquosa saturada de kcl<SPLIT>, possibilitando leitura de ph de 1 a 14<SPLIT>.}
+a amostra (<SPLIT>0,2000 g<SPLIT>) foi aberta com agua regia (<SPLIT>mistura de acidos nitrico e cloridrico ambos concentrados a razao de 1:3<SPLIT>)<SPLIT>, a solucao resultante foi quantitativamente transferida para um balao volumetrico de 0,50 l<SPLIT>.}
 Predicted: {
-o equipamento indicado para a realizacao deste ensaio e um potenciometro com eletrodos de referencia<SPLIT>, de vidro<SPLIT>, do tipo platina/calomelano/<SPLIT>solucao aquosa saturada de kcl<SPLIT>, possibilitando leitura de ph de 1 a 14<SPLIT>.}
+a amostra (<SPLIT>0,2000 g<SPLIT>) foi aberta com agua regia (<SPLIT>mistura de acidos nitrico e cloridrico ambos concentrados a razao de 1:3<SPLIT>)<SPLIT>, a solucao resultante foi quantitativamente transferida para um balao volumetrico de 0,50 l.}
 False positives: {
-platina/calomelano/
+l.
 } False negatives: {
-platina
-/
-calomelano
-/
-}
-
-Expected: {
-ii.4.2<SPLIT>-<SPLIT>classificacao e propriedades das argilas}
-Predicted: {
-ii.4.2<SPLIT>-classificacao e propriedades das argilas}
-False positives: {
--classificacao
-} False negatives: {
--
-classificacao
-}
-
-Expected: {
-org/wiki<SPLIT>/<SPLIT>caulinita}
-Predicted: {
-org/<SPLIT>wiki/caulinita}
-False positives: {
-org/
-wiki/caulinita
-} False negatives: {
-org/wiki
-/
-caulinita
-}
-
-Expected: {
-uma massa de 50 gramas de argila foi colocada em uma placa de petri e colocada no forno a 80oc<SPLIT>, onde permaneceu durante 16<SPLIT>h<SPLIT>.}
-Predicted: {
-uma massa de 50 gramas de argila foi colocada em uma placa de petri e colocada no forno a 80oc<SPLIT>, onde permaneceu durante 16h<SPLIT>.}
-False positives: {
-16h
-} False negatives: {
-16
-h
-}
-
-Expected: {
-o balao foi aferido<SPLIT>, obtendo-se assim uma solucao diluida 10<SPLIT>x<SPLIT>.}
-Predicted: {
-o balao foi aferido<SPLIT>, obtendo-se assim uma solucao diluida 10x<SPLIT>.}
-False positives: {
-10x
-} False negatives: {
-10
-x
-}
-
-Expected: {
-possui tambem alta concentracao de ferro ( fe2o3 , 11,6% p/p ) , o que sugere a substituicao isomorfica do aluminio octaedrico por esse ions. .}
-Predicted: {
-possui tambem alta concentracao de ferro ( fe2o3 , 11,6<SPLIT>% p/p ) , o que sugere a substituicao isomorfica do aluminio octaedrico por esse ions<SPLIT>. .}
-False positives: {
-11,6
-%
-ions
+l
 .
-} False negatives: {
-11,6%
-ions.
 }
 
 Expected: {
-possui tambem elevada concentracao de ferro (<SPLIT>fe2o3<SPLIT>, 11,4%<SPLIT>p/p<SPLIT>)<SPLIT>, o que sugere a substituicao isomorfica do aluminio octaedrico por esse ions<SPLIT>.}
+o carvao exerce duplo papel na fabricacao do aco<SPLIT>.}
 Predicted: {
-possui tambem elevada concentracao de ferro (<SPLIT>fe2o3<SPLIT>, 11,4<SPLIT>%p/p<SPLIT>)<SPLIT>, o que sugere a substituicao isomorfica do aluminio octaedrico por esse ions<SPLIT>.}
+o carvao exerce duplo papel na fabricacao do aco.}
 False positives: {
-11,4
-%p/p
+aco.
 } False negatives: {
-11,4%
-p/p
-}
-
-Expected: {
-a fm. tres barras<SPLIT>, porcao superior do grupo areado<SPLIT>, e a unidade mais recorrente no registro sedimentar da area de estudo<SPLIT>.}
-Predicted: {
-a fm<SPLIT>. tres barras<SPLIT>, porcao superior do grupo areado<SPLIT>, e a unidade mais recorrente no registro sedimentar da area de estudo<SPLIT>.}
-False positives: {
-fm
+aco
 .
-} False negatives: {
-fm.
 }
 
 Expected: {
-observa-se facies peliticas subordinadas relacionadas com a associacao de facies descrita acima (<SPLIT>st<SPLIT>, sr, sh e sd<SPLIT>)<SPLIT>.}
+fonte<SPLIT>: http:/<SPLIT>/www.civil<SPLIT>.}
 Predicted: {
-observa-se facies peliticas subordinadas relacionadas com a associacao de facies descrita acima (<SPLIT>st<SPLIT>, sr<SPLIT>, sh e sd<SPLIT>)<SPLIT>.}
+fonte<SPLIT>: http://www.civil<SPLIT>.}
 False positives: {
-sr
-,
-} False negatives: {
-sr,
-}
-
-Expected: {
-fonte<SPLIT>: http:/<SPLIT>/<SPLIT>www.<SPLIT>flickr<SPLIT>.}
-Predicted: {
-fonte<SPLIT>: http://www<SPLIT>.flickr<SPLIT>.}
-False positives: {
-http://www
-.flickr
+http://www.civil
 } False negatives: {
 http:/
-/
-www.
-flickr
+/www.civil
 }
 
 Expected: {
-o custo de instalacao de cada unidade de recompressao foi estimado em $15.000.000 (<SPLIT>ipcc, 2005<SPLIT>)<SPLIT>.}
+com<SPLIT>/<SPLIT>photo/31653943}
 Predicted: {
-o custo de instalacao de cada unidade de recompressao foi estimado em $15.000.000 (<SPLIT>ipcc<SPLIT>, 2005<SPLIT>)<SPLIT>.}
+com/photo/31653943}
 False positives: {
-ipcc
+com/photo/31653943
+} False negatives: {
+com
+/
+photo/31653943
+}
+
+Expected: {
+para o calculo do diametro do carboduto , foi utilizada a seguinte equacao ( iea , 2005 ) : onde :  d = diametro do carboduto em polegadas ( pol )  f = fluxo de massa que passa pelo carboduto ( kg/s )  v = velocidade do transporte ( m/s )  ρ = densidade do co2 ( kg/m3 )}
+Predicted: {
+para o calculo do diametro do carboduto , foi utilizada a seguinte equacao ( iea , 2005 ) : onde :  d = diametro do carboduto em polegadas ( pol )  f = fluxo de massa que passa pelo carboduto ( kg<SPLIT>/s )  v = velocidade do transporte ( m/s )  ρ = densidade do co2 ( kg/m3 )}
+False positives: {
+kg
+/s
+} False negatives: {
+kg/s
+}
+
+Expected: {
+como mencionado anteriormente<SPLIT>, a capacidade de producao extra de petroleo<SPLIT>, por injecao de co2<SPLIT>, esta diretamente relacionada a capacidade de armazenamento de gas carbonico do reservatorio<SPLIT>, logo quanto maior for a capacidade de aporte de co2 maior sera a produ ao de oleo<SPLIT>.}
+Predicted: {
+como mencionado anteriormente<SPLIT>, a capacidade de producao extra de petroleo<SPLIT>, por injecao de co2<SPLIT>, esta diretamente relacionada a capacidade de armazenamento de gas carbonico do reservatorio<SPLIT>, logo quanto maior for a capacidade de aporte de co2 maior sera a produ a<SPLIT>o de oleo<SPLIT>.}
+False positives: {
+a
+o
+} False negatives: {
+ao
+}
+
+Expected: {
+a quantidade de oxigenio e dada pela equacao<SPLIT>: quantidade necessaria de oxigenio (<SPLIT>t<SPLIT>o0<SPLIT>,<SPLIT>) = emissoes de co<SPLIT>, (<SPLIT>tco,z<SPLIT>) x 32/44}
+Predicted: {
+a quantidade de oxigenio e dada pela equacao<SPLIT>: quantidade necessaria de oxigenio (<SPLIT>to0<SPLIT>,<SPLIT>) = emissoes de co<SPLIT>, (<SPLIT>tco<SPLIT>,<SPLIT>z<SPLIT>) x 32/44}
+False positives: {
+to0
+tco
 ,
+z
 } False negatives: {
-ipcc,
+t
+o0
+tco,z
 }
 
 Expected: {
-a equacao se encontra a seguir (<SPLIT>stevens<SPLIT>, 1999<SPLIT>)<SPLIT>: voil = ooip x (<SPLIT>(<SPLIT>api + 5)<SPLIT>/<SPLIT>100<SPLIT>)}
+as reducoes das emissoes serao consideravelmente menores do que na abordagem sem considerar as emissoes de eor. .}
 Predicted: {
-a equacao se encontra a seguir (<SPLIT>stevens<SPLIT>, 1999<SPLIT>)<SPLIT>: voil = ooip x (<SPLIT>(<SPLIT>api + 5<SPLIT>)<SPLIT>/<SPLIT>100<SPLIT>)}
+as reducoes das emissoes serao consideravelmente menores do que na abordagem sem considerar as emissoes de eor<SPLIT>. .}
 False positives: {
-5
-)
+eor
+.
 } False negatives: {
-5)
+eor.
 }
 
 Expected: {
-a porcentagem extra de oleo recuperavel em razao da injecao de co2 (<SPLIT>%<SPLIT>extra<SPLIT>) e um valor estimado baseado no grau api do petroleo presente no campo<SPLIT>.}
+nestas reservas foi encontrado petroleo de alta qualidade e valor no mercado<SPLIT>, de densidade 28,5° api<SPLIT>, baixa acidez e baixo teor de enxofre (<SPLIT>sites.petrobras.com.br<SPLIT>)<SPLIT>.}
 Predicted: {
-a porcentagem extra de oleo recuperavel em razao da injecao de co2 (<SPLIT>%extra<SPLIT>) e um valor estimado baseado no grau api do petroleo presente no campo<SPLIT>.}
+nestas reservas foi encontrado petroleo de alta qualidade e valor no mercado<SPLIT>, de densidade 28,5° api<SPLIT>, baixa acidez e baixo teor de enxofre (<SPLIT>sites.petrobras<SPLIT>.<SPLIT>com.br<SPLIT>)<SPLIT>.}
 False positives: {
-%extra
+sites.petrobras
+.
+com.br
 } False negatives: {
+sites.petrobras.com.br
+}
+
+Expected: {
+tal capa de gas tem uma razao de solubilidade do gas no oleo (<SPLIT>rs<SPLIT>) de 3.015<SPLIT>m3<SPLIT>/m<SPLIT>3<SPLIT>, onde a porcao gasosa apresenta 79<SPLIT>% de co2 e 21<SPLIT>% de gases hidrocarbonicos e a fracao liquida e composta por um condensado de 33 oapi<SPLIT>.}
+Predicted: {
+tal capa de gas tem uma razao de solubilidade do gas no oleo (<SPLIT>rs<SPLIT>) de 3.015m3/m3<SPLIT>, onde a porcao gasosa apresenta 79<SPLIT>% de co2 e 21<SPLIT>% de gases hidrocarbonicos e a fracao liquida e composta por um condensado de 33 oapi<SPLIT>.}
+False positives: {
+3.015m3/m3
+} False negatives: {
+3.015
+m3
+/m
+3
+}
+
+Expected: {
+a outra corrente proveniente da etapa de separacao onshore<SPLIT>, meg rico<SPLIT>, tem como destino a unidade de recuperacao de meg<SPLIT>, onde<SPLIT>, por processo convencional<SPLIT>, a agua e removida e uma corrente de meg concentrado (<SPLIT>89% molar<SPLIT>) e obtida<SPLIT>.}
+Predicted: {
+a outra corrente proveniente da etapa de separacao onshore<SPLIT>, meg rico<SPLIT>, tem como destino a unidade de recuperacao de meg<SPLIT>, onde<SPLIT>, por processo convencional<SPLIT>, a agua e removida e uma corrente de meg concentrado (<SPLIT>89<SPLIT>% molar<SPLIT>) e obtida<SPLIT>.}
+False positives: {
+89
 %
-extra
-}
-
-Expected: {
-os custos de instalacao e operacao (<SPLIT>anual<SPLIT>) de cada trecho serao<SPLIT>, respectivamente<SPLIT>, $1.200.000 e $150.000<SPLIT>.}
-Predicted: {
-os custos de instalacao e operacao (<SPLIT>anual<SPLIT>) de cada trecho serao<SPLIT>, respectivamente<SPLIT>, $<SPLIT>1.200.000 e $150.000<SPLIT>.}
-False positives: {
-$
-1.200.000
 } False negatives: {
-$1.200.000
+89%
 }
 
 Expected: {
-portanto<SPLIT>, o valor das reducoes efetivas do ccgs<SPLIT>, com a contabilizacao das emissoes da combustao do oleo produzido por eor<SPLIT>, sera<SPLIT>: er = 20.458.667 tco<SPLIT>, - 8.838.813 tco<SPLIT>, - 11.719.923 tco<SPLIT>, = -100.069 tco<SPLIT>,}
+apos o trocador de calor<SPLIT>, ainda e necessario um aquecedor para que a corrente alcance 110<SPLIT>°<SPLIT>c<SPLIT>.}
 Predicted: {
-portanto<SPLIT>, o valor das reducoes efetivas do ccgs<SPLIT>, com a contabilizacao das emissoes da combustao do oleo produzido por eor<SPLIT>, sera<SPLIT>: er = 20.458.667 tco<SPLIT>, - 8.838.813 tco<SPLIT>, - 11.719.923 tco<SPLIT>, = -<SPLIT>100.069 tco<SPLIT>,}
+apos o trocador de calor<SPLIT>, ainda e necessario um aquecedor para que a corrente alcance 110<SPLIT>°c<SPLIT>.}
 False positives: {
--
-100.069
-} False negatives: {
--100.069
-}
-
-Expected: {
-logo<SPLIT>, as receitas geradas pela venda de rce sem considerar o eor serao de<SPLIT>: venda de rces = 10.975.406 x $0,45 = $4.938.933}
-Predicted: {
-logo<SPLIT>, as receitas geradas pela venda de rce sem considerar o eor serao de<SPLIT>: venda de rces = 10.975.406 x $<SPLIT>0,45 = $<SPLIT>4.938.933}
-False positives: {
-$
-0,45
-$
-4.938.933
-} False negatives: {
-$0,45
-$4.938.933
-}
-
-Expected: {
-porem as unidades de exploracao<SPLIT>/<SPLIT>producao ainda eram muito simples<SPLIT>, sendo apenas prolongamentos dos sistemas empregados em terra<SPLIT>.}
-Predicted: {
-porem as unidades de exploracao/producao ainda eram muito simples<SPLIT>, sendo apenas prolongamentos dos sistemas empregados em terra<SPLIT>.}
-False positives: {
-exploracao/producao
-} False negatives: {
-exploracao
-/
-producao
-}
-
-Expected: {
-adotou-se uma temperatura de chegada no manifold de 40°c (<SPLIT>sant'anna<SPLIT>, 2005<SPLIT>)<SPLIT>.}
-Predicted: {
-adotou-se uma temperatura de chegada no manifold de 40<SPLIT>°c (<SPLIT>sant'anna<SPLIT>, 2005<SPLIT>)<SPLIT>.}
-False positives: {
-40
 °c
 } False negatives: {
-40°c
+°
+c
 }
 
 Expected: {
-no primeiro estudo realizado foram empregados 4 agentes tensoativos<SPLIT>, um deles lipofilico (<SPLIT>span 80<SPLIT>) e os demais hidrofilicos (<SPLIT>ultranex, ultrol<SPLIT>, tween 40<SPLIT>)<SPLIT>, em emulsoes com fracoes iguais de petroleo e agua<SPLIT>.}
+as macroemulsoes<SPLIT>, ou apenas emulsoes<SPLIT>, possuem o tamanho de gota normalmente acima de 1 μm<SPLIT>.}
 Predicted: {
-no primeiro estudo realizado foram empregados 4 agentes tensoativos<SPLIT>, um deles lipofilico (<SPLIT>span 80<SPLIT>) e os demais hidrofilicos (<SPLIT>ultranex<SPLIT>, ultrol<SPLIT>, tween 40<SPLIT>)<SPLIT>, em emulsoes com fracoes iguais de petroleo e agua<SPLIT>.}
+as macroemulsoes<SPLIT>, ou apenas emulsoes<SPLIT>, possuem o tamanho de gota normalmente acima de 1 μ<SPLIT>m<SPLIT>.}
 False positives: {
-ultranex
-,
+μ
+m
 } False negatives: {
-ultranex,
+μm
 }
 
 Expected: {
-um bocal de acrilico faz com que a agua entre pelas laterais do circuito de tubulacao atraves de um espaco de 1 mm entre a parede externa de vidro e o cone de pvc<SPLIT>.}
+na figura 7 sao mostrados os resultados para a viscosidade utilizando a quantidade minima de tensoativo para diferentes concentracoes volumetricas de oleo para o petroleo b<SPLIT>.}
 Predicted: {
-um bocal de acrilico faz com que a agua entre pelas laterais do circuito de tubulacao atraves de um espaco de 1 mm entre a parede externa de vidro e o cone de pvc.}
+na figura 7 sao mostrados os resultados para a viscosidade utilizando a quantidade minima de tensoativo para diferentes concentracoes volumetricas de oleo para o petroleo b.}
 False positives: {
-pvc.
+b.
 } False negatives: {
-pvc
+b
 .
 }
 
 Expected: {
-os valores estimados destes residuos produzidos no brasil<SPLIT>, so em 2011/12<SPLIT>, sao de 154 milhoes de toneladas de bagaco (<SPLIT>50<SPLIT>% umidade<SPLIT>) e 300 bilhoes de litros de vinhaca<SPLIT>.}
+resinas e asfaltenos sao moleculas grandes com alto peso molecular<SPLIT>, com alta relacao carbono<SPLIT>/<SPLIT>hidrogenio e presenca de heterocompostos<SPLIT>, como enxofre<SPLIT>, oxigenio e nitrogenio (<SPLIT>de 6,9 a 7,3<SPLIT>%<SPLIT>)<SPLIT>.}
 Predicted: {
-os valores estimados destes residuos produzidos no brasil<SPLIT>, so em 2011<SPLIT>/12<SPLIT>, sao de 154 milhoes de toneladas de bagaco (<SPLIT>50<SPLIT>% umidade<SPLIT>) e 300 bilhoes de litros de vinhaca<SPLIT>.}
+resinas e asfaltenos sao moleculas grandes com alto peso molecular<SPLIT>, com alta relacao carbono/hidrogenio e presenca de heterocompostos<SPLIT>, como enxofre<SPLIT>, oxigenio e nitrogenio (<SPLIT>de 6,9 a 7,3<SPLIT>%<SPLIT>)<SPLIT>.}
 False positives: {
-2011
-/12
+carbono/hidrogenio
 } False negatives: {
-2011/12
+carbono
+/
+hidrogenio
 }
 
 Expected: {
-uma opcao para o descarte deste material e usa-lo como materia prima para producao de biodiesel<SPLIT>.}
+resultados de medidas realizadas em solucao aquosa de metassilicato de sodio 1 % ( em massa ) mostram que a presenca de metassilicato na fase aquosa gera angulos de contato maiores que 120 ° , exceto para o aco inox , que mostra angulo em torno de 70 °. .}
 Predicted: {
-uma opcao para o descarte deste material e usa<SPLIT>-lo como materia prima para producao de biodiesel<SPLIT>.}
+resultados de medidas realizadas em solucao aquosa de metassilicato de sodio 1 % ( em massa ) mostram que a presenca de metassilicato na fase aquosa gera angulos de contato maiores que 120 ° , exceto para o aco inox , que mostra angulo em torno de 70 °<SPLIT>. .}
 False positives: {
-usa
--lo
+°
+.
 } False negatives: {
-usa-lo
+°.
 }
 
 Expected: {
-figura 21 - (<SPLIT>a<SPLIT>) efeito da razao de metanol<SPLIT>:<SPLIT>oleo residual por rmn e (<SPLIT>b) efeito da razao de metanol<SPLIT>:<SPLIT>oleo comercial<SPLIT>.}
+utilizou-se um rotametro com faixa de operacao de 0,04 a 5 gpm e outro com faixa de operacao de 0,04 a 10 gpm. .}
 Predicted: {
-figura 21 - (<SPLIT>a<SPLIT>) efeito da razao de metanol<SPLIT>:oleo residual por rmn e (<SPLIT>b<SPLIT>) efeito da razao de metanol<SPLIT>:oleo comercial<SPLIT>.}
+utilizou-se um rotametro com faixa de operacao de 0,04 a 5 gpm e outro com faixa de operacao de 0,04 a 10 gpm<SPLIT>. .}
 False positives: {
-:oleo
-b
-)
-:oleo
+gpm
+.
 } False negatives: {
-:
-oleo
-b)
-:
-oleo
+gpm.
 }
 
 Expected: {
-para os oleos residuais em 2 horas ja se observava conversao acima de 90%<SPLIT>, para 5<SPLIT>, 7 e 10 % de catalisador<SPLIT>, para o oleo novo estes valores foram bem inferiores<SPLIT>, nao chegando a 40% de esteres utilizando 10% de catalisador e menos de 8% para 5 e 7 % de catalisador<SPLIT>.}
+conforme se pode observar<SPLIT>, o angulo medido na agua foi de 32<SPLIT>° e a parede da tubulacao apresenta comportamento hidrofilico<SPLIT>.}
 Predicted: {
-para os oleos residuais em 2 horas ja se observava conversao acima de 90<SPLIT>%<SPLIT>, para 5<SPLIT>, 7 e 10 % de catalisador<SPLIT>, para o oleo novo estes valores foram bem inferiores<SPLIT>, nao chegando a 40<SPLIT>% de esteres utilizando 10<SPLIT>% de catalisador e menos de 8<SPLIT>% para 5 e 7 % de catalisador<SPLIT>.}
+conforme se pode observar<SPLIT>, o angulo medido na agua foi de 32° e a parede da tubulacao apresenta comportamento hidrofilico<SPLIT>.}
 False positives: {
-90
-%
-40
-%
-10
-%
-8
-%
+32°
 } False negatives: {
-90%
-40%
-10%
-8%
+32
+°
 }
 
 Expected: {
-ja para o oleo comercial o tempo de reacao necessario foi maior<SPLIT>, cerca de 8 horas<SPLIT>, mas tambem houve uma conversao acima do exigido pelo regulamento<SPLIT>, cerca de 97<SPLIT>%<SPLIT>, ambas reacoes ocorreram com a utilizacao de 5<SPLIT>% de catalisador<SPLIT>, calcinado por 30 min e a menor razao de alcool:<SPLIT>oleo 6<SPLIT>:1<SPLIT>.}
+o resultados do tratamento esta no apendice c<SPLIT>.}
 Predicted: {
-ja para o oleo comercial o tempo de reacao necessario foi maior<SPLIT>, cerca de 8 horas<SPLIT>, mas tambem houve uma conversao acima do exigido pelo regulamento<SPLIT>, cerca de 97<SPLIT>%<SPLIT>, ambas reacoes ocorreram com a utilizacao de 5<SPLIT>% de catalisador<SPLIT>, calcinado por 30 min e a menor razao de alcool<SPLIT>:oleo 6:1<SPLIT>.}
+o resultados do tratamento esta no apendice c.}
 False positives: {
-alcool
-:oleo
-6:1
+c.
 } False negatives: {
+c
+.
+}
+
+Expected: {
+[3<SPLIT>] grotta<SPLIT>, d. c. c. desempenho de um trator agricola em operacao de gradagem utilizando biodiesel etilico filtrado de oleo residual como combustivel<SPLIT>.}
+Predicted: {
+[<SPLIT>3<SPLIT>] grotta<SPLIT>, d. c. c. desempenho de um trator agricola em operacao de gradagem utilizando biodiesel etilico filtrado de oleo residual como combustivel<SPLIT>.}
+False positives: {
+[
+3
+} False negatives: {
+[3
+}
+
+Expected: {
+neste estudo<SPLIT>, foram testadas as razoes molares alcool<SPLIT>:oleo de 6:1<SPLIT>, 9:1<SPLIT>, 12:1<SPLIT>, 15:1 e 18:1}
+Predicted: {
+neste estudo<SPLIT>, foram testadas as razoes molares alcool:<SPLIT>oleo de 6:1<SPLIT>, 9:1<SPLIT>, 12:1<SPLIT>, 15:1 e 18:1}
+False positives: {
 alcool:
 oleo
-6
-:1
-}
-
-Expected: {
-de acordo com ahmadum et al.(2009<SPLIT>)<SPLIT>, rochas que existem naturalmente em formacoes subterraneas sao geralmente permeadas por fluidos subterraneos como oleo<SPLIT>, gas e agua salina<SPLIT>.}
-Predicted: {
-de acordo com ahmadum et al.(<SPLIT>2009<SPLIT>)<SPLIT>, rochas que existem naturalmente em formacoes subterraneas sao geralmente permeadas por fluidos subterraneos como oleo<SPLIT>, gas e agua salina<SPLIT>.}
-False positives: {
-al.(
-2009
 } False negatives: {
-al.(2009
+alcool
+:oleo
 }
 
 Expected: {
-o procedimento adotado para a troca ionica foi o mesmo utilizado em outras sinteses realizadas no laboratorio<SPLIT>: temperatura ambiente e relacao volume de solucao de kcl e massa de zeolita de 700 ml para 100 g<SPLIT>.}
+para esse trabalho seu preco foi considerado r$1,50/kg (<SPLIT>aboissa<SPLIT>, 2014<SPLIT>)<SPLIT>.}
 Predicted: {
-o procedimento adotado para a troca ionica foi o mesmo utilizado em outras sinteses realizadas no laboratorio<SPLIT>: temperatura ambiente e relacao volume de solucao de kcl e massa de zeolita de 700 ml para 100 g.}
+para esse trabalho seu preco foi considerado r$1,50<SPLIT>/<SPLIT>kg (<SPLIT>aboissa<SPLIT>, 2014<SPLIT>)<SPLIT>.}
 False positives: {
-g.
+r$1,50
+/
+kg
 } False negatives: {
-g
-.
+r$1,50/kg
 }
 
 Expected: {
-a presenca dos grupos silanois deve estar influenciando neste resultado uma vez que seu deslocamento quimico e proximo do si(1al<SPLIT>)<SPLIT>, e a intensa banda relativa a estes grupos que aparece no espectro iv deste material indica que e uma especie que esta presente em grande quantidade<SPLIT>.}
+o reator era aquecido por um forno ligado a um controlador<SPLIT>/<SPLIT>programador de temperatura<SPLIT>.}
 Predicted: {
-a presenca dos grupos silanois deve estar influenciando neste resultado uma vez que seu deslocamento quimico e proximo do si(<SPLIT>1al<SPLIT>)<SPLIT>, e a intensa banda relativa a estes grupos que aparece no espectro iv deste material indica que e uma especie que esta presente em grande quantidade<SPLIT>.}
+o reator era aquecido por um forno ligado a um controlador/programador de temperatura<SPLIT>.}
 False positives: {
-si(
-1al
+controlador/programador
 } False negatives: {
-si(1al
+controlador
+/
+programador
 }
 
 Expected: {
-4.7<SPLIT>.}
+os perfis ee'<SPLIT>, ff<SPLIT>' e gg<SPLIT>' (<SPLIT>mapas dos anexos 1 e 2 ) utilizados para analise quantitativa (<SPLIT>capitulo 6<SPLIT>) apresentam anomalias tipicas de diques<SPLIT>.}
 Predicted: {
-4.7.}
-False positives: {
-4.7.
-} False negatives: {
-4.7
-.
-}
-
-Expected: {
-o metodo conhecido como deconvolucao de euler foi desenvolvido primordialmente por thompson(1982<SPLIT>)<SPLIT>, tendo sido largamente utilizado<SPLIT>, devido a sua simplicidade e praticidade<SPLIT>, para obter estimativas rapidas de profundidades das fontes magneticas independentemente do conhecimento previo de suas magnetizacoes<SPLIT>.}
-Predicted: {
-o metodo conhecido como deconvolucao de euler foi desenvolvido primordialmente por thompson(<SPLIT>1982<SPLIT>)<SPLIT>, tendo sido largamente utilizado<SPLIT>, devido a sua simplicidade e praticidade<SPLIT>, para obter estimativas rapidas de profundidades das fontes magneticas independentemente do conhecimento previo de suas magnetizacoes<SPLIT>.}
-False positives: {
-thompson(
-1982
-} False negatives: {
-thompson(1982
-}
-
-Expected: {
-z0 / η σ(z0<SPLIT>) = max (<SPLIT>8<SPLIT>) onde σ(<SPLIT>z0<SPLIT>) e a variancia da estimativa de z0 obtida a partir do problema de minimos quadrados<SPLIT>.}
-Predicted: {
-z0 / η σ(z0<SPLIT>) = max (<SPLIT>8<SPLIT>) onde σ(z0<SPLIT>) e a variancia da estimativa de z0 obtida a partir do problema de minimos quadrados<SPLIT>.}
-False positives: {
-σ(z0
-} False negatives: {
-σ(
-z0
-}
-
-Expected: {
-a figura 6.4<SPLIT>. mostra o perfil cc<SPLIT>'<SPLIT>, mais a sw<SPLIT>, onde pode-se observar uma regiao rasa<SPLIT>, central<SPLIT>, apresentando contraste negativo de susceptibilidade magnetica (<SPLIT>faixa esbranquicada<SPLIT>) com cerca de 4.000 metros de largura<SPLIT>.}
-Predicted: {
-a figura 6.4<SPLIT>. mostra o perfil cc'<SPLIT>, mais a sw<SPLIT>, onde pode-se observar uma regiao rasa<SPLIT>, central<SPLIT>, apresentando contraste negativo de susceptibilidade magnetica (<SPLIT>faixa esbranquicada<SPLIT>) com cerca de 4.000 metros de largura<SPLIT>.}
-False positives: {
-cc'
-} False negatives: {
-cc
-'
-}
-
-Expected: {
-os perfis ee'<SPLIT>, ff<SPLIT>' e gg' (<SPLIT>plotados no mapa de interpretacao e interpretados no capitulo 6<SPLIT>) que seccionam alguns destes importantes alinhamentos apresentam anomalias tipicas de diques subverticais<SPLIT>.}
-Predicted: {
-os perfis ee<SPLIT>'<SPLIT>, ff<SPLIT>' e gg<SPLIT>' (<SPLIT>plotados no mapa de interpretacao e interpretados no capitulo 6<SPLIT>) que seccionam alguns destes importantes alinhamentos apresentam anomalias tipicas de diques subverticais<SPLIT>.}
+os perfis ee<SPLIT>'<SPLIT>, ff<SPLIT>' e gg<SPLIT>' (<SPLIT>mapas dos anexos 1 e 2 ) utilizados para analise quantitativa (<SPLIT>capitulo 6<SPLIT>) apresentam anomalias tipicas de diques<SPLIT>.}
 False positives: {
 ee
 '
-gg
-'
 } False negatives: {
 ee'
-gg'
-}
-
-Expected: {
-os perfis aa' e bb'<SPLIT>(<SPLIT>interpretados no item 6.1.1 e plotados no mapa de interpretacao do anexo 1<SPLIT>) correspondem a secoes transversais a<SPLIT>os alinhamentos magneticos condicionantes dos flancos sul e norte do referido graben<SPLIT>.}
-Predicted: {
-os perfis aa<SPLIT>' e bb'<SPLIT>(<SPLIT>interpretados no item 6.1.1 e plotados no mapa de interpretacao do anexo 1<SPLIT>) correspondem a secoes transversais a<SPLIT>os alinhamentos magneticos condicionantes dos flancos sul e norte do referido graben<SPLIT>.}
-False positives: {
-aa
-'
-} False negatives: {
-aa'
-}
-
-Expected: {
-inclinacao do campo = 36os e declinacao = 30ow. .}
-Predicted: {
-inclinacao do campo = 36os e declinacao = 30ow<SPLIT>. .}
-False positives: {
-30ow
-.
-} False negatives: {
-30ow.
 }

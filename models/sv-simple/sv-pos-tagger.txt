@@ -1,5 +1,5 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.9364883786054327
+Evaluation-Score=0.9364323718846261
 Training-Sample-Size=10143
 Evaluation-Sample-Size=1126
 Training-Algorithm=MAXENT
@@ -10,9 +10,9 @@ Component-Name=POSTaggerME
 Language=sv
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1698031209948
+Timestamp=1700622561426
 TrainerType=Event
-Training-Eventhash=c3c93f2a4d3ac3dfd17b5b35731fea2c
+Training-Eventhash=51f1aca401f740164c521bb93aa30d33
 factory=opennlp.tools.postag.POSTaggerFactory
 
 === MISCLASSIFIED DETAILS ===
@@ -962,12 +962,12 @@ januari: PROPN | NOUN
 Expected: {
 å_INTJ ,_PUNCT det_PRON är_AUX ingen_DET fara_NOUN ,_PUNCT än_ADV så_ADV länge_ADV är_AUX det_PRON inte_PART new_PROPN york_PROPN eller_CCONJ london_PROPN ._PUNCT}
 Predicted: {
-å_INTJ ,_PUNCT det_PRON är_AUX ingen_DET fara_NOUN ,_PUNCT än_SCONJ så_ADV länge_ADV är_AUX det_PRON inte_PART new_VERB york_PROPN eller_CCONJ london_PROPN ._PUNCT}
+å_INTJ ,_PUNCT det_PRON är_AUX ingen_DET fara_NOUN ,_PUNCT än_SCONJ så_ADV länge_ADV är_AUX det_PRON inte_PART new_ADJ york_PROPN eller_CCONJ london_PROPN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 än: ADV | SCONJ
-new: PROPN | VERB
+new: PROPN | ADJ
 }
 
 Expected: {
@@ -2963,11 +2963,12 @@ en: PRON | DET
 Expected: {
 i_ADP likhet_NOUN med_ADP farmor_NOUN hade_VERB han_PRON anlag_NOUN för_ADP svårmod_NOUN ,_PUNCT men_CCONJ hon_PRON hade_AUX behållit_VERB sin_PRON gud_PROPN och_CCONJ därför_ADV också_ADV sin_PRON tro_NOUN på_ADP nåden_NOUN ._PUNCT}
 Predicted: {
-i_ADP likhet_NOUN med_ADP farmor_NOUN hade_AUX han_PRON anlag_NOUN för_ADP svårmod_NOUN ,_PUNCT men_CCONJ hon_PRON hade_AUX behållit_VERB sin_PRON gud_NOUN och_CCONJ därför_ADV också_ADV sin_PRON tro_VERB på_ADP nåden_NOUN ._PUNCT}
+i_ADP likhet_NOUN med_ADP farmor_NOUN hade_AUX han_PRON anlag_NOUN för_ADP svårmod_ADJ ,_PUNCT men_CCONJ hon_PRON hade_AUX behållit_VERB sin_PRON gud_NOUN och_CCONJ därför_ADV också_ADV sin_PRON tro_VERB på_ADP nåden_NOUN ._PUNCT}
 Errors: {
 Tok: Ref | Pred
 ---------------
 hade: VERB | AUX
+svårmod: NOUN | ADJ
 gud: PROPN | NOUN
 tro: NOUN | VERB
 }

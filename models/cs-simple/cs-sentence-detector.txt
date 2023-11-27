@@ -1,7 +1,7 @@
 === EVALUATION INFO ===
-Evaluation-Score=0.8515105178327893
-Training-Sample-Size=11466
-Evaluation-Sample-Size=1274
+Evaluation-Score=0.851995382585752
+Training-Sample-Size=11493
+Evaluation-Sample-Size=1277
 Training-Algorithm=MAXENT_QN
 
 === MODEL PROPERTIES ===
@@ -9,9 +9,9 @@ Component-Name=SentenceDetectorME
 Language=cs
 Manifest-Version=1.0
 OpenNLP-Version=1.9.4
-Timestamp=1697765033443
+Timestamp=1700444066433
 TrainerType=Event
-Training-Eventhash=13055e73acc5e9f0f130f9fbc4109334
+Training-Eventhash=2056b48a873b03fdf650abf98e1f6450
 eosCharacters=.?!
 factory=opennlp.tools.sentdetect.SentenceDetectorFactory
 useTokenEnd=true
@@ -148,36 +148,6 @@ budíčééék.
 }
 
 Expected: {
-kdo byl v první zemi socialismu, kdo ji a její občany nepoznal z rychlíku, ten ví, jaký upřímný a internacionální vztah k naší zemi mají sovětští lidé.
-řekněte, soudruhu, co všechno je ještě třeba konkrétně dělat, aby naše vzájemné přátelství bylo silnější, bohatší, užitečnější pro obě strany, pro všechny občany v našich zemích?
-co myslíte, že bych měl udělat konkrétně já, naše komsomolská organizace, aby přátelství mezi našimi zeměmi, našimi lidmi nebylo jenom věcí citu, ale hlavně věcí rozumu, skutků.
-tahle slova arama kublukjana, předsedy komsomolské organizace v jerevanském strojírenském závodě vítězný říjen, bych rád dal jako předznamenání ke smlouvě o přátelství, spolupráci a vzájemné pomoci mezi čssr a sssr, jejíž třetí výročí si # května připomínáme.
-luboš právě opravoval v dílně postaršího opla, když za ním kluci přišli.
-lubo, mistr má narozeniny.
-kolik dáš?
-a dáš to v dolarech.
-nemám na jalové vtípky čas.
-kolik se tak dává.
-}
-Predicted: {
-kdo byl v první zemi socialismu, kdo ji a její občany nepoznal z rychlíku, ten ví, jaký upřímný a internacionální vztah k naší zemi mají sovětští lidé.
-řekněte, soudruhu, co všechno je ještě třeba konkrétně dělat, aby naše vzájemné přátelství bylo silnější, bohatší, užitečnější pro obě strany, pro všechny občany v našich zemích?
-co myslíte, že bych měl udělat konkrétně já, naše komsomolská organizace, aby přátelství mezi našimi zeměmi, našimi lidmi nebylo jenom věcí citu, ale hlavně věcí rozumu, skutků.
-tahle slova arama kublukjana, předsedy komsomolské organizace v jerevanském strojírenském závodě vítězný říjen, bych rád dal jako předznamenání ke smlouvě o přátelství, spolupráci a vzájemné pomoci mezi čssr a sssr, jejíž třetí výročí si # května připomínáme.
-luboš právě opravoval v dílně postaršího opla, když za ním kluci přišli.
-lubo, mistr má narozeniny.
-kolik dáš? a dáš to v dolarech.
-nemám na jalové vtípky čas.
-kolik se tak dává.
-}
-False positives: {
-kolik dáš? a dáš to v dolarech.
-} False negatives: {
-kolik dáš?
-a dáš to v dolarech.
-}
-
-Expected: {
 je pravděpodobné, že příkop vymezující a opevňující kruhovou či mírně oválnou *
 etnografie dělnictva, úef čsav se počátkem roku # ujalo plnění celoústavního závazku vypracovat etnografické dílo o kultuře a způsobu života pražského dělnictva.
 pro tento úkol bylo třeba v prvé řadě vyjasnit si základní teoretické přístupy k danému tématu a specifikovat ekonomické, historické a demografické podmínky, za nichž se v historickém procesu vytvářely specifické rysy v kultuře a způsobu života pražského proletariátu.
@@ -961,6 +931,38 @@ nebývalo to tak často: měla dost obtížné zaměstnání, nevrlé prostřed�
 nevynikala ani zvlášť dobrými nervy ani sebejistotou a propadala snadno úzkostem i strachu.
 usmál se na ni a řekl:
 "mám dnes štěstí.
+}
+
+Expected: {
+ano, moje první cesta po příjezdu na tohle místo vždycky mířila k ní.
+jenže dnes není vždycky.
+dnes je den výjimečný.
+poslední v mém životě.
+"jak se má valentýna?" střelila od boku.
+otálela jsem s odpovědí.
+ani nevím, jestli je renátě známo, že se vdala a porodila dítě.
+měla jako každé jiné dítě zakázáno do kaluží šlapat, a ona to tak ráda dělala, i pod pohrůžkou pohlavku.
+jindy bych jí nepochybně vynadala nebo ji plácla po zadečku, ale řekla jsem si, že není co zkazit.
+valentýna mi podala ruku a zvolala:
+}
+Predicted: {
+ano, moje první cesta po příjezdu na tohle místo vždycky mířila k ní.
+jenže dnes není vždycky.
+dnes je den výjimečný.
+poslední v mém životě.
+"jak se má valentýna?"
+střelila od boku.
+otálela jsem s odpovědí.
+ani nevím, jestli je renátě známo, že se vdala a porodila dítě.
+měla jako každé jiné dítě zakázáno do kaluží šlapat, a ona to tak ráda dělala, i pod pohrůžkou pohlavku.
+jindy bych jí nepochybně vynadala nebo ji plácla po zadečku, ale řekla jsem si, že není co zkazit.
+valentýna mi podala ruku a zvolala:
+}
+False positives: {
+"jak se má valentýna?"
+střelila od boku.
+} False negatives: {
+"jak se má valentýna?" střelila od boku.
 }
 
 Expected: {
@@ -2923,23 +2925,15 @@ Predicted: {
 * v brně povoluje stánkový prodej odbor služeb magistrátního úřadu brno - střed.
 jako tržiště je vyhražena část zelného trhu, informace: (05) 421341 11, klapka 479, dr.kaláb.
 se žádostmi o výjimku je nutné se obrátit na radu města.
-* v ostravě je stánkový prodej soustředěný na moravské náměstí, majitelem tržnice jsou technické služby města ostrava, tel.:
-(069) 611 2526.
-informace o výjimkách ze zákazu podá odbor městského hospodářství, tel.:
-(069) 628 2170, paní jaroslava borečková.
+* v ostravě je stánkový prodej soustředěný na moravské náměstí, majitelem tržnice jsou technické služby města ostrava, tel.: (069) 611 2526.
+informace o výjimkách ze zákazu podá odbor městského hospodářství, tel.: (069) 628 2170, paní jaroslava borečková.
 jan vávra kam míří telekomunikace teprve po uvolnění embarga na dovoz špičkové technologie si uvědomujeme míru našeho zaostávání.
 v plné míře se to týká telekomunikačních zařízení.
 naprostá většina potenciálních uživatelů dokonce ani netuší, jaké množství velmi užitečných funkcí dnes tato zařízení v sobě integrují.
 }
 False positives: {
-* v ostravě je stánkový prodej soustředěný na moravské náměstí, majitelem tržnice jsou technické služby města ostrava, tel.:
-(069) 611 2526.
-informace o výjimkách ze zákazu podá odbor městského hospodářství, tel.:
-(069) 628 2170, paní jaroslava borečková.
 jan vávra kam míří telekomunikace teprve po uvolnění embarga na dovoz špičkové technologie si uvědomujeme míru našeho zaostávání.
 } False negatives: {
-* v ostravě je stánkový prodej soustředěný na moravské náměstí, majitelem tržnice jsou technické služby města ostrava, tel.: (069) 611 2526.
-informace o výjimkách ze zákazu podá odbor městského hospodářství, tel.: (069) 628 2170, paní jaroslava borečková.
 jan vávra
 kam míří telekomunikace
 teprve po uvolnění embarga na dovoz špičkové technologie si uvědomujeme míru našeho zaostávání.
@@ -4118,15 +4112,17 @@ následující graf ukazuje možné varianty využití nemovitosti pana kouby, k
 nenechat náhodu náhodě při zvažování možnosti prodeje má mnoho lidí nereálnou představu horentních částek za prodej nemovitosti.
 s výjimkou superatraktivních realit v zajímavých lokalitách to však jsou jen sny.
 objekt našeho čtenáře ani parametry ani polohou příliš optimismu při stanovení prodejní ceny nevyvolává.
-podle informací o nemovitosti, jak nám je sdělil náš čtenář, jedna pražská (první vinohradská realitní kancelář) a dvě jihlavské realitní agentury (real, janeček a vetchý) stanovily rozpětí pro prodejní cenu takto: 400-800 tis., 300-600 tis., maximálně 800 tis.
-pro naše další úvahy budeme tedy 500 tis. kč považovat za cenu, za niž by měl pan kouba naději nemovitost prodat.
+podle informací o nemovitosti, jak nám je sdělil náš čtenář, jedna pražská (první vinohradská realitní kancelář) a dvě jihlavské realitní agentury (real, janeček a vetchý) stanovily rozpětí pro prodejní cenu takto: 400-800 tis., 300-600 tis., maximálně 800 tis. pro naše další úvahy budeme tedy 500 tis. kč považovat za cenu, za niž by měl pan kouba naději nemovitost prodat.
 zde však, možná více než jinde, hraje roli náhoda, zda se najde vhodný kupec.
 }
 False positives: {
 nenechat náhodu náhodě při zvažování možnosti prodeje má mnoho lidí nereálnou představu horentních částek za prodej nemovitosti.
+podle informací o nemovitosti, jak nám je sdělil náš čtenář, jedna pražská (první vinohradská realitní kancelář) a dvě jihlavské realitní agentury (real, janeček a vetchý) stanovily rozpětí pro prodejní cenu takto: 400-800 tis., 300-600 tis., maximálně 800 tis. pro naše další úvahy budeme tedy 500 tis. kč považovat za cenu, za niž by měl pan kouba naději nemovitost prodat.
 } False negatives: {
 nenechat náhodu náhodě
 při zvažování možnosti prodeje má mnoho lidí nereálnou představu horentních částek za prodej nemovitosti.
+podle informací o nemovitosti, jak nám je sdělil náš čtenář, jedna pražská (první vinohradská realitní kancelář) a dvě jihlavské realitní agentury (real, janeček a vetchý) stanovily rozpětí pro prodejní cenu takto: 400-800 tis., 300-600 tis., maximálně 800 tis.
+pro naše další úvahy budeme tedy 500 tis. kč považovat za cenu, za niž by měl pan kouba naději nemovitost prodat.
 }
 
 Expected: {
@@ -7348,15 +7344,17 @@ důkaz.
 buďte p, a, b různé body takové, že úsečky pa, pb jsou stejně dlouhé a úhel apb má velikost 2 (viz obr. 22).
 buď a souběžka přímky pb ve směru od bodu p k bodu b vedená bodem a.
 buď přímka b souměrná s přímkou a podle osy q úhlu apb.
-zřejmě b je souběžka přímky pa ve směru bodu p k bodu a.
-buď c přímka, která prochází bodem a a půlí ten úhel přímek pa, a, v němž neleží přímka ab.
+zřejmě b je souběžka přímky pa ve směru bodu p k bodu a. buď c přímka, která prochází bodem a a půlí ten úhel přímek pa, a, v němž neleží přímka ab.
 buď d přímka souměrná k přímce c podle osy q.
 zřejmě přímka d půlí odpovídající úhel přímek pb, b. přímky pb, a svírají na té straně přímky pa, na níž leží bod b, s přímkou pa vnitřní úhly, jejichž součet je menší než dva úhly pravé.
 odtud snadno nahlédneme, že přímky c,d svírají na té straně přímky ab, na níž neleží bod p, s přímkou ab vnitřní úhly, jejichž součet je menší než dva pravé úhly.
 }
 False positives: {
+zřejmě b je souběžka přímky pa ve směru bodu p k bodu a. buď c přímka, která prochází bodem a a půlí ten úhel přímek pa, a, v němž neleží přímka ab.
 zřejmě přímka d půlí odpovídající úhel přímek pb, b. přímky pb, a svírají na té straně přímky pa, na níž leží bod b, s přímkou pa vnitřní úhly, jejichž součet je menší než dva úhly pravé.
 } False negatives: {
+zřejmě b je souběžka přímky pa ve směru bodu p k bodu a.
+buď c přímka, která prochází bodem a a půlí ten úhel přímek pa, a, v němž neleží přímka ab.
 zřejmě přímka d půlí odpovídající úhel přímek pb, b.
 přímky pb, a svírají na té straně přímky pa, na níž leží bod b, s přímkou pa vnitřní úhly, jejichž součet je menší než dva úhly pravé.
 }
@@ -7446,13 +7444,15 @@ původně se z prahy do londýna létalo pouze pětkrát týdně, od roku 1989 s
 loni ba přepravila oběma směry 125000 cestujících.
 počet pracovníků ba v čr se proto musel zvýšit na 18. od poloviny loňského roku rozšířila ba služby z prahy prostřednictvím partnerské společnosti deutsche ba o lety do stuttgartu.
 kontakt: british airways, staroměstské nám.
-10/608, 110 00 praha 1, tel.: (02) 231 88 89, fax: (02) 232 96 15. šance pro talenty centrum pro demokracii a svobodné podnikání připravilo soutěžní akci kariéry, jejíž podstatou je podpora talentovaných dětí.
+10/608, 110 00 praha 1, tel.: (02) 231 88 89, fax: (02) 232 96 15.
+šance pro talenty centrum pro demokracii a svobodné podnikání připravilo soutěžní akci kariéry, jejíž podstatou je podpora talentovaných dětí.
 těm bude umožněna krátkodobá stáž v zahraničí nebo studium v čr.
 }
 False positives: {
 počet pracovníků ba v čr se proto musel zvýšit na 18. od poloviny loňského roku rozšířila ba služby z prahy prostřednictvím partnerské společnosti deutsche ba o lety do stuttgartu.
 kontakt: british airways, staroměstské nám.
-10/608, 110 00 praha 1, tel.: (02) 231 88 89, fax: (02) 232 96 15. šance pro talenty centrum pro demokracii a svobodné podnikání připravilo soutěžní akci kariéry, jejíž podstatou je podpora talentovaných dětí.
+10/608, 110 00 praha 1, tel.: (02) 231 88 89, fax: (02) 232 96 15.
+šance pro talenty centrum pro demokracii a svobodné podnikání připravilo soutěžní akci kariéry, jejíž podstatou je podpora talentovaných dětí.
 } False negatives: {
 počet pracovníků ba v čr se proto musel zvýšit na 18.
 od poloviny loňského roku rozšířila ba služby z prahy prostřednictvím partnerské společnosti deutsche ba o lety do stuttgartu.
@@ -12515,7 +12515,8 @@ Predicted: {
 na činnost související se založením čeb již bylo podle jeho slov uvolněno půl milionu ecu z programu phare .
 základní kapitál ve výši 500 milionů korun poskytl stát z prostředků státního rozpočtu .
 z celkem 2.5 mil .
-ecu určených na podporu českého exportu je z programu phare určen další milion ecu na projekt školení manažerů malých a středních podniků . začátek je plánován na leden příštího roku .
+ecu určených na podporu českého exportu je z programu phare určen další milion ecu na projekt školení manažerů malých a středních podniků .
+začátek je plánován na leden příštího roku .
 půl milionu ecu je z phare určeno i na institucionalizaci podpory vývozu a propagaci vývozní politiky .
 podle slov ředitele pomezného by se měla podpora vývozu především na vládní úrovni v budoucnu zpřehlednit .
 proexportní politika však vždy bude kombinací vládních a nevládních iniciativ , dodal pomezný .
@@ -12523,11 +12524,10 @@ základní hospodářské ukazatele 2 ) roční průměr ; 3 ) nezaměstnaní re
 }
 False positives: {
 z celkem 2.5 mil .
-ecu určených na podporu českého exportu je z programu phare určen další milion ecu na projekt školení manažerů malých a středních podniků . začátek je plánován na leden příštího roku .
+ecu určených na podporu českého exportu je z programu phare určen další milion ecu na projekt školení manažerů malých a středních podniků .
 základní hospodářské ukazatele 2 ) roční průměr ; 3 ) nezaměstnaní registrovaní koncem roku
 } False negatives: {
 z celkem 2.5 mil . ecu určených na podporu českého exportu je z programu phare určen další milion ecu na projekt školení manažerů malých a středních podniků .
-začátek je plánován na leden příštího roku .
 základní hospodářské ukazatele
 2 ) roční průměr ;
 3 ) nezaměstnaní registrovaní koncem roku
@@ -12840,7 +12840,8 @@ krátce hrubý domácí produkt usa stoupl ve 2. čtvrtletí proti stejnému obd
 americké ministerstvo obchodu v 1. revizi zvýšilo roční míru růstu hdp na 3.8 %, zatímco červencový odhad zněl 3.7 %.
 chile se chce co nejdříve připojit ke společnému trhu jihoamerických zemí, který pod názvem mercosur vzniká od 1. ledna příštího roku.
 smlouvu o postupném zavedení celní unie, která by měla být kompletní v roce 2006, podepsaly již argentina, brazílie, paraguay a uruguay.
-společnost digital equipment corp. snižuje ceny u svých osobních počítačů na bázi mikroprocesorů intel 486 a pentium až o 26 % s platností od 30. srpna.
+společnost digital equipment corp.
+snižuje ceny u svých osobních počítačů na bázi mikroprocesorů intel 486 a pentium až o 26 % s platností od 30. srpna.
 rusko, které je hlavním dodavatelem ropy do bulharska, uzavřelo s touto zemí dlouhodobou smlouvu o dodávkách ropy do roku 2000.
 s redukcí polského dluhu na polovinu vyslovily v pátek souhlas banky sdružené v londýnském klubu.
 příslušná dohoda má být podepsána v polovině září.
@@ -12848,9 +12849,12 @@ polsko dluží přibližně 500 bankám londýnského klubu přes 13 miliard dol
 }
 False positives: {
 krátce hrubý domácí produkt usa stoupl ve 2. čtvrtletí proti stejnému období loni více, než se původně předpokládalo.
+společnost digital equipment corp.
+snižuje ceny u svých osobních počítačů na bázi mikroprocesorů intel 486 a pentium až o 26 % s platností od 30. srpna.
 } False negatives: {
 krátce
 hrubý domácí produkt usa stoupl ve 2. čtvrtletí proti stejnému období loni více, než se původně předpokládalo.
+společnost digital equipment corp. snižuje ceny u svých osobních počítačů na bázi mikroprocesorů intel 486 a pentium až o 26 % s platností od 30. srpna.
 }
 
 Expected: {
@@ -16150,7 +16154,8 @@ na jiném místě deník sme uvádí, že před několika dny byli nuceni odejí
 po setkání s ředitelem tužinským...
 jsme zjistili, že to, co od nás žádá, je z hlediska našeho svědomí a profesionálního postavení jednoznačně nepřijatelné," řekla deníku sme bývalá moderátorka sámelová, která společně s manželem patří k signatářům otevřeného dopisu řediteli.
 nový proces s vyjednávačem?
-zemský soud v berlíně dnes rozhodne o tom, zda nynější proces proti hlavnímu vyjednávači ndr wolfgangu vogelovi (69) bude zastaven a začne nové líčení, v němž by byl obviněn z 52 případů vydírání místo nynějších 23. bývalý advokát a honeckerův důvěrník vogel je obžalován, že zneužíval svého postavení k tomu, aby na občanech ndr žádajících o vystěhování na západ vymáhal jako protislužbu jejich nemovitosti.
+zemský soud v berlíně dnes rozhodne o tom, zda nynější proces proti hlavnímu vyjednávači ndr wolfgangu vogelovi (69) bude zastaven a začne nové líčení, v němž by byl obviněn z 52 případů vydírání místo nynějších 23.
+bývalý advokát a honeckerův důvěrník vogel je obžalován, že zneužíval svého postavení k tomu, aby na občanech ndr žádajících o vystěhování na západ vymáhal jako protislužbu jejich nemovitosti.
 klade se mu za vinu rovněž zpronevěra a křivé svědectví.
 prokurátor žádá otevření nového procesu a opírá se přitom o rozhodnutí soudního dvora, podle něhož musí být žaloba projednána v plném rozsahu.
 v novém líčení by byl vedle vogela souzen i bývalý generálmajor východoněmecké státní bezpečnosti (stasi) gerhard niebling (62), který je podle obžaloby spolupachatelem ve 40 případech.
@@ -16158,11 +16163,8 @@ v novém líčení by byl vedle vogela souzen i bývalý generálmajor východon
 False positives: {
 po setkání s ředitelem tužinským...
 jsme zjistili, že to, co od nás žádá, je z hlediska našeho svědomí a profesionálního postavení jednoznačně nepřijatelné," řekla deníku sme bývalá moderátorka sámelová, která společně s manželem patří k signatářům otevřeného dopisu řediteli.
-zemský soud v berlíně dnes rozhodne o tom, zda nynější proces proti hlavnímu vyjednávači ndr wolfgangu vogelovi (69) bude zastaven a začne nové líčení, v němž by byl obviněn z 52 případů vydírání místo nynějších 23. bývalý advokát a honeckerův důvěrník vogel je obžalován, že zneužíval svého postavení k tomu, aby na občanech ndr žádajících o vystěhování na západ vymáhal jako protislužbu jejich nemovitosti.
 } False negatives: {
 po setkání s ředitelem tužinským... jsme zjistili, že to, co od nás žádá, je z hlediska našeho svědomí a profesionálního postavení jednoznačně nepřijatelné," řekla deníku sme bývalá moderátorka sámelová, která společně s manželem patří k signatářům otevřeného dopisu řediteli.
-zemský soud v berlíně dnes rozhodne o tom, zda nynější proces proti hlavnímu vyjednávači ndr wolfgangu vogelovi (69) bude zastaven a začne nové líčení, v němž by byl obviněn z 52 případů vydírání místo nynějších 23.
-bývalý advokát a honeckerův důvěrník vogel je obžalován, že zneužíval svého postavení k tomu, aby na občanech ndr žádajících o vystěhování na západ vymáhal jako protislužbu jejich nemovitosti.
 }
 
 Expected: {
@@ -18150,15 +18152,15 @@ první cenu, zájezd do skotska pro dvě osoby, vyhrává m. zdráhal z olomouce
 televize f 1 8.00
 trh, obchod, finance 8.30
 události, komentáře 9.00
-minuty dne 9.05
-seznamte se, prosím 9.45 zpovědi 10.35 pod cestou kořeny 11.05 rhytmick
+minuty dne 9.05 seznamte se, prosím 9.45 zpovědi 10.35
+pod cestou kořeny 11.05 rhytmick
 }
 False positives: {
 televize f 1 8.00
 trh, obchod, finance 8.30
 události, komentáře 9.00
-minuty dne 9.05
-seznamte se, prosím 9.45 zpovědi 10.35 pod cestou kořeny 11.05 rhytmick
+minuty dne 9.05 seznamte se, prosím 9.45 zpovědi 10.35
+pod cestou kořeny 11.05 rhytmick
 } False negatives: {
 televize
 f 1
@@ -18369,7 +18371,8 @@ Predicted: {
 rekordní deficit spojených států deficit amerického rozpočtu se v srpnu zvýšil o dalších 24.7 mld usd.
 oznámilo to v úterý ministerstvo financí.
 již nyní je jasné, že ve finančním roce 1992 (končí 30. září) dosáhne rozdíl mezi výdaji a příjmy usa rekordní výše.
-v prvních jedenácti měsících nynějšího finančního roku činil rozpočtový schodek 295.6 mld usd, zatímco loni to bylo ve stejném období 262 , 6 mld usd.
+v prvních jedenácti měsících nynějšího finančního roku činil rozpočtový schodek 295.6
+mld usd, zatímco loni to bylo ve stejném období 262 , 6 mld usd.
 v celém uplynulém finančním roce dosáhl deficit 269.5 miliardy dolarů.
 bushova vláda odhaduje, že do konce letošního finančního roku se deficit zvýší na 333.5 miliardy dolarů.
 celkový nahromaděný národní dluh usa činí více než 3.95
@@ -18379,11 +18382,14 @@ ty například stály v letošním roce spojené státy více než vojenská obr
 }
 False positives: {
 rekordní deficit spojených států deficit amerického rozpočtu se v srpnu zvýšil o dalších 24.7 mld usd.
+v prvních jedenácti měsících nynějšího finančního roku činil rozpočtový schodek 295.6
+mld usd, zatímco loni to bylo ve stejném období 262 , 6 mld usd.
 celkový nahromaděný národní dluh usa činí více než 3.95
 biliónu dolarů.
 } False negatives: {
 rekordní deficit spojených států
 deficit amerického rozpočtu se v srpnu zvýšil o dalších 24.7 mld usd.
+v prvních jedenácti měsících nynějšího finančního roku činil rozpočtový schodek 295.6 mld usd, zatímco loni to bylo ve stejném období 262 , 6 mld usd.
 celkový nahromaděný národní dluh usa činí více než 3.95 biliónu dolarů.
 }
 
@@ -19369,7 +19375,8 @@ Predicted: {
 19.20
 nejlepší z moravy 20.05 hry bez hranic, zábavné soutěžní klání družstev 21.30
 deník plus, počasí 22.05
-cesta za duhou (6.) 23.45 mc 1 0.45 třikrát s wildou, othello 1.25 pár vzpomínek při kytaře 1.50
+cesta za duhou (6.) 23.45
+mc 1 0.45 třikrát s wildou, othello 1.25 pár vzpomínek při kytaře 1.50
 servis ckp čt 3 0.00
 headline news update
 }
@@ -19377,7 +19384,8 @@ False positives: {
 19.20
 nejlepší z moravy 20.05 hry bez hranic, zábavné soutěžní klání družstev 21.30
 deník plus, počasí 22.05
-cesta za duhou (6.) 23.45 mc 1 0.45 třikrát s wildou, othello 1.25 pár vzpomínek při kytaře 1.50
+cesta za duhou (6.) 23.45
+mc 1 0.45 třikrát s wildou, othello 1.25 pár vzpomínek při kytaře 1.50
 servis ckp čt 3 0.00
 headline news update
 } False negatives: {
@@ -19647,22 +19655,22 @@ Expected: {
 }
 Predicted: {
 čt 1 6.00
-studio 6 8.00
-studio b, recitál n. džigurdy 8.30
+studio 6 8.00 studio b, recitál n. džigurdy 8.30
 deník plus 9.00 dobrodruzi z vesmíru (66.)
 9.25
 mají právo na život 9.50 až přijde kocour, český film 11.30
-studio reportérů 12.10 nejpopulárnější hra na zemi (3.)
+studio reportérů 12.10
+nejpopulárnější hra na zemi (3.)
 12.35 setkání s obrazovkou
 }
 False positives: {
 čt 1 6.00
-studio 6 8.00
-studio b, recitál n. džigurdy 8.30
+studio 6 8.00 studio b, recitál n. džigurdy 8.30
 deník plus 9.00 dobrodruzi z vesmíru (66.)
 9.25
 mají právo na život 9.50 až přijde kocour, český film 11.30
-studio reportérů 12.10 nejpopulárnější hra na zemi (3.)
+studio reportérů 12.10
+nejpopulárnější hra na zemi (3.)
 } False negatives: {
 čt 1
 6.00 studio 6
@@ -20505,7 +20513,8 @@ Predicted: {
 a na druhé straně se užívá slova střed v běžném jazyce často přeneseně, jak to známe z ustálených obratů jako uvítat někoho ve svém středu, nebo ho odtud vyloučit, octnout se ve středu událostí, být středem pozornosti.
 patří sem vlastně i onen střed evropy, v němž se nalézá československo.
 tento výraz lze sice chápat neobrazně, tedy ve smyslu "uprostřed", v její střední části, což je nepochybně pravda, protože moře (tedy okraj evropy) je od nás pěkný kousek.
-ale často tu přisuzujeme slovu střed významový rys závažnosti, historické důležitosti, jde tu o jisté hodnocení polohy naší země, spojené s pocitem hrdosti apod. však se také jindy mluví, s jistou dávkou emoce, že jsme v srdci evropy - jako by tu ožívala ona prastará souvislost slova střed s latinským a řeckým názvem srdce.
+ale často tu přisuzujeme slovu střed významový rys závažnosti, historické důležitosti, jde tu o jisté hodnocení polohy naší země, spojené s pocitem hrdosti apod.
+však se také jindy mluví, s jistou dávkou emoce, že jsme v srdci evropy - jako by tu ožívala ona prastará souvislost slova střed s latinským a řeckým názvem srdce.
 to, že odborníci žehrávají na to, že se jejich termíny užívají v neterminologickém smyslu, jsem se přesvědčil už jako gymnazista.
 náš hodný matematik a fyzik se pohoršoval nad známými nerudovými verši "bude-li každý z nás z křemene, je celý národ z kvádrů".
 vždyť prý to nedává smysl: kvádr je přece "mnohostěn ohraničený šesti obdélníky, z nichž protilehlé jsou shodné" (a ani ten křemen s tím kvádrem k sobě nějak nejdou).
@@ -20514,12 +20523,9 @@ mohutného a s kladným citovým postojem, to dovedeme jistě zcela dobře pocho
 a do třetice další příklad: jsou pavouci hmyz, anebo ne?
 }
 False positives: {
-ale často tu přisuzujeme slovu střed významový rys závažnosti, historické důležitosti, jde tu o jisté hodnocení polohy naší země, spojené s pocitem hrdosti apod. však se také jindy mluví, s jistou dávkou emoce, že jsme v srdci evropy - jako by tu ožívala ona prastará souvislost slova střed s latinským a řeckým názvem srdce.
 přiznávám se sice, že sémantická interpretace těchto veršů se zdá poněkud obtížná, snad i problematická, ale ta skutečnost, že tu pro nerudu nebylo východiskem ono geometrické pojetí slova kvádr , nýbrž jeho význam "větší kus kamene se stranami přitesanými pravoúhle", spojený s představou něčeho pevného, odolného, popříp.
 mohutného a s kladným citovým postojem, to dovedeme jistě zcela dobře pochopit, stejně tak jako u slova křemen jeho přenesené užití o něčem tvrdém, pevném.
 } False negatives: {
-ale často tu přisuzujeme slovu střed významový rys závažnosti, historické důležitosti, jde tu o jisté hodnocení polohy naší země, spojené s pocitem hrdosti apod.
-však se také jindy mluví, s jistou dávkou emoce, že jsme v srdci evropy - jako by tu ožívala ona prastará souvislost slova střed s latinským a řeckým názvem srdce.
 přiznávám se sice, že sémantická interpretace těchto veršů se zdá poněkud obtížná, snad i problematická, ale ta skutečnost, že tu pro nerudu nebylo východiskem ono geometrické pojetí slova kvádr , nýbrž jeho význam "větší kus kamene se stranami přitesanými pravoúhle", spojený s představou něčeho pevného, odolného, popříp. mohutného a s kladným citovým postojem, to dovedeme jistě zcela dobře pochopit, stejně tak jako u slova křemen jeho přenesené užití o něčem tvrdém, pevném.
 }
 
@@ -21021,16 +21027,16 @@ dostává nervová vlákna a jejich prostřednictvím informace ze zrakové čá
 g. lingualis a fusuformis s přechodem do g. parahippocampalis jsou pokryty sekundární a terciární ("asociačními") zrakovými kůrami (stejně jako cuneus ).
 podílejí se na zpracování složitějších zrakových informací.
 g. parahippocampalis se kromě toho podílí na ukládání informací do dlouhodobé paměti.
-prosopagnosie se objevuje nejčastěji při porušení mozkové kůry pravé (nebo obou) hemisfér na hranicích týlního a spánkového laloku v oblasti vyznačené čerchovanou čarou 39 2. zjednodušené schéma stavby lidského zrakového systému.
+prosopagnosie se objevuje nejčastěji při porušení mozkové kůry pravé (nebo obou) hemisfér na hranicích týlního a spánkového laloku v oblasti vyznačené čerchovanou čarou 39 2.
+zjednodušené schéma stavby lidského zrakového systému.
 levé poloviny sítnic obou očí (černě) předávají informace prostřednictvím zrakové části mezimozku do primární zrakové kůry levé mozkové hemisféry.
 }
 False positives: {
-prosopagnosie se objevuje nejčastěji při porušení mozkové kůry pravé (nebo obou) hemisfér na hranicích týlního a spánkového laloku v oblasti vyznačené čerchovanou čarou 39 2. zjednodušené schéma stavby lidského zrakového systému.
+prosopagnosie se objevuje nejčastěji při porušení mozkové kůry pravé (nebo obou) hemisfér na hranicích týlního a spánkového laloku v oblasti vyznačené čerchovanou čarou 39 2.
 } False negatives: {
 prosopagnosie se objevuje nejčastěji při porušení mozkové kůry pravé (nebo obou) hemisfér na hranicích týlního a spánkového laloku v oblasti vyznačené čerchovanou čarou
 39
 2.
-zjednodušené schéma stavby lidského zrakového systému.
 }
 
 Expected: {
@@ -21483,38 +21489,6 @@ trudeau takto pozve 45.
 prezidenta spojených států, ať jím bude kdokoliv.
 } False negatives: {
 trudeau takto pozve 45. prezidenta spojených států, ať jím bude kdokoliv.
-}
-
-Expected: {
-nejúspěšnějším filmem roku 2007 byl el greco režírovaný yannisem smaragdisem.
-v červenci roku 1918 byla podepsána francouzsko-monacká smlouva, která francii zajišťovala smluvní protektorát nad monakem.
-výkonná složka se skládá z premiéra, který v čele vlády předsedá pětičlenné radě vlády.
-jeho policie má zvláštní jednotku, jež používá strážní a hlídací čluny.
-současné projekty na získávání půdy z moře zahrnují okres fontvieille.
-nicméně mezi severním irskem na jedné straně a anglií a walesem na druhé straně jsou důležité rozdíly v zákonech a jejich uplatňování.
-nejrozšířenější klasifikací vzduchové hmoty je bergeronova klasifikace.
-zatímco identifikace vzduchové hmoty byla původně používána v předpovědích počasí už v padesátých letech dvacátého století, klimatologové začali tento nápad používat ve výzkumných otázkách synoptické klimatologie v roce 1973.
-monzun je vytrvalý sezónní vítr, jenž trvá několik měsíců a přináší regionální období dešťů.
-než v šestém století n.l. slované ustavili svůj první státní útvar, přehnalo se během stěhování národů moravou množství germánských a významnějších slovanských kmenů.
-}
-Predicted: {
-nejúspěšnějším filmem roku 2007 byl el greco režírovaný yannisem smaragdisem.
-v červenci roku 1918 byla podepsána francouzsko-monacká smlouva, která francii zajišťovala smluvní protektorát nad monakem.
-výkonná složka se skládá z premiéra, který v čele vlády předsedá pětičlenné radě vlády.
-jeho policie má zvláštní jednotku, jež používá strážní a hlídací čluny.
-současné projekty na získávání půdy z moře zahrnují okres fontvieille.
-nicméně mezi severním irskem na jedné straně a anglií a walesem na druhé straně jsou důležité rozdíly v zákonech a jejich uplatňování.
-nejrozšířenější klasifikací vzduchové hmoty je bergeronova klasifikace.
-zatímco identifikace vzduchové hmoty byla původně používána v předpovědích počasí už v padesátých letech dvacátého století, klimatologové začali tento nápad používat ve výzkumných otázkách synoptické klimatologie v roce 1973.
-monzun je vytrvalý sezónní vítr, jenž trvá několik měsíců a přináší regionální období dešťů.
-než v šestém století n.l.
-slované ustavili svůj první státní útvar, přehnalo se během stěhování národů moravou množství germánských a významnějších slovanských kmenů.
-}
-False positives: {
-než v šestém století n.l.
-slované ustavili svůj první státní útvar, přehnalo se během stěhování národů moravou množství germánských a významnějších slovanských kmenů.
-} False negatives: {
-než v šestém století n.l. slované ustavili svůj první státní útvar, přehnalo se během stěhování národů moravou množství germánských a významnějších slovanských kmenů.
 }
 
 Expected: {
